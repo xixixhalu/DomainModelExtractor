@@ -1,0 +1,26 @@
+As a user I can register my detail into the system so that I can login 
+As a user I can click on detonate bomb so that I can see how many point I have won 
+As a user I can place bomb anywhere on the given grid 
+As a user I can login to the game using my registered username and password so that I can play the game with my own profile 
+As a user I can see if I have enough point to buy bomb for the new game 
+As a user I can see the high score of the game so that I can play to beat that score 
+As a user I can choose an avatar while registering or edit it later so that my game profile is customized to my liking 
+As a developer I should make sure to build a good and captivating so that the game attracts more user 
+As a user I can change the multiplier for each new game and get corresponding reward after completing the game 
+The system shall be compatible with all browser chrome firefox safari and there shall not be any responsive issue with the game for different version of the browser last 3 release on different platform including window maco 10 android 4 ios 9 
+As a user I can hear sound effect of bomb explosion and prize received for more interesting gaming experience 
+As a user I can quit the system anytime I want 
+As a user I can see how many more bomb I am left with 
+As a user I can see the history of the game played by me 
+As a user I can see anim so that I can have an interesting gaming experience 
+As a user I can log out without losing the point that I have lost or gained 
+As a user I can recover my password if forgotten 
+The system should have code document design document and architecture guideline so that it is maintainable 
+The system should include log rotation with various level so that the system except and user action can be logged and debugged if required without overhead space size complexity 
+The system shall be scalable for the growing amount of user in the future 20 simultaneous user 
+As a user I can mute unmute sound and change sound volume in the game 
+As a user I can edit my profile information 
+As a user I can remove bomb anywhere from the given 4 4 grid 
+As a user I should be able to place no more than 4 bomb anywhere on the given 4 4 grid 
+As a user I can detonate bomb only after all 4 bomb have been placed on the given 4 4 grid 
+As a user I should be prompted to play the game in landscape mode when I am trying to play in portrait mode 

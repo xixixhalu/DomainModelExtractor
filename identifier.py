@@ -203,9 +203,9 @@ class Identifier:
         td_result = TypeDep(self.__output)
         pt_result = parsePosTag(self.__output)
 
-        #self.display('Sentence', sentence)
-        #self.display('Type Dependency', td_result)
-        #self.display('Pos-Tag', pt_result)
+        self.display('Sentence', sentence)
+        self.display('Type Dependency', td_result)
+        self.display('Pos-Tag', pt_result)
         
         self.__tokenNum = len(self.__output['sentences'][0]['tokens'])
 
@@ -219,7 +219,7 @@ class Identifier:
 
         noun_relations = self.getNounRelations(pt_result, td_adjacency_list)
 
-        #self.display('Noun Relations', noun_relations)
+        self.display('Noun Relations', noun_relations)
         #return noun_relations
 
         for key, value in noun_relations.items():

@@ -3,6 +3,8 @@ import os
 from adapter import *
 from Parser.PosTagParser import *
 from Parser.TDParser import *
+from identifier import Identifier
+
 
 class MatchSSR:
 
@@ -12,6 +14,7 @@ class MatchSSR:
         self.rule_POS_dict = {}
         self.rule_keywords = []
         self.rule_var_map = {}
+        self.identifier = None
 
     def dir_path(self, directory):
 
@@ -108,6 +111,10 @@ class MatchSSR:
             idx_key = TypeDep(nlp_output)
             pt_result = parsePosTag(nlp_output)
 
+            print " "
+            print line
+            print td_key
+
             # check number of TDs
             flag = True
             for key in td_count:
@@ -170,7 +177,7 @@ class MatchSSR:
                 line = file_obj.readline().strip()
                 continue
 
-            print "Matched: ", line
+            print "Matched: ", self.identifier.display_sentence_index(line, nlp_output)
             for key in self.rule_var_map:
                 print key, self.rule_var_map[key]
 
@@ -180,9 +187,10 @@ class MatchSSR:
 if __name__ == '__main__':
 
     ssr = MatchSSR()
+    ssr.identifier = Identifier()
     # read rule
     rule_path = ssr.dir_path("/SSR/")
-    rule_obj = ssr.read_one_file(rule_path, "SSR1.txt")
+    rule_obj = ssr.read_one_file(rule_path, "SSR6.txt")
     ssr.parse_rule(rule_obj)
     rule_obj.close()
     # read sentences

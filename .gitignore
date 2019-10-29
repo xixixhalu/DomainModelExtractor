@@ -1,6 +1,8 @@
 .DS_Store
+.idea/
 
 stanford-corenlp-full*
+stanford-parser*
 
 input
 result

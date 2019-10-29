@@ -195,6 +195,10 @@ class Identifier:
         return result
 
 
+    def display_sentence_index(self, sentence, parse_input):
+        self.__output = parse_input
+        self.display('Sentence', sentence)
+
     def identify(self, sentence):
         self.__output = analyze(sentence)
         if self.__output is None:
@@ -203,9 +207,9 @@ class Identifier:
         td_result = TypeDep(self.__output)
         pt_result = parsePosTag(self.__output)
 
-        self.display('Sentence', sentence)
-        self.display('Type Dependency', td_result)
-        self.display('Pos-Tag', pt_result)
+        # self.display('Sentence', sentence)
+        # self.display('Type Dependency', td_result)
+        # self.display('Pos-Tag', pt_result)
         
         self.__tokenNum = len(self.__output['sentences'][0]['tokens'])
 

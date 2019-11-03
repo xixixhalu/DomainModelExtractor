@@ -33,7 +33,7 @@ class Identifier:
         self.__final_set.clear()
 
     def display(self, title, content):
-        print '[' + title + ']'
+        # print '[' + title + ']'
         if title == 'Sentence':
             print content
             index = ''
@@ -207,6 +207,7 @@ class Identifier:
         td_result = TypeDep(self.__output)
         pt_result = parsePosTag(self.__output)
 
+        # print self.__output
         # self.display('Sentence', sentence)
         # self.display('Type Dependency', td_result)
         # self.display('Pos-Tag', pt_result)

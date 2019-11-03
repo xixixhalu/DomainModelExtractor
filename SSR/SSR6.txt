@@ -2,7 +2,7 @@ SVDOtobeComp
 
 nsubj(A,B)
 nsubj(C,D)
-aux(C,E)
+mark(C,E)
 cop(C,F)
 xcomp(A,C)
 

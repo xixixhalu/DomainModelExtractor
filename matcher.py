@@ -18,6 +18,7 @@ class Matcher:
         def __repr__(self):
             return "Sentence: %s\nTokens: %s\nVariables: %s\n" %(self.sentence, self.tokens, self.var_map)
 
+
     def __init__(self, identifier, sentences_file_path):
         self.identifier = identifier
         self.sentences_file = self.read_one_file(sentences_file_path)
@@ -41,7 +42,6 @@ class Matcher:
         rule_TD_list = []
         rule_POS_dict = {}
         rule_keywords = []
-        rule_var_map = {}
 
         line = file_obj.readline().strip()
         # read name
@@ -68,8 +68,6 @@ class Matcher:
                 var2 = line[idx2 + 1:idx].strip()
                 tup = (td_name, var1, var2)
                 rule_TD_list.append(tup)
-                rule_var_map[var1] = "";
-                rule_var_map[var2] = "";
 
                 line = file_obj.readline()
 
@@ -98,21 +96,17 @@ class Matcher:
                 rule_keywords.append(line)
                 line = file_obj.readline()
 
-        # print parsed result
         print "\n======== parsed rule ========"
         print "rule name: ", rule_name
         print "TD list: ", rule_TD_list
         print "POS-tag list: ", rule_POS_dict
         print "Keywords: ", rule_keywords
-        print "Variables: ", rule_var_map
 
-        return rule_name, rule_TD_list, rule_POS_dict, rule_keywords, rule_var_map
+        return rule_name, rule_TD_list, rule_POS_dict, rule_keywords
 
 
     # create a class Matcher here and store identifier and input in it
-    # remove vars
     def query(self, tr_names, tds, pos_tags, keywords):
-        # print "\n======== process sentences ========"
         res = []
         line = self.sentences_file.readline().strip()
         while line:
@@ -121,20 +115,10 @@ class Matcher:
                 print line, ": NLP API returns None. skip!"
                 line = input.readline.strip()
                 continue
-            # print " "
-            # print line
+
             td_res = self.match_tds(tds, nlp_output)
             if td_res[0] and self.match_pos(td_res[1], pos_tags, nlp_output) and self.match_keywords(line, keywords):
-
                 res.append(self.MatchedSentence(line, self.build_tokens(nlp_output), td_res[1]))
-
-                # print("TD Matched!")
-                # self.identifier.display_sentence_index(line, nlp_output)
-                # var_map = td_res[1]
-                # for key in var_map:
-                #     print key, var_map[key]
-            # else:
-            #     print "TDs Do not match!"
 
             line = self.sentences_file.readline().strip()
 
@@ -145,7 +129,6 @@ class Matcher:
         tokens = {}
         for t in nlp_output['sentences'][0]['tokens']:
             tokens[t['index']] = t['word']
-            # print t['word']
 
         return tokens
 
@@ -163,7 +146,6 @@ class Matcher:
 
     def match_pos(self, var_map, rule_pos_tag, nlp_output):
         pt = parsePosTag(nlp_output)
-        # print pt
         # init flag to True here to handle the case that rule_pos_tag is empty
         flag = True
         for var in rule_pos_tag:
@@ -185,7 +167,6 @@ class Matcher:
 
     def match_tds(self, rule_tds, nlp_output):
         td_key = enhancedTD(nlp_output)
-        # print td_key
 
         # check number of TDs
         td_count = {}
@@ -261,8 +242,6 @@ if __name__ == '__main__':
     rule_TD_list = rule_result[1]
     rule_POS_dict = rule_result[2]
     rule_keywords = rule_result[3]
-    # TODO: eliminate var_map
-    rule_var_map = rule_result[4]
 
     res = ssr.query(rule_name, rule_TD_list, rule_POS_dict, rule_keywords)
     print "\n======== matched sentences ========"

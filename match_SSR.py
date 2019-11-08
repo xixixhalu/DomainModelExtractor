@@ -6,16 +6,24 @@ from Parser.TDParser import *
 from identifier import Identifier
 
 
+class Matcher:
 
-class MatchSSR:
+    def __init__(self, identifier, sentences_file_path):
+        self.identifier = identifier
+        self.sentences_file = self.read_one_file(sentences_file_path)
+
 
     def dir_path(self, directory):
 
         return os.getcwd() + directory
 
-    def read_one_file(self, file_path, file_name):
 
-        return open(file_path + file_name)
+    def read_one_file(self, file_path, file_name = None):
+        if file_name is None:
+            return open(file_path)
+        else:
+            return open(file_path + file_name)
+
 
     # Note: this parser assumes that input is written correctly and completely
     def parse_rule(self, file_obj):
@@ -90,8 +98,12 @@ class MatchSSR:
 
         return rule_name, rule_TD_list, rule_POS_dict, rule_keywords, rule_var_map
 
-    def query(self, tr_names, tds, pos_tags, keywords, vars, identifier, input):
-        line = input.readline().strip()
+
+    # create a class Matcher here and store identifier and input in it
+    # remove vars
+    def query(self, tr_names, tds, pos_tags, keywords):
+        print "\n======== process sentences ========"
+        line = self.sentences_file.readline().strip()
         while line:
             nlp_output = analyze(line)
             if nlp_output is None:
@@ -100,17 +112,20 @@ class MatchSSR:
                 continue
             print " "
             print line
-            if self.match_tds(tds, vars, nlp_output) is True:
-                print("Matched!")
-                identifier.display_sentence_index(line, nlp_output)
-                for key in vars:
-                    print key, vars[key]
+            td_res = self.match_tds(tds, nlp_output)
+            if td_res[0] is True:
+                print("TD Matched!")
+                self.identifier.display_sentence_index(line, nlp_output)
+                var_map = td_res[1]
+                for key in var_map:
+                    print key, var_map[key]
             else:
-                print "Does not match!"
+                print "TDs Do not match!"
 
-            line = input.readline().strip()
+            line = self.sentences_file.readline().strip()
 
-    def match_tds(self, rule_tds, rule_vars, nlp_output):
+
+    def match_tds(self, rule_tds, nlp_output):
         td_key = enhancedTD(nlp_output)
         print td_key
 
@@ -124,23 +139,16 @@ class MatchSSR:
                 flag = False
                 break
         if not flag:
-            return False
+            return False, None
 
-        # clear rule variables mapping before each dfs
-        for key in rule_vars:
-            rule_vars[key] = None
+        return self.dfs_match_tds(rule_tds, td_key, 0, {}, {})
 
-        if self.dfs_match_tds(rule_tds, td_key, 0, {}, {}, rule_vars) is True:
-            return True
 
-        return False
 
-    def dfs_match_tds(self, rule_tds, text_tds, rule_pos, var_to_index, index_to_var, rule_vars):
+    def dfs_match_tds(self, rule_tds, text_tds, rule_pos, var_to_index, index_to_var):
         if rule_pos == len(rule_tds):
-            for key in var_to_index:
-                rule_vars[key] = var_to_index[key]
 
-            return True
+            return True, var_to_index
 
         key_to_match = rule_tds[rule_pos][0]
         var1 = rule_tds[rule_pos][1]
@@ -148,9 +156,13 @@ class MatchSSR:
         for candidate_index in text_tds[key_to_match]:
             cand1 = candidate_index[0]
             cand2 = candidate_index[1]
-            if cand1 in index_to_var and index_to_var[cand1] is not var1:
+            if cand1 in index_to_var and index_to_var[cand1] is not None and index_to_var[cand1] is not var1:
                 continue
-            if cand2 in index_to_var is not None and index_to_var[cand2] is not var2:
+            if cand2 in index_to_var and index_to_var[cand2] is not None and index_to_var[cand2] is not var2:
+                continue
+            if var1 in var_to_index and var_to_index[var1] is not None and var_to_index[var1] is not cand1:
+                continue
+            if var2 in var_to_index and var_to_index[var2] is not None and var_to_index[var2] is not cand2:
                 continue
 
             var_to_index[var1] = cand1
@@ -158,23 +170,24 @@ class MatchSSR:
             index_to_var[cand1] = var1
             index_to_var[cand2] = var2
 
-            if self.dfs_match_tds(rule_tds, text_tds, rule_pos + 1, var_to_index, index_to_var, rule_vars) is True:
-                return True
+            # Ziyu: it only output the first valid result
+            if self.dfs_match_tds(rule_tds, text_tds, rule_pos + 1, var_to_index, index_to_var)[0] is True:
+                return True, var_to_index
 
             var_to_index[var1] = None
             var_to_index[var2] = None
             index_to_var[cand1] = None
             index_to_var[cand2] = None
 
-        return False
+        return False, var_to_index
 
 
 if __name__ == '__main__':
-    ssr = MatchSSR()
-    identifier = Identifier()
+    # create a Matcher object which is initialized with Identifier and input file path
+    ssr = Matcher(Identifier(), os.getcwd() + "/Data/input_origin/" + "test.txt")
     # read rule
     rule_path = ssr.dir_path("/SSR/")
-    rule_obj = ssr.read_one_file(rule_path, "SSR1.txt")
+    rule_obj = ssr.read_one_file(rule_path, "SSR6.txt")
     rule_result = ssr.parse_rule(rule_obj)
     rule_obj.close()
     # split rule result
@@ -182,9 +195,7 @@ if __name__ == '__main__':
     rule_TD_list = rule_result[1]
     rule_POS_dict = rule_result[2]
     rule_keywords = rule_result[3]
+    # TODO: eliminate var_map
     rule_var_map = rule_result[4]
-    # read sentences
-    dir_path = ssr.dir_path("/Data/input_origin/")
-    req_obj = ssr.read_one_file(dir_path, "test.txt")
-    ssr.query(rule_name, rule_TD_list, rule_POS_dict, rule_keywords, rule_var_map, identifier, req_obj)
-    req_obj.close()
+
+    ssr.query(rule_name, rule_TD_list, rule_POS_dict, rule_keywords)

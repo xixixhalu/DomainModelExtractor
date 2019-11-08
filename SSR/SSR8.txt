@@ -2,8 +2,8 @@ SVDOPresentPart
 
 nsubj(A,B)
 dobj(A,C)
-partmod(C,D)
+acl(C,D)
 
-D=VGB
+D=VBG
 
 #

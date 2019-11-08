@@ -8,6 +8,16 @@ from identifier import Identifier
 
 class Matcher:
 
+    class MatchedSentence:
+
+        def __init__(self, sentence, tokens, var_map):
+            self.sentence = sentence
+            self.tokens = tokens
+            self.var_map = var_map
+
+        def __repr__(self):
+            return "Sentence: %s\nTokens: %s\nVariables: %s\n" %(self.sentence, self.tokens, self.var_map)
+
     def __init__(self, identifier, sentences_file_path):
         self.identifier = identifier
         self.sentences_file = self.read_one_file(sentences_file_path)
@@ -102,7 +112,8 @@ class Matcher:
     # create a class Matcher here and store identifier and input in it
     # remove vars
     def query(self, tr_names, tds, pos_tags, keywords):
-        print "\n======== process sentences ========"
+        # print "\n======== process sentences ========"
+        res = []
         line = self.sentences_file.readline().strip()
         while line:
             nlp_output = analyze(line)
@@ -110,24 +121,71 @@ class Matcher:
                 print line, ": NLP API returns None. skip!"
                 line = input.readline.strip()
                 continue
-            print " "
-            print line
+            # print " "
+            # print line
             td_res = self.match_tds(tds, nlp_output)
-            if td_res[0] is True:
-                print("TD Matched!")
-                self.identifier.display_sentence_index(line, nlp_output)
-                var_map = td_res[1]
-                for key in var_map:
-                    print key, var_map[key]
-            else:
-                print "TDs Do not match!"
+            if td_res[0] and self.match_pos(td_res[1], pos_tags, nlp_output) and self.match_keywords(line, keywords):
+
+                res.append(self.MatchedSentence(line, self.build_tokens(nlp_output), td_res[1]))
+
+                # print("TD Matched!")
+                # self.identifier.display_sentence_index(line, nlp_output)
+                # var_map = td_res[1]
+                # for key in var_map:
+                #     print key, var_map[key]
+            # else:
+            #     print "TDs Do not match!"
 
             line = self.sentences_file.readline().strip()
+
+        return res
+
+
+    def build_tokens(self, nlp_output):
+        tokens = {}
+        for t in nlp_output['sentences'][0]['tokens']:
+            tokens[t['index']] = t['word']
+            # print t['word']
+
+        return tokens
+
+
+    # TODO: Is keyword always the first word in one sentence?
+    # Note: This function assumes that keyword may appear at any position in one sentence.
+    def match_keywords(self, line, keywords):
+        flag = True
+        for word in keywords:
+            if word not in line:
+                flag = False
+                break
+
+        return flag
+
+    def match_pos(self, var_map, rule_pos_tag, nlp_output):
+        pt = parsePosTag(nlp_output)
+        # print pt
+        # init flag to True here to handle the case that rule_pos_tag is empty
+        flag = True
+        for var in rule_pos_tag:
+            flag = False
+            var_pos = rule_pos_tag[var]
+            if var_pos not in pt:
+                break
+            for cand_tup in pt[var_pos]:
+                # find it
+                # Ziyu: only when the two elements in tup are the same, it might be true.
+                if cand_tup[0] == cand_tup[1] and cand_tup[0] == var_map[var]:
+                    flag = True
+                    break
+            if not flag:
+                break
+
+        return flag
 
 
     def match_tds(self, rule_tds, nlp_output):
         td_key = enhancedTD(nlp_output)
-        print td_key
+        # print td_key
 
         # check number of TDs
         td_count = {}
@@ -143,8 +201,8 @@ class Matcher:
 
         return self.dfs_match_tds(rule_tds, td_key, 0, {}, {})
 
-
-
+    # Note: the assumption here is that variables and indexes are 1 to 1 mapping. Each variable is mapped to only one
+    # unique index.
     def dfs_match_tds(self, rule_tds, text_tds, rule_pos, var_to_index, index_to_var):
         if rule_pos == len(rule_tds):
 
@@ -156,10 +214,18 @@ class Matcher:
         for candidate_index in text_tds[key_to_match]:
             cand1 = candidate_index[0]
             cand2 = candidate_index[1]
+
+            # If one of the candidate index has been assigned to a variable before, and that variable is not the same as
+            # the current variable we are going to match, which means that we are going to assign one index to two
+            # different variables, and such situation violates the 1:1 mapping assumption. We skip this candidate.
             if cand1 in index_to_var and index_to_var[cand1] is not None and index_to_var[cand1] is not var1:
                 continue
             if cand2 in index_to_var and index_to_var[cand2] is not None and index_to_var[cand2] is not var2:
                 continue
+
+            # If one of the variable has been assigned to an index, and the assigned index is not the same as the
+            # current "candidate" index, which means that we are going to assign two different indexes to one variable,
+            # which violates the 1:1 mapping assumption. We skip this candidate index.
             if var1 in var_to_index and var_to_index[var1] is not None and var_to_index[var1] is not cand1:
                 continue
             if var2 in var_to_index and var_to_index[var2] is not None and var_to_index[var2] is not cand2:
@@ -187,7 +253,7 @@ if __name__ == '__main__':
     ssr = Matcher(Identifier(), os.getcwd() + "/Data/input_origin/" + "test.txt")
     # read rule
     rule_path = ssr.dir_path("/SSR/")
-    rule_obj = ssr.read_one_file(rule_path, "SSR6.txt")
+    rule_obj = ssr.read_one_file(rule_path, "SSR30.txt")
     rule_result = ssr.parse_rule(rule_obj)
     rule_obj.close()
     # split rule result
@@ -198,4 +264,8 @@ if __name__ == '__main__':
     # TODO: eliminate var_map
     rule_var_map = rule_result[4]
 
-    ssr.query(rule_name, rule_TD_list, rule_POS_dict, rule_keywords)
+    res = ssr.query(rule_name, rule_TD_list, rule_POS_dict, rule_keywords)
+    print "\n======== matched sentences ========"
+    for r in res:
+        print r
+

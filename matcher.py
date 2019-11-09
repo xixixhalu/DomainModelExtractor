@@ -6,8 +6,10 @@ from Parser.TDParser import *
 from identifier import Identifier
 
 
+# create a class Matcher here and store identifier and input in it
 class Matcher:
 
+    # internal class to store the matched result
     class MatchedSentence:
 
         def __init__(self, sentence, tokens, var_map):
@@ -105,8 +107,8 @@ class Matcher:
         return rule_name, rule_TD_list, rule_POS_dict, rule_keywords
 
 
-    # create a class Matcher here and store identifier and input in it
     def query(self, tr_names, tds, pos_tags, keywords):
+        print "\n======== process sentences ========"
         res = []
         line = self.sentences_file.readline().strip()
         while line:
@@ -115,11 +117,11 @@ class Matcher:
                 print line, ": NLP API returns None. skip!"
                 line = input.readline.strip()
                 continue
-
+            print line
             td_res = self.match_tds(tds, nlp_output)
             if td_res[0] and self.match_pos(td_res[1], pos_tags, nlp_output) and self.match_keywords(line, keywords):
                 res.append(self.MatchedSentence(line, self.build_tokens(nlp_output), td_res[1]))
-
+            print " "
             line = self.sentences_file.readline().strip()
 
         return res
@@ -167,7 +169,7 @@ class Matcher:
 
     def match_tds(self, rule_tds, nlp_output):
         td_key = enhancedTD(nlp_output)
-
+        print td_key
         # check number of TDs
         td_count = {}
         for tup in rule_tds:
@@ -234,7 +236,7 @@ if __name__ == '__main__':
     ssr = Matcher(Identifier(), os.getcwd() + "/Data/input_origin/" + "test.txt")
     # read rule
     rule_path = ssr.dir_path("/SSR/")
-    rule_obj = ssr.read_one_file(rule_path, "SSR30.txt")
+    rule_obj = ssr.read_one_file(rule_path, "SSR7.txt")
     rule_result = ssr.parse_rule(rule_obj)
     rule_obj.close()
     # split rule result
@@ -244,7 +246,7 @@ if __name__ == '__main__':
     rule_keywords = rule_result[3]
 
     res = ssr.query(rule_name, rule_TD_list, rule_POS_dict, rule_keywords)
-    print "\n======== matched sentences ========"
+    print "======== matched sentences ========"
     for r in res:
         print r
 

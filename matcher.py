@@ -135,16 +135,18 @@ class Matcher:
         return tokens
 
 
-    # TODO: Is keyword always the first word in one sentence?
-    # Note: This function assumes that keyword may appear at any position in one sentence.
+    # Note: A sentence should start with the keyword, if we have keyword in rule to match. And parameter keywords
+    # is a list, it should only contains one element.(since one sentence cannot start with two different words)
+    # Return: When the string starts with this keyword, return True; otherwise, return False.
     def match_keywords(self, line, keywords):
         flag = True
         for word in keywords:
-            if word not in line:
+            if not line.startswith(word):
                 flag = False
                 break
 
         return flag
+
 
     def match_pos(self, var_map, rule_pos_tag, nlp_output):
         pt = parsePosTag(nlp_output)
@@ -236,7 +238,7 @@ if __name__ == '__main__':
     ssr = Matcher(Identifier(), os.getcwd() + "/Data/input_origin/" + "test.txt")
     # read rule
     rule_path = ssr.dir_path("/SSR/")
-    rule_obj = ssr.read_one_file(rule_path, "SSR7.txt")
+    rule_obj = ssr.read_one_file(rule_path, "SSR30.txt")
     rule_result = ssr.parse_rule(rule_obj)
     rule_obj.close()
     # split rule result

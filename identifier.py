@@ -232,6 +232,7 @@ class Identifier:
             if not target_word in self.__final_set:
                 self.append(value, target_word)
                 self.__final_set.add(target_word)
+
             
         return self.__final_result
         
@@ -243,6 +244,6 @@ class Identifier:
 	
 if __name__ == '__main__':
 
-    sentence = 'As a user, I can use my WAT_points to redeem items from a virtual store.'
+    sentence = 'As a user, I can use my WAT points to redeem items from a virtual store.'
     identifier = Identifier()
     identifier.identify(sentence)

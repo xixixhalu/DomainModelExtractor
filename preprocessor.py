@@ -19,13 +19,22 @@ class PreProcessor:
     def pre_process(self):
         # overwrite previous output file
         output = open(os.getcwd() + "/input/" + os.path.basename(self.file.name), "w")
+        metadata = open(os.getcwd() + "/input/" + "meta_" + os.path.basename(self.file.name), "w")
 
         line = self.file.readline().strip()
         while line:
             print line
-            line = self.combine_nouns(line)
+            meta = []
+            print "combie nouns"
+            line = self.combine_nouns(line, meta)
+            print "combie nmod"
+            line = self.combine_nmod(line, meta)
+            print "replace role"
             line = self.replace_role(line)
             output.write(line + "\n")
+            metadata.write(meta.__str__() + "\n")
+
+            print "meta: ", meta
             print " "
 
             line = self.file.readline().strip()
@@ -39,7 +48,7 @@ class PreProcessor:
     #
     # Note: this function use a straight forward method to combine consecutive nouns: combining consecutive NN or NNP or
     # NNS or NNPS.
-    def combine_nouns(self, line):
+    def combine_nouns(self, line, meta):
         nlp_output = analyze(line)
         if nlp_output is None:
             print line, ": NLP API returns None. skip!"
@@ -48,8 +57,8 @@ class PreProcessor:
 
         pt = parsePosTag(nlp_output)
         print pt
-        # td_key = enhancedTD(nlp_output)
-        # print td_key
+        td_key = pure_enhancedTD(nlp_output)
+        print td_key
 
         line_index = []
         for i in range(0, len(nlp_output['sentences'][0]['tokens']) + 1):
@@ -80,15 +89,20 @@ class PreProcessor:
             cand = tokens[i - 1]['word']
 
             if i in nouns:
+                combined_noun_sub = []
+                combined_noun_sub.append(cand)
                 j = i + 1
                 while j in nouns:
                     if j == i + 1:
                         cand = cand.capitalize()
                     cand += tokens[j - 1]['word'].capitalize()
+                    combined_noun_sub.append(tokens[j - 1]['word'])
                     j = j + 1
 
                 if j > i + 1:
                     i = j - 1
+                if len(combined_noun_sub) > 1:
+                    meta.append(combined_noun_sub)
 
             if cand == ',' or cand == '.':
                 new_line = new_line.strip()
@@ -101,46 +115,72 @@ class PreProcessor:
 
         # print line
         print new_line
+        print meta
 
-        return new_line
+        return str(new_line)
 
-        # Ziyu: the following code implements 'combine_nouns' function by using 'compound', which is not good enough, so
-        # I comment them out.
 
-        # # A kind of Union Find. 'compound' nouns have the same parent(only one level indirection)
-        # for pair in td_key['compound']:
-        #     parent = pair[0]
-        #     child = pair[1]
-        #     line_index[parent] = parent
-        #     line_index[child] = parent
-        # print line_index
-        #
-        # new_line = ''
-        # i = 1
-        # while i < len(line_index):
-        #     cand = nlp_output['sentences'][0]['tokens'][i - 1]['word']
-        #
-        #     # TODO: should we also check that they are NN or NNS or NNP or NNPS? I think if one word is in the pair of 'compound', it must be a kind of Noun
-        #     # Check if we can form a compound noun
-        #     j = i + 1
-        #     while j < len(line_index) and line_index[j] == line_index[j - 1]:
-        #         if j == i + 1:
-        #             cand = cand.capitalize()
-        #         cand += nlp_output['sentences'][0]['tokens'][j - 1]['word'].capitalize()
-        #         j = j + 1
-        #
-        #     if j > i + 1:
-        #         i = j - 1
-        #
-        #     if cand == ',' or cand == '.':
-        #         new_line = new_line.strip()
-        #
-        #     new_line += cand
-        #     new_line += ' '
-        #     i = i + 1
-        #
-        # new_line = new_line.strip()
-        # print new_line
+
+    def combine_nmod(self, line, meta):
+        nlp_output = analyze(line)
+        if nlp_output is None:
+            print line, ": NLP API returns None. skip!"
+            return ''
+        print nlp_output
+
+        td_key = pure_enhancedTD(nlp_output)
+        print td_key
+
+        if 'nmod:of' not in td_key:
+            return line
+
+        map = {}
+        for p in td_key['nmod:of']:
+            p1 = min(p[0], p[1])
+            p2 = max(p[0], p[1])
+            map[p1] = p2
+
+
+        line_index = []
+        for i in range(0, len(nlp_output['sentences'][0]['tokens']) + 1):
+            line_index.append(i)
+
+        print line
+        print line_index
+        print "map: ", map
+
+        tokens = nlp_output['sentences'][0]['tokens']
+        new_line = ''
+        i = 1
+
+        while i < len(line_index):
+            cand = tokens[i - 1]['word']
+
+            if i in map:
+                combined_noun_sub = []
+                combined_noun_sub.append(cand)
+                cand = cand.capitalize()
+                j = map[i]
+                i = i + 1
+                while i <= j:
+                    cand += tokens[i - 1]['word'].capitalize()
+                    combined_noun_sub.append(tokens[i - 1]['word'])
+                    i = i + 1
+
+                meta.append(combined_noun_sub)
+                i = i - 1
+
+            if cand == ',' or cand == '.':
+                new_line = new_line.strip()
+            new_line += cand
+            if cand != '`':
+                new_line += ' '
+            i = i + 1
+
+        print new_line
+        print meta
+
+        return str(new_line)
 
 
     def replace_role(self, line):
@@ -152,7 +192,9 @@ class PreProcessor:
             elif line.startswith('a'):
                 line = line[1:].strip()
 
-            i = line.index('I ')
+            # use ' I ' not 'I ', in case of 'UI '
+            i = line.index(' I ')
+            i = i + 1
             role = line[: i].strip()
             if role[len(role) - 1] == ',':
                 role = role[: len(role) - 1]
@@ -166,8 +208,8 @@ class PreProcessor:
 
 
 if __name__ == '__main__':
-    p = PreProcessor(os.getcwd() + "/Data/input_origin/" + "2014-USC-Project01.txt")
-    # p = PreProcessor(os.getcwd() + "/Data/input_origin/" + "test.txt")
+    # p = PreProcessor(os.getcwd() + "/Data/input_origin/" + "2014-USC-Project01.txt")
+    p = PreProcessor(os.getcwd() + "/Data/input_origin/" + "test.txt")
     p.pre_process()
 
 

@@ -44,6 +44,30 @@ def TypeDep1(data):
 
     return result1
 
+
+def pure_enhancedTD(data):
+    tdjson = data['sentences'][0]['enhancedDependencies']
+
+    result1 = {}
+    # result2 = {}
+
+    for dep in tdjson:
+        for key in dep:
+            if key == 'dep':
+                result1[dep.get(key)] = []
+
+    for dep in tdjson:
+        case = dep.get('dep')
+        gover = dep.get('governor')
+        depe = dep.get('dependent')
+        tup = (gover, depe)
+
+        result1[case].append(tup)  # TD type as key; e.g. 'det': [(3,2), (5,4)]
+        # result2[tup] = case  # Index tuple as key; e.g. (3,2): 'det'
+
+    return result1
+
+
 def enhancedTD(data):
     tdjson = data['sentences'][0]['enhancedDependencies']
 

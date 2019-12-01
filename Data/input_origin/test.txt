@@ -1,6 +1,6 @@
-As a house manager, I should be able to add/delete 'others'.
 As an administrator or house manager, I should be able to view and filter logs of locks access.
-As an administrator or house manager, I should be able to see lock battery status, lock names and lock codes.
+As a house manager, I should be able to add/delete 'others'.
+As an administrator or house manager, I should be able to see lock battery battery status, lock names and lock codes.
 The system sends the user an email.
 The system informs the user that the battery is full
 The system validates that the password is correct

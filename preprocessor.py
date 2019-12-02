@@ -23,18 +23,14 @@ class PreProcessor:
 
         line = self.file.readline().strip()
         while line:
-            print line
+            print "Original sentence: ", line
             meta = []
-            print "combie nouns"
             line = self.combine_nouns(line, meta)
-            print "combie nmod"
-            line = self.combine_nmod(line, meta)
-            print "replace role"
             line = self.replace_role(line)
             output.write(line + "\n")
             metadata.write(meta.__str__() + "\n")
 
-            print "meta: ", meta
+            print "Meta data: ", meta
             print " "
 
             line = self.file.readline().strip()
@@ -53,21 +49,124 @@ class PreProcessor:
         if nlp_output is None:
             print line, ": NLP API returns None. skip!"
             return ''
-        print nlp_output
-
-        pt = parsePosTag(nlp_output)
-        print pt
-        td_key = pure_enhancedTD(nlp_output)
-        print td_key
+        # print nlp_output
 
         line_index = []
         for i in range(0, len(nlp_output['sentences'][0]['tokens']) + 1):
             line_index.append(i)
-        print line_index
+        print "According index:", line_index
 
+        pt = parsePosTag(nlp_output)
+        print "POS Tags: ", pt
+        td_key = pure_enhancedTD(nlp_output)
+        print "Type Dependencies: ", td_key
+
+        # Ziyu: the progress of combining nouns(NN), adjectives(JJ) and 'nmod:of' is similar to a typical leetcode
+        # problem: Merge Intervals. First, we use index to represent each word in sentence, then in the following
+        # functions, we detect if there are consecutive nouns and 'nmod:of' we need to combine, and record the starting
+        # index and end index of every consecutive interval. Those intervals can be overlapped or not, or even exactly
+        # the same, or their start index equals to end index, which does not matter. Function 'merge_intervals' will
+        # handle the above cases and output non-overlapped intervals.
+        #
+        # Note: if you want to combine other words, please add them as a list of intervals so that the function
+        # 'merge_intervals' can process it.
+        intervals = []
+        intervals.extend(self.combine_JJs_NNs(line_index, pt))
+        intervals.extend(self.combine_nmod(td_key))
+        intervals = self.merge_intervals(intervals)
+
+        map = {}
+        for pair in intervals:
+            map[pair[0]] = pair[1]
+
+        tokens = nlp_output['sentences'][0]['tokens']
+        new_line = ''
+        i = 1
+
+        # construct combined sentence
+        while i < len(line_index):
+            cand = tokens[i - 1]['word']
+
+            if i in map:
+                cand = cand.capitalize()
+                j = map[i]
+                i = i + 1
+                while i <= j:
+                    cand += tokens[i - 1]['word'].capitalize()
+                    i = i + 1
+
+                i = i - 1
+
+            if cand == ',' or cand == '.':
+                new_line = new_line.strip()
+            new_line += cand
+            if cand != '`':
+                new_line += ' '
+
+            i = i + 1
+
+        new_line = new_line.strip()
+
+        # construct meta data
+        for pair in intervals:
+            sub = []
+            i = pair[0]
+            while i <= pair[1]:
+                sub.append(tokens[i - 1]['word'])
+                i = i + 1
+
+            meta.append(sub)
+
+        print "Combined sentence: ", new_line
+
+        return str(new_line)
+
+
+    # Take a list of intervals and return a list of non-overlapped intervals
+    def merge_intervals(self, intervals):
+        if len(intervals) <= 1:
+            print "skip merging intervals."
+            return intervals
+
+        intervals.sort(key=lambda tup: (tup[0], tup[1]))
+        print "sorted intervals: ", intervals
+
+        list = []
+        curr = intervals[0]
+        i = 1
+        while i < len(intervals):
+            next = intervals[i]
+            if curr[1] >= next[0]:
+                tail = max(curr[1], next[1])
+                curr = (curr[0], tail)
+            else:
+                list.append(curr)
+                curr = next
+            i = i + 1
+
+        list.append(curr)
+
+        print "merged intervals: ", list
+
+        return list
+
+
+    # Return a list of index intervals that we should combine
+    def combine_nmod(self, td_key):
+        list = []
+        if 'nmod:of' in td_key:
+            for pair in td_key['nmod:of']:
+                p1 = min(pair[0], pair[1])
+                p2 = max(pair[0], pair[1])
+                list.append((p1, p2))
+
+        return list
+
+
+    # Return a list of index intervals that we should combine
+    def combine_JJs_NNs(self, line_index, pt):
         # Add all NN or NNP or NNS or NNPS to a set
         nouns = set()
-
         if 'NN' in pt:
             for pair in pt['NN']:
                 nouns.add(pair[0])
@@ -81,106 +180,52 @@ class PreProcessor:
             for pair in pt['NNPS']:
                 nouns.add(pair[0])
 
-        tokens = nlp_output['sentences'][0]['tokens']
-        new_line = ''
+        # Add all JJ to a set
+        adjs = set()
+        if 'JJ' in pt:
+            for pair in pt['JJ']:
+                adjs.add(pair[0])
+
+        list = []
         i = 1
-
         while i < len(line_index):
-            cand = tokens[i - 1]['word']
-
-            if i in nouns:
-                combined_noun_sub = []
-                combined_noun_sub.append(cand)
+            if i in adjs:
+                flag = False
                 j = i + 1
-                while j in nouns:
-                    if j == i + 1:
-                        cand = cand.capitalize()
-                    cand += tokens[j - 1]['word'].capitalize()
-                    combined_noun_sub.append(tokens[j - 1]['word'])
+                # if only consecutive JJs, we should not combine them, so we should judge if there is at least one NN
+                # after JJs
+                while j < len(line_index) and (j in adjs or j in nouns):
+                    if j in nouns:
+                        flag = True
+                        break
+                    j = j + 1
+
+                # if flag is True, it means that the pattern is JJ + JJ + JJ + .... + NN, and it is likely that there
+                # are other consecutive NN after the first NN, e.g. JJ JJ NN, JJ JJ NN NN. We only store the interval
+                # (index of the first JJ, index of the first NN), e.g. JJ1 JJ2 NN1 NN2 -> (JJ1, NN1), not (JJ1, NN2),
+                # and the final output of this function will be (JJ1, NN1) + (NN1, NN2).
+                if flag:
+                    list.append((i, j))
+
+                i = j
+
+            elif i in nouns:
+                # we only store consecutive NNs
+                # Note: we do not care the case where a JJ is between two consecutive NNs, e.g. NN JJ NN.
+                j = i + 1
+                while j < len(line_index) and j in nouns:
                     j = j + 1
 
                 if j > i + 1:
-                    i = j - 1
-                if len(combined_noun_sub) > 1:
-                    meta.append(combined_noun_sub)
+                    list.append((i, j - 1))
 
-            if cand == ',' or cand == '.':
-                new_line = new_line.strip()
-            new_line += cand
-            if cand != '`':
-                new_line += ' '
-            i = i + 1
+                i = j
 
-        new_line = new_line.strip()
-
-        # print line
-        print new_line
-        print meta
-
-        return str(new_line)
-
-
-
-    def combine_nmod(self, line, meta):
-        nlp_output = analyze(line)
-        if nlp_output is None:
-            print line, ": NLP API returns None. skip!"
-            return ''
-        print nlp_output
-
-        td_key = pure_enhancedTD(nlp_output)
-        print td_key
-
-        if 'nmod:of' not in td_key:
-            return line
-
-        map = {}
-        for p in td_key['nmod:of']:
-            p1 = min(p[0], p[1])
-            p2 = max(p[0], p[1])
-            map[p1] = p2
-
-
-        line_index = []
-        for i in range(0, len(nlp_output['sentences'][0]['tokens']) + 1):
-            line_index.append(i)
-
-        print line
-        print line_index
-        print "map: ", map
-
-        tokens = nlp_output['sentences'][0]['tokens']
-        new_line = ''
-        i = 1
-
-        while i < len(line_index):
-            cand = tokens[i - 1]['word']
-
-            if i in map:
-                combined_noun_sub = []
-                combined_noun_sub.append(cand)
-                cand = cand.capitalize()
-                j = map[i]
+            else:
                 i = i + 1
-                while i <= j:
-                    cand += tokens[i - 1]['word'].capitalize()
-                    combined_noun_sub.append(tokens[i - 1]['word'])
-                    i = i + 1
 
-                meta.append(combined_noun_sub)
-                i = i - 1
-
-            if cand == ',' or cand == '.':
-                new_line = new_line.strip()
-            new_line += cand
-            if cand != '`':
-                new_line += ' '
-            i = i + 1
-
-        print new_line
-        print meta
-
-        return str(new_line)
+        print "JJ + NN: ", list
+        return list
 
 
     def replace_role(self, line):
@@ -192,24 +237,45 @@ class PreProcessor:
             elif line.startswith('a'):
                 line = line[1:].strip()
 
-            # use ' I ' not 'I ', in case of 'UI '
-            i = line.index(' I ')
-            i = i + 1
+            case = ''
+            i = 0
+            if ' I ' in line:
+                case = 'I'
+                # use ' I ' not 'I ', in case of 'UI '
+                i = line.index(' I ')
+                i = i + 1
+            elif ' my ' in line:
+                case = 'my'
+                i = line.index(' my ')
+                i = i + 1
+            elif ',I ' in line:
+                case = 'I'
+                i = line.index(',I ')
+                i = i + 1
+            else:
+                raise Exception('Cannot find subject in this sentence: ' + line)
+
             role = line[: i].strip()
             if role[len(role) - 1] == ',':
                 role = role[: len(role) - 1]
             role = role[0].upper() + role[1:]
-            line = role + line[i + 1:]
 
-        print line
+            if case == 'I':
+                line = role + line[i + 1:]
+            elif case == 'my':
+                line = role + "'s" + line[i + 2:]
+            else:
+                raise Exception('Cannot find the case of subject in this sentence: ' + line)
+
+
+        print "Replaced sentence: ", line
+
         return line
 
 
-
-
 if __name__ == '__main__':
-    # p = PreProcessor(os.getcwd() + "/Data/input_origin/" + "2014-USC-Project01.txt")
-    p = PreProcessor(os.getcwd() + "/Data/input_origin/" + "test.txt")
+    p = PreProcessor(os.getcwd() + "/Data/input_origin/" + "2014-USC-Project02.txt")
+    # p = PreProcessor(os.getcwd() + "/Data/input_origin/" + "test.txt")
     p.pre_process()
 
 

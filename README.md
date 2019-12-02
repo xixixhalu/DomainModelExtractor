@@ -11,6 +11,11 @@ Extract Domain information from User Stories
 
 # Quick Start
 
+## Environment
+
+- Ubuntu 14.04 64bit / MacOS
+- Python 2.7
+
 ## Setup
 
 - Clone this project to your local

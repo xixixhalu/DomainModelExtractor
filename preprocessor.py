@@ -20,15 +20,22 @@ class PreProcessor:
         # overwrite previous output file
         output = open(os.getcwd() + "/input/" + os.path.basename(self.file.name), "w")
         metadata = open(os.getcwd() + "/input/" + "meta_" + os.path.basename(self.file.name), "w")
+        actors = open(os.getcwd() + "/input/" + "actor_" + os.path.basename(self.file.name), "w")
 
         line = self.file.readline().strip()
         while line:
             print "Original sentence: ", line
             meta = []
-            line = self.combine_nouns(line, meta)
-            line = self.replace_role(line)
+
+            # maps combined noun to the original nouns
+            actor_map = {}
+            act = []
+
+            line = self.combine_nouns(line, meta, actor_map)
+            line = self.replace_role(line, actor_map, act)
             output.write(line + "\n")
             metadata.write(meta.__str__() + "\n")
+            actors.write(act.__str__() + "\n")
 
             print "Meta data: ", meta
             print " "
@@ -44,7 +51,7 @@ class PreProcessor:
     #
     # Note: this function use a straight forward method to combine consecutive nouns: combining consecutive NN or NNP or
     # NNS or NNPS.
-    def combine_nouns(self, line, meta):
+    def combine_nouns(self, line, meta, actor):
         nlp_output = analyze(line)
         if nlp_output is None:
             print line, ": NLP API returns None. skip!"
@@ -109,15 +116,19 @@ class PreProcessor:
 
         # construct meta data
         for pair in intervals:
+            combined = ''
             sub = []
             i = pair[0]
             while i <= pair[1]:
                 sub.append(tokens[i - 1]['word'])
+                combined += tokens[i - 1]['word'].capitalize()
                 i = i + 1
 
+            actor[combined] = sub
             meta.append(sub)
 
         print "Combined sentence: ", new_line
+        print "Combined nouns mapping: ", actor
 
         return str(new_line)
 
@@ -216,8 +227,8 @@ class PreProcessor:
                 while j < len(line_index) and j in nouns:
                     j = j + 1
 
-                if j > i + 1:
-                    list.append((i, j - 1))
+                # if j > i + 1:
+                list.append((i, j - 1))
 
                 i = j
 
@@ -228,7 +239,7 @@ class PreProcessor:
         return list
 
 
-    def replace_role(self, line):
+    def replace_role(self, line, actor_map, act):
         # print line
         if line.startswith("As") or line.startswith('as'):
             line = line[2:].strip()
@@ -260,6 +271,8 @@ class PreProcessor:
                 role = role[: len(role) - 1]
             role = role[0].upper() + role[1:]
 
+            self.extract_actors(role, actor_map, act)
+
             if case == 'I':
                 line = role + line[i + 1:]
             elif case == 'my':
@@ -271,6 +284,49 @@ class PreProcessor:
         print "Replaced sentence: ", line
 
         return line
+
+
+    def extract_actors(self, line, actor_map, act):
+        print "Roles sentence: ", line
+        nlp_output = analyze(line)
+        if nlp_output is None:
+            print line, ": NLP API returns None. skip!"
+            return ''
+
+        # print nlp_output
+        pt = parsePosTag(nlp_output)
+        print "Roles Pos Tags: ", pt
+
+        # get all nouns
+        nouns = set()
+        if 'NN' in pt:
+            for pair in pt['NN']:
+                nouns.add(pair[0])
+        if 'NNS' in pt:
+            for pair in pt['NNS']:
+                nouns.add(pair[0])
+        if 'NNP' in pt:
+            for pair in pt['NNP']:
+                nouns.add(pair[0])
+        if 'NNPS' in pt:
+            for pair in pt['NNPS']:
+                nouns.add(pair[0])
+
+        # print "Unsorted nouns index in role: ", nouns
+        sorted(nouns)
+        print "Sorted nouns index in role: ", nouns
+
+        tokens = nlp_output['sentences'][0]['tokens']
+        for actor in nouns:
+            actor = tokens[actor - 1]['word']
+            if actor in actor_map:
+                act.append(actor_map[actor])
+            else:
+                act.append(actor)
+
+        print "Actors: ", act
+
+
 
 
 if __name__ == '__main__':

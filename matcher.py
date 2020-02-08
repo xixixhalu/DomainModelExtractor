@@ -4,6 +4,8 @@ from adapter import *
 from Parser.PosTagParser import *
 from Parser.TDParser import *
 from identifier import Identifier
+import pandas as pd
+import re
 
 
 # create a class Matcher here and store identifier and input in it
@@ -39,89 +41,80 @@ class Matcher:
 
 
     # Note: this parser assumes that input is written correctly and completely
-    def parse_rule(self, file_obj):
-        rule_name = ""
+    def parse_rule(self, file_obj, rule):
+        rule = 'SSR' + str(rule)
+        rule_name = ''
         rule_TD_list = []
         rule_POS_dict = {}
         rule_keywords = []
 
-        line = file_obj.readline().strip()
+        try:
+            line = file_obj.loc[rule]
+        except:
+            print('No such a RULE! Please try another RULE!')
+            rule = input('No such a RULE! Please try another RULE!\nEnter:')
+            self.parse_rule(rule_obj, int(rule))
+
         # read name
-        if line == "#":
-            print "SSR name is empty"
-        else:
-            rule_name = line
+        rule_name = line.loc['Sentence Structure']
 
         # read TD rules
-        file_obj.readline()
-        line = file_obj.readline().strip()
-        if line == "#":
-            print "TD rule is empty"
-            file_obj.readline()
+        TDs = line.loc['TDs']
+        if str(TDs) == 'nan':
+            print("TD rule is empty")
         else:
-            while line != "\n":
-                line = line.strip()
-                # since format of TD rule is "rule_name(var1,var2)"
-                idx = line.find("(")
-                td_name = line[0:idx]
-                idx2 = line.find(",")
-                var1 = line[idx + 1:idx2].strip()
-                idx = line.find(")")
-                var2 = line[idx2 + 1:idx].strip()
+            TDs_sep = re.split('[(,)]', TDs)
+            TDs_sep = [TD for TD in TDs_sep if TD != '']
+            # since format of TD rule is "rule_name(var1,var2)"
+            length = len(TDs_sep)
+            for i in range(0, length, 3):
+                td_name = TDs_sep[i]
+                var1 = TDs_sep[i + 1]
+                var2 = TDs_sep[i + 2]
                 tup = (td_name, var1, var2)
                 rule_TD_list.append(tup)
 
-                line = file_obj.readline()
-
         # read POS rule
-        line = file_obj.readline().strip()
-        if line == "#":
-            print "POS-tag rule is empty"
-            file_obj.readline()
+        POS_tags = line.loc['POS-tags']
+        if str(POS_tags) == 'nan':
+            print("POS-tag rule is empty")
         else:
-            while line != "\n":
-                line = line.strip()
-                pos_list = line.split("=")
-                pos_var = pos_list[0].strip()
-                pos_type = pos_list[1].strip()
-                rule_POS_dict[pos_var] = pos_type
+            pos_list = POS_tags.split("==")
+            pos_var = pos_list[0].strip()
+            pos_type = pos_list[1].strip()
+            rule_POS_dict[pos_var] = pos_type
 
-                line = file_obj.readline()
-
-        # read keywords
-        line = file_obj.readline().strip()
-        if line == "#":
-            print "Keyword is empty"
+        # read start word
+        startword = line.loc['start word']
+        if str(startword) == 'nan':
+            print("Start word is empty")
         else:
-            while line and line != "\n":
-                line = line.strip()
-                rule_keywords.append(line)
-                line = file_obj.readline()
+            rule_keywords.append(startword)
 
-        print "\n======== parsed rule ========"
-        print "rule name: ", rule_name
-        print "TD list: ", rule_TD_list
-        print "POS-tag list: ", rule_POS_dict
-        print "Keywords: ", rule_keywords
+        print("\n======== parsed rule ========")
+        print("rule name: ", rule_name)
+        print("TD list: ", rule_TD_list)
+        print("POS-tag list: ", rule_POS_dict)
+        print("Keywords: ", rule_keywords)
 
         return rule_name, rule_TD_list, rule_POS_dict, rule_keywords
 
 
     def query(self, tr_names, tds, pos_tags, keywords):
-        print "\n======== process sentences ========"
+        print("\n======== process sentences ========")
         res = []
         line = self.sentences_file.readline().strip()
         while line:
             nlp_output = analyze(line)
             if nlp_output is None:
-                print line, ": NLP API returns None. skip!"
+                print(line, ": NLP API returns None. skip!")
                 line = input.readline.strip()
                 continue
-            print line
+            print(line)
             td_res = self.match_tds(tds, nlp_output)
             if td_res[0] and self.match_pos(td_res[1], pos_tags, nlp_output) and self.match_keywords(line, keywords):
                 res.append(self.MatchedSentence(line, self.build_tokens(nlp_output), td_res[1]))
-            print " "
+            print(" ")
             line = self.sentences_file.readline().strip()
 
         return res
@@ -171,7 +164,7 @@ class Matcher:
 
     def match_tds(self, rule_tds, nlp_output):
         td_key = enhancedTD(nlp_output)
-        print td_key
+        print(td_key)
         # check number of TDs
         td_count = {}
         for tup in rule_tds:
@@ -237,10 +230,10 @@ if __name__ == '__main__':
     # create a Matcher object which is initialized with Identifier and input file path
     ssr = Matcher(Identifier(), os.getcwd() + "/Data/input_origin/" + "test.txt")
     # read rule
-    rule_path = ssr.dir_path("/SSR/")
-    rule_obj = ssr.read_one_file(rule_path, "SSR30.txt")
-    rule_result = ssr.parse_rule(rule_obj)
-    rule_obj.close()
+    rule_path = ssr.dir_path("\\SSR\\")
+    rule_obj = pd.read_csv(rule_path + "SSR.csv")
+    rule_obj.set_index(["Rule"], inplace=True)
+    rule_result = ssr.parse_rule(rule_obj, 30)
     # split rule result
     rule_name = rule_result[0]
     rule_TD_list = rule_result[1]
@@ -248,7 +241,6 @@ if __name__ == '__main__':
     rule_keywords = rule_result[3]
 
     res = ssr.query(rule_name, rule_TD_list, rule_POS_dict, rule_keywords)
-    print "======== matched sentences ========"
+    print("======== matched sentences ========")
     for r in res:
-        print r
-
+        print(r)

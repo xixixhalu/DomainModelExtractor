@@ -13,9 +13,7 @@ from Parser.TDParser import *
 
 from util.file_op import fileOps
 
-filter_type = set(["[u'compound-1']", \
-                    "[u'compound-1', u'compound']"
-                ])
+filter_type = set(["[u'compound-1']", "[u'compound-1', u'compound']"])
 
 class Identifier:
     def __init__(self):
@@ -35,7 +33,7 @@ class Identifier:
     def display(self, title, content):
         # print '[' + title + ']'
         if title == 'Sentence':
-            print content
+            print(content)
             index = ''
             begin, end = 0, 0
             for elem in self.__output['sentences'][0]['tokens']:
@@ -46,11 +44,11 @@ class Identifier:
                     continue;
                 index += str(elem['index'])
                 begin = end
-            print index
+            print(index)
         elif type(content) is dict:
-            print self.__printer.pprint(content)
+            print(self.__printer.pprint(content))
         else:
-	        print content
+	        print(content)
 
     def __traceBack(self, entity1, entity2):
         #TODO: Figure out the relationship between entity1 and entity2 in terms of TDs

@@ -18,13 +18,17 @@ class PreProcessor:
 
     def pre_process(self):
         # overwrite previous output file
-        output = open(os.getcwd() + "/input/" + os.path.basename(self.file.name), "w")
-        metadata = open(os.getcwd() + "/input/" + "meta_" + os.path.basename(self.file.name), "w")
-        actors = open(os.getcwd() + "/input/" + "actor_" + os.path.basename(self.file.name), "w")
+        dirs = os.getcwd() + "/input/"
+        if not os.path.exists(dirs):
+            os.makedirs(dirs)
+
+        output = open(dirs + os.path.basename(self.file.name), "w")
+        metadata = open(dirs + "meta_" + os.path.basename(self.file.name), "w")
+        actors = open(dirs + "actor_" + os.path.basename(self.file.name), "w")
 
         line = self.file.readline().strip()
         while line:
-            print "Original sentence: ", line
+            print("Original sentence: ", line)
             meta = []
 
             # maps combined noun to the original nouns
@@ -37,8 +41,8 @@ class PreProcessor:
             metadata.write(meta.__str__() + "\n")
             actors.write(act.__str__() + "\n")
 
-            print "Meta data: ", meta
-            print " "
+            print("Meta data: ", meta)
+            print(" ")
 
             line = self.file.readline().strip()
 
@@ -54,19 +58,19 @@ class PreProcessor:
     def combine_nouns(self, line, meta, actor):
         nlp_output = analyze(line)
         if nlp_output is None:
-            print line, ": NLP API returns None. skip!"
+            print(line, ": NLP API returns None. skip!")
             return ''
         # print nlp_output
 
         line_index = []
         for i in range(0, len(nlp_output['sentences'][0]['tokens']) + 1):
             line_index.append(i)
-        print "According index:", line_index
+        print("According index:", line_index)
 
         pt = parsePosTag(nlp_output)
-        print "POS Tags: ", pt
+        print("POS Tags: ", pt)
         td_key = pure_enhancedTD(nlp_output)
-        print "Type Dependencies: ", td_key
+        print("Type Dependencies: ", td_key)
 
         # Ziyu: the progress of combining nouns(NN), adjectives(JJ) and 'nmod:of' is similar to a typical leetcode
         # problem: Merge Intervals. First, we use index to represent each word in sentence, then in the following
@@ -127,8 +131,8 @@ class PreProcessor:
             actor[combined] = sub
             meta.append(sub)
 
-        print "Combined sentence: ", new_line
-        print "Combined nouns mapping: ", actor
+        print("Combined sentence: ", new_line)
+        print("Combined nouns mapping: ", actor)
 
         return str(new_line)
 
@@ -136,11 +140,11 @@ class PreProcessor:
     # Take a list of intervals and return a list of non-overlapped intervals
     def merge_intervals(self, intervals):
         if len(intervals) <= 1:
-            print "skip merging intervals."
+            print("skip merging intervals.")
             return intervals
 
         intervals.sort(key=lambda tup: (tup[0], tup[1]))
-        print "sorted intervals: ", intervals
+        print("sorted intervals: ", intervals)
 
         list = []
         curr = intervals[0]
@@ -157,7 +161,7 @@ class PreProcessor:
 
         list.append(curr)
 
-        print "merged intervals: ", list
+        print("merged intervals: ", list)
 
         return list
 
@@ -235,7 +239,7 @@ class PreProcessor:
             else:
                 i = i + 1
 
-        print "JJ + NN: ", list
+        print("JJ + NN: ", list)
         return list
 
 
@@ -281,21 +285,21 @@ class PreProcessor:
                 raise Exception('Cannot find the case of subject in this sentence: ' + line)
 
 
-        print "Replaced sentence: ", line
+        print("Replaced sentence: ", line)
 
         return line
 
 
     def extract_actors(self, line, actor_map, act):
-        print "Roles sentence: ", line
+        print("Roles sentence: ", line)
         nlp_output = analyze(line)
         if nlp_output is None:
-            print line, ": NLP API returns None. skip!"
+            print(line, ": NLP API returns None. skip!")
             return ''
 
         # print nlp_output
         pt = parsePosTag(nlp_output)
-        print "Roles Pos Tags: ", pt
+        print("Roles Pos Tags: ", pt)
 
         # get all nouns
         nouns = set()
@@ -314,7 +318,7 @@ class PreProcessor:
 
         # print "Unsorted nouns index in role: ", nouns
         sorted(nouns)
-        print "Sorted nouns index in role: ", nouns
+        print("Sorted nouns index in role: ", nouns)
 
         tokens = nlp_output['sentences'][0]['tokens']
         for actor in nouns:
@@ -324,7 +328,7 @@ class PreProcessor:
             else:
                 act.append(actor)
 
-        print "Actors: ", act
+        print("Actors: ", act)
 
 
 

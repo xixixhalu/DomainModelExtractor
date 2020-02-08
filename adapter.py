@@ -27,7 +27,7 @@ class StanfordCoreNLP:
         try:
             data = text.encode()
         except:
-            print text
+            print(text)
             return None
 
         r = requests.post(

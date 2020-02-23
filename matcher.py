@@ -1,5 +1,4 @@
 import os
-
 from adapter import *
 from Parser.PosTagParser import *
 from Parser.TDParser import *
@@ -103,8 +102,12 @@ class Matcher:
     def query(self, tr_names, tds, pos_tags, keywords):
         print("\n======== process sentences ========")
         res = []
+        res_line = []
+        index = 0
+
         line = self.sentences_file.readline().strip()
         while line:
+            index += 1
             nlp_output = analyze(line)
             if nlp_output is None:
                 print(line, ": NLP API returns None. skip!")
@@ -114,10 +117,11 @@ class Matcher:
             td_res = self.match_tds(tds, nlp_output)
             if td_res[0] and self.match_pos(td_res[1], pos_tags, nlp_output) and self.match_keywords(line, keywords):
                 res.append(self.MatchedSentence(line, self.build_tokens(nlp_output), td_res[1]))
+                res_line.append(index)
             print(" ")
             line = self.sentences_file.readline().strip()
 
-        return res
+        return res, res_line
 
 
     def build_tokens(self, nlp_output):
@@ -228,19 +232,58 @@ class Matcher:
 
 if __name__ == '__main__':
     # create a Matcher object which is initialized with Identifier and input file path
-    ssr = Matcher(Identifier(), os.getcwd() + "/Data/input_origin/" + "test.txt")
-    # read rule
-    rule_path = ssr.dir_path("\\SSR\\")
-    rule_obj = pd.read_csv(rule_path + "SSR.csv")
-    rule_obj.set_index(["Rule"], inplace=True)
-    rule_result = ssr.parse_rule(rule_obj, 30)
-    # split rule result
-    rule_name = rule_result[0]
-    rule_TD_list = rule_result[1]
-    rule_POS_dict = rule_result[2]
-    rule_keywords = rule_result[3]
 
-    res = ssr.query(rule_name, rule_TD_list, rule_POS_dict, rule_keywords)
-    print("======== matched sentences ========")
-    for r in res:
-        print(r)
+    rule_list = []
+    for i in range(1, 35):
+        rule_list.append('SSR' + str(i))
+    result = pd.DataFrame(columns=rule_list)
+    result_senten = pd.DataFrame(columns=rule_list)
+
+    # read rule
+    rule_obj = pd.read_csv(os.getcwd() + "/SSR/" + "SSR.csv")
+    rule_obj.set_index(["Rule"], inplace=True)
+
+    for year in range(2014, 2020):
+        for project in range(1, 16):
+            # file_name = 'test'
+            file_name = str(year) + '-USC-Project'+ str(project).rjust(2,'0')
+            file_path = os.getcwd() + "/Data/input_origin/" + file_name + '.txt'
+            if not os.path.exists(file_path):
+                file_name = str(year) + '-USC-Project' + str(project)
+                file_path = os.getcwd() + "/Data/input_origin/" + file_name + '.txt'
+                if not os.path.exists(file_path):
+                    break
+
+            result = result.append(pd.Series([0] * 34 , index=result.columns, name=file_name))
+            result_senten = result_senten.append(pd.Series([0] * 34 , index=result_senten.columns, name=file_name))
+            parse_senten = []
+
+            for i in range(1, 34):
+                ssr = Matcher(Identifier(), file_path)
+                rule_path = ssr.dir_path("\\SSR\\")
+                rule_result = ssr.parse_rule(rule_obj, i)
+                # split rule result
+                rule_name = rule_result[0]
+                rule_TD_list = rule_result[1]
+                rule_POS_dict = rule_result[2]
+                rule_keywords = rule_result[3]
+
+                (res, res_line) = ssr.query(rule_name, rule_TD_list, rule_POS_dict, rule_keywords)
+                print("======== matched sentences ========")
+                for r in res:
+                    print(r)
+
+                result.iloc[-1, i - 1] = len(res)
+                result_senten.iloc[-1, i - 1] = res_line
+                parse_senten.extend(res_line)
+
+            with open(file_path) as lines:
+                count = len(lines.readlines())
+            distin_senten = set(parse_senten)
+            result.iloc[-1, - 1] = count - len(distin_senten)
+            result_senten.iloc[-1, - 1] = set(list(range(1, count + 1))) - distin_senten
+
+    writer = pd.ExcelWriter(os.getcwd() + "/Data/output_origin/" + 'result.xlsx')
+    result.to_excel(writer, sheet_name='count')
+    result_senten.to_excel(writer, sheet_name='detail')
+    writer.save()

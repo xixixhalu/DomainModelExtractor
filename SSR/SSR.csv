@@ -28,8 +28,8 @@ SSR26,SVPO,"nsubj(A,B), prep(A,C), pobj(C,D)",,
 SSR27,SVDO,"nsubj(A,B), dobj(A,C)",,
 SSR28,Conditional,"mark(A,B)",,
 SSR29,SV,"nsubj(A,B)",,
-SSR30,,,,Include
-SSR31,,,,Extend
-SSR32,,,,Resume
-SSR33,,,,Repeat
+SSR30,INCLUDE,,,Include
+SSR31,EXTEND,,,Extend
+SSR32,RESUME,,,Resume
+SSR33,REPEAT,,,Repeat
 SSR34,,,,

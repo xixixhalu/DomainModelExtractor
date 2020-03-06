@@ -1,35 +1,35 @@
-﻿Rule,Sentence Structure,TDs,POS-tags,start word,sentence example
-SSR1,SVIODO,"nsubj(A,B), iobj(A,C), dobj(A,D)",,,The system sends the user an email.
-SSR2,SVDOThatClause,"nsubj(A,B), dobj(A,C), complm(D,E), nsubj(D,F)",,,The system informs the user that the battery is full
-SSR3,SVThatClause,"nsubj(A,B), complm(C,D), nsubj(C,E)",,,The system validates that the password is correct
-SSR4,SVDONotToInf,"nsubj(A,B), dobj(A,C), neg(D,E), aux(D,F), infmod(C,D)",,,The system warns the user not to restart the system.
-SSR5,SVNotToInf,"nsubj(A,B), neg(C,D), aux(C,E), xcomp(A,C), dobj(C,F)",,,The customer selects not to ﬁll the tank
-SSR6,SVDOtobeComp,"nsubj(A,B), nsubj(C,D), aux(C,E), cop(C,F), xcomp(A,C)",,,The system marks the errors to be red.
-SSR7,SVDOToInf,"nsubj(A,B), dobj(A,C), aux(D,E), infmod(C,D)",,,The system commands the motor to start.
-SSR8,SVDOPresentPart,"nsubj(A,B), dobj(A,C), partmod(C,D)",D==VBG,,The system keeps the user waiting.
-SSR9,SVDOPastPart,"nsubj(A,B), dobj(A,C), partmod(C,D)",D==VBN,,The system validates the record entered by the customer.
-SSR10,SVDOAdj,"nsubj(A,B), nsubj(C,D), xcomp(A,C)",C==JJ,,The system keeps the door open
-SSR11,SVDONoun,"nsubj(A,B), nsubj(C,D), xcomp(A,C)",C==NN,,The system makes the user an administrator.
-SSR12,SVDOConjToInf,"nsubj(A,B), dobj(C,D), acvmod(D,E),aux(D,F), xcomp(A,D)",,,The system tells the user where to go.
-SSR13,SVDOConjClause,"nsubj(A,B), dobj(A,C), vmod(D,E), nsubj(D,F)",,,The system stops the motor when the tank is full
-SSR14,SVDOAdverbial,"nsubj(A,B), dobj(A,C), vmod(A,D)",,,The server responds the query quickly
-SSR15,SAuxVDO,"nsubj(A,B), aux(A,C), dobj(A,D)",,,The system will eject the ATM card.
-SSR16,SVDOPO,"nsubj(A,B), dobj(A,C), prep(A,D), pobj(D,E)",,,The system sends the message to the customer.
-SSR17,SVConjToInf,"nsubj(C,E), advcl(A,C), aux(C,E), xcomp(A,C)",,,The system guides where to go.
-SSR18,SVConjClause,"nsubj(A,B), advmod(C,D), nsubj(C,E), advcl(A,C)",,,The motor stops when the tank is full.
-SSR19,SVToInf,"nsubj(A,B), aux(C,D), xcomp(A,C)",,,The system starts to ﬁll the tank.
-SSR20,SVGerund,"nsubj(A,B), xcomp(A,C)",,,The printer starts printing the document
-SSR21,SVAdverbialAdjunct,"nsubj(A,B), advmod(A,C)",,,The elevator moves up or down.
-SSR22,SVPredicative,"nsubj(A,B), cop(A,C)",,,The customer is employee.
-SSR23,SVForComp,"nsubj(A,B), prep(A,C), num(D,E), pobj(C,D)",,,The system waits for 5 seconds.
-SSR24,SVPassPO,"nsubjpass(A,B), auxpass(A,C), prep(A,D), pobj(D,E)",,,The ATM card is ejected by the system.
-SSR25,SAuxVPassPO,"nsubjpass(A,B), aux(A,C), auxpass(A,D), prep(A,E), pobj(E,F)",,,The ATM card will be ejected by the system.
-SSR26,SVPO,"nsubj(A,B), prep(A,C), pobj(C,D)",,,The system prompts for password.
-SSR27,SVDO,"nsubj(A,B), dobj(A,C)",,,ATM customer enters the withdrawal amount.
-SSR28,Conditional,"mark(A,B)",,,If the ATM card is valid.
-SSR29,SV,"nsubj(A,B)",,,The system restarts
-SSR30,INCLUDE,,,Include,Include UCS Validate PIN
-SSR31,EXTEND,,,Extend,Extend Handle Card Jam
-SSR32,RESUME,,,Resume,Resume M2.
-SSR33,REPEAT,,,Repeat,Repeat M4-M8.
-SSR34,,,,,
+﻿Rule,Sentence Structure,TDs,POS-tags,start word
+SSR1,SVIODO,"nsubj(A,B), iobj(A,C), dobj(A,D)",,
+SSR2,SVDOThatClause,"nsubj(A,B), dobj(A,C), complm(D,E), nsubj(D,F)",,
+SSR3,SVThatClause,"nsubj(A,B), complm(C,D), nsubj(C,E)",,
+SSR4,SVDONotToInf,"nsubj(A,B), dobj(A,C), neg(D,E), aux(D,F), infmod(C,D)",,
+SSR5,SVNotToInf,"nsubj(A,B), neg(C,D), aux(C,E), xcomp(A,C), dobj(C,F)",,
+SSR6,SVDOtobeComp,"nsubj(A,B), nsubj(C,D), aux(C,E), cop(C,F), xcomp(A,C)",,
+SSR7,SVDOToInf,"nsubj(A,B), dobj(A,C), aux(D,E), infmod(C,D)",,
+SSR8,SVDOPresentPart,"nsubj(A,B), dobj(A,C), partmod(C,D)",D==VBG,
+SSR9,SVDOPastPart,"nsubj(A,B), dobj(A,C), partmod(C,D)",D==VBN,
+SSR10,SVDOAdj,"nsubj(A,B), nsubj(C,D), xcomp(A,C)",C==JJ,
+SSR11,SVDONoun,"nsubj(A,B), nsubj(C,D), xcomp(A,C)",C==NN,
+SSR12,SVDOConjToInf,"nsubj(A,B), dobj(C,D), acvmod(D,E),aux(D,F), xcomp(A,D)",,
+SSR13,SVDOConjClause,"nsubj(A,B), dobj(A,C), vmod(D,E), nsubj(D,F)",,
+SSR14,SVDOAdverbial,"nsubj(A,B), dobj(A,C), vmod(A,D)",,
+SSR15,SAuxVDO,"nsubj(A,B), aux(A,C), dobj(A,D)",,
+SSR16,SVDOPO,"nsubj(A,B), dobj(A,C), prep(A,D), pobj(D,E)",,
+SSR17,SVConjToInf,"nsubj(C,E), advcl(A,C), aux(C,E), xcomp(A,C)",,
+SSR18,SVConjClause,"nsubj(A,B), advmod(C,D), nsubj(C,E), advcl(A,C)",,
+SSR19,SVToInf,"nsubj(A,B), aux(C,D), xcomp(A,C)",,
+SSR20,SVGerund,"nsubj(A,B), xcomp(A,C)",,
+SSR21,SVAdverbialAdjunct,"nsubj(A,B), advmod(A,C)",,
+SSR22,SVPredicative,"nsubj(A,B), cop(A,C)",,
+SSR23,SVForComp,"nsubj(A,B), prep(A,C), num(D,E), pobj(C,D)",,
+SSR24,SVPassPO,"nsubjpass(A,B), auxpass(A,C), prep(A,D), pobj(D,E)",,
+SSR25,SAuxVPassPO,"nsubjpass(A,B), aux(A,C), auxpass(A,D), prep(A,E), pobj(E,F)",,
+SSR26,SVPO,"nsubj(A,B), prep(A,C), pobj(C,D)",,
+SSR27,SVDO,"nsubj(A,B), dobj(A,C)",,
+SSR28,Conditional,"mark(A,B)",,
+SSR29,SV,"nsubj(A,B)",,
+SSR30,INCLUDE,,,Include
+SSR31,EXTEND,,,Extend
+SSR32,RESUME,,,Resume
+SSR33,REPEAT,,,Repeat
+SSR34,,,,

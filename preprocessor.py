@@ -28,7 +28,7 @@ class PreProcessor:
 
         line = self.file.readline().strip()
         while line:
-            print("Original sentence: ", line)
+            # print("Original sentence: ", line)
             meta = []
 
             # maps combined noun to the original nouns
@@ -41,10 +41,14 @@ class PreProcessor:
             metadata.write(meta.__str__() + "\n")
             actors.write(act.__str__() + "\n")
 
-            print("Meta data: ", meta)
-            print(" ")
+            # print("Meta data: ", meta)
+            # print(" ")
 
             line = self.file.readline().strip()
+
+        output.close()
+        metadata.close()
+        actors.close()
 
 
     # Ziyu: Due to our version(2018-10-05) of stanford corenlp, the TD result is not comprehensive and parts of
@@ -58,19 +62,19 @@ class PreProcessor:
     def combine_nouns(self, line, meta, actor):
         nlp_output = analyze(line)
         if nlp_output is None:
-            print(line, ": NLP API returns None. skip!")
+            # print(line, ": NLP API returns None. skip!")
             return ''
         # print nlp_output
 
         line_index = []
         for i in range(0, len(nlp_output['sentences'][0]['tokens']) + 1):
             line_index.append(i)
-        print("According index:", line_index)
+        # print("According index:", line_index)
 
         pt = parsePosTag(nlp_output)
-        print("POS Tags: ", pt)
+        # print("POS Tags: ", pt)
         td_key = pure_enhancedTD(nlp_output)
-        print("Type Dependencies: ", td_key)
+        # print("Type Dependencies: ", td_key)
 
         # Ziyu: the progress of combining nouns(NN), adjectives(JJ) and 'nmod:of' is similar to a typical leetcode
         # problem: Merge Intervals. First, we use index to represent each word in sentence, then in the following
@@ -131,8 +135,8 @@ class PreProcessor:
             actor[combined] = sub
             meta.append(sub)
 
-        print("Combined sentence: ", new_line)
-        print("Combined nouns mapping: ", actor)
+        # print("Combined sentence: ", new_line)
+        # print("Combined nouns mapping: ", actor)
 
         return str(new_line)
 
@@ -140,11 +144,11 @@ class PreProcessor:
     # Take a list of intervals and return a list of non-overlapped intervals
     def merge_intervals(self, intervals):
         if len(intervals) <= 1:
-            print("skip merging intervals.")
+            # print("skip merging intervals.")
             return intervals
 
         intervals.sort(key=lambda tup: (tup[0], tup[1]))
-        print("sorted intervals: ", intervals)
+        # print("sorted intervals: ", intervals)
 
         list = []
         curr = intervals[0]
@@ -161,7 +165,7 @@ class PreProcessor:
 
         list.append(curr)
 
-        print("merged intervals: ", list)
+        # print("merged intervals: ", list)
 
         return list
 
@@ -239,7 +243,7 @@ class PreProcessor:
             else:
                 i = i + 1
 
-        print("JJ + NN: ", list)
+        # print("JJ + NN: ", list)
         return list
 
 
@@ -268,7 +272,9 @@ class PreProcessor:
                 i = line.index(',I ')
                 i = i + 1
             else:
-                raise Exception('Cannot find subject in this sentence: ' + line)
+                # raise Exception('Cannot find subject in this sentence: ' + line)
+                print('Cannot find subject in this sentence: ' + line)
+                return ""
 
             role = line[: i].strip()
             if role[len(role) - 1] == ',':
@@ -282,24 +288,26 @@ class PreProcessor:
             elif case == 'my':
                 line = role + "'s" + line[i + 2:]
             else:
-                raise Exception('Cannot find the case of subject in this sentence: ' + line)
+                # raise Exception('Cannot find the case of subject in this sentence: ' + line)
+                print('Cannot find subject in this sentence: ' + line)
+                return ""
 
 
-        print("Replaced sentence: ", line)
+        # print("Replaced sentence: ", line)
 
         return line
 
 
     def extract_actors(self, line, actor_map, act):
-        print("Roles sentence: ", line)
+        # print("Roles sentence: ", line)
         nlp_output = analyze(line)
         if nlp_output is None:
-            print(line, ": NLP API returns None. skip!")
+            # print(line, ": NLP API returns None. skip!")
             return ''
 
         # print nlp_output
         pt = parsePosTag(nlp_output)
-        print("Roles Pos Tags: ", pt)
+        # print("Roles Pos Tags: ", pt)
 
         # get all nouns
         nouns = set()
@@ -318,7 +326,7 @@ class PreProcessor:
 
         # print "Unsorted nouns index in role: ", nouns
         sorted(nouns)
-        print("Sorted nouns index in role: ", nouns)
+        # print("Sorted nouns index in role: ", nouns)
 
         tokens = nlp_output['sentences'][0]['tokens']
         for actor in nouns:
@@ -328,14 +336,22 @@ class PreProcessor:
             else:
                 act.append(actor)
 
-        print("Actors: ", act)
+        # print("Actors: ", act)
 
 
 
 
 if __name__ == '__main__':
-    p = PreProcessor(os.getcwd() + "/Data/input_origin/" + "2014-USC-Project02.txt")
+    
     # p = PreProcessor(os.getcwd() + "/Data/input_origin/" + "test.txt")
-    p.pre_process()
-
+    
+    for year in range(2014, 2020):
+        for project in range(1, 16):
+            file_name = str(year) + '-USC-Project'+ str(project).rjust(2,'0')
+            file_path = os.getcwd() + "/Data/input_origin/" + file_name + '.txt'
+            if not os.path.exists(file_path):
+                continue
+            print("processing " + file_path)
+            p = PreProcessor(file_path)
+            p.pre_process()
 

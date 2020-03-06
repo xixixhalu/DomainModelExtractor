@@ -230,6 +230,53 @@ class Matcher:
         return False, var_to_index
 
 
+def test():
+    rule_list = []
+    for i in range(1, 35):
+        rule_list.append('SSR' + str(i))
+    result = pd.DataFrame(columns=rule_list)
+    result_senten = pd.DataFrame(columns=rule_list)
+
+    # read rule
+    rule_obj = pd.read_csv(os.getcwd() + "/SSR/" + "SSR.csv")
+    rule_obj.set_index(["Rule"], inplace=True)
+
+    file_path = os.getcwd() + "/Data/input_origin/test.txt"
+    result = result.append(pd.Series([0] * 34, index=result.columns, name='text'))
+    result_senten = result_senten.append(pd.Series([0] * 34, index=result_senten.columns, name='text'))
+    parse_senten = []
+
+    for i in range(1, 34):
+        ssr = Matcher(Identifier(), file_path)
+        rule_result = ssr.parse_rule(rule_obj, i)
+        # split rule result
+        rule_name = rule_result[0]
+        rule_TD_list = rule_result[1]
+        rule_POS_dict = rule_result[2]
+        rule_keywords = rule_result[3]
+
+        (res, res_line) = ssr.query(rule_name, rule_TD_list, rule_POS_dict, rule_keywords)
+        print("======== matched sentences ========")
+        for r in res:
+            print(r)
+
+        result.iloc[-1, i - 1] = len(res)
+        result_senten.iloc[-1, i - 1] = res_line
+        parse_senten.extend(res_line)
+
+    with open(file_path) as lines:
+        count = len(lines.readlines())
+    distin_senten = set(parse_senten)
+    result.iloc[-1, - 1] = count - len(distin_senten)
+    result_senten.iloc[-1, - 1] = set(list(range(1, count + 1))) - distin_senten
+
+    writer = pd.ExcelWriter(os.getcwd() + "/Data/output_origin/" + 'text_result.xlsx')
+    result.to_excel(writer, sheet_name='count')
+    result_senten.to_excel(writer, sheet_name='detail')
+    writer.save()
+
+
+
 if __name__ == '__main__':
     # create a Matcher object which is initialized with Identifier and input file path
 

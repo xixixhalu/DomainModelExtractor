@@ -1,13 +1,33 @@
-an administrator or HouseManager and GM and Farmer
-As an administrator or house manager, I should be able to see good nice, lock names and lock codes.
-As an administrator or house manager, I should be able to view and filter logs of locks access.
-As a house manager, I should be able to add/delete 'others'.
-As an administrator or house manager, I should be able to see lock battery battery status, lock names and lock codes.
 The system sends the user an email.
 The system informs the user that the battery is full
 The system validates that the password is correct
 The system warns the user not to restart the system.
-The customer selects not to fill the tank
+The customer selects not to ﬁll the tank
 The system marks the errors to be red.
 The system commands the motor to start.
+The system keeps the user waiting.
+The system validates the record entered by the customer.
+The system keeps the door open
+The system makes the user an administrator.
+The system tells the user where to go.
+The system stops the motor when the tank is full
+The server responds the query quickly
+The system will eject the ATM card.
+The system sends the message to the customer.
+The system guides where to go.
+The motor stops when the tank is full.
+The system starts to ﬁll the tank.
+The printer starts printing the document
+The elevator moves up or down.
+The customer is employee.
+The system waits for 5 seconds.
+The ATM card is ejected by the system.
+The ATM card will be ejected by the system.
+The system prompts for password.
+ATM customer enters the withdrawal amount.
+If the ATM card is valid.
+The system restarts
 Include UCS Validate PIN
+Extend Handle Card Jam
+Resume M2.
+Repeat M4-M8.

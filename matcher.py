@@ -5,6 +5,7 @@ from Parser.TDParser import *
 from identifier import Identifier
 import pandas as pd
 import re
+from tqdm import tqdm
 
 
 # create a class Matcher here and store identifier and input in it
@@ -22,21 +23,9 @@ class Matcher:
             return "Sentence: %s\nTokens: %s\nVariables: %s\n" %(self.sentence, self.tokens, self.var_map)
 
 
-    def __init__(self, identifier, sentences_file_path):
+    def __init__(self, identifier, sentence):
         self.identifier = identifier
-        self.sentences_file = self.read_one_file(sentences_file_path)
-
-
-    def dir_path(self, directory):
-
-        return os.getcwd() + directory
-
-
-    def read_one_file(self, file_path, file_name = None):
-        if file_name is None:
-            return open(file_path)
-        else:
-            return open(file_path + file_name)
+        self.sentence = sentence.strip()
 
 
     # Note: this parser assumes that input is written correctly and completely
@@ -55,29 +44,25 @@ class Matcher:
             self.parse_rule(rule_obj, int(rule))
 
         # read name
-        rule_name = line.loc['Sentence Structure']
+        rule_name = line.loc['Sentence Structure'].strip()
 
         # read TD rules
         TDs = line.loc['TDs']
-        if str(TDs) == 'nan':
-            print("TD rule is empty")
-        else:
+        if str(TDs) != 'nan':
             TDs_sep = re.split('[(,)]', TDs)
             TDs_sep = [TD for TD in TDs_sep if TD != '']
             # since format of TD rule is "rule_name(var1,var2)"
             length = len(TDs_sep)
             for i in range(0, length, 3):
-                td_name = TDs_sep[i]
-                var1 = TDs_sep[i + 1]
-                var2 = TDs_sep[i + 2]
+                td_name = TDs_sep[i].strip()
+                var1 = TDs_sep[i + 1].strip()
+                var2 = TDs_sep[i + 2].strip()
                 tup = (td_name, var1, var2)
                 rule_TD_list.append(tup)
 
         # read POS rule
         POS_tags = line.loc['POS-tags']
-        if str(POS_tags) == 'nan':
-            print("POS-tag rule is empty")
-        else:
+        if str(POS_tags) != 'nan':
             pos_list = POS_tags.split("==")
             pos_var = pos_list[0].strip()
             pos_type = pos_list[1].strip()
@@ -85,43 +70,16 @@ class Matcher:
 
         # read start word
         startword = line.loc['start word']
-        if str(startword) == 'nan':
-            print("Start word is empty")
-        else:
-            rule_keywords.append(startword)
+        if str(startword) != 'nan':
+            rule_keywords.append(startword.strip())
 
-        print("\n======== parsed rule ========")
-        print("rule name: ", rule_name)
-        print("TD list: ", rule_TD_list)
-        print("POS-tag list: ", rule_POS_dict)
-        print("Keywords: ", rule_keywords)
+        # print("\n======== parsed rule ========")
+        # print("rule name: ", rule_name)
+        # print("TD list: ", rule_TD_list)
+        # print("POS-tag list: ", rule_POS_dict)
+        # print("Keywords: ", rule_keywords)
 
         return rule_name, rule_TD_list, rule_POS_dict, rule_keywords
-
-
-    def query(self, tr_names, tds, pos_tags, keywords):
-        print("\n======== process sentences ========")
-        res = []
-        res_line = []
-        index = 0
-
-        line = self.sentences_file.readline().strip()
-        while line:
-            index += 1
-            nlp_output = analyze(line)
-            if nlp_output is None:
-                print(line, ": NLP API returns None. skip!")
-                line = input.readline.strip()
-                continue
-            print(line)
-            td_res = self.match_tds(tds, nlp_output)
-            if td_res[0] and self.match_pos(td_res[1], pos_tags, nlp_output) and self.match_keywords(line, keywords):
-                res.append(self.MatchedSentence(line, self.build_tokens(nlp_output), td_res[1]))
-                res_line.append(index)
-            print(" ")
-            line = self.sentences_file.readline().strip()
-
-        return res, res_line
 
 
     def build_tokens(self, nlp_output):
@@ -166,9 +124,7 @@ class Matcher:
         return flag
 
 
-    def match_tds(self, rule_tds, nlp_output):
-        td_key = enhancedTD(nlp_output)
-        print(td_key)
+    def match_tds(self, rule_tds, td_key):
         # check number of TDs
         td_count = {}
         for tup in rule_tds:
@@ -178,6 +134,7 @@ class Matcher:
             if td_key.get(key) is None or len(td_key.get(key)) < td_count.get(key):
                 flag = False
                 break
+
         if not flag:
             return False, None
 
@@ -230,68 +187,75 @@ class Matcher:
         return False, var_to_index
 
 
-def test():
-    rule_list = []
-    for i in range(1, 35):
-        rule_list.append('SSR' + str(i))
-    result = pd.DataFrame(columns=rule_list)
-    result_senten = pd.DataFrame(columns=rule_list)
+class Test_Files:
+    def create_save_file(self):
+        rule_list = []
+        for i in range(1, 35):
+            rule_list.append('SSR' + str(i))
+        result = pd.DataFrame(columns=rule_list)
+        result_senten = pd.DataFrame(columns=rule_list)
+        return result, result_senten
 
-    # read rule
-    rule_obj = pd.read_csv(os.getcwd() + "/SSR/" + "SSR.csv")
-    rule_obj.set_index(["Rule"], inplace=True)
 
-    file_path = os.getcwd() + "/Data/input_origin/test.txt"
-    result = result.append(pd.Series([0] * 34, index=result.columns, name='text'))
-    result_senten = result_senten.append(pd.Series([0] * 34, index=result_senten.columns, name='text'))
-    parse_senten = []
+    def parse_file(self, file_name, file_path, result, result_senten):
+        result = result.append(pd.Series([0] * 34, index=result.columns, name=file_name))
+        result_senten = result_senten.append(pd.Series([''] * 34, index=result_senten.columns, name=file_name))
+        match_senten = []
 
-    for i in range(1, 34):
-        ssr = Matcher(Identifier(), file_path)
-        rule_result = ssr.parse_rule(rule_obj, i)
-        # split rule result
-        rule_name = rule_result[0]
-        rule_TD_list = rule_result[1]
-        rule_POS_dict = rule_result[2]
-        rule_keywords = rule_result[3]
+        file = open(file_path)
+        count = 0
+        for sentence in file:
+            ssr = Matcher(Identifier(), sentence)
+            nlp_output = analyze(sentence)
+            count += 1
 
-        (res, res_line) = ssr.query(rule_name, rule_TD_list, rule_POS_dict, rule_keywords)
-        print("======== matched sentences ========")
-        for r in res:
-            print(r)
+            if nlp_output is None:
+                print(sentence, ": NLP API returns None!")
 
-        result.iloc[-1, i - 1] = len(res)
-        result_senten.iloc[-1, i - 1] = res_line
-        parse_senten.extend(res_line)
+            else:
+                td_key = enhancedTD(nlp_output)
+                # print(td_key)
 
-    with open(file_path) as lines:
-        count = len(lines.readlines())
-    distin_senten = set(parse_senten)
-    result.iloc[-1, - 1] = count - len(distin_senten)
-    result_senten.iloc[-1, - 1] = set(list(range(1, count + 1))) - distin_senten
+                for i in range(1, 34):
+                    rule_result = ssr.parse_rule(rule_obj, i)
+                    # split rule result
+                    rule_name = rule_result[0]
+                    rule_tds = rule_result[1]
+                    rule_pos_tags = rule_result[2]
+                    rule_keywords = rule_result[3]
 
-    writer = pd.ExcelWriter(os.getcwd() + "/Data/output_origin/" + 'text_result.xlsx')
-    result.to_excel(writer, sheet_name='count')
-    result_senten.to_excel(writer, sheet_name='detail')
-    writer.save()
+                    td_res = ssr.match_tds(rule_tds, td_key)
+                    if td_res[0] and ssr.match_pos(td_res[1], rule_pos_tags, nlp_output) and ssr.match_keywords(
+                            ssr.sentence, rule_keywords):
+                        result.iloc[-1, i - 1] += 1
+                        result_senten.iloc[-1, i - 1] += (str(count) + ',')
+                        match_senten.append(count)
 
+        distin_senten = set(match_senten)
+        result.iloc[-1, - 1] = count - len(distin_senten)
+        result_senten.iloc[-1, - 1] = set(list(range(1, count + 1))) - distin_senten
+
+        return result, result_senten
+
+
+    def save_result(self, result, result_senten):
+        writer = pd.ExcelWriter(os.getcwd() + "/Data/output_origin/" + 'result.xlsx')
+        result.to_excel(writer, sheet_name='count')
+        result_senten.to_excel(writer, sheet_name='detail')
+        writer.save()
 
 
 if __name__ == '__main__':
     # create a Matcher object which is initialized with Identifier and input file path
-
-    rule_list = []
-    for i in range(1, 35):
-        rule_list.append('SSR' + str(i))
-    result = pd.DataFrame(columns=rule_list)
-    result_senten = pd.DataFrame(columns=rule_list)
+    test = Test_Files()
+    result, result_senten = test.create_save_file()
 
     # read rule
-    rule_obj = pd.read_csv(os.getcwd() + "/SSR/" + "SSR.csv")
+    rule_obj = pd.read_excel(os.getcwd() + "/SSR/" + "update_SSR.xlsx")
     rule_obj.set_index(["Rule"], inplace=True)
 
-    for year in range(2014, 2020):
-        for project in range(1, 16):
+    for year in tqdm(range(2014, 2020)):
+        for project in tqdm(range(1, 16)):
             # file_name = 'test'
             file_name = str(year) + '-USC-Project'+ str(project).rjust(2,'0')
             file_path = os.getcwd() + "/Data/input_origin/" + file_name + '.txt'
@@ -301,36 +265,6 @@ if __name__ == '__main__':
                 if not os.path.exists(file_path):
                     break
 
-            result = result.append(pd.Series([0] * 34 , index=result.columns, name=file_name))
-            result_senten = result_senten.append(pd.Series([0] * 34 , index=result_senten.columns, name=file_name))
-            parse_senten = []
+            result, result_senten = test.parse_file(file_name, file_path, result, result_senten)
 
-            for i in range(1, 34):
-                ssr = Matcher(Identifier(), file_path)
-                rule_path = ssr.dir_path("\\SSR\\")
-                rule_result = ssr.parse_rule(rule_obj, i)
-                # split rule result
-                rule_name = rule_result[0]
-                rule_TD_list = rule_result[1]
-                rule_POS_dict = rule_result[2]
-                rule_keywords = rule_result[3]
-
-                (res, res_line) = ssr.query(rule_name, rule_TD_list, rule_POS_dict, rule_keywords)
-                print("======== matched sentences ========")
-                for r in res:
-                    print(r)
-
-                result.iloc[-1, i - 1] = len(res)
-                result_senten.iloc[-1, i - 1] = res_line
-                parse_senten.extend(res_line)
-
-            with open(file_path) as lines:
-                count = len(lines.readlines())
-            distin_senten = set(parse_senten)
-            result.iloc[-1, - 1] = count - len(distin_senten)
-            result_senten.iloc[-1, - 1] = set(list(range(1, count + 1))) - distin_senten
-
-    writer = pd.ExcelWriter(os.getcwd() + "/Data/output_origin/" + 'result.xlsx')
-    result.to_excel(writer, sheet_name='count')
-    result_senten.to_excel(writer, sheet_name='detail')
-    writer.save()
+    test.save_result(result, result_senten)

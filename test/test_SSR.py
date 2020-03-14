@@ -186,6 +186,7 @@ if __name__ == '__main__':
     rule_obj.set_index(["Rule"], inplace=True)
     result = []
 
+    # i = j = 22
     for j in tqdm(range(1,34)):
         # the sentence we want to test
         sentence = rule_obj.loc['SSR' + str(j), 'sentence example']

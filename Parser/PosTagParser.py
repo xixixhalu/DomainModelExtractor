@@ -1,7 +1,7 @@
 import json
 
 def parsePosTag(data):
-    tokens = data['sentences'][0]['tokens']
+    tokens = data['sentences'][0]['tokens']  # list of info of each token
     parse_str = data['sentences'][0]['parse']
 
     result = {}
@@ -41,5 +41,6 @@ def parsePosTag(data):
 
 if __name__ == '__main__':
     data = json.load(open('3.json'))
+    #print(json.dumps(data,indent=2))
     result = parsePosTag(data)
     print(result)

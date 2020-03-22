@@ -30,7 +30,7 @@ class Identifier:
                 for i in range(begin, end - len(str(elem['index']))):
                     index += ' '
                 if re.match("^[,.]*$", elem['word']):
-                    continue;
+                    continue
                 index += str(elem['index'])
                 begin = end
             print(index)
@@ -64,7 +64,7 @@ class Identifier:
         self.__display('Type Dependency', td_result)
         self.__display('Pos-Tag', pt_result)
 
-	
+
 if __name__ == '__main__':
     #sentence = 'As a user, I can redeem usable WAT points so that I can receive a gift card.'
     #sentence = 'As a user, I can like/dislike an answer so that other users can gauge the credibility of the answer.'

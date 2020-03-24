@@ -306,6 +306,7 @@ if __name__ == '__main__':
 
     for year in tqdm(range(2014, 2020)):
         for project in tqdm(range(1, 16)):
+            output_result_file = output_result
             # file_name = 'test'
             file_name = str(year) + '-USC-Project' + str(project).rjust(2,'0')
             file_path = os.getcwd() + "/Data/input_origin/" + file_name + '.txt'
@@ -351,9 +352,8 @@ if __name__ == '__main__':
                                         sentence_info['Keywords'] = 'Resume'
                                     elif i == 33:
                                         sentence_info['Keywords'] = 'Repeat'
-                                output_result[rule_name].append({s:sentence_info})
+                                output_result_file[rule_name].append({s:sentence_info})
+                # wrute the result into json file
+                with open(os.getcwd() + '/Data/output_origin/%sResult.json'%file_name, 'w') as jsonwriter:
+                    json.dump(output_result, jsonwriter)
                 f.close()
-
-    # wrute the result into json file
-    with open(os.getcwd()+'/Data/output_origin/result.json', 'w') as jsonwriter:
-        json.dump(output_result, jsonwriter)

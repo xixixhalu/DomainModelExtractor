@@ -294,18 +294,20 @@ if __name__ == '__main__':
     ssr_name_num = dict()
     ssrNum = list(rule_obj['Rule'])
     ssrName = list(rule_obj['Sentence Structure'])
-    for i in range(len(ssrNum)):
-        ssr_name_num[ssrNum[i]] = ssrName[i]
-    # initialize the output
-    output_result = dict()
-    for i in range(len(ssrName)):
-        output_result[ssrName[i]] = []
 
     rule_obj.set_index(["Rule"], inplace=True)
     identifier = Identifier()  # identifier to extract td and postag
 
     for year in tqdm(range(2014, 2020)):
         for project in tqdm(range(1, 16)):
+
+            for i in range(len(ssrNum)):
+                ssr_name_num[ssrNum[i]] = ssrName[i]
+            # initialize the output
+            output_result = dict()
+            for i in range(len(ssrName)):
+                output_result[ssrName[i]] = []
+
             output_result_file = output_result
             # file_name = 'test'
             file_name = str(year) + '-USC-Project' + str(project).rjust(2,'0')
@@ -340,10 +342,9 @@ if __name__ == '__main__':
                                 td_res = ssr.match_tds(rule_tds, td_key)
                                 if td_res[0] and ssr.match_pos(td_res[1], rule_pos_tags, nlp_output) and ssr.match_keywords(
                                         ssr.sentence, rule_keywords):  # tell whether both td and postag can match
-                                    td_result = TypeDep(nlp_output)
-                                    sentence_info['TD'] = dict((y,x) for x,y in td_result.items())
-                                    pt_result = parsePosTag(nlp_output)
-                                    sentence_info['Pos-tag'] = pt_result
+                                    sentence_info['TD'] = td_key
+                                    sentence_info['Pos-tag'] = parsePosTag(nlp_output)
+
                                     if i == 30:
                                         sentence_info['Keywords'] = 'Include'
                                     elif i == 31:

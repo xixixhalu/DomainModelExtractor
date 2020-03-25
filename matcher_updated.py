@@ -352,7 +352,7 @@ if __name__ == '__main__':
                                         sentence_info['Keywords'] = 'Resume'
                                     elif i == 33:
                                         sentence_info['Keywords'] = 'Repeat'
-                                output_result_file[rule_name].append({s:sentence_info})
+                                    output_result_file[rule_name].append({s:sentence_info})
                 # wrute the result into json file
                 with open(os.getcwd() + '/Data/output_origin/%sResult.json'%file_name, 'w') as jsonwriter:
                     json.dump(output_result, jsonwriter)

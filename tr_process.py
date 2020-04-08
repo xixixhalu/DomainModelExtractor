@@ -8,18 +8,19 @@ from Parser.TDParser import *
 class TransformationRules:
 
     class Operations:
-        def __init__(self,name="",source="",dest="",para=""):
+        def __init__(self,name="",source="",dest="",para="",sentence=""):
             self.name=name
             self.SourceEntityTerm=source
             self.DestEntityTerm=dest
             self.para=para
+            self.sentence=sentence
 
 
         def __str__(self):
-            return "Name: "+str(self.name)+" Source1: "+str(self.SourceEntityTerm)+" Dest1: "+str(self.DestEntityTerm)+" Para: "+str(self.para)
+            return "Name: "+str(self.name)+" Source1: "+str(self.SourceEntityTerm)+" Dest1: "+str(self.DestEntityTerm)+" Para: "+str(self.para)+"\nSentence: "+self.sentence
 
         def __repr__(self):
-            return "Name: "+str(self.name)+" Source1: "+str(self.SourceEntityTerm)+" Dest1: "+str(self.DestEntityTerm)+" Para: "+str(self.para)
+            return "Name: "+str(self.name)+" Source1: "+str(self.SourceEntityTerm)+" Dest1: "+str(self.DestEntityTerm)+" Para: "+str(self.para)+"\nSentence: "+self.sentence
 
     def __init__(self, file_path):
         self.file = open(file_path)
@@ -202,7 +203,7 @@ class TransformationRules:
                                             a=nsubj_entry[0]
                                             b=nsubj_entry[1]
                                             d=dobj_entry[1]
-                                            obj = self.Operations(name=a,source=b,dest=c)
+                                            obj = self.Operations(name=a,source=b,dest=c,sentence=sentence.keys()[0])
                                             self.op_list.append(obj)
 
                 
@@ -225,7 +226,7 @@ class TransformationRules:
                                     a = nsubj_entry[0]
                                     b = nsubj_entry[1]
                                     c = dobj_entry[1]
-                                    obj = self.Operations(name=a,source=b,dest=c)
+                                    obj = self.Operations(name=a,source=b,dest=c,sentence=sentence.keys()[0])
                                     self.op_list.append(obj)
 
 
@@ -249,7 +250,7 @@ class TransformationRules:
                                             a=nsubj1_entry[0]
                                             b=nsubj1_entry[1]
                                             e=nsubj2_entry[1]
-                                            obj = self.Operations(name=a,source=b,dest=e)
+                                            obj = self.Operations(name=a,source=b,dest=e,sentence=sentence.keys()[0])
                                             self.op_list.append(obj)
 
             
@@ -291,12 +292,12 @@ class TransformationRules:
                                                     a=nsubj_entry[0]
                                                     b=nsubj_entry[1]
                                                     d=mark_entry[0]
-                                                    obj=self.Operations(name=a,source=b,dest=d)
+                                                    obj=self.Operations(name=a,source=b,dest=d,sentence=sentence.keys()[0])
                                                     self.op_list.append(obj)
                                                     d_dict[d]=dobj_entry[1]
                         for dobj_entry in td_dict["dobj"]:
                             if dobj_entry[0] in d_dict:
-                                obj = self.Operations(name=dobj_entry[0], source=d_dict[dobj_entry[0]], dest=dobj_entry[1])
+                                obj = self.Operations(name=dobj_entry[0], source=d_dict[dobj_entry[0]], dest=dobj_entry[1],sentence=sentence.keys()[0])
                                 self.op_list.append(obj)
 
             def tr18():
@@ -325,7 +326,7 @@ class TransformationRules:
                         a=""
                         b=""
                         c=""
-                        print(sentence.keys()[0])
+                        # print(sentence.keys()[0])
                         for nsubj_entry in td_dict["nsubj"]:
                             for dobj_entry in td_dict["dobj"]:
                                 if dobj_entry[0]==nsubj_entry[0]:
@@ -334,7 +335,7 @@ class TransformationRules:
                                             a = nsubj_entry[0]
                                             b = nsubj_entry[1]
                                             c = dobj_entry[1]
-                                            obj=self.Operations(name=a,source=b,dest=c)
+                                            obj=self.Operations(name=a,source=b,dest=c,sentence=sentence.keys()[0])
                                             self.op_list.append(obj)
 
             def tr20():
@@ -361,14 +362,14 @@ class TransformationRules:
                         a=""
                         b=""
                         c=""
-                        print(sentence.keys()[0])
+                        # print(sentence.keys()[0])
                         for nsubj_entry in td_dict["nsubj"]:
                             for dobj_entry in td_dict["dobj"]:
                                 if nsubj_entry[0]==dobj_entry[0]:
                                     a=nsubj_entry[0]
                                     b=nsubj_entry[1]
                                     c=dobj_entry[1]
-                                    obj=self.Operations(name=a,source=b,dest=c)
+                                    obj=self.Operations(name=a,source=b,dest=c,sentence=sentence.keys()[0])
                                     self.op_list.append(obj)
 
             def tr24():
@@ -384,7 +385,7 @@ class TransformationRules:
                         a=""
                         b=""
                         c=""
-                        print(sentence.keys()[0])
+                        # print(sentence.keys()[0])
                         for nsubj_entry in td_dict["nsubj"]:
                             for dobj_entry in td_dict["dobj"]:
                                 if dobj_entry[0]==nsubj_entry[0]:
@@ -393,7 +394,7 @@ class TransformationRules:
                                             a = nsubj_entry[0]
                                             b = nsubj_entry[1]
                                             c = dobj_entry[1]
-                                            obj=self.Operations(name=a,source=b,dest=c)
+                                            obj=self.Operations(name=a,source=b,dest=c,sentence=sentence.keys()[0])
                                             self.op_list.append(obj)
 
 
@@ -410,7 +411,7 @@ class TransformationRules:
                         a=""
                         b=""
                         d=""
-                        print(sentence.keys()[0])
+                        # print(sentence.keys()[0])
                         for nsubj_entry in td_dict["nsubj"]:
                             for dobj_entry in td_dict["dobj"]:
                                 if dobj_entry[0]==nsubj_entry[0]:
@@ -419,7 +420,7 @@ class TransformationRules:
                                             a = nsubj_entry[0]
                                             b = nsubj_entry[1]
                                             d = dobj_entry[1]
-                                            obj=self.Operations(name=a,source=b,dest=d)
+                                            obj=self.Operations(name=a,source=b,dest=d,sentence=sentence.keys()[0])
                                             self.op_list.append(obj)
 
             def tr26():
@@ -448,7 +449,7 @@ class TransformationRules:
                         a=""
                         b=""
                         # d=""
-                        print(sentence.keys()[0])
+                        # print(sentence.keys()[0])
                         for nsubj_entry in td_dict["nsubj"]:
                             for advcl_entry in td_dict["advcl"]:
                                 if nsubj_entry[0]==advcl_entry[0]:
@@ -458,7 +459,7 @@ class TransformationRules:
                                                 if nsubj_entry!=nsubj_entry2 and nsubj_entry2[0]==advmod_entry[0]:
                                                     a=nsubj_entry[0]
                                                     b=nsubj_entry[1]
-                                                    obj=self.Operations(name=a,source=b,dest=b)
+                                                    obj=self.Operations(name=a,source=b,dest=b,sentence=sentence.keys()[0])
                                                     self.op_list.append(obj)
 
             def tr29():
@@ -476,7 +477,7 @@ class TransformationRules:
                         a=""
                         b=""
                         # d=""
-                        print(sentence.keys()[0])
+                        # print(sentence.keys()[0])
                         for nsubj_entry in td_dict["nsubj"]:
                             for xcomp_entry in td_dict["xcomp"]:
                                 if nsubj_entry[0]==xcomp_entry[0]:
@@ -488,7 +489,7 @@ class TransformationRules:
                                             for dobj_entry in td_dict["dobj"]:
                                                 if dobj_entry[0]==mark_entry[0]:
                                                     dest=dobj_entry[1]
-                                            obj=self.Operations(name=a,source=b,dest=dest)
+                                            obj=self.Operations(name=a,source=b,dest=dest,sentence=sentence.keys()[0])
                                             self.op_list.append(obj)
 
             def tr30():
@@ -505,7 +506,7 @@ class TransformationRules:
                     else:
                         a=""
                         b=""
-                        print(sentence.keys()[0])
+                        # print(sentence.keys()[0])
                         for nsubj_entry in td_dict["nsubj"]:
                             for xcomp_entry in td_dict["xcomp"]:
                                 if nsubj_entry[0]==xcomp_entry[0]:                                
@@ -515,32 +516,34 @@ class TransformationRules:
                                     for dobj_entry in td_dict["dobj"]:
                                         if dobj_entry[0]==xcomp_entry[1]:
                                             dest=dobj_entry[1]
-                                    obj=self.Operations(name=a,source=b,dest=dest)
+                                    obj=self.Operations(name=a,source=b,dest=dest,sentence=sentence.keys()[0])
                                     self.op_list.append(obj)
             #function calls to inner functions
             tr11()
-            # tr12()
-            # tr13()
-            # tr14()
-            # tr15()
-            # tr16()
-            # tr17()
-            # tr18()
-            # tr19()
-            # tr20()
-            # tr21()
-            # tr22()
-            # tr23()
-            # tr24()
-            # tr25()
-            # tr26()
-            # tr27()
-            # tr28()
-            # tr29()
-            # tr30()         
+            tr12()
+            tr13()
+            tr14()
+            tr15()
+            tr16()
+            tr17()
+            tr18()
+            tr19()
+            tr20()
+            tr21()
+            tr22()
+            tr23()
+            tr24()
+            tr25()
+            tr26()
+            tr27()
+            tr28()
+            tr29()
+            tr30()         
                                                     
             for item in self.op_list:
                 print(item)
+                print
+
 
 
     def addToClassDict(self,className,attributeName):

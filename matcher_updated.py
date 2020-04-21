@@ -294,18 +294,20 @@ if __name__ == '__main__':
     ssr_name_num = dict()
     ssrNum = list(rule_obj['Rule'])
     ssrName = list(rule_obj['Sentence Structure'])
-    for i in range(len(ssrNum)):
-        ssr_name_num[ssrNum[i]] = ssrName[i]
-    # initialize the output
-    output_result = dict()
-    for i in range(len(ssrName)):
-        output_result[ssrName[i]] = []
 
     rule_obj.set_index(["Rule"], inplace=True)
     identifier = Identifier()  # identifier to extract td and postag
 
     for year in tqdm(range(2014, 2020)):
         for project in tqdm(range(1, 16)):
+
+            for i in range(len(ssrNum)):
+                ssr_name_num[ssrNum[i]] = ssrName[i]
+            # initialize the output
+            output_result = dict()
+            for i in range(len(ssrName)):
+                output_result[ssrName[i]] = []
+
             output_result_file = output_result
             # file_name = 'test'
             file_name = str(year) + '-USC-Project' + str(project).rjust(2,'0')
@@ -317,15 +319,6 @@ if __name__ == '__main__':
                 sentences = f.read().split('\n')
                 for s in sentences:  # travel each sentence
                     if len(s) > 0:  # tell whether s is a blank line
-
-                        # collect word and punctuation indices in the sentence to a dictionary
-                        s_index = re.sub('([.,!?()])', r' \1 ', s)
-                        s_index = re.sub('\s{2,}', ' ', s_index)
-                        s_split = s_index.split()
-                        s_dic = dict()
-                        for i in range(len(s_split)):
-                            s_dic[i + 1] = s_split[i]
-
                         sentence_info = dict()
                         sentence_info['FileName'] = file_name
                         ssr = Matcher(Identifier(), s)
@@ -349,10 +342,9 @@ if __name__ == '__main__':
                                 td_res = ssr.match_tds(rule_tds, td_key)
                                 if td_res[0] and ssr.match_pos(td_res[1], rule_pos_tags, nlp_output) and ssr.match_keywords(
                                         ssr.sentence, rule_keywords):  # tell whether both td and postag can match
-                                    td_result = TypeDep(nlp_output)
-                                    sentence_info['TD'] = dict((y,x) for x,y in td_result.items())
-                                    pt_result = parsePosTag(nlp_output)
-                                    sentence_info['Pos-tag'] = pt_result
+                                    sentence_info['TD'] = td_key
+                                    sentence_info['Pos-tag'] = parsePosTag(nlp_output)
+
                                     if i == 30:
                                         sentence_info['Keywords'] = 'Include'
                                     elif i == 31:
@@ -361,8 +353,7 @@ if __name__ == '__main__':
                                         sentence_info['Keywords'] = 'Resume'
                                     elif i == 33:
                                         sentence_info['Keywords'] = 'Repeat'
-                                    sentence_info['Index'] = s_dic
-                                output_result_file[rule_name].append({s:sentence_info})
+                                    output_result_file[rule_name].append({s:sentence_info})
                 # wrute the result into json file
                 with open(os.getcwd() + '/Data/output_origin/%sResult.json'%file_name, 'w') as jsonwriter:
                     json.dump(output_result, jsonwriter)

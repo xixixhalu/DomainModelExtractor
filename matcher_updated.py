@@ -319,6 +319,15 @@ if __name__ == '__main__':
                 sentences = f.read().split('\n')
                 for s in sentences:  # travel each sentence
                     if len(s) > 0:  # tell whether s is a blank line
+
+                        # collect word and punctuation indices in the sentence to a dictionary
+                        s_index = re.sub('([.,!?()])', r' \1 ', s)
+                        s_index = re.sub('\s{2,}', ' ', s_index)
+                        s_split = s_index.split()
+                        s_dic = dict()
+                        for i in range(len(s_split)):
+                            s_dic[i + 1] = s_split[i]
+
                         sentence_info = dict()
                         sentence_info['FileName'] = file_name
                         ssr = Matcher(Identifier(), s)
@@ -353,6 +362,7 @@ if __name__ == '__main__':
                                         sentence_info['Keywords'] = 'Resume'
                                     elif i == 33:
                                         sentence_info['Keywords'] = 'Repeat'
+                                    sentence_info['Index'] = s_dic
                                     output_result_file[rule_name].append({s:sentence_info})
                 # wrute the result into json file
                 with open(os.getcwd() + '/Data/output_origin/%sResult.json'%file_name, 'w') as jsonwriter:

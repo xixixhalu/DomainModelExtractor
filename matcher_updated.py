@@ -353,7 +353,7 @@ if __name__ == '__main__':
                                         ssr.sentence, rule_keywords):  # tell whether both td and postag can match
                                     sentence_info['TD'] = td_key
                                     sentence_info['Pos-tag'] = parsePosTag(nlp_output)
-
+                                    sentence_info['Index'] = ssr.build_tokens(nlp_output)
                                     if i == 30:
                                         sentence_info['Keywords'] = 'Include'
                                     elif i == 31:

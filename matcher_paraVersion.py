@@ -342,6 +342,7 @@ if __name__ == '__main__':
                             sentence_info['TD'] = dict((y,x) for x,y in td_result.items())
                             pt_result = parsePosTag(nlp_output)
                             sentence_info['Pos-tag'] = pt_result
+                            sentence_info['Index'] = ssr.build_tokens(nlp_output)
                             if i == 30:
                                 sentence_info['Keywords'] = 'Include'
                             elif i == 31:
@@ -353,5 +354,5 @@ if __name__ == '__main__':
                         output_result_file[rule_name].append({s:sentence_info})
         # wrute the result into json file
         with open(os.getcwd() + '/Data/output_origin/%sResult.json'%file_name, 'w') as jsonwriter:
-            json.dump(output_result, jsonwriter)
+            json.dump(output_result, jsonwriter, indent=2)
         f.close()

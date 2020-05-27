@@ -14,7 +14,7 @@ Extract Domain information from User Stories
 ## Environment
 
 - Ubuntu 14.04 64bit / MacOS
-- Python 2.7
+- Python 3.6+
 
 ## Setup
 

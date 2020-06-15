@@ -16,7 +16,7 @@ class PreProcessor:
         self.file = open(file_path)
 
 
-    def pre_process(self):
+    def  pre_process(self):
         # overwrite previous output file
         dirs = os.getcwd() + "/input/"
         if not os.path.exists(dirs):
@@ -140,7 +140,8 @@ class PreProcessor:
 
         return str(new_line)
 
-
+    # Zihang: This function only can merge two intervals.
+    # It doesn't work when it comes to more than two intersectional intervals
     # Take a list of intervals and return a list of non-overlapped intervals
     def merge_intervals(self, intervals):
         if len(intervals) <= 1:
@@ -181,7 +182,7 @@ class PreProcessor:
 
         return list
 
-
+    # Zihang: We can use Constituency Parser to simplify this function
     # Return a list of index intervals that we should combine
     def combine_JJs_NNs(self, line_index, pt):
         # Add all NN or NNP or NNS or NNPS to a set

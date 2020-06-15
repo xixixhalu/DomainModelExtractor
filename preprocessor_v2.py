@@ -37,9 +37,6 @@ class PreProcessor:
             actor_map = {}
             act = []
 
-            if line == 'As the administrator of the system I can add customized ads to the ad-space on the website.':
-                print("debug")
-
             line = self.combine_nouns(line, meta, actor_map)
             line = self.replace_role(line, actor_map, act)
 

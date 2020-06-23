@@ -4,6 +4,7 @@ from adapter import *
 from Parser.PosTagParser import *
 from Parser.TDParser import *
 
+
 # create a class to pre-process
 # 1. replace I with role
 # 2. combine consecutive Nouns
@@ -15,8 +16,7 @@ class PreProcessor:
     def __init__(self, file_path):
         self.file = open(file_path)
 
-
-    def  pre_process(self):
+    def pre_process(self):
         # overwrite previous output file
         dirs = os.getcwd() + "/input/"
         if not os.path.exists(dirs):
@@ -50,13 +50,6 @@ class PreProcessor:
         metadata.close()
         actors.close()
 
-
-    # Ziyu: Due to our version(2018-10-05) of stanford corenlp, the TD result is not comprehensive and parts of
-    # 'compound' info are missing, so that we cannot deliver totally correct result using this version, but if
-    # we use version 2018-11-29, it can output more 'compound' pairs so that we can deliver result more correctly.
-    # But still, some flaws of Stanford NLP API are detected. For example, it regards verb as noun, or noun as
-    # adjective, which would lead us to wrong result anyway.
-    #
     # Note: this function use a straight forward method to combine consecutive nouns: combining consecutive NN or NNP or
     # NNS or NNPS.
     def combine_nouns(self, line, meta, actor):
@@ -76,13 +69,6 @@ class PreProcessor:
         td_key = pure_enhancedTD(nlp_output)
         # print("Type Dependencies: ", td_key)
 
-        # Ziyu: the progress of combining nouns(NN), adjectives(JJ) and 'nmod:of' is similar to a typical leetcode
-        # problem: Merge Intervals. First, we use index to represent each word in sentence, then in the following
-        # functions, we detect if there are consecutive nouns and 'nmod:of' we need to combine, and record the starting
-        # index and end index of every consecutive interval. Those intervals can be overlapped or not, or even exactly
-        # the same, or their start index equals to end index, which does not matter. Function 'merge_intervals' will
-        # handle the above cases and output non-overlapped intervals.
-        #
         # Note: if you want to combine other words, please add them as a list of intervals so that the function
         # 'merge_intervals' can process it.
         intervals = []
@@ -107,7 +93,7 @@ class PreProcessor:
                 j = map[i]
                 i = i + 1
                 while i <= j:
-                    cand += tokens[i - 1]['word'].capitalize()
+                    cand += tokens[i - 1]['word'][0].upper() + tokens[i - 1]['word'][1:]
                     i = i + 1
 
                 i = i - 1
@@ -129,7 +115,7 @@ class PreProcessor:
             i = pair[0]
             while i <= pair[1]:
                 sub.append(tokens[i - 1]['word'])
-                combined += tokens[i - 1]['word'].capitalize()
+                combined += tokens[i - 1]['word'][0].upper() + tokens[i - 1]['word'][1:]
                 i = i + 1
 
             actor[combined] = sub
@@ -140,8 +126,6 @@ class PreProcessor:
 
         return str(new_line)
 
-    # Zihang: This function only can merge two intervals.
-    # It doesn't work when it comes to more than two intersectional intervals
     # Take a list of intervals and return a list of non-overlapped intervals
     def merge_intervals(self, intervals):
         if len(intervals) <= 1:
@@ -154,22 +138,28 @@ class PreProcessor:
         list = []
         curr = intervals[0]
         i = 1
+
         while i < len(intervals):
             next = intervals[i]
-            if curr[1] >= next[0]:
+            while curr[1] >= next[0]:
                 tail = max(curr[1], next[1])
                 curr = (curr[0], tail)
-            else:
-                list.append(curr)
-                curr = next
+                i = i + 1
+                if i < len(intervals):
+                    next = intervals[i]
+                else:
+                    next = None
+                    break
+            list.append(curr)
+            curr = next
             i = i + 1
 
-        list.append(curr)
+        if curr is not None:
+            list.append(curr)
 
         # print("merged intervals: ", list)
 
         return list
-
 
     # Return a list of index intervals that we should combine
     def combine_nmod(self, td_key):
@@ -182,7 +172,6 @@ class PreProcessor:
 
         return list
 
-    # Zihang: We can use Constituency Parser to simplify this function
     # Return a list of index intervals that we should combine
     def combine_JJs_NNs(self, line_index, pt):
         # Add all NN or NNP or NNS or NNPS to a set
@@ -247,57 +236,41 @@ class PreProcessor:
         # print("JJ + NN: ", list)
         return list
 
-
     def replace_role(self, line, actor_map, act):
-        # print line
-        if line.startswith("As") or line.startswith('as'):
-            line = line[2:].strip()
-            if line.startswith('an'):
-                line = line[2:].strip()
-            elif line.startswith('a'):
-                line = line[1:].strip()
-
-            case = ''
-            i = 0
-            if ' I ' in line:
-                case = 'I'
-                # use ' I ' not 'I ', in case of 'UI '
-                i = line.index(' I ')
-                i = i + 1
-            elif ' my ' in line:
-                case = 'my'
-                i = line.index(' my ')
-                i = i + 1
-            elif ',I ' in line:
-                case = 'I'
-                i = line.index(',I ')
-                i = i + 1
+        nlp_output = analyze(line)
+        noun_set = {'NN', 'NNP', 'NNS', 'NNPS'}
+        tokens = [d['word'] for d in nlp_output['sentences'][0]['tokens']]
+        pos_tags = [d['pos'] for d in nlp_output['sentences'][0]['tokens']]
+        outputs = []
+        if tokens[0] == 'As' or tokens[0] == 'as':
+            if tokens[1] == 'a' or tokens[1] == 'an':
+                idx = 2
             else:
-                # raise Exception('Cannot find subject in this sentence: ' + line)
-                print('Cannot find subject in this sentence: ' + line)
-                return ""
+                idx = 1
+            while idx < len(pos_tags) and pos_tags[idx] not in noun_set:
+                idx += 1
+            role = tokens[idx]
+            outputs.extend(tokens[idx + 1:])
+            if outputs[0] == ',':
+                outputs = outputs[1:]
 
-            role = line[: i].strip()
-            if role[len(role) - 1] == ',':
-                role = role[: len(role) - 1]
-            role = role[0].upper() + role[1:]
+            def index(tokens, original, replace):
+                for i, token in enumerate(tokens):
+                    if token == original:
+                        tokens[i] = replace
 
             self.extract_actors(role, actor_map, act)
-
-            if case == 'I':
-                line = role + line[i + 1:]
-            elif case == 'my':
-                line = role + "'s" + line[i + 2:]
-            else:
-                # raise Exception('Cannot find the case of subject in this sentence: ' + line)
-                print('Cannot find subject in this sentence: ' + line)
-                return ""
-
-
-        # print("Replaced sentence: ", line)
-
-        return line
-
+            subjects = ['I', 'i', 'we', 'We']
+            for subject in subjects:
+                index(outputs, subject, role)
+            pronouns = ['my']
+            for pronoun in pronouns:
+                index(outputs, pronoun, role + "'s")
+        else:
+            outputs = tokens
+        self.convert_back(outputs)
+        res = ' '.join(outputs)
+        return res
 
     def extract_actors(self, line, actor_map, act):
         # print("Roles sentence: ", line)
@@ -339,16 +312,21 @@ class PreProcessor:
 
         # print("Actors: ", act)
 
-
+    def convert_back(self, tokens):
+        for i, token in enumerate(tokens):
+            if token == "-LRB-":
+                tokens[i] = "("
+            elif token == "-RRB-":
+                tokens[i] = ")"
 
 
 if __name__ == '__main__':
-    
+
     # p = PreProcessor(os.getcwd() + "/Data/input_origin/" + "test.txt")
-    
+
     for year in range(2014, 2020):
         for project in range(1, 16):
-            file_name = str(year) + '-USC-Project'+ str(project).rjust(2,'0')
+            file_name = str(year) + '-USC-Project' + str(project).rjust(2, '0')
             file_path = os.getcwd() + "/Data/input_origin/" + file_name + '.txt'
             if not os.path.exists(file_path):
                 continue

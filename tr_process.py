@@ -57,7 +57,9 @@ class TransformationRules:
             line = self.file.readline().strip()
         #self.tr4()
         #TR11-TR43
-        self.identifyClassOperations() 
+        self.identifyClassOperations()
+        self.tr44()
+        self.tr45()
         print ("Classed with Attributes: "+str(self.class_dict))
         print ("Relationships with parent class & child class: "+str(self.relationship_dict))
 
@@ -615,7 +617,7 @@ class TransformationRules:
                     else:
                         a=""
                         b_s=""
-                        d_d=""
+                        b_d=""
                         for nsubj_entry in td_dict["nsubj"]:
                             a = nsubj_entry[0]
                             b_s = nsubj_entry[1]
@@ -740,8 +742,8 @@ class TransformationRules:
                 """
                 The customer is employee
                 nsubj(employee-4, customer-2)  cop(employee-4, is-3)
-                isAdjective(C)==>isAdjective(C)
-                isNoun(C)==>isNoun(C)
+                isAdjective(C)==>isAdjective(A)
+                isNoun(C)==>isNoun(A)
                 """
                 #doubt in implementation 
                 for sentence in data["SVPredicative"]:
@@ -788,12 +790,20 @@ class TransformationRules:
                                     #print(noun_list)
                                     #print(a,index_dict[str(a)])
                                     #print(index_dict[str(a)])
-                                    if [a,a] in adj_list:
-                                        #print("adj find...........")
-                                        self.addToClassDict(index_dict[str(b)],index_dict[str(a)])
-                                    elif [a,a] in noun_list:
-                                        #print("noun find...........")
-                                        self.addToRelationshipDict(index_dict[str(a)],index_dict[str(b)],"generalization")
+                                    for start, end in adjlist:
+                                        if a>=start and a<=end:
+                                            self.addToClassDict(index_dict[str(b)],index_dict[str(a)])
+                                            break
+                                    for start, end in noun_list:
+                                        if a>=start and a<=end:
+                                            self.addToRelationshipDict(index_dict[str(a)],index_dict[str(b)],"generalization")
+                                            break
+                                    # if [a,a] in adj_list:
+                                    #     #print("adj find...........")
+                                    #     self.addToClassDict(index_dict[str(b)],index_dict[str(a)])
+                                    # elif [a,a] in noun_list:
+                                    #     #print("noun find...........")
+                                    #     self.addToRelationshipDict(index_dict[str(a)],index_dict[str(b)],"generalization")
                                     
                 
             def tr33():
@@ -918,8 +928,49 @@ class TransformationRules:
             #op_list containing all the operations                                       
             for item in self.op_list:
                 print(item)
-                #print
+            
 
+    def tr44(self):
+        """
+        If op.SourceEntityTerm is not present in ClassDiagram Instance 
+        then class = createClass(op.SourceEntityTerm,“<<entity class>>”);
+        """
+        classInstanceKey = list(self.class_dict.keys())
+        classInstanceValue = list(self.class_dict.values())
+        flatValue = [i for j in classInstanceValue for i in j]
+        allName = classInstanceKey + flatValue
+        for operation in self.op_list:
+            source = operation.SourceEntityTerm
+            if source not in allName:
+                self.class_dict[source]=[]
+                
+    
+    def tr45(self):
+        """
+        For each class C in ClassDiagram Instance
+            If (op.DestEntityTerm.name==C.name)AND(C does not contain operation op.name(op.Para)) 
+                then C.addOperation(op.name(op.Para)); 
+            EndIf
+        EndFor
+        If no such class is found then
+            For each class C in ClassDiagram Instance
+                If(op.DestEntityTerm.name==a.name for some attribute a of class C)AND (C does not contains operation op.name(op.Para)) 
+                    then C.addOperation(op.name(op.Para)); 
+                EndIf
+            EndFor 
+        EndIf
+        If no such class is found 
+            then C=createClass(op.DestEntityTerm.name,“<<entity class>>”); 
+            C.addOperation(op.name(op.Para));
+        EndIf
+        """
+        
+
+            
+        
+        
+                
+            
 
 
     def addToClassDict(self,className,attributeName):

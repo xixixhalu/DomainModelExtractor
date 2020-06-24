@@ -48,18 +48,20 @@ class TransformationRules:
             td_key = pure_enhancedTD(nlp_output)
             for i in range(0, len(nlp_output['sentences'][0]['tokens']) ):
                 word_list.append(nlp_output['sentences'][0]['tokens'][i]["word"])
-            #self.tr4_initial(word_list,pos_tags)
-            #self.tr5(word_list,td_key)
-            #self.tr6(word_list,td_key)
-            #self.tr7(word_list,td_key)
-            #self.tr8(word_list,td_key)
-            #self.tr9(word_list,td_key)
+            self.tr4_initial(word_list,pos_tags)
+            self.tr5(word_list,td_key)
+            self.tr6(word_list,td_key)
+            self.tr7(word_list,td_key)
+            self.tr8(word_list,td_key)
+            self.tr9(word_list,td_key)
             line = self.file.readline().strip()
-        #self.tr4()
+        self.tr4()
         #TR11-TR43
         self.identifyClassOperations()
         self.tr44()
         self.tr45()
+        self.tr46()
+        
         print ("Classed with Attributes: "+str(self.class_dict))
         print ("Relationships with parent class & child class: "+str(self.relationship_dict))
 
@@ -790,13 +792,13 @@ class TransformationRules:
                                     #print(noun_list)
                                     #print(a,index_dict[str(a)])
                                     #print(index_dict[str(a)])
-                                    for start, end in adjlist:
+                                    for start, end in adj_list:
                                         if a>=start and a<=end:
-                                            self.addToClassDict(index_dict[str(b)],index_dict[str(a)])
+                                            self.addToClassDict(index_dict[str(b)],index_dict[str(c)])
                                             break
                                     for start, end in noun_list:
                                         if a>=start and a<=end:
-                                            self.addToRelationshipDict(index_dict[str(a)],index_dict[str(b)],"generalization")
+                                            self.addToRelationshipDict(index_dict[str(c)],index_dict[str(b)],[],"generalization")
                                             break
                                     # if [a,a] in adj_list:
                                     #     #print("adj find...........")
@@ -891,39 +893,39 @@ class TransformationRules:
 
 
             #function calls to inner functions
-            #tr11()
-            #tr12()
-            #tr13()
+            tr11()
+            tr12()
+            tr13()
             tr14()
             tr15()
             tr16()
-            #tr17()
-            #tr18()
-            #tr19()
+            tr17()
+            tr18()
+            tr19()
             tr20()
             tr21()
             tr22()
-            #tr23()
-            #tr24()
-            #tr25()
-            #tr26()
-            #tr27()
-            #tr28()
-            #tr29()
-            #tr30()
-            #tr31() 
+            tr23()
+            tr24()
+            tr25()
+            tr26()
+            tr27()
+            tr28()
+            tr29()
+            tr30()
+            tr31() 
             tr32()
-            #tr33()
-            #tr34()
-            #tr35()
-            #tr36()
-            #tr37()
-            #tr38()
-            #tr39()
-            #tr40()
-            #tr41()
-            #tr42()
-            #tr43()        
+            tr33()
+            tr34()
+            tr35()
+            tr36()
+            tr37()
+            tr38()
+            tr39()
+            # tr40()
+            # tr41()
+            # tr42()
+            # tr43()        
 
             #op_list containing all the operations                                       
             for item in self.op_list:
@@ -964,14 +966,71 @@ class TransformationRules:
             C.addOperation(op.name(op.Para));
         EndIf
         """
-        
-
-            
-        
-        
+        for op in self.op_list:
+            findClass = False
+            item = op.name+"("+op.para+")"
+            for className in self.class_dict:
+                if op.DestEntityTerm == className and item not in self.class_dict[className]:
+                    self.addToClassDict(className, item)
+                    findClass=True
+            if findClass == False:
+                for className in self.class_dict:
+                    for eachAttribute in self.class_dict[className]:
+                        if op.DestEntityTerm == eachAttribute and item not in self.class_dict[className]:
+                            self.addToClassDict(className, item)
+                            findClass=True
+                            break
+            if findClass  == False:
+                self.addToClassDict(op.DestEntityTerm, item)
                 
-            
-
+                
+    def tr46(self):
+        """   
+        For each relationship r in ClassDiagram Instance
+            If(op.SourceEntityTerm==r.class1 and op.DestEntityTerm==r.class2)AND(r.name does not contains op.name)
+                append op.name to r.name 
+            EndIf
+        EndFor
+        If (no such relationship found) then
+            For each class c in ClassDiagram Instance 
+                If(op.DestEntityTerm==c.Name)
+                    rName=op.name; 
+                    createRelationship(op.SourceEntityTerm, c, rName, “association”); 
+                EndIf
+            EndFor
+            If(no such class is found) then
+                For each class c in ClassDiagram Instance 
+                    If(op.DestEntityTerm==a.Name for some attribute a in class c)
+                        rName=op.name; 
+                        createRelationship(op.SourceEntityTerm, c, rName, “association”); 
+                    EndIf
+                EndFor 
+            EndIf
+        EndIf
+        """
+        for op in self.op_list:
+            findRelationship = False
+            for rel_name in self.relationship_dict:
+                #print(rel_name)
+                for relationship in self.relationship_dict[rel_name]:
+                    #print(relationship)
+                    if op.SourceEntityTerm==relationship[0] and op.DestEntityTerm==relationship[1] and op.name not in relationship[2]:
+                        #print(relationship[2])
+                        relationship[2].append(op.name)
+                        findRelationship=True
+            if findRelationship==False:
+                findClass = False
+                for className in self.class_dict:
+                    if op.DestEntityTerm==className:
+                        self.addToRelationshipDict(op.SourceEntityTerm, className, [op.name], "association")
+                        findClass = True
+                if findClass == False:
+                    for className in self.class_dict:
+                        for eachAttribute in self.class_dict[className]:
+                            if op.DestEntityTerm==eachAttribute:
+                                self.addToRelationshipDict(op.SourceEntityTerm, className, [op.name], "associatioon")
+                                break
+        
 
     def addToClassDict(self,className,attributeName):
         if className not in self.class_dict:
@@ -979,17 +1038,17 @@ class TransformationRules:
         else:
             self.class_dict[className].append(attributeName)
             
-    def addToRelationshipDict(self,parentClass,childClass,relationshipName):
-        if relationshipName not in self.relationship_dict:
-            self.relationship_dict[relationshipName]=[[parentClass,childClass]]
+    def addToRelationshipDict(self,parentClass,childClass,relationshipName, relationship):
+        if relationship not in self.relationship_dict:
+            self.relationship_dict[relationship]=[[parentClass,childClass, relationshipName]]
         else:
-            self.relationship_dict[relationshipName].append([parentClass,childClass])
+            self.relationship_dict[relationship].append([parentClass,childClass, relationshipName])
             
 
 
 if __name__ == '__main__':
-    print(os.getcwd() + "/Data/input_origin/" + "2016-USC-Project07.txt")
-    p = TransformationRules(os.getcwd() + "/Data/input_origin/" + "2016-USC-Project07.txt")
+    print(os.getcwd() + "/Data/input_origin/" + "2014-USC-Project02.txt")
+    p = TransformationRules(os.getcwd() + "/Data/input_origin/" + "2014-USC-Project02.txt")
     p.apply_rules()
 
 

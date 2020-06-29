@@ -1,0 +1,13 @@
+Ess can use NavigationD & DModules to make the Irobot go forward , backward , turn left and right .
+Ess can use sensing D & dModule to detect Cliffs/edges , Speed , Direction and ElapsedTime .
+Ess can drag & drop the MusicalNotes from the Sounds & LightModule so that Ess can create a Song .
+Ess can use the Sounds & LightModule so that Ess can turn the Leds on and off .
+Ess can drag and drop if-then-else and For/whileConstruct in which Ess can further drag and drop the Instructions/loopConstructs .
+Ess can drag and drop a WaitCondition in which Ess can further drag and drop the Instructions/loopConstructs .
+The System shall detect and show LogicErrors ( Conflicting/inconsistentInstructions ) in an Easy-to-readWay .
+The System shall be a NativeWindows 7 and above Application .
+The System shall generate Instructions for Irobot in C which is then later compiled for Deployment on the Microcontroller using the ApisOfIRobot .
+The System shall enforce a ToleranceLimitOf + / - 2 to 3 % on SensorProgrammability .
+Ess can drag and drop the Built-inFunctionsOfTheIRobot to control its Behavior/movement .
+Ess can copy & paste Instructions so that Ess do not have to re-program .
+Ess can create , save and load ProgramFiles .

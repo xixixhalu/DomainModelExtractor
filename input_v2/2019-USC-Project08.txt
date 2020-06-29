@@ -1,0 +1,43 @@
+The System should have a DatabaseOfCareInstructions associated with Surgeries and MedicalInstitutions .
+User/patient should have to answer a MinimumAmountOfPROQuestions .
+Doctor should be notified if Doctor's PatientsHealth declines after Surgery .
+PatientUser can receive RealTimeNotifications for PatientUser's Reminders and Appointments .
+PatientUser can indicate that PatientUser have completed CertainTasks ( like a Checklist ) .
+DoctorUser can check if a Patient has completed CertainTasks .
+DoctorUser can view the the Survey/questionnaireResponsesOfMyPatients .
+User can login to the Application using Username and Password or with User's FingerprintScanner .
+CareTeam can input the RelevantMedicalInformation or Recommendations related to SurgicalProcedures for each MedicalCenter into the SystemDatabase .
+Patient can update PersonalContactInformation saved on the Server .
+who does not have SmartPhone , Patient can still get Notifications through Messages .
+Patient can get Rewards by filling out the required Survey or following certain required MedicalInstructions .
+Doctor can modify Prescriptions based on Patients ' RecoveryProcess .
+Patient have Access to roughly personalized EducationContents like Videos or Articles that will help with Recovery or Preparation for Surgeries .
+Patient can locally save the UsefulHealthRecommendationArticles provided by Doctors .
+Patient can see the HistoryOfPhotos/videos Patient took for the App .
+The System shall render properly on AndroidPhones .
+The System should be built as NativeAndroidApplication .
+The System should comply with Hipaa .
+CareTeam can add/remove Patients from CareTeam's List .
+Admin can access the DatabaseOfTheAppServer , and manually add/remove Entries from Backend .
+Patient should be able to see the Website / ContactInformationOfMyHealthCenter / Provider , Doctor , NurseEtc . .
+Patient should be able to take Pictures .
+Patient should have Access to review Post-opNotes from Patient's Doctor / surgeon on any PreviousSurgeries / Treatments .
+Patient should be provided with Guidance on how to best capture Pictures ( I.e.Selfies , BodyPartsEtc ) .
+Patient should be able to be guided by an Avatar for BasicTutorial .
+Patient can do Patient's Questionnaire/surveys from within the App .
+Doctor should get a Notification when a Patient books/cancels/reschedules an Appointment .
+Patient should get a Confirmation after Patient book/cancel/reschedule an Appointment .
+Patient should be able to Rate whether an EducationalArticle/video is relevant to me or not .
+( the paying Customer ) , HealthcareExecutive can see the CollectedDataAndTrendsOfAllPatientOutcomes , so HealthcareExecutive can study how to improve our Performance .
+The System should be intuitive to use for Patients .
+Patient can manually add Pre or Post-opReminders in Addition to the StandardOnes set by Patient's Doctor .
+'s Staff , Doctor can register/enroll the Patient under 5 Steps .
+Patient can snooze a Reminder but still be reminded until Patient dismiss it .
+Patient can receive RecommendationsOfCommonAnswersAndResources related to Patient's Surgery based on Patient's Timeline .
+Doctor can use this App to do CertainFollow-upAppointments via Telemedicine , so those Patients who ca n't get Rides easily wo n't have to miss these CrucialAppointments .
+Patient should be able to track Patient's HealthStatus graphically , so that it is easily understandable .
+Patient can see all Patient's DietaryConstraints and medications Patient need to take before and after Surgery .
+Patient can compare Pictures to see a VisibleDifference over Time .
+Patient can either choose to install the SmartphoneApp , or by Default get SmsNotifications and not get bombarded everywhere .
+The System should be built as a HybridApp ( testing on Android only for this Class - Define which versions ) .
+The System should use Fhir for DataExchange .

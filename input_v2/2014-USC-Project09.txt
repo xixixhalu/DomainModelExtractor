@@ -1,0 +1,17 @@
+User can search for Businesses by Name , Tipsure # , location , and GeneralCategory ( one at a Time ) .
+User can review TravelTippingGuides so that when User travel User have them .
+User can submit a tipping Question that has not been addressed .
+User can use a TipCalculator to calculate the Tip and possibly split the Tip among VariousPeople .
+User can add a Business so that User get CorrectTips and reduced Friction with our Customers .
+Business can claim Business's Business .
+Administrator can verify and/or approve Comments from all Users to increase AccuracyOfInformation .
+Administrator can assign TipsureNumbers in the ResponsiveWebsite so that Users can lookup SpecificBusinesses .
+User can download the TravelGuide so that User can have Access at all Times .
+The System shall integrate with the ExistingTipSureMySQLDatabase .
+The MaximumBudget is $ 500 .
+The System shall use the GoogleMapsAPI .
+The System shall be deployed on Tipsure 's CurrentHostingProvider .
+The System shall load within 5-10Seconds as tested on -- .
+The Information should be easy to read on a MobileDevice without zooming and panning .
+User can share and `` like '' the Application and Information to Others using SocialMediaIcons ( Facebook , Linked-in and Twitter ) , so that they can benefit .
+User can see the SearchResults ( searched for or nearby ) as a ListOfBusinesses , sorted according to Distance from the User , that can be scrolled and shows 10 Businesses .

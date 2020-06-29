@@ -119,7 +119,7 @@ class PreProcessor:
                 i = i + 1
 
             actor[combined] = sub
-            meta.append(sub)
+            meta.append((sub, pair))
 
         # print("Combined sentence: ", new_line)
         # print("Combined nouns mapping: ", actor)

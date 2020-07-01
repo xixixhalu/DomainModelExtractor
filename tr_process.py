@@ -62,6 +62,11 @@ class TransformationRules:
         self.tr45()
         self.tr46()
         
+        self.tr51()
+        self.tr52()
+        self.tr53()
+        self.tr54()
+        
         print ("Classed with Attributes: "+str(self.class_dict))
         print ("Relationships with parent class & child class: "+str(self.relationship_dict))
 
@@ -104,7 +109,8 @@ class TransformationRules:
             if len(n_list)>1:
                 for att,val in n_list:
                     if n!=att:
-                        self.addToClassDict(n,att)
+                        #self.addToClassDict(n,att)
+                        self.addAttributeToClass(n, att)
 
 
 
@@ -119,7 +125,8 @@ class TransformationRules:
                 if word_list[nsubj_governor-1] == "has":
                     for dobj_governor,dobj_dependent in td_key["dobj"]:
                         if nsubj_governor==dobj_governor:
-                            self.addToClassDict(word_list[nsubj_dependent-1],word_list[dobj_dependent-1] )
+                            #self.addToClassDict(word_list[nsubj_dependent-1],word_list[dobj_dependent-1] )
+                            self.addAttributeToClass(word_list[nsubj_dependent-1],word_list[dobj_dependent-1])
 
     def tr6(self, word_list,td_key):
         """If TDs of the sentence contain TDs prep(A,"on") and pobj("on",B) then
@@ -133,14 +140,17 @@ class TransformationRules:
         a_dict = {}
         if "nmod:on" in td_key:
             for governor,dependent in td_key["nmod:on"]:
-                self.addToClassDict(word_list[dependent-1],word_list[governor-1])
+                #self.addToClassDict(word_list[dependent-1],word_list[governor-1])
+                self.addAttributeToClass(word_list[dependent-1],word_list[governor-1])
                 a_dict[governor] = dependent
             for key in td_key:
                 if "conj" in key:
                     val = td_key[key]
                     for li1,li2 in val:
                         if li1 in a_dict:
-                            self.class_dict[word_list[a_dict[li1]-1]].append(word_list[li2-1])
+                            #self.class_dict[word_list[a_dict[li1]-1]].append(word_list[li2-1])
+                            self.addAttributeToClass(word_list[a_dict[li1]-1], word_list[li2-1])
+                            
 
 
     def tr7(self, word_list,td_key):
@@ -155,7 +165,8 @@ class TransformationRules:
         a_dict = {}
         if "nmod:of" in td_key:
             for governor,dependent in td_key["nmod:of"]:
-                self.addToClassDict(word_list[dependent-1],word_list[governor-1])
+                #self.addToClassDict(word_list[dependent-1],word_list[governor-1])
+                self.addAttributeToClass(word_list[dependent-1],word_list[governor-1])
                 a_dict[governor] = dependent
             # print a_dict
             for key in td_key:
@@ -163,7 +174,8 @@ class TransformationRules:
                     val = td_key[key]
                     for li1,li2 in val:
                         if li1 in a_dict:
-                            self.class_dict[word_list[a_dict[li1]-1]].append(word_list[li2-1])
+                            #self.class_dict[word_list[a_dict[li1]-1]].append(word_list[li2-1])
+                            self.addAttributeToClass(word_list[a_dict[li1]-1], word_list[li2-1])
 
     def tr8(self,word_list,td_key):
         """If TDs of the sentence contain TDs poss(A, B) then
@@ -171,7 +183,8 @@ class TransformationRules:
            EndIf """
         if "nmod:poss" in td_key:
             for governor,dependent in td_key["nmod:poss"]:
-                self.addToClassDict(word_list[dependent-1],word_list[governor-1])
+                #self.addToClassDict(word_list[dependent-1],word_list[governor-1])
+                self.addAttributeToClass(word_list[dependent-1],word_list[governor-1])
 
 
     def tr9(self,word_list,td_key):
@@ -180,7 +193,8 @@ class TransformationRules:
         EndIf """
         if "amod" in td_key:
             for governor,dependent in td_key["amod"]:
-                self.addToClassDict(word_list[governor-1],word_list[dependent-1])
+                #self.addToClassDict(word_list[governor-1],word_list[dependent-1])
+                self.addAttributeToClass(word_list[governor-1],word_list[dependent-1])
 
     def identifyClassOperations(self):
         # TODO: number to word conversion       
@@ -794,7 +808,8 @@ class TransformationRules:
                                     #print(index_dict[str(a)])
                                     for start, end in adj_list:
                                         if a>=start and a<=end:
-                                            self.addToClassDict(index_dict[str(b)],index_dict[str(c)])
+                                            #self.addToClassDict(index_dict[str(b)],index_dict[str(c)])
+                                            self.addAttributeToClass(index_dict[str(b)],index_dict[str(c)])
                                             break
                                     for start, end in noun_list:
                                         if a>=start and a<=end:
@@ -944,7 +959,7 @@ class TransformationRules:
         for operation in self.op_list:
             source = operation.SourceEntityTerm
             if source not in allName:
-                self.class_dict[source]=[]
+                self.class_dict[source]={"Attribute":[],"Behavior":{}}
                 
     
     def tr45(self):
@@ -971,17 +986,22 @@ class TransformationRules:
             item = op.name+"("+op.para+")"
             for className in self.class_dict:
                 if op.DestEntityTerm == className and item not in self.class_dict[className]:
-                    self.addToClassDict(className, item)
+                    #self.addToClassDict(className, item)
+                    self.addBehaviorToClass(className, op.name, op.para)
                     findClass=True
             if findClass == False:
                 for className in self.class_dict:
                     for eachAttribute in self.class_dict[className]:
                         if op.DestEntityTerm == eachAttribute and item not in self.class_dict[className]:
-                            self.addToClassDict(className, item)
+                            #self.addToClassDict(className, item)
+                            self.addBehaviorToClass(className, op.name, op.para)
+
                             findClass=True
                             break
             if findClass  == False:
-                self.addToClassDict(op.DestEntityTerm, item)
+                #self.addToClassDict(op.DestEntityTerm, item)
+                self.addBehaviorToClass(className, op.name, op.para)
+
                 
                 
     def tr46(self):
@@ -1030,6 +1050,70 @@ class TransformationRules:
                             if op.DestEntityTerm==eachAttribute:
                                 self.addToRelationshipDict(op.SourceEntityTerm, className, [op.name], "associatioon")
                                 break
+    def tr51(self):
+        """
+        For each of the two classes c1 and c2 in ClassDiagram Instance
+            If c2 is attribute of c1 then
+                aggregateClass=c1;partClass=c2;
+                createRelationship(aggregateClass,partClass,“aggregation”);
+            EndIf
+        EndFor
+        """
+        for class1 in self.class_dict:
+            for class2 in self.class_dict:
+                if class1 != class2:
+                    if class2 in self.class_dict[class1]["Attribute"]:
+                        aggregateClass = class1
+                        partClass = class2
+                        self.addToRelationshipDict(aggregateClass,partClass,[],"aggregation")
+        
+    def tr52(self):
+        """
+        For each sentence of type Part-AggSubString-Whole, the POS-tags of the sentence are scanned and
+            wholeClass=createClass(noun nr on the right of AggSubString,“<<entity class>>”);
+            For each noun nl on the left of AggSubString
+                partClass=createClass(nl,“<<entity class>>”);
+                createRelationship(wholeClass,partClass,“aggregation”);
+            EndFor
+        EndFor        
+        """
+        
+        pass
+    
+    
+    def tr53(self):
+        """
+        For each sentence of type Whole-AggSubString-Part, the POS-tags of the sentence are scanned and
+            wholeClass=createClass(noun nl on the right of AggSubString,“<<entity class>>”);
+            For each noun nr on the left of AggSubString
+                partClass=createClass(nr,“<<entity class>>”);
+                createRelationship(wholeClass, partClass, “aggregation”);
+            EndFor
+        EndFor        
+        """
+        
+        pass
+    
+    
+    def tr54(self):
+        """
+        For each class c in ClassDiagram Instance
+            If c is not present as EndClass in any relationship then
+                c is deleted from ClassDiagram Instance
+            EndIf
+        EndFor        
+        """
+        for eachClass in list(self.class_dict.keys()):
+            findRela = False
+            for eachRela in self.relationship_dict:
+                for rela in self.relationship_dict[eachRela]:
+                    if eachClass in rela:
+                        findRela = True
+                        break
+            if findRela == False:
+                #print(findRela)
+                del self.class_dict[eachClass]
+    
         
 
     def addToClassDict(self,className,attributeName):
@@ -1037,6 +1121,24 @@ class TransformationRules:
             self.class_dict[className]=[attributeName]
         else:
             self.class_dict[className].append(attributeName)
+            
+            
+    def addAttributeToClass(self,className,attributeName):
+        if className not in self.class_dict:
+            self.class_dict[className]={"Attribute":[attributeName], "Behavior":{}}
+        else:
+            self.class_dict[className]["Attribute"].append(attributeName)
+            
+    
+    def addBehaviorToClass(self,className,behaviorName,para):
+        if className not in self.class_dict:
+            self.class_dict[className]={"Attribute":[], "Behavior":{behaviorName:[para]}}
+        else:
+            if behaviorName in list(self.class_dict[className]["Behavior"].keys()):
+                self.class_dict[className]["Behavior"][behaviorName].append(para)
+            else:
+                self.class_dict[className]["Behavior"][behaviorName]=[para]
+        
             
     def addToRelationshipDict(self,parentClass,childClass,relationshipName, relationship):
         if relationship not in self.relationship_dict:
@@ -1050,7 +1152,6 @@ if __name__ == '__main__':
     print(os.getcwd() + "/Data/input_origin/" + "2014-USC-Project02.txt")
     p = TransformationRules(os.getcwd() + "/Data/input_origin/" + "2014-USC-Project02.txt")
     p.apply_rules()
-
 
 
 

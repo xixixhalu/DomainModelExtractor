@@ -1,0 +1,25 @@
+Youth can take a Survey once , so Youth can provide Youth's Feedback .
+CaseManager can add Files for CaseManager's Youth .
+CaseManager can view CaseManager's Cases .
+Administrator can delete Cases .
+Administrator can modify the ProfileOfAnyUser .
+User can create and answer SecurityQuestions , so User can recover User's LoginInformation .
+The System shall send a VerificationCode when a User is trying to log in , in Order to increase SystemSecurity .
+Youth can view Youth's Profile and all the Files that belong to me .
+CaseManager can view the InformationOfMyYouth .
+Youth can contact Youth's CaseManager through the Website .
+or Administrator , CaseManager can see the ResultsOfTheYouths ` Surveys , so that CaseManager may review their Feedback .
+Staff can view the InformationOfAllYouthUsersAndGeneralInformation .
+Administrator can delete the ProfileOfAnyUser .
+or Administrator , CaseManager shall be able to export all CaseManager's Cases to an ExcelSpreadsheet .
+The System shall automatically log Users out after ten MinutesOfInactivity .
+Administrator can view , add , edit , or delete any User 's Records or Profile .
+Administrator can transfer a Youth 's Case between CaseManagers .
+or Administrator , CaseManager can send out a MassE-mail .
+CaseManager can activate or deactivate YouthAccounts as needed .
+The SystemDesign/structure shall be documented to increase maintainability and allow for TransferOfKnowledge .
+Administrator can make CertainDocuments unavailable to a Youth .
+CaseManager can not delete any Documents or Cases .
+The System shall record all the Users ' LogInformation ( Login/logout/time logged in ) .
+Administrator can view the LogRecords created by the System .
+or CaseManager , Administrator can create and manage Activities .

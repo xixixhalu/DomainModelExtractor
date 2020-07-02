@@ -1,0 +1,23 @@
+Driver can check into/select a Location through Driver's MobilePhone so that the Driver can pay for Driver's Valet .
+ValetCompany can accept MobilePayments so that ValetCompany can offer an easier PaymentOption ( meaning through CreditCard ) .
+Driver can message Driver's Valet to retrieve Driver's Vehicle , so Driver do n't have to wait in Line .
+Driver can create Driver's Profile ( FirstName , LastName , Email , OptionalCreditCard ) so that Driver can use it for all Snapvalet-relatedActivities .
+Establishment can send DirectAdvertisements to SnapvaletUsers so that Establishment can attract more Customers .
+The Application shall be secure .
+- Channel is Encrypted . ( Ssl )
+- CreditCard number/password is not stored in PlainText on App .
+Customer can enter Customer's TicketNumber from the ValetTicket so that Customer can request Customer's CarNow/later .
+The Budget for the Project shall not exceed $ 10,000 .
+The System shall be capable of eventually running an IosClient .
+ValetOperator can receive Real-timeRequests from Customers in an organized Queue so that ValetOperator can retrieve their Car in a TimelyManner .
+ValetHead can set the ValetPrice for each Shift so that ValetHead can adjust Pricing as needed .
+ValetOperator can see if a Customer has paid or not in the Queue so that ValetOperator know whether to collect Cash .
+ValetOperator can have ValetOperator's OwnLogin to ValetOperator's ValetCompany 's Profile so that ValetOperator can add Employees , tracking which Employees are working at which Location , and have MultipleLocations serviced by ValetOperator's Company , and track Transactions for each Location .
+ValetOperator can send Notifications to the Customer that their Car is ready so that the Customer does not have to wait outside while ValetOperator retrieve the Car .
+ValetCompany can receive an EmailTransactionSummaryReport for each Shift so that ValetCompany can control ValetCompany's Revenue .
+Driver can either request or request and pay for Valet so that Driver have the Option to not enter in Driver's CreditCardInformation if Driver do n't want to .
+The System should be designed to work on MultipleServers in the Future and should be capable of handling around 100 Requests at the SameTime .
+The System must be available almost all the Time , especially during HeavyUsageHours .
+Code will be modular so that Defects can be isolated and Additions can be made easily so that in Future it can be maintained by a SnapvaletEmployee .
+User can register for an Account , either as a Customer or a Valet , and include the RelevantInformation .
+SystemBack-end will have scalable , SecureDatabase .

@@ -1,3 +1,7 @@
+import sys
+sys.path.append('./')
+sys.path.append('../')
+
 import os
 from adapter import *
 from Parser.PosTagParser import *
@@ -193,7 +197,7 @@ if __name__ == '__main__':
     for year in tqdm(range(2014, 2020)):
         for projectnum in range(1, 16):
             file_name = str(year) + '-USC-Project' + str(projectnum).rjust(2, '0') + '.txt'
-            file_path = os.getcwd() + "/../Data/input_origin/" + file_name
+            file_path = os.getcwd() + "/../input_v2/" + file_name
             if not os.path.exists(file_path):  # examine whether the filename is valid
                 break
             else:  # when the filename is valid
@@ -234,5 +238,5 @@ if __name__ == '__main__':
                     allResult[file_name] = result_file
 
     output = json.dumps(allResult, indent=4)
-    with open('allFileMatchResult.json', 'w') as json_file:
+    with open('allFileMatchResult_v2.json', 'w') as json_file:
         json_file.write(output)

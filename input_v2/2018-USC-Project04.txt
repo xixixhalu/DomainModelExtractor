@@ -1,0 +1,31 @@
+User can generate Tasks with varying LevelsOfImportance .
+AdministrativeUser , Office can manage PatientData and Inventory on Office's Doctor 's Behalf .
+User can trust the the Application securely handles PersonalInformation ( E.g. , FullNames , SocialSecurityNumbers , CreditCardInformation , etc. ) .
+Doctor's Patients ' and Doctor's Data will be preserved for a SpecifiedAmountOfTime after the FreeTrialEnds or a Subscription ends .
+User can access Information such as Articles or Videos that will train me to use the System .
+Admin can customize the Portal , so it aligns with Admin's Profession .
+User can track Customers have been referred .
+User can have Reports be automatically generated on a Schedule .
+Doctor can match Patients to Products .
+User am able to create NewPatientRecords .
+Doctor am able to view a ReportOfProductPurchases .
+Administrator am able to save and retrieve ImportantPatientDocuments from within the System .
+Developer have to provide SeparateAccessPrivileges to PatientDocuments .
+Developer need to protect the App against SqlInjections and CrossSiteScripting .
+User can create an Invoice for User's Patients .
+Doctor can recommend Products for Doctor's Patients in their File .
+User can import VendorProductInformation with a CsvFile .
+Doctor want this App to integrate with Doctor's SchedulingApplication .
+User can have a Task related to a Patient .
+User can assign a Task to a Doctor .
+User can add Allergies and Medications for a SpecificPatient .
+Doctor can edit the ProgressOfAPatient along with His/her BasicInfo like DateOfLastVisit , HeightAndWeight .
+User can view and add/edit VisitDetails like Address , EmergencyContactAndInsuranceInfoOfASpecificPatient and attach the Data to the PatientRecord .
+User can add MultipleProducts by uploading a CsvFile that has InformationOfThese said MultipleProducts .
+User can export ProductInfo ( either just one Product or a SetOfProducts ) to a CsvFile .
+Doctor can fill out the OrderForm for a Product to be purchased for a Patient .
+Doctor can choose a Patient or a SetOfPatients to recommend a Product ( 1 Product mapped to 1 or more Patients ) .
+Doctor can choose a Product or a SetOfProducts to recommend to a Patient ( 1 Patient mapped to 1 or more Products ) .
+User can delete a Form or a SetOfForms at once .
+User can download a Form or a SetOfForms at once .
+User can add a NewForm .

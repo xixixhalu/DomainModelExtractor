@@ -1,0 +1,12 @@
+CaseManager can run Frequency ( Demographic and ActivityReporting ) on CaseFile , so that CaseManager can save Time in generating Report - excel or csv Format .
+DemographicInfo-age ; Gender ; ethnicity ; City ; ZipCode ; School ; Status/category ; Program ;
+Activities : AdminWork ; follow Ups ; IndividualConceling ; Workshop ; Field-trips ; CommunityResources ; Css ( Agency ) ; TimeStamps .
+CaseManager can upload Documents for each Case , so that Youth can have an Access to them .
+CaseManager can create ManagementServices , those Activities will have Category ( each Activity attached to a Kid ) , so that CaseManager can monitor YouthService ( Activities ) .
+CaseManager manage Accounts ( reset NeedSecurityQuestions ; create Accounts ; delete Accounts ; manage Kids under their OwnDomain ) , so that Youth can access .
+CaseManager can massive Email through the System and AutomaticRecordActivities , so that CaseManager save TimeLogingActivities .
+CaseManager can electronically manage CaseFiles ( demographic , Activity , and Documents ) , so that CaseManager can save Time and MonitorCases .
+The System shall be more secure ( what is secure need to be analyzed ) ; Session timer ; YouthUser can only access their OwnDocuments ; SecurityQuestions ; CaseManagerAccess control ; .
+The System shall be deployed on Mylaspace ; Redirect from . Org . Net to . Com .
+The System shall be developed using Php .
+The System shall import existing Data from Salesforce ( several hundred KidsInformation in CsvFormat ) exported Data .

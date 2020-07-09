@@ -59,7 +59,7 @@ class TransformationRules:
         #TR11-TR43
         self.identifyClassOperations()
         self.tr44()
-        self.tr45()
+        #self.tr45()
         self.tr46()
         
         self.tr51()
@@ -929,7 +929,7 @@ class TransformationRules:
             tr29()
             tr30()
             tr31() 
-            tr32()
+            #tr32()
             tr33()
             tr34()
             tr35()
@@ -1039,17 +1039,17 @@ class TransformationRules:
                         relationship[2].append(op.name)
                         findRelationship=True
             if findRelationship==False:
-                findClass = False
-                for className in self.class_dict:
-                    if op.DestEntityTerm==className:
-                        self.addToRelationshipDict(op.SourceEntityTerm, className, [op.name], "association")
-                        findClass = True
-                if findClass == False:
-                    for className in self.class_dict:
-                        for eachAttribute in self.class_dict[className]:
-                            if op.DestEntityTerm==eachAttribute:
-                                self.addToRelationshipDict(op.SourceEntityTerm, className, [op.name], "associatioon")
-                                break
+                for rel_name in self.relationship_dict:
+                    for relationship in self.relationship_dict[rel_name]:
+                        for className in self.class_dict:
+                            for eachAttribute in self.class_dict[className]:
+                                if op.SourceEntityTerm==relationship[0] and op.DestEntityTerm==eachAttribute and op.name not in relationship[2]:
+                                    relationship[2].append(op.name)
+                                    findRelationship=True
+            if findRelationship==False:
+                self.addToRelationshipDict(op.SourceEntityTerm, op.DestEntityTerm, [op.name], "association")
+
+
     def tr51(self):
         """
         For each of the two classes c1 and c2 in ClassDiagram Instance

@@ -43,8 +43,7 @@ class TransformationRules:
             elif nlp_output['sentences'] == []:
                 break
             word_list = []
-            pos_tags = parsePosTag(nlp_output)
-            
+            pos_tags = parsePosTag(nlp_output)            
             td_key = pure_enhancedTD(nlp_output)
             for i in range(0, len(nlp_output['sentences'][0]['tokens']) ):
                 word_list.append(nlp_output['sentences'][0]['tokens'][i]["word"])
@@ -54,17 +53,19 @@ class TransformationRules:
             self.tr7(word_list,td_key)
             self.tr8(word_list,td_key)
             self.tr9(word_list,td_key)
+            
+            self.tr52(nlp_output,word_list,pos_tags)
+            #self.tr53(nlp_output,word_list,pos_tags)
+            
             line = self.file.readline().strip()
         self.tr4()
         #TR11-TR43
         self.identifyClassOperations()
         self.tr44()
-        #self.tr45()
-        self.tr46()
+        self.tr45()
+        #self.tr46()
         
         self.tr51()
-        self.tr52()
-        self.tr53()
         self.tr54()
         
         print ("Classed with Attributes: "+str(self.class_dict))
@@ -929,7 +930,7 @@ class TransformationRules:
             tr29()
             tr30()
             tr31() 
-            #tr32()
+            tr32()
             tr33()
             tr34()
             tr35()
@@ -981,25 +982,37 @@ class TransformationRules:
             C.addOperation(op.name(op.Para));
         EndIf
         """
+        
         for op in self.op_list:
             findClass = False
-            item = op.name+"("+op.para+")"
+            #print(op.name,"....",op.para)
             for className in self.class_dict:
-                if op.DestEntityTerm == className and item not in self.class_dict[className]:
-                    #self.addToClassDict(className, item)
-                    self.addBehaviorToClass(className, op.name, op.para)
-                    findClass=True
+                if op.DestEntityTerm == className:
+                    if op.name not in self.class_dict[className]["Behavior"]:
+                        self.addBehaviorToClass(className, op.name, op.para)
+                        findClass=True
+                        #print(1)
+                    else:
+                        if op.para not in self.class_dict[className]["Behavior"][op.name]:
+                            self.addBehaviorToClass(className, op.name, op.para)
+                            findClass=True
+                            #print(2)
             if findClass == False:
                 for className in self.class_dict:
                     for eachAttribute in self.class_dict[className]:
-                        if op.DestEntityTerm == eachAttribute and item not in self.class_dict[className]:
-                            #self.addToClassDict(className, item)
-                            self.addBehaviorToClass(className, op.name, op.para)
-
-                            findClass=True
-                            break
+                        if op.DestEntityTerm == eachAttribute:
+                            if op.name not in self.class_dict[className]["Behavior"]:
+                                self.addBehaviorToClass(className, op.name, op.para)
+                                findClass=True
+                                #print(3)
+                                break
+                            else:
+                                if op.para not in self.class_dict[className]["Behavior"][op.name]:
+                                    self.addBehaviorToClass(className, op.name, op.para)
+                                    findClass=True
+                                    #print(4)
+                                    break
             if findClass  == False:
-                #self.addToClassDict(op.DestEntityTerm, item)
                 self.addBehaviorToClass(className, op.name, op.para)
 
                 
@@ -1067,7 +1080,7 @@ class TransformationRules:
                         partClass = class2
                         self.addToRelationshipDict(aggregateClass,partClass,[],"aggregation")
         
-    def tr52(self):
+    def tr52(self,nlp_output,word_list,pos_tags):
         """
         For each sentence of type Part-AggSubString-Whole, the POS-tags of the sentence are scanned and
             wholeClass=createClass(noun nr on the right of AggSubString,“<<entity class>>”);
@@ -1077,11 +1090,46 @@ class TransformationRules:
             EndFor
         EndFor        
         """
+        np_list = pos_tags["NP"]
+        vp_list = pos_tags["VP"]
+        noun_list = []
+        if "NN" in pos_tags:
+            noun_list += pos_tags["NN"]
+        if "NNS" in pos_tags:
+            noun_list += pos_tags["NNS"]
+        if "NNP" in pos_tags:
+            noun_list += pos_tags["NNP"]
+        noun_list = list(set(noun_list))    
         
-        pass
+        for key in ["part", "parts", "unit", "units", "member", "members"]:
+            part_list = []
+            whole_list = []
+            if key in word_list:
+                np_start = word_list.index(key)+1
+                if word_list[np_start] == "of":
+                    for np in np_list:
+                        if np[0]==np_start and np[0]!=np[1]:
+                            np_end = np[1]
+                            for word in range(np_start+1, np_end+1):
+                                if (word,word) in noun_list:
+                                    whole_list.append(word_list[word-1])
+                                    self.class_dict[word_list[word-1]]={"Attribute":[],"Behavior":{}}
+                    for vp in vp_list:
+                        if vp[0]<np_start and vp[1]>=np_end:
+                            vp_start = vp[0]
+                            np_end = vp_start-1
+                            for np in np_list:
+                                if np[1]==np_end:
+                                    np_start = np[0]
+                                    for word in range(np_start,np_end+1):
+                                        if (word,word) in noun_list:
+                                            part_list.append(word_list[word-1])
+                                            self.class_dict[word_list[word-1]]={"Attribute":[],"Behavior":{}}
+                                            for whole in whole_list:
+                                                self.addToRelationshipDict(whole, word_list[word-1], "", "aggregation")
     
     
-    def tr53(self):
+    def tr53(self,nlp_output,word_list,pos_tags):
         """
         For each sentence of type Whole-AggSubString-Part, the POS-tags of the sentence are scanned and
             wholeClass=createClass(noun nl on the right of AggSubString,“<<entity class>>”);
@@ -1091,7 +1139,7 @@ class TransformationRules:
             EndFor
         EndFor        
         """
-        
+
         pass
     
     
@@ -1115,13 +1163,6 @@ class TransformationRules:
                 del self.class_dict[eachClass]
     
         
-
-    def addToClassDict(self,className,attributeName):
-        if className not in self.class_dict:
-            self.class_dict[className]=[attributeName]
-        else:
-            self.class_dict[className].append(attributeName)
-            
             
     def addAttributeToClass(self,className,attributeName):
         if className not in self.class_dict:

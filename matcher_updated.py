@@ -279,7 +279,7 @@ class Test_Files:
 
 
     def save_result(self, result, result_senten):
-        writer = open(os.getcwd() + "/Data/output_origin/" + 'result.json')
+        writer = open(os.getcwd() + "/Data/output_origin_v2/" + 'result.json')
 
         writer.close()
 
@@ -311,7 +311,7 @@ if __name__ == '__main__':
             output_result_file = output_result
             # file_name = 'test'
             file_name = str(year) + '-USC-Project' + str(project).rjust(2,'0')
-            file_path = os.getcwd() + "/Data/input_origin/" + file_name + '.txt'
+            file_path = os.getcwd() + "/input_v2/" + file_name + '.txt'
             if not os.path.exists(file_path):
                 break
             else:
@@ -365,6 +365,6 @@ if __name__ == '__main__':
                                     sentence_info['Index'] = s_dic
                                     output_result_file[rule_name].append({s:sentence_info})
                 # wrute the result into json file
-                with open(os.getcwd() + '/Data/output_origin/%sResult.json'%file_name, 'w') as jsonwriter:
-                    json.dump(output_result, jsonwriter)
+                with open(os.getcwd() + '/Data/output_origin_v2/%sResult.json'%file_name, 'w') as jsonwriter:
+                    json.dump(output_result, jsonwriter, indent=2)
                 f.close()

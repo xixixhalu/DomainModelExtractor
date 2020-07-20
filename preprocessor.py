@@ -18,7 +18,7 @@ class PreProcessor:
 
     def pre_process(self):
         # overwrite previous output file
-        dirs = os.getcwd() + "/input/"
+        dirs = os.getcwd() + "/input_v2/"
         if not os.path.exists(dirs):
             os.makedirs(dirs)
 

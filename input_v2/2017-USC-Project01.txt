@@ -1,0 +1,21 @@
+Admin can manage UserPermission .
+User should receive an Email after registering so that User am able to confirm User's Registration .
+User should only see Projects User have been assigned to so that User am not exposed to SensitiveInformation .
+Admin should be able to AssociateProjects and Users so that Admin can restrict Access appropriately .
+User should be able to export SoftwareQualityMetrics so that User can perform Off-lineStatisticalAnalysis .
+to the Project , Contributor should be able to ask the Admin to give Access to another User to the Project .
+User should be able to reset User's Password with User's Email if forgotten .
+The System shall be https .
+User should be able to request for analyzing User's Project .
+User should receive a VerificationEmail on Signup .
+Admin should have the Ability to grant/deny AccessOfTheProjects to the User .
+User should be able to view VariousStatistics about the Project .
+Contributor should be able to access all the Projects Contributor worked on so that Contributor can analyze Contributor's Impact .
+Admin should be able to reset UsersPasswords when/if required .
+Admin should be able to terminate or block an AccountTemporarily/permanently .
+User should be able to see the EvolutionOfOpen-sourceProjects .
+Contributor should be able to see the ListOfAnalyzedProjects that Contributor have contributed to , Contributor am given Access to , or any OtherOpenSourceProject .
+The System shall be in React.js .
+20 Users should be able to work with the System simultaneously .
+User should be able to smoothly interact with the SystemScatterplotChartOfTheCoevolutionOfAProject with 10000 DataPoints for up to 4 Metrics .
+User should be able to open ProjectAnalysisView in System with a LoadTimeOfLessThanOrEqualTo2Seconds .

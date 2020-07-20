@@ -34,7 +34,6 @@ class PreProcessor:
             # maps combined noun to the original nouns
             actor_map = {}
             act = []
-
             line = self.combine_nouns(line, meta, actor_map)
             line = self.replace_role(line, actor_map, act)
             output.write(line + "\n")
@@ -76,11 +75,14 @@ class PreProcessor:
         intervals.extend(self.combine_nmod(td_key))
         intervals = self.merge_intervals(intervals)
 
+        tokens = nlp_output['sentences'][0]['tokens']
+
+        intervals = self.check_intervals(intervals, tokens)
+
         map = {}
         for pair in intervals:
             map[pair[0]] = pair[1]
 
-        tokens = nlp_output['sentences'][0]['tokens']
         new_line = ''
         i = 1
 
@@ -160,6 +162,34 @@ class PreProcessor:
         # print("merged intervals: ", list)
 
         return list
+
+    def check_intervals(self, intervals, tokens):
+        _intervals = []
+
+        def combine_tokens(interval, tokens):
+            res = []
+            for i in range(interval[0], interval[1] + 1):
+                token = tokens[i-1]['word'].lower()
+                res.append(token)
+            return res
+
+        for interval in intervals:
+            candidates = combine_tokens(interval, tokens)
+            start = interval[0]
+            end = interval[1]
+            for i, word in enumerate(candidates):
+                if word == 'include' or word == 'extend' or word == 'resume' or word == 'repeat':
+                    start = start + i + 1
+                elif word == 'part' or word == 'parts' or word == 'unit' or word == 'units' or \
+                        word == 'member' or word == 'members':
+                    if i + 1 < len(candidates) and candidates[i+1] == 'of':
+                        start = start + i + 2
+            start_word = tokens[start - 1]['word']
+            if start_word == 'the' or start_word == 'an' or start_word == 'a':
+                start = start + 1
+            _intervals.append((start, end))
+
+        return _intervals
 
     # Return a list of index intervals that we should combine
     def combine_nmod(self, td_key):

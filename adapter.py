@@ -48,7 +48,7 @@ def analyze(sentence):
     nlp = StanfordCoreNLP('http://127.0.0.1:9000')
     # Json response of all the annotations
     output = nlp.annotate(sentence, properties={
-        "annotators": "tokenize,ssplit,parse",
+        "annotators": "tokenize,ssplit,parse,lemma",
         "outputFormat": "json",
         # Only split the sentence at End Of Line. We assume that this method only takes in one single sentence.
         "ssplit.eolonly": "true",

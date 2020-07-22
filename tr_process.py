@@ -35,7 +35,7 @@ class TransformationRules:
     def apply_rules(self):
         line = self.file.readline().strip()
         while line:
-            # print "Original sentence: ", line
+            #print( "Original sentence: ", line)
             nlp_output = analyze(line)
             if nlp_output is None:
                 print (line, ": NLP API returns None. skip!")
@@ -54,8 +54,11 @@ class TransformationRules:
             self.tr8(word_list,td_key)
             self.tr9(word_list,td_key)
             
-            self.tr52(nlp_output,word_list,pos_tags)
-            #self.tr53(nlp_output,word_list,pos_tags)
+            lemma_list = []
+            for i in range(0, len(nlp_output['sentences'][0]['tokens']) ):
+                lemma_list.append(nlp_output['sentences'][0]['tokens'][i]["lemma"])
+            self.tr52(lemma_list,pos_tags)
+            self.tr53(lemma_list,pos_tags)
             
             line = self.file.readline().strip()
         self.tr4()
@@ -818,8 +821,8 @@ class TransformationRules:
                         noun_list = noun_list + sentence[list(sentence.keys())[0]]["Pos-tag"]["NNP"]
                     if "NNPS" in sentence[list(sentence.keys())[0]]["Pos-tag"]:
                         noun_list = noun_list + sentence[list(sentence.keys())[0]]["Pos-tag"]["NNPS"]
-                    if "NP" in sentence[list(sentence.keys())[0]]["Pos-tag"]:
-                        noun_list = noun_list + sentence[list(sentence.keys())[0]]["Pos-tag"]["NP"]
+                    # if "NP" in sentence[list(sentence.keys())[0]]["Pos-tag"]:
+                    #     noun_list = noun_list + sentence[list(sentence.keys())[0]]["Pos-tag"]["NP"]
                     
                     #print(type(adj_list[0][0]))
                     #print(noun_list)
@@ -1151,59 +1154,42 @@ class TransformationRules:
         print(self.relationship_dict)
         temp = self.relationship_dict
         print(len(self.op_list))
-        
-        
+
+
         for op in self.op_list:
+            #print(op)
             findRelationship = False
-            for rel_name in self.relationship_dict:
-                for relationship in self.relationship_dict[rel_name]:
-                    if op.SourceEntityTerm == relationship[0] and op.DestEntityTerm == relationship[1]:
+            for rel_name in temp:
+                for relationship in temp[rel_name]:
+                    if op.SourceEntityTerm==relationship[0] and op.DestEntityTerm==relationship[1]:
+                        #print(op)
+                        #print(relationship)
                         if op.name not in relationship[2]:
                             relationship[2].append(op.name)
-                            findRelationship = True
                             print(1)
-  
-                       
+                            findRelationship=True
+            if findRelationship==False:
+                for rel_name in temp:
+                    for relationship in temp[rel_name]:
+                        if relationship[1] in self.class_dict:
+                            if op.SourceEntityTerm==relationship[0] and op.DestEntityTerm in self.class_dict[relationship[1]]["Attribute"]:
+                                if op.name not in relationship[2]:
+                                    relationship[2].append(op.name)
+                                    findRelationship=True
+                                    print(2)
                         
-                        
-                        
-                        
-                        
-
-        # for op in self.op_list:
-        #     #print(op)
-        #     findRelationship = False
-        #     for rel_name in temp:
-        #         for relationship in temp[rel_name]:
-        #             if op.SourceEntityTerm==relationship[0] and op.DestEntityTerm==relationship[1]:
-        #                 #print(op)
-        #                 #print(relationship)
-        #                 if op.name not in relationship[2]:
-        #                     relationship[2].append(op.name)
-        #                     print(1)
-        #                     findRelationship=True
-        #     if findRelationship==False:
-        #         for rel_name in temp:
-        #             for relationship in temp[rel_name]:
-        #                 if relationship[1] in self.class_dict:
-        #                     if op.SourceEntityTerm==relationship[0] and op.DestEntityTerm in self.class_dict[relationship[1]]["Attribute"]:
-        #                         if op.name not in relationship[2]:
-        #                             relationship[2].append(op.name)
-        #                             findRelationship=True
-        #                             print(2)
-                        
-                        # for className in self.class_dict:
-                        #     for eachAttribute in self.class_dict[className]:
-                        #         if op.SourceEntityTerm==relationship[0] and op.DestEntityTerm==eachAttribute and op.name not in relationship[2]:
-                        #             relationship[2].append(op.name)
-                        #             findRelationship=True
+                        for className in self.class_dict:
+                            for eachAttribute in self.class_dict[className]:
+                                if op.SourceEntityTerm==relationship[0] and op.DestEntityTerm==eachAttribute and op.name not in relationship[2]:
+                                    relationship[2].append(op.name)
+                                    findRelationship=True
         
         
         
             if findRelationship==False:
                 self.addToRelationshipDict(op.SourceEntityTerm, op.DestEntityTerm, [op.name], "association")
-                print(2)
-        print(temp)
+                #print(2)
+        #print(temp)
 
     def tr51(self):
         """
@@ -1222,7 +1208,7 @@ class TransformationRules:
                         partClass = class2
                         self.addToRelationshipDict(aggregateClass,partClass,[],"aggregation")
         
-    def tr52(self,nlp_output,word_list,pos_tags):
+    def tr52(self,word_list,pos_tags):
         """
         For each sentence of type Part-AggSubString-Whole, the POS-tags of the sentence are scanned and
             wholeClass=createClass(noun nr on the right of AggSubString,“<<entity class>>”);
@@ -1234,6 +1220,7 @@ class TransformationRules:
         """
         np_list = pos_tags["NP"]
         vp_list = pos_tags["VP"]
+        
         noun_list = []
         if "NN" in pos_tags:
             noun_list += pos_tags["NN"]
@@ -1241,37 +1228,44 @@ class TransformationRules:
             noun_list += pos_tags["NNS"]
         if "NNP" in pos_tags:
             noun_list += pos_tags["NNP"]
+        if "NNPS" in pos_tags:
+            noun_list += pos_tags["NNPS"]
         noun_list = list(set(noun_list))    
         
-        for key in ["part", "parts", "unit", "units", "member", "members"]:
+        sentence_lemma = " ".join(word_list)
+        
+        for key in ["be part of", "be unit of", "be member of"]:
             part_list = []
             whole_list = []
-            if key in word_list:
-                np_start = word_list.index(key)+1
-                if word_list[np_start] == "of":
-                    for np in np_list:
-                        if np[0]==np_start and np[0]!=np[1]:
-                            np_end = np[1]
-                            for word in range(np_start+1, np_end+1):
-                                if (word,word) in noun_list:
-                                    whole_list.append(word_list[word-1])
-                                    self.class_dict[word_list[word-1]]={"Attribute":[],"Behavior":{}}
-                    for vp in vp_list:
-                        if vp[0]<np_start and vp[1]>=np_end:
-                            vp_start = vp[0]
-                            np_end = vp_start-1
-                            for np in np_list:
-                                if np[1]==np_end:
-                                    np_start = np[0]
-                                    for word in range(np_start,np_end+1):
-                                        if (word,word) in noun_list:
-                                            part_list.append(word_list[word-1])
-                                            self.class_dict[word_list[word-1]]={"Attribute":[],"Behavior":{}}
-                                            for whole in whole_list:
-                                                self.addToRelationshipDict(whole, word_list[word-1], "", "aggregation")
+            if key in sentence_lemma:
+                key_word = key.split(" ")
+                vp_start = word_list.index(key_word[0])+1
+                np_start = vp_start + len(key_word)
+                
+                np_end = 10000
+                for np in np_list:
+                    if np[0] == np_start and np[1] < np_end:
+                        np_end = np[1]
+                    
+                for word in range(np_start, np_end+1):
+                    if (word,word) in noun_list:
+                        whole_list.append(word_list[word-1])
+                        self.class_dict[word_list[word-1]]={"Attribute":[],"Behavior":{}}
+                                
+                np_start = 0
+                np_end = vp_start-1
+                for np in np_list:
+                    if np[1] <= np_end and np[0] > np_start and np[0] != np[1]:
+                        np_start = np[0]
+                        
+                for word in range(np_start,np_end+1):
+                    if (word,word) in noun_list:
+                        self.class_dict[word_list[word-1]]={"Attribute":[],"Behavior":{}}
+                        for whole in whole_list:
+                            self.addToRelationshipDict(whole, word_list[word-1], "", "aggregation")
+        
     
-    
-    def tr53(self,nlp_output,word_list,pos_tags):
+    def tr53(self,word_list,pos_tags):
         """
         For each sentence of type Whole-AggSubString-Part, the POS-tags of the sentence are scanned and
             wholeClass=createClass(noun nl on the right of AggSubString,“<<entity class>>”);
@@ -1281,8 +1275,53 @@ class TransformationRules:
             EndFor
         EndFor        
         """
+        np_list = pos_tags["NP"]
+        vp_list = pos_tags["VP"]
+        
+        noun_list = []
+        if "NN" in pos_tags:
+            noun_list += pos_tags["NN"]
+        if "NNS" in pos_tags:
+            noun_list += pos_tags["NNS"]
+        if "NNP" in pos_tags:
+            noun_list += pos_tags["NNP"]
+        if "NNPS" in pos_tags:
+            noun_list += pos_tags["NNPS"]
+        noun_list = list(set(noun_list))    
 
-        pass
+        sentence_lemma = " ".join(word_list)
+        
+        for key in ["consist of", "be make of", "contain", "be compose of"]:
+            part_list = []
+            whole_list = []
+            if key in sentence_lemma:
+                key_word = key.split(" ")
+                vp_start = word_list.index(key_word[0])+1
+                
+                np_end = 0
+                for np in np_list:
+                    if np[1] > np_end and np[1] < vp_start:
+                        np_start = np[0]
+                        np_end = np[1]
+                
+                for word in range(np_start, np_end+1):
+                    if (word,word) in noun_list:    
+                        self.class_dict[word_list[word-1]]={"Attribute":[],"Behavior":{}}
+                        whole_list.append(word_list[word-1])
+                
+                np_start = 10000
+                np_end = 100000
+                for np in np_list:
+                    if np[0] > vp_start and np[1] < np_end:
+                        np_start = np[0]
+                        np_end = np[1]
+
+                for word in range(np_start, np_end+1):
+                    if (word,word) in noun_list:
+                        self.class_dict[word_list[word-1]]={"Attribute":[],"Behavior":{}}
+                        for whole in whole_list:
+                            self.addToRelationshipDict(whole, word_list[word-1], "", "aggregation")
+                            
     
     
     def tr54(self):

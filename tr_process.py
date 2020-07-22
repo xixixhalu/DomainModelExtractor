@@ -1255,7 +1255,7 @@ class TransformationRules:
                 np_start = 0
                 np_end = vp_start-1
                 for np in np_list:
-                    if np[1] <= np_end and np[0] > np_start and np[0] != np[1]:
+                    if np[1] <= np_end and np[0] > np_start :
                         np_start = np[0]
                         
                 for word in range(np_start,np_end+1):

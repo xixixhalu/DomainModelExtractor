@@ -164,12 +164,42 @@ class PreProcessor:
         return list
 
     def check_intervals(self, intervals, tokens):
+        '''
+        This function is responsible for filtering invalidate intervals to assist future steps.
+        All invalidate words are included in key_words and key_phrase_words.
+        Please note that this function exploit lemmatization from Stanford NLP API, so users do not need to care about
+        words' inflection.
+
+        1. If an interval contains a word in key_words called key, this function will use all the words after key to
+        construct an new interval to replace the original one.
+
+        2. If an interval contains a word in key_phrase_words and and its next word is "of", this function will also
+        remove them as well as construct an new one.
+
+        eg.
+        Input: Include UCS Validate PIN.
+        Original output:IncludeUCSValidatePIN.
+        Current output: Include UCSValidatePIN.
+
+        ----------------------------------------
+        
+        Input: Cardreader , Cashdispenser and Receiptprinter are parts of the schedule of ATM.
+        Original output: Cardreader, Cashdispenser and Receiptprinter are PartsOfTheScheduleOfATM.
+        Current output: Cardreader , Cashdispenser and Receiptprinter are parts of the ScheduleOfATM.
+
+        :param intervals:
+        :param tokens:
+        :return: _intervals
+        '''
+
         _intervals = []
+        key_words = ["include", "extend", "resume", "repeat", "contain"]
+        key_phrase_words = ["part", "unit", "member", "consist", "make", "compose"]
 
         def combine_tokens(interval, tokens):
             res = []
             for i in range(interval[0], interval[1] + 1):
-                token = tokens[i-1]['word'].lower()
+                token = tokens[i-1]['lemma'].lower()
                 res.append(token)
             return res
 
@@ -178,10 +208,9 @@ class PreProcessor:
             start = interval[0]
             end = interval[1]
             for i, word in enumerate(candidates):
-                if word == 'include' or word == 'extend' or word == 'resume' or word == 'repeat':
+                if word in key_words:
                     start = start + i + 1
-                elif word == 'part' or word == 'parts' or word == 'unit' or word == 'units' or \
-                        word == 'member' or word == 'members':
+                elif word in key_phrase_words:
                     if i + 1 < len(candidates) and candidates[i+1] == 'of':
                         start = start + i + 2
             start_word = tokens[start - 1]['word']

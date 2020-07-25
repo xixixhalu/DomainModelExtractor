@@ -2,8 +2,8 @@ User can log in via Linkedin .
 SystemAdmin can approve Users ' Sign-inRequests .
 User can look up Papers authored by CsseProfessors and Students .
 User can look up Alumni according to their Companies .
-User can update User's SocialMedia in Order to keep User's ResumeUpdated .
-System can fetch the Resume from Linkedin for each User and persist it into DataStorage .
+User can update User's SocialMedia in Order to keep User's resume Updated .
+System can fetch the resume From Linkedin for each User and persist it into DataStorage .
 the Portal will be supported and rendered correctly on MobileDevices too .
 User will be able to see Events from #csseTwitterPage on the Portal .
 System can fetch ResearchDocuments from the Server and see them in a Timestamp sorted Way .
@@ -33,4 +33,4 @@ The System shall render on MobileResponsively .
 The System shall fetch RelevantEventsInformation from SocialMedia ( Twitter/fb ) .
 User can search for AvailableResearchPapers .
 System can fetch Tweets/communication from the OfficialCSSESocial-mediaAccount ( Twitter ) .
-System can fetch UserInformation ( Resume , JobHistory ) from Linkedin .
+System can fetch UserInformation ( resume , JobHistory ) from Linkedin .

@@ -24,7 +24,7 @@
 [(['user'], (3, 3)), (['groups'], (7, 7))]
 [(['user'], (3, 3)), (['people'], (9, 9)), (['group', 'of', 'which', 'I', 'am', 'administrator'], (13, 18))]
 [(['user'], (3, 3)), (['request'], (8, 8)), (['administrator', 'of', 'the', 'group'], (11, 14))]
-[(['user'], (2, 2)), (['private', 'group'], (10, 11)), (['user'], (14, 14)), (['part', 'of', 'the', 'group'], (18, 21))]
+[(['user'], (2, 2)), (['private', 'group'], (10, 11)), (['user'], (14, 14)), (['group'], (21, 21))]
 [(['user'], (3, 3)), (['group'], (12, 12)), (['point', 'of', 'time'], (15, 17))]
 [(['user'], (3, 3)), (['company/school'], (8, 8))]
 [(['administrator', 'of', 'the', 'system'], (3, 6)), (['ads'], (11, 11)), (['ad-space'], (14, 14)), (['website'], (17, 17))]

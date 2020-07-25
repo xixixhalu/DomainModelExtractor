@@ -182,7 +182,7 @@ class PreProcessor:
         Current output: Include UCSValidatePIN.
 
         ----------------------------------------
-        
+
         Input: Cardreader , Cashdispenser and Receiptprinter are parts of the schedule of ATM.
         Original output: Cardreader, Cashdispenser and Receiptprinter are PartsOfTheScheduleOfATM.
         Current output: Cardreader , Cashdispenser and Receiptprinter are parts of the ScheduleOfATM.

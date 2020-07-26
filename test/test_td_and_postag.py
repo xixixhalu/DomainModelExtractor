@@ -72,6 +72,6 @@ if __name__ == '__main__':
     # sentence = 'As a user, I can view the leaderboard by sorting it either based on Schools or graduation date.'
     # sentence = '"As a user, I can start a thread by posting a question so that other users might answer that question with credible information.'
     # sentence = 'The system helps user to distrubute tasks.'
-    sentence = "Bell, based in Los Angeles, makes and distributes electronic, computer and building products."
+    sentence = "The child is a good thing"
     identifier = Identifier()
     identifier.identify(sentence)

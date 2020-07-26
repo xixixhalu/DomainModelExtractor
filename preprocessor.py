@@ -34,7 +34,6 @@ class PreProcessor:
             # maps combined noun to the original nouns
             actor_map = {}
             act = []
-
             line = self.combine_nouns(line, meta, actor_map)
             line = self.replace_role(line, actor_map, act)
             output.write(line + "\n")
@@ -76,11 +75,14 @@ class PreProcessor:
         intervals.extend(self.combine_nmod(td_key))
         intervals = self.merge_intervals(intervals)
 
+        tokens = nlp_output['sentences'][0]['tokens']
+
+        intervals = self.check_intervals(intervals, tokens)
+
         map = {}
         for pair in intervals:
             map[pair[0]] = pair[1]
 
-        tokens = nlp_output['sentences'][0]['tokens']
         new_line = ''
         i = 1
 
@@ -160,6 +162,63 @@ class PreProcessor:
         # print("merged intervals: ", list)
 
         return list
+
+    def check_intervals(self, intervals, tokens):
+        '''
+        This function is responsible for filtering invalidate intervals to assist future steps.
+        All invalidate words are included in key_words and key_phrase_words.
+        Please note that this function exploit lemmatization from Stanford NLP API, so users do not need to care about
+        words' inflection.
+
+        1. If an interval contains a word in key_words called key, this function will use all the words after key to
+        construct an new interval to replace the original one.
+
+        2. If an interval contains a word in key_phrase_words and and its next word is "of", this function will also
+        remove them as well as construct an new one.
+
+        eg.
+        Input: Include UCS Validate PIN.
+        Original output:IncludeUCSValidatePIN.
+        Current output: Include UCSValidatePIN.
+
+        ----------------------------------------
+
+        Input: Cardreader , Cashdispenser and Receiptprinter are parts of the schedule of ATM.
+        Original output: Cardreader, Cashdispenser and Receiptprinter are PartsOfTheScheduleOfATM.
+        Current output: Cardreader , Cashdispenser and Receiptprinter are parts of the ScheduleOfATM.
+
+        :param intervals:
+        :param tokens:
+        :return: _intervals
+        '''
+
+        _intervals = []
+        key_words = ["include", "extend", "resume", "repeat", "contain"]
+        key_phrase_words = ["part", "unit", "member", "consist", "make", "compose"]
+
+        def combine_tokens(interval, tokens):
+            res = []
+            for i in range(interval[0], interval[1] + 1):
+                token = tokens[i-1]['lemma'].lower()
+                res.append(token)
+            return res
+
+        for interval in intervals:
+            candidates = combine_tokens(interval, tokens)
+            start = interval[0]
+            end = interval[1]
+            for i, word in enumerate(candidates):
+                if word in key_words:
+                    start = start + i + 1
+                elif word in key_phrase_words:
+                    if i + 1 < len(candidates) and candidates[i+1] == 'of':
+                        start = start + i + 2
+            start_word = tokens[start - 1]['word']
+            if start_word == 'the' or start_word == 'an' or start_word == 'a':
+                start = start + 1
+            _intervals.append((start, end))
+
+        return _intervals
 
     # Return a list of index intervals that we should combine
     def combine_nmod(self, td_key):

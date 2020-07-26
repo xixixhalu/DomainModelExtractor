@@ -194,7 +194,7 @@ class PreProcessor:
 
         _intervals = []
         key_words = ["include", "extend", "resume", "repeat", "contain"]
-        key_phrase_words = ["part", "unit", "member", "consist", "make", "compose", "type"]
+        key_phrase_words = ["part", "unit", "member", "consist", "make", "compose", "type", "kind", "parent"]
 
         def combine_tokens(interval, tokens):
             res = []

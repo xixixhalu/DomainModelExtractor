@@ -1,6 +1,6 @@
 import sys
 sys.path.append('../')
-from utilities.file_op import fileOps
+from util.file_op import fileOps
 import subprocess
 
 class UMLEntity:
@@ -124,6 +124,6 @@ if __name__ == '__main__':
     viewer.add_attribute("test1", "first_name")
     viewer.add_attribute("test2", "last_name")
 
-    viewer.add_association("test1", "test2")
+    viewer.add_association(UMLAssociation("test1", "test2"))
 
     viewer.save_to_file(path="./")

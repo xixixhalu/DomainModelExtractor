@@ -6,6 +6,8 @@ import json
 from adapter import *
 from Parser.PosTagParser import *
 from Parser.TDParser import *
+from UMLViewer import *
+import re
 
 class TransformationRules:
 
@@ -82,8 +84,8 @@ class TransformationRules:
         # self.tr53()
         self.tr54()
         
-        print ("Classed with Attributes: "+str(self.class_dict))
-        print ("Relationships with parent class & child class: "+str(self.relationship_dict))
+        #print ("Classed with Attributes: "+str(self.class_dict))
+        #print ("Relationships with parent class & child class: "+str(self.relationship_dict))
     
     # TR4 is divided into 2 functions: tr4_initial(), tr4(). tr4_initial adds nouns into noun_trie(datatype: Trie).
     # This makes searching if one word starts with the other efficient as opposed to O(n^2) if we did a linear seach
@@ -1248,7 +1250,7 @@ class TransformationRules:
             if source not in allName:
                 self.class_dict[source]={"Attribute":[],"Behavior":{}}
                 
-    
+ 
     def tr45(self):
         """
         For each class C in ClassDiagram Instance
@@ -1268,83 +1270,87 @@ class TransformationRules:
             C.addOperation(op.name(op.Para));
         EndIf
         """
+        
         for op in self.op_list:
             findClass = False
-            item = op.name+"("+op.para+")"
+            #print(op.name,"....",op.para)
             for className in self.class_dict:
-                if op.DestEntityTerm == className and item not in self.class_dict[className]:
-                    #self.addToClassDict(className, item)
-                    self.addBehaviorToClass(className, op.name, op.para)
-                    findClass=True
+                if op.DestEntityTerm == className:
+                    if op.name not in self.class_dict[className]["Behavior"]:
+                        self.addBehaviorToClass(className, op.name, op.para)
+                        findClass=True
+                        #print(1)
+                    else:
+                        if op.para not in self.class_dict[className]["Behavior"][op.name]:
+                            self.addBehaviorToClass(className, op.name, op.para)
+                            findClass=True
+                            #print(2)
             if findClass == False:
                 for className in self.class_dict:
                     for eachAttribute in self.class_dict[className]:
-                        if op.DestEntityTerm == eachAttribute and item not in self.class_dict[className]:
-                            #self.addToClassDict(className, item)
-                            self.addBehaviorToClass(className, op.name, op.para)
-
-                            findClass=True
-                            break
+                        if op.DestEntityTerm == eachAttribute:
+                            if op.name not in self.class_dict[className]["Behavior"]:
+                                self.addBehaviorToClass(className, op.name, op.para)
+                                findClass=True
+                                #print(3)
+                                break
+                            else:
+                                if op.para not in self.class_dict[className]["Behavior"][op.name]:
+                                    self.addBehaviorToClass(className, op.name, op.para)
+                                    findClass=True
+                                    #print(4)
+                                    break
             if findClass  == False:
-                #self.addToClassDict(op.DestEntityTerm, item)
                 self.addBehaviorToClass(className, op.name, op.para)
 
                 
                 
     def tr46(self):
-        """   
-        For each relationship r in ClassDiagram Instance
-            If(op.SourceEntityTerm==r.class1 and op.DestEntityTerm==r.class2)AND(r.name does not contains op.name)
-                append op.name to r.name 
-            EndIf
-        EndFor
-        If (no such relationship found) then
-            For each class c in ClassDiagram Instance 
-                If(op.DestEntityTerm==c.Name)
-                    rName=op.name; 
-                    createRelationship(op.SourceEntityTerm, c, rName, “association”); 
+        """
+        For each operation op
+            For each relationship r in ClassDiagram Instance
+                If(op.SourceEntityTerm==r.class1 and op.DestEntityTerm==r.class2)AND(r.name does not contains op.name)
+                    append op.name to r.name 
                 EndIf
             EndFor
-            If(no such class is found) then
-                For each class c in ClassDiagram Instance 
-                    If(op.DestEntityTerm==a.Name for some attribute a in class c)
-                        rName=op.name; 
-                        createRelationship(op.SourceEntityTerm, c, rName, “association”); 
+            If (no such relationship found) then
+                For each relationship r in ClassDiagram Instance 
+                    If(op.SourceEntityTerm==r.class1 and op.DestEntityTerm==a.name for some attribute a of class r.class2)AND(r.name does not contains op.name)
+                        append op.name to r.name 
                     EndIf
-                EndFor 
+                EndFor
             EndIf
-        EndIf
+            If no such relationship found then
+                rName=op.name; 
+                createRelationship(op.SourceEntityTerm, op.DestEntityTerm, rName, “association”); 
+            EndIf
         """
-        print(self.op_list,'b')
-        print(self.relationship_dict,'a')
         for op in self.op_list:
-            #print(op,'ab')
-            findRelationship = False
-            
-            for rel_name in self.relationship_dict:
-                #print(rel_name)
-                for relationship in self.relationship_dict[rel_name]:
-                    #print(relationship)
-                    
-                    if op.SourceEntityTerm==relationship[0] and op.DestEntityTerm==relationship[1] and op.name not in relationship[2]:
-                        
-                        #print(relationship[2])
-                        relationship[2].append(op.name)
-                        findRelationship=True
-                        break
-                    break
-            if findRelationship==False:
-                findClass = False
-                for className in self.class_dict:
-                    if op.DestEntityTerm==className:
-                        self.addToRelationshipDict(op.SourceEntityTerm, className, [op.name], "association")
-                        findClass = True
-                if findClass == False:
-                    for className in self.class_dict:
-                        for eachAttribute in self.class_dict[className]:
-                            if op.DestEntityTerm==eachAttribute:
-                                self.addToRelationshipDict(op.SourceEntityTerm, className, [op.name], "associatioon")
-                                break
+            if op.SourceEntityTerm != op.DestEntityTerm and op.SourceEntityTerm in self.class_dict and op.DestEntityTerm in self.class_dict:
+                findRelationship = False
+                for rel_name in self.relationship_dict:
+                    for relationship in self.relationship_dict[rel_name]:
+                        if relationship[0] in self.class_dict and relationship[1] in self.class_dict:
+                            if op.SourceEntityTerm==relationship[0] and op.DestEntityTerm==relationship[1]:
+                                if op.name not in relationship[2]:
+                                    relationship[2].append(op.name)
+                                    findRelationship = True
+                if findRelationship==False:
+                    for rel_name in self.relationship_dict:
+                        for relationship in self.relationship_dict[rel_name]:
+                            if relationship[0] in self.class_dict and relationship[1] in self.class_dict:
+                                if op.SourceEntityTerm==relationship[0]:
+                                    for classAttr in self.class_dict[relationship[1]]["Attribute"]:
+                                        if op.DestEntityTerm==classAttr:
+                                            if op.name not in relationship[2]:
+                                                relationship[2].append(op.name)
+                                                findRelationship = True
+                                                break
+                if findRelationship==False:
+                    self.addToRelationshipDict(op.SourceEntityTerm, op.DestEntityTerm, [op.name], "association")
+
+                           
+                            
     def tr47(self,word_list,pos_tags)  :
         """
      For each sentence of type Child-GenSubString-Parent, the POS-tags of the sentence are scanned and
@@ -1665,18 +1671,16 @@ class TransformationRules:
             EndIf
         EndFor        
         """
+        class_rel = set()
+        for rel_name in self.relationship_dict:
+            for relationship in self.relationship_dict[rel_name]:
+                class_rel.add(relationship[0])
+                class_rel.add(relationship[1])
         for eachClass in list(self.class_dict.keys()):
-            findRela = False
-            for eachRela in self.relationship_dict:
-                for rela in self.relationship_dict[eachRela]:
-                    if eachClass in rela:
-                        findRela = True
-                        break
-            if findRela == False:
-                #print(findRela)
+            if eachClass not in class_rel:
                 del self.class_dict[eachClass]
-    
-        
+                
+
 
     def addToClassDict(self,className,attributeName):
         if className not in self.class_dict:
@@ -1709,13 +1713,52 @@ class TransformationRules:
             self.relationship_dict[relationship].append([parentClass,childClass, relationshipName])
             
 
+def UML_graphic(class_dict, relationship_dict):
+    viewer = UMLViewer()
+
+    for className in class_dict:
+        c = className
+        if re.search("/W", c) != None:
+            c = '"' + c + '"'
+        for attr in class_dict[className]["Attribute"]:
+            if re.search("\W", attr) != None:
+                attr = '"' + attr + '"'
+            viewer.add_attribute(c, attr)
+        for behavior in class_dict[className]["Behavior"]:
+            para=class_dict[className]["Behavior"][behavior]
+            if re.search("\W", behavior) != None:
+                behavior = '"' + behavior + '"'
+            viewer.add_behavior(c, behavior, parameters=para)
+            
+    for rel_name in relationship_dict:
+        for relationship in relationship_dict[rel_name]:
+            if len(relationship[0])>1 and len(relationship[1])>1:
+                if re.search("\W",relationship[0]) != None:
+                    relationship[0] = '"' + relationship[0] + '"'
+                if re.search("\W",relationship[1]) != None:
+                    relationship[1] = '"' + relationship[1] + '"'
+                uml_asso = UMLAssociation(relationship[0], relationship[1],rel_name)
+                viewer.add_association(uml_asso)            
+        
+        
+        
+        
+    #viewer.save_to_file(path="./")
+    viewer.generate_diagram(path="./")
+
+
+
+
+
 
 if __name__ == '__main__':
-    # print(os.getcwd() + "/input_v2/" + "2014-USC-Project02.txt")
-    # p = TransformationRules(os.getcwd() + "/input_v2/" + "2014-USC-Project02.txt")
-    # p.apply_rules()
-    print(os.getcwd() + "/Data/input_origin/" + "Pratusha_test.txt")
-    p = TransformationRules(os.getcwd() + "/Data/input_origin/" + "Pratusha_test.txt")
+    print(os.getcwd() + "/Data/input_v2/" + "2014-USC-Project02.txt")
+    p = TransformationRules(os.getcwd() + "/Data/input_v2/" + "2014-USC-Project02.txt")
     p.apply_rules()
-
-
+    
+    print ("Classed with Attributes: "+str(p.class_dict))
+    print ("Relationships with parent class & child class: "+str(p.relationship_dict))
+    
+    UML_graphic(p.class_dict, p.relationship_dict)
+    
+    

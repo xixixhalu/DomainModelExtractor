@@ -668,7 +668,7 @@ class TransformationRules:
                 op.SourceEntityTerm=B, op.DestEntityTerm=D, op.name=A
                 """
                 for sentence in data["SAuxVDO"]:
-                    #print(sentence)
+                    # print(sentence)
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 or len(td_dict["aux"])==0 :
@@ -1752,8 +1752,8 @@ def UML_graphic(class_dict, relationship_dict):
 
 
 if __name__ == '__main__':
-    print(os.getcwd() + "/Data/input_v2/" + "2014-USC-Project02.txt")
-    p = TransformationRules(os.getcwd() + "/Data/input_v2/" + "2014-USC-Project02.txt")
+    print(os.getcwd() + "/input_v2/" + "2014-USC-Project01.txt")
+    p = TransformationRules(os.getcwd() + "/input_v2/" + "2014-USC-Project01.txt")
     p.apply_rules()
     
     print ("Classed with Attributes: "+str(p.class_dict))

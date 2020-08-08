@@ -1781,7 +1781,7 @@
       }
     },
     {
-      "User can update User's SocialMedia in Order to keep User's ResumeUpdated .": {
+      "User can update User's SocialMedia in Order to keep User's resume Updated .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -1794,6 +1794,10 @@
             [
               3,
               1
+            ],
+            [
+              13,
+              11
             ]
           ],
           "aux": [
@@ -1810,10 +1814,6 @@
             [
               6,
               8
-            ],
-            [
-              13,
-              11
             ]
           ],
           "case": [
@@ -1836,8 +1836,8 @@
               6
             ],
             [
-              10,
-              13
+              13,
+              14
             ]
           ],
           "mark": [
@@ -1852,10 +1852,16 @@
               10
             ]
           ],
+          "ccomp": [
+            [
+              10,
+              13
+            ]
+          ],
           "punct": [
             [
               3,
-              14
+              15
             ]
           ]
         },
@@ -1864,10 +1870,6 @@
             [
               1,
               1
-            ],
-            [
-              13,
-              13
             ]
           ],
           "NP": [
@@ -1896,8 +1898,8 @@
               12
             ],
             [
-              11,
-              13
+              14,
+              14
             ]
           ],
           "MD": [
@@ -1914,6 +1916,10 @@
             [
               10,
               10
+            ],
+            [
+              13,
+              13
             ]
           ],
           "NNP": [
@@ -1932,6 +1938,10 @@
             [
               11,
               11
+            ],
+            [
+              14,
+              14
             ]
           ],
           "POS": [
@@ -1965,41 +1975,49 @@
           "VP": [
             [
               2,
-              13
+              14
             ],
             [
               3,
-              13
+              14
             ],
             [
               9,
-              13
+              14
             ],
             [
               10,
-              13
+              14
+            ],
+            [
+              13,
+              14
             ]
           ],
           "S": [
             [
               1,
-              14
+              15
             ],
             [
               9,
-              13
+              14
+            ],
+            [
+              11,
+              14
             ]
           ],
           ".": [
             [
-              14,
-              14
+              15,
+              15
             ]
           ],
           "ROOT": [
             [
               1,
-              14
+              15
             ]
           ]
         },
@@ -2007,20 +2025,23 @@
           "1": "User",
           "2": "can",
           "3": "update",
-          "4": "User's",
-          "5": "SocialMedia",
-          "6": "in",
-          "7": "Order",
-          "8": "to",
-          "9": "keep",
-          "10": "User's",
-          "11": "ResumeUpdated",
-          "12": "."
+          "4": "User",
+          "5": "'s",
+          "6": "SocialMedia",
+          "7": "in",
+          "8": "Order",
+          "9": "to",
+          "10": "keep",
+          "11": "User",
+          "12": "'s",
+          "13": "resume",
+          "14": "Updated",
+          "15": "."
         }
       }
     },
     {
-      "System can fetch the Resume from Linkedin for each User and persist it into DataStorage .": {
+      "System can fetch the resume From Linkedin for each User and persist it into DataStorage .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -2275,8 +2296,8 @@
           "2": "can",
           "3": "fetch",
           "4": "the",
-          "5": "Resume",
-          "6": "from",
+          "5": "resume",
+          "6": "From",
           "7": "Linkedin",
           "8": "for",
           "9": "each",
@@ -2778,11 +2799,11 @@
           "5": "Information",
           "6": "from",
           "7": "#csseSocialMediaAccounts",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Fb",
           "10": ",",
           "11": "Twitter",
-          "12": ")",
+          "12": "-RRB-",
           "13": "."
         }
       }
@@ -4728,16 +4749,17 @@
           "1": "User",
           "2": "can",
           "3": "disable",
-          "4": "User's",
-          "5": "Account",
-          "6": ",",
-          "7": "so",
-          "8": "NoneOfMyInformation",
-          "9": "is",
-          "10": "visible",
-          "11": "to",
-          "12": "OtherUsers",
-          "13": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Account",
+          "7": ",",
+          "8": "so",
+          "9": "NoneOfMyInformation",
+          "10": "is",
+          "11": "visible",
+          "12": "to",
+          "13": "OtherUsers",
+          "14": "."
         }
       }
     },
@@ -5319,9 +5341,9 @@
           "5": "RelevantEventsInformation",
           "6": "from",
           "7": "SocialMedia",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Twitter/fb",
-          "10": ")",
+          "10": "-RRB-",
           "11": "."
         }
       }
@@ -5525,15 +5547,15 @@
           "5": "from",
           "6": "the",
           "7": "OfficialCSSESocial-mediaAccount",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Twitter",
-          "10": ")",
+          "10": "-RRB-",
           "11": "."
         }
       }
     },
     {
-      "System can fetch UserInformation ( Resume , JobHistory ) from Linkedin .": {
+      "System can fetch UserInformation ( resume , JobHistory ) from Linkedin .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -5614,10 +5636,6 @@
               4
             ],
             [
-              6,
-              6
-            ],
-            [
               8,
               8
             ],
@@ -5668,6 +5686,12 @@
             [
               5,
               5
+            ]
+          ],
+          "NN": [
+            [
+              6,
+              6
             ]
           ],
           ",": [
@@ -5734,11 +5758,11 @@
           "2": "can",
           "3": "fetch",
           "4": "UserInformation",
-          "5": "(",
-          "6": "Resume",
+          "5": "-LRB-",
+          "6": "resume",
           "7": ",",
           "8": "JobHistory",
-          "9": ")",
+          "9": "-RRB-",
           "10": "from",
           "11": "Linkedin",
           "12": "."
@@ -6287,7 +6311,7 @@
       }
     },
     {
-      "User can update User's SocialMedia in Order to keep User's ResumeUpdated .": {
+      "User can update User's SocialMedia in Order to keep User's resume Updated .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -6300,6 +6324,10 @@
             [
               3,
               1
+            ],
+            [
+              13,
+              11
             ]
           ],
           "aux": [
@@ -6316,10 +6344,6 @@
             [
               6,
               8
-            ],
-            [
-              13,
-              11
             ]
           ],
           "case": [
@@ -6342,8 +6366,8 @@
               6
             ],
             [
-              10,
-              13
+              13,
+              14
             ]
           ],
           "mark": [
@@ -6358,10 +6382,16 @@
               10
             ]
           ],
+          "ccomp": [
+            [
+              10,
+              13
+            ]
+          ],
           "punct": [
             [
               3,
-              14
+              15
             ]
           ]
         },
@@ -6370,10 +6400,6 @@
             [
               1,
               1
-            ],
-            [
-              13,
-              13
             ]
           ],
           "NP": [
@@ -6402,8 +6428,8 @@
               12
             ],
             [
-              11,
-              13
+              14,
+              14
             ]
           ],
           "MD": [
@@ -6420,6 +6446,10 @@
             [
               10,
               10
+            ],
+            [
+              13,
+              13
             ]
           ],
           "NNP": [
@@ -6438,6 +6468,10 @@
             [
               11,
               11
+            ],
+            [
+              14,
+              14
             ]
           ],
           "POS": [
@@ -6471,41 +6505,49 @@
           "VP": [
             [
               2,
-              13
+              14
             ],
             [
               3,
-              13
+              14
             ],
             [
               9,
-              13
+              14
             ],
             [
               10,
-              13
+              14
+            ],
+            [
+              13,
+              14
             ]
           ],
           "S": [
             [
               1,
-              14
+              15
             ],
             [
               9,
-              13
+              14
+            ],
+            [
+              11,
+              14
             ]
           ],
           ".": [
             [
-              14,
-              14
+              15,
+              15
             ]
           ],
           "ROOT": [
             [
               1,
-              14
+              15
             ]
           ]
         },
@@ -6513,20 +6555,23 @@
           "1": "User",
           "2": "can",
           "3": "update",
-          "4": "User's",
-          "5": "SocialMedia",
-          "6": "in",
-          "7": "Order",
-          "8": "to",
-          "9": "keep",
-          "10": "User's",
-          "11": "ResumeUpdated",
-          "12": "."
+          "4": "User",
+          "5": "'s",
+          "6": "SocialMedia",
+          "7": "in",
+          "8": "Order",
+          "9": "to",
+          "10": "keep",
+          "11": "User",
+          "12": "'s",
+          "13": "resume",
+          "14": "Updated",
+          "15": "."
         }
       }
     },
     {
-      "System can fetch the Resume from Linkedin for each User and persist it into DataStorage .": {
+      "System can fetch the resume From Linkedin for each User and persist it into DataStorage .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -6781,8 +6826,8 @@
           "2": "can",
           "3": "fetch",
           "4": "the",
-          "5": "Resume",
-          "6": "from",
+          "5": "resume",
+          "6": "From",
           "7": "Linkedin",
           "8": "for",
           "9": "each",
@@ -7710,11 +7755,11 @@
           "5": "Information",
           "6": "from",
           "7": "#csseSocialMediaAccounts",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Fb",
           "10": ",",
           "11": "Twitter",
-          "12": ")",
+          "12": "-RRB-",
           "13": "."
         }
       }
@@ -10065,16 +10110,17 @@
           "1": "User",
           "2": "can",
           "3": "disable",
-          "4": "User's",
-          "5": "Account",
-          "6": ",",
-          "7": "so",
-          "8": "NoneOfMyInformation",
-          "9": "is",
-          "10": "visible",
-          "11": "to",
-          "12": "OtherUsers",
-          "13": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Account",
+          "7": ",",
+          "8": "so",
+          "9": "NoneOfMyInformation",
+          "10": "is",
+          "11": "visible",
+          "12": "to",
+          "13": "OtherUsers",
+          "14": "."
         }
       }
     },
@@ -10656,9 +10702,9 @@
           "5": "RelevantEventsInformation",
           "6": "from",
           "7": "SocialMedia",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Twitter/fb",
-          "10": ")",
+          "10": "-RRB-",
           "11": "."
         }
       }
@@ -10862,15 +10908,15 @@
           "5": "from",
           "6": "the",
           "7": "OfficialCSSESocial-mediaAccount",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Twitter",
-          "10": ")",
+          "10": "-RRB-",
           "11": "."
         }
       }
     },
     {
-      "System can fetch UserInformation ( Resume , JobHistory ) from Linkedin .": {
+      "System can fetch UserInformation ( resume , JobHistory ) from Linkedin .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -10951,10 +10997,6 @@
               4
             ],
             [
-              6,
-              6
-            ],
-            [
               8,
               8
             ],
@@ -11005,6 +11047,12 @@
             [
               5,
               5
+            ]
+          ],
+          "NN": [
+            [
+              6,
+              6
             ]
           ],
           ",": [
@@ -11071,11 +11119,11 @@
           "2": "can",
           "3": "fetch",
           "4": "UserInformation",
-          "5": "(",
-          "6": "Resume",
+          "5": "-LRB-",
+          "6": "resume",
           "7": ",",
           "8": "JobHistory",
-          "9": ")",
+          "9": "-RRB-",
           "10": "from",
           "11": "Linkedin",
           "12": "."
@@ -13731,13 +13779,13 @@
           "6": "on",
           "7": "any",
           "8": "Platform",
-          "9": "(",
+          "9": "-LRB-",
           "10": "Desktop",
           "11": ",",
           "12": "Tablets",
           "13": ",",
           "14": "MobilePhones",
-          "15": ")",
+          "15": "-RRB-",
           "16": "."
         }
       }
@@ -14160,15 +14208,17 @@
           ]
         },
         "Index": {
-          "1": "User's",
-          "2": "ProfilePicture",
-          "3": "will",
-          "4": "automatically",
-          "5": "upload",
-          "6": "from",
-          "7": "User's",
-          "8": "LatestLinkedInProfilePicture",
-          "9": "."
+          "1": "User",
+          "2": "'s",
+          "3": "ProfilePicture",
+          "4": "will",
+          "5": "automatically",
+          "6": "upload",
+          "7": "from",
+          "8": "User",
+          "9": "'s",
+          "10": "LatestLinkedInProfilePicture",
+          "11": "."
         }
       }
     },
@@ -15685,16 +15735,17 @@
           "1": "User",
           "2": "can",
           "3": "disable",
-          "4": "User's",
-          "5": "Account",
-          "6": ",",
-          "7": "so",
-          "8": "NoneOfMyInformation",
-          "9": "is",
-          "10": "visible",
-          "11": "to",
-          "12": "OtherUsers",
-          "13": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Account",
+          "7": ",",
+          "8": "so",
+          "9": "NoneOfMyInformation",
+          "10": "is",
+          "11": "visible",
+          "12": "to",
+          "13": "OtherUsers",
+          "14": "."
         }
       }
     }
@@ -16821,7 +16872,7 @@
       }
     },
     {
-      "User can update User's SocialMedia in Order to keep User's ResumeUpdated .": {
+      "User can update User's SocialMedia in Order to keep User's resume Updated .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -16834,6 +16885,10 @@
             [
               3,
               1
+            ],
+            [
+              13,
+              11
             ]
           ],
           "aux": [
@@ -16850,10 +16905,6 @@
             [
               6,
               8
-            ],
-            [
-              13,
-              11
             ]
           ],
           "case": [
@@ -16876,8 +16927,8 @@
               6
             ],
             [
-              10,
-              13
+              13,
+              14
             ]
           ],
           "mark": [
@@ -16892,10 +16943,16 @@
               10
             ]
           ],
+          "ccomp": [
+            [
+              10,
+              13
+            ]
+          ],
           "punct": [
             [
               3,
-              14
+              15
             ]
           ]
         },
@@ -16904,10 +16961,6 @@
             [
               1,
               1
-            ],
-            [
-              13,
-              13
             ]
           ],
           "NP": [
@@ -16936,8 +16989,8 @@
               12
             ],
             [
-              11,
-              13
+              14,
+              14
             ]
           ],
           "MD": [
@@ -16954,6 +17007,10 @@
             [
               10,
               10
+            ],
+            [
+              13,
+              13
             ]
           ],
           "NNP": [
@@ -16972,6 +17029,10 @@
             [
               11,
               11
+            ],
+            [
+              14,
+              14
             ]
           ],
           "POS": [
@@ -17005,41 +17066,49 @@
           "VP": [
             [
               2,
-              13
+              14
             ],
             [
               3,
-              13
+              14
             ],
             [
               9,
-              13
+              14
             ],
             [
               10,
-              13
+              14
+            ],
+            [
+              13,
+              14
             ]
           ],
           "S": [
             [
               1,
-              14
+              15
             ],
             [
               9,
-              13
+              14
+            ],
+            [
+              11,
+              14
             ]
           ],
           ".": [
             [
-              14,
-              14
+              15,
+              15
             ]
           ],
           "ROOT": [
             [
               1,
-              14
+              15
             ]
           ]
         },
@@ -17047,20 +17116,23 @@
           "1": "User",
           "2": "can",
           "3": "update",
-          "4": "User's",
-          "5": "SocialMedia",
-          "6": "in",
-          "7": "Order",
-          "8": "to",
-          "9": "keep",
-          "10": "User's",
-          "11": "ResumeUpdated",
-          "12": "."
+          "4": "User",
+          "5": "'s",
+          "6": "SocialMedia",
+          "7": "in",
+          "8": "Order",
+          "9": "to",
+          "10": "keep",
+          "11": "User",
+          "12": "'s",
+          "13": "resume",
+          "14": "Updated",
+          "15": "."
         }
       }
     },
     {
-      "System can fetch the Resume from Linkedin for each User and persist it into DataStorage .": {
+      "System can fetch the resume From Linkedin for each User and persist it into DataStorage .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -17315,8 +17387,8 @@
           "2": "can",
           "3": "fetch",
           "4": "the",
-          "5": "Resume",
-          "6": "from",
+          "5": "resume",
+          "6": "From",
           "7": "Linkedin",
           "8": "for",
           "9": "each",
@@ -18259,11 +18331,11 @@
           "5": "Information",
           "6": "from",
           "7": "#csseSocialMediaAccounts",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Fb",
           "10": ",",
           "11": "Twitter",
-          "12": ")",
+          "12": "-RRB-",
           "13": "."
         }
       }
@@ -18518,13 +18590,13 @@
           "6": "on",
           "7": "any",
           "8": "Platform",
-          "9": "(",
+          "9": "-LRB-",
           "10": "Desktop",
           "11": ",",
           "12": "Tablets",
           "13": ",",
           "14": "MobilePhones",
-          "15": ")",
+          "15": "-RRB-",
           "16": "."
         }
       }
@@ -20329,16 +20401,17 @@
           "1": "User",
           "2": "can",
           "3": "disable",
-          "4": "User's",
-          "5": "Account",
-          "6": ",",
-          "7": "so",
-          "8": "NoneOfMyInformation",
-          "9": "is",
-          "10": "visible",
-          "11": "to",
-          "12": "OtherUsers",
-          "13": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Account",
+          "7": ",",
+          "8": "so",
+          "9": "NoneOfMyInformation",
+          "10": "is",
+          "11": "visible",
+          "12": "to",
+          "13": "OtherUsers",
+          "14": "."
         }
       }
     },
@@ -20520,15 +20593,17 @@
           ]
         },
         "Index": {
-          "1": "User's",
-          "2": "ProfilePicture",
-          "3": "will",
-          "4": "automatically",
-          "5": "upload",
-          "6": "from",
-          "7": "User's",
-          "8": "LatestLinkedInProfilePicture",
-          "9": "."
+          "1": "User",
+          "2": "'s",
+          "3": "ProfilePicture",
+          "4": "will",
+          "5": "automatically",
+          "6": "upload",
+          "7": "from",
+          "8": "User",
+          "9": "'s",
+          "10": "LatestLinkedInProfilePicture",
+          "11": "."
         }
       }
     },
@@ -21432,9 +21507,9 @@
           "5": "RelevantEventsInformation",
           "6": "from",
           "7": "SocialMedia",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Twitter/fb",
-          "10": ")",
+          "10": "-RRB-",
           "11": "."
         }
       }
@@ -21765,15 +21840,15 @@
           "5": "from",
           "6": "the",
           "7": "OfficialCSSESocial-mediaAccount",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Twitter",
-          "10": ")",
+          "10": "-RRB-",
           "11": "."
         }
       }
     },
     {
-      "System can fetch UserInformation ( Resume , JobHistory ) from Linkedin .": {
+      "System can fetch UserInformation ( resume , JobHistory ) from Linkedin .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -21854,10 +21929,6 @@
               4
             ],
             [
-              6,
-              6
-            ],
-            [
               8,
               8
             ],
@@ -21908,6 +21979,12 @@
             [
               5,
               5
+            ]
+          ],
+          "NN": [
+            [
+              6,
+              6
             ]
           ],
           ",": [
@@ -21974,11 +22051,11 @@
           "2": "can",
           "3": "fetch",
           "4": "UserInformation",
-          "5": "(",
-          "6": "Resume",
+          "5": "-LRB-",
+          "6": "resume",
           "7": ",",
           "8": "JobHistory",
-          "9": ")",
+          "9": "-RRB-",
           "10": "from",
           "11": "Linkedin",
           "12": "."
@@ -22527,7 +22604,7 @@
       }
     },
     {
-      "User can update User's SocialMedia in Order to keep User's ResumeUpdated .": {
+      "User can update User's SocialMedia in Order to keep User's resume Updated .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -22540,6 +22617,10 @@
             [
               3,
               1
+            ],
+            [
+              13,
+              11
             ]
           ],
           "aux": [
@@ -22556,10 +22637,6 @@
             [
               6,
               8
-            ],
-            [
-              13,
-              11
             ]
           ],
           "case": [
@@ -22582,8 +22659,8 @@
               6
             ],
             [
-              10,
-              13
+              13,
+              14
             ]
           ],
           "mark": [
@@ -22598,10 +22675,16 @@
               10
             ]
           ],
+          "ccomp": [
+            [
+              10,
+              13
+            ]
+          ],
           "punct": [
             [
               3,
-              14
+              15
             ]
           ]
         },
@@ -22610,10 +22693,6 @@
             [
               1,
               1
-            ],
-            [
-              13,
-              13
             ]
           ],
           "NP": [
@@ -22642,8 +22721,8 @@
               12
             ],
             [
-              11,
-              13
+              14,
+              14
             ]
           ],
           "MD": [
@@ -22660,6 +22739,10 @@
             [
               10,
               10
+            ],
+            [
+              13,
+              13
             ]
           ],
           "NNP": [
@@ -22678,6 +22761,10 @@
             [
               11,
               11
+            ],
+            [
+              14,
+              14
             ]
           ],
           "POS": [
@@ -22711,41 +22798,49 @@
           "VP": [
             [
               2,
-              13
+              14
             ],
             [
               3,
-              13
+              14
             ],
             [
               9,
-              13
+              14
             ],
             [
               10,
-              13
+              14
+            ],
+            [
+              13,
+              14
             ]
           ],
           "S": [
             [
               1,
-              14
+              15
             ],
             [
               9,
-              13
+              14
+            ],
+            [
+              11,
+              14
             ]
           ],
           ".": [
             [
-              14,
-              14
+              15,
+              15
             ]
           ],
           "ROOT": [
             [
               1,
-              14
+              15
             ]
           ]
         },
@@ -22753,20 +22848,23 @@
           "1": "User",
           "2": "can",
           "3": "update",
-          "4": "User's",
-          "5": "SocialMedia",
-          "6": "in",
-          "7": "Order",
-          "8": "to",
-          "9": "keep",
-          "10": "User's",
-          "11": "ResumeUpdated",
-          "12": "."
+          "4": "User",
+          "5": "'s",
+          "6": "SocialMedia",
+          "7": "in",
+          "8": "Order",
+          "9": "to",
+          "10": "keep",
+          "11": "User",
+          "12": "'s",
+          "13": "resume",
+          "14": "Updated",
+          "15": "."
         }
       }
     },
     {
-      "System can fetch the Resume from Linkedin for each User and persist it into DataStorage .": {
+      "System can fetch the resume From Linkedin for each User and persist it into DataStorage .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -23021,8 +23119,8 @@
           "2": "can",
           "3": "fetch",
           "4": "the",
-          "5": "Resume",
-          "6": "from",
+          "5": "resume",
+          "6": "From",
           "7": "Linkedin",
           "8": "for",
           "9": "each",
@@ -23950,11 +24048,11 @@
           "5": "Information",
           "6": "from",
           "7": "#csseSocialMediaAccounts",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Fb",
           "10": ",",
           "11": "Twitter",
-          "12": ")",
+          "12": "-RRB-",
           "13": "."
         }
       }
@@ -26305,16 +26403,17 @@
           "1": "User",
           "2": "can",
           "3": "disable",
-          "4": "User's",
-          "5": "Account",
-          "6": ",",
-          "7": "so",
-          "8": "NoneOfMyInformation",
-          "9": "is",
-          "10": "visible",
-          "11": "to",
-          "12": "OtherUsers",
-          "13": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Account",
+          "7": ",",
+          "8": "so",
+          "9": "NoneOfMyInformation",
+          "10": "is",
+          "11": "visible",
+          "12": "to",
+          "13": "OtherUsers",
+          "14": "."
         }
       }
     },
@@ -26896,9 +26995,9 @@
           "5": "RelevantEventsInformation",
           "6": "from",
           "7": "SocialMedia",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Twitter/fb",
-          "10": ")",
+          "10": "-RRB-",
           "11": "."
         }
       }
@@ -27102,15 +27201,15 @@
           "5": "from",
           "6": "the",
           "7": "OfficialCSSESocial-mediaAccount",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Twitter",
-          "10": ")",
+          "10": "-RRB-",
           "11": "."
         }
       }
     },
     {
-      "System can fetch UserInformation ( Resume , JobHistory ) from Linkedin .": {
+      "System can fetch UserInformation ( resume , JobHistory ) from Linkedin .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -27191,10 +27290,6 @@
               4
             ],
             [
-              6,
-              6
-            ],
-            [
               8,
               8
             ],
@@ -27245,6 +27340,12 @@
             [
               5,
               5
+            ]
+          ],
+          "NN": [
+            [
+              6,
+              6
             ]
           ],
           ",": [
@@ -27311,11 +27412,11 @@
           "2": "can",
           "3": "fetch",
           "4": "UserInformation",
-          "5": "(",
-          "6": "Resume",
+          "5": "-LRB-",
+          "6": "resume",
           "7": ",",
           "8": "JobHistory",
-          "9": ")",
+          "9": "-RRB-",
           "10": "from",
           "11": "Linkedin",
           "12": "."
@@ -27325,7 +27426,7 @@
   ],
   "Conditional": [
     {
-      "User can update User's SocialMedia in Order to keep User's ResumeUpdated .": {
+      "User can update User's SocialMedia in Order to keep User's resume Updated .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -27338,6 +27439,10 @@
             [
               3,
               1
+            ],
+            [
+              13,
+              11
             ]
           ],
           "aux": [
@@ -27354,10 +27459,6 @@
             [
               6,
               8
-            ],
-            [
-              13,
-              11
             ]
           ],
           "case": [
@@ -27380,8 +27481,8 @@
               6
             ],
             [
-              10,
-              13
+              13,
+              14
             ]
           ],
           "mark": [
@@ -27396,10 +27497,16 @@
               10
             ]
           ],
+          "ccomp": [
+            [
+              10,
+              13
+            ]
+          ],
           "punct": [
             [
               3,
-              14
+              15
             ]
           ]
         },
@@ -27408,10 +27515,6 @@
             [
               1,
               1
-            ],
-            [
-              13,
-              13
             ]
           ],
           "NP": [
@@ -27440,8 +27543,8 @@
               12
             ],
             [
-              11,
-              13
+              14,
+              14
             ]
           ],
           "MD": [
@@ -27458,6 +27561,10 @@
             [
               10,
               10
+            ],
+            [
+              13,
+              13
             ]
           ],
           "NNP": [
@@ -27476,6 +27583,10 @@
             [
               11,
               11
+            ],
+            [
+              14,
+              14
             ]
           ],
           "POS": [
@@ -27509,41 +27620,49 @@
           "VP": [
             [
               2,
-              13
+              14
             ],
             [
               3,
-              13
+              14
             ],
             [
               9,
-              13
+              14
             ],
             [
               10,
-              13
+              14
+            ],
+            [
+              13,
+              14
             ]
           ],
           "S": [
             [
               1,
-              14
+              15
             ],
             [
               9,
-              13
+              14
+            ],
+            [
+              11,
+              14
             ]
           ],
           ".": [
             [
-              14,
-              14
+              15,
+              15
             ]
           ],
           "ROOT": [
             [
               1,
-              14
+              15
             ]
           ]
         },
@@ -27551,15 +27670,18 @@
           "1": "User",
           "2": "can",
           "3": "update",
-          "4": "User's",
-          "5": "SocialMedia",
-          "6": "in",
-          "7": "Order",
-          "8": "to",
-          "9": "keep",
-          "10": "User's",
-          "11": "ResumeUpdated",
-          "12": "."
+          "4": "User",
+          "5": "'s",
+          "6": "SocialMedia",
+          "7": "in",
+          "8": "Order",
+          "9": "to",
+          "10": "keep",
+          "11": "User",
+          "12": "'s",
+          "13": "resume",
+          "14": "Updated",
+          "15": "."
         }
       }
     },
@@ -29738,7 +29860,7 @@
       }
     },
     {
-      "User can update User's SocialMedia in Order to keep User's ResumeUpdated .": {
+      "User can update User's SocialMedia in Order to keep User's resume Updated .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -29751,6 +29873,10 @@
             [
               3,
               1
+            ],
+            [
+              13,
+              11
             ]
           ],
           "aux": [
@@ -29767,10 +29893,6 @@
             [
               6,
               8
-            ],
-            [
-              13,
-              11
             ]
           ],
           "case": [
@@ -29793,8 +29915,8 @@
               6
             ],
             [
-              10,
-              13
+              13,
+              14
             ]
           ],
           "mark": [
@@ -29809,10 +29931,16 @@
               10
             ]
           ],
+          "ccomp": [
+            [
+              10,
+              13
+            ]
+          ],
           "punct": [
             [
               3,
-              14
+              15
             ]
           ]
         },
@@ -29821,10 +29949,6 @@
             [
               1,
               1
-            ],
-            [
-              13,
-              13
             ]
           ],
           "NP": [
@@ -29853,8 +29977,8 @@
               12
             ],
             [
-              11,
-              13
+              14,
+              14
             ]
           ],
           "MD": [
@@ -29871,6 +29995,10 @@
             [
               10,
               10
+            ],
+            [
+              13,
+              13
             ]
           ],
           "NNP": [
@@ -29889,6 +30017,10 @@
             [
               11,
               11
+            ],
+            [
+              14,
+              14
             ]
           ],
           "POS": [
@@ -29922,41 +30054,49 @@
           "VP": [
             [
               2,
-              13
+              14
             ],
             [
               3,
-              13
+              14
             ],
             [
               9,
-              13
+              14
             ],
             [
               10,
-              13
+              14
+            ],
+            [
+              13,
+              14
             ]
           ],
           "S": [
             [
               1,
-              14
+              15
             ],
             [
               9,
-              13
+              14
+            ],
+            [
+              11,
+              14
             ]
           ],
           ".": [
             [
-              14,
-              14
+              15,
+              15
             ]
           ],
           "ROOT": [
             [
               1,
-              14
+              15
             ]
           ]
         },
@@ -29964,20 +30104,23 @@
           "1": "User",
           "2": "can",
           "3": "update",
-          "4": "User's",
-          "5": "SocialMedia",
-          "6": "in",
-          "7": "Order",
-          "8": "to",
-          "9": "keep",
-          "10": "User's",
-          "11": "ResumeUpdated",
-          "12": "."
+          "4": "User",
+          "5": "'s",
+          "6": "SocialMedia",
+          "7": "in",
+          "8": "Order",
+          "9": "to",
+          "10": "keep",
+          "11": "User",
+          "12": "'s",
+          "13": "resume",
+          "14": "Updated",
+          "15": "."
         }
       }
     },
     {
-      "System can fetch the Resume from Linkedin for each User and persist it into DataStorage .": {
+      "System can fetch the resume From Linkedin for each User and persist it into DataStorage .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -30232,8 +30375,8 @@
           "2": "can",
           "3": "fetch",
           "4": "the",
-          "5": "Resume",
-          "6": "from",
+          "5": "resume",
+          "6": "From",
           "7": "Linkedin",
           "8": "for",
           "9": "each",
@@ -31356,11 +31499,11 @@
           "5": "Information",
           "6": "from",
           "7": "#csseSocialMediaAccounts",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Fb",
           "10": ",",
           "11": "Twitter",
-          "12": ")",
+          "12": "-RRB-",
           "13": "."
         }
       }
@@ -31783,13 +31926,13 @@
           "6": "on",
           "7": "any",
           "8": "Platform",
-          "9": "(",
+          "9": "-LRB-",
           "10": "Desktop",
           "11": ",",
           "12": "Tablets",
           "13": ",",
           "14": "MobilePhones",
-          "15": ")",
+          "15": "-RRB-",
           "16": "."
         }
       }
@@ -34097,16 +34240,17 @@
           "1": "User",
           "2": "can",
           "3": "disable",
-          "4": "User's",
-          "5": "Account",
-          "6": ",",
-          "7": "so",
-          "8": "NoneOfMyInformation",
-          "9": "is",
-          "10": "visible",
-          "11": "to",
-          "12": "OtherUsers",
-          "13": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Account",
+          "7": ",",
+          "8": "so",
+          "9": "NoneOfMyInformation",
+          "10": "is",
+          "11": "visible",
+          "12": "to",
+          "13": "OtherUsers",
+          "14": "."
         }
       }
     },
@@ -34288,15 +34432,17 @@
           ]
         },
         "Index": {
-          "1": "User's",
-          "2": "ProfilePicture",
-          "3": "will",
-          "4": "automatically",
-          "5": "upload",
-          "6": "from",
-          "7": "User's",
-          "8": "LatestLinkedInProfilePicture",
-          "9": "."
+          "1": "User",
+          "2": "'s",
+          "3": "ProfilePicture",
+          "4": "will",
+          "5": "automatically",
+          "6": "upload",
+          "7": "from",
+          "8": "User",
+          "9": "'s",
+          "10": "LatestLinkedInProfilePicture",
+          "11": "."
         }
       }
     },
@@ -35426,9 +35572,9 @@
           "5": "RelevantEventsInformation",
           "6": "from",
           "7": "SocialMedia",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Twitter/fb",
-          "10": ")",
+          "10": "-RRB-",
           "11": "."
         }
       }
@@ -35759,15 +35905,15 @@
           "5": "from",
           "6": "the",
           "7": "OfficialCSSESocial-mediaAccount",
-          "8": "(",
+          "8": "-LRB-",
           "9": "Twitter",
-          "10": ")",
+          "10": "-RRB-",
           "11": "."
         }
       }
     },
     {
-      "System can fetch UserInformation ( Resume , JobHistory ) from Linkedin .": {
+      "System can fetch UserInformation ( resume , JobHistory ) from Linkedin .": {
         "FileName": "2019-USC-Project01",
         "TD": {
           "ROOT": [
@@ -35848,10 +35994,6 @@
               4
             ],
             [
-              6,
-              6
-            ],
-            [
               8,
               8
             ],
@@ -35902,6 +36044,12 @@
             [
               5,
               5
+            ]
+          ],
+          "NN": [
+            [
+              6,
+              6
             ]
           ],
           ",": [
@@ -35968,11 +36116,11 @@
           "2": "can",
           "3": "fetch",
           "4": "UserInformation",
-          "5": "(",
-          "6": "Resume",
+          "5": "-LRB-",
+          "6": "resume",
           "7": ",",
           "8": "JobHistory",
-          "9": ")",
+          "9": "-RRB-",
           "10": "from",
           "11": "Linkedin",
           "12": "."

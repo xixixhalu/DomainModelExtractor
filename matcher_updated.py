@@ -320,14 +320,6 @@ if __name__ == '__main__':
                 for s in sentences:  # travel each sentence
                     if len(s) > 0:  # tell whether s is a blank line
 
-                        # collect word and punctuation indices in the sentence to a dictionary
-                        s_index = re.sub('([.,!?()])', r' \1 ', s)
-                        s_index = re.sub('\s{2,}', ' ', s_index)
-                        s_split = s_index.split()
-                        s_dic = dict()
-                        for i in range(len(s_split)):
-                            s_dic[i + 1] = s_split[i]
-
                         sentence_info = dict()
                         sentence_info['FileName'] = file_name
                         ssr = Matcher(Identifier(), s)
@@ -337,6 +329,13 @@ if __name__ == '__main__':
                             print(s, ": NLP API returns None!")
 
                         else:
+
+                            # collect word and punctuation indices in the sentence to a dictionary
+                            s_dic = dict()
+                            for elem in nlp_output['sentences'][0]['tokens']:
+                                s_dic[str(elem['index'])] = elem['word']
+
+
                             td_key = enhancedTD(nlp_output)
                             # print(td_key)
 

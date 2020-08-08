@@ -383,18 +383,18 @@ if __name__ == '__main__':
 
     # p = PreProcessor(os.getcwd() + "/Data/input_origin/" + "test.txt")
 
-    # for year in range(2014, 2020):
-    #     for project in range(1, 16):
-    #         file_name = str(year) + '-USC-Project' + str(project).rjust(2, '0')
-    #         file_path = os.getcwd() + "/Data/input_origin/" + file_name + '.txt'
-    #         if not os.path.exists(file_path):
-    #             continue
-    #         print("processing " + file_path)
-    #         p = PreProcessor(file_path)
-    #         p.pre_process()
+    for year in range(2014, 2020):
+        for project in range(1, 16):
+            file_name = str(year) + '-USC-Project' + str(project).rjust(2, '0')
+            file_path = os.getcwd() + "/Data/input_origin/" + file_name + '.txt'
+            if not os.path.exists(file_path):
+                continue
+            print("processing " + file_path)
+            p = PreProcessor(file_path)
+            p.pre_process()
 
-    file_path = os.getcwd() + "/Data/input_origin/test.txt"
-    print("processing " + file_path)
-    p = PreProcessor(file_path)
-    p.pre_process()
+    # file_path = os.getcwd() + "/Data/input_origin/2014-USC-Project02.txt"
+    # print("processing " + file_path)
+    # p = PreProcessor(file_path)
+    # p.pre_process()
 

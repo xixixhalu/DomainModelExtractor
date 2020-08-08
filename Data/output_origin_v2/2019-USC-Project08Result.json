@@ -1217,17 +1217,18 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "Patient's",
-          "8": "HealthStatus",
-          "9": "graphically",
-          "10": ",",
-          "11": "so",
-          "12": "that",
-          "13": "it",
-          "14": "is",
-          "15": "easily",
-          "16": "understandable",
-          "17": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "HealthStatus",
+          "10": "graphically",
+          "11": ",",
+          "12": "so",
+          "13": "that",
+          "14": "it",
+          "15": "is",
+          "16": "easily",
+          "17": "understandable",
+          "18": "."
         }
       }
     }
@@ -1475,11 +1476,11 @@
           "6": "have",
           "7": "completed",
           "8": "CertainTasks",
-          "9": "(",
+          "9": "-LRB-",
           "10": "like",
           "11": "a",
           "12": "Checklist",
-          "13": ")",
+          "13": "-RRB-",
           "14": "."
         }
       }
@@ -3477,17 +3478,18 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "Patient's",
-          "8": "HealthStatus",
-          "9": "graphically",
-          "10": ",",
-          "11": "so",
-          "12": "that",
-          "13": "it",
-          "14": "is",
-          "15": "easily",
-          "16": "understandable",
-          "17": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "HealthStatus",
+          "10": "graphically",
+          "11": ",",
+          "12": "so",
+          "13": "that",
+          "14": "it",
+          "15": "is",
+          "16": "easily",
+          "17": "understandable",
+          "18": "."
         }
       }
     },
@@ -3779,19 +3781,20 @@
           "2": "can",
           "3": "see",
           "4": "all",
-          "5": "Patient's",
-          "6": "DietaryConstraints",
-          "7": "and",
-          "8": "medications",
-          "9": "Patient",
-          "10": "need",
-          "11": "to",
-          "12": "take",
-          "13": "before",
-          "14": "and",
-          "15": "after",
-          "16": "Surgery",
-          "17": "."
+          "5": "Patient",
+          "6": "'s",
+          "7": "DietaryConstraints",
+          "8": "and",
+          "9": "medications",
+          "10": "Patient",
+          "11": "need",
+          "12": "to",
+          "13": "take",
+          "14": "before",
+          "15": "and",
+          "16": "after",
+          "17": "Surgery",
+          "18": "."
         }
       }
     },
@@ -4896,13 +4899,15 @@
           "4": "RecommendationsOfCommonAnswersAndResources",
           "5": "related",
           "6": "to",
-          "7": "Patient's",
-          "8": "Surgery",
-          "9": "based",
-          "10": "on",
-          "11": "Patient's",
-          "12": "Timeline",
-          "13": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "Surgery",
+          "10": "based",
+          "11": "on",
+          "12": "Patient",
+          "13": "'s",
+          "14": "Timeline",
+          "15": "."
         }
       }
     }
@@ -6132,17 +6137,18 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "Patient's",
-          "8": "HealthStatus",
-          "9": "graphically",
-          "10": ",",
-          "11": "so",
-          "12": "that",
-          "13": "it",
-          "14": "is",
-          "15": "easily",
-          "16": "understandable",
-          "17": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "HealthStatus",
+          "10": "graphically",
+          "11": ",",
+          "12": "so",
+          "13": "that",
+          "14": "it",
+          "15": "is",
+          "16": "easily",
+          "17": "understandable",
+          "18": "."
         }
       }
     }
@@ -7367,11 +7373,11 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "the",
           "3": "paying",
           "4": "Customer",
-          "5": ")",
+          "5": "-RRB-",
           "6": ",",
           "7": "HealthcareExecutive",
           "8": "can",
@@ -7692,9 +7698,10 @@
           "12": "StandardOnes",
           "13": "set",
           "14": "by",
-          "15": "Patient's",
-          "16": "Doctor",
-          "17": "."
+          "15": "Patient",
+          "16": "'s",
+          "17": "Doctor",
+          "18": "."
         }
       }
     }
@@ -7889,11 +7896,12 @@
           "3": "receive",
           "4": "RealTimeNotifications",
           "5": "for",
-          "6": "PatientUser's",
-          "7": "Reminders",
-          "8": "and",
-          "9": "Appointments",
-          "10": "."
+          "6": "PatientUser",
+          "7": "'s",
+          "8": "Reminders",
+          "9": "and",
+          "10": "Appointments",
+          "11": "."
         }
       }
     },
@@ -8139,11 +8147,11 @@
           "6": "have",
           "7": "completed",
           "8": "CertainTasks",
-          "9": "(",
+          "9": "-LRB-",
           "10": "like",
           "11": "a",
           "12": "Checklist",
-          "13": ")",
+          "13": "-RRB-",
           "14": "."
         }
       }
@@ -9706,9 +9714,10 @@
           "3": "add/remove",
           "4": "Patients",
           "5": "from",
-          "6": "CareTeam's",
-          "7": "List",
-          "8": "."
+          "6": "CareTeam",
+          "7": "'s",
+          "8": "List",
+          "9": "."
         }
       }
     },
@@ -10250,16 +10259,17 @@
           "6": "review",
           "7": "Post-opNotes",
           "8": "from",
-          "9": "Patient's",
-          "10": "Doctor",
-          "11": "/",
-          "12": "surgeon",
-          "13": "on",
-          "14": "any",
-          "15": "PreviousSurgeries",
-          "16": "/",
-          "17": "Treatments",
-          "18": "."
+          "9": "Patient",
+          "10": "'s",
+          "11": "Doctor",
+          "12": "/",
+          "13": "surgeon",
+          "14": "on",
+          "15": "any",
+          "16": "PreviousSurgeries",
+          "17": "/",
+          "18": "Treatments",
+          "19": "."
         }
       }
     },
@@ -10444,13 +10454,14 @@
           "1": "Patient",
           "2": "can",
           "3": "do",
-          "4": "Patient's",
-          "5": "Questionnaire/surveys",
-          "6": "from",
-          "7": "within",
-          "8": "the",
-          "9": "App",
-          "10": "."
+          "4": "Patient",
+          "5": "'s",
+          "6": "Questionnaire/surveys",
+          "7": "from",
+          "8": "within",
+          "9": "the",
+          "10": "App",
+          "11": "."
         }
       }
     },
@@ -11189,11 +11200,11 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "the",
           "3": "paying",
           "4": "Customer",
-          "5": ")",
+          "5": "-RRB-",
           "6": ",",
           "7": "HealthcareExecutive",
           "8": "can",
@@ -11514,9 +11525,10 @@
           "12": "StandardOnes",
           "13": "set",
           "14": "by",
-          "15": "Patient's",
-          "16": "Doctor",
-          "17": "."
+          "15": "Patient",
+          "16": "'s",
+          "17": "Doctor",
+          "18": "."
         }
       }
     },
@@ -12240,13 +12252,15 @@
           "4": "RecommendationsOfCommonAnswersAndResources",
           "5": "related",
           "6": "to",
-          "7": "Patient's",
-          "8": "Surgery",
-          "9": "based",
-          "10": "on",
-          "11": "Patient's",
-          "12": "Timeline",
-          "13": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "Surgery",
+          "10": "based",
+          "11": "on",
+          "12": "Patient",
+          "13": "'s",
+          "14": "Timeline",
+          "15": "."
         }
       }
     },
@@ -13436,11 +13450,12 @@
           "3": "receive",
           "4": "RealTimeNotifications",
           "5": "for",
-          "6": "PatientUser's",
-          "7": "Reminders",
-          "8": "and",
-          "9": "Appointments",
-          "10": "."
+          "6": "PatientUser",
+          "7": "'s",
+          "8": "Reminders",
+          "9": "and",
+          "10": "Appointments",
+          "11": "."
         }
       }
     },
@@ -13686,11 +13701,11 @@
           "6": "have",
           "7": "completed",
           "8": "CertainTasks",
-          "9": "(",
+          "9": "-LRB-",
           "10": "like",
           "11": "a",
           "12": "Checklist",
-          "13": ")",
+          "13": "-RRB-",
           "14": "."
         }
       }
@@ -15619,9 +15634,10 @@
           "3": "add/remove",
           "4": "Patients",
           "5": "from",
-          "6": "CareTeam's",
-          "7": "List",
-          "8": "."
+          "6": "CareTeam",
+          "7": "'s",
+          "8": "List",
+          "9": "."
         }
       }
     },
@@ -16637,16 +16653,17 @@
           "6": "review",
           "7": "Post-opNotes",
           "8": "from",
-          "9": "Patient's",
-          "10": "Doctor",
-          "11": "/",
-          "12": "surgeon",
-          "13": "on",
-          "14": "any",
-          "15": "PreviousSurgeries",
-          "16": "/",
-          "17": "Treatments",
-          "18": "."
+          "9": "Patient",
+          "10": "'s",
+          "11": "Doctor",
+          "12": "/",
+          "13": "surgeon",
+          "14": "on",
+          "15": "any",
+          "16": "PreviousSurgeries",
+          "17": "/",
+          "18": "Treatments",
+          "19": "."
         }
       }
     },
@@ -16831,13 +16848,14 @@
           "1": "Patient",
           "2": "can",
           "3": "do",
-          "4": "Patient's",
-          "5": "Questionnaire/surveys",
-          "6": "from",
-          "7": "within",
-          "8": "the",
-          "9": "App",
-          "10": "."
+          "4": "Patient",
+          "5": "'s",
+          "6": "Questionnaire/surveys",
+          "7": "from",
+          "8": "within",
+          "9": "the",
+          "10": "App",
+          "11": "."
         }
       }
     },
@@ -17576,11 +17594,11 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "the",
           "3": "paying",
           "4": "Customer",
-          "5": ")",
+          "5": "-RRB-",
           "6": ",",
           "7": "HealthcareExecutive",
           "8": "can",
@@ -17901,9 +17919,10 @@
           "12": "StandardOnes",
           "13": "set",
           "14": "by",
-          "15": "Patient's",
-          "16": "Doctor",
-          "17": "."
+          "15": "Patient",
+          "16": "'s",
+          "17": "Doctor",
+          "18": "."
         }
       }
     },
@@ -18627,13 +18646,15 @@
           "4": "RecommendationsOfCommonAnswersAndResources",
           "5": "related",
           "6": "to",
-          "7": "Patient's",
-          "8": "Surgery",
-          "9": "based",
-          "10": "on",
-          "11": "Patient's",
-          "12": "Timeline",
-          "13": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "Surgery",
+          "10": "based",
+          "11": "on",
+          "12": "Patient",
+          "13": "'s",
+          "14": "Timeline",
+          "15": "."
         }
       }
     },
@@ -19394,17 +19415,18 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "Patient's",
-          "8": "HealthStatus",
-          "9": "graphically",
-          "10": ",",
-          "11": "so",
-          "12": "that",
-          "13": "it",
-          "14": "is",
-          "15": "easily",
-          "16": "understandable",
-          "17": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "HealthStatus",
+          "10": "graphically",
+          "11": ",",
+          "12": "so",
+          "13": "that",
+          "14": "it",
+          "15": "is",
+          "16": "easily",
+          "17": "understandable",
+          "18": "."
         }
       }
     },
@@ -20630,17 +20652,18 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "Patient's",
-          "8": "HealthStatus",
-          "9": "graphically",
-          "10": ",",
-          "11": "so",
-          "12": "that",
-          "13": "it",
-          "14": "is",
-          "15": "easily",
-          "16": "understandable",
-          "17": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "HealthStatus",
+          "10": "graphically",
+          "11": ",",
+          "12": "so",
+          "13": "that",
+          "14": "it",
+          "15": "is",
+          "16": "easily",
+          "17": "understandable",
+          "18": "."
         }
       }
     }
@@ -22485,17 +22508,18 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "Patient's",
-          "8": "HealthStatus",
-          "9": "graphically",
-          "10": ",",
-          "11": "so",
-          "12": "that",
-          "13": "it",
-          "14": "is",
-          "15": "easily",
-          "16": "understandable",
-          "17": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "HealthStatus",
+          "10": "graphically",
+          "11": ",",
+          "12": "so",
+          "13": "that",
+          "14": "it",
+          "15": "is",
+          "16": "easily",
+          "17": "understandable",
+          "18": "."
         }
       }
     },
@@ -22787,19 +22811,20 @@
           "2": "can",
           "3": "see",
           "4": "all",
-          "5": "Patient's",
-          "6": "DietaryConstraints",
-          "7": "and",
-          "8": "medications",
-          "9": "Patient",
-          "10": "need",
-          "11": "to",
-          "12": "take",
-          "13": "before",
-          "14": "and",
-          "15": "after",
-          "16": "Surgery",
-          "17": "."
+          "5": "Patient",
+          "6": "'s",
+          "7": "DietaryConstraints",
+          "8": "and",
+          "9": "medications",
+          "10": "Patient",
+          "11": "need",
+          "12": "to",
+          "13": "take",
+          "14": "before",
+          "15": "and",
+          "16": "after",
+          "17": "Surgery",
+          "18": "."
         }
       }
     },
@@ -25203,17 +25228,18 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "Patient's",
-          "8": "HealthStatus",
-          "9": "graphically",
-          "10": ",",
-          "11": "so",
-          "12": "that",
-          "13": "it",
-          "14": "is",
-          "15": "easily",
-          "16": "understandable",
-          "17": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "HealthStatus",
+          "10": "graphically",
+          "11": ",",
+          "12": "so",
+          "13": "that",
+          "14": "it",
+          "15": "is",
+          "16": "easily",
+          "17": "understandable",
+          "18": "."
         }
       }
     },
@@ -25505,19 +25531,20 @@
           "2": "can",
           "3": "see",
           "4": "all",
-          "5": "Patient's",
-          "6": "DietaryConstraints",
-          "7": "and",
-          "8": "medications",
-          "9": "Patient",
-          "10": "need",
-          "11": "to",
-          "12": "take",
-          "13": "before",
-          "14": "and",
-          "15": "after",
-          "16": "Surgery",
-          "17": "."
+          "5": "Patient",
+          "6": "'s",
+          "7": "DietaryConstraints",
+          "8": "and",
+          "9": "medications",
+          "10": "Patient",
+          "11": "need",
+          "12": "to",
+          "13": "take",
+          "14": "before",
+          "15": "and",
+          "16": "after",
+          "17": "Surgery",
+          "18": "."
         }
       }
     },
@@ -27430,9 +27457,10 @@
           "12": "StandardOnes",
           "13": "set",
           "14": "by",
-          "15": "Patient's",
-          "16": "Doctor",
-          "17": "."
+          "15": "Patient",
+          "16": "'s",
+          "17": "Doctor",
+          "18": "."
         }
       }
     },
@@ -28193,17 +28221,18 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "Patient's",
-          "8": "HealthStatus",
-          "9": "graphically",
-          "10": ",",
-          "11": "so",
-          "12": "that",
-          "13": "it",
-          "14": "is",
-          "15": "easily",
-          "16": "understandable",
-          "17": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "HealthStatus",
+          "10": "graphically",
+          "11": ",",
+          "12": "so",
+          "13": "that",
+          "14": "it",
+          "15": "is",
+          "16": "easily",
+          "17": "understandable",
+          "18": "."
         }
       }
     }
@@ -29703,17 +29732,18 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "Patient's",
-          "8": "HealthStatus",
-          "9": "graphically",
-          "10": ",",
-          "11": "so",
-          "12": "that",
-          "13": "it",
-          "14": "is",
-          "15": "easily",
-          "16": "understandable",
-          "17": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "HealthStatus",
+          "10": "graphically",
+          "11": ",",
+          "12": "so",
+          "13": "that",
+          "14": "it",
+          "15": "is",
+          "16": "easily",
+          "17": "understandable",
+          "18": "."
         }
       }
     }
@@ -30147,12 +30177,13 @@
           "3": "be",
           "4": "notified",
           "5": "if",
-          "6": "Doctor's",
-          "7": "PatientsHealth",
-          "8": "declines",
-          "9": "after",
-          "10": "Surgery",
-          "11": "."
+          "6": "Doctor",
+          "7": "'s",
+          "8": "PatientsHealth",
+          "9": "declines",
+          "10": "after",
+          "11": "Surgery",
+          "12": "."
         }
       }
     },
@@ -30623,16 +30654,12 @@
           "10": "best",
           "11": "capture",
           "12": "Pictures",
-          "13": "(",
-          "14": "I",
-          "15": ".",
-          "16": "e",
-          "17": ".",
-          "18": "Selfies",
-          "19": ",",
-          "20": "BodyPartsEtc",
-          "21": ")",
-          "22": "."
+          "13": "-LRB-",
+          "14": "I.e.Selfies",
+          "15": ",",
+          "16": "BodyPartsEtc",
+          "17": "-RRB-",
+          "18": "."
         }
       }
     },
@@ -31593,7 +31620,7 @@
           "6": "as",
           "7": "a",
           "8": "HybridApp",
-          "9": "(",
+          "9": "-LRB-",
           "10": "testing",
           "11": "on",
           "12": "Android",
@@ -31605,7 +31632,7 @@
           "18": "Define",
           "19": "which",
           "20": "versions",
-          "21": ")",
+          "21": "-RRB-",
           "22": "."
         }
       }
@@ -31821,12 +31848,13 @@
           "3": "be",
           "4": "notified",
           "5": "if",
-          "6": "Doctor's",
-          "7": "PatientsHealth",
-          "8": "declines",
-          "9": "after",
-          "10": "Surgery",
-          "11": "."
+          "6": "Doctor",
+          "7": "'s",
+          "8": "PatientsHealth",
+          "9": "declines",
+          "10": "after",
+          "11": "Surgery",
+          "12": "."
         }
       }
     },
@@ -32297,16 +32325,12 @@
           "10": "best",
           "11": "capture",
           "12": "Pictures",
-          "13": "(",
-          "14": "I",
-          "15": ".",
-          "16": "e",
-          "17": ".",
-          "18": "Selfies",
-          "19": ",",
-          "20": "BodyPartsEtc",
-          "21": ")",
-          "22": "."
+          "13": "-LRB-",
+          "14": "I.e.Selfies",
+          "15": ",",
+          "16": "BodyPartsEtc",
+          "17": "-RRB-",
+          "18": "."
         }
       }
     },
@@ -32672,7 +32696,7 @@
           "6": "as",
           "7": "a",
           "8": "HybridApp",
-          "9": "(",
+          "9": "-LRB-",
           "10": "testing",
           "11": "on",
           "12": "Android",
@@ -32684,7 +32708,7 @@
           "18": "Define",
           "19": "which",
           "20": "versions",
-          "21": ")",
+          "21": "-RRB-",
           "22": "."
         }
       }
@@ -33111,12 +33135,13 @@
           "3": "be",
           "4": "notified",
           "5": "if",
-          "6": "Doctor's",
-          "7": "PatientsHealth",
-          "8": "declines",
-          "9": "after",
-          "10": "Surgery",
-          "11": "."
+          "6": "Doctor",
+          "7": "'s",
+          "8": "PatientsHealth",
+          "9": "declines",
+          "10": "after",
+          "11": "Surgery",
+          "12": "."
         }
       }
     },
@@ -33309,11 +33334,12 @@
           "3": "receive",
           "4": "RealTimeNotifications",
           "5": "for",
-          "6": "PatientUser's",
-          "7": "Reminders",
-          "8": "and",
-          "9": "Appointments",
-          "10": "."
+          "6": "PatientUser",
+          "7": "'s",
+          "8": "Reminders",
+          "9": "and",
+          "10": "Appointments",
+          "11": "."
         }
       }
     },
@@ -33559,11 +33585,11 @@
           "6": "have",
           "7": "completed",
           "8": "CertainTasks",
-          "9": "(",
+          "9": "-LRB-",
           "10": "like",
           "11": "a",
           "12": "Checklist",
-          "13": ")",
+          "13": "-RRB-",
           "14": "."
         }
       }
@@ -33834,9 +33860,10 @@
           "10": "Password",
           "11": "or",
           "12": "with",
-          "13": "User's",
-          "14": "FingerprintScanner",
-          "15": "."
+          "13": "User",
+          "14": "'s",
+          "15": "FingerprintScanner",
+          "16": "."
         }
       }
     },
@@ -35937,9 +35964,10 @@
           "3": "add/remove",
           "4": "Patients",
           "5": "from",
-          "6": "CareTeam's",
-          "7": "List",
-          "8": "."
+          "6": "CareTeam",
+          "7": "'s",
+          "8": "List",
+          "9": "."
         }
       }
     },
@@ -36481,16 +36509,17 @@
           "6": "review",
           "7": "Post-opNotes",
           "8": "from",
-          "9": "Patient's",
-          "10": "Doctor",
-          "11": "/",
-          "12": "surgeon",
-          "13": "on",
-          "14": "any",
-          "15": "PreviousSurgeries",
-          "16": "/",
-          "17": "Treatments",
-          "18": "."
+          "9": "Patient",
+          "10": "'s",
+          "11": "Doctor",
+          "12": "/",
+          "13": "surgeon",
+          "14": "on",
+          "15": "any",
+          "16": "PreviousSurgeries",
+          "17": "/",
+          "18": "Treatments",
+          "19": "."
         }
       }
     },
@@ -36923,13 +36952,14 @@
           "1": "Patient",
           "2": "can",
           "3": "do",
-          "4": "Patient's",
-          "5": "Questionnaire/surveys",
-          "6": "from",
-          "7": "within",
-          "8": "the",
-          "9": "App",
-          "10": "."
+          "4": "Patient",
+          "5": "'s",
+          "6": "Questionnaire/surveys",
+          "7": "from",
+          "8": "within",
+          "9": "the",
+          "10": "App",
+          "11": "."
         }
       }
     },
@@ -37713,9 +37743,10 @@
           "12": "StandardOnes",
           "13": "set",
           "14": "by",
-          "15": "Patient's",
-          "16": "Doctor",
-          "17": "."
+          "15": "Patient",
+          "16": "'s",
+          "17": "Doctor",
+          "18": "."
         }
       }
     },
@@ -38176,13 +38207,15 @@
           "4": "RecommendationsOfCommonAnswersAndResources",
           "5": "related",
           "6": "to",
-          "7": "Patient's",
-          "8": "Surgery",
-          "9": "based",
-          "10": "on",
-          "11": "Patient's",
-          "12": "Timeline",
-          "13": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "Surgery",
+          "10": "based",
+          "11": "on",
+          "12": "Patient",
+          "13": "'s",
+          "14": "Timeline",
+          "15": "."
         }
       }
     },
@@ -38943,17 +38976,18 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "Patient's",
-          "8": "HealthStatus",
-          "9": "graphically",
-          "10": ",",
-          "11": "so",
-          "12": "that",
-          "13": "it",
-          "14": "is",
-          "15": "easily",
-          "16": "understandable",
-          "17": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "HealthStatus",
+          "10": "graphically",
+          "11": ",",
+          "12": "so",
+          "13": "that",
+          "14": "it",
+          "15": "is",
+          "16": "easily",
+          "17": "understandable",
+          "18": "."
         }
       }
     },
@@ -39245,19 +39279,20 @@
           "2": "can",
           "3": "see",
           "4": "all",
-          "5": "Patient's",
-          "6": "DietaryConstraints",
-          "7": "and",
-          "8": "medications",
-          "9": "Patient",
-          "10": "need",
-          "11": "to",
-          "12": "take",
-          "13": "before",
-          "14": "and",
-          "15": "after",
-          "16": "Surgery",
-          "17": "."
+          "5": "Patient",
+          "6": "'s",
+          "7": "DietaryConstraints",
+          "8": "and",
+          "9": "medications",
+          "10": "Patient",
+          "11": "need",
+          "12": "to",
+          "13": "take",
+          "14": "before",
+          "15": "and",
+          "16": "after",
+          "17": "Surgery",
+          "18": "."
         }
       }
     },
@@ -40182,7 +40217,7 @@
           "6": "as",
           "7": "a",
           "8": "HybridApp",
-          "9": "(",
+          "9": "-LRB-",
           "10": "testing",
           "11": "on",
           "12": "Android",
@@ -40194,7 +40229,7 @@
           "18": "Define",
           "19": "which",
           "20": "versions",
-          "21": ")",
+          "21": "-RRB-",
           "22": "."
         }
       }
@@ -40708,11 +40743,12 @@
           "3": "receive",
           "4": "RealTimeNotifications",
           "5": "for",
-          "6": "PatientUser's",
-          "7": "Reminders",
-          "8": "and",
-          "9": "Appointments",
-          "10": "."
+          "6": "PatientUser",
+          "7": "'s",
+          "8": "Reminders",
+          "9": "and",
+          "10": "Appointments",
+          "11": "."
         }
       }
     },
@@ -40958,11 +40994,11 @@
           "6": "have",
           "7": "completed",
           "8": "CertainTasks",
-          "9": "(",
+          "9": "-LRB-",
           "10": "like",
           "11": "a",
           "12": "Checklist",
-          "13": ")",
+          "13": "-RRB-",
           "14": "."
         }
       }
@@ -42891,9 +42927,10 @@
           "3": "add/remove",
           "4": "Patients",
           "5": "from",
-          "6": "CareTeam's",
-          "7": "List",
-          "8": "."
+          "6": "CareTeam",
+          "7": "'s",
+          "8": "List",
+          "9": "."
         }
       }
     },
@@ -43909,16 +43946,17 @@
           "6": "review",
           "7": "Post-opNotes",
           "8": "from",
-          "9": "Patient's",
-          "10": "Doctor",
-          "11": "/",
-          "12": "surgeon",
-          "13": "on",
-          "14": "any",
-          "15": "PreviousSurgeries",
-          "16": "/",
-          "17": "Treatments",
-          "18": "."
+          "9": "Patient",
+          "10": "'s",
+          "11": "Doctor",
+          "12": "/",
+          "13": "surgeon",
+          "14": "on",
+          "15": "any",
+          "16": "PreviousSurgeries",
+          "17": "/",
+          "18": "Treatments",
+          "19": "."
         }
       }
     },
@@ -44103,13 +44141,14 @@
           "1": "Patient",
           "2": "can",
           "3": "do",
-          "4": "Patient's",
-          "5": "Questionnaire/surveys",
-          "6": "from",
-          "7": "within",
-          "8": "the",
-          "9": "App",
-          "10": "."
+          "4": "Patient",
+          "5": "'s",
+          "6": "Questionnaire/surveys",
+          "7": "from",
+          "8": "within",
+          "9": "the",
+          "10": "App",
+          "11": "."
         }
       }
     },
@@ -44848,11 +44887,11 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "the",
           "3": "paying",
           "4": "Customer",
-          "5": ")",
+          "5": "-RRB-",
           "6": ",",
           "7": "HealthcareExecutive",
           "8": "can",
@@ -45173,9 +45212,10 @@
           "12": "StandardOnes",
           "13": "set",
           "14": "by",
-          "15": "Patient's",
-          "16": "Doctor",
-          "17": "."
+          "15": "Patient",
+          "16": "'s",
+          "17": "Doctor",
+          "18": "."
         }
       }
     },
@@ -45899,13 +45939,15 @@
           "4": "RecommendationsOfCommonAnswersAndResources",
           "5": "related",
           "6": "to",
-          "7": "Patient's",
-          "8": "Surgery",
-          "9": "based",
-          "10": "on",
-          "11": "Patient's",
-          "12": "Timeline",
-          "13": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "Surgery",
+          "10": "based",
+          "11": "on",
+          "12": "Patient",
+          "13": "'s",
+          "14": "Timeline",
+          "15": "."
         }
       }
     },
@@ -46666,17 +46708,18 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "Patient's",
-          "8": "HealthStatus",
-          "9": "graphically",
-          "10": ",",
-          "11": "so",
-          "12": "that",
-          "13": "it",
-          "14": "is",
-          "15": "easily",
-          "16": "understandable",
-          "17": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "HealthStatus",
+          "10": "graphically",
+          "11": ",",
+          "12": "so",
+          "13": "that",
+          "14": "it",
+          "15": "is",
+          "16": "easily",
+          "17": "understandable",
+          "18": "."
         }
       }
     },
@@ -47768,12 +47811,13 @@
           "3": "be",
           "4": "notified",
           "5": "if",
-          "6": "Doctor's",
-          "7": "PatientsHealth",
-          "8": "declines",
-          "9": "after",
-          "10": "Surgery",
-          "11": "."
+          "6": "Doctor",
+          "7": "'s",
+          "8": "PatientsHealth",
+          "9": "declines",
+          "10": "after",
+          "11": "Surgery",
+          "12": "."
         }
       }
     },
@@ -48019,11 +48063,11 @@
           "6": "have",
           "7": "completed",
           "8": "CertainTasks",
-          "9": "(",
+          "9": "-LRB-",
           "10": "like",
           "11": "a",
           "12": "Checklist",
-          "13": ")",
+          "13": "-RRB-",
           "14": "."
         }
       }
@@ -49266,16 +49310,17 @@
           "6": "review",
           "7": "Post-opNotes",
           "8": "from",
-          "9": "Patient's",
-          "10": "Doctor",
-          "11": "/",
-          "12": "surgeon",
-          "13": "on",
-          "14": "any",
-          "15": "PreviousSurgeries",
-          "16": "/",
-          "17": "Treatments",
-          "18": "."
+          "9": "Patient",
+          "10": "'s",
+          "11": "Doctor",
+          "12": "/",
+          "13": "surgeon",
+          "14": "on",
+          "15": "any",
+          "16": "PreviousSurgeries",
+          "17": "/",
+          "18": "Treatments",
+          "19": "."
         }
       }
     },
@@ -49591,16 +49636,12 @@
           "10": "best",
           "11": "capture",
           "12": "Pictures",
-          "13": "(",
-          "14": "I",
-          "15": ".",
-          "16": "e",
-          "17": ".",
-          "18": "Selfies",
-          "19": ",",
-          "20": "BodyPartsEtc",
-          "21": ")",
-          "22": "."
+          "13": "-LRB-",
+          "14": "I.e.Selfies",
+          "15": ",",
+          "16": "BodyPartsEtc",
+          "17": "-RRB-",
+          "18": "."
         }
       }
     },
@@ -50657,11 +50698,11 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "the",
           "3": "paying",
           "4": "Customer",
-          "5": ")",
+          "5": "-RRB-",
           "6": ",",
           "7": "HealthcareExecutive",
           "8": "can",
@@ -51901,17 +51942,18 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "Patient's",
-          "8": "HealthStatus",
-          "9": "graphically",
-          "10": ",",
-          "11": "so",
-          "12": "that",
-          "13": "it",
-          "14": "is",
-          "15": "easily",
-          "16": "understandable",
-          "17": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "HealthStatus",
+          "10": "graphically",
+          "11": ",",
+          "12": "so",
+          "13": "that",
+          "14": "it",
+          "15": "is",
+          "16": "easily",
+          "17": "understandable",
+          "18": "."
         }
       }
     },
@@ -52203,19 +52245,20 @@
           "2": "can",
           "3": "see",
           "4": "all",
-          "5": "Patient's",
-          "6": "DietaryConstraints",
-          "7": "and",
-          "8": "medications",
-          "9": "Patient",
-          "10": "need",
-          "11": "to",
-          "12": "take",
-          "13": "before",
-          "14": "and",
-          "15": "after",
-          "16": "Surgery",
-          "17": "."
+          "5": "Patient",
+          "6": "'s",
+          "7": "DietaryConstraints",
+          "8": "and",
+          "9": "medications",
+          "10": "Patient",
+          "11": "need",
+          "12": "to",
+          "13": "take",
+          "14": "before",
+          "15": "and",
+          "16": "after",
+          "17": "Surgery",
+          "18": "."
         }
       }
     },
@@ -53361,12 +53404,13 @@
           "3": "be",
           "4": "notified",
           "5": "if",
-          "6": "Doctor's",
-          "7": "PatientsHealth",
-          "8": "declines",
-          "9": "after",
-          "10": "Surgery",
-          "11": "."
+          "6": "Doctor",
+          "7": "'s",
+          "8": "PatientsHealth",
+          "9": "declines",
+          "10": "after",
+          "11": "Surgery",
+          "12": "."
         }
       }
     },
@@ -53559,11 +53603,12 @@
           "3": "receive",
           "4": "RealTimeNotifications",
           "5": "for",
-          "6": "PatientUser's",
-          "7": "Reminders",
-          "8": "and",
-          "9": "Appointments",
-          "10": "."
+          "6": "PatientUser",
+          "7": "'s",
+          "8": "Reminders",
+          "9": "and",
+          "10": "Appointments",
+          "11": "."
         }
       }
     },
@@ -53809,11 +53854,11 @@
           "6": "have",
           "7": "completed",
           "8": "CertainTasks",
-          "9": "(",
+          "9": "-LRB-",
           "10": "like",
           "11": "a",
           "12": "Checklist",
-          "13": ")",
+          "13": "-RRB-",
           "14": "."
         }
       }
@@ -54403,9 +54448,10 @@
           "10": "Password",
           "11": "or",
           "12": "with",
-          "13": "User's",
-          "14": "FingerprintScanner",
-          "15": "."
+          "13": "User",
+          "14": "'s",
+          "15": "FingerprintScanner",
+          "16": "."
         }
       }
     },
@@ -56779,9 +56825,10 @@
           "3": "add/remove",
           "4": "Patients",
           "5": "from",
-          "6": "CareTeam's",
-          "7": "List",
-          "8": "."
+          "6": "CareTeam",
+          "7": "'s",
+          "8": "List",
+          "9": "."
         }
       }
     },
@@ -57797,16 +57844,17 @@
           "6": "review",
           "7": "Post-opNotes",
           "8": "from",
-          "9": "Patient's",
-          "10": "Doctor",
-          "11": "/",
-          "12": "surgeon",
-          "13": "on",
-          "14": "any",
-          "15": "PreviousSurgeries",
-          "16": "/",
-          "17": "Treatments",
-          "18": "."
+          "9": "Patient",
+          "10": "'s",
+          "11": "Doctor",
+          "12": "/",
+          "13": "surgeon",
+          "14": "on",
+          "15": "any",
+          "16": "PreviousSurgeries",
+          "17": "/",
+          "18": "Treatments",
+          "19": "."
         }
       }
     },
@@ -58239,13 +58287,14 @@
           "1": "Patient",
           "2": "can",
           "3": "do",
-          "4": "Patient's",
-          "5": "Questionnaire/surveys",
-          "6": "from",
-          "7": "within",
-          "8": "the",
-          "9": "App",
-          "10": "."
+          "4": "Patient",
+          "5": "'s",
+          "6": "Questionnaire/surveys",
+          "7": "from",
+          "8": "within",
+          "9": "the",
+          "10": "App",
+          "11": "."
         }
       }
     },
@@ -59265,11 +59314,11 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "the",
           "3": "paying",
           "4": "Customer",
-          "5": ")",
+          "5": "-RRB-",
           "6": ",",
           "7": "HealthcareExecutive",
           "8": "can",
@@ -59789,9 +59838,10 @@
           "12": "StandardOnes",
           "13": "set",
           "14": "by",
-          "15": "Patient's",
-          "16": "Doctor",
-          "17": "."
+          "15": "Patient",
+          "16": "'s",
+          "17": "Doctor",
+          "18": "."
         }
       }
     },
@@ -60515,13 +60565,15 @@
           "4": "RecommendationsOfCommonAnswersAndResources",
           "5": "related",
           "6": "to",
-          "7": "Patient's",
-          "8": "Surgery",
-          "9": "based",
-          "10": "on",
-          "11": "Patient's",
-          "12": "Timeline",
-          "13": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "Surgery",
+          "10": "based",
+          "11": "on",
+          "12": "Patient",
+          "13": "'s",
+          "14": "Timeline",
+          "15": "."
         }
       }
     },
@@ -61282,17 +61334,18 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "Patient's",
-          "8": "HealthStatus",
-          "9": "graphically",
-          "10": ",",
-          "11": "so",
-          "12": "that",
-          "13": "it",
-          "14": "is",
-          "15": "easily",
-          "16": "understandable",
-          "17": "."
+          "7": "Patient",
+          "8": "'s",
+          "9": "HealthStatus",
+          "10": "graphically",
+          "11": ",",
+          "12": "so",
+          "13": "that",
+          "14": "it",
+          "15": "is",
+          "16": "easily",
+          "17": "understandable",
+          "18": "."
         }
       }
     },
@@ -61584,19 +61637,20 @@
           "2": "can",
           "3": "see",
           "4": "all",
-          "5": "Patient's",
-          "6": "DietaryConstraints",
-          "7": "and",
-          "8": "medications",
-          "9": "Patient",
-          "10": "need",
-          "11": "to",
-          "12": "take",
-          "13": "before",
-          "14": "and",
-          "15": "after",
-          "16": "Surgery",
-          "17": "."
+          "5": "Patient",
+          "6": "'s",
+          "7": "DietaryConstraints",
+          "8": "and",
+          "9": "medications",
+          "10": "Patient",
+          "11": "need",
+          "12": "to",
+          "13": "take",
+          "14": "before",
+          "15": "and",
+          "16": "after",
+          "17": "Surgery",
+          "18": "."
         }
       }
     },
@@ -62521,7 +62575,7 @@
           "6": "as",
           "7": "a",
           "8": "HybridApp",
-          "9": "(",
+          "9": "-LRB-",
           "10": "testing",
           "11": "on",
           "12": "Android",
@@ -62533,7 +62587,7 @@
           "18": "Define",
           "19": "which",
           "20": "versions",
-          "21": ")",
+          "21": "-RRB-",
           "22": "."
         }
       }

@@ -1302,9 +1302,10 @@
           "3": "manage",
           "4": "Investments",
           "5": "to",
-          "6": "RegisteredUser's",
-          "7": "InvestmentProfile",
-          "8": "."
+          "6": "RegisteredUser",
+          "7": "'s",
+          "8": "InvestmentProfile",
+          "9": "."
         }
       }
     },
@@ -1911,9 +1912,9 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "report",
-          "4": "(",
+          "4": "-LRB-",
           "5": "Flag",
-          "6": ")",
+          "6": "-RRB-",
           "7": "OtherUsers",
           "8": "."
         }
@@ -3949,7 +3950,7 @@
           "9": ",",
           "10": "and",
           "11": "ServiceType",
-          "12": "(",
+          "12": "-LRB-",
           "13": "Eg",
           "14": ".",
           "15": "RealEstateAgent",
@@ -3959,7 +3960,7 @@
           "19": "Contractors",
           "20": ",",
           "21": "etc",
-          "22": ")",
+          "22": "-RRB-",
           "23": "."
         }
       }
@@ -4133,12 +4134,13 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "reset",
-          "4": "RegisteredUser's",
-          "5": "Password",
-          "6": "through",
-          "7": "an",
-          "8": "EmailAuthenticationSystem",
-          "9": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "Password",
+          "7": "through",
+          "8": "an",
+          "9": "EmailAuthenticationSystem",
+          "10": "."
         }
       }
     },
@@ -4390,9 +4392,10 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "adjust",
-          "4": "RegisteredUser's",
-          "5": "EmailNotificationSettings",
-          "6": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "EmailNotificationSettings",
+          "7": "."
         }
       }
     },
@@ -4597,15 +4600,16 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "export",
-          "4": "RegisteredUser's",
-          "5": "TrackingToolData",
-          "6": "to",
-          "7": "a",
-          "8": "``",
-          "9": "Csv",
-          "10": "''",
-          "11": "File",
-          "12": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "TrackingToolData",
+          "7": "to",
+          "8": "a",
+          "9": "``",
+          "10": "Csv",
+          "11": "''",
+          "12": "File",
+          "13": "."
         }
       }
     }
@@ -5298,9 +5302,10 @@
           "3": "manage",
           "4": "Investments",
           "5": "to",
-          "6": "RegisteredUser's",
-          "7": "InvestmentProfile",
-          "8": "."
+          "6": "RegisteredUser",
+          "7": "'s",
+          "8": "InvestmentProfile",
+          "9": "."
         }
       }
     },
@@ -6056,9 +6061,9 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "report",
-          "4": "(",
+          "4": "-LRB-",
           "5": "Flag",
-          "6": ")",
+          "6": "-RRB-",
           "7": "OtherUsers",
           "8": "."
         }
@@ -8475,7 +8480,7 @@
           "9": ",",
           "10": "and",
           "11": "ServiceType",
-          "12": "(",
+          "12": "-LRB-",
           "13": "Eg",
           "14": ".",
           "15": "RealEstateAgent",
@@ -8485,7 +8490,7 @@
           "19": "Contractors",
           "20": ",",
           "21": "etc",
-          "22": ")",
+          "22": "-RRB-",
           "23": "."
         }
       }
@@ -8950,12 +8955,13 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "reset",
-          "4": "RegisteredUser's",
-          "5": "Password",
-          "6": "through",
-          "7": "an",
-          "8": "EmailAuthenticationSystem",
-          "9": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "Password",
+          "7": "through",
+          "8": "an",
+          "9": "EmailAuthenticationSystem",
+          "10": "."
         }
       }
     },
@@ -9559,9 +9565,10 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "adjust",
-          "4": "RegisteredUser's",
-          "5": "EmailNotificationSettings",
-          "6": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "EmailNotificationSettings",
+          "7": "."
         }
       }
     },
@@ -9766,15 +9773,16 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "export",
-          "4": "RegisteredUser's",
-          "5": "TrackingToolData",
-          "6": "to",
-          "7": "a",
-          "8": "``",
-          "9": "Csv",
-          "10": "''",
-          "11": "File",
-          "12": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "TrackingToolData",
+          "7": "to",
+          "8": "a",
+          "9": "``",
+          "10": "Csv",
+          "11": "''",
+          "12": "File",
+          "13": "."
         }
       }
     }
@@ -11503,9 +11511,10 @@
           "5": "Reviews",
           "6": "left",
           "7": "on",
-          "8": "VerifiedServiceProvider's",
-          "9": "Page",
-          "10": "."
+          "8": "VerifiedServiceProvider",
+          "9": "'s",
+          "10": "Page",
+          "11": "."
         }
       }
     },
@@ -11670,9 +11679,10 @@
           "3": "manage",
           "4": "Investments",
           "5": "to",
-          "6": "RegisteredUser's",
-          "7": "InvestmentProfile",
-          "8": "."
+          "6": "RegisteredUser",
+          "7": "'s",
+          "8": "InvestmentProfile",
+          "9": "."
         }
       }
     },
@@ -13581,11 +13591,11 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "Investor",
           "3": "or",
           "4": "ServiceProvider",
-          "5": ")",
+          "5": "-RRB-",
           "6": ",",
           "7": "User",
           "8": "will",
@@ -14683,7 +14693,7 @@
           "9": ",",
           "10": "and",
           "11": "ServiceType",
-          "12": "(",
+          "12": "-LRB-",
           "13": "Eg",
           "14": ".",
           "15": "RealEstateAgent",
@@ -14693,7 +14703,7 @@
           "19": "Contractors",
           "20": ",",
           "21": "etc",
-          "22": ")",
+          "22": "-RRB-",
           "23": "."
         }
       }
@@ -14867,12 +14877,13 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "reset",
-          "4": "RegisteredUser's",
-          "5": "Password",
-          "6": "through",
-          "7": "an",
-          "8": "EmailAuthenticationSystem",
-          "9": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "Password",
+          "7": "through",
+          "8": "an",
+          "9": "EmailAuthenticationSystem",
+          "10": "."
         }
       }
     },
@@ -15204,9 +15215,10 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "adjust",
-          "4": "RegisteredUser's",
-          "5": "EmailNotificationSettings",
-          "6": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "EmailNotificationSettings",
+          "7": "."
         }
       }
     },
@@ -15411,15 +15423,16 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "export",
-          "4": "RegisteredUser's",
-          "5": "TrackingToolData",
-          "6": "to",
-          "7": "a",
-          "8": "``",
-          "9": "Csv",
-          "10": "''",
-          "11": "File",
-          "12": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "TrackingToolData",
+          "7": "to",
+          "8": "a",
+          "9": "``",
+          "10": "Csv",
+          "11": "''",
+          "12": "File",
+          "13": "."
         }
       }
     }
@@ -16112,9 +16125,10 @@
           "3": "manage",
           "4": "Investments",
           "5": "to",
-          "6": "RegisteredUser's",
-          "7": "InvestmentProfile",
-          "8": "."
+          "6": "RegisteredUser",
+          "7": "'s",
+          "8": "InvestmentProfile",
+          "9": "."
         }
       }
     },
@@ -16870,9 +16884,9 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "report",
-          "4": "(",
+          "4": "-LRB-",
           "5": "Flag",
-          "6": ")",
+          "6": "-RRB-",
           "7": "OtherUsers",
           "8": "."
         }
@@ -19289,7 +19303,7 @@
           "9": ",",
           "10": "and",
           "11": "ServiceType",
-          "12": "(",
+          "12": "-LRB-",
           "13": "Eg",
           "14": ".",
           "15": "RealEstateAgent",
@@ -19299,7 +19313,7 @@
           "19": "Contractors",
           "20": ",",
           "21": "etc",
-          "22": ")",
+          "22": "-RRB-",
           "23": "."
         }
       }
@@ -19764,12 +19778,13 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "reset",
-          "4": "RegisteredUser's",
-          "5": "Password",
-          "6": "through",
-          "7": "an",
-          "8": "EmailAuthenticationSystem",
-          "9": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "Password",
+          "7": "through",
+          "8": "an",
+          "9": "EmailAuthenticationSystem",
+          "10": "."
         }
       }
     },
@@ -20373,9 +20388,10 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "adjust",
-          "4": "RegisteredUser's",
-          "5": "EmailNotificationSettings",
-          "6": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "EmailNotificationSettings",
+          "7": "."
         }
       }
     },
@@ -20580,15 +20596,16 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "export",
-          "4": "RegisteredUser's",
-          "5": "TrackingToolData",
-          "6": "to",
-          "7": "a",
-          "8": "``",
-          "9": "Csv",
-          "10": "''",
-          "11": "File",
-          "12": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "TrackingToolData",
+          "7": "to",
+          "8": "a",
+          "9": "``",
+          "10": "Csv",
+          "11": "''",
+          "12": "File",
+          "13": "."
         }
       }
     }
@@ -22711,9 +22728,10 @@
           "5": "Reviews",
           "6": "left",
           "7": "on",
-          "8": "VerifiedServiceProvider's",
-          "9": "Page",
-          "10": "."
+          "8": "VerifiedServiceProvider",
+          "9": "'s",
+          "10": "Page",
+          "11": "."
         }
       }
     },
@@ -22878,9 +22896,10 @@
           "3": "manage",
           "4": "Investments",
           "5": "to",
-          "6": "RegisteredUser's",
-          "7": "InvestmentProfile",
-          "8": "."
+          "6": "RegisteredUser",
+          "7": "'s",
+          "8": "InvestmentProfile",
+          "9": "."
         }
       }
     },
@@ -24096,9 +24115,9 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "report",
-          "4": "(",
+          "4": "-LRB-",
           "5": "Flag",
-          "6": ")",
+          "6": "-RRB-",
           "7": "OtherUsers",
           "8": "."
         }
@@ -25631,11 +25650,11 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "Investor",
           "3": "or",
           "4": "ServiceProvider",
-          "5": ")",
+          "5": "-RRB-",
           "6": ",",
           "7": "User",
           "8": "will",
@@ -26962,7 +26981,7 @@
           "9": ",",
           "10": "and",
           "11": "ServiceType",
-          "12": "(",
+          "12": "-LRB-",
           "13": "Eg",
           "14": ".",
           "15": "RealEstateAgent",
@@ -26972,7 +26991,7 @@
           "19": "Contractors",
           "20": ",",
           "21": "etc",
-          "22": ")",
+          "22": "-RRB-",
           "23": "."
         }
       }
@@ -27437,12 +27456,13 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "reset",
-          "4": "RegisteredUser's",
-          "5": "Password",
-          "6": "through",
-          "7": "an",
-          "8": "EmailAuthenticationSystem",
-          "9": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "Password",
+          "7": "through",
+          "8": "an",
+          "9": "EmailAuthenticationSystem",
+          "10": "."
         }
       }
     },
@@ -28046,9 +28066,10 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "adjust",
-          "4": "RegisteredUser's",
-          "5": "EmailNotificationSettings",
-          "6": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "EmailNotificationSettings",
+          "7": "."
         }
       }
     },
@@ -28253,15 +28274,16 @@
           "1": "RegisteredUser",
           "2": "can",
           "3": "export",
-          "4": "RegisteredUser's",
-          "5": "TrackingToolData",
-          "6": "to",
-          "7": "a",
-          "8": "``",
-          "9": "Csv",
-          "10": "''",
-          "11": "File",
-          "12": "."
+          "4": "RegisteredUser",
+          "5": "'s",
+          "6": "TrackingToolData",
+          "7": "to",
+          "8": "a",
+          "9": "``",
+          "10": "Csv",
+          "11": "''",
+          "12": "File",
+          "13": "."
         }
       }
     }

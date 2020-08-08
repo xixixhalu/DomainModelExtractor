@@ -192,13 +192,14 @@
           "1": "User",
           "2": "can",
           "3": "reset",
-          "4": "User's",
-          "5": "Password",
-          "6": "if",
-          "7": "User",
-          "8": "forget",
-          "9": "it",
-          "10": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Password",
+          "7": "if",
+          "8": "User",
+          "9": "forget",
+          "10": "it",
+          "11": "."
         }
       }
     },
@@ -588,13 +589,14 @@
           "1": "User",
           "2": "can",
           "3": "reset",
-          "4": "User's",
-          "5": "Password",
-          "6": "if",
-          "7": "User",
-          "8": "forget",
-          "9": "it",
-          "10": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Password",
+          "7": "if",
+          "8": "User",
+          "9": "forget",
+          "10": "it",
+          "11": "."
         }
       }
     },
@@ -2107,9 +2109,9 @@
           "6": "to",
           "7": "the",
           "8": "Criteria",
-          "9": "(",
+          "9": "-LRB-",
           "10": "BusinessValue/RelativePenalty/EaseOfRealization",
-          "11": ")",
+          "11": "-RRB-",
           "12": "for",
           "13": "a",
           "14": "WinCondition",
@@ -2566,13 +2568,14 @@
           "1": "User",
           "2": "can",
           "3": "reset",
-          "4": "User's",
-          "5": "Password",
-          "6": "if",
-          "7": "User",
-          "8": "forget",
-          "9": "it",
-          "10": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Password",
+          "7": "if",
+          "8": "User",
+          "9": "forget",
+          "10": "it",
+          "11": "."
         }
       }
     },
@@ -3960,20 +3963,21 @@
           "1": "User",
           "2": "can",
           "3": "edit",
-          "4": "User's",
-          "5": "ProfileInformation",
-          "6": "such",
-          "7": "as",
-          "8": "Name",
-          "9": ",",
-          "10": "Surname",
-          "11": ",",
-          "12": "ProfilePicture",
-          "13": ",",
-          "14": "Organization",
-          "15": "or",
-          "16": "Password",
-          "17": "."
+          "4": "User",
+          "5": "'s",
+          "6": "ProfileInformation",
+          "7": "such",
+          "8": "as",
+          "9": "Name",
+          "10": ",",
+          "11": "Surname",
+          "12": ",",
+          "13": "ProfilePicture",
+          "14": ",",
+          "15": "Organization",
+          "16": "or",
+          "17": "Password",
+          "18": "."
         }
       }
     },
@@ -4192,9 +4196,10 @@
           "5": "that",
           "6": "agree",
           "7": "with",
-          "8": "User's",
-          "9": "WinCondition",
-          "10": "."
+          "8": "User",
+          "9": "'s",
+          "10": "WinCondition",
+          "11": "."
         }
       }
     },
@@ -4389,11 +4394,12 @@
           "3": "tag",
           "4": "Someone",
           "5": "to",
-          "6": "User's",
-          "7": "Comment",
-          "8": "using",
-          "9": "@username",
-          "10": "."
+          "6": "User",
+          "7": "'s",
+          "8": "Comment",
+          "9": "using",
+          "10": "@username",
+          "11": "."
         }
       }
     },
@@ -4823,11 +4829,11 @@
           "6": "edit",
           "7": "the",
           "8": "ListOfApprovedMembers",
-          "9": "(",
+          "9": "-LRB-",
           "10": "add",
           "11": "or",
           "12": "delete",
-          "13": ")",
+          "13": "-RRB-",
           "14": "from",
           "15": "the",
           "16": "ProjectSettingsPage",
@@ -5382,11 +5388,12 @@
           "2": "can",
           "3": "delete",
           "4": "only",
-          "5": "User's",
-          "6": "OwnPosts",
-          "7": "and",
-          "8": "Comments",
-          "9": "."
+          "5": "User",
+          "6": "'s",
+          "7": "OwnPosts",
+          "8": "and",
+          "9": "Comments",
+          "10": "."
         }
       }
     },
@@ -7055,9 +7062,9 @@
           "6": "to",
           "7": "the",
           "8": "Criteria",
-          "9": "(",
+          "9": "-LRB-",
           "10": "BusinessValue/RelativePenalty/EaseOfRealization",
-          "11": ")",
+          "11": "-RRB-",
           "12": "for",
           "13": "a",
           "14": "WinCondition",
@@ -7514,13 +7521,14 @@
           "1": "User",
           "2": "can",
           "3": "reset",
-          "4": "User's",
-          "5": "Password",
-          "6": "if",
-          "7": "User",
-          "8": "forget",
-          "9": "it",
-          "10": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Password",
+          "7": "if",
+          "8": "User",
+          "9": "forget",
+          "10": "it",
+          "11": "."
         }
       }
     },
@@ -7803,12 +7811,14 @@
           "7": "a",
           "8": "Picture",
           "9": "from",
-          "10": "User's",
-          "11": "Desktop",
-          "12": "as",
-          "13": "User's",
-          "14": "ProfilePicture",
-          "15": "."
+          "10": "User",
+          "11": "'s",
+          "12": "Desktop",
+          "13": "as",
+          "14": "User",
+          "15": "'s",
+          "16": "ProfilePicture",
+          "17": "."
         }
       }
     },
@@ -9196,20 +9206,21 @@
           "1": "User",
           "2": "can",
           "3": "edit",
-          "4": "User's",
-          "5": "ProfileInformation",
-          "6": "such",
-          "7": "as",
-          "8": "Name",
-          "9": ",",
-          "10": "Surname",
-          "11": ",",
-          "12": "ProfilePicture",
-          "13": ",",
-          "14": "Organization",
-          "15": "or",
-          "16": "Password",
-          "17": "."
+          "4": "User",
+          "5": "'s",
+          "6": "ProfileInformation",
+          "7": "such",
+          "8": "as",
+          "9": "Name",
+          "10": ",",
+          "11": "Surname",
+          "12": ",",
+          "13": "ProfilePicture",
+          "14": ",",
+          "15": "Organization",
+          "16": "or",
+          "17": "Password",
+          "18": "."
         }
       }
     },
@@ -9428,9 +9439,10 @@
           "5": "that",
           "6": "agree",
           "7": "with",
-          "8": "User's",
-          "9": "WinCondition",
-          "10": "."
+          "8": "User",
+          "9": "'s",
+          "10": "WinCondition",
+          "11": "."
         }
       }
     },
@@ -9805,11 +9817,12 @@
           "3": "tag",
           "4": "Someone",
           "5": "to",
-          "6": "User's",
-          "7": "Comment",
-          "8": "using",
-          "9": "@username",
-          "10": "."
+          "6": "User",
+          "7": "'s",
+          "8": "Comment",
+          "9": "using",
+          "10": "@username",
+          "11": "."
         }
       }
     },
@@ -10239,11 +10252,11 @@
           "6": "edit",
           "7": "the",
           "8": "ListOfApprovedMembers",
-          "9": "(",
+          "9": "-LRB-",
           "10": "add",
           "11": "or",
           "12": "delete",
-          "13": ")",
+          "13": "-RRB-",
           "14": "from",
           "15": "the",
           "16": "ProjectSettingsPage",
@@ -10798,11 +10811,12 @@
           "2": "can",
           "3": "delete",
           "4": "only",
-          "5": "User's",
-          "6": "OwnPosts",
-          "7": "and",
-          "8": "Comments",
-          "9": "."
+          "5": "User",
+          "6": "'s",
+          "7": "OwnPosts",
+          "8": "and",
+          "9": "Comments",
+          "10": "."
         }
       }
     },
@@ -11910,12 +11924,14 @@
           "7": "a",
           "8": "Picture",
           "9": "from",
-          "10": "User's",
-          "11": "Desktop",
-          "12": "as",
-          "13": "User's",
-          "14": "ProfilePicture",
-          "15": "."
+          "10": "User",
+          "11": "'s",
+          "12": "Desktop",
+          "13": "as",
+          "14": "User",
+          "15": "'s",
+          "16": "ProfilePicture",
+          "17": "."
         }
       }
     },
@@ -12777,12 +12793,14 @@
           "7": "a",
           "8": "Picture",
           "9": "from",
-          "10": "User's",
-          "11": "Desktop",
-          "12": "as",
-          "13": "User's",
-          "14": "ProfilePicture",
-          "15": "."
+          "10": "User",
+          "11": "'s",
+          "12": "Desktop",
+          "13": "as",
+          "14": "User",
+          "15": "'s",
+          "16": "ProfilePicture",
+          "17": "."
         }
       }
     },
@@ -14007,12 +14025,14 @@
           "7": "a",
           "8": "Picture",
           "9": "from",
-          "10": "User's",
-          "11": "Desktop",
-          "12": "as",
-          "13": "User's",
-          "14": "ProfilePicture",
-          "15": "."
+          "10": "User",
+          "11": "'s",
+          "12": "Desktop",
+          "13": "as",
+          "14": "User",
+          "15": "'s",
+          "16": "ProfilePicture",
+          "17": "."
         }
       }
     }
@@ -14699,9 +14719,9 @@
           "6": "to",
           "7": "the",
           "8": "Criteria",
-          "9": "(",
+          "9": "-LRB-",
           "10": "BusinessValue/RelativePenalty/EaseOfRealization",
-          "11": ")",
+          "11": "-RRB-",
           "12": "for",
           "13": "a",
           "14": "WinCondition",
@@ -15158,13 +15178,14 @@
           "1": "User",
           "2": "can",
           "3": "reset",
-          "4": "User's",
-          "5": "Password",
-          "6": "if",
-          "7": "User",
-          "8": "forget",
-          "9": "it",
-          "10": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Password",
+          "7": "if",
+          "8": "User",
+          "9": "forget",
+          "10": "it",
+          "11": "."
         }
       }
     },
@@ -15447,12 +15468,14 @@
           "7": "a",
           "8": "Picture",
           "9": "from",
-          "10": "User's",
-          "11": "Desktop",
-          "12": "as",
-          "13": "User's",
-          "14": "ProfilePicture",
-          "15": "."
+          "10": "User",
+          "11": "'s",
+          "12": "Desktop",
+          "13": "as",
+          "14": "User",
+          "15": "'s",
+          "16": "ProfilePicture",
+          "17": "."
         }
       }
     },
@@ -16169,20 +16192,21 @@
           "1": "User",
           "2": "can",
           "3": "edit",
-          "4": "User's",
-          "5": "ProfileInformation",
-          "6": "such",
-          "7": "as",
-          "8": "Name",
-          "9": ",",
-          "10": "Surname",
-          "11": ",",
-          "12": "ProfilePicture",
-          "13": ",",
-          "14": "Organization",
-          "15": "or",
-          "16": "Password",
-          "17": "."
+          "4": "User",
+          "5": "'s",
+          "6": "ProfileInformation",
+          "7": "such",
+          "8": "as",
+          "9": "Name",
+          "10": ",",
+          "11": "Surname",
+          "12": ",",
+          "13": "ProfilePicture",
+          "14": ",",
+          "15": "Organization",
+          "16": "or",
+          "17": "Password",
+          "18": "."
         }
       }
     },
@@ -16401,9 +16425,10 @@
           "5": "that",
           "6": "agree",
           "7": "with",
-          "8": "User's",
-          "9": "WinCondition",
-          "10": "."
+          "8": "User",
+          "9": "'s",
+          "10": "WinCondition",
+          "11": "."
         }
       }
     },
@@ -17113,11 +17138,12 @@
           "3": "tag",
           "4": "Someone",
           "5": "to",
-          "6": "User's",
-          "7": "Comment",
-          "8": "using",
-          "9": "@username",
-          "10": "."
+          "6": "User",
+          "7": "'s",
+          "8": "Comment",
+          "9": "using",
+          "10": "@username",
+          "11": "."
         }
       }
     },
@@ -17361,11 +17387,11 @@
           "6": "with",
           "7": "a",
           "8": "WinCondition",
-          "9": "(",
+          "9": "-LRB-",
           "10": "maybe",
           "11": "with",
           "12": "upvote/downvote",
-          "13": ")",
+          "13": "-RRB-",
           "14": "."
         }
       }
@@ -17628,11 +17654,11 @@
           "6": "edit",
           "7": "the",
           "8": "ListOfApprovedMembers",
-          "9": "(",
+          "9": "-LRB-",
           "10": "add",
           "11": "or",
           "12": "delete",
-          "13": ")",
+          "13": "-RRB-",
           "14": "from",
           "15": "the",
           "16": "ProjectSettingsPage",
@@ -18187,11 +18213,12 @@
           "2": "can",
           "3": "delete",
           "4": "only",
-          "5": "User's",
-          "6": "OwnPosts",
-          "7": "and",
-          "8": "Comments",
-          "9": "."
+          "5": "User",
+          "6": "'s",
+          "7": "OwnPosts",
+          "8": "and",
+          "9": "Comments",
+          "10": "."
         }
       }
     },
@@ -19896,9 +19923,9 @@
           "6": "to",
           "7": "the",
           "8": "Criteria",
-          "9": "(",
+          "9": "-LRB-",
           "10": "BusinessValue/RelativePenalty/EaseOfRealization",
-          "11": ")",
+          "11": "-RRB-",
           "12": "for",
           "13": "a",
           "14": "WinCondition",
@@ -20355,13 +20382,14 @@
           "1": "User",
           "2": "can",
           "3": "reset",
-          "4": "User's",
-          "5": "Password",
-          "6": "if",
-          "7": "User",
-          "8": "forget",
-          "9": "it",
-          "10": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Password",
+          "7": "if",
+          "8": "User",
+          "9": "forget",
+          "10": "it",
+          "11": "."
         }
       }
     },
@@ -20644,12 +20672,14 @@
           "7": "a",
           "8": "Picture",
           "9": "from",
-          "10": "User's",
-          "11": "Desktop",
-          "12": "as",
-          "13": "User's",
-          "14": "ProfilePicture",
-          "15": "."
+          "10": "User",
+          "11": "'s",
+          "12": "Desktop",
+          "13": "as",
+          "14": "User",
+          "15": "'s",
+          "16": "ProfilePicture",
+          "17": "."
         }
       }
     },
@@ -22037,20 +22067,21 @@
           "1": "User",
           "2": "can",
           "3": "edit",
-          "4": "User's",
-          "5": "ProfileInformation",
-          "6": "such",
-          "7": "as",
-          "8": "Name",
-          "9": ",",
-          "10": "Surname",
-          "11": ",",
-          "12": "ProfilePicture",
-          "13": ",",
-          "14": "Organization",
-          "15": "or",
-          "16": "Password",
-          "17": "."
+          "4": "User",
+          "5": "'s",
+          "6": "ProfileInformation",
+          "7": "such",
+          "8": "as",
+          "9": "Name",
+          "10": ",",
+          "11": "Surname",
+          "12": ",",
+          "13": "ProfilePicture",
+          "14": ",",
+          "15": "Organization",
+          "16": "or",
+          "17": "Password",
+          "18": "."
         }
       }
     },
@@ -22269,9 +22300,10 @@
           "5": "that",
           "6": "agree",
           "7": "with",
-          "8": "User's",
-          "9": "WinCondition",
-          "10": "."
+          "8": "User",
+          "9": "'s",
+          "10": "WinCondition",
+          "11": "."
         }
       }
     },
@@ -22646,11 +22678,12 @@
           "3": "tag",
           "4": "Someone",
           "5": "to",
-          "6": "User's",
-          "7": "Comment",
-          "8": "using",
-          "9": "@username",
-          "10": "."
+          "6": "User",
+          "7": "'s",
+          "8": "Comment",
+          "9": "using",
+          "10": "@username",
+          "11": "."
         }
       }
     },
@@ -23080,11 +23113,11 @@
           "6": "edit",
           "7": "the",
           "8": "ListOfApprovedMembers",
-          "9": "(",
+          "9": "-LRB-",
           "10": "add",
           "11": "or",
           "12": "delete",
-          "13": ")",
+          "13": "-RRB-",
           "14": "from",
           "15": "the",
           "16": "ProjectSettingsPage",
@@ -23639,11 +23672,12 @@
           "2": "can",
           "3": "delete",
           "4": "only",
-          "5": "User's",
-          "6": "OwnPosts",
-          "7": "and",
-          "8": "Comments",
-          "9": "."
+          "5": "User",
+          "6": "'s",
+          "7": "OwnPosts",
+          "8": "and",
+          "9": "Comments",
+          "10": "."
         }
       }
     },
@@ -24768,9 +24802,9 @@
           "6": "to",
           "7": "the",
           "8": "Criteria",
-          "9": "(",
+          "9": "-LRB-",
           "10": "BusinessValue/RelativePenalty/EaseOfRealization",
-          "11": ")",
+          "11": "-RRB-",
           "12": "for",
           "13": "a",
           "14": "WinCondition",
@@ -24972,13 +25006,14 @@
           "1": "User",
           "2": "can",
           "3": "reset",
-          "4": "User's",
-          "5": "Password",
-          "6": "if",
-          "7": "User",
-          "8": "forget",
-          "9": "it",
-          "10": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Password",
+          "7": "if",
+          "8": "User",
+          "9": "forget",
+          "10": "it",
+          "11": "."
         }
       }
     },
@@ -25261,12 +25296,14 @@
           "7": "a",
           "8": "Picture",
           "9": "from",
-          "10": "User's",
-          "11": "Desktop",
-          "12": "as",
-          "13": "User's",
-          "14": "ProfilePicture",
-          "15": "."
+          "10": "User",
+          "11": "'s",
+          "12": "Desktop",
+          "13": "as",
+          "14": "User",
+          "15": "'s",
+          "16": "ProfilePicture",
+          "17": "."
         }
       }
     },
@@ -27179,9 +27216,9 @@
           "6": "to",
           "7": "the",
           "8": "Criteria",
-          "9": "(",
+          "9": "-LRB-",
           "10": "BusinessValue/RelativePenalty/EaseOfRealization",
-          "11": ")",
+          "11": "-RRB-",
           "12": "for",
           "13": "a",
           "14": "WinCondition",
@@ -27748,13 +27785,14 @@
           "1": "User",
           "2": "can",
           "3": "reset",
-          "4": "User's",
-          "5": "Password",
-          "6": "if",
-          "7": "User",
-          "8": "forget",
-          "9": "it",
-          "10": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Password",
+          "7": "if",
+          "8": "User",
+          "9": "forget",
+          "10": "it",
+          "11": "."
         }
       }
     },
@@ -28037,12 +28075,14 @@
           "7": "a",
           "8": "Picture",
           "9": "from",
-          "10": "User's",
-          "11": "Desktop",
-          "12": "as",
-          "13": "User's",
-          "14": "ProfilePicture",
-          "15": "."
+          "10": "User",
+          "11": "'s",
+          "12": "Desktop",
+          "13": "as",
+          "14": "User",
+          "15": "'s",
+          "16": "ProfilePicture",
+          "17": "."
         }
       }
     },
@@ -29430,20 +29470,21 @@
           "1": "User",
           "2": "can",
           "3": "edit",
-          "4": "User's",
-          "5": "ProfileInformation",
-          "6": "such",
-          "7": "as",
-          "8": "Name",
-          "9": ",",
-          "10": "Surname",
-          "11": ",",
-          "12": "ProfilePicture",
-          "13": ",",
-          "14": "Organization",
-          "15": "or",
-          "16": "Password",
-          "17": "."
+          "4": "User",
+          "5": "'s",
+          "6": "ProfileInformation",
+          "7": "such",
+          "8": "as",
+          "9": "Name",
+          "10": ",",
+          "11": "Surname",
+          "12": ",",
+          "13": "ProfilePicture",
+          "14": ",",
+          "15": "Organization",
+          "16": "or",
+          "17": "Password",
+          "18": "."
         }
       }
     },
@@ -29662,9 +29703,10 @@
           "5": "that",
           "6": "agree",
           "7": "with",
-          "8": "User's",
-          "9": "WinCondition",
-          "10": "."
+          "8": "User",
+          "9": "'s",
+          "10": "WinCondition",
+          "11": "."
         }
       }
     },
@@ -30374,11 +30416,12 @@
           "3": "tag",
           "4": "Someone",
           "5": "to",
-          "6": "User's",
-          "7": "Comment",
-          "8": "using",
-          "9": "@username",
-          "10": "."
+          "6": "User",
+          "7": "'s",
+          "8": "Comment",
+          "9": "using",
+          "10": "@username",
+          "11": "."
         }
       }
     },
@@ -30622,11 +30665,11 @@
           "6": "with",
           "7": "a",
           "8": "WinCondition",
-          "9": "(",
+          "9": "-LRB-",
           "10": "maybe",
           "11": "with",
           "12": "upvote/downvote",
-          "13": ")",
+          "13": "-RRB-",
           "14": "."
         }
       }
@@ -31057,11 +31100,11 @@
           "6": "edit",
           "7": "the",
           "8": "ListOfApprovedMembers",
-          "9": "(",
+          "9": "-LRB-",
           "10": "add",
           "11": "or",
           "12": "delete",
-          "13": ")",
+          "13": "-RRB-",
           "14": "from",
           "15": "the",
           "16": "ProjectSettingsPage",
@@ -31616,11 +31659,12 @@
           "2": "can",
           "3": "delete",
           "4": "only",
-          "5": "User's",
-          "6": "OwnPosts",
-          "7": "and",
-          "8": "Comments",
-          "9": "."
+          "5": "User",
+          "6": "'s",
+          "7": "OwnPosts",
+          "8": "and",
+          "9": "Comments",
+          "10": "."
         }
       }
     },

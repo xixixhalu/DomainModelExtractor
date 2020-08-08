@@ -682,7 +682,7 @@
           "7": "Username",
           "8": "and",
           "9": "Password",
-          "10": "(",
+          "10": "-LRB-",
           "11": "or",
           "12": "with",
           "13": "CommonLogins",
@@ -690,7 +690,7 @@
           "15": "Google",
           "16": "and",
           "17": "Facebook",
-          "18": ")",
+          "18": "-RRB-",
           "19": "to",
           "20": "be",
           "21": "either",
@@ -711,18 +711,19 @@
           "36": "the",
           "37": "Application",
           "38": "with",
-          "39": "User's",
-          "40": "Profile",
-          "41": "to",
-          "42": "log",
-          "43": "in",
-          "44": "with",
-          "45": "Linkedin",
-          "46": ",",
-          "47": "Google",
-          "48": ",",
-          "49": "Wechat",
-          "50": "."
+          "39": "User",
+          "40": "'s",
+          "41": "Profile",
+          "42": "to",
+          "43": "log",
+          "44": "in",
+          "45": "with",
+          "46": "Linkedin",
+          "47": ",",
+          "48": "Google",
+          "49": ",",
+          "50": "Wechat",
+          "51": "."
         }
       }
     },
@@ -1607,7 +1608,7 @@
           "7": "Username",
           "8": "and",
           "9": "Password",
-          "10": "(",
+          "10": "-LRB-",
           "11": "or",
           "12": "with",
           "13": "CommonLogins",
@@ -1615,7 +1616,7 @@
           "15": "Google",
           "16": "and",
           "17": "Facebook",
-          "18": ")",
+          "18": "-RRB-",
           "19": "to",
           "20": "be",
           "21": "either",
@@ -1636,18 +1637,19 @@
           "36": "the",
           "37": "Application",
           "38": "with",
-          "39": "User's",
-          "40": "Profile",
-          "41": "to",
-          "42": "log",
-          "43": "in",
-          "44": "with",
-          "45": "Linkedin",
-          "46": ",",
-          "47": "Google",
-          "48": ",",
-          "49": "Wechat",
-          "50": "."
+          "39": "User",
+          "40": "'s",
+          "41": "Profile",
+          "42": "to",
+          "43": "log",
+          "44": "in",
+          "45": "with",
+          "46": "Linkedin",
+          "47": ",",
+          "48": "Google",
+          "49": ",",
+          "50": "Wechat",
+          "51": "."
         }
       }
     },
@@ -3584,10 +3586,10 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "after",
           "3": "ProjectHandoff",
-          "4": ")",
+          "4": "-RRB-",
           "5": "FutureMaintainer/developer",
           "6": "can",
           "7": "easily",
@@ -4323,11 +4325,9 @@
           "4": "our",
           "5": "Website",
           "6": "through",
-          "7": "Google",
-          "8": ".",
-          "9": "com",
-          "10": "easily",
-          "11": "."
+          "7": "Google.com",
+          "8": "easily",
+          "9": "."
         }
       }
     },
@@ -5567,7 +5567,7 @@
           "7": "Username",
           "8": "and",
           "9": "Password",
-          "10": "(",
+          "10": "-LRB-",
           "11": "or",
           "12": "with",
           "13": "CommonLogins",
@@ -5575,7 +5575,7 @@
           "15": "Google",
           "16": "and",
           "17": "Facebook",
-          "18": ")",
+          "18": "-RRB-",
           "19": "to",
           "20": "be",
           "21": "either",
@@ -5596,18 +5596,19 @@
           "36": "the",
           "37": "Application",
           "38": "with",
-          "39": "User's",
-          "40": "Profile",
-          "41": "to",
-          "42": "log",
-          "43": "in",
-          "44": "with",
-          "45": "Linkedin",
-          "46": ",",
-          "47": "Google",
-          "48": ",",
-          "49": "Wechat",
-          "50": "."
+          "39": "User",
+          "40": "'s",
+          "41": "Profile",
+          "42": "to",
+          "43": "log",
+          "44": "in",
+          "45": "with",
+          "46": "Linkedin",
+          "47": ",",
+          "48": "Google",
+          "49": ",",
+          "50": "Wechat",
+          "51": "."
         }
       }
     },
@@ -5752,10 +5753,11 @@
           "1": "User",
           "2": "can",
           "3": "input",
-          "4": "User's",
-          "5": "preferred",
-          "6": "Schedule",
-          "7": "."
+          "4": "User",
+          "5": "'s",
+          "6": "preferred",
+          "7": "Schedule",
+          "8": "."
         }
       }
     },
@@ -5948,9 +5950,10 @@
           "5": "in",
           "6": "Accordance",
           "7": "with",
-          "8": "Tutor's",
-          "9": "Availability",
-          "10": "."
+          "8": "Tutor",
+          "9": "'s",
+          "10": "Availability",
+          "11": "."
         }
       }
     },
@@ -6126,9 +6129,10 @@
           "4": "a",
           "5": "SpecificTutoringTime",
           "6": "with",
-          "7": "Student's",
-          "8": "Tutor",
-          "9": "."
+          "7": "Student",
+          "8": "'s",
+          "9": "Tutor",
+          "10": "."
         }
       }
     },
@@ -6388,9 +6392,10 @@
           "10": "Videos",
           "11": ",",
           "12": "with",
-          "13": "Tutor's",
-          "14": "Students",
-          "15": "."
+          "13": "Tutor",
+          "14": "'s",
+          "15": "Students",
+          "16": "."
         }
       }
     },
@@ -6762,10 +6767,10 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "after",
           "3": "ProjectHandoff",
-          "4": ")",
+          "4": "-RRB-",
           "5": "FutureMaintainer/developer",
           "6": "can",
           "7": "easily",
@@ -7306,11 +7311,11 @@
           "5": "at",
           "6": "any",
           "7": "TimeOnline",
-          "8": "(",
+          "8": "-LRB-",
           "9": "free",
           "10": "and",
           "11": "paid",
-          "12": ")",
+          "12": "-RRB-",
           "13": "."
         }
       }
@@ -7689,10 +7694,9 @@
           "9": ",",
           "10": "UserAmount",
           "11": ",",
-          "12": "etc",
+          "12": "etc.",
           "13": ".",
-          "14": ".",
-          "15": "."
+          "14": "."
         }
       }
     },
@@ -8032,12 +8036,13 @@
           "1": "User",
           "2": "can",
           "3": "check",
-          "4": "User's",
-          "5": "RequestRecord",
-          "6": "and",
-          "7": "the",
-          "8": "Schedule",
-          "9": "."
+          "4": "User",
+          "5": "'s",
+          "6": "RequestRecord",
+          "7": "and",
+          "8": "the",
+          "9": "Schedule",
+          "10": "."
         }
       }
     },
@@ -9059,25 +9064,26 @@
           "1": "Tutor",
           "2": "can",
           "3": "offer",
-          "4": "Tutor's",
-          "5": "DetailedInformation",
-          "6": "such",
-          "7": "as",
-          "8": "Education",
-          "9": ",",
-          "10": "Experience",
-          "11": ",",
-          "12": "SubjectExpertise",
-          "13": ",",
-          "14": "Availability",
-          "15": ",",
-          "16": "etc",
-          "17": "(",
-          "18": "by",
-          "19": "submitting",
-          "20": "Form",
-          "21": ")",
-          "22": "."
+          "4": "Tutor",
+          "5": "'s",
+          "6": "DetailedInformation",
+          "7": "such",
+          "8": "as",
+          "9": "Education",
+          "10": ",",
+          "11": "Experience",
+          "12": ",",
+          "13": "SubjectExpertise",
+          "14": ",",
+          "15": "Availability",
+          "16": ",",
+          "17": "etc",
+          "18": "-LRB-",
+          "19": "by",
+          "20": "submitting",
+          "21": "Form",
+          "22": "-RRB-",
+          "23": "."
         }
       }
     },
@@ -9360,10 +9366,9 @@
           "13": ",",
           "14": "Videos",
           "15": ",",
-          "16": "etc",
+          "16": "etc.",
           "17": ".",
-          "18": ".",
-          "19": "."
+          "18": "."
         }
       }
     },
@@ -10113,11 +10118,9 @@
           "4": "our",
           "5": "Website",
           "6": "through",
-          "7": "Google",
-          "8": ".",
-          "9": "com",
-          "10": "easily",
-          "11": "."
+          "7": "Google.com",
+          "8": "easily",
+          "9": "."
         }
       }
     },
@@ -11646,12 +11649,13 @@
           "1": "Tutor",
           "2": "can",
           "3": "input",
-          "4": "Tutor's",
-          "5": "ScheduleAvailability",
-          "6": "into",
-          "7": "the",
-          "8": "System",
-          "9": "."
+          "4": "Tutor",
+          "5": "'s",
+          "6": "ScheduleAvailability",
+          "7": "into",
+          "8": "the",
+          "9": "System",
+          "10": "."
         }
       }
     },
@@ -11879,18 +11883,19 @@
           ]
         },
         "Index": {
-          "1": "Tutor's",
-          "2": "Availability",
-          "3": "will",
-          "4": "reflect",
-          "5": "the",
-          "6": "Fact",
-          "7": "that",
-          "8": "Tutor",
-          "9": "am",
-          "10": "now",
-          "11": "booked",
-          "12": "."
+          "1": "Tutor",
+          "2": "'s",
+          "3": "Availability",
+          "4": "will",
+          "5": "reflect",
+          "6": "the",
+          "7": "Fact",
+          "8": "that",
+          "9": "Tutor",
+          "10": "am",
+          "11": "now",
+          "12": "booked",
+          "13": "."
         }
       }
     },
@@ -13364,7 +13369,7 @@
           "7": "Username",
           "8": "and",
           "9": "Password",
-          "10": "(",
+          "10": "-LRB-",
           "11": "or",
           "12": "with",
           "13": "CommonLogins",
@@ -13372,7 +13377,7 @@
           "15": "Google",
           "16": "and",
           "17": "Facebook",
-          "18": ")",
+          "18": "-RRB-",
           "19": "to",
           "20": "be",
           "21": "either",
@@ -13393,18 +13398,19 @@
           "36": "the",
           "37": "Application",
           "38": "with",
-          "39": "User's",
-          "40": "Profile",
-          "41": "to",
-          "42": "log",
-          "43": "in",
-          "44": "with",
-          "45": "Linkedin",
-          "46": ",",
-          "47": "Google",
-          "48": ",",
-          "49": "Wechat",
-          "50": "."
+          "39": "User",
+          "40": "'s",
+          "41": "Profile",
+          "42": "to",
+          "43": "log",
+          "44": "in",
+          "45": "with",
+          "46": "Linkedin",
+          "47": ",",
+          "48": "Google",
+          "49": ",",
+          "50": "Wechat",
+          "51": "."
         }
       }
     },
@@ -13549,10 +13555,11 @@
           "1": "User",
           "2": "can",
           "3": "input",
-          "4": "User's",
-          "5": "preferred",
-          "6": "Schedule",
-          "7": "."
+          "4": "User",
+          "5": "'s",
+          "6": "preferred",
+          "7": "Schedule",
+          "8": "."
         }
       }
     },
@@ -13745,9 +13752,10 @@
           "5": "in",
           "6": "Accordance",
           "7": "with",
-          "8": "Tutor's",
-          "9": "Availability",
-          "10": "."
+          "8": "Tutor",
+          "9": "'s",
+          "10": "Availability",
+          "11": "."
         }
       }
     },
@@ -13923,9 +13931,10 @@
           "4": "a",
           "5": "SpecificTutoringTime",
           "6": "with",
-          "7": "Student's",
-          "8": "Tutor",
-          "9": "."
+          "7": "Student",
+          "8": "'s",
+          "9": "Tutor",
+          "10": "."
         }
       }
     },
@@ -14185,9 +14194,10 @@
           "10": "Videos",
           "11": ",",
           "12": "with",
-          "13": "Tutor's",
-          "14": "Students",
-          "15": "."
+          "13": "Tutor",
+          "14": "'s",
+          "15": "Students",
+          "16": "."
         }
       }
     },
@@ -14559,10 +14569,10 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "after",
           "3": "ProjectHandoff",
-          "4": ")",
+          "4": "-RRB-",
           "5": "FutureMaintainer/developer",
           "6": "can",
           "7": "easily",
@@ -15103,11 +15113,11 @@
           "5": "at",
           "6": "any",
           "7": "TimeOnline",
-          "8": "(",
+          "8": "-LRB-",
           "9": "free",
           "10": "and",
           "11": "paid",
-          "12": ")",
+          "12": "-RRB-",
           "13": "."
         }
       }
@@ -15486,10 +15496,9 @@
           "9": ",",
           "10": "UserAmount",
           "11": ",",
-          "12": "etc",
+          "12": "etc.",
           "13": ".",
-          "14": ".",
-          "15": "."
+          "14": "."
         }
       }
     },
@@ -16183,12 +16192,13 @@
           "1": "User",
           "2": "can",
           "3": "check",
-          "4": "User's",
-          "5": "RequestRecord",
-          "6": "and",
-          "7": "the",
-          "8": "Schedule",
-          "9": "."
+          "4": "User",
+          "5": "'s",
+          "6": "RequestRecord",
+          "7": "and",
+          "8": "the",
+          "9": "Schedule",
+          "10": "."
         }
       }
     },
@@ -17210,25 +17220,26 @@
           "1": "Tutor",
           "2": "can",
           "3": "offer",
-          "4": "Tutor's",
-          "5": "DetailedInformation",
-          "6": "such",
-          "7": "as",
-          "8": "Education",
-          "9": ",",
-          "10": "Experience",
-          "11": ",",
-          "12": "SubjectExpertise",
-          "13": ",",
-          "14": "Availability",
-          "15": ",",
-          "16": "etc",
-          "17": "(",
-          "18": "by",
-          "19": "submitting",
-          "20": "Form",
-          "21": ")",
-          "22": "."
+          "4": "Tutor",
+          "5": "'s",
+          "6": "DetailedInformation",
+          "7": "such",
+          "8": "as",
+          "9": "Education",
+          "10": ",",
+          "11": "Experience",
+          "12": ",",
+          "13": "SubjectExpertise",
+          "14": ",",
+          "15": "Availability",
+          "16": ",",
+          "17": "etc",
+          "18": "-LRB-",
+          "19": "by",
+          "20": "submitting",
+          "21": "Form",
+          "22": "-RRB-",
+          "23": "."
         }
       }
     },
@@ -17511,10 +17522,9 @@
           "13": ",",
           "14": "Videos",
           "15": ",",
-          "16": "etc",
+          "16": "etc.",
           "17": ".",
-          "18": ".",
-          "19": "."
+          "18": "."
         }
       }
     },
@@ -18489,11 +18499,9 @@
           "4": "our",
           "5": "Website",
           "6": "through",
-          "7": "Google",
-          "8": ".",
-          "9": "com",
-          "10": "easily",
-          "11": "."
+          "7": "Google.com",
+          "8": "easily",
+          "9": "."
         }
       }
     },
@@ -20622,13 +20630,14 @@
           "7": "Instructor",
           "8": "who",
           "9": "matches",
-          "10": "StudentUser's",
-          "11": "Language",
-          "12": "and",
-          "13": "Schedule",
-          "14": "if",
-          "15": "available",
-          "16": "."
+          "10": "StudentUser",
+          "11": "'s",
+          "12": "Language",
+          "13": "and",
+          "14": "Schedule",
+          "15": "if",
+          "16": "available",
+          "17": "."
         }
       }
     },
@@ -20801,12 +20810,13 @@
           "1": "Tutor",
           "2": "can",
           "3": "input",
-          "4": "Tutor's",
-          "5": "ScheduleAvailability",
-          "6": "into",
-          "7": "the",
-          "8": "System",
-          "9": "."
+          "4": "Tutor",
+          "5": "'s",
+          "6": "ScheduleAvailability",
+          "7": "into",
+          "8": "the",
+          "9": "System",
+          "10": "."
         }
       }
     },
@@ -21034,18 +21044,19 @@
           ]
         },
         "Index": {
-          "1": "Tutor's",
-          "2": "Availability",
-          "3": "will",
-          "4": "reflect",
-          "5": "the",
-          "6": "Fact",
-          "7": "that",
-          "8": "Tutor",
-          "9": "am",
-          "10": "now",
-          "11": "booked",
-          "12": "."
+          "1": "Tutor",
+          "2": "'s",
+          "3": "Availability",
+          "4": "will",
+          "5": "reflect",
+          "6": "the",
+          "7": "Fact",
+          "8": "that",
+          "9": "Tutor",
+          "10": "am",
+          "11": "now",
+          "12": "booked",
+          "13": "."
         }
       }
     },
@@ -22593,7 +22604,7 @@
           "7": "Username",
           "8": "and",
           "9": "Password",
-          "10": "(",
+          "10": "-LRB-",
           "11": "or",
           "12": "with",
           "13": "CommonLogins",
@@ -22601,7 +22612,7 @@
           "15": "Google",
           "16": "and",
           "17": "Facebook",
-          "18": ")",
+          "18": "-RRB-",
           "19": "to",
           "20": "be",
           "21": "either",
@@ -22622,18 +22633,19 @@
           "36": "the",
           "37": "Application",
           "38": "with",
-          "39": "User's",
-          "40": "Profile",
-          "41": "to",
-          "42": "log",
-          "43": "in",
-          "44": "with",
-          "45": "Linkedin",
-          "46": ",",
-          "47": "Google",
-          "48": ",",
-          "49": "Wechat",
-          "50": "."
+          "39": "User",
+          "40": "'s",
+          "41": "Profile",
+          "42": "to",
+          "43": "log",
+          "44": "in",
+          "45": "with",
+          "46": "Linkedin",
+          "47": ",",
+          "48": "Google",
+          "49": ",",
+          "50": "Wechat",
+          "51": "."
         }
       }
     },
@@ -22925,9 +22937,10 @@
           "10": "access",
           "11": "FurtherInformation",
           "12": "on",
-          "13": "User's",
-          "14": "LearningProgress",
-          "15": "."
+          "13": "User",
+          "14": "'s",
+          "15": "LearningProgress",
+          "16": "."
         }
       }
     },
@@ -23402,14 +23415,15 @@
           "5": "able",
           "6": "to",
           "7": "find",
-          "8": "User's",
-          "9": "IdealTutor",
-          "10": "through",
-          "11": "the",
-          "12": "Info",
-          "13": "User",
-          "14": "provided",
-          "15": "."
+          "8": "User",
+          "9": "'s",
+          "10": "IdealTutor",
+          "11": "through",
+          "12": "the",
+          "13": "Info",
+          "14": "User",
+          "15": "provided",
+          "16": "."
         }
       }
     },
@@ -24983,7 +24997,7 @@
           "7": "Username",
           "8": "and",
           "9": "Password",
-          "10": "(",
+          "10": "-LRB-",
           "11": "or",
           "12": "with",
           "13": "CommonLogins",
@@ -24991,7 +25005,7 @@
           "15": "Google",
           "16": "and",
           "17": "Facebook",
-          "18": ")",
+          "18": "-RRB-",
           "19": "to",
           "20": "be",
           "21": "either",
@@ -25012,18 +25026,19 @@
           "36": "the",
           "37": "Application",
           "38": "with",
-          "39": "User's",
-          "40": "Profile",
-          "41": "to",
-          "42": "log",
-          "43": "in",
-          "44": "with",
-          "45": "Linkedin",
-          "46": ",",
-          "47": "Google",
-          "48": ",",
-          "49": "Wechat",
-          "50": "."
+          "39": "User",
+          "40": "'s",
+          "41": "Profile",
+          "42": "to",
+          "43": "log",
+          "44": "in",
+          "45": "with",
+          "46": "Linkedin",
+          "47": ",",
+          "48": "Google",
+          "49": ",",
+          "50": "Wechat",
+          "51": "."
         }
       }
     },
@@ -25669,9 +25684,10 @@
           "10": "access",
           "11": "FurtherInformation",
           "12": "on",
-          "13": "User's",
-          "14": "LearningProgress",
-          "15": "."
+          "13": "User",
+          "14": "'s",
+          "15": "LearningProgress",
+          "16": "."
         }
       }
     },
@@ -26146,14 +26162,15 @@
           "5": "able",
           "6": "to",
           "7": "find",
-          "8": "User's",
-          "9": "IdealTutor",
-          "10": "through",
-          "11": "the",
-          "12": "Info",
-          "13": "User",
-          "14": "provided",
-          "15": "."
+          "8": "User",
+          "9": "'s",
+          "10": "IdealTutor",
+          "11": "through",
+          "12": "the",
+          "13": "Info",
+          "14": "User",
+          "15": "provided",
+          "16": "."
         }
       }
     },
@@ -27414,10 +27431,10 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "after",
           "3": "ProjectHandoff",
-          "4": ")",
+          "4": "-RRB-",
           "5": "FutureMaintainer/developer",
           "6": "can",
           "7": "easily",
@@ -28414,11 +28431,9 @@
           "4": "our",
           "5": "Website",
           "6": "through",
-          "7": "Google",
-          "8": ".",
-          "9": "com",
-          "10": "easily",
-          "11": "."
+          "7": "Google.com",
+          "8": "easily",
+          "9": "."
         }
       }
     },
@@ -29243,7 +29258,7 @@
           "7": "Username",
           "8": "and",
           "9": "Password",
-          "10": "(",
+          "10": "-LRB-",
           "11": "or",
           "12": "with",
           "13": "CommonLogins",
@@ -29251,7 +29266,7 @@
           "15": "Google",
           "16": "and",
           "17": "Facebook",
-          "18": ")",
+          "18": "-RRB-",
           "19": "to",
           "20": "be",
           "21": "either",
@@ -29272,18 +29287,19 @@
           "36": "the",
           "37": "Application",
           "38": "with",
-          "39": "User's",
-          "40": "Profile",
-          "41": "to",
-          "42": "log",
-          "43": "in",
-          "44": "with",
-          "45": "Linkedin",
-          "46": ",",
-          "47": "Google",
-          "48": ",",
-          "49": "Wechat",
-          "50": "."
+          "39": "User",
+          "40": "'s",
+          "41": "Profile",
+          "42": "to",
+          "43": "log",
+          "44": "in",
+          "45": "with",
+          "46": "Linkedin",
+          "47": ",",
+          "48": "Google",
+          "49": ",",
+          "50": "Wechat",
+          "51": "."
         }
       }
     },
@@ -29575,9 +29591,10 @@
           "10": "access",
           "11": "FurtherInformation",
           "12": "on",
-          "13": "User's",
-          "14": "LearningProgress",
-          "15": "."
+          "13": "User",
+          "14": "'s",
+          "15": "LearningProgress",
+          "16": "."
         }
       }
     },
@@ -29854,14 +29871,15 @@
           "5": "able",
           "6": "to",
           "7": "find",
-          "8": "User's",
-          "9": "IdealTutor",
-          "10": "through",
-          "11": "the",
-          "12": "Info",
-          "13": "User",
-          "14": "provided",
-          "15": "."
+          "8": "User",
+          "9": "'s",
+          "10": "IdealTutor",
+          "11": "through",
+          "12": "the",
+          "13": "Info",
+          "14": "User",
+          "15": "provided",
+          "16": "."
         }
       }
     },
@@ -31487,13 +31505,14 @@
           "7": "Instructor",
           "8": "who",
           "9": "matches",
-          "10": "StudentUser's",
-          "11": "Language",
-          "12": "and",
-          "13": "Schedule",
-          "14": "if",
-          "15": "available",
-          "16": "."
+          "10": "StudentUser",
+          "11": "'s",
+          "12": "Language",
+          "13": "and",
+          "14": "Schedule",
+          "15": "if",
+          "16": "available",
+          "17": "."
         }
       }
     },
@@ -31721,18 +31740,19 @@
           ]
         },
         "Index": {
-          "1": "Tutor's",
-          "2": "Availability",
-          "3": "will",
-          "4": "reflect",
-          "5": "the",
-          "6": "Fact",
-          "7": "that",
-          "8": "Tutor",
-          "9": "am",
-          "10": "now",
-          "11": "booked",
-          "12": "."
+          "1": "Tutor",
+          "2": "'s",
+          "3": "Availability",
+          "4": "will",
+          "5": "reflect",
+          "6": "the",
+          "7": "Fact",
+          "8": "that",
+          "9": "Tutor",
+          "10": "am",
+          "11": "now",
+          "12": "booked",
+          "13": "."
         }
       }
     }
@@ -32055,13 +32075,14 @@
           "7": "Instructor",
           "8": "who",
           "9": "matches",
-          "10": "StudentUser's",
-          "11": "Language",
-          "12": "and",
-          "13": "Schedule",
-          "14": "if",
-          "15": "available",
-          "16": "."
+          "10": "StudentUser",
+          "11": "'s",
+          "12": "Language",
+          "13": "and",
+          "14": "Schedule",
+          "15": "if",
+          "16": "available",
+          "17": "."
         }
       }
     }
@@ -33163,7 +33184,7 @@
           "7": "Username",
           "8": "and",
           "9": "Password",
-          "10": "(",
+          "10": "-LRB-",
           "11": "or",
           "12": "with",
           "13": "CommonLogins",
@@ -33171,7 +33192,7 @@
           "15": "Google",
           "16": "and",
           "17": "Facebook",
-          "18": ")",
+          "18": "-RRB-",
           "19": "to",
           "20": "be",
           "21": "either",
@@ -33192,18 +33213,19 @@
           "36": "the",
           "37": "Application",
           "38": "with",
-          "39": "User's",
-          "40": "Profile",
-          "41": "to",
-          "42": "log",
-          "43": "in",
-          "44": "with",
-          "45": "Linkedin",
-          "46": ",",
-          "47": "Google",
-          "48": ",",
-          "49": "Wechat",
-          "50": "."
+          "39": "User",
+          "40": "'s",
+          "41": "Profile",
+          "42": "to",
+          "43": "log",
+          "44": "in",
+          "45": "with",
+          "46": "Linkedin",
+          "47": ",",
+          "48": "Google",
+          "49": ",",
+          "50": "Wechat",
+          "51": "."
         }
       }
     },
@@ -33348,10 +33370,11 @@
           "1": "User",
           "2": "can",
           "3": "input",
-          "4": "User's",
-          "5": "preferred",
-          "6": "Schedule",
-          "7": "."
+          "4": "User",
+          "5": "'s",
+          "6": "preferred",
+          "7": "Schedule",
+          "8": "."
         }
       }
     },
@@ -33544,9 +33567,10 @@
           "5": "in",
           "6": "Accordance",
           "7": "with",
-          "8": "Tutor's",
-          "9": "Availability",
-          "10": "."
+          "8": "Tutor",
+          "9": "'s",
+          "10": "Availability",
+          "11": "."
         }
       }
     },
@@ -33722,9 +33746,10 @@
           "4": "a",
           "5": "SpecificTutoringTime",
           "6": "with",
-          "7": "Student's",
-          "8": "Tutor",
-          "9": "."
+          "7": "Student",
+          "8": "'s",
+          "9": "Tutor",
+          "10": "."
         }
       }
     },
@@ -33984,9 +34009,10 @@
           "10": "Videos",
           "11": ",",
           "12": "with",
-          "13": "Tutor's",
-          "14": "Students",
-          "15": "."
+          "13": "Tutor",
+          "14": "'s",
+          "15": "Students",
+          "16": "."
         }
       }
     },
@@ -34358,10 +34384,10 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "after",
           "3": "ProjectHandoff",
-          "4": ")",
+          "4": "-RRB-",
           "5": "FutureMaintainer/developer",
           "6": "can",
           "7": "easily",
@@ -35076,11 +35102,11 @@
           "5": "at",
           "6": "any",
           "7": "TimeOnline",
-          "8": "(",
+          "8": "-LRB-",
           "9": "free",
           "10": "and",
           "11": "paid",
-          "12": ")",
+          "12": "-RRB-",
           "13": "."
         }
       }
@@ -35459,10 +35485,9 @@
           "9": ",",
           "10": "UserAmount",
           "11": ",",
-          "12": "etc",
+          "12": "etc.",
           "13": ".",
-          "14": ".",
-          "15": "."
+          "14": "."
         }
       }
     },
@@ -36156,12 +36181,13 @@
           "1": "User",
           "2": "can",
           "3": "check",
-          "4": "User's",
-          "5": "RequestRecord",
-          "6": "and",
-          "7": "the",
-          "8": "Schedule",
-          "9": "."
+          "4": "User",
+          "5": "'s",
+          "6": "RequestRecord",
+          "7": "and",
+          "8": "the",
+          "9": "Schedule",
+          "10": "."
         }
       }
     },
@@ -36741,25 +36767,26 @@
           "1": "Tutor",
           "2": "can",
           "3": "offer",
-          "4": "Tutor's",
-          "5": "DetailedInformation",
-          "6": "such",
-          "7": "as",
-          "8": "Education",
-          "9": ",",
-          "10": "Experience",
-          "11": ",",
-          "12": "SubjectExpertise",
-          "13": ",",
-          "14": "Availability",
-          "15": ",",
-          "16": "etc",
-          "17": "(",
-          "18": "by",
-          "19": "submitting",
-          "20": "Form",
-          "21": ")",
-          "22": "."
+          "4": "Tutor",
+          "5": "'s",
+          "6": "DetailedInformation",
+          "7": "such",
+          "8": "as",
+          "9": "Education",
+          "10": ",",
+          "11": "Experience",
+          "12": ",",
+          "13": "SubjectExpertise",
+          "14": ",",
+          "15": "Availability",
+          "16": ",",
+          "17": "etc",
+          "18": "-LRB-",
+          "19": "by",
+          "20": "submitting",
+          "21": "Form",
+          "22": "-RRB-",
+          "23": "."
         }
       }
     },
@@ -37042,10 +37069,9 @@
           "13": ",",
           "14": "Videos",
           "15": ",",
-          "16": "etc",
+          "16": "etc.",
           "17": ".",
-          "18": ".",
-          "19": "."
+          "18": "."
         }
       }
     },
@@ -37787,11 +37813,9 @@
           "4": "our",
           "5": "Website",
           "6": "through",
-          "7": "Google",
-          "8": ".",
-          "9": "com",
-          "10": "easily",
-          "11": "."
+          "7": "Google.com",
+          "8": "easily",
+          "9": "."
         }
       }
     },
@@ -39165,9 +39189,10 @@
           "10": "access",
           "11": "FurtherInformation",
           "12": "on",
-          "13": "User's",
-          "14": "LearningProgress",
-          "15": "."
+          "13": "User",
+          "14": "'s",
+          "15": "LearningProgress",
+          "16": "."
         }
       }
     },
@@ -39444,14 +39469,15 @@
           "5": "able",
           "6": "to",
           "7": "find",
-          "8": "User's",
-          "9": "IdealTutor",
-          "10": "through",
-          "11": "the",
-          "12": "Info",
-          "13": "User",
-          "14": "provided",
-          "15": "."
+          "8": "User",
+          "9": "'s",
+          "10": "IdealTutor",
+          "11": "through",
+          "12": "the",
+          "13": "Info",
+          "14": "User",
+          "15": "provided",
+          "16": "."
         }
       }
     },
@@ -40518,13 +40544,14 @@
           "7": "Instructor",
           "8": "who",
           "9": "matches",
-          "10": "StudentUser's",
-          "11": "Language",
-          "12": "and",
-          "13": "Schedule",
-          "14": "if",
-          "15": "available",
-          "16": "."
+          "10": "StudentUser",
+          "11": "'s",
+          "12": "Language",
+          "13": "and",
+          "14": "Schedule",
+          "15": "if",
+          "16": "available",
+          "17": "."
         }
       }
     },
@@ -40697,12 +40724,13 @@
           "1": "Tutor",
           "2": "can",
           "3": "input",
-          "4": "Tutor's",
-          "5": "ScheduleAvailability",
-          "6": "into",
-          "7": "the",
-          "8": "System",
-          "9": "."
+          "4": "Tutor",
+          "5": "'s",
+          "6": "ScheduleAvailability",
+          "7": "into",
+          "8": "the",
+          "9": "System",
+          "10": "."
         }
       }
     },
@@ -40930,18 +40958,19 @@
           ]
         },
         "Index": {
-          "1": "Tutor's",
-          "2": "Availability",
-          "3": "will",
-          "4": "reflect",
-          "5": "the",
-          "6": "Fact",
-          "7": "that",
-          "8": "Tutor",
-          "9": "am",
-          "10": "now",
-          "11": "booked",
-          "12": "."
+          "1": "Tutor",
+          "2": "'s",
+          "3": "Availability",
+          "4": "will",
+          "5": "reflect",
+          "6": "the",
+          "7": "Fact",
+          "8": "that",
+          "9": "Tutor",
+          "10": "am",
+          "11": "now",
+          "12": "booked",
+          "13": "."
         }
       }
     },
@@ -42243,7 +42272,7 @@
           "7": "Username",
           "8": "and",
           "9": "Password",
-          "10": "(",
+          "10": "-LRB-",
           "11": "or",
           "12": "with",
           "13": "CommonLogins",
@@ -42251,7 +42280,7 @@
           "15": "Google",
           "16": "and",
           "17": "Facebook",
-          "18": ")",
+          "18": "-RRB-",
           "19": "to",
           "20": "be",
           "21": "either",
@@ -42272,18 +42301,19 @@
           "36": "the",
           "37": "Application",
           "38": "with",
-          "39": "User's",
-          "40": "Profile",
-          "41": "to",
-          "42": "log",
-          "43": "in",
-          "44": "with",
-          "45": "Linkedin",
-          "46": ",",
-          "47": "Google",
-          "48": ",",
-          "49": "Wechat",
-          "50": "."
+          "39": "User",
+          "40": "'s",
+          "41": "Profile",
+          "42": "to",
+          "43": "log",
+          "44": "in",
+          "45": "with",
+          "46": "Linkedin",
+          "47": ",",
+          "48": "Google",
+          "49": ",",
+          "50": "Wechat",
+          "51": "."
         }
       }
     },
@@ -42428,10 +42458,11 @@
           "1": "User",
           "2": "can",
           "3": "input",
-          "4": "User's",
-          "5": "preferred",
-          "6": "Schedule",
-          "7": "."
+          "4": "User",
+          "5": "'s",
+          "6": "preferred",
+          "7": "Schedule",
+          "8": "."
         }
       }
     },
@@ -42624,9 +42655,10 @@
           "5": "in",
           "6": "Accordance",
           "7": "with",
-          "8": "Tutor's",
-          "9": "Availability",
-          "10": "."
+          "8": "Tutor",
+          "9": "'s",
+          "10": "Availability",
+          "11": "."
         }
       }
     },
@@ -42802,9 +42834,10 @@
           "4": "a",
           "5": "SpecificTutoringTime",
           "6": "with",
-          "7": "Student's",
-          "8": "Tutor",
-          "9": "."
+          "7": "Student",
+          "8": "'s",
+          "9": "Tutor",
+          "10": "."
         }
       }
     },
@@ -43064,9 +43097,10 @@
           "10": "Videos",
           "11": ",",
           "12": "with",
-          "13": "Tutor's",
-          "14": "Students",
-          "15": "."
+          "13": "Tutor",
+          "14": "'s",
+          "15": "Students",
+          "16": "."
         }
       }
     },
@@ -43438,10 +43472,10 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "after",
           "3": "ProjectHandoff",
-          "4": ")",
+          "4": "-RRB-",
           "5": "FutureMaintainer/developer",
           "6": "can",
           "7": "easily",
@@ -43982,11 +44016,11 @@
           "5": "at",
           "6": "any",
           "7": "TimeOnline",
-          "8": "(",
+          "8": "-LRB-",
           "9": "free",
           "10": "and",
           "11": "paid",
-          "12": ")",
+          "12": "-RRB-",
           "13": "."
         }
       }
@@ -44365,10 +44399,9 @@
           "9": ",",
           "10": "UserAmount",
           "11": ",",
-          "12": "etc",
+          "12": "etc.",
           "13": ".",
-          "14": ".",
-          "15": "."
+          "14": "."
         }
       }
     },
@@ -45062,12 +45095,13 @@
           "1": "User",
           "2": "can",
           "3": "check",
-          "4": "User's",
-          "5": "RequestRecord",
-          "6": "and",
-          "7": "the",
-          "8": "Schedule",
-          "9": "."
+          "4": "User",
+          "5": "'s",
+          "6": "RequestRecord",
+          "7": "and",
+          "8": "the",
+          "9": "Schedule",
+          "10": "."
         }
       }
     },
@@ -46089,25 +46123,26 @@
           "1": "Tutor",
           "2": "can",
           "3": "offer",
-          "4": "Tutor's",
-          "5": "DetailedInformation",
-          "6": "such",
-          "7": "as",
-          "8": "Education",
-          "9": ",",
-          "10": "Experience",
-          "11": ",",
-          "12": "SubjectExpertise",
-          "13": ",",
-          "14": "Availability",
-          "15": ",",
-          "16": "etc",
-          "17": "(",
-          "18": "by",
-          "19": "submitting",
-          "20": "Form",
-          "21": ")",
-          "22": "."
+          "4": "Tutor",
+          "5": "'s",
+          "6": "DetailedInformation",
+          "7": "such",
+          "8": "as",
+          "9": "Education",
+          "10": ",",
+          "11": "Experience",
+          "12": ",",
+          "13": "SubjectExpertise",
+          "14": ",",
+          "15": "Availability",
+          "16": ",",
+          "17": "etc",
+          "18": "-LRB-",
+          "19": "by",
+          "20": "submitting",
+          "21": "Form",
+          "22": "-RRB-",
+          "23": "."
         }
       }
     },
@@ -46390,10 +46425,9 @@
           "13": ",",
           "14": "Videos",
           "15": ",",
-          "16": "etc",
+          "16": "etc.",
           "17": ".",
-          "18": ".",
-          "19": "."
+          "18": "."
         }
       }
     },
@@ -47368,11 +47402,9 @@
           "4": "our",
           "5": "Website",
           "6": "through",
-          "7": "Google",
-          "8": ".",
-          "9": "com",
-          "10": "easily",
-          "11": "."
+          "7": "Google.com",
+          "8": "easily",
+          "9": "."
         }
       }
     },
@@ -49501,13 +49533,14 @@
           "7": "Instructor",
           "8": "who",
           "9": "matches",
-          "10": "StudentUser's",
-          "11": "Language",
-          "12": "and",
-          "13": "Schedule",
-          "14": "if",
-          "15": "available",
-          "16": "."
+          "10": "StudentUser",
+          "11": "'s",
+          "12": "Language",
+          "13": "and",
+          "14": "Schedule",
+          "15": "if",
+          "16": "available",
+          "17": "."
         }
       }
     },
@@ -49680,12 +49713,13 @@
           "1": "Tutor",
           "2": "can",
           "3": "input",
-          "4": "Tutor's",
-          "5": "ScheduleAvailability",
-          "6": "into",
-          "7": "the",
-          "8": "System",
-          "9": "."
+          "4": "Tutor",
+          "5": "'s",
+          "6": "ScheduleAvailability",
+          "7": "into",
+          "8": "the",
+          "9": "System",
+          "10": "."
         }
       }
     },
@@ -49913,18 +49947,19 @@
           ]
         },
         "Index": {
-          "1": "Tutor's",
-          "2": "Availability",
-          "3": "will",
-          "4": "reflect",
-          "5": "the",
-          "6": "Fact",
-          "7": "that",
-          "8": "Tutor",
-          "9": "am",
-          "10": "now",
-          "11": "booked",
-          "12": "."
+          "1": "Tutor",
+          "2": "'s",
+          "3": "Availability",
+          "4": "will",
+          "5": "reflect",
+          "6": "the",
+          "7": "Fact",
+          "8": "that",
+          "9": "Tutor",
+          "10": "am",
+          "11": "now",
+          "12": "booked",
+          "13": "."
         }
       }
     },
@@ -51398,7 +51433,7 @@
           "7": "Username",
           "8": "and",
           "9": "Password",
-          "10": "(",
+          "10": "-LRB-",
           "11": "or",
           "12": "with",
           "13": "CommonLogins",
@@ -51406,7 +51441,7 @@
           "15": "Google",
           "16": "and",
           "17": "Facebook",
-          "18": ")",
+          "18": "-RRB-",
           "19": "to",
           "20": "be",
           "21": "either",
@@ -51427,18 +51462,19 @@
           "36": "the",
           "37": "Application",
           "38": "with",
-          "39": "User's",
-          "40": "Profile",
-          "41": "to",
-          "42": "log",
-          "43": "in",
-          "44": "with",
-          "45": "Linkedin",
-          "46": ",",
-          "47": "Google",
-          "48": ",",
-          "49": "Wechat",
-          "50": "."
+          "39": "User",
+          "40": "'s",
+          "41": "Profile",
+          "42": "to",
+          "43": "log",
+          "44": "in",
+          "45": "with",
+          "46": "Linkedin",
+          "47": ",",
+          "48": "Google",
+          "49": ",",
+          "50": "Wechat",
+          "51": "."
         }
       }
     },
@@ -51698,9 +51734,10 @@
           "10": "Videos",
           "11": ",",
           "12": "with",
-          "13": "Tutor's",
-          "14": "Students",
-          "15": "."
+          "13": "Tutor",
+          "14": "'s",
+          "15": "Students",
+          "16": "."
         }
       }
     },
@@ -52072,10 +52109,10 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "after",
           "3": "ProjectHandoff",
-          "4": ")",
+          "4": "-RRB-",
           "5": "FutureMaintainer/developer",
           "6": "can",
           "7": "easily",
@@ -52414,25 +52451,26 @@
           "1": "Tutor",
           "2": "can",
           "3": "offer",
-          "4": "Tutor's",
-          "5": "DetailedInformation",
-          "6": "such",
-          "7": "as",
-          "8": "Education",
-          "9": ",",
-          "10": "Experience",
-          "11": ",",
-          "12": "SubjectExpertise",
-          "13": ",",
-          "14": "Availability",
-          "15": ",",
-          "16": "etc",
-          "17": "(",
-          "18": "by",
-          "19": "submitting",
-          "20": "Form",
-          "21": ")",
-          "22": "."
+          "4": "Tutor",
+          "5": "'s",
+          "6": "DetailedInformation",
+          "7": "such",
+          "8": "as",
+          "9": "Education",
+          "10": ",",
+          "11": "Experience",
+          "12": ",",
+          "13": "SubjectExpertise",
+          "14": ",",
+          "15": "Availability",
+          "16": ",",
+          "17": "etc",
+          "18": "-LRB-",
+          "19": "by",
+          "20": "submitting",
+          "21": "Form",
+          "22": "-RRB-",
+          "23": "."
         }
       }
     },
@@ -52724,9 +52762,10 @@
           "10": "access",
           "11": "FurtherInformation",
           "12": "on",
-          "13": "User's",
-          "14": "LearningProgress",
-          "15": "."
+          "13": "User",
+          "14": "'s",
+          "15": "LearningProgress",
+          "16": "."
         }
       }
     },
@@ -53201,14 +53240,15 @@
           "5": "able",
           "6": "to",
           "7": "find",
-          "8": "User's",
-          "9": "IdealTutor",
-          "10": "through",
-          "11": "the",
-          "12": "Info",
-          "13": "User",
-          "14": "provided",
-          "15": "."
+          "8": "User",
+          "9": "'s",
+          "10": "IdealTutor",
+          "11": "through",
+          "12": "the",
+          "13": "Info",
+          "14": "User",
+          "15": "provided",
+          "16": "."
         }
       }
     },
@@ -54633,13 +54673,14 @@
           "7": "Instructor",
           "8": "who",
           "9": "matches",
-          "10": "StudentUser's",
-          "11": "Language",
-          "12": "and",
-          "13": "Schedule",
-          "14": "if",
-          "15": "available",
-          "16": "."
+          "10": "StudentUser",
+          "11": "'s",
+          "12": "Language",
+          "13": "and",
+          "14": "Schedule",
+          "15": "if",
+          "16": "available",
+          "17": "."
         }
       }
     },
@@ -54867,18 +54908,19 @@
           ]
         },
         "Index": {
-          "1": "Tutor's",
-          "2": "Availability",
-          "3": "will",
-          "4": "reflect",
-          "5": "the",
-          "6": "Fact",
-          "7": "that",
-          "8": "Tutor",
-          "9": "am",
-          "10": "now",
-          "11": "booked",
-          "12": "."
+          "1": "Tutor",
+          "2": "'s",
+          "3": "Availability",
+          "4": "will",
+          "5": "reflect",
+          "6": "the",
+          "7": "Fact",
+          "8": "that",
+          "9": "Tutor",
+          "10": "am",
+          "11": "now",
+          "12": "booked",
+          "13": "."
         }
       }
     }
@@ -55980,7 +56022,7 @@
           "7": "Username",
           "8": "and",
           "9": "Password",
-          "10": "(",
+          "10": "-LRB-",
           "11": "or",
           "12": "with",
           "13": "CommonLogins",
@@ -55988,7 +56030,7 @@
           "15": "Google",
           "16": "and",
           "17": "Facebook",
-          "18": ")",
+          "18": "-RRB-",
           "19": "to",
           "20": "be",
           "21": "either",
@@ -56009,18 +56051,19 @@
           "36": "the",
           "37": "Application",
           "38": "with",
-          "39": "User's",
-          "40": "Profile",
-          "41": "to",
-          "42": "log",
-          "43": "in",
-          "44": "with",
-          "45": "Linkedin",
-          "46": ",",
-          "47": "Google",
-          "48": ",",
-          "49": "Wechat",
-          "50": "."
+          "39": "User",
+          "40": "'s",
+          "41": "Profile",
+          "42": "to",
+          "43": "log",
+          "44": "in",
+          "45": "with",
+          "46": "Linkedin",
+          "47": ",",
+          "48": "Google",
+          "49": ",",
+          "50": "Wechat",
+          "51": "."
         }
       }
     },
@@ -56165,10 +56208,11 @@
           "1": "User",
           "2": "can",
           "3": "input",
-          "4": "User's",
-          "5": "preferred",
-          "6": "Schedule",
-          "7": "."
+          "4": "User",
+          "5": "'s",
+          "6": "preferred",
+          "7": "Schedule",
+          "8": "."
         }
       }
     },
@@ -56361,9 +56405,10 @@
           "5": "in",
           "6": "Accordance",
           "7": "with",
-          "8": "Tutor's",
-          "9": "Availability",
-          "10": "."
+          "8": "Tutor",
+          "9": "'s",
+          "10": "Availability",
+          "11": "."
         }
       }
     },
@@ -56539,9 +56584,10 @@
           "4": "a",
           "5": "SpecificTutoringTime",
           "6": "with",
-          "7": "Student's",
-          "8": "Tutor",
-          "9": "."
+          "7": "Student",
+          "8": "'s",
+          "9": "Tutor",
+          "10": "."
         }
       }
     },
@@ -56801,9 +56847,10 @@
           "10": "Videos",
           "11": ",",
           "12": "with",
-          "13": "Tutor's",
-          "14": "Students",
-          "15": "."
+          "13": "Tutor",
+          "14": "'s",
+          "15": "Students",
+          "16": "."
         }
       }
     },
@@ -57175,10 +57222,10 @@
           ]
         },
         "Index": {
-          "1": "(",
+          "1": "-LRB-",
           "2": "after",
           "3": "ProjectHandoff",
-          "4": ")",
+          "4": "-RRB-",
           "5": "FutureMaintainer/developer",
           "6": "can",
           "7": "easily",
@@ -57893,11 +57940,11 @@
           "5": "at",
           "6": "any",
           "7": "TimeOnline",
-          "8": "(",
+          "8": "-LRB-",
           "9": "free",
           "10": "and",
           "11": "paid",
-          "12": ")",
+          "12": "-RRB-",
           "13": "."
         }
       }
@@ -58276,10 +58323,9 @@
           "9": ",",
           "10": "UserAmount",
           "11": ",",
-          "12": "etc",
+          "12": "etc.",
           "13": ".",
-          "14": ".",
-          "15": "."
+          "14": "."
         }
       }
     },
@@ -58973,12 +59019,13 @@
           "1": "User",
           "2": "can",
           "3": "check",
-          "4": "User's",
-          "5": "RequestRecord",
-          "6": "and",
-          "7": "the",
-          "8": "Schedule",
-          "9": "."
+          "4": "User",
+          "5": "'s",
+          "6": "RequestRecord",
+          "7": "and",
+          "8": "the",
+          "9": "Schedule",
+          "10": "."
         }
       }
     },
@@ -60000,25 +60047,26 @@
           "1": "Tutor",
           "2": "can",
           "3": "offer",
-          "4": "Tutor's",
-          "5": "DetailedInformation",
-          "6": "such",
-          "7": "as",
-          "8": "Education",
-          "9": ",",
-          "10": "Experience",
-          "11": ",",
-          "12": "SubjectExpertise",
-          "13": ",",
-          "14": "Availability",
-          "15": ",",
-          "16": "etc",
-          "17": "(",
-          "18": "by",
-          "19": "submitting",
-          "20": "Form",
-          "21": ")",
-          "22": "."
+          "4": "Tutor",
+          "5": "'s",
+          "6": "DetailedInformation",
+          "7": "such",
+          "8": "as",
+          "9": "Education",
+          "10": ",",
+          "11": "Experience",
+          "12": ",",
+          "13": "SubjectExpertise",
+          "14": ",",
+          "15": "Availability",
+          "16": ",",
+          "17": "etc",
+          "18": "-LRB-",
+          "19": "by",
+          "20": "submitting",
+          "21": "Form",
+          "22": "-RRB-",
+          "23": "."
         }
       }
     },
@@ -60301,10 +60349,9 @@
           "13": ",",
           "14": "Videos",
           "15": ",",
-          "16": "etc",
+          "16": "etc.",
           "17": ".",
-          "18": ".",
-          "19": "."
+          "18": "."
         }
       }
     },
@@ -61279,11 +61326,9 @@
           "4": "our",
           "5": "Website",
           "6": "through",
-          "7": "Google",
-          "8": ".",
-          "9": "com",
-          "10": "easily",
-          "11": "."
+          "7": "Google.com",
+          "8": "easily",
+          "9": "."
         }
       }
     },
@@ -62886,9 +62931,10 @@
           "10": "access",
           "11": "FurtherInformation",
           "12": "on",
-          "13": "User's",
-          "14": "LearningProgress",
-          "15": "."
+          "13": "User",
+          "14": "'s",
+          "15": "LearningProgress",
+          "16": "."
         }
       }
     },
@@ -63363,14 +63409,15 @@
           "5": "able",
           "6": "to",
           "7": "find",
-          "8": "User's",
-          "9": "IdealTutor",
-          "10": "through",
-          "11": "the",
-          "12": "Info",
-          "13": "User",
-          "14": "provided",
-          "15": "."
+          "8": "User",
+          "9": "'s",
+          "10": "IdealTutor",
+          "11": "through",
+          "12": "the",
+          "13": "Info",
+          "14": "User",
+          "15": "provided",
+          "16": "."
         }
       }
     },
@@ -64914,13 +64961,14 @@
           "7": "Instructor",
           "8": "who",
           "9": "matches",
-          "10": "StudentUser's",
-          "11": "Language",
-          "12": "and",
-          "13": "Schedule",
-          "14": "if",
-          "15": "available",
-          "16": "."
+          "10": "StudentUser",
+          "11": "'s",
+          "12": "Language",
+          "13": "and",
+          "14": "Schedule",
+          "15": "if",
+          "16": "available",
+          "17": "."
         }
       }
     },
@@ -65093,12 +65141,13 @@
           "1": "Tutor",
           "2": "can",
           "3": "input",
-          "4": "Tutor's",
-          "5": "ScheduleAvailability",
-          "6": "into",
-          "7": "the",
-          "8": "System",
-          "9": "."
+          "4": "Tutor",
+          "5": "'s",
+          "6": "ScheduleAvailability",
+          "7": "into",
+          "8": "the",
+          "9": "System",
+          "10": "."
         }
       }
     },
@@ -65326,18 +65375,19 @@
           ]
         },
         "Index": {
-          "1": "Tutor's",
-          "2": "Availability",
-          "3": "will",
-          "4": "reflect",
-          "5": "the",
-          "6": "Fact",
-          "7": "that",
-          "8": "Tutor",
-          "9": "am",
-          "10": "now",
-          "11": "booked",
-          "12": "."
+          "1": "Tutor",
+          "2": "'s",
+          "3": "Availability",
+          "4": "will",
+          "5": "reflect",
+          "6": "the",
+          "7": "Fact",
+          "8": "that",
+          "9": "Tutor",
+          "10": "am",
+          "11": "now",
+          "12": "booked",
+          "13": "."
         }
       }
     },

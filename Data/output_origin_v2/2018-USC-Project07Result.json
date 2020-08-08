@@ -2834,12 +2834,13 @@
           "1": "User",
           "2": "can",
           "3": "track",
-          "4": "User's",
-          "5": "Progress",
-          "6": "on",
-          "7": "the",
-          "8": "App",
-          "9": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Progress",
+          "7": "on",
+          "8": "the",
+          "9": "App",
+          "10": "."
         }
       }
     },
@@ -4060,9 +4061,9 @@
           "4": "Math",
           "5": "by",
           "6": "FragmentedTime",
-          "7": "(",
+          "7": "-LRB-",
           "8": "Pausing",
-          "9": ")",
+          "9": "-RRB-",
           "10": "."
         }
       }
@@ -4349,12 +4350,13 @@
           "8": "out",
           "9": "of",
           "10": "displaying",
-          "11": "User's",
-          "12": "Scores",
-          "13": "on",
-          "14": "the",
-          "15": "Leaderboard",
-          "16": "."
+          "11": "User",
+          "12": "'s",
+          "13": "Scores",
+          "14": "on",
+          "15": "the",
+          "16": "Leaderboard",
+          "17": "."
         }
       }
     }
@@ -4529,12 +4531,13 @@
           "1": "User",
           "2": "can",
           "3": "track",
-          "4": "User's",
-          "5": "Progress",
-          "6": "on",
-          "7": "the",
-          "8": "App",
-          "9": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Progress",
+          "7": "on",
+          "8": "the",
+          "9": "App",
+          "10": "."
         }
       }
     },
@@ -4885,21 +4888,22 @@
           "3": "able",
           "4": "to",
           "5": "keep",
-          "6": "User's",
-          "7": "LevelsProgress",
-          "8": "(",
-          "9": "unlocked",
-          "10": "and",
-          "11": "locked",
-          "12": "Levels",
-          "13": ")",
-          "14": "across",
-          "15": "DifferentAndroidMobileDevices",
-          "16": "User",
-          "17": "signed",
-          "18": "in",
-          "19": "to",
-          "20": "."
+          "6": "User",
+          "7": "'s",
+          "8": "LevelsProgress",
+          "9": "-LRB-",
+          "10": "unlocked",
+          "11": "and",
+          "12": "locked",
+          "13": "Levels",
+          "14": "-RRB-",
+          "15": "across",
+          "16": "DifferentAndroidMobileDevices",
+          "17": "User",
+          "18": "signed",
+          "19": "in",
+          "20": "to",
+          "21": "."
         }
       }
     },
@@ -5104,11 +5108,12 @@
           "3": "able",
           "4": "to",
           "5": "share",
-          "6": "User's",
-          "7": "Score",
-          "8": "on",
-          "9": "SocialMedia",
-          "10": "."
+          "6": "User",
+          "7": "'s",
+          "8": "Score",
+          "9": "on",
+          "10": "SocialMedia",
+          "11": "."
         }
       }
     },
@@ -5354,13 +5359,14 @@
           "4": "to",
           "5": "erase",
           "6": "all",
-          "7": "User's",
-          "8": "Progress",
-          "9": "and",
-          "10": "start",
-          "11": "a",
-          "12": "new",
-          "13": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "and",
+          "11": "start",
+          "12": "a",
+          "13": "new",
+          "14": "."
         }
       }
     },
@@ -5578,9 +5584,10 @@
           "6": "the",
           "7": "ColorTheme",
           "8": "to",
-          "9": "User's",
-          "10": "Preference",
-          "11": "."
+          "9": "User",
+          "10": "'s",
+          "11": "Preference",
+          "12": "."
         }
       }
     },
@@ -6922,28 +6929,25 @@
           "13": "at",
           "14": "DifferentAudiences",
           "15": ",",
-          "16": "i",
-          "17": ".",
-          "18": "e",
-          "19": ".",
-          "20": "with",
-          "21": "Ads",
-          "22": "(",
-          "23": "limited",
-          "24": "free",
-          "25": ")",
-          "26": "and",
-          "27": "without",
-          "28": "Ads",
-          "29": "(",
-          "30": "paid",
-          "31": "full",
-          "32": ")",
-          "33": ";",
-          "34": "FullVersion",
-          "35": "satisfying",
-          "36": "SomeOfTheEducationAppRequirements",
-          "37": "."
+          "16": "i.e.",
+          "17": "with",
+          "18": "Ads",
+          "19": "-LRB-",
+          "20": "limited",
+          "21": "free",
+          "22": "-RRB-",
+          "23": "and",
+          "24": "without",
+          "25": "Ads",
+          "26": "-LRB-",
+          "27": "paid",
+          "28": "full",
+          "29": "-RRB-",
+          "30": ";",
+          "31": "FullVersion",
+          "32": "satisfying",
+          "33": "SomeOfTheEducationAppRequirements",
+          "34": "."
         }
       }
     },
@@ -8318,9 +8322,9 @@
           "4": "Math",
           "5": "by",
           "6": "FragmentedTime",
-          "7": "(",
+          "7": "-LRB-",
           "8": "Pausing",
-          "9": ")",
+          "9": "-RRB-",
           "10": "."
         }
       }
@@ -8968,12 +8972,13 @@
           "8": "out",
           "9": "of",
           "10": "displaying",
-          "11": "User's",
-          "12": "Scores",
-          "13": "on",
-          "14": "the",
-          "15": "Leaderboard",
-          "16": "."
+          "11": "User",
+          "12": "'s",
+          "13": "Scores",
+          "14": "on",
+          "15": "the",
+          "16": "Leaderboard",
+          "17": "."
         }
       }
     },
@@ -9203,12 +9208,13 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "User's",
-          "8": "Progress",
-          "9": "to",
-          "10": "the",
-          "11": "NextLevel",
-          "12": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "to",
+          "11": "the",
+          "12": "NextLevel",
+          "13": "."
         }
       }
     }
@@ -9753,21 +9759,22 @@
           "3": "able",
           "4": "to",
           "5": "keep",
-          "6": "User's",
-          "7": "LevelsProgress",
-          "8": "(",
-          "9": "unlocked",
-          "10": "and",
-          "11": "locked",
-          "12": "Levels",
-          "13": ")",
-          "14": "across",
-          "15": "DifferentAndroidMobileDevices",
-          "16": "User",
-          "17": "signed",
-          "18": "in",
-          "19": "to",
-          "20": "."
+          "6": "User",
+          "7": "'s",
+          "8": "LevelsProgress",
+          "9": "-LRB-",
+          "10": "unlocked",
+          "11": "and",
+          "12": "locked",
+          "13": "Levels",
+          "14": "-RRB-",
+          "15": "across",
+          "16": "DifferentAndroidMobileDevices",
+          "17": "User",
+          "18": "signed",
+          "19": "in",
+          "20": "to",
+          "21": "."
         }
       }
     },
@@ -9972,11 +9979,12 @@
           "3": "able",
           "4": "to",
           "5": "share",
-          "6": "User's",
-          "7": "Score",
-          "8": "on",
-          "9": "SocialMedia",
-          "10": "."
+          "6": "User",
+          "7": "'s",
+          "8": "Score",
+          "9": "on",
+          "10": "SocialMedia",
+          "11": "."
         }
       }
     },
@@ -10222,13 +10230,14 @@
           "4": "to",
           "5": "erase",
           "6": "all",
-          "7": "User's",
-          "8": "Progress",
-          "9": "and",
-          "10": "start",
-          "11": "a",
-          "12": "new",
-          "13": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "and",
+          "11": "start",
+          "12": "a",
+          "13": "new",
+          "14": "."
         }
       }
     },
@@ -10446,9 +10455,10 @@
           "6": "the",
           "7": "ColorTheme",
           "8": "to",
-          "9": "User's",
-          "10": "Preference",
-          "11": "."
+          "9": "User",
+          "10": "'s",
+          "11": "Preference",
+          "12": "."
         }
       }
     },
@@ -11255,28 +11265,25 @@
           "13": "at",
           "14": "DifferentAudiences",
           "15": ",",
-          "16": "i",
-          "17": ".",
-          "18": "e",
-          "19": ".",
-          "20": "with",
-          "21": "Ads",
-          "22": "(",
-          "23": "limited",
-          "24": "free",
-          "25": ")",
-          "26": "and",
-          "27": "without",
-          "28": "Ads",
-          "29": "(",
-          "30": "paid",
-          "31": "full",
-          "32": ")",
-          "33": ";",
-          "34": "FullVersion",
-          "35": "satisfying",
-          "36": "SomeOfTheEducationAppRequirements",
-          "37": "."
+          "16": "i.e.",
+          "17": "with",
+          "18": "Ads",
+          "19": "-LRB-",
+          "20": "limited",
+          "21": "free",
+          "22": "-RRB-",
+          "23": "and",
+          "24": "without",
+          "25": "Ads",
+          "26": "-LRB-",
+          "27": "paid",
+          "28": "full",
+          "29": "-RRB-",
+          "30": ";",
+          "31": "FullVersion",
+          "32": "satisfying",
+          "33": "SomeOfTheEducationAppRequirements",
+          "34": "."
         }
       }
     },
@@ -13268,12 +13275,13 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "User's",
-          "8": "Progress",
-          "9": "to",
-          "10": "the",
-          "11": "NextLevel",
-          "12": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "to",
+          "11": "the",
+          "12": "NextLevel",
+          "13": "."
         }
       }
     }
@@ -13975,21 +13983,22 @@
           "3": "able",
           "4": "to",
           "5": "keep",
-          "6": "User's",
-          "7": "LevelsProgress",
-          "8": "(",
-          "9": "unlocked",
-          "10": "and",
-          "11": "locked",
-          "12": "Levels",
-          "13": ")",
-          "14": "across",
-          "15": "DifferentAndroidMobileDevices",
-          "16": "User",
-          "17": "signed",
-          "18": "in",
-          "19": "to",
-          "20": "."
+          "6": "User",
+          "7": "'s",
+          "8": "LevelsProgress",
+          "9": "-LRB-",
+          "10": "unlocked",
+          "11": "and",
+          "12": "locked",
+          "13": "Levels",
+          "14": "-RRB-",
+          "15": "across",
+          "16": "DifferentAndroidMobileDevices",
+          "17": "User",
+          "18": "signed",
+          "19": "in",
+          "20": "to",
+          "21": "."
         }
       }
     },
@@ -14194,11 +14203,12 @@
           "3": "able",
           "4": "to",
           "5": "share",
-          "6": "User's",
-          "7": "Score",
-          "8": "on",
-          "9": "SocialMedia",
-          "10": "."
+          "6": "User",
+          "7": "'s",
+          "8": "Score",
+          "9": "on",
+          "10": "SocialMedia",
+          "11": "."
         }
       }
     },
@@ -14444,13 +14454,14 @@
           "4": "to",
           "5": "erase",
           "6": "all",
-          "7": "User's",
-          "8": "Progress",
-          "9": "and",
-          "10": "start",
-          "11": "a",
-          "12": "new",
-          "13": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "and",
+          "11": "start",
+          "12": "a",
+          "13": "new",
+          "14": "."
         }
       }
     },
@@ -14668,9 +14679,10 @@
           "6": "the",
           "7": "ColorTheme",
           "8": "to",
-          "9": "User's",
-          "10": "Preference",
-          "11": "."
+          "9": "User",
+          "10": "'s",
+          "11": "Preference",
+          "12": "."
         }
       }
     },
@@ -15477,28 +15489,25 @@
           "13": "at",
           "14": "DifferentAudiences",
           "15": ",",
-          "16": "i",
-          "17": ".",
-          "18": "e",
-          "19": ".",
-          "20": "with",
-          "21": "Ads",
-          "22": "(",
-          "23": "limited",
-          "24": "free",
-          "25": ")",
-          "26": "and",
-          "27": "without",
-          "28": "Ads",
-          "29": "(",
-          "30": "paid",
-          "31": "full",
-          "32": ")",
-          "33": ";",
-          "34": "FullVersion",
-          "35": "satisfying",
-          "36": "SomeOfTheEducationAppRequirements",
-          "37": "."
+          "16": "i.e.",
+          "17": "with",
+          "18": "Ads",
+          "19": "-LRB-",
+          "20": "limited",
+          "21": "free",
+          "22": "-RRB-",
+          "23": "and",
+          "24": "without",
+          "25": "Ads",
+          "26": "-LRB-",
+          "27": "paid",
+          "28": "full",
+          "29": "-RRB-",
+          "30": ";",
+          "31": "FullVersion",
+          "32": "satisfying",
+          "33": "SomeOfTheEducationAppRequirements",
+          "34": "."
         }
       }
     },
@@ -17490,12 +17499,13 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "User's",
-          "8": "Progress",
-          "9": "to",
-          "10": "the",
-          "11": "NextLevel",
-          "12": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "to",
+          "11": "the",
+          "12": "NextLevel",
+          "13": "."
         }
       }
     }
@@ -18710,21 +18720,22 @@
           "3": "able",
           "4": "to",
           "5": "keep",
-          "6": "User's",
-          "7": "LevelsProgress",
-          "8": "(",
-          "9": "unlocked",
-          "10": "and",
-          "11": "locked",
-          "12": "Levels",
-          "13": ")",
-          "14": "across",
-          "15": "DifferentAndroidMobileDevices",
-          "16": "User",
-          "17": "signed",
-          "18": "in",
-          "19": "to",
-          "20": "."
+          "6": "User",
+          "7": "'s",
+          "8": "LevelsProgress",
+          "9": "-LRB-",
+          "10": "unlocked",
+          "11": "and",
+          "12": "locked",
+          "13": "Levels",
+          "14": "-RRB-",
+          "15": "across",
+          "16": "DifferentAndroidMobileDevices",
+          "17": "User",
+          "18": "signed",
+          "19": "in",
+          "20": "to",
+          "21": "."
         }
       }
     },
@@ -18929,11 +18940,12 @@
           "3": "able",
           "4": "to",
           "5": "share",
-          "6": "User's",
-          "7": "Score",
-          "8": "on",
-          "9": "SocialMedia",
-          "10": "."
+          "6": "User",
+          "7": "'s",
+          "8": "Score",
+          "9": "on",
+          "10": "SocialMedia",
+          "11": "."
         }
       }
     },
@@ -19179,13 +19191,14 @@
           "4": "to",
           "5": "erase",
           "6": "all",
-          "7": "User's",
-          "8": "Progress",
-          "9": "and",
-          "10": "start",
-          "11": "a",
-          "12": "new",
-          "13": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "and",
+          "11": "start",
+          "12": "a",
+          "13": "new",
+          "14": "."
         }
       }
     },
@@ -19403,9 +19416,10 @@
           "6": "the",
           "7": "ColorTheme",
           "8": "to",
-          "9": "User's",
-          "10": "Preference",
-          "11": "."
+          "9": "User",
+          "10": "'s",
+          "11": "Preference",
+          "12": "."
         }
       }
     },
@@ -20212,28 +20226,25 @@
           "13": "at",
           "14": "DifferentAudiences",
           "15": ",",
-          "16": "i",
-          "17": ".",
-          "18": "e",
-          "19": ".",
-          "20": "with",
-          "21": "Ads",
-          "22": "(",
-          "23": "limited",
-          "24": "free",
-          "25": ")",
-          "26": "and",
-          "27": "without",
-          "28": "Ads",
-          "29": "(",
-          "30": "paid",
-          "31": "full",
-          "32": ")",
-          "33": ";",
-          "34": "FullVersion",
-          "35": "satisfying",
-          "36": "SomeOfTheEducationAppRequirements",
-          "37": "."
+          "16": "i.e.",
+          "17": "with",
+          "18": "Ads",
+          "19": "-LRB-",
+          "20": "limited",
+          "21": "free",
+          "22": "-RRB-",
+          "23": "and",
+          "24": "without",
+          "25": "Ads",
+          "26": "-LRB-",
+          "27": "paid",
+          "28": "full",
+          "29": "-RRB-",
+          "30": ";",
+          "31": "FullVersion",
+          "32": "satisfying",
+          "33": "SomeOfTheEducationAppRequirements",
+          "34": "."
         }
       }
     },
@@ -22225,12 +22236,13 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "User's",
-          "8": "Progress",
-          "9": "to",
-          "10": "the",
-          "11": "NextLevel",
-          "12": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "to",
+          "11": "the",
+          "12": "NextLevel",
+          "13": "."
         }
       }
     }
@@ -22745,28 +22757,25 @@
           "13": "at",
           "14": "DifferentAudiences",
           "15": ",",
-          "16": "i",
-          "17": ".",
-          "18": "e",
-          "19": ".",
-          "20": "with",
-          "21": "Ads",
-          "22": "(",
-          "23": "limited",
-          "24": "free",
-          "25": ")",
-          "26": "and",
-          "27": "without",
-          "28": "Ads",
-          "29": "(",
-          "30": "paid",
-          "31": "full",
-          "32": ")",
-          "33": ";",
-          "34": "FullVersion",
-          "35": "satisfying",
-          "36": "SomeOfTheEducationAppRequirements",
-          "37": "."
+          "16": "i.e.",
+          "17": "with",
+          "18": "Ads",
+          "19": "-LRB-",
+          "20": "limited",
+          "21": "free",
+          "22": "-RRB-",
+          "23": "and",
+          "24": "without",
+          "25": "Ads",
+          "26": "-LRB-",
+          "27": "paid",
+          "28": "full",
+          "29": "-RRB-",
+          "30": ";",
+          "31": "FullVersion",
+          "32": "satisfying",
+          "33": "SomeOfTheEducationAppRequirements",
+          "34": "."
         }
       }
     }
@@ -23837,12 +23846,13 @@
           "1": "User",
           "2": "can",
           "3": "track",
-          "4": "User's",
-          "5": "Progress",
-          "6": "on",
-          "7": "the",
-          "8": "App",
-          "9": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Progress",
+          "7": "on",
+          "8": "the",
+          "9": "App",
+          "10": "."
         }
       }
     },
@@ -24352,21 +24362,22 @@
           "3": "able",
           "4": "to",
           "5": "keep",
-          "6": "User's",
-          "7": "LevelsProgress",
-          "8": "(",
-          "9": "unlocked",
-          "10": "and",
-          "11": "locked",
-          "12": "Levels",
-          "13": ")",
-          "14": "across",
-          "15": "DifferentAndroidMobileDevices",
-          "16": "User",
-          "17": "signed",
-          "18": "in",
-          "19": "to",
-          "20": "."
+          "6": "User",
+          "7": "'s",
+          "8": "LevelsProgress",
+          "9": "-LRB-",
+          "10": "unlocked",
+          "11": "and",
+          "12": "locked",
+          "13": "Levels",
+          "14": "-RRB-",
+          "15": "across",
+          "16": "DifferentAndroidMobileDevices",
+          "17": "User",
+          "18": "signed",
+          "19": "in",
+          "20": "to",
+          "21": "."
         }
       }
     },
@@ -24571,11 +24582,12 @@
           "3": "able",
           "4": "to",
           "5": "share",
-          "6": "User's",
-          "7": "Score",
-          "8": "on",
-          "9": "SocialMedia",
-          "10": "."
+          "6": "User",
+          "7": "'s",
+          "8": "Score",
+          "9": "on",
+          "10": "SocialMedia",
+          "11": "."
         }
       }
     },
@@ -24821,13 +24833,14 @@
           "4": "to",
           "5": "erase",
           "6": "all",
-          "7": "User's",
-          "8": "Progress",
-          "9": "and",
-          "10": "start",
-          "11": "a",
-          "12": "new",
-          "13": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "and",
+          "11": "start",
+          "12": "a",
+          "13": "new",
+          "14": "."
         }
       }
     },
@@ -25045,9 +25058,10 @@
           "6": "the",
           "7": "ColorTheme",
           "8": "to",
-          "9": "User's",
-          "10": "Preference",
-          "11": "."
+          "9": "User",
+          "10": "'s",
+          "11": "Preference",
+          "12": "."
         }
       }
     },
@@ -25749,28 +25763,25 @@
           "13": "at",
           "14": "DifferentAudiences",
           "15": ",",
-          "16": "i",
-          "17": ".",
-          "18": "e",
-          "19": ".",
-          "20": "with",
-          "21": "Ads",
-          "22": "(",
-          "23": "limited",
-          "24": "free",
-          "25": ")",
-          "26": "and",
-          "27": "without",
-          "28": "Ads",
-          "29": "(",
-          "30": "paid",
-          "31": "full",
-          "32": ")",
-          "33": ";",
-          "34": "FullVersion",
-          "35": "satisfying",
-          "36": "SomeOfTheEducationAppRequirements",
-          "37": "."
+          "16": "i.e.",
+          "17": "with",
+          "18": "Ads",
+          "19": "-LRB-",
+          "20": "limited",
+          "21": "free",
+          "22": "-RRB-",
+          "23": "and",
+          "24": "without",
+          "25": "Ads",
+          "26": "-LRB-",
+          "27": "paid",
+          "28": "full",
+          "29": "-RRB-",
+          "30": ";",
+          "31": "FullVersion",
+          "32": "satisfying",
+          "33": "SomeOfTheEducationAppRequirements",
+          "34": "."
         }
       }
     },
@@ -26668,9 +26679,9 @@
           "4": "Math",
           "5": "by",
           "6": "FragmentedTime",
-          "7": "(",
+          "7": "-LRB-",
           "8": "Pausing",
-          "9": ")",
+          "9": "-RRB-",
           "10": "."
         }
       }
@@ -27318,12 +27329,13 @@
           "8": "out",
           "9": "of",
           "10": "displaying",
-          "11": "User's",
-          "12": "Scores",
-          "13": "on",
-          "14": "the",
-          "15": "Leaderboard",
-          "16": "."
+          "11": "User",
+          "12": "'s",
+          "13": "Scores",
+          "14": "on",
+          "15": "the",
+          "16": "Leaderboard",
+          "17": "."
         }
       }
     },
@@ -27553,12 +27565,13 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "User's",
-          "8": "Progress",
-          "9": "to",
-          "10": "the",
-          "11": "NextLevel",
-          "12": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "to",
+          "11": "the",
+          "12": "NextLevel",
+          "13": "."
         }
       }
     }
@@ -27733,12 +27746,13 @@
           "1": "User",
           "2": "can",
           "3": "track",
-          "4": "User's",
-          "5": "Progress",
-          "6": "on",
-          "7": "the",
-          "8": "App",
-          "9": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Progress",
+          "7": "on",
+          "8": "the",
+          "9": "App",
+          "10": "."
         }
       }
     },
@@ -28089,21 +28103,22 @@
           "3": "able",
           "4": "to",
           "5": "keep",
-          "6": "User's",
-          "7": "LevelsProgress",
-          "8": "(",
-          "9": "unlocked",
-          "10": "and",
-          "11": "locked",
-          "12": "Levels",
-          "13": ")",
-          "14": "across",
-          "15": "DifferentAndroidMobileDevices",
-          "16": "User",
-          "17": "signed",
-          "18": "in",
-          "19": "to",
-          "20": "."
+          "6": "User",
+          "7": "'s",
+          "8": "LevelsProgress",
+          "9": "-LRB-",
+          "10": "unlocked",
+          "11": "and",
+          "12": "locked",
+          "13": "Levels",
+          "14": "-RRB-",
+          "15": "across",
+          "16": "DifferentAndroidMobileDevices",
+          "17": "User",
+          "18": "signed",
+          "19": "in",
+          "20": "to",
+          "21": "."
         }
       }
     },
@@ -28308,11 +28323,12 @@
           "3": "able",
           "4": "to",
           "5": "share",
-          "6": "User's",
-          "7": "Score",
-          "8": "on",
-          "9": "SocialMedia",
-          "10": "."
+          "6": "User",
+          "7": "'s",
+          "8": "Score",
+          "9": "on",
+          "10": "SocialMedia",
+          "11": "."
         }
       }
     },
@@ -28558,13 +28574,14 @@
           "4": "to",
           "5": "erase",
           "6": "all",
-          "7": "User's",
-          "8": "Progress",
-          "9": "and",
-          "10": "start",
-          "11": "a",
-          "12": "new",
-          "13": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "and",
+          "11": "start",
+          "12": "a",
+          "13": "new",
+          "14": "."
         }
       }
     },
@@ -28782,9 +28799,10 @@
           "6": "the",
           "7": "ColorTheme",
           "8": "to",
-          "9": "User's",
-          "10": "Preference",
-          "11": "."
+          "9": "User",
+          "10": "'s",
+          "11": "Preference",
+          "12": "."
         }
       }
     },
@@ -30126,28 +30144,25 @@
           "13": "at",
           "14": "DifferentAudiences",
           "15": ",",
-          "16": "i",
-          "17": ".",
-          "18": "e",
-          "19": ".",
-          "20": "with",
-          "21": "Ads",
-          "22": "(",
-          "23": "limited",
-          "24": "free",
-          "25": ")",
-          "26": "and",
-          "27": "without",
-          "28": "Ads",
-          "29": "(",
-          "30": "paid",
-          "31": "full",
-          "32": ")",
-          "33": ";",
-          "34": "FullVersion",
-          "35": "satisfying",
-          "36": "SomeOfTheEducationAppRequirements",
-          "37": "."
+          "16": "i.e.",
+          "17": "with",
+          "18": "Ads",
+          "19": "-LRB-",
+          "20": "limited",
+          "21": "free",
+          "22": "-RRB-",
+          "23": "and",
+          "24": "without",
+          "25": "Ads",
+          "26": "-LRB-",
+          "27": "paid",
+          "28": "full",
+          "29": "-RRB-",
+          "30": ";",
+          "31": "FullVersion",
+          "32": "satisfying",
+          "33": "SomeOfTheEducationAppRequirements",
+          "34": "."
         }
       }
     },
@@ -31522,9 +31537,9 @@
           "4": "Math",
           "5": "by",
           "6": "FragmentedTime",
-          "7": "(",
+          "7": "-LRB-",
           "8": "Pausing",
-          "9": ")",
+          "9": "-RRB-",
           "10": "."
         }
       }
@@ -32172,12 +32187,13 @@
           "8": "out",
           "9": "of",
           "10": "displaying",
-          "11": "User's",
-          "12": "Scores",
-          "13": "on",
-          "14": "the",
-          "15": "Leaderboard",
-          "16": "."
+          "11": "User",
+          "12": "'s",
+          "13": "Scores",
+          "14": "on",
+          "15": "the",
+          "16": "Leaderboard",
+          "17": "."
         }
       }
     },
@@ -32407,12 +32423,13 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "User's",
-          "8": "Progress",
-          "9": "to",
-          "10": "the",
-          "11": "NextLevel",
-          "12": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "to",
+          "11": "the",
+          "12": "NextLevel",
+          "13": "."
         }
       }
     }
@@ -32955,21 +32972,22 @@
           "3": "able",
           "4": "to",
           "5": "keep",
-          "6": "User's",
-          "7": "LevelsProgress",
-          "8": "(",
-          "9": "unlocked",
-          "10": "and",
-          "11": "locked",
-          "12": "Levels",
-          "13": ")",
-          "14": "across",
-          "15": "DifferentAndroidMobileDevices",
-          "16": "User",
-          "17": "signed",
-          "18": "in",
-          "19": "to",
-          "20": "."
+          "6": "User",
+          "7": "'s",
+          "8": "LevelsProgress",
+          "9": "-LRB-",
+          "10": "unlocked",
+          "11": "and",
+          "12": "locked",
+          "13": "Levels",
+          "14": "-RRB-",
+          "15": "across",
+          "16": "DifferentAndroidMobileDevices",
+          "17": "User",
+          "18": "signed",
+          "19": "in",
+          "20": "to",
+          "21": "."
         }
       }
     },
@@ -33174,11 +33192,12 @@
           "3": "able",
           "4": "to",
           "5": "share",
-          "6": "User's",
-          "7": "Score",
-          "8": "on",
-          "9": "SocialMedia",
-          "10": "."
+          "6": "User",
+          "7": "'s",
+          "8": "Score",
+          "9": "on",
+          "10": "SocialMedia",
+          "11": "."
         }
       }
     },
@@ -33424,13 +33443,14 @@
           "4": "to",
           "5": "erase",
           "6": "all",
-          "7": "User's",
-          "8": "Progress",
-          "9": "and",
-          "10": "start",
-          "11": "a",
-          "12": "new",
-          "13": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "and",
+          "11": "start",
+          "12": "a",
+          "13": "new",
+          "14": "."
         }
       }
     },
@@ -33648,9 +33668,10 @@
           "6": "the",
           "7": "ColorTheme",
           "8": "to",
-          "9": "User's",
-          "10": "Preference",
-          "11": "."
+          "9": "User",
+          "10": "'s",
+          "11": "Preference",
+          "12": "."
         }
       }
     },
@@ -34803,28 +34824,25 @@
           "13": "at",
           "14": "DifferentAudiences",
           "15": ",",
-          "16": "i",
-          "17": ".",
-          "18": "e",
-          "19": ".",
-          "20": "with",
-          "21": "Ads",
-          "22": "(",
-          "23": "limited",
-          "24": "free",
-          "25": ")",
-          "26": "and",
-          "27": "without",
-          "28": "Ads",
-          "29": "(",
-          "30": "paid",
-          "31": "full",
-          "32": ")",
-          "33": ";",
-          "34": "FullVersion",
-          "35": "satisfying",
-          "36": "SomeOfTheEducationAppRequirements",
-          "37": "."
+          "16": "i.e.",
+          "17": "with",
+          "18": "Ads",
+          "19": "-LRB-",
+          "20": "limited",
+          "21": "free",
+          "22": "-RRB-",
+          "23": "and",
+          "24": "without",
+          "25": "Ads",
+          "26": "-LRB-",
+          "27": "paid",
+          "28": "full",
+          "29": "-RRB-",
+          "30": ";",
+          "31": "FullVersion",
+          "32": "satisfying",
+          "33": "SomeOfTheEducationAppRequirements",
+          "34": "."
         }
       }
     },
@@ -36872,12 +36890,13 @@
           "8": "out",
           "9": "of",
           "10": "displaying",
-          "11": "User's",
-          "12": "Scores",
-          "13": "on",
-          "14": "the",
-          "15": "Leaderboard",
-          "16": "."
+          "11": "User",
+          "12": "'s",
+          "13": "Scores",
+          "14": "on",
+          "15": "the",
+          "16": "Leaderboard",
+          "17": "."
         }
       }
     },
@@ -37107,12 +37126,13 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "User's",
-          "8": "Progress",
-          "9": "to",
-          "10": "the",
-          "11": "NextLevel",
-          "12": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "to",
+          "11": "the",
+          "12": "NextLevel",
+          "13": "."
         }
       }
     }
@@ -37457,12 +37477,13 @@
           "1": "User",
           "2": "can",
           "3": "track",
-          "4": "User's",
-          "5": "Progress",
-          "6": "on",
-          "7": "the",
-          "8": "App",
-          "9": "."
+          "4": "User",
+          "5": "'s",
+          "6": "Progress",
+          "7": "on",
+          "8": "the",
+          "9": "App",
+          "10": "."
         }
       }
     },
@@ -38162,21 +38183,22 @@
           "3": "able",
           "4": "to",
           "5": "keep",
-          "6": "User's",
-          "7": "LevelsProgress",
-          "8": "(",
-          "9": "unlocked",
-          "10": "and",
-          "11": "locked",
-          "12": "Levels",
-          "13": ")",
-          "14": "across",
-          "15": "DifferentAndroidMobileDevices",
-          "16": "User",
-          "17": "signed",
-          "18": "in",
-          "19": "to",
-          "20": "."
+          "6": "User",
+          "7": "'s",
+          "8": "LevelsProgress",
+          "9": "-LRB-",
+          "10": "unlocked",
+          "11": "and",
+          "12": "locked",
+          "13": "Levels",
+          "14": "-RRB-",
+          "15": "across",
+          "16": "DifferentAndroidMobileDevices",
+          "17": "User",
+          "18": "signed",
+          "19": "in",
+          "20": "to",
+          "21": "."
         }
       }
     },
@@ -38381,11 +38403,12 @@
           "3": "able",
           "4": "to",
           "5": "share",
-          "6": "User's",
-          "7": "Score",
-          "8": "on",
-          "9": "SocialMedia",
-          "10": "."
+          "6": "User",
+          "7": "'s",
+          "8": "Score",
+          "9": "on",
+          "10": "SocialMedia",
+          "11": "."
         }
       }
     },
@@ -38631,13 +38654,14 @@
           "4": "to",
           "5": "erase",
           "6": "all",
-          "7": "User's",
-          "8": "Progress",
-          "9": "and",
-          "10": "start",
-          "11": "a",
-          "12": "new",
-          "13": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "and",
+          "11": "start",
+          "12": "a",
+          "13": "new",
+          "14": "."
         }
       }
     },
@@ -38855,9 +38879,10 @@
           "6": "the",
           "7": "ColorTheme",
           "8": "to",
-          "9": "User's",
-          "10": "Preference",
-          "11": "."
+          "9": "User",
+          "10": "'s",
+          "11": "Preference",
+          "12": "."
         }
       }
     },
@@ -40199,28 +40224,25 @@
           "13": "at",
           "14": "DifferentAudiences",
           "15": ",",
-          "16": "i",
-          "17": ".",
-          "18": "e",
-          "19": ".",
-          "20": "with",
-          "21": "Ads",
-          "22": "(",
-          "23": "limited",
-          "24": "free",
-          "25": ")",
-          "26": "and",
-          "27": "without",
-          "28": "Ads",
-          "29": "(",
-          "30": "paid",
-          "31": "full",
-          "32": ")",
-          "33": ";",
-          "34": "FullVersion",
-          "35": "satisfying",
-          "36": "SomeOfTheEducationAppRequirements",
-          "37": "."
+          "16": "i.e.",
+          "17": "with",
+          "18": "Ads",
+          "19": "-LRB-",
+          "20": "limited",
+          "21": "free",
+          "22": "-RRB-",
+          "23": "and",
+          "24": "without",
+          "25": "Ads",
+          "26": "-LRB-",
+          "27": "paid",
+          "28": "full",
+          "29": "-RRB-",
+          "30": ";",
+          "31": "FullVersion",
+          "32": "satisfying",
+          "33": "SomeOfTheEducationAppRequirements",
+          "34": "."
         }
       }
     },
@@ -41807,9 +41829,9 @@
           "4": "Math",
           "5": "by",
           "6": "FragmentedTime",
-          "7": "(",
+          "7": "-LRB-",
           "8": "Pausing",
-          "9": ")",
+          "9": "-RRB-",
           "10": "."
         }
       }
@@ -42457,12 +42479,13 @@
           "8": "out",
           "9": "of",
           "10": "displaying",
-          "11": "User's",
-          "12": "Scores",
-          "13": "on",
-          "14": "the",
-          "15": "Leaderboard",
-          "16": "."
+          "11": "User",
+          "12": "'s",
+          "13": "Scores",
+          "14": "on",
+          "15": "the",
+          "16": "Leaderboard",
+          "17": "."
         }
       }
     },
@@ -42692,12 +42715,13 @@
           "4": "able",
           "5": "to",
           "6": "track",
-          "7": "User's",
-          "8": "Progress",
-          "9": "to",
-          "10": "the",
-          "11": "NextLevel",
-          "12": "."
+          "7": "User",
+          "8": "'s",
+          "9": "Progress",
+          "10": "to",
+          "11": "the",
+          "12": "NextLevel",
+          "13": "."
         }
       }
     }

@@ -6,9 +6,7 @@ import json
 from adapter import *
 from Parser.PosTagParser import *
 from Parser.TDParser import *
-from UMLViewer import *
-import re
-
+import pickle
 class TransformationRules:
 
     class Operations:
@@ -77,7 +75,7 @@ class TransformationRules:
         self.identifyClassOperations()
         self.tr44()
         self.tr45()
-        self.tr46()
+        #self.tr46()
         
         self.tr51()
         # self.tr52()
@@ -239,7 +237,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 :
-                    if "nsubj" and "dobj" not in td_dict:
+                    if "nsubj" or "dobj" not in td_dict:
                         print("Error in nsubj or dobj",list(sentence.keys())[0])
                     else:
                         a= ""
@@ -266,7 +264,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0:
-                    if "nsubj" not in td_dict and "dobj" not in td_dict:
+                    if "nsubj" not in td_dict or "dobj" not in td_dict:
                         print("Error in nsubj or dobj",list(sentence.keys())[0])
                     else:
                         a= ""
@@ -291,7 +289,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])<2 or len(td_dict["mark"])==0 :
-                    if "nsubj" and "mark"not in td_dict:
+                    if "nsubj" or "mark"not in td_dict:
                         print("Error in nsubj",list(sentence.keys())[0])
                     else:
                         a= ""
@@ -319,7 +317,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 or len(td_dict["neg"])==0 or len(td_dict["mark"])==0 or len(td_dict["acl"])==0:
-                    if "nsubj" and "dobj" and "mark" and "neg" and "acl" not in td_dict:
+                    if "nsubj" or "dobj" or "mark" or "neg" or "acl" not in td_dict:
                         print("Error in nsubj",list(sentence.keys())[0])
                     else:
                         a=""
@@ -351,7 +349,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["xcomp"])==0 or len(td_dict["dobj"])==0 or len(td_dict["neg"])==0 or len(td_dict["mark"])==0:
-                    if "nsubj" and "dobj" and "mark" and "neg" and "xcomp" not in td_dict:
+                    if "nsubj" or "dobj" or "mark" or "neg" or "xcomp" not in td_dict:
                         print("Error in nsubj",list(sentence.keys())[0])
                     else:
                         a=""
@@ -382,7 +380,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])<2 or len(td_dict["mark"])==0 or len(td_dict["cop"])==0 or len(td_dict["xcomp"])==0:
-                    if "nsubj" and "cop" and "mark" and "xcomp" not in td_dict:
+                    if "nsubj" or "cop" or "mark" or "xcomp" not in td_dict:
                         print("Error in nsubj",list(sentence.keys())[0])
                     else:
                         a= ""
@@ -418,7 +416,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])<2 or len(td_dict["mark"])==0 or len(td_dict["acl"])==0:
-                    if "nsubj" and "dobj" and "mark" and "acl" not in td_dict:
+                    if "nsubj" or "dobj" or "mark" or "acl" not in td_dict:
                         print("Error in nsubj",list(sentence.keys())[0])
                     else:
                         a= ""
@@ -463,7 +461,7 @@ class TransformationRules:
                     #print(td_dict)
                     # print(index_dict)
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 or len(td_dict["acl"])==0 :
-                    if "nsubj" and "dobj" and "acl" not in td_dict:
+                    if "nsubj" or "dobj" or "acl" not in td_dict:
                         print("Error in nsubj",list(sentence.keys())[0])
                     else:
                           a=""
@@ -503,7 +501,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 or len(td_dict["acl"])==0 :
-                    if "nsubj" and "dobj" and "acl" not in td_dict:
+                    if "nsubj" or "dobj" or "acl" not in td_dict:
                         print("Error in nsubj,dobj or acl ",list(sentence.keys())[0])
                     else:
                         a=""
@@ -530,7 +528,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])<2 or len(td_dict["xcomp"])==0 :
-                    if "nsubj" and "xcomp" not in td_dict:
+                    if "nsubj" or "xcomp" not in td_dict:
                         print("Error in nsubj, or xcomp",list(sentence.keys())[0])
                     else:
                         a=""
@@ -558,7 +556,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])<2 or len(td_dict["xcomp"])==0 :
-                    if "nsubj" and "xcomp" not in td_dict:
+                    if "nsubj" or "xcomp" not in td_dict:
                         print("Error in nsubj, or xcomp",list(sentence.keys())[0])
                     else:
                         a=""
@@ -585,7 +583,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 or len(td_dict["advmod"])==0 or len(td_dict["aux"])==0 or len(td_dict["xcomp"]==0):
-                    if "nsubj" and "dobj" and "advmod" and "mark" and "xcomp" not in td_dict:  
+                    if "nsubj" or "dobj" or "advmod" or "mark" or "xcomp" not in td_dict:  
                         print("Error in nsubj or dobj",list(sentence.keys())[0])
                     else:
                         a=""
@@ -619,7 +617,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])<2 or len(td_dict["dobj"])==0 or len(td_dict["advmod"])==0 :
-                    if "nsubj" and "dobj" and "advmod" not in td_dict:
+                    if "nsubj" or "dobj" or "advmod" not in td_dict:
                         print("Error in nsubj,dobj or acl ",list(sentence.keys())[0])
                     else:
                         a=""
@@ -643,7 +641,8 @@ class TransformationRules:
                 for sentence in data["SVDOAdverbial"]:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
-                    if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 or len(td_dict["advmod"])==0 :
+                    #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 or len(td_dict["advmod"])==0 :
+                    if "nsubj" or "dobj" or "advmod" not in td_dict:    
                         print("Error in nsubj,dobj or advmod ",list(sentence.keys())[0])
                     else:
                         a=""
@@ -672,7 +671,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 or len(td_dict["aux"])==0 :
-                    if "nsubj" and "dobj" and "aux" not in td_dict:
+                    if "nsubj" or "dobj" or "aux" not in td_dict:
                         print("Error in nsubj,dobj or aux ",list(sentence.keys())[0])
                     else:
                         a=""
@@ -709,7 +708,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["advmod"])==0 or len(td_dict["aux"])==0 or len(td_dict["xcomp"])==0:
-                    if "nsubj" and "advmod" and "aux" and "xcomp" not in td_dict:
+                    if "nsubj" or "advmod" or "aux" or "xcomp" not in td_dict:
                         print("Error in nsubj",list(sentence.keys())[0])
                     else:
                         a=""
@@ -739,7 +738,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["advmod"])==0 or len(td_dict["advcl"])==0:
-                    if "nsubj" and "advmod" and "advcl" not in td_dict:    
+                    if "nsubj" or "advmod" or "advcl" not in td_dict:    
                         print("Error in nsubj,dobj or aux ",list(sentence.keys())[0])
                     else:
                         a=""
@@ -769,7 +768,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["mark"])==0 or len(td_dict["xcomp"])==0:
-                    if "nsubj" and "xcomp" and "mark" not in td_dict:
+                    if "nsubj" or "xcomp" or "mark" not in td_dict:
                         print("Error in nsubj,dobj or aux ",list(sentence.keys())[0])
                     else:
                         a=""
@@ -784,7 +783,8 @@ class TransformationRules:
                                             a = nsubj_entry[0]
                                             b = nsubj_entry[1]
                                             dest = b
-                                            for dobj_entry in td_dict["dobj"]:
+                                            if "dobj" in td_dict:
+                                             for dobj_entry in td_dict["dobj"]:
                                                 if dobj_entry[0]==mark_entry[0]:
                                                     dest=dobj_entry[1]
                                             obj=self.Operations(name=index_dict[str(a)],source=index_dict[str(b)],dest=index_dict[str(dest)],sentence=list(sentence.keys())[0])
@@ -802,7 +802,7 @@ class TransformationRules:
                     #print(td_dict)
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["xcomp"])==0:
-                    if "nsubj" and "xcomp" not in td_dict:
+                    if "nsubj" or "xcomp" not in td_dict:
                         print("Error in nsubj,xcomp",list(sentence.keys())[0])
                     else:
                         a=""
@@ -830,7 +830,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["advmod"])==0:
-                    if "nsubj" and "advmod" not in td_dict:
+                    if "nsubj" or "advmod" not in td_dict:
                         print("Error in nsubj,advmod",list(sentence.keys())[0])
                     else:
                         a=""
@@ -931,7 +931,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["nummod"])==0 or len(td_dict["case"])==0 or len(td_dict["nmod"])==0:
-                    if "nsubj" and "nummod" and "case" and "nmod" not in td_dict:   
+                    if "nsubj" or "nummod" or "case" or "nmod" not in td_dict:   
                         print("Error in nsubj,advmod",list(sentence.keys())[0])
                     else:
                          a="" 
@@ -968,7 +968,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubjpass"])==0 or len(td_dict["auxpass"])==0 or len(td_dict["case"])==0 or len(td_dict["nmod"])==0:
-                    if "nsubjpass" and "auxpass" and "case" and "nmod" not in td_dict:
+                    if "nsubjpass" or "auxpass" or "case" or "nmod" not in td_dict:
                         print("Error in nsubj,dobj",list(sentence.keys())[0])
                     else:
                         a=""
@@ -1002,7 +1002,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubjpass"])==0 or len(td_dict["auxpass"])==0 or len(td_dict["case"])==0 or len(td_dict["aux"])==0 or len(td_dict["nmod"])==0:
-                    if "nsubjpass" and "aux" and "auxpass" and "case" and "nmod" not in td_dict:
+                    if "nsubjpass" or "aux" or "auxpass" or "case" or "nmod" not in td_dict:
                         print("Error in nsubj,dobj",list(sentence.keys())[0])
                     else:
                         a=""
@@ -1038,7 +1038,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["case"])==0 or len(td_dict["nmod"])==0 :
-                    if "nsubj" and "case" and "nmod" not in td_dict:
+                    if "nsubj" or "case" or "nmod" not in td_dict:
                         print("Error in nsubj,dobj",list(sentence.keys())[0])
                     else  :
                         a=""
@@ -1065,7 +1065,7 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0:
-                    if "nsubj" and "dobj" not in td_dict:    
+                    if "nsubj" or "dobj" not in td_dict:    
                         print("Error in nsubj,dobj",list(sentence.keys())[0])
                     else:
                         a=""
@@ -1250,7 +1250,7 @@ class TransformationRules:
             if source not in allName:
                 self.class_dict[source]={"Attribute":[],"Behavior":{}}
                 
- 
+    
     def tr45(self):
         """
         For each class C in ClassDiagram Instance
@@ -1270,87 +1270,83 @@ class TransformationRules:
             C.addOperation(op.name(op.Para));
         EndIf
         """
-        
         for op in self.op_list:
             findClass = False
-            #print(op.name,"....",op.para)
+            item = op.name+"("+op.para+")"
             for className in self.class_dict:
-                if op.DestEntityTerm == className:
-                    if op.name not in self.class_dict[className]["Behavior"]:
-                        self.addBehaviorToClass(className, op.name, op.para)
-                        findClass=True
-                        #print(1)
-                    else:
-                        if op.para not in self.class_dict[className]["Behavior"][op.name]:
-                            self.addBehaviorToClass(className, op.name, op.para)
-                            findClass=True
-                            #print(2)
+                if op.DestEntityTerm == className and item not in self.class_dict[className]:
+                    #self.addToClassDict(className, item)
+                    self.addBehaviorToClass(className, op.name, op.para)
+                    findClass=True
             if findClass == False:
                 for className in self.class_dict:
                     for eachAttribute in self.class_dict[className]:
-                        if op.DestEntityTerm == eachAttribute:
-                            if op.name not in self.class_dict[className]["Behavior"]:
-                                self.addBehaviorToClass(className, op.name, op.para)
-                                findClass=True
-                                #print(3)
-                                break
-                            else:
-                                if op.para not in self.class_dict[className]["Behavior"][op.name]:
-                                    self.addBehaviorToClass(className, op.name, op.para)
-                                    findClass=True
-                                    #print(4)
-                                    break
+                        if op.DestEntityTerm == eachAttribute and item not in self.class_dict[className]:
+                            #self.addToClassDict(className, item)
+                            self.addBehaviorToClass(className, op.name, op.para)
+
+                            findClass=True
+                            break
             if findClass  == False:
+                #self.addToClassDict(op.DestEntityTerm, item)
                 self.addBehaviorToClass(className, op.name, op.para)
 
                 
                 
     def tr46(self):
-        """
-        For each operation op
-            For each relationship r in ClassDiagram Instance
-                If(op.SourceEntityTerm==r.class1 and op.DestEntityTerm==r.class2)AND(r.name does not contains op.name)
-                    append op.name to r.name 
+        """   
+        For each relationship r in ClassDiagram Instance
+            If(op.SourceEntityTerm==r.class1 and op.DestEntityTerm==r.class2)AND(r.name does not contains op.name)
+                append op.name to r.name 
+            EndIf
+        EndFor
+        If (no such relationship found) then
+            For each class c in ClassDiagram Instance 
+                If(op.DestEntityTerm==c.Name)
+                    rName=op.name; 
+                    createRelationship(op.SourceEntityTerm, c, rName, “association”); 
                 EndIf
             EndFor
-            If (no such relationship found) then
-                For each relationship r in ClassDiagram Instance 
-                    If(op.SourceEntityTerm==r.class1 and op.DestEntityTerm==a.name for some attribute a of class r.class2)AND(r.name does not contains op.name)
-                        append op.name to r.name 
+            If(no such class is found) then
+                For each class c in ClassDiagram Instance 
+                    If(op.DestEntityTerm==a.Name for some attribute a in class c)
+                        rName=op.name; 
+                        createRelationship(op.SourceEntityTerm, c, rName, “association”); 
                     EndIf
-                EndFor
+                EndFor 
             EndIf
-            If no such relationship found then
-                rName=op.name; 
-                createRelationship(op.SourceEntityTerm, op.DestEntityTerm, rName, “association”); 
-            EndIf
+        EndIf
         """
+        print(self.op_list,'b')
+        print(self.relationship_dict,'a')
         for op in self.op_list:
-            if op.SourceEntityTerm != op.DestEntityTerm and op.SourceEntityTerm in self.class_dict and op.DestEntityTerm in self.class_dict:
-                findRelationship = False
-                for rel_name in self.relationship_dict:
-                    for relationship in self.relationship_dict[rel_name]:
-                        if relationship[0] in self.class_dict and relationship[1] in self.class_dict:
-                            if op.SourceEntityTerm==relationship[0] and op.DestEntityTerm==relationship[1]:
-                                if op.name not in relationship[2]:
-                                    relationship[2].append(op.name)
-                                    findRelationship = True
-                if findRelationship==False:
-                    for rel_name in self.relationship_dict:
-                        for relationship in self.relationship_dict[rel_name]:
-                            if relationship[0] in self.class_dict and relationship[1] in self.class_dict:
-                                if op.SourceEntityTerm==relationship[0]:
-                                    for classAttr in self.class_dict[relationship[1]]["Attribute"]:
-                                        if op.DestEntityTerm==classAttr:
-                                            if op.name not in relationship[2]:
-                                                relationship[2].append(op.name)
-                                                findRelationship = True
-                                                break
-                if findRelationship==False:
-                    self.addToRelationshipDict(op.SourceEntityTerm, op.DestEntityTerm, [op.name], "association")
-
-                           
-                            
+            #print(op,'ab')
+            findRelationship = False
+            
+            for rel_name in self.relationship_dict:
+                #print(rel_name)
+                for relationship in self.relationship_dict[rel_name]:
+                    #print(relationship)
+                    
+                    if op.SourceEntityTerm==relationship[0] and op.DestEntityTerm==relationship[1] and op.name not in relationship[2]:
+                        
+                        #print(relationship[2])
+                        relationship[2].append(op.name)
+                        findRelationship=True
+                        break
+                    break
+            if findRelationship==False:
+                findClass = False
+                for className in self.class_dict:
+                    if op.DestEntityTerm==className:
+                        self.addToRelationshipDict(op.SourceEntityTerm, className, [op.name], "association")
+                        findClass = True
+                if findClass == False:
+                    for className in self.class_dict:
+                        for eachAttribute in self.class_dict[className]:
+                            if op.DestEntityTerm==eachAttribute:
+                                self.addToRelationshipDict(op.SourceEntityTerm, className, [op.name], "associatioon")
+                                break
     def tr47(self,word_list,pos_tags)  :
         """
      For each sentence of type Child-GenSubString-Parent, the POS-tags of the sentence are scanned and
@@ -1671,16 +1667,18 @@ class TransformationRules:
             EndIf
         EndFor        
         """
-        class_rel = set()
-        for rel_name in self.relationship_dict:
-            for relationship in self.relationship_dict[rel_name]:
-                class_rel.add(relationship[0])
-                class_rel.add(relationship[1])
         for eachClass in list(self.class_dict.keys()):
-            if eachClass not in class_rel:
+            findRela = False
+            for eachRela in self.relationship_dict:
+                for rela in self.relationship_dict[eachRela]:
+                    if eachClass in rela:
+                        findRela = True
+                        break
+            if findRela == False:
+                #print(findRela)
                 del self.class_dict[eachClass]
-                
-
+    
+        
 
     def addToClassDict(self,className,attributeName):
         if className not in self.class_dict:
@@ -1713,52 +1711,29 @@ class TransformationRules:
             self.relationship_dict[relationship].append([parentClass,childClass, relationshipName])
             
 
-def UML_graphic(class_dict, relationship_dict):
-    viewer = UMLViewer()
-
-    for className in class_dict:
-        c = className
-        if re.search("/W", c) != None:
-            c = '"' + c + '"'
-        for attr in class_dict[className]["Attribute"]:
-            if re.search("\W", attr) != None:
-                attr = '"' + attr + '"'
-            viewer.add_attribute(c, attr)
-        for behavior in class_dict[className]["Behavior"]:
-            para=class_dict[className]["Behavior"][behavior]
-            if re.search("\W", behavior) != None:
-                behavior = '"' + behavior + '"'
-            viewer.add_behavior(c, behavior, parameters=para)
-            
-    for rel_name in relationship_dict:
-        for relationship in relationship_dict[rel_name]:
-            if len(relationship[0])>1 and len(relationship[1])>1:
-                if re.search("\W",relationship[0]) != None:
-                    relationship[0] = '"' + relationship[0] + '"'
-                if re.search("\W",relationship[1]) != None:
-                    relationship[1] = '"' + relationship[1] + '"'
-                uml_asso = UMLAssociation(relationship[0], relationship[1],rel_name)
-                viewer.add_association(uml_asso)            
-        
-        
-        
-        
-    #viewer.save_to_file(path="./")
-    viewer.generate_diagram(path="./")
-
-
-
-
-
 
 if __name__ == '__main__':
-    print(os.getcwd() + "/Data/input_v2/" + "2014-USC-Project02.txt")
-    p = TransformationRules(os.getcwd() + "/Data/input_v2/" + "2014-USC-Project02.txt")
-    p.apply_rules()
-    
-    print ("Classed with Attributes: "+str(p.class_dict))
-    print ("Relationships with parent class & child class: "+str(p.relationship_dict))
-    
-    UML_graphic(p.class_dict, p.relationship_dict)
-    
-    
+    # print(os.getcwd() + "/input_v2/" + "2014-USC-Project01.txt")
+    # p = TransformationRules(os.getcwd() + "/input_v2/" + "2014-USC-Project01.txt")
+    # p.apply_rules() 
+    for year in range(2014,2020):
+        for project in range(1,16):
+            filename=str(year)+'-USC-Project' + str(project).rjust(2,'0')
+            filepath=os.getcwd() + "/input_v2/" + filename + '.txt'
+            #print(filepath)
+            if not os.path.exists(filepath):
+                break
+            else:
+                p=TransformationRules(filepath)
+                p.apply_rules()
+                with open(os.getcwd() + '/Data/output_origin_trprocess_v2/%sResult.json'%filename, 'wb') as file:
+                    #file.write("Classed with Attributes:")
+                    pickle.dump([p.class_dict,p.relationship_dict],file)
+                    #file.write(json.dumps(str(p.class_dict))+'\n')
+                    #file.write(json.dumps(str(p.relationship_dict)))
+                file.close()     
+    # print(os.getcwd() + "/Data/input_origin/" + "Pratusha_test.txt")
+    # p = TransformationRules(os.getcwd() + "/Data/input_origin/" + "Pratusha_test.txt")
+    # p.apply_rules()
+
+

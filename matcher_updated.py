@@ -279,7 +279,7 @@ class Test_Files:
 
 
     def save_result(self, result, result_senten):
-        writer = open(os.getcwd() + "/Data/output_origin/" + 'result.json')
+        writer = open(os.getcwd() + "/Data/output_origin_v2/" + 'result.json')
 
         writer.close()
 
@@ -311,7 +311,7 @@ if __name__ == '__main__':
             output_result_file = output_result
             # file_name = 'test'
             file_name = str(year) + '-USC-Project' + str(project).rjust(2,'0')
-            file_path = os.getcwd() + "/Data/input_origin/" + file_name + '.txt'
+            file_path = os.getcwd() + "/input_v2/" + file_name + '.txt'
             if not os.path.exists(file_path):
                 break
             else:
@@ -319,14 +319,6 @@ if __name__ == '__main__':
                 sentences = f.read().split('\n')
                 for s in sentences:  # travel each sentence
                     if len(s) > 0:  # tell whether s is a blank line
-
-                        # collect word and punctuation indices in the sentence to a dictionary
-                        s_index = re.sub('([.,!?()])', r' \1 ', s)
-                        s_index = re.sub('\s{2,}', ' ', s_index)
-                        s_split = s_index.split()
-                        s_dic = dict()
-                        for i in range(len(s_split)):
-                            s_dic[i + 1] = s_split[i]
 
                         sentence_info = dict()
                         sentence_info['FileName'] = file_name
@@ -337,6 +329,13 @@ if __name__ == '__main__':
                             print(s, ": NLP API returns None!")
 
                         else:
+
+                            # collect word and punctuation indices in the sentence to a dictionary
+                            s_dic = dict()
+                            for elem in nlp_output['sentences'][0]['tokens']:
+                                s_dic[str(elem['index'])] = elem['word']
+
+
                             td_key = enhancedTD(nlp_output)
                             # print(td_key)
 
@@ -365,6 +364,6 @@ if __name__ == '__main__':
                                     sentence_info['Index'] = s_dic
                                     output_result_file[rule_name].append({s:sentence_info})
                 # wrute the result into json file
-                with open(os.getcwd() + '/Data/output_origin/%sResult.json'%file_name, 'w') as jsonwriter:
-                    json.dump(output_result, jsonwriter)
+                with open(os.getcwd() + '/Data/output_origin_v2/%sResult.json'%file_name, 'w') as jsonwriter:
+                    json.dump(output_result, jsonwriter, indent=2)
                 f.close()

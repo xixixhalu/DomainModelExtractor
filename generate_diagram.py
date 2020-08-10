@@ -6,6 +6,7 @@ import os
 from UMLViewer import *
 from tr_process import *
 import re
+import pickle
 
 
 def UML_graphic(class_dict, relationship_dict):
@@ -38,8 +39,11 @@ def UML_graphic(class_dict, relationship_dict):
         
         
         
-    #viewer.save_to_file(path="./")
-    viewer.generate_diagram(path="./")
+    #viewer.save_to_file(path=filepath+"./")
+               
+    viewer.generate_diagram(path=filepath+"./")
+    #viewer.generate_diagram(path=filepath+"/")
+    
 
 
 
@@ -47,12 +51,17 @@ def UML_graphic(class_dict, relationship_dict):
 
 
 if __name__ == '__main__':
-    print(os.getcwd() + "/Data/input_v2/" + "2014-USC-Project02.txt")
-    p = TransformationRules(os.getcwd() + "/Data/input_v2/" + "2014-USC-Project02.txt")
-    p.apply_rules()
-    
-    print ("Classed with Attributes: "+str(p.class_dict))
-    print ("Relationships with parent class & child class: "+str(p.relationship_dict))
-    
-    UML_graphic(p.class_dict, p.relationship_dict)
+    for year in range(2014,2020):
+        for project in range(1,16):
+            filename=str(year)+'-USC-Project' + str(project).rjust(2,'0')
+            filepath=os.getcwd() + '/Data/output_origin_trprocess_v2/%sResult.json'%filename
+            #print(filepath)
+            if not os.path.exists(filepath):
+                break
+            else:
+                with open(filepath,'rb') as file:
+                  class_dict,relationship_dict=pickle.load(file)
+                file.close()  
+                UML_graphic(class_dict, relationship_dict)
+   
     

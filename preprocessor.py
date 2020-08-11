@@ -184,6 +184,7 @@ class PreProcessor:
         2. If an interval contains a word in key_phrase_words and and its next word is "of", this function will also
         remove them as well as construct new intervals.
 
+
         eg.
         Input: Include UCS Validate PIN.
         Original output:IncludeUCSValidatePIN.

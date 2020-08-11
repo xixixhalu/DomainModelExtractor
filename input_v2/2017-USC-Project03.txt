@@ -3,8 +3,8 @@ Coach can review the Information of who signed up before printing it as a Pdf/cs
 Coach can overwrite/modify the FinalResults .
 User expect to only see Options that User's Swimmer is qualified to sign up for .
 Coach expect the Signups to automatically close 2 Weeks before SignUps , or a Time-frame that Coach set .
-Coach have a ManualMeans of entering SwimEvents in Case the FormatOfThePageChanges .
-the FormatOfTheInformation about SwimEvents will never change .
+Coach have a ManualMeans of entering SwimEvents in Case the FormatOf the PageChanges .
+the FormatOf the Information about SwimEvents will never change .
 Parent should be able to login to Parent's Kid 's Account .
 Coach expect that if Coach modified Something from the User , that the User will automatically be notified .
 Parent should be able to see Amount Parent am supposed to pay .
@@ -18,14 +18,14 @@ Parent should not be able to sign up Parent's Kid for the EventsPost the Deadlin
 Treasurer should be able to see the TotalAmount to be collected in the Month .
 The System shall render correctly on all Browsers .
 The System shall be user-friendly and intuitive .
-Developer should have the Access to the DatabaseOfTheRegistrationIds and DateOfBirthOfChildren .
+Developer should have the Access to the DatabaseOf the RegistrationIds and DateOfBirthOfChildren .
 The System should allow the User to sign up his Kid in at most four Events .
-System should allow to signup Events after authenticating the Member 's DateOfBirth with the EventDeadline .
+System should allow to signup Events after authenticating the member 's DateOfBirth with the EventDeadline .
 Parent should be able to view the PayeeInformation .
 Maintainer should be able to access/modify the Database .
 Maintainer should be able to modify the Website .
 Maintainer should have Access to Documentation and the SourceCode .
 Head-coach should be able to generate FinalPDFReport and CsvFile .
 Parent can login into Parent's KidsAccount with a RegistrationKey .
-Maintainer can Insert , Delete , OrModifyTheDatabaseOfTheEventsOrOfTheKids .
+Maintainer can Insert , Delete , OrModify the DatabaseOf the EventsOrOf the Kids .
 Maintainer can see the AmountDetails for the Kids that they owe .

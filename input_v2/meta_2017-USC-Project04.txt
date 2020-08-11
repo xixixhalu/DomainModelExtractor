@@ -1,6 +1,6 @@
 [(['user'], (3, 3)), (['daily', 'challenge'], (9, 10)), (['pop'], (12, 12)), (['screen'], (14, 14))]
 [(['user'], (3, 3)), (['challenge', 'request'], (8, 9)), (['friends'], (12, 12))]
-[(['user'], (3, 3)), (['time', 'remaining', 'of', 'the', 'challenge'], (9, 13))]
+[(['user'], (3, 3)), (['time', 'remaining', 'of'], (9, 11)), (['challenge'], (13, 13))]
 [(['user'], (3, 3)), (['challenge', 'notification'], (8, 9)), (['app'], (11, 11))]
 [(['user'], (3, 3)), (['suggestion'], (10, 10)), (['topic'], (13, 13))]
 [(['user'], (3, 3)), (['notification'], (8, 8)), (['challenge'], (11, 11))]

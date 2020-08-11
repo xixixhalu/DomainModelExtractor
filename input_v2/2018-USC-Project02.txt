@@ -12,20 +12,20 @@ ServiceProvider can see the Reviews posted about me by Others .
 RegisteredUser can vote on Reviews .
 Admin can remove a FlaggedUser .
 RegisteredUser can report ( Flag ) OtherUsers .
-Administrator can verify the IdentityOfAServiceProvider .
+Administrator can verify the IdentityOf a ServiceProvider .
 RegisteredUser can comment on the Blog .
 Administrator can view WebsiteUtilizationStatistics .
 RegisteredUser can add PropertyInformation to the TrackingTool .
 User can find a ServiceProvider by Email , PhoneNumber , or Name .
 RegisteredUser can rate a ServiceProvider without leaving TextReviews .
 Administrator can post Articles to the Blog .
-RegisteredUser can start a Discussion in the DiscussionBoardOfTheSite .
+RegisteredUser can start a Discussion in the DiscussionBoardOf the Site .
 ( Investor or ServiceProvider ) , User will receive Notifications by Email about the CommentReviewsOthers have registered .
 RegisteredUser have at least every SitePermission that a Non-registeredUser has .
-SiteAdmin have at least AllOfTheSamePermissions as a registered User .
+SiteAdmin have at least AllOf the SamePermissions as a registered User .
 Non-registeredUser can read Reviews .
 Non-registeredUser can create an Account from a Link on the HomePage .
-Non-registeredUser can share BlogPosts on PopularSocialMediaApplications through LinksInsideOfTheBlog .
+Non-registeredUser can share BlogPosts on PopularSocialMediaApplications through LinksInsideOf the Blog .
 Non-registeredUser can read the SiteBlog .
 Non-registeredUser can search ServiceProviders by State , City , and ServiceType ( Eg . RealEstateAgent , PropertyManager , Contractors , etc ) .
 RegisteredUser track an InvestmentProperty by inputting the Address , Rent , PurchasePrice , LoanAmount , DownPayment , and Expenses .

@@ -12,12 +12,12 @@ The Crawler should be able identify and ingest into a Hadoop/hive/pigNoSQLDataSt
 All WebcrawlerFunctionality from the RelationalDataBaseIngest should be mirrored for UnstructuredDataIngest . ( Everything the Crawler can do for StructuredData it should do for UnstructuredData ) .
 With this Condition in Place , as a GeneralManger , I can monitor Real-timeTwitter/facebook/instagramFeeds / reaction from KeySources in a ContinuousMannerAnd/or on Demand .
 The Crawler shall self correct SimpleErrors it encounters during the SqlIngestProcess .
-The Crawler should have some KindOfVisualizationTool which allows Engineers to view a SnapshotOfTheInteractions between the Crawler , Datasources and STBI Databases .
+The Crawler should have some KindOfVisualizationTool which allows Engineers to view a SnapshotOf the Interactions between the Crawler , Datasources and STBI Databases .
 The Crawler should search for NewDatasources automatically ( it should be able to learn the TypesOfData that are commonly ingested and then go Look for NewOnesOfHighQuality ) .
 The System shall be a Web-basedManagementGUI . As a Customer , I could manage the Tool from anywhere without the Need to worry about the SportechB.I.System having to launch from a Program on a Desktop or Server .
 The System shall serve as the `` NerveCenter '' for the StbiEcosystem . It can ingest all KindsOfStructuredData , both automatically and on Demand .
 There should be a Portal that allows the User to drag and drop Information in ManyDifferentFormats ( Excel , Csv , Web etc. ) and then the Crawler should organize , sort and identify the Datatype and then ingest into the PostgresqlDB .
-This would remove Most-LRB-OrAll-RRB-OfTheWork that a Human would have to do to interact with the Data before it is ready to be analyzed and visualized .
+This would remove Most-LRB-OrAll-RRB-Of the Work that a Human would have to do to interact with the Data before it is ready to be analyzed and visualized .
 The System shall have two Portals ( or Web interfaces ) . One would be for the SportechB.IContractors and would have many more AdvancedFeatures and Controls . The Second would be a simple , web-based , Customer-facingPortal so that the Customer could ingest their Data `` self-service '' and see the Impact in their Apps/dashboards immediately .
 Customer can import existing Data from an ExcelSheet by dragging and dropping it into Stbi so that Customer can update/add Data to Customer's CurrentModel and see the Changes .
 the Crawler should organize , sort and identify the Datatype and then ingest into the Db .
@@ -27,8 +27,8 @@ The WebCrawler shall gather Videos from the Pages being crawled and ingest into 
 The Webcraweler shall gather HeadShotsOfPlayers from the BiographyPage on the Website being crawled so that the Player 's Picture can be shown on the Report being generated .
 SoccerCoach can specify which websites the Crawler should visit via the WebsiteGUI .
 The WebCrawler shall crawl Youtube to gather VideosOfSpecificPlayers .
-The WebCrawler shall get Comments , NameAndNumberOfMembers , likes from specified FacebookPages .
-The WebCrawler shall get NumberOfFollowers , TheCommentsAndTheNumberOfRetweets for a specified TwitterAccount .
+The WebCrawler shall get Comments , name and number of members , likes from specified FacebookPages .
+The WebCrawler shall get NumberOfFollowers , the CommentsAnd the NumberOfRetweets for a specified TwitterAccount .
 The WebCrawler shall gather InstagramPictures , NumberOfLikes and the Comments from ParticularInstagramAccount .
 The WebCrawler shall gather PlayerInformation from the Websites in the WebsiteList .
 The WebCrawler shall gather TeamInformation from the Websites in the WebsiteList .

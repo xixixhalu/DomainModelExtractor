@@ -6,7 +6,7 @@ SalesManager can listen to Recordings so that SalesManager can assure Quality .
 SalesManager can use the Recordings so that SalesManager can train Agents .
 SalesManager can listen in on ActiveCalls so that SalesManager can assure Quality .
 SalesManager can jump in to Calls so that SalesManager can help close the Deal .
-SalesAgent can quickly and easily request the ConferenceCallOfAManager so that SalesAgent can close a Sale .
+SalesAgent can quickly and easily request the ConferenceCallOf a Manager so that SalesAgent can close a Sale .
 The System shall make sure the IncomingCall is assigned to a back up Agent if the PrimaryAgent is unavailable so that less Customers go to voicemail .
 The System shall route the Customer to voicemail if no Agent is available .
 The System shall be deployed HerokuCloud .

@@ -11,5 +11,5 @@
 [(['admin'], (3, 3)), (['user', 'comments'], (8, 9))]
 [(['admin'], (3, 3)), (['post'], (9, 9)), (['draft'], (12, 12))]
 [(['user'], (3, 3)), (['posts'], (8, 8)), (['author'], (10, 10))]
-[(['admin'], (3, 3)), (['categories', 'and', 'tags', 'of', 'a', 'blog', 'post'], (8, 14))]
+[(['admin'], (3, 3)), (['categories', 'and', 'tags', 'of'], (8, 11)), (['blog', 'post'], (13, 14))]
 [(['user'], (3, 3)), (['posts'], (8, 8)), (['blog', 'post'], (13, 14))]

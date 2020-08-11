@@ -6,6 +6,6 @@
 [(['prime', 'video', 'user'], (3, 5)), (['twitter', 'data'], (10, 11)), (['other', 'social', 'media'], (14, 16)), (['prime', 'video', 'users', 'movies'], (21, 24)), (['tv', 'shows'], (26, 27))]
 [(['prime', 'video', 'user'], (3, 5)), (['tv', 'shows/movies'], (11, 12)), (['social', 'media'], (16, 17))]
 [(['developer'], (3, 3)), (['social', 'media', 'data'], (8, 10)), (['tool'], (14, 14)), (['data'], (18, 18)), (['IMDB', 'titles'], (20, 21))]
-[(['developer'], (3, 3)), (['results', 'of', 'the', 'tool'], (9, 12)), (['website'], (16, 16)), (['movie', 'titles'], (19, 20)), (['social', 'media', 'buzz'], (24, 26))]
+[(['developer'], (3, 3)), (['results', 'of'], (9, 10)), (['tool'], (12, 12)), (['website'], (16, 16)), (['movie', 'titles'], (19, 20)), (['social', 'media', 'buzz'], (24, 26))]
 [(['user'], (3, 3)), (['movie', 'titles'], (8, 9)), (['related', 'info'], (13, 14)), (['comments'], (16, 16)), (['social', 'media', 'of', 'certain', 'movies'], (19, 23))]
-[(['developer'], (3, 3)), (['most', 'of', 'the', 'IMDB', 'titles/pages'], (8, 12)), (['Twitter', 'mentions/hashtags'], (17, 18))]
+[(['developer'], (3, 3)), (['most', 'of'], (8, 9)), (['IMDB', 'titles/pages'], (11, 12)), (['Twitter', 'mentions/hashtags'], (17, 18))]

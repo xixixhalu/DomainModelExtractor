@@ -10,7 +10,7 @@
 [(['consumer'], (3, 3)), (['user'], (10, 10))]
 [(['I', 'consumer'], (2, 3)), (['account'], (10, 10)), (['user', 'ID'], (12, 13)), (['password'], (15, 15)), (['dashboard'], (22, 22))]
 [(['consumer'], (3, 3)), (['private', 'network'], (9, 10)), (['networks'], (14, 14))]
-[(['consumer'], (3, 3)), (['review', 'of', 'a', 'provider'], (9, 12))]
+[(['consumer'], (3, 3)), (['review', 'of'], (9, 10)), (['provider'], (12, 12))]
 [(['consumer'], (3, 3)), (['healthcare', 'prices'], (8, 9))]
 [(['consumer'], (3, 3)), (['provider'], (9, 9))]
 [(['corporation'], (3, 3)), (['employees'], (9, 9)), (['prices'], (12, 12)), (['participation'], (20, 20))]

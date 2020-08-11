@@ -5,7 +5,7 @@ User can see Recommendations .
 User can share Articles and Videos .
 The System shall generate RecommendationsOfUsers to be connected with .
 User can search ( by Name , Career , Ethnicity , Organization , School ) and connect with OtherUsers .
-User can invite AllOfTheContact in User's SocialNetworks .
+User can invite AllOf the Contact in User's SocialNetworks .
 User can see Advertisement from Schools and Companies .
 The System shall return SearchResults at most 5 Seconds .
 The MaxBudget is $ 300 .
@@ -23,12 +23,12 @@ User can find a DentalOffice in User's Area .
 User can find an Optometrist that User can connect with .
 User can create Groups .
 User can send invites to People to join a GroupOfWhichIAmAdministrator .
-User can send a Request to the AdministratorOfTheGroup to join it .
+User can send a Request to the AdministratorOf the Group to join it .
 A User should not be able to search a PrivateGroup if the User is not a part of the Group .
 User can leave ( unscbscribe from ) a Group at any PointOfTime .
 User can follow a Company/school .
-AdministratorOfTheSystem can add customized Ads to the Ad-space on the Website .
-AdministratorOfTheGroup can apply PrivacyPolicies
+the System AdministratorOf can add customized Ads to the Ad-space on the Website .
+the Group AdministratorOf can apply PrivacyPolicies
 1 . Who can join
 2 . Who can view Activity and Posts on the Group .
 User can see User's Connection 's latest Activites .

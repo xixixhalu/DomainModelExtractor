@@ -8,6 +8,6 @@ The System shall detect and show LogicErrors ( Conflicting/inconsistentInstructi
 The System shall be a NativeWindows 7 and above Application .
 The System shall generate Instructions for Irobot in C which is then later compiled for Deployment on the Microcontroller using the ApisOfIRobot .
 The System shall enforce a ToleranceLimitOf + / - 2 to 3 % on SensorProgrammability .
-Ess can drag and drop the Built-inFunctionsOfTheIRobot to control its Behavior/movement .
+Ess can drag and drop the Built-inFunctionsOf the Irobot to control its Behavior/movement .
 Ess can copy & paste Instructions so that Ess do not have to re-program .
 Ess can create , save and load ProgramFiles .

@@ -1,7 +1,7 @@
 [(['pipeline'], (2, 2)), (['set', 'of', 'images'], (6, 8)), (['input'], (11, 11))]
 [(['system'], (3, 3)), (['UI'], (9, 9)), (['users'], (11, 11)), (['view', 'images'], (13, 14))]
 [(['pipeline'], (2, 2)), (['administrator'], (8, 8))]
-[(['pipeline'], (2, 2)), (['additional', 'functionality'], (4, 5)), (['end', 'user', 'of', 'the', 'system'], (8, 12))]
+[(['pipeline'], (2, 2)), (['additional', 'functionality'], (4, 5)), (['end', 'user', 'of'], (8, 10)), (['system'], (12, 12))]
 [(['pipeline'], (2, 2)), (['provided', 'machine'], (5, 6)), (['algorithms'], (8, 8))]
 [(['UI'], (2, 2))]
 [(['pipeline'], (2, 2)), (['text'], (5, 5)), (['image'], (7, 7)), (['user'], (10, 10)), (['correct', 'image'], (12, 13))]

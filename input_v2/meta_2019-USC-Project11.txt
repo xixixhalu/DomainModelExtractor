@@ -35,7 +35,7 @@
 [(['financial', 'expert'], (3, 4)), (['feedback'], (10, 10)), (['ratings'], (12, 12)), (['customers'], (16, 16))]
 [(['registered', 'user'], (3, 4)), (['live', 'session'], (10, 11)), (['Financial', 'Expert'], (14, 15))]
 [(['registered', 'user'], (3, 4)), (['on-demand', 'advice'], (9, 10)), (['financial', 'experts'], (12, 13))]
-[(['financial', 'expert'], (3, 4)), (['track', 'of', 'the', 'total', 'income', 'generated', ',', 'total', 'minutes', 'talked', 'and', 'all', 'the', 'users'], (10, 23)), (['advice'], (27, 27))]
+[(['financial', 'expert'], (3, 4)), (['track', 'of'], (10, 11)), (['total', 'income', 'generated', ',', 'total', 'minutes', 'talked', 'and', 'all'], (13, 21)), (['users'], (23, 23)), (['advice'], (27, 27))]
 [(['registered', 'user'], (3, 4)), (['access'], (8, 8)), (['various', 'informative', 'blogs'], (10, 12)), (['videos'], (14, 14))]
 [(['registered', 'user'], (3, 4)), (['up/in'], (9, 9)), (['facebook'], (11, 11)), (['gmail'], (13, 13))]
 [(['financial', 'expert'], (3, 4)), (['up/in'], (9, 9)), (['LinkedIn'], (11, 11))]

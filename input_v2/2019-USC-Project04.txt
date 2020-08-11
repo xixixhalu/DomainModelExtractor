@@ -11,7 +11,7 @@ The FinalProduct shall fail gracefully on Error with a StatusCodeOf0 .
 The Project should have a well documented ProjectPlan through out the DevelopmentCycle , so the WholeTeam knows what needs to be done and when ( This would help streamline the Project ) .
 Success CriticalStakeholders should be able to effectively track the ProjectProgress through VersionControlSystems like Github .
 Given VoterDataAndAvailabilityOfVolunteers , we should be able to work on a FeasibleAlgorithm which automatically cuts the Turfs .
-It should Implement an EfficientClusteringAlgorithm that Scales , seeing as this will be the MainCoreOfTheProject .
+It should Implement an EfficientClusteringAlgorithm that Scales , seeing as this will be the MainCoreOf the Project .
 Develop an AccurateAlgorithm for TurfCutting .
 A Tool where we can load a VoterList , and it produces clustered VoterList .
 We can specify # volunteers , Time per Volunteer , Time per Conversation , and LikelihoodOfConversation as Parameters .

@@ -7,7 +7,7 @@
 [(['user'], (2, 2)), (['separate', 'profile'], (8, 9)), (['account'], (13, 13)), (['email'], (15, 15)), (['password'], (17, 17))]
 [(['user'], (2, 2)), (['blood', 'glucose', 'level'], (7, 9))]
 [(['user'], (3, 3)), (['meal'], (9, 9)), (['insulin', 'level'], (11, 12))]
-[(['user'], (3, 3)), (['app'], (9, 9)), (['progress', 'of', 'the', 'sugar', 'level'], (15, 19)), (['duration'], (23, 23)), (['week'], (26, 26)), (['day'], (29, 29)), (['month'], (32, 32))]
+[(['user'], (3, 3)), (['app'], (9, 9)), (['progress', 'of'], (15, 16)), (['sugar', 'level'], (18, 19)), (['duration'], (23, 23)), (['week'], (26, 26)), (['day'], (29, 29)), (['month'], (32, 32))]
 [(['user'], (3, 3)), (['system'], (13, 13))]
 [(['user'], (3, 3)), (['trend'], (12, 12)), (['insulin', 'usage'], (15, 16)), (['map'], (18, 18)), (['food', 'consumption'], (21, 22))]
 [(['user'], (3, 3)), (['insulin', 'recommendations'], (8, 9)), (['special', 'cases'], (14, 15)), (['gestational', 'diabetes'], (17, 18))]

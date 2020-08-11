@@ -9,6 +9,6 @@
 [(['User'], (3, 3)), (['pet'], (11, 11)), (['information'], (13, 13)), (['pet'], (27, 27))]
 [(['user'], (3, 3)), (['pets'], (12, 12)), (['pictures'], (14, 14))]
 [(['user'], (3, 3)), (['information'], (7, 7))]
-[(['user'], (3, 3)), (['information', 'of', 'the', 'shelters'], (12, 15))]
+[(['user'], (3, 3)), (['information', 'of'], (12, 13)), (['shelters'], (15, 15))]
 [(['shelter'], (3, 3)), (['shelter', 'information'], (7, 8)), (['information'], (16, 16)), (['date'], (20, 20))]
 [(['user'], (3, 3)), (['type/locations/price', 'etc', 'filters'], (8, 10)), (['search', 'results'], (12, 13)), (['accurate', 'results'], (21, 22))]

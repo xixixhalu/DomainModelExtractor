@@ -18,11 +18,11 @@ The System shall render properly on AndroidPhones .
 The System should be built as NativeAndroidApplication .
 The System should comply with Hipaa .
 CareTeam can add/remove Patients from CareTeam's List .
-Admin can access the DatabaseOfTheAppServer , and manually add/remove Entries from Backend .
+Admin can access the DatabaseOf the AppServer , and manually add/remove Entries from Backend .
 Patient should be able to see the Website / ContactInformationOfMyHealthCenter / Provider , Doctor , NurseEtc . .
 Patient should be able to take Pictures .
 Patient should have Access to review Post-opNotes from Patient's Doctor / surgeon on any PreviousSurgeries / Treatments .
-Patient should be provided with Guidance on how to best capture Pictures ( I.e.Selfies , BodyPartsEtc ) .
+Patient should be provided with Guidance on how to best capture Pictures ( I.e.Selfies , body parts etc ) .
 Patient should be able to be guided by an Avatar for BasicTutorial .
 Patient can do Patient's Questionnaire/surveys from within the App .
 Doctor should get a Notification when a Patient books/cancels/reschedules an Appointment .

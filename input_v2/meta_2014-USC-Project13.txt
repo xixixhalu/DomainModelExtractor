@@ -21,4 +21,4 @@
 [(['admin'], (3, 3)), (['papertrail'], (9, 9))]
 [(['user'], (3, 3)), (['username/email'], (8, 8))]
 [(['server', 'API'], (2, 3)), (['web'], (10, 10)), (['standard', 'JS', 'style', 'documentation'], (13, 16))]
-[(['response', 'time', 'of', 'the', 'system'], (2, 6)), (['seconds'], (11, 11))]
+[(['response', 'time', 'of'], (2, 4)), (['system'], (6, 6)), (['seconds'], (11, 11))]

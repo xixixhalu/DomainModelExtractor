@@ -6,7 +6,7 @@
 [(['sales', 'manager'], (3, 4)), (['recordings'], (10, 10)), (['agents'], (16, 16))]
 [(['sales', 'manager'], (3, 4)), (['active', 'calls'], (10, 11)), (['quality'], (17, 17))]
 [(['sales', 'manager'], (3, 4)), (['calls'], (11, 11)), (['deal'], (19, 19))]
-[(['sales', 'agent'], (3, 4)), (['conference', 'call', 'of', 'a', 'manager'], (13, 17)), (['sale'], (24, 24))]
+[(['sales', 'agent'], (3, 4)), (['conference', 'call', 'of'], (13, 15)), (['manager'], (17, 17)), (['sale'], (24, 24))]
 [(['system'], (2, 2)), (['incoming', 'call'], (7, 8)), (['agent'], (15, 15)), (['primary', 'agent'], (18, 19)), (['customers'], (25, 25))]
 [(['system'], (2, 2)), (['customer'], (6, 6)), (['agent'], (11, 11))]
 [(['system'], (2, 2)), (['Heroku', 'cloud'], (6, 7))]

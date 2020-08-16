@@ -6,7 +6,7 @@
 [(['organization'], (3, 3)), (['clients'], (11, 11)), (['workplace', 'violence'], (16, 17))]
 [(['organization'], (3, 3)), (['employees'], (9, 9)), (['organization'], (12, 12)), (['severity', 'of', 'the', 'situation'], (16, 19))]
 [(['user'], (3, 3)), (['identity'], (11, 11)), (['violence', 'reports'], (14, 15))]
-[(['VRS'], (3, 3)), (['irrelevant', 'complaints'], (9, 10)), (['employees', 'of', 'an', 'organization'], (18, 21)), (['accused', 'of', 'a', 'crime', 'or', 'conflict'], (25, 30))]
+[(['VRS'], (3, 3)), (['irrelevant', 'complaints'], (9, 10)), (['employees', 'of'], (18, 19)), (['organization'], (21, 21)), (['accused', 'of'], (25, 26)), (['crime', 'or', 'conflict'], (28, 30))]
 [(['developer'], (3, 3)), (['available', 'open-source', 'ticket', 'management'], (9, 12)), (['case', 'management', 'systems'], (14, 16)), (['development', 'time'], (23, 24)), (['costs'], (26, 26))]
 [(['VRS', 'admin'], (3, 4)), (['access'], (7, 7)), (['system'], (10, 10)), (['tickets'], (15, 15)), (['organization'], (18, 18)), (['severity'], (20, 20)), (['complaint', 'type', 'and', 'period', 'of', 'time'], (22, 27))]
 [(['VRS', 'admin'], (3, 4)), (['case'], (12, 12)), (['employee'], (16, 16))]

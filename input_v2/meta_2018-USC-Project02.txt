@@ -12,7 +12,7 @@
 [(['registered', 'user'], (3, 4)), (['reviews'], (10, 10))]
 [(['admin'], (3, 3)), (['flagged', 'user'], (9, 10))]
 [(['registered', 'user'], (3, 4)), (['flag'], (10, 10)), (['other', 'users'], (12, 13))]
-[(['administrator'], (3, 3)), (['identity', 'of', 'a', 'service', 'provider'], (9, 13))]
+[(['administrator'], (3, 3)), (['identity', 'of'], (9, 10)), (['service', 'provider'], (12, 13))]
 [(['registered', 'user'], (3, 4)), (['blog'], (11, 11))]
 [(['administrator'], (3, 3)), (['website', 'utilization', 'statistics'], (8, 10))]
 [(['registered', 'user'], (3, 4)), (['property', 'information'], (9, 10)), (['tracking', 'tool'], (13, 14))]

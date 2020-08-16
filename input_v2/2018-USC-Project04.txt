@@ -19,8 +19,8 @@ Doctor want this App to integrate with Doctor's SchedulingApplication .
 User can have a Task related to a Patient .
 User can assign a Task to a Doctor .
 User can add Allergies and Medications for a SpecificPatient .
-Doctor can edit the ProgressOfAPatient along with His/her BasicInfo like DateOfLastVisit , HeightAndWeight .
-User can view and add/edit VisitDetails like Address , EmergencyContactAndInsuranceInfoOfASpecificPatient and attach the Data to the PatientRecord .
+Doctor can edit the ProgressOf a Patient along with His/her BasicInfo like DateOfLastVisit , HeightAndWeight .
+User can view and add/edit VisitDetails like Address , EmergencyContactAndInsuranceInfoOf a SpecificPatient and attach the Data to the PatientRecord .
 User can add MultipleProducts by uploading a CsvFile that has InformationOfThese said MultipleProducts .
 User can export ProductInfo ( either just one Product or a SetOfProducts ) to a CsvFile .
 Doctor can fill out the OrderForm for a Product to be purchased for a Patient .

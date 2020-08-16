@@ -22,7 +22,7 @@
 [(['patient'], (3, 3)), (['website'], (12, 12)), (['contact', 'information', 'of', 'my', 'health', 'center'], (14, 19)), (['provider'], (21, 21)), (['doctor'], (23, 23)), (['nurse', 'etc.'], (25, 26))]
 [(['patient'], (3, 3)), (['pictures'], (11, 11))]
 [(['patient'], (3, 3)), (['access'], (8, 8)), (['post-op', 'notes'], (11, 12)), (['doctor'], (15, 15)), (['previous', 'surgeries'], (20, 21)), (['treatments'], (23, 23))]
-[(['patient'], (3, 3)), (['guidance'], (10, 10)), (['pictures'], (16, 16)), (['i.e.', 'selfies'], (18, 19)), (['body', 'parts', 'etc'], (21, 23))]
+[(['patient'], (3, 3)), (['guidance'], (10, 10)), (['pictures'], (16, 16)), (['i.e.', 'selfies'], (18, 19))]
 [(['patient'], (3, 3)), (['avatar'], (14, 14)), (['basic', 'tutorial'], (16, 17))]
 [(['patient'], (3, 3)), (['questionnaire/surveys'], (9, 9)), (['app'], (13, 13))]
 [(['doctor'], (3, 3)), (['notification'], (9, 9)), (['patient'], (12, 12)), (['appointment'], (15, 15))]

@@ -5,13 +5,13 @@ The System shall store the HashedVersionOfThePassword in a Database ( increase t
 The System shall authenticate the User using an Email and Password , allowing an Individual to sign into their Account from MultipleDevices .
 The System shall communicate with OnlineMerchants , so it can offer Products from said Merchants .
 User can reset User's Password using User's EmailAddress , in the Case that User have forgotten User's OldOne .
-User can receive Notifications about an upcoming , ImportantEventOfAnAddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .
+User can receive Notifications about an upcoming , ImportantEventOf an AddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .
 User can navigate to an OnlineShoppingLink to purchase the Gift recommended to me .
 User can create a GiftbuddyAccount using an EmailAddress , Password , Name , and PhoneNumber .
 User can provide Feedback on a selected Gift after an ImportantDate has passed ( Option to turn off FeedbackNotification ) .
 User can view RelevantInformation ( I.e. , Name , Rating , Price , etc. ) on a recommended Gift .
 User can view the PreviousGifts User selected to GiftPeople .
-User can manually enter MultipleImportantDates for each selected ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events .
+User can manually enter MultipleImportantDates for each selected ContactWith an OptionForCustomLabelOrSelectionOfGeneralHolidays/events .
 User can manually remove a SingleContact or a GroupOfContacts from User's GiftbuddyAccount .
 User can set a GiftbuddyContact as a Favorite .
 User can search through User's GiftbuddyContacts .

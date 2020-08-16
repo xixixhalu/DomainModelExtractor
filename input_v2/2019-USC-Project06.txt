@@ -12,7 +12,7 @@ User can only delete a WinCondition that User created .
 User can join a Project .
 User can create a NewWinConditionCategory .
 User can filter the ViewOfWinConditions by Category .
-User can set the BusinessValue , RelativePenalty , and EaseOfRealizationOfAGoal without a Need to remember the OrderOfThem .
+User can set the BusinessValue , RelativePenalty , and EaseOfRealizationOf a Goal without a Need to remember the OrderOfThem .
 User can edit User's ProfileInformation such as Name , Surname , ProfilePicture , Organization or Password .
 User can see People that agree with User's WinCondition .
 User can quote/reply on OtherPeople 's Comments .
@@ -21,8 +21,8 @@ User want to Sort win Conditions by Criteria .
 User can tag Someone to User's Comment using @username .
 User can agree or disagree with a WinCondition ( maybe with upvote/downvote ) .
 Owner can make a Project private or public .
-or Admin , Owner can edit the ListOfApprovedMembers ( add or delete ) from the ProjectSettingsPage .
-Owner can use the ProjectSettingsPage to give AdminRights to a ProjectMember .
+or Admin , Owner can edit the list of approved members ( add or delete ) from the ProjectSettingsPage .
+Owner can use the ProjectSettingsPage to give AdminRights to a project member .
 User can view the ProjectListPage from the Homepage .
 User can delete only User's OwnPosts and Comments .
 Admin can edit and delete Everyone 's Posts and comments .

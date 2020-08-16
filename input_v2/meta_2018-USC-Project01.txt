@@ -23,7 +23,7 @@
 [(['administrator'], (3, 3)), (['venue'], (9, 9)), (['details'], (11, 11))]
 [(['user'], (3, 3)), (['other', 'users'], (8, 9)), (['professions'], (12, 12)), (['venues'], (15, 15)), (['area'], (21, 21))]
 [(['user'], (3, 3)), (['user', 'account'], (9, 10))]
-[(['user'], (3, 3)), (['option'], (8, 8)), (['check', 'out', 'of', 'a', 'venue'], (11, 15))]
+[(['user'], (3, 3)), (['option'], (8, 8)), (['check', 'out', 'of'], (11, 13)), (['venue'], (15, 15))]
 [(['user'], (3, 3)), (['venue'], (12, 12))]
 [(['user'], (3, 3)), (['present', 'friends'], (8, 9))]
 [(['user'], (3, 3)), (['frequent', 'asked', 'questions'], (8, 10))]

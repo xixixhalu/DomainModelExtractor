@@ -14,7 +14,7 @@ Contributor can modify a Draft .
 Contributor can remove a Draft .
 Contributor can view a Draft 's Details .
 Contributor can pitch a drafted Idea .
-Contributor can view the DetailsOfAPitch in the GlobalPitchBoard .
+Contributor can view the DetailsOf a Pitch in the GlobalPitchBoard .
 Contributor can filter Pitches by Criteria such as Status , CreatorIDEtc . .
 Contributor can make Changes to Contributor's OwnProfile .
 SuperAdmin can view OverallProjectProgress , GoalVertical , NumberOfPitches needed by each Vertical , ProgressOfEachVertical .
@@ -22,7 +22,7 @@ SuperAdmin can view Goals made for PastWeeks or FutureWeeks .
 SuperAdmin can receive Notifications as a PieceOfContentMoves through the VariousStagesOfDevelopment ( approved , rejected , parked ) .
 SuperAdmin can receive or send Messages from or to OtherUsers .
 SuperAdmin can LogOutOfTheSystem and end their CurrentSession .
-SuperAdmin can view or edit the DetailsOfAPitch in the GlobalPitchBoard .
+SuperAdmin can view or edit the DetailsOf a Pitch in the GlobalPitchBoard .
 SuperAdmin can approve/reject a Pitch .
 SuperAdmin can filter Pitches by Criteria .
 SuperAdmin can view/edit a Pitch in the WeeklyPublishingCalendar .
@@ -31,8 +31,8 @@ SuperAdmin can filter Pitches by Criteria .
 SuperAdmin can export the WeeklyPublishingCalendar into a CsvFile .
 SuperAdmin can view/edit a Pitch in the ParkingBoard .
 SuperAdmin can pull a ParkedPitch into PublishingCalendar .
-SuperAdmin can view TeamMemberDetails .
-SuperAdmin can change a Member 's AccountType .
+SuperAdmin can view team member details .
+SuperAdmin can change a member 's AccountType .
 SuperAdmin can create a NewAdmin or ContributorAccount .
 SuperAdmin can delete an existing Account .
 SuperAdmin can set Goals for CurrentWeek and FutureWeeks .
@@ -46,8 +46,8 @@ Admin can LogOutOfTheSystem and end Admin's Session .
 Admin can view/edit a Pitch in the GlobalPitchBoard .
 Admin can approve/reject a Pitch .
 Admin can filter Pitches by Criteria .
-Admin can view MemberDetails .
-Admin can change a Member 's AccountType .
+Admin can view member details .
+Admin can change a member 's AccountType .
 Admin can create a NewAccount for Admin or Contributor .
 Admin can delete an existing Account .
 Admin can edit Admin's OwnProfile .

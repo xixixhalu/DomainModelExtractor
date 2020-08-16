@@ -1753,9 +1753,12 @@ if __name__ == '__main__':
             else:
                 p=TransformationRules(filepath)
                 p.apply_rules()
-                with open(os.getcwd() + '/Data/output_origin_trprocess_v2/%sResult.json'%filename, 'wb') as file:
+                with open(os.getcwd() + '/Data/trprocess_v2/%sResult.json'%filename, 'wb') as file:
                     #file.write("Classed with Attributes:")
-                    pickle.dump([p.class_dict,p.relationship_dict],file)
+                    obj = dict()
+                    obj["class_dict"] = p.class_dict
+                    obj["relationship_dict"] = p.relationship_dict
+                    json.dump(obj, file, indent=2)
                     #file.write(json.dumps(str(p.class_dict))+'\n')
                     #file.write(json.dumps(str(p.relationship_dict)))
                 file.close()    

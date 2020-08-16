@@ -3517,7 +3517,7 @@
   "SVDOConjClause": [],
   "SVDOAdverbial": [
     {
-      "User can manually enter MultipleImportantDates for each selected ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events .": {
+      "User can manually enter MultipleImportantDates for each selected ContactWith an OptionForCustomLabelOrSelectionOfGeneralHolidays/events .": {
         "FileName": "2019-USC-Project12",
         "TD": {
           "ROOT": [
@@ -3560,6 +3560,10 @@
             [
               9,
               7
+            ],
+            [
+              11,
+              10
             ]
           ],
           "amod": [
@@ -3574,10 +3578,16 @@
               9
             ]
           ],
+          "dep": [
+            [
+              9,
+              11
+            ]
+          ],
           "punct": [
             [
               4,
-              10
+              12
             ]
           ]
         },
@@ -3599,11 +3609,19 @@
             ],
             [
               5,
-              9
+              11
             ],
             [
               7,
               9
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              10,
+              11
             ]
           ],
           "MD": [
@@ -3634,6 +3652,10 @@
             [
               5,
               5
+            ],
+            [
+              9,
+              9
             ]
           ],
           "IN": [
@@ -3646,6 +3668,10 @@
             [
               7,
               7
+            ],
+            [
+              10,
+              10
             ]
           ],
           "VBN": [
@@ -3654,44 +3680,44 @@
               8
             ]
           ],
-          "NNS": [
+          "NNPS": [
             [
-              9,
-              9
+              11,
+              11
             ]
           ],
           "PP": [
             [
               6,
-              9
+              11
             ]
           ],
           "VP": [
             [
               2,
-              9
+              11
             ],
             [
               4,
-              9
+              11
             ]
           ],
           ".": [
             [
-              10,
-              10
+              12,
+              12
             ]
           ],
           "S": [
             [
               1,
-              10
+              12
             ]
           ],
           "ROOT": [
             [
               1,
-              10
+              12
             ]
           ]
         },
@@ -3704,8 +3730,10 @@
           "6": "for",
           "7": "each",
           "8": "selected",
-          "9": "ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events",
-          "10": "."
+          "9": "ContactWith",
+          "10": "an",
+          "11": "OptionForCustomLabelOrSelectionOfGeneralHolidays/events",
+          "12": "."
         }
       }
     },
@@ -5971,7 +5999,7 @@
       }
     },
     {
-      "User can receive Notifications about an upcoming , ImportantEventOfAnAddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .": {
+      "User can receive Notifications about an upcoming , ImportantEventOf an AddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .": {
         "FileName": "2019-USC-Project12",
         "TD": {
           "ROOT": [
@@ -5992,8 +6020,8 @@
               2
             ],
             [
-              16,
-              13
+              18,
+              15
             ]
           ],
           "dobj": [
@@ -6008,12 +6036,12 @@
               5
             ],
             [
-              21,
-              19
+              23,
+              21
             ],
             [
-              24,
-              23
+              26,
+              25
             ]
           ],
           "det": [
@@ -6022,88 +6050,96 @@
               6
             ],
             [
-              12,
-              11
+              11,
+              10
             ],
             [
-              21,
-              20
+              14,
+              13
+            ],
+            [
+              23,
+              22
             ]
           ],
           "nmod": [
             [
-              3,
+              4,
               7
             ],
             [
-              16,
-              21
+              18,
+              23
             ],
             [
-              16,
-              24
+              18,
+              26
             ]
           ],
           "punct": [
             [
-              7,
+              4,
               8
             ],
             [
-              16,
-              10
+              18,
+              12
             ],
             [
-              16,
-              25
+              18,
+              27
             ],
             [
               3,
-              26
+              28
             ]
           ],
           "appos": [
             [
-              7,
+              4,
               9
+            ]
+          ],
+          "dep": [
+            [
+              9,
+              11
+            ],
+            [
+              4,
+              18
             ]
           ],
           "nsubjpass": [
             [
-              16,
-              12
+              18,
+              14
             ]
           ],
           "advmod": [
             [
-              16,
-              14
+              18,
+              16
             ],
             [
-              16,
-              18
+              18,
+              20
             ],
             [
-              21,
-              22
+              23,
+              24
             ]
           ],
           "auxpass": [
             [
-              16,
-              15
-            ]
-          ],
-          "parataxis": [
-            [
-              3,
-              16
+              18,
+              17
             ]
           ],
           "compound": [
             [
-              16,
-              17
+              18,
+              19
             ]
           ]
         },
@@ -6116,6 +6152,10 @@
             [
               7,
               7
+            ],
+            [
+              11,
+              11
             ]
           ],
           "NP": [
@@ -6128,32 +6168,44 @@
               4
             ],
             [
-              6,
+              4,
               7
             ],
             [
+              4,
+              27
+            ],
+            [
               6,
-              9
+              7
             ],
             [
               9,
               9
             ],
             [
-              11,
-              12
+              9,
+              11
             ],
             [
-              20,
-              21
+              10,
+              11
             ],
             [
-              20,
-              22
+              13,
+              14
             ],
             [
-              24,
+              22,
+              23
+            ],
+            [
+              22,
               24
+            ],
+            [
+              26,
+              26
             ]
           ],
           "MD": [
@@ -6162,8 +6214,8 @@
               2
             ],
             [
-              13,
-              13
+              15,
+              15
             ]
           ],
           "VB": [
@@ -6172,14 +6224,22 @@
               3
             ],
             [
-              15,
-              15
+              17,
+              17
             ]
           ],
-          "NNS": [
+          "NNP": [
             [
               4,
               4
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              26,
+              26
             ]
           ],
           "IN": [
@@ -6188,12 +6248,12 @@
               5
             ],
             [
-              19,
-              19
+              21,
+              21
             ],
             [
-              23,
-              23
+              25,
+              25
             ]
           ],
           "DT": [
@@ -6202,12 +6262,30 @@
               6
             ],
             [
-              11,
-              11
+              10,
+              10
             ],
             [
-              20,
-              20
+              13,
+              13
+            ],
+            [
+              22,
+              22
+            ]
+          ],
+          "PP": [
+            [
+              5,
+              7
+            ],
+            [
+              21,
+              24
+            ],
+            [
+              25,
+              26
             ]
           ],
           ",": [
@@ -6216,148 +6294,124 @@
               8
             ]
           ],
-          "NNP": [
+          "-LRB-": [
             [
-              9,
-              9
+              12,
+              12
+            ]
+          ],
+          "NNPS": [
+            [
+              14,
+              14
+            ],
+            [
+              23,
+              23
+            ]
+          ],
+          "RB": [
+            [
+              16,
+              16
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "ADVP": [
+            [
+              16,
+              16
+            ],
+            [
+              20,
+              20
             ],
             [
               24,
               24
             ]
           ],
-          "PP": [
-            [
-              5,
-              9
-            ],
-            [
-              19,
-              22
-            ],
-            [
-              23,
-              24
-            ]
-          ],
-          "-LRB-": [
-            [
-              10,
-              10
-            ]
-          ],
-          "NNPS": [
-            [
-              12,
-              12
-            ],
-            [
-              21,
-              21
-            ]
-          ],
-          "RB": [
-            [
-              14,
-              14
-            ],
-            [
-              18,
-              18
-            ]
-          ],
-          "ADVP": [
-            [
-              14,
-              14
-            ],
-            [
-              18,
-              18
-            ],
-            [
-              22,
-              22
-            ]
-          ],
           "VBN": [
             [
-              16,
-              16
+              18,
+              18
             ]
           ],
           "RP": [
             [
-              17,
-              17
+              19,
+              19
             ]
           ],
           "PRT": [
             [
-              17,
-              17
+              19,
+              19
             ]
           ],
           "PRP": [
             [
-              22,
-              22
+              24,
+              24
             ]
           ],
           "VP": [
             [
               2,
-              25
+              27
             ],
             [
               3,
-              25
-            ],
-            [
-              13,
-              24
+              27
             ],
             [
               15,
-              24
+              26
             ],
             [
-              16,
-              24
+              17,
+              26
+            ],
+            [
+              18,
+              26
             ]
           ],
           "S": [
             [
               1,
-              26
+              28
             ],
             [
-              11,
-              24
+              13,
+              26
             ]
           ],
           "-RRB-": [
             [
-              25,
-              25
+              27,
+              27
             ]
           ],
           "PRN": [
             [
-              10,
-              25
+              12,
+              27
             ]
           ],
           ".": [
             [
-              26,
-              26
+              28,
+              28
             ]
           ],
           "ROOT": [
             [
               1,
-              26
+              28
             ]
           ]
         },
@@ -6370,24 +6424,26 @@
           "6": "an",
           "7": "upcoming",
           "8": ",",
-          "9": "ImportantEventOfAnAddedGiftBuddyContact",
-          "10": "-LRB-",
-          "11": "These",
-          "12": "Notifications",
-          "13": "could",
-          "14": "also",
-          "15": "be",
-          "16": "set",
-          "17": "up",
-          "18": "manually",
-          "19": "by",
-          "20": "the",
-          "21": "Users",
-          "22": "themselves",
-          "23": "in",
-          "24": "Settings",
-          "25": "-RRB-",
-          "26": "."
+          "9": "ImportantEventOf",
+          "10": "an",
+          "11": "AddedGiftBuddyContact",
+          "12": "-LRB-",
+          "13": "These",
+          "14": "Notifications",
+          "15": "could",
+          "16": "also",
+          "17": "be",
+          "18": "set",
+          "19": "up",
+          "20": "manually",
+          "21": "by",
+          "22": "the",
+          "23": "Users",
+          "24": "themselves",
+          "25": "in",
+          "26": "Settings",
+          "27": "-RRB-",
+          "28": "."
         }
       }
     },
@@ -7507,7 +7563,7 @@
       }
     },
     {
-      "User can manually enter MultipleImportantDates for each selected ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events .": {
+      "User can manually enter MultipleImportantDates for each selected ContactWith an OptionForCustomLabelOrSelectionOfGeneralHolidays/events .": {
         "FileName": "2019-USC-Project12",
         "TD": {
           "ROOT": [
@@ -7550,6 +7606,10 @@
             [
               9,
               7
+            ],
+            [
+              11,
+              10
             ]
           ],
           "amod": [
@@ -7564,10 +7624,16 @@
               9
             ]
           ],
+          "dep": [
+            [
+              9,
+              11
+            ]
+          ],
           "punct": [
             [
               4,
-              10
+              12
             ]
           ]
         },
@@ -7589,11 +7655,19 @@
             ],
             [
               5,
-              9
+              11
             ],
             [
               7,
               9
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              10,
+              11
             ]
           ],
           "MD": [
@@ -7624,6 +7698,10 @@
             [
               5,
               5
+            ],
+            [
+              9,
+              9
             ]
           ],
           "IN": [
@@ -7636,6 +7714,10 @@
             [
               7,
               7
+            ],
+            [
+              10,
+              10
             ]
           ],
           "VBN": [
@@ -7644,44 +7726,44 @@
               8
             ]
           ],
-          "NNS": [
+          "NNPS": [
             [
-              9,
-              9
+              11,
+              11
             ]
           ],
           "PP": [
             [
               6,
-              9
+              11
             ]
           ],
           "VP": [
             [
               2,
-              9
+              11
             ],
             [
               4,
-              9
+              11
             ]
           ],
           ".": [
             [
-              10,
-              10
+              12,
+              12
             ]
           ],
           "S": [
             [
               1,
-              10
+              12
             ]
           ],
           "ROOT": [
             [
               1,
-              10
+              12
             ]
           ]
         },
@@ -7694,8 +7776,10 @@
           "6": "for",
           "7": "each",
           "8": "selected",
-          "9": "ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events",
-          "10": "."
+          "9": "ContactWith",
+          "10": "an",
+          "11": "OptionForCustomLabelOrSelectionOfGeneralHolidays/events",
+          "12": "."
         }
       }
     },
@@ -11224,7 +11308,7 @@
       }
     },
     {
-      "User can receive Notifications about an upcoming , ImportantEventOfAnAddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .": {
+      "User can receive Notifications about an upcoming , ImportantEventOf an AddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .": {
         "FileName": "2019-USC-Project12",
         "TD": {
           "ROOT": [
@@ -11245,8 +11329,8 @@
               2
             ],
             [
-              16,
-              13
+              18,
+              15
             ]
           ],
           "dobj": [
@@ -11261,12 +11345,12 @@
               5
             ],
             [
-              21,
-              19
+              23,
+              21
             ],
             [
-              24,
-              23
+              26,
+              25
             ]
           ],
           "det": [
@@ -11275,88 +11359,96 @@
               6
             ],
             [
-              12,
-              11
+              11,
+              10
             ],
             [
-              21,
-              20
+              14,
+              13
+            ],
+            [
+              23,
+              22
             ]
           ],
           "nmod": [
             [
-              3,
+              4,
               7
             ],
             [
-              16,
-              21
+              18,
+              23
             ],
             [
-              16,
-              24
+              18,
+              26
             ]
           ],
           "punct": [
             [
-              7,
+              4,
               8
             ],
             [
-              16,
-              10
+              18,
+              12
             ],
             [
-              16,
-              25
+              18,
+              27
             ],
             [
               3,
-              26
+              28
             ]
           ],
           "appos": [
             [
-              7,
+              4,
               9
+            ]
+          ],
+          "dep": [
+            [
+              9,
+              11
+            ],
+            [
+              4,
+              18
             ]
           ],
           "nsubjpass": [
             [
-              16,
-              12
+              18,
+              14
             ]
           ],
           "advmod": [
             [
-              16,
-              14
+              18,
+              16
             ],
             [
-              16,
-              18
+              18,
+              20
             ],
             [
-              21,
-              22
+              23,
+              24
             ]
           ],
           "auxpass": [
             [
-              16,
-              15
-            ]
-          ],
-          "parataxis": [
-            [
-              3,
-              16
+              18,
+              17
             ]
           ],
           "compound": [
             [
-              16,
-              17
+              18,
+              19
             ]
           ]
         },
@@ -11369,6 +11461,10 @@
             [
               7,
               7
+            ],
+            [
+              11,
+              11
             ]
           ],
           "NP": [
@@ -11381,32 +11477,44 @@
               4
             ],
             [
-              6,
+              4,
               7
             ],
             [
+              4,
+              27
+            ],
+            [
               6,
-              9
+              7
             ],
             [
               9,
               9
             ],
             [
-              11,
-              12
+              9,
+              11
             ],
             [
-              20,
-              21
+              10,
+              11
             ],
             [
-              20,
-              22
+              13,
+              14
             ],
             [
-              24,
+              22,
+              23
+            ],
+            [
+              22,
               24
+            ],
+            [
+              26,
+              26
             ]
           ],
           "MD": [
@@ -11415,8 +11523,8 @@
               2
             ],
             [
-              13,
-              13
+              15,
+              15
             ]
           ],
           "VB": [
@@ -11425,14 +11533,22 @@
               3
             ],
             [
-              15,
-              15
+              17,
+              17
             ]
           ],
-          "NNS": [
+          "NNP": [
             [
               4,
               4
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              26,
+              26
             ]
           ],
           "IN": [
@@ -11441,12 +11557,12 @@
               5
             ],
             [
-              19,
-              19
+              21,
+              21
             ],
             [
-              23,
-              23
+              25,
+              25
             ]
           ],
           "DT": [
@@ -11455,12 +11571,30 @@
               6
             ],
             [
-              11,
-              11
+              10,
+              10
             ],
             [
-              20,
-              20
+              13,
+              13
+            ],
+            [
+              22,
+              22
+            ]
+          ],
+          "PP": [
+            [
+              5,
+              7
+            ],
+            [
+              21,
+              24
+            ],
+            [
+              25,
+              26
             ]
           ],
           ",": [
@@ -11469,148 +11603,124 @@
               8
             ]
           ],
-          "NNP": [
+          "-LRB-": [
             [
-              9,
-              9
+              12,
+              12
+            ]
+          ],
+          "NNPS": [
+            [
+              14,
+              14
+            ],
+            [
+              23,
+              23
+            ]
+          ],
+          "RB": [
+            [
+              16,
+              16
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "ADVP": [
+            [
+              16,
+              16
+            ],
+            [
+              20,
+              20
             ],
             [
               24,
               24
             ]
           ],
-          "PP": [
-            [
-              5,
-              9
-            ],
-            [
-              19,
-              22
-            ],
-            [
-              23,
-              24
-            ]
-          ],
-          "-LRB-": [
-            [
-              10,
-              10
-            ]
-          ],
-          "NNPS": [
-            [
-              12,
-              12
-            ],
-            [
-              21,
-              21
-            ]
-          ],
-          "RB": [
-            [
-              14,
-              14
-            ],
-            [
-              18,
-              18
-            ]
-          ],
-          "ADVP": [
-            [
-              14,
-              14
-            ],
-            [
-              18,
-              18
-            ],
-            [
-              22,
-              22
-            ]
-          ],
           "VBN": [
             [
-              16,
-              16
+              18,
+              18
             ]
           ],
           "RP": [
             [
-              17,
-              17
+              19,
+              19
             ]
           ],
           "PRT": [
             [
-              17,
-              17
+              19,
+              19
             ]
           ],
           "PRP": [
             [
-              22,
-              22
+              24,
+              24
             ]
           ],
           "VP": [
             [
               2,
-              25
+              27
             ],
             [
               3,
-              25
-            ],
-            [
-              13,
-              24
+              27
             ],
             [
               15,
-              24
+              26
             ],
             [
-              16,
-              24
+              17,
+              26
+            ],
+            [
+              18,
+              26
             ]
           ],
           "S": [
             [
               1,
-              26
+              28
             ],
             [
-              11,
-              24
+              13,
+              26
             ]
           ],
           "-RRB-": [
             [
-              25,
-              25
+              27,
+              27
             ]
           ],
           "PRN": [
             [
-              10,
-              25
+              12,
+              27
             ]
           ],
           ".": [
             [
-              26,
-              26
+              28,
+              28
             ]
           ],
           "ROOT": [
             [
               1,
-              26
+              28
             ]
           ]
         },
@@ -11623,24 +11733,26 @@
           "6": "an",
           "7": "upcoming",
           "8": ",",
-          "9": "ImportantEventOfAnAddedGiftBuddyContact",
-          "10": "-LRB-",
-          "11": "These",
-          "12": "Notifications",
-          "13": "could",
-          "14": "also",
-          "15": "be",
-          "16": "set",
-          "17": "up",
-          "18": "manually",
-          "19": "by",
-          "20": "the",
-          "21": "Users",
-          "22": "themselves",
-          "23": "in",
-          "24": "Settings",
-          "25": "-RRB-",
-          "26": "."
+          "9": "ImportantEventOf",
+          "10": "an",
+          "11": "AddedGiftBuddyContact",
+          "12": "-LRB-",
+          "13": "These",
+          "14": "Notifications",
+          "15": "could",
+          "16": "also",
+          "17": "be",
+          "18": "set",
+          "19": "up",
+          "20": "manually",
+          "21": "by",
+          "22": "the",
+          "23": "Users",
+          "24": "themselves",
+          "25": "in",
+          "26": "Settings",
+          "27": "-RRB-",
+          "28": "."
         }
       }
     },
@@ -13011,7 +13123,7 @@
       }
     },
     {
-      "User can manually enter MultipleImportantDates for each selected ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events .": {
+      "User can manually enter MultipleImportantDates for each selected ContactWith an OptionForCustomLabelOrSelectionOfGeneralHolidays/events .": {
         "FileName": "2019-USC-Project12",
         "TD": {
           "ROOT": [
@@ -13054,6 +13166,10 @@
             [
               9,
               7
+            ],
+            [
+              11,
+              10
             ]
           ],
           "amod": [
@@ -13068,10 +13184,16 @@
               9
             ]
           ],
+          "dep": [
+            [
+              9,
+              11
+            ]
+          ],
           "punct": [
             [
               4,
-              10
+              12
             ]
           ]
         },
@@ -13093,11 +13215,19 @@
             ],
             [
               5,
-              9
+              11
             ],
             [
               7,
               9
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              10,
+              11
             ]
           ],
           "MD": [
@@ -13128,6 +13258,10 @@
             [
               5,
               5
+            ],
+            [
+              9,
+              9
             ]
           ],
           "IN": [
@@ -13140,6 +13274,10 @@
             [
               7,
               7
+            ],
+            [
+              10,
+              10
             ]
           ],
           "VBN": [
@@ -13148,44 +13286,44 @@
               8
             ]
           ],
-          "NNS": [
+          "NNPS": [
             [
-              9,
-              9
+              11,
+              11
             ]
           ],
           "PP": [
             [
               6,
-              9
+              11
             ]
           ],
           "VP": [
             [
               2,
-              9
+              11
             ],
             [
               4,
-              9
+              11
             ]
           ],
           ".": [
             [
-              10,
-              10
+              12,
+              12
             ]
           ],
           "S": [
             [
               1,
-              10
+              12
             ]
           ],
           "ROOT": [
             [
               1,
-              10
+              12
             ]
           ]
         },
@@ -13198,8 +13336,10 @@
           "6": "for",
           "7": "each",
           "8": "selected",
-          "9": "ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events",
-          "10": "."
+          "9": "ContactWith",
+          "10": "an",
+          "11": "OptionForCustomLabelOrSelectionOfGeneralHolidays/events",
+          "12": "."
         }
       }
     },
@@ -17233,7 +17373,7 @@
   ],
   "SVAdverbialAdjunct": [
     {
-      "User can manually enter MultipleImportantDates for each selected ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events .": {
+      "User can manually enter MultipleImportantDates for each selected ContactWith an OptionForCustomLabelOrSelectionOfGeneralHolidays/events .": {
         "FileName": "2019-USC-Project12",
         "TD": {
           "ROOT": [
@@ -17276,6 +17416,10 @@
             [
               9,
               7
+            ],
+            [
+              11,
+              10
             ]
           ],
           "amod": [
@@ -17290,10 +17434,16 @@
               9
             ]
           ],
+          "dep": [
+            [
+              9,
+              11
+            ]
+          ],
           "punct": [
             [
               4,
-              10
+              12
             ]
           ]
         },
@@ -17315,11 +17465,19 @@
             ],
             [
               5,
-              9
+              11
             ],
             [
               7,
               9
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              10,
+              11
             ]
           ],
           "MD": [
@@ -17350,6 +17508,10 @@
             [
               5,
               5
+            ],
+            [
+              9,
+              9
             ]
           ],
           "IN": [
@@ -17362,6 +17524,10 @@
             [
               7,
               7
+            ],
+            [
+              10,
+              10
             ]
           ],
           "VBN": [
@@ -17370,44 +17536,44 @@
               8
             ]
           ],
-          "NNS": [
+          "NNPS": [
             [
-              9,
-              9
+              11,
+              11
             ]
           ],
           "PP": [
             [
               6,
-              9
+              11
             ]
           ],
           "VP": [
             [
               2,
-              9
+              11
             ],
             [
               4,
-              9
+              11
             ]
           ],
           ".": [
             [
-              10,
-              10
+              12,
+              12
             ]
           ],
           "S": [
             [
               1,
-              10
+              12
             ]
           ],
           "ROOT": [
             [
               1,
-              10
+              12
             ]
           ]
         },
@@ -17420,8 +17586,10 @@
           "6": "for",
           "7": "each",
           "8": "selected",
-          "9": "ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events",
-          "10": "."
+          "9": "ContactWith",
+          "10": "an",
+          "11": "OptionForCustomLabelOrSelectionOfGeneralHolidays/events",
+          "12": "."
         }
       }
     },
@@ -18422,7 +18590,7 @@
   "SVForComp": [],
   "SVPassPO": [
     {
-      "User can receive Notifications about an upcoming , ImportantEventOfAnAddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .": {
+      "User can receive Notifications about an upcoming , ImportantEventOf an AddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .": {
         "FileName": "2019-USC-Project12",
         "TD": {
           "ROOT": [
@@ -18443,8 +18611,8 @@
               2
             ],
             [
-              16,
-              13
+              18,
+              15
             ]
           ],
           "dobj": [
@@ -18459,12 +18627,12 @@
               5
             ],
             [
-              21,
-              19
+              23,
+              21
             ],
             [
-              24,
-              23
+              26,
+              25
             ]
           ],
           "det": [
@@ -18473,88 +18641,96 @@
               6
             ],
             [
-              12,
-              11
+              11,
+              10
             ],
             [
-              21,
-              20
+              14,
+              13
+            ],
+            [
+              23,
+              22
             ]
           ],
           "nmod": [
             [
-              3,
+              4,
               7
             ],
             [
-              16,
-              21
+              18,
+              23
             ],
             [
-              16,
-              24
+              18,
+              26
             ]
           ],
           "punct": [
             [
-              7,
+              4,
               8
             ],
             [
-              16,
-              10
+              18,
+              12
             ],
             [
-              16,
-              25
+              18,
+              27
             ],
             [
               3,
-              26
+              28
             ]
           ],
           "appos": [
             [
-              7,
+              4,
               9
+            ]
+          ],
+          "dep": [
+            [
+              9,
+              11
+            ],
+            [
+              4,
+              18
             ]
           ],
           "nsubjpass": [
             [
-              16,
-              12
+              18,
+              14
             ]
           ],
           "advmod": [
             [
-              16,
-              14
+              18,
+              16
             ],
             [
-              16,
-              18
+              18,
+              20
             ],
             [
-              21,
-              22
+              23,
+              24
             ]
           ],
           "auxpass": [
             [
-              16,
-              15
-            ]
-          ],
-          "parataxis": [
-            [
-              3,
-              16
+              18,
+              17
             ]
           ],
           "compound": [
             [
-              16,
-              17
+              18,
+              19
             ]
           ]
         },
@@ -18567,6 +18743,10 @@
             [
               7,
               7
+            ],
+            [
+              11,
+              11
             ]
           ],
           "NP": [
@@ -18579,32 +18759,44 @@
               4
             ],
             [
-              6,
+              4,
               7
             ],
             [
+              4,
+              27
+            ],
+            [
               6,
-              9
+              7
             ],
             [
               9,
               9
             ],
             [
-              11,
-              12
+              9,
+              11
             ],
             [
-              20,
-              21
+              10,
+              11
             ],
             [
-              20,
-              22
+              13,
+              14
             ],
             [
-              24,
+              22,
+              23
+            ],
+            [
+              22,
               24
+            ],
+            [
+              26,
+              26
             ]
           ],
           "MD": [
@@ -18613,8 +18805,8 @@
               2
             ],
             [
-              13,
-              13
+              15,
+              15
             ]
           ],
           "VB": [
@@ -18623,14 +18815,22 @@
               3
             ],
             [
-              15,
-              15
+              17,
+              17
             ]
           ],
-          "NNS": [
+          "NNP": [
             [
               4,
               4
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              26,
+              26
             ]
           ],
           "IN": [
@@ -18639,12 +18839,12 @@
               5
             ],
             [
-              19,
-              19
+              21,
+              21
             ],
             [
-              23,
-              23
+              25,
+              25
             ]
           ],
           "DT": [
@@ -18653,12 +18853,30 @@
               6
             ],
             [
-              11,
-              11
+              10,
+              10
             ],
             [
-              20,
-              20
+              13,
+              13
+            ],
+            [
+              22,
+              22
+            ]
+          ],
+          "PP": [
+            [
+              5,
+              7
+            ],
+            [
+              21,
+              24
+            ],
+            [
+              25,
+              26
             ]
           ],
           ",": [
@@ -18667,148 +18885,124 @@
               8
             ]
           ],
-          "NNP": [
+          "-LRB-": [
             [
-              9,
-              9
+              12,
+              12
+            ]
+          ],
+          "NNPS": [
+            [
+              14,
+              14
+            ],
+            [
+              23,
+              23
+            ]
+          ],
+          "RB": [
+            [
+              16,
+              16
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "ADVP": [
+            [
+              16,
+              16
+            ],
+            [
+              20,
+              20
             ],
             [
               24,
               24
             ]
           ],
-          "PP": [
-            [
-              5,
-              9
-            ],
-            [
-              19,
-              22
-            ],
-            [
-              23,
-              24
-            ]
-          ],
-          "-LRB-": [
-            [
-              10,
-              10
-            ]
-          ],
-          "NNPS": [
-            [
-              12,
-              12
-            ],
-            [
-              21,
-              21
-            ]
-          ],
-          "RB": [
-            [
-              14,
-              14
-            ],
-            [
-              18,
-              18
-            ]
-          ],
-          "ADVP": [
-            [
-              14,
-              14
-            ],
-            [
-              18,
-              18
-            ],
-            [
-              22,
-              22
-            ]
-          ],
           "VBN": [
             [
-              16,
-              16
+              18,
+              18
             ]
           ],
           "RP": [
             [
-              17,
-              17
+              19,
+              19
             ]
           ],
           "PRT": [
             [
-              17,
-              17
+              19,
+              19
             ]
           ],
           "PRP": [
             [
-              22,
-              22
+              24,
+              24
             ]
           ],
           "VP": [
             [
               2,
-              25
+              27
             ],
             [
               3,
-              25
-            ],
-            [
-              13,
-              24
+              27
             ],
             [
               15,
-              24
+              26
             ],
             [
-              16,
-              24
+              17,
+              26
+            ],
+            [
+              18,
+              26
             ]
           ],
           "S": [
             [
               1,
-              26
+              28
             ],
             [
-              11,
-              24
+              13,
+              26
             ]
           ],
           "-RRB-": [
             [
-              25,
-              25
+              27,
+              27
             ]
           ],
           "PRN": [
             [
-              10,
-              25
+              12,
+              27
             ]
           ],
           ".": [
             [
-              26,
-              26
+              28,
+              28
             ]
           ],
           "ROOT": [
             [
               1,
-              26
+              28
             ]
           ]
         },
@@ -18821,31 +19015,33 @@
           "6": "an",
           "7": "upcoming",
           "8": ",",
-          "9": "ImportantEventOfAnAddedGiftBuddyContact",
-          "10": "-LRB-",
-          "11": "These",
-          "12": "Notifications",
-          "13": "could",
-          "14": "also",
-          "15": "be",
-          "16": "set",
-          "17": "up",
-          "18": "manually",
-          "19": "by",
-          "20": "the",
-          "21": "Users",
-          "22": "themselves",
-          "23": "in",
-          "24": "Settings",
-          "25": "-RRB-",
-          "26": "."
+          "9": "ImportantEventOf",
+          "10": "an",
+          "11": "AddedGiftBuddyContact",
+          "12": "-LRB-",
+          "13": "These",
+          "14": "Notifications",
+          "15": "could",
+          "16": "also",
+          "17": "be",
+          "18": "set",
+          "19": "up",
+          "20": "manually",
+          "21": "by",
+          "22": "the",
+          "23": "Users",
+          "24": "themselves",
+          "25": "in",
+          "26": "Settings",
+          "27": "-RRB-",
+          "28": "."
         }
       }
     }
   ],
   "SAuxVPassPO": [
     {
-      "User can receive Notifications about an upcoming , ImportantEventOfAnAddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .": {
+      "User can receive Notifications about an upcoming , ImportantEventOf an AddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .": {
         "FileName": "2019-USC-Project12",
         "TD": {
           "ROOT": [
@@ -18866,8 +19062,8 @@
               2
             ],
             [
-              16,
-              13
+              18,
+              15
             ]
           ],
           "dobj": [
@@ -18882,12 +19078,12 @@
               5
             ],
             [
-              21,
-              19
+              23,
+              21
             ],
             [
-              24,
-              23
+              26,
+              25
             ]
           ],
           "det": [
@@ -18896,88 +19092,96 @@
               6
             ],
             [
-              12,
-              11
+              11,
+              10
             ],
             [
-              21,
-              20
+              14,
+              13
+            ],
+            [
+              23,
+              22
             ]
           ],
           "nmod": [
             [
-              3,
+              4,
               7
             ],
             [
-              16,
-              21
+              18,
+              23
             ],
             [
-              16,
-              24
+              18,
+              26
             ]
           ],
           "punct": [
             [
-              7,
+              4,
               8
             ],
             [
-              16,
-              10
+              18,
+              12
             ],
             [
-              16,
-              25
+              18,
+              27
             ],
             [
               3,
-              26
+              28
             ]
           ],
           "appos": [
             [
-              7,
+              4,
               9
+            ]
+          ],
+          "dep": [
+            [
+              9,
+              11
+            ],
+            [
+              4,
+              18
             ]
           ],
           "nsubjpass": [
             [
-              16,
-              12
+              18,
+              14
             ]
           ],
           "advmod": [
             [
-              16,
-              14
+              18,
+              16
             ],
             [
-              16,
-              18
+              18,
+              20
             ],
             [
-              21,
-              22
+              23,
+              24
             ]
           ],
           "auxpass": [
             [
-              16,
-              15
-            ]
-          ],
-          "parataxis": [
-            [
-              3,
-              16
+              18,
+              17
             ]
           ],
           "compound": [
             [
-              16,
-              17
+              18,
+              19
             ]
           ]
         },
@@ -18990,6 +19194,10 @@
             [
               7,
               7
+            ],
+            [
+              11,
+              11
             ]
           ],
           "NP": [
@@ -19002,32 +19210,44 @@
               4
             ],
             [
-              6,
+              4,
               7
             ],
             [
+              4,
+              27
+            ],
+            [
               6,
-              9
+              7
             ],
             [
               9,
               9
             ],
             [
-              11,
-              12
+              9,
+              11
             ],
             [
-              20,
-              21
+              10,
+              11
             ],
             [
-              20,
-              22
+              13,
+              14
             ],
             [
-              24,
+              22,
+              23
+            ],
+            [
+              22,
               24
+            ],
+            [
+              26,
+              26
             ]
           ],
           "MD": [
@@ -19036,8 +19256,8 @@
               2
             ],
             [
-              13,
-              13
+              15,
+              15
             ]
           ],
           "VB": [
@@ -19046,14 +19266,22 @@
               3
             ],
             [
-              15,
-              15
+              17,
+              17
             ]
           ],
-          "NNS": [
+          "NNP": [
             [
               4,
               4
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              26,
+              26
             ]
           ],
           "IN": [
@@ -19062,12 +19290,12 @@
               5
             ],
             [
-              19,
-              19
+              21,
+              21
             ],
             [
-              23,
-              23
+              25,
+              25
             ]
           ],
           "DT": [
@@ -19076,12 +19304,30 @@
               6
             ],
             [
-              11,
-              11
+              10,
+              10
             ],
             [
-              20,
-              20
+              13,
+              13
+            ],
+            [
+              22,
+              22
+            ]
+          ],
+          "PP": [
+            [
+              5,
+              7
+            ],
+            [
+              21,
+              24
+            ],
+            [
+              25,
+              26
             ]
           ],
           ",": [
@@ -19090,148 +19336,124 @@
               8
             ]
           ],
-          "NNP": [
+          "-LRB-": [
             [
-              9,
-              9
+              12,
+              12
+            ]
+          ],
+          "NNPS": [
+            [
+              14,
+              14
+            ],
+            [
+              23,
+              23
+            ]
+          ],
+          "RB": [
+            [
+              16,
+              16
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "ADVP": [
+            [
+              16,
+              16
+            ],
+            [
+              20,
+              20
             ],
             [
               24,
               24
             ]
           ],
-          "PP": [
-            [
-              5,
-              9
-            ],
-            [
-              19,
-              22
-            ],
-            [
-              23,
-              24
-            ]
-          ],
-          "-LRB-": [
-            [
-              10,
-              10
-            ]
-          ],
-          "NNPS": [
-            [
-              12,
-              12
-            ],
-            [
-              21,
-              21
-            ]
-          ],
-          "RB": [
-            [
-              14,
-              14
-            ],
-            [
-              18,
-              18
-            ]
-          ],
-          "ADVP": [
-            [
-              14,
-              14
-            ],
-            [
-              18,
-              18
-            ],
-            [
-              22,
-              22
-            ]
-          ],
           "VBN": [
             [
-              16,
-              16
+              18,
+              18
             ]
           ],
           "RP": [
             [
-              17,
-              17
+              19,
+              19
             ]
           ],
           "PRT": [
             [
-              17,
-              17
+              19,
+              19
             ]
           ],
           "PRP": [
             [
-              22,
-              22
+              24,
+              24
             ]
           ],
           "VP": [
             [
               2,
-              25
+              27
             ],
             [
               3,
-              25
-            ],
-            [
-              13,
-              24
+              27
             ],
             [
               15,
-              24
+              26
             ],
             [
-              16,
-              24
+              17,
+              26
+            ],
+            [
+              18,
+              26
             ]
           ],
           "S": [
             [
               1,
-              26
+              28
             ],
             [
-              11,
-              24
+              13,
+              26
             ]
           ],
           "-RRB-": [
             [
-              25,
-              25
+              27,
+              27
             ]
           ],
           "PRN": [
             [
-              10,
-              25
+              12,
+              27
             ]
           ],
           ".": [
             [
-              26,
-              26
+              28,
+              28
             ]
           ],
           "ROOT": [
             [
               1,
-              26
+              28
             ]
           ]
         },
@@ -19244,24 +19466,26 @@
           "6": "an",
           "7": "upcoming",
           "8": ",",
-          "9": "ImportantEventOfAnAddedGiftBuddyContact",
-          "10": "-LRB-",
-          "11": "These",
-          "12": "Notifications",
-          "13": "could",
-          "14": "also",
-          "15": "be",
-          "16": "set",
-          "17": "up",
-          "18": "manually",
-          "19": "by",
-          "20": "the",
-          "21": "Users",
-          "22": "themselves",
-          "23": "in",
-          "24": "Settings",
-          "25": "-RRB-",
-          "26": "."
+          "9": "ImportantEventOf",
+          "10": "an",
+          "11": "AddedGiftBuddyContact",
+          "12": "-LRB-",
+          "13": "These",
+          "14": "Notifications",
+          "15": "could",
+          "16": "also",
+          "17": "be",
+          "18": "set",
+          "19": "up",
+          "20": "manually",
+          "21": "by",
+          "22": "the",
+          "23": "Users",
+          "24": "themselves",
+          "25": "in",
+          "26": "Settings",
+          "27": "-RRB-",
+          "28": "."
         }
       }
     }
@@ -21020,7 +21244,7 @@
       }
     },
     {
-      "User can receive Notifications about an upcoming , ImportantEventOfAnAddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .": {
+      "User can receive Notifications about an upcoming , ImportantEventOf an AddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .": {
         "FileName": "2019-USC-Project12",
         "TD": {
           "ROOT": [
@@ -21041,8 +21265,8 @@
               2
             ],
             [
-              16,
-              13
+              18,
+              15
             ]
           ],
           "dobj": [
@@ -21057,12 +21281,12 @@
               5
             ],
             [
-              21,
-              19
+              23,
+              21
             ],
             [
-              24,
-              23
+              26,
+              25
             ]
           ],
           "det": [
@@ -21071,88 +21295,96 @@
               6
             ],
             [
-              12,
-              11
+              11,
+              10
             ],
             [
-              21,
-              20
+              14,
+              13
+            ],
+            [
+              23,
+              22
             ]
           ],
           "nmod": [
             [
-              3,
+              4,
               7
             ],
             [
-              16,
-              21
+              18,
+              23
             ],
             [
-              16,
-              24
+              18,
+              26
             ]
           ],
           "punct": [
             [
-              7,
+              4,
               8
             ],
             [
-              16,
-              10
+              18,
+              12
             ],
             [
-              16,
-              25
+              18,
+              27
             ],
             [
               3,
-              26
+              28
             ]
           ],
           "appos": [
             [
-              7,
+              4,
               9
+            ]
+          ],
+          "dep": [
+            [
+              9,
+              11
+            ],
+            [
+              4,
+              18
             ]
           ],
           "nsubjpass": [
             [
-              16,
-              12
+              18,
+              14
             ]
           ],
           "advmod": [
             [
-              16,
-              14
+              18,
+              16
             ],
             [
-              16,
-              18
+              18,
+              20
             ],
             [
-              21,
-              22
+              23,
+              24
             ]
           ],
           "auxpass": [
             [
-              16,
-              15
-            ]
-          ],
-          "parataxis": [
-            [
-              3,
-              16
+              18,
+              17
             ]
           ],
           "compound": [
             [
-              16,
-              17
+              18,
+              19
             ]
           ]
         },
@@ -21165,6 +21397,10 @@
             [
               7,
               7
+            ],
+            [
+              11,
+              11
             ]
           ],
           "NP": [
@@ -21177,32 +21413,44 @@
               4
             ],
             [
-              6,
+              4,
               7
             ],
             [
+              4,
+              27
+            ],
+            [
               6,
-              9
+              7
             ],
             [
               9,
               9
             ],
             [
-              11,
-              12
+              9,
+              11
             ],
             [
-              20,
-              21
+              10,
+              11
             ],
             [
-              20,
-              22
+              13,
+              14
             ],
             [
-              24,
+              22,
+              23
+            ],
+            [
+              22,
               24
+            ],
+            [
+              26,
+              26
             ]
           ],
           "MD": [
@@ -21211,8 +21459,8 @@
               2
             ],
             [
-              13,
-              13
+              15,
+              15
             ]
           ],
           "VB": [
@@ -21221,14 +21469,22 @@
               3
             ],
             [
-              15,
-              15
+              17,
+              17
             ]
           ],
-          "NNS": [
+          "NNP": [
             [
               4,
               4
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              26,
+              26
             ]
           ],
           "IN": [
@@ -21237,12 +21493,12 @@
               5
             ],
             [
-              19,
-              19
+              21,
+              21
             ],
             [
-              23,
-              23
+              25,
+              25
             ]
           ],
           "DT": [
@@ -21251,12 +21507,30 @@
               6
             ],
             [
-              11,
-              11
+              10,
+              10
             ],
             [
-              20,
-              20
+              13,
+              13
+            ],
+            [
+              22,
+              22
+            ]
+          ],
+          "PP": [
+            [
+              5,
+              7
+            ],
+            [
+              21,
+              24
+            ],
+            [
+              25,
+              26
             ]
           ],
           ",": [
@@ -21265,148 +21539,124 @@
               8
             ]
           ],
-          "NNP": [
+          "-LRB-": [
             [
-              9,
-              9
+              12,
+              12
+            ]
+          ],
+          "NNPS": [
+            [
+              14,
+              14
+            ],
+            [
+              23,
+              23
+            ]
+          ],
+          "RB": [
+            [
+              16,
+              16
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "ADVP": [
+            [
+              16,
+              16
+            ],
+            [
+              20,
+              20
             ],
             [
               24,
               24
             ]
           ],
-          "PP": [
-            [
-              5,
-              9
-            ],
-            [
-              19,
-              22
-            ],
-            [
-              23,
-              24
-            ]
-          ],
-          "-LRB-": [
-            [
-              10,
-              10
-            ]
-          ],
-          "NNPS": [
-            [
-              12,
-              12
-            ],
-            [
-              21,
-              21
-            ]
-          ],
-          "RB": [
-            [
-              14,
-              14
-            ],
-            [
-              18,
-              18
-            ]
-          ],
-          "ADVP": [
-            [
-              14,
-              14
-            ],
-            [
-              18,
-              18
-            ],
-            [
-              22,
-              22
-            ]
-          ],
           "VBN": [
             [
-              16,
-              16
+              18,
+              18
             ]
           ],
           "RP": [
             [
-              17,
-              17
+              19,
+              19
             ]
           ],
           "PRT": [
             [
-              17,
-              17
+              19,
+              19
             ]
           ],
           "PRP": [
             [
-              22,
-              22
+              24,
+              24
             ]
           ],
           "VP": [
             [
               2,
-              25
+              27
             ],
             [
               3,
-              25
-            ],
-            [
-              13,
-              24
+              27
             ],
             [
               15,
-              24
+              26
             ],
             [
-              16,
-              24
+              17,
+              26
+            ],
+            [
+              18,
+              26
             ]
           ],
           "S": [
             [
               1,
-              26
+              28
             ],
             [
-              11,
-              24
+              13,
+              26
             ]
           ],
           "-RRB-": [
             [
-              25,
-              25
+              27,
+              27
             ]
           ],
           "PRN": [
             [
-              10,
-              25
+              12,
+              27
             ]
           ],
           ".": [
             [
-              26,
-              26
+              28,
+              28
             ]
           ],
           "ROOT": [
             [
               1,
-              26
+              28
             ]
           ]
         },
@@ -21419,24 +21669,26 @@
           "6": "an",
           "7": "upcoming",
           "8": ",",
-          "9": "ImportantEventOfAnAddedGiftBuddyContact",
-          "10": "-LRB-",
-          "11": "These",
-          "12": "Notifications",
-          "13": "could",
-          "14": "also",
-          "15": "be",
-          "16": "set",
-          "17": "up",
-          "18": "manually",
-          "19": "by",
-          "20": "the",
-          "21": "Users",
-          "22": "themselves",
-          "23": "in",
-          "24": "Settings",
-          "25": "-RRB-",
-          "26": "."
+          "9": "ImportantEventOf",
+          "10": "an",
+          "11": "AddedGiftBuddyContact",
+          "12": "-LRB-",
+          "13": "These",
+          "14": "Notifications",
+          "15": "could",
+          "16": "also",
+          "17": "be",
+          "18": "set",
+          "19": "up",
+          "20": "manually",
+          "21": "by",
+          "22": "the",
+          "23": "Users",
+          "24": "themselves",
+          "25": "in",
+          "26": "Settings",
+          "27": "-RRB-",
+          "28": "."
         }
       }
     },
@@ -22542,7 +22794,7 @@
       }
     },
     {
-      "User can manually enter MultipleImportantDates for each selected ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events .": {
+      "User can manually enter MultipleImportantDates for each selected ContactWith an OptionForCustomLabelOrSelectionOfGeneralHolidays/events .": {
         "FileName": "2019-USC-Project12",
         "TD": {
           "ROOT": [
@@ -22585,6 +22837,10 @@
             [
               9,
               7
+            ],
+            [
+              11,
+              10
             ]
           ],
           "amod": [
@@ -22599,10 +22855,16 @@
               9
             ]
           ],
+          "dep": [
+            [
+              9,
+              11
+            ]
+          ],
           "punct": [
             [
               4,
-              10
+              12
             ]
           ]
         },
@@ -22624,11 +22886,19 @@
             ],
             [
               5,
-              9
+              11
             ],
             [
               7,
               9
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              10,
+              11
             ]
           ],
           "MD": [
@@ -22659,6 +22929,10 @@
             [
               5,
               5
+            ],
+            [
+              9,
+              9
             ]
           ],
           "IN": [
@@ -22671,6 +22945,10 @@
             [
               7,
               7
+            ],
+            [
+              10,
+              10
             ]
           ],
           "VBN": [
@@ -22679,44 +22957,44 @@
               8
             ]
           ],
-          "NNS": [
+          "NNPS": [
             [
-              9,
-              9
+              11,
+              11
             ]
           ],
           "PP": [
             [
               6,
-              9
+              11
             ]
           ],
           "VP": [
             [
               2,
-              9
+              11
             ],
             [
               4,
-              9
+              11
             ]
           ],
           ".": [
             [
-              10,
-              10
+              12,
+              12
             ]
           ],
           "S": [
             [
               1,
-              10
+              12
             ]
           ],
           "ROOT": [
             [
               1,
-              10
+              12
             ]
           ]
         },
@@ -22729,8 +23007,10 @@
           "6": "for",
           "7": "each",
           "8": "selected",
-          "9": "ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events",
-          "10": "."
+          "9": "ContactWith",
+          "10": "an",
+          "11": "OptionForCustomLabelOrSelectionOfGeneralHolidays/events",
+          "12": "."
         }
       }
     },
@@ -26902,7 +27182,7 @@
       }
     },
     {
-      "User can receive Notifications about an upcoming , ImportantEventOfAnAddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .": {
+      "User can receive Notifications about an upcoming , ImportantEventOf an AddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .": {
         "FileName": "2019-USC-Project12",
         "TD": {
           "ROOT": [
@@ -26923,8 +27203,8 @@
               2
             ],
             [
-              16,
-              13
+              18,
+              15
             ]
           ],
           "dobj": [
@@ -26939,12 +27219,12 @@
               5
             ],
             [
-              21,
-              19
+              23,
+              21
             ],
             [
-              24,
-              23
+              26,
+              25
             ]
           ],
           "det": [
@@ -26953,88 +27233,96 @@
               6
             ],
             [
-              12,
-              11
+              11,
+              10
             ],
             [
-              21,
-              20
+              14,
+              13
+            ],
+            [
+              23,
+              22
             ]
           ],
           "nmod": [
             [
-              3,
+              4,
               7
             ],
             [
-              16,
-              21
+              18,
+              23
             ],
             [
-              16,
-              24
+              18,
+              26
             ]
           ],
           "punct": [
             [
-              7,
+              4,
               8
             ],
             [
-              16,
-              10
+              18,
+              12
             ],
             [
-              16,
-              25
+              18,
+              27
             ],
             [
               3,
-              26
+              28
             ]
           ],
           "appos": [
             [
-              7,
+              4,
               9
+            ]
+          ],
+          "dep": [
+            [
+              9,
+              11
+            ],
+            [
+              4,
+              18
             ]
           ],
           "nsubjpass": [
             [
-              16,
-              12
+              18,
+              14
             ]
           ],
           "advmod": [
             [
-              16,
-              14
+              18,
+              16
             ],
             [
-              16,
-              18
+              18,
+              20
             ],
             [
-              21,
-              22
+              23,
+              24
             ]
           ],
           "auxpass": [
             [
-              16,
-              15
-            ]
-          ],
-          "parataxis": [
-            [
-              3,
-              16
+              18,
+              17
             ]
           ],
           "compound": [
             [
-              16,
-              17
+              18,
+              19
             ]
           ]
         },
@@ -27047,6 +27335,10 @@
             [
               7,
               7
+            ],
+            [
+              11,
+              11
             ]
           ],
           "NP": [
@@ -27059,32 +27351,44 @@
               4
             ],
             [
-              6,
+              4,
               7
             ],
             [
+              4,
+              27
+            ],
+            [
               6,
-              9
+              7
             ],
             [
               9,
               9
             ],
             [
-              11,
-              12
+              9,
+              11
             ],
             [
-              20,
-              21
+              10,
+              11
             ],
             [
-              20,
-              22
+              13,
+              14
             ],
             [
-              24,
+              22,
+              23
+            ],
+            [
+              22,
               24
+            ],
+            [
+              26,
+              26
             ]
           ],
           "MD": [
@@ -27093,8 +27397,8 @@
               2
             ],
             [
-              13,
-              13
+              15,
+              15
             ]
           ],
           "VB": [
@@ -27103,14 +27407,22 @@
               3
             ],
             [
-              15,
-              15
+              17,
+              17
             ]
           ],
-          "NNS": [
+          "NNP": [
             [
               4,
               4
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              26,
+              26
             ]
           ],
           "IN": [
@@ -27119,12 +27431,12 @@
               5
             ],
             [
-              19,
-              19
+              21,
+              21
             ],
             [
-              23,
-              23
+              25,
+              25
             ]
           ],
           "DT": [
@@ -27133,12 +27445,30 @@
               6
             ],
             [
-              11,
-              11
+              10,
+              10
             ],
             [
-              20,
-              20
+              13,
+              13
+            ],
+            [
+              22,
+              22
+            ]
+          ],
+          "PP": [
+            [
+              5,
+              7
+            ],
+            [
+              21,
+              24
+            ],
+            [
+              25,
+              26
             ]
           ],
           ",": [
@@ -27147,148 +27477,124 @@
               8
             ]
           ],
-          "NNP": [
+          "-LRB-": [
             [
-              9,
-              9
+              12,
+              12
+            ]
+          ],
+          "NNPS": [
+            [
+              14,
+              14
+            ],
+            [
+              23,
+              23
+            ]
+          ],
+          "RB": [
+            [
+              16,
+              16
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "ADVP": [
+            [
+              16,
+              16
+            ],
+            [
+              20,
+              20
             ],
             [
               24,
               24
             ]
           ],
-          "PP": [
-            [
-              5,
-              9
-            ],
-            [
-              19,
-              22
-            ],
-            [
-              23,
-              24
-            ]
-          ],
-          "-LRB-": [
-            [
-              10,
-              10
-            ]
-          ],
-          "NNPS": [
-            [
-              12,
-              12
-            ],
-            [
-              21,
-              21
-            ]
-          ],
-          "RB": [
-            [
-              14,
-              14
-            ],
-            [
-              18,
-              18
-            ]
-          ],
-          "ADVP": [
-            [
-              14,
-              14
-            ],
-            [
-              18,
-              18
-            ],
-            [
-              22,
-              22
-            ]
-          ],
           "VBN": [
             [
-              16,
-              16
+              18,
+              18
             ]
           ],
           "RP": [
             [
-              17,
-              17
+              19,
+              19
             ]
           ],
           "PRT": [
             [
-              17,
-              17
+              19,
+              19
             ]
           ],
           "PRP": [
             [
-              22,
-              22
+              24,
+              24
             ]
           ],
           "VP": [
             [
               2,
-              25
+              27
             ],
             [
               3,
-              25
-            ],
-            [
-              13,
-              24
+              27
             ],
             [
               15,
-              24
+              26
             ],
             [
-              16,
-              24
+              17,
+              26
+            ],
+            [
+              18,
+              26
             ]
           ],
           "S": [
             [
               1,
-              26
+              28
             ],
             [
-              11,
-              24
+              13,
+              26
             ]
           ],
           "-RRB-": [
             [
-              25,
-              25
+              27,
+              27
             ]
           ],
           "PRN": [
             [
-              10,
-              25
+              12,
+              27
             ]
           ],
           ".": [
             [
-              26,
-              26
+              28,
+              28
             ]
           ],
           "ROOT": [
             [
               1,
-              26
+              28
             ]
           ]
         },
@@ -27301,24 +27607,26 @@
           "6": "an",
           "7": "upcoming",
           "8": ",",
-          "9": "ImportantEventOfAnAddedGiftBuddyContact",
-          "10": "-LRB-",
-          "11": "These",
-          "12": "Notifications",
-          "13": "could",
-          "14": "also",
-          "15": "be",
-          "16": "set",
-          "17": "up",
-          "18": "manually",
-          "19": "by",
-          "20": "the",
-          "21": "Users",
-          "22": "themselves",
-          "23": "in",
-          "24": "Settings",
-          "25": "-RRB-",
-          "26": "."
+          "9": "ImportantEventOf",
+          "10": "an",
+          "11": "AddedGiftBuddyContact",
+          "12": "-LRB-",
+          "13": "These",
+          "14": "Notifications",
+          "15": "could",
+          "16": "also",
+          "17": "be",
+          "18": "set",
+          "19": "up",
+          "20": "manually",
+          "21": "by",
+          "22": "the",
+          "23": "Users",
+          "24": "themselves",
+          "25": "in",
+          "26": "Settings",
+          "27": "-RRB-",
+          "28": "."
         }
       }
     },
@@ -28689,7 +28997,7 @@
       }
     },
     {
-      "User can manually enter MultipleImportantDates for each selected ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events .": {
+      "User can manually enter MultipleImportantDates for each selected ContactWith an OptionForCustomLabelOrSelectionOfGeneralHolidays/events .": {
         "FileName": "2019-USC-Project12",
         "TD": {
           "ROOT": [
@@ -28732,6 +29040,10 @@
             [
               9,
               7
+            ],
+            [
+              11,
+              10
             ]
           ],
           "amod": [
@@ -28746,10 +29058,16 @@
               9
             ]
           ],
+          "dep": [
+            [
+              9,
+              11
+            ]
+          ],
           "punct": [
             [
               4,
-              10
+              12
             ]
           ]
         },
@@ -28771,11 +29089,19 @@
             ],
             [
               5,
-              9
+              11
             ],
             [
               7,
               9
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              10,
+              11
             ]
           ],
           "MD": [
@@ -28806,6 +29132,10 @@
             [
               5,
               5
+            ],
+            [
+              9,
+              9
             ]
           ],
           "IN": [
@@ -28818,6 +29148,10 @@
             [
               7,
               7
+            ],
+            [
+              10,
+              10
             ]
           ],
           "VBN": [
@@ -28826,44 +29160,44 @@
               8
             ]
           ],
-          "NNS": [
+          "NNPS": [
             [
-              9,
-              9
+              11,
+              11
             ]
           ],
           "PP": [
             [
               6,
-              9
+              11
             ]
           ],
           "VP": [
             [
               2,
-              9
+              11
             ],
             [
               4,
-              9
+              11
             ]
           ],
           ".": [
             [
-              10,
-              10
+              12,
+              12
             ]
           ],
           "S": [
             [
               1,
-              10
+              12
             ]
           ],
           "ROOT": [
             [
               1,
-              10
+              12
             ]
           ]
         },
@@ -28876,8 +29210,10 @@
           "6": "for",
           "7": "each",
           "8": "selected",
-          "9": "ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events",
-          "10": "."
+          "9": "ContactWith",
+          "10": "an",
+          "11": "OptionForCustomLabelOrSelectionOfGeneralHolidays/events",
+          "12": "."
         }
       }
     },
@@ -35069,7 +35405,7 @@
       }
     },
     {
-      "User can receive Notifications about an upcoming , ImportantEventOfAnAddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .": {
+      "User can receive Notifications about an upcoming , ImportantEventOf an AddedGiftBuddyContact ( These Notifications could also be set up manually by the Users themselves in Settings ) .": {
         "FileName": "2019-USC-Project12",
         "TD": {
           "ROOT": [
@@ -35090,8 +35426,8 @@
               2
             ],
             [
-              16,
-              13
+              18,
+              15
             ]
           ],
           "dobj": [
@@ -35106,12 +35442,12 @@
               5
             ],
             [
-              21,
-              19
+              23,
+              21
             ],
             [
-              24,
-              23
+              26,
+              25
             ]
           ],
           "det": [
@@ -35120,88 +35456,96 @@
               6
             ],
             [
-              12,
-              11
+              11,
+              10
             ],
             [
-              21,
-              20
+              14,
+              13
+            ],
+            [
+              23,
+              22
             ]
           ],
           "nmod": [
             [
-              3,
+              4,
               7
             ],
             [
-              16,
-              21
+              18,
+              23
             ],
             [
-              16,
-              24
+              18,
+              26
             ]
           ],
           "punct": [
             [
-              7,
+              4,
               8
             ],
             [
-              16,
-              10
+              18,
+              12
             ],
             [
-              16,
-              25
+              18,
+              27
             ],
             [
               3,
-              26
+              28
             ]
           ],
           "appos": [
             [
-              7,
+              4,
               9
+            ]
+          ],
+          "dep": [
+            [
+              9,
+              11
+            ],
+            [
+              4,
+              18
             ]
           ],
           "nsubjpass": [
             [
-              16,
-              12
+              18,
+              14
             ]
           ],
           "advmod": [
             [
-              16,
-              14
+              18,
+              16
             ],
             [
-              16,
-              18
+              18,
+              20
             ],
             [
-              21,
-              22
+              23,
+              24
             ]
           ],
           "auxpass": [
             [
-              16,
-              15
-            ]
-          ],
-          "parataxis": [
-            [
-              3,
-              16
+              18,
+              17
             ]
           ],
           "compound": [
             [
-              16,
-              17
+              18,
+              19
             ]
           ]
         },
@@ -35214,6 +35558,10 @@
             [
               7,
               7
+            ],
+            [
+              11,
+              11
             ]
           ],
           "NP": [
@@ -35226,32 +35574,44 @@
               4
             ],
             [
-              6,
+              4,
               7
             ],
             [
+              4,
+              27
+            ],
+            [
               6,
-              9
+              7
             ],
             [
               9,
               9
             ],
             [
-              11,
-              12
+              9,
+              11
             ],
             [
-              20,
-              21
+              10,
+              11
             ],
             [
-              20,
-              22
+              13,
+              14
             ],
             [
-              24,
+              22,
+              23
+            ],
+            [
+              22,
               24
+            ],
+            [
+              26,
+              26
             ]
           ],
           "MD": [
@@ -35260,8 +35620,8 @@
               2
             ],
             [
-              13,
-              13
+              15,
+              15
             ]
           ],
           "VB": [
@@ -35270,14 +35630,22 @@
               3
             ],
             [
-              15,
-              15
+              17,
+              17
             ]
           ],
-          "NNS": [
+          "NNP": [
             [
               4,
               4
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              26,
+              26
             ]
           ],
           "IN": [
@@ -35286,12 +35654,12 @@
               5
             ],
             [
-              19,
-              19
+              21,
+              21
             ],
             [
-              23,
-              23
+              25,
+              25
             ]
           ],
           "DT": [
@@ -35300,12 +35668,30 @@
               6
             ],
             [
-              11,
-              11
+              10,
+              10
             ],
             [
-              20,
-              20
+              13,
+              13
+            ],
+            [
+              22,
+              22
+            ]
+          ],
+          "PP": [
+            [
+              5,
+              7
+            ],
+            [
+              21,
+              24
+            ],
+            [
+              25,
+              26
             ]
           ],
           ",": [
@@ -35314,148 +35700,124 @@
               8
             ]
           ],
-          "NNP": [
+          "-LRB-": [
             [
-              9,
-              9
+              12,
+              12
+            ]
+          ],
+          "NNPS": [
+            [
+              14,
+              14
+            ],
+            [
+              23,
+              23
+            ]
+          ],
+          "RB": [
+            [
+              16,
+              16
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "ADVP": [
+            [
+              16,
+              16
+            ],
+            [
+              20,
+              20
             ],
             [
               24,
               24
             ]
           ],
-          "PP": [
-            [
-              5,
-              9
-            ],
-            [
-              19,
-              22
-            ],
-            [
-              23,
-              24
-            ]
-          ],
-          "-LRB-": [
-            [
-              10,
-              10
-            ]
-          ],
-          "NNPS": [
-            [
-              12,
-              12
-            ],
-            [
-              21,
-              21
-            ]
-          ],
-          "RB": [
-            [
-              14,
-              14
-            ],
-            [
-              18,
-              18
-            ]
-          ],
-          "ADVP": [
-            [
-              14,
-              14
-            ],
-            [
-              18,
-              18
-            ],
-            [
-              22,
-              22
-            ]
-          ],
           "VBN": [
             [
-              16,
-              16
+              18,
+              18
             ]
           ],
           "RP": [
             [
-              17,
-              17
+              19,
+              19
             ]
           ],
           "PRT": [
             [
-              17,
-              17
+              19,
+              19
             ]
           ],
           "PRP": [
             [
-              22,
-              22
+              24,
+              24
             ]
           ],
           "VP": [
             [
               2,
-              25
+              27
             ],
             [
               3,
-              25
-            ],
-            [
-              13,
-              24
+              27
             ],
             [
               15,
-              24
+              26
             ],
             [
-              16,
-              24
+              17,
+              26
+            ],
+            [
+              18,
+              26
             ]
           ],
           "S": [
             [
               1,
-              26
+              28
             ],
             [
-              11,
-              24
+              13,
+              26
             ]
           ],
           "-RRB-": [
             [
-              25,
-              25
+              27,
+              27
             ]
           ],
           "PRN": [
             [
-              10,
-              25
+              12,
+              27
             ]
           ],
           ".": [
             [
-              26,
-              26
+              28,
+              28
             ]
           ],
           "ROOT": [
             [
               1,
-              26
+              28
             ]
           ]
         },
@@ -35468,24 +35830,26 @@
           "6": "an",
           "7": "upcoming",
           "8": ",",
-          "9": "ImportantEventOfAnAddedGiftBuddyContact",
-          "10": "-LRB-",
-          "11": "These",
-          "12": "Notifications",
-          "13": "could",
-          "14": "also",
-          "15": "be",
-          "16": "set",
-          "17": "up",
-          "18": "manually",
-          "19": "by",
-          "20": "the",
-          "21": "Users",
-          "22": "themselves",
-          "23": "in",
-          "24": "Settings",
-          "25": "-RRB-",
-          "26": "."
+          "9": "ImportantEventOf",
+          "10": "an",
+          "11": "AddedGiftBuddyContact",
+          "12": "-LRB-",
+          "13": "These",
+          "14": "Notifications",
+          "15": "could",
+          "16": "also",
+          "17": "be",
+          "18": "set",
+          "19": "up",
+          "20": "manually",
+          "21": "by",
+          "22": "the",
+          "23": "Users",
+          "24": "themselves",
+          "25": "in",
+          "26": "Settings",
+          "27": "-RRB-",
+          "28": "."
         }
       }
     },
@@ -36856,7 +37220,7 @@
       }
     },
     {
-      "User can manually enter MultipleImportantDates for each selected ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events .": {
+      "User can manually enter MultipleImportantDates for each selected ContactWith an OptionForCustomLabelOrSelectionOfGeneralHolidays/events .": {
         "FileName": "2019-USC-Project12",
         "TD": {
           "ROOT": [
@@ -36899,6 +37263,10 @@
             [
               9,
               7
+            ],
+            [
+              11,
+              10
             ]
           ],
           "amod": [
@@ -36913,10 +37281,16 @@
               9
             ]
           ],
+          "dep": [
+            [
+              9,
+              11
+            ]
+          ],
           "punct": [
             [
               4,
-              10
+              12
             ]
           ]
         },
@@ -36938,11 +37312,19 @@
             ],
             [
               5,
-              9
+              11
             ],
             [
               7,
               9
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              10,
+              11
             ]
           ],
           "MD": [
@@ -36973,6 +37355,10 @@
             [
               5,
               5
+            ],
+            [
+              9,
+              9
             ]
           ],
           "IN": [
@@ -36985,6 +37371,10 @@
             [
               7,
               7
+            ],
+            [
+              10,
+              10
             ]
           ],
           "VBN": [
@@ -36993,44 +37383,44 @@
               8
             ]
           ],
-          "NNS": [
+          "NNPS": [
             [
-              9,
-              9
+              11,
+              11
             ]
           ],
           "PP": [
             [
               6,
-              9
+              11
             ]
           ],
           "VP": [
             [
               2,
-              9
+              11
             ],
             [
               4,
-              9
+              11
             ]
           ],
           ".": [
             [
-              10,
-              10
+              12,
+              12
             ]
           ],
           "S": [
             [
               1,
-              10
+              12
             ]
           ],
           "ROOT": [
             [
               1,
-              10
+              12
             ]
           ]
         },
@@ -37043,8 +37433,10 @@
           "6": "for",
           "7": "each",
           "8": "selected",
-          "9": "ContactWithAnOptionForCustomLabelOrSelectionOfGeneralHolidays/events",
-          "10": "."
+          "9": "ContactWith",
+          "10": "an",
+          "11": "OptionForCustomLabelOrSelectionOfGeneralHolidays/events",
+          "12": "."
         }
       }
     },

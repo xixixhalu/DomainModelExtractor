@@ -1584,112 +1584,6 @@
       }
     },
     {
-      "Admin can add/edit CategoriesAndTagsOfABlogPost .": {
-        "FileName": "2017-USC-Project07",
-        "TD": {
-          "ROOT": [
-            [
-              0,
-              3
-            ]
-          ],
-          "nsubj": [
-            [
-              3,
-              1
-            ]
-          ],
-          "aux": [
-            [
-              3,
-              2
-            ]
-          ],
-          "dobj": [
-            [
-              3,
-              4
-            ]
-          ],
-          "punct": [
-            [
-              3,
-              5
-            ]
-          ]
-        },
-        "Pos-tag": {
-          "NNP": [
-            [
-              1,
-              1
-            ],
-            [
-              4,
-              4
-            ]
-          ],
-          "NP": [
-            [
-              1,
-              1
-            ],
-            [
-              4,
-              4
-            ]
-          ],
-          "MD": [
-            [
-              2,
-              2
-            ]
-          ],
-          "VB": [
-            [
-              3,
-              3
-            ]
-          ],
-          "VP": [
-            [
-              2,
-              4
-            ],
-            [
-              3,
-              4
-            ]
-          ],
-          ".": [
-            [
-              5,
-              5
-            ]
-          ],
-          "S": [
-            [
-              1,
-              5
-            ]
-          ],
-          "ROOT": [
-            [
-              1,
-              5
-            ]
-          ]
-        },
-        "Index": {
-          "1": "Admin",
-          "2": "can",
-          "3": "add/edit",
-          "4": "CategoriesAndTagsOfABlogPost",
-          "5": "."
-        }
-      }
-    },
-    {
       "User can view Posts similar/related to a given BlogPost .": {
         "FileName": "2017-USC-Project07",
         "TD": {
@@ -3288,112 +3182,6 @@
       }
     },
     {
-      "Admin can add/edit CategoriesAndTagsOfABlogPost .": {
-        "FileName": "2017-USC-Project07",
-        "TD": {
-          "ROOT": [
-            [
-              0,
-              3
-            ]
-          ],
-          "nsubj": [
-            [
-              3,
-              1
-            ]
-          ],
-          "aux": [
-            [
-              3,
-              2
-            ]
-          ],
-          "dobj": [
-            [
-              3,
-              4
-            ]
-          ],
-          "punct": [
-            [
-              3,
-              5
-            ]
-          ]
-        },
-        "Pos-tag": {
-          "NNP": [
-            [
-              1,
-              1
-            ],
-            [
-              4,
-              4
-            ]
-          ],
-          "NP": [
-            [
-              1,
-              1
-            ],
-            [
-              4,
-              4
-            ]
-          ],
-          "MD": [
-            [
-              2,
-              2
-            ]
-          ],
-          "VB": [
-            [
-              3,
-              3
-            ]
-          ],
-          "VP": [
-            [
-              2,
-              4
-            ],
-            [
-              3,
-              4
-            ]
-          ],
-          ".": [
-            [
-              5,
-              5
-            ]
-          ],
-          "S": [
-            [
-              1,
-              5
-            ]
-          ],
-          "ROOT": [
-            [
-              1,
-              5
-            ]
-          ]
-        },
-        "Index": {
-          "1": "Admin",
-          "2": "can",
-          "3": "add/edit",
-          "4": "CategoriesAndTagsOfABlogPost",
-          "5": "."
-        }
-      }
-    },
-    {
       "User can view Posts similar/related to a given BlogPost .": {
         "FileName": "2017-USC-Project07",
         "TD": {
@@ -4606,6 +4394,142 @@
           "4": "trending",
           "5": "Posts",
           "6": "."
+        }
+      }
+    },
+    {
+      "Admin can add/edit CategoriesAndTagsOf a BlogPost .": {
+        "FileName": "2017-USC-Project07",
+        "TD": {
+          "ROOT": [
+            [
+              0,
+              3
+            ]
+          ],
+          "nsubj": [
+            [
+              3,
+              1
+            ],
+            [
+              6,
+              4
+            ]
+          ],
+          "aux": [
+            [
+              3,
+              2
+            ]
+          ],
+          "det": [
+            [
+              6,
+              5
+            ]
+          ],
+          "xcomp": [
+            [
+              3,
+              6
+            ]
+          ],
+          "punct": [
+            [
+              3,
+              7
+            ]
+          ]
+        },
+        "Pos-tag": {
+          "NNP": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          "NP": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "MD": [
+            [
+              2,
+              2
+            ]
+          ],
+          "VB": [
+            [
+              3,
+              3
+            ]
+          ],
+          "DT": [
+            [
+              5,
+              5
+            ]
+          ],
+          "S": [
+            [
+              1,
+              7
+            ],
+            [
+              4,
+              6
+            ]
+          ],
+          "VP": [
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          ".": [
+            [
+              7,
+              7
+            ]
+          ],
+          "ROOT": [
+            [
+              1,
+              7
+            ]
+          ]
+        },
+        "Index": {
+          "1": "Admin",
+          "2": "can",
+          "3": "add/edit",
+          "4": "CategoriesAndTagsOf",
+          "5": "a",
+          "6": "BlogPost",
+          "7": "."
         }
       }
     }
@@ -8137,112 +8061,6 @@
       }
     },
     {
-      "Admin can add/edit CategoriesAndTagsOfABlogPost .": {
-        "FileName": "2017-USC-Project07",
-        "TD": {
-          "ROOT": [
-            [
-              0,
-              3
-            ]
-          ],
-          "nsubj": [
-            [
-              3,
-              1
-            ]
-          ],
-          "aux": [
-            [
-              3,
-              2
-            ]
-          ],
-          "dobj": [
-            [
-              3,
-              4
-            ]
-          ],
-          "punct": [
-            [
-              3,
-              5
-            ]
-          ]
-        },
-        "Pos-tag": {
-          "NNP": [
-            [
-              1,
-              1
-            ],
-            [
-              4,
-              4
-            ]
-          ],
-          "NP": [
-            [
-              1,
-              1
-            ],
-            [
-              4,
-              4
-            ]
-          ],
-          "MD": [
-            [
-              2,
-              2
-            ]
-          ],
-          "VB": [
-            [
-              3,
-              3
-            ]
-          ],
-          "VP": [
-            [
-              2,
-              4
-            ],
-            [
-              3,
-              4
-            ]
-          ],
-          ".": [
-            [
-              5,
-              5
-            ]
-          ],
-          "S": [
-            [
-              1,
-              5
-            ]
-          ],
-          "ROOT": [
-            [
-              1,
-              5
-            ]
-          ]
-        },
-        "Index": {
-          "1": "Admin",
-          "2": "can",
-          "3": "add/edit",
-          "4": "CategoriesAndTagsOfABlogPost",
-          "5": "."
-        }
-      }
-    },
-    {
       "User can view Posts similar/related to a given BlogPost .": {
         "FileName": "2017-USC-Project07",
         "TD": {
@@ -11196,7 +11014,7 @@
       }
     },
     {
-      "Admin can add/edit CategoriesAndTagsOfABlogPost .": {
+      "Admin can add/edit CategoriesAndTagsOf a BlogPost .": {
         "FileName": "2017-USC-Project07",
         "TD": {
           "ROOT": [
@@ -11209,6 +11027,10 @@
             [
               3,
               1
+            ],
+            [
+              6,
+              4
             ]
           ],
           "aux": [
@@ -11217,16 +11039,22 @@
               2
             ]
           ],
-          "dobj": [
+          "det": [
+            [
+              6,
+              5
+            ]
+          ],
+          "xcomp": [
             [
               3,
-              4
+              6
             ]
           ],
           "punct": [
             [
               3,
-              5
+              7
             ]
           ]
         },
@@ -11239,6 +11067,10 @@
             [
               4,
               4
+            ],
+            [
+              6,
+              6
             ]
           ],
           "NP": [
@@ -11249,6 +11081,10 @@
             [
               4,
               4
+            ],
+            [
+              5,
+              6
             ]
           ],
           "MD": [
@@ -11263,17 +11099,7 @@
               3
             ]
           ],
-          "VP": [
-            [
-              2,
-              4
-            ],
-            [
-              3,
-              4
-            ]
-          ],
-          ".": [
+          "DT": [
             [
               5,
               5
@@ -11282,13 +11108,33 @@
           "S": [
             [
               1,
-              5
+              7
+            ],
+            [
+              4,
+              6
+            ]
+          ],
+          "VP": [
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          ".": [
+            [
+              7,
+              7
             ]
           ],
           "ROOT": [
             [
               1,
-              5
+              7
             ]
           ]
         },
@@ -11296,8 +11142,10 @@
           "1": "Admin",
           "2": "can",
           "3": "add/edit",
-          "4": "CategoriesAndTagsOfABlogPost",
-          "5": "."
+          "4": "CategoriesAndTagsOf",
+          "5": "a",
+          "6": "BlogPost",
+          "7": "."
         }
       }
     },

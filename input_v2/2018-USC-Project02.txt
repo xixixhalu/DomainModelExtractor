@@ -27,7 +27,7 @@ Non-registeredUser can read Reviews .
 Non-registeredUser can create an Account from a Link on the HomePage .
 Non-registeredUser can share BlogPosts on PopularSocialMediaApplications through LinksInsideOfTheBlog .
 Non-registeredUser can read the SiteBlog .
-Non-registeredUser can search ServiceProviders by State , City , and ServiceType ( Eg . RealEstateAgent , PropertyManager , Contractors , etc ) .
+Non-registeredUser can search ServiceProviders by State , City , and service type ( Eg . RealEstateAgent , PropertyManager , Contractors , etc ) .
 RegisteredUser track an InvestmentProperty by inputting the Address , Rent , PurchasePrice , LoanAmount , DownPayment , and Expenses .
 RegisteredUser can reset RegisteredUser's Password through an EmailAuthenticationSystem .
 Non-registeredUser can search the DiscussionBoard using TextInput .

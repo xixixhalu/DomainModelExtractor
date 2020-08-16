@@ -18033,7 +18033,7 @@
       }
     },
     {
-      "UniversityStudent can post a Question/announcement to all Members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
+      "UniversityStudent can post a Question/announcement to all members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -18351,7 +18351,7 @@
           "5": "Question/announcement",
           "6": "to",
           "7": "all",
-          "8": "Members",
+          "8": "members",
           "9": "via",
           "10": "the",
           "11": "WebsiteOwner/mediator",
@@ -26647,7 +26647,7 @@
       }
     },
     {
-      "WebsiteOwner/professor can offer `` live '' Meetings to LingggoMembers for the PurposeOfLanguageRelatedDiscussion , PronunciationEvaluation , and advise .": {
+      "WebsiteOwner/professor can offer `` live '' Meetings to lingggo members for the PurposeOfLanguageRelatedDiscussion , PronunciationEvaluation , and advise .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -26662,7 +26662,7 @@
               1
             ],
             [
-              17,
+              18,
               1
             ]
           ],
@@ -26682,16 +26682,16 @@
               6
             ],
             [
-              12,
-              13
+              13,
+              14
             ],
             [
-              12,
-              15
+              13,
+              16
             ],
             [
               3,
-              18
+              19
             ]
           ],
           "amod": [
@@ -26708,46 +26708,52 @@
           ],
           "case": [
             [
-              9,
+              10,
               8
             ],
             [
-              12,
-              10
+              13,
+              11
+            ]
+          ],
+          "compound": [
+            [
+              10,
+              9
             ]
           ],
           "nmod": [
             [
               7,
-              9
+              10
             ],
             [
               3,
-              12
+              13
             ]
           ],
           "det": [
             [
-              12,
-              11
+              13,
+              12
             ]
           ],
           "appos": [
             [
-              12,
-              14
+              13,
+              15
             ]
           ],
           "cc": [
             [
               3,
-              16
+              17
             ]
           ],
           "conj": [
             [
               3,
-              17
+              18
             ]
           ]
         },
@@ -26758,16 +26764,12 @@
               1
             ],
             [
-              9,
-              9
+              13,
+              13
             ],
             [
-              12,
-              12
-            ],
-            [
-              14,
-              14
+              15,
+              15
             ]
           ],
           "NP": [
@@ -26781,23 +26783,23 @@
             ],
             [
               4,
-              9
+              10
             ],
             [
               9,
-              9
+              10
             ],
             [
-              11,
-              12
+              12,
+              13
             ],
             [
-              11,
+              12,
+              16
+            ],
+            [
+              15,
               15
-            ],
-            [
-              14,
-              14
             ]
           ],
           "MD": [
@@ -26812,8 +26814,8 @@
               3
             ],
             [
-              17,
-              17
+              18,
+              18
             ]
           ],
           "``": [
@@ -26838,6 +26840,10 @@
             [
               7,
               7
+            ],
+            [
+              10,
+              10
             ]
           ],
           "TO": [
@@ -26846,78 +26852,84 @@
               8
             ]
           ],
+          "NN": [
+            [
+              9,
+              9
+            ]
+          ],
           "PP": [
             [
               8,
-              9
+              10
             ],
             [
-              10,
-              15
+              11,
+              16
             ]
           ],
           "IN": [
-            [
-              10,
-              10
-            ]
-          ],
-          "DT": [
             [
               11,
               11
             ]
           ],
+          "DT": [
+            [
+              12,
+              12
+            ]
+          ],
           ",": [
             [
-              13,
-              13
+              14,
+              14
             ],
-            [
-              15,
-              15
-            ]
-          ],
-          "VP": [
-            [
-              2,
-              17
-            ],
-            [
-              3,
-              15
-            ],
-            [
-              3,
-              17
-            ],
-            [
-              17,
-              17
-            ]
-          ],
-          "CC": [
             [
               16,
               16
             ]
           ],
-          ".": [
+          "VP": [
+            [
+              2,
+              18
+            ],
+            [
+              3,
+              16
+            ],
+            [
+              3,
+              18
+            ],
             [
               18,
               18
             ]
           ],
+          "CC": [
+            [
+              17,
+              17
+            ]
+          ],
+          ".": [
+            [
+              19,
+              19
+            ]
+          ],
           "S": [
             [
               1,
-              18
+              19
             ]
           ],
           "ROOT": [
             [
               1,
-              18
+              19
             ]
           ]
         },
@@ -26930,16 +26942,17 @@
           "6": "''",
           "7": "Meetings",
           "8": "to",
-          "9": "LingggoMembers",
-          "10": "for",
-          "11": "the",
-          "12": "PurposeOfLanguageRelatedDiscussion",
-          "13": ",",
-          "14": "PronunciationEvaluation",
-          "15": ",",
-          "16": "and",
-          "17": "advise",
-          "18": "."
+          "9": "lingggo",
+          "10": "members",
+          "11": "for",
+          "12": "the",
+          "13": "PurposeOfLanguageRelatedDiscussion",
+          "14": ",",
+          "15": "PronunciationEvaluation",
+          "16": ",",
+          "17": "and",
+          "18": "advise",
+          "19": "."
         }
       }
     },
@@ -28613,6 +28626,196 @@
       }
     },
     {
+      "member website can RateInteractions AND other members based on Experience .": {
+        "FileName": "2015-USC-Project03",
+        "TD": {
+          "ROOT": [
+            [
+              0,
+              4
+            ]
+          ],
+          "compound": [
+            [
+              2,
+              1
+            ]
+          ],
+          "nsubj": [
+            [
+              4,
+              2
+            ]
+          ],
+          "aux": [
+            [
+              4,
+              3
+            ]
+          ],
+          "amod": [
+            [
+              7,
+              5
+            ],
+            [
+              7,
+              6
+            ]
+          ],
+          "dobj": [
+            [
+              4,
+              7
+            ]
+          ],
+          "case": [
+            [
+              10,
+              8
+            ],
+            [
+              10,
+              9
+            ]
+          ],
+          "advcl": [
+            [
+              4,
+              10
+            ]
+          ],
+          "punct": [
+            [
+              4,
+              11
+            ]
+          ]
+        },
+        "Pos-tag": {
+          "NN": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          "NP": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          "MD": [
+            [
+              3,
+              3
+            ]
+          ],
+          "VB": [
+            [
+              4,
+              4
+            ]
+          ],
+          "JJ": [
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          "NNS": [
+            [
+              7,
+              7
+            ]
+          ],
+          "VBN": [
+            [
+              8,
+              8
+            ]
+          ],
+          "IN": [
+            [
+              9,
+              9
+            ]
+          ],
+          "PP": [
+            [
+              8,
+              10
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "VP": [
+            [
+              3,
+              10
+            ],
+            [
+              4,
+              10
+            ]
+          ],
+          ".": [
+            [
+              11,
+              11
+            ]
+          ],
+          "S": [
+            [
+              1,
+              11
+            ]
+          ],
+          "ROOT": [
+            [
+              1,
+              11
+            ]
+          ]
+        },
+        "Index": {
+          "1": "member",
+          "2": "website",
+          "3": "can",
+          "4": "RateInteractions",
+          "5": "AND",
+          "6": "other",
+          "7": "members",
+          "8": "based",
+          "9": "on",
+          "10": "Experience",
+          "11": "."
+        }
+      }
+    },
+    {
       "WebsiteOwner can monitor the WebsiteActivities and intercept unacceptable internet `` Behavior . '' .": {
         "FileName": "2015-USC-Project03",
         "TD": {
@@ -29214,7 +29417,7 @@
       }
     },
     {
-      "UniversityStudent can post a Question/announcement to all Members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
+      "UniversityStudent can post a Question/announcement to all members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -29532,7 +29735,7 @@
           "5": "Question/announcement",
           "6": "to",
           "7": "all",
-          "8": "Members",
+          "8": "members",
           "9": "via",
           "10": "the",
           "11": "WebsiteOwner/mediator",
@@ -36921,7 +37124,7 @@
       }
     },
     {
-      "WebsiteOwner/professor can offer `` live '' Meetings to LingggoMembers for the PurposeOfLanguageRelatedDiscussion , PronunciationEvaluation , and advise .": {
+      "WebsiteOwner/professor can offer `` live '' Meetings to lingggo members for the PurposeOfLanguageRelatedDiscussion , PronunciationEvaluation , and advise .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -36936,7 +37139,7 @@
               1
             ],
             [
-              17,
+              18,
               1
             ]
           ],
@@ -36956,16 +37159,16 @@
               6
             ],
             [
-              12,
-              13
+              13,
+              14
             ],
             [
-              12,
-              15
+              13,
+              16
             ],
             [
               3,
-              18
+              19
             ]
           ],
           "amod": [
@@ -36982,46 +37185,52 @@
           ],
           "case": [
             [
-              9,
+              10,
               8
             ],
             [
-              12,
-              10
+              13,
+              11
+            ]
+          ],
+          "compound": [
+            [
+              10,
+              9
             ]
           ],
           "nmod": [
             [
               7,
-              9
+              10
             ],
             [
               3,
-              12
+              13
             ]
           ],
           "det": [
             [
-              12,
-              11
+              13,
+              12
             ]
           ],
           "appos": [
             [
-              12,
-              14
+              13,
+              15
             ]
           ],
           "cc": [
             [
               3,
-              16
+              17
             ]
           ],
           "conj": [
             [
               3,
-              17
+              18
             ]
           ]
         },
@@ -37032,16 +37241,12 @@
               1
             ],
             [
-              9,
-              9
+              13,
+              13
             ],
             [
-              12,
-              12
-            ],
-            [
-              14,
-              14
+              15,
+              15
             ]
           ],
           "NP": [
@@ -37055,23 +37260,23 @@
             ],
             [
               4,
-              9
+              10
             ],
             [
               9,
-              9
+              10
             ],
             [
-              11,
-              12
+              12,
+              13
             ],
             [
-              11,
+              12,
+              16
+            ],
+            [
+              15,
               15
-            ],
-            [
-              14,
-              14
             ]
           ],
           "MD": [
@@ -37086,8 +37291,8 @@
               3
             ],
             [
-              17,
-              17
+              18,
+              18
             ]
           ],
           "``": [
@@ -37112,6 +37317,10 @@
             [
               7,
               7
+            ],
+            [
+              10,
+              10
             ]
           ],
           "TO": [
@@ -37120,78 +37329,84 @@
               8
             ]
           ],
+          "NN": [
+            [
+              9,
+              9
+            ]
+          ],
           "PP": [
             [
               8,
-              9
+              10
             ],
             [
-              10,
-              15
+              11,
+              16
             ]
           ],
           "IN": [
-            [
-              10,
-              10
-            ]
-          ],
-          "DT": [
             [
               11,
               11
             ]
           ],
+          "DT": [
+            [
+              12,
+              12
+            ]
+          ],
           ",": [
             [
-              13,
-              13
+              14,
+              14
             ],
-            [
-              15,
-              15
-            ]
-          ],
-          "VP": [
-            [
-              2,
-              17
-            ],
-            [
-              3,
-              15
-            ],
-            [
-              3,
-              17
-            ],
-            [
-              17,
-              17
-            ]
-          ],
-          "CC": [
             [
               16,
               16
             ]
           ],
-          ".": [
+          "VP": [
+            [
+              2,
+              18
+            ],
+            [
+              3,
+              16
+            ],
+            [
+              3,
+              18
+            ],
             [
               18,
               18
             ]
           ],
+          "CC": [
+            [
+              17,
+              17
+            ]
+          ],
+          ".": [
+            [
+              19,
+              19
+            ]
+          ],
           "S": [
             [
               1,
-              18
+              19
             ]
           ],
           "ROOT": [
             [
               1,
-              18
+              19
             ]
           ]
         },
@@ -37204,16 +37419,17 @@
           "6": "''",
           "7": "Meetings",
           "8": "to",
-          "9": "LingggoMembers",
-          "10": "for",
-          "11": "the",
-          "12": "PurposeOfLanguageRelatedDiscussion",
-          "13": ",",
-          "14": "PronunciationEvaluation",
-          "15": ",",
-          "16": "and",
-          "17": "advise",
-          "18": "."
+          "9": "lingggo",
+          "10": "members",
+          "11": "for",
+          "12": "the",
+          "13": "PurposeOfLanguageRelatedDiscussion",
+          "14": ",",
+          "15": "PronunciationEvaluation",
+          "16": ",",
+          "17": "and",
+          "18": "advise",
+          "19": "."
         }
       }
     },
@@ -38887,6 +39103,196 @@
       }
     },
     {
+      "member website can RateInteractions AND other members based on Experience .": {
+        "FileName": "2015-USC-Project03",
+        "TD": {
+          "ROOT": [
+            [
+              0,
+              4
+            ]
+          ],
+          "compound": [
+            [
+              2,
+              1
+            ]
+          ],
+          "nsubj": [
+            [
+              4,
+              2
+            ]
+          ],
+          "aux": [
+            [
+              4,
+              3
+            ]
+          ],
+          "amod": [
+            [
+              7,
+              5
+            ],
+            [
+              7,
+              6
+            ]
+          ],
+          "dobj": [
+            [
+              4,
+              7
+            ]
+          ],
+          "case": [
+            [
+              10,
+              8
+            ],
+            [
+              10,
+              9
+            ]
+          ],
+          "advcl": [
+            [
+              4,
+              10
+            ]
+          ],
+          "punct": [
+            [
+              4,
+              11
+            ]
+          ]
+        },
+        "Pos-tag": {
+          "NN": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          "NP": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          "MD": [
+            [
+              3,
+              3
+            ]
+          ],
+          "VB": [
+            [
+              4,
+              4
+            ]
+          ],
+          "JJ": [
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          "NNS": [
+            [
+              7,
+              7
+            ]
+          ],
+          "VBN": [
+            [
+              8,
+              8
+            ]
+          ],
+          "IN": [
+            [
+              9,
+              9
+            ]
+          ],
+          "PP": [
+            [
+              8,
+              10
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "VP": [
+            [
+              3,
+              10
+            ],
+            [
+              4,
+              10
+            ]
+          ],
+          ".": [
+            [
+              11,
+              11
+            ]
+          ],
+          "S": [
+            [
+              1,
+              11
+            ]
+          ],
+          "ROOT": [
+            [
+              1,
+              11
+            ]
+          ]
+        },
+        "Index": {
+          "1": "member",
+          "2": "website",
+          "3": "can",
+          "4": "RateInteractions",
+          "5": "AND",
+          "6": "other",
+          "7": "members",
+          "8": "based",
+          "9": "on",
+          "10": "Experience",
+          "11": "."
+        }
+      }
+    },
+    {
       "WebsiteOwner can monitor the WebsiteActivities and intercept unacceptable internet `` Behavior . '' .": {
         "FileName": "2015-USC-Project03",
         "TD": {
@@ -39488,7 +39894,7 @@
       }
     },
     {
-      "UniversityStudent can post a Question/announcement to all Members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
+      "UniversityStudent can post a Question/announcement to all members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -39806,7 +40212,7 @@
           "5": "Question/announcement",
           "6": "to",
           "7": "all",
-          "8": "Members",
+          "8": "members",
           "9": "via",
           "10": "the",
           "11": "WebsiteOwner/mediator",
@@ -43731,7 +44137,7 @@
       }
     },
     {
-      "UniversityStudent can post a Question/announcement to all Members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
+      "UniversityStudent can post a Question/announcement to all members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -44049,7 +44455,7 @@
           "5": "Question/announcement",
           "6": "to",
           "7": "all",
-          "8": "Members",
+          "8": "members",
           "9": "via",
           "10": "the",
           "11": "WebsiteOwner/mediator",
@@ -48238,185 +48644,7 @@
       }
     },
     {
-      "WebsiteMember can RateInteractions AND OtherMembers based on Experience .": {
-        "FileName": "2015-USC-Project03",
-        "TD": {
-          "ROOT": [
-            [
-              0,
-              2
-            ]
-          ],
-          "nsubj": [
-            [
-              2,
-              1
-            ]
-          ],
-          "xcomp": [
-            [
-              2,
-              3
-            ],
-            [
-              2,
-              5
-            ]
-          ],
-          "cc": [
-            [
-              3,
-              4
-            ]
-          ],
-          "conj": [
-            [
-              3,
-              5
-            ]
-          ],
-          "case": [
-            [
-              8,
-              6
-            ],
-            [
-              8,
-              7
-            ]
-          ],
-          "nmod": [
-            [
-              3,
-              8
-            ]
-          ],
-          "punct": [
-            [
-              2,
-              9
-            ]
-          ]
-        },
-        "Pos-tag": {
-          "NNP": [
-            [
-              1,
-              1
-            ]
-          ],
-          "NP": [
-            [
-              1,
-              1
-            ],
-            [
-              3,
-              5
-            ],
-            [
-              3,
-              8
-            ],
-            [
-              8,
-              8
-            ]
-          ],
-          "MD": [
-            [
-              2,
-              2
-            ]
-          ],
-          "NNPS": [
-            [
-              3,
-              3
-            ],
-            [
-              5,
-              5
-            ]
-          ],
-          "CC": [
-            [
-              4,
-              4
-            ]
-          ],
-          "VBN": [
-            [
-              6,
-              6
-            ]
-          ],
-          "IN": [
-            [
-              7,
-              7
-            ]
-          ],
-          "NN": [
-            [
-              8,
-              8
-            ]
-          ],
-          "PP": [
-            [
-              6,
-              8
-            ],
-            [
-              7,
-              8
-            ]
-          ],
-          "S": [
-            [
-              1,
-              9
-            ],
-            [
-              3,
-              8
-            ]
-          ],
-          "VP": [
-            [
-              2,
-              8
-            ]
-          ],
-          ".": [
-            [
-              9,
-              9
-            ]
-          ],
-          "ROOT": [
-            [
-              1,
-              9
-            ]
-          ]
-        },
-        "Index": {
-          "1": "WebsiteMember",
-          "2": "can",
-          "3": "RateInteractions",
-          "4": "AND",
-          "5": "OtherMembers",
-          "6": "based",
-          "7": "on",
-          "8": "Experience",
-          "9": "."
-        }
-      }
-    },
-    {
-      "UniversityStudent can post a Question/announcement to all Members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
+      "UniversityStudent can post a Question/announcement to all members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -48734,7 +48962,7 @@
           "5": "Question/announcement",
           "6": "to",
           "7": "all",
-          "8": "Members",
+          "8": "members",
           "9": "via",
           "10": "the",
           "11": "WebsiteOwner/mediator",
@@ -52266,7 +52494,7 @@
       }
     },
     {
-      "UniversityStudent can post a Question/announcement to all Members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
+      "UniversityStudent can post a Question/announcement to all members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -52584,7 +52812,7 @@
           "5": "Question/announcement",
           "6": "to",
           "7": "all",
-          "8": "Members",
+          "8": "members",
           "9": "via",
           "10": "the",
           "11": "WebsiteOwner/mediator",
@@ -54766,7 +54994,7 @@
       }
     },
     {
-      "UniversityStudent can post a Question/announcement to all Members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
+      "UniversityStudent can post a Question/announcement to all members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -55084,7 +55312,7 @@
           "5": "Question/announcement",
           "6": "to",
           "7": "all",
-          "8": "Members",
+          "8": "members",
           "9": "via",
           "10": "the",
           "11": "WebsiteOwner/mediator",
@@ -60827,7 +61055,7 @@
       }
     },
     {
-      "WebsiteOwner/professor can offer `` live '' Meetings to LingggoMembers for the PurposeOfLanguageRelatedDiscussion , PronunciationEvaluation , and advise .": {
+      "WebsiteOwner/professor can offer `` live '' Meetings to lingggo members for the PurposeOfLanguageRelatedDiscussion , PronunciationEvaluation , and advise .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -60842,7 +61070,7 @@
               1
             ],
             [
-              17,
+              18,
               1
             ]
           ],
@@ -60862,16 +61090,16 @@
               6
             ],
             [
-              12,
-              13
+              13,
+              14
             ],
             [
-              12,
-              15
+              13,
+              16
             ],
             [
               3,
-              18
+              19
             ]
           ],
           "amod": [
@@ -60888,46 +61116,52 @@
           ],
           "case": [
             [
-              9,
+              10,
               8
             ],
             [
-              12,
-              10
+              13,
+              11
+            ]
+          ],
+          "compound": [
+            [
+              10,
+              9
             ]
           ],
           "nmod": [
             [
               7,
-              9
+              10
             ],
             [
               3,
-              12
+              13
             ]
           ],
           "det": [
             [
-              12,
-              11
+              13,
+              12
             ]
           ],
           "appos": [
             [
-              12,
-              14
+              13,
+              15
             ]
           ],
           "cc": [
             [
               3,
-              16
+              17
             ]
           ],
           "conj": [
             [
               3,
-              17
+              18
             ]
           ]
         },
@@ -60938,16 +61172,12 @@
               1
             ],
             [
-              9,
-              9
+              13,
+              13
             ],
             [
-              12,
-              12
-            ],
-            [
-              14,
-              14
+              15,
+              15
             ]
           ],
           "NP": [
@@ -60961,23 +61191,23 @@
             ],
             [
               4,
-              9
+              10
             ],
             [
               9,
-              9
+              10
             ],
             [
-              11,
-              12
+              12,
+              13
             ],
             [
-              11,
+              12,
+              16
+            ],
+            [
+              15,
               15
-            ],
-            [
-              14,
-              14
             ]
           ],
           "MD": [
@@ -60992,8 +61222,8 @@
               3
             ],
             [
-              17,
-              17
+              18,
+              18
             ]
           ],
           "``": [
@@ -61018,6 +61248,10 @@
             [
               7,
               7
+            ],
+            [
+              10,
+              10
             ]
           ],
           "TO": [
@@ -61026,78 +61260,84 @@
               8
             ]
           ],
+          "NN": [
+            [
+              9,
+              9
+            ]
+          ],
           "PP": [
             [
               8,
-              9
+              10
             ],
             [
-              10,
-              15
+              11,
+              16
             ]
           ],
           "IN": [
-            [
-              10,
-              10
-            ]
-          ],
-          "DT": [
             [
               11,
               11
             ]
           ],
+          "DT": [
+            [
+              12,
+              12
+            ]
+          ],
           ",": [
             [
-              13,
-              13
+              14,
+              14
             ],
-            [
-              15,
-              15
-            ]
-          ],
-          "VP": [
-            [
-              2,
-              17
-            ],
-            [
-              3,
-              15
-            ],
-            [
-              3,
-              17
-            ],
-            [
-              17,
-              17
-            ]
-          ],
-          "CC": [
             [
               16,
               16
             ]
           ],
-          ".": [
+          "VP": [
+            [
+              2,
+              18
+            ],
+            [
+              3,
+              16
+            ],
+            [
+              3,
+              18
+            ],
             [
               18,
               18
             ]
           ],
+          "CC": [
+            [
+              17,
+              17
+            ]
+          ],
+          ".": [
+            [
+              19,
+              19
+            ]
+          ],
           "S": [
             [
               1,
-              18
+              19
             ]
           ],
           "ROOT": [
             [
               1,
-              18
+              19
             ]
           ]
         },
@@ -61110,16 +61350,17 @@
           "6": "''",
           "7": "Meetings",
           "8": "to",
-          "9": "LingggoMembers",
-          "10": "for",
-          "11": "the",
-          "12": "PurposeOfLanguageRelatedDiscussion",
-          "13": ",",
-          "14": "PronunciationEvaluation",
-          "15": ",",
-          "16": "and",
-          "17": "advise",
-          "18": "."
+          "9": "lingggo",
+          "10": "members",
+          "11": "for",
+          "12": "the",
+          "13": "PurposeOfLanguageRelatedDiscussion",
+          "14": ",",
+          "15": "PronunciationEvaluation",
+          "16": ",",
+          "17": "and",
+          "18": "advise",
+          "19": "."
         }
       }
     },
@@ -62793,180 +63034,192 @@
       }
     },
     {
-      "WebsiteMember can RateInteractions AND OtherMembers based on Experience .": {
+      "member website can RateInteractions AND other members based on Experience .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
             [
               0,
-              2
+              4
+            ]
+          ],
+          "compound": [
+            [
+              2,
+              1
             ]
           ],
           "nsubj": [
             [
-              2,
-              1
+              4,
+              2
             ]
           ],
-          "xcomp": [
+          "aux": [
             [
-              2,
+              4,
               3
+            ]
+          ],
+          "amod": [
+            [
+              7,
+              5
             ],
             [
-              2,
-              5
+              7,
+              6
             ]
           ],
-          "cc": [
+          "dobj": [
             [
-              3,
-              4
-            ]
-          ],
-          "conj": [
-            [
-              3,
-              5
+              4,
+              7
             ]
           ],
           "case": [
             [
-              8,
-              6
+              10,
+              8
             ],
             [
-              8,
-              7
+              10,
+              9
             ]
           ],
-          "nmod": [
+          "advcl": [
             [
-              3,
-              8
+              4,
+              10
             ]
           ],
           "punct": [
             [
-              2,
-              9
+              4,
+              11
             ]
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              10,
+              10
             ]
           ],
           "NP": [
             [
               1,
-              1
+              2
             ],
             [
-              3,
-              5
+              5,
+              7
             ],
             [
-              3,
-              8
-            ],
-            [
-              8,
-              8
+              10,
+              10
             ]
           ],
           "MD": [
             [
-              2,
-              2
-            ]
-          ],
-          "NNPS": [
-            [
               3,
               3
-            ],
-            [
-              5,
-              5
             ]
           ],
-          "CC": [
+          "VB": [
             [
               4,
               4
             ]
           ],
-          "VBN": [
+          "JJ": [
+            [
+              5,
+              5
+            ],
             [
               6,
               6
             ]
           ],
-          "IN": [
+          "NNS": [
             [
               7,
               7
             ]
           ],
-          "NN": [
+          "VBN": [
             [
               8,
               8
             ]
           ],
-          "PP": [
-            [
-              6,
-              8
-            ],
-            [
-              7,
-              8
-            ]
-          ],
-          "S": [
-            [
-              1,
-              9
-            ],
-            [
-              3,
-              8
-            ]
-          ],
-          "VP": [
-            [
-              2,
-              8
-            ]
-          ],
-          ".": [
+          "IN": [
             [
               9,
               9
             ]
           ],
+          "PP": [
+            [
+              8,
+              10
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "VP": [
+            [
+              3,
+              10
+            ],
+            [
+              4,
+              10
+            ]
+          ],
+          ".": [
+            [
+              11,
+              11
+            ]
+          ],
+          "S": [
+            [
+              1,
+              11
+            ]
+          ],
           "ROOT": [
             [
               1,
-              9
+              11
             ]
           ]
         },
         "Index": {
-          "1": "WebsiteMember",
-          "2": "can",
-          "3": "RateInteractions",
-          "4": "AND",
-          "5": "OtherMembers",
-          "6": "based",
-          "7": "on",
-          "8": "Experience",
-          "9": "."
+          "1": "member",
+          "2": "website",
+          "3": "can",
+          "4": "RateInteractions",
+          "5": "AND",
+          "6": "other",
+          "7": "members",
+          "8": "based",
+          "9": "on",
+          "10": "Experience",
+          "11": "."
         }
       }
     },
@@ -63345,7 +63598,7 @@
       }
     },
     {
-      "UniversityStudent can post a Question/announcement to all Members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
+      "UniversityStudent can post a Question/announcement to all members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -63663,7 +63916,7 @@
           "5": "Question/announcement",
           "6": "to",
           "7": "all",
-          "8": "Members",
+          "8": "members",
           "9": "via",
           "10": "the",
           "11": "WebsiteOwner/mediator",
@@ -71124,7 +71377,7 @@
       }
     },
     {
-      "WebsiteOwner/professor can offer `` live '' Meetings to LingggoMembers for the PurposeOfLanguageRelatedDiscussion , PronunciationEvaluation , and advise .": {
+      "WebsiteOwner/professor can offer `` live '' Meetings to lingggo members for the PurposeOfLanguageRelatedDiscussion , PronunciationEvaluation , and advise .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -71139,7 +71392,7 @@
               1
             ],
             [
-              17,
+              18,
               1
             ]
           ],
@@ -71159,16 +71412,16 @@
               6
             ],
             [
-              12,
-              13
+              13,
+              14
             ],
             [
-              12,
-              15
+              13,
+              16
             ],
             [
               3,
-              18
+              19
             ]
           ],
           "amod": [
@@ -71185,46 +71438,52 @@
           ],
           "case": [
             [
-              9,
+              10,
               8
             ],
             [
-              12,
-              10
+              13,
+              11
+            ]
+          ],
+          "compound": [
+            [
+              10,
+              9
             ]
           ],
           "nmod": [
             [
               7,
-              9
+              10
             ],
             [
               3,
-              12
+              13
             ]
           ],
           "det": [
             [
-              12,
-              11
+              13,
+              12
             ]
           ],
           "appos": [
             [
-              12,
-              14
+              13,
+              15
             ]
           ],
           "cc": [
             [
               3,
-              16
+              17
             ]
           ],
           "conj": [
             [
               3,
-              17
+              18
             ]
           ]
         },
@@ -71235,16 +71494,12 @@
               1
             ],
             [
-              9,
-              9
+              13,
+              13
             ],
             [
-              12,
-              12
-            ],
-            [
-              14,
-              14
+              15,
+              15
             ]
           ],
           "NP": [
@@ -71258,23 +71513,23 @@
             ],
             [
               4,
-              9
+              10
             ],
             [
               9,
-              9
+              10
             ],
             [
-              11,
-              12
+              12,
+              13
             ],
             [
-              11,
+              12,
+              16
+            ],
+            [
+              15,
               15
-            ],
-            [
-              14,
-              14
             ]
           ],
           "MD": [
@@ -71289,8 +71544,8 @@
               3
             ],
             [
-              17,
-              17
+              18,
+              18
             ]
           ],
           "``": [
@@ -71315,6 +71570,10 @@
             [
               7,
               7
+            ],
+            [
+              10,
+              10
             ]
           ],
           "TO": [
@@ -71323,78 +71582,84 @@
               8
             ]
           ],
+          "NN": [
+            [
+              9,
+              9
+            ]
+          ],
           "PP": [
             [
               8,
-              9
+              10
             ],
             [
-              10,
-              15
+              11,
+              16
             ]
           ],
           "IN": [
-            [
-              10,
-              10
-            ]
-          ],
-          "DT": [
             [
               11,
               11
             ]
           ],
+          "DT": [
+            [
+              12,
+              12
+            ]
+          ],
           ",": [
             [
-              13,
-              13
+              14,
+              14
             ],
-            [
-              15,
-              15
-            ]
-          ],
-          "VP": [
-            [
-              2,
-              17
-            ],
-            [
-              3,
-              15
-            ],
-            [
-              3,
-              17
-            ],
-            [
-              17,
-              17
-            ]
-          ],
-          "CC": [
             [
               16,
               16
             ]
           ],
-          ".": [
+          "VP": [
+            [
+              2,
+              18
+            ],
+            [
+              3,
+              16
+            ],
+            [
+              3,
+              18
+            ],
             [
               18,
               18
             ]
           ],
+          "CC": [
+            [
+              17,
+              17
+            ]
+          ],
+          ".": [
+            [
+              19,
+              19
+            ]
+          ],
           "S": [
             [
               1,
-              18
+              19
             ]
           ],
           "ROOT": [
             [
               1,
-              18
+              19
             ]
           ]
         },
@@ -71407,16 +71672,17 @@
           "6": "''",
           "7": "Meetings",
           "8": "to",
-          "9": "LingggoMembers",
-          "10": "for",
-          "11": "the",
-          "12": "PurposeOfLanguageRelatedDiscussion",
-          "13": ",",
-          "14": "PronunciationEvaluation",
-          "15": ",",
-          "16": "and",
-          "17": "advise",
-          "18": "."
+          "9": "lingggo",
+          "10": "members",
+          "11": "for",
+          "12": "the",
+          "13": "PurposeOfLanguageRelatedDiscussion",
+          "14": ",",
+          "15": "PronunciationEvaluation",
+          "16": ",",
+          "17": "and",
+          "18": "advise",
+          "19": "."
         }
       }
     },
@@ -73090,6 +73356,196 @@
       }
     },
     {
+      "member website can RateInteractions AND other members based on Experience .": {
+        "FileName": "2015-USC-Project03",
+        "TD": {
+          "ROOT": [
+            [
+              0,
+              4
+            ]
+          ],
+          "compound": [
+            [
+              2,
+              1
+            ]
+          ],
+          "nsubj": [
+            [
+              4,
+              2
+            ]
+          ],
+          "aux": [
+            [
+              4,
+              3
+            ]
+          ],
+          "amod": [
+            [
+              7,
+              5
+            ],
+            [
+              7,
+              6
+            ]
+          ],
+          "dobj": [
+            [
+              4,
+              7
+            ]
+          ],
+          "case": [
+            [
+              10,
+              8
+            ],
+            [
+              10,
+              9
+            ]
+          ],
+          "advcl": [
+            [
+              4,
+              10
+            ]
+          ],
+          "punct": [
+            [
+              4,
+              11
+            ]
+          ]
+        },
+        "Pos-tag": {
+          "NN": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          "NP": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          "MD": [
+            [
+              3,
+              3
+            ]
+          ],
+          "VB": [
+            [
+              4,
+              4
+            ]
+          ],
+          "JJ": [
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          "NNS": [
+            [
+              7,
+              7
+            ]
+          ],
+          "VBN": [
+            [
+              8,
+              8
+            ]
+          ],
+          "IN": [
+            [
+              9,
+              9
+            ]
+          ],
+          "PP": [
+            [
+              8,
+              10
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "VP": [
+            [
+              3,
+              10
+            ],
+            [
+              4,
+              10
+            ]
+          ],
+          ".": [
+            [
+              11,
+              11
+            ]
+          ],
+          "S": [
+            [
+              1,
+              11
+            ]
+          ],
+          "ROOT": [
+            [
+              1,
+              11
+            ]
+          ]
+        },
+        "Index": {
+          "1": "member",
+          "2": "website",
+          "3": "can",
+          "4": "RateInteractions",
+          "5": "AND",
+          "6": "other",
+          "7": "members",
+          "8": "based",
+          "9": "on",
+          "10": "Experience",
+          "11": "."
+        }
+      }
+    },
+    {
       "WebsiteOwner can monitor the WebsiteActivities and intercept unacceptable internet `` Behavior . '' .": {
         "FileName": "2015-USC-Project03",
         "TD": {
@@ -73691,7 +74147,7 @@
       }
     },
     {
-      "UniversityStudent can post a Question/announcement to all Members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
+      "UniversityStudent can post a Question/announcement to all members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -74009,7 +74465,7 @@
           "5": "Question/announcement",
           "6": "to",
           "7": "all",
-          "8": "Members",
+          "8": "members",
           "9": "via",
           "10": "the",
           "11": "WebsiteOwner/mediator",
@@ -83271,7 +83727,7 @@
       }
     },
     {
-      "UniversityStudent can post a Question/announcement to all Members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
+      "UniversityStudent can post a Question/announcement to all members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -83589,7 +84045,7 @@
           "5": "Question/announcement",
           "6": "to",
           "7": "all",
-          "8": "Members",
+          "8": "members",
           "9": "via",
           "10": "the",
           "11": "WebsiteOwner/mediator",
@@ -91763,7 +92219,7 @@
       }
     },
     {
-      "WebsiteOwner/professor can offer `` live '' Meetings to LingggoMembers for the PurposeOfLanguageRelatedDiscussion , PronunciationEvaluation , and advise .": {
+      "WebsiteOwner/professor can offer `` live '' Meetings to lingggo members for the PurposeOfLanguageRelatedDiscussion , PronunciationEvaluation , and advise .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -91778,7 +92234,7 @@
               1
             ],
             [
-              17,
+              18,
               1
             ]
           ],
@@ -91798,16 +92254,16 @@
               6
             ],
             [
-              12,
-              13
+              13,
+              14
             ],
             [
-              12,
-              15
+              13,
+              16
             ],
             [
               3,
-              18
+              19
             ]
           ],
           "amod": [
@@ -91824,46 +92280,52 @@
           ],
           "case": [
             [
-              9,
+              10,
               8
             ],
             [
-              12,
-              10
+              13,
+              11
+            ]
+          ],
+          "compound": [
+            [
+              10,
+              9
             ]
           ],
           "nmod": [
             [
               7,
-              9
+              10
             ],
             [
               3,
-              12
+              13
             ]
           ],
           "det": [
             [
-              12,
-              11
+              13,
+              12
             ]
           ],
           "appos": [
             [
-              12,
-              14
+              13,
+              15
             ]
           ],
           "cc": [
             [
               3,
-              16
+              17
             ]
           ],
           "conj": [
             [
               3,
-              17
+              18
             ]
           ]
         },
@@ -91874,16 +92336,12 @@
               1
             ],
             [
-              9,
-              9
+              13,
+              13
             ],
             [
-              12,
-              12
-            ],
-            [
-              14,
-              14
+              15,
+              15
             ]
           ],
           "NP": [
@@ -91897,23 +92355,23 @@
             ],
             [
               4,
-              9
+              10
             ],
             [
               9,
-              9
+              10
             ],
             [
-              11,
-              12
+              12,
+              13
             ],
             [
-              11,
+              12,
+              16
+            ],
+            [
+              15,
               15
-            ],
-            [
-              14,
-              14
             ]
           ],
           "MD": [
@@ -91928,8 +92386,8 @@
               3
             ],
             [
-              17,
-              17
+              18,
+              18
             ]
           ],
           "``": [
@@ -91954,6 +92412,10 @@
             [
               7,
               7
+            ],
+            [
+              10,
+              10
             ]
           ],
           "TO": [
@@ -91962,78 +92424,84 @@
               8
             ]
           ],
+          "NN": [
+            [
+              9,
+              9
+            ]
+          ],
           "PP": [
             [
               8,
-              9
+              10
             ],
             [
-              10,
-              15
+              11,
+              16
             ]
           ],
           "IN": [
-            [
-              10,
-              10
-            ]
-          ],
-          "DT": [
             [
               11,
               11
             ]
           ],
+          "DT": [
+            [
+              12,
+              12
+            ]
+          ],
           ",": [
             [
-              13,
-              13
+              14,
+              14
             ],
-            [
-              15,
-              15
-            ]
-          ],
-          "VP": [
-            [
-              2,
-              17
-            ],
-            [
-              3,
-              15
-            ],
-            [
-              3,
-              17
-            ],
-            [
-              17,
-              17
-            ]
-          ],
-          "CC": [
             [
               16,
               16
             ]
           ],
-          ".": [
+          "VP": [
+            [
+              2,
+              18
+            ],
+            [
+              3,
+              16
+            ],
+            [
+              3,
+              18
+            ],
             [
               18,
               18
             ]
           ],
+          "CC": [
+            [
+              17,
+              17
+            ]
+          ],
+          ".": [
+            [
+              19,
+              19
+            ]
+          ],
           "S": [
             [
               1,
-              18
+              19
             ]
           ],
           "ROOT": [
             [
               1,
-              18
+              19
             ]
           ]
         },
@@ -92046,16 +92514,17 @@
           "6": "''",
           "7": "Meetings",
           "8": "to",
-          "9": "LingggoMembers",
-          "10": "for",
-          "11": "the",
-          "12": "PurposeOfLanguageRelatedDiscussion",
-          "13": ",",
-          "14": "PronunciationEvaluation",
-          "15": ",",
-          "16": "and",
-          "17": "advise",
-          "18": "."
+          "9": "lingggo",
+          "10": "members",
+          "11": "for",
+          "12": "the",
+          "13": "PurposeOfLanguageRelatedDiscussion",
+          "14": ",",
+          "15": "PronunciationEvaluation",
+          "16": ",",
+          "17": "and",
+          "18": "advise",
+          "19": "."
         }
       }
     },
@@ -94072,180 +94541,192 @@
       }
     },
     {
-      "WebsiteMember can RateInteractions AND OtherMembers based on Experience .": {
+      "member website can RateInteractions AND other members based on Experience .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
             [
               0,
-              2
+              4
+            ]
+          ],
+          "compound": [
+            [
+              2,
+              1
             ]
           ],
           "nsubj": [
             [
-              2,
-              1
+              4,
+              2
             ]
           ],
-          "xcomp": [
+          "aux": [
             [
-              2,
+              4,
               3
+            ]
+          ],
+          "amod": [
+            [
+              7,
+              5
             ],
             [
-              2,
-              5
+              7,
+              6
             ]
           ],
-          "cc": [
+          "dobj": [
             [
-              3,
-              4
-            ]
-          ],
-          "conj": [
-            [
-              3,
-              5
+              4,
+              7
             ]
           ],
           "case": [
             [
-              8,
-              6
+              10,
+              8
             ],
             [
-              8,
-              7
+              10,
+              9
             ]
           ],
-          "nmod": [
+          "advcl": [
             [
-              3,
-              8
+              4,
+              10
             ]
           ],
           "punct": [
             [
-              2,
-              9
+              4,
+              11
             ]
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              10,
+              10
             ]
           ],
           "NP": [
             [
               1,
-              1
+              2
             ],
             [
-              3,
-              5
+              5,
+              7
             ],
             [
-              3,
-              8
-            ],
-            [
-              8,
-              8
+              10,
+              10
             ]
           ],
           "MD": [
             [
-              2,
-              2
-            ]
-          ],
-          "NNPS": [
-            [
               3,
               3
-            ],
-            [
-              5,
-              5
             ]
           ],
-          "CC": [
+          "VB": [
             [
               4,
               4
             ]
           ],
-          "VBN": [
+          "JJ": [
+            [
+              5,
+              5
+            ],
             [
               6,
               6
             ]
           ],
-          "IN": [
+          "NNS": [
             [
               7,
               7
             ]
           ],
-          "NN": [
+          "VBN": [
             [
               8,
               8
             ]
           ],
-          "PP": [
-            [
-              6,
-              8
-            ],
-            [
-              7,
-              8
-            ]
-          ],
-          "S": [
-            [
-              1,
-              9
-            ],
-            [
-              3,
-              8
-            ]
-          ],
-          "VP": [
-            [
-              2,
-              8
-            ]
-          ],
-          ".": [
+          "IN": [
             [
               9,
               9
             ]
           ],
+          "PP": [
+            [
+              8,
+              10
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "VP": [
+            [
+              3,
+              10
+            ],
+            [
+              4,
+              10
+            ]
+          ],
+          ".": [
+            [
+              11,
+              11
+            ]
+          ],
+          "S": [
+            [
+              1,
+              11
+            ]
+          ],
           "ROOT": [
             [
               1,
-              9
+              11
             ]
           ]
         },
         "Index": {
-          "1": "WebsiteMember",
-          "2": "can",
-          "3": "RateInteractions",
-          "4": "AND",
-          "5": "OtherMembers",
-          "6": "based",
-          "7": "on",
-          "8": "Experience",
-          "9": "."
+          "1": "member",
+          "2": "website",
+          "3": "can",
+          "4": "RateInteractions",
+          "5": "AND",
+          "6": "other",
+          "7": "members",
+          "8": "based",
+          "9": "on",
+          "10": "Experience",
+          "11": "."
         }
       }
     },
@@ -94851,7 +95332,7 @@
       }
     },
     {
-      "UniversityStudent can post a Question/announcement to all Members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
+      "UniversityStudent can post a Question/announcement to all members via the WebsiteOwner/mediator ; i.e. it has to be filtered .": {
         "FileName": "2015-USC-Project03",
         "TD": {
           "ROOT": [
@@ -95169,7 +95650,7 @@
           "5": "Question/announcement",
           "6": "to",
           "7": "all",
-          "8": "Members",
+          "8": "members",
           "9": "via",
           "10": "the",
           "11": "WebsiteOwner/mediator",

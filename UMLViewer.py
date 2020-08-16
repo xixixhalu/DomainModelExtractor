@@ -2,6 +2,7 @@ import sys
 sys.path.append('../')
 from util.file_op import fileOps
 import subprocess
+import os
 
 class UMLEntity:
     def __init__(self, entity_name):
@@ -97,9 +98,11 @@ class UMLViewer:
     def output(self):
         for key, value in self.__entity_map.items():
             self.__content += value.output()
+           # print('a')
 
         for item in self.__association_set:
             self.__content += item.output()
+            #print('b')
 
         return self.__header + self.__content + self.__footer
 
@@ -108,14 +111,20 @@ class UMLViewer:
 
     def save_to_file(self, path):
         with fileOps.safe_open_w(path + self.__title + '.txt') as o:
+            
             o.write(self.output())
+            #print('c')
 
     def generate_diagram(self, path, format='svg'):
         file_path = path + '/' + self.__title + '.txt'
+        
         with fileOps.safe_open_w(file_path) as o:
+            
             o.write(self.output())
+            
         # Bo: TODO: add more format support
         subprocess.call(['plantweb',file_path])
+        #print(file_path)
         subprocess.call(['mv', self.__title + '.' + format, path + '/' + self.__title + '.' + format])
         # fileOps.safe_delete_file(file_path)
 

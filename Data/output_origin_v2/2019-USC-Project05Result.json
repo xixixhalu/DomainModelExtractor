@@ -698,7 +698,7 @@
       }
     },
     {
-      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOfAnOrganization are not falsely AccusedOfACrimeOrConflict .": {
+      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOf an Organization are not falsely AccusedOf a CrimeOrConflict .": {
         "FileName": "2019-USC-Project05",
         "TD": {
           "ROOT": [
@@ -713,8 +713,8 @@
               1
             ],
             [
-              17,
-              13
+              19,
+              15
             ]
           ],
           "aux": [
@@ -725,18 +725,34 @@
             [
               9,
               7
+            ],
+            [
+              19,
+              16
             ]
           ],
           "det": [
             [
               5,
               4
+            ],
+            [
+              15,
+              14
+            ],
+            [
+              21,
+              20
             ]
           ],
           "dobj": [
             [
               3,
               5
+            ],
+            [
+              19,
+              21
             ]
           ],
           "nsubjpass": [
@@ -758,7 +774,7 @@
             ],
             [
               3,
-              17
+              19
             ]
           ],
           "punct": [
@@ -768,7 +784,7 @@
             ],
             [
               3,
-              18
+              22
             ]
           ],
           "cc": [
@@ -779,32 +795,32 @@
           ],
           "mark": [
             [
-              17,
+              19,
               12
             ]
           ],
-          "cop": [
+          "compound": [
             [
-              17,
-              14
+              15,
+              13
             ]
           ],
           "neg": [
             [
-              17,
-              15
+              19,
+              17
             ]
           ],
           "advmod": [
             [
-              17,
-              16
+              19,
+              18
             ]
           ],
           "conj": [
             [
               9,
-              17
+              19
             ]
           ]
         },
@@ -819,8 +835,8 @@
               13
             ],
             [
-              17,
-              17
+              15,
+              15
             ]
           ],
           "NP": [
@@ -834,11 +850,11 @@
             ],
             [
               13,
-              13
+              15
             ],
             [
-              17,
-              17
+              20,
+              21
             ]
           ],
           "MD": [
@@ -857,6 +873,14 @@
             [
               4,
               4
+            ],
+            [
+              14,
+              14
+            ],
+            [
+              20,
+              20
             ]
           ],
           "NNPS": [
@@ -883,8 +907,8 @@
               7
             ],
             [
-              14,
-              14
+              16,
+              16
             ]
           ],
           "VBN": [
@@ -900,11 +924,11 @@
           "VP": [
             [
               2,
-              17
+              21
             ],
             [
               3,
-              17
+              21
             ],
             [
               7,
@@ -919,14 +943,18 @@
               9
             ],
             [
-              14,
-              17
+              16,
+              21
+            ],
+            [
+              19,
+              21
             ]
           ],
           "S": [
             [
               1,
-              18
+              22
             ],
             [
               7,
@@ -934,7 +962,7 @@
             ],
             [
               13,
-              17
+              21
             ]
           ],
           "SBAR": [
@@ -944,11 +972,11 @@
             ],
             [
               6,
-              17
+              21
             ],
             [
               12,
-              17
+              21
             ]
           ],
           ",": [
@@ -971,30 +999,42 @@
           ],
           "RB": [
             [
-              15,
-              15
+              17,
+              17
             ],
-            [
-              16,
-              16
-            ]
-          ],
-          "ADVP": [
-            [
-              16,
-              16
-            ]
-          ],
-          ".": [
             [
               18,
               18
             ]
           ],
+          "ADVP": [
+            [
+              18,
+              18
+            ]
+          ],
+          "VBG": [
+            [
+              19,
+              19
+            ]
+          ],
+          "NN": [
+            [
+              21,
+              21
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
           "ROOT": [
             [
               1,
-              18
+              22
             ]
           ]
         },
@@ -1011,12 +1051,16 @@
           "10": ",",
           "11": "so",
           "12": "that",
-          "13": "EmployeesOfAnOrganization",
-          "14": "are",
-          "15": "not",
-          "16": "falsely",
-          "17": "AccusedOfACrimeOrConflict",
-          "18": "."
+          "13": "EmployeesOf",
+          "14": "an",
+          "15": "Organization",
+          "16": "are",
+          "17": "not",
+          "18": "falsely",
+          "19": "AccusedOf",
+          "20": "a",
+          "21": "CrimeOrConflict",
+          "22": "."
         }
       }
     },
@@ -4013,7 +4057,7 @@
       }
     },
     {
-      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOfAnOrganization are not falsely AccusedOfACrimeOrConflict .": {
+      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOf an Organization are not falsely AccusedOf a CrimeOrConflict .": {
         "FileName": "2019-USC-Project05",
         "TD": {
           "ROOT": [
@@ -4028,8 +4072,8 @@
               1
             ],
             [
-              17,
-              13
+              19,
+              15
             ]
           ],
           "aux": [
@@ -4040,18 +4084,34 @@
             [
               9,
               7
+            ],
+            [
+              19,
+              16
             ]
           ],
           "det": [
             [
               5,
               4
+            ],
+            [
+              15,
+              14
+            ],
+            [
+              21,
+              20
             ]
           ],
           "dobj": [
             [
               3,
               5
+            ],
+            [
+              19,
+              21
             ]
           ],
           "nsubjpass": [
@@ -4073,7 +4133,7 @@
             ],
             [
               3,
-              17
+              19
             ]
           ],
           "punct": [
@@ -4083,7 +4143,7 @@
             ],
             [
               3,
-              18
+              22
             ]
           ],
           "cc": [
@@ -4094,32 +4154,32 @@
           ],
           "mark": [
             [
-              17,
+              19,
               12
             ]
           ],
-          "cop": [
+          "compound": [
             [
-              17,
-              14
+              15,
+              13
             ]
           ],
           "neg": [
             [
-              17,
-              15
+              19,
+              17
             ]
           ],
           "advmod": [
             [
-              17,
-              16
+              19,
+              18
             ]
           ],
           "conj": [
             [
               9,
-              17
+              19
             ]
           ]
         },
@@ -4134,8 +4194,8 @@
               13
             ],
             [
-              17,
-              17
+              15,
+              15
             ]
           ],
           "NP": [
@@ -4149,11 +4209,11 @@
             ],
             [
               13,
-              13
+              15
             ],
             [
-              17,
-              17
+              20,
+              21
             ]
           ],
           "MD": [
@@ -4172,6 +4232,14 @@
             [
               4,
               4
+            ],
+            [
+              14,
+              14
+            ],
+            [
+              20,
+              20
             ]
           ],
           "NNPS": [
@@ -4198,8 +4266,8 @@
               7
             ],
             [
-              14,
-              14
+              16,
+              16
             ]
           ],
           "VBN": [
@@ -4215,11 +4283,11 @@
           "VP": [
             [
               2,
-              17
+              21
             ],
             [
               3,
-              17
+              21
             ],
             [
               7,
@@ -4234,14 +4302,18 @@
               9
             ],
             [
-              14,
-              17
+              16,
+              21
+            ],
+            [
+              19,
+              21
             ]
           ],
           "S": [
             [
               1,
-              18
+              22
             ],
             [
               7,
@@ -4249,7 +4321,7 @@
             ],
             [
               13,
-              17
+              21
             ]
           ],
           "SBAR": [
@@ -4259,11 +4331,11 @@
             ],
             [
               6,
-              17
+              21
             ],
             [
               12,
-              17
+              21
             ]
           ],
           ",": [
@@ -4286,30 +4358,42 @@
           ],
           "RB": [
             [
-              15,
-              15
+              17,
+              17
             ],
-            [
-              16,
-              16
-            ]
-          ],
-          "ADVP": [
-            [
-              16,
-              16
-            ]
-          ],
-          ".": [
             [
               18,
               18
             ]
           ],
+          "ADVP": [
+            [
+              18,
+              18
+            ]
+          ],
+          "VBG": [
+            [
+              19,
+              19
+            ]
+          ],
+          "NN": [
+            [
+              21,
+              21
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
           "ROOT": [
             [
               1,
-              18
+              22
             ]
           ]
         },
@@ -4326,12 +4410,16 @@
           "10": ",",
           "11": "so",
           "12": "that",
-          "13": "EmployeesOfAnOrganization",
-          "14": "are",
-          "15": "not",
-          "16": "falsely",
-          "17": "AccusedOfACrimeOrConflict",
-          "18": "."
+          "13": "EmployeesOf",
+          "14": "an",
+          "15": "Organization",
+          "16": "are",
+          "17": "not",
+          "18": "falsely",
+          "19": "AccusedOf",
+          "20": "a",
+          "21": "CrimeOrConflict",
+          "22": "."
         }
       }
     },
@@ -9416,7 +9504,7 @@
       }
     },
     {
-      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOfAnOrganization are not falsely AccusedOfACrimeOrConflict .": {
+      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOf an Organization are not falsely AccusedOf a CrimeOrConflict .": {
         "FileName": "2019-USC-Project05",
         "TD": {
           "ROOT": [
@@ -9431,8 +9519,8 @@
               1
             ],
             [
-              17,
-              13
+              19,
+              15
             ]
           ],
           "aux": [
@@ -9443,18 +9531,34 @@
             [
               9,
               7
+            ],
+            [
+              19,
+              16
             ]
           ],
           "det": [
             [
               5,
               4
+            ],
+            [
+              15,
+              14
+            ],
+            [
+              21,
+              20
             ]
           ],
           "dobj": [
             [
               3,
               5
+            ],
+            [
+              19,
+              21
             ]
           ],
           "nsubjpass": [
@@ -9476,7 +9580,7 @@
             ],
             [
               3,
-              17
+              19
             ]
           ],
           "punct": [
@@ -9486,7 +9590,7 @@
             ],
             [
               3,
-              18
+              22
             ]
           ],
           "cc": [
@@ -9497,32 +9601,32 @@
           ],
           "mark": [
             [
-              17,
+              19,
               12
             ]
           ],
-          "cop": [
+          "compound": [
             [
-              17,
-              14
+              15,
+              13
             ]
           ],
           "neg": [
             [
-              17,
-              15
+              19,
+              17
             ]
           ],
           "advmod": [
             [
-              17,
-              16
+              19,
+              18
             ]
           ],
           "conj": [
             [
               9,
-              17
+              19
             ]
           ]
         },
@@ -9537,8 +9641,8 @@
               13
             ],
             [
-              17,
-              17
+              15,
+              15
             ]
           ],
           "NP": [
@@ -9552,11 +9656,11 @@
             ],
             [
               13,
-              13
+              15
             ],
             [
-              17,
-              17
+              20,
+              21
             ]
           ],
           "MD": [
@@ -9575,6 +9679,14 @@
             [
               4,
               4
+            ],
+            [
+              14,
+              14
+            ],
+            [
+              20,
+              20
             ]
           ],
           "NNPS": [
@@ -9601,8 +9713,8 @@
               7
             ],
             [
-              14,
-              14
+              16,
+              16
             ]
           ],
           "VBN": [
@@ -9618,11 +9730,11 @@
           "VP": [
             [
               2,
-              17
+              21
             ],
             [
               3,
-              17
+              21
             ],
             [
               7,
@@ -9637,14 +9749,18 @@
               9
             ],
             [
-              14,
-              17
+              16,
+              21
+            ],
+            [
+              19,
+              21
             ]
           ],
           "S": [
             [
               1,
-              18
+              22
             ],
             [
               7,
@@ -9652,7 +9768,7 @@
             ],
             [
               13,
-              17
+              21
             ]
           ],
           "SBAR": [
@@ -9662,11 +9778,11 @@
             ],
             [
               6,
-              17
+              21
             ],
             [
               12,
-              17
+              21
             ]
           ],
           ",": [
@@ -9689,30 +9805,42 @@
           ],
           "RB": [
             [
-              15,
-              15
+              17,
+              17
             ],
-            [
-              16,
-              16
-            ]
-          ],
-          "ADVP": [
-            [
-              16,
-              16
-            ]
-          ],
-          ".": [
             [
               18,
               18
             ]
           ],
+          "ADVP": [
+            [
+              18,
+              18
+            ]
+          ],
+          "VBG": [
+            [
+              19,
+              19
+            ]
+          ],
+          "NN": [
+            [
+              21,
+              21
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
           "ROOT": [
             [
               1,
-              18
+              22
             ]
           ]
         },
@@ -9729,12 +9857,16 @@
           "10": ",",
           "11": "so",
           "12": "that",
-          "13": "EmployeesOfAnOrganization",
-          "14": "are",
-          "15": "not",
-          "16": "falsely",
-          "17": "AccusedOfACrimeOrConflict",
-          "18": "."
+          "13": "EmployeesOf",
+          "14": "an",
+          "15": "Organization",
+          "16": "are",
+          "17": "not",
+          "18": "falsely",
+          "19": "AccusedOf",
+          "20": "a",
+          "21": "CrimeOrConflict",
+          "22": "."
         }
       }
     },
@@ -11033,6 +11165,373 @@
           "14": "High-riskComplaints",
           "15": "first",
           "16": "."
+        }
+      }
+    },
+    {
+      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOf an Organization are not falsely AccusedOf a CrimeOrConflict .": {
+        "FileName": "2019-USC-Project05",
+        "TD": {
+          "ROOT": [
+            [
+              0,
+              3
+            ]
+          ],
+          "nsubj": [
+            [
+              3,
+              1
+            ],
+            [
+              19,
+              15
+            ]
+          ],
+          "aux": [
+            [
+              3,
+              2
+            ],
+            [
+              9,
+              7
+            ],
+            [
+              19,
+              16
+            ]
+          ],
+          "det": [
+            [
+              5,
+              4
+            ],
+            [
+              15,
+              14
+            ],
+            [
+              21,
+              20
+            ]
+          ],
+          "dobj": [
+            [
+              3,
+              5
+            ],
+            [
+              19,
+              21
+            ]
+          ],
+          "nsubjpass": [
+            [
+              9,
+              6
+            ]
+          ],
+          "auxpass": [
+            [
+              9,
+              8
+            ]
+          ],
+          "ccomp": [
+            [
+              3,
+              9
+            ],
+            [
+              3,
+              19
+            ]
+          ],
+          "punct": [
+            [
+              9,
+              10
+            ],
+            [
+              3,
+              22
+            ]
+          ],
+          "cc": [
+            [
+              9,
+              11
+            ]
+          ],
+          "mark": [
+            [
+              19,
+              12
+            ]
+          ],
+          "compound": [
+            [
+              15,
+              13
+            ]
+          ],
+          "neg": [
+            [
+              19,
+              17
+            ]
+          ],
+          "advmod": [
+            [
+              19,
+              18
+            ]
+          ],
+          "conj": [
+            [
+              9,
+              19
+            ]
+          ]
+        },
+        "Pos-tag": {
+          "NNP": [
+            [
+              1,
+              1
+            ],
+            [
+              13,
+              13
+            ],
+            [
+              15,
+              15
+            ]
+          ],
+          "NP": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              13,
+              15
+            ],
+            [
+              20,
+              21
+            ]
+          ],
+          "MD": [
+            [
+              2,
+              2
+            ]
+          ],
+          "VB": [
+            [
+              3,
+              3
+            ]
+          ],
+          "DT": [
+            [
+              4,
+              4
+            ],
+            [
+              14,
+              14
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "NNPS": [
+            [
+              5,
+              5
+            ]
+          ],
+          "WDT": [
+            [
+              6,
+              6
+            ]
+          ],
+          "WHNP": [
+            [
+              6,
+              6
+            ]
+          ],
+          "VBP": [
+            [
+              7,
+              7
+            ],
+            [
+              16,
+              16
+            ]
+          ],
+          "VBN": [
+            [
+              8,
+              8
+            ],
+            [
+              9,
+              9
+            ]
+          ],
+          "VP": [
+            [
+              2,
+              21
+            ],
+            [
+              3,
+              21
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              16,
+              21
+            ],
+            [
+              19,
+              21
+            ]
+          ],
+          "S": [
+            [
+              1,
+              22
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              13,
+              21
+            ]
+          ],
+          "SBAR": [
+            [
+              6,
+              9
+            ],
+            [
+              6,
+              21
+            ],
+            [
+              12,
+              21
+            ]
+          ],
+          ",": [
+            [
+              10,
+              10
+            ]
+          ],
+          "CC": [
+            [
+              11,
+              11
+            ]
+          ],
+          "IN": [
+            [
+              12,
+              12
+            ]
+          ],
+          "RB": [
+            [
+              17,
+              17
+            ],
+            [
+              18,
+              18
+            ]
+          ],
+          "ADVP": [
+            [
+              18,
+              18
+            ]
+          ],
+          "VBG": [
+            [
+              19,
+              19
+            ]
+          ],
+          "NN": [
+            [
+              21,
+              21
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
+          "ROOT": [
+            [
+              1,
+              22
+            ]
+          ]
+        },
+        "Index": {
+          "1": "Vrs",
+          "2": "can",
+          "3": "delete",
+          "4": "any",
+          "5": "IrrelevantComplaints",
+          "6": "that",
+          "7": "have",
+          "8": "been",
+          "9": "reported",
+          "10": ",",
+          "11": "so",
+          "12": "that",
+          "13": "EmployeesOf",
+          "14": "an",
+          "15": "Organization",
+          "16": "are",
+          "17": "not",
+          "18": "falsely",
+          "19": "AccusedOf",
+          "20": "a",
+          "21": "CrimeOrConflict",
+          "22": "."
         }
       }
     },
@@ -13761,7 +14260,7 @@
       }
     },
     {
-      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOfAnOrganization are not falsely AccusedOfACrimeOrConflict .": {
+      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOf an Organization are not falsely AccusedOf a CrimeOrConflict .": {
         "FileName": "2019-USC-Project05",
         "TD": {
           "ROOT": [
@@ -13776,8 +14275,8 @@
               1
             ],
             [
-              17,
-              13
+              19,
+              15
             ]
           ],
           "aux": [
@@ -13788,18 +14287,34 @@
             [
               9,
               7
+            ],
+            [
+              19,
+              16
             ]
           ],
           "det": [
             [
               5,
               4
+            ],
+            [
+              15,
+              14
+            ],
+            [
+              21,
+              20
             ]
           ],
           "dobj": [
             [
               3,
               5
+            ],
+            [
+              19,
+              21
             ]
           ],
           "nsubjpass": [
@@ -13821,7 +14336,7 @@
             ],
             [
               3,
-              17
+              19
             ]
           ],
           "punct": [
@@ -13831,7 +14346,7 @@
             ],
             [
               3,
-              18
+              22
             ]
           ],
           "cc": [
@@ -13842,32 +14357,32 @@
           ],
           "mark": [
             [
-              17,
+              19,
               12
             ]
           ],
-          "cop": [
+          "compound": [
             [
-              17,
-              14
+              15,
+              13
             ]
           ],
           "neg": [
             [
-              17,
-              15
+              19,
+              17
             ]
           ],
           "advmod": [
             [
-              17,
-              16
+              19,
+              18
             ]
           ],
           "conj": [
             [
               9,
-              17
+              19
             ]
           ]
         },
@@ -13882,8 +14397,8 @@
               13
             ],
             [
-              17,
-              17
+              15,
+              15
             ]
           ],
           "NP": [
@@ -13897,11 +14412,11 @@
             ],
             [
               13,
-              13
+              15
             ],
             [
-              17,
-              17
+              20,
+              21
             ]
           ],
           "MD": [
@@ -13920,6 +14435,14 @@
             [
               4,
               4
+            ],
+            [
+              14,
+              14
+            ],
+            [
+              20,
+              20
             ]
           ],
           "NNPS": [
@@ -13946,8 +14469,8 @@
               7
             ],
             [
-              14,
-              14
+              16,
+              16
             ]
           ],
           "VBN": [
@@ -13963,11 +14486,11 @@
           "VP": [
             [
               2,
-              17
+              21
             ],
             [
               3,
-              17
+              21
             ],
             [
               7,
@@ -13982,14 +14505,18 @@
               9
             ],
             [
-              14,
-              17
+              16,
+              21
+            ],
+            [
+              19,
+              21
             ]
           ],
           "S": [
             [
               1,
-              18
+              22
             ],
             [
               7,
@@ -13997,7 +14524,7 @@
             ],
             [
               13,
-              17
+              21
             ]
           ],
           "SBAR": [
@@ -14007,11 +14534,11 @@
             ],
             [
               6,
-              17
+              21
             ],
             [
               12,
-              17
+              21
             ]
           ],
           ",": [
@@ -14034,30 +14561,42 @@
           ],
           "RB": [
             [
-              15,
-              15
+              17,
+              17
             ],
-            [
-              16,
-              16
-            ]
-          ],
-          "ADVP": [
-            [
-              16,
-              16
-            ]
-          ],
-          ".": [
             [
               18,
               18
             ]
           ],
+          "ADVP": [
+            [
+              18,
+              18
+            ]
+          ],
+          "VBG": [
+            [
+              19,
+              19
+            ]
+          ],
+          "NN": [
+            [
+              21,
+              21
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
           "ROOT": [
             [
               1,
-              18
+              22
             ]
           ]
         },
@@ -14074,12 +14613,16 @@
           "10": ",",
           "11": "so",
           "12": "that",
-          "13": "EmployeesOfAnOrganization",
-          "14": "are",
-          "15": "not",
-          "16": "falsely",
-          "17": "AccusedOfACrimeOrConflict",
-          "18": "."
+          "13": "EmployeesOf",
+          "14": "an",
+          "15": "Organization",
+          "16": "are",
+          "17": "not",
+          "18": "falsely",
+          "19": "AccusedOf",
+          "20": "a",
+          "21": "CrimeOrConflict",
+          "22": "."
         }
       }
     },
@@ -14376,7 +14919,7 @@
       }
     },
     {
-      "who has Access to ticketing System , VrsAdmin can filter Tickets based on Organization , Severity , ComplaintTypeAndPeriodOfTime .": {
+      "who has Access to ticketing System , VrsAdmin can filter Tickets based on Organization , Severity , complaint type and PeriodOfTime .": {
         "FileName": "2019-USC-Project05",
         "TD": {
           "ROOT": [
@@ -14403,6 +14946,18 @@
             [
               10,
               14
+            ],
+            [
+              10,
+              16
+            ],
+            [
+              10,
+              19
+            ],
+            [
+              10,
+              21
             ]
           ],
           "dobj": [
@@ -14451,12 +15006,12 @@
               15
             ],
             [
-              18,
+              14,
               17
             ],
             [
               10,
-              19
+              22
             ]
           ],
           "aux": [
@@ -14465,16 +15020,30 @@
               9
             ]
           ],
-          "compound": [
-            [
-              18,
-              16
-            ]
-          ],
-          "appos": [
+          "conj": [
             [
               14,
+              16
+            ],
+            [
+              14,
+              19
+            ],
+            [
+              14,
+              21
+            ]
+          ],
+          "compound": [
+            [
+              19,
               18
+            ]
+          ],
+          "cc": [
+            [
+              14,
+              20
             ]
           ]
         },
@@ -14519,8 +15088,8 @@
               16
             ],
             [
-              18,
-              18
+              21,
+              21
             ]
           ],
           "NP": [
@@ -14550,11 +15119,19 @@
             ],
             [
               14,
-              18
+              21
             ],
             [
               16,
-              18
+              16
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              21,
+              21
             ]
           ],
           "TO": [
@@ -14576,11 +15153,11 @@
             ],
             [
               12,
-              18
+              21
             ],
             [
               13,
-              18
+              21
             ]
           ],
           "VP": [
@@ -14590,17 +15167,17 @@
             ],
             [
               9,
-              18
+              21
             ],
             [
               10,
-              18
+              21
             ]
           ],
           "S": [
             [
               1,
-              19
+              22
             ],
             [
               2,
@@ -14657,16 +15234,32 @@
               13
             ]
           ],
-          ".": [
+          "NN": [
+            [
+              18,
+              18
+            ],
             [
               19,
               19
             ]
           ],
+          "CC": [
+            [
+              20,
+              20
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
           "ROOT": [
             [
               1,
-              19
+              22
             ]
           ]
         },
@@ -14688,8 +15281,11 @@
           "15": ",",
           "16": "Severity",
           "17": ",",
-          "18": "ComplaintTypeAndPeriodOfTime",
-          "19": "."
+          "18": "complaint",
+          "19": "type",
+          "20": "and",
+          "21": "PeriodOfTime",
+          "22": "."
         }
       }
     },
@@ -21216,7 +21812,7 @@
       }
     },
     {
-      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOfAnOrganization are not falsely AccusedOfACrimeOrConflict .": {
+      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOf an Organization are not falsely AccusedOf a CrimeOrConflict .": {
         "FileName": "2019-USC-Project05",
         "TD": {
           "ROOT": [
@@ -21231,8 +21827,8 @@
               1
             ],
             [
-              17,
-              13
+              19,
+              15
             ]
           ],
           "aux": [
@@ -21243,18 +21839,34 @@
             [
               9,
               7
+            ],
+            [
+              19,
+              16
             ]
           ],
           "det": [
             [
               5,
               4
+            ],
+            [
+              15,
+              14
+            ],
+            [
+              21,
+              20
             ]
           ],
           "dobj": [
             [
               3,
               5
+            ],
+            [
+              19,
+              21
             ]
           ],
           "nsubjpass": [
@@ -21276,7 +21888,7 @@
             ],
             [
               3,
-              17
+              19
             ]
           ],
           "punct": [
@@ -21286,7 +21898,7 @@
             ],
             [
               3,
-              18
+              22
             ]
           ],
           "cc": [
@@ -21297,32 +21909,32 @@
           ],
           "mark": [
             [
-              17,
+              19,
               12
             ]
           ],
-          "cop": [
+          "compound": [
             [
-              17,
-              14
+              15,
+              13
             ]
           ],
           "neg": [
             [
-              17,
-              15
+              19,
+              17
             ]
           ],
           "advmod": [
             [
-              17,
-              16
+              19,
+              18
             ]
           ],
           "conj": [
             [
               9,
-              17
+              19
             ]
           ]
         },
@@ -21337,8 +21949,8 @@
               13
             ],
             [
-              17,
-              17
+              15,
+              15
             ]
           ],
           "NP": [
@@ -21352,11 +21964,11 @@
             ],
             [
               13,
-              13
+              15
             ],
             [
-              17,
-              17
+              20,
+              21
             ]
           ],
           "MD": [
@@ -21375,6 +21987,14 @@
             [
               4,
               4
+            ],
+            [
+              14,
+              14
+            ],
+            [
+              20,
+              20
             ]
           ],
           "NNPS": [
@@ -21401,8 +22021,8 @@
               7
             ],
             [
-              14,
-              14
+              16,
+              16
             ]
           ],
           "VBN": [
@@ -21418,11 +22038,11 @@
           "VP": [
             [
               2,
-              17
+              21
             ],
             [
               3,
-              17
+              21
             ],
             [
               7,
@@ -21437,14 +22057,18 @@
               9
             ],
             [
-              14,
-              17
+              16,
+              21
+            ],
+            [
+              19,
+              21
             ]
           ],
           "S": [
             [
               1,
-              18
+              22
             ],
             [
               7,
@@ -21452,7 +22076,7 @@
             ],
             [
               13,
-              17
+              21
             ]
           ],
           "SBAR": [
@@ -21462,11 +22086,11 @@
             ],
             [
               6,
-              17
+              21
             ],
             [
               12,
-              17
+              21
             ]
           ],
           ",": [
@@ -21489,30 +22113,42 @@
           ],
           "RB": [
             [
-              15,
-              15
+              17,
+              17
             ],
-            [
-              16,
-              16
-            ]
-          ],
-          "ADVP": [
-            [
-              16,
-              16
-            ]
-          ],
-          ".": [
             [
               18,
               18
             ]
           ],
+          "ADVP": [
+            [
+              18,
+              18
+            ]
+          ],
+          "VBG": [
+            [
+              19,
+              19
+            ]
+          ],
+          "NN": [
+            [
+              21,
+              21
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
           "ROOT": [
             [
               1,
-              18
+              22
             ]
           ]
         },
@@ -21529,12 +22165,16 @@
           "10": ",",
           "11": "so",
           "12": "that",
-          "13": "EmployeesOfAnOrganization",
-          "14": "are",
-          "15": "not",
-          "16": "falsely",
-          "17": "AccusedOfACrimeOrConflict",
-          "18": "."
+          "13": "EmployeesOf",
+          "14": "an",
+          "15": "Organization",
+          "16": "are",
+          "17": "not",
+          "18": "falsely",
+          "19": "AccusedOf",
+          "20": "a",
+          "21": "CrimeOrConflict",
+          "22": "."
         }
       }
     },
@@ -21831,7 +22471,7 @@
       }
     },
     {
-      "who has Access to ticketing System , VrsAdmin can filter Tickets based on Organization , Severity , ComplaintTypeAndPeriodOfTime .": {
+      "who has Access to ticketing System , VrsAdmin can filter Tickets based on Organization , Severity , complaint type and PeriodOfTime .": {
         "FileName": "2019-USC-Project05",
         "TD": {
           "ROOT": [
@@ -21858,6 +22498,18 @@
             [
               10,
               14
+            ],
+            [
+              10,
+              16
+            ],
+            [
+              10,
+              19
+            ],
+            [
+              10,
+              21
             ]
           ],
           "dobj": [
@@ -21906,12 +22558,12 @@
               15
             ],
             [
-              18,
+              14,
               17
             ],
             [
               10,
-              19
+              22
             ]
           ],
           "aux": [
@@ -21920,16 +22572,30 @@
               9
             ]
           ],
-          "compound": [
-            [
-              18,
-              16
-            ]
-          ],
-          "appos": [
+          "conj": [
             [
               14,
+              16
+            ],
+            [
+              14,
+              19
+            ],
+            [
+              14,
+              21
+            ]
+          ],
+          "compound": [
+            [
+              19,
               18
+            ]
+          ],
+          "cc": [
+            [
+              14,
+              20
             ]
           ]
         },
@@ -21974,8 +22640,8 @@
               16
             ],
             [
-              18,
-              18
+              21,
+              21
             ]
           ],
           "NP": [
@@ -22005,11 +22671,19 @@
             ],
             [
               14,
-              18
+              21
             ],
             [
               16,
-              18
+              16
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              21,
+              21
             ]
           ],
           "TO": [
@@ -22031,11 +22705,11 @@
             ],
             [
               12,
-              18
+              21
             ],
             [
               13,
-              18
+              21
             ]
           ],
           "VP": [
@@ -22045,17 +22719,17 @@
             ],
             [
               9,
-              18
+              21
             ],
             [
               10,
-              18
+              21
             ]
           ],
           "S": [
             [
               1,
-              19
+              22
             ],
             [
               2,
@@ -22112,16 +22786,32 @@
               13
             ]
           ],
-          ".": [
+          "NN": [
+            [
+              18,
+              18
+            ],
             [
               19,
               19
             ]
           ],
+          "CC": [
+            [
+              20,
+              20
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
           "ROOT": [
             [
               1,
-              19
+              22
             ]
           ]
         },
@@ -22143,8 +22833,11 @@
           "15": ",",
           "16": "Severity",
           "17": ",",
-          "18": "ComplaintTypeAndPeriodOfTime",
-          "19": "."
+          "18": "complaint",
+          "19": "type",
+          "20": "and",
+          "21": "PeriodOfTime",
+          "22": "."
         }
       }
     },
@@ -32768,7 +33461,7 @@
       }
     },
     {
-      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOfAnOrganization are not falsely AccusedOfACrimeOrConflict .": {
+      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOf an Organization are not falsely AccusedOf a CrimeOrConflict .": {
         "FileName": "2019-USC-Project05",
         "TD": {
           "ROOT": [
@@ -32783,8 +33476,8 @@
               1
             ],
             [
-              17,
-              13
+              19,
+              15
             ]
           ],
           "aux": [
@@ -32795,18 +33488,34 @@
             [
               9,
               7
+            ],
+            [
+              19,
+              16
             ]
           ],
           "det": [
             [
               5,
               4
+            ],
+            [
+              15,
+              14
+            ],
+            [
+              21,
+              20
             ]
           ],
           "dobj": [
             [
               3,
               5
+            ],
+            [
+              19,
+              21
             ]
           ],
           "nsubjpass": [
@@ -32828,7 +33537,7 @@
             ],
             [
               3,
-              17
+              19
             ]
           ],
           "punct": [
@@ -32838,7 +33547,7 @@
             ],
             [
               3,
-              18
+              22
             ]
           ],
           "cc": [
@@ -32849,32 +33558,32 @@
           ],
           "mark": [
             [
-              17,
+              19,
               12
             ]
           ],
-          "cop": [
+          "compound": [
             [
-              17,
-              14
+              15,
+              13
             ]
           ],
           "neg": [
             [
-              17,
-              15
+              19,
+              17
             ]
           ],
           "advmod": [
             [
-              17,
-              16
+              19,
+              18
             ]
           ],
           "conj": [
             [
               9,
-              17
+              19
             ]
           ]
         },
@@ -32889,8 +33598,8 @@
               13
             ],
             [
-              17,
-              17
+              15,
+              15
             ]
           ],
           "NP": [
@@ -32904,11 +33613,11 @@
             ],
             [
               13,
-              13
+              15
             ],
             [
-              17,
-              17
+              20,
+              21
             ]
           ],
           "MD": [
@@ -32927,6 +33636,14 @@
             [
               4,
               4
+            ],
+            [
+              14,
+              14
+            ],
+            [
+              20,
+              20
             ]
           ],
           "NNPS": [
@@ -32953,8 +33670,8 @@
               7
             ],
             [
-              14,
-              14
+              16,
+              16
             ]
           ],
           "VBN": [
@@ -32970,11 +33687,11 @@
           "VP": [
             [
               2,
-              17
+              21
             ],
             [
               3,
-              17
+              21
             ],
             [
               7,
@@ -32989,14 +33706,18 @@
               9
             ],
             [
-              14,
-              17
+              16,
+              21
+            ],
+            [
+              19,
+              21
             ]
           ],
           "S": [
             [
               1,
-              18
+              22
             ],
             [
               7,
@@ -33004,7 +33725,7 @@
             ],
             [
               13,
-              17
+              21
             ]
           ],
           "SBAR": [
@@ -33014,11 +33735,11 @@
             ],
             [
               6,
-              17
+              21
             ],
             [
               12,
-              17
+              21
             ]
           ],
           ",": [
@@ -33041,30 +33762,42 @@
           ],
           "RB": [
             [
-              15,
-              15
+              17,
+              17
             ],
-            [
-              16,
-              16
-            ]
-          ],
-          "ADVP": [
-            [
-              16,
-              16
-            ]
-          ],
-          ".": [
             [
               18,
               18
             ]
           ],
+          "ADVP": [
+            [
+              18,
+              18
+            ]
+          ],
+          "VBG": [
+            [
+              19,
+              19
+            ]
+          ],
+          "NN": [
+            [
+              21,
+              21
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
           "ROOT": [
             [
               1,
-              18
+              22
             ]
           ]
         },
@@ -33081,12 +33814,16 @@
           "10": ",",
           "11": "so",
           "12": "that",
-          "13": "EmployeesOfAnOrganization",
-          "14": "are",
-          "15": "not",
-          "16": "falsely",
-          "17": "AccusedOfACrimeOrConflict",
-          "18": "."
+          "13": "EmployeesOf",
+          "14": "an",
+          "15": "Organization",
+          "16": "are",
+          "17": "not",
+          "18": "falsely",
+          "19": "AccusedOf",
+          "20": "a",
+          "21": "CrimeOrConflict",
+          "22": "."
         }
       }
     },
@@ -35970,329 +36707,6 @@
           "10": "submitting",
           "11": "ViolenceReports",
           "12": "."
-        }
-      }
-    },
-    {
-      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOfAnOrganization are not falsely AccusedOfACrimeOrConflict .": {
-        "FileName": "2019-USC-Project05",
-        "TD": {
-          "ROOT": [
-            [
-              0,
-              3
-            ]
-          ],
-          "nsubj": [
-            [
-              3,
-              1
-            ],
-            [
-              17,
-              13
-            ]
-          ],
-          "aux": [
-            [
-              3,
-              2
-            ],
-            [
-              9,
-              7
-            ]
-          ],
-          "det": [
-            [
-              5,
-              4
-            ]
-          ],
-          "dobj": [
-            [
-              3,
-              5
-            ]
-          ],
-          "nsubjpass": [
-            [
-              9,
-              6
-            ]
-          ],
-          "auxpass": [
-            [
-              9,
-              8
-            ]
-          ],
-          "ccomp": [
-            [
-              3,
-              9
-            ],
-            [
-              3,
-              17
-            ]
-          ],
-          "punct": [
-            [
-              9,
-              10
-            ],
-            [
-              3,
-              18
-            ]
-          ],
-          "cc": [
-            [
-              9,
-              11
-            ]
-          ],
-          "mark": [
-            [
-              17,
-              12
-            ]
-          ],
-          "cop": [
-            [
-              17,
-              14
-            ]
-          ],
-          "neg": [
-            [
-              17,
-              15
-            ]
-          ],
-          "advmod": [
-            [
-              17,
-              16
-            ]
-          ],
-          "conj": [
-            [
-              9,
-              17
-            ]
-          ]
-        },
-        "Pos-tag": {
-          "NNP": [
-            [
-              1,
-              1
-            ],
-            [
-              13,
-              13
-            ],
-            [
-              17,
-              17
-            ]
-          ],
-          "NP": [
-            [
-              1,
-              1
-            ],
-            [
-              4,
-              5
-            ],
-            [
-              13,
-              13
-            ],
-            [
-              17,
-              17
-            ]
-          ],
-          "MD": [
-            [
-              2,
-              2
-            ]
-          ],
-          "VB": [
-            [
-              3,
-              3
-            ]
-          ],
-          "DT": [
-            [
-              4,
-              4
-            ]
-          ],
-          "NNPS": [
-            [
-              5,
-              5
-            ]
-          ],
-          "WDT": [
-            [
-              6,
-              6
-            ]
-          ],
-          "WHNP": [
-            [
-              6,
-              6
-            ]
-          ],
-          "VBP": [
-            [
-              7,
-              7
-            ],
-            [
-              14,
-              14
-            ]
-          ],
-          "VBN": [
-            [
-              8,
-              8
-            ],
-            [
-              9,
-              9
-            ]
-          ],
-          "VP": [
-            [
-              2,
-              17
-            ],
-            [
-              3,
-              17
-            ],
-            [
-              7,
-              9
-            ],
-            [
-              8,
-              9
-            ],
-            [
-              9,
-              9
-            ],
-            [
-              14,
-              17
-            ]
-          ],
-          "S": [
-            [
-              1,
-              18
-            ],
-            [
-              7,
-              9
-            ],
-            [
-              13,
-              17
-            ]
-          ],
-          "SBAR": [
-            [
-              6,
-              9
-            ],
-            [
-              6,
-              17
-            ],
-            [
-              12,
-              17
-            ]
-          ],
-          ",": [
-            [
-              10,
-              10
-            ]
-          ],
-          "CC": [
-            [
-              11,
-              11
-            ]
-          ],
-          "IN": [
-            [
-              12,
-              12
-            ]
-          ],
-          "RB": [
-            [
-              15,
-              15
-            ],
-            [
-              16,
-              16
-            ]
-          ],
-          "ADVP": [
-            [
-              16,
-              16
-            ]
-          ],
-          ".": [
-            [
-              18,
-              18
-            ]
-          ],
-          "ROOT": [
-            [
-              1,
-              18
-            ]
-          ]
-        },
-        "Index": {
-          "1": "Vrs",
-          "2": "can",
-          "3": "delete",
-          "4": "any",
-          "5": "IrrelevantComplaints",
-          "6": "that",
-          "7": "have",
-          "8": "been",
-          "9": "reported",
-          "10": ",",
-          "11": "so",
-          "12": "that",
-          "13": "EmployeesOfAnOrganization",
-          "14": "are",
-          "15": "not",
-          "16": "falsely",
-          "17": "AccusedOfACrimeOrConflict",
-          "18": "."
         }
       }
     },
@@ -45649,7 +46063,7 @@
       }
     },
     {
-      "who has Access to ticketing System , VrsAdmin can filter Tickets based on Organization , Severity , ComplaintTypeAndPeriodOfTime .": {
+      "who has Access to ticketing System , VrsAdmin can filter Tickets based on Organization , Severity , complaint type and PeriodOfTime .": {
         "FileName": "2019-USC-Project05",
         "TD": {
           "ROOT": [
@@ -45676,6 +46090,18 @@
             [
               10,
               14
+            ],
+            [
+              10,
+              16
+            ],
+            [
+              10,
+              19
+            ],
+            [
+              10,
+              21
             ]
           ],
           "dobj": [
@@ -45724,12 +46150,12 @@
               15
             ],
             [
-              18,
+              14,
               17
             ],
             [
               10,
-              19
+              22
             ]
           ],
           "aux": [
@@ -45738,16 +46164,30 @@
               9
             ]
           ],
-          "compound": [
-            [
-              18,
-              16
-            ]
-          ],
-          "appos": [
+          "conj": [
             [
               14,
+              16
+            ],
+            [
+              14,
+              19
+            ],
+            [
+              14,
+              21
+            ]
+          ],
+          "compound": [
+            [
+              19,
               18
+            ]
+          ],
+          "cc": [
+            [
+              14,
+              20
             ]
           ]
         },
@@ -45792,8 +46232,8 @@
               16
             ],
             [
-              18,
-              18
+              21,
+              21
             ]
           ],
           "NP": [
@@ -45823,11 +46263,19 @@
             ],
             [
               14,
-              18
+              21
             ],
             [
               16,
-              18
+              16
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              21,
+              21
             ]
           ],
           "TO": [
@@ -45849,11 +46297,11 @@
             ],
             [
               12,
-              18
+              21
             ],
             [
               13,
-              18
+              21
             ]
           ],
           "VP": [
@@ -45863,17 +46311,17 @@
             ],
             [
               9,
-              18
+              21
             ],
             [
               10,
-              18
+              21
             ]
           ],
           "S": [
             [
               1,
-              19
+              22
             ],
             [
               2,
@@ -45930,16 +46378,32 @@
               13
             ]
           ],
-          ".": [
+          "NN": [
+            [
+              18,
+              18
+            ],
             [
               19,
               19
             ]
           ],
+          "CC": [
+            [
+              20,
+              20
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
           "ROOT": [
             [
               1,
-              19
+              22
             ]
           ]
         },
@@ -45961,8 +46425,11 @@
           "15": ",",
           "16": "Severity",
           "17": ",",
-          "18": "ComplaintTypeAndPeriodOfTime",
-          "19": "."
+          "18": "complaint",
+          "19": "type",
+          "20": "and",
+          "21": "PeriodOfTime",
+          "22": "."
         }
       }
     },
@@ -53821,7 +54288,7 @@
       }
     },
     {
-      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOfAnOrganization are not falsely AccusedOfACrimeOrConflict .": {
+      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOf an Organization are not falsely AccusedOf a CrimeOrConflict .": {
         "FileName": "2019-USC-Project05",
         "TD": {
           "ROOT": [
@@ -53836,8 +54303,8 @@
               1
             ],
             [
-              17,
-              13
+              19,
+              15
             ]
           ],
           "aux": [
@@ -53848,18 +54315,34 @@
             [
               9,
               7
+            ],
+            [
+              19,
+              16
             ]
           ],
           "det": [
             [
               5,
               4
+            ],
+            [
+              15,
+              14
+            ],
+            [
+              21,
+              20
             ]
           ],
           "dobj": [
             [
               3,
               5
+            ],
+            [
+              19,
+              21
             ]
           ],
           "nsubjpass": [
@@ -53881,7 +54364,7 @@
             ],
             [
               3,
-              17
+              19
             ]
           ],
           "punct": [
@@ -53891,7 +54374,7 @@
             ],
             [
               3,
-              18
+              22
             ]
           ],
           "cc": [
@@ -53902,32 +54385,32 @@
           ],
           "mark": [
             [
-              17,
+              19,
               12
             ]
           ],
-          "cop": [
+          "compound": [
             [
-              17,
-              14
+              15,
+              13
             ]
           ],
           "neg": [
             [
-              17,
-              15
+              19,
+              17
             ]
           ],
           "advmod": [
             [
-              17,
-              16
+              19,
+              18
             ]
           ],
           "conj": [
             [
               9,
-              17
+              19
             ]
           ]
         },
@@ -53942,8 +54425,8 @@
               13
             ],
             [
-              17,
-              17
+              15,
+              15
             ]
           ],
           "NP": [
@@ -53957,11 +54440,11 @@
             ],
             [
               13,
-              13
+              15
             ],
             [
-              17,
-              17
+              20,
+              21
             ]
           ],
           "MD": [
@@ -53980,6 +54463,14 @@
             [
               4,
               4
+            ],
+            [
+              14,
+              14
+            ],
+            [
+              20,
+              20
             ]
           ],
           "NNPS": [
@@ -54006,8 +54497,8 @@
               7
             ],
             [
-              14,
-              14
+              16,
+              16
             ]
           ],
           "VBN": [
@@ -54023,11 +54514,11 @@
           "VP": [
             [
               2,
-              17
+              21
             ],
             [
               3,
-              17
+              21
             ],
             [
               7,
@@ -54042,14 +54533,18 @@
               9
             ],
             [
-              14,
-              17
+              16,
+              21
+            ],
+            [
+              19,
+              21
             ]
           ],
           "S": [
             [
               1,
-              18
+              22
             ],
             [
               7,
@@ -54057,7 +54552,7 @@
             ],
             [
               13,
-              17
+              21
             ]
           ],
           "SBAR": [
@@ -54067,11 +54562,11 @@
             ],
             [
               6,
-              17
+              21
             ],
             [
               12,
-              17
+              21
             ]
           ],
           ",": [
@@ -54094,30 +54589,42 @@
           ],
           "RB": [
             [
-              15,
-              15
+              17,
+              17
             ],
-            [
-              16,
-              16
-            ]
-          ],
-          "ADVP": [
-            [
-              16,
-              16
-            ]
-          ],
-          ".": [
             [
               18,
               18
             ]
           ],
+          "ADVP": [
+            [
+              18,
+              18
+            ]
+          ],
+          "VBG": [
+            [
+              19,
+              19
+            ]
+          ],
+          "NN": [
+            [
+              21,
+              21
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
           "ROOT": [
             [
               1,
-              18
+              22
             ]
           ]
         },
@@ -54134,12 +54641,16 @@
           "10": ",",
           "11": "so",
           "12": "that",
-          "13": "EmployeesOfAnOrganization",
-          "14": "are",
-          "15": "not",
-          "16": "falsely",
-          "17": "AccusedOfACrimeOrConflict",
-          "18": "."
+          "13": "EmployeesOf",
+          "14": "an",
+          "15": "Organization",
+          "16": "are",
+          "17": "not",
+          "18": "falsely",
+          "19": "AccusedOf",
+          "20": "a",
+          "21": "CrimeOrConflict",
+          "22": "."
         }
       }
     },
@@ -54436,7 +54947,7 @@
       }
     },
     {
-      "who has Access to ticketing System , VrsAdmin can filter Tickets based on Organization , Severity , ComplaintTypeAndPeriodOfTime .": {
+      "who has Access to ticketing System , VrsAdmin can filter Tickets based on Organization , Severity , complaint type and PeriodOfTime .": {
         "FileName": "2019-USC-Project05",
         "TD": {
           "ROOT": [
@@ -54463,6 +54974,18 @@
             [
               10,
               14
+            ],
+            [
+              10,
+              16
+            ],
+            [
+              10,
+              19
+            ],
+            [
+              10,
+              21
             ]
           ],
           "dobj": [
@@ -54511,12 +55034,12 @@
               15
             ],
             [
-              18,
+              14,
               17
             ],
             [
               10,
-              19
+              22
             ]
           ],
           "aux": [
@@ -54525,16 +55048,30 @@
               9
             ]
           ],
-          "compound": [
-            [
-              18,
-              16
-            ]
-          ],
-          "appos": [
+          "conj": [
             [
               14,
+              16
+            ],
+            [
+              14,
+              19
+            ],
+            [
+              14,
+              21
+            ]
+          ],
+          "compound": [
+            [
+              19,
               18
+            ]
+          ],
+          "cc": [
+            [
+              14,
+              20
             ]
           ]
         },
@@ -54579,8 +55116,8 @@
               16
             ],
             [
-              18,
-              18
+              21,
+              21
             ]
           ],
           "NP": [
@@ -54610,11 +55147,19 @@
             ],
             [
               14,
-              18
+              21
             ],
             [
               16,
-              18
+              16
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              21,
+              21
             ]
           ],
           "TO": [
@@ -54636,11 +55181,11 @@
             ],
             [
               12,
-              18
+              21
             ],
             [
               13,
-              18
+              21
             ]
           ],
           "VP": [
@@ -54650,17 +55195,17 @@
             ],
             [
               9,
-              18
+              21
             ],
             [
               10,
-              18
+              21
             ]
           ],
           "S": [
             [
               1,
-              19
+              22
             ],
             [
               2,
@@ -54717,16 +55262,32 @@
               13
             ]
           ],
-          ".": [
+          "NN": [
+            [
+              18,
+              18
+            ],
             [
               19,
               19
             ]
           ],
+          "CC": [
+            [
+              20,
+              20
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
           "ROOT": [
             [
               1,
-              19
+              22
             ]
           ]
         },
@@ -54748,8 +55309,11 @@
           "15": ",",
           "16": "Severity",
           "17": ",",
-          "18": "ComplaintTypeAndPeriodOfTime",
-          "19": "."
+          "18": "complaint",
+          "19": "type",
+          "20": "and",
+          "21": "PeriodOfTime",
+          "22": "."
         }
       }
     },
@@ -61844,7 +62408,7 @@
       }
     },
     {
-      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOfAnOrganization are not falsely AccusedOfACrimeOrConflict .": {
+      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOf an Organization are not falsely AccusedOf a CrimeOrConflict .": {
         "FileName": "2019-USC-Project05",
         "TD": {
           "ROOT": [
@@ -61859,8 +62423,8 @@
               1
             ],
             [
-              17,
-              13
+              19,
+              15
             ]
           ],
           "aux": [
@@ -61871,18 +62435,34 @@
             [
               9,
               7
+            ],
+            [
+              19,
+              16
             ]
           ],
           "det": [
             [
               5,
               4
+            ],
+            [
+              15,
+              14
+            ],
+            [
+              21,
+              20
             ]
           ],
           "dobj": [
             [
               3,
               5
+            ],
+            [
+              19,
+              21
             ]
           ],
           "nsubjpass": [
@@ -61904,7 +62484,7 @@
             ],
             [
               3,
-              17
+              19
             ]
           ],
           "punct": [
@@ -61914,7 +62494,7 @@
             ],
             [
               3,
-              18
+              22
             ]
           ],
           "cc": [
@@ -61925,32 +62505,32 @@
           ],
           "mark": [
             [
-              17,
+              19,
               12
             ]
           ],
-          "cop": [
+          "compound": [
             [
-              17,
-              14
+              15,
+              13
             ]
           ],
           "neg": [
             [
-              17,
-              15
+              19,
+              17
             ]
           ],
           "advmod": [
             [
-              17,
-              16
+              19,
+              18
             ]
           ],
           "conj": [
             [
               9,
-              17
+              19
             ]
           ]
         },
@@ -61965,8 +62545,8 @@
               13
             ],
             [
-              17,
-              17
+              15,
+              15
             ]
           ],
           "NP": [
@@ -61980,11 +62560,11 @@
             ],
             [
               13,
-              13
+              15
             ],
             [
-              17,
-              17
+              20,
+              21
             ]
           ],
           "MD": [
@@ -62003,6 +62583,14 @@
             [
               4,
               4
+            ],
+            [
+              14,
+              14
+            ],
+            [
+              20,
+              20
             ]
           ],
           "NNPS": [
@@ -62029,8 +62617,8 @@
               7
             ],
             [
-              14,
-              14
+              16,
+              16
             ]
           ],
           "VBN": [
@@ -62046,11 +62634,11 @@
           "VP": [
             [
               2,
-              17
+              21
             ],
             [
               3,
-              17
+              21
             ],
             [
               7,
@@ -62065,14 +62653,18 @@
               9
             ],
             [
-              14,
-              17
+              16,
+              21
+            ],
+            [
+              19,
+              21
             ]
           ],
           "S": [
             [
               1,
-              18
+              22
             ],
             [
               7,
@@ -62080,7 +62672,7 @@
             ],
             [
               13,
-              17
+              21
             ]
           ],
           "SBAR": [
@@ -62090,11 +62682,11 @@
             ],
             [
               6,
-              17
+              21
             ],
             [
               12,
-              17
+              21
             ]
           ],
           ",": [
@@ -62117,30 +62709,42 @@
           ],
           "RB": [
             [
-              15,
-              15
+              17,
+              17
             ],
-            [
-              16,
-              16
-            ]
-          ],
-          "ADVP": [
-            [
-              16,
-              16
-            ]
-          ],
-          ".": [
             [
               18,
               18
             ]
           ],
+          "ADVP": [
+            [
+              18,
+              18
+            ]
+          ],
+          "VBG": [
+            [
+              19,
+              19
+            ]
+          ],
+          "NN": [
+            [
+              21,
+              21
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
           "ROOT": [
             [
               1,
-              18
+              22
             ]
           ]
         },
@@ -62157,12 +62761,16 @@
           "10": ",",
           "11": "so",
           "12": "that",
-          "13": "EmployeesOfAnOrganization",
-          "14": "are",
-          "15": "not",
-          "16": "falsely",
-          "17": "AccusedOfACrimeOrConflict",
-          "18": "."
+          "13": "EmployeesOf",
+          "14": "an",
+          "15": "Organization",
+          "16": "are",
+          "17": "not",
+          "18": "falsely",
+          "19": "AccusedOf",
+          "20": "a",
+          "21": "CrimeOrConflict",
+          "22": "."
         }
       }
     },
@@ -69517,7 +70125,7 @@
       }
     },
     {
-      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOfAnOrganization are not falsely AccusedOfACrimeOrConflict .": {
+      "Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOf an Organization are not falsely AccusedOf a CrimeOrConflict .": {
         "FileName": "2019-USC-Project05",
         "TD": {
           "ROOT": [
@@ -69532,8 +70140,8 @@
               1
             ],
             [
-              17,
-              13
+              19,
+              15
             ]
           ],
           "aux": [
@@ -69544,18 +70152,34 @@
             [
               9,
               7
+            ],
+            [
+              19,
+              16
             ]
           ],
           "det": [
             [
               5,
               4
+            ],
+            [
+              15,
+              14
+            ],
+            [
+              21,
+              20
             ]
           ],
           "dobj": [
             [
               3,
               5
+            ],
+            [
+              19,
+              21
             ]
           ],
           "nsubjpass": [
@@ -69577,7 +70201,7 @@
             ],
             [
               3,
-              17
+              19
             ]
           ],
           "punct": [
@@ -69587,7 +70211,7 @@
             ],
             [
               3,
-              18
+              22
             ]
           ],
           "cc": [
@@ -69598,32 +70222,32 @@
           ],
           "mark": [
             [
-              17,
+              19,
               12
             ]
           ],
-          "cop": [
+          "compound": [
             [
-              17,
-              14
+              15,
+              13
             ]
           ],
           "neg": [
             [
-              17,
-              15
+              19,
+              17
             ]
           ],
           "advmod": [
             [
-              17,
-              16
+              19,
+              18
             ]
           ],
           "conj": [
             [
               9,
-              17
+              19
             ]
           ]
         },
@@ -69638,8 +70262,8 @@
               13
             ],
             [
-              17,
-              17
+              15,
+              15
             ]
           ],
           "NP": [
@@ -69653,11 +70277,11 @@
             ],
             [
               13,
-              13
+              15
             ],
             [
-              17,
-              17
+              20,
+              21
             ]
           ],
           "MD": [
@@ -69676,6 +70300,14 @@
             [
               4,
               4
+            ],
+            [
+              14,
+              14
+            ],
+            [
+              20,
+              20
             ]
           ],
           "NNPS": [
@@ -69702,8 +70334,8 @@
               7
             ],
             [
-              14,
-              14
+              16,
+              16
             ]
           ],
           "VBN": [
@@ -69719,11 +70351,11 @@
           "VP": [
             [
               2,
-              17
+              21
             ],
             [
               3,
-              17
+              21
             ],
             [
               7,
@@ -69738,14 +70370,18 @@
               9
             ],
             [
-              14,
-              17
+              16,
+              21
+            ],
+            [
+              19,
+              21
             ]
           ],
           "S": [
             [
               1,
-              18
+              22
             ],
             [
               7,
@@ -69753,7 +70389,7 @@
             ],
             [
               13,
-              17
+              21
             ]
           ],
           "SBAR": [
@@ -69763,11 +70399,11 @@
             ],
             [
               6,
-              17
+              21
             ],
             [
               12,
-              17
+              21
             ]
           ],
           ",": [
@@ -69790,30 +70426,42 @@
           ],
           "RB": [
             [
-              15,
-              15
+              17,
+              17
             ],
-            [
-              16,
-              16
-            ]
-          ],
-          "ADVP": [
-            [
-              16,
-              16
-            ]
-          ],
-          ".": [
             [
               18,
               18
             ]
           ],
+          "ADVP": [
+            [
+              18,
+              18
+            ]
+          ],
+          "VBG": [
+            [
+              19,
+              19
+            ]
+          ],
+          "NN": [
+            [
+              21,
+              21
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
           "ROOT": [
             [
               1,
-              18
+              22
             ]
           ]
         },
@@ -69830,12 +70478,16 @@
           "10": ",",
           "11": "so",
           "12": "that",
-          "13": "EmployeesOfAnOrganization",
-          "14": "are",
-          "15": "not",
-          "16": "falsely",
-          "17": "AccusedOfACrimeOrConflict",
-          "18": "."
+          "13": "EmployeesOf",
+          "14": "an",
+          "15": "Organization",
+          "16": "are",
+          "17": "not",
+          "18": "falsely",
+          "19": "AccusedOf",
+          "20": "a",
+          "21": "CrimeOrConflict",
+          "22": "."
         }
       }
     },
@@ -70132,7 +70784,7 @@
       }
     },
     {
-      "who has Access to ticketing System , VrsAdmin can filter Tickets based on Organization , Severity , ComplaintTypeAndPeriodOfTime .": {
+      "who has Access to ticketing System , VrsAdmin can filter Tickets based on Organization , Severity , complaint type and PeriodOfTime .": {
         "FileName": "2019-USC-Project05",
         "TD": {
           "ROOT": [
@@ -70159,6 +70811,18 @@
             [
               10,
               14
+            ],
+            [
+              10,
+              16
+            ],
+            [
+              10,
+              19
+            ],
+            [
+              10,
+              21
             ]
           ],
           "dobj": [
@@ -70207,12 +70871,12 @@
               15
             ],
             [
-              18,
+              14,
               17
             ],
             [
               10,
-              19
+              22
             ]
           ],
           "aux": [
@@ -70221,16 +70885,30 @@
               9
             ]
           ],
-          "compound": [
-            [
-              18,
-              16
-            ]
-          ],
-          "appos": [
+          "conj": [
             [
               14,
+              16
+            ],
+            [
+              14,
+              19
+            ],
+            [
+              14,
+              21
+            ]
+          ],
+          "compound": [
+            [
+              19,
               18
+            ]
+          ],
+          "cc": [
+            [
+              14,
+              20
             ]
           ]
         },
@@ -70275,8 +70953,8 @@
               16
             ],
             [
-              18,
-              18
+              21,
+              21
             ]
           ],
           "NP": [
@@ -70306,11 +70984,19 @@
             ],
             [
               14,
-              18
+              21
             ],
             [
               16,
-              18
+              16
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              21,
+              21
             ]
           ],
           "TO": [
@@ -70332,11 +71018,11 @@
             ],
             [
               12,
-              18
+              21
             ],
             [
               13,
-              18
+              21
             ]
           ],
           "VP": [
@@ -70346,17 +71032,17 @@
             ],
             [
               9,
-              18
+              21
             ],
             [
               10,
-              18
+              21
             ]
           ],
           "S": [
             [
               1,
-              19
+              22
             ],
             [
               2,
@@ -70413,16 +71099,32 @@
               13
             ]
           ],
-          ".": [
+          "NN": [
+            [
+              18,
+              18
+            ],
             [
               19,
               19
             ]
           ],
+          "CC": [
+            [
+              20,
+              20
+            ]
+          ],
+          ".": [
+            [
+              22,
+              22
+            ]
+          ],
           "ROOT": [
             [
               1,
-              19
+              22
             ]
           ]
         },
@@ -70444,8 +71146,11 @@
           "15": ",",
           "16": "Severity",
           "17": ",",
-          "18": "ComplaintTypeAndPeriodOfTime",
-          "19": "."
+          "18": "complaint",
+          "19": "type",
+          "20": "and",
+          "21": "PeriodOfTime",
+          "22": "."
         }
       }
     },

@@ -32,7 +32,7 @@ SuperAdmin can export the WeeklyPublishingCalendar into a CsvFile .
 SuperAdmin can view/edit a Pitch in the ParkingBoard .
 SuperAdmin can pull a ParkedPitch into PublishingCalendar .
 SuperAdmin can view team member details .
-SuperAdmin can change a member 's AccountType .
+SuperAdmin can change a member 's account type .
 SuperAdmin can create a NewAdmin or ContributorAccount .
 SuperAdmin can delete an existing Account .
 SuperAdmin can set Goals for CurrentWeek and FutureWeeks .
@@ -47,7 +47,7 @@ Admin can view/edit a Pitch in the GlobalPitchBoard .
 Admin can approve/reject a Pitch .
 Admin can filter Pitches by Criteria .
 Admin can view member details .
-Admin can change a member 's AccountType .
+Admin can change a member 's account type .
 Admin can create a NewAccount for Admin or Contributor .
 Admin can delete an existing Account .
 Admin can edit Admin's OwnProfile .

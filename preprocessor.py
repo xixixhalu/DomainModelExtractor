@@ -23,6 +23,7 @@ class PreProcessor:
             os.makedirs(dirs)
 
         output = open(dirs + os.path.basename(self.file.name), "w")
+        
         metadata = open(dirs + "meta_" + os.path.basename(self.file.name), "w")
         actors = open(dirs + "actor_" + os.path.basename(self.file.name), "w")
 
@@ -36,6 +37,7 @@ class PreProcessor:
             act = []
             line = self.combine_nouns(line, meta, actor_map)
             line = self.replace_role(line, actor_map, act)
+            #print(line)
             output.write(line + "\n")
             metadata.write(meta.__str__() + "\n")
             actors.write(act.__str__() + "\n")
@@ -162,6 +164,7 @@ class PreProcessor:
         # print("merged intervals: ", list)
 
         return list
+
     # Return a list of index intervals that we should combine
     def combine_nmod(self, td_key):
         list = []
@@ -390,7 +393,7 @@ if __name__ == '__main__':
             file_path = os.getcwd() + "/Data/input_origin/" + file_name + '.txt'
             if not os.path.exists(file_path):
                 continue
-            print("processing " + file_path)
+            print("Preprocessing " + file_path)
             p = PreProcessor(file_path)
             p.pre_process()
 

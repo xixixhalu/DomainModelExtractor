@@ -262,6 +262,296 @@
       }
     },
     {
+      "member at Waw board can access the PrivatePortal so that board can share , view BoardDocuments .": {
+        "FileName": "2014-USC-Project14",
+        "TD": {
+          "ROOT": [
+            [
+              0,
+              16
+            ]
+          ],
+          "nsubj": [
+            [
+              6,
+              1
+            ],
+            [
+              13,
+              11
+            ],
+            [
+              16,
+              15
+            ]
+          ],
+          "case": [
+            [
+              4,
+              2
+            ]
+          ],
+          "compound": [
+            [
+              4,
+              3
+            ]
+          ],
+          "nmod": [
+            [
+              1,
+              4
+            ]
+          ],
+          "aux": [
+            [
+              6,
+              5
+            ],
+            [
+              13,
+              12
+            ]
+          ],
+          "ccomp": [
+            [
+              16,
+              6
+            ]
+          ],
+          "det": [
+            [
+              8,
+              7
+            ]
+          ],
+          "dobj": [
+            [
+              6,
+              8
+            ]
+          ],
+          "mark": [
+            [
+              13,
+              9
+            ]
+          ],
+          "mwe": [
+            [
+              9,
+              10
+            ]
+          ],
+          "advcl": [
+            [
+              6,
+              13
+            ]
+          ],
+          "punct": [
+            [
+              16,
+              14
+            ],
+            [
+              16,
+              17
+            ]
+          ]
+        },
+        "Pos-tag": {
+          "NN": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              15,
+              15
+            ]
+          ],
+          "NP": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              15,
+              15
+            ]
+          ],
+          "IN": [
+            [
+              2,
+              2
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          "NNP": [
+            [
+              3,
+              3
+            ]
+          ],
+          "PP": [
+            [
+              2,
+              4
+            ]
+          ],
+          "MD": [
+            [
+              5,
+              5
+            ],
+            [
+              12,
+              12
+            ]
+          ],
+          "VB": [
+            [
+              6,
+              6
+            ],
+            [
+              13,
+              13
+            ]
+          ],
+          "DT": [
+            [
+              7,
+              7
+            ]
+          ],
+          "RB": [
+            [
+              9,
+              9
+            ]
+          ],
+          "VP": [
+            [
+              5,
+              13
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              13
+            ],
+            [
+              16,
+              16
+            ]
+          ],
+          "S": [
+            [
+              1,
+              13
+            ],
+            [
+              1,
+              17
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "SBAR": [
+            [
+              9,
+              13
+            ]
+          ],
+          ",": [
+            [
+              14,
+              14
+            ]
+          ],
+          "VBZ": [
+            [
+              16,
+              16
+            ]
+          ],
+          ".": [
+            [
+              17,
+              17
+            ]
+          ],
+          "ROOT": [
+            [
+              1,
+              17
+            ]
+          ]
+        },
+        "Index": {
+          "1": "member",
+          "2": "at",
+          "3": "Waw",
+          "4": "board",
+          "5": "can",
+          "6": "access",
+          "7": "the",
+          "8": "PrivatePortal",
+          "9": "so",
+          "10": "that",
+          "11": "board",
+          "12": "can",
+          "13": "share",
+          "14": ",",
+          "15": "view",
+          "16": "BoardDocuments",
+          "17": "."
+        }
+      }
+    },
+    {
       "of Waw member can integrate SocialMedia on the Website so that member can keep our Users Up-toDate about latest Events .": {
         "FileName": "2014-USC-Project14",
         "TD": {
@@ -2508,7 +2798,7 @@
       }
     },
     {
-      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the Type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
+      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
@@ -2901,7 +3191,7 @@
           "10": "and",
           "11": "analyse",
           "12": "the",
-          "13": "Type",
+          "13": "type",
           "14": "of",
           "15": "counselling",
           "16": "our",
@@ -3990,283 +4280,292 @@
       }
     },
     {
-      "at Waw BoardMember can access the PrivatePortal so that BoardMember can share , view BoardDocuments .": {
+      "member at Waw board can access the PrivatePortal so that board can share , view BoardDocuments .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
             [
               0,
+              16
+            ]
+          ],
+          "nsubj": [
+            [
+              6,
+              1
+            ],
+            [
+              13,
+              11
+            ],
+            [
+              16,
               15
             ]
           ],
           "case": [
             [
-              3,
-              1
+              4,
+              2
             ]
           ],
           "compound": [
             [
-              3,
-              2
+              4,
+              3
             ]
           ],
           "nmod": [
             [
-              15,
-              3
+              1,
+              4
             ]
           ],
           "aux": [
             [
-              5,
-              4
+              6,
+              5
             ],
             [
-              12,
-              11
+              13,
+              12
             ]
           ],
-          "acl": [
+          "ccomp": [
             [
-              3,
-              5
+              16,
+              6
             ]
           ],
           "det": [
             [
-              7,
-              6
+              8,
+              7
             ]
           ],
           "dobj": [
             [
-              5,
-              7
+              6,
+              8
             ]
           ],
           "mark": [
             [
-              12,
-              8
+              13,
+              9
             ]
           ],
           "mwe": [
             [
-              8,
-              9
-            ]
-          ],
-          "nsubj": [
-            [
-              12,
+              9,
               10
-            ],
-            [
-              15,
-              14
             ]
           ],
           "advcl": [
             [
-              5,
-              12
+              6,
+              13
             ]
           ],
           "punct": [
             [
-              15,
-              13
+              16,
+              14
             ],
             [
-              15,
-              16
+              16,
+              17
             ]
           ]
         },
         "Pos-tag": {
-          "IN": [
+          "NN": [
             [
               1,
               1
             ],
             [
-              9,
-              9
-            ]
-          ],
-          "NNP": [
-            [
-              2,
-              2
-            ],
-            [
-              3,
-              3
-            ],
-            [
-              10,
-              10
-            ]
-          ],
-          "NP": [
-            [
-              2,
-              3
-            ],
-            [
-              2,
-              12
-            ],
-            [
-              6,
-              7
-            ],
-            [
-              10,
-              10
-            ],
-            [
-              14,
-              14
-            ]
-          ],
-          "MD": [
-            [
               4,
               4
             ],
             [
-              11,
-              11
-            ]
-          ],
-          "VB": [
-            [
-              5,
-              5
-            ],
-            [
-              12,
-              12
-            ]
-          ],
-          "DT": [
-            [
-              6,
-              6
-            ]
-          ],
-          "NN": [
-            [
-              7,
-              7
-            ],
-            [
-              14,
-              14
-            ]
-          ],
-          "RB": [
-            [
               8,
               8
-            ]
-          ],
-          "VP": [
-            [
-              4,
-              12
-            ],
-            [
-              5,
-              12
             ],
             [
               11,
-              12
-            ],
-            [
-              12,
-              12
+              11
             ],
             [
               15,
               15
             ]
           ],
-          "S": [
+          "NP": [
             [
               1,
-              16
+              1
             ],
             [
-              4,
-              12
+              1,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              15,
+              15
+            ]
+          ],
+          "IN": [
+            [
+              2,
+              2
             ],
             [
               10,
-              12
+              10
             ]
           ],
-          "SBAR": [
+          "NNP": [
             [
-              4,
-              12
-            ],
-            [
-              8,
-              12
+              3,
+              3
             ]
           ],
           "PP": [
             [
-              1,
+              2,
+              4
+            ]
+          ],
+          "MD": [
+            [
+              5,
+              5
+            ],
+            [
+              12,
               12
             ]
           ],
-          ",": [
+          "VB": [
+            [
+              6,
+              6
+            ],
             [
               13,
               13
             ]
           ],
-          "VBZ": [
+          "DT": [
             [
-              15,
-              15
+              7,
+              7
             ]
           ],
-          ".": [
+          "RB": [
+            [
+              9,
+              9
+            ]
+          ],
+          "VP": [
+            [
+              5,
+              13
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              13
+            ],
             [
               16,
               16
             ]
           ],
+          "S": [
+            [
+              1,
+              13
+            ],
+            [
+              1,
+              17
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "SBAR": [
+            [
+              9,
+              13
+            ]
+          ],
+          ",": [
+            [
+              14,
+              14
+            ]
+          ],
+          "VBZ": [
+            [
+              16,
+              16
+            ]
+          ],
+          ".": [
+            [
+              17,
+              17
+            ]
+          ],
           "ROOT": [
             [
               1,
-              16
+              17
             ]
           ]
         },
         "Index": {
-          "1": "at",
-          "2": "Waw",
-          "3": "BoardMember",
-          "4": "can",
-          "5": "access",
-          "6": "the",
-          "7": "PrivatePortal",
-          "8": "so",
-          "9": "that",
-          "10": "BoardMember",
-          "11": "can",
-          "12": "share",
-          "13": ",",
-          "14": "view",
-          "15": "BoardDocuments",
-          "16": "."
+          "1": "member",
+          "2": "at",
+          "3": "Waw",
+          "4": "board",
+          "5": "can",
+          "6": "access",
+          "7": "the",
+          "8": "PrivatePortal",
+          "9": "so",
+          "10": "that",
+          "11": "board",
+          "12": "can",
+          "13": "share",
+          "14": ",",
+          "15": "view",
+          "16": "BoardDocuments",
+          "17": "."
         }
       }
     },
@@ -6517,7 +6816,7 @@
       }
     },
     {
-      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the Type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
+      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
@@ -6910,7 +7209,7 @@
           "10": "and",
           "11": "analyse",
           "12": "the",
-          "13": "Type",
+          "13": "type",
           "14": "of",
           "15": "counselling",
           "16": "our",
@@ -7333,7 +7632,7 @@
   "SVDOtobeComp": [],
   "SVDOToInf": [
     {
-      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the Type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
+      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
@@ -7726,7 +8025,7 @@
           "10": "and",
           "11": "analyse",
           "12": "the",
-          "13": "Type",
+          "13": "type",
           "14": "of",
           "15": "counselling",
           "16": "our",
@@ -7746,7 +8045,7 @@
   ],
   "SVDOPresentPart": [
     {
-      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the Type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
+      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
@@ -8139,7 +8438,7 @@
           "10": "and",
           "11": "analyse",
           "12": "the",
-          "13": "Type",
+          "13": "type",
           "14": "of",
           "15": "counselling",
           "16": "our",
@@ -11402,54 +11701,106 @@
       }
     },
     {
-      "BoardMembers will upload Documents to GoogleDrive .": {
+      "member at Waw board can access the PrivatePortal so that board can share , view BoardDocuments .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
             [
               0,
-              3
+              16
             ]
           ],
           "nsubj": [
             [
-              3,
+              6,
               1
-            ]
-          ],
-          "aux": [
+            ],
             [
-              3,
-              2
-            ]
-          ],
-          "dobj": [
+              13,
+              11
+            ],
             [
-              3,
-              4
+              16,
+              15
             ]
           ],
           "case": [
             [
-              6,
-              5
+              4,
+              2
+            ]
+          ],
+          "compound": [
+            [
+              4,
+              3
             ]
           ],
           "nmod": [
             [
-              3,
+              1,
+              4
+            ]
+          ],
+          "aux": [
+            [
+              6,
+              5
+            ],
+            [
+              13,
+              12
+            ]
+          ],
+          "ccomp": [
+            [
+              16,
               6
+            ]
+          ],
+          "det": [
+            [
+              8,
+              7
+            ]
+          ],
+          "dobj": [
+            [
+              6,
+              8
+            ]
+          ],
+          "mark": [
+            [
+              13,
+              9
+            ]
+          ],
+          "mwe": [
+            [
+              9,
+              10
+            ]
+          ],
+          "advcl": [
+            [
+              6,
+              13
             ]
           ],
           "punct": [
             [
-              3,
-              7
+              16,
+              14
+            ],
+            [
+              16,
+              17
             ]
           ]
         },
         "Pos-tag": {
-          "NNS": [
+          "NN": [
             [
               1,
               1
@@ -11457,6 +11808,18 @@
             [
               4,
               4
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              15,
+              15
             ]
           ],
           "NP": [
@@ -11465,33 +11828,269 @@
               1
             ],
             [
-              4,
+              1,
               4
             ],
             [
-              6,
-              6
+              3,
+              4
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              15,
+              15
             ]
           ],
-          "MD": [
+          "IN": [
             [
               2,
               2
+            ],
+            [
+              10,
+              10
             ]
           ],
-          "VB": [
+          "NNP": [
             [
               3,
               3
             ]
           ],
-          "TO": [
+          "PP": [
+            [
+              2,
+              4
+            ]
+          ],
+          "MD": [
+            [
+              5,
+              5
+            ],
+            [
+              12,
+              12
+            ]
+          ],
+          "VB": [
+            [
+              6,
+              6
+            ],
+            [
+              13,
+              13
+            ]
+          ],
+          "DT": [
+            [
+              7,
+              7
+            ]
+          ],
+          "RB": [
+            [
+              9,
+              9
+            ]
+          ],
+          "VP": [
+            [
+              5,
+              13
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              13
+            ],
+            [
+              16,
+              16
+            ]
+          ],
+          "S": [
+            [
+              1,
+              13
+            ],
+            [
+              1,
+              17
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "SBAR": [
+            [
+              9,
+              13
+            ]
+          ],
+          ",": [
+            [
+              14,
+              14
+            ]
+          ],
+          "VBZ": [
+            [
+              16,
+              16
+            ]
+          ],
+          ".": [
+            [
+              17,
+              17
+            ]
+          ],
+          "ROOT": [
+            [
+              1,
+              17
+            ]
+          ]
+        },
+        "Index": {
+          "1": "member",
+          "2": "at",
+          "3": "Waw",
+          "4": "board",
+          "5": "can",
+          "6": "access",
+          "7": "the",
+          "8": "PrivatePortal",
+          "9": "so",
+          "10": "that",
+          "11": "board",
+          "12": "can",
+          "13": "share",
+          "14": ",",
+          "15": "view",
+          "16": "BoardDocuments",
+          "17": "."
+        }
+      }
+    },
+    {
+      "Board members will upload Documents to GoogleDrive .": {
+        "FileName": "2014-USC-Project14",
+        "TD": {
+          "ROOT": [
+            [
+              0,
+              4
+            ]
+          ],
+          "compound": [
+            [
+              2,
+              1
+            ]
+          ],
+          "nsubj": [
+            [
+              4,
+              2
+            ]
+          ],
+          "aux": [
+            [
+              4,
+              3
+            ]
+          ],
+          "dobj": [
+            [
+              4,
+              5
+            ]
+          ],
+          "case": [
+            [
+              7,
+              6
+            ]
+          ],
+          "nmod": [
+            [
+              4,
+              7
+            ]
+          ],
+          "punct": [
+            [
+              4,
+              8
+            ]
+          ]
+        },
+        "Pos-tag": {
+          "NNP": [
+            [
+              1,
+              1
+            ],
+            [
+              7,
+              7
+            ]
+          ],
+          "NNS": [
+            [
+              2,
+              2
+            ],
             [
               5,
               5
             ]
           ],
-          "NNP": [
+          "NP": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              7,
+              7
+            ]
+          ],
+          "MD": [
+            [
+              3,
+              3
+            ]
+          ],
+          "VB": [
+            [
+              4,
+              4
+            ]
+          ],
+          "TO": [
             [
               6,
               6
@@ -11499,47 +12098,48 @@
           ],
           "PP": [
             [
-              5,
-              6
+              6,
+              7
             ]
           ],
           "VP": [
             [
-              2,
-              6
+              3,
+              7
             ],
             [
-              3,
-              6
+              4,
+              7
             ]
           ],
           ".": [
             [
-              7,
-              7
+              8,
+              8
             ]
           ],
           "S": [
             [
               1,
-              7
+              8
             ]
           ],
           "ROOT": [
             [
               1,
-              7
+              8
             ]
           ]
         },
         "Index": {
-          "1": "BoardMembers",
-          "2": "will",
-          "3": "upload",
-          "4": "Documents",
-          "5": "to",
-          "6": "GoogleDrive",
-          "7": "."
+          "1": "Board",
+          "2": "members",
+          "3": "will",
+          "4": "upload",
+          "5": "Documents",
+          "6": "to",
+          "7": "GoogleDrive",
+          "8": "."
         }
       }
     },
@@ -14224,7 +14824,7 @@
       }
     },
     {
-      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the Type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
+      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
@@ -14617,7 +15217,7 @@
           "10": "and",
           "11": "analyse",
           "12": "the",
-          "13": "Type",
+          "13": "type",
           "14": "of",
           "15": "counselling",
           "16": "our",
@@ -16079,54 +16679,106 @@
       }
     },
     {
-      "BoardMembers will upload Documents to GoogleDrive .": {
+      "member at Waw board can access the PrivatePortal so that board can share , view BoardDocuments .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
             [
               0,
-              3
+              16
             ]
           ],
           "nsubj": [
             [
-              3,
+              6,
               1
-            ]
-          ],
-          "aux": [
+            ],
             [
-              3,
-              2
-            ]
-          ],
-          "dobj": [
+              13,
+              11
+            ],
             [
-              3,
-              4
+              16,
+              15
             ]
           ],
           "case": [
             [
-              6,
-              5
+              4,
+              2
+            ]
+          ],
+          "compound": [
+            [
+              4,
+              3
             ]
           ],
           "nmod": [
             [
-              3,
+              1,
+              4
+            ]
+          ],
+          "aux": [
+            [
+              6,
+              5
+            ],
+            [
+              13,
+              12
+            ]
+          ],
+          "ccomp": [
+            [
+              16,
               6
+            ]
+          ],
+          "det": [
+            [
+              8,
+              7
+            ]
+          ],
+          "dobj": [
+            [
+              6,
+              8
+            ]
+          ],
+          "mark": [
+            [
+              13,
+              9
+            ]
+          ],
+          "mwe": [
+            [
+              9,
+              10
+            ]
+          ],
+          "advcl": [
+            [
+              6,
+              13
             ]
           ],
           "punct": [
             [
-              3,
-              7
+              16,
+              14
+            ],
+            [
+              16,
+              17
             ]
           ]
         },
         "Pos-tag": {
-          "NNS": [
+          "NN": [
             [
               1,
               1
@@ -16134,6 +16786,18 @@
             [
               4,
               4
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              15,
+              15
             ]
           ],
           "NP": [
@@ -16142,33 +16806,269 @@
               1
             ],
             [
-              4,
+              1,
               4
             ],
             [
-              6,
-              6
+              3,
+              4
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              15,
+              15
             ]
           ],
-          "MD": [
+          "IN": [
             [
               2,
               2
+            ],
+            [
+              10,
+              10
             ]
           ],
-          "VB": [
+          "NNP": [
             [
               3,
               3
             ]
           ],
-          "TO": [
+          "PP": [
+            [
+              2,
+              4
+            ]
+          ],
+          "MD": [
+            [
+              5,
+              5
+            ],
+            [
+              12,
+              12
+            ]
+          ],
+          "VB": [
+            [
+              6,
+              6
+            ],
+            [
+              13,
+              13
+            ]
+          ],
+          "DT": [
+            [
+              7,
+              7
+            ]
+          ],
+          "RB": [
+            [
+              9,
+              9
+            ]
+          ],
+          "VP": [
+            [
+              5,
+              13
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              13
+            ],
+            [
+              16,
+              16
+            ]
+          ],
+          "S": [
+            [
+              1,
+              13
+            ],
+            [
+              1,
+              17
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "SBAR": [
+            [
+              9,
+              13
+            ]
+          ],
+          ",": [
+            [
+              14,
+              14
+            ]
+          ],
+          "VBZ": [
+            [
+              16,
+              16
+            ]
+          ],
+          ".": [
+            [
+              17,
+              17
+            ]
+          ],
+          "ROOT": [
+            [
+              1,
+              17
+            ]
+          ]
+        },
+        "Index": {
+          "1": "member",
+          "2": "at",
+          "3": "Waw",
+          "4": "board",
+          "5": "can",
+          "6": "access",
+          "7": "the",
+          "8": "PrivatePortal",
+          "9": "so",
+          "10": "that",
+          "11": "board",
+          "12": "can",
+          "13": "share",
+          "14": ",",
+          "15": "view",
+          "16": "BoardDocuments",
+          "17": "."
+        }
+      }
+    },
+    {
+      "Board members will upload Documents to GoogleDrive .": {
+        "FileName": "2014-USC-Project14",
+        "TD": {
+          "ROOT": [
+            [
+              0,
+              4
+            ]
+          ],
+          "compound": [
+            [
+              2,
+              1
+            ]
+          ],
+          "nsubj": [
+            [
+              4,
+              2
+            ]
+          ],
+          "aux": [
+            [
+              4,
+              3
+            ]
+          ],
+          "dobj": [
+            [
+              4,
+              5
+            ]
+          ],
+          "case": [
+            [
+              7,
+              6
+            ]
+          ],
+          "nmod": [
+            [
+              4,
+              7
+            ]
+          ],
+          "punct": [
+            [
+              4,
+              8
+            ]
+          ]
+        },
+        "Pos-tag": {
+          "NNP": [
+            [
+              1,
+              1
+            ],
+            [
+              7,
+              7
+            ]
+          ],
+          "NNS": [
+            [
+              2,
+              2
+            ],
             [
               5,
               5
             ]
           ],
-          "NNP": [
+          "NP": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              7,
+              7
+            ]
+          ],
+          "MD": [
+            [
+              3,
+              3
+            ]
+          ],
+          "VB": [
+            [
+              4,
+              4
+            ]
+          ],
+          "TO": [
             [
               6,
               6
@@ -16176,47 +17076,48 @@
           ],
           "PP": [
             [
-              5,
-              6
+              6,
+              7
             ]
           ],
           "VP": [
             [
-              2,
-              6
+              3,
+              7
             ],
             [
-              3,
-              6
+              4,
+              7
             ]
           ],
           ".": [
             [
-              7,
-              7
+              8,
+              8
             ]
           ],
           "S": [
             [
               1,
-              7
+              8
             ]
           ],
           "ROOT": [
             [
               1,
-              7
+              8
             ]
           ]
         },
         "Index": {
-          "1": "BoardMembers",
-          "2": "will",
-          "3": "upload",
-          "4": "Documents",
-          "5": "to",
-          "6": "GoogleDrive",
-          "7": "."
+          "1": "Board",
+          "2": "members",
+          "3": "will",
+          "4": "upload",
+          "5": "Documents",
+          "6": "to",
+          "7": "GoogleDrive",
+          "8": "."
         }
       }
     },
@@ -19585,7 +20486,7 @@
       }
     },
     {
-      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the Type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
+      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
@@ -19978,7 +20879,7 @@
           "10": "and",
           "11": "analyse",
           "12": "the",
-          "13": "Type",
+          "13": "type",
           "14": "of",
           "15": "counselling",
           "16": "our",
@@ -28188,377 +29089,396 @@
       }
     },
     {
-      "at Waw BoardMember can access the PrivatePortal so that BoardMember can share , view BoardDocuments .": {
+      "member at Waw board can access the PrivatePortal so that board can share , view BoardDocuments .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
             [
               0,
+              16
+            ]
+          ],
+          "nsubj": [
+            [
+              6,
+              1
+            ],
+            [
+              13,
+              11
+            ],
+            [
+              16,
               15
             ]
           ],
           "case": [
             [
-              3,
-              1
+              4,
+              2
             ]
           ],
           "compound": [
             [
-              3,
-              2
+              4,
+              3
             ]
           ],
           "nmod": [
             [
-              15,
-              3
+              1,
+              4
             ]
           ],
           "aux": [
             [
-              5,
-              4
+              6,
+              5
             ],
             [
-              12,
-              11
+              13,
+              12
             ]
           ],
-          "acl": [
+          "ccomp": [
             [
-              3,
-              5
+              16,
+              6
             ]
           ],
           "det": [
             [
-              7,
-              6
+              8,
+              7
             ]
           ],
           "dobj": [
             [
-              5,
-              7
+              6,
+              8
             ]
           ],
           "mark": [
             [
-              12,
-              8
+              13,
+              9
             ]
           ],
           "mwe": [
             [
-              8,
-              9
-            ]
-          ],
-          "nsubj": [
-            [
-              12,
+              9,
               10
-            ],
-            [
-              15,
-              14
             ]
           ],
           "advcl": [
             [
-              5,
-              12
+              6,
+              13
             ]
           ],
           "punct": [
             [
-              15,
-              13
+              16,
+              14
             ],
             [
-              15,
-              16
+              16,
+              17
             ]
           ]
         },
         "Pos-tag": {
-          "IN": [
+          "NN": [
             [
               1,
               1
             ],
             [
-              9,
-              9
-            ]
-          ],
-          "NNP": [
-            [
-              2,
-              2
-            ],
-            [
-              3,
-              3
-            ],
-            [
-              10,
-              10
-            ]
-          ],
-          "NP": [
-            [
-              2,
-              3
-            ],
-            [
-              2,
-              12
-            ],
-            [
-              6,
-              7
-            ],
-            [
-              10,
-              10
-            ],
-            [
-              14,
-              14
-            ]
-          ],
-          "MD": [
-            [
               4,
               4
             ],
             [
-              11,
-              11
-            ]
-          ],
-          "VB": [
-            [
-              5,
-              5
-            ],
-            [
-              12,
-              12
-            ]
-          ],
-          "DT": [
-            [
-              6,
-              6
-            ]
-          ],
-          "NN": [
-            [
-              7,
-              7
-            ],
-            [
-              14,
-              14
-            ]
-          ],
-          "RB": [
-            [
               8,
               8
-            ]
-          ],
-          "VP": [
-            [
-              4,
-              12
-            ],
-            [
-              5,
-              12
             ],
             [
               11,
-              12
-            ],
-            [
-              12,
-              12
+              11
             ],
             [
               15,
               15
             ]
           ],
-          "S": [
+          "NP": [
             [
               1,
-              16
+              1
             ],
             [
-              4,
-              12
+              1,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              15,
+              15
+            ]
+          ],
+          "IN": [
+            [
+              2,
+              2
             ],
             [
               10,
-              12
+              10
             ]
           ],
-          "SBAR": [
+          "NNP": [
             [
-              4,
-              12
-            ],
-            [
-              8,
-              12
+              3,
+              3
             ]
           ],
           "PP": [
             [
-              1,
+              2,
+              4
+            ]
+          ],
+          "MD": [
+            [
+              5,
+              5
+            ],
+            [
+              12,
               12
             ]
           ],
-          ",": [
+          "VB": [
+            [
+              6,
+              6
+            ],
             [
               13,
               13
             ]
           ],
-          "VBZ": [
+          "DT": [
             [
-              15,
-              15
+              7,
+              7
             ]
           ],
-          ".": [
+          "RB": [
+            [
+              9,
+              9
+            ]
+          ],
+          "VP": [
+            [
+              5,
+              13
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              13
+            ],
             [
               16,
               16
             ]
           ],
+          "S": [
+            [
+              1,
+              13
+            ],
+            [
+              1,
+              17
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "SBAR": [
+            [
+              9,
+              13
+            ]
+          ],
+          ",": [
+            [
+              14,
+              14
+            ]
+          ],
+          "VBZ": [
+            [
+              16,
+              16
+            ]
+          ],
+          ".": [
+            [
+              17,
+              17
+            ]
+          ],
           "ROOT": [
             [
               1,
-              16
+              17
             ]
           ]
         },
         "Index": {
-          "1": "at",
-          "2": "Waw",
-          "3": "BoardMember",
-          "4": "can",
-          "5": "access",
-          "6": "the",
-          "7": "PrivatePortal",
-          "8": "so",
-          "9": "that",
-          "10": "BoardMember",
-          "11": "can",
-          "12": "share",
-          "13": ",",
-          "14": "view",
-          "15": "BoardDocuments",
-          "16": "."
+          "1": "member",
+          "2": "at",
+          "3": "Waw",
+          "4": "board",
+          "5": "can",
+          "6": "access",
+          "7": "the",
+          "8": "PrivatePortal",
+          "9": "so",
+          "10": "that",
+          "11": "board",
+          "12": "can",
+          "13": "share",
+          "14": ",",
+          "15": "view",
+          "16": "BoardDocuments",
+          "17": "."
         }
       }
     },
     {
-      "BoardMembers will upload Documents to GoogleDrive .": {
+      "Board members will upload Documents to GoogleDrive .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
             [
               0,
-              3
+              4
+            ]
+          ],
+          "compound": [
+            [
+              2,
+              1
             ]
           ],
           "nsubj": [
             [
-              3,
-              1
+              4,
+              2
             ]
           ],
           "aux": [
             [
-              3,
-              2
+              4,
+              3
             ]
           ],
           "dobj": [
             [
-              3,
-              4
+              4,
+              5
             ]
           ],
           "case": [
             [
-              6,
-              5
+              7,
+              6
             ]
           ],
           "nmod": [
             [
-              3,
-              6
+              4,
+              7
             ]
           ],
           "punct": [
             [
-              3,
-              7
+              4,
+              8
             ]
           ]
         },
         "Pos-tag": {
+          "NNP": [
+            [
+              1,
+              1
+            ],
+            [
+              7,
+              7
+            ]
+          ],
           "NNS": [
-            [
-              1,
-              1
-            ],
-            [
-              4,
-              4
-            ]
-          ],
-          "NP": [
-            [
-              1,
-              1
-            ],
-            [
-              4,
-              4
-            ],
-            [
-              6,
-              6
-            ]
-          ],
-          "MD": [
             [
               2,
               2
-            ]
-          ],
-          "VB": [
-            [
-              3,
-              3
-            ]
-          ],
-          "TO": [
+            ],
             [
               5,
               5
             ]
           ],
-          "NNP": [
+          "NP": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              7,
+              7
+            ]
+          ],
+          "MD": [
+            [
+              3,
+              3
+            ]
+          ],
+          "VB": [
+            [
+              4,
+              4
+            ]
+          ],
+          "TO": [
             [
               6,
               6
@@ -28566,47 +29486,48 @@
           ],
           "PP": [
             [
-              5,
-              6
+              6,
+              7
             ]
           ],
           "VP": [
             [
-              2,
-              6
+              3,
+              7
             ],
             [
-              3,
-              6
+              4,
+              7
             ]
           ],
           ".": [
             [
-              7,
-              7
+              8,
+              8
             ]
           ],
           "S": [
             [
               1,
-              7
+              8
             ]
           ],
           "ROOT": [
             [
               1,
-              7
+              8
             ]
           ]
         },
         "Index": {
-          "1": "BoardMembers",
-          "2": "will",
-          "3": "upload",
-          "4": "Documents",
-          "5": "to",
-          "6": "GoogleDrive",
-          "7": "."
+          "1": "Board",
+          "2": "members",
+          "3": "will",
+          "4": "upload",
+          "5": "Documents",
+          "6": "to",
+          "7": "GoogleDrive",
+          "8": "."
         }
       }
     },
@@ -31960,7 +32881,7 @@
       }
     },
     {
-      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the Type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
+      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
@@ -32353,7 +33274,7 @@
           "10": "and",
           "11": "analyse",
           "12": "the",
-          "13": "Type",
+          "13": "type",
           "14": "of",
           "15": "counselling",
           "16": "our",
@@ -33685,54 +34606,106 @@
       }
     },
     {
-      "BoardMembers will upload Documents to GoogleDrive .": {
+      "member at Waw board can access the PrivatePortal so that board can share , view BoardDocuments .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
             [
               0,
-              3
+              16
             ]
           ],
           "nsubj": [
             [
-              3,
+              6,
               1
-            ]
-          ],
-          "aux": [
+            ],
             [
-              3,
-              2
-            ]
-          ],
-          "dobj": [
+              13,
+              11
+            ],
             [
-              3,
-              4
+              16,
+              15
             ]
           ],
           "case": [
             [
-              6,
-              5
+              4,
+              2
+            ]
+          ],
+          "compound": [
+            [
+              4,
+              3
             ]
           ],
           "nmod": [
             [
-              3,
+              1,
+              4
+            ]
+          ],
+          "aux": [
+            [
+              6,
+              5
+            ],
+            [
+              13,
+              12
+            ]
+          ],
+          "ccomp": [
+            [
+              16,
               6
+            ]
+          ],
+          "det": [
+            [
+              8,
+              7
+            ]
+          ],
+          "dobj": [
+            [
+              6,
+              8
+            ]
+          ],
+          "mark": [
+            [
+              13,
+              9
+            ]
+          ],
+          "mwe": [
+            [
+              9,
+              10
+            ]
+          ],
+          "advcl": [
+            [
+              6,
+              13
             ]
           ],
           "punct": [
             [
-              3,
-              7
+              16,
+              14
+            ],
+            [
+              16,
+              17
             ]
           ]
         },
         "Pos-tag": {
-          "NNS": [
+          "NN": [
             [
               1,
               1
@@ -33740,6 +34713,18 @@
             [
               4,
               4
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              15,
+              15
             ]
           ],
           "NP": [
@@ -33748,33 +34733,269 @@
               1
             ],
             [
-              4,
+              1,
               4
             ],
             [
-              6,
-              6
+              3,
+              4
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              15,
+              15
             ]
           ],
-          "MD": [
+          "IN": [
             [
               2,
               2
+            ],
+            [
+              10,
+              10
             ]
           ],
-          "VB": [
+          "NNP": [
             [
               3,
               3
             ]
           ],
-          "TO": [
+          "PP": [
+            [
+              2,
+              4
+            ]
+          ],
+          "MD": [
+            [
+              5,
+              5
+            ],
+            [
+              12,
+              12
+            ]
+          ],
+          "VB": [
+            [
+              6,
+              6
+            ],
+            [
+              13,
+              13
+            ]
+          ],
+          "DT": [
+            [
+              7,
+              7
+            ]
+          ],
+          "RB": [
+            [
+              9,
+              9
+            ]
+          ],
+          "VP": [
+            [
+              5,
+              13
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              13
+            ],
+            [
+              16,
+              16
+            ]
+          ],
+          "S": [
+            [
+              1,
+              13
+            ],
+            [
+              1,
+              17
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "SBAR": [
+            [
+              9,
+              13
+            ]
+          ],
+          ",": [
+            [
+              14,
+              14
+            ]
+          ],
+          "VBZ": [
+            [
+              16,
+              16
+            ]
+          ],
+          ".": [
+            [
+              17,
+              17
+            ]
+          ],
+          "ROOT": [
+            [
+              1,
+              17
+            ]
+          ]
+        },
+        "Index": {
+          "1": "member",
+          "2": "at",
+          "3": "Waw",
+          "4": "board",
+          "5": "can",
+          "6": "access",
+          "7": "the",
+          "8": "PrivatePortal",
+          "9": "so",
+          "10": "that",
+          "11": "board",
+          "12": "can",
+          "13": "share",
+          "14": ",",
+          "15": "view",
+          "16": "BoardDocuments",
+          "17": "."
+        }
+      }
+    },
+    {
+      "Board members will upload Documents to GoogleDrive .": {
+        "FileName": "2014-USC-Project14",
+        "TD": {
+          "ROOT": [
+            [
+              0,
+              4
+            ]
+          ],
+          "compound": [
+            [
+              2,
+              1
+            ]
+          ],
+          "nsubj": [
+            [
+              4,
+              2
+            ]
+          ],
+          "aux": [
+            [
+              4,
+              3
+            ]
+          ],
+          "dobj": [
+            [
+              4,
+              5
+            ]
+          ],
+          "case": [
+            [
+              7,
+              6
+            ]
+          ],
+          "nmod": [
+            [
+              4,
+              7
+            ]
+          ],
+          "punct": [
+            [
+              4,
+              8
+            ]
+          ]
+        },
+        "Pos-tag": {
+          "NNP": [
+            [
+              1,
+              1
+            ],
+            [
+              7,
+              7
+            ]
+          ],
+          "NNS": [
+            [
+              2,
+              2
+            ],
             [
               5,
               5
             ]
           ],
-          "NNP": [
+          "NP": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              7,
+              7
+            ]
+          ],
+          "MD": [
+            [
+              3,
+              3
+            ]
+          ],
+          "VB": [
+            [
+              4,
+              4
+            ]
+          ],
+          "TO": [
             [
               6,
               6
@@ -33782,47 +35003,48 @@
           ],
           "PP": [
             [
-              5,
-              6
+              6,
+              7
             ]
           ],
           "VP": [
             [
-              2,
-              6
+              3,
+              7
             ],
             [
-              3,
-              6
+              4,
+              7
             ]
           ],
           ".": [
             [
-              7,
-              7
+              8,
+              8
             ]
           ],
           "S": [
             [
               1,
-              7
+              8
             ]
           ],
           "ROOT": [
             [
               1,
-              7
+              8
             ]
           ]
         },
         "Index": {
-          "1": "BoardMembers",
-          "2": "will",
-          "3": "upload",
-          "4": "Documents",
-          "5": "to",
-          "6": "GoogleDrive",
-          "7": "."
+          "1": "Board",
+          "2": "members",
+          "3": "will",
+          "4": "upload",
+          "5": "Documents",
+          "6": "to",
+          "7": "GoogleDrive",
+          "8": "."
         }
       }
     },
@@ -37191,7 +38413,7 @@
       }
     },
     {
-      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the Type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
+      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
@@ -37584,7 +38806,7 @@
           "10": "and",
           "11": "analyse",
           "12": "the",
-          "13": "Type",
+          "13": "type",
           "14": "of",
           "15": "counselling",
           "16": "our",
@@ -38803,283 +40025,292 @@
       }
     },
     {
-      "at Waw BoardMember can access the PrivatePortal so that BoardMember can share , view BoardDocuments .": {
+      "member at Waw board can access the PrivatePortal so that board can share , view BoardDocuments .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
             [
               0,
+              16
+            ]
+          ],
+          "nsubj": [
+            [
+              6,
+              1
+            ],
+            [
+              13,
+              11
+            ],
+            [
+              16,
               15
             ]
           ],
           "case": [
             [
-              3,
-              1
+              4,
+              2
             ]
           ],
           "compound": [
             [
-              3,
-              2
+              4,
+              3
             ]
           ],
           "nmod": [
             [
-              15,
-              3
+              1,
+              4
             ]
           ],
           "aux": [
             [
-              5,
-              4
+              6,
+              5
             ],
             [
-              12,
-              11
+              13,
+              12
             ]
           ],
-          "acl": [
+          "ccomp": [
             [
-              3,
-              5
+              16,
+              6
             ]
           ],
           "det": [
             [
-              7,
-              6
+              8,
+              7
             ]
           ],
           "dobj": [
             [
-              5,
-              7
+              6,
+              8
             ]
           ],
           "mark": [
             [
-              12,
-              8
+              13,
+              9
             ]
           ],
           "mwe": [
             [
-              8,
-              9
-            ]
-          ],
-          "nsubj": [
-            [
-              12,
+              9,
               10
-            ],
-            [
-              15,
-              14
             ]
           ],
           "advcl": [
             [
-              5,
-              12
+              6,
+              13
             ]
           ],
           "punct": [
             [
-              15,
-              13
+              16,
+              14
             ],
             [
-              15,
-              16
+              16,
+              17
             ]
           ]
         },
         "Pos-tag": {
-          "IN": [
+          "NN": [
             [
               1,
               1
             ],
             [
-              9,
-              9
-            ]
-          ],
-          "NNP": [
-            [
-              2,
-              2
-            ],
-            [
-              3,
-              3
-            ],
-            [
-              10,
-              10
-            ]
-          ],
-          "NP": [
-            [
-              2,
-              3
-            ],
-            [
-              2,
-              12
-            ],
-            [
-              6,
-              7
-            ],
-            [
-              10,
-              10
-            ],
-            [
-              14,
-              14
-            ]
-          ],
-          "MD": [
-            [
               4,
               4
             ],
             [
-              11,
-              11
-            ]
-          ],
-          "VB": [
-            [
-              5,
-              5
-            ],
-            [
-              12,
-              12
-            ]
-          ],
-          "DT": [
-            [
-              6,
-              6
-            ]
-          ],
-          "NN": [
-            [
-              7,
-              7
-            ],
-            [
-              14,
-              14
-            ]
-          ],
-          "RB": [
-            [
               8,
               8
-            ]
-          ],
-          "VP": [
-            [
-              4,
-              12
-            ],
-            [
-              5,
-              12
             ],
             [
               11,
-              12
-            ],
-            [
-              12,
-              12
+              11
             ],
             [
               15,
               15
             ]
           ],
-          "S": [
+          "NP": [
             [
               1,
-              16
+              1
             ],
             [
-              4,
-              12
+              1,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              15,
+              15
+            ]
+          ],
+          "IN": [
+            [
+              2,
+              2
             ],
             [
               10,
-              12
+              10
             ]
           ],
-          "SBAR": [
+          "NNP": [
             [
-              4,
-              12
-            ],
-            [
-              8,
-              12
+              3,
+              3
             ]
           ],
           "PP": [
             [
-              1,
+              2,
+              4
+            ]
+          ],
+          "MD": [
+            [
+              5,
+              5
+            ],
+            [
+              12,
               12
             ]
           ],
-          ",": [
+          "VB": [
+            [
+              6,
+              6
+            ],
             [
               13,
               13
             ]
           ],
-          "VBZ": [
+          "DT": [
             [
-              15,
-              15
+              7,
+              7
             ]
           ],
-          ".": [
+          "RB": [
+            [
+              9,
+              9
+            ]
+          ],
+          "VP": [
+            [
+              5,
+              13
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              13
+            ],
             [
               16,
               16
             ]
           ],
+          "S": [
+            [
+              1,
+              13
+            ],
+            [
+              1,
+              17
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "SBAR": [
+            [
+              9,
+              13
+            ]
+          ],
+          ",": [
+            [
+              14,
+              14
+            ]
+          ],
+          "VBZ": [
+            [
+              16,
+              16
+            ]
+          ],
+          ".": [
+            [
+              17,
+              17
+            ]
+          ],
           "ROOT": [
             [
               1,
-              16
+              17
             ]
           ]
         },
         "Index": {
-          "1": "at",
-          "2": "Waw",
-          "3": "BoardMember",
-          "4": "can",
-          "5": "access",
-          "6": "the",
-          "7": "PrivatePortal",
-          "8": "so",
-          "9": "that",
-          "10": "BoardMember",
-          "11": "can",
-          "12": "share",
-          "13": ",",
-          "14": "view",
-          "15": "BoardDocuments",
-          "16": "."
+          "1": "member",
+          "2": "at",
+          "3": "Waw",
+          "4": "board",
+          "5": "can",
+          "6": "access",
+          "7": "the",
+          "8": "PrivatePortal",
+          "9": "so",
+          "10": "that",
+          "11": "board",
+          "12": "can",
+          "13": "share",
+          "14": ",",
+          "15": "view",
+          "16": "BoardDocuments",
+          "17": "."
         }
       }
     },
@@ -42436,7 +43667,7 @@
       }
     },
     {
-      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the Type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
+      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
@@ -42829,7 +44060,7 @@
           "10": "and",
           "11": "analyse",
           "12": "the",
-          "13": "Type",
+          "13": "type",
           "14": "of",
           "15": "counselling",
           "16": "our",
@@ -44310,377 +45541,396 @@
       }
     },
     {
-      "at Waw BoardMember can access the PrivatePortal so that BoardMember can share , view BoardDocuments .": {
+      "member at Waw board can access the PrivatePortal so that board can share , view BoardDocuments .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
             [
               0,
+              16
+            ]
+          ],
+          "nsubj": [
+            [
+              6,
+              1
+            ],
+            [
+              13,
+              11
+            ],
+            [
+              16,
               15
             ]
           ],
           "case": [
             [
-              3,
-              1
+              4,
+              2
             ]
           ],
           "compound": [
             [
-              3,
-              2
+              4,
+              3
             ]
           ],
           "nmod": [
             [
-              15,
-              3
+              1,
+              4
             ]
           ],
           "aux": [
             [
-              5,
-              4
+              6,
+              5
             ],
             [
-              12,
-              11
+              13,
+              12
             ]
           ],
-          "acl": [
+          "ccomp": [
             [
-              3,
-              5
+              16,
+              6
             ]
           ],
           "det": [
             [
-              7,
-              6
+              8,
+              7
             ]
           ],
           "dobj": [
             [
-              5,
-              7
+              6,
+              8
             ]
           ],
           "mark": [
             [
-              12,
-              8
+              13,
+              9
             ]
           ],
           "mwe": [
             [
-              8,
-              9
-            ]
-          ],
-          "nsubj": [
-            [
-              12,
+              9,
               10
-            ],
-            [
-              15,
-              14
             ]
           ],
           "advcl": [
             [
-              5,
-              12
+              6,
+              13
             ]
           ],
           "punct": [
             [
-              15,
-              13
+              16,
+              14
             ],
             [
-              15,
-              16
+              16,
+              17
             ]
           ]
         },
         "Pos-tag": {
-          "IN": [
+          "NN": [
             [
               1,
               1
             ],
             [
-              9,
-              9
-            ]
-          ],
-          "NNP": [
-            [
-              2,
-              2
-            ],
-            [
-              3,
-              3
-            ],
-            [
-              10,
-              10
-            ]
-          ],
-          "NP": [
-            [
-              2,
-              3
-            ],
-            [
-              2,
-              12
-            ],
-            [
-              6,
-              7
-            ],
-            [
-              10,
-              10
-            ],
-            [
-              14,
-              14
-            ]
-          ],
-          "MD": [
-            [
               4,
               4
             ],
             [
-              11,
-              11
-            ]
-          ],
-          "VB": [
-            [
-              5,
-              5
-            ],
-            [
-              12,
-              12
-            ]
-          ],
-          "DT": [
-            [
-              6,
-              6
-            ]
-          ],
-          "NN": [
-            [
-              7,
-              7
-            ],
-            [
-              14,
-              14
-            ]
-          ],
-          "RB": [
-            [
               8,
               8
-            ]
-          ],
-          "VP": [
-            [
-              4,
-              12
-            ],
-            [
-              5,
-              12
             ],
             [
               11,
-              12
-            ],
-            [
-              12,
-              12
+              11
             ],
             [
               15,
               15
             ]
           ],
-          "S": [
+          "NP": [
             [
               1,
-              16
+              1
             ],
             [
-              4,
-              12
+              1,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              15,
+              15
+            ]
+          ],
+          "IN": [
+            [
+              2,
+              2
             ],
             [
               10,
-              12
+              10
             ]
           ],
-          "SBAR": [
+          "NNP": [
             [
-              4,
-              12
-            ],
-            [
-              8,
-              12
+              3,
+              3
             ]
           ],
           "PP": [
             [
-              1,
+              2,
+              4
+            ]
+          ],
+          "MD": [
+            [
+              5,
+              5
+            ],
+            [
+              12,
               12
             ]
           ],
-          ",": [
+          "VB": [
+            [
+              6,
+              6
+            ],
             [
               13,
               13
             ]
           ],
-          "VBZ": [
+          "DT": [
             [
-              15,
-              15
+              7,
+              7
             ]
           ],
-          ".": [
+          "RB": [
+            [
+              9,
+              9
+            ]
+          ],
+          "VP": [
+            [
+              5,
+              13
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              13
+            ],
             [
               16,
               16
             ]
           ],
+          "S": [
+            [
+              1,
+              13
+            ],
+            [
+              1,
+              17
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "SBAR": [
+            [
+              9,
+              13
+            ]
+          ],
+          ",": [
+            [
+              14,
+              14
+            ]
+          ],
+          "VBZ": [
+            [
+              16,
+              16
+            ]
+          ],
+          ".": [
+            [
+              17,
+              17
+            ]
+          ],
           "ROOT": [
             [
               1,
-              16
+              17
             ]
           ]
         },
         "Index": {
-          "1": "at",
-          "2": "Waw",
-          "3": "BoardMember",
-          "4": "can",
-          "5": "access",
-          "6": "the",
-          "7": "PrivatePortal",
-          "8": "so",
-          "9": "that",
-          "10": "BoardMember",
-          "11": "can",
-          "12": "share",
-          "13": ",",
-          "14": "view",
-          "15": "BoardDocuments",
-          "16": "."
+          "1": "member",
+          "2": "at",
+          "3": "Waw",
+          "4": "board",
+          "5": "can",
+          "6": "access",
+          "7": "the",
+          "8": "PrivatePortal",
+          "9": "so",
+          "10": "that",
+          "11": "board",
+          "12": "can",
+          "13": "share",
+          "14": ",",
+          "15": "view",
+          "16": "BoardDocuments",
+          "17": "."
         }
       }
     },
     {
-      "BoardMembers will upload Documents to GoogleDrive .": {
+      "Board members will upload Documents to GoogleDrive .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
             [
               0,
-              3
+              4
+            ]
+          ],
+          "compound": [
+            [
+              2,
+              1
             ]
           ],
           "nsubj": [
             [
-              3,
-              1
+              4,
+              2
             ]
           ],
           "aux": [
             [
-              3,
-              2
+              4,
+              3
             ]
           ],
           "dobj": [
             [
-              3,
-              4
+              4,
+              5
             ]
           ],
           "case": [
             [
-              6,
-              5
+              7,
+              6
             ]
           ],
           "nmod": [
             [
-              3,
-              6
+              4,
+              7
             ]
           ],
           "punct": [
             [
-              3,
-              7
+              4,
+              8
             ]
           ]
         },
         "Pos-tag": {
+          "NNP": [
+            [
+              1,
+              1
+            ],
+            [
+              7,
+              7
+            ]
+          ],
           "NNS": [
-            [
-              1,
-              1
-            ],
-            [
-              4,
-              4
-            ]
-          ],
-          "NP": [
-            [
-              1,
-              1
-            ],
-            [
-              4,
-              4
-            ],
-            [
-              6,
-              6
-            ]
-          ],
-          "MD": [
             [
               2,
               2
-            ]
-          ],
-          "VB": [
-            [
-              3,
-              3
-            ]
-          ],
-          "TO": [
+            ],
             [
               5,
               5
             ]
           ],
-          "NNP": [
+          "NP": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              7,
+              7
+            ]
+          ],
+          "MD": [
+            [
+              3,
+              3
+            ]
+          ],
+          "VB": [
+            [
+              4,
+              4
+            ]
+          ],
+          "TO": [
             [
               6,
               6
@@ -44688,47 +45938,48 @@
           ],
           "PP": [
             [
-              5,
-              6
+              6,
+              7
             ]
           ],
           "VP": [
             [
-              2,
-              6
+              3,
+              7
             ],
             [
-              3,
-              6
+              4,
+              7
             ]
           ],
           ".": [
             [
-              7,
-              7
+              8,
+              8
             ]
           ],
           "S": [
             [
               1,
-              7
+              8
             ]
           ],
           "ROOT": [
             [
               1,
-              7
+              8
             ]
           ]
         },
         "Index": {
-          "1": "BoardMembers",
-          "2": "will",
-          "3": "upload",
-          "4": "Documents",
-          "5": "to",
-          "6": "GoogleDrive",
-          "7": "."
+          "1": "Board",
+          "2": "members",
+          "3": "will",
+          "4": "upload",
+          "5": "Documents",
+          "6": "to",
+          "7": "GoogleDrive",
+          "8": "."
         }
       }
     },
@@ -48881,7 +50132,7 @@
       }
     },
     {
-      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the Type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
+      "WawITPersonnel can generate Reports so that WawITPersonnel can track and analyse the type of counselling our Clients enroll for I.eJobSearch , CareerGuidance , etc. . .": {
         "FileName": "2014-USC-Project14",
         "TD": {
           "ROOT": [
@@ -49274,7 +50525,7 @@
           "10": "and",
           "11": "analyse",
           "12": "the",
-          "13": "Type",
+          "13": "type",
           "14": "of",
           "15": "counselling",
           "16": "our",

@@ -8,7 +8,7 @@ Organization can redirect the Employees to another Organization based on the Sev
 User can be anonymous about User's Identity when submitting ViolenceReports .
 Vrs can delete any IrrelevantComplaints that have been reported , so that EmployeesOf an Organization are not falsely AccusedOf a CrimeOrConflict .
 Developer can re-use already AvailableOpen-sourceTicketManagement or CaseManagementSystems , so that Developer can minimize DevelopmentTime and Costs .
-who has Access to ticketing System , VrsAdmin can filter Tickets based on Organization , Severity , ComplaintTypeAndPeriodOfTime .
+who has Access to ticketing System , VrsAdmin can filter Tickets based on Organization , Severity , complaint type and PeriodOfTime .
 VrsAdmin can view and download the Case filed by the Employee .
 VrsAdmin can edit the Assignee and TicketStatus .
 Employee can view all Employee's Cases .

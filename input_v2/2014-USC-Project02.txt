@@ -13,7 +13,7 @@ All WebcrawlerFunctionality from the RelationalDataBaseIngest should be mirrored
 With this Condition in Place , as a GeneralManger , I can monitor Real-timeTwitter/facebook/instagramFeeds / reaction from KeySources in a ContinuousMannerAnd/or on Demand .
 The Crawler shall self correct SimpleErrors it encounters during the SqlIngestProcess .
 The Crawler should have some kind of VisualizationTool which allows Engineers to view a SnapshotOfTheInteractions between the Crawler , Datasources and STBI Databases .
-The Crawler should search for NewDatasources automatically ( it should be able to learn the TypesOfData that are commonly ingested and then go Look for NewOnesOfHighQuality ) .
+The Crawler should search for NewDatasources automatically ( it should be able to learn the types of Data that are commonly ingested and then go Look for NewOnesOfHighQuality ) .
 The System shall be a Web-basedManagementGUI . As a Customer , I could manage the Tool from anywhere without the Need to worry about the SportechB.I.System having to launch from a Program on a Desktop or Server .
 The System shall serve as the `` NerveCenter '' for the StbiEcosystem . It can ingest all kinds of StructuredData , both automatically and on Demand .
 There should be a Portal that allows the User to drag and drop Information in ManyDifferentFormats ( Excel , Csv , Web etc. ) and then the Crawler should organize , sort and identify the Datatype and then ingest into the PostgresqlDB .

@@ -26974,7 +26974,7 @@
       }
     },
     {
-      "SpecificTraining should be provided to all TeamMembers for the DevelopmentAndUseOfTheProduct .": {
+      "SpecificTraining should be provided to all team members for the DevelopmentAndUseOfTheProduct .": {
         "FileName": "2014-USC-Project11",
         "TD": {
           "ROOT": [
@@ -27003,38 +27003,44 @@
           ],
           "case": [
             [
-              7,
+              8,
               5
             ],
             [
-              10,
-              8
+              11,
+              9
             ]
           ],
           "det": [
             [
-              7,
+              8,
               6
             ],
             [
-              10,
-              9
+              11,
+              10
+            ]
+          ],
+          "compound": [
+            [
+              8,
+              7
             ]
           ],
           "nmod": [
             [
               4,
-              7
+              8
             ],
             [
-              4,
-              10
+              8,
+              11
             ]
           ],
           "punct": [
             [
               4,
-              11
+              12
             ]
           ]
         },
@@ -27045,8 +27051,8 @@
               1
             ],
             [
-              10,
-              10
+              11,
+              11
             ]
           ],
           "NP": [
@@ -27056,11 +27062,15 @@
             ],
             [
               6,
-              7
+              8
             ],
             [
-              9,
-              10
+              6,
+              11
+            ],
+            [
+              10,
+              11
             ]
           ],
           "MD": [
@@ -27093,62 +27103,68 @@
               6
             ],
             [
-              9,
-              9
+              10,
+              10
             ]
           ],
-          "NNPS": [
+          "NN": [
             [
               7,
               7
             ]
           ],
-          "PP": [
-            [
-              5,
-              7
-            ],
-            [
-              8,
-              10
-            ]
-          ],
-          "IN": [
+          "NNS": [
             [
               8,
               8
             ]
           ],
+          "IN": [
+            [
+              9,
+              9
+            ]
+          ],
+          "PP": [
+            [
+              5,
+              11
+            ],
+            [
+              9,
+              11
+            ]
+          ],
           "VP": [
             [
               2,
-              10
+              11
             ],
             [
               3,
-              10
+              11
             ],
             [
               4,
-              10
+              11
             ]
           ],
           ".": [
             [
-              11,
-              11
+              12,
+              12
             ]
           ],
           "S": [
             [
               1,
-              11
+              12
             ]
           ],
           "ROOT": [
             [
               1,
-              11
+              12
             ]
           ]
         },
@@ -27159,18 +27175,19 @@
           "4": "provided",
           "5": "to",
           "6": "all",
-          "7": "TeamMembers",
-          "8": "for",
-          "9": "the",
-          "10": "DevelopmentAndUseOfTheProduct",
-          "11": "."
+          "7": "team",
+          "8": "members",
+          "9": "for",
+          "10": "the",
+          "11": "DevelopmentAndUseOfTheProduct",
+          "12": "."
         }
       }
     }
   ],
   "SAuxVPassPO": [
     {
-      "SpecificTraining should be provided to all TeamMembers for the DevelopmentAndUseOfTheProduct .": {
+      "SpecificTraining should be provided to all team members for the DevelopmentAndUseOfTheProduct .": {
         "FileName": "2014-USC-Project11",
         "TD": {
           "ROOT": [
@@ -27199,38 +27216,44 @@
           ],
           "case": [
             [
-              7,
+              8,
               5
             ],
             [
-              10,
-              8
+              11,
+              9
             ]
           ],
           "det": [
             [
-              7,
+              8,
               6
             ],
             [
-              10,
-              9
+              11,
+              10
+            ]
+          ],
+          "compound": [
+            [
+              8,
+              7
             ]
           ],
           "nmod": [
             [
               4,
-              7
+              8
             ],
             [
-              4,
-              10
+              8,
+              11
             ]
           ],
           "punct": [
             [
               4,
-              11
+              12
             ]
           ]
         },
@@ -27241,8 +27264,8 @@
               1
             ],
             [
-              10,
-              10
+              11,
+              11
             ]
           ],
           "NP": [
@@ -27252,11 +27275,15 @@
             ],
             [
               6,
-              7
+              8
             ],
             [
-              9,
-              10
+              6,
+              11
+            ],
+            [
+              10,
+              11
             ]
           ],
           "MD": [
@@ -27289,62 +27316,68 @@
               6
             ],
             [
-              9,
-              9
+              10,
+              10
             ]
           ],
-          "NNPS": [
+          "NN": [
             [
               7,
               7
             ]
           ],
-          "PP": [
-            [
-              5,
-              7
-            ],
-            [
-              8,
-              10
-            ]
-          ],
-          "IN": [
+          "NNS": [
             [
               8,
               8
             ]
           ],
+          "IN": [
+            [
+              9,
+              9
+            ]
+          ],
+          "PP": [
+            [
+              5,
+              11
+            ],
+            [
+              9,
+              11
+            ]
+          ],
           "VP": [
             [
               2,
-              10
+              11
             ],
             [
               3,
-              10
+              11
             ],
             [
               4,
-              10
+              11
             ]
           ],
           ".": [
             [
-              11,
-              11
+              12,
+              12
             ]
           ],
           "S": [
             [
               1,
-              11
+              12
             ]
           ],
           "ROOT": [
             [
               1,
-              11
+              12
             ]
           ]
         },
@@ -27355,11 +27388,12 @@
           "4": "provided",
           "5": "to",
           "6": "all",
-          "7": "TeamMembers",
-          "8": "for",
-          "9": "the",
-          "10": "DevelopmentAndUseOfTheProduct",
-          "11": "."
+          "7": "team",
+          "8": "members",
+          "9": "for",
+          "10": "the",
+          "11": "DevelopmentAndUseOfTheProduct",
+          "12": "."
         }
       }
     }

@@ -5,27 +5,27 @@ User expect to only see Options that User's Swimmer is qualified to sign up for 
 Coach expect the Signups to automatically close 2 Weeks before SignUps , or a Time-frame that Coach set .
 Coach have a ManualMeans of entering SwimEvents in Case the FormatOfThePageChanges .
 the FormatOfTheInformation about SwimEvents will never change .
-Parent should be able to login to Parent's Kid 's Account .
+parent should be able to login to parent's Kid 's Account .
 Coach expect that if Coach modified Something from the User , that the User will automatically be notified .
-Parent should be able to see Amount Parent am supposed to pay .
-Parent should be able to view Event categorically .
+parent should be able to see Amount parent am supposed to pay .
+parent should be able to view Event categorically .
 User should be able to see the Events in which User's Kid is signed up .
 Coach should be able to extract PdfInformation and UploadEvents on Website .
 Coach should be able to edit the ListOfEvents all Kids are signed up for .
-Parent should be able to edit the signed up Events before the Deadline .
+parent should be able to edit the signed up Events before the Deadline .
 System shall render correctly on MobilePlatforms .
-Parent should not be able to sign up Parent's Kid for the EventsPost the Deadline .
+parent should not be able to sign up parent's Kid for the EventsPost the Deadline .
 Treasurer should be able to see the TotalAmount to be collected in the Month .
 The System shall render correctly on all Browsers .
 The System shall be user-friendly and intuitive .
 Developer should have the Access to the DatabaseOfTheRegistrationIds and DateOfBirthOfChildren .
 The System should allow the User to sign up his Kid in at most four Events .
 System should allow to signup Events after authenticating the member 's DateOfBirth with the EventDeadline .
-Parent should be able to view the PayeeInformation .
+parent should be able to view the PayeeInformation .
 Maintainer should be able to access/modify the Database .
 Maintainer should be able to modify the Website .
 Maintainer should have Access to Documentation and the SourceCode .
 Head-coach should be able to generate FinalPDFReport and CsvFile .
-Parent can login into Parent's KidsAccount with a RegistrationKey .
+parent can login into parent's KidsAccount with a RegistrationKey .
 Maintainer can Insert , Delete , OrModifyTheDatabaseOfTheEventsOrOfTheKids .
 Maintainer can see the AmountDetails for the Kids that they owe .

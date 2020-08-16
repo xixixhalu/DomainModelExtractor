@@ -2617,7 +2617,7 @@
       }
     },
     {
-      "Parent should be able to see Amount Parent am supposed to pay .": {
+      "parent should be able to see Amount parent am supposed to pay .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -2704,14 +2704,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              7,
-              7
             ],
             [
               8,
@@ -2762,6 +2758,12 @@
             [
               11,
               11
+            ]
+          ],
+          "NNP": [
+            [
+              7,
+              7
             ]
           ],
           "VBP": [
@@ -2854,14 +2856,14 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
           "5": "to",
           "6": "see",
           "7": "Amount",
-          "8": "Parent",
+          "8": "parent",
           "9": "am",
           "10": "supposed",
           "11": "to",
@@ -5391,7 +5393,7 @@
       }
     },
     {
-      "Parent should be able to view Event categorically .": {
+      "parent should be able to view Event categorically .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -5454,10 +5456,14 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
+            ],
+            [
+              7,
+              7
             ]
           ],
           "NP": [
@@ -5496,12 +5502,6 @@
             [
               5,
               5
-            ]
-          ],
-          "NN": [
-            [
-              7,
-              7
             ]
           ],
           "RB": [
@@ -5564,7 +5564,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -8629,7 +8629,7 @@
       }
     },
     {
-      "Parent should be able to view Event categorically .": {
+      "parent should be able to view Event categorically .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -8692,10 +8692,14 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
+            ],
+            [
+              7,
+              7
             ]
           ],
           "NP": [
@@ -8734,12 +8738,6 @@
             [
               5,
               5
-            ]
-          ],
-          "NN": [
-            [
-              7,
-              7
             ]
           ],
           "RB": [
@@ -8802,7 +8800,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -9664,7 +9662,7 @@
       }
     },
     {
-      "Parent should be able to edit the signed up Events before the Deadline .": {
+      "parent should be able to edit the signed up Events before the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -9755,14 +9753,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              13,
-              13
             ]
           ],
           "NP": [
@@ -9861,6 +9855,12 @@
               11
             ]
           ],
+          "NNP": [
+            [
+              13,
+              13
+            ]
+          ],
           "PP": [
             [
               11,
@@ -9909,7 +9909,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -9927,7 +9927,7 @@
       }
     },
     {
-      "Parent should not be able to sign up Parent's Kid for the EventsPost the Deadline .": {
+      "parent should not be able to sign up parent's Kid for the EventsPost the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -10030,7 +10030,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -10040,12 +10040,8 @@
               9
             ],
             [
-              14,
-              14
-            ],
-            [
-              16,
-              16
+              11,
+              11
             ]
           ],
           "NP": [
@@ -10122,12 +10118,6 @@
               10
             ]
           ],
-          "NN": [
-            [
-              11,
-              11
-            ]
-          ],
           "IN": [
             [
               12,
@@ -10142,6 +10132,16 @@
             [
               15,
               15
+            ]
+          ],
+          "NNP": [
+            [
+              14,
+              14
+            ],
+            [
+              16,
+              16
             ]
           ],
           "PP": [
@@ -10198,7 +10198,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "not",
           "4": "be",
@@ -10206,7 +10206,7 @@
           "6": "to",
           "7": "sign",
           "8": "up",
-          "9": "Parent",
+          "9": "parent",
           "10": "'s",
           "11": "Kid",
           "12": "for",
@@ -10969,7 +10969,7 @@
       }
     },
     {
-      "System should allow to signup Events after authenticating the Member 's DateOfBirth with the EventDeadline .": {
+      "System should allow to signup Events after authenticating the member 's DateOfBirth with the EventDeadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -11070,10 +11070,6 @@
               1
             ],
             [
-              10,
-              10
-            ],
-            [
               12,
               12
             ],
@@ -11162,6 +11158,12 @@
               14
             ]
           ],
+          "NN": [
+            [
+              10,
+              10
+            ]
+          ],
           "POS": [
             [
               11,
@@ -11237,7 +11239,7 @@
           "7": "after",
           "8": "authenticating",
           "9": "the",
-          "10": "Member",
+          "10": "member",
           "11": "'s",
           "12": "DateOfBirth",
           "13": "with",
@@ -11248,7 +11250,7 @@
       }
     },
     {
-      "Parent should be able to view the PayeeInformation .": {
+      "parent should be able to view the PayeeInformation .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -11311,14 +11313,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              8,
-              8
             ]
           ],
           "NP": [
@@ -11363,6 +11361,12 @@
             [
               7,
               7
+            ]
+          ],
+          "NNP": [
+            [
+              8,
+              8
             ]
           ],
           "VP": [
@@ -11413,7 +11417,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -13188,7 +13192,7 @@
       }
     },
     {
-      "Parent should be able to view Event categorically .": {
+      "parent should be able to view Event categorically .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -13251,10 +13255,14 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
+            ],
+            [
+              7,
+              7
             ]
           ],
           "NP": [
@@ -13293,12 +13301,6 @@
             [
               5,
               5
-            ]
-          ],
-          "NN": [
-            [
-              7,
-              7
             ]
           ],
           "RB": [
@@ -13361,7 +13363,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -14033,7 +14035,7 @@
       }
     },
     {
-      "Parent should be able to login to Parent's Kid 's Account .": {
+      "parent should be able to login to parent's Kid 's Account .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -14112,7 +14114,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -14120,14 +14122,6 @@
             [
               8,
               8
-            ],
-            [
-              10,
-              10
-            ],
-            [
-              12,
-              12
             ]
           ],
           "NP": [
@@ -14190,6 +14184,16 @@
               11
             ]
           ],
+          "NNP": [
+            [
+              10,
+              10
+            ],
+            [
+              12,
+              12
+            ]
+          ],
           "PP": [
             [
               7,
@@ -14244,14 +14248,14 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
           "5": "to",
           "6": "login",
           "7": "to",
-          "8": "Parent",
+          "8": "parent",
           "9": "'s",
           "10": "Kid",
           "11": "'s",
@@ -14261,7 +14265,7 @@
       }
     },
     {
-      "Parent should be able to see Amount Parent am supposed to pay .": {
+      "parent should be able to see Amount parent am supposed to pay .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -14348,14 +14352,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              7,
-              7
             ],
             [
               8,
@@ -14406,6 +14406,12 @@
             [
               11,
               11
+            ]
+          ],
+          "NNP": [
+            [
+              7,
+              7
             ]
           ],
           "VBP": [
@@ -14498,14 +14504,14 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
           "5": "to",
           "6": "see",
           "7": "Amount",
-          "8": "Parent",
+          "8": "parent",
           "9": "am",
           "10": "supposed",
           "11": "to",
@@ -14515,7 +14521,7 @@
       }
     },
     {
-      "Parent should be able to view Event categorically .": {
+      "parent should be able to view Event categorically .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -14578,10 +14584,14 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
+            ],
+            [
+              7,
+              7
             ]
           ],
           "NP": [
@@ -14620,12 +14630,6 @@
             [
               5,
               5
-            ]
-          ],
-          "NN": [
-            [
-              7,
-              7
             ]
           ],
           "RB": [
@@ -14688,7 +14692,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -15550,7 +15554,7 @@
       }
     },
     {
-      "Parent should be able to edit the signed up Events before the Deadline .": {
+      "parent should be able to edit the signed up Events before the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -15641,14 +15645,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              13,
-              13
             ]
           ],
           "NP": [
@@ -15747,6 +15747,12 @@
               11
             ]
           ],
+          "NNP": [
+            [
+              13,
+              13
+            ]
+          ],
           "PP": [
             [
               11,
@@ -15795,7 +15801,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -15813,7 +15819,7 @@
       }
     },
     {
-      "Parent should not be able to sign up Parent's Kid for the EventsPost the Deadline .": {
+      "parent should not be able to sign up parent's Kid for the EventsPost the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -15916,7 +15922,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -15926,12 +15932,8 @@
               9
             ],
             [
-              14,
-              14
-            ],
-            [
-              16,
-              16
+              11,
+              11
             ]
           ],
           "NP": [
@@ -16008,12 +16010,6 @@
               10
             ]
           ],
-          "NN": [
-            [
-              11,
-              11
-            ]
-          ],
           "IN": [
             [
               12,
@@ -16028,6 +16024,16 @@
             [
               15,
               15
+            ]
+          ],
+          "NNP": [
+            [
+              14,
+              14
+            ],
+            [
+              16,
+              16
             ]
           ],
           "PP": [
@@ -16084,7 +16090,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "not",
           "4": "be",
@@ -16092,7 +16098,7 @@
           "6": "to",
           "7": "sign",
           "8": "up",
-          "9": "Parent",
+          "9": "parent",
           "10": "'s",
           "11": "Kid",
           "12": "for",
@@ -16379,7 +16385,7 @@
       }
     },
     {
-      "System should allow to signup Events after authenticating the Member 's DateOfBirth with the EventDeadline .": {
+      "System should allow to signup Events after authenticating the member 's DateOfBirth with the EventDeadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -16480,10 +16486,6 @@
               1
             ],
             [
-              10,
-              10
-            ],
-            [
               12,
               12
             ],
@@ -16572,6 +16574,12 @@
               14
             ]
           ],
+          "NN": [
+            [
+              10,
+              10
+            ]
+          ],
           "POS": [
             [
               11,
@@ -16647,7 +16655,7 @@
           "7": "after",
           "8": "authenticating",
           "9": "the",
-          "10": "Member",
+          "10": "member",
           "11": "'s",
           "12": "DateOfBirth",
           "13": "with",
@@ -16658,7 +16666,7 @@
       }
     },
     {
-      "Parent should be able to view the PayeeInformation .": {
+      "parent should be able to view the PayeeInformation .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -16721,14 +16729,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              8,
-              8
             ]
           ],
           "NP": [
@@ -16773,6 +16777,12 @@
             [
               7,
               7
+            ]
+          ],
+          "NNP": [
+            [
+              8,
+              8
             ]
           ],
           "VP": [
@@ -16823,7 +16833,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -18047,7 +18057,7 @@
       }
     },
     {
-      "Parent should be able to login to Parent's Kid 's Account .": {
+      "parent should be able to login to parent's Kid 's Account .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -18126,7 +18136,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -18134,14 +18144,6 @@
             [
               8,
               8
-            ],
-            [
-              10,
-              10
-            ],
-            [
-              12,
-              12
             ]
           ],
           "NP": [
@@ -18204,6 +18206,16 @@
               11
             ]
           ],
+          "NNP": [
+            [
+              10,
+              10
+            ],
+            [
+              12,
+              12
+            ]
+          ],
           "PP": [
             [
               7,
@@ -18258,14 +18270,14 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
           "5": "to",
           "6": "login",
           "7": "to",
-          "8": "Parent",
+          "8": "parent",
           "9": "'s",
           "10": "Kid",
           "11": "'s",
@@ -18275,7 +18287,7 @@
       }
     },
     {
-      "Parent should be able to see Amount Parent am supposed to pay .": {
+      "parent should be able to see Amount parent am supposed to pay .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -18362,14 +18374,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              7,
-              7
             ],
             [
               8,
@@ -18420,6 +18428,12 @@
             [
               11,
               11
+            ]
+          ],
+          "NNP": [
+            [
+              7,
+              7
             ]
           ],
           "VBP": [
@@ -18512,14 +18526,14 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
           "5": "to",
           "6": "see",
           "7": "Amount",
-          "8": "Parent",
+          "8": "parent",
           "9": "am",
           "10": "supposed",
           "11": "to",
@@ -18529,7 +18543,7 @@
       }
     },
     {
-      "Parent should be able to view Event categorically .": {
+      "parent should be able to view Event categorically .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -18592,10 +18606,14 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
+            ],
+            [
+              7,
+              7
             ]
           ],
           "NP": [
@@ -18634,12 +18652,6 @@
             [
               5,
               5
-            ]
-          ],
-          "NN": [
-            [
-              7,
-              7
             ]
           ],
           "RB": [
@@ -18702,7 +18714,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -19564,7 +19576,7 @@
       }
     },
     {
-      "Parent should be able to edit the signed up Events before the Deadline .": {
+      "parent should be able to edit the signed up Events before the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -19655,14 +19667,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              13,
-              13
             ]
           ],
           "NP": [
@@ -19761,6 +19769,12 @@
               11
             ]
           ],
+          "NNP": [
+            [
+              13,
+              13
+            ]
+          ],
           "PP": [
             [
               11,
@@ -19809,7 +19823,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -19827,7 +19841,7 @@
       }
     },
     {
-      "Parent should not be able to sign up Parent's Kid for the EventsPost the Deadline .": {
+      "parent should not be able to sign up parent's Kid for the EventsPost the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -19930,7 +19944,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -19940,12 +19954,8 @@
               9
             ],
             [
-              14,
-              14
-            ],
-            [
-              16,
-              16
+              11,
+              11
             ]
           ],
           "NP": [
@@ -20022,12 +20032,6 @@
               10
             ]
           ],
-          "NN": [
-            [
-              11,
-              11
-            ]
-          ],
           "IN": [
             [
               12,
@@ -20042,6 +20046,16 @@
             [
               15,
               15
+            ]
+          ],
+          "NNP": [
+            [
+              14,
+              14
+            ],
+            [
+              16,
+              16
             ]
           ],
           "PP": [
@@ -20098,7 +20112,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "not",
           "4": "be",
@@ -20106,7 +20120,7 @@
           "6": "to",
           "7": "sign",
           "8": "up",
-          "9": "Parent",
+          "9": "parent",
           "10": "'s",
           "11": "Kid",
           "12": "for",
@@ -20393,7 +20407,7 @@
       }
     },
     {
-      "System should allow to signup Events after authenticating the Member 's DateOfBirth with the EventDeadline .": {
+      "System should allow to signup Events after authenticating the member 's DateOfBirth with the EventDeadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -20494,10 +20508,6 @@
               1
             ],
             [
-              10,
-              10
-            ],
-            [
               12,
               12
             ],
@@ -20586,6 +20596,12 @@
               14
             ]
           ],
+          "NN": [
+            [
+              10,
+              10
+            ]
+          ],
           "POS": [
             [
               11,
@@ -20661,7 +20677,7 @@
           "7": "after",
           "8": "authenticating",
           "9": "the",
-          "10": "Member",
+          "10": "member",
           "11": "'s",
           "12": "DateOfBirth",
           "13": "with",
@@ -20672,7 +20688,7 @@
       }
     },
     {
-      "Parent should be able to view the PayeeInformation .": {
+      "parent should be able to view the PayeeInformation .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -20735,14 +20751,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              8,
-              8
             ]
           ],
           "NP": [
@@ -20787,6 +20799,12 @@
             [
               7,
               7
+            ]
+          ],
+          "NNP": [
+            [
+              8,
+              8
             ]
           ],
           "VP": [
@@ -20837,7 +20855,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -22061,7 +22079,7 @@
       }
     },
     {
-      "Parent should be able to view Event categorically .": {
+      "parent should be able to view Event categorically .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -22124,10 +22142,14 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
+            ],
+            [
+              7,
+              7
             ]
           ],
           "NP": [
@@ -22166,12 +22188,6 @@
             [
               5,
               5
-            ]
-          ],
-          "NN": [
-            [
-              7,
-              7
             ]
           ],
           "RB": [
@@ -22234,7 +22250,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -22737,7 +22753,7 @@
       }
     },
     {
-      "Parent should be able to login to Parent's Kid 's Account .": {
+      "parent should be able to login to parent's Kid 's Account .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -22816,7 +22832,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -22824,14 +22840,6 @@
             [
               8,
               8
-            ],
-            [
-              10,
-              10
-            ],
-            [
-              12,
-              12
             ]
           ],
           "NP": [
@@ -22894,6 +22902,16 @@
               11
             ]
           ],
+          "NNP": [
+            [
+              10,
+              10
+            ],
+            [
+              12,
+              12
+            ]
+          ],
           "PP": [
             [
               7,
@@ -22948,14 +22966,14 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
           "5": "to",
           "6": "login",
           "7": "to",
-          "8": "Parent",
+          "8": "parent",
           "9": "'s",
           "10": "Kid",
           "11": "'s",
@@ -22965,7 +22983,7 @@
       }
     },
     {
-      "Parent should be able to see Amount Parent am supposed to pay .": {
+      "parent should be able to see Amount parent am supposed to pay .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -23052,14 +23070,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              7,
-              7
             ],
             [
               8,
@@ -23110,6 +23124,12 @@
             [
               11,
               11
+            ]
+          ],
+          "NNP": [
+            [
+              7,
+              7
             ]
           ],
           "VBP": [
@@ -23202,14 +23222,14 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
           "5": "to",
           "6": "see",
           "7": "Amount",
-          "8": "Parent",
+          "8": "parent",
           "9": "am",
           "10": "supposed",
           "11": "to",
@@ -23219,7 +23239,7 @@
       }
     },
     {
-      "Parent should be able to view Event categorically .": {
+      "parent should be able to view Event categorically .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -23282,10 +23302,14 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
+            ],
+            [
+              7,
+              7
             ]
           ],
           "NP": [
@@ -23324,12 +23348,6 @@
             [
               5,
               5
-            ]
-          ],
-          "NN": [
-            [
-              7,
-              7
             ]
           ],
           "RB": [
@@ -23392,7 +23410,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -24254,7 +24272,7 @@
       }
     },
     {
-      "Parent should be able to edit the signed up Events before the Deadline .": {
+      "parent should be able to edit the signed up Events before the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -24345,14 +24363,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              13,
-              13
             ]
           ],
           "NP": [
@@ -24451,6 +24465,12 @@
               11
             ]
           ],
+          "NNP": [
+            [
+              13,
+              13
+            ]
+          ],
           "PP": [
             [
               11,
@@ -24499,7 +24519,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -24517,7 +24537,7 @@
       }
     },
     {
-      "Parent should not be able to sign up Parent's Kid for the EventsPost the Deadline .": {
+      "parent should not be able to sign up parent's Kid for the EventsPost the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -24620,7 +24640,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -24630,12 +24650,8 @@
               9
             ],
             [
-              14,
-              14
-            ],
-            [
-              16,
-              16
+              11,
+              11
             ]
           ],
           "NP": [
@@ -24712,12 +24728,6 @@
               10
             ]
           ],
-          "NN": [
-            [
-              11,
-              11
-            ]
-          ],
           "IN": [
             [
               12,
@@ -24732,6 +24742,16 @@
             [
               15,
               15
+            ]
+          ],
+          "NNP": [
+            [
+              14,
+              14
+            ],
+            [
+              16,
+              16
             ]
           ],
           "PP": [
@@ -24788,7 +24808,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "not",
           "4": "be",
@@ -24796,7 +24816,7 @@
           "6": "to",
           "7": "sign",
           "8": "up",
-          "9": "Parent",
+          "9": "parent",
           "10": "'s",
           "11": "Kid",
           "12": "for",
@@ -25234,7 +25254,7 @@
       }
     },
     {
-      "Parent should be able to view the PayeeInformation .": {
+      "parent should be able to view the PayeeInformation .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -25297,14 +25317,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              8,
-              8
             ]
           ],
           "NP": [
@@ -25349,6 +25365,12 @@
             [
               7,
               7
+            ]
+          ],
+          "NNP": [
+            [
+              8,
+              8
             ]
           ],
           "VP": [
@@ -25399,7 +25421,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -29324,7 +29346,7 @@
       }
     },
     {
-      "Parent should be able to login to Parent's Kid 's Account .": {
+      "parent should be able to login to parent's Kid 's Account .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -29403,7 +29425,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -29411,14 +29433,6 @@
             [
               8,
               8
-            ],
-            [
-              10,
-              10
-            ],
-            [
-              12,
-              12
             ]
           ],
           "NP": [
@@ -29481,6 +29495,16 @@
               11
             ]
           ],
+          "NNP": [
+            [
+              10,
+              10
+            ],
+            [
+              12,
+              12
+            ]
+          ],
           "PP": [
             [
               7,
@@ -29535,14 +29559,14 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
           "5": "to",
           "6": "login",
           "7": "to",
-          "8": "Parent",
+          "8": "parent",
           "9": "'s",
           "10": "Kid",
           "11": "'s",
@@ -30429,7 +30453,7 @@
       }
     },
     {
-      "Parent should be able to edit the signed up Events before the Deadline .": {
+      "parent should be able to edit the signed up Events before the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -30520,14 +30544,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              13,
-              13
             ]
           ],
           "NP": [
@@ -30626,6 +30646,12 @@
               11
             ]
           ],
+          "NNP": [
+            [
+              13,
+              13
+            ]
+          ],
           "PP": [
             [
               11,
@@ -30674,7 +30700,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -30836,7 +30862,7 @@
       }
     },
     {
-      "Parent should not be able to sign up Parent's Kid for the EventsPost the Deadline .": {
+      "parent should not be able to sign up parent's Kid for the EventsPost the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -30939,7 +30965,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -30949,12 +30975,8 @@
               9
             ],
             [
-              14,
-              14
-            ],
-            [
-              16,
-              16
+              11,
+              11
             ]
           ],
           "NP": [
@@ -31031,12 +31053,6 @@
               10
             ]
           ],
-          "NN": [
-            [
-              11,
-              11
-            ]
-          ],
           "IN": [
             [
               12,
@@ -31051,6 +31067,16 @@
             [
               15,
               15
+            ]
+          ],
+          "NNP": [
+            [
+              14,
+              14
+            ],
+            [
+              16,
+              16
             ]
           ],
           "PP": [
@@ -31107,7 +31133,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "not",
           "4": "be",
@@ -31115,7 +31141,7 @@
           "6": "to",
           "7": "sign",
           "8": "up",
-          "9": "Parent",
+          "9": "parent",
           "10": "'s",
           "11": "Kid",
           "12": "for",
@@ -32046,7 +32072,7 @@
       }
     },
     {
-      "System should allow to signup Events after authenticating the Member 's DateOfBirth with the EventDeadline .": {
+      "System should allow to signup Events after authenticating the member 's DateOfBirth with the EventDeadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -32147,10 +32173,6 @@
               1
             ],
             [
-              10,
-              10
-            ],
-            [
               12,
               12
             ],
@@ -32239,6 +32261,12 @@
               14
             ]
           ],
+          "NN": [
+            [
+              10,
+              10
+            ]
+          ],
           "POS": [
             [
               11,
@@ -32314,7 +32342,7 @@
           "7": "after",
           "8": "authenticating",
           "9": "the",
-          "10": "Member",
+          "10": "member",
           "11": "'s",
           "12": "DateOfBirth",
           "13": "with",
@@ -32520,7 +32548,7 @@
       }
     },
     {
-      "Parent can login into Parent's KidsAccount with a RegistrationKey .": {
+      "parent can login into parent's KidsAccount with a RegistrationKey .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -32583,7 +32611,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -32591,14 +32619,6 @@
             [
               5,
               5
-            ],
-            [
-              7,
-              7
-            ],
-            [
-              10,
-              10
             ]
           ],
           "NP": [
@@ -32651,6 +32671,16 @@
               6
             ]
           ],
+          "NNP": [
+            [
+              7,
+              7
+            ],
+            [
+              10,
+              10
+            ]
+          ],
           "DT": [
             [
               9,
@@ -32697,11 +32727,11 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "can",
           "3": "login",
           "4": "into",
-          "5": "Parent",
+          "5": "parent",
           "6": "'s",
           "7": "KidsAccount",
           "8": "with",
@@ -34536,7 +34566,7 @@
       }
     },
     {
-      "Parent should be able to view Event categorically .": {
+      "parent should be able to view Event categorically .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -34599,10 +34629,14 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
+            ],
+            [
+              7,
+              7
             ]
           ],
           "NP": [
@@ -34641,12 +34675,6 @@
             [
               5,
               5
-            ]
-          ],
-          "NN": [
-            [
-              7,
-              7
             ]
           ],
           "RB": [
@@ -34709,7 +34737,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -35571,7 +35599,7 @@
       }
     },
     {
-      "Parent should be able to edit the signed up Events before the Deadline .": {
+      "parent should be able to edit the signed up Events before the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -35662,14 +35690,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              13,
-              13
             ]
           ],
           "NP": [
@@ -35768,6 +35792,12 @@
               11
             ]
           ],
+          "NNP": [
+            [
+              13,
+              13
+            ]
+          ],
           "PP": [
             [
               11,
@@ -35816,7 +35846,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -35834,7 +35864,7 @@
       }
     },
     {
-      "Parent should not be able to sign up Parent's Kid for the EventsPost the Deadline .": {
+      "parent should not be able to sign up parent's Kid for the EventsPost the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -35937,7 +35967,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -35947,12 +35977,8 @@
               9
             ],
             [
-              14,
-              14
-            ],
-            [
-              16,
-              16
+              11,
+              11
             ]
           ],
           "NP": [
@@ -36029,12 +36055,6 @@
               10
             ]
           ],
-          "NN": [
-            [
-              11,
-              11
-            ]
-          ],
           "IN": [
             [
               12,
@@ -36049,6 +36069,16 @@
             [
               15,
               15
+            ]
+          ],
+          "NNP": [
+            [
+              14,
+              14
+            ],
+            [
+              16,
+              16
             ]
           ],
           "PP": [
@@ -36105,7 +36135,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "not",
           "4": "be",
@@ -36113,7 +36143,7 @@
           "6": "to",
           "7": "sign",
           "8": "up",
-          "9": "Parent",
+          "9": "parent",
           "10": "'s",
           "11": "Kid",
           "12": "for",
@@ -36876,7 +36906,7 @@
       }
     },
     {
-      "System should allow to signup Events after authenticating the Member 's DateOfBirth with the EventDeadline .": {
+      "System should allow to signup Events after authenticating the member 's DateOfBirth with the EventDeadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -36977,10 +37007,6 @@
               1
             ],
             [
-              10,
-              10
-            ],
-            [
               12,
               12
             ],
@@ -37069,6 +37095,12 @@
               14
             ]
           ],
+          "NN": [
+            [
+              10,
+              10
+            ]
+          ],
           "POS": [
             [
               11,
@@ -37144,7 +37176,7 @@
           "7": "after",
           "8": "authenticating",
           "9": "the",
-          "10": "Member",
+          "10": "member",
           "11": "'s",
           "12": "DateOfBirth",
           "13": "with",
@@ -37155,7 +37187,7 @@
       }
     },
     {
-      "Parent should be able to view the PayeeInformation .": {
+      "parent should be able to view the PayeeInformation .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -37218,14 +37250,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              8,
-              8
             ]
           ],
           "NP": [
@@ -37270,6 +37298,12 @@
             [
               7,
               7
+            ]
+          ],
+          "NNP": [
+            [
+              8,
+              8
             ]
           ],
           "VP": [
@@ -37320,7 +37354,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -39781,7 +39815,7 @@
       }
     },
     {
-      "Parent should be able to login to Parent's Kid 's Account .": {
+      "parent should be able to login to parent's Kid 's Account .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -39860,7 +39894,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -39868,14 +39902,6 @@
             [
               8,
               8
-            ],
-            [
-              10,
-              10
-            ],
-            [
-              12,
-              12
             ]
           ],
           "NP": [
@@ -39938,6 +39964,16 @@
               11
             ]
           ],
+          "NNP": [
+            [
+              10,
+              10
+            ],
+            [
+              12,
+              12
+            ]
+          ],
           "PP": [
             [
               7,
@@ -39992,14 +40028,14 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
           "5": "to",
           "6": "login",
           "7": "to",
-          "8": "Parent",
+          "8": "parent",
           "9": "'s",
           "10": "Kid",
           "11": "'s",
@@ -40327,7 +40363,7 @@
       }
     },
     {
-      "Parent should be able to see Amount Parent am supposed to pay .": {
+      "parent should be able to see Amount parent am supposed to pay .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -40414,14 +40450,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              7,
-              7
             ],
             [
               8,
@@ -40472,6 +40504,12 @@
             [
               11,
               11
+            ]
+          ],
+          "NNP": [
+            [
+              7,
+              7
             ]
           ],
           "VBP": [
@@ -40564,14 +40602,14 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
           "5": "to",
           "6": "see",
           "7": "Amount",
-          "8": "Parent",
+          "8": "parent",
           "9": "am",
           "10": "supposed",
           "11": "to",
@@ -40581,7 +40619,7 @@
       }
     },
     {
-      "Parent should be able to view Event categorically .": {
+      "parent should be able to view Event categorically .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -40644,10 +40682,14 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
+            ],
+            [
+              7,
+              7
             ]
           ],
           "NP": [
@@ -40686,12 +40728,6 @@
             [
               5,
               5
-            ]
-          ],
-          "NN": [
-            [
-              7,
-              7
             ]
           ],
           "RB": [
@@ -40754,7 +40790,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -41616,7 +41652,7 @@
       }
     },
     {
-      "Parent should be able to edit the signed up Events before the Deadline .": {
+      "parent should be able to edit the signed up Events before the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -41707,14 +41743,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              13,
-              13
             ]
           ],
           "NP": [
@@ -41813,6 +41845,12 @@
               11
             ]
           ],
+          "NNP": [
+            [
+              13,
+              13
+            ]
+          ],
           "PP": [
             [
               11,
@@ -41861,7 +41899,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -41879,7 +41917,7 @@
       }
     },
     {
-      "Parent should not be able to sign up Parent's Kid for the EventsPost the Deadline .": {
+      "parent should not be able to sign up parent's Kid for the EventsPost the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -41982,7 +42020,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -41992,12 +42030,8 @@
               9
             ],
             [
-              14,
-              14
-            ],
-            [
-              16,
-              16
+              11,
+              11
             ]
           ],
           "NP": [
@@ -42074,12 +42108,6 @@
               10
             ]
           ],
-          "NN": [
-            [
-              11,
-              11
-            ]
-          ],
           "IN": [
             [
               12,
@@ -42094,6 +42122,16 @@
             [
               15,
               15
+            ]
+          ],
+          "NNP": [
+            [
+              14,
+              14
+            ],
+            [
+              16,
+              16
             ]
           ],
           "PP": [
@@ -42150,7 +42188,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "not",
           "4": "be",
@@ -42158,7 +42196,7 @@
           "6": "to",
           "7": "sign",
           "8": "up",
-          "9": "Parent",
+          "9": "parent",
           "10": "'s",
           "11": "Kid",
           "12": "for",
@@ -42729,7 +42767,7 @@
       }
     },
     {
-      "System should allow to signup Events after authenticating the Member 's DateOfBirth with the EventDeadline .": {
+      "System should allow to signup Events after authenticating the member 's DateOfBirth with the EventDeadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -42830,10 +42868,6 @@
               1
             ],
             [
-              10,
-              10
-            ],
-            [
               12,
               12
             ],
@@ -42922,6 +42956,12 @@
               14
             ]
           ],
+          "NN": [
+            [
+              10,
+              10
+            ]
+          ],
           "POS": [
             [
               11,
@@ -42997,7 +43037,7 @@
           "7": "after",
           "8": "authenticating",
           "9": "the",
-          "10": "Member",
+          "10": "member",
           "11": "'s",
           "12": "DateOfBirth",
           "13": "with",
@@ -43008,7 +43048,7 @@
       }
     },
     {
-      "Parent should be able to view the PayeeInformation .": {
+      "parent should be able to view the PayeeInformation .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -43071,14 +43111,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              8,
-              8
             ]
           ],
           "NP": [
@@ -43123,6 +43159,12 @@
             [
               7,
               7
+            ]
+          ],
+          "NNP": [
+            [
+              8,
+              8
             ]
           ],
           "VP": [
@@ -43173,7 +43215,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -45582,7 +45624,7 @@
       }
     },
     {
-      "Parent should be able to login to Parent's Kid 's Account .": {
+      "parent should be able to login to parent's Kid 's Account .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -45661,7 +45703,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -45669,14 +45711,6 @@
             [
               8,
               8
-            ],
-            [
-              10,
-              10
-            ],
-            [
-              12,
-              12
             ]
           ],
           "NP": [
@@ -45739,6 +45773,16 @@
               11
             ]
           ],
+          "NNP": [
+            [
+              10,
+              10
+            ],
+            [
+              12,
+              12
+            ]
+          ],
           "PP": [
             [
               7,
@@ -45793,14 +45837,14 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
           "5": "to",
           "6": "login",
           "7": "to",
-          "8": "Parent",
+          "8": "parent",
           "9": "'s",
           "10": "Kid",
           "11": "'s",
@@ -46128,7 +46172,7 @@
       }
     },
     {
-      "Parent should be able to see Amount Parent am supposed to pay .": {
+      "parent should be able to see Amount parent am supposed to pay .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -46215,14 +46259,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              7,
-              7
             ],
             [
               8,
@@ -46273,6 +46313,12 @@
             [
               11,
               11
+            ]
+          ],
+          "NNP": [
+            [
+              7,
+              7
             ]
           ],
           "VBP": [
@@ -46365,14 +46411,14 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
           "5": "to",
           "6": "see",
           "7": "Amount",
-          "8": "Parent",
+          "8": "parent",
           "9": "am",
           "10": "supposed",
           "11": "to",
@@ -46382,7 +46428,7 @@
       }
     },
     {
-      "Parent should be able to view Event categorically .": {
+      "parent should be able to view Event categorically .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -46445,10 +46491,14 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
+            ],
+            [
+              7,
+              7
             ]
           ],
           "NP": [
@@ -46487,12 +46537,6 @@
             [
               5,
               5
-            ]
-          ],
-          "NN": [
-            [
-              7,
-              7
             ]
           ],
           "RB": [
@@ -46555,7 +46599,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -47417,7 +47461,7 @@
       }
     },
     {
-      "Parent should be able to edit the signed up Events before the Deadline .": {
+      "parent should be able to edit the signed up Events before the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -47508,14 +47552,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              13,
-              13
             ]
           ],
           "NP": [
@@ -47614,6 +47654,12 @@
               11
             ]
           ],
+          "NNP": [
+            [
+              13,
+              13
+            ]
+          ],
           "PP": [
             [
               11,
@@ -47662,7 +47708,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -47824,7 +47870,7 @@
       }
     },
     {
-      "Parent should not be able to sign up Parent's Kid for the EventsPost the Deadline .": {
+      "parent should not be able to sign up parent's Kid for the EventsPost the Deadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -47927,7 +47973,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -47937,12 +47983,8 @@
               9
             ],
             [
-              14,
-              14
-            ],
-            [
-              16,
-              16
+              11,
+              11
             ]
           ],
           "NP": [
@@ -48019,12 +48061,6 @@
               10
             ]
           ],
-          "NN": [
-            [
-              11,
-              11
-            ]
-          ],
           "IN": [
             [
               12,
@@ -48039,6 +48075,16 @@
             [
               15,
               15
+            ]
+          ],
+          "NNP": [
+            [
+              14,
+              14
+            ],
+            [
+              16,
+              16
             ]
           ],
           "PP": [
@@ -48095,7 +48141,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "not",
           "4": "be",
@@ -48103,7 +48149,7 @@
           "6": "to",
           "7": "sign",
           "8": "up",
-          "9": "Parent",
+          "9": "parent",
           "10": "'s",
           "11": "Kid",
           "12": "for",
@@ -49185,7 +49231,7 @@
       }
     },
     {
-      "System should allow to signup Events after authenticating the Member 's DateOfBirth with the EventDeadline .": {
+      "System should allow to signup Events after authenticating the member 's DateOfBirth with the EventDeadline .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -49286,10 +49332,6 @@
               1
             ],
             [
-              10,
-              10
-            ],
-            [
               12,
               12
             ],
@@ -49378,6 +49420,12 @@
               14
             ]
           ],
+          "NN": [
+            [
+              10,
+              10
+            ]
+          ],
           "POS": [
             [
               11,
@@ -49453,7 +49501,7 @@
           "7": "after",
           "8": "authenticating",
           "9": "the",
-          "10": "Member",
+          "10": "member",
           "11": "'s",
           "12": "DateOfBirth",
           "13": "with",
@@ -49464,7 +49512,7 @@
       }
     },
     {
-      "Parent should be able to view the PayeeInformation .": {
+      "parent should be able to view the PayeeInformation .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -49527,14 +49575,10 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
-            ],
-            [
-              8,
-              8
             ]
           ],
           "NP": [
@@ -49579,6 +49623,12 @@
             [
               7,
               7
+            ]
+          ],
+          "NNP": [
+            [
+              8,
+              8
             ]
           ],
           "VP": [
@@ -49629,7 +49679,7 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "should",
           "3": "be",
           "4": "able",
@@ -50390,7 +50440,7 @@
       }
     },
     {
-      "Parent can login into Parent's KidsAccount with a RegistrationKey .": {
+      "parent can login into parent's KidsAccount with a RegistrationKey .": {
         "FileName": "2017-USC-Project03",
         "TD": {
           "ROOT": [
@@ -50453,7 +50503,7 @@
           ]
         },
         "Pos-tag": {
-          "NNP": [
+          "NN": [
             [
               1,
               1
@@ -50461,14 +50511,6 @@
             [
               5,
               5
-            ],
-            [
-              7,
-              7
-            ],
-            [
-              10,
-              10
             ]
           ],
           "NP": [
@@ -50521,6 +50563,16 @@
               6
             ]
           ],
+          "NNP": [
+            [
+              7,
+              7
+            ],
+            [
+              10,
+              10
+            ]
+          ],
           "DT": [
             [
               9,
@@ -50567,11 +50619,11 @@
           ]
         },
         "Index": {
-          "1": "Parent",
+          "1": "parent",
           "2": "can",
           "3": "login",
           "4": "into",
-          "5": "Parent",
+          "5": "parent",
           "6": "'s",
           "7": "KidsAccount",
           "8": "with",

@@ -1,0 +1,353 @@
+{
+  "class_dict": {
+    "Date": {
+      "Attribute": [
+        "based",
+        "DateRange"
+      ],
+      "Behavior": {}
+    },
+    "DateRange": {
+      "Attribute": [
+        "based"
+      ],
+      "Behavior": {}
+    },
+    "Trainer": {
+      "Attribute": [
+        "CalendarOfAvailability",
+        "Prices",
+        "Profile",
+        "Trainers",
+        "be"
+      ],
+      "Behavior": {
+        "offer": [
+          ""
+        ],
+        "put": [
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "compare": [
+          ""
+        ],
+        "set": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "attach": [
+          ""
+        ]
+      }
+    },
+    "User": {
+      "Attribute": [
+        "Course",
+        "Registration",
+        "be",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "search": [
+          ""
+        ],
+        "request": [
+          "",
+          "",
+          ""
+        ],
+        "filter": [
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          ""
+        ],
+        "setup": [
+          ""
+        ],
+        "register": [
+          ""
+        ],
+        "share": [
+          ""
+        ]
+      }
+    },
+    "Course": {
+      "Attribute": [
+        "registered",
+        "Courses",
+        "CoursesInformation",
+        "CourseAttendee",
+        "CourseName"
+      ],
+      "Behavior": {
+        "schedule": [
+          ""
+        ],
+        "cancel": [
+          ""
+        ],
+        "Calendar": [
+          ""
+        ],
+        "offer": [
+          ""
+        ]
+      }
+    },
+    "their": {
+      "Attribute": [
+        "Feasibility"
+      ],
+      "Behavior": {}
+    },
+    "Trainers": {
+      "Attribute": [
+        "Profile",
+        "are"
+      ],
+      "Behavior": {
+        "profitable": [
+          ""
+        ]
+      }
+    },
+    "Courses": {
+      "Attribute": [
+        "CoursesInformation"
+      ],
+      "Behavior": {
+        "start": [
+          ""
+        ]
+      }
+    },
+    "Notification": {
+      "Attribute": [
+        "Notifications"
+      ],
+      "Behavior": {}
+    },
+    "Feasibility": {
+      "Attribute": [
+        "Feasibility-LRB-AsWellAsScope-RRB-OfEach"
+      ],
+      "Behavior": {}
+    },
+    "Prices": {
+      "Attribute": [
+        "PricesOfCourses"
+      ],
+      "Behavior": {}
+    },
+    "Price": {
+      "Attribute": [
+        "Prices",
+        "PricesOfCourses"
+      ],
+      "Behavior": {}
+    },
+    "Admin": {
+      "Attribute": [
+        "Administrator",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "schedule": [
+          ""
+        ],
+        "see": [
+          "",
+          ""
+        ],
+        "met": [
+          ""
+        ],
+        "did": [
+          ""
+        ],
+        "able": [
+          "",
+          ""
+        ],
+        "cancel": [
+          ""
+        ],
+        "adjust": [
+          "",
+          ""
+        ],
+        "move": [
+          ""
+        ],
+        "attach": [
+          ""
+        ]
+      }
+    },
+    "Administrator": {
+      "Attribute": [],
+      "Behavior": {
+        "receive": [
+          "",
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "delete": [
+          ""
+        ],
+        "inquiry": [
+          ""
+        ],
+        "update": [
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "adjust": [
+          ""
+        ],
+        "verify": [
+          ""
+        ],
+        "have": [
+          ""
+        ]
+      }
+    },
+    "CourseAttendee": {
+      "Attribute": [],
+      "Behavior": {
+        "see": [
+          ""
+        ],
+        "compare": [
+          ""
+        ],
+        "decide": [
+          ""
+        ],
+        "receive": [
+          ""
+        ],
+        "Rate": [
+          ""
+        ],
+        "Review": [
+          ""
+        ],
+        "pay": [
+          ""
+        ]
+      }
+    },
+    "PricesOfCourses": {
+      "Attribute": [],
+      "Behavior": {
+        "compare": [
+          ""
+        ],
+        "see": [
+          ""
+        ]
+      }
+    },
+    "Notifications": {
+      "Attribute": [],
+      "Behavior": {
+        "receive": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "is",
+        "Course",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "Date",
+        "DateRange",
+        []
+      ],
+      [
+        "Trainer",
+        "Trainers",
+        []
+      ],
+      [
+        "Trainer",
+        "Prices",
+        []
+      ],
+      [
+        "User",
+        "Course",
+        []
+      ],
+      [
+        "Course",
+        "Courses",
+        []
+      ],
+      [
+        "Course",
+        "CourseAttendee",
+        []
+      ],
+      [
+        "their",
+        "Feasibility",
+        []
+      ],
+      [
+        "Notification",
+        "Notifications",
+        []
+      ],
+      [
+        "Prices",
+        "PricesOfCourses",
+        []
+      ],
+      [
+        "Price",
+        "Prices",
+        []
+      ],
+      [
+        "Price",
+        "PricesOfCourses",
+        []
+      ],
+      [
+        "Admin",
+        "Administrator",
+        []
+      ]
+    ]
+  }
+}

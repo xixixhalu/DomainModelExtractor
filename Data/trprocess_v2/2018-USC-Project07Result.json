@@ -1,0 +1,143 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Progress",
+        "LevelsProgress",
+        "Score",
+        "Progress",
+        "Preference",
+        "Scores",
+        "Progress",
+        "UserInterface",
+        "am",
+        "am",
+        "am",
+        "am",
+        "am",
+        "be",
+        "be",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "track": [
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "sign": [
+          ""
+        ],
+        "switch": [
+          ""
+        ],
+        "keep": [
+          ""
+        ],
+        "share": [
+          ""
+        ],
+        "erase": [
+          ""
+        ],
+        "start": [
+          ""
+        ],
+        "change": [
+          ""
+        ],
+        "check": [
+          ""
+        ],
+        "cheat": [
+          ""
+        ],
+        "download": [
+          ""
+        ],
+        "install": [
+          ""
+        ],
+        "purchase": [
+          ""
+        ],
+        "practice": [
+          ""
+        ],
+        "have": [
+          ""
+        ]
+      }
+    },
+    "FullVersion": {
+      "Attribute": [
+        "FullVersionOfTheApplication"
+      ],
+      "Behavior": {}
+    },
+    "Score": {
+      "Attribute": [
+        "Scores"
+      ],
+      "Behavior": {}
+    },
+    "UserInterface": {
+      "Attribute": [
+        "be"
+      ],
+      "Behavior": {
+        "consistent": [
+          ""
+        ]
+      }
+    },
+    "FullVersionOfTheApplication": {
+      "Attribute": [],
+      "Behavior": {
+        "design": [
+          ""
+        ],
+        "draw": [
+          ""
+        ],
+        "purchase": [
+          ""
+        ],
+        "remove": [
+          "",
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "User",
+        "Score",
+        []
+      ],
+      [
+        "User",
+        "UserInterface",
+        []
+      ],
+      [
+        "FullVersion",
+        "FullVersionOfTheApplication",
+        []
+      ]
+    ]
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "class_dict": {
+    "Driver": {
+      "Attribute": [
+        "MobilePhone",
+        "Valet",
+        "Valet",
+        "Vehicle",
+        "Profile",
+        "CreditCardInformation"
+      ],
+      "Behavior": {
+        "check": [
+          ""
+        ],
+        "pay": [
+          "",
+          ""
+        ],
+        "message": [
+          ""
+        ],
+        "have": [
+          "",
+          ""
+        ],
+        "wait": [
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "use": [
+          ""
+        ],
+        "request": [
+          "",
+          ""
+        ],
+        "want": [
+          ""
+        ]
+      }
+    },
+    "Customers": {
+      "Attribute": [
+        "more"
+      ],
+      "Behavior": {
+        "attract": [
+          ""
+        ]
+      }
+    },
+    "App": {
+      "Attribute": [
+        "stored",
+        "Application"
+      ],
+      "Behavior": {}
+    },
+    "Customer": {
+      "Attribute": [
+        "TicketNumber",
+        "CarNow/later",
+        "Customers"
+      ],
+      "Behavior": {
+        "enter": [
+          ""
+        ],
+        "request": [
+          ""
+        ],
+        "paid": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "wait": [
+          ""
+        ]
+      }
+    },
+    "their": {
+      "Attribute": [
+        "Car",
+        "Car"
+      ],
+      "Behavior": {}
+    },
+    "ValetOperator": {
+      "Attribute": [
+        "OwnLogin",
+        "Profile",
+        "Company"
+      ],
+      "Behavior": {
+        "receive": [
+          ""
+        ],
+        "retrieve": [
+          "",
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "know": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "add": [
+          ""
+        ],
+        "send": [
+          ""
+        ]
+      }
+    },
+    "ValetCompany": {
+      "Attribute": [
+        "Profile",
+        "Revenue"
+      ],
+      "Behavior": {
+        "accept": [
+          ""
+        ],
+        "offer": [
+          ""
+        ],
+        "receive": [
+          ""
+        ],
+        "control": [
+          ""
+        ]
+      }
+    },
+    "Valet": {
+      "Attribute": [
+        "ValetCompany",
+        "ValetTicket",
+        "ValetOperator",
+        "ValetPrice",
+        "ValetHead"
+      ],
+      "Behavior": {
+        "message": [
+          ""
+        ]
+      }
+    },
+    "System": {
+      "Attribute": [
+        "SystemBack-end",
+        "be",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "capable": [
+          "",
+          ""
+        ],
+        "work": [
+          ""
+        ],
+        "available": [
+          ""
+        ]
+      }
+    },
+    "Car": {
+      "Attribute": [
+        "CarNow/later",
+        "is"
+      ],
+      "Behavior": {
+        "retrieve": [
+          "",
+          ""
+        ],
+        "ready": [
+          ""
+        ]
+      }
+    },
+    "Application": {
+      "Attribute": [
+        "be"
+      ],
+      "Behavior": {
+        "secure": [
+          ""
+        ]
+      }
+    },
+    "ValetHead": {
+      "Attribute": [],
+      "Behavior": {
+        "set": [
+          ""
+        ],
+        "adjust": [
+          ""
+        ]
+      }
+    },
+    "Channel": {
+      "Attribute": [],
+      "Behavior": {
+        "Encrypted": [
+          ""
+        ]
+      }
+    },
+    "SystemBack-end": {
+      "Attribute": [],
+      "Behavior": {
+        "accept": [
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "use": [
+          ""
+        ],
+        "send": [
+          "",
+          ""
+        ],
+        "enter": [
+          ""
+        ],
+        "request": [
+          ""
+        ],
+        "receive": [
+          "",
+          ""
+        ],
+        "set": [
+          ""
+        ],
+        "have": [
+          "",
+          "",
+          ""
+        ],
+        "control": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "is",
+        "Channel",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "Driver",
+        "Valet",
+        []
+      ],
+      [
+        "App",
+        "Application",
+        []
+      ],
+      [
+        "Customer",
+        "Customers",
+        []
+      ],
+      [
+        "their",
+        "Car",
+        []
+      ],
+      [
+        "Valet",
+        "ValetOperator",
+        []
+      ],
+      [
+        "Valet",
+        "ValetCompany",
+        []
+      ],
+      [
+        "Valet",
+        "ValetHead",
+        []
+      ],
+      [
+        "System",
+        "SystemBack-end",
+        []
+      ]
+    ]
+  }
+}

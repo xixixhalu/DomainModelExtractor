@@ -1,0 +1,217 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "AccountSecurity",
+        "Password",
+        "EmailAddress",
+        "OldOne",
+        "GiftbuddyAccount",
+        "GiftbuddyContacts",
+        "Interests",
+        "MobilePhone",
+        "Contact"
+      ],
+      "Behavior": {
+        "reset": [
+          ""
+        ],
+        "forgotten": [
+          ""
+        ],
+        "receive": [
+          "",
+          ""
+        ],
+        "navigate": [
+          ""
+        ],
+        "purchase": [
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "provide": [
+          ""
+        ],
+        "view": [
+          "",
+          ""
+        ],
+        "enter": [
+          "",
+          ""
+        ],
+        "remove": [
+          ""
+        ],
+        "set": [
+          "",
+          ""
+        ],
+        "search": [
+          "",
+          ""
+        ],
+        "login": [
+          ""
+        ],
+        "save": [
+          ""
+        ],
+        "discard": [
+          ""
+        ],
+        "inputted": [
+          ""
+        ],
+        "add": [
+          ""
+        ],
+        "install": [
+          ""
+        ],
+        "update": [
+          ""
+        ]
+      }
+    },
+    "their": {
+      "Attribute": [
+        "Account"
+      ],
+      "Behavior": {}
+    },
+    "Gift": {
+      "Attribute": [
+        "provide",
+        "selected",
+        "view",
+        "recommended",
+        "GiftbuddyAccount",
+        "GiftbuddyApp",
+        "GiftbuddyContact",
+        "GiftbuddyContacts",
+        "GiftPeople",
+        "GiftRecommendations"
+      ],
+      "Behavior": {}
+    },
+    "ContactWith": {
+      "Attribute": [
+        "selected"
+      ],
+      "Behavior": {}
+    },
+    "MobilePhone": {
+      "Attribute": [
+        "Application"
+      ],
+      "Behavior": {}
+    },
+    "Ios": {
+      "Attribute": [
+        "install"
+      ],
+      "Behavior": {}
+    },
+    "AndroidPlatform": {
+      "Attribute": [
+        "install"
+      ],
+      "Behavior": {}
+    },
+    "FeasibilityOfReactNative": {
+      "Attribute": [
+        "Ios",
+        "AndroidPlatform"
+      ],
+      "Behavior": {}
+    },
+    "Contact": {
+      "Attribute": [
+        "Information",
+        "Contacts",
+        "ContactList",
+        "ContactWith"
+      ],
+      "Behavior": {}
+    },
+    "Account": {
+      "Attribute": [
+        "AccountSecurity"
+      ],
+      "Behavior": {}
+    },
+    "GiftbuddyContact": {
+      "Attribute": [
+        "GiftbuddyContacts"
+      ],
+      "Behavior": {}
+    },
+    "Default": {
+      "Attribute": [],
+      "Behavior": {
+        "reset": [
+          ""
+        ],
+        "forgotten": [
+          ""
+        ],
+        "receive": [
+          ""
+        ],
+        "Limit": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "is",
+        "Default",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "User",
+        "MobilePhone",
+        []
+      ],
+      [
+        "User",
+        "Contact",
+        []
+      ],
+      [
+        "their",
+        "Account",
+        []
+      ],
+      [
+        "Gift",
+        "GiftbuddyContact",
+        []
+      ],
+      [
+        "FeasibilityOfReactNative",
+        "Ios",
+        []
+      ],
+      [
+        "FeasibilityOfReactNative",
+        "AndroidPlatform",
+        []
+      ],
+      [
+        "Contact",
+        "ContactWith",
+        []
+      ]
+    ]
+  }
+}

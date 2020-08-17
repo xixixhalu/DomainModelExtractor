@@ -1,0 +1,191 @@
+{
+  "class_dict": {
+    "Youth": {
+      "Attribute": [
+        "Feedback",
+        "Profile",
+        "CaseManager",
+        "Case",
+        "YouthAccounts"
+      ],
+      "Behavior": {
+        "take": [
+          ""
+        ],
+        "provide": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "contact": [
+          ""
+        ]
+      }
+    },
+    "CaseManager": {
+      "Attribute": [
+        "Youth",
+        "Cases",
+        "Cases",
+        "CaseManagers",
+        "be"
+      ],
+      "Behavior": {
+        "add": [
+          ""
+        ],
+        "view": [
+          "",
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "review": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "export": [
+          ""
+        ],
+        "send": [
+          ""
+        ],
+        "activate": [
+          ""
+        ],
+        "deactivate": [
+          ""
+        ],
+        "delete": [
+          ""
+        ]
+      }
+    },
+    "User": {
+      "Attribute": [
+        "LoginInformation",
+        "Records",
+        "Users"
+      ],
+      "Behavior": {
+        "create": [
+          ""
+        ],
+        "answer": [
+          ""
+        ],
+        "recover": [
+          ""
+        ],
+        "trying": [
+          ""
+        ],
+        "log": [
+          ""
+        ]
+      }
+    },
+    "YouthAccounts": {
+      "Attribute": [
+        "needed"
+      ],
+      "Behavior": {}
+    },
+    "Users": {
+      "Attribute": [
+        "LogInformation"
+      ],
+      "Behavior": {}
+    },
+    "System": {
+      "Attribute": [
+        "SystemSecurity",
+        "SystemDesign/structure"
+      ],
+      "Behavior": {
+        "send": [
+          ""
+        ],
+        "log": [
+          ""
+        ],
+        "record": [
+          ""
+        ]
+      }
+    },
+    "Profile": {
+      "Attribute": [
+        "ProfileOfAnyUser"
+      ],
+      "Behavior": {}
+    },
+    "Case": {
+      "Attribute": [
+        "CaseManager",
+        "CaseManagers",
+        "Cases"
+      ],
+      "Behavior": {}
+    },
+    "SystemDesign/structure": {
+      "Attribute": [],
+      "Behavior": {
+        "increase": [
+          ""
+        ],
+        "allow": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "Youth",
+        "CaseManager",
+        []
+      ],
+      [
+        "Youth",
+        "YouthAccounts",
+        []
+      ],
+      [
+        "Youth",
+        "Profile",
+        []
+      ],
+      [
+        "Youth",
+        "Case",
+        []
+      ],
+      [
+        "CaseManager",
+        "Youth",
+        []
+      ],
+      [
+        "User",
+        "Users",
+        []
+      ],
+      [
+        "System",
+        "SystemDesign/structure",
+        []
+      ],
+      [
+        "Case",
+        "CaseManager",
+        []
+      ]
+    ]
+  }
+}

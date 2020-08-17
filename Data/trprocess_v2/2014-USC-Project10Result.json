@@ -1,0 +1,88 @@
+{
+  "class_dict": {
+    "JobSeeker": {
+      "Attribute": [
+        "SocialNetwork",
+        "LoginCredentials"
+      ],
+      "Behavior": {
+        "search": [
+          "",
+          ""
+        ],
+        "save": [
+          ""
+        ],
+        "mark": [
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "contact": [
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "subscribe": [
+          ""
+        ],
+        "email": [
+          ""
+        ],
+        "browse": [
+          ""
+        ],
+        "unsubscribe": [
+          ""
+        ],
+        "select": [
+          ""
+        ]
+      }
+    },
+    "SocialNetwork": {
+      "Attribute": [
+        "SocialNetworkFriend",
+        "SocialNetworkContact"
+      ],
+      "Behavior": {}
+    },
+    "SocialNetworkFriend": {
+      "Attribute": [],
+      "Behavior": {
+        "refer": [
+          ""
+        ]
+      }
+    },
+    "SocialNetworkContact": {
+      "Attribute": [],
+      "Behavior": {
+        "provide": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "JobSeeker",
+        "SocialNetwork",
+        []
+      ],
+      [
+        "SocialNetwork",
+        "SocialNetworkFriend",
+        []
+      ],
+      [
+        "SocialNetwork",
+        "SocialNetworkContact",
+        []
+      ]
+    ]
+  }
+}

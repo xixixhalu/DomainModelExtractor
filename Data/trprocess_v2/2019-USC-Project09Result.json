@@ -1,0 +1,95 @@
+{
+  "class_dict": {
+    "Items": {
+      "Attribute": [
+        "Database",
+        "adding/removing"
+      ],
+      "Behavior": {
+        "purchase": [
+          ""
+        ]
+      }
+    },
+    "User": {
+      "Attribute": [
+        "Users"
+      ],
+      "Behavior": {
+        "get": [
+          ""
+        ],
+        "placed": [
+          ""
+        ],
+        "keep": [
+          ""
+        ],
+        "return": [
+          ""
+        ],
+        "visit": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "participate": [
+          ""
+        ]
+      }
+    },
+    "Auction": {
+      "Attribute": [
+        "Auctions",
+        "Auctions/bids/raffles"
+      ],
+      "Behavior": {}
+    },
+    "Auctions": {
+      "Attribute": [
+        "Auctions/bids/raffles"
+      ],
+      "Behavior": {}
+    },
+    "Item": {
+      "Attribute": [
+        "Items"
+      ],
+      "Behavior": {}
+    },
+    "Users": {
+      "Attribute": [],
+      "Behavior": {
+        "enable": [
+          ""
+        ],
+        "pay": [
+          ""
+        ],
+        "search": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "User",
+        "Users",
+        []
+      ],
+      [
+        "Auction",
+        "Auctions",
+        []
+      ],
+      [
+        "Item",
+        "Items",
+        []
+      ]
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "class_dict": {
+    "Users": {
+      "Attribute": [
+        "Account",
+        "AccountInformation"
+      ],
+      "Behavior": {}
+    },
+    "Map": {
+      "Attribute": [
+        "find",
+        "DifferentVenues"
+      ],
+      "Behavior": {}
+    },
+    "User": {
+      "Attribute": [
+        "Information",
+        "Area",
+        "Friend",
+        "Users",
+        "UserAccount"
+      ],
+      "Behavior": {
+        "lost": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "receive": [
+          "",
+          ""
+        ],
+        "close": [
+          ""
+        ],
+        "contact": [
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "reject": [
+          ""
+        ],
+        "consent": [
+          ""
+        ],
+        "block": [
+          ""
+        ],
+        "unblock": [
+          ""
+        ],
+        "call": [
+          ""
+        ],
+        "search": [
+          ""
+        ],
+        "import": [
+          ""
+        ],
+        "confirm": [
+          "",
+          ""
+        ],
+        "entered": [
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "leaved": [
+          ""
+        ],
+        "delete": [
+          ""
+        ],
+        "find": [
+          ""
+        ]
+      }
+    },
+    "Friend": {
+      "Attribute": [
+        "FriendRequest"
+      ],
+      "Behavior": {}
+    },
+    "Account": {
+      "Attribute": [
+        "AccountInformation"
+      ],
+      "Behavior": {}
+    },
+    "they": {
+      "Attribute": [
+        "are"
+      ],
+      "Behavior": {
+        "did": [
+          ""
+        ],
+        "interested": [
+          ""
+        ],
+        "Area": [
+          ""
+        ]
+      }
+    },
+    "DifferentVenues": {
+      "Attribute": [],
+      "Behavior": {
+        "are": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "are",
+        "they",
+        []
+      ],
+      [
+        "are",
+        "they",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "Users",
+        "Account",
+        []
+      ],
+      [
+        "Map",
+        "DifferentVenues",
+        []
+      ],
+      [
+        "User",
+        "Users",
+        []
+      ],
+      [
+        "User",
+        "Friend",
+        []
+      ]
+    ]
+  }
+}

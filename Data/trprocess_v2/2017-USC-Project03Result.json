@@ -1,0 +1,168 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Information",
+        "Swimmer",
+        "Kid",
+        "be"
+      ],
+      "Behavior": {
+        "expect": [
+          "",
+          ""
+        ],
+        "see": [
+          "",
+          ""
+        ],
+        "able": [
+          ""
+        ]
+      }
+    },
+    "parent": {
+      "Attribute": [
+        "Account",
+        "Kid",
+        "KidsAccount",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "login": [
+          "",
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "pay": [
+          ""
+        ],
+        "view": [
+          "",
+          ""
+        ],
+        "edit": [
+          ""
+        ],
+        "sign": [
+          ""
+        ]
+      }
+    },
+    "Kid": {
+      "Attribute": [
+        "Account",
+        "KidsAccount"
+      ],
+      "Behavior": {}
+    },
+    "Events": {
+      "Attribute": [
+        "signed",
+        "EventsPost"
+      ],
+      "Behavior": {}
+    },
+    "his": {
+      "Attribute": [
+        "Kid"
+      ],
+      "Behavior": {}
+    },
+    "member": {
+      "Attribute": [
+        "DateOfBirth"
+      ],
+      "Behavior": {}
+    },
+    "DateOfBirth": {
+      "Attribute": [
+        "DateOfBirthOfChildren"
+      ],
+      "Behavior": {}
+    },
+    "Event": {
+      "Attribute": [
+        "Events",
+        "EventsPost",
+        "EventDeadline"
+      ],
+      "Behavior": {}
+    },
+    "Information": {
+      "Attribute": [
+        "is"
+      ],
+      "Behavior": {
+        "review": [
+          ""
+        ],
+        "secure": [
+          ""
+        ]
+      }
+    },
+    "Swimmer": {
+      "Attribute": [],
+      "Behavior": {
+        "sign": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "User",
+        "Kid",
+        []
+      ],
+      [
+        "User",
+        "Information",
+        []
+      ],
+      [
+        "User",
+        "Swimmer",
+        []
+      ],
+      [
+        "parent",
+        "Kid",
+        []
+      ],
+      [
+        "his",
+        "Kid",
+        []
+      ],
+      [
+        "member",
+        "DateOfBirth",
+        []
+      ],
+      [
+        "Event",
+        "Events",
+        []
+      ]
+    ]
+  }
+}

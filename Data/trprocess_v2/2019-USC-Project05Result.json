@@ -1,0 +1,401 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Problems",
+        "Report",
+        "Identity",
+        "ContactDetails",
+        "Account",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "submit": [
+          ""
+        ],
+        "add": [
+          "",
+          ""
+        ],
+        "anonymous": [
+          ""
+        ],
+        "login": [
+          ""
+        ],
+        "request": [
+          ""
+        ],
+        "expedite": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "update": [
+          ""
+        ]
+      }
+    },
+    "Organization": {
+      "Attribute": [
+        "Clients"
+      ],
+      "Behavior": {
+        "email": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "understand": [
+          ""
+        ],
+        "make": [
+          ""
+        ],
+        "redirect": [
+          ""
+        ],
+        "AccusedOf": [
+          ""
+        ],
+        "look": [
+          ""
+        ],
+        "take": [
+          ""
+        ],
+        "generate": [
+          ""
+        ],
+        "check": [
+          ""
+        ]
+      }
+    },
+    "Employee": {
+      "Attribute": [
+        "Cases",
+        "ProfileDetails",
+        "Anonymity",
+        "Employees",
+        "EmployeesOf",
+        "be"
+      ],
+      "Behavior": {
+        "view": [
+          ""
+        ],
+        "edit": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "check": [
+          ""
+        ],
+        "file": [
+          ""
+        ],
+        "want": [
+          ""
+        ],
+        "expect": [
+          ""
+        ],
+        "track": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "post": [
+          ""
+        ],
+        "submit": [
+          ""
+        ]
+      }
+    },
+    "their": {
+      "Attribute": [
+        "Status"
+      ],
+      "Behavior": {}
+    },
+    "VerifiedNews": {
+      "Attribute": [
+        "Organization"
+      ],
+      "Behavior": {}
+    },
+    "Report": {
+      "Attribute": [
+        "Reports",
+        "ReportsOfWorkplaceViolenceOrConflict",
+        "ReportsOfTheCases"
+      ],
+      "Behavior": {
+        "contain": [
+          ""
+        ]
+      }
+    },
+    "MediaFiles": {
+      "Attribute": [],
+      "Behavior": {}
+    },
+    "Reports": {
+      "Attribute": [
+        "ReportsOfWorkplaceViolenceOrConflict",
+        "ReportsOfTheCases"
+      ],
+      "Behavior": {
+        "filter": [
+          ""
+        ],
+        "view": [
+          ""
+        ]
+      }
+    },
+    "Vrs": {
+      "Attribute": [
+        "VrsAdmin",
+        "VrsSubjectMatterExpert"
+      ],
+      "Behavior": {
+        "delete": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "assign": [
+          "",
+          ""
+        ],
+        "filter": [
+          ""
+        ],
+        "generate": [
+          ""
+        ],
+        "resolve": [
+          ""
+        ],
+        "form": [
+          ""
+        ],
+        "email": [
+          ""
+        ],
+        "prioritize": [
+          ""
+        ]
+      }
+    },
+    "Status": {
+      "Attribute": [
+        "StatusOfTheCases/complaints"
+      ],
+      "Behavior": {}
+    },
+    "Employees": {
+      "Attribute": [
+        "EmployeesOf",
+        "are"
+      ],
+      "Behavior": {
+        "AssuredOfPreventionOfWorkplaceViolence": [
+          ""
+        ],
+        "ConduciveEnvironment": [
+          ""
+        ]
+      }
+    },
+    "Complaint": {
+      "Attribute": [
+        "be"
+      ],
+      "Behavior": {
+        "raised": [
+          ""
+        ],
+        "useful": [
+          ""
+        ]
+      }
+    },
+    "Clients": {
+      "Attribute": [
+        "are"
+      ],
+      "Behavior": {
+        "safe": [
+          ""
+        ]
+      }
+    },
+    "VrsSubjectMatterExpert": {
+      "Attribute": [],
+      "Behavior": {
+        "verify": [
+          ""
+        ],
+        "investigate": [
+          ""
+        ],
+        "notify": [
+          ""
+        ]
+      }
+    },
+    "VrsAdmin": {
+      "Attribute": [],
+      "Behavior": {
+        "view": [
+          "",
+          ""
+        ],
+        "filter": [
+          ""
+        ],
+        "download": [
+          ""
+        ],
+        "edit": [
+          ""
+        ],
+        "generate": [
+          ""
+        ]
+      }
+    },
+    "Account": {
+      "Attribute": [],
+      "Behavior": {
+        "address": [
+          ""
+        ],
+        "understand": [
+          ""
+        ],
+        "delete": [
+          ""
+        ],
+        "AccusedOf": [
+          ""
+        ],
+        "re-use": [
+          "",
+          ""
+        ],
+        "minimize": [
+          "",
+          ""
+        ],
+        "file": [
+          ""
+        ],
+        "expect": [
+          ""
+        ],
+        "look": [
+          "",
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "investigate": [
+          ""
+        ],
+        "assign": [
+          ""
+        ],
+        "expedite": [
+          ""
+        ],
+        "be": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "Report",
+        "MediaFiles",
+        ""
+      ],
+      [
+        "User",
+        "Report",
+        []
+      ],
+      [
+        "User",
+        "Account",
+        []
+      ],
+      [
+        "Organization",
+        "Clients",
+        []
+      ],
+      [
+        "Employee",
+        "Employees",
+        []
+      ],
+      [
+        "their",
+        "Status",
+        []
+      ],
+      [
+        "VerifiedNews",
+        "Organization",
+        []
+      ],
+      [
+        "Report",
+        "Reports",
+        []
+      ],
+      [
+        "Vrs",
+        "VrsSubjectMatterExpert",
+        []
+      ],
+      [
+        "Vrs",
+        "VrsAdmin",
+        []
+      ]
+    ],
+    "generalization": [
+      [
+        "be",
+        "Complaint",
+        []
+      ],
+      [
+        "are",
+        "Employees",
+        []
+      ],
+      [
+        "be",
+        "Employees",
+        []
+      ]
+    ]
+  }
+}

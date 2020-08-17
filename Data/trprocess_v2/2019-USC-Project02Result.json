@@ -1,0 +1,342 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Profile",
+        "Schedule",
+        "RequestRecord",
+        "LearningProgress",
+        "IdealTutor",
+        "Username",
+        "UserAmount",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "learn": [
+          "",
+          ""
+        ],
+        "sign": [
+          ""
+        ],
+        "Student": [
+          ""
+        ],
+        "use": [
+          ""
+        ],
+        "input": [
+          ""
+        ],
+        "consult": [
+          ""
+        ],
+        "check": [
+          ""
+        ],
+        "get": [
+          "",
+          ""
+        ],
+        "choose": [
+          ""
+        ],
+        "navigate": [
+          ""
+        ],
+        "communicate": [
+          ""
+        ],
+        "have": [
+          "",
+          ""
+        ],
+        "find": [
+          ""
+        ],
+        "exchange": [
+          ""
+        ],
+        "catch": [
+          ""
+        ],
+        "need": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    },
+    "Schedule": {
+      "Attribute": [
+        "preferred",
+        "ScheduleChanges",
+        "ScheduleAvailability"
+      ],
+      "Behavior": {}
+    },
+    "Tutor": {
+      "Attribute": [
+        "Availability",
+        "Students",
+        "DetailedInformation",
+        "ScheduleAvailability",
+        "Availability",
+        "TutoringRequests"
+      ],
+      "Behavior": {
+        "accept": [
+          ""
+        ],
+        "share": [
+          ""
+        ],
+        "post": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "offer": [
+          ""
+        ],
+        "update": [
+          ""
+        ],
+        "input": [
+          ""
+        ]
+      }
+    },
+    "Student": {
+      "Attribute": [
+        "Tutor",
+        "Students",
+        "StudentUser",
+        "am"
+      ],
+      "Behavior": {
+        "request": [
+          ""
+        ],
+        "read": [
+          "",
+          ""
+        ],
+        "watch": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "coomplete": [
+          ""
+        ],
+        "complete": [
+          ""
+        ],
+        "cancel": [
+          ""
+        ],
+        "re-schedule": [
+          ""
+        ],
+        "make": [
+          ""
+        ]
+      }
+    },
+    "Website": {
+      "Attribute": [
+        "Blogs"
+      ],
+      "Behavior": {}
+    },
+    "Project": {
+      "Attribute": [
+        "write",
+        "ProjectHandoff",
+        "ProjectArchitect"
+      ],
+      "Behavior": {}
+    },
+    "our": {
+      "Attribute": [
+        "Project",
+        "Website"
+      ],
+      "Behavior": {}
+    },
+    "LearningProgress": {
+      "Attribute": [
+        "FurtherInformation"
+      ],
+      "Behavior": {}
+    },
+    "StudentUser": {
+      "Attribute": [
+        "Language"
+      ],
+      "Behavior": {
+        "Schedule": [
+          ""
+        ]
+      }
+    },
+    "System": {
+      "Attribute": [
+        "SystemArchitect"
+      ],
+      "Behavior": {}
+    },
+    "Class": {
+      "Attribute": [
+        "Classes",
+        "Classmates"
+      ],
+      "Behavior": {}
+    },
+    "Info": {
+      "Attribute": [
+        "Information"
+      ],
+      "Behavior": {}
+    },
+    "Information": {
+      "Attribute": [],
+      "Behavior": {
+        "provides": [
+          ""
+        ]
+      }
+    },
+    "ScheduleChanges": {
+      "Attribute": [],
+      "Behavior": {
+        "happens": [
+          ""
+        ]
+      }
+    },
+    "Classes": {
+      "Attribute": [],
+      "Behavior": {
+        "OutsideOfMyExpectedWorkingHours": [
+          ""
+        ]
+      }
+    },
+    "ProjectArchitect": {
+      "Attribute": [],
+      "Behavior": {
+        "get": [
+          ""
+        ]
+      }
+    },
+    "SystemArchitect": {
+      "Attribute": [],
+      "Behavior": {
+        "integrate": [
+          ""
+        ]
+      }
+    },
+    "Availability": {
+      "Attribute": [],
+      "Behavior": {
+        "use": [
+          ""
+        ],
+        "reflect": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "be",
+        "User",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "User",
+        "Schedule",
+        []
+      ],
+      [
+        "User",
+        "LearningProgress",
+        []
+      ],
+      [
+        "Schedule",
+        "ScheduleChanges",
+        []
+      ],
+      [
+        "Tutor",
+        "Availability",
+        []
+      ],
+      [
+        "Student",
+        "Tutor",
+        []
+      ],
+      [
+        "Student",
+        "StudentUser",
+        []
+      ],
+      [
+        "Project",
+        "ProjectArchitect",
+        []
+      ],
+      [
+        "our",
+        "Website",
+        []
+      ],
+      [
+        "our",
+        "Project",
+        []
+      ],
+      [
+        "System",
+        "SystemArchitect",
+        []
+      ],
+      [
+        "Class",
+        "Classes",
+        []
+      ],
+      [
+        "Info",
+        "Information",
+        []
+      ]
+    ]
+  }
+}

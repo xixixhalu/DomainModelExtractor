@@ -1,0 +1,196 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Felling",
+        "Event",
+        "EventExits",
+        "Password",
+        "Password",
+        "Record",
+        "Events",
+        "Privacy",
+        "Storage",
+        "Computer"
+      ],
+      "Behavior": {
+        "comment": [
+          ""
+        ],
+        "make": [
+          ""
+        ],
+        "delete": [
+          "",
+          "",
+          ""
+        ],
+        "want": [
+          "",
+          ""
+        ],
+        "share": [
+          ""
+        ],
+        "like": [
+          ""
+        ],
+        "express": [
+          ""
+        ],
+        "report": [
+          ""
+        ],
+        "need": [
+          "",
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "enter": [
+          ""
+        ],
+        "upload": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "log": [
+          ""
+        ],
+        "use": [
+          "",
+          ""
+        ],
+        "extend": [
+          ""
+        ],
+        "let": [
+          ""
+        ],
+        "login": [
+          "",
+          ""
+        ],
+        "reset": [
+          ""
+        ],
+        "forget": [
+          ""
+        ],
+        "keep": [
+          "",
+          ""
+        ],
+        "maintain": [
+          ""
+        ],
+        "change": [
+          ""
+        ],
+        "review": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "choose": [
+          ""
+        ],
+        "save": [
+          "",
+          ""
+        ],
+        "download": [
+          "",
+          ""
+        ],
+        "search": [
+          ""
+        ],
+        "find": [
+          ""
+        ],
+        "looking": [
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "free": [
+          ""
+        ],
+        "sort": [
+          "",
+          ""
+        ]
+      }
+    },
+    "Event": {
+      "Attribute": [
+        "private",
+        "EventExits",
+        "Events"
+      ],
+      "Behavior": {
+        "extend": [
+          ""
+        ]
+      }
+    },
+    "Computer": {
+      "Attribute": [
+        "ManyHighResolutionPictures"
+      ],
+      "Behavior": {}
+    },
+    "Picture": {
+      "Attribute": [
+        "PictureOwner",
+        "Pictures",
+        "PicturePopularity"
+      ],
+      "Behavior": {
+        "report": [
+          ""
+        ]
+      }
+    },
+    "Pictures": {
+      "Attribute": [],
+      "Behavior": {
+        "see": [
+          ""
+        ],
+        "convenient": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "User",
+        "Event",
+        []
+      ],
+      [
+        "User",
+        "Computer",
+        []
+      ],
+      [
+        "Picture",
+        "Pictures",
+        []
+      ]
+    ]
+  }
+}

@@ -13,9 +13,7 @@ from Parser.TDParser import *
 
 from util.file_op import fileOps
 
-filter_type = set(["[u'compound-1']", \
-                    "[u'compound-1', u'compound']"
-                ])
+filter_type = set(["[u'compound-1']", "[u'compound-1', u'compound']"])
 
 class Identifier:
     def __init__(self):
@@ -33,9 +31,9 @@ class Identifier:
         self.__final_set.clear()
 
     def display(self, title, content):
-        print '[' + title + ']'
+        # print '[' + title + ']'
         if title == 'Sentence':
-            print content
+            print(content)
             index = ''
             begin, end = 0, 0
             for elem in self.__output['sentences'][0]['tokens']:
@@ -46,11 +44,11 @@ class Identifier:
                     continue;
                 index += str(elem['index'])
                 begin = end
-            print index
+            print(index)
         elif type(content) is dict:
-            print self.__printer.pprint(content)
+            print(self.__printer.pprint(content))
         else:
-	        print content
+	        print(content)
 
     def __traceBack(self, entity1, entity2):
         #TODO: Figure out the relationship between entity1 and entity2 in terms of TDs
@@ -195,6 +193,10 @@ class Identifier:
         return result
 
 
+    def display_sentence_index(self, sentence, parse_input):
+        self.__output = parse_input
+        self.display('Sentence', sentence)
+
     def identify(self, sentence):
         self.__output = analyze(sentence)
         if self.__output is None:
@@ -203,9 +205,10 @@ class Identifier:
         td_result = TypeDep(self.__output)
         pt_result = parsePosTag(self.__output)
 
-        #self.display('Sentence', sentence)
-        #self.display('Type Dependency', td_result)
-        #self.display('Pos-Tag', pt_result)
+        # print self.__output
+        # self.display('Sentence', sentence)
+        # self.display('Type Dependency', td_result)
+        # self.display('Pos-Tag', pt_result)
         
         self.__tokenNum = len(self.__output['sentences'][0]['tokens'])
 
@@ -219,7 +222,7 @@ class Identifier:
 
         noun_relations = self.getNounRelations(pt_result, td_adjacency_list)
 
-        #self.display('Noun Relations', noun_relations)
+        self.display('Noun Relations', noun_relations)
         #return noun_relations
 
         for key, value in noun_relations.items():

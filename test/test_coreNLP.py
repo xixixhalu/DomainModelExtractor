@@ -1,6 +1,6 @@
 import sys
-sys.path.append('./')
-sys.path.append('../')
+#sys.path.append('./')
+#sys.path.append('../')
 
 from adapter import *
 import json
@@ -9,5 +9,5 @@ sentence = 'As a user, I can redeem usable WAT points so that I can receive a gi
 
 output = analyze(sentence)
 
-print json.dumps(output, sort_keys=True, indent=2)
+print(json.dumps(output, sort_keys=True, indent=2))
 

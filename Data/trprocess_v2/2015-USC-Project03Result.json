@@ -1,0 +1,472 @@
+{
+  "class_dict": {
+    "LanguageLearner": {
+      "Attribute": [
+        "Language",
+        "LanguageAssignments",
+        "Assignment",
+        "SearchResults",
+        "Matches",
+        "Teacher",
+        "LanguageLearners"
+      ],
+      "Behavior": {
+        "use": [
+          "",
+          "",
+          ""
+        ],
+        "practice": [
+          ""
+        ],
+        "want": [
+          ""
+        ],
+        "learn": [
+          "",
+          ""
+        ],
+        "do": [
+          ""
+        ],
+        "finish": [
+          ""
+        ],
+        "order": [
+          ""
+        ],
+        "prioritize": [
+          ""
+        ],
+        "get": [
+          "",
+          "",
+          ""
+        ],
+        "know": [
+          "",
+          "",
+          ""
+        ],
+        "chat": [
+          ""
+        ],
+        "exchange": [
+          ""
+        ],
+        "search": [
+          ""
+        ],
+        "find": [
+          "",
+          ""
+        ]
+      }
+    },
+    "Website": {
+      "Attribute": [
+        "give",
+        "do",
+        "register",
+        "modify",
+        "WebsiteOwner",
+        "WebsiteOwner/professor",
+        "WebsiteOwner/mediator",
+        "WebsiteUser"
+      ],
+      "Behavior": {
+        "promote": [
+          ""
+        ]
+      }
+    },
+    "LanguageTeacher": {
+      "Attribute": [
+        "Students"
+      ],
+      "Behavior": {
+        "give": [
+          ""
+        ]
+      }
+    },
+    "People": {
+      "Attribute": [
+        "Help"
+      ],
+      "Behavior": {
+        "pull": [
+          ""
+        ]
+      }
+    },
+    "WebsiteOwner": {
+      "Attribute": [
+        "Website",
+        "WebsiteOwner/professor",
+        "WebsiteOwner/mediator"
+      ],
+      "Behavior": {
+        "promote": [
+          ""
+        ],
+        "make": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "assess": [
+          ""
+        ],
+        "maintain": [
+          ""
+        ],
+        "add": [
+          ""
+        ],
+        "suggest": [
+          ""
+        ],
+        "post": [
+          "",
+          ""
+        ],
+        "generate": [
+          ""
+        ],
+        "send": [
+          ""
+        ],
+        "inform": [
+          ""
+        ],
+        "monitor": [
+          ""
+        ]
+      }
+    },
+    "Student": {
+      "Attribute": [
+        "PrivacyPolicy",
+        "Students"
+      ],
+      "Behavior": {
+        "register": [
+          ""
+        ],
+        "modify": [
+          ""
+        ],
+        "avoid": [
+          ""
+        ]
+      }
+    },
+    "better": {
+      "Attribute": [
+        "other"
+      ],
+      "Behavior": {
+        "know": [
+          ""
+        ]
+      }
+    },
+    "blog": {
+      "Attribute": [
+        "post",
+        "Website"
+      ],
+      "Behavior": {}
+    },
+    "OnlineExperience": {
+      "Attribute": [
+        "better"
+      ],
+      "Behavior": {
+        "get": [
+          ""
+        ]
+      }
+    },
+    "members": {
+      "Attribute": [
+        "AND",
+        "other"
+      ],
+      "Behavior": {}
+    },
+    "WebsiteUser": {
+      "Attribute": [
+        "NativeLanguageSkills",
+        "be"
+      ],
+      "Behavior": {
+        "report": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "pull": [
+          ""
+        ],
+        "avoid": [
+          ""
+        ],
+        "receive": [
+          ""
+        ],
+        "find": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "offer": [
+          ""
+        ],
+        "want": [
+          ""
+        ],
+        "practice": [
+          ""
+        ]
+      }
+    },
+    "Students": {
+      "Attribute": [
+        "LanguageLevel"
+      ],
+      "Behavior": {
+        "increase": [
+          ""
+        ]
+      }
+    },
+    "NativeSpeaker": {
+      "Attribute": [
+        "NativeSpeakerLanguageLearner",
+        "NativeSpeakers"
+      ],
+      "Behavior": {
+        "find": [
+          "",
+          ""
+        ],
+        "help": [
+          ""
+        ],
+        "use": [
+          ""
+        ],
+        "know": [
+          ""
+        ]
+      }
+    },
+    "me": {
+      "Attribute": [
+        "member",
+        "members"
+      ],
+      "Behavior": {
+        "solve": [
+          ""
+        ]
+      }
+    },
+    "Language": {
+      "Attribute": [
+        "LanguageLearner",
+        "LanguageLearners",
+        "LanguageLevel",
+        "LanguageTeacher",
+        "LanguageAssignments",
+        "LanguageProficiency"
+      ],
+      "Behavior": {
+        "practice": [
+          "",
+          ""
+        ]
+      }
+    },
+    "Help": {
+      "Attribute": [
+        "HelpStudent"
+      ],
+      "Behavior": {}
+    },
+    "member": {
+      "Attribute": [
+        "members"
+      ],
+      "Behavior": {}
+    },
+    "Others": {
+      "Attribute": [
+        "are"
+      ],
+      "Behavior": {
+        "willing": [
+          ""
+        ],
+        "learn": [
+          ""
+        ]
+      }
+    },
+    "HelpStudent": {
+      "Attribute": [],
+      "Behavior": {
+        "adjust": [
+          ""
+        ]
+      }
+    },
+    "NativeSpeakerLanguageLearner": {
+      "Attribute": [],
+      "Behavior": {
+        "find": [
+          ""
+        ],
+        "talk": [
+          ""
+        ],
+        "learn": [
+          ""
+        ],
+        "know": [
+          ""
+        ]
+      }
+    },
+    "Assignment": {
+      "Attribute": [],
+      "Behavior": {
+        "easier": [
+          ""
+        ]
+      }
+    },
+    "WebsiteOwner/professor": {
+      "Attribute": [],
+      "Behavior": {
+        "offer": [
+          ""
+        ],
+        "advise": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "are",
+        "Others",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "LanguageLearner",
+        "Language",
+        []
+      ],
+      [
+        "LanguageLearner",
+        "Assignment",
+        []
+      ],
+      [
+        "Website",
+        "WebsiteOwner",
+        []
+      ],
+      [
+        "Website",
+        "WebsiteUser",
+        []
+      ],
+      [
+        "Website",
+        "WebsiteOwner/professor",
+        []
+      ],
+      [
+        "LanguageTeacher",
+        "Students",
+        []
+      ],
+      [
+        "People",
+        "Help",
+        []
+      ],
+      [
+        "WebsiteOwner",
+        "Website",
+        []
+      ],
+      [
+        "WebsiteOwner",
+        "WebsiteOwner/professor",
+        []
+      ],
+      [
+        "Student",
+        "Students",
+        []
+      ],
+      [
+        "blog",
+        "Website",
+        []
+      ],
+      [
+        "OnlineExperience",
+        "better",
+        []
+      ],
+      [
+        "NativeSpeaker",
+        "NativeSpeakerLanguageLearner",
+        []
+      ],
+      [
+        "me",
+        "members",
+        []
+      ],
+      [
+        "me",
+        "member",
+        []
+      ],
+      [
+        "Language",
+        "LanguageLearner",
+        []
+      ],
+      [
+        "Language",
+        "LanguageTeacher",
+        []
+      ],
+      [
+        "Help",
+        "HelpStudent",
+        []
+      ],
+      [
+        "member",
+        "members",
+        []
+      ]
+    ]
+  }
+}

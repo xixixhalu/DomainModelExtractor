@@ -1,0 +1,50 @@
+{
+  "class_dict": {
+    "Text": {
+      "Attribute": [
+        "TextMessages"
+      ],
+      "Behavior": {}
+    },
+    "what": {
+      "Attribute": [
+        "'s"
+      ],
+      "Behavior": {
+        "App": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "wear": [
+          ""
+        ]
+      }
+    },
+    "TextMessages": {
+      "Attribute": [],
+      "Behavior": {
+        "receive": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "'s",
+        "what",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "Text",
+        "TextMessages",
+        []
+      ]
+    ]
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Geo-location",
+        "Login",
+        "RegisteredUsername",
+        "FacebookAccount",
+        "OwnProfile",
+        "Hashtag",
+        "OwnEvent",
+        "Event",
+        "Gallery",
+        "Phone",
+        "HistoryOfHashtags",
+        "PrivateEvent",
+        "Pictures",
+        "Users",
+        "UsersOfTheAppAndViewPictures",
+        "Username"
+      ],
+      "Behavior": {
+        "suspend": [
+          ""
+        ],
+        "use": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "take": [
+          "",
+          "",
+          ""
+        ],
+        "create": [
+          "",
+          ""
+        ],
+        "login": [
+          ""
+        ],
+        "reserve": [
+          "",
+          ""
+        ],
+        "delete": [
+          ""
+        ],
+        "posted": [
+          ""
+        ],
+        "report": [
+          ""
+        ],
+        "moderate": [
+          ""
+        ],
+        "created": [
+          ""
+        ],
+        "like": [
+          "",
+          ""
+        ],
+        "shut": [
+          ""
+        ],
+        "remove": [
+          ""
+        ],
+        "choose": [
+          "",
+          "",
+          ""
+        ],
+        "invited": [
+          ""
+        ],
+        "participate": [
+          "",
+          ""
+        ],
+        "ensure": [
+          ""
+        ],
+        "want": [
+          ""
+        ],
+        "save": [
+          "",
+          ""
+        ],
+        "keep": [
+          ""
+        ],
+        "sort": [
+          "",
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "post": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "write": [
+          ""
+        ]
+      }
+    },
+    "Event": {
+      "Attribute": [
+        "Hashtag",
+        "Name",
+        "EventAttendees",
+        "Event/hashtag",
+        "Events",
+        "EventHashtag"
+      ],
+      "Behavior": {
+        "remove": [
+          ""
+        ],
+        "update": [
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "starts": [
+          ""
+        ]
+      }
+    },
+    "their": {
+      "Attribute": [
+        "Contents",
+        "Pictures"
+      ],
+      "Behavior": {}
+    },
+    "Picture": {
+      "Attribute": [
+        "Pictures",
+        "PicturesOfTheEvent",
+        "PictureViewing",
+        "PictureLifetime"
+      ],
+      "Behavior": {}
+    },
+    "Users": {
+      "Attribute": [
+        "UsersOfTheAppAndViewPictures"
+      ],
+      "Behavior": {
+        "manage": [
+          ""
+        ],
+        "upload": [
+          ""
+        ],
+        "post": [
+          ""
+        ]
+      }
+    },
+    "Pictures": {
+      "Attribute": [
+        "PicturesOfTheEvent",
+        "be"
+      ],
+      "Behavior": {
+        "delete": [
+          "",
+          ""
+        ],
+        "moderate": [
+          ""
+        ],
+        "remove": [
+          ""
+        ],
+        "upload": [
+          ""
+        ],
+        "post": [
+          ""
+        ],
+        "sort": [
+          "",
+          ""
+        ],
+        "list": [
+          ""
+        ],
+        "restore": [
+          ""
+        ],
+        "give": [
+          ""
+        ],
+        "Area": [
+          ""
+        ],
+        "descriptive": [
+          ""
+        ]
+      }
+    },
+    "EventAttendees": {
+      "Attribute": [],
+      "Behavior": {
+        "use": [
+          ""
+        ]
+      }
+    },
+    "PrivateEvent": {
+      "Attribute": [],
+      "Behavior": {
+        "invited": [
+          ""
+        ]
+      }
+    },
+    "Event/hashtag": {
+      "Attribute": [],
+      "Behavior": {
+        "introduce": [
+          ""
+        ],
+        "search": [
+          ""
+        ],
+        "create": [
+          "",
+          "",
+          ""
+        ],
+        "shut": [
+          ""
+        ],
+        "save": [
+          "",
+          ""
+        ],
+        "keep": [
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "post": [
+          ""
+        ],
+        "reserve": [
+          "",
+          ""
+        ],
+        "browse": [
+          ""
+        ],
+        "manage": [
+          ""
+        ],
+        "change": [
+          "",
+          "",
+          ""
+        ],
+        "delete": [
+          ""
+        ],
+        "generate": [
+          ""
+        ],
+        "expires": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "be",
+        "Pictures",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "User",
+        "Event",
+        []
+      ],
+      [
+        "User",
+        "Users",
+        []
+      ],
+      [
+        "User",
+        "Pictures",
+        []
+      ],
+      [
+        "User",
+        "PrivateEvent",
+        []
+      ],
+      [
+        "Event",
+        "EventAttendees",
+        []
+      ],
+      [
+        "Event",
+        "Event/hashtag",
+        []
+      ],
+      [
+        "their",
+        "Pictures",
+        []
+      ],
+      [
+        "Picture",
+        "Pictures",
+        []
+      ]
+    ]
+  }
+}

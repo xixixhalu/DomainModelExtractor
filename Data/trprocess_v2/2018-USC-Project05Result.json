@@ -1,0 +1,158 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Username",
+        "RecipeList",
+        "Username",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "browse": [
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "delete": [
+          ""
+        ],
+        "want": [
+          ""
+        ],
+        "add": [
+          ""
+        ],
+        "save": [
+          "",
+          "",
+          ""
+        ],
+        "customize": [
+          "",
+          ""
+        ],
+        "produce": [
+          ""
+        ],
+        "earn": [
+          ""
+        ],
+        "like": [
+          "",
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "share": [
+          ""
+        ],
+        "replace": [
+          ""
+        ],
+        "send": [
+          ""
+        ],
+        "purchased": [
+          ""
+        ],
+        "view": [
+          "",
+          ""
+        ],
+        "change": [
+          ""
+        ],
+        "canuse": [
+          ""
+        ],
+        "customise": [
+          ""
+        ],
+        "choose": [
+          ""
+        ],
+        "vend": [
+          ""
+        ],
+        "check": [
+          ""
+        ],
+        "log": [
+          ""
+        ],
+        "update": [
+          ""
+        ],
+        "identify": [
+          ""
+        ]
+      }
+    },
+    "Recipe": {
+      "Attribute": [
+        "RecipesList",
+        "RecipeList"
+      ],
+      "Behavior": {
+        "contains": [
+          ""
+        ]
+      }
+    },
+    "specificallergen": {
+      "Attribute": [],
+      "Behavior": {}
+    },
+    "App": {
+      "Attribute": [
+        "in/out",
+        "AppropriateRewards",
+        "ApplePay"
+      ],
+      "Behavior": {}
+    },
+    "ApplePay": {
+      "Attribute": [],
+      "Behavior": {
+        "canuse": [
+          ""
+        ],
+        "purchase": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "User",
+        "specificallergen",
+        ""
+      ],
+      [
+        "Recipe",
+        "specificallergen",
+        ""
+      ],
+      [
+        "App",
+        "ApplePay",
+        []
+      ]
+    ]
+  }
+}

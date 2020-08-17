@@ -1,0 +1,401 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Profile",
+        "Account",
+        "ProfilePage",
+        "members",
+        "Account",
+        "Users"
+      ],
+      "Behavior": {
+        "log": [
+          ""
+        ],
+        "access": [
+          ""
+        ],
+        "update": [
+          ""
+        ],
+        "manage": [
+          ""
+        ],
+        "delete": [
+          ""
+        ],
+        "suspend": [
+          ""
+        ],
+        "report": [
+          ""
+        ],
+        "block": [
+          ""
+        ]
+      }
+    },
+    "Patient": {
+      "Attribute": [
+        "Calendar",
+        "UpcomingAppointment",
+        "Calendar",
+        "SupportGroup",
+        "SupportGroup",
+        "Calendar",
+        "SupportGroup",
+        "post",
+        "OwnSocialWall",
+        "Profile/Invitation",
+        "PatientAdmin",
+        "am"
+      ],
+      "Behavior": {
+        "pull": [
+          ""
+        ],
+        "search": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "message": [
+          ""
+        ],
+        "share": [
+          "",
+          "",
+          ""
+        ],
+        "allow": [
+          ""
+        ],
+        "posted": [
+          ""
+        ],
+        "has": [
+          ""
+        ],
+        "send": [
+          "",
+          ""
+        ],
+        "contact": [
+          "",
+          ""
+        ],
+        "decide": [
+          ""
+        ],
+        "attended": [
+          ""
+        ],
+        "sign": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "add": [
+          ""
+        ]
+      }
+    },
+    "support": {
+      "Attribute": [
+        "Network",
+        "SocialWalls"
+      ],
+      "Behavior": {}
+    },
+    "Family": {
+      "Attribute": [
+        "member",
+        "member",
+        "LovedOne"
+      ],
+      "Behavior": {}
+    },
+    "SupportGroup": {
+      "Attribute": [
+        "decide",
+        "publish"
+      ],
+      "Behavior": {
+        "access": [
+          ""
+        ]
+      }
+    },
+    "Illness": {
+      "Attribute": [
+        "types"
+      ],
+      "Behavior": {}
+    },
+    "member": {
+      "Attribute": [
+        "Network",
+        "members",
+        "am",
+        "am",
+        "am"
+      ],
+      "Behavior": {
+        "get": [
+          ""
+        ],
+        "send": [
+          "",
+          ""
+        ],
+        "check": [
+          ""
+        ],
+        "decide": [
+          ""
+        ],
+        "publish": [
+          ""
+        ],
+        "available": [
+          ""
+        ],
+        "able": [
+          "",
+          ""
+        ],
+        "help": [
+          ""
+        ],
+        "receive": [
+          ""
+        ],
+        "post": [
+          ""
+        ]
+      }
+    },
+    "types": {
+      "Attribute": [
+        "Certain"
+      ],
+      "Behavior": {}
+    },
+    "Admin": {
+      "Attribute": [
+        "SupportNetwork",
+        "Administrator",
+        "am"
+      ],
+      "Behavior": {
+        "can": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "view": [
+          "",
+          ""
+        ],
+        "post": [
+          ""
+        ]
+      }
+    },
+    "ProfilePage": {
+      "Attribute": [
+        "update"
+      ],
+      "Behavior": {}
+    },
+    "SocialWalls": {
+      "Attribute": [
+        "post"
+      ],
+      "Behavior": {}
+    },
+    "Patients": {
+      "Attribute": [
+        "SocialWalls"
+      ],
+      "Behavior": {}
+    },
+    "Profile/Invitation": {
+      "Attribute": [
+        "possible"
+      ],
+      "Behavior": {}
+    },
+    "Calendar": {
+      "Attribute": [
+        "CalendarEvents"
+      ],
+      "Behavior": {
+        "share": [
+          ""
+        ]
+      }
+    },
+    "Profile": {
+      "Attribute": [
+        "ProfilePage",
+        "Profile/Invitation"
+      ],
+      "Behavior": {}
+    },
+    "me": {
+      "Attribute": [
+        "member",
+        "members"
+      ],
+      "Behavior": {
+        "contact": [
+          ""
+        ]
+      }
+    },
+    "Network": {
+      "Attribute": [
+        "is"
+      ],
+      "Behavior": {
+        "exclusive": [
+          ""
+        ]
+      }
+    },
+    "members": {
+      "Attribute": [],
+      "Behavior": {
+        "message": [
+          ""
+        ],
+        "ask": [
+          ""
+        ]
+      }
+    },
+    "Administrator": {
+      "Attribute": [],
+      "Behavior": {
+        "suspense": [
+          ""
+        ],
+        "delete": [
+          ""
+        ]
+      }
+    },
+    "PatientAdmin": {
+      "Attribute": [],
+      "Behavior": {
+        "post": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "User",
+        "ProfilePage",
+        []
+      ],
+      [
+        "User",
+        "Profile",
+        []
+      ],
+      [
+        "User",
+        "members",
+        []
+      ],
+      [
+        "Patient",
+        "SupportGroup",
+        []
+      ],
+      [
+        "Patient",
+        "Profile/Invitation",
+        []
+      ],
+      [
+        "Patient",
+        "Calendar",
+        []
+      ],
+      [
+        "Patient",
+        "PatientAdmin",
+        []
+      ],
+      [
+        "support",
+        "SocialWalls",
+        []
+      ],
+      [
+        "support",
+        "Network",
+        []
+      ],
+      [
+        "Family",
+        "member",
+        []
+      ],
+      [
+        "Illness",
+        "types",
+        []
+      ],
+      [
+        "member",
+        "Network",
+        []
+      ],
+      [
+        "member",
+        "members",
+        []
+      ],
+      [
+        "Admin",
+        "Administrator",
+        []
+      ],
+      [
+        "Patients",
+        "SocialWalls",
+        []
+      ],
+      [
+        "Profile",
+        "ProfilePage",
+        []
+      ],
+      [
+        "Profile",
+        "Profile/Invitation",
+        []
+      ],
+      [
+        "me",
+        "member",
+        []
+      ],
+      [
+        "me",
+        "members",
+        []
+      ]
+    ]
+  }
+}

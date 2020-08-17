@@ -1,0 +1,288 @@
+{
+  "class_dict": {
+    "Website": {
+      "Attribute": [
+        "Traffic",
+        "sold"
+      ],
+      "Behavior": {}
+    },
+    "Retailer": {
+      "Attribute": [
+        "Website",
+        "Website"
+      ],
+      "Behavior": {
+        "have": [
+          ""
+        ]
+      }
+    },
+    "Phone": {
+      "Attribute": [
+        "view"
+      ],
+      "Behavior": {}
+    },
+    "User": {
+      "Attribute": [
+        "Phone",
+        "UserExperience",
+        "be",
+        "am",
+        "be",
+        "am",
+        "be"
+      ],
+      "Behavior": {
+        "sort": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "waste": [
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "minimize": [
+          ""
+        ],
+        "view": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "shop": [
+          ""
+        ],
+        "buy": [
+          ""
+        ],
+        "slide": [
+          ""
+        ],
+        "get": [
+          "",
+          "",
+          ""
+        ],
+        "viewing": [
+          ""
+        ],
+        "collapse": [
+          ""
+        ],
+        "follow": [
+          ""
+        ],
+        "focus": [
+          ""
+        ]
+      }
+    },
+    "UserExperience": {
+      "Attribute": [
+        "better",
+        "better"
+      ],
+      "Behavior": {
+        "get": [
+          ""
+        ]
+      }
+    },
+    "ProductLayoutButtons": {
+      "Attribute": [
+        "clicking"
+      ],
+      "Behavior": {}
+    },
+    "ProductSlideLayout": {
+      "Attribute": [
+        "DetailsOfTheCenteredProduct"
+      ],
+      "Behavior": {}
+    },
+    "it": {
+      "Attribute": [
+        "Price",
+        "Popularity"
+      ],
+      "Behavior": {}
+    },
+    "high": {
+      "Attribute": [
+        "low"
+      ],
+      "Behavior": {}
+    },
+    "low": {
+      "Attribute": [
+        "high"
+      ],
+      "Behavior": {}
+    },
+    "Product": {
+      "Attribute": [
+        "selected",
+        "focus",
+        "Products",
+        "ProductLayoutButtons",
+        "ProductSlideLayout",
+        "ProductOfMyPriceRange",
+        "ProductOfInterest",
+        "ProductImage"
+      ],
+      "Behavior": {
+        "shop": [
+          ""
+        ]
+      }
+    },
+    "Price": {
+      "Attribute": [
+        "PriceRange"
+      ],
+      "Behavior": {}
+    },
+    "Products": {
+      "Attribute": [
+        "are"
+      ],
+      "Behavior": {
+        "see": [
+          ""
+        ],
+        "sort": [
+          "",
+          ""
+        ],
+        "listed": [
+          ""
+        ],
+        "available": [
+          ""
+        ]
+      }
+    },
+    "ProductImage": {
+      "Attribute": [],
+      "Behavior": {
+        "waste": [
+          ""
+        ],
+        "see": [
+          "",
+          ""
+        ],
+        "minimize": [
+          ""
+        ],
+        "view": [
+          "",
+          ""
+        ],
+        "buy": [
+          ""
+        ],
+        "using": [
+          ""
+        ],
+        "slide": [
+          ""
+        ],
+        "viewing": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "clearly": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "are",
+        "Products",
+        []
+      ],
+      [
+        "am",
+        "User",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "Retailer",
+        "Website",
+        []
+      ],
+      [
+        "User",
+        "Phone",
+        []
+      ],
+      [
+        "User",
+        "UserExperience",
+        []
+      ],
+      [
+        "it",
+        "Price",
+        []
+      ],
+      [
+        "high",
+        "low",
+        []
+      ],
+      [
+        "low",
+        "high",
+        []
+      ],
+      [
+        "Product",
+        "ProductLayoutButtons",
+        []
+      ],
+      [
+        "Product",
+        "ProductSlideLayout",
+        []
+      ],
+      [
+        "Product",
+        "Products",
+        []
+      ],
+      [
+        "Product",
+        "ProductImage",
+        []
+      ]
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "class_dict": {
+    "IConsumer": {
+      "Attribute": [
+        "Account",
+        "Dashboard"
+      ],
+      "Behavior": {
+        "access": [
+          ""
+        ],
+        "view": [
+          ""
+        ]
+      }
+    },
+    "Account": {
+      "Attribute": [
+        "existing"
+      ],
+      "Behavior": {}
+    },
+    "Dashboard": {
+      "Attribute": [
+        "existing"
+      ],
+      "Behavior": {}
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "IConsumer",
+        "Account",
+        []
+      ],
+      [
+        "IConsumer",
+        "Dashboard",
+        []
+      ]
+    ]
+  }
+}

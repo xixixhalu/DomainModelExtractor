@@ -1,0 +1,139 @@
+{
+  "class_dict": {
+    "parent": {
+      "Attribute": [
+        "Tuition",
+        "Details",
+        "parents"
+      ],
+      "Behavior": {
+        "set": [
+          ""
+        ]
+      }
+    },
+    "PasswordProtected/privatePage": {
+      "Attribute": [
+        "view"
+      ],
+      "Behavior": {}
+    },
+    "member": {
+      "Attribute": [
+        "members"
+      ],
+      "Behavior": {
+        "view": [
+          ""
+        ]
+      }
+    },
+    "Student": {
+      "Attribute": [
+        "Student/parent"
+      ],
+      "Behavior": {
+        "download": [
+          ""
+        ],
+        "practice": [
+          ""
+        ]
+      }
+    },
+    "me": {
+      "Attribute": [
+        "member",
+        "members"
+      ],
+      "Behavior": {
+        "signup": [
+          ""
+        ]
+      }
+    },
+    "News": {
+      "Attribute": [
+        "NewsSectionOfTheWebsite"
+      ],
+      "Behavior": {}
+    },
+    "Password": {
+      "Attribute": [
+        "PasswordProtected/privatePage"
+      ],
+      "Behavior": {}
+    },
+    "parents": {
+      "Attribute": [],
+      "Behavior": {
+        "view": [
+          ""
+        ]
+      }
+    },
+    "NewsSectionOfTheWebsite": {
+      "Attribute": [],
+      "Behavior": {
+        "triggers": [
+          ""
+        ]
+      }
+    },
+    "System": {
+      "Attribute": [],
+      "Behavior": {
+        "CombinationOfThreeWebsites": [
+          ""
+        ]
+      }
+    },
+    "Student/parent": {
+      "Attribute": [],
+      "Behavior": {
+        "register": [
+          ""
+        ],
+        "pay": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "be",
+        "System",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "parent",
+        "parents",
+        []
+      ],
+      [
+        "Student",
+        "Student/parent",
+        []
+      ],
+      [
+        "me",
+        "member",
+        []
+      ],
+      [
+        "News",
+        "NewsSectionOfTheWebsite",
+        []
+      ],
+      [
+        "Password",
+        "PasswordProtected/privatePage",
+        []
+      ]
+    ]
+  }
+}

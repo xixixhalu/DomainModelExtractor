@@ -1,0 +1,368 @@
+{
+  "class_dict": {
+    "Mentee": {
+      "Attribute": [
+        "Criteria",
+        "Password",
+        "PersonalInformation/contactDetails",
+        "Details",
+        "Profile",
+        "Mentees",
+        "MenteesTrainings",
+        "MenteeRequests",
+        "Mentee/mentor",
+        "be",
+        "be",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "select": [
+          ""
+        ],
+        "reset": [
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "send": [
+          ""
+        ],
+        "update": [
+          ""
+        ],
+        "upload": [
+          ""
+        ]
+      }
+    },
+    "Mentor": {
+      "Attribute": [
+        "Mentee",
+        "Criteria",
+        "Mentee",
+        "Password",
+        "TrainingPhaseActivities",
+        "Availability",
+        "PersonalInformation",
+        "Details",
+        "Interactions",
+        "Mentee",
+        "Mentors",
+        "MentorshipProcess",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "select": [
+          ""
+        ],
+        "provide": [
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "update": [
+          "",
+          ""
+        ],
+        "track": [
+          ""
+        ],
+        "submit": [
+          ""
+        ],
+        "reset": [
+          ""
+        ],
+        "monitor": [
+          ""
+        ],
+        "accept": [
+          ""
+        ],
+        "mark": [
+          ""
+        ],
+        "register": [
+          ""
+        ],
+        "report": [
+          ""
+        ]
+      }
+    },
+    "Requests": {
+      "Attribute": [
+        "based"
+      ],
+      "Behavior": {}
+    },
+    "their": {
+      "Attribute": [
+        "Requests",
+        "MonthlyReport"
+      ],
+      "Behavior": {}
+    },
+    "MonthlyBasis": {
+      "Attribute": [
+        "provide"
+      ],
+      "Behavior": {}
+    },
+    "Mentees": {
+      "Attribute": [
+        "Statistics",
+        "MenteesTrainings",
+        "be"
+      ],
+      "Behavior": {
+        "able": [
+          ""
+        ],
+        "select": [
+          ""
+        ]
+      }
+    },
+    "MonthlyReport": {
+      "Attribute": [
+        "MonthlyReports"
+      ],
+      "Behavior": {}
+    },
+    "Mentors": {
+      "Attribute": [
+        "MentorshipProcess"
+      ],
+      "Behavior": {
+        "ask": [
+          ""
+        ]
+      }
+    },
+    "ActivityReport": {
+      "Attribute": [
+        "ActivityReports"
+      ],
+      "Behavior": {}
+    },
+    "Admin": {
+      "Attribute": [
+        "Administrator",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "view": [
+          "",
+          ""
+        ],
+        "export": [
+          "",
+          ""
+        ],
+        "send": [
+          ""
+        ],
+        "delete/deactivate": [
+          ""
+        ],
+        "track": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "assign": [
+          ""
+        ],
+        "update": [
+          ""
+        ],
+        "match": [
+          ""
+        ]
+      }
+    },
+    "Request": {
+      "Attribute": [
+        "Requests"
+      ],
+      "Behavior": {}
+    },
+    "PersonalInformation": {
+      "Attribute": [
+        "PersonalInformation/contactDetails"
+      ],
+      "Behavior": {
+        "update": [
+          ""
+        ],
+        "includes": [
+          ""
+        ]
+      }
+    },
+    "Month": {
+      "Attribute": [
+        "MonthlyBasis",
+        "MonthlyReport",
+        "MonthlyReports"
+      ],
+      "Behavior": {}
+    },
+    "Administrator": {
+      "Attribute": [
+        "be"
+      ],
+      "Behavior": {
+        "able": [
+          ""
+        ],
+        "get": [
+          ""
+        ]
+      }
+    },
+    "MenteeRequests": {
+      "Attribute": [],
+      "Behavior": {
+        "accept": [
+          ""
+        ],
+        "establish": [
+          ""
+        ]
+      }
+    },
+    "ActivityReports": {
+      "Attribute": [],
+      "Behavior": {
+        "timely": [
+          ""
+        ]
+      }
+    },
+    "Mentee/mentor": {
+      "Attribute": [],
+      "Behavior": {
+        "establish": [
+          ""
+        ],
+        "includes": [
+          ""
+        ],
+        "opt": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "Mentee",
+        "Mentees",
+        []
+      ],
+      [
+        "Mentee",
+        "MenteeRequests",
+        []
+      ],
+      [
+        "Mentee",
+        "Mentee/mentor",
+        []
+      ],
+      [
+        "Mentor",
+        "Mentee",
+        []
+      ],
+      [
+        "Mentor",
+        "Mentors",
+        []
+      ],
+      [
+        "Mentor",
+        "PersonalInformation",
+        []
+      ],
+      [
+        "their",
+        "Requests",
+        []
+      ],
+      [
+        "their",
+        "MonthlyReport",
+        []
+      ],
+      [
+        "ActivityReport",
+        "ActivityReports",
+        []
+      ],
+      [
+        "Admin",
+        "Administrator",
+        []
+      ],
+      [
+        "Request",
+        "Requests",
+        []
+      ],
+      [
+        "Month",
+        "MonthlyBasis",
+        []
+      ],
+      [
+        "Month",
+        "MonthlyReport",
+        []
+      ]
+    ]
+  }
+}

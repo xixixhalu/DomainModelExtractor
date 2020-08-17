@@ -1,0 +1,168 @@
+{
+  "class_dict": {
+    "TourCreator": {
+      "Attribute": [
+        "Tours",
+        "Area",
+        "be"
+      ],
+      "Behavior": {
+        "upload": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "edit": [
+          ""
+        ],
+        "delete": [
+          ""
+        ],
+        "created": [
+          ""
+        ],
+        "sign": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "manage": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "use": [
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "promote": [
+          ""
+        ]
+      }
+    },
+    "Stop": {
+      "Attribute": [
+        "click"
+      ],
+      "Behavior": {}
+    },
+    "Map": {
+      "Attribute": [
+        "Stop"
+      ],
+      "Behavior": {}
+    },
+    "Tour": {
+      "Attribute": [
+        "desired",
+        "TourCreator",
+        "TourConductorWebsite",
+        "Tours",
+        "TourTaker"
+      ],
+      "Behavior": {}
+    },
+    "TourConductorWebsite": {
+      "Attribute": [
+        "Tours"
+      ],
+      "Behavior": {}
+    },
+    "TourTaker": {
+      "Attribute": [],
+      "Behavior": {
+        "click": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "choose": [
+          ""
+        ],
+        "select": [
+          ""
+        ],
+        "search": [
+          ""
+        ],
+        "Search": [
+          ""
+        ],
+        "have": [
+          ""
+        ]
+      }
+    },
+    "it": {
+      "Attribute": [],
+      "Behavior": {
+        "delete": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "manage": [
+          ""
+        ],
+        "use": [
+          ""
+        ],
+        "search": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "seems": [
+          ""
+        ],
+        "IrrelevantUpload": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "be",
+        "it",
+        []
+      ],
+      [
+        "be",
+        "TourCreator",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "Map",
+        "Stop",
+        []
+      ],
+      [
+        "Tour",
+        "TourCreator",
+        []
+      ],
+      [
+        "Tour",
+        "TourConductorWebsite",
+        []
+      ],
+      [
+        "Tour",
+        "TourTaker",
+        []
+      ]
+    ]
+  }
+}

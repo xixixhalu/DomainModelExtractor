@@ -1,0 +1,239 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Appointment",
+        "Location",
+        "Appointment",
+        "PersonalInformation",
+        "Information",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "see": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "want": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "use": [
+          ""
+        ],
+        "know": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "forget": [
+          ""
+        ],
+        "visit": [
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "update": [
+          ""
+        ],
+        "cancel": [
+          ""
+        ],
+        "inform": [
+          ""
+        ],
+        "modify": [
+          ""
+        ],
+        "decide": [
+          ""
+        ],
+        "go": [
+          ""
+        ],
+        "have": [
+          "",
+          ""
+        ],
+        "wait": [
+          ""
+        ],
+        "contact": [
+          ""
+        ],
+        "apply": [
+          ""
+        ]
+      }
+    },
+    "Pet": {
+      "Attribute": [
+        "Information",
+        "Pets"
+      ],
+      "Behavior": {
+        "go": [
+          ""
+        ]
+      }
+    },
+    "Pets": {
+      "Attribute": [
+        "Pictures"
+      ],
+      "Behavior": {}
+    },
+    "Shelter": {
+      "Attribute": [
+        "Information",
+        "ShelterInformation"
+      ],
+      "Behavior": {
+        "want": [
+          "",
+          ""
+        ],
+        "control": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "know": [
+          ""
+        ],
+        "input": [
+          ""
+        ]
+      }
+    },
+    "Appointment": {
+      "Attribute": [
+        "Appointments"
+      ],
+      "Behavior": {
+        "UserBooks": [
+          ""
+        ]
+      }
+    },
+    "it": {
+      "Attribute": [
+        "be"
+      ],
+      "Behavior": {
+        "stays": [
+          ""
+        ],
+        "misused": [
+          ""
+        ]
+      }
+    },
+    "Animals": {
+      "Attribute": [],
+      "Behavior": {
+        "Fuppy": [
+          ""
+        ]
+      }
+    },
+    "Information": {
+      "Attribute": [],
+      "Behavior": {
+        "get": [
+          "",
+          ""
+        ],
+        "visit": [
+          ""
+        ],
+        "modify": [
+          ""
+        ],
+        "see": [
+          "",
+          ""
+        ],
+        "want": [
+          ""
+        ],
+        "contact": [
+          ""
+        ],
+        "input": [
+          ""
+        ],
+        "apply": [
+          ""
+        ],
+        "stays": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "are",
+        "Animals",
+        []
+      ],
+      [
+        "be",
+        "it",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "User",
+        "Appointment",
+        []
+      ],
+      [
+        "User",
+        "Information",
+        []
+      ],
+      [
+        "Pet",
+        "Pets",
+        []
+      ],
+      [
+        "Pet",
+        "Information",
+        []
+      ],
+      [
+        "Shelter",
+        "Information",
+        []
+      ]
+    ]
+  }
+}

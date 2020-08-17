@@ -1,0 +1,209 @@
+{
+  "class_dict": {
+    "AdultLearner": {
+      "Attribute": [
+        "ConflictResolutionSkills",
+        "In-gameScore",
+        "ConflictManagementSkills"
+      ],
+      "Behavior": {
+        "practice": [
+          ""
+        ],
+        "EffectiveCommunicator": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "know": [
+          ""
+        ],
+        "progressing": [
+          ""
+        ],
+        "resolve": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "take": [
+          ""
+        ],
+        "judge": [
+          ""
+        ],
+        "need": [
+          ""
+        ],
+        "improve": [
+          ""
+        ]
+      }
+    },
+    "MbvStudent": {
+      "Attribute": [
+        "Team"
+      ],
+      "Behavior": {
+        "want": [
+          ""
+        ],
+        "participate": [
+          ""
+        ],
+        "collaborate": [
+          ""
+        ],
+        "improve": [
+          ""
+        ],
+        "use": [
+          "",
+          ""
+        ]
+      }
+    },
+    "Veteran": {
+      "Attribute": [
+        "ThoughtProcesses",
+        "Decisions",
+        "ThoughtProcesses",
+        "Veterans",
+        "'m"
+      ],
+      "Behavior": {
+        "want": [
+          ""
+        ],
+        "see": [
+          "",
+          ""
+        ],
+        "alone": [
+          ""
+        ],
+        "compare": [
+          "",
+          ""
+        ],
+        "use": [
+          ""
+        ]
+      }
+    },
+    "Team": {
+      "Attribute": [
+        "Teams",
+        "Teammates"
+      ],
+      "Behavior": {}
+    },
+    "ConflictResolution": {
+      "Attribute": [
+        "ConflictResolutionSkills",
+        "ConflictResolutionExercise"
+      ],
+      "Behavior": {}
+    },
+    "Decisions": {
+      "Attribute": [
+        "DecisionsOthers"
+      ],
+      "Behavior": {
+        "compare": [
+          ""
+        ]
+      }
+    },
+    "Conflict": {
+      "Attribute": [
+        "ConflictResolution",
+        "ConflictResolutionSkills",
+        "ConflictResolutionExercise",
+        "Conflicts",
+        "ConflictManagementSkills"
+      ],
+      "Behavior": {}
+    },
+    "Program": {
+      "Attribute": [
+        "is"
+      ],
+      "Behavior": {
+        "use": [
+          ""
+        ],
+        "interactive": [
+          ""
+        ],
+        "integrates": [
+          ""
+        ]
+      }
+    },
+    "Teams": {
+      "Attribute": [],
+      "Behavior": {
+        "resolve": [
+          ""
+        ]
+      }
+    },
+    "DecisionsOthers": {
+      "Attribute": [],
+      "Behavior": {
+        "made": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "am",
+        "AdultLearner",
+        []
+      ],
+      [
+        "is",
+        "Program",
+        []
+      ],
+      [
+        "'m",
+        "Veteran",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "MbvStudent",
+        "Team",
+        []
+      ],
+      [
+        "Veteran",
+        "Decisions",
+        []
+      ],
+      [
+        "Team",
+        "Teams",
+        []
+      ],
+      [
+        "Decisions",
+        "DecisionsOthers",
+        []
+      ],
+      [
+        "Conflict",
+        "ConflictResolution",
+        []
+      ]
+    ]
+  }
+}

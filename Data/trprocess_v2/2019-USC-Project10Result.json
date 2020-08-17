@@ -1,0 +1,56 @@
+{
+  "class_dict": {
+    "SocialMedia": {
+      "Attribute": [
+        "trending",
+        "SocialMediaData",
+        "SocialMediaBuzz",
+        "SocialMediaOfCertainMovies"
+      ],
+      "Behavior": {}
+    },
+    "User": {
+      "Attribute": [
+        "'m"
+      ],
+      "Behavior": {
+        "find": [
+          ""
+        ],
+        "input": [
+          ""
+        ],
+        "interested": [
+          ""
+        ]
+      }
+    },
+    "SocialMediaData": {
+      "Attribute": [],
+      "Behavior": {
+        "access": [
+          ""
+        ],
+        "create": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "'m",
+        "User",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "SocialMedia",
+        "SocialMediaData",
+        []
+      ]
+    ]
+  }
+}

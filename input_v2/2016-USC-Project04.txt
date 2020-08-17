@@ -1,0 +1,20 @@
+The Pipeline shall accept a SetOfImages as an Input .
+System can provide an Ui for Users to ViewImages .
+The Pipeline shall be controlled directly to Administrator .
+The Pipeline provides AdditionalFunctionality to the EndUserOfTheSystem .
+The Pipeline utilizes the ProvidedMachine learning Algorithms .
+The Ui is user friendly , clean , and efficient .
+The Pipeline shall send Text and Image to the User when CorrectImage has been found .
+The Pipeline shall use DetectorModel to detect the Images uploaded by the Users .
+The Pipeline shall store a Model for ImageClassification .
+The Pipeline shall pre-process TrainingImages .
+User can choose one Tag that User want to detect in User's Images .
+The Pipeline shall use DeepLearningAlgorithm .
+User can upload MultipleImages ( each with a Label to choose ) at the SameTime .
+The Pipeline shall handle the Image with Noise .
+The Pipeline shall get the Images from the Facebook via FacebookAPI .
+Client can upload an Image to the Pipeline and see a Text <classification> along with the InitialImage .
+Client can re train the Pipeline by giving a NewTopic and a NewSetOfImages .
+Client can run the EntireSystem in Client's OwnUnix based Server .
+Client can replace the Machine learning Algorithm used for training the Model without a MajorPipelineRefactor .
+Client can extract and replace the ResultingModel after the trainning Phase is complete .

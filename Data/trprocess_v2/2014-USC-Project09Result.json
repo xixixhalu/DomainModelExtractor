@@ -1,0 +1,137 @@
+{
+  "class_dict": {
+    "CurrentHostingProvider": {
+      "Attribute": [
+        "deployed"
+      ],
+      "Behavior": {}
+    },
+    "Tipsure": {
+      "Attribute": [
+        "CurrentHostingProvider",
+        "TipsureNumbers"
+      ],
+      "Behavior": {}
+    },
+    "User": {
+      "Attribute": [
+        "Users"
+      ],
+      "Behavior": {
+        "search": [
+          ""
+        ],
+        "review": [
+          ""
+        ],
+        "have": [
+          "",
+          ""
+        ],
+        "submit": [
+          ""
+        ],
+        "use": [
+          ""
+        ],
+        "add": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "reduced": [
+          ""
+        ],
+        "download": [
+          ""
+        ],
+        "share": [
+          ""
+        ],
+        "like": [
+          ""
+        ],
+        "see": [
+          ""
+        ]
+      }
+    },
+    "Tip": {
+      "Attribute": [
+        "Tipsure",
+        "TipsureNumbers",
+        "TipCalculator"
+      ],
+      "Behavior": {
+        "calculate": [
+          ""
+        ],
+        "split": [
+          ""
+        ]
+      }
+    },
+    "TipCalculator": {
+      "Attribute": [],
+      "Behavior": {
+        "use": [
+          ""
+        ],
+        "calculate": [
+          ""
+        ],
+        "split": [
+          ""
+        ]
+      }
+    },
+    "Users": {
+      "Attribute": [],
+      "Behavior": {
+        "lookup": [
+          ""
+        ]
+      }
+    },
+    "MaximumBudget": {
+      "Attribute": [],
+      "Behavior": {
+        "500": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "is",
+        "MaximumBudget",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "Tipsure",
+        "CurrentHostingProvider",
+        []
+      ],
+      [
+        "User",
+        "Users",
+        []
+      ],
+      [
+        "Tip",
+        "Tipsure",
+        []
+      ],
+      [
+        "Tip",
+        "TipCalculator",
+        []
+      ]
+    ]
+  }
+}

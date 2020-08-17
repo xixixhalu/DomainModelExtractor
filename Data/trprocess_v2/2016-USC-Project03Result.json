@@ -1,0 +1,25 @@
+{
+  "class_dict": {
+    "AppIcon": {
+      "Attribute": [
+        "clicking"
+      ],
+      "Behavior": {}
+    },
+    "App": {
+      "Attribute": [
+        "AppIcon"
+      ],
+      "Behavior": {}
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "App",
+        "AppIcon",
+        []
+      ]
+    ]
+  }
+}

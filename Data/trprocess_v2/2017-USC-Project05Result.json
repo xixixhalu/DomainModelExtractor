@@ -1,0 +1,29 @@
+{
+  "class_dict": {
+    "Lock": {
+      "Attribute": [
+        "LockBatteryStatus",
+        "LockNames",
+        "LockNumber",
+        "LockCode",
+        "LockCodes"
+      ],
+      "Behavior": {}
+    },
+    "LockCode": {
+      "Attribute": [
+        "LockCodes"
+      ],
+      "Behavior": {}
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "Lock",
+        "LockCode",
+        []
+      ]
+    ]
+  }
+}

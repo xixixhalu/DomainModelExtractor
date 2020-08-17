@@ -1,0 +1,57 @@
+Developer can do relatively Low-costKnowledgeTransfer to NewStaff with the AidOfWell-writtenDocumentation .
+System shall be easy and pleasant to use .
+SuperAdmin can log into the Site with a Username and Password .
+Admin can log into the Site with a Username and Password .
+Contributor can log into the Site with a Username and Password .
+Contributor can view OverallProjectProgress , CurrentWeekGoal , Verticals in Work .
+Contributor can view Goals made in PastWeeks or Goals made for FutureWeeks .
+Contributor can receive Notifications as a PieceOfContentMoves through the VariousStagesOfDevelopment ( approved , rejected , parked ) .
+Contributor can send or receive Message to or from OtherUsers .
+Contributor can track Contributor's OwnSuccessRate by the Draft to ApprovedPitchConversionRatio .
+Contributor can SignOutOfTheSystem and end Contributor's CurrentSession .
+Contributor can create a NewDraftIdea and add Details .
+Contributor can modify a Draft .
+Contributor can remove a Draft .
+Contributor can view a Draft 's Details .
+Contributor can pitch a drafted Idea .
+Contributor can view the DetailsOf a Pitch in the GlobalPitchBoard .
+Contributor can filter Pitches by Criteria such as Status , CreatorIDEtc . .
+Contributor can make Changes to Contributor's OwnProfile .
+SuperAdmin can view OverallProjectProgress , GoalVertical , NumberOfPitches needed by each Vertical , ProgressOfEachVertical .
+SuperAdmin can view Goals made for PastWeeks or FutureWeeks .
+SuperAdmin can receive Notifications as a PieceOfContentMoves through the VariousStagesOfDevelopment ( approved , rejected , parked ) .
+SuperAdmin can receive or send Messages from or to OtherUsers .
+SuperAdmin can LogOutOfTheSystem and end their CurrentSession .
+SuperAdmin can view or edit the DetailsOf a Pitch in the GlobalPitchBoard .
+SuperAdmin can approve/reject a Pitch .
+SuperAdmin can filter Pitches by Criteria .
+SuperAdmin can view/edit a Pitch in the WeeklyPublishingCalendar .
+SuperAdmin can approve the PublishingCalendar .
+SuperAdmin can filter Pitches by Criteria .
+SuperAdmin can export the WeeklyPublishingCalendar into a CsvFile .
+SuperAdmin can view/edit a Pitch in the ParkingBoard .
+SuperAdmin can pull a ParkedPitch into PublishingCalendar .
+SuperAdmin can view team member details .
+SuperAdmin can change a member 's account type .
+SuperAdmin can create a NewAdmin or ContributorAccount .
+SuperAdmin can delete an existing Account .
+SuperAdmin can set Goals for CurrentWeek and FutureWeeks .
+SuperAdmin can check PastWeeks ' Goals .
+SuperAdmin can modify SuperAdmin's OwnProfile .
+Admin can view ProjectProgress , CurrentWeekGoals and ProgressOfEachVertical .
+Admin can view Goals made in PastWeeks or made for FutureWeeks .
+Admin can receive Notification as a PieceOfContentMoves through the VariousStagesOfDevelopment ( approved , rejected , parked ) .
+Admin can send or receive Messages to or from OtherUsers .
+Admin can LogOutOfTheSystem and end Admin's Session .
+Admin can view/edit a Pitch in the GlobalPitchBoard .
+Admin can approve/reject a Pitch .
+Admin can filter Pitches by Criteria .
+Admin can view member details .
+Admin can change a member 's account type .
+Admin can create a NewAccount for Admin or Contributor .
+Admin can delete an existing Account .
+Admin can edit Admin's OwnProfile .
+For each vertical , ShowNumberOfDraft , NumberOfPitches submitted , NumberOfPitches approved / parked / rejected .
+SuperAdmin will receive Notification as a NewPitch needs to be reviewed .
+When WeeklyDeadline approves , WeeklyPublishingCalendar needs to be reviewed .
+Admin will receive Notification as a NewPitch needs to be reviewed .

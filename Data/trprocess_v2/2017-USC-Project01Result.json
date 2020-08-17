@@ -1,0 +1,123 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Registration",
+        "Password",
+        "Email",
+        "Project",
+        "UserPermission",
+        "Users",
+        "UsersPasswords",
+        "am",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "receive": [
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "confirm": [
+          ""
+        ],
+        "see": [
+          "",
+          ""
+        ],
+        "export": [
+          ""
+        ],
+        "perform": [
+          ""
+        ],
+        "reset": [
+          ""
+        ],
+        "request": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "interact": [
+          ""
+        ],
+        "open": [
+          ""
+        ]
+      }
+    },
+    "System": {
+      "Attribute": [
+        "SystemScatterplotChartOfTheCoevolutionOf",
+        "be"
+      ],
+      "Behavior": {
+        "https": [
+          ""
+        ],
+        "React.js": [
+          ""
+        ]
+      }
+    },
+    "Project": {
+      "Attribute": [
+        "Projects",
+        "ProjectAnalysisView"
+      ],
+      "Behavior": {}
+    },
+    "Users": {
+      "Attribute": [
+        "UsersPasswords",
+        "be"
+      ],
+      "Behavior": {
+        "able": [
+          ""
+        ],
+        "work": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "be",
+        "System",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "User",
+        "Project",
+        []
+      ],
+      [
+        "User",
+        "Users",
+        []
+      ]
+    ]
+  }
+}

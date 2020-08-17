@@ -1,0 +1,306 @@
+{
+  "class_dict": {
+    "RegisteredUser": {
+      "Attribute": [
+        "Finances",
+        "PaymentHistory",
+        "Session",
+        "PaymentMethod",
+        "MessageHistory",
+        "SessionAppointmentHistory",
+        "VideoRecords",
+        "PersonalInformation",
+        "be",
+        "am"
+      ],
+      "Behavior": {
+        "video": [
+          ""
+        ],
+        "search": [
+          "",
+          ""
+        ],
+        "access": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "manage": [
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rate": [
+          ""
+        ],
+        "had": [
+          ""
+        ],
+        "pay": [
+          ""
+        ],
+        "update": [
+          ""
+        ],
+        "view": [
+          "",
+          ""
+        ],
+        "authorize": [
+          ""
+        ],
+        "chat": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "ask": [
+          ""
+        ],
+        "satisfied": [
+          ""
+        ],
+        "received": [
+          ""
+        ],
+        "schedule": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "sign": [
+          ""
+        ]
+      }
+    },
+    "FinancialExpert": {
+      "Attribute": [
+        "ReceivedPaymentHistory",
+        "Calendar",
+        "Session",
+        "Profile",
+        "ProfileBio",
+        "Status",
+        "Notes",
+        "VideoRecords",
+        "Client",
+        "Calendar",
+        "Customers",
+        "FinancialExperts",
+        "be",
+        "am"
+      ],
+      "Behavior": {
+        "rate": [
+          ""
+        ],
+        "see": [
+          "",
+          ""
+        ],
+        "manage": [
+          "",
+          ""
+        ],
+        "receive": [
+          "",
+          ""
+        ],
+        "update": [
+          ""
+        ],
+        "set": [
+          "",
+          ""
+        ],
+        "store": [
+          ""
+        ],
+        "authorize": [
+          ""
+        ],
+        "given": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "make": [
+          ""
+        ],
+        "available": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "keep": [
+          ""
+        ],
+        "sign": [
+          ""
+        ]
+      }
+    },
+    "Calendar": {
+      "Attribute": [
+        "Times"
+      ],
+      "Behavior": {
+        "manage": [
+          ""
+        ]
+      }
+    },
+    "User": {
+      "Attribute": [
+        "Users"
+      ],
+      "Behavior": {}
+    },
+    "Appointment": {
+      "Attribute": [
+        "AppointmentAvailability",
+        "AppointmentSession",
+        "Appointments"
+      ],
+      "Behavior": {
+        "had": [
+          ""
+        ]
+      }
+    },
+    "App": {
+      "Attribute": [
+        "Appointment",
+        "AppointmentAvailability",
+        "AppointmentSession",
+        "Appointments"
+      ],
+      "Behavior": {}
+    },
+    "Profile": {
+      "Attribute": [
+        "ProfileBio",
+        "ProfilesOfFinancialExperts"
+      ],
+      "Behavior": {}
+    },
+    "Session": {
+      "Attribute": [
+        "SessionAppointmentHistory"
+      ],
+      "Behavior": {}
+    },
+    "AppointmentAvailability": {
+      "Attribute": [],
+      "Behavior": {
+        "VideoChat": [
+          ""
+        ]
+      }
+    },
+    "VideoRecords": {
+      "Attribute": [],
+      "Behavior": {
+        "gain": [
+          ""
+        ]
+      }
+    },
+    "AppointmentSession": {
+      "Attribute": [],
+      "Behavior": {
+        "completed": [
+          ""
+        ]
+      }
+    },
+    "Users": {
+      "Attribute": [],
+      "Behavior": {
+        "select": [
+          ""
+        ],
+        "commit": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "RegisteredUser",
+        "Session",
+        []
+      ],
+      [
+        "RegisteredUser",
+        "VideoRecords",
+        []
+      ],
+      [
+        "FinancialExpert",
+        "Calendar",
+        []
+      ],
+      [
+        "FinancialExpert",
+        "Profile",
+        []
+      ],
+      [
+        "FinancialExpert",
+        "Session",
+        []
+      ],
+      [
+        "FinancialExpert",
+        "VideoRecords",
+        []
+      ],
+      [
+        "User",
+        "Users",
+        []
+      ],
+      [
+        "Appointment",
+        "AppointmentAvailability",
+        []
+      ],
+      [
+        "Appointment",
+        "AppointmentSession",
+        []
+      ],
+      [
+        "App",
+        "Appointment",
+        []
+      ],
+      [
+        "App",
+        "AppointmentAvailability",
+        []
+      ],
+      [
+        "App",
+        "AppointmentSession",
+        []
+      ]
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Cgm",
+        "BloodSugar",
+        "PersonalInformation",
+        "Health",
+        "InsulinUsage",
+        "FoodConsumption",
+        "PersonalInformation",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "connect": [
+          ""
+        ],
+        "able": [
+          "",
+          ""
+        ],
+        "download": [
+          ""
+        ],
+        "set": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "enter": [
+          ""
+        ],
+        "input": [
+          ""
+        ],
+        "use": [
+          ""
+        ],
+        "sign": [
+          ""
+        ],
+        "login": [
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "Map": [
+          ""
+        ],
+        "want": [
+          "",
+          ""
+        ]
+      }
+    },
+    "PersonalInformation": {
+      "Attribute": [
+        "Account"
+      ],
+      "Behavior": {}
+    },
+    "Health": {
+      "Attribute": [
+        "PushNotification"
+      ],
+      "Behavior": {}
+    },
+    "BloodSugar": {
+      "Attribute": [],
+      "Behavior": {
+        "gets": [
+          ""
+        ]
+      }
+    },
+    "Account": {
+      "Attribute": [],
+      "Behavior": {
+        "set": [
+          ""
+        ],
+        "using": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "User",
+        "PersonalInformation",
+        []
+      ],
+      [
+        "User",
+        "Health",
+        []
+      ],
+      [
+        "User",
+        "BloodSugar",
+        []
+      ],
+      [
+        "PersonalInformation",
+        "Account",
+        []
+      ]
+    ]
+  }
+}

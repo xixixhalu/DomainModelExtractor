@@ -1,0 +1,127 @@
+{
+  "class_dict": {
+    "Behalf": {
+      "Attribute": [
+        "manage"
+      ],
+      "Behavior": {}
+    },
+    "Office": {
+      "Attribute": [
+        "Behalf"
+      ],
+      "Behavior": {
+        "manage": [
+          ""
+        ]
+      }
+    },
+    "Doctor": {
+      "Attribute": [
+        "Behalf",
+        "Patients",
+        "Data",
+        "Patients",
+        "SchedulingApplication",
+        "am"
+      ],
+      "Behavior": {
+        "match": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "recommend": [
+          ""
+        ],
+        "want": [
+          ""
+        ],
+        "edit": [
+          ""
+        ],
+        "fill": [
+          ""
+        ],
+        "choose": [
+          "",
+          ""
+        ]
+      }
+    },
+    "Admin": {
+      "Attribute": [
+        "Profession",
+        "AdministrativeUser",
+        "Administrator"
+      ],
+      "Behavior": {
+        "customize": [
+          ""
+        ]
+      }
+    },
+    "App": {
+      "Attribute": [
+        "Application"
+      ],
+      "Behavior": {
+        "integrate": [
+          ""
+        ]
+      }
+    },
+    "Administrator": {
+      "Attribute": [
+        "am"
+      ],
+      "Behavior": {
+        "able": [
+          ""
+        ],
+        "save": [
+          ""
+        ],
+        "retrieve": [
+          ""
+        ]
+      }
+    },
+    "Application": {
+      "Attribute": [],
+      "Behavior": {
+        "handles": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "Office",
+        "Behalf",
+        []
+      ],
+      [
+        "Doctor",
+        "Behalf",
+        []
+      ],
+      [
+        "Admin",
+        "Administrator",
+        []
+      ],
+      [
+        "App",
+        "Application",
+        []
+      ]
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Details",
+        "RegisteredUsername",
+        "OwnProfile",
+        "GameProfile",
+        "Liking",
+        "Password",
+        "ProfileInformation",
+        "Users",
+        "be"
+      ],
+      "Behavior": {
+        "register": [
+          ""
+        ],
+        "login": [
+          "",
+          ""
+        ],
+        "click": [
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "won": [
+          ""
+        ],
+        "place": [
+          "",
+          ""
+        ],
+        "Password": [
+          ""
+        ],
+        "play": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "have": [
+          "",
+          ""
+        ],
+        "beat": [
+          ""
+        ],
+        "choose": [
+          ""
+        ],
+        "edit": [
+          "",
+          ""
+        ],
+        "change": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "hear": [
+          ""
+        ],
+        "quit": [
+          ""
+        ],
+        "want": [
+          ""
+        ],
+        "log": [
+          ""
+        ],
+        "lost": [
+          ""
+        ],
+        "gained": [
+          ""
+        ],
+        "recover": [
+          ""
+        ],
+        "mute": [
+          ""
+        ],
+        "remove": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "detonate": [
+          ""
+        ],
+        "trying": [
+          ""
+        ]
+      }
+    },
+    "Grid": {
+      "Attribute": [
+        "anywhere",
+        "given"
+      ],
+      "Behavior": {}
+    },
+    "Users": {
+      "Attribute": [
+        "more"
+      ],
+      "Behavior": {}
+    },
+    "DifferentPlatforms": {
+      "Attribute": [
+        "Game"
+      ],
+      "Behavior": {}
+    },
+    "*": {
+      "Attribute": [
+        "given",
+        "Grid",
+        "place",
+        "given",
+        "Grid",
+        "placed",
+        "given",
+        "Grid"
+      ],
+      "Behavior": {}
+    },
+    "Game": {
+      "Attribute": [
+        "GameProfile"
+      ],
+      "Behavior": {
+        "play": [
+          ""
+        ],
+        "attracts": [
+          ""
+        ]
+      }
+    },
+    "System": {
+      "Attribute": [
+        "be"
+      ],
+      "Behavior": {
+        "compatible": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "include": [
+          ""
+        ],
+        "scalable": [
+          ""
+        ]
+      }
+    },
+    "it": {
+      "Attribute": [
+        "is"
+      ],
+      "Behavior": {
+        "maintainable": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "is",
+        "it",
+        []
+      ],
+      [
+        "be",
+        "System",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "User",
+        "Users",
+        []
+      ],
+      [
+        "DifferentPlatforms",
+        "Game",
+        []
+      ],
+      [
+        "*",
+        "Grid",
+        []
+      ]
+    ]
+  }
+}

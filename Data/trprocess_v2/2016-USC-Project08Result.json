@@ -1,0 +1,87 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Account",
+        "Account",
+        "Users"
+      ],
+      "Behavior": {
+        "sign": [
+          ""
+        ],
+        "change/reset": [
+          ""
+        ],
+        "delete": [
+          ""
+        ],
+        "send/receive": [
+          ""
+        ],
+        "post": [
+          ""
+        ],
+        "comment": [
+          "",
+          ""
+        ],
+        "access": [
+          ""
+        ],
+        "like/unlike": [
+          ""
+        ],
+        "share": [
+          ""
+        ]
+      }
+    },
+    "Issues": {
+      "Attribute": [
+        "comment",
+        "existing"
+      ],
+      "Behavior": {}
+    },
+    "GeneralForum": {
+      "Attribute": [
+        "Issues"
+      ],
+      "Behavior": {}
+    },
+    "Account": {
+      "Attribute": [
+        "Accounts"
+      ],
+      "Behavior": {}
+    },
+    "Users": {
+      "Attribute": [],
+      "Behavior": {
+        "use": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "User",
+        "Account",
+        []
+      ],
+      [
+        "User",
+        "Users",
+        []
+      ],
+      [
+        "GeneralForum",
+        "Issues",
+        []
+      ]
+    ]
+  }
+}

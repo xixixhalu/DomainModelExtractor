@@ -1,0 +1,231 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Friends",
+        "Friends",
+        "ChallengeScore",
+        "Rank",
+        "PreviousPageB/c",
+        "Photos",
+        "Photo",
+        "Users",
+        "am"
+      ],
+      "Behavior": {
+        "see": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "send": [
+          ""
+        ],
+        "get": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "try": [
+          ""
+        ],
+        "give": [
+          ""
+        ],
+        "sent": [
+          ""
+        ],
+        "verify": [
+          ""
+        ],
+        "posted": [
+          ""
+        ],
+        "Reward": [
+          ""
+        ],
+        "finished": [
+          ""
+        ],
+        "check": [
+          "",
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "invite": [
+          "",
+          ""
+        ],
+        "use": [
+          "",
+          ""
+        ],
+        "receive": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "do": [
+          ""
+        ],
+        "play": [
+          ""
+        ],
+        "Chance": [
+          ""
+        ],
+        "click": [
+          ""
+        ],
+        "add": [
+          ""
+        ],
+        "pick": [
+          ""
+        ],
+        "preview": [
+          ""
+        ],
+        "submit": [
+          ""
+        ],
+        "know": [
+          ""
+        ]
+      }
+    },
+    "Challenge": {
+      "Attribute": [
+        "completed",
+        "upcoming",
+        "ChallengeRequest",
+        "ChallengeNotification",
+        "Challenges",
+        "ChallengeScore",
+        "ChallengerList",
+        "Challengers",
+        "ChallengePage",
+        "Challenge-relatedPosts",
+        "ChallengeTask",
+        "ChallengeGame"
+      ],
+      "Behavior": {}
+    },
+    "Challenges": {
+      "Attribute": [
+        "upcoming"
+      ],
+      "Behavior": {
+        "see": [
+          ""
+        ]
+      }
+    },
+    "Users": {
+      "Attribute": [
+        "registered"
+      ],
+      "Behavior": {}
+    },
+    "Photos": {
+      "Attribute": [
+        "Text"
+      ],
+      "Behavior": {}
+    },
+    "Game": {
+      "Attribute": [
+        "see"
+      ],
+      "Behavior": {}
+    },
+    "Page": {
+      "Attribute": [
+        "Game"
+      ],
+      "Behavior": {}
+    },
+    "App": {
+      "Attribute": [
+        "Application"
+      ],
+      "Behavior": {}
+    },
+    "Photo": {
+      "Attribute": [
+        "Photo/video",
+        "Photos"
+      ],
+      "Behavior": {
+        "post": [
+          ""
+        ]
+      }
+    },
+    "Challengers": {
+      "Attribute": [],
+      "Behavior": {
+        "challenged": [
+          ""
+        ]
+      }
+    },
+    "Application": {
+      "Attribute": [],
+      "Behavior": {
+        "improve": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "User",
+        "Users",
+        []
+      ],
+      [
+        "User",
+        "Photos",
+        []
+      ],
+      [
+        "User",
+        "Photo",
+        []
+      ],
+      [
+        "Challenge",
+        "Challenges",
+        []
+      ],
+      [
+        "Challenge",
+        "Challengers",
+        []
+      ],
+      [
+        "Page",
+        "Game",
+        []
+      ],
+      [
+        "App",
+        "Application",
+        []
+      ],
+      [
+        "Photo",
+        "Photos",
+        []
+      ]
+    ]
+  }
+}

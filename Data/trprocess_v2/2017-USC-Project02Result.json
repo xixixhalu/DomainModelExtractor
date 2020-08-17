@@ -1,0 +1,62 @@
+{
+  "class_dict": {
+    "Item": {
+      "Attribute": [
+        "given",
+        "click",
+        "Items"
+      ],
+      "Behavior": {
+        "re-order": [
+          ""
+        ],
+        "Stock": [
+          ""
+        ]
+      }
+    },
+    "Admin": {
+      "Attribute": [
+        "AdminUser"
+      ],
+      "Behavior": {
+        "add": [
+          ""
+        ],
+        "read": [
+          ""
+        ],
+        "change": [
+          ""
+        ],
+        "reserve": [
+          ""
+        ]
+      }
+    },
+    "AdminUser": {
+      "Attribute": [],
+      "Behavior": {
+        "get": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "is",
+        "Item",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "Admin",
+        "AdminUser",
+        []
+      ]
+    ]
+  }
+}

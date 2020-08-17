@@ -1,0 +1,442 @@
+{
+  "class_dict": {
+    "Website": {
+      "Attribute": [
+        "list",
+        "Blogs",
+        "Health-relatedIssues",
+        "WebsiteOwner/moderator",
+        "WebsiteEndUser",
+        "be"
+      ],
+      "Behavior": {
+        "offers": [
+          ""
+        ],
+        "straight": [
+          ""
+        ],
+        "use": [
+          ""
+        ]
+      }
+    },
+    "Vendor": {
+      "Attribute": [
+        "Items",
+        "ItemPrices",
+        "Pricing",
+        "Profile",
+        "Products",
+        "VendorAccounts",
+        "Vendors"
+      ],
+      "Behavior": {
+        "list": [
+          ""
+        ],
+        "manage": [
+          ""
+        ],
+        "communicate": [
+          ""
+        ],
+        "provide": [
+          ""
+        ],
+        "offer": [
+          ""
+        ],
+        "look": [
+          ""
+        ],
+        "compare": [
+          ""
+        ],
+        "make": [
+          ""
+        ],
+        "gather": [
+          ""
+        ],
+        "improve": [
+          ""
+        ],
+        "Services": [
+          ""
+        ],
+        "upload": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "ship": [
+          ""
+        ],
+        "publish": [
+          ""
+        ],
+        "inform": [
+          ""
+        ],
+        "convince": [
+          ""
+        ],
+        "add": [
+          ""
+        ]
+      }
+    },
+    "Blogs": {
+      "Attribute": [
+        "RelatedInformation"
+      ],
+      "Behavior": {}
+    },
+    "WebsiteOwner/moderator": {
+      "Attribute": [
+        "Customers"
+      ],
+      "Behavior": {
+        "post": [
+          "",
+          ""
+        ],
+        "suspend": [
+          ""
+        ],
+        "approve": [
+          ""
+        ],
+        "sort": [
+          ""
+        ],
+        "communicate": [
+          ""
+        ],
+        "help": [
+          ""
+        ]
+      }
+    },
+    "Vendors": {
+      "Attribute": [
+        "best"
+      ],
+      "Behavior": {
+        "sort": [
+          ""
+        ],
+        "determine": [
+          ""
+        ]
+      }
+    },
+    "their": {
+      "Attribute": [
+        "Products"
+      ],
+      "Behavior": {}
+    },
+    "Consumer": {
+      "Attribute": [
+        "Account",
+        "Password",
+        "Account",
+        "Cart",
+        "Cart",
+        "SearchResults",
+        "SecurityQuestions",
+        "Consumers",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "search": [
+          "",
+          ""
+        ],
+        "gain": [
+          "",
+          ""
+        ],
+        "participate": [
+          ""
+        ],
+        "help": [
+          ""
+        ],
+        "manage": [
+          "",
+          "",
+          ""
+        ],
+        "get": [
+          "",
+          "",
+          ""
+        ],
+        "keep": [
+          ""
+        ],
+        "do": [
+          ""
+        ],
+        "refer": [
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "add": [
+          ""
+        ],
+        "narrow": [
+          ""
+        ],
+        "find": [
+          "",
+          ""
+        ],
+        "reset": [
+          ""
+        ],
+        "VerifyingId": [
+          ""
+        ],
+        "leave": [
+          ""
+        ],
+        "sort": [
+          ""
+        ],
+        "looking": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "able": [
+          "",
+          ""
+        ],
+        "subscribe": [
+          ""
+        ],
+        "Rate": [
+          ""
+        ],
+        "ReviewVendors": [
+          ""
+        ]
+      }
+    },
+    "Consumers": {
+      "Attribute": [
+        "more"
+      ],
+      "Behavior": {}
+    },
+    "Profile": {
+      "Attribute": [
+        "Video"
+      ],
+      "Behavior": {}
+    },
+    "ProductCatalog": {
+      "Attribute": [
+        "add",
+        "sold"
+      ],
+      "Behavior": {}
+    },
+    "Products": {
+      "Attribute": [
+        "types"
+      ],
+      "Behavior": {
+        "sort": [
+          ""
+        ],
+        "ship": [
+          ""
+        ],
+        "are": [
+          ""
+        ]
+      }
+    },
+    "types": {
+      "Attribute": [
+        "Certain"
+      ],
+      "Behavior": {}
+    },
+    "Account": {
+      "Attribute": [
+        "AccountOf"
+      ],
+      "Behavior": {
+        "manage": [
+          ""
+        ],
+        "safe": [
+          ""
+        ]
+      }
+    },
+    "Product": {
+      "Attribute": [
+        "Products",
+        "ProductCatalog"
+      ],
+      "Behavior": {
+        "search": [
+          ""
+        ],
+        "find": [
+          ""
+        ],
+        "suits": [
+          ""
+        ]
+      }
+    },
+    "WebsiteEndUser": {
+      "Attribute": [],
+      "Behavior": {
+        "get": [
+          "",
+          ""
+        ],
+        "manage": [
+          "",
+          ""
+        ],
+        "do": [
+          ""
+        ],
+        "narrow": [
+          ""
+        ],
+        "suits": [
+          ""
+        ],
+        "reset": [
+          ""
+        ],
+        "leave": [
+          ""
+        ],
+        "provide": [
+          ""
+        ],
+        "offer": [
+          ""
+        ],
+        "compare": [
+          ""
+        ],
+        "make": [
+          ""
+        ],
+        "gather": [
+          ""
+        ],
+        "upload": [
+          ""
+        ],
+        "are": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "publish": [
+          ""
+        ],
+        "inform": [
+          ""
+        ],
+        "buy": [
+          ""
+        ],
+        "find": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "'s",
+        "Vendor",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "Website",
+        "Blogs",
+        []
+      ],
+      [
+        "Website",
+        "WebsiteOwner/moderator",
+        []
+      ],
+      [
+        "Website",
+        "WebsiteEndUser",
+        []
+      ],
+      [
+        "Vendor",
+        "Vendors",
+        []
+      ],
+      [
+        "Vendor",
+        "Profile",
+        []
+      ],
+      [
+        "Vendor",
+        "Products",
+        []
+      ],
+      [
+        "their",
+        "Products",
+        []
+      ],
+      [
+        "Consumer",
+        "Consumers",
+        []
+      ],
+      [
+        "Consumer",
+        "Account",
+        []
+      ],
+      [
+        "Products",
+        "types",
+        []
+      ],
+      [
+        "Product",
+        "ProductCatalog",
+        []
+      ],
+      [
+        "Product",
+        "Products",
+        []
+      ]
+    ]
+  }
+}

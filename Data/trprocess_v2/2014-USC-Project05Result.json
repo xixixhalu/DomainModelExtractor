@@ -1,0 +1,143 @@
+{
+  "class_dict": {
+    "Customers": {
+      "Attribute": [
+        "less"
+      ],
+      "Behavior": {
+        "go": [
+          ""
+        ],
+        "voicemail": [
+          ""
+        ]
+      }
+    },
+    "Sale": {
+      "Attribute": [
+        "SalesAgent",
+        "SalesManager"
+      ],
+      "Behavior": {
+        "close": [
+          ""
+        ]
+      }
+    },
+    "Customer": {
+      "Attribute": [
+        "Customers"
+      ],
+      "Behavior": {
+        "route": [
+          ""
+        ]
+      }
+    },
+    "Agent": {
+      "Attribute": [
+        "Agents",
+        "AgentWhile",
+        "is"
+      ],
+      "Behavior": {
+        "available": [
+          ""
+        ]
+      }
+    },
+    "SalesManager": {
+      "Attribute": [],
+      "Behavior": {
+        "listen": [
+          "",
+          ""
+        ],
+        "assure": [
+          "",
+          ""
+        ],
+        "use": [
+          ""
+        ],
+        "train": [
+          ""
+        ],
+        "jump": [
+          ""
+        ],
+        "help": [
+          ""
+        ],
+        "speak": [
+          ""
+        ],
+        "guide": [
+          ""
+        ]
+      }
+    },
+    "SalesAgent": {
+      "Attribute": [],
+      "Behavior": {
+        "answer": [
+          ""
+        ],
+        "log": [
+          ""
+        ],
+        "pull": [
+          ""
+        ],
+        "use": [
+          ""
+        ],
+        "train": [
+          ""
+        ],
+        "request": [
+          "",
+          ""
+        ],
+        "click-to-call": [
+          ""
+        ],
+        "AutoDialCustomers": [
+          ""
+        ],
+        "save": [
+          ""
+        ],
+        "close": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "is",
+        "Agent",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "Sale",
+        "SalesManager",
+        []
+      ],
+      [
+        "Sale",
+        "SalesAgent",
+        []
+      ],
+      [
+        "Customer",
+        "Customers",
+        []
+      ]
+    ]
+  }
+}

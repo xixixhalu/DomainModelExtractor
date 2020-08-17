@@ -1,0 +1,43 @@
+{
+  "class_dict": {
+    "Draft": {
+      "Attribute": [
+        "Details"
+      ],
+      "Behavior": {}
+    },
+    "Details": {
+      "Attribute": [
+        "DetailsOf"
+      ],
+      "Behavior": {}
+    },
+    "CurrentWeekGoal": {
+      "Attribute": [
+        "CurrentWeekGoals"
+      ],
+      "Behavior": {}
+    },
+    "CurrentWeek": {
+      "Attribute": [
+        "CurrentWeekGoal",
+        "CurrentWeekGoals"
+      ],
+      "Behavior": {}
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "Draft",
+        "Details",
+        []
+      ],
+      [
+        "CurrentWeek",
+        "CurrentWeekGoal",
+        []
+      ]
+    ]
+  }
+}

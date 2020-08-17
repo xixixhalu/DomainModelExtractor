@@ -1,0 +1,217 @@
+{
+  "class_dict": {
+    "Users": {
+      "Attribute": [
+        "Sign-inRequests"
+      ],
+      "Behavior": {}
+    },
+    "User": {
+      "Attribute": [
+        "SocialMedia",
+        "Profile",
+        "Account",
+        "ProfilePicture",
+        "LatestLinkedInProfilePicture",
+        "Users",
+        "UserProfile",
+        "UserInformation",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "log": [
+          "",
+          ""
+        ],
+        "look": [
+          "",
+          ""
+        ],
+        "update": [
+          ""
+        ],
+        "resume": [
+          ""
+        ],
+        "able": [
+          "",
+          ""
+        ],
+        "see": [
+          "",
+          ""
+        ],
+        "authenticate": [
+          ""
+        ],
+        "find": [
+          ""
+        ],
+        "keep": [
+          ""
+        ],
+        "sort": [
+          ""
+        ],
+        "disable": [
+          ""
+        ],
+        "filter": [
+          ""
+        ],
+        "search": [
+          "",
+          ""
+        ],
+        "click": [
+          ""
+        ]
+      }
+    },
+    "SocialMedia": {
+      "Attribute": [
+        "Events"
+      ],
+      "Behavior": {}
+    },
+    "System": {
+      "Attribute": [
+        "SystemAdmin"
+      ],
+      "Behavior": {
+        "fetch": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "persist": [
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "get": [
+          "",
+          ""
+        ],
+        "render": [
+          "",
+          "",
+          ""
+        ],
+        "export": [
+          ""
+        ],
+        "highlight": [
+          ""
+        ],
+        "have": [
+          ""
+        ]
+      }
+    },
+    "Events": {
+      "Attribute": [
+        "Events/documents/users"
+      ],
+      "Behavior": {}
+    },
+    "Profile": {
+      "Attribute": [
+        "ProfilesOfCsseProfessorsAndAlumni",
+        "ProfilePicture"
+      ],
+      "Behavior": {}
+    },
+    "Content": {
+      "Attribute": [
+        "is"
+      ],
+      "Behavior": {
+        "innapropriate": [
+          ""
+        ]
+      }
+    },
+    "SystemAdmin": {
+      "Attribute": [],
+      "Behavior": {
+        "approve": [
+          ""
+        ]
+      }
+    },
+    "ProfilePicture": {
+      "Attribute": [],
+      "Behavior": {
+        "upload": [
+          ""
+        ]
+      }
+    },
+    "Events/documents/users": {
+      "Attribute": [],
+      "Behavior": {
+        "trending": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "is",
+        "Content",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "User",
+        "Users",
+        []
+      ],
+      [
+        "User",
+        "SocialMedia",
+        []
+      ],
+      [
+        "User",
+        "Profile",
+        []
+      ],
+      [
+        "User",
+        "ProfilePicture",
+        []
+      ],
+      [
+        "SocialMedia",
+        "Events",
+        []
+      ],
+      [
+        "System",
+        "SystemAdmin",
+        []
+      ],
+      [
+        "Events",
+        "Events/documents/users",
+        []
+      ],
+      [
+        "Profile",
+        "ProfilePicture",
+        []
+      ]
+    ]
+  }
+}

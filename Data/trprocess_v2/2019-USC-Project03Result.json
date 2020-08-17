@@ -1,0 +1,261 @@
+{
+  "class_dict": {
+    "his": {
+      "Attribute": [
+        "Child"
+      ],
+      "Behavior": {}
+    },
+    "their": {
+      "Attribute": [
+        "Children",
+        "Assignment",
+        "Confirmation"
+      ],
+      "Behavior": {}
+    },
+    "Assignment": {
+      "Attribute": [
+        "finished",
+        "Assignments"
+      ],
+      "Behavior": {
+        "post": [
+          ""
+        ]
+      }
+    },
+    "Student": {
+      "Attribute": [
+        "Groups",
+        "Students"
+      ],
+      "Behavior": {
+        "add": [
+          ""
+        ],
+        "schedule": [
+          ""
+        ],
+        "check": [
+          "",
+          ""
+        ],
+        "join": [
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "send": [
+          ""
+        ],
+        "receive": [
+          ""
+        ],
+        "manage": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "upvote": [
+          ""
+        ],
+        "find": [
+          ""
+        ],
+        "bookmark": [
+          ""
+        ],
+        "favorite": [
+          ""
+        ]
+      }
+    },
+    "Teacher": {
+      "Attribute": [
+        "Class",
+        "Time",
+        "Students",
+        "Students",
+        "Students",
+        "Student",
+        "TeacherUser",
+        "Teachers"
+      ],
+      "Behavior": {
+        "see": [
+          ""
+        ],
+        "upload": [
+          ""
+        ],
+        "assign": [
+          ""
+        ],
+        "check": [
+          ""
+        ],
+        "send": [
+          ""
+        ],
+        "contact": [
+          ""
+        ]
+      }
+    },
+    "Child": {
+      "Attribute": [
+        "Children"
+      ],
+      "Behavior": {}
+    },
+    "Question": {
+      "Attribute": [
+        "Questions"
+      ],
+      "Behavior": {}
+    },
+    "Class": {
+      "Attribute": [
+        "ClassesHe/she"
+      ],
+      "Behavior": {}
+    },
+    "Questions": {
+      "Attribute": [
+        "are"
+      ],
+      "Behavior": {
+        "relevant": [
+          ""
+        ]
+      }
+    },
+    "TeacherUser": {
+      "Attribute": [],
+      "Behavior": {
+        "post": [
+          ""
+        ],
+        "improve": [
+          ""
+        ]
+      }
+    },
+    "Students": {
+      "Attribute": [],
+      "Behavior": {
+        "contact": [
+          ""
+        ],
+        "upload": [
+          ""
+        ],
+        "finish": [
+          ""
+        ],
+        "have": [
+          ""
+        ]
+      }
+    },
+    "ClassesHe/she": {
+      "Attribute": [],
+      "Behavior": {
+        "visiting": [
+          ""
+        ],
+        "connect": [
+          ""
+        ]
+      }
+    },
+    "what": {
+      "Attribute": [],
+      "Behavior": {
+        "trending": [
+          ""
+        ],
+        "Students": [
+          ""
+        ]
+      }
+    },
+    "Teachers": {
+      "Attribute": [],
+      "Behavior": {
+        "create/update": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "are",
+        "what",
+        []
+      ],
+      [
+        "are",
+        "Questions",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "his",
+        "Child",
+        []
+      ],
+      [
+        "their",
+        "Assignment",
+        []
+      ],
+      [
+        "Student",
+        "Students",
+        []
+      ],
+      [
+        "Teacher",
+        "Student",
+        []
+      ],
+      [
+        "Teacher",
+        "Class",
+        []
+      ],
+      [
+        "Teacher",
+        "TeacherUser",
+        []
+      ],
+      [
+        "Teacher",
+        "Students",
+        []
+      ],
+      [
+        "Teacher",
+        "Teachers",
+        []
+      ],
+      [
+        "Question",
+        "Questions",
+        []
+      ],
+      [
+        "Class",
+        "ClassesHe/she",
+        []
+      ]
+    ]
+  }
+}

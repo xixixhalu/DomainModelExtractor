@@ -1,0 +1,44 @@
+{
+  "class_dict": {
+    "ProjectPlan": {
+      "Attribute": [
+        "documented"
+      ],
+      "Behavior": {}
+    },
+    "Project": {
+      "Attribute": [
+        "ProjectPlan"
+      ],
+      "Behavior": {
+        "have": [
+          ""
+        ]
+      }
+    },
+    "this": {
+      "Attribute": [],
+      "Behavior": {
+        "MainCoreOfTheProject": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "be",
+        "this",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "Project",
+        "ProjectPlan",
+        []
+      ]
+    ]
+  }
+}

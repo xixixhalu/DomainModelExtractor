@@ -20,9 +20,9 @@ class Identifier:
         
 
     def __display(self, title, content):
-        print '[' + title + ']'
+        print('[' + title + ']')
         if title == 'Sentence':
-            print content
+            print(content)
             index = ''
             begin, end = 0, 0
             for elem in self.__output['sentences'][0]['tokens']:
@@ -30,14 +30,14 @@ class Identifier:
                 for i in range(begin, end - len(str(elem['index']))):
                     index += ' '
                 if re.match("^[,.]*$", elem['word']):
-                    continue;
+                    continue
                 index += str(elem['index'])
                 begin = end
-            print index
+            print(index)
         elif type(content) is dict:
-            print self.__printer.pprint(content)
+            print(self.__printer.pprint(content))
         else:
-	        print content
+            print(content)
 
     def __traceBack(self, entity1, entity2):
         #TODO: Figure out the relationship between entity1 and entity2 in terms of TDs
@@ -64,12 +64,14 @@ class Identifier:
         self.__display('Type Dependency', td_result)
         self.__display('Pos-Tag', pt_result)
 
-	
+
 if __name__ == '__main__':
     #sentence = 'As a user, I can redeem usable WAT points so that I can receive a gift card.'
     #sentence = 'As a user, I can like/dislike an answer so that other users can gauge the credibility of the answer.'
     #sentence = 'As a user, I can view other users\' profiles so that I can see their information and points.'
-    #sentence = 'As a user, I can view the leaderboard by sorting it either based on Schools or graduation date.'
-    sentence = 'As a user, I can use my points of WAT to redeem items from a virtual store.'
+    # sentence = 'As a user, I can view the leaderboard by sorting it either based on Schools or graduation date.'
+    # sentence = '"As a user, I can start a thread by posting a question so that other users might answer that question with credible information.'
+    # sentence = 'The system helps user to distrubute tasks.'
+    sentence = "The child is a good thing"
     identifier = Identifier()
     identifier.identify(sentence)

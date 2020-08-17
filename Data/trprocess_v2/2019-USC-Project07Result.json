@@ -1,0 +1,116 @@
+{
+  "class_dict": {
+    "his": {
+      "Attribute": [
+        "Progress"
+      ],
+      "Behavior": {}
+    },
+    "UserStats": {
+      "Attribute": [
+        "viewing"
+      ],
+      "Behavior": {}
+    },
+    "AppStore": {
+      "Attribute": [
+        "publish",
+        "Rate",
+        "provide"
+      ],
+      "Behavior": {}
+    },
+    "User": {
+      "Attribute": [
+        "ProgressReport",
+        "weak",
+        "UserAnalytics",
+        "UserStats",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "enables": [
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "view": [
+          "",
+          ""
+        ],
+        "track": [
+          ""
+        ],
+        "get": [
+          "",
+          ""
+        ],
+        "Trouble": [
+          ""
+        ],
+        "play": [
+          ""
+        ],
+        "understand": [
+          ""
+        ],
+        "skip": [
+          ""
+        ],
+        "proceed": [
+          ""
+        ]
+      }
+    },
+    "App": {
+      "Attribute": [
+        "AppStore"
+      ],
+      "Behavior": {
+        "publish": [
+          ""
+        ]
+      }
+    },
+    "Progress": {
+      "Attribute": [
+        "ProgressReport"
+      ],
+      "Behavior": {
+        "track": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "his",
+        "Progress",
+        []
+      ],
+      [
+        "User",
+        "UserStats",
+        []
+      ],
+      [
+        "App",
+        "AppStore",
+        []
+      ]
+    ]
+  }
+}

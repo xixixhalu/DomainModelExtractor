@@ -1,0 +1,212 @@
+{
+  "class_dict": {
+    "MyROSTERREMOTELY": {
+      "Attribute": [
+        "Girls"
+      ],
+      "Behavior": {}
+    },
+    "InREALTIME": {
+      "Attribute": [
+        "Girls",
+        "OtherCOACHES"
+      ],
+      "Behavior": {}
+    },
+    "Girl": {
+      "Attribute": [
+        "PaperWork/payment",
+        "Girls",
+        "GirlsData"
+      ],
+      "Behavior": {}
+    },
+    "Volunteer": {
+      "Attribute": [
+        "ClassRoster",
+        "Team",
+        "VolunteerCOACH",
+        "VolunteerCoach",
+        "VolunteerCoaches"
+      ],
+      "Behavior": {
+        "view": [
+          ""
+        ],
+        "check": [
+          ""
+        ],
+        "access": [
+          "",
+          ""
+        ],
+        "know": [
+          ""
+        ],
+        "conduct": [
+          ""
+        ],
+        "Login": [
+          ""
+        ],
+        "login": [
+          ""
+        ]
+      }
+    },
+    "Classes": {
+      "Attribute": [
+        "TeamName"
+      ],
+      "Behavior": {
+        "Add/Edit": [
+          ""
+        ],
+        "conduct": [
+          "",
+          ""
+        ]
+      }
+    },
+    "Team": {
+      "Attribute": [
+        "TeamsHAVINGISSUESIMMEDIATELY",
+        "TeamRoster"
+      ],
+      "Behavior": {}
+    },
+    "Girls": {
+      "Attribute": [
+        "GirlsData"
+      ],
+      "Behavior": {
+        "turned": [
+          ""
+        ]
+      }
+    },
+    "VolunteerCoach": {
+      "Attribute": [
+        "VolunteerCoaches"
+      ],
+      "Behavior": {
+        "identify": [
+          ""
+        ],
+        "have": [
+          ""
+        ]
+      }
+    },
+    "the": {
+      "Attribute": [
+        "they"
+      ],
+      "Behavior": {
+        "identify": [
+          ""
+        ]
+      }
+    },
+    "Class": {
+      "Attribute": [
+        "ClassRoster",
+        "Classes"
+      ],
+      "Behavior": {}
+    },
+    "System": {
+      "Attribute": [
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "accessible": [
+          ""
+        ],
+        "Hours": [
+          ""
+        ],
+        "easy": [
+          ""
+        ],
+        "intuitive": [
+          ""
+        ],
+        "use": [
+          ""
+        ]
+      }
+    },
+    "they": {
+      "Attribute": [],
+      "Behavior": {
+        "forget": [
+          ""
+        ],
+        "change": [
+          ""
+        ]
+      }
+    },
+    "VolunteerCOACH": {
+      "Attribute": [],
+      "Behavior": {
+        "CHECK": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "be",
+        "System",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "MyROSTERREMOTELY",
+        "Girls",
+        []
+      ],
+      [
+        "InREALTIME",
+        "Girls",
+        []
+      ],
+      [
+        "Girl",
+        "Girls",
+        []
+      ],
+      [
+        "Volunteer",
+        "Team",
+        []
+      ],
+      [
+        "Volunteer",
+        "VolunteerCoach",
+        []
+      ],
+      [
+        "Volunteer",
+        "VolunteerCOACH",
+        []
+      ],
+      [
+        "the",
+        "they",
+        []
+      ],
+      [
+        "Class",
+        "Classes",
+        []
+      ]
+    ]
+  }
+}

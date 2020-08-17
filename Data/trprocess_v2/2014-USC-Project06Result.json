@@ -1,0 +1,187 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "SocialNetworks",
+        "PastMessages",
+        "LinkedinInformation",
+        "Profile",
+        "Profile",
+        "Area",
+        "am",
+        "be",
+        "is"
+      ],
+      "Behavior": {
+        "upload": [
+          ""
+        ],
+        "send": [
+          "",
+          ""
+        ],
+        "receive": [
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "share": [
+          ""
+        ],
+        "search": [
+          "",
+          ""
+        ],
+        "connect": [
+          "",
+          ""
+        ],
+        "invite": [
+          ""
+        ],
+        "sent": [
+          ""
+        ],
+        "received": [
+          ""
+        ],
+        "import": [
+          ""
+        ],
+        "have": [
+          "",
+          ""
+        ],
+        "add/update/delete": [
+          ""
+        ],
+        "write": [
+          ""
+        ],
+        "create": [
+          "",
+          ""
+        ],
+        "find": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "want": [
+          ""
+        ],
+        "work": [
+          ""
+        ],
+        "interested": [
+          ""
+        ],
+        "comment": [
+          ""
+        ],
+        "think": [
+          ""
+        ],
+        "invites": [
+          ""
+        ],
+        "join": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "part": [
+          ""
+        ],
+        "leave": [
+          ""
+        ],
+        "follow": [
+          ""
+        ],
+        "Activites": [
+          ""
+        ],
+        "follow/unfollow": [
+          ""
+        ],
+        "accept/reject": [
+          ""
+        ],
+        "cancel": [
+          ""
+        ]
+      }
+    },
+    "Connection": {
+      "Attribute": [
+        "Activites",
+        "ConnectionRequest"
+      ],
+      "Behavior": {}
+    },
+    "Activites": {
+      "Attribute": [
+        "latest"
+      ],
+      "Behavior": {}
+    },
+    "Profile": {
+      "Attribute": [
+        "ProfilePicture",
+        "Profiles"
+      ],
+      "Behavior": {
+        "create": [
+          ""
+        ]
+      }
+    },
+    "MaxBudget": {
+      "Attribute": [],
+      "Behavior": {
+        "300": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "is",
+        "MaxBudget",
+        []
+      ],
+      [
+        "is",
+        "User",
+        []
+      ],
+      [
+        "'s",
+        "User",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "User",
+        "Profile",
+        []
+      ],
+      [
+        "Connection",
+        "Activites",
+        []
+      ]
+    ]
+  }
+}

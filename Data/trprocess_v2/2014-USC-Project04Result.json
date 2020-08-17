@@ -1,0 +1,157 @@
+{
+  "class_dict": {
+    "Consumer": {
+      "Attribute": [
+        "Occasion",
+        "Orders",
+        "Experiences",
+        "Orders",
+        "OrderHistory",
+        "Needs",
+        "Consumers",
+        "is"
+      ],
+      "Behavior": {
+        "place": [
+          "",
+          "",
+          ""
+        ],
+        "search": [
+          "",
+          ""
+        ],
+        "have": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "track": [
+          ""
+        ],
+        "make": [
+          "",
+          ""
+        ],
+        "Go": [
+          ""
+        ],
+        "schedule": [
+          ""
+        ],
+        "talk": [
+          ""
+        ],
+        "rank": [
+          ""
+        ],
+        "review": [
+          ""
+        ],
+        "share": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "chat": [
+          ""
+        ],
+        "receive": [
+          ""
+        ],
+        "cancel": [
+          ""
+        ],
+        "satisfied": [
+          ""
+        ],
+        "check": [
+          ""
+        ],
+        "bought": [
+          ""
+        ],
+        "wants": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "want": [
+          ""
+        ]
+      }
+    },
+    "Flowerseeker": {
+      "Attribute": [
+        "Profile",
+        "Profile"
+      ],
+      "Behavior": {}
+    },
+    "Flowers": {
+      "Attribute": [
+        "Flowerseeker"
+      ],
+      "Behavior": {}
+    },
+    "Product": {
+      "Attribute": [
+        "Products",
+        "ProductStatus"
+      ],
+      "Behavior": {
+        "rank": [
+          ""
+        ]
+      }
+    },
+    "it": {
+      "Attribute": [],
+      "Behavior": {
+        "OutOfDelivery": [
+          ""
+        ]
+      }
+    },
+    "ProductStatus": {
+      "Attribute": [],
+      "Behavior": {
+        "provide": [
+          ""
+        ],
+        "confirm": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "'m",
+        "Consumer",
+        []
+      ],
+      [
+        "is",
+        "it",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "Flowers",
+        "Flowerseeker",
+        []
+      ],
+      [
+        "Product",
+        "ProductStatus",
+        []
+      ]
+    ]
+  }
+}

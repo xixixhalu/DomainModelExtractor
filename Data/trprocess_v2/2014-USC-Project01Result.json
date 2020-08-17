@@ -1,0 +1,250 @@
+{
+  "class_dict": {
+    "User": {
+      "Attribute": [
+        "Progress",
+        "Needs",
+        "Needs",
+        "Profile",
+        "Experience",
+        "Points",
+        "Points",
+        "ThreadSpecificPointBalance",
+        "WatPoints",
+        "WatPoints",
+        "Threads",
+        "Users",
+        "UserParticipation"
+      ],
+      "Behavior": {
+        "start": [
+          ""
+        ],
+        "answer": [
+          ""
+        ],
+        "like/dislike": [
+          ""
+        ],
+        "view": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Lifetime": [
+          ""
+        ],
+        "track": [
+          "",
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "stay": [
+          ""
+        ],
+        "redeem": [
+          ""
+        ],
+        "receive": [
+          ""
+        ],
+        "search": [
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          ""
+        ],
+        "select": [
+          ""
+        ],
+        "update": [
+          ""
+        ],
+        "mark": [
+          ""
+        ],
+        "compare": [
+          ""
+        ],
+        "gauge": [
+          ""
+        ],
+        "measure": [
+          ""
+        ],
+        "use": [
+          ""
+        ],
+        "report": [
+          ""
+        ],
+        "edit": [
+          ""
+        ],
+        "started": [
+          ""
+        ],
+        "delete": [
+          ""
+        ]
+      }
+    },
+    "Users": {
+      "Attribute": [
+        "more"
+      ],
+      "Behavior": {
+        "notify": [
+          ""
+        ],
+        "entice": [
+          ""
+        ],
+        "redeem": [
+          "",
+          ""
+        ]
+      }
+    },
+    "GiftCard": {
+      "Attribute": [
+        "GiftCards"
+      ],
+      "Behavior": {
+        "receive": [
+          ""
+        ],
+        "add": [
+          ""
+        ]
+      }
+    },
+    "Profile": {
+      "Attribute": [
+        "Profiles"
+      ],
+      "Behavior": {
+        "update": [
+          ""
+        ]
+      }
+    },
+    "Thread": {
+      "Attribute": [
+        "Threads",
+        "ThreadSpecificPointBalance",
+        "Thread/post"
+      ],
+      "Behavior": {
+        "start": [
+          ""
+        ],
+        "sorting": [
+          ""
+        ]
+      }
+    },
+    "Experience": {
+      "Attribute": [
+        "is"
+      ],
+      "Behavior": {
+        "personalized": [
+          ""
+        ]
+      }
+    },
+    "GiftCards": {
+      "Attribute": [],
+      "Behavior": {
+        "using": [
+          ""
+        ]
+      }
+    },
+    "UserParticipation": {
+      "Attribute": [],
+      "Behavior": {
+        "increase": [
+          ""
+        ]
+      }
+    },
+    "ThreadSpecificPointBalance": {
+      "Attribute": [],
+      "Behavior": {
+        "drop": [
+          ""
+        ]
+      }
+    },
+    "Forum": {
+      "Attribute": [],
+      "Behavior": {
+        "search": [
+          ""
+        ],
+        "FreeOfInappropriateThreads": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "'s",
+        "User",
+        []
+      ],
+      [
+        "be",
+        "Forum",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "User",
+        "Users",
+        []
+      ],
+      [
+        "User",
+        "Profile",
+        []
+      ],
+      [
+        "User",
+        "Experience",
+        []
+      ],
+      [
+        "User",
+        "UserParticipation",
+        []
+      ],
+      [
+        "User",
+        "ThreadSpecificPointBalance",
+        []
+      ],
+      [
+        "GiftCard",
+        "GiftCards",
+        []
+      ],
+      [
+        "Thread",
+        "ThreadSpecificPointBalance",
+        []
+      ]
+    ]
+  }
+}

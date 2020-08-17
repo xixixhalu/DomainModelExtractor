@@ -1,0 +1,33 @@
+User can mark a Category as MinimumMarketableFeature when creating it .
+User can save the PrioritizationResults from the TopsisAnalysis .
+User can adjust the ImportanceOfEachGoal using the Slider .
+User can enter WeightCoefficients according to the Criteria ( BusinessValue/RelativePenalty/EaseOfRealization ) for a WinCondition while using Topsis .
+User can adjust the Coefficient on each Win-winCategory while evaluating its Effect on the Project .
+User can log out .
+User can reset User's Password if User forget it .
+User should be able to upload a Picture from User's Desktop as User's ProfilePicture .
+User can see a DemoOfWinbookFunctionality .
+User can create a NewWinCondition .
+User can only delete a WinCondition that User created .
+User can join a Project .
+User can create a NewWinConditionCategory .
+User can filter the ViewOfWinConditions by Category .
+User can set the BusinessValue , RelativePenalty , and EaseOfRealizationOf a Goal without a Need to remember the OrderOfThem .
+User can edit User's ProfileInformation such as Name , Surname , ProfilePicture , Organization or Password .
+User can see People that agree with User's WinCondition .
+User can quote/reply on OtherPeople 's Comments .
+User want to export the WinConditions to Excel .
+User want to Sort win Conditions by Criteria .
+User can tag Someone to User's Comment using @username .
+User can agree or disagree with a WinCondition ( maybe with upvote/downvote ) .
+Owner can make a Project private or public .
+or Admin , Owner can edit the list of approved members ( add or delete ) from the ProjectSettingsPage .
+Owner can use the ProjectSettingsPage to give AdminRights to a project member .
+User can view the ProjectListPage from the Homepage .
+User can delete only User's OwnPosts and Comments .
+Admin can edit and delete Everyone 's Posts and comments .
+Owner can add a NewProject .
+Owner can access the SettingsPage for the Projects .
+Owner can delete/hide a Project from the ProjectSettingsPage .
+User can sort according to the Upvotes .
+User can add Comments and reply to Comments .

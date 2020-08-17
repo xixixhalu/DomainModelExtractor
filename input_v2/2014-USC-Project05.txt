@@ -1,0 +1,23 @@
+SalesAgent can click-to-call Customers .
+SalesAgent can AutoDialCustomers so that SalesAgent save Time .
+The System shall connect to BackupAgent if MultipleCustomers answer Calls simultaneously .
+The System shall log CallDetailInformation ( CallerNumber & Id , CalleeNumber & Id , Duration , StartDate & Time , EndDate & Time , MuteLink to the Recording , ConferenceLink , Listening in Link , XmlFile as Text ) so that we can pull Analytics on it .
+SalesManager can listen to Recordings so that SalesManager can assure Quality .
+SalesManager can use the Recordings so that SalesManager can train Agents .
+SalesManager can listen in on ActiveCalls so that SalesManager can assure Quality .
+SalesManager can jump in to Calls so that SalesManager can help close the Deal .
+SalesAgent can quickly and easily request the ConferenceCallOf a Manager so that SalesAgent can close a Sale .
+The System shall make sure the IncomingCall is assigned to a back up Agent if the PrimaryAgent is unavailable so that less Customers go to voicemail .
+The System shall route the Customer to voicemail if no Agent is available .
+The System shall be deployed HerokuCloud .
+The System shall log Data in Postgresql .
+The System shall use TwilioAPI for Voip .
+The System shall be developed using Ruby on Rails .
+The System shall run on Linux .
+The SystemInterface will be built using Html5 , Css , Javascript , Bootstrap , jQuery .
+The System will be integrated with the SnappCRM .
+SalesManager can speak only to the AgentWhile listening to the Call so that SalesManager can guide him .
+The System should be able to handle 200 Simultaneous incoming and OutgoingCalls .
+The System should be able to RouteCalls within a 2 Seconds to a OpenAgent .
+The AutoDialer should be able to make 10 SimultaneousCalls to find an AvailableCustomer for the Agent .
+The System shall automatically provision a Number and Voice-mailbox for each NewUser automatically .

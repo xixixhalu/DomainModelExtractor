@@ -1,0 +1,300 @@
+{
+  "class_dict": {
+    "Doctor": {
+      "Attribute": [
+        "PatientsHealth",
+        "DoctorUser",
+        "Doctors"
+      ],
+      "Behavior": {
+        "modify": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "register/enroll": [
+          ""
+        ],
+        "use": [
+          ""
+        ]
+      }
+    },
+    "PatientUser": {
+      "Attribute": [
+        "Reminders"
+      ],
+      "Behavior": {
+        "receive": [
+          ""
+        ],
+        "indicate": [
+          ""
+        ],
+        "completed": [
+          ""
+        ]
+      }
+    },
+    "User": {
+      "Attribute": [
+        "FingerprintScanner",
+        "User/patient",
+        "Username"
+      ],
+      "Behavior": {
+        "login": [
+          ""
+        ]
+      }
+    },
+    "Patients": {
+      "Attribute": [
+        "RecoveryProcess",
+        "PatientsHealth"
+      ],
+      "Behavior": {
+        "get": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "miss": [
+          ""
+        ]
+      }
+    },
+    "AndroidPhones": {
+      "Attribute": [
+        "render"
+      ],
+      "Behavior": {}
+    },
+    "Patient": {
+      "Attribute": [
+        "Treatments",
+        "Questionnaire/surveys",
+        "Doctor",
+        "Surgery",
+        "Timeline",
+        "graphically",
+        "DietaryConstraints",
+        "Patients",
+        "PatientsHealth",
+        "PatientUser",
+        "be",
+        "be",
+        "be",
+        "be",
+        "be"
+      ],
+      "Behavior": {
+        "completed": [
+          ""
+        ],
+        "update": [
+          ""
+        ],
+        "get": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "have": [
+          "",
+          ""
+        ],
+        "save": [
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          ""
+        ],
+        "took": [
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "take": [
+          "",
+          ""
+        ],
+        "do": [
+          ""
+        ],
+        "books/cancels/reschedules": [
+          ""
+        ],
+        "book/cancel/reschedule": [
+          ""
+        ],
+        "add": [
+          ""
+        ],
+        "snooze": [
+          ""
+        ],
+        "dismiss": [
+          ""
+        ],
+        "receive": [
+          ""
+        ],
+        "track": [
+          ""
+        ],
+        "need": [
+          ""
+        ],
+        "compare": [
+          ""
+        ],
+        "choose": [
+          ""
+        ],
+        "install": [
+          ""
+        ]
+      }
+    },
+    "Android": {
+      "Attribute": [
+        "testing",
+        "AndroidPhones"
+      ],
+      "Behavior": {}
+    },
+    "App": {
+      "Attribute": [
+        "Appointment",
+        "Appointments",
+        "Application"
+      ],
+      "Behavior": {
+        "use": [
+          ""
+        ]
+      }
+    },
+    "Appointment": {
+      "Attribute": [
+        "Appointments"
+      ],
+      "Behavior": {
+        "book/cancel/reschedule": [
+          ""
+        ]
+      }
+    },
+    "User/patient": {
+      "Attribute": [],
+      "Behavior": {
+        "have": [
+          ""
+        ],
+        "answer": [
+          ""
+        ]
+      }
+    },
+    "PatientsHealth": {
+      "Attribute": [],
+      "Behavior": {
+        "declines": [
+          ""
+        ]
+      }
+    },
+    "DoctorUser": {
+      "Attribute": [],
+      "Behavior": {
+        "check": [
+          ""
+        ],
+        "view": [
+          ""
+        ]
+      }
+    },
+    "DietaryConstraints": {
+      "Attribute": [],
+      "Behavior": {
+        "need": [
+          ""
+        ],
+        "take": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "Doctor",
+        "PatientsHealth",
+        []
+      ],
+      [
+        "Doctor",
+        "DoctorUser",
+        []
+      ],
+      [
+        "User",
+        "User/patient",
+        []
+      ],
+      [
+        "Patients",
+        "PatientsHealth",
+        []
+      ],
+      [
+        "Patient",
+        "Doctor",
+        []
+      ],
+      [
+        "Patient",
+        "PatientUser",
+        []
+      ],
+      [
+        "Patient",
+        "Patients",
+        []
+      ],
+      [
+        "Patient",
+        "PatientsHealth",
+        []
+      ],
+      [
+        "Patient",
+        "DietaryConstraints",
+        []
+      ],
+      [
+        "Android",
+        "AndroidPhones",
+        []
+      ],
+      [
+        "App",
+        "Appointment",
+        []
+      ]
+    ]
+  }
+}

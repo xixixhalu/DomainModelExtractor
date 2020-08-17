@@ -1,0 +1,229 @@
+{
+  "class_dict": {
+    "Contractor": {
+      "Attribute": [
+        "Resources",
+        "Work",
+        "Resources",
+        "Information",
+        "Comment",
+        "Contractors"
+      ],
+      "Behavior": {
+        "log": [
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          ""
+        ],
+        "send": [
+          ""
+        ],
+        "ask": [
+          ""
+        ],
+        "manage": [
+          "",
+          ""
+        ],
+        "report": [
+          ""
+        ],
+        "enter": [
+          ""
+        ],
+        "MeetingOrTask": [
+          ""
+        ]
+      }
+    },
+    "Manager": {
+      "Attribute": [
+        "Notifications"
+      ],
+      "Behavior": {
+        "log": [
+          ""
+        ],
+        "take": [
+          ""
+        ],
+        "send": [
+          "",
+          ""
+        ],
+        "search": [
+          ""
+        ],
+        "find": [
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "access": [
+          ""
+        ],
+        "track": [
+          ""
+        ],
+        "make": [
+          ""
+        ],
+        "talk": [
+          ""
+        ],
+        "approve": [
+          "",
+          ""
+        ],
+        "disapprove": [
+          ""
+        ],
+        "edit": [
+          "",
+          "",
+          ""
+        ],
+        "save": [
+          "",
+          ""
+        ],
+        "reject": [
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "modify": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "add": [
+          ""
+        ]
+      }
+    },
+    "Notifications": {
+      "Attribute": [
+        "through"
+      ],
+      "Behavior": {}
+    },
+    "SpecificTask": {
+      "Attribute": [
+        "Comment"
+      ],
+      "Behavior": {}
+    },
+    "Project": {
+      "Attribute": [
+        "existing",
+        "ProjectManager",
+        "ProjectCompletion"
+      ],
+      "Behavior": {}
+    },
+    "ProjectManager": {
+      "Attribute": [],
+      "Behavior": {
+        "track": [
+          ""
+        ],
+        "plan": [
+          ""
+        ]
+      }
+    },
+    "Customer": {
+      "Attribute": [],
+      "Behavior": {
+        "UptoDate": [
+          ""
+        ]
+      }
+    },
+    "Comment": {
+      "Attribute": [],
+      "Behavior": {
+        "send": [
+          "",
+          "",
+          ""
+        ],
+        "correct": [
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          ""
+        ],
+        "manage": [
+          "",
+          ""
+        ],
+        "gives": [
+          ""
+        ],
+        "track": [
+          "",
+          ""
+        ],
+        "make": [
+          ""
+        ],
+        "enter": [
+          "",
+          ""
+        ],
+        "taken": [
+          ""
+        ],
+        "Request": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "is",
+        "Customer",
+        []
+      ],
+      [
+        "is",
+        "Comment",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "Contractor",
+        "Comment",
+        []
+      ],
+      [
+        "Manager",
+        "Notifications",
+        []
+      ],
+      [
+        "SpecificTask",
+        "Comment",
+        []
+      ],
+      [
+        "Project",
+        "ProjectManager",
+        []
+      ]
+    ]
+  }
+}

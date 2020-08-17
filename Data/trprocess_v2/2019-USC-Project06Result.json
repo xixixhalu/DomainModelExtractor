@@ -1,0 +1,193 @@
+{
+  "class_dict": {
+    "Project": {
+      "Attribute": [
+        "evaluating",
+        "ProjectSettingsPage",
+        "ProjectListPage"
+      ],
+      "Behavior": {}
+    },
+    "User": {
+      "Attribute": [
+        "Password",
+        "Desktop",
+        "ProfilePicture",
+        "ProfileInformation",
+        "WinCondition",
+        "Comment",
+        "OwnPosts",
+        "only",
+        "be"
+      ],
+      "Behavior": {
+        "mark": [
+          ""
+        ],
+        "save": [
+          ""
+        ],
+        "adjust": [
+          "",
+          ""
+        ],
+        "enter": [
+          ""
+        ],
+        "log": [
+          ""
+        ],
+        "reset": [
+          ""
+        ],
+        "forget": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "upload": [
+          ""
+        ],
+        "see": [
+          "",
+          ""
+        ],
+        "create": [
+          "",
+          ""
+        ],
+        "delete": [
+          "",
+          ""
+        ],
+        "created": [
+          ""
+        ],
+        "join": [
+          ""
+        ],
+        "filter": [
+          ""
+        ],
+        "set": [
+          ""
+        ],
+        "edit": [
+          ""
+        ],
+        "quote/reply": [
+          ""
+        ],
+        "want": [
+          "",
+          ""
+        ],
+        "export": [
+          ""
+        ],
+        "Sort": [
+          ""
+        ],
+        "tag": [
+          ""
+        ],
+        "agree": [
+          ""
+        ],
+        "disagree": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "sort": [
+          ""
+        ],
+        "add": [
+          ""
+        ],
+        "reply": [
+          ""
+        ]
+      }
+    },
+    "Comments": {
+      "Attribute": [
+        "quote/reply"
+      ],
+      "Behavior": {}
+    },
+    "OtherPeople": {
+      "Attribute": [
+        "Comments"
+      ],
+      "Behavior": {}
+    },
+    "members": {
+      "Attribute": [
+        "list",
+        "approved"
+      ],
+      "Behavior": {}
+    },
+    "Comment": {
+      "Attribute": [
+        "Comments"
+      ],
+      "Behavior": {}
+    },
+    "member": {
+      "Attribute": [
+        "members"
+      ],
+      "Behavior": {}
+    },
+    "ProjectSettingsPage": {
+      "Attribute": [],
+      "Behavior": {
+        "reset": [
+          ""
+        ],
+        "forget": [
+          ""
+        ],
+        "delete": [
+          ""
+        ],
+        "give": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "Project",
+        "ProjectSettingsPage",
+        []
+      ],
+      [
+        "User",
+        "Comment",
+        []
+      ],
+      [
+        "OtherPeople",
+        "Comments",
+        []
+      ],
+      [
+        "Comment",
+        "Comments",
+        []
+      ],
+      [
+        "member",
+        "members",
+        []
+      ]
+    ]
+  }
+}

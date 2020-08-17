@@ -1,0 +1,46 @@
+{
+  "class_dict": {
+    "Post": {
+      "Attribute": [
+        "blog",
+        "blog",
+        "Posts"
+      ],
+      "Behavior": {}
+    },
+    "Posts": {
+      "Attribute": [
+        "blog"
+      ],
+      "Behavior": {}
+    },
+    "Categories": {
+      "Attribute": [
+        "CategoriesAndTagsOf"
+      ],
+      "Behavior": {}
+    },
+    "CategoriesAndTagsOf": {
+      "Attribute": [],
+      "Behavior": {
+        "BlogPost": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "Post",
+        "Posts",
+        []
+      ],
+      [
+        "Categories",
+        "CategoriesAndTagsOf",
+        []
+      ]
+    ]
+  }
+}

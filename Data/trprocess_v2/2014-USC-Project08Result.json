@@ -1,0 +1,128 @@
+{
+  "class_dict": {
+    "CaseFile": {
+      "Attribute": [
+        "run",
+        "CaseFiles"
+      ],
+      "Behavior": {}
+    },
+    "Kids": {
+      "Attribute": [
+        "KidsInformation"
+      ],
+      "Behavior": {}
+    },
+    "Kid": {
+      "Attribute": [
+        "Kids",
+        "KidsInformation"
+      ],
+      "Behavior": {}
+    },
+    "Case": {
+      "Attribute": [
+        "CaseManager",
+        "CaseManagerAccess",
+        "CaseFile",
+        "CaseFiles"
+      ],
+      "Behavior": {}
+    },
+    "CaseManager": {
+      "Attribute": [
+        "CaseManagerAccess"
+      ],
+      "Behavior": {
+        "run": [
+          ""
+        ],
+        "save": [
+          "",
+          "",
+          ""
+        ],
+        "upload": [
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "monitor": [
+          ""
+        ],
+        "manage": [
+          "",
+          ""
+        ],
+        "Email": [
+          ""
+        ]
+      }
+    },
+    "Youth": {
+      "Attribute": [
+        "YouthService",
+        "YouthUser"
+      ],
+      "Behavior": {
+        "have": [
+          ""
+        ],
+        "access": [
+          ""
+        ]
+      }
+    },
+    "YouthUser": {
+      "Attribute": [],
+      "Behavior": {
+        "access": [
+          ""
+        ]
+      }
+    },
+    "CaseManagerAccess": {
+      "Attribute": [],
+      "Behavior": {
+        "control": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "Kid",
+        "Kids",
+        []
+      ],
+      [
+        "Case",
+        "CaseFile",
+        []
+      ],
+      [
+        "Case",
+        "CaseManager",
+        []
+      ],
+      [
+        "Case",
+        "CaseManagerAccess",
+        []
+      ],
+      [
+        "CaseManager",
+        "CaseManagerAccess",
+        []
+      ],
+      [
+        "Youth",
+        "YouthUser",
+        []
+      ]
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "class_dict": {
+    "Page": {
+      "Attribute": [
+        "left"
+      ],
+      "Behavior": {}
+    },
+    "VerifiedServiceProvider": {
+      "Attribute": [
+        "Page"
+      ],
+      "Behavior": {
+        "reply": [
+          ""
+        ]
+      }
+    },
+    "HomePage": {
+      "Attribute": [
+        "Link"
+      ],
+      "Behavior": {}
+    },
+    "ServiceProvider": {
+      "Attribute": [
+        "ServiceProviders"
+      ],
+      "Behavior": {
+        "see": [
+          ""
+        ]
+      }
+    },
+    "Admin": {
+      "Attribute": [
+        "Administrator"
+      ],
+      "Behavior": {
+        "remove": [
+          ""
+        ]
+      }
+    },
+    "Link": {
+      "Attribute": [
+        "LinksInsideOfTheBlog"
+      ],
+      "Behavior": {}
+    },
+    "Service": {
+      "Attribute": [
+        "ServiceProvider",
+        "ServiceProviders"
+      ],
+      "Behavior": {}
+    },
+    "DiscussionBoard": {
+      "Attribute": [
+        "DiscussionBoardOfTheSite"
+      ],
+      "Behavior": {
+        "using": [
+          ""
+        ]
+      }
+    },
+    "Discussion": {
+      "Attribute": [
+        "DiscussionBoard",
+        "DiscussionBoardOfTheSite"
+      ],
+      "Behavior": {}
+    },
+    "Administrator": {
+      "Attribute": [],
+      "Behavior": {
+        "moderate": [
+          ""
+        ],
+        "verify": [
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "post": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "aggregation": [
+      [
+        "VerifiedServiceProvider",
+        "Page",
+        []
+      ],
+      [
+        "HomePage",
+        "Link",
+        []
+      ],
+      [
+        "Admin",
+        "Administrator",
+        []
+      ],
+      [
+        "Service",
+        "ServiceProvider",
+        []
+      ],
+      [
+        "Discussion",
+        "DiscussionBoard",
+        []
+      ]
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 import json
 
 def parsePosTag(data):
-    tokens = data['sentences'][0]['tokens']
+    tokens = data['sentences'][0]['tokens']  # list of info of each token
     parse_str = data['sentences'][0]['parse']
 
     result = {}
@@ -13,7 +13,7 @@ def parsePosTag(data):
         if parse_str[i] == '(':
             tag = ''
             i += 1
-            while parse_str[i] != '\n' and parse_str[i] != ' ':
+            while parse_str[i] != '\n' and parse_str[i] != ' ' and parse_str[i] != '\r':
                 tag += parse_str[i]
                 i += 1
             stack.append((tag, index))
@@ -26,10 +26,10 @@ def parsePosTag(data):
             stack.pop()
             i += 1
         else:
-            while parse_str[i] != '\n' and parse_str[i] != ' ' and parse_str[i] != ')':
+            while parse_str[i] != '\n' and parse_str[i] != ' ' and parse_str[i] != '\r' and parse_str[i] != ')':
                 i += 1
             index += 1
-        while i < len(parse_str) and (parse_str[i] == '\n' or parse_str[i] == ' '):
+        while i < len(parse_str) and (parse_str[i] == '\n' or parse_str[i] == '\r' or parse_str[i] == ' '):
             i += 1
         if i == len(parse_str):
             break
@@ -41,5 +41,6 @@ def parsePosTag(data):
 
 if __name__ == '__main__':
     data = json.load(open('3.json'))
+    #print(json.dumps(data,indent=2))
     result = parsePosTag(data)
     print(result)

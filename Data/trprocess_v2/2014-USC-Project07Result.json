@@ -1,0 +1,79 @@
+{
+  "class_dict": {
+    "D": {
+      "Attribute": [
+        "DModules",
+        "Direction",
+        "Deployment"
+      ],
+      "Behavior": {
+        "detect": [
+          ""
+        ]
+      }
+    },
+    "DModules": {
+      "Attribute": [],
+      "Behavior": {
+        "use": [
+          ""
+        ],
+        "make": [
+          ""
+        ]
+      }
+    },
+    "System": {
+      "Attribute": [],
+      "Behavior": {
+        "drop": [
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "use": [
+          "",
+          ""
+        ],
+        "turn": [
+          ""
+        ],
+        "paste": [
+          ""
+        ],
+        "detect": [
+          ""
+        ],
+        "show": [
+          ""
+        ],
+        "7": [
+          ""
+        ],
+        "generate": [
+          ""
+        ],
+        "enforce": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "be",
+        "System",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "D",
+        "DModules",
+        []
+      ]
+    ]
+  }
+}

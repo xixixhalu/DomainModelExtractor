@@ -1,0 +1,237 @@
+{
+  "class_dict": {
+    "Client": {
+      "Attribute": [
+        "Convenience",
+        "Clients"
+      ],
+      "Behavior": {
+        "register": [
+          ""
+        ],
+        "save": [
+          "",
+          ""
+        ],
+        "provide": [
+          ""
+        ],
+        "uses": [
+          ""
+        ]
+      }
+    },
+    "Waw": {
+      "Attribute": [
+        "integrate",
+        "publish",
+        "WawCenter",
+        "WawWebsite",
+        "WawStaff",
+        "WawITPersonnel"
+      ],
+      "Behavior": {
+        "use": [
+          ""
+        ]
+      }
+    },
+    "our": {
+      "Attribute": [
+        "Up-toDate",
+        "Up-toDate",
+        "Clients"
+      ],
+      "Behavior": {}
+    },
+    "Events": {
+      "Attribute": [
+        "latest",
+        "latest"
+      ],
+      "Behavior": {}
+    },
+    "Session": {
+      "Attribute": [
+        "counselling",
+        "counselling",
+        "SessionClient"
+      ],
+      "Behavior": {}
+    },
+    "member": {
+      "Attribute": [
+        "members"
+      ],
+      "Behavior": {
+        "access": [
+          ""
+        ],
+        "integrate": [
+          ""
+        ],
+        "keep": [
+          "",
+          ""
+        ],
+        "publish": [
+          ""
+        ],
+        "increase": [
+          ""
+        ]
+      }
+    },
+    "Event": {
+      "Attribute": [
+        "Events"
+      ],
+      "Behavior": {
+        "registered": [
+          ""
+        ]
+      }
+    },
+    "System": {
+      "Attribute": [
+        "be"
+      ],
+      "Behavior": {
+        "convenient": [
+          ""
+        ],
+        "use": [
+          ""
+        ],
+        "Month": [
+          ""
+        ]
+      }
+    },
+    "WawITPersonnel": {
+      "Attribute": [],
+      "Behavior": {
+        "generate": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "capture": [
+          ""
+        ],
+        "can": [
+          ""
+        ],
+        "analyse": [
+          "",
+          "",
+          ""
+        ],
+        "track": [
+          "",
+          "",
+          ""
+        ]
+      }
+    },
+    "members": {
+      "Attribute": [],
+      "Behavior": {
+        "upload": [
+          ""
+        ]
+      }
+    },
+    "WawWebsite": {
+      "Attribute": [],
+      "Behavior": {
+        "use": [
+          "",
+          ""
+        ]
+      }
+    },
+    "SessionClient": {
+      "Attribute": [],
+      "Behavior": {
+        "needs": [
+          ""
+        ],
+        "checkin": [
+          ""
+        ]
+      }
+    },
+    "Clients": {
+      "Attribute": [],
+      "Behavior": {
+        "enroll": [
+          ""
+        ]
+      }
+    },
+    "they": {
+      "Attribute": [],
+      "Behavior": {
+        "Job": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "be",
+        "System",
+        []
+      ],
+      [
+        "been",
+        "they",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "Client",
+        "Clients",
+        []
+      ],
+      [
+        "Waw",
+        "WawITPersonnel",
+        []
+      ],
+      [
+        "Waw",
+        "WawWebsite",
+        []
+      ],
+      [
+        "our",
+        "Clients",
+        []
+      ],
+      [
+        "Session",
+        "SessionClient",
+        []
+      ],
+      [
+        "member",
+        "members",
+        []
+      ],
+      [
+        "Event",
+        "Events",
+        []
+      ]
+    ]
+  }
+}

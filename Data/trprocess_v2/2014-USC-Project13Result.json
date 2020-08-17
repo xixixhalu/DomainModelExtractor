@@ -1,0 +1,131 @@
+{
+  "class_dict": {
+    "Users": {
+      "Attribute": [
+        "more"
+      ],
+      "Behavior": {
+        "add": [
+          ""
+        ]
+      }
+    },
+    "User": {
+      "Attribute": [
+        "Users",
+        "Username/email"
+      ],
+      "Behavior": {
+        "add": [
+          "",
+          "",
+          ""
+        ],
+        "turn": [
+          "",
+          ""
+        ],
+        "select": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "choose": [
+          ""
+        ]
+      }
+    },
+    "Access": {
+      "Attribute": [
+        "AccessControl"
+      ],
+      "Behavior": {
+        "provide/revoke": [
+          ""
+        ]
+      }
+    },
+    "AccessControl": {
+      "Attribute": [
+        "is"
+      ],
+      "Behavior": {
+        "limited": [
+          ""
+        ]
+      }
+    },
+    "MaximumBudget": {
+      "Attribute": [],
+      "Behavior": {
+        "500": [
+          ""
+        ]
+      }
+    },
+    "Username/email": {
+      "Attribute": [],
+      "Behavior": {
+        "log": [
+          ""
+        ]
+      }
+    },
+    "ResponseTimeOfTheSystem": {
+      "Attribute": [],
+      "Behavior": {
+        "assign": [
+          "",
+          ""
+        ],
+        "add": [
+          "",
+          "",
+          ""
+        ],
+        "select": [
+          ""
+        ],
+        "have": [
+          "",
+          ""
+        ],
+        "Seconds": [
+          ""
+        ]
+      }
+    }
+  },
+  "relationship_dict": {
+    "generalization": [
+      [
+        "is",
+        "MaximumBudget",
+        []
+      ],
+      [
+        "be",
+        "ResponseTimeOfTheSystem",
+        []
+      ]
+    ],
+    "aggregation": [
+      [
+        "User",
+        "Users",
+        []
+      ],
+      [
+        "User",
+        "Username/email",
+        []
+      ],
+      [
+        "Access",
+        "AccessControl",
+        []
+      ]
+    ]
+  }
+}

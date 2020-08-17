@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="191px" preserveAspectRatio="none" style="width:125px;height:191px;" version="1.1" viewBox="0 0 125 191" width="125px" zoomAndPan="magnify"><defs><filter height="300%" id="fi1jnybnfcosv" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[28a3d1511248f3ea120f42e1bca3b749]
+class AppIcon--><rect codeLine="2" fill="#FEFECE" filter="url(#fi1jnybnfcosv)" height="52.7734" id="AppIcon" style="stroke: #A80036; stroke-width: 1.5;" width="95" x="9" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49" x="32" y="23.1387">AppIcon</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="10" x2="103" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="83" x="15" y="45.1792">clicking : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="10" x2="103" y1="51.7734" y2="51.7734"/><!--MD5=[335f4d9be48430461c68bf6d6fdba145]
+class App--><rect codeLine="5" fill="#FEFECE" filter="url(#fi1jnybnfcosv)" height="52.7734" id="App" style="stroke: #A80036; stroke-width: 1.5;" width="99" x="7" y="120"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="24" x="44.5" y="136.1387">App</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="105" y1="143.9688" y2="143.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="13" y="158.1792">AppIcon : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="105" y1="164.7734" y2="164.7734"/><!--MD5=[5939796ed21203062c9880eb4db5e27d]
+reverse link AppIcon to App--><path codeLine="8" d="M56.5,73.671 C56.5,89.016 56.5,106.189 56.5,119.895 " fill="none" id="AppIcon&lt;-App" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="56.5,60.245,52.5,66.245,56.5,72.245,60.5,66.245,56.5,60.245" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="47.625" y="79.8423">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="47.575" y="109.1167">1</text><!--MD5=[2f13abf1da28350bf2ca24e08d47bda6]
+@startuml
+hide circle
+class AppIcon {
+	clicking : string
+}
+class App {
+	AppIcon : string
+}
+AppIcon "1" o- - "1" App
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

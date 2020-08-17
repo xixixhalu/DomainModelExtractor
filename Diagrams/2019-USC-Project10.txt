@@ -1,0 +1,22 @@
+@startuml
+hide circle
+class SocialMedia {
+	trending : string
+	SocialMediaData : string
+	SocialMediaBuzz : string
+	SocialMediaOfCertainMovies : string
+}
+class User {
+	"'m" : string
+	find()
+	input()
+	interested()
+}
+class SocialMediaData {
+	access()
+	create()
+}
+User "1" <|-- "1" "'m"
+SocialMediaData "1" o-- "1" SocialMedia
+
+@enduml

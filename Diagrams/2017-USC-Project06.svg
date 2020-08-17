@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="625px" preserveAspectRatio="none" style="width:440px;height:625px;" version="1.1" viewBox="0 0 440 625" width="440px" zoomAndPan="magnify"><defs><filter height="300%" id="f137ueq9rw6sia" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="2" fill="#FEFECE" filter="url(#f137ueq9rw6sia)" height="360.0859" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="166" x="155" y="246"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="223.5" y="262.1387">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="156" x2="320" y1="269.9688" y2="269.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="68" x="161" y="284.1792">Cgm : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="107" x="161" y="296.9839">BloodSugar : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="154" x="161" y="309.7886">PersonalInformation : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="161" y="322.5933">Health : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114" x="161" y="335.3979">InsulinUsage : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="143" x="161" y="348.2026">FoodConsumption : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="154" x="161" y="361.0073">PersonalInformation : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="161" y="373.812">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="161" y="386.6167">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="156" x2="320" y1="393.2109" y2="393.2109"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="161" y="407.4214">connect()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="161" y="420.2261">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="62" x="161" y="433.0308">download()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="26" x="161" y="445.8354">set()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="161" y="458.6401">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="161" y="471.4448">create()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="27" x="161" y="484.2495">get()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="161" y="497.0542">have()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="39" x="161" y="509.8589">enter()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="161" y="522.6636">input()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="161" y="535.4683">use()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="31" x="161" y="548.2729">sign()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="161" y="561.0776">login()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="161" y="573.8823">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="31" x="161" y="586.687">Map()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="161" y="599.4917">want()</text><!--MD5=[6b6e7b4d54846d7e61a20d65c7a74585]
+class PersonalInformation--><rect codeLine="29" fill="#FEFECE" filter="url(#f137ueq9rw6sia)" height="52.7734" id="PersonalInformation" style="stroke: #A80036; stroke-width: 1.5;" width="124" x="7" y="133"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="118" x="10" y="149.1387">PersonalInformation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="130" y1="156.9688" y2="156.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="13" y="171.1792">Account : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="130" y1="177.7734" y2="177.7734"/><!--MD5=[53272eeea06fe80d83fd996defbd63c3]
+class Health--><rect codeLine="32" fill="#FEFECE" filter="url(#f137ueq9rw6sia)" height="52.7734" id="Health" style="stroke: #A80036; stroke-width: 1.5;" width="143" x="166.5" y="133"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="38" x="219" y="149.1387">Health</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="167.5" x2="308.5" y1="156.9688" y2="156.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="131" x="172.5" y="171.1792">PushNotification : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="167.5" x2="308.5" y1="177.7734" y2="177.7734"/><!--MD5=[dda8c57daf0e39c09a6e1546ba352eb3]
+class BloodSugar--><rect codeLine="35" fill="#FEFECE" filter="url(#f137ueq9rw6sia)" height="52.7734" id="BloodSugar" style="stroke: #A80036; stroke-width: 1.5;" width="76" x="345" y="133"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="348" y="149.1387">BloodSugar</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="346" x2="420" y1="156.9688" y2="156.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="346" x2="420" y1="164.9688" y2="164.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="351" y="179.1792">gets()</text><!--MD5=[f9a29335b499db729be669fd1bd54958]
+class Account--><rect codeLine="38" fill="#FEFECE" filter="url(#f137ueq9rw6sia)" height="65.5781" id="Account" style="stroke: #A80036; stroke-width: 1.5;" width="54" x="42" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="48" x="45" y="23.1387">Account</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="43" x2="95" y1="30.9688" y2="30.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="43" x2="95" y1="38.9688" y2="38.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="26" x="48" y="53.1792">set()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38" x="48" y="65.9839">using()</text><!--MD5=[cc45f1f5f67ccc511f12e7f5bcc455e6]
+reverse link PersonalInformation to User--><path codeLine="42" d="M92.5742,197.396 C109.001,223.106 131.988,259.082 154.844,294.854 " fill="none" id="PersonalInformation&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="85.5121,186.343,85.3722,193.5527,91.9735,196.4549,92.1134,189.2451,85.5121,186.343" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="80.2491" y="205.9617">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="139.0817" y="279.5748">1</text><!--MD5=[9d398ecdc50cdededae1633d5e2bdfda]
+reverse link Account to PersonalInformation--><path codeLine="43" d="M69,86.441 C69,102.143 69,119.184 69,132.75 " fill="none" id="Account&lt;-PersonalInformation" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="69,73.107,65,79.107,69,85.107,73,79.107,69,73.107" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="60.2625" y="92.7119">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="60.075" y="121.9381">1</text><!--MD5=[92b28eda38d4a83241cd2dc63fc6c515]
+reverse link Health to User--><path codeLine="44" d="M238,199.689 C238,212.965 238,228.777 238,245.779 " fill="none" id="Health&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="238,186.343,234,192.343,238,198.343,242,192.343,238,186.343" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="229.125" y="205.9617">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="229.8313" y="234.9274">1</text><!--MD5=[3f2ef596427ebd568a1612a68ebd18ab]
+reverse link BloodSugar to User--><path codeLine="45" d="M362.486,197.921 C351.259,218.401 336.523,245.28 321.134,273.351 " fill="none" id="BloodSugar&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="368.833,186.343,362.4409,189.6809,363.0636,196.8651,369.4557,193.5272,368.833,186.343" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="356.859" y="205.9617">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="328.8944" y="256.1567">1</text><!--MD5=[8cc97370e91c6efee0a88e0d445db798]
+@startuml
+hide circle
+class User {
+	Cgm : string
+	BloodSugar : string
+	PersonalInformation : string
+	Health : string
+	InsulinUsage : string
+	FoodConsumption : string
+	PersonalInformation : string
+	be : string
+	be : string
+	connect()
+	able()
+	download()
+	set()
+	view()
+	create()
+	get()
+	have()
+	enter()
+	input()
+	use()
+	sign()
+	login()
+	see()
+	Map()
+	want()
+}
+class PersonalInformation {
+	Account : string
+}
+class Health {
+	PushNotification : string
+}
+class BloodSugar {
+	gets()
+}
+class Account {
+	set()
+	using()
+}
+PersonalInformation "1" o- - "1" User
+Account "1" o- - "1" PersonalInformation
+Health "1" o- - "1" User
+BloodSugar "1" o- - "1" User
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

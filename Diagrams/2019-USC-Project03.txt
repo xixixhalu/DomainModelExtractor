@@ -1,0 +1,96 @@
+@startuml
+hide circle
+class his {
+	Child : string
+}
+class their {
+	Children : string
+	Assignment : string
+	Confirmation : string
+}
+class Assignment {
+	finished : string
+	Assignments : string
+	post()
+}
+class Student {
+	Groups : string
+	Students : string
+	add()
+	schedule()
+	check()
+	join()
+	create()
+	send()
+	receive()
+	manage()
+	view()
+	upvote()
+	find()
+	bookmark()
+	favorite()
+}
+class Teacher {
+	Class : string
+	Time : string
+	Students : string
+	Students : string
+	Students : string
+	Student : string
+	TeacherUser : string
+	Teachers : string
+	see()
+	upload()
+	assign()
+	check()
+	send()
+	contact()
+}
+class Child {
+	Children : string
+}
+class Question {
+	Questions : string
+}
+class Class {
+	"ClassesHe/she" : string
+}
+class Questions {
+	are : string
+	relevant()
+}
+class TeacherUser {
+	post()
+	improve()
+}
+class Students {
+	contact()
+	upload()
+	finish()
+	have()
+}
+class ClassesHe/she {
+	visiting()
+	connect()
+}
+class what {
+	trending()
+	Students()
+}
+class Teachers {
+	"create/update"()
+}
+Questions "1" <|-- "1" are
+Child "1" o-- "1" his
+Teachers "1" o-- "1" Teacher
+Student "1" o-- "1" Teacher
+Students "1" o-- "1" Teacher
+what "1" <|-- "1" are
+Assignment "1" o-- "1" their
+"ClassesHe/she" "1" o-- "1" Class
+Questions "1" o-- "1" Question
+Class "1" o-- "1" Teacher
+TeacherUser "1" o-- "1" Teacher
+Students "1" o-- "1" Student
+
+@enduml

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="737px" preserveAspectRatio="none" style="width:725px;height:737px;" version="1.1" viewBox="0 0 725 737" width="725px" zoomAndPan="magnify"><defs><filter height="300%" id="fkmzw9zb5f6bm" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[dc30b613f1e19857666fe974d6d5a9b4]
+class Youth--><rect codeLine="2" fill="#FEFECE" filter="url(#fkmzw9zb5f6bm)" height="155.2109" id="Youth" style="stroke: #A80036; stroke-width: 1.5;" width="137" x="68" y="133"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="33" x="120" y="149.1387">Youth</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="69" x2="204" y1="156.9688" y2="156.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="74" y="171.1792">Feedback : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="74" y="183.9839">Profile : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="120" x="74" y="196.7886">CaseManager : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="71" x="74" y="209.5933">Case : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="125" x="74" y="222.3979">YouthAccounts : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="69" x2="204" y1="228.9922" y2="228.9922"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="74" y="243.2026">take()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="74" y="256.0073">provide()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="74" y="268.812">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="49" x="74" y="281.6167">contact()</text><!--MD5=[70aa74288b4705a51315db4e0d6b3cbb]
+class CaseManager--><rect codeLine="13" fill="#FEFECE" filter="url(#fkmzw9zb5f6bm)" height="232.0391" id="CaseManager" style="stroke: #A80036; stroke-width: 1.5;" width="138" x="67.5" y="348"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82" x="95.5" y="364.1387">CaseManager</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="68.5" x2="204.5" y1="371.9688" y2="371.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="73.5" y="386.1792">Youth : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="73.5" y="398.9839">Cases : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="73.5" y="411.7886">Cases : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="126" x="73.5" y="424.5933">CaseManagers : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="73.5" y="437.3979">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="68.5" x2="204.5" y1="443.9922" y2="443.9922"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="73.5" y="458.2026">add()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="73.5" y="471.0073">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="73.5" y="483.812">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="47" x="73.5" y="496.6167">review()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="73.5" y="509.4214">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="73.5" y="522.2261">export()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="73.5" y="535.0308">send()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="73.5" y="547.8354">activate()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="69" x="73.5" y="560.6401">deactivate()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="73.5" y="573.4448">delete()</text><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="30" fill="#FEFECE" filter="url(#fkmzw9zb5f6bm)" height="142.4063" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="148" x="321.5" y="139.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="381" y="155.6387">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="322.5" x2="468.5" y1="163.4688" y2="163.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="136" x="327.5" y="177.6792">LoginInformation : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="327.5" y="190.4839">Records : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="327.5" y="203.2886">Users : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="322.5" x2="468.5" y1="209.8828" y2="209.8828"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="327.5" y="224.0933">create()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="49" x="327.5" y="236.8979">answer()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="327.5" y="249.7026">recover()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="327.5" y="262.5073">trying()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="25" x="327.5" y="275.312">log()</text><!--MD5=[9508ab266cbe5df5f0b156ee5f56d8d3]
+class YouthAccounts--><rect codeLine="40" fill="#FEFECE" filter="url(#fkmzw9zb5f6bm)" height="52.7734" id="YouthAccounts" style="stroke: #A80036; stroke-width: 1.5;" width="99" x="7" y="13.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="88" x="12.5" y="29.6387">YouthAccounts</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="105" y1="37.4688" y2="37.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="13" y="51.6792">needed : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="105" y1="58.2734" y2="58.2734"/><!--MD5=[09a5b4adb0ee554eafb73b413209c7bf]
+class Users--><rect codeLine="43" fill="#FEFECE" filter="url(#fkmzw9zb5f6bm)" height="52.7734" id="Users" style="stroke: #A80036; stroke-width: 1.5;" width="138" x="326.5" y="13.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="377.5" y="29.6387">Users</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="327.5" x2="463.5" y1="37.4688" y2="37.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="126" x="332.5" y="51.6792">LogInformation : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="327.5" x2="463.5" y1="58.2734" y2="58.2734"/><!--MD5=[f8e092794d52bf9a252466252ae7bd1c]
+class System--><rect codeLine="46" fill="#FEFECE" filter="url(#fkmzw9zb5f6bm)" height="103.9922" id="System" style="stroke: #A80036; stroke-width: 1.5;" width="202" x="504.5" y="158.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="45" x="583" y="174.6387">System</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="505.5" x2="705.5" y1="182.4688" y2="182.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133" x="510.5" y="196.6792">SystemSecurity : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="190" x="510.5" y="209.4839">"SystemDesign/structure" : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="505.5" x2="705.5" y1="216.0781" y2="216.0781"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="510.5" y="230.2886">send()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="25" x="510.5" y="243.0933">log()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="44" x="510.5" y="255.8979">record()</text><!--MD5=[7b57f7066b803747d2119f99dd1555d4]
+class Profile--><rect codeLine="53" fill="#FEFECE" filter="url(#fkmzw9zb5f6bm)" height="52.7734" id="Profile" style="stroke: #A80036; stroke-width: 1.5;" width="150" x="141.5" y="13.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="37" x="198" y="29.6387">Profile</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="142.5" x2="290.5" y1="37.4688" y2="37.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="138" x="147.5" y="51.6792">ProfileOfAnyUser : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="142.5" x2="290.5" y1="58.2734" y2="58.2734"/><!--MD5=[e8dcfdde5c6ce5239f59acd294696d72]
+class Case--><rect codeLine="56" fill="#FEFECE" filter="url(#fkmzw9zb5f6bm)" height="78.3828" id="Case" style="stroke: #A80036; stroke-width: 1.5;" width="138" x="128.5" y="640"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="30" x="182.5" y="656.1387">Case</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="129.5" x2="265.5" y1="663.9688" y2="663.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="120" x="134.5" y="678.1792">CaseManager : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="126" x="134.5" y="690.9839">CaseManagers : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="134.5" y="703.7886">Cases : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="129.5" x2="265.5" y1="710.3828" y2="710.3828"/><!--MD5=[179b839e7270f36e29bf13d4522be39a]
+class SystemDesign/structure--><rect codeLine="61" fill="#FEFECE" filter="url(#fkmzw9zb5f6bm)" height="65.5781" id="SystemDesign/structure" style="stroke: #A80036; stroke-width: 1.5;" width="151" x="530" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="145" x="533" y="23.1387">SystemDesign/structure</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="531" x2="680" y1="30.9688" y2="30.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="531" x2="680" y1="38.9688" y2="38.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="536" y="53.1792">increase()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="536" y="65.9839">allow()</text><!--MD5=[da09f9c94ccb0ad3ee91a6aef8dc4aa6]
+reverse link SystemDesign/structure to System--><path codeLine="65" d="M605.5,86.25 C605.5,108.473 605.5,135.341 605.5,158.312 " fill="none" id="SystemDesign/structure&lt;-System" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="605.5,73.09,601.5,79.09,605.5,85.09,609.5,79.09,605.5,73.09" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="596.7625" y="92.6918">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="596.9625" y="147.3678">1</text><!--MD5=[a8796ef3fc97f0d5995381ced3b6f69e]
+reverse link Youth to CaseManager--><path codeLine="66" d="M124.224,301.33 C123.817,316.376 123.672,332.172 123.79,347.75 " fill="none" id="Youth&lt;-CaseManager" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="124.65,288.325,120.4557,294.1908,124.257,300.3186,128.4514,294.4528,124.65,288.325" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="115.1888" y="308.2542">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="114.7195" y="336.8922">1</text><!--MD5=[96113b73c35c364c0cc993a04725fdd1]
+reverse link CaseManager to Youth--><path codeLine="67" d="M149.997,334.502 C149.964,318.72 149.648,302.996 149.047,288.325 " fill="none" id="CaseManager&lt;-Youth" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="149.958,347.75,153.9758,341.7619,149.9936,335.7501,145.9758,341.7382,149.958,347.75" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="142.5639" y="336.8922">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="141.8349" y="308.2542">1</text><!--MD5=[31eddc217bee50789a9057042851282a]
+reverse link Profile to Youth--><path codeLine="68" d="M198.608,78.686 C190.988,94.735 181.807,114.071 172.871,132.894 " fill="none" id="Profile&lt;-Youth" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="204.35,66.592,198.1631,70.2964,199.2029,77.4321,205.3898,73.7277,204.35,66.592" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="192.8172" y="86.1558">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="167.9564" y="121.8455">1</text><!--MD5=[8a97845c4dc9c5ec34942a66c53e2979]
+reverse link Users to User--><path codeLine="69" d="M395.5,79.825 C395.5,97.454 395.5,118.868 395.5,139.173 " fill="none" id="Users&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="395.5,66.592,391.5,72.592,395.5,78.592,399.5,72.592,395.5,66.592" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="386.625" y="86.1558">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="387.1063" y="128.4669">1</text><!--MD5=[f98909dc1f25703f4777206574d3203b]
+reverse link YouthAccounts to Youth--><path codeLine="70" d="M74.3922,78.686 C82.0121,94.735 91.1925,114.071 100.1293,132.894 " fill="none" id="YouthAccounts&lt;-Youth" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="68.6503,66.592,67.6103,73.7277,73.7971,77.4322,74.8371,70.2965,68.6503,66.592" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="62.4332" y="86.1558">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="88.2815" y="121.8455">1</text><!--MD5=[e5168a8ae47d01b8baa273d11967368e]
+reverse link Case to Youth--><path codeLine="71" d="M212.287,626.8962 C228.888,561.048 250.124,443.668 222.5,348 C216.556,327.414 206.484,306.942 195.284,288.355 " fill="none" id="Case&lt;-Youth" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="208.939,639.748,214.3223,634.9501,211.964,628.1355,206.5807,632.9334,208.939,639.748" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="202.1711" y="629.0509">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="192.3344" y="308.287">1</text><!--MD5=[1dfe50f5d57a12f5dd390d8525a11a35]
+reverse link CaseManager to Case--><path codeLine="72" d="M173.095,592.782 C177.99,609.874 182.666,626.2041 186.592,639.9122 " fill="none" id="CaseManager&lt;-Case" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="169.499,580.228,167.3058,587.0975,172.8033,591.7641,174.9965,584.8946,169.499,580.228" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="163.3567" y="600.2242">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="176.0297" y="628.9503">1</text><!--MD5=[3f722e53569960874620c2f2ee1bf7b4]
+@startuml
+hide circle
+class Youth {
+	Feedback : string
+	Profile : string
+	CaseManager : string
+	Case : string
+	YouthAccounts : string
+	take()
+	provide()
+	view()
+	contact()
+}
+class CaseManager {
+	Youth : string
+	Cases : string
+	Cases : string
+	CaseManagers : string
+	be : string
+	add()
+	view()
+	see()
+	review()
+	able()
+	export()
+	send()
+	activate()
+	deactivate()
+	delete()
+}
+class User {
+	LoginInformation : string
+	Records : string
+	Users : string
+	create()
+	answer()
+	recover()
+	trying()
+	log()
+}
+class YouthAccounts {
+	needed : string
+}
+class Users {
+	LogInformation : string
+}
+class System {
+	SystemSecurity : string
+	"SystemDesign/structure" : string
+	send()
+	log()
+	record()
+}
+class Profile {
+	ProfileOfAnyUser : string
+}
+class Case {
+	CaseManager : string
+	CaseManagers : string
+	Cases : string
+}
+class SystemDesign/structure {
+	increase()
+	allow()
+}
+"SystemDesign/structure" "1" o- - "1" System
+Youth "1" o- - "1" CaseManager
+CaseManager "1" o- - "1" Youth
+Profile "1" o- - "1" Youth
+Users "1" o- - "1" User
+YouthAccounts "1" o- - "1" Youth
+Case "1" o- - "1" Youth
+CaseManager "1" o- - "1" Case
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,131 @@
+@startuml
+hide circle
+class User {
+	Profile : string
+	Schedule : string
+	RequestRecord : string
+	LearningProgress : string
+	IdealTutor : string
+	Username : string
+	UserAmount : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	learn()
+	sign()
+	Student()
+	use()
+	input()
+	consult()
+	check()
+	get()
+	choose()
+	navigate()
+	communicate()
+	have()
+	find()
+	exchange()
+	catch()
+	need()
+	able()
+}
+class Schedule {
+	preferred : string
+	ScheduleChanges : string
+	ScheduleAvailability : string
+}
+class Tutor {
+	Availability : string
+	Students : string
+	DetailedInformation : string
+	ScheduleAvailability : string
+	Availability : string
+	TutoringRequests : string
+	accept()
+	share()
+	post()
+	get()
+	offer()
+	update()
+	input()
+}
+class Student {
+	Tutor : string
+	Students : string
+	StudentUser : string
+	am : string
+	request()
+	read()
+	watch()
+	able()
+	coomplete()
+	complete()
+	cancel()
+	"re-schedule"()
+	make()
+}
+class Website {
+	Blogs : string
+}
+class Project {
+	write : string
+	ProjectHandoff : string
+	ProjectArchitect : string
+}
+class our {
+	Project : string
+	Website : string
+}
+class LearningProgress {
+	FurtherInformation : string
+}
+class StudentUser {
+	Language : string
+	Schedule()
+}
+class System {
+	SystemArchitect : string
+}
+class Class {
+	Classes : string
+	Classmates : string
+}
+class Info {
+	Information : string
+}
+class Information {
+	provides()
+}
+class ScheduleChanges {
+	happens()
+}
+class Classes {
+	OutsideOfMyExpectedWorkingHours()
+}
+class ProjectArchitect {
+	get()
+}
+class SystemArchitect {
+	integrate()
+}
+class Availability {
+	use()
+	reflect()
+}
+Availability "1" o-- "1" Tutor
+SystemArchitect "1" o-- "1" System
+Tutor "1" o-- "1" Student
+User "1" <|-- "1" be
+Classes "1" o-- "1" Class
+StudentUser "1" o-- "1" Student
+Schedule "1" o-- "1" User
+Information "1" o-- "1" Info
+ProjectArchitect "1" o-- "1" Project
+LearningProgress "1" o-- "1" User
+Website "1" o-- "1" our
+ScheduleChanges "1" o-- "1" Schedule
+Project "1" o-- "1" our
+
+@enduml

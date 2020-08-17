@@ -1,0 +1,162 @@
+@startuml
+hide circle
+class Website {
+	list : string
+	Blogs : string
+	"Health-relatedIssues" : string
+	"WebsiteOwner/moderator" : string
+	WebsiteEndUser : string
+	be : string
+	offers()
+	straight()
+	use()
+}
+class Vendor {
+	Items : string
+	ItemPrices : string
+	Pricing : string
+	Profile : string
+	Products : string
+	VendorAccounts : string
+	Vendors : string
+	list()
+	manage()
+	communicate()
+	provide()
+	offer()
+	look()
+	compare()
+	make()
+	gather()
+	improve()
+	Services()
+	upload()
+	view()
+	ship()
+	publish()
+	inform()
+	convince()
+	add()
+}
+class Blogs {
+	RelatedInformation : string
+}
+class WebsiteOwner/moderator {
+	Customers : string
+	post()
+	suspend()
+	approve()
+	sort()
+	communicate()
+	help()
+}
+class Vendors {
+	best : string
+	sort()
+	determine()
+}
+class their {
+	Products : string
+}
+class Consumer {
+	Account : string
+	Password : string
+	Account : string
+	Cart : string
+	Cart : string
+	SearchResults : string
+	SecurityQuestions : string
+	Consumers : string
+	be : string
+	be : string
+	search()
+	gain()
+	participate()
+	help()
+	manage()
+	get()
+	keep()
+	do()
+	refer()
+	see()
+	add()
+	narrow()
+	find()
+	reset()
+	VerifyingId()
+	leave()
+	sort()
+	looking()
+	have()
+	able()
+	subscribe()
+	Rate()
+	ReviewVendors()
+}
+class Consumers {
+	more : string
+}
+class Profile {
+	Video : string
+}
+class ProductCatalog {
+	add : string
+	sold : string
+}
+class Products {
+	types : string
+	sort()
+	ship()
+	are()
+}
+class types {
+	Certain : string
+}
+class Account {
+	AccountOf : string
+	manage()
+	safe()
+}
+class Product {
+	Products : string
+	ProductCatalog : string
+	search()
+	find()
+	suits()
+}
+class WebsiteEndUser {
+	get()
+	manage()
+	do()
+	narrow()
+	suits()
+	reset()
+	leave()
+	provide()
+	offer()
+	compare()
+	make()
+	gather()
+	upload()
+	are()
+	view()
+	publish()
+	inform()
+	buy()
+	find()
+}
+Vendors "1" o-- "1" Vendor
+types "1" o-- "1" Products
+Profile "1" o-- "1" Vendor
+Vendor "1" <|-- "1" "'s"
+ProductCatalog "1" o-- "1" Product
+Products "1" o-- "1" Vendor
+Blogs "1" o-- "1" Website
+Products "1" o-- "1" Product
+Products "1" o-- "1" their
+"WebsiteOwner/moderator" "1" o-- "1" Website
+Consumers "1" o-- "1" Consumer
+WebsiteEndUser "1" o-- "1" Website
+Account "1" o-- "1" Consumer
+
+@enduml

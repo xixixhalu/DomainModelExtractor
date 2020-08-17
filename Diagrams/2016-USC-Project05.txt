@@ -1,0 +1,70 @@
+@startuml
+hide circle
+class User {
+	Felling : string
+	Event : string
+	EventExits : string
+	Password : string
+	Password : string
+	Record : string
+	Events : string
+	Privacy : string
+	Storage : string
+	Computer : string
+	comment()
+	make()
+	delete()
+	want()
+	share()
+	like()
+	express()
+	report()
+	need()
+	see()
+	enter()
+	upload()
+	log()
+	use()
+	extend()
+	let()
+	login()
+	reset()
+	forget()
+	keep()
+	maintain()
+	change()
+	review()
+	choose()
+	save()
+	download()
+	search()
+	find()
+	looking()
+	create()
+	free()
+	sort()
+}
+class Event {
+	private : string
+	EventExits : string
+	Events : string
+	extend()
+}
+class Computer {
+	ManyHighResolutionPictures : string
+}
+class Picture {
+	PictureOwner : string
+	Pictures : string
+	PicturePopularity : string
+	report()
+}
+class Pictures {
+	see()
+	convenient()
+}
+Event "1" o-- "1" User
+Computer "1" o-- "1" User
+Pictures "1" o-- "1" Picture
+
+@enduml

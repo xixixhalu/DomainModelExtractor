@@ -1,0 +1,52 @@
+@startuml
+hide circle
+class parent {
+	Tuition : string
+	Details : string
+	parents : string
+	set()
+}
+class PasswordProtected/privatePage {
+	view : string
+}
+class member {
+	members : string
+	view()
+}
+class Student {
+	"Student/parent" : string
+	download()
+	practice()
+}
+class me {
+	member : string
+	members : string
+	signup()
+}
+class News {
+	NewsSectionOfTheWebsite : string
+}
+class Password {
+	"PasswordProtected/privatePage" : string
+}
+class parents {
+	view()
+}
+class NewsSectionOfTheWebsite {
+	triggers()
+}
+class System {
+	CombinationOfThreeWebsites()
+}
+class Student/parent {
+	register()
+	pay()
+}
+"PasswordProtected/privatePage" "1" o-- "1" Password
+System "1" <|-- "1" be
+parents "1" o-- "1" parent
+"Student/parent" "1" o-- "1" Student
+member "1" o-- "1" me
+NewsSectionOfTheWebsite "1" o-- "1" News
+
+@enduml

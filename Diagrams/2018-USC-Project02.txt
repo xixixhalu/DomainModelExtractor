@@ -1,0 +1,48 @@
+@startuml
+hide circle
+class Page {
+	left : string
+}
+class VerifiedServiceProvider {
+	Page : string
+	reply()
+}
+class HomePage {
+	Link : string
+}
+class ServiceProvider {
+	ServiceProviders : string
+	see()
+}
+class Admin {
+	Administrator : string
+	remove()
+}
+class Link {
+	LinksInsideOfTheBlog : string
+}
+class Service {
+	ServiceProvider : string
+	ServiceProviders : string
+}
+class DiscussionBoard {
+	DiscussionBoardOfTheSite : string
+	using()
+}
+class Discussion {
+	DiscussionBoard : string
+	DiscussionBoardOfTheSite : string
+}
+class Administrator {
+	moderate()
+	verify()
+	view()
+	post()
+}
+Administrator "1" o-- "1" Admin
+ServiceProvider "1" o-- "1" Service
+DiscussionBoard "1" o-- "1" Discussion
+Page "1" o-- "1" VerifiedServiceProvider
+Link "1" o-- "1" HomePage
+
+@enduml

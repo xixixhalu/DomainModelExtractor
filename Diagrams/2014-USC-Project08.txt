@@ -1,0 +1,49 @@
+@startuml
+hide circle
+class CaseFile {
+	run : string
+	CaseFiles : string
+}
+class Kids {
+	KidsInformation : string
+}
+class Kid {
+	Kids : string
+	KidsInformation : string
+}
+class Case {
+	CaseManager : string
+	CaseManagerAccess : string
+	CaseFile : string
+	CaseFiles : string
+}
+class CaseManager {
+	CaseManagerAccess : string
+	run()
+	save()
+	upload()
+	create()
+	monitor()
+	manage()
+	Email()
+}
+class Youth {
+	YouthService : string
+	YouthUser : string
+	have()
+	access()
+}
+class YouthUser {
+	access()
+}
+class CaseManagerAccess {
+	control()
+}
+CaseManagerAccess "1" o-- "1" CaseManager
+CaseManagerAccess "1" o-- "1" Case
+CaseManager "1" o-- "1" Case
+YouthUser "1" o-- "1" Youth
+CaseFile "1" o-- "1" Case
+Kids "1" o-- "1" Kid
+
+@enduml

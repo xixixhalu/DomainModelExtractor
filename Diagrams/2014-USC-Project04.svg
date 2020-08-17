@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="575px" preserveAspectRatio="none" style="width:578px;height:575px;" version="1.1" viewBox="0 0 578 575" width="578px" zoomAndPan="magnify"><defs><filter height="300%" id="fpxovrwrlxkta" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[67ea9f8eb7ab97465d83c225b092f5fe]
+class Consumer--><rect codeLine="2" fill="#FEFECE" filter="url(#fpxovrwrlxkta)" height="411.3047" id="Consumer" style="stroke: #A80036; stroke-width: 1.5;" width="125" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="61" x="39" y="23.1387">Consumer</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="131" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93" x="13" y="45.1792">Occasion : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="80" x="13" y="57.9839">Orders : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="113" x="13" y="70.7886">Experiences : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="80" x="13" y="83.5933">Orders : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="113" x="13" y="96.3979">OrderHistory : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="13" y="109.2026">Needs : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="13" y="122.0073">Consumers : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="13" y="134.812">is : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="131" y1="141.4063" y2="141.4063"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="39" x="13" y="155.6167">place()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="13" y="168.4214">search()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="13" y="181.2261">have()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="13" y="194.0308">track()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="13" y="206.8354">make()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="24" x="13" y="219.6401">Go()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="13" y="232.4448">schedule()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="28" x="13" y="245.2495">talk()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="13" y="258.0542">rank()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="47" x="13" y="270.8589">review()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="13" y="283.6636">share()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="13" y="296.4683">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="13" y="309.2729">chat()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="13" y="322.0776">receive()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="13" y="334.8823">cancel()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="56" x="13" y="347.687">satisfied()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="13" y="360.4917">check()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="47" x="13" y="373.2964">bought()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="13" y="386.1011">wants()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="27" x="13" y="398.9058">get()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="13" y="411.7104">want()</text><!--MD5=[97c274046cafef4f9e6faff8dfc89d8f]
+class Flowerseeker--><rect codeLine="33" fill="#FEFECE" filter="url(#fpxovrwrlxkta)" height="65.5781" id="Flowerseeker" style="stroke: #A80036; stroke-width: 1.5;" width="90" x="167.5" y="179.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="84" x="170.5" y="195.6387">Flowerseeker</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="168.5" x2="256.5" y1="203.4688" y2="203.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="173.5" y="217.6792">Profile : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="173.5" y="230.4839">Profile : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="168.5" x2="256.5" y1="237.0781" y2="237.0781"/><!--MD5=[8f8cd4a0eeaf7b90c82792802d93057b]
+class Flowers--><rect codeLine="37" fill="#FEFECE" filter="url(#fpxovrwrlxkta)" height="52.7734" id="Flowers" style="stroke: #A80036; stroke-width: 1.5;" width="131" x="147" y="490.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="48" x="188.5" y="506.6387">Flowers</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="148" x2="277" y1="514.4688" y2="514.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="119" x="153" y="528.6792">Flowerseeker : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="148" x2="277" y1="535.2734" y2="535.2734"/><!--MD5=[72136138052d025cffdce3c22fbd185f]
+class Product--><rect codeLine="40" fill="#FEFECE" filter="url(#fpxovrwrlxkta)" height="78.3828" id="Product" style="stroke: #A80036; stroke-width: 1.5;" width="131" x="313" y="478"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="45" x="356" y="494.1387">Product</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="314" x2="443" y1="501.9688" y2="501.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89" x="319" y="516.1792">Products : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="119" x="319" y="528.9839">ProductStatus : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="314" x2="443" y1="535.5781" y2="535.5781"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="319" y="549.7886">rank()</text><!--MD5=[9fb32a8e86fc843e4257364282130dd8]
+class it--><rect codeLine="45" fill="#FEFECE" filter="url(#fpxovrwrlxkta)" height="52.7734" id="it" style="stroke: #A80036; stroke-width: 1.5;" width="102" x="457.5" y="186"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="505" y="202.1387">it</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="458.5" x2="558.5" y1="209.9688" y2="209.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="458.5" x2="558.5" y1="217.9688" y2="217.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="463.5" y="232.1792">OutOfDelivery()</text><!--MD5=[fcb49dcc9df7a64ab61c4586389fc8b9]
+class ProductStatus--><rect codeLine="48" fill="#FEFECE" filter="url(#fpxovrwrlxkta)" height="65.5781" id="ProductStatus" style="stroke: #A80036; stroke-width: 1.5;" width="88" x="334.5" y="179.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82" x="337.5" y="195.6387">ProductStatus</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="335.5" x2="421.5" y1="203.4688" y2="203.4688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="335.5" x2="421.5" y1="211.4688" y2="211.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="340.5" y="225.6792">provide()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="340.5" y="238.4839">confirm()</text><!--MD5=[5e60560d36c54da585273fb023e62b0f]
+class 'm--><rect fill="#FEFECE" filter="url(#fpxovrwrlxkta)" height="39.9688" id="'m" style="stroke: #A80036; stroke-width: 1.5;" width="20" x="59.5" y="497"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="14" x="62.5" y="513.1387">'m</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="60.5" x2="78.5" y1="520.9688" y2="520.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="60.5" x2="78.5" y1="528.9688" y2="528.9688"/><!--MD5=[213cf4b80910bcf3082cc8463afdbd14]
+class is--><rect fill="#FEFECE" filter="url(#fpxovrwrlxkta)" height="39.9688" id="is" style="stroke: #A80036; stroke-width: 1.5;" width="16" x="500.5" y="497"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="10" x="503.5" y="513.1387">is</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="501.5" x2="515.5" y1="520.9688" y2="520.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="501.5" x2="515.5" y1="528.9688" y2="528.9688"/><!--MD5=[370b7268ddac61bf8bdd01fdfbf568d6]
+reverse link Flowerseeker to Flowers--><path codeLine="52" d="M212.5,258.887 C212.5,323.287 212.5,439.048 212.5,490.338 " fill="none" id="Flowerseeker&lt;-Flowers" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="212.5,245.586,208.5,251.586,212.5,257.586,216.5,251.586,212.5,245.586" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="203.7625" y="265.1871">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="203.575" y="479.5465">1</text><!--MD5=[e56705ecac7fa31b849d63ea0ed2a3c6]
+reverse link Consumer to 'm--><path codeLine="53" d="M69.5,438.471 C69.5,462.357 69.5,482.9956 69.5,496.96 " fill="none" id="Consumer&lt;-'m" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="62.5001,438.205,69.5,418.205,76.5001,438.205,62.5001,438.205" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="61.3438" y="438.5969">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="60.325" y="485.9611">1</text><!--MD5=[cb914510b874d2d1ef998cb9849aee6a]
+reverse link ProductStatus to Product--><path codeLine="54" d="M378.5,258.641 C378.5,318.126 378.5,421.738 378.5,477.6312 " fill="none" id="ProductStatus&lt;-Product" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="378.5,245.586,374.5,251.586,378.5,257.586,382.5,251.586,378.5,245.586" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="369.7625" y="265.1871">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="369.8375" y="466.9147">1</text><!--MD5=[f9c4f0e9f3dd1fa3134f61989b30ec97]
+reverse link it to is--><path codeLine="55" d="M508.5,259.136 C508.5,326.408 508.5,449.333 508.5,496.6893 " fill="none" id="it&lt;-is" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="501.5,259.03,508.5,239.03,515.5,259.03,501.5,259.03" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="499.575" y="259.0079">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="499.375" y="485.9575">1</text><!--MD5=[315cfbf75f6867845c4eef3621fa7451]
+@startuml
+hide circle
+class Consumer {
+	Occasion : string
+	Orders : string
+	Experiences : string
+	Orders : string
+	OrderHistory : string
+	Needs : string
+	Consumers : string
+	is : string
+	place()
+	search()
+	have()
+	track()
+	make()
+	Go()
+	schedule()
+	talk()
+	rank()
+	review()
+	share()
+	view()
+	chat()
+	receive()
+	cancel()
+	satisfied()
+	check()
+	bought()
+	wants()
+	get()
+	want()
+}
+class Flowerseeker {
+	Profile : string
+	Profile : string
+}
+class Flowers {
+	Flowerseeker : string
+}
+class Product {
+	Products : string
+	ProductStatus : string
+	rank()
+}
+class it {
+	OutOfDelivery()
+}
+class ProductStatus {
+	provide()
+	confirm()
+}
+Flowerseeker "1" o- - "1" Flowers
+Consumer "1" <|- - "1" "'m"
+ProductStatus "1" o- - "1" Product
+it "1" <|- - "1" is
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

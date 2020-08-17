@@ -1,0 +1,85 @@
+@startuml
+hide circle
+class Client {
+	Convenience : string
+	Clients : string
+	register()
+	save()
+	provide()
+	uses()
+}
+class Waw {
+	integrate : string
+	publish : string
+	WawCenter : string
+	WawWebsite : string
+	WawStaff : string
+	WawITPersonnel : string
+	use()
+}
+class our {
+	"Up-toDate" : string
+	"Up-toDate" : string
+	Clients : string
+}
+class Events {
+	latest : string
+	latest : string
+}
+class Session {
+	counselling : string
+	counselling : string
+	SessionClient : string
+}
+class member {
+	members : string
+	access()
+	integrate()
+	keep()
+	publish()
+	increase()
+}
+class Event {
+	Events : string
+	registered()
+}
+class System {
+	be : string
+	convenient()
+	use()
+	Month()
+}
+class WawITPersonnel {
+	generate()
+	capture()
+	can()
+	analyse()
+	track()
+}
+class members {
+	upload()
+}
+class WawWebsite {
+	use()
+}
+class SessionClient {
+	needs()
+	checkin()
+}
+class Clients {
+	enroll()
+}
+class they {
+	Job()
+}
+they "1" <|-- "1" been
+members "1" o-- "1" member
+Clients "1" o-- "1" Client
+Events "1" o-- "1" Event
+WawITPersonnel "1" o-- "1" Waw
+WawWebsite "1" o-- "1" Waw
+Clients "1" o-- "1" our
+System "1" <|-- "1" be
+SessionClient "1" o-- "1" Session
+
+@enduml

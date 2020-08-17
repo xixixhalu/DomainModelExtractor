@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="995px" preserveAspectRatio="none" style="width:1647px;height:995px;" version="1.1" viewBox="0 0 1647 995" width="1647px" zoomAndPan="magnify"><defs><filter height="300%" id="f1oheyhapz7fdu" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[6b4d6926b64cc43e9c2e68aac29f627b]
+class Mentee--><rect codeLine="2" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="296.0625" id="Mentee" style="stroke: #A80036; stroke-width: 1.5;" width="261" x="497" y="171"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="45" x="605" y="187.1387">Mentee</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="498" x2="757" y1="194.9688" y2="194.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="83" x="503" y="209.1792">Criteria : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="503" y="221.9839">Password : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="249" x="503" y="234.7886">"PersonalInformation/contactDetails" : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="503" y="247.5933">Details : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="503" y="260.3979">Profile : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="92" x="503" y="273.2026">Mentees : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="143" x="503" y="286.0073">MenteesTrainings : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="139" x="503" y="298.812">MenteeRequests : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="141" x="503" y="311.6167">"Mentee/mentor" : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="503" y="324.4214">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="503" y="337.2261">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="503" y="350.0308">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="503" y="362.8354">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="498" x2="757" y1="369.4297" y2="369.4297"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43" x="503" y="383.6401">select()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38" x="503" y="396.4448">reset()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="503" y="409.2495">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="503" y="422.0542">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="503" y="434.8589">send()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="503" y="447.6636">update()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="503" y="460.4683">upload()</text><!--MD5=[e762170833d07b06faa87c40cb5a3bd7]
+class Mentor--><rect codeLine="24" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="449.7188" id="Mentor" style="stroke: #A80036; stroke-width: 1.5;" width="185" x="239" y="527"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="310.5" y="543.1387">Mentor</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="240" x2="423" y1="550.9688" y2="550.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="86" x="245" y="565.1792">Mentee : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="83" x="245" y="577.9839">Criteria : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="86" x="245" y="590.7886">Mentee : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="245" y="603.5933">Password : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="245" y="616.3979">TrainingPhaseActivities : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="245" y="629.2026">Availability : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="154" x="245" y="642.0073">PersonalInformation : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="245" y="654.812">Details : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="108" x="245" y="667.6167">Interactions : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="86" x="245" y="680.4214">Mentee : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="245" y="693.2261">Mentors : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="245" y="706.0308">MentorshipProcess : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="245" y="718.8354">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="245" y="731.6401">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="245" y="744.4448">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="245" y="757.2495">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="245" y="770.0542">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="245" y="782.8589">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="245" y="795.6636">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="240" x2="423" y1="802.2578" y2="802.2578"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43" x="245" y="816.4683">select()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="245" y="829.2729">provide()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="245" y="842.0776">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="245" y="854.8823">create()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="245" y="867.687">update()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="245" y="880.4917">track()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="245" y="893.2964">submit()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38" x="245" y="906.1011">reset()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="245" y="918.9058">monitor()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="245" y="931.7104">accept()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="245" y="944.5151">mark()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="245" y="957.3198">register()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42" x="245" y="970.1245">report()</text><!--MD5=[75a807a02e483a2e1ce101ea74758960]
+class Requests--><rect codeLine="58" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="52.7734" id="Requests" style="stroke: #A80036; stroke-width: 1.5;" width="89" x="850" y="32.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="866.5" y="48.6387">Requests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="851" x2="938" y1="56.4688" y2="56.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="856" y="70.6792">based : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="851" x2="938" y1="77.2734" y2="77.2734"/><!--MD5=[4d71b7bae0078dbaccaeeb4541b58fa1]
+class their--><rect codeLine="61" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="65.5781" id="their" style="stroke: #A80036; stroke-width: 1.5;" width="135" x="975" y="286"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="27" x="1029" y="302.1387">their</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="976" x2="1109" y1="309.9688" y2="309.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="95" x="981" y="324.1792">Requests : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="123" x="981" y="336.9839">MonthlyReport : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="976" x2="1109" y1="343.5781" y2="343.5781"/><!--MD5=[8b7228af0011f189d1332ca671261653]
+class MonthlyBasis--><rect codeLine="65" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="52.7734" id="MonthlyBasis" style="stroke: #A80036; stroke-width: 1.5;" width="97" x="1167" y="32.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="78" x="1176.5" y="48.6387">MonthlyBasis</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1168" x2="1263" y1="56.4688" y2="56.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85" x="1173" y="70.6792">provide : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1168" x2="1263" y1="77.2734" y2="77.2734"/><!--MD5=[9c75f41e4668c3c9ca0531f92dc504b3]
+class Mentees--><rect codeLine="68" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="103.9922" id="Mentees" style="stroke: #A80036; stroke-width: 1.5;" width="155" x="384" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="52" x="435.5" y="23.1387">Mentees</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="385" x2="538" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93" x="390" y="45.1792">Statistics : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="143" x="390" y="57.9839">MenteesTrainings : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="390" y="70.7886">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="385" x2="538" y1="77.3828" y2="77.3828"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="390" y="91.5933">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43" x="390" y="104.3979">select()</text><!--MD5=[7681870047745406677f997d1fe63ec8]
+class MonthlyReport--><rect codeLine="75" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="52.7734" id="MonthlyReport" style="stroke: #A80036; stroke-width: 1.5;" width="141" x="982" y="32.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="86" x="1009.5" y="48.6387">MonthlyReport</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="983" x2="1122" y1="56.4688" y2="56.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="129" x="988" y="70.6792">MonthlyReports : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="983" x2="1122" y1="77.2734" y2="77.2734"/><!--MD5=[5ac6a5603ff04377a127673b2eef6862]
+class Mentors--><rect codeLine="78" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="65.5781" id="Mentors" style="stroke: #A80036; stroke-width: 1.5;" width="159" x="7" y="286"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49" x="62" y="302.1387">Mentors</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="165" y1="309.9688" y2="309.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="13" y="324.1792">MentorshipProcess : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="165" y1="330.7734" y2="330.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="27" x="13" y="344.9839">ask()</text><!--MD5=[8989e31ee208df2a66c314149150408f]
+class ActivityReport--><rect codeLine="82" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="52.7734" id="ActivityReport" style="stroke: #A80036; stroke-width: 1.5;" width="139" x="1321" y="292.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="83" x="1349" y="308.6387">ActivityReport</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1322" x2="1459" y1="316.4688" y2="316.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="1327" y="330.6792">ActivityReports : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1322" x2="1459" y1="337.2734" y2="337.2734"/><!--MD5=[db6d18d8099558415abc41d00477ab92]
+class Admin--><rect codeLine="85" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="270.4531" id="Admin" style="stroke: #A80036; stroke-width: 1.5;" width="133" x="1495" y="184"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="37" x="1543" y="200.1387">Admin</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1496" x2="1627" y1="207.9688" y2="207.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="117" x="1501" y="222.1792">Administrator : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1501" y="234.9839">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1501" y="247.7886">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1501" y="260.5933">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1501" y="273.3979">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1501" y="286.2026">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1501" y="299.0073">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1501" y="311.812">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1496" x2="1627" y1="318.4063" y2="318.4063"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="1501" y="332.6167">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="1501" y="345.4214">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="1501" y="358.2261">export()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="1501" y="371.0308">send()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="121" x="1501" y="383.8354">"delete/deactivate"()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="1501" y="396.6401">track()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="27" x="1501" y="409.4448">get()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="44" x="1501" y="422.2495">assign()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="1501" y="435.0542">update()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43" x="1501" y="447.8589">match()</text><!--MD5=[0851f84a889f989e7bb0bebc385d0f09]
+class Request--><rect codeLine="105" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="52.7734" id="Request" style="stroke: #A80036; stroke-width: 1.5;" width="107" x="833" y="292.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49" x="862" y="308.6387">Request</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="834" x2="939" y1="316.4688" y2="316.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="95" x="839" y="330.6792">Requests : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="834" x2="939" y1="337.2734" y2="337.2734"/><!--MD5=[6b6e7b4d54846d7e61a20d65c7a74585]
+class PersonalInformation--><rect codeLine="108" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="78.3828" id="PersonalInformation" style="stroke: #A80036; stroke-width: 1.5;" width="261" x="201" y="280"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="118" x="272.5" y="296.1387">PersonalInformation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="202" x2="461" y1="303.9688" y2="303.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="249" x="207" y="318.1792">"PersonalInformation/contactDetails" : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="202" x2="461" y1="324.7734" y2="324.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="207" y="338.9839">update()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="207" y="351.7886">includes()</text><!--MD5=[1c40a9495d7098c3b845044b099123dc]
+class Month--><rect codeLine="113" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="78.3828" id="Month" style="stroke: #A80036; stroke-width: 1.5;" width="141" x="1145" y="280"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="1197.5" y="296.1387">Month</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1146" x2="1285" y1="303.9688" y2="303.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="116" x="1151" y="318.1792">MonthlyBasis : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="123" x="1151" y="330.9839">MonthlyReport : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="129" x="1151" y="343.7886">MonthlyReports : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1146" x2="1285" y1="350.3828" y2="350.3828"/><!--MD5=[da547346deef918ea16944ba046651ef]
+class Administrator--><rect codeLine="118" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="78.3828" id="Administrator" style="stroke: #A80036; stroke-width: 1.5;" width="86" x="1518.5" y="20"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="80" x="1521.5" y="36.1387">Administrator</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1519.5" x2="1603.5" y1="43.9688" y2="43.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1524.5" y="58.1792">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1519.5" x2="1603.5" y1="64.7734" y2="64.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="1524.5" y="78.9839">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="27" x="1524.5" y="91.7886">get()</text><!--MD5=[dc423367367be3ab79f8beb7facf7c41]
+class MenteeRequests--><rect codeLine="123" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="65.5781" id="MenteeRequests" style="stroke: #A80036; stroke-width: 1.5;" width="107" x="574" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="101" x="577" y="42.1387">MenteeRequests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="575" x2="680" y1="49.9688" y2="49.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="575" x2="680" y1="57.9688" y2="57.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="580" y="72.1792">accept()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="580" y="84.9839">establish()</text><!--MD5=[816a9d22d0e43eb51edd5c554ea60095]
+class ActivityReports--><rect codeLine="127" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="52.7734" id="ActivityReports" style="stroke: #A80036; stroke-width: 1.5;" width="96" x="1342.5" y="32.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="90" x="1345.5" y="48.6387">ActivityReports</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1343.5" x2="1437.5" y1="56.4688" y2="56.4688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1343.5" x2="1437.5" y1="64.4688" y2="64.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="44" x="1348.5" y="78.6792">timely()</text><!--MD5=[03d0e4e6acaf07dbc50df6aa5e048fe7]
+class Mentee/mentor--><rect codeLine="130" fill="#FEFECE" filter="url(#f1oheyhapz7fdu)" height="78.3828" id="Mentee/mentor" style="stroke: #A80036; stroke-width: 1.5;" width="98" x="716.5" y="20"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="92" x="719.5" y="36.1387">Mentee/mentor</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="717.5" x2="813.5" y1="43.9688" y2="43.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="717.5" x2="813.5" y1="51.9688" y2="51.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="722.5" y="66.1792">establish()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="722.5" y="78.9839">includes()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="26" x="722.5" y="91.7886">opt()</text><!--MD5=[028629c3bb10a72ee075f4b3ff657424]
+reverse link ActivityReports to ActivityReport--><path codeLine="135" d="M1390.5,98.967 C1390.5,152.446 1390.5,247.101 1390.5,292.423 " fill="none" id="ActivityReports&lt;-ActivityReport" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1390.5,85.681,1386.5,91.681,1390.5,97.681,1394.5,91.681,1390.5,85.681" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1381.625" y="105.2643">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1381.525" y="281.2274">1</text><!--MD5=[54943817fc99b4d2a663e9064f5c428e]
+reverse link Mentors to Mentor--><path codeLine="136" d="M111.279,363.591 C141.143,416.128 193.045,507.433 238.963,588.211 " fill="none" id="Mentors&lt;-Mentor" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="104.7147,352.043,104.2024,359.2359,110.6449,362.4753,111.1572,355.2824,104.7147,352.043" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="99.3355" y="371.6361">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="222.9685" y="571.1102">1</text><!--MD5=[cbe87143e95281ca3a44750372be3b22]
+reverse link Administrator to Admin--><path codeLine="137" d="M1561.5,111.261 C1561.5,132.373 1561.5,157.916 1561.5,183.74 " fill="none" id="Administrator&lt;-Admin" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1561.5,98.069,1557.5,104.069,1561.5,110.069,1565.5,104.069,1561.5,98.069" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1552.7875" y="118.4087">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1553.2813" y="172.9909">1</text><!--MD5=[20bfcc8b95d9e6b20aed6bbdaf019ce7]
+reverse link Mentee/mentor to Mentee--><path codeLine="138" d="M738.949,109.639 C729.349,127.587 717.956,148.886 706.179,170.904 " fill="none" id="Mentee/mentor&lt;-Mentee" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="745.138,98.069,738.7809,101.473,739.4781,108.6504,745.8352,105.2463,745.138,98.069" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="732.7985" y="118.4087">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="702.0296" y="159.9498">1</text><!--MD5=[32a6cbe166a9395b80278924c2935e69]
+reverse link PersonalInformation to Mentor--><path codeLine="139" d="M331.5,371.441 C331.5,410.941 331.5,468.451 331.5,526.811 " fill="none" id="PersonalInformation&lt;-Mentor" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="331.5,358.248,327.5,364.248,331.5,370.248,335.5,364.248,331.5,358.248" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="322.8125" y="378.3282">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="323.3688" y="516.2496">1</text><!--MD5=[4bdb50a2dfd7dcf72d79cfb93108f4a9]
+reverse link Mentee to Mentor--><path codeLine="140" d="M519.023,477.951 C487.881,523.297 454.219,572.312 424.126,616.13 " fill="none" id="Mentee&lt;-Mentor" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="526.461,467.12,519.7673,469.8022,519.6686,477.0126,526.3623,474.3304,526.461,467.12" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="513.0449" y="487.2129">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="432.1278" y="601.3412">1</text><!--MD5=[e3c97bb47c5ecfa130e101bcf34173e3]
+reverse link Requests to Request--><path codeLine="141" d="M893.292,98.967 C891.633,152.446 888.698,247.101 887.293,292.423 " fill="none" id="Requests&lt;-Request" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="893.704,85.681,889.52,91.5542,893.3321,97.6752,897.5161,91.8021,893.704,85.681" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="884.6549" y="105.2643">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="878.5113" y="281.2274">1</text><!--MD5=[37fbe219ec5ec519ac8a0d0750144651]
+reverse link Requests to their--><path codeLine="142" d="M915.754,97.051 C944.781,147.652 996.355,237.559 1023.92,285.606 " fill="none" id="Requests&lt;-their" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="909.232,85.681,908.748,92.8758,915.2033,96.0898,915.6872,88.895,909.232,85.681" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="903.5796" y="105.2643">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1011.6157" y="274.9303">1</text><!--MD5=[6ad1ab52e1710a322a9d8bc4386f6a16]
+reverse link MenteeRequests to Mentee--><path codeLine="143" d="M627.5,105.339 C627.5,124.108 627.5,147.031 627.5,170.795 " fill="none" id="MenteeRequests&lt;-Mentee" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="627.5,92.154,623.5,98.154,627.5,104.154,631.5,98.154,627.5,92.154" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="618.7625" y="111.7676">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="619.2938" y="159.8352">1</text><!--MD5=[7466ffd723683e7b0fee1e61957fdaca]
+reverse link MonthlyBasis to Month--><path codeLine="144" d="M1215.5,98.804 C1215.5,147.755 1215.5,231.394 1215.5,279.975 " fill="none" id="MonthlyBasis&lt;-Month" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1215.5,85.681,1211.5,91.681,1215.5,97.681,1219.5,91.681,1215.5,85.681" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1206.625" y="105.2643">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1206.8125" y="269.0239">1</text><!--MD5=[a9ac051a260160825041de4fc960ccad]
+reverse link MonthlyReport to their--><path codeLine="145" d="M1050.99,98.992 C1049.01,149.922 1045.59,238.167 1043.76,285.606 " fill="none" id="MonthlyReport&lt;-their" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1051.5,85.681,1047.2704,91.5214,1051.0349,97.672,1055.2644,91.8315,1051.5,85.681" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1042.4063" y="105.2643">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1035.2377" y="274.9303">1</text><!--MD5=[8a586722a29d9bca65247842e3077719]
+reverse link MonthlyReport to Month--><path codeLine="146" d="M1078.01,96.666 C1092.77,118.138 1111.52,145.887 1127.5,171 C1150.74,207.51 1175.99,250.004 1193.46,279.886 " fill="none" id="MonthlyReport&lt;-Month" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1070.48,85.75,1070.5939,92.9602,1077.2932,95.6283,1077.1794,88.4181,1070.48,85.75" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1065.5381" y="105.3484">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1180.9844" y="268.9196">1</text><!--MD5=[ab54e6c4aa83b7918bf0a3781491ca26]
+reverse link Mentees to Mentee--><path codeLine="147" d="M501.611,122.341 C511.203,137.249 521.848,153.793 532.769,170.768 " fill="none" id="Mentees&lt;-Mentee" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="494.495,111.281,494.3781,118.4912,500.9886,121.3722,501.1056,114.1621,494.495,111.281" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="490.21" y="131.0163">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="519.6782" y="159.8068">1</text><!--MD5=[ccbad0d2dc61a49cafbd4c8250499810]
+@startuml
+hide circle
+class Mentee {
+	Criteria : string
+	Password : string
+	"PersonalInformation/contactDetails" : string
+	Details : string
+	Profile : string
+	Mentees : string
+	MenteesTrainings : string
+	MenteeRequests : string
+	"Mentee/mentor" : string
+	be : string
+	be : string
+	be : string
+	be : string
+	select()
+	reset()
+	able()
+	see()
+	send()
+	update()
+	upload()
+}
+class Mentor {
+	Mentee : string
+	Criteria : string
+	Mentee : string
+	Password : string
+	TrainingPhaseActivities : string
+	Availability : string
+	PersonalInformation : string
+	Details : string
+	Interactions : string
+	Mentee : string
+	Mentors : string
+	MentorshipProcess : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	select()
+	provide()
+	able()
+	create()
+	update()
+	track()
+	submit()
+	reset()
+	monitor()
+	accept()
+	mark()
+	register()
+	report()
+}
+class Requests {
+	based : string
+}
+class their {
+	Requests : string
+	MonthlyReport : string
+}
+class MonthlyBasis {
+	provide : string
+}
+class Mentees {
+	Statistics : string
+	MenteesTrainings : string
+	be : string
+	able()
+	select()
+}
+class MonthlyReport {
+	MonthlyReports : string
+}
+class Mentors {
+	MentorshipProcess : string
+	ask()
+}
+class ActivityReport {
+	ActivityReports : string
+}
+class Admin {
+	Administrator : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	able()
+	view()
+	export()
+	send()
+	"delete/deactivate"()
+	track()
+	get()
+	assign()
+	update()
+	match()
+}
+class Request {
+	Requests : string
+}
+class PersonalInformation {
+	"PersonalInformation/contactDetails" : string
+	update()
+	includes()
+}
+class Month {
+	MonthlyBasis : string
+	MonthlyReport : string
+	MonthlyReports : string
+}
+class Administrator {
+	be : string
+	able()
+	get()
+}
+class MenteeRequests {
+	accept()
+	establish()
+}
+class ActivityReports {
+	timely()
+}
+class Mentee/mentor {
+	establish()
+	includes()
+	opt()
+}
+ActivityReports "1" o- - "1" ActivityReport
+Mentors "1" o- - "1" Mentor
+Administrator "1" o- - "1" Admin
+"Mentee/mentor" "1" o- - "1" Mentee
+PersonalInformation "1" o- - "1" Mentor
+Mentee "1" o- - "1" Mentor
+Requests "1" o- - "1" Request
+Requests "1" o- - "1" their
+MenteeRequests "1" o- - "1" Mentee
+MonthlyBasis "1" o- - "1" Month
+MonthlyReport "1" o- - "1" their
+MonthlyReport "1" o- - "1" Month
+Mentees "1" o- - "1" Mentee
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

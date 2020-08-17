@@ -1,0 +1,90 @@
+@startuml
+hide circle
+class User {
+	Progress : string
+	Needs : string
+	Needs : string
+	Profile : string
+	Experience : string
+	Points : string
+	Points : string
+	ThreadSpecificPointBalance : string
+	WatPoints : string
+	WatPoints : string
+	Threads : string
+	Users : string
+	UserParticipation : string
+	start()
+	answer()
+	"like/dislike"()
+	view()
+	Lifetime()
+	track()
+	get()
+	stay()
+	redeem()
+	receive()
+	search()
+	see()
+	select()
+	update()
+	mark()
+	compare()
+	gauge()
+	measure()
+	use()
+	report()
+	edit()
+	started()
+	delete()
+}
+class Users {
+	more : string
+	notify()
+	entice()
+	redeem()
+}
+class GiftCard {
+	GiftCards : string
+	receive()
+	add()
+}
+class Profile {
+	Profiles : string
+	update()
+}
+class Thread {
+	Threads : string
+	ThreadSpecificPointBalance : string
+	"Thread/post" : string
+	start()
+	sorting()
+}
+class Experience {
+	is : string
+	personalized()
+}
+class GiftCards {
+	using()
+}
+class UserParticipation {
+	increase()
+}
+class ThreadSpecificPointBalance {
+	drop()
+}
+class Forum {
+	search()
+	FreeOfInappropriateThreads()
+}
+Forum "1" <|-- "1" be
+ThreadSpecificPointBalance "1" o-- "1" User
+Users "1" o-- "1" User
+GiftCards "1" o-- "1" GiftCard
+Profile "1" o-- "1" User
+ThreadSpecificPointBalance "1" o-- "1" Thread
+Experience "1" o-- "1" User
+UserParticipation "1" o-- "1" User
+User "1" <|-- "1" "'s"
+
+@enduml

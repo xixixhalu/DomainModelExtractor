@@ -1,0 +1,66 @@
+@startuml
+hide circle
+class User {
+	SocialNetworks : string
+	PastMessages : string
+	LinkedinInformation : string
+	Profile : string
+	Profile : string
+	Area : string
+	am : string
+	be : string
+	is : string
+	upload()
+	send()
+	receive()
+	see()
+	share()
+	search()
+	connect()
+	invite()
+	sent()
+	received()
+	import()
+	have()
+	"add/update/delete"()
+	write()
+	create()
+	find()
+	want()
+	work()
+	interested()
+	comment()
+	think()
+	invites()
+	join()
+	able()
+	part()
+	leave()
+	follow()
+	Activites()
+	"follow/unfollow"()
+	"accept/reject"()
+	cancel()
+}
+class Connection {
+	Activites : string
+	ConnectionRequest : string
+}
+class Activites {
+	latest : string
+}
+class Profile {
+	ProfilePicture : string
+	Profiles : string
+	create()
+}
+class MaxBudget {
+	300()
+}
+Profile "1" o-- "1" User
+Activites "1" o-- "1" Connection
+MaxBudget "1" <|-- "1" is
+User "1" <|-- "1" is
+User "1" <|-- "1" "'s"
+
+@enduml

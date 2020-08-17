@@ -1,0 +1,77 @@
+@startuml
+hide circle
+class Hashtag {
+	specify : string
+	HashtagHolder : string
+	reserve()
+	associated()
+}
+class Posts {
+	browse : string
+	public : string
+}
+class Users {
+	UsersBrowserPictures : string
+	are : string
+	FlagPictures()
+	tag()
+	download()
+	delete()
+	interested()
+}
+class Post {
+	Posts : string
+}
+class Picture {
+	Pictures : string
+	PicturesOfThisHashtag : string
+	PictureFunction : string
+	upload()
+}
+class Pictures {
+	PicturesOfThisHashtag : string
+	is : string
+	upload()
+	associated()
+	inappropriate()
+}
+class User {
+	Users : string
+	UsersBrowserPictures : string
+	UserPressCameraShutter : string
+	UserProfile : string
+	UserDeletes : string
+	UserImportFriends : string
+	allow()
+	reserve()
+	delete()
+	hit()
+	want()
+	upload()
+	start()
+	Photos()
+}
+class Administrator {
+	"Administrators/maintainers/moderators" : string
+	allow()
+	close()
+}
+class HashtagHolder {
+	delete()
+}
+class Administrators/maintainers/moderators {
+	remove()
+}
+class UserDeletes {
+	picture()
+}
+Posts "1" o-- "1" Post
+Pictures "1" o-- "1" Picture
+Users "1" o-- "1" User
+Pictures "1" <|-- "1" is
+UserDeletes "1" o-- "1" User
+Users "1" <|-- "1" are
+"Administrators/maintainers/moderators" "1" o-- "1" Administrator
+HashtagHolder "1" o-- "1" Hashtag
+
+@enduml

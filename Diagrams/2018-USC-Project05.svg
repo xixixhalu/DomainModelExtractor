@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="627px" preserveAspectRatio="none" style="width:495px;height:627px;" version="1.1" viewBox="0 0 495 627" width="495px" zoomAndPan="magnify"><defs><filter height="300%" id="f4iwu4nbl7ksz" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="2" fill="#FEFECE" filter="url(#f4iwu4nbl7ksz)" height="475.3281" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="113" x="7" y="133"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="49" y="149.1387">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="119" y1="156.9688" y2="156.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101" x="13" y="171.1792">Username : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="100" x="13" y="183.9839">RecipeList : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101" x="13" y="196.7886">Username : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="13" y="209.5933">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="13" y="222.3979">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="13" y="235.2026">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="13" y="248.0073">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="13" y="260.812">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="13" y="273.6167">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="119" y1="280.2109" y2="280.2109"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="49" x="13" y="294.4214">browse()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="13" y="307.2261">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="13" y="320.0308">delete()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="13" y="332.8354">want()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="13" y="345.6401">add()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="13" y="358.4448">save()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="67" x="13" y="371.2495">customize()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="13" y="384.0542">produce()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="34" x="13" y="396.8589">earn()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="28" x="13" y="409.6636">like()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="13" y="422.4683">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="13" y="435.2729">share()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="13" y="448.0776">replace()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="13" y="460.8823">send()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="67" x="13" y="473.687">purchased()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="13" y="486.4917">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="13" y="499.2964">change()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="49" x="13" y="512.1011">canuse()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="13" y="524.9058">customise()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="49" x="13" y="537.7104">choose()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="13" y="550.5151">vend()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="13" y="563.3198">check()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="25" x="13" y="576.1245">log()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="13" y="588.9292">update()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="13" y="601.7339">identify()</text><!--MD5=[20418cb98520644da1e87dc0310aa74a]
+class Recipe--><rect codeLine="38" fill="#FEFECE" filter="url(#f4iwu4nbl7ksz)" height="78.3828" id="Recipe" style="stroke: #A80036; stroke-width: 1.5;" width="118" x="155.5" y="331.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="41" x="194" y="347.6387">Recipe</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="156.5" x2="272.5" y1="355.4688" y2="355.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="161.5" y="369.6792">RecipesList : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="100" x="161.5" y="382.4839">RecipeList : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="156.5" x2="272.5" y1="389.0781" y2="389.0781"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="161.5" y="403.2886">contains()</text><!--MD5=[335f4d9be48430461c68bf6d6fdba145]
+class App--><rect codeLine="43" fill="#FEFECE" filter="url(#f4iwu4nbl7ksz)" height="78.3828" id="App" style="stroke: #A80036; stroke-width: 1.5;" width="168" x="308.5" y="331.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="24" x="380.5" y="347.6387">App</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="309.5" x2="475.5" y1="355.4688" y2="355.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="84" x="314.5" y="369.6792">"in/out" : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="156" x="314.5" y="382.4839">AppropriateRewards : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="95" x="314.5" y="395.2886">ApplePay : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="309.5" x2="475.5" y1="401.8828" y2="401.8828"/><!--MD5=[6297e4407eab3680b14668dc9d60aa2d]
+class ApplePay--><rect codeLine="48" fill="#FEFECE" filter="url(#f4iwu4nbl7ksz)" height="65.5781" id="ApplePay" style="stroke: #A80036; stroke-width: 1.5;" width="72" x="356.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="55" x="365" y="23.1387">ApplePay</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="357.5" x2="427.5" y1="30.9688" y2="30.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="357.5" x2="427.5" y1="38.9688" y2="38.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="49" x="362.5" y="53.1792">canuse()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="362.5" y="65.9839">purchase()</text><!--MD5=[259e36335e11c20498dadca0ceb82456]
+class specificallergen--><rect fill="#FEFECE" filter="url(#f4iwu4nbl7ksz)" height="39.9688" id="specificallergen" style="stroke: #A80036; stroke-width: 1.5;" width="102" x="87.5" y="20"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="96" x="90.5" y="36.1387">specificallergen</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="88.5" x2="188.5" y1="43.9688" y2="43.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="88.5" x2="188.5" y1="51.9688" y2="51.9688"/><!--MD5=[4e61119d8c550c0b7a7adcdae6dc1c7a]
+reverse link specificallergen to User--><path codeLine="52" d="M131.144,73.219 C127.525,89.07 122.811,109.719 117.553,132.746 " fill="none" id="specificallergen&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="134.144,60.081,128.9092,65.0405,131.4737,71.7801,136.7086,66.8207,134.144,60.081" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="123.7939" y="79.9281">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="111.1954" y="121.7623">1</text><!--MD5=[208997f9a2ac5f5930820b9a4d35c83d]
+reverse link ApplePay to App--><path codeLine="53" d="M392.5,86.121 C392.5,151.189 392.5,270.236 392.5,331.241 " fill="none" id="ApplePay&lt;-App" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="392.5,73.096,388.5,79.096,392.5,85.096,396.5,79.096,392.5,73.096" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="383.7625" y="92.6989">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="383.8375" y="320.5427">1</text><!--MD5=[0c86f21930cfc11f0b67def2389765ec]
+reverse link specificallergen to Recipe--><path codeLine="54" d="M145.886,72.926 C159.953,133.728 190.531,265.899 205.659,331.288 " fill="none" id="specificallergen&lt;-Recipe" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="142.915,60.081,140.3709,66.8284,145.6208,71.772,148.1649,65.0245,142.915,60.081" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="135.0317" y="79.9281">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="195.452" y="320.3048">1</text><!--MD5=[b672daf4faca8b3a2ae5f6254f8650b3]
+@startuml
+hide circle
+class User {
+	Username : string
+	RecipeList : string
+	Username : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	browse()
+	see()
+	delete()
+	want()
+	add()
+	save()
+	customize()
+	produce()
+	earn()
+	like()
+	able()
+	share()
+	replace()
+	send()
+	purchased()
+	view()
+	change()
+	canuse()
+	customise()
+	choose()
+	vend()
+	check()
+	log()
+	update()
+	identify()
+}
+class Recipe {
+	RecipesList : string
+	RecipeList : string
+	contains()
+}
+class App {
+	"in/out" : string
+	AppropriateRewards : string
+	ApplePay : string
+}
+class ApplePay {
+	canuse()
+	purchase()
+}
+specificallergen "1" o- - "1" User
+ApplePay "1" o- - "1" App
+specificallergen "1" o- - "1" Recipe
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

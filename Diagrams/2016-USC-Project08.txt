@@ -1,0 +1,34 @@
+@startuml
+hide circle
+class User {
+	Account : string
+	Account : string
+	Users : string
+	sign()
+	"change/reset"()
+	delete()
+	"send/receive"()
+	post()
+	comment()
+	access()
+	"like/unlike"()
+	share()
+}
+class Issues {
+	comment : string
+	existing : string
+}
+class GeneralForum {
+	Issues : string
+}
+class Account {
+	Accounts : string
+}
+class Users {
+	use()
+}
+Account "1" o-- "1" User
+Issues "1" o-- "1" GeneralForum
+Users "1" o-- "1" User
+
+@enduml

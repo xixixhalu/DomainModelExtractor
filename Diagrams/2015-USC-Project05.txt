@@ -1,0 +1,62 @@
+@startuml
+hide circle
+class TourCreator {
+	Tours : string
+	Area : string
+	be : string
+	upload()
+	view()
+	edit()
+	delete()
+	created()
+	sign()
+	have()
+	manage()
+	able()
+	use()
+	create()
+	promote()
+}
+class Stop {
+	click : string
+}
+class Map {
+	Stop : string
+}
+class Tour {
+	desired : string
+	TourCreator : string
+	TourConductorWebsite : string
+	Tours : string
+	TourTaker : string
+}
+class TourConductorWebsite {
+	Tours : string
+}
+class TourTaker {
+	click()
+	view()
+	choose()
+	select()
+	search()
+	Search()
+	have()
+}
+class it {
+	delete()
+	view()
+	manage()
+	use()
+	search()
+	have()
+	seems()
+	IrrelevantUpload()
+}
+Stop "1" o-- "1" Map
+TourCreator "1" o-- "1" Tour
+TourTaker "1" o-- "1" Tour
+it "1" <|-- "1" be
+TourCreator "1" <|-- "1" be
+TourConductorWebsite "1" o-- "1" Tour
+
+@enduml

@@ -1,0 +1,75 @@
+@startuml
+hide circle
+class Youth {
+	Feedback : string
+	Profile : string
+	CaseManager : string
+	Case : string
+	YouthAccounts : string
+	take()
+	provide()
+	view()
+	contact()
+}
+class CaseManager {
+	Youth : string
+	Cases : string
+	Cases : string
+	CaseManagers : string
+	be : string
+	add()
+	view()
+	see()
+	review()
+	able()
+	export()
+	send()
+	activate()
+	deactivate()
+	delete()
+}
+class User {
+	LoginInformation : string
+	Records : string
+	Users : string
+	create()
+	answer()
+	recover()
+	trying()
+	log()
+}
+class YouthAccounts {
+	needed : string
+}
+class Users {
+	LogInformation : string
+}
+class System {
+	SystemSecurity : string
+	"SystemDesign/structure" : string
+	send()
+	log()
+	record()
+}
+class Profile {
+	ProfileOfAnyUser : string
+}
+class Case {
+	CaseManager : string
+	CaseManagers : string
+	Cases : string
+}
+class SystemDesign/structure {
+	increase()
+	allow()
+}
+"SystemDesign/structure" "1" o-- "1" System
+Youth "1" o-- "1" CaseManager
+CaseManager "1" o-- "1" Youth
+Profile "1" o-- "1" Youth
+Users "1" o-- "1" User
+YouthAccounts "1" o-- "1" Youth
+Case "1" o-- "1" Youth
+CaseManager "1" o-- "1" Case
+
+@enduml

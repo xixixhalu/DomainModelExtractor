@@ -1,0 +1,50 @@
+@startuml
+hide circle
+class Customers {
+	less : string
+	go()
+	voicemail()
+}
+class Sale {
+	SalesAgent : string
+	SalesManager : string
+	close()
+}
+class Customer {
+	Customers : string
+	route()
+}
+class Agent {
+	Agents : string
+	AgentWhile : string
+	is : string
+	available()
+}
+class SalesManager {
+	listen()
+	assure()
+	use()
+	train()
+	jump()
+	help()
+	speak()
+	guide()
+}
+class SalesAgent {
+	answer()
+	log()
+	pull()
+	use()
+	train()
+	request()
+	"click-to-call"()
+	AutoDialCustomers()
+	save()
+	close()
+}
+Agent "1" <|-- "1" is
+Customers "1" o-- "1" Customer
+SalesAgent "1" o-- "1" Sale
+SalesManager "1" o-- "1" Sale
+
+@enduml

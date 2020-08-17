@@ -1,0 +1,154 @@
+@startuml
+hide circle
+class User {
+	Profile : string
+	Account : string
+	ProfilePage : string
+	members : string
+	Account : string
+	Users : string
+	log()
+	access()
+	update()
+	manage()
+	delete()
+	suspend()
+	report()
+	block()
+}
+class Patient {
+	Calendar : string
+	UpcomingAppointment : string
+	Calendar : string
+	SupportGroup : string
+	SupportGroup : string
+	Calendar : string
+	SupportGroup : string
+	post : string
+	OwnSocialWall : string
+	"Profile/Invitation" : string
+	PatientAdmin : string
+	am : string
+	pull()
+	search()
+	get()
+	message()
+	share()
+	allow()
+	posted()
+	has()
+	send()
+	contact()
+	decide()
+	attended()
+	sign()
+	able()
+	add()
+}
+class support {
+	Network : string
+	SocialWalls : string
+}
+class Family {
+	member : string
+	member : string
+	LovedOne : string
+}
+class SupportGroup {
+	decide : string
+	publish : string
+	access()
+}
+class Illness {
+	types : string
+}
+class member {
+	Network : string
+	members : string
+	am : string
+	am : string
+	am : string
+	get()
+	send()
+	check()
+	decide()
+	publish()
+	available()
+	able()
+	help()
+	receive()
+	post()
+}
+class types {
+	Certain : string
+}
+class Admin {
+	SupportNetwork : string
+	Administrator : string
+	am : string
+	can()
+	able()
+	view()
+	post()
+}
+class ProfilePage {
+	update : string
+}
+class SocialWalls {
+	post : string
+}
+class Patients {
+	SocialWalls : string
+}
+class Profile/Invitation {
+	possible : string
+}
+class Calendar {
+	CalendarEvents : string
+	share()
+}
+class Profile {
+	ProfilePage : string
+	"Profile/Invitation" : string
+}
+class me {
+	member : string
+	members : string
+	contact()
+}
+class Network {
+	is : string
+	exclusive()
+}
+class members {
+	message()
+	ask()
+}
+class Administrator {
+	suspense()
+	delete()
+}
+class PatientAdmin {
+	post()
+}
+PatientAdmin "1" o-- "1" Patient
+SocialWalls "1" o-- "1" support
+Network "1" o-- "1" support
+member "1" o-- "1" Family
+types "1" o-- "1" Illness
+Network "1" o-- "1" member
+members "1" o-- "1" member
+Administrator "1" o-- "1" Admin
+SocialWalls "1" o-- "1" Patients
+ProfilePage "1" o-- "1" Profile
+"Profile/Invitation" "1" o-- "1" Profile
+member "1" o-- "1" me
+members "1" o-- "1" me
+ProfilePage "1" o-- "1" User
+Profile "1" o-- "1" User
+members "1" o-- "1" User
+SupportGroup "1" o-- "1" Patient
+"Profile/Invitation" "1" o-- "1" Patient
+Calendar "1" o-- "1" Patient
+
+@enduml

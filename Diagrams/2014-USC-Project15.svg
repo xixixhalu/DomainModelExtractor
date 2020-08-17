@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="409px" preserveAspectRatio="none" style="width:1317px;height:409px;" version="1.1" viewBox="0 0 1317 409" width="1317px" zoomAndPan="magnify"><defs><filter height="300%" id="f7km7cu3wtqmq" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9c2be56cfb335920e4ea5cbc67627545]
+class MyROSTERREMOTELY--><rect codeLine="2" fill="#FEFECE" filter="url(#f7km7cu3wtqmq)" height="52.7734" id="MyROSTERREMOTELY" style="stroke: #A80036; stroke-width: 1.5;" width="130" x="7" y="267.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="124" x="10" y="283.6387">MyROSTERREMOTELY</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="136" y1="291.4688" y2="291.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="67" x="13" y="305.6792">Girls : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="136" y1="312.2734" y2="312.2734"/><!--MD5=[4f9b8e9e39c618af223b871cf4a0e263]
+class InREALTIME--><rect codeLine="5" fill="#FEFECE" filter="url(#f7km7cu3wtqmq)" height="65.5781" id="InREALTIME" style="stroke: #A80036; stroke-width: 1.5;" width="142" x="172" y="261"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="65" x="210.5" y="277.1387">InREALTIME</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="173" x2="313" y1="284.9688" y2="284.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="67" x="178" y="299.1792">Girls : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="130" x="178" y="311.9839">OtherCOACHES : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="173" x2="313" y1="318.5781" y2="318.5781"/><!--MD5=[99c2b22631e5dbb56ad6df3a963a21e2]
+class Girl--><rect codeLine="9" fill="#FEFECE" filter="url(#f7km7cu3wtqmq)" height="78.3828" id="Girl" style="stroke: #A80036; stroke-width: 1.5;" width="179" x="349.5" y="255"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="20" x="429" y="271.1387">Girl</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="350.5" x2="527.5" y1="278.9688" y2="278.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="167" x="355.5" y="293.1792">"PaperWork/payment" : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="67" x="355.5" y="305.9839">Girls : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="355.5" y="318.7886">GirlsData : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="350.5" x2="527.5" y1="325.3828" y2="325.3828"/><!--MD5=[d20e61c3df8b8f47d0b4e5ec2b6a1cdb]
+class Volunteer--><rect codeLine="14" fill="#FEFECE" filter="url(#f7km7cu3wtqmq)" height="193.625" id="Volunteer" style="stroke: #A80036; stroke-width: 1.5;" width="159" x="620.5" y="197"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="58" x="671" y="213.1387">Volunteer</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="621.5" x2="778.5" y1="220.9688" y2="220.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="108" x="626.5" y="235.1792">ClassRoster : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="626.5" y="247.9839">Team : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="139" x="626.5" y="260.7886">VolunteerCOACH : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133" x="626.5" y="273.5933">VolunteerCoach : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="626.5" y="286.3979">VolunteerCoaches : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="621.5" x2="778.5" y1="292.9922" y2="292.9922"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="626.5" y="307.2026">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="626.5" y="320.0073">check()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="47" x="626.5" y="332.812">access()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="626.5" y="345.6167">know()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="626.5" y="358.4214">conduct()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38" x="626.5" y="371.2261">Login()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="626.5" y="384.0308">login()</text><!--MD5=[4481f1f876aa056696029f7568a5ef18]
+class Classes--><rect codeLine="28" fill="#FEFECE" filter="url(#f7km7cu3wtqmq)" height="78.3828" id="Classes" style="stroke: #A80036; stroke-width: 1.5;" width="121" x="956.5" y="33"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="47" x="993.5" y="49.1387">Classes</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="957.5" x2="1076.5" y1="56.9688" y2="56.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="109" x="962.5" y="71.1792">TeamName : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="957.5" x2="1076.5" y1="77.7734" y2="77.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="65" x="962.5" y="91.9839">"Add/Edit"()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="962.5" y="104.7886">conduct()</text><!--MD5=[dfb0845b8492ffe07b1ce50e003034d7]
+class Team--><rect codeLine="33" fill="#FEFECE" filter="url(#f7km7cu3wtqmq)" height="65.5781" id="Team" style="stroke: #A80036; stroke-width: 1.5;" width="254" x="331" y="39"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="33" x="441.5" y="55.1387">Team</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="332" x2="584" y1="62.9688" y2="62.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="242" x="337" y="77.1792">TeamsHAVINGISSUESIMMEDIATELY : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="111" x="337" y="89.9839">TeamRoster : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="332" x2="584" y1="96.5781" y2="96.5781"/><!--MD5=[85e71aedb972f3aacaca5118e37ca238]
+class Girls--><rect codeLine="37" fill="#FEFECE" filter="url(#f7km7cu3wtqmq)" height="65.5781" id="Girls" style="stroke: #A80036; stroke-width: 1.5;" width="106" x="190" y="39"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="27" x="229.5" y="55.1387">Girls</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="191" x2="295" y1="62.9688" y2="62.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="196" y="77.1792">GirlsData : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="191" x2="295" y1="83.7734" y2="83.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="196" y="97.9839">turned()</text><!--MD5=[ce225750be1aa34c384e75bd032b49fc]
+class VolunteerCoach--><rect codeLine="41" fill="#FEFECE" filter="url(#f7km7cu3wtqmq)" height="78.3828" id="VolunteerCoach" style="stroke: #A80036; stroke-width: 1.5;" width="159" x="620.5" y="33"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="95" x="652.5" y="49.1387">VolunteerCoach</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="621.5" x2="778.5" y1="56.9688" y2="56.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="626.5" y="71.1792">VolunteerCoaches : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="621.5" x2="778.5" y1="77.7734" y2="77.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="626.5" y="91.9839">identify()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="626.5" y="104.7886">have()</text><!--MD5=[17d4c8bd30167642356b76a612b0c47b]
+class the--><rect codeLine="46" fill="#FEFECE" filter="url(#f7km7cu3wtqmq)" height="65.5781" id="the" style="stroke: #A80036; stroke-width: 1.5;" width="80" x="1112" y="261"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="19" x="1142.5" y="277.1387">the</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1113" x2="1191" y1="284.9688" y2="284.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="68" x="1118" y="299.1792">they : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1113" x2="1191" y1="305.7734" y2="305.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="1118" y="319.9839">identify()</text><!--MD5=[41e1c6cf192918703501b24b2053926c]
+class Class--><rect codeLine="50" fill="#FEFECE" filter="url(#f7km7cu3wtqmq)" height="65.5781" id="Class" style="stroke: #A80036; stroke-width: 1.5;" width="120" x="957" y="261"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32" x="1001" y="277.1387">Class</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="958" x2="1076" y1="284.9688" y2="284.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="108" x="963" y="299.1792">ClassRoster : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="86" x="963" y="311.9839">Classes : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="958" x2="1076" y1="318.5781" y2="318.5781"/><!--MD5=[f8e092794d52bf9a252466252ae7bd1c]
+class System--><rect codeLine="54" fill="#FEFECE" filter="url(#f7km7cu3wtqmq)" height="129.6016" id="System" style="stroke: #A80036; stroke-width: 1.5;" width="80" x="1218" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="45" x="1235.5" y="23.1387">System</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1219" x2="1297" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1224" y="45.1792">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1224" y="57.9839">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1219" x2="1297" y1="64.5781" y2="64.5781"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="68" x="1224" y="78.7886">accessible()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="1224" y="91.5933">Hours()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="1224" y="104.3979">easy()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="1224" y="117.2026">intuitive()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="1224" y="130.0073">use()</text><!--MD5=[f30f3401be9edfdb1e4e663344717b65]
+class they--><rect codeLine="63" fill="#FEFECE" filter="url(#f7km7cu3wtqmq)" height="65.5781" id="they" style="stroke: #A80036; stroke-width: 1.5;" width="62" x="1121" y="39"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="26" x="1139" y="55.1387">they</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1122" x2="1182" y1="62.9688" y2="62.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1122" x2="1182" y1="70.9688" y2="70.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42" x="1127" y="85.1792">forget()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="1127" y="97.9839">change()</text><!--MD5=[443911f7b13034e81786e787aab73bee]
+class VolunteerCOACH--><rect codeLine="67" fill="#FEFECE" filter="url(#f7km7cu3wtqmq)" height="52.7734" id="VolunteerCOACH" style="stroke: #A80036; stroke-width: 1.5;" width="107" x="814.5" y="45.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="101" x="817.5" y="61.6387">VolunteerCOACH</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="815.5" x2="920.5" y1="69.4688" y2="69.4688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="815.5" x2="920.5" y1="77.4688" y2="77.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="820.5" y="91.6792">CHECK()</text><!--MD5=[8330fea1ec797f0525a4843a88f154d2]
+class be--><rect fill="#FEFECE" filter="url(#f7km7cu3wtqmq)" height="39.9688" id="be" style="stroke: #A80036; stroke-width: 1.5;" width="22" x="1247" y="274"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="16" x="1250" y="290.1387">be</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1248" x2="1268" y1="297.9688" y2="297.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1248" x2="1268" y1="305.9688" y2="305.9688"/><!--MD5=[7a4a2e0ca726d7ede3ea37d63792a0b1]
+reverse link Team to Volunteer--><path codeLine="70" d="M503.233,114.121 C536.123,144.021 581.511,185.283 620.407,220.643 " fill="none" id="Team&lt;-Volunteer" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="493.448,105.225,495.1969,112.2208,502.3272,113.2971,500.5783,106.3013,493.448,105.225" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="491.0497" y="124.5954">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="604.4395" y="210.0274">1</text><!--MD5=[eac729b51169b0bf4bb0253778160947]
+reverse link System to be--><path codeLine="71" d="M1258,157.474 C1258,199.84 1258,247.553 1258,273.547 " fill="none" id="System&lt;-be" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="1251,157.225,1258,137.225,1265,157.224,1251,157.225" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1249.5875" y="156.8191">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1248.875" y="262.7752">1</text><!--MD5=[cf60d399845b545f491dc2329e723570]
+reverse link VolunteerCoach to Volunteer--><path codeLine="72" d="M700,124.533 C700,146.168 700,172.058 700,196.975 " fill="none" id="VolunteerCoach&lt;-Volunteer" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="700,111.321,696,117.321,700,123.321,704,117.321,700,111.321" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="691.3125" y="131.4138">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="691.6938" y="186.0586">1</text><!--MD5=[0a7af6f504dd10f1e8b6bd559d8d7030]
+reverse link Girls to MyROSTERREMOTELY--><path codeLine="73" d="M209.746,115.782 C174.783,160.765 120.915,230.069 91.9925,267.279 " fill="none" id="Girls&lt;-MyROSTERREMOTELY" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="217.768,105.462,210.9278,107.7449,210.4043,114.937,217.2445,112.6541,217.768,105.462" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="204.7438" y="124.6169">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="87.6908" y="256.4738">1</text><!--MD5=[8f5193a5616ddfe1f6175d2b44b339bc]
+reverse link VolunteerCOACH to Volunteer--><path codeLine="74" d="M840.495,109.019 C822.21,132.963 797.268,165.625 773.471,196.787 " fill="none" id="VolunteerCOACH&lt;-Volunteer" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="848.399,98.667,841.5785,101.0082,841.1164,108.2045,847.9368,105.8633,848.399,98.667" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="835.2363" y="118.2472">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="770.7899" y="185.8562">1</text><!--MD5=[6c095d0a90ba7e60bebbe03571058242]
+reverse link Girls to InREALTIME--><path codeLine="75" d="M243,118.492 C243,160.945 243,223.222 243,260.763 " fill="none" id="Girls&lt;-InREALTIME" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="243,105.462,239,111.462,243,117.462,247,111.462,243,105.462" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="234.3125" y="124.6169">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="234.2125" y="249.8644">1</text><!--MD5=[6f0126b3ee2e13899135acde81309286]
+reverse link they to the--><path codeLine="76" d="M1152,118.492 C1152,160.945 1152,223.222 1152,260.763 " fill="none" id="they&lt;-the" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1152,105.462,1148,111.462,1152,117.462,1156,111.462,1152,105.462" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1143.3125" y="124.6169">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1143.2125" y="249.8644">1</text><!--MD5=[9d6775254a96569256a7e45b19dd22b7]
+reverse link Girls to Girl--><path codeLine="77" d="M280.659,115.27 C316.62,155.635 370.33,215.922 405.017,254.856 " fill="none" id="Girls&lt;-Girl" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="271.92,105.462,272.9247,112.6028,279.9026,114.4218,278.8979,107.281,271.92,105.462" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="268.2031" y="124.6169">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="390.4887" y="243.8845">1</text><!--MD5=[cde574e7e7066f77f470d8b398820eb1]
+reverse link Classes to Class--><path codeLine="78" d="M1017,124.397 C1017,166.581 1017,225.003 1017,260.833 " fill="none" id="Classes&lt;-Class" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1017,111.321,1013,117.321,1017,123.321,1021,117.321,1017,111.321" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1008.3125" y="131.4138">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1008.2125" y="249.9482">1</text><!--MD5=[778e6101a127a182ec7c22f15e25f1ff]
+@startuml
+hide circle
+class MyROSTERREMOTELY {
+	Girls : string
+}
+class InREALTIME {
+	Girls : string
+	OtherCOACHES : string
+}
+class Girl {
+	"PaperWork/payment" : string
+	Girls : string
+	GirlsData : string
+}
+class Volunteer {
+	ClassRoster : string
+	Team : string
+	VolunteerCOACH : string
+	VolunteerCoach : string
+	VolunteerCoaches : string
+	view()
+	check()
+	access()
+	know()
+	conduct()
+	Login()
+	login()
+}
+class Classes {
+	TeamName : string
+	"Add/Edit"()
+	conduct()
+}
+class Team {
+	TeamsHAVINGISSUESIMMEDIATELY : string
+	TeamRoster : string
+}
+class Girls {
+	GirlsData : string
+	turned()
+}
+class VolunteerCoach {
+	VolunteerCoaches : string
+	identify()
+	have()
+}
+class the {
+	they : string
+	identify()
+}
+class Class {
+	ClassRoster : string
+	Classes : string
+}
+class System {
+	be : string
+	be : string
+	accessible()
+	Hours()
+	easy()
+	intuitive()
+	use()
+}
+class they {
+	forget()
+	change()
+}
+class VolunteerCOACH {
+	CHECK()
+}
+Team "1" o- - "1" Volunteer
+System "1" <|- - "1" be
+VolunteerCoach "1" o- - "1" Volunteer
+Girls "1" o- - "1" MyROSTERREMOTELY
+VolunteerCOACH "1" o- - "1" Volunteer
+Girls "1" o- - "1" InREALTIME
+they "1" o- - "1" the
+Girls "1" o- - "1" Girl
+Classes "1" o- - "1" Class
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

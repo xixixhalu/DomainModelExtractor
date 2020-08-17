@@ -1,0 +1,37 @@
+@startuml
+hide circle
+class Items {
+	Database : string
+	"adding/removing" : string
+	purchase()
+}
+class User {
+	Users : string
+	get()
+	placed()
+	keep()
+	return()
+	visit()
+	view()
+	participate()
+}
+class Auction {
+	Auctions : string
+	"Auctions/bids/raffles" : string
+}
+class Auctions {
+	"Auctions/bids/raffles" : string
+}
+class Item {
+	Items : string
+}
+class Users {
+	enable()
+	pay()
+	search()
+}
+Users "1" o-- "1" User
+Items "1" o-- "1" Item
+Auctions "1" o-- "1" Auction
+
+@enduml

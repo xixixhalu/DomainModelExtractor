@@ -1,0 +1,130 @@
+@startuml
+hide circle
+class Date {
+	based : string
+	DateRange : string
+}
+class DateRange {
+	based : string
+}
+class Trainer {
+	CalendarOfAvailability : string
+	Prices : string
+	Profile : string
+	Trainers : string
+	be : string
+	offer()
+	put()
+	see()
+	compare()
+	set()
+	able()
+	attach()
+}
+class User {
+	Course : string
+	Registration : string
+	be : string
+	be : string
+	be : string
+	search()
+	request()
+	filter()
+	see()
+	able()
+	setup()
+	register()
+	share()
+}
+class Course {
+	registered : string
+	Courses : string
+	CoursesInformation : string
+	CourseAttendee : string
+	CourseName : string
+	schedule()
+	cancel()
+	Calendar()
+	offer()
+}
+class their {
+	Feasibility : string
+}
+class Trainers {
+	Profile : string
+	are : string
+	profitable()
+}
+class Courses {
+	CoursesInformation : string
+	start()
+}
+class Notification {
+	Notifications : string
+}
+class Feasibility {
+	"Feasibility-LRB-AsWellAsScope-RRB-OfEach" : string
+}
+class Prices {
+	PricesOfCourses : string
+}
+class Price {
+	Prices : string
+	PricesOfCourses : string
+}
+class Admin {
+	Administrator : string
+	be : string
+	be : string
+	schedule()
+	see()
+	met()
+	did()
+	able()
+	cancel()
+	adjust()
+	move()
+	attach()
+}
+class Administrator {
+	receive()
+	create()
+	delete()
+	inquiry()
+	update()
+	see()
+	adjust()
+	verify()
+	have()
+}
+class CourseAttendee {
+	see()
+	compare()
+	decide()
+	receive()
+	Rate()
+	Review()
+	pay()
+}
+class PricesOfCourses {
+	compare()
+	see()
+}
+class Notifications {
+	receive()
+}
+Notifications "1" o-- "1" Notification
+Prices "1" o-- "1" Trainer
+Administrator "1" o-- "1" Admin
+PricesOfCourses "1" o-- "1" Prices
+Course "1" o-- "1" User
+Course "1" <|-- "1" is
+Prices "1" o-- "1" Price
+Courses "1" o-- "1" Course
+DateRange "1" o-- "1" Date
+PricesOfCourses "1" o-- "1" Price
+CourseAttendee "1" o-- "1" Course
+Trainers "1" o-- "1" Trainer
+Feasibility "1" o-- "1" their
+
+@enduml

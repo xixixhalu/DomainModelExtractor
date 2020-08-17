@@ -1,0 +1,123 @@
+@startuml
+hide circle
+class User {
+	"Geo-location" : string
+	Login : string
+	RegisteredUsername : string
+	FacebookAccount : string
+	OwnProfile : string
+	Hashtag : string
+	OwnEvent : string
+	Event : string
+	Gallery : string
+	Phone : string
+	HistoryOfHashtags : string
+	PrivateEvent : string
+	Pictures : string
+	Users : string
+	UsersOfTheAppAndViewPictures : string
+	Username : string
+	suspend()
+	use()
+	take()
+	create()
+	login()
+	reserve()
+	delete()
+	posted()
+	report()
+	moderate()
+	created()
+	like()
+	shut()
+	remove()
+	choose()
+	invited()
+	participate()
+	ensure()
+	want()
+	save()
+	keep()
+	sort()
+	have()
+	post()
+	view()
+	write()
+}
+class Event {
+	Hashtag : string
+	Name : string
+	EventAttendees : string
+	"Event/hashtag" : string
+	Events : string
+	EventHashtag : string
+	remove()
+	update()
+	see()
+	starts()
+}
+class their {
+	Contents : string
+	Pictures : string
+}
+class Picture {
+	Pictures : string
+	PicturesOfTheEvent : string
+	PictureViewing : string
+	PictureLifetime : string
+}
+class Users {
+	UsersOfTheAppAndViewPictures : string
+	manage()
+	upload()
+	post()
+}
+class Pictures {
+	PicturesOfTheEvent : string
+	be : string
+	delete()
+	moderate()
+	remove()
+	upload()
+	post()
+	sort()
+	list()
+	restore()
+	give()
+	Area()
+	descriptive()
+}
+class EventAttendees {
+	use()
+}
+class PrivateEvent {
+	invited()
+}
+class Event/hashtag {
+	introduce()
+	search()
+	create()
+	shut()
+	save()
+	keep()
+	see()
+	post()
+	reserve()
+	browse()
+	manage()
+	change()
+	delete()
+	generate()
+	expires()
+}
+EventAttendees "1" o-- "1" Event
+Pictures "1" <|-- "1" be
+PrivateEvent "1" o-- "1" User
+"Event/hashtag" "1" o-- "1" Event
+Pictures "1" o-- "1" their
+Pictures "1" o-- "1" Picture
+Pictures "1" o-- "1" User
+Users "1" o-- "1" User
+Event "1" o-- "1" User
+
+@enduml

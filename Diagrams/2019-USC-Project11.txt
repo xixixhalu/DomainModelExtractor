@@ -1,0 +1,118 @@
+@startuml
+hide circle
+class RegisteredUser {
+	Finances : string
+	PaymentHistory : string
+	Session : string
+	PaymentMethod : string
+	MessageHistory : string
+	SessionAppointmentHistory : string
+	VideoRecords : string
+	PersonalInformation : string
+	be : string
+	am : string
+	video()
+	search()
+	access()
+	manage()
+	see()
+	rate()
+	had()
+	pay()
+	update()
+	view()
+	authorize()
+	chat()
+	able()
+	ask()
+	satisfied()
+	received()
+	schedule()
+	have()
+	get()
+	sign()
+}
+class FinancialExpert {
+	ReceivedPaymentHistory : string
+	Calendar : string
+	Session : string
+	Profile : string
+	ProfileBio : string
+	Status : string
+	Notes : string
+	VideoRecords : string
+	Client : string
+	Calendar : string
+	Customers : string
+	FinancialExperts : string
+	be : string
+	am : string
+	rate()
+	see()
+	manage()
+	receive()
+	update()
+	set()
+	store()
+	authorize()
+	given()
+	able()
+	make()
+	available()
+	view()
+	keep()
+	sign()
+}
+class Calendar {
+	Times : string
+	manage()
+}
+class User {
+	Users : string
+}
+class Appointment {
+	AppointmentAvailability : string
+	AppointmentSession : string
+	Appointments : string
+	had()
+}
+class App {
+	Appointment : string
+	AppointmentAvailability : string
+	AppointmentSession : string
+	Appointments : string
+}
+class Profile {
+	ProfileBio : string
+	ProfilesOfFinancialExperts : string
+}
+class Session {
+	SessionAppointmentHistory : string
+}
+class AppointmentAvailability {
+	VideoChat()
+}
+class VideoRecords {
+	gain()
+}
+class AppointmentSession {
+	completed()
+}
+class Users {
+	select()
+	commit()
+}
+Appointment "1" o-- "1" App
+Session "1" o-- "1" FinancialExpert
+AppointmentAvailability "1" o-- "1" App
+VideoRecords "1" o-- "1" FinancialExpert
+Session "1" o-- "1" RegisteredUser
+AppointmentSession "1" o-- "1" App
+Users "1" o-- "1" User
+VideoRecords "1" o-- "1" RegisteredUser
+AppointmentAvailability "1" o-- "1" Appointment
+Calendar "1" o-- "1" FinancialExpert
+AppointmentSession "1" o-- "1" Appointment
+Profile "1" o-- "1" FinancialExpert
+
+@enduml

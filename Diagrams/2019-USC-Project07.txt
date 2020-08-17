@@ -1,0 +1,48 @@
+@startuml
+hide circle
+class his {
+	Progress : string
+}
+class UserStats {
+	viewing : string
+}
+class AppStore {
+	publish : string
+	Rate : string
+	provide : string
+}
+class User {
+	ProgressReport : string
+	weak : string
+	UserAnalytics : string
+	UserStats : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	enables()
+	able()
+	view()
+	track()
+	get()
+	Trouble()
+	play()
+	understand()
+	skip()
+	proceed()
+}
+class App {
+	AppStore : string
+	publish()
+}
+class Progress {
+	ProgressReport : string
+	track()
+}
+AppStore "1" o-- "1" App
+UserStats "1" o-- "1" User
+Progress "1" o-- "1" his
+
+@enduml

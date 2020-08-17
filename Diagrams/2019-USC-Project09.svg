@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="306px" preserveAspectRatio="none" style="width:508px;height:306px;" version="1.1" viewBox="0 0 508 306" width="508px" zoomAndPan="magnify"><defs><filter height="300%" id="fdvug7761iup9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[7fb7c12d2691bca2ed06b43fb7c0b3a8]
+class Items--><rect codeLine="2" fill="#FEFECE" filter="url(#fdvug7761iup9)" height="78.3828" id="Items" style="stroke: #A80036; stroke-width: 1.5;" width="160" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="33" x="70.5" y="23.1387">Items</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="166" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="13" y="45.1792">Database : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="148" x="13" y="57.9839">"adding/removing" : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="166" y1="64.5781" y2="64.5781"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="13" y="78.7886">purchase()</text><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="7" fill="#FEFECE" filter="url(#fdvug7761iup9)" height="142.4063" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="86" x="189" y="145"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="217.5" y="161.1387">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="190" x2="274" y1="168.9688" y2="168.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="195" y="183.1792">Users : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="190" x2="274" y1="189.7734" y2="189.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="27" x="195" y="203.9839">get()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="195" y="216.7886">placed()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="195" y="229.5933">keep()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42" x="195" y="242.3979">return()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="31" x="195" y="255.2026">visit()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="195" y="268.0073">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="68" x="195" y="280.812">participate()</text><!--MD5=[a4beae97a833d06086bb16d2d2128104]
+class Auction--><rect codeLine="17" fill="#FEFECE" filter="url(#fdvug7761iup9)" height="65.5781" id="Auction" style="stroke: #A80036; stroke-width: 1.5;" width="179" x="310.5" y="183"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="44" x="378" y="199.1387">Auction</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="311.5" x2="488.5" y1="206.9688" y2="206.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="316.5" y="221.1792">Auctions : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="167" x="316.5" y="233.9839">"Auctions/bids/raffles" : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="311.5" x2="488.5" y1="240.5781" y2="240.5781"/><!--MD5=[94488c72a0d5fb436733c225f4651c2f]
+class Auctions--><rect codeLine="21" fill="#FEFECE" filter="url(#fdvug7761iup9)" height="52.7734" id="Auctions" style="stroke: #A80036; stroke-width: 1.5;" width="179" x="310.5" y="19.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="51" x="374.5" y="35.6387">Auctions</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="311.5" x2="488.5" y1="43.4688" y2="43.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="167" x="316.5" y="57.6792">"Auctions/bids/raffles" : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="311.5" x2="488.5" y1="64.2734" y2="64.2734"/><!--MD5=[44a1b4afaef76c16e6c9ec4990ad0c8d]
+class Item--><rect codeLine="24" fill="#FEFECE" filter="url(#fdvug7761iup9)" height="52.7734" id="Item" style="stroke: #A80036; stroke-width: 1.5;" width="86" x="44" y="189.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="26" x="74" y="205.6387">Item</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="45" x2="129" y1="213.4688" y2="213.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="50" y="227.6792">Items : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="45" x2="129" y1="234.2734" y2="234.2734"/><!--MD5=[09a5b4adb0ee554eafb73b413209c7bf]
+class Users--><rect codeLine="27" fill="#FEFECE" filter="url(#fdvug7761iup9)" height="78.3828" id="Users" style="stroke: #A80036; stroke-width: 1.5;" width="60" x="202" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="214" y="23.1387">Users</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="203" x2="261" y1="30.9688" y2="30.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="203" x2="261" y1="38.9688" y2="38.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="208" y="53.1792">enable()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="208" y="65.9839">pay()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="208" y="78.7886">search()</text><!--MD5=[8a97845c4dc9c5ec34942a66c53e2979]
+reverse link Users to User--><path codeLine="32" d="M232,98.161 C232,112.921 232,129.287 232,144.983 " fill="none" id="Users&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="232,85.122,228,91.122,232,97.122,236,91.122,232,85.122" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="223.2875" y="105.4712">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="223.5875" y="133.9387">1</text><!--MD5=[6d82d874b42b769cf19ecb7822dddc1a]
+reverse link Items to Item--><path codeLine="33" d="M87,98.415 C87,128.509 87,165.206 87,189.2915 " fill="none" id="Items&lt;-Item" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="87,85.122,83,91.122,87,97.122,91,91.122,87,85.122" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="78.2875" y="105.4712">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="78.075" y="178.4898">1</text><!--MD5=[e42d9238ee1495fa55bfff11380634ce]
+reverse link Auctions to Auction--><path codeLine="34" d="M400,85.623 C400,115.088 400,155.197 400,182.909 " fill="none" id="Auctions&lt;-Auction" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="400,72.516,396,78.516,400,84.516,404,78.516,400,72.516" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="391.075" y="92.4906">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="391.2125" y="172.0391">1</text><!--MD5=[a412a27f12314b45457cd9de02c2bce3]
+@startuml
+hide circle
+class Items {
+	Database : string
+	"adding/removing" : string
+	purchase()
+}
+class User {
+	Users : string
+	get()
+	placed()
+	keep()
+	return()
+	visit()
+	view()
+	participate()
+}
+class Auction {
+	Auctions : string
+	"Auctions/bids/raffles" : string
+}
+class Auctions {
+	"Auctions/bids/raffles" : string
+}
+class Item {
+	Items : string
+}
+class Users {
+	enable()
+	pay()
+	search()
+}
+Users "1" o- - "1" User
+Items "1" o- - "1" Item
+Auctions "1" o- - "1" Auction
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

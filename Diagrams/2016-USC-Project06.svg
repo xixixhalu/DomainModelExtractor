@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="716px" preserveAspectRatio="none" style="width:836px;height:716px;" version="1.1" viewBox="0 0 836 716" width="836px" zoomAndPan="magnify"><defs><filter height="300%" id="fb833vbyxv75z" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="2" fill="#FEFECE" filter="url(#fb833vbyxv75z)" height="488.1328" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="175" x="7" y="209"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="80" y="225.1387">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="181" y1="232.9688" y2="232.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="13" y="247.1792">Details : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="163" x="13" y="259.9839">RegisteredUsername : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="13" y="272.7886">OwnProfile : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112" x="13" y="285.5933">GameProfile : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="13" y="298.3979">Liking : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="13" y="311.2026">Password : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="141" x="13" y="324.0073">ProfileInformation : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="13" y="336.812">Users : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="13" y="349.6167">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="181" y1="356.2109" y2="356.2109"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="13" y="370.4214">register()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="13" y="383.2261">login()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="13" y="396.0308">click()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="13" y="408.8354">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="31" x="13" y="421.6401">won()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="39" x="13" y="434.4448">place()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="13" y="447.2495">Password()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="13" y="460.0542">play()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="13" y="472.8589">have()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="34" x="13" y="485.6636">beat()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="49" x="13" y="498.4683">choose()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="13" y="511.2729">edit()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="13" y="524.0776">change()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="27" x="13" y="536.8823">get()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="34" x="13" y="549.687">hear()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="13" y="562.4917">quit()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="13" y="575.2964">want()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="25" x="13" y="588.1011">log()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="28" x="13" y="600.9058">lost()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="47" x="13" y="613.7104">gained()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="13" y="626.5151">recover()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38" x="13" y="639.3198">mute()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="13" y="652.1245">remove()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="13" y="664.9292">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="13" y="677.7339">detonate()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="13" y="690.5386">trying()</text><!--MD5=[1f24f7b92150e3316908f7910ce81742]
+class Grid--><rect codeLine="39" fill="#FEFECE" filter="url(#fb833vbyxv75z)" height="65.5781" id="Grid" style="stroke: #A80036; stroke-width: 1.5;" width="111" x="172" y="45"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="25" x="215" y="61.1387">Grid</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="173" x2="282" y1="68.9688" y2="68.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="178" y="83.1792">anywhere : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="178" y="95.9839">given : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="173" x2="282" y1="102.5781" y2="102.5781"/><!--MD5=[09a5b4adb0ee554eafb73b413209c7bf]
+class Users--><rect codeLine="43" fill="#FEFECE" filter="url(#fb833vbyxv75z)" height="52.7734" id="Users" style="stroke: #A80036; stroke-width: 1.5;" width="84" x="52.5" y="51.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="76.5" y="67.6387">Users</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="53.5" x2="135.5" y1="75.4688" y2="75.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72" x="58.5" y="89.6792">more : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="53.5" x2="135.5" y1="96.2734" y2="96.2734"/><!--MD5=[85209ebac84b71e38515845237dd70a6]
+class DifferentPlatforms--><rect codeLine="46" fill="#FEFECE" filter="url(#fb833vbyxv75z)" height="52.7734" id="DifferentPlatforms" style="stroke: #A80036; stroke-width: 1.5;" width="113" x="324" y="426.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="107" x="327" y="442.6387">DifferentPlatforms</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="325" x2="436" y1="450.4688" y2="450.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="330" y="464.6792">Game : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="325" x2="436" y1="471.2734" y2="471.2734"/><!--MD5=[7de93a43a12de075a1245df3a65ebe32]
+class *--><rect codeLine="49" fill="#FEFECE" filter="url(#fb833vbyxv75z)" height="142.4063" id="*" style="stroke: #A80036; stroke-width: 1.5;" width="92" x="477.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="520" y="23.1387">*</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="478.5" x2="568.5" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="483.5" y="45.1792">given : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="65" x="483.5" y="57.9839">Grid : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="73" x="483.5" y="70.7886">place : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="483.5" y="83.5933">given : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="65" x="483.5" y="96.3979">Grid : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="80" x="483.5" y="109.2026">placed : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="483.5" y="122.0073">given : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="65" x="483.5" y="134.812">Grid : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="478.5" x2="568.5" y1="141.4063" y2="141.4063"/><!--MD5=[b6dcce5e5ef3c84b0b048d11301373dd]
+class Game--><rect codeLine="59" fill="#FEFECE" filter="url(#fb833vbyxv75z)" height="78.3828" id="Game" style="stroke: #A80036; stroke-width: 1.5;" width="124" x="318.5" y="39"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35" x="363" y="55.1387">Game</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="319.5" x2="441.5" y1="62.9688" y2="62.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112" x="324.5" y="77.1792">GameProfile : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="319.5" x2="441.5" y1="83.7734" y2="83.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="324.5" y="97.9839">play()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="324.5" y="110.7886">attracts()</text><!--MD5=[f8e092794d52bf9a252466252ae7bd1c]
+class System--><rect codeLine="64" fill="#FEFECE" filter="url(#fb833vbyxv75z)" height="103.9922" id="System" style="stroke: #A80036; stroke-width: 1.5;" width="83" x="605" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="45" x="624" y="42.1387">System</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="606" x2="687" y1="49.9688" y2="49.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="611" y="64.1792">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="606" x2="687" y1="70.7734" y2="70.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="71" x="611" y="84.9839">compatible()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="611" y="97.7886">have()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="49" x="611" y="110.5933">include()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="611" y="123.3979">scalable()</text><!--MD5=[9fb32a8e86fc843e4257364282130dd8]
+class it--><rect codeLine="71" fill="#FEFECE" filter="url(#fb833vbyxv75z)" height="65.5781" id="it" style="stroke: #A80036; stroke-width: 1.5;" width="94" x="723.5" y="45"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="767" y="61.1387">it</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="724.5" x2="816.5" y1="68.9688" y2="68.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="729.5" y="83.1792">is : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="724.5" x2="816.5" y1="89.7734" y2="89.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="729.5" y="103.9839">maintainable()</text><!--MD5=[8330fea1ec797f0525a4843a88f154d2]
+class be--><rect fill="#FEFECE" filter="url(#fb833vbyxv75z)" height="39.9688" id="be" style="stroke: #A80036; stroke-width: 1.5;" width="22" x="635.5" y="433"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="16" x="638.5" y="449.1387">be</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="636.5" x2="656.5" y1="456.9688" y2="456.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="636.5" x2="656.5" y1="464.9688" y2="464.9688"/><!--MD5=[213cf4b80910bcf3082cc8463afdbd14]
+class is--><rect fill="#FEFECE" filter="url(#fb833vbyxv75z)" height="39.9688" id="is" style="stroke: #A80036; stroke-width: 1.5;" width="16" x="762.5" y="433"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="10" x="765.5" y="449.1387">is</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="763.5" x2="777.5" y1="456.9688" y2="456.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="763.5" x2="777.5" y1="464.9688" y2="464.9688"/><!--MD5=[eac729b51169b0bf4bb0253778160947]
+reverse link System to be--><path codeLine="75" d="M646.5,150.249 C646.5,237.78 646.5,381.02 646.5,432.67 " fill="none" id="System&lt;-be" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="639.5,150.082,646.5,130.082,653.5,150.082,639.5,150.082" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="637.9625" y="150.1647">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="637.375" y="421.9328">1</text><!--MD5=[f9c4f0e9f3dd1fa3134f61989b30ec97]
+reverse link it to is--><path codeLine="76" d="M770.5,131.218 C770.5,215.385 770.5,377.227 770.5,432.751 " fill="none" id="it&lt;-is" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="763.5,131.125,770.5,111.125,777.5,131.125,763.5,131.125" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="761.7625" y="130.7333">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="761.375" y="422.0366">1</text><!--MD5=[da9d794a15d50dbfcd315e8a18436f64]
+reverse link Game to DifferentPlatforms--><path codeLine="77" d="M380.5,130.454 C380.5,211.454 380.5,365.725 380.5,426.492 " fill="none" id="Game&lt;-DifferentPlatforms" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="380.5,117.165,376.5,123.165,380.5,129.165,384.5,123.165,380.5,117.165" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="371.7875" y="137.5218">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="371.525" y="415.3132">1</text><!--MD5=[8a97845c4dc9c5ec34942a66c53e2979]
+reverse link Users to User--><path codeLine="78" d="M94.5,117.781 C94.5,141.318 94.5,173.559 94.5,208.784 " fill="none" id="Users&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="94.5,104.638,90.5,110.638,94.5,116.638,98.5,110.638,94.5,104.638" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="85.625" y="124.2119">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="86.3688" y="197.5915">1</text><!--MD5=[44ffcb5fbbc33647cd25eb1810bbed38]
+@startuml
+hide circle
+class User {
+	Details : string
+	RegisteredUsername : string
+	OwnProfile : string
+	GameProfile : string
+	Liking : string
+	Password : string
+	ProfileInformation : string
+	Users : string
+	be : string
+	register()
+	login()
+	click()
+	see()
+	won()
+	place()
+	Password()
+	play()
+	have()
+	beat()
+	choose()
+	edit()
+	change()
+	get()
+	hear()
+	quit()
+	want()
+	log()
+	lost()
+	gained()
+	recover()
+	mute()
+	remove()
+	able()
+	detonate()
+	trying()
+}
+class Grid {
+	anywhere : string
+	given : string
+}
+class Users {
+	more : string
+}
+class DifferentPlatforms {
+	Game : string
+}
+class * {
+	given : string
+	Grid : string
+	place : string
+	given : string
+	Grid : string
+	placed : string
+	given : string
+	Grid : string
+}
+class Game {
+	GameProfile : string
+	play()
+	attracts()
+}
+class System {
+	be : string
+	compatible()
+	have()
+	include()
+	scalable()
+}
+class it {
+	is : string
+	maintainable()
+}
+System "1" <|- - "1" be
+it "1" <|- - "1" is
+Game "1" o- - "1" DifferentPlatforms
+Users "1" o- - "1" User
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

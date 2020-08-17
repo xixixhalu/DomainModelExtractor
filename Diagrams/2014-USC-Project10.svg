@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="471px" preserveAspectRatio="none" style="width:328px;height:471px;" version="1.1" viewBox="0 0 328 471" width="328px" zoomAndPan="magnify"><defs><filter height="300%" id="f1xwdedd4tgbq5" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[d3bb6ba6f6edb088347a3eeef9f808bc]
+class JobSeeker--><rect codeLine="2" fill="#FEFECE" filter="url(#f1xwdedd4tgbq5)" height="206.4297" id="JobSeeker" style="stroke: #A80036; stroke-width: 1.5;" width="149" x="81.5" y="246"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="64" x="124" y="262.1387">JobSeeker</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="82.5" x2="229.5" y1="269.9688" y2="269.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="122" x="87.5" y="284.1792">SocialNetwork : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="137" x="87.5" y="296.9839">LoginCredentials : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="82.5" x2="229.5" y1="303.5781" y2="303.5781"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="87.5" y="317.7886">search()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="87.5" y="330.5933">save()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="87.5" y="343.3979">mark()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="87.5" y="356.2026">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="49" x="87.5" y="369.0073">contact()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="87.5" y="381.812">create()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="62" x="87.5" y="394.6167">subscribe()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="87.5" y="407.4214">email()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="49" x="87.5" y="420.2261">browse()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="76" x="87.5" y="433.0308">unsubscribe()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43" x="87.5" y="445.8354">select()</text><!--MD5=[54250522f42330deb0adfddd6d70a9d0]
+class SocialNetwork--><rect codeLine="17" fill="#FEFECE" filter="url(#f1xwdedd4tgbq5)" height="65.5781" id="SocialNetwork" style="stroke: #A80036; stroke-width: 1.5;" width="177" x="67.5" y="120"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="86" x="113" y="136.1387">SocialNetwork</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="68.5" x2="243.5" y1="143.9688" y2="143.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="157" x="73.5" y="158.1792">SocialNetworkFriend : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="73.5" y="170.9839">SocialNetworkContact : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="68.5" x2="243.5" y1="177.5781" y2="177.5781"/><!--MD5=[01e9cd6d6aede951712f624a69407adf]
+class SocialNetworkFriend--><rect codeLine="21" fill="#FEFECE" filter="url(#f1xwdedd4tgbq5)" height="52.7734" id="SocialNetworkFriend" style="stroke: #A80036; stroke-width: 1.5;" width="130" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="124" x="10" y="23.1387">SocialNetworkFriend</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="136" y1="30.9688" y2="30.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="136" y1="38.9688" y2="38.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="13" y="53.1792">refer()</text><!--MD5=[c7f55fb7162ebee805402be7be560d62]
+class SocialNetworkContact--><rect codeLine="24" fill="#FEFECE" filter="url(#f1xwdedd4tgbq5)" height="52.7734" id="SocialNetworkContact" style="stroke: #A80036; stroke-width: 1.5;" width="137" x="172.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="131" x="175.5" y="23.1387">SocialNetworkContact</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="173.5" x2="308.5" y1="30.9688" y2="30.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="173.5" x2="308.5" y1="38.9688" y2="38.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="178.5" y="53.1792">provide()</text><!--MD5=[dc0fa93951e5ee57dc6d226fbf773f2c]
+reverse link SocialNetworkFriend to SocialNetwork--><path codeLine="27" d="M98.2114,71.165 C109.393,86.805 122.321,104.89 133.111,119.982 " fill="none" id="SocialNetworkFriend&lt;-SocialNetwork" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="90.4342,60.286,90.6701,67.4932,97.4136,70.0475,97.1778,62.8403,90.4342,60.286" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="85.5917" y="79.8923">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="119.5651" y="108.7493">1</text><!--MD5=[73f7e3e6d2f933ee0d1ae30d160472ee]
+reverse link SocialNetworkContact to SocialNetwork--><path codeLine="28" d="M214.477,71.165 C203.162,86.805 190.08,104.89 179.162,119.982 " fill="none" id="SocialNetworkContact&lt;-SocialNetwork" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="222.346,60.286,215.5883,62.8027,215.3123,70.0085,222.07,67.4918,222.346,60.286" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="209.3904" y="79.8923">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="175.1142" y="108.7493">1</text><!--MD5=[4cdbf205da3814a2cbb983295e11a2be]
+reverse link SocialNetwork to JobSeeker--><path codeLine="29" d="M156,199.367 C156,213.45 156,229.583 156,245.909 " fill="none" id="SocialNetwork&lt;-JobSeeker" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="156,186.035,152,192.035,156,198.035,160,192.035,156,186.035" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="147.2625" y="205.6267">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="147.7063" y="234.8435">1</text><!--MD5=[d42d7d03e169b4722e57b4d785ba200e]
+@startuml
+hide circle
+class JobSeeker {
+	SocialNetwork : string
+	LoginCredentials : string
+	search()
+	save()
+	mark()
+	see()
+	contact()
+	create()
+	subscribe()
+	email()
+	browse()
+	unsubscribe()
+	select()
+}
+class SocialNetwork {
+	SocialNetworkFriend : string
+	SocialNetworkContact : string
+}
+class SocialNetworkFriend {
+	refer()
+}
+class SocialNetworkContact {
+	provide()
+}
+SocialNetworkFriend "1" o- - "1" SocialNetwork
+SocialNetworkContact "1" o- - "1" SocialNetwork
+SocialNetwork "1" o- - "1" JobSeeker
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

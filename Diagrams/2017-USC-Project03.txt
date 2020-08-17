@@ -1,0 +1,68 @@
+@startuml
+hide circle
+class User {
+	Information : string
+	Swimmer : string
+	Kid : string
+	be : string
+	expect()
+	see()
+	able()
+}
+class parent {
+	Account : string
+	Kid : string
+	KidsAccount : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	able()
+	login()
+	see()
+	pay()
+	view()
+	edit()
+	sign()
+}
+class Kid {
+	Account : string
+	KidsAccount : string
+}
+class Events {
+	signed : string
+	EventsPost : string
+}
+class his {
+	Kid : string
+}
+class member {
+	DateOfBirth : string
+}
+class DateOfBirth {
+	DateOfBirthOfChildren : string
+}
+class Event {
+	Events : string
+	EventsPost : string
+	EventDeadline : string
+}
+class Information {
+	is : string
+	review()
+	secure()
+}
+class Swimmer {
+	sign()
+}
+Swimmer "1" o-- "1" User
+Kid "1" o-- "1" parent
+Kid "1" o-- "1" his
+DateOfBirth "1" o-- "1" member
+Kid "1" o-- "1" User
+Events "1" o-- "1" Event
+Information "1" o-- "1" User
+
+@enduml

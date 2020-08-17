@@ -1,0 +1,143 @@
+@startuml
+hide circle
+class User {
+	Problems : string
+	Report : string
+	Identity : string
+	ContactDetails : string
+	Account : string
+	be : string
+	be : string
+	submit()
+	add()
+	anonymous()
+	login()
+	request()
+	expedite()
+	able()
+	update()
+}
+class Organization {
+	Clients : string
+	email()
+	view()
+	understand()
+	make()
+	redirect()
+	AccusedOf()
+	look()
+	take()
+	generate()
+	check()
+}
+class Employee {
+	Cases : string
+	ProfileDetails : string
+	Anonymity : string
+	Employees : string
+	EmployeesOf : string
+	be : string
+	view()
+	edit()
+	able()
+	check()
+	file()
+	want()
+	expect()
+	track()
+	have()
+	post()
+	submit()
+}
+class their {
+	Status : string
+}
+class VerifiedNews {
+	Organization : string
+}
+class Report {
+	Reports : string
+	ReportsOfWorkplaceViolenceOrConflict : string
+	ReportsOfTheCases : string
+	contain()
+}
+class Reports {
+	ReportsOfWorkplaceViolenceOrConflict : string
+	ReportsOfTheCases : string
+	filter()
+	view()
+}
+class Vrs {
+	VrsAdmin : string
+	VrsSubjectMatterExpert : string
+	delete()
+	view()
+	assign()
+	filter()
+	generate()
+	resolve()
+	form()
+	email()
+	prioritize()
+}
+class Status {
+	"StatusOfTheCases/complaints" : string
+}
+class Employees {
+	EmployeesOf : string
+	are : string
+	AssuredOfPreventionOfWorkplaceViolence()
+	ConduciveEnvironment()
+}
+class Complaint {
+	be : string
+	raised()
+	useful()
+}
+class Clients {
+	are : string
+	safe()
+}
+class VrsSubjectMatterExpert {
+	verify()
+	investigate()
+	notify()
+}
+class VrsAdmin {
+	view()
+	filter()
+	download()
+	edit()
+	generate()
+}
+class Account {
+	address()
+	understand()
+	delete()
+	AccusedOf()
+	"re-use"()
+	minimize()
+	file()
+	expect()
+	look()
+	create()
+	investigate()
+	assign()
+	expedite()
+	be()
+}
+Reports "1" o-- "1" Report
+Account "1" o-- "1" User
+Employees "1" <|-- "1" be
+VrsSubjectMatterExpert "1" o-- "1" Vrs
+Clients "1" o-- "1" Organization
+VrsAdmin "1" o-- "1" Vrs
+Employees "1" o-- "1" Employee
+Complaint "1" <|-- "1" be
+Status "1" o-- "1" their
+MediaFiles "1" o-- "1" Report
+Employees "1" <|-- "1" are
+Organization "1" o-- "1" VerifiedNews
+Report "1" o-- "1" User
+
+@enduml

@@ -1,0 +1,48 @@
+@startuml
+hide circle
+class User {
+	Cgm : string
+	BloodSugar : string
+	PersonalInformation : string
+	Health : string
+	InsulinUsage : string
+	FoodConsumption : string
+	PersonalInformation : string
+	be : string
+	be : string
+	connect()
+	able()
+	download()
+	set()
+	view()
+	create()
+	get()
+	have()
+	enter()
+	input()
+	use()
+	sign()
+	login()
+	see()
+	Map()
+	want()
+}
+class PersonalInformation {
+	Account : string
+}
+class Health {
+	PushNotification : string
+}
+class BloodSugar {
+	gets()
+}
+class Account {
+	set()
+	using()
+}
+PersonalInformation "1" o-- "1" User
+Account "1" o-- "1" PersonalInformation
+Health "1" o-- "1" User
+BloodSugar "1" o-- "1" User
+
+@enduml

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="460px" preserveAspectRatio="none" style="width:463px;height:460px;" version="1.1" viewBox="0 0 463 460" width="463px" zoomAndPan="magnify"><defs><filter height="300%" id="fzm0dra2alg67" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[f7775f679c3810e3b4c4c50fd4067111]
+class his--><rect codeLine="2" fill="#FEFECE" filter="url(#fzm0dra2alg67)" height="52.7734" id="his" style="stroke: #A80036; stroke-width: 1.5;" width="102" x="25.5" y="266.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="17" x="68" y="282.6387">his</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="26.5" x2="126.5" y1="290.4688" y2="290.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="31.5" y="304.6792">Progress : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="26.5" x2="126.5" y1="311.2734" y2="311.2734"/><!--MD5=[bb1e2fadcc3f7ce70f10e83efc9e8e11]
+class UserStats--><rect codeLine="5" fill="#FEFECE" filter="url(#fzm0dra2alg67)" height="52.7734" id="UserStats" style="stroke: #A80036; stroke-width: 1.5;" width="98" x="183.5" y="19.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="59" x="203" y="35.6387">UserStats</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="184.5" x2="280.5" y1="43.4688" y2="43.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="86" x="189.5" y="57.6792">viewing : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="184.5" x2="280.5" y1="64.2734" y2="64.2734"/><!--MD5=[7d0c95fa6056046052c0c685bf693e24]
+class AppStore--><rect codeLine="8" fill="#FEFECE" filter="url(#fzm0dra2alg67)" height="78.3828" id="AppStore" style="stroke: #A80036; stroke-width: 1.5;" width="97" x="342" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="57" x="362" y="23.1387">AppStore</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="343" x2="438" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="348" y="45.1792">publish : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="68" x="348" y="57.9839">Rate : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85" x="348" y="70.7886">provide : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="343" x2="438" y1="77.3828" y2="77.3828"/><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="13" fill="#FEFECE" filter="url(#fzm0dra2alg67)" height="296.0625" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="139" x="163" y="145"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="218" y="161.1387">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="164" x2="301" y1="168.9688" y2="168.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="169" y="183.1792">ProgressReport : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72" x="169" y="195.9839">weak : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="119" x="169" y="208.7886">UserAnalytics : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="169" y="221.5933">UserStats : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="169" y="234.3979">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="169" y="247.2026">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="169" y="260.0073">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="169" y="272.812">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="169" y="285.6167">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="169" y="298.4214">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="164" x2="301" y1="305.0156" y2="305.0156"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="169" y="319.2261">enables()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="169" y="332.0308">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="169" y="344.8354">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="169" y="357.6401">track()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="27" x="169" y="370.4448">get()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="169" y="383.2495">Trouble()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="169" y="396.0542">play()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72" x="169" y="408.8589">understand()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="169" y="421.6636">skip()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="169" y="434.4683">proceed()</text><!--MD5=[335f4d9be48430461c68bf6d6fdba145]
+class App--><rect codeLine="35" fill="#FEFECE" filter="url(#fzm0dra2alg67)" height="65.5781" id="App" style="stroke: #A80036; stroke-width: 1.5;" width="107" x="337" y="260"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="24" x="378.5" y="276.1387">App</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="338" x2="443" y1="283.9688" y2="283.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="95" x="343" y="298.1792">AppStore : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="338" x2="443" y1="304.7734" y2="304.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="343" y="318.9839">publish()</text><!--MD5=[f33202a4358b6dc53d5337ad154687fb]
+class Progress--><rect codeLine="39" fill="#FEFECE" filter="url(#fzm0dra2alg67)" height="65.5781" id="Progress" style="stroke: #A80036; stroke-width: 1.5;" width="139" x="7" y="13"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="54" x="49.5" y="29.1387">Progress</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="145" y1="36.9688" y2="36.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="13" y="51.1792">ProgressReport : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="145" y1="57.7734" y2="57.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="13" y="71.9839">track()</text><!--MD5=[a80ea7e2429d8e54b7138043ff1a06a2]
+reverse link AppStore to App--><path codeLine="43" d="M390.5,98.085 C390.5,146.767 390.5,218.571 390.5,259.768 " fill="none" id="AppStore&lt;-App" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="390.5,85.012,386.5,91.012,390.5,97.012,394.5,91.012,390.5,85.012" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="381.7875" y="105.3416">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="381.7125" y="248.8704">1</text><!--MD5=[b5aa626e0bcf01ba653da2eff05bd01b]
+reverse link UserStats to User--><path codeLine="44" d="M232.5,85.794 C232.5,102.506 232.5,123.202 232.5,144.976 " fill="none" id="UserStats&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="232.5,72.756,228.5,78.756,232.5,84.756,236.5,78.756,232.5,72.756" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="223.625" y="92.3557">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="224.2938" y="134.0255">1</text><!--MD5=[9d83cd8f4060b82a09e61e10c97c861f]
+reverse link Progress to his--><path codeLine="45" d="M76.5,92.29 C76.5,143.484 76.5,225.048 76.5,266.305 " fill="none" id="Progress&lt;-his" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="76.5,79.029,72.5,85.029,76.5,91.029,80.5,85.029,76.5,79.029" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="67.7625" y="98.6196">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="67.575" y="255.5059">1</text><!--MD5=[df0401501bc23795c312250f21d0fff7]
+@startuml
+hide circle
+class his {
+	Progress : string
+}
+class UserStats {
+	viewing : string
+}
+class AppStore {
+	publish : string
+	Rate : string
+	provide : string
+}
+class User {
+	ProgressReport : string
+	weak : string
+	UserAnalytics : string
+	UserStats : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	enables()
+	able()
+	view()
+	track()
+	get()
+	Trouble()
+	play()
+	understand()
+	skip()
+	proceed()
+}
+class App {
+	AppStore : string
+	publish()
+}
+class Progress {
+	ProgressReport : string
+	track()
+}
+AppStore "1" o- - "1" App
+UserStats "1" o- - "1" User
+Progress "1" o- - "1" his
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,82 @@
+@startuml
+hide circle
+class User {
+	Appointment : string
+	Location : string
+	Appointment : string
+	PersonalInformation : string
+	Information : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	see()
+	want()
+	use()
+	know()
+	get()
+	forget()
+	visit()
+	able()
+	update()
+	cancel()
+	inform()
+	modify()
+	decide()
+	go()
+	have()
+	wait()
+	contact()
+	apply()
+}
+class Pet {
+	Information : string
+	Pets : string
+	go()
+}
+class Pets {
+	Pictures : string
+}
+class Shelter {
+	Information : string
+	ShelterInformation : string
+	want()
+	control()
+	get()
+	know()
+	input()
+}
+class Appointment {
+	Appointments : string
+	UserBooks()
+}
+class it {
+	be : string
+	stays()
+	misused()
+}
+class Animals {
+	Fuppy()
+}
+class Information {
+	get()
+	visit()
+	modify()
+	see()
+	want()
+	contact()
+	input()
+	apply()
+	stays()
+}
+Information "1" o-- "1" Shelter
+Information "1" o-- "1" Pet
+it "1" <|-- "1" be
+Appointment "1" o-- "1" User
+Animals "1" <|-- "1" are
+Information "1" o-- "1" User
+Pets "1" o-- "1" Pet
+
+@enduml

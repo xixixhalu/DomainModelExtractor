@@ -1,0 +1,51 @@
+@startuml
+hide circle
+class User {
+	Registration : string
+	Password : string
+	Email : string
+	Project : string
+	UserPermission : string
+	Users : string
+	UsersPasswords : string
+	am : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	receive()
+	able()
+	confirm()
+	see()
+	export()
+	perform()
+	reset()
+	request()
+	view()
+	interact()
+	open()
+}
+class System {
+	SystemScatterplotChartOfTheCoevolutionOf : string
+	be : string
+	https()
+	"React.js"()
+}
+class Project {
+	Projects : string
+	ProjectAnalysisView : string
+}
+class Users {
+	UsersPasswords : string
+	be : string
+	able()
+	work()
+}
+Project "1" o-- "1" User
+Users "1" o-- "1" User
+System "1" <|-- "1" be
+
+@enduml

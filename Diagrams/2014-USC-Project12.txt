@@ -1,0 +1,18 @@
+@startuml
+hide circle
+class IConsumer {
+	Account : string
+	Dashboard : string
+	access()
+	view()
+}
+class Account {
+	existing : string
+}
+class Dashboard {
+	existing : string
+}
+Account "1" o-- "1" IConsumer
+Dashboard "1" o-- "1" IConsumer
+
+@enduml

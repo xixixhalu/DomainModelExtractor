@@ -1,0 +1,76 @@
+@startuml
+hide circle
+class Users {
+	"Sign-inRequests" : string
+}
+class User {
+	SocialMedia : string
+	Profile : string
+	Account : string
+	ProfilePicture : string
+	LatestLinkedInProfilePicture : string
+	Users : string
+	UserProfile : string
+	UserInformation : string
+	be : string
+	be : string
+	log()
+	look()
+	update()
+	resume()
+	able()
+	see()
+	authenticate()
+	find()
+	keep()
+	sort()
+	disable()
+	filter()
+	search()
+	click()
+}
+class SocialMedia {
+	Events : string
+}
+class System {
+	SystemAdmin : string
+	fetch()
+	persist()
+	see()
+	get()
+	render()
+	export()
+	highlight()
+	have()
+}
+class Events {
+	"Events/documents/users" : string
+}
+class Profile {
+	ProfilesOfCsseProfessorsAndAlumni : string
+	ProfilePicture : string
+}
+class Content {
+	is : string
+	innapropriate()
+}
+class SystemAdmin {
+	approve()
+}
+class ProfilePicture {
+	upload()
+}
+class Events/documents/users {
+	trending()
+}
+SystemAdmin "1" o-- "1" System
+Users "1" o-- "1" User
+"Events/documents/users" "1" o-- "1" Events
+SocialMedia "1" o-- "1" User
+ProfilePicture "1" o-- "1" Profile
+Profile "1" o-- "1" User
+ProfilePicture "1" o-- "1" User
+Events "1" o-- "1" SocialMedia
+Content "1" <|-- "1" is
+
+@enduml

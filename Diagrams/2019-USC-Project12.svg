@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="803px" preserveAspectRatio="none" style="width:1072px;height:803px;" version="1.1" viewBox="0 0 1072 803" width="1072px" zoomAndPan="magnify"><defs><filter height="300%" id="fn3144ob6srhj" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="2" fill="#FEFECE" filter="url(#fn3144ob6srhj)" height="398.5" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="158" x="63" y="386"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="127.5" y="402.1387">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="64" x2="220" y1="409.9688" y2="409.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="134" x="69" y="424.1792">AccountSecurity : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="69" y="436.9839">Password : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="119" x="69" y="449.7886">EmailAddress : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85" x="69" y="462.5933">OldOne : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="142" x="69" y="475.3979">GiftbuddyAccount : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="146" x="69" y="488.2026">GiftbuddyContacts : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="92" x="69" y="501.0073">Interests : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114" x="69" y="513.812">MobilePhone : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85" x="69" y="526.6167">Contact : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="64" x2="220" y1="533.2109" y2="533.2109"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38" x="69" y="547.4214">reset()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="69" y="560.2261">forgotten()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="69" y="573.0308">receive()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="58" x="69" y="585.8354">navigate()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="69" y="598.6401">purchase()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="69" y="611.4448">create()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="69" y="624.2495">provide()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="69" y="637.0542">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="39" x="69" y="649.8589">enter()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="69" y="662.6636">remove()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="26" x="69" y="675.4683">set()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="69" y="688.2729">search()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="69" y="701.0776">login()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="69" y="713.8823">save()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="69" y="726.687">discard()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="69" y="739.4917">inputted()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="69" y="752.2964">add()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="69" y="765.1011">install()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="69" y="777.9058">update()</text><!--MD5=[4d71b7bae0078dbaccaeeb4541b58fa1]
+class their--><rect codeLine="32" fill="#FEFECE" filter="url(#fn3144ob6srhj)" height="52.7734" id="their" style="stroke: #A80036; stroke-width: 1.5;" width="99" x="329.5" y="215.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="27" x="365.5" y="231.6387">their</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="330.5" x2="427.5" y1="239.4688" y2="239.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="335.5" y="253.6792">Account : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="330.5" x2="427.5" y1="260.2734" y2="260.2734"/><!--MD5=[2731afa3914a2f1855b4f1ebf120a43f]
+class Gift--><rect codeLine="35" fill="#FEFECE" filter="url(#fn3144ob6srhj)" height="168.0156" id="Gift" style="stroke: #A80036; stroke-width: 1.5;" width="180" x="476" y="158"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="20" x="556" y="174.1387">Gift</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="477" x2="655" y1="181.9688" y2="181.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85" x="482" y="196.1792">provide : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="92" x="482" y="208.9839">selected : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="69" x="482" y="221.7886">view : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="126" x="482" y="234.5933">recommended : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="142" x="482" y="247.3979">GiftbuddyAccount : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="119" x="482" y="260.2026">GiftbuddyApp : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140" x="482" y="273.0073">GiftbuddyContact : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="146" x="482" y="285.812">GiftbuddyContacts : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101" x="482" y="298.6167">GiftPeople : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="168" x="482" y="311.4214">GiftRecommendations : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="477" x2="655" y1="318.0156" y2="318.0156"/><!--MD5=[ae8d9bc431532c9bb87ca0363959d292]
+class ContactWith--><rect codeLine="47" fill="#FEFECE" filter="url(#fn3144ob6srhj)" height="52.7734" id="ContactWith" style="stroke: #A80036; stroke-width: 1.5;" width="104" x="167" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="71" x="183.5" y="42.1387">ContactWith</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="168" x2="270" y1="49.9688" y2="49.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="92" x="173" y="64.1792">selected : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="168" x2="270" y1="70.7734" y2="70.7734"/><!--MD5=[6c717e3f8f861ff7a679ae6498443b1e]
+class MobilePhone--><rect codeLine="50" fill="#FEFECE" filter="url(#fn3144ob6srhj)" height="52.7734" id="MobilePhone" style="stroke: #A80036; stroke-width: 1.5;" width="116" x="7" y="215.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="76" x="27" y="231.6387">MobilePhone</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="122" y1="239.4688" y2="239.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="13" y="253.6792">Application : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="122" y1="260.2734" y2="260.2734"/><!--MD5=[1a978feb3910c63b63b80169fd9dce4c]
+class Ios--><rect codeLine="53" fill="#FEFECE" filter="url(#fn3144ob6srhj)" height="52.7734" id="Ios" style="stroke: #A80036; stroke-width: 1.5;" width="87" x="722.5" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="18" x="757" y="42.1387">Ios</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="723.5" x2="808.5" y1="49.9688" y2="49.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="728.5" y="64.1792">install : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="723.5" x2="808.5" y1="70.7734" y2="70.7734"/><!--MD5=[1da38a47005bca097322b1c76c63aa87]
+class AndroidPlatform--><rect codeLine="56" fill="#FEFECE" filter="url(#fn3144ob6srhj)" height="52.7734" id="AndroidPlatform" style="stroke: #A80036; stroke-width: 1.5;" width="101" x="844.5" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="95" x="847.5" y="42.1387">AndroidPlatform</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="845.5" x2="944.5" y1="49.9688" y2="49.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="850.5" y="64.1792">install : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="845.5" x2="944.5" y1="70.7734" y2="70.7734"/><!--MD5=[898012e5ea858172db4854b2c2dc4521]
+class FeasibilityOfReactNative--><rect codeLine="59" fill="#FEFECE" filter="url(#fn3144ob6srhj)" height="65.5781" id="FeasibilityOfReactNative" style="stroke: #A80036; stroke-width: 1.5;" width="150" x="734" y="209"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="144" x="737" y="225.1387">FeasibilityOfReactNative</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="735" x2="883" y1="232.9688" y2="232.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="58" x="740" y="247.1792">Ios : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="131" x="740" y="259.9839">AndroidPlatform : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="735" x2="883" y1="266.5781" y2="266.5781"/><!--MD5=[72ce1314beffbcf60a64ee91fbbc10dc]
+class Contact--><rect codeLine="63" fill="#FEFECE" filter="url(#fn3144ob6srhj)" height="91.1875" id="Contact" style="stroke: #A80036; stroke-width: 1.5;" width="122" x="158" y="196.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="45" x="196.5" y="212.6387">Contact</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="159" x2="279" y1="220.4688" y2="220.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="164" y="234.6792">Information : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="91" x="164" y="247.4839">Contacts : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="164" y="260.2886">ContactList : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110" x="164" y="273.0933">ContactWith : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="159" x2="279" y1="279.6875" y2="279.6875"/><!--MD5=[f9a29335b499db729be669fd1bd54958]
+class Account--><rect codeLine="69" fill="#FEFECE" filter="url(#fn3144ob6srhj)" height="52.7734" id="Account" style="stroke: #A80036; stroke-width: 1.5;" width="146" x="306" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="48" x="355" y="42.1387">Account</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="307" x2="451" y1="49.9688" y2="49.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="134" x="312" y="64.1792">AccountSecurity : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="307" x2="451" y1="70.7734" y2="70.7734"/><!--MD5=[27380ab495d83687c874a1154131280e]
+class GiftbuddyContact--><rect codeLine="72" fill="#FEFECE" filter="url(#fn3144ob6srhj)" height="52.7734" id="GiftbuddyContact" style="stroke: #A80036; stroke-width: 1.5;" width="158" x="487" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="103" x="514.5" y="42.1387">GiftbuddyContact</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="488" x2="644" y1="49.9688" y2="49.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="146" x="493" y="64.1792">GiftbuddyContacts : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="488" x2="644" y1="70.7734" y2="70.7734"/><!--MD5=[969139223020b72cc3dc621bbba1ca97]
+class Default--><rect codeLine="75" fill="#FEFECE" filter="url(#fn3144ob6srhj)" height="91.1875" id="Default" style="stroke: #A80036; stroke-width: 1.5;" width="72" x="981" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="996" y="23.1387">Default</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="982" x2="1052" y1="30.9688" y2="30.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="982" x2="1052" y1="38.9688" y2="38.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38" x="987" y="53.1792">reset()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="987" y="65.9839">forgotten()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="987" y="78.7886">receive()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="987" y="91.5933">Limit()</text><!--MD5=[213cf4b80910bcf3082cc8463afdbd14]
+class is--><rect fill="#FEFECE" filter="url(#fn3144ob6srhj)" height="39.9688" id="is" style="stroke: #A80036; stroke-width: 1.5;" width="16" x="1009" y="222"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="10" x="1012" y="238.1387">is</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1010" x2="1024" y1="245.9688" y2="245.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1010" x2="1024" y1="253.9688" y2="253.9688"/><!--MD5=[3676af6761a9d2531823a4d6176e335b]
+reverse link GiftbuddyContact to Gift--><path codeLine="81" d="M566,92.439 C566,111.477 566,135.162 566,157.988 " fill="none" id="GiftbuddyContact&lt;-Gift" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="566,79.178,562,85.178,566,91.178,570,85.178,566,79.178" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="557.125" y="98.7606">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="557.6438" y="146.9098">1</text><!--MD5=[e3562c97a4b88da9953f555446fe4632]
+reverse link Ios to FeasibilityOfReactNative--><path codeLine="82" d="M774.829,91.997 C782.726,126.434 794.171,176.337 801.599,208.728 " fill="none" id="Ios&lt;-FeasibilityOfReactNative" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="771.889,79.178,769.3313,85.9203,774.5711,90.8744,777.1289,84.1322,771.889,79.178" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="764.3022" y="98.7606">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="791.3544" y="197.8225">1</text><!--MD5=[47d9ca0280e206c3c4d43507d84725c4]
+reverse link Default to is--><path codeLine="83" d="M1017,118.553 C1017,154.788 1017,197.353 1017,221.554 " fill="none" id="Default&lt;-is" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="1010,118.411,1017,98.411,1024,118.411,1010,118.411" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1008.4125" y="118.3186">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1007.875" y="210.7842">1</text><!--MD5=[5c9b861054bf004f042737362f7bc555]
+reverse link AndroidPlatform to FeasibilityOfReactNative--><path codeLine="84" d="M877.76,91.087 C861.953,125.55 838.79,176.05 823.802,208.728 " fill="none" id="AndroidPlatform&lt;-FeasibilityOfReactNative" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="883.222,79.178,877.0846,82.9639,878.2187,90.0852,884.3561,86.2994,883.222,79.178" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="871.7706" y="98.7606">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="817.9286" y="197.8225">1</text><!--MD5=[91b38cb728493020f3801932c1e1889f]
+reverse link MobilePhone to User--><path codeLine="85" d="M73.701,281.533 C79.7302,308.234 88.2669,346.039 97.2706,385.913 " fill="none" id="MobilePhone&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="70.7875,268.63,68.207,275.3636,73.4302,280.3354,76.0106,273.6018,70.7875,268.63" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="63.1785" y="288.2021">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="87.3671" y="374.9029">1</text><!--MD5=[fb6a137577705fc335e1e7cc68b9bf17]
+reverse link ContactWith to Contact--><path codeLine="86" d="M219,92.57 C219,122.786 219,164.652 219,196.219 " fill="none" id="ContactWith&lt;-Contact" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="219,79.178,215,85.178,219,91.178,223,85.178,219,79.178" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="210.125" y="98.7606">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="210.4125" y="185.4562">1</text><!--MD5=[33cf661afaa287da6d309ae322e0a4a9]
+reverse link Contact to User--><path codeLine="87" d="M206.021,300.478 C200.534,324.777 193.789,354.647 186.758,385.785 " fill="none" id="Contact&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="208.934,287.58,203.7103,292.5512,206.2899,299.2851,211.5137,294.3139,208.934,287.58" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="198.7801" y="307.7706">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="180.3501" y="374.7699">1</text><!--MD5=[f9cc1cf75c10e73e4fc3a36ed2a0a8e6]
+reverse link Account to their--><path codeLine="88" d="M379,92.369 C379,129.239 379,183.587 379,215.332 " fill="none" id="Account&lt;-their" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="379,79.178,375,85.178,379,91.178,383,85.178,379,79.178" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="370.125" y="98.7606">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="370.075" y="204.5391">1</text><!--MD5=[95fbb3e5f672337aac2dc96086231376]
+@startuml
+hide circle
+class User {
+	AccountSecurity : string
+	Password : string
+	EmailAddress : string
+	OldOne : string
+	GiftbuddyAccount : string
+	GiftbuddyContacts : string
+	Interests : string
+	MobilePhone : string
+	Contact : string
+	reset()
+	forgotten()
+	receive()
+	navigate()
+	purchase()
+	create()
+	provide()
+	view()
+	enter()
+	remove()
+	set()
+	search()
+	login()
+	save()
+	discard()
+	inputted()
+	add()
+	install()
+	update()
+}
+class their {
+	Account : string
+}
+class Gift {
+	provide : string
+	selected : string
+	view : string
+	recommended : string
+	GiftbuddyAccount : string
+	GiftbuddyApp : string
+	GiftbuddyContact : string
+	GiftbuddyContacts : string
+	GiftPeople : string
+	GiftRecommendations : string
+}
+class ContactWith {
+	selected : string
+}
+class MobilePhone {
+	Application : string
+}
+class Ios {
+	install : string
+}
+class AndroidPlatform {
+	install : string
+}
+class FeasibilityOfReactNative {
+	Ios : string
+	AndroidPlatform : string
+}
+class Contact {
+	Information : string
+	Contacts : string
+	ContactList : string
+	ContactWith : string
+}
+class Account {
+	AccountSecurity : string
+}
+class GiftbuddyContact {
+	GiftbuddyContacts : string
+}
+class Default {
+	reset()
+	forgotten()
+	receive()
+	Limit()
+}
+GiftbuddyContact "1" o- - "1" Gift
+Ios "1" o- - "1" FeasibilityOfReactNative
+Default "1" <|- - "1" is
+AndroidPlatform "1" o- - "1" FeasibilityOfReactNative
+MobilePhone "1" o- - "1" User
+ContactWith "1" o- - "1" Contact
+Contact "1" o- - "1" User
+Account "1" o- - "1" their
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

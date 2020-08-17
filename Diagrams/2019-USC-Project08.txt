@@ -1,0 +1,113 @@
+@startuml
+hide circle
+class Doctor {
+	PatientsHealth : string
+	DoctorUser : string
+	Doctors : string
+	modify()
+	get()
+	"register/enroll"()
+	use()
+}
+class PatientUser {
+	Reminders : string
+	receive()
+	indicate()
+	completed()
+}
+class User {
+	FingerprintScanner : string
+	"User/patient" : string
+	Username : string
+	login()
+}
+class Patients {
+	RecoveryProcess : string
+	PatientsHealth : string
+	get()
+	have()
+	miss()
+}
+class AndroidPhones {
+	render : string
+}
+class Patient {
+	Treatments : string
+	"Questionnaire/surveys" : string
+	Doctor : string
+	Surgery : string
+	Timeline : string
+	graphically : string
+	DietaryConstraints : string
+	Patients : string
+	PatientsHealth : string
+	PatientUser : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	completed()
+	update()
+	get()
+	have()
+	save()
+	see()
+	took()
+	able()
+	take()
+	do()
+	"books/cancels/reschedules"()
+	"book/cancel/reschedule"()
+	add()
+	snooze()
+	dismiss()
+	receive()
+	track()
+	need()
+	compare()
+	choose()
+	install()
+}
+class Android {
+	testing : string
+	AndroidPhones : string
+}
+class App {
+	Appointment : string
+	Appointments : string
+	Application : string
+	use()
+}
+class Appointment {
+	Appointments : string
+	"book/cancel/reschedule"()
+}
+class User/patient {
+	have()
+	answer()
+}
+class PatientsHealth {
+	declines()
+}
+class DoctorUser {
+	check()
+	view()
+}
+class DietaryConstraints {
+	need()
+	take()
+}
+AndroidPhones "1" o-- "1" Android
+Doctor "1" o-- "1" Patient
+Appointment "1" o-- "1" App
+PatientUser "1" o-- "1" Patient
+PatientsHealth "1" o-- "1" Doctor
+Patients "1" o-- "1" Patient
+DoctorUser "1" o-- "1" Doctor
+PatientsHealth "1" o-- "1" Patient
+"User/patient" "1" o-- "1" User
+DietaryConstraints "1" o-- "1" Patient
+PatientsHealth "1" o-- "1" Patients
+
+@enduml

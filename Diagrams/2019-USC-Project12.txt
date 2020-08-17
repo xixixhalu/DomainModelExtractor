@@ -1,0 +1,91 @@
+@startuml
+hide circle
+class User {
+	AccountSecurity : string
+	Password : string
+	EmailAddress : string
+	OldOne : string
+	GiftbuddyAccount : string
+	GiftbuddyContacts : string
+	Interests : string
+	MobilePhone : string
+	Contact : string
+	reset()
+	forgotten()
+	receive()
+	navigate()
+	purchase()
+	create()
+	provide()
+	view()
+	enter()
+	remove()
+	set()
+	search()
+	login()
+	save()
+	discard()
+	inputted()
+	add()
+	install()
+	update()
+}
+class their {
+	Account : string
+}
+class Gift {
+	provide : string
+	selected : string
+	view : string
+	recommended : string
+	GiftbuddyAccount : string
+	GiftbuddyApp : string
+	GiftbuddyContact : string
+	GiftbuddyContacts : string
+	GiftPeople : string
+	GiftRecommendations : string
+}
+class ContactWith {
+	selected : string
+}
+class MobilePhone {
+	Application : string
+}
+class Ios {
+	install : string
+}
+class AndroidPlatform {
+	install : string
+}
+class FeasibilityOfReactNative {
+	Ios : string
+	AndroidPlatform : string
+}
+class Contact {
+	Information : string
+	Contacts : string
+	ContactList : string
+	ContactWith : string
+}
+class Account {
+	AccountSecurity : string
+}
+class GiftbuddyContact {
+	GiftbuddyContacts : string
+}
+class Default {
+	reset()
+	forgotten()
+	receive()
+	Limit()
+}
+GiftbuddyContact "1" o-- "1" Gift
+Ios "1" o-- "1" FeasibilityOfReactNative
+Default "1" <|-- "1" is
+AndroidPlatform "1" o-- "1" FeasibilityOfReactNative
+MobilePhone "1" o-- "1" User
+ContactWith "1" o-- "1" Contact
+Contact "1" o-- "1" User
+Account "1" o-- "1" their
+
+@enduml

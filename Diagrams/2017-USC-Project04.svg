@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="881px" preserveAspectRatio="none" style="width:884px;height:881px;" version="1.1" viewBox="0 0 884 881" width="884px" zoomAndPan="magnify"><defs><filter height="300%" id="fkieajidwtnt5" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="2" fill="#FEFECE" filter="url(#fkieajidwtnt5)" height="475.3281" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="158" x="94.5" y="387"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="159" y="403.1387">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="95.5" x2="251.5" y1="410.9688" y2="410.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="83" x="100.5" y="425.1792">Friends : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="83" x="100.5" y="437.9839">Friends : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133" x="100.5" y="450.7886">ChallengeScore : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="69" x="100.5" y="463.5933">Rank : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="146" x="100.5" y="476.3979">"PreviousPageB/c" : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="100.5" y="489.2026">Photos : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="73" x="100.5" y="502.0073">Photo : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="100.5" y="514.812">Users : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="100.5" y="527.6167">am : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="95.5" x2="251.5" y1="534.2109" y2="534.2109"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="100.5" y="548.4214">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="100.5" y="561.2261">send()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="27" x="100.5" y="574.0308">get()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="23" x="100.5" y="586.8354">try()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="100.5" y="599.6401">give()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="100.5" y="612.4448">sent()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="100.5" y="625.2495">verify()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="47" x="100.5" y="638.0542">posted()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="100.5" y="650.8589">Reward()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="100.5" y="663.6636">finished()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="100.5" y="676.4683">check()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="100.5" y="689.2729">have()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="100.5" y="702.0776">invite()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="100.5" y="714.8823">use()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="100.5" y="727.687">receive()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="100.5" y="740.4917">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="22" x="100.5" y="753.2964">do()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="100.5" y="766.1011">play()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="100.5" y="778.9058">Chance()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="100.5" y="791.7104">click()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="100.5" y="804.5151">add()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="100.5" y="817.3198">pick()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="100.5" y="830.1245">preview()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="100.5" y="842.9292">submit()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="100.5" y="855.7339">know()</text><!--MD5=[f275f3fa57eca013602c3f6cd77e86fd]
+class Challenge--><rect codeLine="38" fill="#FEFECE" filter="url(#fkieajidwtnt5)" height="193.625" id="Challenge" style="stroke: #A80036; stroke-width: 1.5;" width="196" x="393.5" y="133"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="59" x="462" y="149.1387">Challenge</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="394.5" x2="588.5" y1="156.9688" y2="156.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103" x="399.5" y="171.1792">completed : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="399.5" y="183.9839">upcoming : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="399.5" y="196.7886">ChallengeRequest : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="163" x="399.5" y="209.5933">ChallengeNotification : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="399.5" y="222.3979">Challenges : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133" x="399.5" y="235.2026">ChallengeScore : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="123" x="399.5" y="248.0073">ChallengerList : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110" x="399.5" y="260.812">Challengers : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="128" x="399.5" y="273.6167">ChallengePage : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="184" x="399.5" y="286.4214">"Challenge-relatedPosts" : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="126" x="399.5" y="299.2261">ChallengeTask : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="135" x="399.5" y="312.0308">ChallengeGame : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="394.5" x2="588.5" y1="318.625" y2="318.625"/><!--MD5=[8d36e8265fd5796ae47f487798867ca3]
+class Challenges--><rect codeLine="52" fill="#FEFECE" filter="url(#fkieajidwtnt5)" height="65.5781" id="Challenges" style="stroke: #A80036; stroke-width: 1.5;" width="109" x="337" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="66" x="358.5" y="23.1387">Challenges</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="338" x2="445" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="343" y="45.1792">upcoming : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="338" x2="445" y1="51.7734" y2="51.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="343" y="65.9839">see()</text><!--MD5=[09a5b4adb0ee554eafb73b413209c7bf]
+class Users--><rect codeLine="56" fill="#FEFECE" filter="url(#fkieajidwtnt5)" height="52.7734" id="Users" style="stroke: #A80036; stroke-width: 1.5;" width="113" x="7" y="203.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="45.5" y="219.6387">Users</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="119" y1="227.4688" y2="227.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101" x="13" y="241.6792">registered : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="119" y1="248.2734" y2="248.2734"/><!--MD5=[5a65c26834dafa8966a522eb2bf9c438]
+class Photos--><rect codeLine="59" fill="#FEFECE" filter="url(#fkieajidwtnt5)" height="52.7734" id="Photos" style="stroke: #A80036; stroke-width: 1.5;" width="80" x="161.5" y="13.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="40" x="181.5" y="29.6387">Photos</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="162.5" x2="240.5" y1="37.4688" y2="37.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="68" x="167.5" y="51.6792">Text : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="162.5" x2="240.5" y1="58.2734" y2="58.2734"/><!--MD5=[b6dcce5e5ef3c84b0b048d11301373dd]
+class Game--><rect codeLine="62" fill="#FEFECE" filter="url(#fkieajidwtnt5)" height="52.7734" id="Game" style="stroke: #A80036; stroke-width: 1.5;" width="76" x="631.5" y="13.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35" x="652" y="29.6387">Game</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="632.5" x2="706.5" y1="37.4688" y2="37.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="637.5" y="51.6792">see : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="632.5" x2="706.5" y1="58.2734" y2="58.2734"/><!--MD5=[6a494c20d032ff54e1efa92c1369bc7b]
+class Page--><rect codeLine="65" fill="#FEFECE" filter="url(#fkieajidwtnt5)" height="52.7734" id="Page" style="stroke: #A80036; stroke-width: 1.5;" width="89" x="625" y="203.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="655" y="219.6387">Page</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="626" x2="713" y1="227.4688" y2="227.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="631" y="241.6792">Game : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="626" x2="713" y1="248.2734" y2="248.2734"/><!--MD5=[335f4d9be48430461c68bf6d6fdba145]
+class App--><rect codeLine="68" fill="#FEFECE" filter="url(#fkieajidwtnt5)" height="52.7734" id="App" style="stroke: #A80036; stroke-width: 1.5;" width="116" x="749.5" y="203.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="24" x="795.5" y="219.6387">App</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="750.5" x2="864.5" y1="227.4688" y2="227.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="755.5" y="241.6792">Application : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="750.5" x2="864.5" y1="248.2734" y2="248.2734"/><!--MD5=[a805b40f8193e3b705560a3818c5c109]
+class Photo--><rect codeLine="71" fill="#FEFECE" filter="url(#fkieajidwtnt5)" height="78.3828" id="Photo" style="stroke: #A80036; stroke-width: 1.5;" width="131" x="227" y="191"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="33" x="276" y="207.1387">Photo</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="228" x2="357" y1="214.9688" y2="214.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="119" x="233" y="229.1792">"Photo/video" : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="233" y="241.9839">Photos : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="228" x2="357" y1="248.5781" y2="248.5781"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="233" y="262.7886">post()</text><!--MD5=[00e1a1b35f195732c9135d908031b2f7]
+class Challengers--><rect codeLine="76" fill="#FEFECE" filter="url(#fkieajidwtnt5)" height="52.7734" id="Challengers" style="stroke: #A80036; stroke-width: 1.5;" width="83" x="481" y="13.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="71" x="487" y="29.6387">Challengers</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="482" x2="563" y1="37.4688" y2="37.4688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="482" x2="563" y1="45.4688" y2="45.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="71" x="487" y="59.6792">challenged()</text><!--MD5=[0b4e4b4980470ea387cc45de9bd14b5b]
+class Application--><rect codeLine="79" fill="#FEFECE" filter="url(#fkieajidwtnt5)" height="52.7734" id="Application" style="stroke: #A80036; stroke-width: 1.5;" width="72" x="771.5" y="13.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="66" x="774.5" y="29.6387">Application</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="772.5" x2="842.5" y1="37.4688" y2="37.4688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="772.5" x2="842.5" y1="45.4688" y2="45.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="777.5" y="59.6792">improve()</text><!--MD5=[356e9c1a442df0b7daa2eabe011cda3f]
+reverse link Application to App--><path codeLine="82" d="M807.5,79.973 C807.5,116.941 807.5,171.434 807.5,203.264 " fill="none" id="Application&lt;-App" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="807.5,66.746,803.5,72.746,807.5,78.746,811.5,72.746,807.5,66.746" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="798.625" y="86.3435">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="798.575" y="192.4554">1</text><!--MD5=[1bc907edabe024e7e9b26adfab7a3900]
+reverse link Photos to User--><path codeLine="83" d="M199.633,79.837 C196.622,142.479 190.465,270.565 184.884,386.682 " fill="none" id="Photos&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="200.261,66.781,195.9775,72.582,199.6847,78.7672,203.9682,72.9662,200.261,66.781" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="191.115" y="86.3862">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="177.1263" y="375.6962">1</text><!--MD5=[7bd25afa50279e7bab2dda93b67c9605]
+reverse link Photos to Photo--><path codeLine="84" d="M219.639,78.475 C235.419,111.075 258.184,158.105 274.054,190.891 " fill="none" id="Photos&lt;-Photo" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="213.962,66.746,212.9759,73.8894,219.1905,77.5471,220.1766,70.4037,213.962,66.746" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="207.8131" y="86.3435">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="262.1961" y="179.9255">1</text><!--MD5=[8c82c5932662045d850071c5cf430f2f]
+reverse link Photo to User--><path codeLine="85" d="M277.041,281.989 C268.525,310.076 257.275,347.183 245.332,386.577 " fill="none" id="Photo&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="280.873,269.349,275.3043,273.9304,277.3914,280.8328,282.9602,276.2514,280.873,269.349" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="270.1871" y="289.4466">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="239.5577" y="375.5877">1</text><!--MD5=[0707ece20010a5189b63e050aaa59ba6]
+reverse link Challenges to Challenge--><path codeLine="86" d="M414.847,84.893 C422.539,99.354 431.42,116.05 440.351,132.839 " fill="none" id="Challenges&lt;-Challenge" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="408.691,73.318,407.9769,80.4937,414.3259,83.9127,415.04,76.737,408.691,73.318" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="403.0406" y="92.705">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="428.1287" y="121.9122">1</text><!--MD5=[6dd7801cbab5da688f60b26735d0d764]
+reverse link Challengers to Challenge--><path codeLine="87" d="M516.068,80.01 C513.516,95.483 510.459,114.021 507.382,132.682 " fill="none" id="Challengers&lt;-Challenge" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="518.255,66.746,513.3324,72.0156,516.3034,78.5862,521.2259,73.3167,518.255,66.746" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="508.4514" y="86.3435">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="500.2546" y="122.07">1</text><!--MD5=[05d77bf9f344186108f8ebeff3f219dc]
+reverse link Game to Page--><path codeLine="88" d="M669.5,79.973 C669.5,116.941 669.5,171.434 669.5,203.264 " fill="none" id="Game&lt;-Page" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="669.5,66.746,665.5,72.746,669.5,78.746,673.5,72.746,669.5,66.746" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="660.625" y="86.3435">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="660.575" y="192.4554">1</text><!--MD5=[8a97845c4dc9c5ec34942a66c53e2979]
+reverse link Users to User--><path codeLine="89" d="M74.2892,269.498 C82.43,298.546 94.3509,341.081 107.128,386.673 " fill="none" id="Users&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="70.7174,256.753,68.4852,263.6099,73.9561,268.3077,76.1883,261.4508,70.7174,256.753" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="63.4212" y="276.352">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="96.8189" y="375.6869">1</text><!--MD5=[455bea477bd5edf7e363a932a51b4fb6]
+@startuml
+hide circle
+class User {
+	Friends : string
+	Friends : string
+	ChallengeScore : string
+	Rank : string
+	"PreviousPageB/c" : string
+	Photos : string
+	Photo : string
+	Users : string
+	am : string
+	see()
+	send()
+	get()
+	try()
+	give()
+	sent()
+	verify()
+	posted()
+	Reward()
+	finished()
+	check()
+	have()
+	invite()
+	use()
+	receive()
+	able()
+	do()
+	play()
+	Chance()
+	click()
+	add()
+	pick()
+	preview()
+	submit()
+	know()
+}
+class Challenge {
+	completed : string
+	upcoming : string
+	ChallengeRequest : string
+	ChallengeNotification : string
+	Challenges : string
+	ChallengeScore : string
+	ChallengerList : string
+	Challengers : string
+	ChallengePage : string
+	"Challenge-relatedPosts" : string
+	ChallengeTask : string
+	ChallengeGame : string
+}
+class Challenges {
+	upcoming : string
+	see()
+}
+class Users {
+	registered : string
+}
+class Photos {
+	Text : string
+}
+class Game {
+	see : string
+}
+class Page {
+	Game : string
+}
+class App {
+	Application : string
+}
+class Photo {
+	"Photo/video" : string
+	Photos : string
+	post()
+}
+class Challengers {
+	challenged()
+}
+class Application {
+	improve()
+}
+Application "1" o- - "1" App
+Photos "1" o- - "1" User
+Photos "1" o- - "1" Photo
+Photo "1" o- - "1" User
+Challenges "1" o- - "1" Challenge
+Challengers "1" o- - "1" Challenge
+Game "1" o- - "1" Page
+Users "1" o- - "1" User
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

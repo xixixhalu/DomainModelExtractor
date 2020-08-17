@@ -1,0 +1,105 @@
+@startuml
+hide circle
+class Website {
+	Traffic : string
+	sold : string
+}
+class Retailer {
+	Website : string
+	Website : string
+	have()
+}
+class Phone {
+	view : string
+}
+class User {
+	Phone : string
+	UserExperience : string
+	be : string
+	am : string
+	be : string
+	am : string
+	be : string
+	sort()
+	see()
+	waste()
+	able()
+	minimize()
+	view()
+	shop()
+	buy()
+	slide()
+	get()
+	viewing()
+	collapse()
+	follow()
+	focus()
+}
+class UserExperience {
+	better : string
+	better : string
+	get()
+}
+class ProductLayoutButtons {
+	clicking : string
+}
+class ProductSlideLayout {
+	DetailsOfTheCenteredProduct : string
+}
+class it {
+	Price : string
+	Popularity : string
+}
+class high {
+	low : string
+}
+class low {
+	high : string
+}
+class Product {
+	selected : string
+	focus : string
+	Products : string
+	ProductLayoutButtons : string
+	ProductSlideLayout : string
+	ProductOfMyPriceRange : string
+	ProductOfInterest : string
+	ProductImage : string
+	shop()
+}
+class Price {
+	PriceRange : string
+}
+class Products {
+	are : string
+	see()
+	sort()
+	listed()
+	available()
+}
+class ProductImage {
+	waste()
+	see()
+	minimize()
+	view()
+	buy()
+	using()
+	slide()
+	viewing()
+	get()
+	clearly()
+}
+high "1" o-- "1" low
+Price "1" o-- "1" it
+UserExperience "1" o-- "1" User
+Website "1" o-- "1" Retailer
+Products "1" o-- "1" Product
+ProductLayoutButtons "1" o-- "1" Product
+User "1" <|-- "1" am
+low "1" o-- "1" high
+ProductSlideLayout "1" o-- "1" Product
+Phone "1" o-- "1" User
+Products "1" <|-- "1" are
+ProductImage "1" o-- "1" Product
+
+@enduml

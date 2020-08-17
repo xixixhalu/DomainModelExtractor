@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="242px" preserveAspectRatio="none" style="width:183px;height:242px;" version="1.1" viewBox="0 0 183 242" width="183px" zoomAndPan="magnify"><defs><filter height="300%" id="ft7tug2fvocs0" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[05bef9715505055a435a5b60deea392b]
+class Lock--><rect codeLine="2" fill="#FEFECE" filter="url(#ft7tug2fvocs0)" height="103.9922" id="Lock" style="stroke: #A80036; stroke-width: 1.5;" width="157" x="7" y="120"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="28" x="71.5" y="136.1387">Lock</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="163" y1="143.9688" y2="143.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="145" x="13" y="158.1792">LockBatteryStatus : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="107" x="13" y="170.9839">LockNames : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112" x="13" y="183.7886">LockNumber : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="13" y="196.5933">LockCode : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103" x="13" y="209.3979">LockCodes : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="163" y1="215.9922" y2="215.9922"/><!--MD5=[ff72e1aa7799164283d488a734bd2b46]
+class LockCode--><rect codeLine="9" fill="#FEFECE" filter="url(#ft7tug2fvocs0)" height="52.7734" id="LockCode" style="stroke: #A80036; stroke-width: 1.5;" width="115" x="28" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="60" x="55.5" y="23.1387">LockCode</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="29" x2="142" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103" x="34" y="45.1792">LockCodes : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="29" x2="142" y1="51.7734" y2="51.7734"/><!--MD5=[91d49aead81abe3ed60bdc093ac6e299]
+reverse link LockCode to Lock--><path codeLine="12" d="M85.5,73.306 C85.5,87.824 85.5,104.54 85.5,119.993 " fill="none" id="LockCode&lt;-Lock" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="85.5,60.175,81.5,66.175,85.5,72.175,89.5,66.175,85.5,60.175" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="76.625" y="79.757">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="76.9625" y="109.0731">1</text><!--MD5=[601d8c41deff8a7a5fe3f07efc0629da]
+@startuml
+hide circle
+class Lock {
+	LockBatteryStatus : string
+	LockNames : string
+	LockNumber : string
+	LockCode : string
+	LockCodes : string
+}
+class LockCode {
+	LockCodes : string
+}
+LockCode "1" o- - "1" Lock
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

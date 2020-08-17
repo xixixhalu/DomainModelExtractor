@@ -1,0 +1,75 @@
+@startuml
+hide circle
+class Project {
+	evaluating : string
+	ProjectSettingsPage : string
+	ProjectListPage : string
+}
+class User {
+	Password : string
+	Desktop : string
+	ProfilePicture : string
+	ProfileInformation : string
+	WinCondition : string
+	Comment : string
+	OwnPosts : string
+	only : string
+	be : string
+	mark()
+	save()
+	adjust()
+	enter()
+	log()
+	reset()
+	forget()
+	able()
+	upload()
+	see()
+	create()
+	delete()
+	created()
+	join()
+	filter()
+	set()
+	edit()
+	"quote/reply"()
+	want()
+	export()
+	Sort()
+	tag()
+	agree()
+	disagree()
+	view()
+	sort()
+	add()
+	reply()
+}
+class Comments {
+	"quote/reply" : string
+}
+class OtherPeople {
+	Comments : string
+}
+class members {
+	list : string
+	approved : string
+}
+class Comment {
+	Comments : string
+}
+class member {
+	members : string
+}
+class ProjectSettingsPage {
+	reset()
+	forget()
+	delete()
+	give()
+}
+ProjectSettingsPage "1" o-- "1" Project
+members "1" o-- "1" member
+Comments "1" o-- "1" Comment
+Comments "1" o-- "1" OtherPeople
+Comment "1" o-- "1" User
+
+@enduml

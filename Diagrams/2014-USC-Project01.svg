@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="777px" preserveAspectRatio="none" style="width:1073px;height:777px;" version="1.1" viewBox="0 0 1073 777" width="1073px" zoomAndPan="magnify"><defs><filter height="300%" id="f1mthelx38ske4" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="2" fill="#FEFECE" filter="url(#f1mthelx38ske4)" height="500.9375" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="212" x="198" y="158"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="289.5" y="174.1387">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="199" x2="409" y1="181.9688" y2="181.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="204" y="196.1792">Progress : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="204" y="208.9839">Needs : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="204" y="221.7886">Needs : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="204" y="234.5933">Profile : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="107" x="204" y="247.3979">Experience : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="204" y="260.2026">Points : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="204" y="273.0073">Points : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="200" x="204" y="285.812">ThreadSpecificPointBalance : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="204" y="298.6167">WatPoints : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="204" y="311.4214">WatPoints : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="88" x="204" y="324.2261">Threads : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="204" y="337.0308">Users : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="136" x="204" y="349.8354">UserParticipation : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="199" x2="409" y1="356.4297" y2="356.4297"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="204" y="370.6401">start()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="49" x="204" y="383.4448">answer()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78" x="204" y="396.2495">"like/dislike"()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="204" y="409.0542">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="204" y="421.8589">Lifetime()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="204" y="434.6636">track()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="27" x="204" y="447.4683">get()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="204" y="460.2729">stay()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="204" y="473.0776">redeem()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="204" y="485.8823">receive()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="204" y="498.687">search()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="204" y="511.4917">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43" x="204" y="524.2964">select()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="204" y="537.1011">update()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="204" y="549.9058">mark()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="58" x="204" y="562.7104">compare()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="44" x="204" y="575.5151">gauge()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="204" y="588.3198">measure()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="204" y="601.1245">use()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42" x="204" y="613.9292">report()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="204" y="626.7339">edit()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="204" y="639.5386">started()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="204" y="652.3433">delete()</text><!--MD5=[09a5b4adb0ee554eafb73b413209c7bf]
+class Users--><rect codeLine="40" fill="#FEFECE" filter="url(#f1mthelx38ske4)" height="91.1875" id="Users" style="stroke: #A80036; stroke-width: 1.5;" width="84" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="31" y="23.1387">Users</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="90" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72" x="13" y="45.1792">more : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="90" y1="51.7734" y2="51.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="13" y="65.9839">notify()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="44" x="13" y="78.7886">entice()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="13" y="91.5933">redeem()</text><!--MD5=[ab5513caa948c03ee87f6bc67913e66b]
+class GiftCard--><rect codeLine="46" fill="#FEFECE" filter="url(#f1mthelx38ske4)" height="78.3828" id="GiftCard" style="stroke: #A80036; stroke-width: 1.5;" width="106" x="755" y="369.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="48" x="784" y="385.6387">GiftCard</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="756" x2="860" y1="393.4688" y2="393.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="761" y="407.6792">GiftCards : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="756" x2="860" y1="414.2734" y2="414.2734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="761" y="428.4839">receive()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="761" y="441.2886">add()</text><!--MD5=[7b57f7066b803747d2119f99dd1555d4]
+class Profile--><rect codeLine="51" fill="#FEFECE" filter="url(#f1mthelx38ske4)" height="65.5781" id="Profile" style="stroke: #A80036; stroke-width: 1.5;" width="95" x="126.5" y="19.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="37" x="155.5" y="35.6387">Profile</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="127.5" x2="220.5" y1="43.4688" y2="43.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="83" x="132.5" y="57.6792">Profiles : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="127.5" x2="220.5" y1="64.2734" y2="64.2734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="132.5" y="78.4839">update()</text><!--MD5=[948346f2dfe9866ea883595a582714fa]
+class Thread--><rect codeLine="55" fill="#FEFECE" filter="url(#f1mthelx38ske4)" height="103.9922" id="Thread" style="stroke: #A80036; stroke-width: 1.5;" width="212" x="508" y="356.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="593" y="372.6387">Thread</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="509" x2="719" y1="380.4688" y2="380.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="88" x="514" y="394.6792">Threads : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="200" x="514" y="407.4839">ThreadSpecificPointBalance : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="120" x="514" y="420.2886">"Thread/post" : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="509" x2="719" y1="426.8828" y2="426.8828"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="514" y="441.0933">start()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="514" y="453.8979">sorting()</text><!--MD5=[572ed6b619d9df2e4892c2de18186e7d]
+class Experience--><rect codeLine="62" fill="#FEFECE" filter="url(#f1mthelx38ske4)" height="65.5781" id="Experience" style="stroke: #A80036; stroke-width: 1.5;" width="94" x="257" y="19.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="68" x="270" y="35.6387">Experience</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="258" x2="350" y1="43.4688" y2="43.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="263" y="57.6792">is : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="258" x2="350" y1="64.2734" y2="64.2734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="263" y="78.4839">personalized()</text><!--MD5=[edb11144d43af470c1be807b845b921d]
+class GiftCards--><rect codeLine="66" fill="#FEFECE" filter="url(#f1mthelx38ske4)" height="52.7734" id="GiftCards" style="stroke: #A80036; stroke-width: 1.5;" width="61" x="777.5" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="55" x="780.5" y="42.1387">GiftCards</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="778.5" x2="837.5" y1="49.9688" y2="49.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="778.5" x2="837.5" y1="57.9688" y2="57.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38" x="783.5" y="72.1792">using()</text><!--MD5=[57e68c700128934cdfe7e9baa2b530be]
+class UserParticipation--><rect codeLine="69" fill="#FEFECE" filter="url(#f1mthelx38ske4)" height="52.7734" id="UserParticipation" style="stroke: #A80036; stroke-width: 1.5;" width="107" x="386.5" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="101" x="389.5" y="42.1387">UserParticipation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="387.5" x2="492.5" y1="49.9688" y2="49.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="387.5" x2="492.5" y1="57.9688" y2="57.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="392.5" y="72.1792">increase()</text><!--MD5=[d1c76f4fcdd430b1c1b9173c40d8c79a]
+class ThreadSpecificPointBalance--><rect codeLine="72" fill="#FEFECE" filter="url(#f1mthelx38ske4)" height="52.7734" id="ThreadSpecificPointBalance" style="stroke: #A80036; stroke-width: 1.5;" width="171" x="528.5" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="165" x="531.5" y="42.1387">ThreadSpecificPointBalance</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="529.5" x2="698.5" y1="49.9688" y2="49.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="529.5" x2="698.5" y1="57.9688" y2="57.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="534.5" y="72.1792">drop()</text><!--MD5=[9dda5a78f2e9474cdcafc64756662734]
+class Forum--><rect codeLine="75" fill="#FEFECE" filter="url(#f1mthelx38ske4)" height="65.5781" id="Forum" style="stroke: #A80036; stroke-width: 1.5;" width="180" x="874" y="19.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="38" x="945" y="35.6387">Forum</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="875" x2="1053" y1="43.4688" y2="43.4688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="875" x2="1053" y1="51.4688" y2="51.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="880" y="65.6792">search()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="168" x="880" y="78.4839">FreeOfInappropriateThreads()</text><!--MD5=[8330fea1ec797f0525a4843a88f154d2]
+class be--><rect fill="#FEFECE" filter="url(#f1mthelx38ske4)" height="39.9688" id="be" style="stroke: #A80036; stroke-width: 1.5;" width="22" x="953" y="388.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="16" x="956" y="404.6387">be</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="954" x2="974" y1="412.4688" y2="412.4688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="954" x2="974" y1="420.4688" y2="420.4688"/><!--MD5=[071aee1b661c131621d47c072e745a8f]
+class 's--><rect fill="#FEFECE" filter="url(#f1mthelx38ske4)" height="39.9688" id="'s" style="stroke: #A80036; stroke-width: 1.5;" width="16" x="296" y="719"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="10" x="299" y="735.1387">'s</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="297" x2="311" y1="742.9688" y2="742.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="297" x2="311" y1="750.9688" y2="750.9688"/><!--MD5=[a30bd6084d434b8b3073f41535762c8a]
+reverse link Forum to be--><path codeLine="79" d="M964,105.683 C964,185.746 964,335.188 964,388.223 " fill="none" id="Forum&lt;-be" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="957,105.54,964,85.539,971,105.539,957,105.54" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="955.2625" y="105.1314">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="954.875" y="377.5007">1</text><!--MD5=[97387d34e491ec15b4f09bb0959a81ea]
+reverse link ThreadSpecificPointBalance to User--><path codeLine="80" d="M569.034,87.261 C544.471,106.691 514.215,132.295 490,158 C462.307,187.396 434.928,220.898 410.041,253.601 " fill="none" id="ThreadSpecificPointBalance&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="579.527,79.06,572.3364,79.6033,570.0723,86.4497,577.2629,85.9064,579.527,79.06" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="562.6301" y="99.0448">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="418.1221" y="238.7489">1</text><!--MD5=[8a97845c4dc9c5ec34942a66c53e2979]
+reverse link Users to User--><path codeLine="81" d="M89.0288,109.069 C118.27,149.663 159.362,206.709 197.797,260.066 " fill="none" id="Users&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="81.2959,98.334,81.5573,105.5404,88.3099,108.0707,88.0485,100.8644,81.2959,98.334" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="77.4519" y="118.2303">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="182.0484" y="246.1757">1</text><!--MD5=[9f5636b284b4f54f868616aa32bec8c9]
+reverse link GiftCards to GiftCard--><path codeLine="82" d="M808,92.279 C808,160.584 808,301.523 808,369.367 " fill="none" id="GiftCards&lt;-GiftCard" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="808,79.244,804,85.244,808,91.244,812,85.244,808,79.244" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="799.125" y="98.8411">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="799.3125" y="358.3974">1</text><!--MD5=[b46c2af38ce32c85d2a753595d9178d9]
+reverse link Profile to User--><path codeLine="83" d="M190.415,98.199 C196.593,115.022 204.135,135.559 212.365,157.971 " fill="none" id="Profile&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="185.766,85.539,184.0796,92.5501,189.9028,96.8034,191.5892,89.7923,185.766,85.539" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="179.1979" y="105.1314">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="201.227" y="146.5745">1</text><!--MD5=[017bbe1c1e626b32527de77c1c24bd70]
+reverse link ThreadSpecificPointBalance to Thread--><path codeLine="84" d="M614,92.284 C614,156.439 614,284.665 614,356.223 " fill="none" id="ThreadSpecificPointBalance&lt;-Thread" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="614,79.244,610,85.244,614,91.244,618,85.244,614,79.244" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="605.125" y="98.8411">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="605.4625" y="345.2668">1</text><!--MD5=[7312b9f8517adb6e960a14f30849e50f]
+reverse link Experience to User--><path codeLine="85" d="M304,98.7 C304,115.429 304,135.781 304,157.971 " fill="none" id="Experience&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="304,85.539,300,91.539,304,97.539,308,91.539,304,85.539" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="295.2625" y="105.1314">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="295.8688" y="146.5745">1</text><!--MD5=[3a9a1112cbb112bf39ad8386b44723d5]
+reverse link UserParticipation to User--><path codeLine="86" d="M425.37,91.582 C418.513,109.429 409.711,132.342 399.982,157.664 " fill="none" id="UserParticipation&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="430.11,79.244,424.2242,83.4102,425.8061,90.4456,431.6919,86.2795,430.11,79.244" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="419.0716" y="98.8411">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="394.7127" y="147.0644">1</text><!--MD5=[88e75c3f7c92f9ced66793fda707e0b8]
+reverse link User to 's--><path codeLine="87" d="M304,679.573 C304,695.3262 304,708.8178 304,718.8546 " fill="none" id="User&lt;-'s" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="297,679.3161,304,659.3161,311,679.316,297,679.3161" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="295.8813" y="679.0547">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="294.825" y="707.8248">1</text><!--MD5=[f71208189504ef20c1c2232b9ecd8b44]
+@startuml
+hide circle
+class User {
+	Progress : string
+	Needs : string
+	Needs : string
+	Profile : string
+	Experience : string
+	Points : string
+	Points : string
+	ThreadSpecificPointBalance : string
+	WatPoints : string
+	WatPoints : string
+	Threads : string
+	Users : string
+	UserParticipation : string
+	start()
+	answer()
+	"like/dislike"()
+	view()
+	Lifetime()
+	track()
+	get()
+	stay()
+	redeem()
+	receive()
+	search()
+	see()
+	select()
+	update()
+	mark()
+	compare()
+	gauge()
+	measure()
+	use()
+	report()
+	edit()
+	started()
+	delete()
+}
+class Users {
+	more : string
+	notify()
+	entice()
+	redeem()
+}
+class GiftCard {
+	GiftCards : string
+	receive()
+	add()
+}
+class Profile {
+	Profiles : string
+	update()
+}
+class Thread {
+	Threads : string
+	ThreadSpecificPointBalance : string
+	"Thread/post" : string
+	start()
+	sorting()
+}
+class Experience {
+	is : string
+	personalized()
+}
+class GiftCards {
+	using()
+}
+class UserParticipation {
+	increase()
+}
+class ThreadSpecificPointBalance {
+	drop()
+}
+class Forum {
+	search()
+	FreeOfInappropriateThreads()
+}
+Forum "1" <|- - "1" be
+ThreadSpecificPointBalance "1" o- - "1" User
+Users "1" o- - "1" User
+GiftCards "1" o- - "1" GiftCard
+Profile "1" o- - "1" User
+ThreadSpecificPointBalance "1" o- - "1" Thread
+Experience "1" o- - "1" User
+UserParticipation "1" o- - "1" User
+User "1" <|- - "1" "'s"
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

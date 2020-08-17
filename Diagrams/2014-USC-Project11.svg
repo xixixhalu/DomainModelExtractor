@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="701px" preserveAspectRatio="none" style="width:1502px;height:701px;" version="1.1" viewBox="0 0 1502 701" width="1502px" zoomAndPan="magnify"><defs><filter height="300%" id="f1blkabx9ln9ux" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[7829b64950ce38e0487c4015ea331f97]
+class Date--><rect codeLine="2" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="65.5781" id="Date" style="stroke: #A80036; stroke-width: 1.5;" width="118" x="7" y="286"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="28" x="52" y="302.1387">Date</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="124" y1="309.9688" y2="309.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="13" y="324.1792">based : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="13" y="336.9839">DateRange : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="124" y1="343.5781" y2="343.5781"/><!--MD5=[6c976bdb259635a21aa8426acaf48469]
+class DateRange--><rect codeLine="6" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="52.7734" id="DateRange" style="stroke: #A80036; stroke-width: 1.5;" width="89" x="21.5" y="58"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="65" x="33.5" y="74.1387">DateRange</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="22.5" x2="109.5" y1="81.9688" y2="81.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="27.5" y="96.1792">based : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="22.5" x2="109.5" y1="102.7734" y2="102.7734"/><!--MD5=[3512c909caa28192c0057f20071d7997]
+class Trainer--><rect codeLine="9" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="193.625" id="Trainer" style="stroke: #A80036; stroke-width: 1.5;" width="180" x="155" y="482"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="224" y="498.1387">Trainer</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="156" x2="334" y1="505.9688" y2="505.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="168" x="161" y="520.1792">CalendarOfAvailability : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="161" y="532.9839">Prices : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="161" y="545.7886">Profile : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="88" x="161" y="558.5933">Trainers : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="161" y="571.3979">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="156" x2="334" y1="577.9922" y2="577.9922"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="161" y="592.2026">offer()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="26" x="161" y="605.0073">put()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="161" y="617.812">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="58" x="161" y="630.6167">compare()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="26" x="161" y="643.4214">set()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="161" y="656.2261">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43" x="161" y="669.0308">attach()</text><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="23" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="206.4297" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="121" x="610.5" y="476"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="656.5" y="492.1387">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="611.5" x2="730.5" y1="499.9688" y2="499.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="616.5" y="514.1792">Course : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="109" x="616.5" y="526.9839">Registration : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="616.5" y="539.7886">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="616.5" y="552.5933">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="616.5" y="565.3979">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="611.5" x2="730.5" y1="571.9922" y2="571.9922"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="616.5" y="586.2026">search()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="616.5" y="599.0073">request()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="34" x="616.5" y="611.812">filter()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="616.5" y="624.6167">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="616.5" y="637.4214">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="616.5" y="650.2261">setup()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="616.5" y="663.0308">register()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="616.5" y="675.8354">share()</text><!--MD5=[4066b0363c5a91ff3b6e03e0428953a9]
+class Course--><rect codeLine="38" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="155.2109" id="Course" style="stroke: #A80036; stroke-width: 1.5;" width="164" x="665" y="241.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="43" x="725.5" y="257.6387">Course</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="666" x2="828" y1="265.4688" y2="265.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101" x="671" y="279.6792">registered : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="88" x="671" y="292.4839">Courses : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="152" x="671" y="305.2886">CoursesInformation : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="136" x="671" y="318.0933">CourseAttendee : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="116" x="671" y="330.8979">CourseName : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="666" x2="828" y1="337.4922" y2="337.4922"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="671" y="351.7026">schedule()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="671" y="364.5073">cancel()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="671" y="377.312">Calendar()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="671" y="390.1167">offer()</text><!--MD5=[4d71b7bae0078dbaccaeeb4541b58fa1]
+class their--><rect codeLine="49" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="52.7734" id="their" style="stroke: #A80036; stroke-width: 1.5;" width="111" x="973.5" y="292.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="27" x="1015.5" y="308.6387">their</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="974.5" x2="1083.5" y1="316.4688" y2="316.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="979.5" y="330.6792">Feasibility : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="974.5" x2="1083.5" y1="337.2734" y2="337.2734"/><!--MD5=[633dc6c152aa09ba38238aa8da753927]
+class Trainers--><rect codeLine="52" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="78.3828" id="Trainers" style="stroke: #A80036; stroke-width: 1.5;" width="89" x="160.5" y="280"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49" x="180.5" y="296.1387">Trainers</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="161.5" x2="248.5" y1="303.9688" y2="303.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="166.5" y="318.1792">Profile : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="61" x="166.5" y="330.9839">are : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="161.5" x2="248.5" y1="337.5781" y2="337.5781"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="62" x="166.5" y="351.7886">profitable()</text><!--MD5=[c39407b176a4457f591f5ba3a563ef58]
+class Courses--><rect codeLine="57" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="65.5781" id="Courses" style="stroke: #A80036; stroke-width: 1.5;" width="164" x="536" y="51.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="50" x="593" y="67.6387">Courses</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="537" x2="699" y1="75.4688" y2="75.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="152" x="542" y="89.6792">CoursesInformation : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="537" x2="699" y1="96.2734" y2="96.2734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="542" y="110.4839">start()</text><!--MD5=[76b5e19c9337179d2d7ae334371d68c8]
+class Notification--><rect codeLine="61" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="52.7734" id="Notification" style="stroke: #A80036; stroke-width: 1.5;" width="123" x="1196.5" y="292.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="66" x="1225" y="308.6387">Notification</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1197.5" x2="1318.5" y1="316.4688" y2="316.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="111" x="1202.5" y="330.6792">Notifications : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1197.5" x2="1318.5" y1="337.2734" y2="337.2734"/><!--MD5=[704ee1a71dea58ca011676bdf272f2c7]
+class Feasibility--><rect codeLine="64" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="52.7734" id="Feasibility" style="stroke: #A80036; stroke-width: 1.5;" width="309" x="874.5" y="58"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="60" x="999" y="74.1387">Feasibility</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="875.5" x2="1182.5" y1="81.9688" y2="81.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="297" x="880.5" y="96.1792">"Feasibility-LRB-AsWellAsScope-RRB-OfEach" : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="875.5" x2="1182.5" y1="102.7734" y2="102.7734"/><!--MD5=[357bd11e9dd9fd64f4728ed22ee14a3a]
+class Prices--><rect codeLine="67" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="52.7734" id="Prices" style="stroke: #A80036; stroke-width: 1.5;" width="146" x="285" y="292.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="340" y="308.6387">Prices</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="286" x2="430" y1="316.4688" y2="316.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="134" x="291" y="330.6792">PricesOfCourses : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="286" x2="430" y1="337.2734" y2="337.2734"/><!--MD5=[a40a7ac4b423335b0d34bf16cf36e547]
+class Price--><rect codeLine="70" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="65.5781" id="Price" style="stroke: #A80036; stroke-width: 1.5;" width="146" x="390" y="546"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="448.5" y="562.1387">Price</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="391" x2="535" y1="569.9688" y2="569.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="396" y="584.1792">Prices : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="134" x="396" y="596.9839">PricesOfCourses : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="391" x2="535" y1="603.5781" y2="603.5781"/><!--MD5=[db6d18d8099558415abc41d00477ab92]
+class Admin--><rect codeLine="74" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="193.625" id="Admin" style="stroke: #A80036; stroke-width: 1.5;" width="129" x="1354.5" y="222"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="37" x="1400.5" y="238.1387">Admin</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1355.5" x2="1482.5" y1="245.9688" y2="245.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="117" x="1360.5" y="260.1792">Administrator : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1360.5" y="272.9839">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1360.5" y="285.7886">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1355.5" x2="1482.5" y1="292.3828" y2="292.3828"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="1360.5" y="306.5933">schedule()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="1360.5" y="319.3979">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="31" x="1360.5" y="332.2026">met()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="25" x="1360.5" y="345.0073">did()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="1360.5" y="357.812">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="1360.5" y="370.6167">cancel()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42" x="1360.5" y="383.4214">adjust()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="1360.5" y="396.2261">move()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43" x="1360.5" y="409.0308">attach()</text><!--MD5=[da547346deef918ea16944ba046651ef]
+class Administrator--><rect codeLine="88" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="155.2109" id="Administrator" style="stroke: #A80036; stroke-width: 1.5;" width="86" x="1376" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="80" x="1379" y="23.1387">Administrator</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1377" x2="1461" y1="30.9688" y2="30.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1377" x2="1461" y1="38.9688" y2="38.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="1382" y="53.1792">receive()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="1382" y="65.9839">create()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="1382" y="78.7886">delete()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="1382" y="91.5933">inquiry()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="1382" y="104.3979">update()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="1382" y="117.2026">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42" x="1382" y="130.0073">adjust()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="1382" y="142.812">verify()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="1382" y="155.6167">have()</text><!--MD5=[eea892f2ef094553bc3d2a13ea031b23]
+class CourseAttendee--><rect codeLine="99" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="129.6016" id="CourseAttendee" style="stroke: #A80036; stroke-width: 1.5;" width="104" x="735" y="19.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="98" x="738" y="35.6387">CourseAttendee</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="736" x2="838" y1="43.4688" y2="43.4688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="736" x2="838" y1="51.4688" y2="51.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="741" y="65.6792">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="58" x="741" y="78.4839">compare()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="47" x="741" y="91.2886">decide()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="741" y="104.0933">receive()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="34" x="741" y="116.8979">Rate()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="741" y="129.7026">Review()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="741" y="142.5073">pay()</text><!--MD5=[243c3282f4bf31ec500ddd69bf60b71e]
+class PricesOfCourses--><rect codeLine="108" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="65.5781" id="PricesOfCourses" style="stroke: #A80036; stroke-width: 1.5;" width="106" x="335" y="51.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="100" x="338" y="67.6387">PricesOfCourses</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="336" x2="440" y1="75.4688" y2="75.4688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="336" x2="440" y1="83.4688" y2="83.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="58" x="341" y="97.6792">compare()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="341" y="110.4839">see()</text><!--MD5=[93ee1ecca66ee5f7dabe44355765ef2c]
+class Notifications--><rect codeLine="112" fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="52.7734" id="Notifications" style="stroke: #A80036; stroke-width: 1.5;" width="79" x="1218.5" y="58"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="73" x="1221.5" y="74.1387">Notifications</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1219.5" x2="1296.5" y1="81.9688" y2="81.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1219.5" x2="1296.5" y1="89.9688" y2="89.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="1224.5" y="104.1792">receive()</text><!--MD5=[213cf4b80910bcf3082cc8463afdbd14]
+class is--><rect fill="#FEFECE" filter="url(#f1blkabx9ln9ux)" height="39.9688" id="is" style="stroke: #A80036; stroke-width: 1.5;" width="16" x="767" y="559"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="10" x="770" y="575.1387">is</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="768" x2="782" y1="582.9688" y2="582.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="768" x2="782" y1="590.9688" y2="590.9688"/><!--MD5=[0995b166881cb4244ca3fd688155861b]
+reverse link Notifications to Notification--><path codeLine="115" d="M1258,124.416 C1258,172.185 1258,251.838 1258,292.469 " fill="none" id="Notifications&lt;-Notification" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1258,111.27,1254,117.27,1258,123.27,1262,117.27,1258,111.27" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1249.125" y="130.8728">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1249.025" y="281.2846">1</text><!--MD5=[1e58c990c60fc5919397532fb534fcc2]
+reverse link Prices to Trainer--><path codeLine="116" d="M341.464,357.755 C327.207,390.306 305.994,438.739 287.088,481.905 " fill="none" id="Prices&lt;-Trainer" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="346.752,345.681,340.6807,349.572,341.9373,356.6727,348.0085,352.7818,346.752,345.681" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="335.4165" y="365.2643">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="282.0041" y="470.9833">1</text><!--MD5=[cbe87143e95281ca3a44750372be3b22]
+reverse link Administrator to Admin--><path codeLine="117" d="M1419,175.438 C1419,190.637 1419,206.468 1419,221.818 " fill="none" id="Administrator&lt;-Admin" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1419,162.274,1415,168.274,1419,174.274,1423,168.274,1419,162.274" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1410.6313" y="182.1985">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1410.6938" y="210.8896">1</text><!--MD5=[fb68a5c11149df3be64071a03756c7e7]
+reverse link PricesOfCourses to Prices--><path codeLine="118" d="M382.133,130.973 C375.915,179.158 366.318,253.536 361.305,292.384 " fill="none" id="PricesOfCourses&lt;-Prices" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="383.829,117.828,379.0939,123.2666,382.2929,129.7293,387.028,124.2907,383.829,117.828" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="374.3735" y="137.2168">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="353.1443" y="281.6031">1</text><!--MD5=[5db2f3c9c795d46e0800ded15d8bcf02]
+reverse link Course to User--><path codeLine="119" d="M720.65,409.45 C714.347,430.848 707.57,453.853 701.112,475.778 " fill="none" id="Course&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="724.403,396.71,718.8703,401.3348,721.0114,408.2207,726.5441,403.5959,724.403,396.71" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="713.868" y="416.8947">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="694.948" y="465.0493">1</text><!--MD5=[9e26a92a774e10f0a4191618fa28f459]
+reverse link Course to is--><path codeLine="120" d="M757.491,416.671 C763.166,468.957 769.662,528.816 772.915,558.784 " fill="none" id="Course&lt;-is" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="750.524,417.349,755.325,396.71,764.442,415.838,750.524,417.349" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="747.7372" y="416.8947">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="763.2036" y="548.0788">1</text><!--MD5=[25981d8e1a8fee6ebb89c44d02363636]
+reverse link Prices to Price--><path codeLine="121" d="M373.472,358.017 C394.135,408.789 430.386,497.863 449.816,545.606 " fill="none" id="Prices&lt;-Price" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="368.452,345.681,367.0085,352.7461,372.975,356.796,374.4185,349.7308,368.452,345.681" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="361.8634" y="365.2643">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="438.5403" y="534.9303">1</text><!--MD5=[689888aceb458c296895e055d1ecb5cc]
+reverse link Courses to Course--><path codeLine="122" d="M642.299,129.295 C659.792,160.823 683.846,204.175 704.487,241.378 " fill="none" id="Courses&lt;-Course" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="635.937,117.828,635.35,125.0152,641.7586,128.3213,642.3455,121.1341,635.937,117.828" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="630.4195" y="137.2168">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="692.0537" y="230.328">1</text><!--MD5=[b27612cb7f40bc5f95c44e331c32fb5d]
+reverse link DateRange to Date--><path codeLine="123" d="M66,124.33 C66,169.599 66,243.585 66,285.8 " fill="none" id="DateRange&lt;-Date" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="66,111.27,62,117.27,66,123.27,70,117.27,66,111.27" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="57.125" y="130.8728">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="57.2125" y="274.9087">1</text><!--MD5=[5c8ca6c5f928f31da0df3b1377b3d8fa]
+reverse link PricesOfCourses to Price--><path codeLine="124" d="M412.319,129.423 C425.46,155.494 440.495,189.674 448,222 C475.07,338.599 469.788,482.324 465.595,545.553 " fill="none" id="PricesOfCourses&lt;-Price" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="406.256,117.686,405.4562,124.8526,411.764,128.3472,412.5637,121.1806,406.256,117.686" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="400.7954" y="137.0495">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="457.3272" y="534.8672">1</text><!--MD5=[b4df4899ea4f74267be7fd233e4423ab]
+reverse link CourseAttendee to Course--><path codeLine="125" d="M773.737,162.592 C769.384,187.89 764.55,215.991 760.202,241.263 " fill="none" id="CourseAttendee&lt;-Course" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="775.964,149.647,771.0045,154.8819,773.9292,161.4732,778.8887,156.2384,775.964,149.647" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="766.4134" y="169.233">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="753.0503" y="230.4685">1</text><!--MD5=[d56ac2ab78666dce049bdd6e6ab0db68]
+reverse link Trainers to Trainer--><path codeLine="126" d="M212.9,370.958 C217.8,402.558 224.251,444.169 230.084,481.793 " fill="none" id="Trainers&lt;-Trainer" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="210.902,358.069,207.8684,364.611,212.7404,369.9273,215.774,363.3854,210.902,358.069" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="203.2408" y="378.4087">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="220.6357" y="470.8627">1</text><!--MD5=[ac9f7092f4112418eab6428806495f2d]
+reverse link Feasibility to their--><path codeLine="127" d="M1029,124.416 C1029,172.185 1029,251.838 1029,292.469 " fill="none" id="Feasibility&lt;-their" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1029,111.27,1025,117.27,1029,123.27,1033,117.27,1029,111.27" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1020.125" y="130.8728">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1020.025" y="281.2846">1</text><!--MD5=[e99df0d97ad8f63217f1985ae49088ff]
+@startuml
+hide circle
+class Date {
+	based : string
+	DateRange : string
+}
+class DateRange {
+	based : string
+}
+class Trainer {
+	CalendarOfAvailability : string
+	Prices : string
+	Profile : string
+	Trainers : string
+	be : string
+	offer()
+	put()
+	see()
+	compare()
+	set()
+	able()
+	attach()
+}
+class User {
+	Course : string
+	Registration : string
+	be : string
+	be : string
+	be : string
+	search()
+	request()
+	filter()
+	see()
+	able()
+	setup()
+	register()
+	share()
+}
+class Course {
+	registered : string
+	Courses : string
+	CoursesInformation : string
+	CourseAttendee : string
+	CourseName : string
+	schedule()
+	cancel()
+	Calendar()
+	offer()
+}
+class their {
+	Feasibility : string
+}
+class Trainers {
+	Profile : string
+	are : string
+	profitable()
+}
+class Courses {
+	CoursesInformation : string
+	start()
+}
+class Notification {
+	Notifications : string
+}
+class Feasibility {
+	"Feasibility-LRB-AsWellAsScope-RRB-OfEach" : string
+}
+class Prices {
+	PricesOfCourses : string
+}
+class Price {
+	Prices : string
+	PricesOfCourses : string
+}
+class Admin {
+	Administrator : string
+	be : string
+	be : string
+	schedule()
+	see()
+	met()
+	did()
+	able()
+	cancel()
+	adjust()
+	move()
+	attach()
+}
+class Administrator {
+	receive()
+	create()
+	delete()
+	inquiry()
+	update()
+	see()
+	adjust()
+	verify()
+	have()
+}
+class CourseAttendee {
+	see()
+	compare()
+	decide()
+	receive()
+	Rate()
+	Review()
+	pay()
+}
+class PricesOfCourses {
+	compare()
+	see()
+}
+class Notifications {
+	receive()
+}
+Notifications "1" o- - "1" Notification
+Prices "1" o- - "1" Trainer
+Administrator "1" o- - "1" Admin
+PricesOfCourses "1" o- - "1" Prices
+Course "1" o- - "1" User
+Course "1" <|- - "1" is
+Prices "1" o- - "1" Price
+Courses "1" o- - "1" Course
+DateRange "1" o- - "1" Date
+PricesOfCourses "1" o- - "1" Price
+CourseAttendee "1" o- - "1" Course
+Trainers "1" o- - "1" Trainer
+Feasibility "1" o- - "1" their
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

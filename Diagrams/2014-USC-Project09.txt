@@ -1,0 +1,49 @@
+@startuml
+hide circle
+class CurrentHostingProvider {
+	deployed : string
+}
+class Tipsure {
+	CurrentHostingProvider : string
+	TipsureNumbers : string
+}
+class User {
+	Users : string
+	search()
+	review()
+	have()
+	submit()
+	use()
+	add()
+	get()
+	reduced()
+	download()
+	share()
+	like()
+	see()
+}
+class Tip {
+	Tipsure : string
+	TipsureNumbers : string
+	TipCalculator : string
+	calculate()
+	split()
+}
+class TipCalculator {
+	use()
+	calculate()
+	split()
+}
+class Users {
+	lookup()
+}
+class MaximumBudget {
+	500()
+}
+Users "1" o-- "1" User
+CurrentHostingProvider "1" o-- "1" Tipsure
+TipCalculator "1" o-- "1" Tip
+Tipsure "1" o-- "1" Tip
+MaximumBudget "1" <|-- "1" is
+
+@enduml

@@ -1,0 +1,58 @@
+@startuml
+hide circle
+class Consumer {
+	Occasion : string
+	Orders : string
+	Experiences : string
+	Orders : string
+	OrderHistory : string
+	Needs : string
+	Consumers : string
+	is : string
+	place()
+	search()
+	have()
+	track()
+	make()
+	Go()
+	schedule()
+	talk()
+	rank()
+	review()
+	share()
+	view()
+	chat()
+	receive()
+	cancel()
+	satisfied()
+	check()
+	bought()
+	wants()
+	get()
+	want()
+}
+class Flowerseeker {
+	Profile : string
+	Profile : string
+}
+class Flowers {
+	Flowerseeker : string
+}
+class Product {
+	Products : string
+	ProductStatus : string
+	rank()
+}
+class it {
+	OutOfDelivery()
+}
+class ProductStatus {
+	provide()
+	confirm()
+}
+Flowerseeker "1" o-- "1" Flowers
+Consumer "1" <|-- "1" "'m"
+ProductStatus "1" o-- "1" Product
+it "1" <|-- "1" is
+
+@enduml

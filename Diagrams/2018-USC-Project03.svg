@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="204px" preserveAspectRatio="none" style="width:329px;height:204px;" version="1.1" viewBox="0 0 329 204" width="329px" zoomAndPan="magnify"><defs><filter height="300%" id="f11ha2hg6gh1w7" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9fce796000a30cfb9f92e73bb002c25c]
+class Draft--><rect codeLine="2" fill="#FEFECE" filter="url(#f11ha2hg6gh1w7)" height="52.7734" id="Draft" style="stroke: #A80036; stroke-width: 1.5;" width="94" x="13.5" y="126.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="46" y="142.6387">Draft</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="14.5" x2="106.5" y1="150.4688" y2="150.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="19.5" y="164.6792">Details : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="14.5" x2="106.5" y1="171.2734" y2="171.2734"/><!--MD5=[2e4f80fa4bb85f85b47fdc78907ad985]
+class Details--><rect codeLine="5" fill="#FEFECE" filter="url(#f11ha2hg6gh1w7)" height="52.7734" id="Details" style="stroke: #A80036; stroke-width: 1.5;" width="107" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="41" x="40" y="23.1387">Details</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="113" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="95" x="13" y="45.1792">DetailsOf : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="113" y1="51.7734" y2="51.7734"/><!--MD5=[d83fbafbf0bff840ed3a1e76fc127f44]
+class CurrentWeekGoal--><rect codeLine="8" fill="#FEFECE" filter="url(#f11ha2hg6gh1w7)" height="52.7734" id="CurrentWeekGoal" style="stroke: #A80036; stroke-width: 1.5;" width="161" x="149" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="106" x="176.5" y="23.1387">CurrentWeekGoal</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="150" x2="309" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="149" x="155" y="45.1792">CurrentWeekGoals : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="150" x2="309" y1="51.7734" y2="51.7734"/><!--MD5=[f0eb75fe662040961293f1a97ecda279]
+class CurrentWeek--><rect codeLine="11" fill="#FEFECE" filter="url(#f11ha2hg6gh1w7)" height="65.5781" id="CurrentWeek" style="stroke: #A80036; stroke-width: 1.5;" width="161" x="149" y="120"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="79" x="190" y="136.1387">CurrentWeek</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="150" x2="309" y1="143.9688" y2="143.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="143" x="155" y="158.1792">CurrentWeekGoal : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="149" x="155" y="170.9839">CurrentWeekGoals : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="150" x2="309" y1="177.5781" y2="177.5781"/><!--MD5=[620d06011c222735adec03d16e04e2e1]
+reverse link CurrentWeekGoal to CurrentWeek--><path codeLine="15" d="M229.5,73.459 C229.5,88.5539 229.5,105.6223 229.5,119.9824 " fill="none" id="CurrentWeekGoal&lt;-CurrentWeek" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="229.5,60.286,225.5,66.286,229.5,72.286,233.5,66.286,229.5,60.286" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="220.625" y="79.8923">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="220.675" y="108.7497">1</text><!--MD5=[0007887f2818fb071eb24e116766e6ea]
+reverse link Details to Draft--><path codeLine="16" d="M60.5,73.513 C60.5,90.8697 60.5,110.8275 60.5,126.2743 " fill="none" id="Details&lt;-Draft" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="60.5,60.286,56.5,66.286,60.5,72.286,64.5,66.286,60.5,60.286" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="51.625" y="79.8923">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="51.575" y="115.4681">1</text><!--MD5=[d9bc349f1e03981a3305ad5cb0b4862c]
+@startuml
+hide circle
+class Draft {
+	Details : string
+}
+class Details {
+	DetailsOf : string
+}
+class CurrentWeekGoal {
+	CurrentWeekGoals : string
+}
+class CurrentWeek {
+	CurrentWeekGoal : string
+	CurrentWeekGoals : string
+}
+CurrentWeekGoal "1" o- - "1" CurrentWeek
+Details "1" o- - "1" Draft
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

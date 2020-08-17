@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="242px" preserveAspectRatio="none" style="width:938px;height:242px;" version="1.1" viewBox="0 0 938 242" width="938px" zoomAndPan="magnify"><defs><filter height="300%" id="fltcawbzg7kc" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[6a494c20d032ff54e1efa92c1369bc7b]
+class Page--><rect codeLine="2" fill="#FEFECE" filter="url(#fltcawbzg7kc)" height="52.7734" id="Page" style="stroke: #A80036; stroke-width: 1.5;" width="73" x="45" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="67" y="42.1387">Page</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="46" x2="117" y1="49.9688" y2="49.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="61" x="51" y="64.1792">left : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="46" x2="117" y1="70.7734" y2="70.7734"/><!--MD5=[02b8bfb01843de76b1a86ca492cfb20f]
+class VerifiedServiceProvider--><rect codeLine="5" fill="#FEFECE" filter="url(#fltcawbzg7kc)" height="65.5781" id="VerifiedServiceProvider" style="stroke: #A80036; stroke-width: 1.5;" width="149" x="7" y="158"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="143" x="10" y="174.1387">VerifiedServiceProvider</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="155" y1="181.9688" y2="181.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="70" x="13" y="196.1792">Page : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="155" y1="202.7734" y2="202.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="13" y="216.9839">reply()</text><!--MD5=[5aff5c50255f67a7089db77a52aaa125]
+class HomePage--><rect codeLine="9" fill="#FEFECE" filter="url(#fltcawbzg7kc)" height="52.7734" id="HomePage" style="stroke: #A80036; stroke-width: 1.5;" width="76" x="203.5" y="164.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="65" x="209" y="180.6387">HomePage</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="204.5" x2="278.5" y1="188.4688" y2="188.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="209.5" y="202.6792">Link : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="204.5" x2="278.5" y1="209.2734" y2="209.2734"/><!--MD5=[428d22d350d9880e10e0ddd45e620f15]
+class ServiceProvider--><rect codeLine="12" fill="#FEFECE" filter="url(#fltcawbzg7kc)" height="65.5781" id="ServiceProvider" style="stroke: #A80036; stroke-width: 1.5;" width="150" x="364.5" y="19.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="96" x="391.5" y="35.6387">ServiceProvider</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="365.5" x2="513.5" y1="43.4688" y2="43.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="138" x="370.5" y="57.6792">ServiceProviders : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="365.5" x2="513.5" y1="64.2734" y2="64.2734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="370.5" y="78.4839">see()</text><!--MD5=[db6d18d8099558415abc41d00477ab92]
+class Admin--><rect codeLine="16" fill="#FEFECE" filter="url(#fltcawbzg7kc)" height="65.5781" id="Admin" style="stroke: #A80036; stroke-width: 1.5;" width="129" x="550" y="158"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="37" x="596" y="174.1387">Admin</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="551" x2="678" y1="181.9688" y2="181.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="117" x="556" y="196.1792">Administrator : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="551" x2="678" y1="202.7734" y2="202.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="556" y="216.9839">remove()</text><!--MD5=[d189332174d53557e6def82bbd003869]
+class Link--><rect codeLine="20" fill="#FEFECE" filter="url(#fltcawbzg7kc)" height="52.7734" id="Link" style="stroke: #A80036; stroke-width: 1.5;" width="176" x="153.5" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="23" x="230" y="42.1387">Link</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="154.5" x2="328.5" y1="49.9688" y2="49.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="164" x="159.5" y="64.1792">LinksInsideOfTheBlog : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="154.5" x2="328.5" y1="70.7734" y2="70.7734"/><!--MD5=[dbb8b4f13c7b21394f9d757e58732f45]
+class Service--><rect codeLine="23" fill="#FEFECE" filter="url(#fltcawbzg7kc)" height="65.5781" id="Service" style="stroke: #A80036; stroke-width: 1.5;" width="150" x="364.5" y="158"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="46" x="416.5" y="174.1387">Service</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="365.5" x2="513.5" y1="181.9688" y2="181.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="132" x="370.5" y="196.1792">ServiceProvider : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="138" x="370.5" y="208.9839">ServiceProviders : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="365.5" x2="513.5" y1="215.5781" y2="215.5781"/><!--MD5=[634d1d8d06fddffff2d79d42b88716f1]
+class DiscussionBoard--><rect codeLine="27" fill="#FEFECE" filter="url(#fltcawbzg7kc)" height="65.5781" id="DiscussionBoard" style="stroke: #A80036; stroke-width: 1.5;" width="205" x="714" y="19.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="101" x="766" y="35.6387">DiscussionBoard</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="715" x2="918" y1="43.4688" y2="43.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="193" x="720" y="57.6792">DiscussionBoardOfTheSite : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="715" x2="918" y1="64.2734" y2="64.2734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38" x="720" y="78.4839">using()</text><!--MD5=[49d42632b649f116d5d2b66ad3e0f715]
+class Discussion--><rect codeLine="31" fill="#FEFECE" filter="url(#fltcawbzg7kc)" height="65.5781" id="Discussion" style="stroke: #A80036; stroke-width: 1.5;" width="205" x="714" y="158"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="65" x="784" y="174.1387">Discussion</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="715" x2="918" y1="181.9688" y2="181.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="135" x="720" y="196.1792">DiscussionBoard : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="193" x="720" y="208.9839">DiscussionBoardOfTheSite : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="715" x2="918" y1="215.5781" y2="215.5781"/><!--MD5=[da547346deef918ea16944ba046651ef]
+class Administrator--><rect codeLine="35" fill="#FEFECE" filter="url(#fltcawbzg7kc)" height="91.1875" id="Administrator" style="stroke: #A80036; stroke-width: 1.5;" width="86" x="571.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="80" x="574.5" y="23.1387">Administrator</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="572.5" x2="656.5" y1="30.9688" y2="30.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="572.5" x2="656.5" y1="38.9688" y2="38.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="577.5" y="53.1792">moderate()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="577.5" y="65.9839">verify()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="577.5" y="78.7886">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="577.5" y="91.5933">post()</text><!--MD5=[cbe87143e95281ca3a44750372be3b22]
+reverse link Administrator to Admin--><path codeLine="41" d="M614.5,111.29 C614.5,127.1901 614.5,143.8656 614.5,157.7541 " fill="none" id="Administrator&lt;-Admin" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="614.5,98.195,610.5,104.195,614.5,110.195,618.5,104.195,614.5,98.195" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="605.8875" y="118.4032">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="605.7125" y="146.8537">1</text><!--MD5=[57d11f9ad2cc833928683ed349ac081f]
+reverse link ServiceProvider to Service--><path codeLine="42" d="M439.5,98.655 C439.5,117.974 439.5,140.0921 439.5,157.7244 " fill="none" id="ServiceProvider&lt;-Service" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="439.5,85.503,435.5,91.503,439.5,97.503,443.5,91.503,439.5,85.503" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="430.7625" y="105.0888">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="430.7125" y="146.8182">1</text><!--MD5=[49564d778505c1357a9284517a964486]
+reverse link DiscussionBoard to Discussion--><path codeLine="43" d="M816.5,98.655 C816.5,117.974 816.5,140.0921 816.5,157.7244 " fill="none" id="DiscussionBoard&lt;-Discussion" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="816.5,85.503,812.5,91.503,816.5,97.503,820.5,91.503,816.5,85.503" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="807.7625" y="105.0888">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="807.7125" y="146.8182">1</text><!--MD5=[b58a824128d63dedfe2dd964bf214e70]
+reverse link Page to VerifiedServiceProvider--><path codeLine="44" d="M81.5,92.327 C81.5,112.992 81.5,138.1068 81.5,157.6946 " fill="none" id="Page&lt;-VerifiedServiceProvider" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="81.5,79.175,77.5,85.175,81.5,91.175,85.5,85.175,81.5,79.175" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="72.625" y="98.757">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="72.7375" y="147.0358">1</text><!--MD5=[edbfbd668802b08b63f23810eea39a37]
+reverse link Link to HomePage--><path codeLine="45" d="M241.5,92.381 C241.5,115.497 241.5,144.1673 241.5,164.4405 " fill="none" id="Link&lt;-HomePage" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="241.5,79.175,237.5,85.175,241.5,91.175,245.5,85.175,241.5,79.175" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="232.625" y="98.757">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="232.525" y="153.2492">1</text><!--MD5=[6eda35e44c05bcc5e15bfd0a43c4b5d7]
+@startuml
+hide circle
+class Page {
+	left : string
+}
+class VerifiedServiceProvider {
+	Page : string
+	reply()
+}
+class HomePage {
+	Link : string
+}
+class ServiceProvider {
+	ServiceProviders : string
+	see()
+}
+class Admin {
+	Administrator : string
+	remove()
+}
+class Link {
+	LinksInsideOfTheBlog : string
+}
+class Service {
+	ServiceProvider : string
+	ServiceProviders : string
+}
+class DiscussionBoard {
+	DiscussionBoardOfTheSite : string
+	using()
+}
+class Discussion {
+	DiscussionBoard : string
+	DiscussionBoardOfTheSite : string
+}
+class Administrator {
+	moderate()
+	verify()
+	view()
+	post()
+}
+Administrator "1" o- - "1" Admin
+ServiceProvider "1" o- - "1" Service
+DiscussionBoard "1" o- - "1" Discussion
+Page "1" o- - "1" VerifiedServiceProvider
+Link "1" o- - "1" HomePage
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

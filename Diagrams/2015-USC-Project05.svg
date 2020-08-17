@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="421px" preserveAspectRatio="none" style="width:656px;height:421px;" version="1.1" viewBox="0 0 656 421" width="656px" zoomAndPan="magnify"><defs><filter height="300%" id="fu4p3pu8mbj9z" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[11148126fcb8350cd83fd933a21e1a0c]
+class TourCreator--><rect codeLine="2" fill="#FEFECE" filter="url(#fu4p3pu8mbj9z)" height="232.0391" id="TourCreator" style="stroke: #A80036; stroke-width: 1.5;" width="85" x="289" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="72" x="295.5" y="23.1387">TourCreator</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="290" x2="373" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="73" x="295" y="45.1792">Tours : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="69" x="295" y="57.9839">Area : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="295" y="70.7886">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="290" x2="373" y1="77.3828" y2="77.3828"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="295" y="91.5933">upload()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="295" y="104.3979">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="295" y="117.2026">edit()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="295" y="130.0073">delete()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="295" y="142.812">created()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="31" x="295" y="155.6167">sign()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="295" y="168.4214">have()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="295" y="181.2261">manage()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="295" y="194.0308">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="295" y="206.8354">use()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="295" y="219.6401">create()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="56" x="295" y="232.4448">promote()</text><!--MD5=[e817ac89aa025528a1ddf8e2c0b98a5e]
+class Stop--><rect codeLine="19" fill="#FEFECE" filter="url(#fu4p3pu8mbj9z)" height="52.7734" id="Stop" style="stroke: #A80036; stroke-width: 1.5;" width="78" x="558.5" y="96.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="28" x="583.5" y="112.6387">Stop</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="559.5" x2="635.5" y1="120.4688" y2="120.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="564.5" y="134.6792">click : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="559.5" x2="635.5" y1="141.2734" y2="141.2734"/><!--MD5=[4dfc6a72b8dd60daa1b635d583ff79da]
+class Map--><rect codeLine="22" fill="#FEFECE" filter="url(#fu4p3pu8mbj9z)" height="52.7734" id="Map" style="stroke: #A80036; stroke-width: 1.5;" width="80" x="557.5" y="324.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="25" x="585" y="340.6387">Map</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="558.5" x2="636.5" y1="348.4688" y2="348.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="68" x="563.5" y="362.6792">Stop : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="558.5" x2="636.5" y1="369.2734" y2="369.2734"/><!--MD5=[81bd20e0381b4631555d588155f2f5a3]
+class Tour--><rect codeLine="25" fill="#FEFECE" filter="url(#fu4p3pu8mbj9z)" height="103.9922" id="Tour" style="stroke: #A80036; stroke-width: 1.5;" width="183" x="129" y="299"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="27" x="207" y="315.1387">Tour</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="130" x2="311" y1="322.9688" y2="322.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85" x="135" y="337.1792">desired : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="109" x="135" y="349.9839">TourCreator : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="171" x="135" y="362.7886">TourConductorWebsite : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="73" x="135" y="375.5933">Tours : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="135" y="388.3979">TourTaker : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="130" x2="311" y1="394.9922" y2="394.9922"/><!--MD5=[625d529914033ab9379ad6bc01174fab]
+class TourConductorWebsite--><rect codeLine="32" fill="#FEFECE" filter="url(#fu4p3pu8mbj9z)" height="52.7734" id="TourConductorWebsite" style="stroke: #A80036; stroke-width: 1.5;" width="145" x="7" y="96.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="139" x="10" y="112.6387">TourConductorWebsite</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="151" y1="120.4688" y2="120.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="73" x="13" y="134.6792">Tours : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="151" y1="141.2734" y2="141.2734"/><!--MD5=[9dc77e7ad336a0b5d94bb7c1d3fca679]
+class TourTaker--><rect codeLine="35" fill="#FEFECE" filter="url(#fu4p3pu8mbj9z)" height="129.6016" id="TourTaker" style="stroke: #A80036; stroke-width: 1.5;" width="67" x="187" y="58"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="61" x="190" y="74.1387">TourTaker</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="188" x2="253" y1="81.9688" y2="81.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="188" x2="253" y1="89.9688" y2="89.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="193" y="104.1792">click()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="193" y="116.9839">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="49" x="193" y="129.7886">choose()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43" x="193" y="142.5933">select()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="193" y="155.3979">search()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="193" y="168.2026">Search()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="193" y="181.0073">have()</text><!--MD5=[9fb32a8e86fc843e4257364282130dd8]
+class it--><rect codeLine="44" fill="#FEFECE" filter="url(#fu4p3pu8mbj9z)" height="142.4063" id="it" style="stroke: #A80036; stroke-width: 1.5;" width="114" x="409.5" y="52"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="7" x="463" y="68.1387">it</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="410.5" x2="522.5" y1="75.9688" y2="75.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="410.5" x2="522.5" y1="83.9688" y2="83.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="415.5" y="98.1792">delete()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="415.5" y="110.9839">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="415.5" y="123.7886">manage()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="415.5" y="136.5933">use()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="415.5" y="149.3979">search()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="415.5" y="162.2026">have()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="47" x="415.5" y="175.0073">seems()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="415.5" y="187.812">IrrelevantUpload()</text><!--MD5=[8330fea1ec797f0525a4843a88f154d2]
+class be--><rect fill="#FEFECE" filter="url(#fu4p3pu8mbj9z)" height="39.9688" id="be" style="stroke: #A80036; stroke-width: 1.5;" width="22" x="401.5" y="331"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="16" x="404.5" y="347.1387">be</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="402.5" x2="422.5" y1="354.9688" y2="354.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="402.5" x2="422.5" y1="362.9688" y2="362.9688"/><!--MD5=[5cd90177a154aeae54fd122aed7123e6]
+reverse link Stop to Map--><path codeLine="54" d="M597.5,162.972 C597.5,209.207 597.5,284.97 597.5,324.3773 " fill="none" id="Stop&lt;-Map" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="597.5,149.925,593.5,155.925,597.5,161.925,601.5,155.925,597.5,149.925" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="588.675" y="169.1291">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="588.575" y="313.5949">1</text><!--MD5=[207d807ab92b17857640dc859df7966f]
+reverse link TourCreator to Tour--><path codeLine="55" d="M283.023,222.7 C270.128,248.956 256.718,276.258 245.64,298.814 " fill="none" id="TourCreator&lt;-Tour" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="288.902,210.731,282.6665,214.3529,283.6115,221.5018,289.847,217.8799,288.902,210.731" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="272.893" y="221.5957">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="240.4807" y="287.87">1</text><!--MD5=[76fa5be10483a35de363def4db1a285c]
+reverse link TourTaker to Tour--><path codeLine="56" d="M220.5,201.222 C220.5,233.502 220.5,270.126 220.5,298.96 " fill="none" id="TourTaker&lt;-Tour" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="220.5,188.158,216.5,194.158,220.5,200.158,224.5,194.158,220.5,188.158" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="212.0875" y="207.7451">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="211.9625" y="288.0357">1</text><!--MD5=[a1c45fa934249bccd20faf97e92b6331]
+reverse link it to be--><path codeLine="57" d="M444.999,213.984 C434.693,257.118 423.27,304.9251 417.087,330.8015 " fill="none" id="it&lt;-be" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="438.254,212.095,449.71,194.269,451.87,215.348,438.254,212.095" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="439.566" y="214.4448">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="409.2521" y="320.1013">1</text><!--MD5=[bd5e3f268ce33c7ce58d99867438c076]
+reverse link TourCreator to be--><path codeLine="58" d="M379.645,258.33 C389.91,286.971 399.495,313.7154 405.632,330.8372 " fill="none" id="TourCreator&lt;-be" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="372.989,260.506,372.831,239.317,386.168,255.783,372.989,260.506" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="367.1059" y="258.9318">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="394.4395" y="319.8022">1</text><!--MD5=[fc5107da5869c0a2c6081151a0f8e2c3]
+reverse link TourConductorWebsite to Tour--><path codeLine="59" d="M102.7965,161.34 C126.213,198.873 162.482,257.007 188.571,298.823 " fill="none" id="TourConductorWebsite&lt;-Tour" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="95.6745,149.925,95.4568,157.1328,102.0265,160.106,102.2442,152.8982,95.6745,149.925" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="90.1855" y="169.1291">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="175.743" y="287.8802">1</text><!--MD5=[0607082c041febd9b48bba410bfc0fac]
+@startuml
+hide circle
+class TourCreator {
+	Tours : string
+	Area : string
+	be : string
+	upload()
+	view()
+	edit()
+	delete()
+	created()
+	sign()
+	have()
+	manage()
+	able()
+	use()
+	create()
+	promote()
+}
+class Stop {
+	click : string
+}
+class Map {
+	Stop : string
+}
+class Tour {
+	desired : string
+	TourCreator : string
+	TourConductorWebsite : string
+	Tours : string
+	TourTaker : string
+}
+class TourConductorWebsite {
+	Tours : string
+}
+class TourTaker {
+	click()
+	view()
+	choose()
+	select()
+	search()
+	Search()
+	have()
+}
+class it {
+	delete()
+	view()
+	manage()
+	use()
+	search()
+	have()
+	seems()
+	IrrelevantUpload()
+}
+Stop "1" o- - "1" Map
+TourCreator "1" o- - "1" Tour
+TourTaker "1" o- - "1" Tour
+it "1" <|- - "1" be
+TourCreator "1" <|- - "1" be
+TourConductorWebsite "1" o- - "1" Tour
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

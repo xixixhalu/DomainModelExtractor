@@ -1,0 +1,57 @@
+@startuml
+hide circle
+class User {
+	Username : string
+	RecipeList : string
+	Username : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	browse()
+	see()
+	delete()
+	want()
+	add()
+	save()
+	customize()
+	produce()
+	earn()
+	like()
+	able()
+	share()
+	replace()
+	send()
+	purchased()
+	view()
+	change()
+	canuse()
+	customise()
+	choose()
+	vend()
+	check()
+	log()
+	update()
+	identify()
+}
+class Recipe {
+	RecipesList : string
+	RecipeList : string
+	contains()
+}
+class App {
+	"in/out" : string
+	AppropriateRewards : string
+	ApplePay : string
+}
+class ApplePay {
+	canuse()
+	purchase()
+}
+specificallergen "1" o-- "1" User
+ApplePay "1" o-- "1" App
+specificallergen "1" o-- "1" Recipe
+
+@enduml

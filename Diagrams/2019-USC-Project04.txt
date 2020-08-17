@@ -1,0 +1,16 @@
+@startuml
+hide circle
+class ProjectPlan {
+	documented : string
+}
+class Project {
+	ProjectPlan : string
+	have()
+}
+class this {
+	MainCoreOfTheProject()
+}
+ProjectPlan "1" o-- "1" Project
+this "1" <|-- "1" be
+
+@enduml

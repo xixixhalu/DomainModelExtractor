@@ -1,0 +1,81 @@
+@startuml
+hide circle
+class User {
+	Details : string
+	RegisteredUsername : string
+	OwnProfile : string
+	GameProfile : string
+	Liking : string
+	Password : string
+	ProfileInformation : string
+	Users : string
+	be : string
+	register()
+	login()
+	click()
+	see()
+	won()
+	place()
+	Password()
+	play()
+	have()
+	beat()
+	choose()
+	edit()
+	change()
+	get()
+	hear()
+	quit()
+	want()
+	log()
+	lost()
+	gained()
+	recover()
+	mute()
+	remove()
+	able()
+	detonate()
+	trying()
+}
+class Grid {
+	anywhere : string
+	given : string
+}
+class Users {
+	more : string
+}
+class DifferentPlatforms {
+	Game : string
+}
+class * {
+	given : string
+	Grid : string
+	place : string
+	given : string
+	Grid : string
+	placed : string
+	given : string
+	Grid : string
+}
+class Game {
+	GameProfile : string
+	play()
+	attracts()
+}
+class System {
+	be : string
+	compatible()
+	have()
+	include()
+	scalable()
+}
+class it {
+	is : string
+	maintainable()
+}
+System "1" <|-- "1" be
+it "1" <|-- "1" is
+Game "1" o-- "1" DifferentPlatforms
+Users "1" o-- "1" User
+
+@enduml

@@ -1,0 +1,81 @@
+@startuml
+hide circle
+class MyROSTERREMOTELY {
+	Girls : string
+}
+class InREALTIME {
+	Girls : string
+	OtherCOACHES : string
+}
+class Girl {
+	"PaperWork/payment" : string
+	Girls : string
+	GirlsData : string
+}
+class Volunteer {
+	ClassRoster : string
+	Team : string
+	VolunteerCOACH : string
+	VolunteerCoach : string
+	VolunteerCoaches : string
+	view()
+	check()
+	access()
+	know()
+	conduct()
+	Login()
+	login()
+}
+class Classes {
+	TeamName : string
+	"Add/Edit"()
+	conduct()
+}
+class Team {
+	TeamsHAVINGISSUESIMMEDIATELY : string
+	TeamRoster : string
+}
+class Girls {
+	GirlsData : string
+	turned()
+}
+class VolunteerCoach {
+	VolunteerCoaches : string
+	identify()
+	have()
+}
+class the {
+	they : string
+	identify()
+}
+class Class {
+	ClassRoster : string
+	Classes : string
+}
+class System {
+	be : string
+	be : string
+	accessible()
+	Hours()
+	easy()
+	intuitive()
+	use()
+}
+class they {
+	forget()
+	change()
+}
+class VolunteerCOACH {
+	CHECK()
+}
+Team "1" o-- "1" Volunteer
+System "1" <|-- "1" be
+VolunteerCoach "1" o-- "1" Volunteer
+Girls "1" o-- "1" MyROSTERREMOTELY
+VolunteerCOACH "1" o-- "1" Volunteer
+Girls "1" o-- "1" InREALTIME
+they "1" o-- "1" the
+Girls "1" o-- "1" Girl
+Classes "1" o-- "1" Class
+
+@enduml

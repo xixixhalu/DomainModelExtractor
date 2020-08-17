@@ -1,0 +1,150 @@
+@startuml
+hide circle
+class Mentee {
+	Criteria : string
+	Password : string
+	"PersonalInformation/contactDetails" : string
+	Details : string
+	Profile : string
+	Mentees : string
+	MenteesTrainings : string
+	MenteeRequests : string
+	"Mentee/mentor" : string
+	be : string
+	be : string
+	be : string
+	be : string
+	select()
+	reset()
+	able()
+	see()
+	send()
+	update()
+	upload()
+}
+class Mentor {
+	Mentee : string
+	Criteria : string
+	Mentee : string
+	Password : string
+	TrainingPhaseActivities : string
+	Availability : string
+	PersonalInformation : string
+	Details : string
+	Interactions : string
+	Mentee : string
+	Mentors : string
+	MentorshipProcess : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	select()
+	provide()
+	able()
+	create()
+	update()
+	track()
+	submit()
+	reset()
+	monitor()
+	accept()
+	mark()
+	register()
+	report()
+}
+class Requests {
+	based : string
+}
+class their {
+	Requests : string
+	MonthlyReport : string
+}
+class MonthlyBasis {
+	provide : string
+}
+class Mentees {
+	Statistics : string
+	MenteesTrainings : string
+	be : string
+	able()
+	select()
+}
+class MonthlyReport {
+	MonthlyReports : string
+}
+class Mentors {
+	MentorshipProcess : string
+	ask()
+}
+class ActivityReport {
+	ActivityReports : string
+}
+class Admin {
+	Administrator : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	be : string
+	able()
+	view()
+	export()
+	send()
+	"delete/deactivate"()
+	track()
+	get()
+	assign()
+	update()
+	match()
+}
+class Request {
+	Requests : string
+}
+class PersonalInformation {
+	"PersonalInformation/contactDetails" : string
+	update()
+	includes()
+}
+class Month {
+	MonthlyBasis : string
+	MonthlyReport : string
+	MonthlyReports : string
+}
+class Administrator {
+	be : string
+	able()
+	get()
+}
+class MenteeRequests {
+	accept()
+	establish()
+}
+class ActivityReports {
+	timely()
+}
+class Mentee/mentor {
+	establish()
+	includes()
+	opt()
+}
+ActivityReports "1" o-- "1" ActivityReport
+Mentors "1" o-- "1" Mentor
+Administrator "1" o-- "1" Admin
+"Mentee/mentor" "1" o-- "1" Mentee
+PersonalInformation "1" o-- "1" Mentor
+Mentee "1" o-- "1" Mentor
+Requests "1" o-- "1" Request
+Requests "1" o-- "1" their
+MenteeRequests "1" o-- "1" Mentee
+MonthlyBasis "1" o-- "1" Month
+MonthlyReport "1" o-- "1" their
+MonthlyReport "1" o-- "1" Month
+Mentees "1" o-- "1" Mentee
+
+@enduml

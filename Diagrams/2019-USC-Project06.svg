@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="828px" preserveAspectRatio="none" style="width:640px;height:828px;" version="1.1" viewBox="0 0 640 828" width="640px" zoomAndPan="magnify"><defs><filter height="300%" id="f4owmq66qf3ku" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[79d378210367c0c6ec62ef762ddfbd1b]
+class Project--><rect codeLine="2" fill="#FEFECE" filter="url(#f4owmq66qf3ku)" height="78.3828" id="Project" style="stroke: #A80036; stroke-width: 1.5;" width="167" x="7" y="158"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="41" x="70" y="174.1387">Project</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="173" y1="181.9688" y2="181.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="13" y="196.1792">evaluating : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="155" x="13" y="208.9839">ProjectSettingsPage : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="13" y="221.7886">ProjectListPage : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="173" y1="228.3828" y2="228.3828"/><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="7" fill="#FEFECE" filter="url(#f4owmq66qf3ku)" height="513.7422" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="153" x="342" y="296"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="404" y="312.1387">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="343" x2="494" y1="319.9688" y2="319.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="348" y="334.1792">Password : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89" x="348" y="346.9839">Desktop : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="115" x="348" y="359.7886">ProfilePicture : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="141" x="348" y="372.5933">ProfileInformation : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="116" x="348" y="385.3979">WinCondition : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="98" x="348" y="398.2026">Comment : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="96" x="348" y="411.0073">OwnPosts : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="348" y="423.812">only : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="348" y="436.6167">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="343" x2="494" y1="443.2109" y2="443.2109"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="348" y="457.4214">mark()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="348" y="470.2261">save()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42" x="348" y="483.0308">adjust()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="39" x="348" y="495.8354">enter()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="25" x="348" y="508.6401">log()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38" x="348" y="521.4448">reset()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42" x="348" y="534.2495">forget()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="348" y="547.0542">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="348" y="559.8589">upload()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="348" y="572.6636">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="348" y="585.4683">create()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="348" y="598.2729">delete()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="348" y="611.0776">created()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="28" x="348" y="623.8823">join()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="34" x="348" y="636.687">filter()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="26" x="348" y="649.4917">set()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="348" y="662.2964">edit()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="84" x="348" y="675.1011">"quote/reply"()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="348" y="687.9058">want()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="348" y="700.7104">export()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="31" x="348" y="713.5151">Sort()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="26" x="348" y="726.3198">tag()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42" x="348" y="739.1245">agree()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="58" x="348" y="751.9292">disagree()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="348" y="764.7339">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="348" y="777.5386">sort()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="348" y="790.3433">add()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="348" y="803.1479">reply()</text><!--MD5=[742b1196bbba6f0e61b130a5588ff6eb]
+class Comments--><rect codeLine="46" fill="#FEFECE" filter="url(#f4owmq66qf3ku)" height="52.7734" id="Comments" style="stroke: #A80036; stroke-width: 1.5;" width="130" x="274.5" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="64" x="307.5" y="42.1387">Comments</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="275.5" x2="403.5" y1="49.9688" y2="49.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="118" x="280.5" y="64.1792">"quote/reply" : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="275.5" x2="403.5" y1="70.7734" y2="70.7734"/><!--MD5=[97ecdc47f7e6f9e99ee4e01702339d9e]
+class OtherPeople--><rect codeLine="49" fill="#FEFECE" filter="url(#f4owmq66qf3ku)" height="52.7734" id="OtherPeople" style="stroke: #A80036; stroke-width: 1.5;" width="116" x="209.5" y="170.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="75" x="230" y="186.6387">OtherPeople</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="210.5" x2="324.5" y1="194.4688" y2="194.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="215.5" y="208.6792">Comments : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="210.5" x2="324.5" y1="215.2734" y2="215.2734"/><!--MD5=[4dacec96385027edaceac523b151f134]
+class members--><rect codeLine="52" fill="#FEFECE" filter="url(#f4owmq66qf3ku)" height="65.5781" id="members" style="stroke: #A80036; stroke-width: 1.5;" width="108" x="512.5" y="19.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="58" x="537.5" y="35.6387">members</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="513.5" x2="619.5" y1="43.4688" y2="43.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="58" x="518.5" y="57.6792">list : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="96" x="518.5" y="70.4839">approved : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="513.5" x2="619.5" y1="77.0781" y2="77.0781"/><!--MD5=[042fa140da40c49659127f611bcff931]
+class Comment--><rect codeLine="56" fill="#FEFECE" filter="url(#f4owmq66qf3ku)" height="52.7734" id="Comment" style="stroke: #A80036; stroke-width: 1.5;" width="116" x="360.5" y="170.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="57" x="390" y="186.6387">Comment</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="361.5" x2="475.5" y1="194.4688" y2="194.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="366.5" y="208.6792">Comments : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="361.5" x2="475.5" y1="215.2734" y2="215.2734"/><!--MD5=[c1ab94e7e41838408b6a4d073da94126]
+class member--><rect codeLine="59" fill="#FEFECE" filter="url(#f4owmq66qf3ku)" height="52.7734" id="member" style="stroke: #A80036; stroke-width: 1.5;" width="109" x="512" y="170.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="51" x="541" y="186.6387">member</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="513" x2="620" y1="194.4688" y2="194.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="518" y="208.6792">members : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="513" x2="620" y1="215.2734" y2="215.2734"/><!--MD5=[80c115e6f03ed56687e2ce8cf49ddcd4]
+class ProjectSettingsPage--><rect codeLine="62" fill="#FEFECE" filter="url(#f4owmq66qf3ku)" height="91.1875" id="ProjectSettingsPage" style="stroke: #A80036; stroke-width: 1.5;" width="125" x="28" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="119" x="31" y="23.1387">ProjectSettingsPage</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="29" x2="152" y1="30.9688" y2="30.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="29" x2="152" y1="38.9688" y2="38.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38" x="34" y="53.1792">reset()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42" x="34" y="65.9839">forget()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="34" y="78.7886">delete()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="34" y="91.5933">give()</text><!--MD5=[e7967dd27710afedf66213b4437de33c]
+reverse link ProjectSettingsPage to Project--><path codeLine="68" d="M90.5,111.558 C90.5,127.105 90.5,143.521 90.5,157.703 " fill="none" id="ProjectSettingsPage&lt;-Project" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="90.5,98.197,86.5,104.197,90.5,110.197,94.5,104.197,90.5,98.197" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="81.8875" y="118.4055">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="81.8375" y="146.9984">1</text><!--MD5=[13a72d11ca2ad822eb9ccdd1ec5a7724]
+reverse link members to member--><path codeLine="69" d="M566.5,99.133 C566.5,122.727 566.5,150.643 566.5,170.431 " fill="none" id="members&lt;-member" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="566.5,85.835,562.5,91.835,566.5,97.835,570.5,91.835,566.5,85.835" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="557.7875" y="105.225">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="557.525" y="159.2374">1</text><!--MD5=[4267c72011b26c3adc70efc136fc9e66]
+reverse link Comments to Comment--><path codeLine="70" d="M360.254,90.936 C374.132,115.968 392.028,148.251 404.3,170.386 " fill="none" id="Comments&lt;-Comment" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="353.806,79.306,353.2172,86.493,359.625,89.8007,360.2137,82.6137,353.806,79.306" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="348.0604" y="98.9166">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="392.0913" y="159.6056">1</text><!--MD5=[6569e6140ae96af2c8b9ce7a475dcc0c]
+reverse link Comments to OtherPeople--><path codeLine="71" d="M320.585,90.936 C307.937,115.968 291.626,148.251 280.442,170.386 " fill="none" id="Comments&lt;-OtherPeople" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="326.461,79.306,320.1849,82.8572,321.0491,90.0163,327.3252,86.4651,326.461,79.306" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="314.7337" y="98.9166">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="274.5098" y="159.6056">1</text><!--MD5=[ccaede06ee77bfde95f2854fcaa72abb]
+reverse link Comment to User--><path codeLine="72" d="M418.5,236.895 C418.5,253.111 418.5,273.407 418.5,295.839 " fill="none" id="Comment&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="418.5,223.744,414.5,229.744,418.5,235.744,422.5,229.744,418.5,223.744" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="409.625" y="243.3411">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="410.3813" y="285.0546">1</text><!--MD5=[e7636fb7f5288e570dea1f6796f1d814]
+@startuml
+hide circle
+class Project {
+	evaluating : string
+	ProjectSettingsPage : string
+	ProjectListPage : string
+}
+class User {
+	Password : string
+	Desktop : string
+	ProfilePicture : string
+	ProfileInformation : string
+	WinCondition : string
+	Comment : string
+	OwnPosts : string
+	only : string
+	be : string
+	mark()
+	save()
+	adjust()
+	enter()
+	log()
+	reset()
+	forget()
+	able()
+	upload()
+	see()
+	create()
+	delete()
+	created()
+	join()
+	filter()
+	set()
+	edit()
+	"quote/reply"()
+	want()
+	export()
+	Sort()
+	tag()
+	agree()
+	disagree()
+	view()
+	sort()
+	add()
+	reply()
+}
+class Comments {
+	"quote/reply" : string
+}
+class OtherPeople {
+	Comments : string
+}
+class members {
+	list : string
+	approved : string
+}
+class Comment {
+	Comments : string
+}
+class member {
+	members : string
+}
+class ProjectSettingsPage {
+	reset()
+	forget()
+	delete()
+	give()
+}
+ProjectSettingsPage "1" o- - "1" Project
+members "1" o- - "1" member
+Comments "1" o- - "1" Comment
+Comments "1" o- - "1" OtherPeople
+Comment "1" o- - "1" User
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,152 @@
+@startuml
+hide circle
+class Gm {
+	Data : string
+	"Gm/coach" : string
+	extract()
+}
+class Website {
+	specified : string
+	gather : string
+	WebsiteGUI : string
+	WebsiteList : string
+}
+class DataStore {
+	existing : string
+}
+class VisualizationTool {
+	kind : string
+}
+class Data {
+	types : string
+	existing : string
+	Dataset : string
+	Datasources : string
+	DataStore : string
+	Databases : string
+	Datatype : string
+	import()
+	"update/add"()
+	related()
+	integrate()
+	is()
+}
+class their {
+	Data : string
+	"Apps/dashboards" : string
+}
+class Customer-facingPortal {
+	simple : string
+	"web-based" : string
+}
+class Customer {
+	CurrentModel : string
+	"Customer-facingPortal" : string
+	ingest()
+	see()
+	import()
+	"update/add"()
+}
+class Player {
+	Picture : string
+	PlayerValue : string
+	PlayerStats : string
+	PlayerSalaries : string
+	PlayerData : string
+	PlayerInformation : string
+}
+class Picture {
+	Pictures : string
+}
+class Webcrawler {
+	WebcrawlerApp : string
+	WebcrawlerFunctionality : string
+	be : string
+	able()
+	visit()
+	extract()
+	generate()
+	check()
+}
+class I {
+	Injuries : string
+	Integers : string
+	Intervention : string
+	Information : string
+	InstagramPictures : string
+	It : string
+	Impact : string
+	monitor()
+	manage()
+}
+class kind {
+	kinds : string
+	have()
+	allows()
+}
+class Web {
+	Webcrawler : string
+	WebcrawlerApp : string
+	WebcrawlerFunctionality : string
+	Webcraweler : string
+	Website : string
+	WebsiteGUI : string
+	WebsiteList : string
+	"Web-basedManagementGUI" : string
+	WebCrawler : string
+	interfaces()
+}
+class types {
+	are : string
+	ingested()
+}
+class Gm/coach {
+	extract()
+	visualize()
+	build()
+	make()
+}
+class One {
+	"SportechB.IContractors"()
+	have()
+}
+class WebCrawler {
+	gather()
+	ingest()
+	crawl()
+	get()
+}
+class Information {
+	is()
+}
+class WebcrawlerApp {
+	function()
+}
+class It {
+	ingest()
+}
+class Second {
+	"Customer-facingPortal"()
+}
+class Webcraweler {
+	gather()
+}
+Data "1" o-- "1" their
+Data "1" o-- "1" Gm
+WebCrawler "1" o-- "1" Web
+"Customer-facingPortal" "1" o-- "1" Customer
+"Gm/coach" "1" o-- "1" Gm
+WebcrawlerApp "1" o-- "1" Web
+Picture "1" o-- "1" Player
+kind "1" o-- "1" VisualizationTool
+types "1" <|-- "1" are
+Webcraweler "1" o-- "1" Web
+WebcrawlerApp "1" o-- "1" Webcrawler
+DataStore "1" o-- "1" Data
+One "1" <|-- "1" be
+Website "1" o-- "1" Web
+types "1" o-- "1" Data
+Second "1" <|-- "1" be
+Webcrawler "1" o-- "1" Web
+
+@enduml

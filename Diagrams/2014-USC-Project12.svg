@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="230px" preserveAspectRatio="none" style="width:259px;height:230px;" version="1.1" viewBox="0 0 259 230" width="259px" zoomAndPan="magnify"><defs><filter height="300%" id="fkai5symacd9m" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[36cb1b59e539d087e246b85840062589]
+class IConsumer--><rect codeLine="2" fill="#FEFECE" filter="url(#fkai5symacd9m)" height="91.1875" id="IConsumer" style="stroke: #A80036; stroke-width: 1.5;" width="115" x="66" y="120"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="64" x="91.5" y="136.1387">IConsumer</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="67" x2="180" y1="143.9688" y2="143.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="72" y="158.1792">Account : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103" x="72" y="170.9839">Dashboard : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="67" x2="180" y1="177.5781" y2="177.5781"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="47" x="72" y="191.7886">access()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="72" y="204.5933">view()</text><!--MD5=[f9a29335b499db729be669fd1bd54958]
+class Account--><rect codeLine="8" fill="#FEFECE" filter="url(#fkai5symacd9m)" height="52.7734" id="Account" style="stroke: #A80036; stroke-width: 1.5;" width="99" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="48" x="32.5" y="23.1387">Account</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="105" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="13" y="45.1792">existing : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="105" y1="51.7734" y2="51.7734"/><!--MD5=[055ae584e8f48d8fc3c3de49aadf0637]
+class Dashboard--><rect codeLine="11" fill="#FEFECE" filter="url(#fkai5symacd9m)" height="52.7734" id="Dashboard" style="stroke: #A80036; stroke-width: 1.5;" width="99" x="141" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="66" x="157.5" y="23.1387">Dashboard</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="142" x2="239" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="147" y="45.1792">existing : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="142" x2="239" y1="51.7734" y2="51.7734"/><!--MD5=[ed11f7bdbe07536b938445084098199a]
+reverse link Account to IConsumer--><path codeLine="14" d="M75.873,72.089 C83.5744,87.032 92.4954,104.342 100.52,119.912 " fill="none" id="Account&lt;-IConsumer" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="69.737,60.184,68.9302,67.3498,75.2346,70.8506,76.0413,63.6848,69.737,60.184" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="63.7576" y="79.768">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="88.3887" y="108.8456">1</text><!--MD5=[33cbdac518f284e34662ed9cb20dea93]
+reverse link Dashboard to IConsumer--><path codeLine="15" d="M171.127,72.089 C163.426,87.032 154.505,104.342 146.48,119.912 " fill="none" id="Dashboard&lt;-IConsumer" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="177.263,60.184,170.9587,63.6848,171.7655,70.8507,178.0698,67.3498,177.263,60.184" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="165.4924" y="79.768">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="141.3863" y="108.8456">1</text><!--MD5=[d5098bdca393043df6b0c35fccf01c1e]
+@startuml
+hide circle
+class IConsumer {
+	Account : string
+	Dashboard : string
+	access()
+	view()
+}
+class Account {
+	existing : string
+}
+class Dashboard {
+	existing : string
+}
+Account "1" o- - "1" IConsumer
+Dashboard "1" o- - "1" IConsumer
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

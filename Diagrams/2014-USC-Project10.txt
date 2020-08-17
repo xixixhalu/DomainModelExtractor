@@ -1,0 +1,32 @@
+@startuml
+hide circle
+class JobSeeker {
+	SocialNetwork : string
+	LoginCredentials : string
+	search()
+	save()
+	mark()
+	see()
+	contact()
+	create()
+	subscribe()
+	email()
+	browse()
+	unsubscribe()
+	select()
+}
+class SocialNetwork {
+	SocialNetworkFriend : string
+	SocialNetworkContact : string
+}
+class SocialNetworkFriend {
+	refer()
+}
+class SocialNetworkContact {
+	provide()
+}
+SocialNetworkFriend "1" o-- "1" SocialNetwork
+SocialNetworkContact "1" o-- "1" SocialNetwork
+SocialNetwork "1" o-- "1" JobSeeker
+
+@enduml

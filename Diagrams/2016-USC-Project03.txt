@@ -1,0 +1,11 @@
+@startuml
+hide circle
+class AppIcon {
+	clicking : string
+}
+class App {
+	AppIcon : string
+}
+AppIcon "1" o-- "1" App
+
+@enduml

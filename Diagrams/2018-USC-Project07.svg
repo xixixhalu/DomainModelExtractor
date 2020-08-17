@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="639px" preserveAspectRatio="none" style="width:471px;height:639px;" version="1.1" viewBox="0 0 471 639" width="471px" zoomAndPan="magnify"><defs><filter height="300%" id="fkb3x5m7ix3og" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="2" fill="#FEFECE" filter="url(#fkb3x5m7ix3og)" height="462.5234" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="140" x="23.5" y="158"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="79" y="174.1387">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="24.5" x2="162.5" y1="181.9688" y2="181.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="29.5" y="196.1792">Progress : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="128" x="29.5" y="208.9839">LevelsProgress : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="29.5" y="221.7886">Score : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="29.5" y="234.5933">Progress : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="105" x="29.5" y="247.3979">Preference : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="29.5" y="260.2026">Scores : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="29.5" y="273.0073">Progress : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="119" x="29.5" y="285.812">UserInterface : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="29.5" y="298.6167">am : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="29.5" y="311.4214">am : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="29.5" y="324.2261">am : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="29.5" y="337.0308">am : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="29.5" y="349.8354">am : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="29.5" y="362.6401">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="29.5" y="375.4448">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="29.5" y="388.2495">be : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="29.5" y="401.0542">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="24.5" x2="162.5" y1="407.6484" y2="407.6484"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="29.5" y="421.8589">track()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="29.5" y="434.6636">able()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="31" x="29.5" y="447.4683">sign()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43" x="29.5" y="460.2729">switch()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="29.5" y="473.0776">keep()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="29.5" y="485.8823">share()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="29.5" y="498.687">erase()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="29.5" y="511.4917">start()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="29.5" y="524.2964">change()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="29.5" y="537.1011">check()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="29.5" y="549.9058">cheat()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="62" x="29.5" y="562.7104">download()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="29.5" y="575.5151">install()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="29.5" y="588.3198">purchase()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="29.5" y="601.1245">practice()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="29.5" y="613.9292">have()</text><!--MD5=[54d0585805cd812aa4d1b856e2fdee3d]
+class FullVersion--><rect codeLine="37" fill="#FEFECE" filter="url(#fkb3x5m7ix3og)" height="52.7734" id="FullVersion" style="stroke: #A80036; stroke-width: 1.5;" width="213" x="239" y="363"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="66" x="312.5" y="379.1387">FullVersion</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="240" x2="451" y1="386.9688" y2="386.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="201" x="245" y="401.1792">FullVersionOfTheApplication : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="240" x2="451" y1="407.7734" y2="407.7734"/><!--MD5=[107af66394bf1ebaa045812c9c475148]
+class Score--><rect codeLine="40" fill="#FEFECE" filter="url(#fkb3x5m7ix3og)" height="52.7734" id="Score" style="stroke: #A80036; stroke-width: 1.5;" width="93" x="7" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="35.5" y="42.1387">Score</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="99" y1="49.9688" y2="49.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="13" y="64.1792">Scores : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="99" y1="70.7734" y2="70.7734"/><!--MD5=[a7661dae5b0d701614a666888c8235ba]
+class UserInterface--><rect codeLine="43" fill="#FEFECE" filter="url(#fkb3x5m7ix3og)" height="65.5781" id="UserInterface" style="stroke: #A80036; stroke-width: 1.5;" width="88" x="135.5" y="19.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82" x="138.5" y="35.6387">UserInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="136.5" x2="222.5" y1="43.4688" y2="43.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="141.5" y="57.6792">be : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="136.5" x2="222.5" y1="64.2734" y2="64.2734"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="141.5" y="78.4839">consistent()</text><!--MD5=[a91073809499c0792f5e12668f0de701]
+class FullVersionOfTheApplication--><rect codeLine="47" fill="#FEFECE" filter="url(#fkb3x5m7ix3og)" height="91.1875" id="FullVersionOfTheApplication" style="stroke: #A80036; stroke-width: 1.5;" width="174" x="258.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="168" x="261.5" y="23.1387">FullVersionOfTheApplication</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="259.5" x2="431.5" y1="30.9688" y2="30.9688"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="259.5" x2="431.5" y1="38.9688" y2="38.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="264.5" y="53.1792">design()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="264.5" y="65.9839">draw()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="264.5" y="78.7886">purchase()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="264.5" y="91.5933">remove()</text><!--MD5=[8d478c1eb2382e13e075d093dc42a944]
+reverse link FullVersionOfTheApplication to FullVersion--><path codeLine="53" d="M345.5,111.481 C345.5,185.19 345.5,309.28 345.5,362.732 " fill="none" id="FullVersionOfTheApplication&lt;-FullVersion" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="345.5,98.332,341.5,104.332,345.5,110.332,349.5,104.332,345.5,98.332" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="336.9125" y="118.228">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="336.575" y="351.916">1</text><!--MD5=[e392b6e85c804b5243d6c419507003fe]
+reverse link UserInterface to User--><path codeLine="54" d="M168.001,98.293 C163.682,115.118 158.423,135.602 152.718,157.824 " fill="none" id="UserInterface&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="171.254,85.621,165.8881,90.4383,168.271,97.2443,173.637,92.427,171.254,85.621" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="160.9961" y="105.2285">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="146.5298" y="147.0529">1</text><!--MD5=[bd3bb90684df273b8724fa52cae89685]
+reverse link Score to User--><path codeLine="55" d="M58.1194,92.188 C60.2564,110.084 62.9841,132.93 65.9747,157.976 " fill="none" id="Score&lt;-User" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="56.5723,79.231,53.3119,85.663,57.9952,91.1463,61.2555,84.7144,56.5723,79.231" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="48.3694" y="98.8252">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="56.9403" y="147.2099">1</text><!--MD5=[21deed4d8ae3cade6be9c941a6b18886]
+@startuml
+hide circle
+class User {
+	Progress : string
+	LevelsProgress : string
+	Score : string
+	Progress : string
+	Preference : string
+	Scores : string
+	Progress : string
+	UserInterface : string
+	am : string
+	am : string
+	am : string
+	am : string
+	am : string
+	be : string
+	be : string
+	be : string
+	be : string
+	track()
+	able()
+	sign()
+	switch()
+	keep()
+	share()
+	erase()
+	start()
+	change()
+	check()
+	cheat()
+	download()
+	install()
+	purchase()
+	practice()
+	have()
+}
+class FullVersion {
+	FullVersionOfTheApplication : string
+}
+class Score {
+	Scores : string
+}
+class UserInterface {
+	be : string
+	consistent()
+}
+class FullVersionOfTheApplication {
+	design()
+	draw()
+	purchase()
+	remove()
+}
+FullVersionOfTheApplication "1" o- - "1" FullVersion
+UserInterface "1" o- - "1" User
+Score "1" o- - "1" User
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

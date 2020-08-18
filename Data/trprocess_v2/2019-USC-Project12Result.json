@@ -14,13 +14,43 @@
       ],
       "Behavior": {
         "reset": [
-          ""
-        ],
-        "forgotten": [
+          "",
           ""
         ],
         "receive": [
           "",
+          "",
+          ""
+        ],
+        "view": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "authenticate": [
+          "",
+          ""
+        ],
+        "enter": [
+          "",
+          "",
+          ""
+        ],
+        "remove": [
+          "",
+          ""
+        ],
+        "add": [
+          "",
+          ""
+        ],
+        "update": [
+          "",
+          ""
+        ],
+        "forgotten": [
           ""
         ],
         "navigate": [
@@ -33,17 +63,6 @@
           ""
         ],
         "provide": [
-          ""
-        ],
-        "view": [
-          "",
-          ""
-        ],
-        "enter": [
-          "",
-          ""
-        ],
-        "remove": [
           ""
         ],
         "set": [
@@ -66,13 +85,7 @@
         "inputted": [
           ""
         ],
-        "add": [
-          ""
-        ],
         "install": [
-          ""
-        ],
-        "update": [
           ""
         ]
       }
@@ -96,7 +109,16 @@
         "GiftPeople",
         "GiftRecommendations"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "purchase": [
+          "",
+          ""
+        ],
+        "navigate": [
+          "",
+          ""
+        ]
+      }
     },
     "ContactWith": {
       "Attribute": [
@@ -138,44 +160,30 @@
       ],
       "Behavior": {}
     },
+    "GiftbuddyContact": {
+      "Attribute": [
+        "GiftbuddyContacts"
+      ],
+      "Behavior": {
+        "add": [
+          "",
+          "",
+          ""
+        ],
+        "set": [
+          "",
+          ""
+        ]
+      }
+    },
     "Account": {
       "Attribute": [
         "AccountSecurity"
       ],
       "Behavior": {}
-    },
-    "GiftbuddyContact": {
-      "Attribute": [
-        "GiftbuddyContacts"
-      ],
-      "Behavior": {}
-    },
-    "Default": {
-      "Attribute": [],
-      "Behavior": {
-        "reset": [
-          ""
-        ],
-        "forgotten": [
-          ""
-        ],
-        "receive": [
-          ""
-        ],
-        "Limit": [
-          ""
-        ]
-      }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "is",
-        "Default",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "User",

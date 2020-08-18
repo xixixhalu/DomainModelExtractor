@@ -1,52 +1,47 @@
 @startuml
 hide circle
 class parent {
-	Tuition : string
-	Details : string
-	parents : string
+	Details
+	Tuition
 	set()
 }
 class PasswordProtected/privatePage {
-	view : string
-}
-class member {
-	members : string
-	view()
-}
-class Student {
-	"Student/parent" : string
-	download()
-	practice()
-}
-class me {
-	member : string
-	members : string
-	signup()
-}
-class News {
-	NewsSectionOfTheWebsite : string
+	view
 }
 class Password {
-	"PasswordProtected/privatePage" : string
+}
+class News {
+}
+class me {
+	members
+	signup()
+	becomes()
+	pay()
+	register()
+}
+class Student {
+	practice()
+	download()
+}
+class member {
+	members
+	view()
 }
 class parents {
 	view()
+	update()
+}
+class Student/parent {
+	pay()
+	register()
 }
 class NewsSectionOfTheWebsite {
 	triggers()
 }
-class System {
-	CombinationOfThreeWebsites()
-}
-class Student/parent {
-	register()
-	pay()
-}
-"PasswordProtected/privatePage" "1" o-- "1" Password
-System "1" <|-- "1" be
-parents "1" o-- "1" parent
-"Student/parent" "1" o-- "1" Student
-member "1" o-- "1" me
-NewsSectionOfTheWebsite "1" o-- "1" News
+News o-- NewsSectionOfTheWebsite
+me o-- member
+Student o-- "Student/parent"
+parent o-- parents
+Password o-- "PasswordProtected/privatePage"
 
 @enduml

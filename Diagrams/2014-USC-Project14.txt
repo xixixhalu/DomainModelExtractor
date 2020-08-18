@@ -1,60 +1,58 @@
 @startuml
 hide circle
 class Client {
-	Convenience : string
-	Clients : string
+	Convenience
 	register()
-	save()
+	registered()
+	entering()
 	provide()
 	uses()
+	save()
 }
 class Waw {
-	integrate : string
-	publish : string
-	WawCenter : string
-	WawWebsite : string
-	WawStaff : string
-	WawITPersonnel : string
+	WawCenter
+	integrate
+	publish
+	WawStaff
 	use()
 }
 class our {
-	"Up-toDate" : string
-	"Up-toDate" : string
-	Clients : string
+	"Up-toDate"
 }
 class Events {
-	latest : string
-	latest : string
+	latest
 }
 class Session {
-	counselling : string
-	counselling : string
-	SessionClient : string
-}
-class member {
-	members : string
-	access()
-	integrate()
-	keep()
-	publish()
-	increase()
+	counselling
 }
 class Event {
-	Events : string
 	registered()
 }
-class System {
-	be : string
-	convenient()
-	use()
-	Month()
+class member {
+	keep()
+	increase()
+	integrate()
+	publish()
+	access()
 }
 class WawITPersonnel {
-	generate()
+	got()
+	used()
 	capture()
+	showed()
 	can()
+	generate()
+	Job()
+	completed()
+	booked()
 	analyse()
 	track()
+	entering()
+	enroll()
+	uses()
+}
+class Clients {
+	enroll()
 }
 class members {
 	upload()
@@ -66,20 +64,12 @@ class SessionClient {
 	needs()
 	checkin()
 }
-class Clients {
-	enroll()
-}
-class they {
-	Job()
-}
-they "1" <|-- "1" been
-members "1" o-- "1" member
-Clients "1" o-- "1" Client
-Events "1" o-- "1" Event
-WawITPersonnel "1" o-- "1" Waw
-WawWebsite "1" o-- "1" Waw
-Clients "1" o-- "1" our
-System "1" <|-- "1" be
-SessionClient "1" o-- "1" Session
+our o-- Clients
+Session o-- SessionClient
+Event o-- Events
+Client o-- Clients
+member o-- members
+Waw o-- WawITPersonnel
+Waw o-- WawWebsite
 
 @enduml

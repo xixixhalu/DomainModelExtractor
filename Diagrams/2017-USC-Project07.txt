@@ -1,20 +1,31 @@
 @startuml
 hide circle
 class Post {
-	blog : string
-	blog : string
-	Posts : string
+	blog
+	view()
+	like()
+	share()
+	"edit/add"()
+	save()
 }
 class Posts {
-	blog : string
+	blog
+	view()
 }
 class Categories {
-	CategoriesAndTagsOf : string
 }
 class CategoriesAndTagsOf {
+	view()
+	interact()
+	comment()
 	BlogPost()
+	delete()
+	share()
+	save()
+	search()
+	get()
 }
-CategoriesAndTagsOf "1" o-- "1" Categories
-Posts "1" o-- "1" Post
+Post o-- Posts
+Categories o-- CategoriesAndTagsOf
 
 @enduml

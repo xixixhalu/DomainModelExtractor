@@ -1,105 +1,80 @@
 @startuml
 hide circle
 class Website {
-	Traffic : string
-	sold : string
+	sold
+	Traffic
+	redirected()
+	sold()
 }
 class Retailer {
-	Website : string
-	Website : string
 	have()
 }
 class Phone {
-	view : string
+	view
 }
 class User {
-	Phone : string
-	UserExperience : string
-	be : string
-	am : string
-	be : string
-	am : string
-	be : string
-	sort()
-	see()
-	waste()
-	able()
-	minimize()
 	view()
-	shop()
 	buy()
-	slide()
-	get()
-	viewing()
-	collapse()
 	follow()
+	able()
+	see()
 	focus()
+	viewing()
+	available()
+	collapse()
+	shop()
+	waste()
+	slide()
+	sort()
+	minimize()
+	clearly()
+	get()
 }
 class UserExperience {
-	better : string
-	better : string
+	better
 	get()
 }
 class ProductLayoutButtons {
-	clicking : string
+	clicking
 }
 class ProductSlideLayout {
-	DetailsOfTheCenteredProduct : string
+	DetailsOfTheCenteredProduct
 }
 class it {
-	Price : string
-	Popularity : string
+	Popularity
 }
 class high {
-	low : string
 }
 class low {
-	high : string
 }
 class Product {
-	selected : string
-	focus : string
-	Products : string
-	ProductLayoutButtons : string
-	ProductSlideLayout : string
-	ProductOfMyPriceRange : string
-	ProductOfInterest : string
-	ProductImage : string
+	selected
+	ProductOfInterest
+	focus
+	ProductOfMyPriceRange
 	shop()
 }
 class Price {
-	PriceRange : string
+	PriceRange
 }
 class Products {
-	are : string
-	see()
-	sort()
-	listed()
 	available()
+	sort()
+	see()
+	listed()
 }
 class ProductImage {
-	waste()
-	see()
-	minimize()
-	view()
-	buy()
-	using()
-	slide()
-	viewing()
-	get()
 	clearly()
 }
-high "1" o-- "1" low
-Price "1" o-- "1" it
-UserExperience "1" o-- "1" User
-Website "1" o-- "1" Retailer
-Products "1" o-- "1" Product
-ProductLayoutButtons "1" o-- "1" Product
-User "1" <|-- "1" am
-low "1" o-- "1" high
-ProductSlideLayout "1" o-- "1" Product
-Phone "1" o-- "1" User
-Products "1" <|-- "1" are
-ProductImage "1" o-- "1" Product
+low o-- high
+Retailer o-- Website
+Product o-- ProductLayoutButtons
+User o-- Phone
+Product o-- ProductSlideLayout
+User o-- UserExperience
+Product o-- Products
+it o-- Price
+Product o-- ProductImage
+high o-- low
 
 @enduml

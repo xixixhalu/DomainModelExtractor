@@ -1,75 +1,71 @@
 @startuml
 hide circle
 class Youth {
-	Feedback : string
-	Profile : string
-	CaseManager : string
-	Case : string
-	YouthAccounts : string
+	Feedback
 	take()
-	provide()
 	view()
+	provide()
 	contact()
 }
 class CaseManager {
-	Youth : string
-	Cases : string
-	Cases : string
-	CaseManagers : string
-	be : string
-	add()
+	CaseManagers
+	Cases
 	view()
-	see()
-	review()
 	able()
+	see()
+	deactivate()
+	contact()
 	export()
 	send()
-	activate()
-	deactivate()
 	delete()
+	review()
+	activate()
+	add()
 }
 class User {
-	LoginInformation : string
-	Records : string
-	Users : string
-	create()
-	answer()
-	recover()
-	trying()
+	Records
+	LoginInformation
 	log()
+	trying()
+	send()
+	answer()
+	create()
+	recover()
 }
 class YouthAccounts {
-	needed : string
+	needed
+	activate()
 }
 class Users {
-	LogInformation : string
-}
-class System {
-	SystemSecurity : string
-	"SystemDesign/structure" : string
-	send()
+	LogInformation
 	log()
-	record()
 }
 class Profile {
-	ProfileOfAnyUser : string
+	ProfileOfAnyUser
+	view()
+}
+class System {
+	SystemSecurity
+	record()
+	log()
+	send()
 }
 class Case {
-	CaseManager : string
-	CaseManagers : string
-	Cases : string
+	CaseManagers
+	Cases
+	transfer()
 }
 class SystemDesign/structure {
 	increase()
 	allow()
 }
-"SystemDesign/structure" "1" o-- "1" System
-Youth "1" o-- "1" CaseManager
-CaseManager "1" o-- "1" Youth
-Profile "1" o-- "1" Youth
-Users "1" o-- "1" User
-YouthAccounts "1" o-- "1" Youth
-Case "1" o-- "1" Youth
-CaseManager "1" o-- "1" Case
+Youth o-- Profile
+Youth o-- Case
+CaseManager o-- Youth
+User o-- Users
+Youth o-- CaseManager
+System o-- "SystemDesign/structure"
+Youth o-- YouthAccounts
+Case o-- CaseManager
 
 @enduml

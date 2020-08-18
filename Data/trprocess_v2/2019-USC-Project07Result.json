@@ -25,16 +25,11 @@
         "ProgressReport",
         "weak",
         "UserAnalytics",
-        "UserStats",
-        "be",
-        "be",
-        "be",
-        "be",
-        "be",
-        "be"
+        "UserStats"
       ],
       "Behavior": {
         "enables": [
+          "",
           ""
         ],
         "able": [
@@ -42,6 +37,25 @@
           "",
           "",
           "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "fix": [
+          ""
+        ],
+        "Trouble": [
+          "",
+          "",
+          ""
+        ],
+        "get": [
+          "",
+          "",
+          ""
+        ],
+        "understand": [
           "",
           ""
         ],
@@ -52,17 +66,7 @@
         "track": [
           ""
         ],
-        "get": [
-          "",
-          ""
-        ],
-        "Trouble": [
-          ""
-        ],
         "play": [
-          ""
-        ],
-        "understand": [
           ""
         ],
         "skip": [
@@ -79,6 +83,19 @@
       ],
       "Behavior": {
         "publish": [
+          "",
+          ""
+        ],
+        "Rate": [
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "play": [
           ""
         ]
       }
@@ -89,6 +106,8 @@
       ],
       "Behavior": {
         "track": [
+          "",
+          "",
           ""
         ]
       }

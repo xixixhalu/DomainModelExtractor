@@ -1,162 +1,150 @@
 @startuml
 hide circle
 class Website {
-	list : string
-	Blogs : string
-	"Health-relatedIssues" : string
-	"WebsiteOwner/moderator" : string
-	WebsiteEndUser : string
-	be : string
+	list
+	"Health-relatedIssues"
+	manage()
 	offers()
+	find()
 	straight()
 	use()
+	get()
 }
 class Vendor {
-	Items : string
-	ItemPrices : string
-	Pricing : string
-	Profile : string
-	Products : string
-	VendorAccounts : string
-	Vendors : string
-	list()
-	manage()
+	VendorAccounts
+	Pricing
+	Items
 	communicate()
-	provide()
-	offer()
-	look()
-	compare()
-	make()
-	gather()
-	improve()
-	Services()
-	upload()
-	view()
-	ship()
 	publish()
-	inform()
-	convince()
+	ship()
+	upload()
 	add()
+	look()
+	manage()
+	Services()
+	list()
+	inform()
+	improve()
+	gather()
+	offer()
+	make()
+	compare()
+	provide()
+	convince()
+	view()
+	buy()
 }
 class Blogs {
-	RelatedInformation : string
+	RelatedInformation
 }
 class WebsiteOwner/moderator {
-	Customers : string
-	post()
-	suspend()
+	Customers
 	approve()
-	sort()
 	communicate()
+	suspend()
+	post()
+	sort()
 	help()
 }
 class Vendors {
-	best : string
+	best
 	sort()
 	determine()
 }
 class their {
-	Products : string
 }
 class Consumer {
-	Account : string
-	Password : string
-	Account : string
-	Cart : string
-	Cart : string
-	SearchResults : string
-	SecurityQuestions : string
-	Consumers : string
-	be : string
-	be : string
-	search()
-	gain()
-	participate()
-	help()
-	manage()
-	get()
-	keep()
-	do()
+	Cart
+	SecurityQuestions
+	Password
+	SearchResults
 	refer()
-	see()
-	add()
-	narrow()
-	find()
-	reset()
-	VerifyingId()
-	leave()
-	sort()
-	looking()
-	have()
+	gain()
 	able()
-	subscribe()
-	Rate()
 	ReviewVendors()
+	upload()
+	happens()
+	participate()
+	search()
+	add()
+	are()
+	manage()
+	see()
+	subscribe()
+	find()
+	narrow()
+	Rate()
+	have()
+	looking()
+	offers()
+	help()
+	reset()
+	keep()
+	leave()
+	VerifyingId()
+	suits()
+	sort()
+	do()
+	safe()
+	get()
+}
+class Item {
+	see
+	Items
 }
 class Consumers {
-	more : string
+	more
+	discovered()
 }
 class Profile {
-	Video : string
+	Video
 }
 class ProductCatalog {
-	add : string
-	sold : string
+	sold
+	add
 }
 class Products {
-	types : string
-	sort()
-	ship()
 	are()
+	have()
+	ship()
+	upload()
+	sort()
+	help()
+	add()
 }
 class types {
-	Certain : string
+	Certain
 }
 class Account {
-	AccountOf : string
+	AccountOf
 	manage()
 	safe()
+	keep()
 }
 class Product {
-	Products : string
-	ProductCatalog : string
-	search()
 	find()
+	search()
 	suits()
 }
 class WebsiteEndUser {
-	get()
-	manage()
-	do()
-	narrow()
-	suits()
-	reset()
-	leave()
-	provide()
-	offer()
-	compare()
-	make()
-	gather()
-	upload()
-	are()
-	view()
-	publish()
-	inform()
-	buy()
 	find()
 }
-Vendors "1" o-- "1" Vendor
-types "1" o-- "1" Products
-Profile "1" o-- "1" Vendor
-Vendor "1" <|-- "1" "'s"
-ProductCatalog "1" o-- "1" Product
-Products "1" o-- "1" Vendor
-Blogs "1" o-- "1" Website
-Products "1" o-- "1" Product
-Products "1" o-- "1" their
-"WebsiteOwner/moderator" "1" o-- "1" Website
-Consumers "1" o-- "1" Consumer
-WebsiteEndUser "1" o-- "1" Website
-Account "1" o-- "1" Consumer
+class ItemPrices {
+	manage()
+}
+Website o-- "WebsiteOwner/moderator"
+Products o-- types
+Vendor o-- ItemPrices
+Product o-- ProductCatalog
+their o-- Products
+Website o-- WebsiteEndUser
+Product o-- Products
+Consumer o-- Consumers
+Vendor o-- Vendors
+Website o-- Blogs
+Consumer o-- Account
+Vendor o-- Profile
+Item o-- ItemPrices
+Vendor o-- Products
 
 @enduml

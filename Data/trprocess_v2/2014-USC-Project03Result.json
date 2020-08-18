@@ -11,33 +11,46 @@
       ],
       "Behavior": {
         "check": [
-          ""
-        ],
-        "pay": [
           "",
           ""
         ],
         "message": [
+          "",
+          ""
+        ],
+        "create": [
+          "",
+          ""
+        ],
+        "request": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "pay": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "want": [
+          "",
           ""
         ],
         "have": [
+          "",
+          "",
+          "",
           "",
           ""
         ],
         "wait": [
           ""
         ],
-        "create": [
-          ""
-        ],
         "use": [
-          ""
-        ],
-        "request": [
-          "",
-          ""
-        ],
-        "want": [
           ""
         ]
       }
@@ -48,6 +61,8 @@
       ],
       "Behavior": {
         "attract": [
+          "",
+          "",
           ""
         ]
       }
@@ -57,7 +72,11 @@
         "stored",
         "Application"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "stored": [
+          ""
+        ]
+      }
     },
     "Customer": {
       "Attribute": [
@@ -67,18 +86,40 @@
       ],
       "Behavior": {
         "enter": [
+          "",
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "know": [
+          ""
+        ],
+        "send": [
+          "",
+          ""
+        ],
+        "ready": [
+          "",
+          ""
+        ],
+        "retrieve": [
+          "",
+          ""
+        ],
+        "have": [
+          "",
+          "",
+          ""
+        ],
+        "wait": [
+          "",
           ""
         ],
         "request": [
           ""
         ],
         "paid": [
-          ""
-        ],
-        "have": [
-          ""
-        ],
-        "wait": [
           ""
         ]
       }
@@ -98,25 +139,46 @@
       ],
       "Behavior": {
         "receive": [
+          "",
+          ""
+        ],
+        "see": [
+          "",
+          ""
+        ],
+        "paid": [
+          ""
+        ],
+        "have": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "working": [
+          ""
+        ],
+        "Location": [
+          ""
+        ],
+        "send": [
+          "",
+          ""
+        ],
+        "ready": [
+          ""
+        ],
+        "wait": [
           ""
         ],
         "retrieve": [
           "",
           ""
         ],
-        "see": [
-          ""
-        ],
         "know": [
           ""
         ],
-        "have": [
-          ""
-        ],
         "add": [
-          ""
-        ],
-        "send": [
           ""
         ]
       }
@@ -128,15 +190,64 @@
       ],
       "Behavior": {
         "accept": [
+          "",
+          ""
+        ],
+        "receive": [
+          "",
           ""
         ],
         "offer": [
           ""
         ],
-        "receive": [
+        "control": [
+          ""
+        ]
+      }
+    },
+    "Car": {
+      "Attribute": [
+        "CarNow/later"
+      ],
+      "Behavior": {
+        "retrieve": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
           ""
         ],
-        "control": [
+        "send": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "wait": [
+          ""
+        ],
+        "ready": [
+          ""
+        ]
+      }
+    },
+    "System": {
+      "Attribute": [
+        "SystemBack-end"
+      ],
+      "Behavior": {
+        "available": [
+          "",
+          "",
+          ""
+        ],
+        "capable": [
+          "",
+          ""
+        ],
+        "work": [
           ""
         ]
       }
@@ -151,51 +262,8 @@
       ],
       "Behavior": {
         "message": [
-          ""
-        ]
-      }
-    },
-    "System": {
-      "Attribute": [
-        "SystemBack-end",
-        "be",
-        "be",
-        "be"
-      ],
-      "Behavior": {
-        "capable": [
           "",
-          ""
-        ],
-        "work": [
-          ""
-        ],
-        "available": [
-          ""
-        ]
-      }
-    },
-    "Car": {
-      "Attribute": [
-        "CarNow/later",
-        "is"
-      ],
-      "Behavior": {
-        "retrieve": [
           "",
-          ""
-        ],
-        "ready": [
-          ""
-        ]
-      }
-    },
-    "Application": {
-      "Attribute": [
-        "be"
-      ],
-      "Behavior": {
-        "secure": [
           ""
         ]
       }
@@ -204,6 +272,7 @@
       "Attribute": [],
       "Behavior": {
         "set": [
+          "",
           ""
         ],
         "adjust": [
@@ -211,62 +280,24 @@
         ]
       }
     },
-    "Channel": {
+    "SystemBack-end": {
       "Attribute": [],
       "Behavior": {
-        "Encrypted": [
+        "have": [
           ""
         ]
       }
     },
-    "SystemBack-end": {
+    "Application": {
       "Attribute": [],
       "Behavior": {
-        "accept": [
-          ""
-        ],
-        "create": [
-          ""
-        ],
-        "use": [
-          ""
-        ],
-        "send": [
-          "",
-          ""
-        ],
-        "enter": [
-          ""
-        ],
-        "request": [
-          ""
-        ],
-        "receive": [
-          "",
-          ""
-        ],
-        "set": [
-          ""
-        ],
-        "have": [
-          "",
-          "",
-          ""
-        ],
-        "control": [
+        "secure": [
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "is",
-        "Channel",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "Driver",
@@ -289,6 +320,11 @@
         []
       ],
       [
+        "System",
+        "SystemBack-end",
+        []
+      ],
+      [
         "Valet",
         "ValetOperator",
         []
@@ -301,11 +337,6 @@
       [
         "Valet",
         "ValetHead",
-        []
-      ],
-      [
-        "System",
-        "SystemBack-end",
         []
       ]
     ]

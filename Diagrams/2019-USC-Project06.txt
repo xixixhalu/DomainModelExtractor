@@ -1,75 +1,72 @@
 @startuml
 hide circle
 class Project {
-	evaluating : string
-	ProjectSettingsPage : string
-	ProjectListPage : string
+	ProjectListPage
+	evaluating
+	"delete/hide"()
+	make()
+	join()
 }
 class User {
-	Password : string
-	Desktop : string
-	ProfilePicture : string
-	ProfileInformation : string
-	WinCondition : string
-	Comment : string
-	OwnPosts : string
-	only : string
-	be : string
-	mark()
-	save()
-	adjust()
+	OwnPosts
+	only
+	WinCondition
+	ProfileInformation
+	Desktop
+	Password
+	ProfilePicture
 	enter()
 	log()
-	reset()
-	forget()
 	able()
-	upload()
-	see()
-	create()
-	delete()
-	created()
-	join()
-	filter()
 	set()
-	edit()
-	"quote/reply"()
-	want()
-	export()
-	Sort()
-	tag()
-	agree()
-	disagree()
-	view()
-	sort()
-	add()
+	delete()
+	forget()
+	filter()
+	upload()
+	create()
 	reply()
+	add()
+	see()
+	Sort()
+	want()
+	disagree()
+	save()
+	created()
+	edit()
+	join()
+	reset()
+	view()
+	mark()
+	"quote/reply"()
+	export()
+	agree()
+	sort()
+	tag()
+	adjust()
 }
 class Comments {
-	"quote/reply" : string
+	"quote/reply"
+	delete()
+	add()
 }
 class OtherPeople {
-	Comments : string
 }
 class members {
-	list : string
-	approved : string
+	approved
+	list
 }
 class Comment {
-	Comments : string
 }
 class member {
-	members : string
 }
 class ProjectSettingsPage {
-	reset()
-	forget()
-	delete()
+	use()
 	give()
 }
-ProjectSettingsPage "1" o-- "1" Project
-members "1" o-- "1" member
-Comments "1" o-- "1" Comment
-Comments "1" o-- "1" OtherPeople
-Comment "1" o-- "1" User
+member o-- members
+Comment o-- Comments
+Project o-- ProjectSettingsPage
+OtherPeople o-- Comments
+User o-- Comment
 
 @enduml

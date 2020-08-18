@@ -1,27 +1,16 @@
 @startuml
 hide circle
 class D {
-	DModules : string
-	Direction : string
-	Deployment : string
+	Direction
+	DModules
+	Deployment
+	use()
 	detect()
 }
 class DModules {
 	use()
+	go()
 	make()
 }
-class System {
-	drop()
-	create()
-	use()
-	turn()
-	paste()
-	detect()
-	show()
-	7()
-	generate()
-	enforce()
-}
-System "1" <|-- "1" be
 
 @enduml

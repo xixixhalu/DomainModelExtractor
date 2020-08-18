@@ -1,50 +1,38 @@
 @startuml
 hide circle
 class Customers {
-	less : string
+	less
 	go()
 	voicemail()
+	make()
+	"click-to-call"()
+	unavailable()
 }
 class Sale {
-	SalesAgent : string
-	SalesManager : string
 	close()
 }
 class Customer {
-	Customers : string
 	route()
-}
-class Agent {
-	Agents : string
-	AgentWhile : string
-	is : string
-	available()
 }
 class SalesManager {
 	listen()
+	jump()
 	assure()
 	use()
-	train()
-	jump()
-	help()
-	speak()
 	guide()
+	speak()
+	train()
+	help()
 }
 class SalesAgent {
-	answer()
-	log()
-	pull()
-	use()
-	train()
-	request()
-	"click-to-call"()
-	AutoDialCustomers()
-	save()
 	close()
+	AutoDialCustomers()
+	"click-to-call"()
+	request()
+	save()
 }
-Agent "1" <|-- "1" is
-Customers "1" o-- "1" Customer
-SalesAgent "1" o-- "1" Sale
-SalesManager "1" o-- "1" Sale
+Customer o-- Customers
+Sale o-- SalesAgent
+Sale o-- SalesManager
 
 @enduml

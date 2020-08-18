@@ -22,10 +22,20 @@
         "Patients",
         "Data",
         "Patients",
-        "SchedulingApplication",
-        "am"
+        "SchedulingApplication"
       ],
       "Behavior": {
+        "want": [
+          "",
+          "",
+          ""
+        ],
+        "choose": [
+          "",
+          "",
+          "",
+          ""
+        ],
         "match": [
           ""
         ],
@@ -38,17 +48,10 @@
         "recommend": [
           ""
         ],
-        "want": [
-          ""
-        ],
         "edit": [
           ""
         ],
         "fill": [
-          ""
-        ],
-        "choose": [
-          "",
           ""
         ]
       }
@@ -65,22 +68,123 @@
         ]
       }
     },
+    "User": {
+      "Attribute": [
+        "Patients"
+      ],
+      "Behavior": {
+        "have": [
+          "",
+          "",
+          ""
+        ],
+        "generate": [
+          ""
+        ],
+        "trust": [
+          ""
+        ],
+        "access": [
+          ""
+        ],
+        "track": [
+          ""
+        ],
+        "able": [
+          ""
+        ],
+        "create": [
+          "",
+          ""
+        ],
+        "import": [
+          ""
+        ],
+        "assign": [
+          ""
+        ],
+        "add": [
+          "",
+          "",
+          ""
+        ],
+        "view": [
+          ""
+        ],
+        "add/edit": [
+          ""
+        ],
+        "EmergencyContactAndInsuranceInfoOf": [
+          ""
+        ],
+        "attach": [
+          ""
+        ],
+        "export": [
+          ""
+        ],
+        "delete": [
+          ""
+        ],
+        "download": [
+          ""
+        ]
+      }
+    },
+    "Patient": {
+      "Attribute": [
+        "PatientData",
+        "PatientDocuments",
+        "Patients",
+        "PatientRecord"
+      ],
+      "Behavior": {
+        "choose": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "recommend": [
+          ""
+        ]
+      }
+    },
     "App": {
       "Attribute": [
         "Application"
       ],
       "Behavior": {
+        "want": [
+          "",
+          ""
+        ],
+        "need": [
+          "",
+          ""
+        ],
+        "protect": [
+          ""
+        ],
         "integrate": [
           ""
         ]
       }
     },
+    "Application": {
+      "Attribute": [],
+      "Behavior": {
+        "handles": [
+          "",
+          ""
+        ]
+      }
+    },
     "Administrator": {
-      "Attribute": [
-        "am"
-      ],
+      "Attribute": [],
       "Behavior": {
         "able": [
+          "",
           ""
         ],
         "save": [
@@ -91,10 +195,19 @@
         ]
       }
     },
-    "Application": {
+    "Patients": {
       "Attribute": [],
       "Behavior": {
-        "handles": [
+        "match": [
+          "",
+          ""
+        ]
+      }
+    },
+    "Data": {
+      "Attribute": [],
+      "Behavior": {
+        "attach": [
           ""
         ]
       }
@@ -113,8 +226,28 @@
         []
       ],
       [
+        "Doctor",
+        "Patients",
+        []
+      ],
+      [
+        "Doctor",
+        "Data",
+        []
+      ],
+      [
         "Admin",
         "Administrator",
+        []
+      ],
+      [
+        "User",
+        "Patients",
+        []
+      ],
+      [
+        "Patient",
+        "Patients",
         []
       ],
       [

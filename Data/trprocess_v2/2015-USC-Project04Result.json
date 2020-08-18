@@ -1,62 +1,33 @@
 {
   "class_dict": {
-    "AdultLearner": {
-      "Attribute": [
-        "ConflictResolutionSkills",
-        "In-gameScore",
-        "ConflictManagementSkills"
-      ],
-      "Behavior": {
-        "practice": [
-          ""
-        ],
-        "EffectiveCommunicator": [
-          ""
-        ],
-        "view": [
-          ""
-        ],
-        "know": [
-          ""
-        ],
-        "progressing": [
-          ""
-        ],
-        "resolve": [
-          ""
-        ],
-        "have": [
-          ""
-        ],
-        "take": [
-          ""
-        ],
-        "judge": [
-          ""
-        ],
-        "need": [
-          ""
-        ],
-        "improve": [
-          ""
-        ]
-      }
-    },
     "MbvStudent": {
       "Attribute": [
         "Team"
       ],
       "Behavior": {
-        "want": [
-          ""
-        ],
-        "participate": [
+        "integrates": [
+          "",
+          "",
           ""
         ],
         "collaborate": [
+          "",
           ""
         ],
         "improve": [
+          "",
+          ""
+        ],
+        "want": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "participate": [
+          "",
+          "",
           ""
         ],
         "use": [
@@ -70,25 +41,50 @@
         "ThoughtProcesses",
         "Decisions",
         "ThoughtProcesses",
-        "Veterans",
-        "'m"
+        "Veterans"
       ],
       "Behavior": {
-        "want": [
+        "made": [
+          "",
+          "",
           ""
         ],
         "see": [
           "",
+          "",
+          "",
+          "",
+          "",
           ""
         ],
         "alone": [
+          "",
+          "",
+          ""
+        ],
+        "want": [
+          "",
+          "",
           ""
         ],
         "compare": [
           "",
+          "",
           ""
         ],
         "use": [
+          ""
+        ]
+      }
+    },
+    "Decisions": {
+      "Attribute": [
+        "DecisionsOthers"
+      ],
+      "Behavior": {
+        "compare": [
+          "",
+          "",
           ""
         ]
       }
@@ -100,23 +96,6 @@
       ],
       "Behavior": {}
     },
-    "ConflictResolution": {
-      "Attribute": [
-        "ConflictResolutionSkills",
-        "ConflictResolutionExercise"
-      ],
-      "Behavior": {}
-    },
-    "Decisions": {
-      "Attribute": [
-        "DecisionsOthers"
-      ],
-      "Behavior": {
-        "compare": [
-          ""
-        ]
-      }
-    },
     "Conflict": {
       "Attribute": [
         "ConflictResolution",
@@ -127,26 +106,21 @@
       ],
       "Behavior": {}
     },
-    "Program": {
+    "ConflictResolution": {
       "Attribute": [
-        "is"
+        "ConflictResolutionSkills",
+        "ConflictResolutionExercise"
       ],
-      "Behavior": {
-        "use": [
-          ""
-        ],
-        "interactive": [
-          ""
-        ],
-        "integrates": [
-          ""
-        ]
-      }
+      "Behavior": {}
     },
     "Teams": {
       "Attribute": [],
       "Behavior": {
+        "adopt": [
+          ""
+        ],
         "resolve": [
+          "",
           ""
         ]
       }
@@ -154,30 +128,150 @@
     "DecisionsOthers": {
       "Attribute": [],
       "Behavior": {
+        "want": [
+          ""
+        ],
+        "see": [
+          "",
+          ""
+        ],
+        "alone": [
+          ""
+        ],
         "made": [
+          ""
+        ]
+      }
+    },
+    "ConflictResolutionExercise": {
+      "Attribute": [],
+      "Behavior": {
+        "practice": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "view": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "resolve": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "have": [
+          "",
+          "",
+          ""
+        ],
+        "help": [
+          "",
+          "",
+          ""
+        ],
+        "improve": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "take": [
+          "",
+          "",
+          ""
+        ],
+        "integrates": [
+          "",
+          ""
+        ],
+        "encourage": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "made": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "compare": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "see": [
+          ""
+        ],
+        "gain": [
+          "",
+          ""
+        ],
+        "use": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "need": [
+          "",
+          ""
+        ],
+        "collaborate": [
+          "",
+          "",
+          ""
+        ],
+        "marketed": [
+          ""
+        ],
+        "participate": [
+          "",
+          ""
+        ],
+        "alone": [
+          ""
+        ],
+        "interact": [
+          ""
+        ],
+        "relates": [
+          "",
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "am",
-        "AdultLearner",
-        []
-      ],
-      [
-        "is",
-        "Program",
-        []
-      ],
-      [
-        "'m",
-        "Veteran",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "MbvStudent",
@@ -190,18 +284,28 @@
         []
       ],
       [
-        "Team",
-        "Teams",
-        []
-      ],
-      [
         "Decisions",
         "DecisionsOthers",
         []
       ],
       [
+        "Team",
+        "Teams",
+        []
+      ],
+      [
         "Conflict",
         "ConflictResolution",
+        []
+      ],
+      [
+        "Conflict",
+        "ConflictResolutionExercise",
+        []
+      ],
+      [
+        "ConflictResolution",
+        "ConflictResolutionExercise",
         []
       ]
     ]

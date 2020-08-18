@@ -1,123 +1,117 @@
 @startuml
 hide circle
 class User {
-	"Geo-location" : string
-	Login : string
-	RegisteredUsername : string
-	FacebookAccount : string
-	OwnProfile : string
-	Hashtag : string
-	OwnEvent : string
-	Event : string
-	Gallery : string
-	Phone : string
-	HistoryOfHashtags : string
-	PrivateEvent : string
-	Pictures : string
-	Users : string
-	UsersOfTheAppAndViewPictures : string
-	Username : string
-	suspend()
-	use()
-	take()
-	create()
+	HistoryOfHashtags
+	FacebookAccount
+	OwnEvent
+	OwnProfile
+	Gallery
+	UsersOfTheAppAndViewPictures
+	Username
+	"Geo-location"
+	Phone
+	RegisteredUsername
+	Login
 	login()
-	reserve()
 	delete()
-	posted()
-	report()
-	moderate()
-	created()
-	like()
-	shut()
-	remove()
 	choose()
-	invited()
 	participate()
-	ensure()
+	create()
+	expires()
+	see()
+	like()
 	want()
+	use()
 	save()
-	keep()
-	sort()
+	accessible()
+	reserve()
+	created()
 	have()
 	post()
+	shut()
+	access()
+	report()
+	invited()
 	view()
+	suspend()
+	remove()
+	keep()
+	take()
+	posted()
+	moderate()
+	sort()
 	write()
+	ensure()
 }
 class Event {
-	Hashtag : string
-	Name : string
-	EventAttendees : string
-	"Event/hashtag" : string
-	Events : string
-	EventHashtag : string
+	EventHashtag
+	Events
+	Name
+	see()
 	remove()
 	update()
-	see()
 	starts()
+	removed()
+	create()
+	reserve()
 }
 class their {
-	Contents : string
-	Pictures : string
-}
-class Picture {
-	Pictures : string
-	PicturesOfTheEvent : string
-	PictureViewing : string
-	PictureLifetime : string
+	Contents
 }
 class Users {
-	UsersOfTheAppAndViewPictures : string
+	UsersOfTheAppAndViewPictures
 	manage()
-	upload()
 	post()
+	give()
+	choose()
+	upload()
 }
 class Pictures {
-	PicturesOfTheEvent : string
-	be : string
-	delete()
-	moderate()
+	PicturesOfTheEvent
 	remove()
-	upload()
 	post()
-	sort()
+	give()
 	list()
 	restore()
-	give()
-	Area()
+	delete()
 	descriptive()
+	Area()
+	upload()
+	sort()
+	moderate()
 }
-class EventAttendees {
-	use()
+class Picture {
+	PictureLifetime
+	PicturesOfTheEvent
+	PictureViewing
+	take()
+	like()
+	choose()
 }
 class PrivateEvent {
 	invited()
 }
 class Event/hashtag {
-	introduce()
-	search()
-	create()
-	shut()
+	expires()
 	save()
 	keep()
-	see()
-	post()
-	reserve()
-	browse()
-	manage()
-	change()
-	delete()
-	generate()
-	expires()
 }
-EventAttendees "1" o-- "1" Event
-Pictures "1" <|-- "1" be
-PrivateEvent "1" o-- "1" User
-"Event/hashtag" "1" o-- "1" Event
-Pictures "1" o-- "1" their
-Pictures "1" o-- "1" Picture
-Pictures "1" o-- "1" User
-Users "1" o-- "1" User
-Event "1" o-- "1" User
+class EventAttendees {
+	use()
+}
+class Hashtag {
+	use()
+	reserve()
+}
+Event o-- Hashtag
+User o-- Event
+User o-- PrivateEvent
+Event o-- EventAttendees
+User o-- Users
+User o-- Pictures
+Picture o-- Pictures
+Event o-- "Event/hashtag"
+their o-- Pictures
+User o-- Hashtag
 
 @enduml

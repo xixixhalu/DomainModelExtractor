@@ -17,6 +17,64 @@
         "UserParticipation"
       ],
       "Behavior": {
+        "view": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Lifetime": [
+          "",
+          ""
+        ],
+        "get": [
+          "",
+          ""
+        ],
+        "redeem": [
+          "",
+          ""
+        ],
+        "search": [
+          "",
+          ""
+        ],
+        "relevant": [
+          "",
+          ""
+        ],
+        "select": [
+          "",
+          ""
+        ],
+        "track": [
+          "",
+          "",
+          ""
+        ],
+        "compare": [
+          "",
+          ""
+        ],
+        "measure": [
+          "",
+          "",
+          ""
+        ],
+        "update": [
+          "",
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "start": [
           ""
         ],
@@ -26,56 +84,16 @@
         "like/dislike": [
           ""
         ],
-        "view": [
-          "",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "Lifetime": [
-          ""
-        ],
-        "track": [
-          "",
-          ""
-        ],
-        "get": [
-          ""
-        ],
         "stay": [
-          ""
-        ],
-        "redeem": [
           ""
         ],
         "receive": [
           ""
         ],
-        "search": [
-          ""
-        ],
-        "see": [
-          "",
-          "",
-          ""
-        ],
-        "select": [
-          ""
-        ],
-        "update": [
-          ""
-        ],
         "mark": [
           ""
         ],
-        "compare": [
-          ""
-        ],
         "gauge": [
-          ""
-        ],
-        "measure": [
           ""
         ],
         "use": [
@@ -101,9 +119,21 @@
       ],
       "Behavior": {
         "notify": [
+          "",
+          "",
           ""
         ],
         "entice": [
+          "",
+          "",
+          ""
+        ],
+        "add": [
+          "",
+          ""
+        ],
+        "using": [
+          "",
           ""
         ],
         "redeem": [
@@ -118,9 +148,13 @@
       ],
       "Behavior": {
         "receive": [
+          "",
+          "",
           ""
         ],
         "add": [
+          "",
+          "",
           ""
         ]
       }
@@ -131,6 +165,9 @@
       ],
       "Behavior": {
         "update": [
+          "",
+          "",
+          "",
           ""
         ]
       }
@@ -143,19 +180,15 @@
       ],
       "Behavior": {
         "start": [
+          "",
+          "",
+          ""
+        ],
+        "pin": [
+          "",
           ""
         ],
         "sorting": [
-          ""
-        ]
-      }
-    },
-    "Experience": {
-      "Attribute": [
-        "is"
-      ],
-      "Behavior": {
-        "personalized": [
           ""
         ]
       }
@@ -168,10 +201,27 @@
         ]
       }
     },
-    "UserParticipation": {
+    "WatPoints": {
       "Attribute": [],
       "Behavior": {
-        "increase": [
+        "use": [
+          "",
+          ""
+        ],
+        "view": [
+          "",
+          ""
+        ]
+      }
+    },
+    "Experience": {
+      "Attribute": [],
+      "Behavior": {
+        "update": [
+          ""
+        ],
+        "personalized": [
+          "",
           ""
         ]
       }
@@ -184,31 +234,19 @@
         ]
       }
     },
-    "Forum": {
+    "UserParticipation": {
       "Attribute": [],
       "Behavior": {
-        "search": [
+        "notify": [
           ""
         ],
-        "FreeOfInappropriateThreads": [
+        "increase": [
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "'s",
-        "User",
-        []
-      ],
-      [
-        "be",
-        "Forum",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "User",
@@ -222,17 +260,22 @@
       ],
       [
         "User",
+        "WatPoints",
+        []
+      ],
+      [
+        "User",
         "Experience",
         []
       ],
       [
         "User",
-        "UserParticipation",
+        "ThreadSpecificPointBalance",
         []
       ],
       [
         "User",
-        "ThreadSpecificPointBalance",
+        "UserParticipation",
         []
       ],
       [

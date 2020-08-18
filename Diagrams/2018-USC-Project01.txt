@@ -1,60 +1,52 @@
 @startuml
 hide circle
 class Users {
-	Account : string
-	AccountInformation : string
+	AccountInformation
 }
 class Map {
-	find : string
-	DifferentVenues : string
+	find
 }
 class User {
-	Information : string
-	Area : string
-	Friend : string
-	Users : string
-	UserAccount : string
+	Information
+	UserAccount
+	Area
 	lost()
-	get()
-	receive()
 	close()
-	contact()
-	see()
-	reject()
-	consent()
-	block()
-	unblock()
-	call()
-	search()
-	import()
-	confirm()
-	entered()
-	create()
-	have()
-	leaved()
+	receive()
 	delete()
+	consent()
+	create()
+	search()
+	block()
+	see()
+	leaved()
 	find()
+	unblock()
+	import()
+	reject()
+	have()
+	call()
+	entered()
+	guarantee()
+	interested()
+	contact()
+	confirm()
+	get()
 }
 class Friend {
-	FriendRequest : string
+	FriendRequest
 }
 class Account {
-	AccountInformation : string
-}
-class they {
-	are : string
-	did()
-	interested()
-	Area()
+	AccountInformation
+	block()
 }
 class DifferentVenues {
 	are()
+	search()
 }
-Friend "1" o-- "1" User
-they "1" <|-- "1" are
-they "1" <|-- "1" are
-Account "1" o-- "1" Users
-DifferentVenues "1" o-- "1" Map
-Users "1" o-- "1" User
+Users o-- Account
+User o-- Friend
+User o-- Users
+Map o-- DifferentVenues
 
 @enduml

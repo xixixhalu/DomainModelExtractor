@@ -10,7 +10,22 @@
       "Attribute": [
         "AppIcon"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "run": [
+          "",
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "click": [
+          ""
+        ]
+      }
     }
   },
   "relationship_dict": {

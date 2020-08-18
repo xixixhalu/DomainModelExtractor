@@ -9,13 +9,30 @@ class UMLEntity:
         self.__header = 'class ' + entity_name + ' {\n'
         self.__footer = '}\n'
         self.__content = ''
+        self.__attribute_set = set()
+        self.__behavior_set = set()
+
     def add_attribute(self, attribute_name, attribute_type='string'):
-        self.__content += '\t' + attribute_name + ' : ' + attribute_type + '\n'
+        if attribute_name not in self.__attribute_set:
+            # Bo: temporarily opt out attribute_type
+            # self.attribute_set.add(attribute_name+ ' : ' + attribute_type)
+            self.__attribute_set.add(attribute_name)
+
+    def attributes(self):
+        return self.__attribute_set
 
     def add_behavior(self, behavior_name):
-        self.__content += '\t' + behavior_name + '()' + '\n'
+        if behavior_name not in self.__behavior_set:
+            self.__behavior_set.add(behavior_name)
+
+    def behaviors(self):
+        return self.__behavior_set
 
     def output(self):
+        for attr in self.__attribute_set:
+            self.__content += '\t' + attr + '\n'
+        for beha in self.__behavior_set:
+            self.__content += '\t' + beha + '()' + '\n'
         return self.__header + self.__content + self.__footer
 
 class UMLAssociation:
@@ -25,7 +42,16 @@ class UMLAssociation:
         self.__association_type = association_type
         self.__multiplicity = multiplicity
 
-    def set_assocciation_type(self, association_type):
+    def entity_one(self):
+        return self.__entity_one
+
+    def entity_two(self):
+        return self.__entity_two
+
+    def type(self):
+        return self.__association_type
+
+    def set_type(self, association_type):
         self.__association_type = association_type
 
     def set_multiplicity(self, multiplicity):
@@ -43,21 +69,21 @@ class UMLAssociation:
         else:
             result = type_switcher[association_type]
 
-        multiplicity_switcher = {
-            "one_to_one": ' "1"' + result + '"1" ',
-            "one_to_many": ' "1"' + result + '"*" ',
-            "many_to_one": ' "*"' + result + '"1" ',
-            "many_to_many": ' "*"' + result + '"*" ',
-        }
-        if not multiplicity in multiplicity_switcher:
-            result = result #' "1"' + result + '"1" '
-        else:
-            result = multiplicity_switcher[multiplicity]
+        # multiplicity_switcher = {
+        #     "one_to_one": ' "1"' + result + '"1" ',
+        #     "one_to_many": ' "1"' + result + '"*" ',
+        #     "many_to_one": ' "*"' + result + '"1" ',
+        #     "many_to_many": ' "*"' + result + '"*" ',
+        # }
+        # if not multiplicity in multiplicity_switcher:
+        #     result = result #' "1"' + result + '"1" '
+        # else:
+        #     result = multiplicity_switcher[multiplicity]
         return result
 
 
     def output(self):
-        return self.__entity_two + self.association(self.__association_type, self.__multiplicity) + self.__entity_one + '\n'
+        return self.__entity_one + self.association(self.__association_type, self.__multiplicity) + self.__entity_two + '\n'
         
 class UMLViewer:
 
@@ -93,6 +119,8 @@ class UMLViewer:
 
     def add_association(self, association):
         if isinstance(association, UMLAssociation):
+            if association.type() in ["composition", "aggregation"]:
+                self.__entity_map[association.entity_one()].attributes().discard(association.entity_two())
             self.__association_set.add(association)
             
     def output(self):

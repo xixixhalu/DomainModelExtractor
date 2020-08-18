@@ -5,7 +5,14 @@
         "Traffic",
         "sold"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "redirected": [
+          ""
+        ],
+        "sold": [
+          ""
+        ]
+      }
     },
     "Retailer": {
       "Attribute": [
@@ -27,27 +34,20 @@
     "User": {
       "Attribute": [
         "Phone",
-        "UserExperience",
-        "be",
-        "am",
-        "be",
-        "am",
-        "be"
+        "UserExperience"
       ],
       "Behavior": {
-        "sort": [
-          "",
-          "",
-          "",
-          ""
-        ],
         "see": [
           "",
           "",
           "",
+          "",
+          "",
+          "",
+          "",
           ""
         ],
-        "waste": [
+        "available": [
           ""
         ],
         "able": [
@@ -55,9 +55,19 @@
           "",
           "",
           "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
           ""
         ],
         "minimize": [
+          "",
           ""
         ],
         "view": [
@@ -66,6 +76,44 @@
           "",
           "",
           "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "slide": [
+          "",
+          ""
+        ],
+        "sort": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "focus": [
+          "",
+          "",
+          ""
+        ],
+        "clearly": [
+          ""
+        ],
+        "follow": [
+          "",
+          ""
+        ],
+        "get": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "waste": [
           ""
         ],
         "shop": [
@@ -74,24 +122,10 @@
         "buy": [
           ""
         ],
-        "slide": [
-          ""
-        ],
-        "get": [
-          "",
-          "",
-          ""
-        ],
         "viewing": [
           ""
         ],
         "collapse": [
-          ""
-        ],
-        "follow": [
-          ""
-        ],
-        "focus": [
           ""
         ]
       }
@@ -103,6 +137,7 @@
       ],
       "Behavior": {
         "get": [
+          "",
           ""
         ]
       }
@@ -151,6 +186,8 @@
       ],
       "Behavior": {
         "shop": [
+          "",
+          "",
           ""
         ]
       }
@@ -162,14 +199,22 @@
       "Behavior": {}
     },
     "Products": {
-      "Attribute": [
-        "are"
-      ],
+      "Attribute": [],
       "Behavior": {
         "see": [
+          "",
+          "",
           ""
         ],
         "sort": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           ""
         ],
@@ -184,54 +229,14 @@
     "ProductImage": {
       "Attribute": [],
       "Behavior": {
-        "waste": [
-          ""
-        ],
-        "see": [
-          "",
-          ""
-        ],
-        "minimize": [
-          ""
-        ],
-        "view": [
-          "",
-          ""
-        ],
-        "buy": [
-          ""
-        ],
-        "using": [
-          ""
-        ],
-        "slide": [
-          ""
-        ],
-        "viewing": [
-          ""
-        ],
-        "get": [
-          ""
-        ],
         "clearly": [
+          "",
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "are",
-        "Products",
-        []
-      ],
-      [
-        "am",
-        "User",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "Retailer",

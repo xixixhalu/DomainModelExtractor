@@ -1,68 +1,67 @@
 @startuml
 hide circle
 class User {
-	Information : string
-	Swimmer : string
-	Kid : string
-	be : string
-	expect()
-	see()
+	allow()
 	able()
+	see()
+	sign()
+	expect()
 }
 class parent {
-	Account : string
-	Kid : string
-	KidsAccount : string
-	be : string
-	be : string
-	be : string
-	be : string
-	be : string
-	be : string
-	able()
-	login()
-	see()
-	pay()
+	Account
+	KidsAccount
 	view()
+	login()
+	able()
+	see()
 	edit()
+	pay()
 	sign()
 }
 class Kid {
-	Account : string
-	KidsAccount : string
+	Account
+	KidsAccount
+	able()
+	sign()
 }
 class Events {
-	signed : string
-	EventsPost : string
+	signed
+	EventsPost
+	allow()
+	able()
+	see()
+	signup()
+	edit()
 }
 class his {
-	Kid : string
 }
 class member {
-	DateOfBirth : string
 }
 class DateOfBirth {
-	DateOfBirthOfChildren : string
+	DateOfBirthOfChildren
 }
 class Event {
-	Events : string
-	EventsPost : string
-	EventDeadline : string
-}
-class Information {
-	is : string
-	review()
-	secure()
+	EventsPost
+	EventDeadline
+	view()
+	able()
 }
 class Swimmer {
 	sign()
+	see()
+	expect()
 }
-Swimmer "1" o-- "1" User
-Kid "1" o-- "1" parent
-Kid "1" o-- "1" his
-DateOfBirth "1" o-- "1" member
-Kid "1" o-- "1" User
-Events "1" o-- "1" Event
-Information "1" o-- "1" User
+class Information {
+	secure()
+	review()
+	expect()
+}
+his o-- Kid
+member o-- DateOfBirth
+User o-- Kid
+Event o-- Events
+User o-- Swimmer
+User o-- Information
+parent o-- Kid
 
 @enduml

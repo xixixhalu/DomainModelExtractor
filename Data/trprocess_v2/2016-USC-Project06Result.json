@@ -9,18 +9,29 @@
         "Liking",
         "Password",
         "ProfileInformation",
-        "Users",
-        "be"
+        "Users"
       ],
       "Behavior": {
         "register": [
-          ""
-        ],
-        "login": [
           "",
           ""
         ],
         "click": [
+          "",
+          ""
+        ],
+        "won": [
+          "",
+          "",
+          ""
+        ],
+        "login": [
+          "",
+          "",
+          ""
+        ],
+        "Password": [
+          "",
           ""
         ],
         "see": [
@@ -29,21 +40,49 @@
           "",
           "",
           "",
-          ""
-        ],
-        "won": [
-          ""
-        ],
-        "place": [
+          "",
+          "",
+          "",
           "",
           ""
         ],
-        "Password": [
+        "log": [
+          "",
+          ""
+        ],
+        "trying": [
+          "",
+          "",
+          "",
+          "",
           ""
         ],
         "play": [
           "",
           "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          ""
+        ],
+        "place": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "edit": [
+          "",
+          "",
+          ""
+        ],
+        "remove": [
           "",
           ""
         ],
@@ -55,10 +94,6 @@
           ""
         ],
         "choose": [
-          ""
-        ],
-        "edit": [
-          "",
           ""
         ],
         "change": [
@@ -76,9 +111,6 @@
         "want": [
           ""
         ],
-        "log": [
-          ""
-        ],
         "lost": [
           ""
         ],
@@ -91,16 +123,7 @@
         "mute": [
           ""
         ],
-        "remove": [
-          ""
-        ],
-        "able": [
-          ""
-        ],
         "detonate": [
-          ""
-        ],
-        "trying": [
           ""
         ]
       }
@@ -116,7 +139,11 @@
       "Attribute": [
         "more"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "attracts": [
+          ""
+        ]
+      }
     },
     "DifferentPlatforms": {
       "Attribute": [
@@ -135,7 +162,12 @@
         "given",
         "Grid"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "placed": [
+          "",
+          ""
+        ]
+      }
     },
     "Game": {
       "Attribute": [
@@ -143,6 +175,13 @@
       ],
       "Behavior": {
         "play": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "make": [
           ""
         ],
         "attracts": [
@@ -150,53 +189,21 @@
         ]
       }
     },
-    "System": {
-      "Attribute": [
-        "be"
-      ],
-      "Behavior": {
-        "compatible": [
-          ""
-        ],
-        "have": [
-          ""
-        ],
-        "include": [
-          ""
-        ],
-        "scalable": [
-          ""
-        ]
-      }
-    },
-    "it": {
-      "Attribute": [
-        "is"
-      ],
-      "Behavior": {
-        "maintainable": [
-          ""
-        ]
-      }
+    "GameProfile": {
+      "Attribute": [],
+      "Behavior": {}
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "is",
-        "it",
-        []
-      ],
-      [
-        "be",
-        "System",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "User",
         "Users",
+        []
+      ],
+      [
+        "User",
+        "GameProfile",
         []
       ],
       [
@@ -207,6 +214,11 @@
       [
         "*",
         "Grid",
+        []
+      ],
+      [
+        "Game",
+        "GameProfile",
         []
       ]
     ]

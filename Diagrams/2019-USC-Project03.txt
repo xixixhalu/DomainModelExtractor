@@ -1,96 +1,84 @@
 @startuml
 hide circle
 class his {
-	Child : string
 }
 class their {
-	Children : string
-	Assignment : string
-	Confirmation : string
+	Confirmation
+	Children
 }
 class Assignment {
-	finished : string
-	Assignments : string
+	Assignments
+	finished
+	upload()
 	post()
 }
 class Student {
-	Groups : string
-	Students : string
-	add()
-	schedule()
+	Groups
+	view()
+	manage()
 	check()
-	join()
-	create()
+	upvote()
+	schedule()
+	find()
 	send()
 	receive()
-	manage()
-	view()
-	upvote()
-	find()
 	bookmark()
+	create()
 	favorite()
+	join()
+	add()
 }
 class Teacher {
-	Class : string
-	Time : string
-	Students : string
-	Students : string
-	Students : string
-	Student : string
-	TeacherUser : string
-	Teachers : string
+	Time
+	have()
+	check()
 	see()
+	contact()
+	send()
 	upload()
 	assign()
-	check()
-	send()
-	contact()
-}
-class Child {
-	Children : string
 }
 class Question {
-	Questions : string
 }
 class Class {
-	"ClassesHe/she" : string
 }
-class Questions {
-	are : string
-	relevant()
+class Child {
+	Children
+	locate()
 }
 class TeacherUser {
-	post()
 	improve()
+	post()
 }
 class Students {
-	contact()
-	upload()
-	finish()
 	have()
-}
-class ClassesHe/she {
-	visiting()
-	connect()
-}
-class what {
-	trending()
-	Students()
+	check()
+	contact()
+	finish()
+	upload()
 }
 class Teachers {
 	"create/update"()
 }
-Questions "1" <|-- "1" are
-Child "1" o-- "1" his
-Teachers "1" o-- "1" Teacher
-Student "1" o-- "1" Teacher
-Students "1" o-- "1" Teacher
-what "1" <|-- "1" are
-Assignment "1" o-- "1" their
-"ClassesHe/she" "1" o-- "1" Class
-Questions "1" o-- "1" Question
-Class "1" o-- "1" Teacher
-TeacherUser "1" o-- "1" Teacher
-Students "1" o-- "1" Student
+class ClassesHe/she {
+	connect()
+	visiting()
+	add()
+}
+class Questions {
+	ask()
+	bookmark()
+	relevant()
+}
+Teacher o-- Teachers
+Question o-- Questions
+Teacher o-- TeacherUser
+his o-- Child
+Class o-- "ClassesHe/she"
+Teacher o-- Students
+Student o-- Students
+Teacher o-- Student
+Teacher o-- Class
+their o-- Assignment
 
 @enduml

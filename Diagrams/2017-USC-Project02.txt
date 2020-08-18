@@ -1,23 +1,14 @@
 @startuml
 hide circle
-class Item {
-	given : string
-	click : string
-	Items : string
-	"re-order"()
-	Stock()
-}
 class Admin {
-	AdminUser : string
-	add()
 	read()
 	change()
 	reserve()
+	add()
 }
 class AdminUser {
 	get()
 }
-Item "1" <|-- "1" is
-AdminUser "1" o-- "1" Admin
+Admin o-- AdminUser
 
 @enduml

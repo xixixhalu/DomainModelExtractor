@@ -7,6 +7,11 @@
       ],
       "Behavior": {
         "reserve": [
+          "",
+          ""
+        ],
+        "allow": [
+          "",
           ""
         ],
         "associated": [
@@ -23,11 +28,42 @@
     },
     "Users": {
       "Attribute": [
-        "UsersBrowserPictures",
-        "are"
+        "UsersBrowserPictures"
       ],
       "Behavior": {
+        "allow": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "post": [
+          ""
+        ],
+        "like": [
+          ""
+        ],
+        "uploaded": [
+          ""
+        ],
+        "prevent": [
+          "",
+          ""
+        ],
         "FlagPictures": [
+          "",
           ""
         ],
         "tag": [
@@ -40,6 +76,27 @@
           ""
         ],
         "interested": [
+          ""
+        ]
+      }
+    },
+    "Administrator": {
+      "Attribute": [
+        "Administrators/maintainers/moderators"
+      ],
+      "Behavior": {
+        "allow": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "continue": [
+          ""
+        ],
+        "close": [
+          "",
           ""
         ]
       }
@@ -58,17 +115,65 @@
       ],
       "Behavior": {
         "upload": [
+          "",
+          "",
+          ""
+        ],
+        "allow": [
+          "",
+          ""
+        ],
+        "start": [
+          "",
+          ""
+        ],
+        "delete": [
           ""
         ]
       }
     },
     "Pictures": {
       "Attribute": [
-        "PicturesOfThisHashtag",
-        "is"
+        "PicturesOfThisHashtag"
       ],
       "Behavior": {
         "upload": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "posting": [
+          ""
+        ],
+        "post": [
+          ""
+        ],
+        "allow": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "want": [
+          "",
+          ""
+        ],
+        "tag": [
+          ""
+        ],
+        "download": [
+          ""
+        ],
+        "delete": [
+          ""
+        ],
+        "remove": [
           ""
         ],
         "associated": [
@@ -90,6 +195,35 @@
       ],
       "Behavior": {
         "allow": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "provide": [
+          "",
+          "",
+          ""
+        ],
+        "hit": [
+          "",
+          ""
+        ],
+        "want": [
+          "",
+          ""
+        ],
+        "start": [
+          "",
+          ""
+        ],
+        "Photos": [
+          "",
           ""
         ],
         "reserve": [
@@ -99,49 +233,8 @@
           "",
           ""
         ],
-        "hit": [
-          ""
-        ],
-        "want": [
-          ""
-        ],
         "upload": [
           "",
-          ""
-        ],
-        "start": [
-          ""
-        ],
-        "Photos": [
-          ""
-        ]
-      }
-    },
-    "Administrator": {
-      "Attribute": [
-        "Administrators/maintainers/moderators"
-      ],
-      "Behavior": {
-        "allow": [
-          ""
-        ],
-        "close": [
-          ""
-        ]
-      }
-    },
-    "HashtagHolder": {
-      "Attribute": [],
-      "Behavior": {
-        "delete": [
-          ""
-        ]
-      }
-    },
-    "Administrators/maintainers/moderators": {
-      "Attribute": [],
-      "Behavior": {
-        "remove": [
           ""
         ]
       }
@@ -150,28 +243,51 @@
       "Attribute": [],
       "Behavior": {
         "picture": [
+          "",
+          ""
+        ]
+      }
+    },
+    "HashtagHolder": {
+      "Attribute": [],
+      "Behavior": {
+        "allow": [
+          "",
+          "",
+          ""
+        ],
+        "inappropriate": [
+          ""
+        ],
+        "delete": [
+          ""
+        ]
+      }
+    },
+    "Administrators/maintainers/moderators": {
+      "Attribute": [],
+      "Behavior": {
+        "allow": [
+          "",
+          "",
+          ""
+        ],
+        "remove": [
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "is",
-        "Pictures",
-        []
-      ],
-      [
-        "are",
-        "Users",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "Hashtag",
         "HashtagHolder",
+        []
+      ],
+      [
+        "Administrator",
+        "Administrators/maintainers/moderators",
         []
       ],
       [
@@ -192,11 +308,6 @@
       [
         "User",
         "UserDeletes",
-        []
-      ],
-      [
-        "Administrator",
-        "Administrators/maintainers/moderators",
         []
       ]
     ]

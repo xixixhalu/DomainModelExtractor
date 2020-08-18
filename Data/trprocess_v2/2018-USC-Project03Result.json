@@ -4,11 +4,21 @@
       "Attribute": [
         "Details"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "modify": [
+          "",
+          ""
+        ],
+        "remove": [
+          "",
+          ""
+        ]
+      }
     },
-    "Details": {
+    "CurrentWeek": {
       "Attribute": [
-        "DetailsOf"
+        "CurrentWeekGoal",
+        "CurrentWeekGoals"
       ],
       "Behavior": {}
     },
@@ -18,12 +28,19 @@
       ],
       "Behavior": {}
     },
-    "CurrentWeek": {
+    "Details": {
       "Attribute": [
-        "CurrentWeekGoal",
-        "CurrentWeekGoals"
+        "DetailsOf"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "view": [
+          "",
+          ""
+        ],
+        "add": [
+          ""
+        ]
+      }
     }
   },
   "relationship_dict": {

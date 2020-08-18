@@ -42,7 +42,12 @@
         "comment",
         "existing"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "post": [
+          "",
+          ""
+        ]
+      }
     },
     "GeneralForum": {
       "Attribute": [
@@ -54,11 +59,19 @@
       "Attribute": [
         "Accounts"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "delete": [
+          "",
+          ""
+        ]
+      }
     },
     "Users": {
       "Attribute": [],
       "Behavior": {
+        "update": [
+          ""
+        ],
         "use": [
           ""
         ]

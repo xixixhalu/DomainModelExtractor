@@ -6,6 +6,14 @@
         "LoginCredentials"
       ],
       "Behavior": {
+        "browse": [
+          "",
+          ""
+        ],
+        "contact": [
+          "",
+          ""
+        ],
         "search": [
           "",
           ""
@@ -19,9 +27,6 @@
         "see": [
           ""
         ],
-        "contact": [
-          ""
-        ],
         "create": [
           ""
         ],
@@ -29,9 +34,6 @@
           ""
         ],
         "email": [
-          ""
-        ],
-        "browse": [
           ""
         ],
         "unsubscribe": [
@@ -52,6 +54,9 @@
     "SocialNetworkFriend": {
       "Attribute": [],
       "Behavior": {
+        "have": [
+          ""
+        ],
         "refer": [
           ""
         ]
@@ -61,6 +66,8 @@
       "Attribute": [],
       "Behavior": {
         "provide": [
+          "",
+          "",
           ""
         ]
       }

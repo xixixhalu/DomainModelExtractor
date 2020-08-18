@@ -1,20 +1,5 @@
 {
   "class_dict": {
-    "Item": {
-      "Attribute": [
-        "given",
-        "click",
-        "Items"
-      ],
-      "Behavior": {
-        "re-order": [
-          ""
-        ],
-        "Stock": [
-          ""
-        ]
-      }
-    },
     "Admin": {
       "Attribute": [
         "AdminUser"
@@ -38,19 +23,14 @@
       "Attribute": [],
       "Behavior": {
         "get": [
+          "",
+          "",
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "is",
-        "Item",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "Admin",

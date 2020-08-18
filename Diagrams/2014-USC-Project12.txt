@@ -1,18 +1,33 @@
 @startuml
 hide circle
 class IConsumer {
-	Account : string
-	Dashboard : string
-	access()
 	view()
+	access()
 }
 class Account {
-	existing : string
+	existing
+	access()
 }
 class Dashboard {
-	existing : string
+	existing
+	view()
 }
-Account "1" o-- "1" IConsumer
-Dashboard "1" o-- "1" IConsumer
+class User {
+	PersonalProfile
+	UserID
+	CurrentLocation
+	follow()
+	have()
+	capture()
+	find()
+	receive()
+	code()
+	share()
+	filter()
+	create()
+}
+IConsumer o-- Account
+IConsumer o-- Dashboard
+User o-- Users
 
 @enduml

@@ -1,82 +1,74 @@
 @startuml
 hide circle
 class User {
-	Appointment : string
-	Location : string
-	Appointment : string
-	PersonalInformation : string
-	Information : string
-	be : string
-	be : string
-	be : string
-	be : string
-	be : string
-	be : string
-	see()
-	want()
-	use()
-	know()
-	get()
-	forget()
-	visit()
+	PersonalInformation
+	Location
 	able()
-	update()
-	cancel()
-	inform()
-	modify()
-	decide()
+	integrates()
 	go()
-	have()
-	wait()
-	contact()
+	forget()
 	apply()
+	see()
+	update()
+	want()
+	inform()
+	use()
+	have()
+	cancel()
+	know()
+	decide()
+	stays()
+	contact()
+	wait()
+	modify()
+	visit()
+	get()
 }
 class Pet {
-	Information : string
-	Pets : string
 	go()
 }
 class Pets {
-	Pictures : string
+	Pictures
 }
 class Shelter {
-	Information : string
-	ShelterInformation : string
+	ShelterInformation
+	Fuppy()
+	select()
+	know()
+	see()
+	Pet()
+	coming()
+	input()
 	want()
 	control()
 	get()
-	know()
-	input()
-}
-class Appointment {
-	Appointments : string
 	UserBooks()
 }
-class it {
-	be : string
-	stays()
-	misused()
-}
-class Animals {
-	Fuppy()
+class Appointment {
+	Appointments
+	cancel()
+	UserBooks()
 }
 class Information {
-	get()
-	visit()
-	modify()
+	able()
 	see()
-	want()
-	contact()
 	input()
-	apply()
+	integrates()
 	stays()
+	contact()
+	forget()
+	want()
+	inform()
+	use()
+	modify()
+	visit()
+	apply()
+	get()
 }
-Information "1" o-- "1" Shelter
-Information "1" o-- "1" Pet
-it "1" <|-- "1" be
-Appointment "1" o-- "1" User
-Animals "1" <|-- "1" are
-Information "1" o-- "1" User
-Pets "1" o-- "1" Pet
+User o-- Information
+Pet o-- Pets
+Pet o-- Information
+Shelter o-- Information
+User o-- Appointment
 
 @enduml

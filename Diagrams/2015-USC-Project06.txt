@@ -1,78 +1,86 @@
 @startuml
 hide circle
 class Contractor {
-	Resources : string
-	Work : string
-	Resources : string
-	Information : string
-	Comment : string
-	Contractors : string
-	log()
-	see()
-	send()
-	ask()
+	Work
+	Information
+	Resources
+	Contractors
 	manage()
-	report()
+	log()
 	enter()
+	see()
+	ask()
 	MeetingOrTask()
+	send()
+	correct()
+	report()
 }
 class Manager {
-	Notifications : string
 	log()
-	take()
-	send()
-	search()
-	find()
-	see()
-	access()
-	track()
-	make()
 	talk()
-	approve()
-	disapprove()
-	edit()
-	save()
-	reject()
+	track()
 	create()
+	search()
+	add()
+	approve()
+	see()
+	find()
+	reject()
+	save()
+	edit()
+	send()
+	make()
+	access()
+	disapprove()
+	take()
+	reports()
 	modify()
 	get()
-	add()
 }
 class Notifications {
-	through : string
+	through
 }
 class SpecificTask {
-	Comment : string
 }
 class Project {
-	existing : string
-	ProjectManager : string
-	ProjectCompletion : string
+	existing
+	ProjectCompletion
+	modify()
 }
 class ProjectManager {
 	track()
 	plan()
 }
-class Customer {
-	UptoDate()
-}
 class Comment {
-	send()
-	correct()
-	see()
-	manage()
-	gives()
-	track()
-	make()
 	enter()
-	taken()
+	log()
+	communicate()
+	concerned()
+	talk()
+	UptoDate()
+	track()
+	create()
+	search()
 	Request()
+	approve()
+	add()
+	manage()
+	see()
+	find()
+	plan()
+	save()
+	taken()
+	edit()
+	send()
+	make()
+	correct()
+	report()
+	take()
+	gives()
 }
-Comment "1" <|-- "1" is
-Comment "1" o-- "1" SpecificTask
-Notifications "1" o-- "1" Manager
-ProjectManager "1" o-- "1" Project
-Comment "1" o-- "1" Contractor
-Customer "1" <|-- "1" is
+SpecificTask o-- Comment
+Manager o-- Notifications
+Contractor o-- Comment
+Project o-- ProjectManager
 
 @enduml

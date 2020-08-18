@@ -4,7 +4,12 @@
       "Attribute": [
         "deployed"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "deployed": [
+          "",
+          ""
+        ]
+      }
     },
     "Tipsure": {
       "Attribute": [
@@ -13,19 +18,54 @@
       ],
       "Behavior": {}
     },
+    "Tip": {
+      "Attribute": [
+        "Tipsure",
+        "TipsureNumbers",
+        "TipCalculator"
+      ],
+      "Behavior": {
+        "calculate": [
+          "",
+          "",
+          ""
+        ],
+        "split": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "use": [
+          "",
+          "",
+          ""
+        ]
+      }
+    },
     "User": {
       "Attribute": [
         "Users"
       ],
       "Behavior": {
-        "search": [
+        "add": [
+          "",
+          ""
+        ],
+        "download": [
+          "",
           ""
         ],
         "review": [
+          "",
           ""
         ],
         "have": [
           "",
+          "",
+          ""
+        ],
+        "search": [
           ""
         ],
         "submit": [
@@ -34,16 +74,10 @@
         "use": [
           ""
         ],
-        "add": [
-          ""
-        ],
         "get": [
           ""
         ],
         "reduced": [
-          ""
-        ],
-        "download": [
           ""
         ],
         "share": [
@@ -57,31 +91,21 @@
         ]
       }
     },
-    "Tip": {
-      "Attribute": [
-        "Tipsure",
-        "TipsureNumbers",
-        "TipCalculator"
-      ],
-      "Behavior": {
-        "calculate": [
-          ""
-        ],
-        "split": [
-          ""
-        ]
-      }
-    },
     "TipCalculator": {
       "Attribute": [],
       "Behavior": {
         "use": [
-          ""
-        ],
-        "calculate": [
+          "",
+          "",
+          "",
+          "",
           ""
         ],
         "split": [
+          "",
+          ""
+        ],
+        "calculate": [
           ""
         ]
       }
@@ -89,37 +113,20 @@
     "Users": {
       "Attribute": [],
       "Behavior": {
-        "lookup": [
+        "assign": [
           ""
-        ]
-      }
-    },
-    "MaximumBudget": {
-      "Attribute": [],
-      "Behavior": {
-        "500": [
+        ],
+        "lookup": [
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "is",
-        "MaximumBudget",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "Tipsure",
         "CurrentHostingProvider",
-        []
-      ],
-      [
-        "User",
-        "Users",
         []
       ],
       [
@@ -130,6 +137,11 @@
       [
         "Tip",
         "TipCalculator",
+        []
+      ],
+      [
+        "User",
+        "Users",
         []
       ]
     ]

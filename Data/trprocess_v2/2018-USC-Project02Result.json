@@ -27,10 +27,36 @@
         "ServiceProviders"
       ],
       "Behavior": {
+        "find": [
+          "",
+          ""
+        ],
+        "rate": [
+          "",
+          ""
+        ],
         "see": [
           ""
         ]
       }
+    },
+    "Discussion": {
+      "Attribute": [
+        "DiscussionBoard",
+        "DiscussionBoardOfTheSite"
+      ],
+      "Behavior": {
+        "start": [
+          "",
+          ""
+        ]
+      }
+    },
+    "Link": {
+      "Attribute": [
+        "LinksInsideOfTheBlog"
+      ],
+      "Behavior": {}
     },
     "Admin": {
       "Attribute": [
@@ -42,19 +68,6 @@
         ]
       }
     },
-    "Link": {
-      "Attribute": [
-        "LinksInsideOfTheBlog"
-      ],
-      "Behavior": {}
-    },
-    "Service": {
-      "Attribute": [
-        "ServiceProvider",
-        "ServiceProviders"
-      ],
-      "Behavior": {}
-    },
     "DiscussionBoard": {
       "Attribute": [
         "DiscussionBoardOfTheSite"
@@ -65,20 +78,21 @@
         ]
       }
     },
-    "Discussion": {
+    "Service": {
       "Attribute": [
-        "DiscussionBoard",
-        "DiscussionBoardOfTheSite"
+        "ServiceProvider",
+        "ServiceProviders"
       ],
       "Behavior": {}
     },
     "Administrator": {
       "Attribute": [],
       "Behavior": {
-        "moderate": [
+        "verify": [
+          "",
           ""
         ],
-        "verify": [
+        "moderate": [
           ""
         ],
         "view": [
@@ -103,6 +117,11 @@
         []
       ],
       [
+        "Discussion",
+        "DiscussionBoard",
+        []
+      ],
+      [
         "Admin",
         "Administrator",
         []
@@ -110,11 +129,6 @@
       [
         "Service",
         "ServiceProvider",
-        []
-      ],
-      [
-        "Discussion",
-        "DiscussionBoard",
         []
       ]
     ]

@@ -7,6 +7,9 @@
         "Deployment"
       ],
       "Behavior": {
+        "use": [
+          ""
+        ],
         "detect": [
           ""
         ]
@@ -16,58 +19,26 @@
       "Attribute": [],
       "Behavior": {
         "use": [
-          ""
-        ],
-        "make": [
-          ""
-        ]
-      }
-    },
-    "System": {
-      "Attribute": [],
-      "Behavior": {
-        "drop": [
-          ""
-        ],
-        "create": [
-          ""
-        ],
-        "use": [
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           ""
         ],
-        "turn": [
+        "go": [
           ""
         ],
-        "paste": [
-          ""
-        ],
-        "detect": [
-          ""
-        ],
-        "show": [
-          ""
-        ],
-        "7": [
-          ""
-        ],
-        "generate": [
-          ""
-        ],
-        "enforce": [
+        "make": [
+          "",
+          "",
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "be",
-        "System",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "D",

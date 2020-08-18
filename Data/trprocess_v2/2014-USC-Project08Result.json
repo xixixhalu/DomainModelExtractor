@@ -7,15 +7,28 @@
       ],
       "Behavior": {}
     },
+    "Youth": {
+      "Attribute": [
+        "YouthService",
+        "YouthUser"
+      ],
+      "Behavior": {
+        "upload": [
+          ""
+        ],
+        "manage": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "access": [
+          ""
+        ]
+      }
+    },
     "Kids": {
       "Attribute": [
-        "KidsInformation"
-      ],
-      "Behavior": {}
-    },
-    "Kid": {
-      "Attribute": [
-        "Kids",
         "KidsInformation"
       ],
       "Behavior": {}
@@ -29,12 +42,38 @@
       ],
       "Behavior": {}
     },
+    "Kid": {
+      "Attribute": [
+        "Kids",
+        "KidsInformation"
+      ],
+      "Behavior": {}
+    },
     "CaseManager": {
       "Attribute": [
         "CaseManagerAccess"
       ],
       "Behavior": {
         "run": [
+          "",
+          ""
+        ],
+        "create": [
+          "",
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "Email": [
+          "",
+          "",
+          ""
+        ],
+        "manage": [
+          "",
+          "",
+          "",
           ""
         ],
         "save": [
@@ -45,31 +84,7 @@
         "upload": [
           ""
         ],
-        "create": [
-          ""
-        ],
         "monitor": [
-          ""
-        ],
-        "manage": [
-          "",
-          ""
-        ],
-        "Email": [
-          ""
-        ]
-      }
-    },
-    "Youth": {
-      "Attribute": [
-        "YouthService",
-        "YouthUser"
-      ],
-      "Behavior": {
-        "have": [
-          ""
-        ],
-        "access": [
           ""
         ]
       }
@@ -78,6 +93,7 @@
       "Attribute": [],
       "Behavior": {
         "access": [
+          "",
           ""
         ]
       }
@@ -94,8 +110,8 @@
   "relationship_dict": {
     "aggregation": [
       [
-        "Kid",
-        "Kids",
+        "Youth",
+        "YouthUser",
         []
       ],
       [
@@ -114,13 +130,13 @@
         []
       ],
       [
-        "CaseManager",
-        "CaseManagerAccess",
+        "Kid",
+        "Kids",
         []
       ],
       [
-        "Youth",
-        "YouthUser",
+        "CaseManager",
+        "CaseManagerAccess",
         []
       ]
     ]

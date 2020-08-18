@@ -7,12 +7,59 @@
         "LinkedinInformation",
         "Profile",
         "Profile",
-        "Area",
-        "am",
-        "be",
-        "is"
+        "Area"
       ],
       "Behavior": {
+        "see": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "create": [
+          "",
+          "",
+          ""
+        ],
+        "find": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "works": [
+          "",
+          ""
+        ],
+        "comment": [
+          "",
+          ""
+        ],
+        "part": [
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          ""
+        ],
+        "search": [
+          "",
+          "",
+          ""
+        ],
+        "want": [
+          "",
+          "",
+          ""
+        ],
         "upload": [
           ""
         ],
@@ -23,18 +70,7 @@
         "receive": [
           ""
         ],
-        "see": [
-          "",
-          "",
-          "",
-          "",
-          ""
-        ],
         "share": [
-          ""
-        ],
-        "search": [
-          "",
           ""
         ],
         "connect": [
@@ -63,26 +99,10 @@
         "write": [
           ""
         ],
-        "create": [
-          "",
-          ""
-        ],
-        "find": [
-          "",
-          "",
-          "",
-          ""
-        ],
-        "want": [
-          ""
-        ],
         "work": [
           ""
         ],
         "interested": [
-          ""
-        ],
-        "comment": [
           ""
         ],
         "think": [
@@ -92,12 +112,6 @@
           ""
         ],
         "join": [
-          ""
-        ],
-        "able": [
-          ""
-        ],
-        "part": [
           ""
         ],
         "leave": [
@@ -125,7 +139,12 @@
         "Activites",
         "ConnectionRequest"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "cancel": [
+          "",
+          ""
+        ]
+      }
     },
     "Activites": {
       "Attribute": [
@@ -140,37 +159,18 @@
       ],
       "Behavior": {
         "create": [
+          "",
+          "",
           ""
-        ]
-      }
-    },
-    "MaxBudget": {
-      "Attribute": [],
-      "Behavior": {
-        "300": [
+        ],
+        "add/update/delete": [
+          "",
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "is",
-        "MaxBudget",
-        []
-      ],
-      [
-        "is",
-        "User",
-        []
-      ],
-      [
-        "'s",
-        "User",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "User",

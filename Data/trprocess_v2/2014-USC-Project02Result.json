@@ -7,6 +7,7 @@
       ],
       "Behavior": {
         "extract": [
+          "",
           ""
         ]
       }
@@ -44,15 +45,20 @@
       ],
       "Behavior": {
         "import": [
+          "",
+          "",
           ""
         ],
         "update/add": [
-          ""
-        ],
-        "related": [
+          "",
+          "",
           ""
         ],
         "integrate": [
+          "",
+          ""
+        ],
+        "related": [
           ""
         ],
         "is": [
@@ -80,14 +86,30 @@
         "Customer-facingPortal"
       ],
       "Behavior": {
+        "have": [
+          "",
+          ""
+        ],
+        "interfaces": [
+          ""
+        ],
+        "SportechB.IContractors": [
+          ""
+        ],
+        "Customer-facingPortal": [
+          ""
+        ],
+        "import": [
+          "",
+          ""
+        ],
         "ingest": [
+          "",
           ""
         ],
         "see": [
           "",
-          ""
-        ],
-        "import": [
+          "",
           ""
         ],
         "update/add": [
@@ -105,36 +127,6 @@
         "PlayerInformation"
       ],
       "Behavior": {}
-    },
-    "Picture": {
-      "Attribute": [
-        "Pictures"
-      ],
-      "Behavior": {}
-    },
-    "Webcrawler": {
-      "Attribute": [
-        "WebcrawlerApp",
-        "WebcrawlerFunctionality",
-        "be"
-      ],
-      "Behavior": {
-        "able": [
-          ""
-        ],
-        "visit": [
-          ""
-        ],
-        "extract": [
-          ""
-        ],
-        "generate": [
-          ""
-        ],
-        "check": [
-          ""
-        ]
-      }
     },
     "I": {
       "Attribute": [
@@ -155,12 +147,44 @@
         ]
       }
     },
+    "Picture": {
+      "Attribute": [
+        "Pictures"
+      ],
+      "Behavior": {}
+    },
+    "Webcrawler": {
+      "Attribute": [
+        "WebcrawlerApp",
+        "WebcrawlerFunctionality"
+      ],
+      "Behavior": {
+        "able": [
+          "",
+          ""
+        ],
+        "visit": [
+          ""
+        ],
+        "extract": [
+          ""
+        ],
+        "generate": [
+          ""
+        ],
+        "check": [
+          ""
+        ]
+      }
+    },
     "kind": {
       "Attribute": [
         "kinds"
       ],
       "Behavior": {
         "have": [
+          "",
+          "",
           ""
         ],
         "allows": [
@@ -186,40 +210,21 @@
         ]
       }
     },
-    "types": {
-      "Attribute": [
-        "are"
-      ],
-      "Behavior": {
-        "ingested": [
-          ""
-        ]
-      }
-    },
     "Gm/coach": {
       "Attribute": [],
       "Behavior": {
         "extract": [
+          "",
           ""
         ],
         "visualize": [
+          "",
           ""
         ],
         "build": [
           ""
         ],
         "make": [
-          ""
-        ]
-      }
-    },
-    "One": {
-      "Attribute": [],
-      "Behavior": {
-        "SportechB.IContractors": [
-          ""
-        ],
-        "have": [
           ""
         ]
       }
@@ -248,7 +253,11 @@
     "Information": {
       "Attribute": [],
       "Behavior": {
+        "drag": [
+          ""
+        ],
         "is": [
+          "",
           ""
         ]
       }
@@ -261,18 +270,27 @@
         ]
       }
     },
-    "It": {
+    "types": {
       "Attribute": [],
       "Behavior": {
-        "ingest": [
+        "learn": [
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          ""
+        ],
+        "ingested": [
+          "",
           ""
         ]
       }
     },
-    "Second": {
+    "It": {
       "Attribute": [],
       "Behavior": {
-        "Customer-facingPortal": [
+        "ingest": [
           ""
         ]
       }
@@ -284,26 +302,13 @@
           ""
         ]
       }
+    },
+    "WebcrawlerFunctionality": {
+      "Attribute": [],
+      "Behavior": {}
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "are",
-        "types",
-        []
-      ],
-      [
-        "be",
-        "One",
-        []
-      ],
-      [
-        "be",
-        "Second",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "Gm",
@@ -346,11 +351,6 @@
         []
       ],
       [
-        "Webcrawler",
-        "WebcrawlerApp",
-        []
-      ],
-      [
         "I",
         "Information",
         []
@@ -358,6 +358,16 @@
       [
         "I",
         "It",
+        []
+      ],
+      [
+        "Webcrawler",
+        "WebcrawlerApp",
+        []
+      ],
+      [
+        "Webcrawler",
+        "WebcrawlerFunctionality",
         []
       ],
       [
@@ -383,6 +393,11 @@
       [
         "Web",
         "Webcraweler",
+        []
+      ],
+      [
+        "Web",
+        "WebcrawlerFunctionality",
         []
       ]
     ]

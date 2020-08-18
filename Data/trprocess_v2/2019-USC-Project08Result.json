@@ -7,10 +7,11 @@
         "Doctors"
       ],
       "Behavior": {
-        "modify": [
+        "get": [
+          "",
           ""
         ],
-        "get": [
+        "modify": [
           ""
         ],
         "register/enroll": [
@@ -26,10 +27,11 @@
         "Reminders"
       ],
       "Behavior": {
-        "receive": [
+        "indicate": [
+          "",
           ""
         ],
-        "indicate": [
+        "receive": [
           ""
         ],
         "completed": [
@@ -55,10 +57,18 @@
         "PatientsHealth"
       ],
       "Behavior": {
-        "get": [
+        "use": [
+          ""
+        ],
+        "add/remove": [
+          "",
           ""
         ],
         "have": [
+          "",
+          ""
+        ],
+        "get": [
           ""
         ],
         "miss": [
@@ -83,39 +93,44 @@
         "DietaryConstraints",
         "Patients",
         "PatientsHealth",
-        "PatientUser",
-        "be",
-        "be",
-        "be",
-        "be",
-        "be"
+        "PatientUser"
       ],
       "Behavior": {
-        "completed": [
+        "check": [
           ""
         ],
-        "update": [
+        "NurseEtc": [
           ""
         ],
         "get": [
           "",
           "",
           "",
-          ""
-        ],
-        "have": [
+          "",
           "",
           ""
         ],
-        "save": [
+        "snooze": [
+          "",
+          ""
+        ],
+        "understandable": [
           ""
         ],
         "see": [
           "",
           "",
+          "",
           ""
         ],
-        "took": [
+        "need": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "register/enroll": [
+          "",
           ""
         ],
         "able": [
@@ -123,6 +138,34 @@
           "",
           "",
           "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "save": [
+          "",
+          ""
+        ],
+        "books/cancels/reschedules": [
+          "",
+          ""
+        ],
+        "add": [
+          "",
+          ""
+        ],
+        "completed": [
+          ""
+        ],
+        "update": [
+          ""
+        ],
+        "have": [
+          "",
+          ""
+        ],
+        "took": [
           ""
         ],
         "take": [
@@ -132,16 +175,7 @@
         "do": [
           ""
         ],
-        "books/cancels/reschedules": [
-          ""
-        ],
         "book/cancel/reschedule": [
-          ""
-        ],
-        "add": [
-          ""
-        ],
-        "snooze": [
           ""
         ],
         "dismiss": [
@@ -151,9 +185,6 @@
           ""
         ],
         "track": [
-          ""
-        ],
-        "need": [
           ""
         ],
         "compare": [
@@ -182,6 +213,9 @@
       ],
       "Behavior": {
         "use": [
+          "",
+          "",
+          "",
           ""
         ]
       }
@@ -192,6 +226,40 @@
       ],
       "Behavior": {
         "book/cancel/reschedule": [
+          "",
+          ""
+        ],
+        "books/cancels/reschedules": [
+          "",
+          "",
+          ""
+        ]
+      }
+    },
+    "DoctorUser": {
+      "Attribute": [],
+      "Behavior": {
+        "check": [
+          ""
+        ],
+        "view": [
+          ""
+        ]
+      }
+    },
+    "DietaryConstraints": {
+      "Attribute": [],
+      "Behavior": {
+        "see": [
+          ""
+        ],
+        "need": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "take": [
           ""
         ]
       }
@@ -214,40 +282,18 @@
           ""
         ]
       }
-    },
-    "DoctorUser": {
-      "Attribute": [],
-      "Behavior": {
-        "check": [
-          ""
-        ],
-        "view": [
-          ""
-        ]
-      }
-    },
-    "DietaryConstraints": {
-      "Attribute": [],
-      "Behavior": {
-        "need": [
-          ""
-        ],
-        "take": [
-          ""
-        ]
-      }
     }
   },
   "relationship_dict": {
     "aggregation": [
       [
         "Doctor",
-        "PatientsHealth",
+        "DoctorUser",
         []
       ],
       [
         "Doctor",
-        "DoctorUser",
+        "PatientsHealth",
         []
       ],
       [
@@ -277,12 +323,12 @@
       ],
       [
         "Patient",
-        "PatientsHealth",
+        "DietaryConstraints",
         []
       ],
       [
         "Patient",
-        "DietaryConstraints",
+        "PatientsHealth",
         []
       ],
       [

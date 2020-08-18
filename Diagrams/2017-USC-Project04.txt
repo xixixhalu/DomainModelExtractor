@@ -1,92 +1,116 @@
 @startuml
 hide circle
 class User {
-	Friends : string
-	Friends : string
-	ChallengeScore : string
-	Rank : string
-	"PreviousPageB/c" : string
-	Photos : string
-	Photo : string
-	Users : string
-	am : string
+	"PreviousPageB/c"
+	Rank
+	check()
+	able()
+	receive()
+	submit()
+	left()
+	add()
 	see()
-	send()
-	get()
-	try()
-	give()
+	Chance()
+	invite()
+	Reward()
 	sent()
+	preview()
+	use()
+	have()
+	finished()
+	send()
+	try()
+	know()
+	challenge()
 	verify()
 	posted()
-	Reward()
-	finished()
-	check()
-	have()
-	invite()
-	use()
-	receive()
-	able()
-	do()
-	play()
-	Chance()
 	click()
-	add()
+	play()
+	give()
+	do()
 	pick()
-	preview()
-	submit()
-	know()
+	get()
 }
 class Challenge {
-	completed : string
-	upcoming : string
-	ChallengeRequest : string
-	ChallengeNotification : string
-	Challenges : string
-	ChallengeScore : string
-	ChallengerList : string
-	Challengers : string
-	ChallengePage : string
-	"Challenge-relatedPosts" : string
-	ChallengeTask : string
-	ChallengeGame : string
+	ChallengeTask
+	ChallengeGame
+	upcoming
+	ChallengePage
+	ChallengeRequest
+	ChallengerList
+	ChallengeNotification
+	completed
+	"Challenge-relatedPosts"
+	finished()
+	check()
+	participate()
 }
 class Challenges {
-	upcoming : string
+	upcoming
 	see()
 }
 class Users {
-	registered : string
+	registered
 }
 class Photos {
-	Text : string
+	Text
 }
 class Game {
-	see : string
+	see
 }
 class Page {
-	Game : string
-}
-class App {
-	Application : string
 }
 class Photo {
-	"Photo/video" : string
-	Photos : string
+	"Photo/video"
 	post()
+}
+class App {
+}
+class Friends {
+	invite()
+}
+class ChallengeScore {
+	use()
 }
 class Challengers {
 	challenged()
 }
 class Application {
+	check()
+	able()
+	receive()
+	see()
+	Chance()
+	invite()
+	prepare()
+	use()
 	improve()
+	compete()
+	select()
+	post()
+	send()
+	view()
+	buy()
+	challenged()
+	challenge()
+	verify()
+	click()
+	play()
+	give()
+	do()
+	pick()
+	get()
 }
-Application "1" o-- "1" App
-Photos "1" o-- "1" User
-Photos "1" o-- "1" Photo
-Photo "1" o-- "1" User
-Challenges "1" o-- "1" Challenge
-Challengers "1" o-- "1" Challenge
-Game "1" o-- "1" Page
-Users "1" o-- "1" User
+Page o-- Game
+User o-- Friends
+Photo o-- Photos
+User o-- ChallengeScore
+User o-- Users
+App o-- Application
+Challenge o-- Challenges
+User o-- Photos
+Challenge o-- ChallengeScore
+User o-- Photo
+Challenge o-- Challengers
 
 @enduml

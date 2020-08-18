@@ -1,150 +1,161 @@
 @startuml
 hide circle
 class Mentee {
-	Criteria : string
-	Password : string
-	"PersonalInformation/contactDetails" : string
-	Details : string
-	Profile : string
-	Mentees : string
-	MenteesTrainings : string
-	MenteeRequests : string
-	"Mentee/mentor" : string
-	be : string
-	be : string
-	be : string
-	be : string
-	select()
+	"PersonalInformation/contactDetails"
+	MenteesTrainings
+	Profile
+	Criteria
+	Password
+	Details
 	reset()
+	select()
 	able()
 	see()
-	send()
 	update()
+	send()
 	upload()
 }
 class Mentor {
-	Mentee : string
-	Criteria : string
-	Mentee : string
-	Password : string
-	TrainingPhaseActivities : string
-	Availability : string
-	PersonalInformation : string
-	Details : string
-	Interactions : string
-	Mentee : string
-	Mentors : string
-	MentorshipProcess : string
-	be : string
-	be : string
-	be : string
-	be : string
-	be : string
-	be : string
-	be : string
-	select()
-	provide()
-	able()
-	create()
-	update()
-	track()
-	submit()
+	Availability
+	Password
+	Interactions
+	Criteria
+	TrainingPhaseActivities
+	MentorshipProcess
+	Details
 	reset()
+	mark()
+	select()
+	able()
+	includes()
+	report()
+	update()
+	register()
+	submit()
 	monitor()
 	accept()
-	mark()
-	register()
-	report()
+	track()
+	create()
+	provide()
+	establish()
 }
 class Requests {
-	based : string
+	based
 }
 class their {
-	Requests : string
-	MonthlyReport : string
 }
 class MonthlyBasis {
-	provide : string
+	provide
 }
 class Mentees {
-	Statistics : string
-	MenteesTrainings : string
-	be : string
-	able()
-	select()
-}
-class MonthlyReport {
-	MonthlyReports : string
-}
-class Mentors {
-	MentorshipProcess : string
+	MenteesTrainings
+	Statistics
 	ask()
-}
-class ActivityReport {
-	ActivityReports : string
-}
-class Admin {
-	Administrator : string
-	be : string
-	be : string
-	be : string
-	be : string
-	be : string
-	be : string
-	be : string
-	able()
-	view()
-	export()
-	send()
-	"delete/deactivate"()
 	track()
-	get()
-	assign()
-	update()
-	match()
-}
-class Request {
-	Requests : string
+	select()
+	able()
 }
 class PersonalInformation {
-	"PersonalInformation/contactDetails" : string
-	update()
+	"PersonalInformation/contactDetails"
+	able()
 	includes()
+	update()
+}
+class Request {
+	able()
+	send()
 }
 class Month {
-	MonthlyBasis : string
-	MonthlyReport : string
-	MonthlyReports : string
+	MonthlyReports
 }
-class Administrator {
-	be : string
+class ActivityReport {
+	provide()
+}
+class Admin {
+	view()
+	assign()
 	able()
+	missed()
+	update()
+	export()
+	send()
+	match()
+	track()
 	get()
+	timely()
+	"delete/deactivate"()
+}
+class MonthlyReport {
+	MonthlyReports
+	missed()
+}
+class Mentors {
+	MentorshipProcess
+	ask()
+	assign()
+	able()
+	match()
 }
 class MenteeRequests {
 	accept()
+	able()
 	establish()
 }
 class ActivityReports {
+	view()
 	timely()
 }
-class Mentee/mentor {
-	establish()
-	includes()
-	opt()
+class Administrator {
+	able()
+	get()
 }
-ActivityReports "1" o-- "1" ActivityReport
-Mentors "1" o-- "1" Mentor
-Administrator "1" o-- "1" Admin
-"Mentee/mentor" "1" o-- "1" Mentee
-PersonalInformation "1" o-- "1" Mentor
-Mentee "1" o-- "1" Mentor
-Requests "1" o-- "1" Request
-Requests "1" o-- "1" their
-MenteeRequests "1" o-- "1" Mentee
-MonthlyBasis "1" o-- "1" Month
-MonthlyReport "1" o-- "1" their
-MonthlyReport "1" o-- "1" Month
-Mentees "1" o-- "1" Mentee
+class Mentee/mentor {
+	able()
+	submit()
+	upload()
+	track()
+	create()
+	load()
+	see()
+	update()
+	integrate()
+	display()
+	monitor()
+	match()
+	assign()
+	opt()
+	select()
+	register()
+	ask()
+	access()
+	report()
+	provide()
+	establish()
+	"delete/deactivate"()
+	reset()
+	view()
+	mark()
+	includes()
+	export()
+	store()
+	shown()
+	navigate()
+	accept()
+	render()
+	get()
+}
+Month o-- MonthlyBasis
+Mentor o-- PersonalInformation
+Month o-- MonthlyReport
+Mentor o-- Mentors
+Mentee o-- Mentees
+ActivityReport o-- ActivityReports
+their o-- Requests
+Mentee o-- MenteeRequests
+Admin o-- Administrator
+their o-- MonthlyReport
+Mentee o-- "Mentee/mentor"
+Request o-- Requests
+Mentor o-- Mentee
 
 @enduml

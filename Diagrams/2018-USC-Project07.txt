@@ -1,58 +1,64 @@
 @startuml
 hide circle
 class User {
-	Progress : string
-	LevelsProgress : string
-	Score : string
-	Progress : string
-	Preference : string
-	Scores : string
-	Progress : string
-	UserInterface : string
-	am : string
-	am : string
-	am : string
-	am : string
-	am : string
-	be : string
-	be : string
-	be : string
-	be : string
-	track()
-	able()
-	sign()
-	switch()
-	keep()
-	share()
-	erase()
-	start()
-	change()
-	check()
-	cheat()
-	download()
-	install()
+	Preference
+	LevelsProgress
+	Scores
+	Progress
 	purchase()
-	practice()
+	check()
+	able()
+	keep()
+	remove()
 	have()
-}
-class FullVersion {
-	FullVersionOfTheApplication : string
+	install()
+	download()
+	share()
+	sign()
+	track()
+	start()
+	cheat()
+	switch()
+	practice()
+	change()
+	erase()
 }
 class Score {
-	Scores : string
+	Scores
+	share()
+	able()
 }
-class UserInterface {
-	be : string
-	consistent()
+class FullVersion {
 }
 class FullVersionOfTheApplication {
-	design()
-	draw()
 	purchase()
+	able()
 	remove()
 }
-FullVersionOfTheApplication "1" o-- "1" FullVersion
-UserInterface "1" o-- "1" User
-Score "1" o-- "1" User
+class UserInterface {
+	check()
+	able()
+	publish()
+	track()
+	purchase()
+	see()
+	design()
+	share()
+	cheat()
+	switch()
+	practice()
+	draw()
+	have()
+	consistent()
+	start()
+	erase()
+	keep()
+	remove()
+	used()
+	change()
+}
+User o-- Score
+User o-- UserInterface
+FullVersion o-- FullVersionOfTheApplication
 
 @enduml

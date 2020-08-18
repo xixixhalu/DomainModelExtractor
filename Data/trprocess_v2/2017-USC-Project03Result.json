@@ -4,15 +4,22 @@
       "Attribute": [
         "Information",
         "Swimmer",
-        "Kid",
-        "be"
+        "Kid"
       ],
       "Behavior": {
-        "expect": [
+        "sign": [
+          ""
+        ],
+        "allow": [
           "",
           ""
         ],
         "see": [
+          "",
+          "",
+          ""
+        ],
+        "expect": [
           "",
           ""
         ],
@@ -25,34 +32,36 @@
       "Attribute": [
         "Account",
         "Kid",
-        "KidsAccount",
-        "be",
-        "be",
-        "be",
-        "be",
-        "be",
-        "be"
+        "KidsAccount"
       ],
       "Behavior": {
+        "pay": [
+          "",
+          ""
+        ],
         "able": [
           "",
           "",
           "",
           "",
           "",
-          ""
-        ],
-        "login": [
+          "",
+          "",
+          "",
+          "",
           "",
           ""
         ],
         "see": [
-          ""
-        ],
-        "pay": [
+          "",
           ""
         ],
         "view": [
+          "",
+          "",
+          ""
+        ],
+        "login": [
           "",
           ""
         ],
@@ -69,14 +78,44 @@
         "Account",
         "KidsAccount"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "sign": [
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          ""
+        ]
+      }
     },
     "Events": {
       "Attribute": [
         "signed",
         "EventsPost"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "see": [
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "allow": [
+          "",
+          ""
+        ],
+        "edit": [
+          ""
+        ],
+        "signup": [
+          ""
+        ]
+      }
     },
     "his": {
       "Attribute": [
@@ -102,17 +141,13 @@
         "EventsPost",
         "EventDeadline"
       ],
-      "Behavior": {}
-    },
-    "Information": {
-      "Attribute": [
-        "is"
-      ],
       "Behavior": {
-        "review": [
+        "view": [
+          "",
           ""
         ],
-        "secure": [
+        "able": [
+          "",
           ""
         ]
       }
@@ -120,7 +155,29 @@
     "Swimmer": {
       "Attribute": [],
       "Behavior": {
+        "expect": [
+          ""
+        ],
+        "see": [
+          ""
+        ],
         "sign": [
+          ""
+        ]
+      }
+    },
+    "Information": {
+      "Attribute": [],
+      "Behavior": {
+        "review": [
+          "",
+          "",
+          ""
+        ],
+        "expect": [
+          ""
+        ],
+        "secure": [
           ""
         ]
       }
@@ -135,12 +192,12 @@
       ],
       [
         "User",
-        "Information",
+        "Swimmer",
         []
       ],
       [
         "User",
-        "Swimmer",
+        "Information",
         []
       ],
       [

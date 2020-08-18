@@ -1,32 +1,30 @@
 @startuml
 hide circle
 class JobSeeker {
-	SocialNetwork : string
-	LoginCredentials : string
-	search()
-	save()
+	LoginCredentials
 	mark()
-	see()
-	contact()
-	create()
-	subscribe()
-	email()
-	browse()
 	unsubscribe()
 	select()
+	see()
+	subscribe()
+	contact()
+	email()
+	browse()
+	create()
+	save()
+	search()
 }
 class SocialNetwork {
-	SocialNetworkFriend : string
-	SocialNetworkContact : string
 }
 class SocialNetworkFriend {
 	refer()
+	have()
 }
 class SocialNetworkContact {
 	provide()
 }
-SocialNetworkFriend "1" o-- "1" SocialNetwork
-SocialNetworkContact "1" o-- "1" SocialNetwork
-SocialNetwork "1" o-- "1" JobSeeker
+SocialNetwork o-- SocialNetworkFriend
+SocialNetwork o-- SocialNetworkContact
+JobSeeker o-- SocialNetwork
 
 @enduml

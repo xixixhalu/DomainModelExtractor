@@ -1,89 +1,5 @@
 {
   "class_dict": {
-    "Consumer": {
-      "Attribute": [
-        "Occasion",
-        "Orders",
-        "Experiences",
-        "Orders",
-        "OrderHistory",
-        "Needs",
-        "Consumers",
-        "is"
-      ],
-      "Behavior": {
-        "place": [
-          "",
-          "",
-          ""
-        ],
-        "search": [
-          "",
-          ""
-        ],
-        "have": [
-          "",
-          "",
-          "",
-          ""
-        ],
-        "track": [
-          ""
-        ],
-        "make": [
-          "",
-          ""
-        ],
-        "Go": [
-          ""
-        ],
-        "schedule": [
-          ""
-        ],
-        "talk": [
-          ""
-        ],
-        "rank": [
-          ""
-        ],
-        "review": [
-          ""
-        ],
-        "share": [
-          ""
-        ],
-        "view": [
-          ""
-        ],
-        "chat": [
-          ""
-        ],
-        "receive": [
-          ""
-        ],
-        "cancel": [
-          ""
-        ],
-        "satisfied": [
-          ""
-        ],
-        "check": [
-          ""
-        ],
-        "bought": [
-          ""
-        ],
-        "wants": [
-          ""
-        ],
-        "get": [
-          ""
-        ],
-        "want": [
-          ""
-        ]
-      }
-    },
     "Flowerseeker": {
       "Attribute": [
         "Profile",
@@ -95,7 +11,11 @@
       "Attribute": [
         "Flowerseeker"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "picking": [
+          ""
+        ]
+      }
     },
     "Product": {
       "Attribute": [
@@ -104,14 +24,8 @@
       ],
       "Behavior": {
         "rank": [
-          ""
-        ]
-      }
-    },
-    "it": {
-      "Attribute": [],
-      "Behavior": {
-        "OutOfDelivery": [
+          "",
+          "",
           ""
         ]
       }
@@ -120,6 +34,12 @@
       "Attribute": [],
       "Behavior": {
         "provide": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "satisfied": [
           ""
         ],
         "confirm": [
@@ -129,18 +49,6 @@
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "'m",
-        "Consumer",
-        []
-      ],
-      [
-        "is",
-        "it",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "Flowers",

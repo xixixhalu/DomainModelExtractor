@@ -1,77 +1,89 @@
 @startuml
 hide circle
 class Hashtag {
-	specify : string
-	HashtagHolder : string
-	reserve()
+	specify
+	allow()
 	associated()
+	reserve()
 }
 class Posts {
-	browse : string
-	public : string
+	public
+	browse
 }
 class Users {
-	UsersBrowserPictures : string
-	are : string
+	UsersBrowserPictures
+	prevent()
+	allow()
+	post()
+	like()
+	uploaded()
 	FlagPictures()
-	tag()
-	download()
 	delete()
+	download()
 	interested()
+	tag()
+}
+class Administrator {
+	close()
+	continue()
+	allow()
 }
 class Post {
-	Posts : string
 }
 class Picture {
-	Pictures : string
-	PicturesOfThisHashtag : string
-	PictureFunction : string
+	PicturesOfThisHashtag
+	PictureFunction
+	delete()
+	allow()
+	start()
 	upload()
 }
 class Pictures {
-	PicturesOfThisHashtag : string
-	is : string
-	upload()
-	associated()
+	PicturesOfThisHashtag
+	allow()
 	inappropriate()
+	remove()
+	post()
+	associated()
+	delete()
+	download()
+	want()
+	posting()
+	upload()
+	tag()
 }
 class User {
-	Users : string
-	UsersBrowserPictures : string
-	UserPressCameraShutter : string
-	UserProfile : string
-	UserDeletes : string
-	UserImportFriends : string
+	UserProfile
+	UserPressCameraShutter
+	UserImportFriends
+	UsersBrowserPictures
 	allow()
-	reserve()
-	delete()
-	hit()
-	want()
-	upload()
-	start()
 	Photos()
-}
-class Administrator {
-	"Administrators/maintainers/moderators" : string
-	allow()
-	close()
-}
-class HashtagHolder {
 	delete()
-}
-class Administrators/maintainers/moderators {
-	remove()
+	want()
+	start()
+	upload()
+	provide()
+	reserve()
+	hit()
 }
 class UserDeletes {
 	picture()
 }
-Posts "1" o-- "1" Post
-Pictures "1" o-- "1" Picture
-Users "1" o-- "1" User
-Pictures "1" <|-- "1" is
-UserDeletes "1" o-- "1" User
-Users "1" <|-- "1" are
-"Administrators/maintainers/moderators" "1" o-- "1" Administrator
-HashtagHolder "1" o-- "1" Hashtag
+class HashtagHolder {
+	delete()
+	allow()
+	inappropriate()
+}
+class Administrators/maintainers/moderators {
+	allow()
+	remove()
+}
+User o-- Users
+Administrator o-- "Administrators/maintainers/moderators"
+Hashtag o-- HashtagHolder
+User o-- UserDeletes
+Post o-- Posts
+Picture o-- Pictures
 
 @enduml

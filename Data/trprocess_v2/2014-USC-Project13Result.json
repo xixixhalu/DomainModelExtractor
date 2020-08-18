@@ -6,6 +6,11 @@
       ],
       "Behavior": {
         "add": [
+          "",
+          ""
+        ],
+        "able": [
+          "",
           ""
         ]
       }
@@ -16,22 +21,27 @@
         "Username/email"
       ],
       "Behavior": {
+        "select": [
+          "",
+          ""
+        ],
         "add": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "choose": [
           "",
           "",
           ""
         ],
         "turn": [
           "",
-          ""
-        ],
-        "select": [
+          "",
           ""
         ],
         "have": [
-          ""
-        ],
-        "choose": [
           ""
         ]
       }
@@ -42,24 +52,19 @@
       ],
       "Behavior": {
         "provide/revoke": [
+          "",
+          "",
           ""
         ]
       }
     },
     "AccessControl": {
-      "Attribute": [
-        "is"
-      ],
-      "Behavior": {
-        "limited": [
-          ""
-        ]
-      }
-    },
-    "MaximumBudget": {
       "Attribute": [],
       "Behavior": {
-        "500": [
+        "assign": [
+          ""
+        ],
+        "limited": [
           ""
         ]
       }
@@ -67,49 +72,18 @@
     "Username/email": {
       "Attribute": [],
       "Behavior": {
+        "choose": [
+          "",
+          "",
+          ""
+        ],
         "log": [
-          ""
-        ]
-      }
-    },
-    "ResponseTimeOfTheSystem": {
-      "Attribute": [],
-      "Behavior": {
-        "assign": [
-          "",
-          ""
-        ],
-        "add": [
-          "",
-          "",
-          ""
-        ],
-        "select": [
-          ""
-        ],
-        "have": [
-          "",
-          ""
-        ],
-        "Seconds": [
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "is",
-        "MaximumBudget",
-        []
-      ],
-      [
-        "be",
-        "ResponseTimeOfTheSystem",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "User",

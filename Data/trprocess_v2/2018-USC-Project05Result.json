@@ -4,15 +4,48 @@
       "Attribute": [
         "Username",
         "RecipeList",
-        "Username",
-        "be",
-        "be",
-        "be",
-        "be",
-        "be",
-        "be"
+        "Username"
       ],
       "Behavior": {
+        "display": [
+          ""
+        ],
+        "contains": [
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "want": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "like": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "replace": [
+          "",
+          ""
+        ],
         "browse": [
           ""
         ],
@@ -20,9 +53,6 @@
           ""
         ],
         "delete": [
-          ""
-        ],
-        "want": [
           ""
         ],
         "add": [
@@ -43,23 +73,7 @@
         "earn": [
           ""
         ],
-        "like": [
-          "",
-          "",
-          ""
-        ],
-        "able": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ],
         "share": [
-          ""
-        ],
-        "replace": [
           ""
         ],
         "send": [
@@ -107,6 +121,21 @@
         "RecipeList"
       ],
       "Behavior": {
+        "able": [
+          "",
+          "",
+          ""
+        ],
+        "check": [
+          ""
+        ],
+        "view": [
+          "",
+          ""
+        ],
+        "share": [
+          ""
+        ],
         "contains": [
           ""
         ]
@@ -122,12 +151,19 @@
         "AppropriateRewards",
         "ApplePay"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "log": [
+          "",
+          ""
+        ]
+      }
     },
     "ApplePay": {
       "Attribute": [],
       "Behavior": {
         "canuse": [
+          "",
+          "",
           ""
         ],
         "purchase": [

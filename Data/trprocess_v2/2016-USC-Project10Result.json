@@ -10,6 +10,7 @@
       ],
       "Behavior": {
         "take": [
+          "",
           ""
         ],
         "provide": [
@@ -28,18 +29,22 @@
         "Youth",
         "Cases",
         "Cases",
-        "CaseManagers",
-        "be"
+        "CaseManagers"
       ],
       "Behavior": {
+        "see": [
+          "",
+          ""
+        ],
+        "contact": [
+          "",
+          ""
+        ],
         "add": [
           ""
         ],
         "view": [
           "",
-          ""
-        ],
-        "see": [
           ""
         ],
         "review": [
@@ -72,6 +77,15 @@
         "Users"
       ],
       "Behavior": {
+        "send": [
+          ""
+        ],
+        "trying": [
+          "",
+          "",
+          "",
+          ""
+        ],
         "create": [
           ""
         ],
@@ -79,9 +93,6 @@
           ""
         ],
         "recover": [
-          ""
-        ],
-        "trying": [
           ""
         ],
         "log": [
@@ -93,27 +104,21 @@
       "Attribute": [
         "needed"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "activate": [
+          "",
+          ""
+        ]
+      }
     },
     "Users": {
       "Attribute": [
         "LogInformation"
       ],
-      "Behavior": {}
-    },
-    "System": {
-      "Attribute": [
-        "SystemSecurity",
-        "SystemDesign/structure"
-      ],
       "Behavior": {
-        "send": [
-          ""
-        ],
         "log": [
-          ""
-        ],
-        "record": [
+          "",
+          "",
           ""
         ]
       }
@@ -122,7 +127,33 @@
       "Attribute": [
         "ProfileOfAnyUser"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "view": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    },
+    "System": {
+      "Attribute": [
+        "SystemSecurity",
+        "SystemDesign/structure"
+      ],
+      "Behavior": {
+        "send": [
+          "",
+          ""
+        ],
+        "log": [
+          "",
+          ""
+        ],
+        "record": [
+          ""
+        ]
+      }
     },
     "Case": {
       "Attribute": [
@@ -130,12 +161,18 @@
         "CaseManagers",
         "Cases"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "transfer": [
+          "",
+          ""
+        ]
+      }
     },
     "SystemDesign/structure": {
       "Attribute": [],
       "Behavior": {
         "increase": [
+          "",
           ""
         ],
         "allow": [

@@ -1,49 +1,44 @@
 @startuml
 hide circle
 class CurrentHostingProvider {
-	deployed : string
+	deployed
+	deployed()
 }
 class Tipsure {
-	CurrentHostingProvider : string
-	TipsureNumbers : string
-}
-class User {
-	Users : string
-	search()
-	review()
-	have()
-	submit()
-	use()
-	add()
-	get()
-	reduced()
-	download()
-	share()
-	like()
-	see()
+	TipsureNumbers
 }
 class Tip {
-	Tipsure : string
-	TipsureNumbers : string
-	TipCalculator : string
-	calculate()
+	TipsureNumbers
+	use()
 	split()
+	calculate()
+}
+class User {
+	have()
+	see()
+	reduced()
+	like()
+	submit()
+	review()
+	download()
+	share()
+	use()
+	search()
+	get()
+	add()
 }
 class TipCalculator {
 	use()
-	calculate()
 	split()
+	calculate()
 }
 class Users {
+	assign()
 	lookup()
 }
-class MaximumBudget {
-	500()
-}
-Users "1" o-- "1" User
-CurrentHostingProvider "1" o-- "1" Tipsure
-TipCalculator "1" o-- "1" Tip
-Tipsure "1" o-- "1" Tip
-MaximumBudget "1" <|-- "1" is
+Tip o-- Tipsure
+User o-- Users
+Tipsure o-- CurrentHostingProvider
+Tip o-- TipCalculator
 
 @enduml

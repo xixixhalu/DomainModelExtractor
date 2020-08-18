@@ -21,9 +21,92 @@
       ],
       "Behavior": {
         "suspend": [
+          "",
+          "",
+          ""
+        ],
+        "delete": [
+          "",
+          ""
+        ],
+        "accessible": [
+          ""
+        ],
+        "moderate": [
+          "",
+          "",
+          ""
+        ],
+        "like": [
+          "",
+          "",
+          ""
+        ],
+        "created": [
+          "",
+          ""
+        ],
+        "invited": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "participate": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "see": [
+          "",
+          ""
+        ],
+        "access": [
+          "",
+          ""
+        ],
+        "want": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "ensure": [
+          "",
+          ""
+        ],
+        "save": [
+          "",
+          "",
+          ""
+        ],
+        "expires": [
+          ""
+        ],
+        "sort": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "remove": [
+          "",
+          ""
+        ],
+        "choose": [
+          "",
+          "",
+          "",
           ""
         ],
         "use": [
+          "",
+          "",
           "",
           "",
           "",
@@ -45,58 +128,16 @@
           "",
           ""
         ],
-        "delete": [
-          ""
-        ],
         "posted": [
           ""
         ],
         "report": [
           ""
         ],
-        "moderate": [
-          ""
-        ],
-        "created": [
-          ""
-        ],
-        "like": [
-          "",
-          ""
-        ],
         "shut": [
           ""
         ],
-        "remove": [
-          ""
-        ],
-        "choose": [
-          "",
-          "",
-          ""
-        ],
-        "invited": [
-          ""
-        ],
-        "participate": [
-          "",
-          ""
-        ],
-        "ensure": [
-          ""
-        ],
-        "want": [
-          ""
-        ],
-        "save": [
-          "",
-          ""
-        ],
         "keep": [
-          ""
-        ],
-        "sort": [
-          "",
           ""
         ],
         "have": [
@@ -124,9 +165,26 @@
       ],
       "Behavior": {
         "remove": [
+          "",
+          "",
+          "",
           ""
         ],
         "update": [
+          "",
+          "",
+          ""
+        ],
+        "create": [
+          ""
+        ],
+        "reserve": [
+          ""
+        ],
+        "removed": [
+          "",
+          "",
+          "",
           ""
         ],
         "see": [
@@ -144,61 +202,92 @@
       ],
       "Behavior": {}
     },
-    "Picture": {
-      "Attribute": [
-        "Pictures",
-        "PicturesOfTheEvent",
-        "PictureViewing",
-        "PictureLifetime"
-      ],
-      "Behavior": {}
-    },
     "Users": {
       "Attribute": [
         "UsersOfTheAppAndViewPictures"
       ],
       "Behavior": {
         "manage": [
+          "",
+          "",
           ""
         ],
-        "upload": [
+        "choose": [
+          ""
+        ],
+        "give": [
           ""
         ],
         "post": [
+          "",
+          ""
+        ],
+        "upload": [
           ""
         ]
       }
     },
     "Pictures": {
       "Attribute": [
-        "PicturesOfTheEvent",
-        "be"
+        "PicturesOfTheEvent"
       ],
       "Behavior": {
         "delete": [
           "",
+          "",
+          "",
+          "",
+          "",
+          "",
           ""
         ],
         "moderate": [
+          "",
+          "",
           ""
         ],
         "remove": [
+          "",
+          "",
+          "",
           ""
         ],
         "upload": [
+          "",
+          "",
+          "",
           ""
         ],
         "post": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
           ""
         ],
         "sort": [
           "",
+          "",
+          "",
+          "",
+          "",
           ""
         ],
         "list": [
+          "",
+          "",
           ""
         ],
         "restore": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "descriptive": [
+          "",
           ""
         ],
         "give": [
@@ -206,8 +295,49 @@
         ],
         "Area": [
           ""
+        ]
+      }
+    },
+    "Picture": {
+      "Attribute": [
+        "Pictures",
+        "PicturesOfTheEvent",
+        "PictureViewing",
+        "PictureLifetime"
+      ],
+      "Behavior": {
+        "take": [
+          "",
+          ""
         ],
-        "descriptive": [
+        "like": [
+          "",
+          ""
+        ],
+        "choose": [
+          ""
+        ]
+      }
+    },
+    "PrivateEvent": {
+      "Attribute": [],
+      "Behavior": {
+        "invited": [
+          "",
+          ""
+        ]
+      }
+    },
+    "Event/hashtag": {
+      "Attribute": [],
+      "Behavior": {
+        "save": [
+          ""
+        ],
+        "keep": [
+          ""
+        ],
+        "expires": [
           ""
         ]
       }
@@ -220,79 +350,28 @@
         ]
       }
     },
-    "PrivateEvent": {
+    "Hashtag": {
       "Attribute": [],
       "Behavior": {
-        "invited": [
-          ""
-        ]
-      }
-    },
-    "Event/hashtag": {
-      "Attribute": [],
-      "Behavior": {
-        "introduce": [
-          ""
-        ],
-        "search": [
-          ""
-        ],
-        "create": [
-          "",
-          "",
-          ""
-        ],
-        "shut": [
-          ""
-        ],
-        "save": [
-          "",
-          ""
-        ],
-        "keep": [
-          ""
-        ],
-        "see": [
-          ""
-        ],
-        "post": [
-          ""
-        ],
         "reserve": [
           "",
-          ""
-        ],
-        "browse": [
-          ""
-        ],
-        "manage": [
-          ""
-        ],
-        "change": [
+          "",
           "",
           "",
           ""
         ],
-        "delete": [
-          ""
-        ],
-        "generate": [
-          ""
-        ],
-        "expires": [
+        "use": [
+          "",
+          "",
+          "",
+          "",
+          "",
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "be",
-        "Pictures",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "User",
@@ -315,13 +394,23 @@
         []
       ],
       [
+        "User",
+        "Hashtag",
+        []
+      ],
+      [
+        "Event",
+        "Event/hashtag",
+        []
+      ],
+      [
         "Event",
         "EventAttendees",
         []
       ],
       [
         "Event",
-        "Event/hashtag",
+        "Hashtag",
         []
       ],
       [

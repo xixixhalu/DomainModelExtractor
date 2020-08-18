@@ -9,20 +9,10 @@
         "Preference",
         "Scores",
         "Progress",
-        "UserInterface",
-        "am",
-        "am",
-        "am",
-        "am",
-        "am",
-        "be",
-        "be",
-        "be",
-        "be"
+        "UserInterface"
       ],
       "Behavior": {
-        "track": [
-          "",
+        "remove": [
           ""
         ],
         "able": [
@@ -34,12 +24,23 @@
           "",
           "",
           "",
-          ""
-        ],
-        "sign": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
           ""
         ],
         "switch": [
+          "",
+          ""
+        ],
+        "track": [
+          "",
+          ""
+        ],
+        "sign": [
           ""
         ],
         "keep": [
@@ -80,42 +81,152 @@
         ]
       }
     },
+    "Score": {
+      "Attribute": [
+        "Scores"
+      ],
+      "Behavior": {
+        "able": [
+          "",
+          ""
+        ],
+        "share": [
+          ""
+        ]
+      }
+    },
     "FullVersion": {
       "Attribute": [
         "FullVersionOfTheApplication"
       ],
       "Behavior": {}
     },
-    "Score": {
-      "Attribute": [
-        "Scores"
-      ],
-      "Behavior": {}
-    },
-    "UserInterface": {
-      "Attribute": [
-        "be"
-      ],
+    "FullVersionOfTheApplication": {
+      "Attribute": [],
       "Behavior": {
-        "consistent": [
+        "purchase": [
+          "",
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          ""
+        ],
+        "remove": [
           ""
         ]
       }
     },
-    "FullVersionOfTheApplication": {
+    "UserInterface": {
       "Attribute": [],
       "Behavior": {
         "design": [
+          "",
+          "",
           ""
         ],
         "draw": [
-          ""
-        ],
-        "purchase": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
           ""
         ],
         "remove": [
           "",
+          ""
+        ],
+        "track": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "have": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "check": [
+          "",
+          "",
+          ""
+        ],
+        "practice": [
+          "",
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "purchase": [
+          "",
+          ""
+        ],
+        "publish": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "used": [
+          "",
+          ""
+        ],
+        "consistent": [
+          "",
+          ""
+        ],
+        "switch": [
+          ""
+        ],
+        "keep": [
+          "",
+          ""
+        ],
+        "share": [
+          ""
+        ],
+        "change": [
+          "",
+          ""
+        ],
+        "cheat": [
+          ""
+        ],
+        "erase": [
+          ""
+        ],
+        "start": [
+          ""
+        ],
+        "see": [
           ""
         ]
       }

@@ -1,81 +1,64 @@
 @startuml
 hide circle
 class User {
-	Details : string
-	RegisteredUsername : string
-	OwnProfile : string
-	GameProfile : string
-	Liking : string
-	Password : string
-	ProfileInformation : string
-	Users : string
-	be : string
-	register()
+	OwnProfile
+	Password
+	Liking
+	RegisteredUsername
+	ProfileInformation
+	Details
 	login()
-	click()
-	see()
 	won()
-	place()
-	Password()
-	play()
-	have()
-	beat()
+	log()
+	able()
+	lost()
+	mute()
 	choose()
+	Password()
+	see()
+	place()
+	quit()
+	beat()
+	want()
+	recover()
+	have()
 	edit()
+	register()
+	gained()
+	trying()
+	detonate()
+	hear()
+	remove()
+	click()
+	play()
 	change()
 	get()
-	hear()
-	quit()
-	want()
-	log()
-	lost()
-	gained()
-	recover()
-	mute()
-	remove()
-	able()
-	detonate()
-	trying()
 }
 class Grid {
-	anywhere : string
-	given : string
+	anywhere
+	given
 }
 class Users {
-	more : string
-}
-class DifferentPlatforms {
-	Game : string
-}
-class * {
-	given : string
-	Grid : string
-	place : string
-	given : string
-	Grid : string
-	placed : string
-	given : string
-	Grid : string
-}
-class Game {
-	GameProfile : string
-	play()
+	more
 	attracts()
 }
-class System {
-	be : string
-	compatible()
-	have()
-	include()
-	scalable()
+class DifferentPlatforms {
 }
-class it {
-	is : string
-	maintainable()
+class * {
+	place
+	Grid
+	given
+	placed
+	placed()
 }
-System "1" <|-- "1" be
-it "1" <|-- "1" is
-Game "1" o-- "1" DifferentPlatforms
-Users "1" o-- "1" User
+class Game {
+	play()
+	attracts()
+	make()
+}
+User o-- GameProfile
+DifferentPlatforms o-- Game
+Game o-- GameProfile
+User o-- Users
 
 @enduml

@@ -1,15 +1,14 @@
 @startuml
 hide circle
 class Lock {
-	LockBatteryStatus : string
-	LockNames : string
-	LockNumber : string
-	LockCode : string
-	LockCodes : string
+	LockCodes
+	LockBatteryStatus
+	LockNames
+	LockNumber
 }
 class LockCode {
-	LockCodes : string
+	LockCodes
 }
-LockCode "1" o-- "1" Lock
+Lock o-- LockCode
 
 @enduml

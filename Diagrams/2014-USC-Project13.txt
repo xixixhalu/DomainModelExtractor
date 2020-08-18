@@ -1,43 +1,30 @@
 @startuml
 hide circle
 class Users {
-	more : string
+	more
+	able()
 	add()
 }
 class User {
-	Users : string
-	"Username/email" : string
-	add()
-	turn()
 	select()
 	have()
 	choose()
+	turn()
+	add()
 }
 class Access {
-	AccessControl : string
 	"provide/revoke"()
 }
 class AccessControl {
-	is : string
+	assign()
 	limited()
 }
-class MaximumBudget {
-	500()
-}
 class Username/email {
+	choose()
 	log()
 }
-class ResponseTimeOfTheSystem {
-	assign()
-	add()
-	select()
-	have()
-	Seconds()
-}
-ResponseTimeOfTheSystem "1" <|-- "1" be
-Users "1" o-- "1" User
-"Username/email" "1" o-- "1" User
-AccessControl "1" o-- "1" Access
-MaximumBudget "1" <|-- "1" is
+Access o-- AccessControl
+User o-- Users
+User o-- "Username/email"
 
 @enduml

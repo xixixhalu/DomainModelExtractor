@@ -5,7 +5,21 @@
         "less"
       ],
       "Behavior": {
+        "make": [
+          "",
+          ""
+        ],
+        "unavailable": [
+          "",
+          ""
+        ],
+        "click-to-call": [
+          "",
+          ""
+        ],
         "go": [
+          "",
+          "",
           ""
         ],
         "voicemail": [
@@ -20,6 +34,9 @@
       ],
       "Behavior": {
         "close": [
+          "",
+          "",
+          "",
           ""
         ]
       }
@@ -30,18 +47,8 @@
       ],
       "Behavior": {
         "route": [
-          ""
-        ]
-      }
-    },
-    "Agent": {
-      "Attribute": [
-        "Agents",
-        "AgentWhile",
-        "is"
-      ],
-      "Behavior": {
-        "available": [
+          "",
+          "",
           ""
         ]
       }
@@ -51,25 +58,33 @@
       "Behavior": {
         "listen": [
           "",
+          "",
+          "",
+          ""
+        ],
+        "use": [
+          "",
+          ""
+        ],
+        "jump": [
+          "",
+          "",
+          ""
+        ],
+        "speak": [
+          "",
+          "",
+          ""
+        ],
+        "help": [
+          "",
           ""
         ],
         "assure": [
           "",
           ""
         ],
-        "use": [
-          ""
-        ],
         "train": [
-          ""
-        ],
-        "jump": [
-          ""
-        ],
-        "help": [
-          ""
-        ],
-        "speak": [
           ""
         ],
         "guide": [
@@ -80,29 +95,18 @@
     "SalesAgent": {
       "Attribute": [],
       "Behavior": {
-        "answer": [
-          ""
-        ],
-        "log": [
-          ""
-        ],
-        "pull": [
-          ""
-        ],
-        "use": [
-          ""
-        ],
-        "train": [
+        "AutoDialCustomers": [
+          "",
           ""
         ],
         "request": [
           "",
+          "",
+          "",
+          "",
           ""
         ],
         "click-to-call": [
-          ""
-        ],
-        "AutoDialCustomers": [
           ""
         ],
         "save": [
@@ -115,13 +119,6 @@
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "is",
-        "Agent",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "Sale",

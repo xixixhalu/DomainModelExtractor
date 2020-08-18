@@ -9,10 +9,59 @@
         "PreviousPageB/c",
         "Photos",
         "Photo",
-        "Users",
-        "am"
+        "Users"
       ],
       "Behavior": {
+        "challenge": [
+          ""
+        ],
+        "get": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "verify": [
+          "",
+          ""
+        ],
+        "Reward": [
+          "",
+          ""
+        ],
+        "check": [
+          "",
+          "",
+          ""
+        ],
+        "left": [
+          ""
+        ],
+        "receive": [
+          "",
+          "",
+          ""
+        ],
+        "add": [
+          "",
+          ""
+        ],
+        "do": [
+          "",
+          ""
+        ],
+        "play": [
+          "",
+          "",
+          ""
+        ],
+        "invite": [
+          "",
+          "",
+          ""
+        ],
         "see": [
           "",
           "",
@@ -20,12 +69,6 @@
           ""
         ],
         "send": [
-          ""
-        ],
-        "get": [
-          "",
-          "",
-          "",
           ""
         ],
         "try": [
@@ -37,52 +80,26 @@
         "sent": [
           ""
         ],
-        "verify": [
-          ""
-        ],
         "posted": [
-          ""
-        ],
-        "Reward": [
           ""
         ],
         "finished": [
           ""
         ],
-        "check": [
-          "",
-          ""
-        ],
         "have": [
-          ""
-        ],
-        "invite": [
-          "",
           ""
         ],
         "use": [
           "",
           ""
         ],
-        "receive": [
-          ""
-        ],
         "able": [
-          ""
-        ],
-        "do": [
-          ""
-        ],
-        "play": [
           ""
         ],
         "Chance": [
           ""
         ],
         "click": [
-          ""
-        ],
-        "add": [
           ""
         ],
         "pick": [
@@ -114,7 +131,18 @@
         "ChallengeTask",
         "ChallengeGame"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "participate": [
+          ""
+        ],
+        "check": [
+          "",
+          ""
+        ],
+        "finished": [
+          ""
+        ]
+      }
     },
     "Challenges": {
       "Attribute": [
@@ -122,6 +150,8 @@
       ],
       "Behavior": {
         "see": [
+          "",
+          "",
           ""
         ]
       }
@@ -150,12 +180,6 @@
       ],
       "Behavior": {}
     },
-    "App": {
-      "Attribute": [
-        "Application"
-      ],
-      "Behavior": {}
-    },
     "Photo": {
       "Attribute": [
         "Photo/video",
@@ -163,6 +187,30 @@
       ],
       "Behavior": {
         "post": [
+          ""
+        ]
+      }
+    },
+    "App": {
+      "Attribute": [
+        "Application"
+      ],
+      "Behavior": {}
+    },
+    "Friends": {
+      "Attribute": [],
+      "Behavior": {
+        "invite": [
+          "",
+          ""
+        ]
+      }
+    },
+    "ChallengeScore": {
+      "Attribute": [],
+      "Behavior": {
+        "use": [
+          "",
           ""
         ]
       }
@@ -178,6 +226,138 @@
     "Application": {
       "Attribute": [],
       "Behavior": {
+        "challenge": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "get": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "prepare": [
+          "",
+          "",
+          ""
+        ],
+        "view": [
+          "",
+          "",
+          ""
+        ],
+        "verify": [
+          "",
+          "",
+          ""
+        ],
+        "give": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "receive": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "do": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "invite": [
+          ""
+        ],
+        "use": [
+          "",
+          "",
+          ""
+        ],
+        "buy": [
+          ""
+        ],
+        "play": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "send": [
+          "",
+          "",
+          ""
+        ],
+        "post": [
+          "",
+          "",
+          ""
+        ],
+        "challenged": [
+          "",
+          ""
+        ],
+        "check": [
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          ""
+        ],
+        "Chance": [
+          "",
+          ""
+        ],
+        "select": [
+          ""
+        ],
+        "compete": [
+          ""
+        ],
+        "click": [
+          "",
+          ""
+        ],
+        "pick": [
+          ""
+        ],
         "improve": [
           ""
         ]
@@ -202,8 +382,23 @@
         []
       ],
       [
+        "User",
+        "Friends",
+        []
+      ],
+      [
+        "User",
+        "ChallengeScore",
+        []
+      ],
+      [
         "Challenge",
         "Challenges",
+        []
+      ],
+      [
+        "Challenge",
+        "ChallengeScore",
         []
       ],
       [
@@ -217,13 +412,13 @@
         []
       ],
       [
-        "App",
-        "Application",
+        "Photo",
+        "Photos",
         []
       ],
       [
-        "Photo",
-        "Photos",
+        "App",
+        "Application",
         []
       ]
     ]

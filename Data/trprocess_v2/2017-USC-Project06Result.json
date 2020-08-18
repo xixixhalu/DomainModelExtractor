@@ -8,16 +8,21 @@
         "Health",
         "InsulinUsage",
         "FoodConsumption",
-        "PersonalInformation",
-        "be",
-        "be"
+        "PersonalInformation"
       ],
       "Behavior": {
-        "connect": [
+        "want": [
+          "",
+          "",
+          "",
           ""
         ],
         "able": [
           "",
+          "",
+          ""
+        ],
+        "connect": [
           ""
         ],
         "download": [
@@ -58,10 +63,6 @@
         ],
         "Map": [
           ""
-        ],
-        "want": [
-          "",
-          ""
         ]
       }
     },
@@ -69,7 +70,12 @@
       "Attribute": [
         "Account"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "want": [
+          "",
+          ""
+        ]
+      }
     },
     "Health": {
       "Attribute": [
@@ -80,7 +86,11 @@
     "BloodSugar": {
       "Attribute": [],
       "Behavior": {
+        "set": [
+          ""
+        ],
         "gets": [
+          "",
           ""
         ]
       }
@@ -89,9 +99,73 @@
       "Attribute": [],
       "Behavior": {
         "set": [
+          "",
+          "",
+          ""
+        ],
+        "use": [
+          ""
+        ],
+        "want": [
+          ""
+        ],
+        "input": [
+          "",
+          "",
+          ""
+        ],
+        "connect": [
+          "",
+          "",
+          ""
+        ],
+        "view": [
+          "",
+          "",
+          ""
+        ],
+        "create": [
+          "",
+          ""
+        ],
+        "get": [
+          "",
+          ""
+        ],
+        "have": [
+          "",
+          ""
+        ],
+        "enter": [
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "customized": [
+          "",
+          ""
+        ],
+        "download": [
+          "",
+          ""
+        ],
+        "login": [
+          ""
+        ],
+        "Map": [
           ""
         ],
         "using": [
+          "",
+          "",
+          ""
+        ],
+        "see": [
           ""
         ]
       }

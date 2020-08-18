@@ -6,39 +6,26 @@
       ],
       "Behavior": {}
     },
-    "what": {
-      "Attribute": [
-        "'s"
-      ],
-      "Behavior": {
-        "App": [
-          ""
-        ],
-        "have": [
-          ""
-        ],
-        "wear": [
-          ""
-        ]
-      }
-    },
     "TextMessages": {
       "Attribute": [],
       "Behavior": {
+        "able": [
+          ""
+        ],
+        "similar": [
+          ""
+        ],
+        "App": [
+          ""
+        ],
         "receive": [
+          "",
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "'s",
-        "what",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "Text",

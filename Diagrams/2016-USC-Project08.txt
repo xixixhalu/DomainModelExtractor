@@ -1,34 +1,33 @@
 @startuml
 hide circle
 class User {
-	Account : string
-	Account : string
-	Users : string
-	sign()
-	"change/reset"()
-	delete()
-	"send/receive"()
-	post()
 	comment()
-	access()
+	post()
+	"change/reset"()
+	"send/receive"()
 	"like/unlike"()
+	delete()
 	share()
+	sign()
+	access()
 }
 class Issues {
-	comment : string
-	existing : string
+	existing
+	comment
+	post()
 }
 class GeneralForum {
-	Issues : string
 }
 class Account {
-	Accounts : string
+	Accounts
+	delete()
 }
 class Users {
 	use()
+	update()
 }
-Account "1" o-- "1" User
-Issues "1" o-- "1" GeneralForum
-Users "1" o-- "1" User
+User o-- Users
+GeneralForum o-- Issues
+User o-- Account
 
 @enduml

@@ -6,11 +6,15 @@
         "Report",
         "Identity",
         "ContactDetails",
-        "Account",
-        "be",
-        "be"
+        "Account"
       ],
       "Behavior": {
+        "raised": [
+          ""
+        ],
+        "be": [
+          ""
+        ],
         "submit": [
           ""
         ],
@@ -44,21 +48,29 @@
       ],
       "Behavior": {
         "email": [
+          "",
+          "",
           ""
         ],
         "view": [
+          "",
+          ""
+        ],
+        "delete": [
+          ""
+        ],
+        "make": [
+          "",
+          ""
+        ],
+        "AccusedOf": [
+          "",
           ""
         ],
         "understand": [
           ""
         ],
-        "make": [
-          ""
-        ],
         "redirect": [
-          ""
-        ],
-        "AccusedOf": [
           ""
         ],
         "look": [
@@ -81,41 +93,50 @@
         "ProfileDetails",
         "Anonymity",
         "Employees",
-        "EmployeesOf",
-        "be"
+        "EmployeesOf"
       ],
       "Behavior": {
+        "file": [
+          "",
+          ""
+        ],
+        "expect": [
+          "",
+          ""
+        ],
+        "check": [
+          "",
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          ""
+        ],
+        "post": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "submit": [
+          "",
+          ""
+        ],
         "view": [
           ""
         ],
         "edit": [
           ""
         ],
-        "able": [
-          ""
-        ],
-        "check": [
-          ""
-        ],
-        "file": [
-          ""
-        ],
         "want": [
-          ""
-        ],
-        "expect": [
           ""
         ],
         "track": [
           ""
         ],
         "have": [
-          ""
-        ],
-        "post": [
-          ""
-        ],
-        "submit": [
           ""
         ]
       }
@@ -139,6 +160,10 @@
         "ReportsOfTheCases"
       ],
       "Behavior": {
+        "generate": [
+          "",
+          ""
+        ],
         "contain": [
           ""
         ]
@@ -146,7 +171,41 @@
     },
     "MediaFiles": {
       "Attribute": [],
-      "Behavior": {}
+      "Behavior": {
+        "contain": [
+          "",
+          ""
+        ]
+      }
+    },
+    "Employees": {
+      "Attribute": [
+        "EmployeesOf"
+      ],
+      "Behavior": {
+        "assign": [
+          ""
+        ],
+        "resolve": [
+          ""
+        ],
+        "form": [
+          ""
+        ],
+        "email": [
+          ""
+        ],
+        "redirect": [
+          "",
+          ""
+        ],
+        "AssuredOfPreventionOfWorkplaceViolence": [
+          ""
+        ],
+        "ConduciveEnvironment": [
+          ""
+        ]
+      }
     },
     "Reports": {
       "Attribute": [
@@ -155,9 +214,21 @@
       ],
       "Behavior": {
         "filter": [
+          "",
+          "",
+          "",
           ""
         ],
         "view": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "generate": [
+          "",
+          "",
+          "",
           ""
         ]
       }
@@ -168,6 +239,10 @@
         "VrsSubjectMatterExpert"
       ],
       "Behavior": {
+        "resolved": [
+          "",
+          ""
+        ],
         "delete": [
           ""
         ],
@@ -204,53 +279,35 @@
       ],
       "Behavior": {}
     },
-    "Employees": {
-      "Attribute": [
-        "EmployeesOf",
-        "are"
-      ],
-      "Behavior": {
-        "AssuredOfPreventionOfWorkplaceViolence": [
-          ""
-        ],
-        "ConduciveEnvironment": [
-          ""
-        ]
-      }
-    },
-    "Complaint": {
-      "Attribute": [
-        "be"
-      ],
-      "Behavior": {
-        "raised": [
-          ""
-        ],
-        "useful": [
-          ""
-        ]
-      }
-    },
-    "Clients": {
-      "Attribute": [
-        "are"
-      ],
-      "Behavior": {
-        "safe": [
-          ""
-        ]
-      }
-    },
     "VrsSubjectMatterExpert": {
       "Attribute": [],
       "Behavior": {
         "verify": [
+          "",
           ""
         ],
         "investigate": [
+          "",
+          ""
+        ],
+        "filed": [
+          ""
+        ],
+        "ValidCases": [
           ""
         ],
         "notify": [
+          "",
+          ""
+        ]
+      }
+    },
+    "Account": {
+      "Attribute": [],
+      "Behavior": {
+        "be": [
+          "",
+          "",
           ""
         ]
       }
@@ -276,52 +333,14 @@
         ]
       }
     },
-    "Account": {
+    "Problems": {
+      "Attribute": [],
+      "Behavior": {}
+    },
+    "Clients": {
       "Attribute": [],
       "Behavior": {
-        "address": [
-          ""
-        ],
-        "understand": [
-          ""
-        ],
-        "delete": [
-          ""
-        ],
-        "AccusedOf": [
-          ""
-        ],
-        "re-use": [
-          "",
-          ""
-        ],
-        "minimize": [
-          "",
-          ""
-        ],
-        "file": [
-          ""
-        ],
-        "expect": [
-          ""
-        ],
-        "look": [
-          "",
-          ""
-        ],
-        "create": [
-          ""
-        ],
-        "investigate": [
-          ""
-        ],
-        "assign": [
-          ""
-        ],
-        "expedite": [
-          ""
-        ],
-        "be": [
+        "safe": [
           ""
         ]
       }
@@ -342,6 +361,11 @@
       [
         "User",
         "Account",
+        []
+      ],
+      [
+        "User",
+        "Problems",
         []
       ],
       [
@@ -377,23 +401,6 @@
       [
         "Vrs",
         "VrsAdmin",
-        []
-      ]
-    ],
-    "generalization": [
-      [
-        "be",
-        "Complaint",
-        []
-      ],
-      [
-        "are",
-        "Employees",
-        []
-      ],
-      [
-        "be",
-        "Employees",
         []
       ]
     ]

@@ -9,21 +9,41 @@
         "MessageHistory",
         "SessionAppointmentHistory",
         "VideoRecords",
-        "PersonalInformation",
-        "be",
-        "am"
+        "PersonalInformation"
       ],
       "Behavior": {
-        "video": [
+        "rate": [
+          "",
           ""
         ],
-        "search": [
+        "provide": [
+          ""
+        ],
+        "ask": [
+          "",
+          "",
+          ""
+        ],
+        "received": [
+          "",
+          ""
+        ],
+        "satisfied": [
           "",
           ""
         ],
         "access": [
           "",
           "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "video": [
+          ""
+        ],
+        "search": [
           "",
           ""
         ],
@@ -34,9 +54,6 @@
           "",
           "",
           "",
-          ""
-        ],
-        "rate": [
           ""
         ],
         "had": [
@@ -59,15 +76,6 @@
           ""
         ],
         "able": [
-          ""
-        ],
-        "ask": [
-          ""
-        ],
-        "satisfied": [
-          ""
-        ],
-        "received": [
           ""
         ],
         "schedule": [
@@ -97,12 +105,35 @@
         "Client",
         "Calendar",
         "Customers",
-        "FinancialExperts",
-        "be",
-        "am"
+        "FinancialExperts"
       ],
       "Behavior": {
         "rate": [
+          "",
+          "",
+          ""
+        ],
+        "is": [
+          ""
+        ],
+        "set": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "select": [
+          ""
+        ],
+        "commit": [
+          ""
+        ],
+        "store": [
+          "",
+          ""
+        ],
+        "available": [
+          "",
           ""
         ],
         "see": [
@@ -120,13 +151,6 @@
         "update": [
           ""
         ],
-        "set": [
-          "",
-          ""
-        ],
-        "store": [
-          ""
-        ],
         "authorize": [
           ""
         ],
@@ -137,9 +161,6 @@
           ""
         ],
         "make": [
-          ""
-        ],
-        "available": [
           ""
         ],
         "view": [
@@ -159,15 +180,23 @@
       ],
       "Behavior": {
         "manage": [
+          "",
+          "",
           ""
         ]
       }
     },
-    "User": {
+    "Profile": {
       "Attribute": [
-        "Users"
+        "ProfileBio",
+        "ProfilesOfFinancialExperts"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "view": [
+          "",
+          ""
+        ]
+      }
     },
     "Appointment": {
       "Attribute": [
@@ -177,6 +206,11 @@
       ],
       "Behavior": {
         "had": [
+          "",
+          ""
+        ],
+        "manage": [
+          "",
           ""
         ]
       }
@@ -190,10 +224,9 @@
       ],
       "Behavior": {}
     },
-    "Profile": {
+    "User": {
       "Attribute": [
-        "ProfileBio",
-        "ProfilesOfFinancialExperts"
+        "Users"
       ],
       "Behavior": {}
     },
@@ -203,10 +236,20 @@
       ],
       "Behavior": {}
     },
-    "AppointmentAvailability": {
+    "Users": {
       "Attribute": [],
       "Behavior": {
-        "VideoChat": [
+        "set": [
+          ""
+        ],
+        "available": [
+          ""
+        ],
+        "select": [
+          "",
+          ""
+        ],
+        "commit": [
           ""
         ]
       }
@@ -214,7 +257,24 @@
     "VideoRecords": {
       "Attribute": [],
       "Behavior": {
+        "authorize": [
+          ""
+        ],
         "gain": [
+          ""
+        ]
+      }
+    },
+    "AppointmentAvailability": {
+      "Attribute": [],
+      "Behavior": {
+        "manage": [
+          ""
+        ],
+        "schedule": [
+          ""
+        ],
+        "VideoChat": [
           ""
         ]
       }
@@ -223,17 +283,6 @@
       "Attribute": [],
       "Behavior": {
         "completed": [
-          ""
-        ]
-      }
-    },
-    "Users": {
-      "Attribute": [],
-      "Behavior": {
-        "select": [
-          ""
-        ],
-        "commit": [
           ""
         ]
       }
@@ -272,33 +321,33 @@
         []
       ],
       [
+        "Appointment",
+        "AppointmentAvailability",
+        []
+      ],
+      [
+        "Appointment",
+        "AppointmentSession",
+        []
+      ],
+      [
+        "App",
+        "Appointment",
+        []
+      ],
+      [
+        "App",
+        "AppointmentAvailability",
+        []
+      ],
+      [
+        "App",
+        "AppointmentSession",
+        []
+      ],
+      [
         "User",
         "Users",
-        []
-      ],
-      [
-        "Appointment",
-        "AppointmentAvailability",
-        []
-      ],
-      [
-        "Appointment",
-        "AppointmentSession",
-        []
-      ],
-      [
-        "App",
-        "Appointment",
-        []
-      ],
-      [
-        "App",
-        "AppointmentAvailability",
-        []
-      ],
-      [
-        "App",
-        "AppointmentSession",
         []
       ]
     ]

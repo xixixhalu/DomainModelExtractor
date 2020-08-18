@@ -1,90 +1,83 @@
 @startuml
 hide circle
 class User {
-	Progress : string
-	Needs : string
-	Needs : string
-	Profile : string
-	Experience : string
-	Points : string
-	Points : string
-	ThreadSpecificPointBalance : string
-	WatPoints : string
-	WatPoints : string
-	Threads : string
-	Users : string
-	UserParticipation : string
-	start()
-	answer()
-	"like/dislike"()
-	view()
+	Points
+	Threads
+	Progress
+	Needs
+	started()
 	Lifetime()
-	track()
-	get()
-	stay()
 	redeem()
 	receive()
-	search()
-	see()
-	select()
-	update()
-	mark()
-	compare()
-	gauge()
-	measure()
-	use()
-	report()
-	edit()
-	started()
 	delete()
+	track()
+	search()
+	relevant()
+	see()
+	update()
+	gauge()
+	answer()
+	use()
+	select()
+	edit()
+	start()
+	compare()
+	report()
+	stay()
+	view()
+	mark()
+	measure()
+	"like/dislike"()
+	get()
 }
 class Users {
-	more : string
+	more
 	notify()
+	using()
 	entice()
 	redeem()
+	add()
 }
 class GiftCard {
-	GiftCards : string
 	receive()
 	add()
 }
 class Profile {
-	Profiles : string
+	Profiles
 	update()
 }
 class Thread {
-	Threads : string
-	ThreadSpecificPointBalance : string
-	"Thread/post" : string
-	start()
+	Threads
+	"Thread/post"
+	pin()
 	sorting()
-}
-class Experience {
-	is : string
-	personalized()
+	start()
 }
 class GiftCards {
 	using()
 }
-class UserParticipation {
-	increase()
+class WatPoints {
+	use()
+	view()
+}
+class Experience {
+	personalized()
+	update()
 }
 class ThreadSpecificPointBalance {
 	drop()
 }
-class Forum {
-	search()
-	FreeOfInappropriateThreads()
+class UserParticipation {
+	increase()
+	notify()
 }
-Forum "1" <|-- "1" be
-ThreadSpecificPointBalance "1" o-- "1" User
-Users "1" o-- "1" User
-GiftCards "1" o-- "1" GiftCard
-Profile "1" o-- "1" User
-ThreadSpecificPointBalance "1" o-- "1" Thread
-Experience "1" o-- "1" User
-UserParticipation "1" o-- "1" User
-User "1" <|-- "1" "'s"
+User o-- ThreadSpecificPointBalance
+User o-- UserParticipation
+User o-- Users
+GiftCard o-- GiftCards
+User o-- Profile
+Thread o-- ThreadSpecificPointBalance
+User o-- WatPoints
+User o-- Experience
 
 @enduml

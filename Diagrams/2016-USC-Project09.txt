@@ -1,18 +1,13 @@
 @startuml
 hide circle
 class Text {
-	TextMessages : string
-}
-class what {
-	"'s" : string
-	App()
-	have()
-	wear()
 }
 class TextMessages {
 	receive()
+	able()
+	similar()
+	App()
 }
-TextMessages "1" o-- "1" Text
-what "1" <|-- "1" "'s"
+Text o-- TextMessages
 
 @enduml

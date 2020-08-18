@@ -6,17 +6,28 @@
         "Blogs",
         "Health-relatedIssues",
         "WebsiteOwner/moderator",
-        "WebsiteEndUser",
-        "be"
+        "WebsiteEndUser"
       ],
       "Behavior": {
-        "offers": [
+        "manage": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "find": [
+          "",
           ""
         ],
         "straight": [
+          "",
           ""
         ],
         "use": [
+          "",
+          ""
+        ],
+        "offers": [
           ""
         ]
       }
@@ -32,6 +43,42 @@
         "Vendors"
       ],
       "Behavior": {
+        "provide": [
+          "",
+          ""
+        ],
+        "look": [
+          "",
+          ""
+        ],
+        "compare": [
+          "",
+          ""
+        ],
+        "gather": [
+          "",
+          ""
+        ],
+        "Services": [
+          "",
+          ""
+        ],
+        "view": [
+          "",
+          ""
+        ],
+        "publish": [
+          "",
+          "",
+          ""
+        ],
+        "buy": [
+          ""
+        ],
+        "convince": [
+          "",
+          ""
+        ],
         "list": [
           ""
         ],
@@ -41,46 +88,22 @@
         "communicate": [
           ""
         ],
-        "provide": [
-          ""
-        ],
         "offer": [
-          ""
-        ],
-        "look": [
-          ""
-        ],
-        "compare": [
           ""
         ],
         "make": [
           ""
         ],
-        "gather": [
-          ""
-        ],
         "improve": [
-          ""
-        ],
-        "Services": [
           ""
         ],
         "upload": [
           ""
         ],
-        "view": [
-          ""
-        ],
         "ship": [
           ""
         ],
-        "publish": [
-          ""
-        ],
         "inform": [
-          ""
-        ],
-        "convince": [
           ""
         ],
         "add": [
@@ -99,20 +122,25 @@
         "Customers"
       ],
       "Behavior": {
-        "post": [
+        "suspend": [
+          "",
+          "",
           "",
           ""
         ],
-        "suspend": [
+        "communicate": [
+          "",
+          "",
+          ""
+        ],
+        "post": [
+          "",
           ""
         ],
         "approve": [
           ""
         ],
         "sort": [
-          ""
-        ],
-        "communicate": [
           ""
         ],
         "help": [
@@ -126,9 +154,12 @@
       ],
       "Behavior": {
         "sort": [
+          "",
+          "",
           ""
         ],
         "determine": [
+          "",
           ""
         ]
       }
@@ -148,12 +179,91 @@
         "Cart",
         "SearchResults",
         "SecurityQuestions",
-        "Consumers",
-        "be",
-        "be"
+        "Consumers"
       ],
       "Behavior": {
+        "manage": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "offers": [
+          ""
+        ],
+        "safe": [
+          ""
+        ],
+        "refer": [
+          "",
+          "",
+          ""
+        ],
         "search": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "suits": [
+          ""
+        ],
+        "reset": [
+          "",
+          ""
+        ],
+        "VerifyingId": [
+          "",
+          "",
+          ""
+        ],
+        "sort": [
+          "",
+          "",
+          ""
+        ],
+        "looking": [
+          "",
+          ""
+        ],
+        "upload": [
+          ""
+        ],
+        "are": [
+          ""
+        ],
+        "happens": [
+          ""
+        ],
+        "leave": [
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "keep": [
+          "",
+          ""
+        ],
+        "see": [
+          "",
+          ""
+        ],
+        "find": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "get": [
+          "",
+          "",
           "",
           ""
         ],
@@ -167,26 +277,7 @@
         "help": [
           ""
         ],
-        "manage": [
-          "",
-          "",
-          ""
-        ],
-        "get": [
-          "",
-          "",
-          ""
-        ],
-        "keep": [
-          ""
-        ],
         "do": [
-          ""
-        ],
-        "refer": [
-          ""
-        ],
-        "see": [
           ""
         ],
         "add": [
@@ -195,30 +286,7 @@
         "narrow": [
           ""
         ],
-        "find": [
-          "",
-          ""
-        ],
-        "reset": [
-          ""
-        ],
-        "VerifyingId": [
-          ""
-        ],
-        "leave": [
-          ""
-        ],
-        "sort": [
-          ""
-        ],
-        "looking": [
-          ""
-        ],
         "have": [
-          ""
-        ],
-        "able": [
-          "",
           ""
         ],
         "subscribe": [
@@ -232,11 +300,25 @@
         ]
       }
     },
+    "Item": {
+      "Attribute": [
+        "see",
+        "see",
+        "Items",
+        "ItemPrices"
+      ],
+      "Behavior": {}
+    },
     "Consumers": {
       "Attribute": [
         "more"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "discovered": [
+          "",
+          ""
+        ]
+      }
     },
     "Profile": {
       "Attribute": [
@@ -257,12 +339,31 @@
       ],
       "Behavior": {
         "sort": [
+          "",
+          "",
+          "",
           ""
         ],
         "ship": [
+          "",
+          "",
+          ""
+        ],
+        "upload": [
+          ""
+        ],
+        "have": [
+          ""
+        ],
+        "add": [
+          "",
+          ""
+        ],
+        "help": [
           ""
         ],
         "are": [
+          "",
           ""
         ]
       }
@@ -279,6 +380,11 @@
       ],
       "Behavior": {
         "manage": [
+          "",
+          "",
+          ""
+        ],
+        "keep": [
           ""
         ],
         "safe": [
@@ -293,9 +399,15 @@
       ],
       "Behavior": {
         "search": [
+          "",
+          "",
+          "",
           ""
         ],
         "find": [
+          "",
+          "",
+          "",
           ""
         ],
         "suits": [
@@ -306,76 +418,22 @@
     "WebsiteEndUser": {
       "Attribute": [],
       "Behavior": {
-        "get": [
-          "",
+        "find": [
           ""
-        ],
+        ]
+      }
+    },
+    "ItemPrices": {
+      "Attribute": [],
+      "Behavior": {
         "manage": [
           "",
-          ""
-        ],
-        "do": [
-          ""
-        ],
-        "narrow": [
-          ""
-        ],
-        "suits": [
-          ""
-        ],
-        "reset": [
-          ""
-        ],
-        "leave": [
-          ""
-        ],
-        "provide": [
-          ""
-        ],
-        "offer": [
-          ""
-        ],
-        "compare": [
-          ""
-        ],
-        "make": [
-          ""
-        ],
-        "gather": [
-          ""
-        ],
-        "upload": [
-          ""
-        ],
-        "are": [
-          ""
-        ],
-        "view": [
-          ""
-        ],
-        "publish": [
-          ""
-        ],
-        "inform": [
-          ""
-        ],
-        "buy": [
-          ""
-        ],
-        "find": [
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "'s",
-        "Vendor",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "Website",
@@ -408,6 +466,11 @@
         []
       ],
       [
+        "Vendor",
+        "ItemPrices",
+        []
+      ],
+      [
         "their",
         "Products",
         []
@@ -420,6 +483,11 @@
       [
         "Consumer",
         "Account",
+        []
+      ],
+      [
+        "Item",
+        "ItemPrices",
         []
       ],
       [

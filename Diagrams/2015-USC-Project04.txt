@@ -1,79 +1,76 @@
 @startuml
 hide circle
-class AdultLearner {
-	ConflictResolutionSkills : string
-	"In-gameScore" : string
-	ConflictManagementSkills : string
-	practice()
-	EffectiveCommunicator()
-	view()
-	know()
-	progressing()
-	resolve()
-	have()
-	take()
-	judge()
-	need()
-	improve()
-}
 class MbvStudent {
-	Team : string
+	integrates()
+	collaborate()
 	want()
 	participate()
-	collaborate()
 	improve()
 	use()
 }
 class Veteran {
-	ThoughtProcesses : string
-	Decisions : string
-	ThoughtProcesses : string
-	Veterans : string
-	"'m" : string
-	want()
+	ThoughtProcesses
+	Veterans
 	see()
-	alone()
+	made()
+	want()
 	compare()
+	alone()
 	use()
-}
-class Team {
-	Teams : string
-	Teammates : string
-}
-class ConflictResolution {
-	ConflictResolutionSkills : string
-	ConflictResolutionExercise : string
 }
 class Decisions {
-	DecisionsOthers : string
 	compare()
 }
-class Conflict {
-	ConflictResolution : string
-	ConflictResolutionSkills : string
-	ConflictResolutionExercise : string
-	Conflicts : string
-	ConflictManagementSkills : string
+class Team {
+	Teammates
 }
-class Program {
-	is : string
-	use()
-	interactive()
-	integrates()
+class Conflict {
+	ConflictResolutionSkills
+	ConflictManagementSkills
+	Conflicts
+}
+class ConflictResolution {
+	ConflictResolutionSkills
 }
 class Teams {
+	adopt()
 	resolve()
 }
 class DecisionsOthers {
+	alone()
 	made()
+	want()
+	see()
 }
-Program "1" <|-- "1" is
-Decisions "1" o-- "1" Veteran
-Team "1" o-- "1" MbvStudent
-Veteran "1" <|-- "1" "'m"
-DecisionsOthers "1" o-- "1" Decisions
-Teams "1" o-- "1" Team
-AdultLearner "1" <|-- "1" am
-ConflictResolution "1" o-- "1" Conflict
+class ConflictResolutionExercise {
+	gain()
+	made()
+	integrates()
+	participate()
+	alone()
+	need()
+	see()
+	relates()
+	improve()
+	use()
+	practice()
+	have()
+	resolve()
+	compare()
+	help()
+	view()
+	interact()
+	take()
+	marketed()
+	collaborate()
+	encourage()
+}
+Veteran o-- Decisions
+Team o-- Teams
+Conflict o-- ConflictResolutionExercise
+ConflictResolution o-- ConflictResolutionExercise
+Conflict o-- ConflictResolution
+MbvStudent o-- Team
+Decisions o-- DecisionsOthers
 
 @enduml

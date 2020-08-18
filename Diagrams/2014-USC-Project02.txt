@@ -1,152 +1,133 @@
 @startuml
 hide circle
 class Gm {
-	Data : string
-	"Gm/coach" : string
 	extract()
 }
 class Website {
-	specified : string
-	gather : string
-	WebsiteGUI : string
-	WebsiteList : string
+	specified
+	gather
+	WebsiteGUI
+	WebsiteList
 }
 class DataStore {
-	existing : string
+	existing
 }
 class VisualizationTool {
-	kind : string
 }
 class Data {
-	types : string
-	existing : string
-	Dataset : string
-	Datasources : string
-	DataStore : string
-	Databases : string
-	Datatype : string
-	import()
-	"update/add"()
+	Datasources
+	existing
+	Databases
+	Datatype
+	Dataset
 	related()
 	integrate()
 	is()
+	"update/add"()
+	import()
 }
 class their {
-	Data : string
-	"Apps/dashboards" : string
+	"Apps/dashboards"
 }
 class Customer-facingPortal {
-	simple : string
-	"web-based" : string
+	simple
+	"web-based"
 }
 class Customer {
-	CurrentModel : string
-	"Customer-facingPortal" : string
-	ingest()
+	CurrentModel
+	have()
 	see()
-	import()
+	interfaces()
+	ingest()
 	"update/add"()
+	"SportechB.IContractors"()
+	import()
+	"Customer-facingPortal"()
 }
 class Player {
-	Picture : string
-	PlayerValue : string
-	PlayerStats : string
-	PlayerSalaries : string
-	PlayerData : string
-	PlayerInformation : string
-}
-class Picture {
-	Pictures : string
-}
-class Webcrawler {
-	WebcrawlerApp : string
-	WebcrawlerFunctionality : string
-	be : string
-	able()
-	visit()
-	extract()
-	generate()
-	check()
+	PlayerSalaries
+	PlayerInformation
+	PlayerValue
+	PlayerData
+	PlayerStats
 }
 class I {
-	Injuries : string
-	Integers : string
-	Intervention : string
-	Information : string
-	InstagramPictures : string
-	It : string
-	Impact : string
-	monitor()
+	Intervention
+	It
+	Information
+	Impact
+	InstagramPictures
+	Injuries
+	Integers
 	manage()
+	monitor()
+}
+class Picture {
+	Pictures
+}
+class Webcrawler {
+	check()
+	able()
+	extract()
+	generate()
+	visit()
 }
 class kind {
-	kinds : string
+	kinds
 	have()
 	allows()
 }
 class Web {
-	Webcrawler : string
-	WebcrawlerApp : string
-	WebcrawlerFunctionality : string
-	Webcraweler : string
-	Website : string
-	WebsiteGUI : string
-	WebsiteList : string
-	"Web-basedManagementGUI" : string
-	WebCrawler : string
+	WebsiteGUI
+	WebsiteList
+	"Web-basedManagementGUI"
 	interfaces()
-}
-class types {
-	are : string
-	ingested()
 }
 class Gm/coach {
 	extract()
-	visualize()
 	build()
+	visualize()
 	make()
 }
-class One {
-	"SportechB.IContractors"()
-	have()
-}
 class WebCrawler {
-	gather()
-	ingest()
-	crawl()
 	get()
+	ingest()
+	gather()
+	crawl()
 }
 class Information {
 	is()
+	drag()
 }
 class WebcrawlerApp {
 	function()
 }
+class types {
+	learn()
+	able()
+	ingested()
+}
 class It {
 	ingest()
-}
-class Second {
-	"Customer-facingPortal"()
 }
 class Webcraweler {
 	gather()
 }
-Data "1" o-- "1" their
-Data "1" o-- "1" Gm
-WebCrawler "1" o-- "1" Web
-"Customer-facingPortal" "1" o-- "1" Customer
-"Gm/coach" "1" o-- "1" Gm
-WebcrawlerApp "1" o-- "1" Web
-Picture "1" o-- "1" Player
-kind "1" o-- "1" VisualizationTool
-types "1" <|-- "1" are
-Webcraweler "1" o-- "1" Web
-WebcrawlerApp "1" o-- "1" Webcrawler
-DataStore "1" o-- "1" Data
-One "1" <|-- "1" be
-Website "1" o-- "1" Web
-types "1" o-- "1" Data
-Second "1" <|-- "1" be
-Webcrawler "1" o-- "1" Web
+Web o-- WebCrawler
+Web o-- Website
+Customer o-- "Customer-facingPortal"
+Web o-- WebcrawlerApp
+Webcrawler o-- WebcrawlerApp
+Web o-- WebcrawlerFunctionality
+Data o-- DataStore
+Player o-- Picture
+Gm o-- Data
+Webcrawler o-- WebcrawlerFunctionality
+their o-- Data
+Web o-- Webcrawler
+VisualizationTool o-- kind
+Gm o-- "Gm/coach"
+Data o-- types
+Web o-- Webcraweler
 
 @enduml

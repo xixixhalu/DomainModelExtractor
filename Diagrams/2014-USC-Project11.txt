@@ -1,130 +1,125 @@
 @startuml
 hide circle
 class Date {
-	based : string
-	DateRange : string
+	based
 }
 class DateRange {
-	based : string
+	based
 }
 class Trainer {
-	CalendarOfAvailability : string
-	Prices : string
-	Profile : string
-	Trainers : string
-	be : string
-	offer()
-	put()
-	see()
-	compare()
-	set()
+	CalendarOfAvailability
+	Profile
 	able()
+	see()
+	set()
+	offer()
 	attach()
+	compare()
+	put()
 }
 class User {
-	Course : string
-	Registration : string
-	be : string
-	be : string
-	be : string
-	search()
-	request()
-	filter()
-	see()
-	able()
+	Registration
 	setup()
+	able()
+	see()
 	register()
 	share()
+	filter()
+	request()
+	search()
 }
 class Course {
-	registered : string
-	Courses : string
-	CoursesInformation : string
-	CourseAttendee : string
-	CourseName : string
+	registered
+	CoursesInformation
+	CourseName
+	able()
 	schedule()
-	cancel()
-	Calendar()
+	verify()
+	receive()
+	continue()
 	offer()
+	start()
+	Calendar()
+	request()
+	cancel()
 }
 class their {
-	Feasibility : string
 }
 class Trainers {
-	Profile : string
-	are : string
+	Profile
 	profitable()
 }
-class Courses {
-	CoursesInformation : string
-	start()
+class Prices {
+	compare()
 }
 class Notification {
-	Notifications : string
-}
-class Feasibility {
-	"Feasibility-LRB-AsWellAsScope-RRB-OfEach" : string
-}
-class Prices {
-	PricesOfCourses : string
-}
-class Price {
-	Prices : string
-	PricesOfCourses : string
 }
 class Admin {
-	Administrator : string
-	be : string
-	be : string
-	schedule()
-	see()
-	met()
 	did()
 	able()
-	cancel()
-	adjust()
-	move()
-	attach()
-}
-class Administrator {
-	receive()
-	create()
-	delete()
-	inquiry()
-	update()
 	see()
 	adjust()
-	verify()
+	schedule()
+	attach()
+	move()
+	put()
+	met()
+	cancel()
+}
+class Price {
+	set()
+}
+class Courses {
+	CoursesInformation
+	offer()
+	registered()
+	share()
+	start()
+	create()
+}
+class Feasibility {
+	"Feasibility-LRB-AsWellAsScope-RRB-OfEach"
+	understand()
+}
+class Administrator {
+	inquiry()
 	have()
+	see()
+	update()
+	verify()
+	receive()
+	delete()
+	create()
+	adjust()
+}
+class PricesOfCourses {
+	getting()
+	see()
+	compare()
 }
 class CourseAttendee {
 	see()
-	compare()
 	decide()
+	pay()
 	receive()
+	compare()
 	Rate()
 	Review()
-	pay()
-}
-class PricesOfCourses {
-	compare()
-	see()
 }
 class Notifications {
 	receive()
 }
-Notifications "1" o-- "1" Notification
-Prices "1" o-- "1" Trainer
-Administrator "1" o-- "1" Admin
-PricesOfCourses "1" o-- "1" Prices
-Course "1" o-- "1" User
-Course "1" <|-- "1" is
-Prices "1" o-- "1" Price
-Courses "1" o-- "1" Course
-DateRange "1" o-- "1" Date
-PricesOfCourses "1" o-- "1" Price
-CourseAttendee "1" o-- "1" Course
-Trainers "1" o-- "1" Trainer
-Feasibility "1" o-- "1" their
+their o-- Feasibility
+Trainer o-- Trainers
+Prices o-- PricesOfCourses
+Trainer o-- Prices
+Notification o-- Notifications
+User o-- Course
+Admin o-- Administrator
+Course o-- Courses
+Price o-- Prices
+Course o-- CourseAttendee
+Date o-- DateRange
+Price o-- PricesOfCourses
 
 @enduml

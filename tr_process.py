@@ -8,7 +8,10 @@ from Parser.PosTagParser import *
 from Parser.TDParser import *
 
 from UMLViewer import *
+from util.logger import Logger
 import re
+
+logger = Logger("./log/tr_process.err")
 
 class TransformationRules:
 
@@ -240,8 +243,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 :
-                    if "nsubj" or "dobj" not in td_dict:
-                        print("SVIODO Error in nsubj or dobj",list(sentence.keys())[0])
+                    if not ({"nsubj", "dobj"} <= td_dict.keys()):
+                        logger.error("tr11: SVIODO missing nsubj or dobj in \n" + 
+                            list(sentence.keys())[0])
                     else:
                         a= ""
                         b= ""
@@ -267,8 +271,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0:
-                    if "nsubj" not in td_dict or "dobj" not in td_dict:
-                        print("SVDOThatClause Error in nsubj or dobj",list(sentence.keys())[0])
+                    if not ({"nsubj", "dobj"} <= td_dict.keys()):
+                        logger.error("tr12: SVDOThatClause missing nsubj or dobj in \n" + 
+                            list(sentence.keys())[0])
                     else:
                         a= ""
                         b= ""
@@ -292,8 +297,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])<2 or len(td_dict["mark"])==0 :
-                    if "nsubj" or "mark"not in td_dict:
-                        print("SVThatClause Error in nsubj",list(sentence.keys())[0])
+                    if not ({"nsubj", "mark"} <= td_dict.keys()):
+                        logger.error("tr13: SVThatClause missing in nsubj or mark in \n" + 
+                            list(sentence.keys())[0])
                     else:
                         a= ""
                         b= ""
@@ -320,8 +326,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 or len(td_dict["neg"])==0 or len(td_dict["mark"])==0 or len(td_dict["acl"])==0:
-                    if "nsubj" or "dobj" or "mark" or "neg" or "acl" not in td_dict:
-                        print("SVDONotToInf Error in nsubj",list(sentence.keys())[0])
+                    if not ({"nsubj", "dobj", "mark", "neg", "acl"} <= td_dict.keys()):
+                        logger.error("tr14: SVDONotToInf missing nsubj, dobj, mark, neg or acl in \n" + 
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -352,8 +359,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["xcomp"])==0 or len(td_dict["dobj"])==0 or len(td_dict["neg"])==0 or len(td_dict["mark"])==0:
-                    if "nsubj" or "dobj" or "mark" or "neg" or "xcomp" not in td_dict:
-                        print("SVNotToInf Error in nsubj",list(sentence.keys())[0])
+                    if not ({"nsubj", "dobj", "mark", "neg", "xcomp"} <= td_dict.keys()):
+                        logger.error("tr15: SVNotToInf missing nsubj, dobj, mark, neg or xcomp in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -383,8 +391,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])<2 or len(td_dict["mark"])==0 or len(td_dict["cop"])==0 or len(td_dict["xcomp"])==0:
-                    if "nsubj" or "cop" or "mark" or "xcomp" not in td_dict:
-                        print("SVDOtobeComp Error in nsubj",list(sentence.keys())[0])
+                    if not ({"nsubj", "cop", "mark", "xcomp"} <= td_dict.keys()):
+                        logger.error("tr16: SVDOtobeComp missing nsubj, cop, mark or xcomp in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a= ""
                         b= ""
@@ -419,8 +428,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])<2 or len(td_dict["mark"])==0 or len(td_dict["acl"])==0:
-                    if "nsubj" or "dobj" or "mark" or "acl" not in td_dict:
-                        print("SVDOToInf Error in nsubj",list(sentence.keys())[0])
+                    if not ({"nsubj", "dobj", "mark", "acl"} <= td_dict.keys()):
+                        logger.error("tr17: SVDOToInf missing nsubj, dobj, mark or acl in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a= ""
                         b= ""
@@ -464,8 +474,9 @@ class TransformationRules:
                     #print(td_dict)
                     # print(index_dict)
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 or len(td_dict["acl"])==0 :
-                    if "nsubj" or "dobj" or "acl" not in td_dict:
-                        print("SVDOPresentPart Error in nsubj",list(sentence.keys())[0])
+                    if not ({"nsubj", "dobj", "acl"} <= td_dict.keys()):
+                        logger.error("tr18: SVDOPresentPart missing nsubj, dobj or acl in \n" +
+                            list(sentence.keys())[0])
                     else:
                           a=""
                           b=""
@@ -504,8 +515,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 or len(td_dict["acl"])==0 :
-                    if "nsubj" or "dobj" or "acl" not in td_dict:
-                        print("SVDOPastPart Error in nsubj,dobj or acl ",list(sentence.keys())[0])
+                    if not ({"nsubj", "dobj", "acl"} <= td_dict.keys()):
+                        logger.error("tr19: SVDOPastPart missing nsubj, dobj or acl in \n" + 
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -531,8 +543,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])<2 or len(td_dict["xcomp"])==0 :
-                    if "nsubj" or "xcomp" not in td_dict:
-                        print("SVDOAdj Error in nsubj, or xcomp",list(sentence.keys())[0])
+                    if not ({"nsubj", "xcomp"} <= td_dict.keys()):
+                        logger.error("tr20: SVDOAdj missing nsubj or xcomp in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -559,8 +572,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])<2 or len(td_dict["xcomp"])==0 :
-                    if "nsubj" or "xcomp" not in td_dict:
-                        print("SVDONoun Error in nsubj, or xcomp",list(sentence.keys())[0])
+                    if not ({"nsubj", "xcomp"} <= td_dict.keys()):
+                        logger.error("tr21: SVDONoun missing nsubj or xcomp in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -586,8 +600,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 or len(td_dict["advmod"])==0 or len(td_dict["aux"])==0 or len(td_dict["xcomp"]==0):
-                    if "nsubj" or "dobj" or "advmod" or "mark" or "xcomp" not in td_dict:  
-                        print("SVDOConjToInf Error in nsubj or dobj",list(sentence.keys())[0])
+                    if not ({"nsubj", "dobj", "advmod", "mark", "xcomp"} <= td_dict.keys()):
+                        logger.error("tr22: SVDOConjToInf missing nsubj, dobj, advmod, mark or xcomp in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -620,8 +635,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])<2 or len(td_dict["dobj"])==0 or len(td_dict["advmod"])==0 :
-                    if "nsubj" or "dobj" or "advmod" not in td_dict:
-                        print("SVDOConjClause Error in nsubj,dobj or acl ",list(sentence.keys())[0])
+                    if not ({"nsubj", "dobj", "advmod"} <= td_dict.keys()):
+                        logger.error("tr23: SVDOConjClause missing nsubj, dobj or advmod in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -645,8 +661,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 or len(td_dict["advmod"])==0 :
-                    if "nsubj" or "dobj" or "advmod" not in td_dict:    
-                        print("SVDOAdverbial Error in nsubj,dobj or advmod ",list(sentence.keys())[0])
+                    if not ({"nsubj", "dobj", "advmod"} <= td_dict.keys()):  
+                        logger.error("tr24: SVDOAdverbial missing nsubj,dobj or advmod in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -674,8 +691,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0 or len(td_dict["aux"])==0 :
-                    if "nsubj" or "dobj" or "aux" not in td_dict:
-                        print("SAuxVDO Error in nsubj,dobj or aux ",list(sentence.keys())[0])
+                    if not ({"nsubj", "dobj", "aux"} <= td_dict.keys()):
+                        logger.error("tr25: SAuxVDO missing nsubj, dobj or aux in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -711,8 +729,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["advmod"])==0 or len(td_dict["aux"])==0 or len(td_dict["xcomp"])==0:
-                    if "nsubj" or "advmod" or "aux" or "xcomp" not in td_dict:
-                        print("SVConjToInf Error in nsubj",list(sentence.keys())[0])
+                    if not ({"nsubj", "advmod", "aux", "xcomp"} <= td_dict.keys()):
+                        logger.error("tr27: SVConjToInf missing nsubj, advmod, aux or xcomp in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b_s=""
@@ -741,8 +760,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["advmod"])==0 or len(td_dict["advcl"])==0:
-                    if "nsubj" or "advmod" or "advcl" not in td_dict:    
-                        print("SVConjClause Error in nsubj,dobj or aux ",list(sentence.keys())[0])
+                    if not ({"nsubj", "advmod", "advcl"} <= td_dict.keys()):    
+                        logger.error("tr28: SVConjClause missing nsubj, advmod or advcl in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -771,8 +791,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["mark"])==0 or len(td_dict["xcomp"])==0:
-                    if "nsubj" or "xcomp" or "mark" not in td_dict:
-                        print("SVToInf Error in nsubj,dobj or aux ",list(sentence.keys())[0])
+                    if not ({"nsubj", "xcomp", "mark"} <= td_dict.keys()):
+                        logger.error("tr29: SVToInf missing nsubj, xcomp or mark in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -805,8 +826,9 @@ class TransformationRules:
                     #print(td_dict)
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["xcomp"])==0:
-                    if "nsubj" or "xcomp" not in td_dict:
-                        print("SVGerund Error in nsubj,xcomp",list(sentence.keys())[0])
+                    if not ({"nsubj", "xcomp"} <= td_dict.keys()):
+                        logger.error("tr30: SVGerund missing nsubj or xcomp in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -833,8 +855,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["advmod"])==0:
-                    if "nsubj" or "advmod" not in td_dict:
-                        print("SVAdverbialAdjunct Error in nsubj,advmod",list(sentence.keys())[0])
+                    if not ({"nsubj", "advmod"} <= td_dict.keys()):
+                        logger.error("tr31: SVAdverbialAdjunct missing nsubj or advmod in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b="" 
@@ -886,8 +909,9 @@ class TransformationRules:
                     #print(type(adj_list[0][0]))
                     #print(noun_list)
                     #if len(td_dict["nsubj"])==0 or len(td_dict["cop"])==0:
-                    if "nsubj" and "cop" not in td_dict:
-                        print("SVPredicative Error in nsubj,cop",list(sentence.keys())[0])
+                    if not ({"nsubj", "cop"} <= td_dict.keys()):
+                        logger.error("tr32: SVPredicative missing nsubj or cop in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a="" #employee
                         b="" #customer
@@ -934,8 +958,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["nummod"])==0 or len(td_dict["case"])==0 or len(td_dict["nmod"])==0:
-                    if "nsubj" or "nummod" or "case" or "nmod" not in td_dict:   
-                        print("SVForComp Error in nsubj,advmod",list(sentence.keys())[0])
+                    if not ({"nsubj", "nummod", "case", "nmod"} <= td_dict.keys()):
+                        logger.error("tr33: SVForComp missing nsubj, nummod, case or nmod in \n" +
+                            list(sentence.keys())[0])
                     else:
                          a="" 
                          b=""
@@ -971,8 +996,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubjpass"])==0 or len(td_dict["auxpass"])==0 or len(td_dict["case"])==0 or len(td_dict["nmod"])==0:
-                    if "nsubjpass" or "auxpass" or "case" or "nmod" not in td_dict:
-                        print("SVPassPO Error in nsubj,dobj",list(sentence.keys())[0])
+                    if not ({"nsubjpass", "auxpass", "case", "nmod"} <= td_dict.keys()):
+                        logger.error("tr34: SVPassPO missing nsubjpass, auxpass, case or nmod in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -1005,8 +1031,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubjpass"])==0 or len(td_dict["auxpass"])==0 or len(td_dict["case"])==0 or len(td_dict["aux"])==0 or len(td_dict["nmod"])==0:
-                    if "nsubjpass" or "aux" or "auxpass" or "case" or "nmod" not in td_dict:
-                        print("SAuxVPassPO Error in nsubj,dobj",list(sentence.keys())[0])
+                    if not ({"nsubjpass", "aux", "auxpass", "case", "nmod"} <= td_dict.keys()):
+                        logger.error("tr35: SAuxVPassPO missing in nsubjpass, aux, auxpass, case or nmod in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -1041,8 +1068,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["case"])==0 or len(td_dict["nmod"])==0 :
-                    if "nsubj" or "case" or "nmod" not in td_dict:
-                        print("SVPO Error in nsubj,dobj",list(sentence.keys())[0])
+                    if not ({"nsubj", "case", "nmod"} <= td_dict.keys()):
+                        logger.error("tr36: SVPO missing nsubj, case or nmod in \n" +
+                            list(sentence.keys())[0])
                     else  :
                         a=""
                         b=""
@@ -1068,8 +1096,9 @@ class TransformationRules:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
                     #if len(td_dict["nsubj"])==0 or len(td_dict["dobj"])==0:
-                    if "nsubj" or "dobj" not in td_dict:    
-                        print("SVDO Error in nsubj,dobj",list(sentence.keys())[0])
+                    if not ({"nsubj", "dobj"} <= td_dict.keys()):
+                        logger.error("tr37: SVDO missing nsubj or dobj in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -1098,8 +1127,9 @@ class TransformationRules:
                 for sentence in data["SV"]:
                     td_dict = sentence[list(sentence.keys())[0]]["TD"]
                     index_dict = sentence[list(sentence.keys())[0]]["Index"]
-                    if "nsubj" not in td_dict:
-                        print("SV Error in nsubj",list(sentence.keys())[0])
+                    if not ({"nsubj"} <= td_dict.keys()):
+                        logger.error("tr39: SV missing nsubj in \n" +
+                            list(sentence.keys())[0])
                     else:
                         a=""
                         b=""
@@ -1113,29 +1143,30 @@ class TransformationRules:
                 compound(A,B)
                 """
                 for sentence in data["INCLUDE"] or data["EXTEND"]:
-                      print(sentence)
-                      td_dict = sentence[list(sentence.keys())[0]]["TD"]
-                      index_dict = sentence[list(sentence.keys())[0]]["Index"]
-                      #if len(td_dict["compound"])==0:
-                      if "compound" not in td_dict:
-                        print("INCLUDE/EXTEND Error in nsubj",list(sentence.keys())[0])
-                      else:
-                          b=""
-                          destentityterm=""
-                          #flag=False
-                          for compound_entry in td_dict["compound"]:
-                              #if flag==False:
-                                #temp=compound_entry
-                                b=compound_entry[1]
-                                break
-                            
-                          for td_entry in td_dict:
-                              for i in td_entry:
-                                  if i[1]>b:
-                                      destentityterm=destentityterm+index_dict[str(i[1])]
-                                      
-                          obj=self.Operations(name="<<"+index_dict[str(b)]+">>",source="system",dest=destentityterm,sentence=list(sentence.keys())[0])
-                          self.op_list.append(obj)           
+                    print(sentence)
+                    td_dict = sentence[list(sentence.keys())[0]]["TD"]
+                    index_dict = sentence[list(sentence.keys())[0]]["Index"]
+                    #if len(td_dict["compound"])==0:
+                    if not ({"compound"} <= td_dict.keys()):
+                        logger.error("tr40: INCLUDE/EXTEND missing compound in \n" +
+                            list(sentence.keys())[0])
+                    else:
+                        b=""
+                        destentityterm=""
+                        #flag=False
+                        for compound_entry in td_dict["compound"]:
+                            #if flag==False:
+                            #temp=compound_entry
+                            b=compound_entry[1]
+                            break
+                        
+                        for td_entry in td_dict:
+                            for i in td_entry:
+                                if i[1]>b:
+                                    destentityterm=destentityterm+index_dict[str(i[1])]
+                                  
+                        obj=self.Operations(name="<<"+index_dict[str(b)]+">>",source="system",dest=destentityterm,sentence=list(sentence.keys())[0])
+                        self.op_list.append(obj)           
                               
                           
             def  tr41()  :
@@ -1147,8 +1178,9 @@ class TransformationRules:
                    td_dict = sentence[list(sentence.keys())[0]]["TD"]
                    index_dict = sentence[list(sentence.keys())[0]]["Index"]
                    #if len(td_dict["compound"])==0:
-                   if "compound" not in td_dict:
-                        print("RESUME Error in compound",list(sentence.keys())[0])
+                   if not ({"compound"} <= td_dict.keys()):
+                        logger.error("tr41: RESUME missing compound in \n" +
+                            list(sentence.keys())[0])
                    else:
                        a=""
                        b=""
@@ -1166,8 +1198,9 @@ class TransformationRules:
                    td_dict = sentence[list(sentence.keys())[0]]["TD"]
                    index_dict = sentence[list(sentence.keys())[0]]["Index"]
                    #if len(td_dict["compound"])==0:
-                   if "compound" not in td_dict:
-                        print("REPEAT Error in compound",list(sentence.keys())[0])
+                   if not ({"compound"} <= td_dict.keys()):
+                        logger.error("tr42: REPEAT missing compound in \n" +
+                            list(sentence.keys())[0])
                    else:
                        a=""
                        b=""
@@ -1221,7 +1254,8 @@ class TransformationRules:
             tr29()
             tr30()
             tr31() 
-            tr32()
+            # Bo: temporarily opt out tr32 cuz it returns weird result 
+            # tr32()
             tr33()
             tr34()
             tr35()
@@ -1738,7 +1772,7 @@ def UML_graphic(class_dict, relationship_dict, output_path, output_name):
                     relationship[0] = '"' + relationship[0] + '"'
                 if re.search("\W",relationship[1]) != None:
                     relationship[1] = '"' + relationship[1] + '"'
-                uml_asso = UMLAssociation(relationship[0], relationship[1],rel_name)
+                uml_asso = UMLAssociation(relationship[0], relationship[1], rel_name)
                 viewer.add_association(uml_asso)   
 
     #viewer.save_to_file(path="./Diagrams/")
@@ -1746,32 +1780,30 @@ def UML_graphic(class_dict, relationship_dict, output_path, output_name):
 
 if __name__ == '__main__':
 
-    with open(os.getcwd() + '/Diagrams/log.txt', 'w') as log:
-    
-        for year in range(2014,2020):
-            for project in range(1,16):
-                filename=str(year)+'-USC-Project' + str(project).rjust(2,'0')
-                filepath=os.getcwd() + "/input_v2/" + filename + '.txt'
-                print("TR processing " + filepath)
-                if not os.path.exists(filepath):
-                    break
-                else:
-                    p=TransformationRules(filepath)
-                    p.apply_rules()
-                    with open(os.getcwd() + '/Data/trprocess_v2/%sResult.json'%filename, 'w') as file:
-                        obj = {"class_dict" : p.class_dict, "relationship_dict" : p.relationship_dict}
-                        json.dump(obj, file, indent=2)
-                    file.close()    
+    for year in range(2014,2020):
+        for project in range(1,16):
+            filename=str(year)+'-USC-Project' + str(project).rjust(2,'0')
+            filepath=os.getcwd() + "/input_v2/" + filename + '.txt'
+            print("TR processing " + filepath)
+            logger.info("TR processing " + filepath)
+            if not os.path.exists(filepath):
+                break
+            else:
+                p=TransformationRules(filepath)
+                p.apply_rules()
+                with open(os.getcwd() + '/Data/trprocess_v2/%sResult.json'%filename, 'w') as file:
+                    obj = {"class_dict" : p.class_dict, "relationship_dict" : p.relationship_dict}
+                    json.dump(obj, file, indent=2)
+                file.close()    
 
-                    uml_filename = filename
-                    uml_generated_path = os.getcwd() + '/Diagrams/'
-                    try:
-                        print("Generating diagram for " + uml_generated_path + uml_filename)
-                        UML_graphic(p.class_dict, p.relationship_dict, uml_generated_path, uml_filename) 
-                    except Exception as e:
-                        log.write("Cannot generate " + uml_generated_path + uml_filename)
-                        log.write("Error: " + str(e))
-                        pass
+                uml_filename = filename
+                uml_generated_path = os.getcwd() + '/Diagrams/'
+                try:
+                    print("Generating diagram for " + uml_generated_path + uml_filename)
+                    UML_graphic(p.class_dict, p.relationship_dict, uml_generated_path, uml_filename) 
+                except Exception as e:
+                    logger.error("Cannot generate " + uml_generated_path + uml_filename + "\n" + str(e))
+                    pass
 
     # print(os.getcwd() + "/input_v2/" + "2014-USC-Project01.txt")
     # p = TransformationRules(os.getcwd() + "/input_v2/" + "2014-USC-Project01.txt")

@@ -1,48 +1,43 @@
 @startuml
 hide circle
 class his {
-	Progress : string
 }
 class UserStats {
-	viewing : string
+	viewing
 }
 class AppStore {
-	publish : string
-	Rate : string
-	provide : string
+	publish
+	provide
+	Rate
 }
 class User {
-	ProgressReport : string
-	weak : string
-	UserAnalytics : string
-	UserStats : string
-	be : string
-	be : string
-	be : string
-	be : string
-	be : string
-	be : string
-	enables()
-	able()
+	UserAnalytics
+	ProgressReport
+	weak
 	view()
-	track()
-	get()
-	Trouble()
-	play()
-	understand()
+	able()
 	skip()
 	proceed()
+	fix()
+	understand()
+	enables()
+	play()
+	Trouble()
+	track()
+	get()
 }
 class App {
-	AppStore : string
+	play()
 	publish()
+	able()
+	Rate()
 }
 class Progress {
-	ProgressReport : string
+	ProgressReport
 	track()
 }
-AppStore "1" o-- "1" App
-UserStats "1" o-- "1" User
-Progress "1" o-- "1" his
+User o-- UserStats
+his o-- Progress
+App o-- AppStore
 
 @enduml

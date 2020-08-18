@@ -3,44 +3,58 @@
     "TourCreator": {
       "Attribute": [
         "Tours",
-        "Area",
-        "be"
+        "Area"
       ],
       "Behavior": {
-        "upload": [
-          ""
-        ],
         "view": [
+          "",
           ""
         ],
         "edit": [
+          "",
           ""
         ],
         "delete": [
-          ""
-        ],
-        "created": [
+          "",
           ""
         ],
         "sign": [
-          ""
-        ],
-        "have": [
-          ""
-        ],
-        "manage": [
+          "",
+          "",
           ""
         ],
         "able": [
+          "",
           ""
         ],
         "use": [
+          "",
           ""
         ],
-        "create": [
+        "have": [
+          "",
+          ""
+        ],
+        "manage": [
+          "",
+          ""
+        ],
+        "authorize": [
+          "",
+          ""
+        ],
+        "created": [
+          "",
           ""
         ],
         "promote": [
+          "",
+          ""
+        ],
+        "upload": [
+          ""
+        ],
+        "create": [
           ""
         ]
       }
@@ -65,7 +79,11 @@
         "Tours",
         "TourTaker"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "select": [
+          ""
+        ]
+      }
     },
     "TourConductorWebsite": {
       "Attribute": [
@@ -77,6 +95,18 @@
       "Attribute": [],
       "Behavior": {
         "click": [
+          "",
+          ""
+        ],
+        "visible": [
+          ""
+        ],
+        "search": [
+          "",
+          ""
+        ],
+        "Search": [
+          "",
           ""
         ],
         "view": [
@@ -88,60 +118,13 @@
         "select": [
           ""
         ],
-        "search": [
-          ""
-        ],
-        "Search": [
-          ""
-        ],
         "have": [
-          ""
-        ]
-      }
-    },
-    "it": {
-      "Attribute": [],
-      "Behavior": {
-        "delete": [
-          ""
-        ],
-        "view": [
-          ""
-        ],
-        "manage": [
-          ""
-        ],
-        "use": [
-          ""
-        ],
-        "search": [
-          ""
-        ],
-        "have": [
-          ""
-        ],
-        "seems": [
-          ""
-        ],
-        "IrrelevantUpload": [
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "be",
-        "it",
-        []
-      ],
-      [
-        "be",
-        "TourCreator",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "Map",

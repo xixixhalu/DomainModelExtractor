@@ -18,12 +18,37 @@
       ],
       "Behavior": {}
     },
-    "member": {
+    "Password": {
       "Attribute": [
+        "PasswordProtected/privatePage"
+      ],
+      "Behavior": {}
+    },
+    "News": {
+      "Attribute": [
+        "NewsSectionOfTheWebsite"
+      ],
+      "Behavior": {}
+    },
+    "me": {
+      "Attribute": [
+        "member",
         "members"
       ],
       "Behavior": {
-        "view": [
+        "register": [
+          "",
+          ""
+        ],
+        "pay": [
+          "",
+          ""
+        ],
+        "becomes": [
+          "",
+          ""
+        ],
+        "signup": [
           ""
         ]
       }
@@ -34,56 +59,33 @@
       ],
       "Behavior": {
         "download": [
+          "",
+          "",
           ""
         ],
         "practice": [
+          "",
           ""
         ]
       }
     },
-    "me": {
+    "member": {
       "Attribute": [
-        "member",
         "members"
       ],
-      "Behavior": {
-        "signup": [
-          ""
-        ]
-      }
-    },
-    "News": {
-      "Attribute": [
-        "NewsSectionOfTheWebsite"
-      ],
-      "Behavior": {}
-    },
-    "Password": {
-      "Attribute": [
-        "PasswordProtected/privatePage"
-      ],
-      "Behavior": {}
-    },
-    "parents": {
-      "Attribute": [],
       "Behavior": {
         "view": [
           ""
         ]
       }
     },
-    "NewsSectionOfTheWebsite": {
+    "parents": {
       "Attribute": [],
       "Behavior": {
-        "triggers": [
+        "update": [
           ""
-        ]
-      }
-    },
-    "System": {
-      "Attribute": [],
-      "Behavior": {
-        "CombinationOfThreeWebsites": [
+        ],
+        "view": [
           ""
         ]
       }
@@ -98,16 +100,18 @@
           ""
         ]
       }
+    },
+    "NewsSectionOfTheWebsite": {
+      "Attribute": [],
+      "Behavior": {
+        "triggers": [
+          "",
+          ""
+        ]
+      }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "be",
-        "System",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "parent",
@@ -115,13 +119,8 @@
         []
       ],
       [
-        "Student",
-        "Student/parent",
-        []
-      ],
-      [
-        "me",
-        "member",
+        "Password",
+        "PasswordProtected/privatePage",
         []
       ],
       [
@@ -130,8 +129,13 @@
         []
       ],
       [
-        "Password",
-        "PasswordProtected/privatePage",
+        "me",
+        "member",
+        []
+      ],
+      [
+        "Student",
+        "Student/parent",
         []
       ]
     ]

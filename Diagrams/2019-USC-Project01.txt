@@ -1,58 +1,49 @@
 @startuml
 hide circle
 class Users {
-	"Sign-inRequests" : string
+	"Sign-inRequests"
 }
 class User {
-	SocialMedia : string
-	Profile : string
-	Account : string
-	ProfilePicture : string
-	LatestLinkedInProfilePicture : string
-	Users : string
-	UserProfile : string
-	UserInformation : string
-	be : string
-	be : string
-	log()
+	UserInformation
+	LatestLinkedInProfilePicture
+	UserProfile
+	Account
 	look()
-	update()
-	resume()
+	log()
 	able()
+	resume()
 	see()
+	update()
 	authenticate()
-	find()
 	keep()
+	find()
+	click()
+	filter()
 	sort()
 	disable()
-	filter()
 	search()
-	click()
 }
 class SocialMedia {
-	Events : string
-}
-class System {
-	SystemAdmin : string
-	fetch()
-	persist()
-	see()
-	get()
-	render()
-	export()
-	highlight()
-	have()
+	update()
 }
 class Events {
-	"Events/documents/users" : string
+	able()
+	see()
+	export()
 }
 class Profile {
-	ProfilesOfCsseProfessorsAndAlumni : string
-	ProfilePicture : string
+	ProfilesOfCsseProfessorsAndAlumni
+	authorize()
 }
-class Content {
-	is : string
-	innapropriate()
+class System {
+	fetch()
+	have()
+	see()
+	highlight()
+	persist()
+	export()
+	render()
+	get()
 }
 class SystemAdmin {
 	approve()
@@ -61,16 +52,41 @@ class ProfilePicture {
 	upload()
 }
 class Events/documents/users {
+	fetch()
+	log()
+	able()
+	login()
+	innapropriate()
+	persist()
+	filter()
+	upload()
+	search()
+	approve()
+	look()
+	see()
+	resume()
+	visible()
+	find()
+	have()
+	highlight()
 	trending()
+	"approve/reject"()
+	keep()
+	authenticate()
+	export()
+	click()
+	sort()
+	disable()
+	render()
+	get()
 }
-SystemAdmin "1" o-- "1" System
-Users "1" o-- "1" User
-"Events/documents/users" "1" o-- "1" Events
-SocialMedia "1" o-- "1" User
-ProfilePicture "1" o-- "1" Profile
-Profile "1" o-- "1" User
-ProfilePicture "1" o-- "1" User
-Events "1" o-- "1" SocialMedia
-Content "1" <|-- "1" is
+Events o-- "Events/documents/users"
+User o-- Users
+Profile o-- ProfilePicture
+User o-- SocialMedia
+System o-- SystemAdmin
+User o-- Profile
+User o-- ProfilePicture
+SocialMedia o-- Events
 
 @enduml

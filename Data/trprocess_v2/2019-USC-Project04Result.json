@@ -4,35 +4,28 @@
       "Attribute": [
         "documented"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "have": [
+          "",
+          ""
+        ]
+      }
     },
     "Project": {
       "Attribute": [
         "ProjectPlan"
       ],
       "Behavior": {
-        "have": [
+        "help": [
           ""
-        ]
-      }
-    },
-    "this": {
-      "Attribute": [],
-      "Behavior": {
-        "MainCoreOfTheProject": [
+        ],
+        "have": [
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "be",
-        "this",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "Project",

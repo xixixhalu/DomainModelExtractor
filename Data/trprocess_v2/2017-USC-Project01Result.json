@@ -8,18 +8,16 @@
         "Project",
         "UserPermission",
         "Users",
-        "UsersPasswords",
-        "am",
-        "be",
-        "be",
-        "be",
-        "be",
-        "be",
-        "be",
-        "be"
+        "UsersPasswords"
       ],
       "Behavior": {
         "receive": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "perform": [
           "",
           ""
         ],
@@ -31,19 +29,27 @@
           "",
           "",
           "",
-          ""
-        ],
-        "confirm": [
-          ""
-        ],
-        "see": [
+          "",
+          "",
+          "",
+          "",
           "",
           ""
         ],
         "export": [
+          "",
           ""
         ],
-        "perform": [
+        "see": [
+          "",
+          "",
+          ""
+        ],
+        "interact": [
+          "",
+          ""
+        ],
+        "confirm": [
           ""
         ],
         "reset": [
@@ -55,24 +61,23 @@
         "view": [
           ""
         ],
-        "interact": [
-          ""
-        ],
         "open": [
           ""
         ]
       }
     },
-    "System": {
+    "Users": {
       "Attribute": [
-        "SystemScatterplotChartOfTheCoevolutionOf",
-        "be"
+        "UsersPasswords"
       ],
       "Behavior": {
-        "https": [
+        "able": [
+          "",
+          "",
           ""
         ],
-        "React.js": [
+        "work": [
+          "",
           ""
         ]
       }
@@ -83,39 +88,18 @@
         "ProjectAnalysisView"
       ],
       "Behavior": {}
-    },
-    "Users": {
-      "Attribute": [
-        "UsersPasswords",
-        "be"
-      ],
-      "Behavior": {
-        "able": [
-          ""
-        ],
-        "work": [
-          ""
-        ]
-      }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "be",
-        "System",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "User",
-        "Project",
+        "Users",
         []
       ],
       [
         "User",
-        "Users",
+        "Project",
         []
       ]
     ]

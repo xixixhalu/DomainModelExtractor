@@ -1,19 +1,21 @@
 @startuml
 hide circle
 class Draft {
-	Details : string
-}
-class Details {
-	DetailsOf : string
-}
-class CurrentWeekGoal {
-	CurrentWeekGoals : string
+	modify()
+	remove()
 }
 class CurrentWeek {
-	CurrentWeekGoal : string
-	CurrentWeekGoals : string
+	CurrentWeekGoals
 }
-CurrentWeekGoal "1" o-- "1" CurrentWeek
-Details "1" o-- "1" Draft
+class CurrentWeekGoal {
+	CurrentWeekGoals
+}
+class Details {
+	DetailsOf
+	view()
+	add()
+}
+Draft o-- Details
+CurrentWeek o-- CurrentWeekGoal
 
 @enduml

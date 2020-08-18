@@ -18,17 +18,18 @@
         "CalendarOfAvailability",
         "Prices",
         "Profile",
-        "Trainers",
-        "be"
+        "Trainers"
       ],
       "Behavior": {
+        "see": [
+          "",
+          "",
+          ""
+        ],
         "offer": [
           ""
         ],
         "put": [
-          ""
-        ],
-        "see": [
           ""
         ],
         "compare": [
@@ -48,12 +49,25 @@
     "User": {
       "Attribute": [
         "Course",
-        "Registration",
-        "be",
-        "be",
-        "be"
+        "Registration"
       ],
       "Behavior": {
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "search": [
           ""
         ],
@@ -63,16 +77,6 @@
           ""
         ],
         "filter": [
-          ""
-        ],
-        "see": [
-          "",
-          "",
-          ""
-        ],
-        "able": [
-          "",
-          "",
           ""
         ],
         "setup": [
@@ -96,9 +100,35 @@
       ],
       "Behavior": {
         "schedule": [
+          "",
+          "",
           ""
         ],
         "cancel": [
+          "",
+          ""
+        ],
+        "receive": [
+          ""
+        ],
+        "verify": [
+          ""
+        ],
+        "start": [
+          ""
+        ],
+        "request": [
+          "",
+          ""
+        ],
+        "continue": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "able": [
+          "",
           ""
         ],
         "Calendar": [
@@ -117,8 +147,7 @@
     },
     "Trainers": {
       "Attribute": [
-        "Profile",
-        "are"
+        "Profile"
       ],
       "Behavior": {
         "profitable": [
@@ -126,12 +155,15 @@
         ]
       }
     },
-    "Courses": {
+    "Prices": {
       "Attribute": [
-        "CoursesInformation"
+        "PricesOfCourses"
       ],
       "Behavior": {
-        "start": [
+        "compare": [
+          "",
+          "",
+          "",
           ""
         ]
       }
@@ -142,60 +174,108 @@
       ],
       "Behavior": {}
     },
-    "Feasibility": {
-      "Attribute": [
-        "Feasibility-LRB-AsWellAsScope-RRB-OfEach"
-      ],
-      "Behavior": {}
-    },
-    "Prices": {
-      "Attribute": [
-        "PricesOfCourses"
-      ],
-      "Behavior": {}
-    },
-    "Price": {
-      "Attribute": [
-        "Prices",
-        "PricesOfCourses"
-      ],
-      "Behavior": {}
-    },
     "Admin": {
       "Attribute": [
-        "Administrator",
-        "be",
-        "be"
+        "Administrator"
       ],
       "Behavior": {
-        "schedule": [
+        "put": [
           ""
         ],
         "see": [
           "",
-          ""
-        ],
-        "met": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
           ""
         ],
         "did": [
+          "",
+          "",
           ""
         ],
         "able": [
           "",
+          "",
+          "",
           ""
         ],
         "cancel": [
+          "",
+          "",
           ""
         ],
         "adjust": [
           "",
+          "",
+          "",
+          ""
+        ],
+        "met": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "schedule": [
           ""
         ],
         "move": [
           ""
         ],
         "attach": [
+          ""
+        ]
+      }
+    },
+    "Price": {
+      "Attribute": [
+        "Prices",
+        "PricesOfCourses"
+      ],
+      "Behavior": {
+        "set": [
+          "",
+          ""
+        ]
+      }
+    },
+    "Courses": {
+      "Attribute": [
+        "CoursesInformation"
+      ],
+      "Behavior": {
+        "offer": [
+          "",
+          ""
+        ],
+        "create": [
+          "",
+          ""
+        ],
+        "share": [
+          "",
+          ""
+        ],
+        "start": [
+          "",
+          ""
+        ],
+        "registered": [
+          ""
+        ]
+      }
+    },
+    "Feasibility": {
+      "Attribute": [
+        "Feasibility-LRB-AsWellAsScope-RRB-OfEach"
+      ],
+      "Behavior": {
+        "understand": [
           ""
         ]
       }
@@ -233,9 +313,32 @@
         ]
       }
     },
+    "PricesOfCourses": {
+      "Attribute": [],
+      "Behavior": {
+        "compare": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "getting": [
+          ""
+        ],
+        "see": [
+          ""
+        ]
+      }
+    },
     "CourseAttendee": {
       "Attribute": [],
       "Behavior": {
+        "Rate": [
+          "",
+          "",
+          "",
+          ""
+        ],
         "see": [
           ""
         ],
@@ -248,24 +351,10 @@
         "receive": [
           ""
         ],
-        "Rate": [
-          ""
-        ],
         "Review": [
           ""
         ],
         "pay": [
-          ""
-        ]
-      }
-    },
-    "PricesOfCourses": {
-      "Attribute": [],
-      "Behavior": {
-        "compare": [
-          ""
-        ],
-        "see": [
           ""
         ]
       }
@@ -280,13 +369,6 @@
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "is",
-        "Course",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "Date",
@@ -324,28 +406,28 @@
         []
       ],
       [
+        "Prices",
+        "PricesOfCourses",
+        []
+      ],
+      [
         "Notification",
         "Notifications",
         []
       ],
       [
-        "Prices",
-        "PricesOfCourses",
-        []
-      ],
-      [
-        "Price",
-        "Prices",
-        []
-      ],
-      [
-        "Price",
-        "PricesOfCourses",
-        []
-      ],
-      [
         "Admin",
         "Administrator",
+        []
+      ],
+      [
+        "Price",
+        "Prices",
+        []
+      ],
+      [
+        "Price",
+        "PricesOfCourses",
         []
       ]
     ]

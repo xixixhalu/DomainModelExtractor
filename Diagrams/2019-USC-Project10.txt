@@ -1,22 +1,15 @@
 @startuml
 hide circle
 class SocialMedia {
-	trending : string
-	SocialMediaData : string
-	SocialMediaBuzz : string
-	SocialMediaOfCertainMovies : string
-}
-class User {
-	"'m" : string
-	find()
-	input()
-	interested()
+	SocialMediaBuzz
+	SocialMediaOfCertainMovies
+	trending
 }
 class SocialMediaData {
-	access()
 	create()
+	access()
+	maps()
 }
-User "1" <|-- "1" "'m"
-SocialMediaData "1" o-- "1" SocialMedia
+SocialMedia o-- SocialMediaData
 
 @enduml

@@ -31,25 +31,33 @@
       ],
       "Behavior": {
         "view": [
+          "",
+          ""
+        ],
+        "access": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Login": [
+          "",
+          ""
+        ],
+        "login": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "conduct": [
+          "",
           ""
         ],
         "check": [
           ""
         ],
-        "access": [
-          "",
-          ""
-        ],
         "know": [
-          ""
-        ],
-        "conduct": [
-          ""
-        ],
-        "Login": [
-          ""
-        ],
-        "login": [
           ""
         ]
       }
@@ -60,10 +68,39 @@
       ],
       "Behavior": {
         "Add/Edit": [
+          "",
+          "",
+          "",
           ""
         ],
         "conduct": [
           "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "know": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    },
+    "VolunteerCoach": {
+      "Attribute": [
+        "VolunteerCoaches"
+      ],
+      "Behavior": {
+        "identify": [
+          "",
+          ""
+        ],
+        "have": [
           ""
         ]
       }
@@ -85,29 +122,6 @@
         ]
       }
     },
-    "VolunteerCoach": {
-      "Attribute": [
-        "VolunteerCoaches"
-      ],
-      "Behavior": {
-        "identify": [
-          ""
-        ],
-        "have": [
-          ""
-        ]
-      }
-    },
-    "the": {
-      "Attribute": [
-        "they"
-      ],
-      "Behavior": {
-        "identify": [
-          ""
-        ]
-      }
-    },
     "Class": {
       "Attribute": [
         "ClassRoster",
@@ -115,25 +129,15 @@
       ],
       "Behavior": {}
     },
-    "System": {
+    "the": {
       "Attribute": [
-        "be",
-        "be"
+        "they"
       ],
       "Behavior": {
-        "accessible": [
-          ""
-        ],
-        "Hours": [
-          ""
-        ],
-        "easy": [
-          ""
-        ],
-        "intuitive": [
-          ""
-        ],
-        "use": [
+        "identify": [
+          "",
+          "",
+          "",
           ""
         ]
       }
@@ -141,10 +145,18 @@
     "they": {
       "Attribute": [],
       "Behavior": {
-        "forget": [
+        "reset/update": [
+          ""
+        ],
+        "login": [
           ""
         ],
         "change": [
+          "",
+          "",
+          ""
+        ],
+        "forget": [
           ""
         ]
       }
@@ -152,20 +164,117 @@
     "VolunteerCOACH": {
       "Attribute": [],
       "Behavior": {
+        "Regularly": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "ANY": [
+          "",
+          ""
+        ],
+        "have": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "turned": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "view": [
+          "",
+          "",
+          ""
+        ],
+        "Add/Edit": [
+          "",
+          "",
+          ""
+        ],
+        "Add/Update": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "monitor": [
+          "",
+          "",
+          ""
+        ],
+        "support": [
+          "",
+          ""
+        ],
+        "schedule": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "access": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "export": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "analyze": [
+          "",
+          "",
+          ""
+        ],
+        "forget": [
+          "",
+          "",
+          ""
+        ],
+        "add/Remove/Edit": [
+          "",
+          "",
+          "",
+          ""
+        ],
         "CHECK": [
+          "",
+          ""
+        ],
+        "check": [
+          ""
+        ],
+        "Login": [
+          "",
+          ""
+        ],
+        "login": [
+          "",
+          ""
+        ],
+        "accessible": [
+          ""
+        ],
+        "change": [
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "be",
-        "System",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "MyROSTERREMOTELY",
@@ -184,12 +293,12 @@
       ],
       [
         "Volunteer",
-        "Team",
+        "VolunteerCoach",
         []
       ],
       [
         "Volunteer",
-        "VolunteerCoach",
+        "Team",
         []
       ],
       [
@@ -198,13 +307,13 @@
         []
       ],
       [
-        "the",
-        "they",
+        "Class",
+        "Classes",
         []
       ],
       [
-        "Class",
-        "Classes",
+        "the",
+        "they",
         []
       ]
     ]

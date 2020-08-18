@@ -1,146 +1,136 @@
 @startuml
 hide circle
 class LanguageLearner {
-	Language : string
-	LanguageAssignments : string
-	Assignment : string
-	SearchResults : string
-	Matches : string
-	Teacher : string
-	LanguageLearners : string
+	LanguageLearners
+	Teacher
+	Matches
+	LanguageAssignments
+	SearchResults
+	order()
+	chat()
+	finish()
+	search()
+	easier()
+	find()
+	exchange()
+	learning()
+	so()
+	want()
 	use()
 	practice()
-	want()
+	make()
+	having()
+	prioritize()
+	know()
 	learn()
 	do()
-	finish()
-	order()
-	prioritize()
 	get()
-	know()
-	chat()
-	exchange()
-	search()
-	find()
 }
 class Website {
-	give : string
-	do : string
-	register : string
-	modify : string
-	WebsiteOwner : string
-	"WebsiteOwner/professor" : string
-	"WebsiteOwner/mediator" : string
-	WebsiteUser : string
+	register
+	"WebsiteOwner/mediator"
+	give
+	modify
+	do
 	promote()
 }
 class LanguageTeacher {
-	Students : string
 	give()
 }
 class People {
-	Help : string
 	pull()
 }
 class WebsiteOwner {
-	Website : string
-	"WebsiteOwner/professor" : string
-	"WebsiteOwner/mediator" : string
-	promote()
-	make()
+	"WebsiteOwner/mediator"
 	view()
-	assess()
+	promote()
 	maintain()
-	add()
-	suggest()
 	post()
-	generate()
+	subscribe()
 	send()
+	generate()
+	assess()
+	make()
 	inform()
 	monitor()
+	suggest()
+	add()
 }
 class Student {
-	PrivacyPolicy : string
-	Students : string
-	register()
+	PrivacyPolicy
 	modify()
 	avoid()
+	register()
 }
 class better {
-	other : string
+	other
 	know()
 }
 class blog {
-	post : string
-	Website : string
+	post
 }
 class OnlineExperience {
-	better : string
 	get()
 }
 class members {
-	AND : string
-	other : string
+	AND
+	other
+	RateInteractions()
 }
 class WebsiteUser {
-	NativeLanguageSkills : string
-	be : string
-	report()
-	get()
-	pull()
-	avoid()
-	receive()
-	find()
+	NativeLanguageSkills
+	are()
 	able()
+	operated()
+	avoid()
+	find()
+	pull()
+	receive()
 	offer()
 	want()
+	report()
 	practice()
+	get()
 }
 class Students {
-	LanguageLevel : string
+	LanguageLevel
 	increase()
-}
-class NativeSpeaker {
-	NativeSpeakerLanguageLearner : string
-	NativeSpeakers : string
-	find()
 	help()
-	use()
-	know()
-}
-class me {
-	member : string
-	members : string
-	solve()
-}
-class Language {
-	LanguageLearner : string
-	LanguageLearners : string
-	LanguageLevel : string
-	LanguageTeacher : string
-	LanguageAssignments : string
-	LanguageProficiency : string
-	practice()
 }
 class Help {
-	HelpStudent : string
+}
+class me {
+	solve()
+}
+class NativeSpeaker {
+	NativeSpeakers
+	know()
+	find()
+	solve()
+	use()
+	help()
 }
 class member {
-	members : string
 }
-class Others {
-	are : string
-	willing()
+class Language {
+	LanguageProficiency
+	LanguageLearners
+	LanguageAssignments
+	LanguageLevel
+	practice()
+	want()
 	learn()
 }
 class HelpStudent {
+	evaluate()
 	adjust()
 }
 class NativeSpeakerLanguageLearner {
+	know()
+	learn()
 	find()
 	talk()
-	learn()
-	know()
+	use()
 }
 class Assignment {
 	easier()
@@ -149,25 +139,24 @@ class WebsiteOwner/professor {
 	offer()
 	advise()
 }
-better "1" o-- "1" OnlineExperience
-NativeSpeakerLanguageLearner "1" o-- "1" NativeSpeaker
-members "1" o-- "1" me
-member "1" o-- "1" me
-LanguageLearner "1" o-- "1" Language
-LanguageTeacher "1" o-- "1" Language
-HelpStudent "1" o-- "1" Help
-members "1" o-- "1" member
-Others "1" <|-- "1" are
-Language "1" o-- "1" LanguageLearner
-Assignment "1" o-- "1" LanguageLearner
-WebsiteOwner "1" o-- "1" Website
-WebsiteUser "1" o-- "1" Website
-"WebsiteOwner/professor" "1" o-- "1" Website
-Students "1" o-- "1" LanguageTeacher
-Help "1" o-- "1" People
-Website "1" o-- "1" WebsiteOwner
-"WebsiteOwner/professor" "1" o-- "1" WebsiteOwner
-Students "1" o-- "1" Student
-Website "1" o-- "1" blog
+Student o-- Students
+Language o-- LanguageLearner
+blog o-- Website
+OnlineExperience o-- better
+Language o-- LanguageTeacher
+Help o-- HelpStudent
+me o-- members
+People o-- Help
+WebsiteOwner o-- "WebsiteOwner/professor"
+LanguageLearner o-- Language
+WebsiteOwner o-- Website
+LanguageLearner o-- Assignment
+LanguageTeacher o-- Students
+Website o-- "WebsiteOwner/professor"
+Website o-- WebsiteUser
+Website o-- WebsiteOwner
+member o-- members
+NativeSpeaker o-- NativeSpeakerLanguageLearner
+me o-- member
 
 @enduml

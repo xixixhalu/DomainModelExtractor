@@ -1,143 +1,124 @@
 @startuml
 hide circle
 class User {
-	Problems : string
-	Report : string
-	Identity : string
-	ContactDetails : string
-	Account : string
-	be : string
-	be : string
-	submit()
-	add()
-	anonymous()
+	Identity
+	ContactDetails
+	raised()
 	login()
-	request()
 	expedite()
 	able()
 	update()
+	be()
+	submit()
+	request()
+	anonymous()
+	add()
 }
 class Organization {
-	Clients : string
-	email()
 	view()
+	look()
+	check()
+	AccusedOf()
+	take()
+	delete()
+	generate()
 	understand()
 	make()
 	redirect()
-	AccusedOf()
-	look()
-	take()
-	generate()
-	check()
+	email()
 }
 class Employee {
-	Cases : string
-	ProfileDetails : string
-	Anonymity : string
-	Employees : string
-	EmployeesOf : string
-	be : string
+	Anonymity
+	ProfileDetails
+	EmployeesOf
+	Cases
 	view()
-	edit()
-	able()
 	check()
+	able()
+	have()
+	edit()
+	post()
 	file()
+	submit()
 	want()
 	expect()
 	track()
-	have()
-	post()
-	submit()
 }
 class their {
-	Status : string
 }
 class VerifiedNews {
-	Organization : string
 }
 class Report {
-	Reports : string
-	ReportsOfWorkplaceViolenceOrConflict : string
-	ReportsOfTheCases : string
+	ReportsOfWorkplaceViolenceOrConflict
+	ReportsOfTheCases
+	contain()
+	generate()
+}
+class MediaFiles {
 	contain()
 }
+class Employees {
+	EmployeesOf
+	resolve()
+	redirect()
+	AssuredOfPreventionOfWorkplaceViolence()
+	assign()
+	email()
+	ConduciveEnvironment()
+	form()
+}
 class Reports {
-	ReportsOfWorkplaceViolenceOrConflict : string
-	ReportsOfTheCases : string
-	filter()
+	ReportsOfWorkplaceViolenceOrConflict
+	ReportsOfTheCases
 	view()
+	generate()
+	filter()
 }
 class Vrs {
-	VrsAdmin : string
-	VrsSubjectMatterExpert : string
-	delete()
 	view()
-	assign()
-	filter()
-	generate()
+	resolved()
 	resolve()
-	form()
-	email()
+	delete()
+	generate()
 	prioritize()
+	filter()
+	assign()
+	email()
+	form()
 }
 class Status {
-	"StatusOfTheCases/complaints" : string
-}
-class Employees {
-	EmployeesOf : string
-	are : string
-	AssuredOfPreventionOfWorkplaceViolence()
-	ConduciveEnvironment()
-}
-class Complaint {
-	be : string
-	raised()
-	useful()
-}
-class Clients {
-	are : string
-	safe()
+	"StatusOfTheCases/complaints"
 }
 class VrsSubjectMatterExpert {
+	ValidCases()
+	notify()
 	verify()
 	investigate()
-	notify()
+	filed()
+}
+class Account {
+	be()
 }
 class VrsAdmin {
 	view()
-	filter()
-	download()
 	edit()
 	generate()
+	download()
+	filter()
 }
-class Account {
-	address()
-	understand()
-	delete()
-	AccusedOf()
-	"re-use"()
-	minimize()
-	file()
-	expect()
-	look()
-	create()
-	investigate()
-	assign()
-	expedite()
-	be()
+class Clients {
+	safe()
 }
-Reports "1" o-- "1" Report
-Account "1" o-- "1" User
-Employees "1" <|-- "1" be
-VrsSubjectMatterExpert "1" o-- "1" Vrs
-Clients "1" o-- "1" Organization
-VrsAdmin "1" o-- "1" Vrs
-Employees "1" o-- "1" Employee
-Complaint "1" <|-- "1" be
-Status "1" o-- "1" their
-MediaFiles "1" o-- "1" Report
-Employees "1" <|-- "1" are
-Organization "1" o-- "1" VerifiedNews
-Report "1" o-- "1" User
+Employee o-- Employees
+Report o-- MediaFiles
+their o-- Status
+User o-- Report
+VerifiedNews o-- Organization
+User o-- Account
+Report o-- Reports
+User o-- Problems
+Vrs o-- VrsSubjectMatterExpert
+Organization o-- Clients
+Vrs o-- VrsAdmin
 
 @enduml

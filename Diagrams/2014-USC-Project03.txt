@@ -1,118 +1,104 @@
 @startuml
 hide circle
 class Driver {
-	MobilePhone : string
-	Valet : string
-	Valet : string
-	Vehicle : string
-	Profile : string
-	CreditCardInformation : string
-	check()
-	pay()
+	MobilePhone
+	Profile
+	CreditCardInformation
+	Vehicle
 	message()
+	check()
 	have()
-	wait()
-	create()
-	use()
-	request()
+	pay()
 	want()
+	wait()
+	use()
+	create()
+	request()
 }
 class Customers {
-	more : string
+	more
 	attract()
 }
 class App {
-	stored : string
-	Application : string
+	stored
+	stored()
 }
 class Customer {
-	TicketNumber : string
-	"CarNow/later" : string
-	Customers : string
+	"CarNow/later"
+	TicketNumber
 	enter()
-	request()
-	paid()
-	have()
-	wait()
-}
-class their {
-	Car : string
-	Car : string
-}
-class ValetOperator {
-	OwnLogin : string
-	Profile : string
-	Company : string
-	receive()
-	retrieve()
-	see()
 	know()
 	have()
-	add()
+	see()
 	send()
-}
-class ValetCompany {
-	Profile : string
-	Revenue : string
-	accept()
-	offer()
-	receive()
-	control()
-}
-class Valet {
-	ValetCompany : string
-	ValetTicket : string
-	ValetOperator : string
-	ValetPrice : string
-	ValetHead : string
-	message()
-}
-class System {
-	"SystemBack-end" : string
-	be : string
-	be : string
-	be : string
-	capable()
-	work()
-	available()
-}
-class Car {
-	"CarNow/later" : string
-	is : string
+	paid()
+	wait()
+	request()
 	retrieve()
 	ready()
 }
-class Application {
-	be : string
-	secure()
+class their {
+}
+class ValetOperator {
+	Company
+	OwnLogin
+	Profile
+	have()
+	know()
+	see()
+	send()
+	receive()
+	paid()
+	wait()
+	ready()
+	retrieve()
+	Location()
+	working()
+	add()
+}
+class ValetCompany {
+	Revenue
+	Profile
+	accept()
+	receive()
+	control()
+	offer()
+}
+class Car {
+	"CarNow/later"
+	have()
+	send()
+	wait()
+	retrieve()
+	ready()
+}
+class System {
+	available()
+	work()
+	capable()
+}
+class Valet {
+	ValetTicket
+	ValetPrice
+	message()
 }
 class ValetHead {
-	set()
 	adjust()
-}
-class Channel {
-	Encrypted()
+	set()
 }
 class SystemBack-end {
-	accept()
-	create()
-	use()
-	send()
-	enter()
-	request()
-	receive()
-	set()
 	have()
-	control()
 }
-Car "1" o-- "1" their
-ValetOperator "1" o-- "1" Valet
-Channel "1" <|-- "1" is
-ValetCompany "1" o-- "1" Valet
-Valet "1" o-- "1" Driver
-ValetHead "1" o-- "1" Valet
-Application "1" o-- "1" App
-"SystemBack-end" "1" o-- "1" System
-Customers "1" o-- "1" Customer
+class Application {
+	secure()
+}
+Valet o-- ValetCompany
+App o-- Application
+Valet o-- ValetHead
+Customer o-- Customers
+their o-- Car
+System o-- "SystemBack-end"
+Valet o-- ValetOperator
+Driver o-- Valet
 
 @enduml

@@ -1,81 +1,86 @@
 @startuml
 hide circle
 class MyROSTERREMOTELY {
-	Girls : string
 }
 class InREALTIME {
-	Girls : string
-	OtherCOACHES : string
+	OtherCOACHES
 }
 class Girl {
-	"PaperWork/payment" : string
-	Girls : string
-	GirlsData : string
+	"PaperWork/payment"
+	GirlsData
 }
 class Volunteer {
-	ClassRoster : string
-	Team : string
-	VolunteerCOACH : string
-	VolunteerCoach : string
-	VolunteerCoaches : string
+	VolunteerCoaches
+	ClassRoster
 	view()
+	login()
 	check()
-	access()
 	know()
 	conduct()
+	access()
 	Login()
-	login()
 }
 class Classes {
-	TeamName : string
-	"Add/Edit"()
+	TeamName
 	conduct()
-}
-class Team {
-	TeamsHAVINGISSUESIMMEDIATELY : string
-	TeamRoster : string
-}
-class Girls {
-	GirlsData : string
-	turned()
+	"Add/Edit"()
+	know()
 }
 class VolunteerCoach {
-	VolunteerCoaches : string
-	identify()
+	VolunteerCoaches
 	have()
-}
-class the {
-	they : string
 	identify()
+}
+class Team {
+	TeamsHAVINGISSUESIMMEDIATELY
+	TeamRoster
+}
+class Girls {
+	GirlsData
+	turned()
 }
 class Class {
-	ClassRoster : string
-	Classes : string
+	ClassRoster
 }
-class System {
-	be : string
-	be : string
-	accessible()
-	Hours()
-	easy()
-	intuitive()
-	use()
+class the {
+	identify()
 }
 class they {
 	forget()
+	login()
 	change()
+	"reset/update"()
 }
 class VolunteerCOACH {
+	login()
+	check()
 	CHECK()
+	forget()
+	"Add/Edit"()
+	Regularly()
+	analyze()
+	monitor()
+	Login()
+	accessible()
+	have()
+	turned()
+	"Add/Update"()
+	access()
+	"add/Remove/Edit"()
+	view()
+	schedule()
+	support()
+	ANY()
+	export()
+	change()
 }
-Team "1" o-- "1" Volunteer
-System "1" <|-- "1" be
-VolunteerCoach "1" o-- "1" Volunteer
-Girls "1" o-- "1" MyROSTERREMOTELY
-VolunteerCOACH "1" o-- "1" Volunteer
-Girls "1" o-- "1" InREALTIME
-they "1" o-- "1" the
-Girls "1" o-- "1" Girl
-Classes "1" o-- "1" Class
+Girl o-- Girls
+Volunteer o-- VolunteerCoach
+Volunteer o-- Team
+Volunteer o-- VolunteerCOACH
+MyROSTERREMOTELY o-- Girls
+Class o-- Classes
+InREALTIME o-- Girls
+the o-- they
 
 @enduml

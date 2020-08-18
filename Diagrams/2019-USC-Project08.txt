@@ -1,113 +1,105 @@
 @startuml
 hide circle
 class Doctor {
-	PatientsHealth : string
-	DoctorUser : string
-	Doctors : string
-	modify()
-	get()
-	"register/enroll"()
+	Doctors
 	use()
+	modify()
+	"register/enroll"()
+	get()
 }
 class PatientUser {
-	Reminders : string
-	receive()
+	Reminders
 	indicate()
+	receive()
 	completed()
 }
 class User {
-	FingerprintScanner : string
-	"User/patient" : string
-	Username : string
+	Username
+	FingerprintScanner
 	login()
 }
 class Patients {
-	RecoveryProcess : string
-	PatientsHealth : string
-	get()
+	RecoveryProcess
 	have()
 	miss()
+	use()
+	"add/remove"()
+	get()
 }
 class AndroidPhones {
-	render : string
+	render
 }
 class Patient {
-	Treatments : string
-	"Questionnaire/surveys" : string
-	Doctor : string
-	Surgery : string
-	Timeline : string
-	graphically : string
-	DietaryConstraints : string
-	Patients : string
-	PatientsHealth : string
-	PatientUser : string
-	be : string
-	be : string
-	be : string
-	be : string
-	be : string
-	completed()
-	update()
-	get()
-	have()
-	save()
-	see()
-	took()
+	Timeline
+	graphically
+	"Questionnaire/surveys"
+	Treatments
+	Surgery
+	check()
 	able()
-	take()
-	do()
-	"books/cancels/reschedules"()
-	"book/cancel/reschedule"()
-	add()
-	snooze()
-	dismiss()
+	install()
 	receive()
+	dismiss()
+	choose()
 	track()
 	need()
+	add()
+	see()
+	NurseEtc()
+	"books/cancels/reschedules"()
+	update()
+	snooze()
+	save()
+	have()
 	compare()
-	choose()
-	install()
+	completed()
+	understandable()
+	take()
+	"register/enroll"()
+	"book/cancel/reschedule"()
+	took()
+	do()
+	get()
 }
 class Android {
-	testing : string
-	AndroidPhones : string
+	testing
 }
 class App {
-	Appointment : string
-	Appointments : string
-	Application : string
+	Application
+	Appointments
 	use()
 }
 class Appointment {
-	Appointments : string
+	Appointments
 	"book/cancel/reschedule"()
+	"books/cancels/reschedules"()
+}
+class DoctorUser {
+	view()
+	check()
+}
+class DietaryConstraints {
+	take()
+	need()
+	see()
 }
 class User/patient {
-	have()
 	answer()
+	have()
 }
 class PatientsHealth {
 	declines()
 }
-class DoctorUser {
-	check()
-	view()
-}
-class DietaryConstraints {
-	need()
-	take()
-}
-AndroidPhones "1" o-- "1" Android
-Doctor "1" o-- "1" Patient
-Appointment "1" o-- "1" App
-PatientUser "1" o-- "1" Patient
-PatientsHealth "1" o-- "1" Doctor
-Patients "1" o-- "1" Patient
-DoctorUser "1" o-- "1" Doctor
-PatientsHealth "1" o-- "1" Patient
-"User/patient" "1" o-- "1" User
-DietaryConstraints "1" o-- "1" Patient
-PatientsHealth "1" o-- "1" Patients
+Doctor o-- DoctorUser
+User o-- "User/patient"
+Patient o-- PatientsHealth
+Patients o-- PatientsHealth
+Android o-- AndroidPhones
+Patient o-- Doctor
+App o-- Appointment
+Patient o-- PatientUser
+Patient o-- Patients
+Doctor o-- PatientsHealth
+Patient o-- DietaryConstraints
 
 @enduml

@@ -1,48 +1,58 @@
 @startuml
 hide circle
 class User {
-	Cgm : string
-	BloodSugar : string
-	PersonalInformation : string
-	Health : string
-	InsulinUsage : string
-	FoodConsumption : string
-	PersonalInformation : string
-	be : string
-	be : string
-	connect()
-	able()
-	download()
-	set()
+	InsulinUsage
+	Cgm
+	FoodConsumption
 	view()
-	create()
-	get()
-	have()
 	enter()
-	input()
-	use()
-	sign()
+	have()
+	able()
+	create()
 	login()
 	see()
+	input()
 	Map()
+	set()
+	download()
 	want()
+	sign()
+	use()
+	connect()
+	get()
 }
 class PersonalInformation {
-	Account : string
+	want()
 }
 class Health {
-	PushNotification : string
+	PushNotification
 }
 class BloodSugar {
 	gets()
+	set()
 }
 class Account {
-	set()
+	view()
+	enter()
+	have()
+	create()
+	able()
+	login()
+	see()
+	input()
 	using()
+	customized()
+	Map()
+	set()
+	download()
+	want()
+	use()
+	connect()
+	get()
 }
-PersonalInformation "1" o-- "1" User
-Account "1" o-- "1" PersonalInformation
-Health "1" o-- "1" User
-BloodSugar "1" o-- "1" User
+User o-- Health
+PersonalInformation o-- Account
+User o-- PersonalInformation
+User o-- BloodSugar
 
 @enduml

@@ -21,6 +21,13 @@
       ],
       "Behavior": {
         "post": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "upload": [
+          "",
           ""
         ]
       }
@@ -85,6 +92,13 @@
         "Teachers"
       ],
       "Behavior": {
+        "send": [
+          "",
+          ""
+        ],
+        "have": [
+          ""
+        ],
         "see": [
           ""
         ],
@@ -97,19 +111,10 @@
         "check": [
           ""
         ],
-        "send": [
-          ""
-        ],
         "contact": [
           ""
         ]
       }
-    },
-    "Child": {
-      "Attribute": [
-        "Children"
-      ],
-      "Behavior": {}
     },
     "Question": {
       "Attribute": [
@@ -123,12 +128,13 @@
       ],
       "Behavior": {}
     },
-    "Questions": {
+    "Child": {
       "Attribute": [
-        "are"
+        "Children"
       ],
       "Behavior": {
-        "relevant": [
+        "locate": [
+          "",
           ""
         ]
       }
@@ -137,9 +143,12 @@
       "Attribute": [],
       "Behavior": {
         "post": [
+          "",
+          "",
           ""
         ],
         "improve": [
+          "",
           ""
         ]
       }
@@ -148,6 +157,11 @@
       "Attribute": [],
       "Behavior": {
         "contact": [
+          "",
+          "",
+          ""
+        ],
+        "check": [
           ""
         ],
         "upload": [
@@ -161,28 +175,6 @@
         ]
       }
     },
-    "ClassesHe/she": {
-      "Attribute": [],
-      "Behavior": {
-        "visiting": [
-          ""
-        ],
-        "connect": [
-          ""
-        ]
-      }
-    },
-    "what": {
-      "Attribute": [],
-      "Behavior": {
-        "trending": [
-          ""
-        ],
-        "Students": [
-          ""
-        ]
-      }
-    },
     "Teachers": {
       "Attribute": [],
       "Behavior": {
@@ -190,21 +182,42 @@
           ""
         ]
       }
+    },
+    "ClassesHe/she": {
+      "Attribute": [],
+      "Behavior": {
+        "add": [
+          ""
+        ],
+        "visiting": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "connect": [
+          ""
+        ]
+      }
+    },
+    "Questions": {
+      "Attribute": [],
+      "Behavior": {
+        "ask": [
+          "",
+          ""
+        ],
+        "bookmark": [
+          "",
+          ""
+        ],
+        "relevant": [
+          ""
+        ]
+      }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "are",
-        "what",
-        []
-      ],
-      [
-        "are",
-        "Questions",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "his",

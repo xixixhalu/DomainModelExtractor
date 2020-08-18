@@ -1,50 +1,80 @@
 @startuml
 hide circle
 class Behalf {
-	manage : string
+	manage
 }
 class Office {
-	Behalf : string
 	manage()
 }
 class Doctor {
-	Behalf : string
-	Patients : string
-	Data : string
-	Patients : string
-	SchedulingApplication : string
-	am : string
-	match()
-	able()
+	SchedulingApplication
 	view()
-	recommend()
-	want()
+	able()
 	edit()
 	fill()
 	choose()
+	want()
+	match()
+	recommend()
 }
 class Admin {
-	Profession : string
-	AdministrativeUser : string
-	Administrator : string
+	AdministrativeUser
+	Profession
 	customize()
 }
-class App {
-	Application : string
-	integrate()
-}
-class Administrator {
-	am : string
+class User {
+	view()
+	have()
 	able()
-	save()
-	retrieve()
+	import()
+	assign()
+	EmergencyContactAndInsuranceInfoOf()
+	export()
+	"add/edit"()
+	generate()
+	trust()
+	attach()
+	delete()
+	access()
+	download()
+	track()
+	create()
+	add()
+}
+class Patient {
+	PatientDocuments
+	PatientRecord
+	PatientData
+	choose()
+	recommend()
+}
+class App {
+	integrate()
+	need()
+	want()
+	protect()
 }
 class Application {
 	handles()
 }
-Behalf "1" o-- "1" Doctor
-Behalf "1" o-- "1" Office
-Application "1" o-- "1" App
-Administrator "1" o-- "1" Admin
+class Administrator {
+	retrieve()
+	able()
+	save()
+}
+class Patients {
+	match()
+}
+class Data {
+	attach()
+}
+App o-- Application
+Doctor o-- Patients
+Doctor o-- Data
+Admin o-- Administrator
+Office o-- Behalf
+User o-- Patients
+Doctor o-- Behalf
+Patient o-- Patients
 
 @enduml

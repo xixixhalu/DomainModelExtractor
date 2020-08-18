@@ -7,19 +7,49 @@
       ],
       "Behavior": {
         "purchase": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "maintain": [
+          "",
+          ""
+        ],
+        "view": [
           ""
         ]
       }
+    },
+    "Auctions": {
+      "Attribute": [
+        "Auctions/bids/raffles"
+      ],
+      "Behavior": {}
+    },
+    "Item": {
+      "Attribute": [
+        "Items"
+      ],
+      "Behavior": {}
+    },
+    "Auction": {
+      "Attribute": [
+        "Auctions",
+        "Auctions/bids/raffles"
+      ],
+      "Behavior": {}
     },
     "User": {
       "Attribute": [
         "Users"
       ],
       "Behavior": {
-        "get": [
+        "placed": [
+          "",
           ""
         ],
-        "placed": [
+        "get": [
           ""
         ],
         "keep": [
@@ -39,29 +69,19 @@
         ]
       }
     },
-    "Auction": {
-      "Attribute": [
-        "Auctions",
-        "Auctions/bids/raffles"
-      ],
-      "Behavior": {}
-    },
-    "Auctions": {
-      "Attribute": [
-        "Auctions/bids/raffles"
-      ],
-      "Behavior": {}
-    },
-    "Item": {
-      "Attribute": [
-        "Items"
-      ],
-      "Behavior": {}
-    },
     "Users": {
       "Attribute": [],
       "Behavior": {
         "enable": [
+          "",
+          "",
+          ""
+        ],
+        "purchase": [
+          ""
+        ],
+        "allow": [
+          "",
           ""
         ],
         "pay": [
@@ -76,8 +96,8 @@
   "relationship_dict": {
     "aggregation": [
       [
-        "User",
-        "Users",
+        "Item",
+        "Items",
         []
       ],
       [
@@ -86,8 +106,8 @@
         []
       ],
       [
-        "Item",
-        "Items",
+        "User",
+        "Users",
         []
       ]
     ]

@@ -23,6 +23,33 @@
         "UserAccount"
       ],
       "Behavior": {
+        "guarantee": [
+          "",
+          "",
+          ""
+        ],
+        "interested": [
+          ""
+        ],
+        "confirm": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "search": [
+          "",
+          ""
+        ],
+        "see": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "lost": [
           ""
         ],
@@ -37,13 +64,6 @@
           ""
         ],
         "contact": [
-          ""
-        ],
-        "see": [
-          "",
-          "",
-          "",
-          "",
           ""
         ],
         "reject": [
@@ -61,14 +81,7 @@
         "call": [
           ""
         ],
-        "search": [
-          ""
-        ],
         "import": [
-          ""
-        ],
-        "confirm": [
-          "",
           ""
         ],
         "entered": [
@@ -101,20 +114,10 @@
       "Attribute": [
         "AccountInformation"
       ],
-      "Behavior": {}
-    },
-    "they": {
-      "Attribute": [
-        "are"
-      ],
       "Behavior": {
-        "did": [
-          ""
-        ],
-        "interested": [
-          ""
-        ],
-        "Area": [
+        "block": [
+          "",
+          "",
           ""
         ]
       }
@@ -122,25 +125,17 @@
     "DifferentVenues": {
       "Attribute": [],
       "Behavior": {
+        "search": [
+          ""
+        ],
         "are": [
+          "",
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "are",
-        "they",
-        []
-      ],
-      [
-        "are",
-        "they",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "Users",

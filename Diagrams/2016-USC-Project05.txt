@@ -1,70 +1,73 @@
 @startuml
 hide circle
 class User {
-	Felling : string
-	Event : string
-	EventExits : string
-	Password : string
-	Password : string
-	Record : string
-	Events : string
-	Privacy : string
-	Storage : string
-	Computer : string
-	comment()
-	make()
+	Password
+	Record
+	Events
+	Privacy
+	Felling
+	Storage
+	EventExits
+	enter()
+	login()
+	log()
 	delete()
+	choose()
+	forget()
+	upload()
+	need()
+	create()
+	search()
+	express()
+	see()
+	extend()
+	like()
+	find()
+	free()
+	let()
+	review()
 	want()
 	share()
-	like()
-	express()
-	report()
-	need()
-	see()
-	enter()
-	upload()
-	log()
-	use()
-	extend()
-	let()
-	login()
-	reset()
-	forget()
-	keep()
-	maintain()
-	change()
-	review()
-	choose()
-	save()
 	download()
-	search()
-	find()
+	use()
+	save()
+	maintain()
 	looking()
-	create()
-	free()
+	make()
+	report()
+	reset()
+	keep()
+	comment()
 	sort()
+	change()
 }
 class Event {
-	private : string
-	EventExits : string
-	Events : string
+	EventExits
+	Events
+	private
+	create()
 	extend()
 }
 class Computer {
-	ManyHighResolutionPictures : string
+	ManyHighResolutionPictures
 }
 class Picture {
-	PictureOwner : string
-	Pictures : string
-	PicturePopularity : string
+	PictureOwner
+	PicturePopularity
 	report()
+	like()
+	comment()
 }
 class Pictures {
+	maintain()
 	see()
 	convenient()
+	review()
+	upload()
+	sort()
 }
-Event "1" o-- "1" User
-Computer "1" o-- "1" User
-Pictures "1" o-- "1" Picture
+Picture o-- Pictures
+User o-- Event
+User o-- Computer
 
 @enduml

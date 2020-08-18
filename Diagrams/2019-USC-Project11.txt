@@ -1,118 +1,112 @@
 @startuml
 hide circle
 class RegisteredUser {
-	Finances : string
-	PaymentHistory : string
-	Session : string
-	PaymentMethod : string
-	MessageHistory : string
-	SessionAppointmentHistory : string
-	VideoRecords : string
-	PersonalInformation : string
-	be : string
-	am : string
-	video()
+	PersonalInformation
+	PaymentHistory
+	PaymentMethod
+	SessionAppointmentHistory
+	MessageHistory
+	Finances
+	able()
+	chat()
+	satisfied()
 	search()
-	access()
+	authorize()
 	manage()
 	see()
+	update()
+	video()
 	rate()
 	had()
-	pay()
-	update()
-	view()
-	authorize()
-	chat()
-	able()
+	have()
 	ask()
-	satisfied()
+	pay()
+	sign()
+	access()
+	provide()
+	view()
 	received()
 	schedule()
-	have()
 	get()
-	sign()
 }
 class FinancialExpert {
-	ReceivedPaymentHistory : string
-	Calendar : string
-	Session : string
-	Profile : string
-	ProfileBio : string
-	Status : string
-	Notes : string
-	VideoRecords : string
-	Client : string
-	Calendar : string
-	Customers : string
-	FinancialExperts : string
-	be : string
-	am : string
-	rate()
-	see()
-	manage()
-	receive()
-	update()
-	set()
-	store()
-	authorize()
-	given()
-	able()
-	make()
-	available()
+	Client
+	Status
+	Customers
+	Notes
+	ProfileBio
+	ReceivedPaymentHistory
+	FinancialExperts
 	view()
+	manage()
+	select()
+	able()
+	see()
 	keep()
+	update()
+	commit()
+	is()
+	given()
+	set()
+	available()
+	store()
+	receive()
+	make()
 	sign()
+	rate()
+	authorize()
 }
 class Calendar {
-	Times : string
+	Times
 	manage()
 }
-class User {
-	Users : string
+class Profile {
+	ProfileBio
+	ProfilesOfFinancialExperts
+	view()
 }
 class Appointment {
-	AppointmentAvailability : string
-	AppointmentSession : string
-	Appointments : string
+	Appointments
+	manage()
 	had()
 }
 class App {
-	Appointment : string
-	AppointmentAvailability : string
-	AppointmentSession : string
-	Appointments : string
+	Appointments
 }
-class Profile {
-	ProfileBio : string
-	ProfilesOfFinancialExperts : string
+class User {
 }
 class Session {
-	SessionAppointmentHistory : string
+	SessionAppointmentHistory
 }
-class AppointmentAvailability {
-	VideoChat()
+class Users {
+	available()
+	select()
+	commit()
+	set()
 }
 class VideoRecords {
 	gain()
+	authorize()
+}
+class AppointmentAvailability {
+	VideoChat()
+	manage()
+	schedule()
 }
 class AppointmentSession {
 	completed()
 }
-class Users {
-	select()
-	commit()
-}
-Appointment "1" o-- "1" App
-Session "1" o-- "1" FinancialExpert
-AppointmentAvailability "1" o-- "1" App
-VideoRecords "1" o-- "1" FinancialExpert
-Session "1" o-- "1" RegisteredUser
-AppointmentSession "1" o-- "1" App
-Users "1" o-- "1" User
-VideoRecords "1" o-- "1" RegisteredUser
-AppointmentAvailability "1" o-- "1" Appointment
-Calendar "1" o-- "1" FinancialExpert
-AppointmentSession "1" o-- "1" Appointment
-Profile "1" o-- "1" FinancialExpert
+Appointment o-- AppointmentSession
+FinancialExpert o-- Calendar
+App o-- Appointment
+FinancialExpert o-- Profile
+App o-- AppointmentAvailability
+FinancialExpert o-- Session
+App o-- AppointmentSession
+FinancialExpert o-- VideoRecords
+RegisteredUser o-- Session
+User o-- Users
+Appointment o-- AppointmentAvailability
+RegisteredUser o-- VideoRecords
 
 @enduml

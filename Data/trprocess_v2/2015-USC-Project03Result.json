@@ -14,50 +14,87 @@
         "use": [
           "",
           "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "find": [
+          "",
+          "",
+          "",
+          "",
+          "",
           ""
         ],
         "practice": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "do": [
+          "",
+          ""
+        ],
+        "easier": [
+          ""
+        ],
+        "order": [
+          "",
+          ""
+        ],
+        "learning": [
+          ""
+        ],
+        "chat": [
+          "",
+          ""
+        ],
+        "exchange": [
+          "",
+          ""
+        ],
+        "search": [
+          "",
+          ""
+        ],
+        "having": [
+          ""
+        ],
+        "so": [
+          "",
+          ""
+        ],
+        "make": [
           ""
         ],
         "want": [
+          "",
+          "",
+          ""
+        ],
+        "get": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "finish": [
+          "",
           ""
         ],
         "learn": [
           "",
           ""
         ],
-        "do": [
-          ""
-        ],
-        "finish": [
-          ""
-        ],
-        "order": [
-          ""
-        ],
         "prioritize": [
-          ""
-        ],
-        "get": [
-          "",
-          "",
           ""
         ],
         "know": [
           "",
-          "",
-          ""
-        ],
-        "chat": [
-          ""
-        ],
-        "exchange": [
-          ""
-        ],
-        "search": [
-          ""
-        ],
-        "find": [
           "",
           ""
         ]
@@ -76,6 +113,8 @@
       ],
       "Behavior": {
         "promote": [
+          "",
+          "",
           ""
         ]
       }
@@ -96,6 +135,8 @@
       ],
       "Behavior": {
         "pull": [
+          "",
+          "",
           ""
         ]
       }
@@ -108,37 +149,48 @@
       ],
       "Behavior": {
         "promote": [
+          "",
+          ""
+        ],
+        "view": [
+          "",
+          ""
+        ],
+        "send": [
+          "",
+          ""
+        ],
+        "subscribe": [
+          ""
+        ],
+        "add": [
+          "",
+          "",
+          ""
+        ],
+        "maintain": [
+          "",
+          ""
+        ],
+        "post": [
+          "",
+          "",
+          ""
+        ],
+        "inform": [
+          "",
           ""
         ],
         "make": [
           ""
         ],
-        "view": [
-          ""
-        ],
         "assess": [
-          ""
-        ],
-        "maintain": [
-          ""
-        ],
-        "add": [
           ""
         ],
         "suggest": [
           ""
         ],
-        "post": [
-          "",
-          ""
-        ],
         "generate": [
-          ""
-        ],
-        "send": [
-          ""
-        ],
-        "inform": [
           ""
         ],
         "monitor": [
@@ -153,9 +205,11 @@
       ],
       "Behavior": {
         "register": [
+          "",
           ""
         ],
         "modify": [
+          "",
           ""
         ],
         "avoid": [
@@ -169,6 +223,7 @@
       ],
       "Behavior": {
         "know": [
+          "",
           ""
         ]
       }
@@ -186,6 +241,8 @@
       ],
       "Behavior": {
         "get": [
+          "",
+          "",
           ""
         ]
       }
@@ -195,42 +252,64 @@
         "AND",
         "other"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "RateInteractions": [
+          "",
+          ""
+        ]
+      }
     },
     "WebsiteUser": {
       "Attribute": [
-        "NativeLanguageSkills",
-        "be"
+        "NativeLanguageSkills"
       ],
       "Behavior": {
         "report": [
+          "",
+          ""
+        ],
+        "pull": [
+          "",
+          ""
+        ],
+        "receive": [
+          "",
+          ""
+        ],
+        "are": [
+          ""
+        ],
+        "operated": [
+          ""
+        ],
+        "want": [
+          "",
+          "",
+          ""
+        ],
+        "practice": [
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "offer": [
+          "",
+          "",
+          ""
+        ],
+        "find": [
+          "",
           ""
         ],
         "get": [
           ""
         ],
-        "pull": [
-          ""
-        ],
         "avoid": [
-          ""
-        ],
-        "receive": [
-          ""
-        ],
-        "find": [
-          ""
-        ],
-        "able": [
-          ""
-        ],
-        "offer": [
-          ""
-        ],
-        "want": [
-          ""
-        ],
-        "practice": [
           ""
         ]
       }
@@ -240,7 +319,29 @@
         "LanguageLevel"
       ],
       "Behavior": {
+        "help": [
+          "",
+          "",
+          ""
+        ],
         "increase": [
+          ""
+        ]
+      }
+    },
+    "Help": {
+      "Attribute": [
+        "HelpStudent"
+      ],
+      "Behavior": {}
+    },
+    "me": {
+      "Attribute": [
+        "member",
+        "members"
+      ],
+      "Behavior": {
+        "solve": [
           ""
         ]
       }
@@ -253,29 +354,37 @@
       "Behavior": {
         "find": [
           "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "use": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "solve": [
+          ""
+        ],
+        "know": [
+          "",
           ""
         ],
         "help": [
           ""
-        ],
-        "use": [
-          ""
-        ],
-        "know": [
-          ""
         ]
       }
     },
-    "me": {
+    "member": {
       "Attribute": [
-        "member",
         "members"
       ],
-      "Behavior": {
-        "solve": [
-          ""
-        ]
-      }
+      "Behavior": {}
     },
     "Language": {
       "Attribute": [
@@ -289,31 +398,20 @@
       "Behavior": {
         "practice": [
           "",
-          ""
-        ]
-      }
-    },
-    "Help": {
-      "Attribute": [
-        "HelpStudent"
-      ],
-      "Behavior": {}
-    },
-    "member": {
-      "Attribute": [
-        "members"
-      ],
-      "Behavior": {}
-    },
-    "Others": {
-      "Attribute": [
-        "are"
-      ],
-      "Behavior": {
-        "willing": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
           ""
         ],
         "learn": [
+          "",
+          ""
+        ],
+        "want": [
+          "",
           ""
         ]
       }
@@ -321,6 +419,9 @@
     "HelpStudent": {
       "Attribute": [],
       "Behavior": {
+        "evaluate": [
+          ""
+        ],
         "adjust": [
           ""
         ]
@@ -330,9 +431,16 @@
       "Attribute": [],
       "Behavior": {
         "find": [
+          "",
+          "",
           ""
         ],
         "talk": [
+          "",
+          ""
+        ],
+        "use": [
+          "",
           ""
         ],
         "learn": [
@@ -364,13 +472,6 @@
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "are",
-        "Others",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "LanguageLearner",
@@ -433,8 +534,8 @@
         []
       ],
       [
-        "NativeSpeaker",
-        "NativeSpeakerLanguageLearner",
+        "Help",
+        "HelpStudent",
         []
       ],
       [
@@ -445,6 +546,16 @@
       [
         "me",
         "member",
+        []
+      ],
+      [
+        "NativeSpeaker",
+        "NativeSpeakerLanguageLearner",
+        []
+      ],
+      [
+        "member",
+        "members",
         []
       ],
       [
@@ -455,16 +566,6 @@
       [
         "Language",
         "LanguageTeacher",
-        []
-      ],
-      [
-        "Help",
-        "HelpStudent",
-        []
-      ],
-      [
-        "member",
-        "members",
         []
       ]
     ]

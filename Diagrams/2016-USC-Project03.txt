@@ -1,11 +1,13 @@
 @startuml
 hide circle
 class AppIcon {
-	clicking : string
+	clicking
 }
 class App {
-	AppIcon : string
+	run()
+	click()
+	able()
 }
-AppIcon "1" o-- "1" App
+App o-- AppIcon
 
 @enduml

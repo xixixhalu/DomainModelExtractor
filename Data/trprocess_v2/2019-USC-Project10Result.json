@@ -9,26 +9,16 @@
       ],
       "Behavior": {}
     },
-    "User": {
-      "Attribute": [
-        "'m"
-      ],
-      "Behavior": {
-        "find": [
-          ""
-        ],
-        "input": [
-          ""
-        ],
-        "interested": [
-          ""
-        ]
-      }
-    },
     "SocialMediaData": {
       "Attribute": [],
       "Behavior": {
         "access": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "maps": [
           ""
         ],
         "create": [
@@ -38,13 +28,6 @@
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "'m",
-        "User",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "SocialMedia",

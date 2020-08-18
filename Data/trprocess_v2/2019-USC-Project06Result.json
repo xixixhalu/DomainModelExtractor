@@ -6,7 +6,20 @@
         "ProjectSettingsPage",
         "ProjectListPage"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "join": [
+          "",
+          ""
+        ],
+        "make": [
+          "",
+          ""
+        ],
+        "delete/hide": [
+          "",
+          ""
+        ]
+      }
     },
     "User": {
       "Attribute": [
@@ -17,10 +30,25 @@
         "WinCondition",
         "Comment",
         "OwnPosts",
-        "only",
-        "be"
+        "only"
       ],
       "Behavior": {
+        "reset": [
+          "",
+          ""
+        ],
+        "delete": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "want": [
+          "",
+          "",
+          "",
+          ""
+        ],
         "mark": [
           ""
         ],
@@ -35,9 +63,6 @@
           ""
         ],
         "log": [
-          ""
-        ],
-        "reset": [
           ""
         ],
         "forget": [
@@ -57,10 +82,6 @@
           "",
           ""
         ],
-        "delete": [
-          "",
-          ""
-        ],
         "created": [
           ""
         ],
@@ -77,10 +98,6 @@
           ""
         ],
         "quote/reply": [
-          ""
-        ],
-        "want": [
-          "",
           ""
         ],
         "export": [
@@ -116,7 +133,16 @@
       "Attribute": [
         "quote/reply"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "delete": [
+          "",
+          ""
+        ],
+        "add": [
+          "",
+          ""
+        ]
+      }
     },
     "OtherPeople": {
       "Attribute": [
@@ -146,13 +172,9 @@
     "ProjectSettingsPage": {
       "Attribute": [],
       "Behavior": {
-        "reset": [
-          ""
-        ],
-        "forget": [
-          ""
-        ],
-        "delete": [
+        "use": [
+          "",
+          "",
           ""
         ],
         "give": [

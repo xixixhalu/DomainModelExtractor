@@ -8,63 +8,46 @@
         "LearningProgress",
         "IdealTutor",
         "Username",
-        "UserAmount",
-        "be",
-        "be",
-        "be",
-        "be",
-        "be"
+        "UserAmount"
       ],
       "Behavior": {
-        "learn": [
-          "",
-          ""
-        ],
-        "sign": [
-          ""
-        ],
-        "Student": [
-          ""
-        ],
         "use": [
-          ""
-        ],
-        "input": [
-          ""
-        ],
-        "consult": [
-          ""
-        ],
-        "check": [
-          ""
-        ],
-        "get": [
           "",
           ""
         ],
         "choose": [
-          ""
-        ],
-        "navigate": [
-          ""
-        ],
-        "communicate": [
-          ""
-        ],
-        "have": [
           "",
           ""
         ],
-        "find": [
+        "get": [
+          "",
+          "",
+          "",
           ""
         ],
-        "exchange": [
+        "communicate": [
+          "",
           ""
         ],
-        "catch": [
+        "sign": [
+          "",
+          "",
+          "",
           ""
         ],
         "need": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -77,6 +60,45 @@
           "",
           "",
           "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "navigate": [
+          "",
+          ""
+        ],
+        "have": [
+          "",
+          "",
+          ""
+        ],
+        "find": [
+          "",
+          ""
+        ],
+        "learn": [
+          "",
+          ""
+        ],
+        "Student": [
+          ""
+        ],
+        "input": [
+          ""
+        ],
+        "consult": [
+          ""
+        ],
+        "check": [
+          ""
+        ],
+        "exchange": [
+          ""
+        ],
+        "catch": [
           ""
         ]
       }
@@ -87,7 +109,16 @@
         "ScheduleChanges",
         "ScheduleAvailability"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "input": [
+          "",
+          ""
+        ],
+        "check": [
+          "",
+          ""
+        ]
+      }
     },
     "Tutor": {
       "Attribute": [
@@ -99,6 +130,10 @@
         "TutoringRequests"
       ],
       "Behavior": {
+        "update": [
+          "",
+          ""
+        ],
         "accept": [
           ""
         ],
@@ -114,9 +149,6 @@
         "offer": [
           ""
         ],
-        "update": [
-          ""
-        ],
         "input": [
           ""
         ]
@@ -126,8 +158,7 @@
       "Attribute": [
         "Tutor",
         "Students",
-        "StudentUser",
-        "am"
+        "StudentUser"
       ],
       "Behavior": {
         "request": [
@@ -164,7 +195,21 @@
       "Attribute": [
         "Blogs"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "visiting": [
+          ""
+        ],
+        "navigate": [
+          "",
+          "",
+          ""
+        ],
+        "find": [
+          "",
+          "",
+          ""
+        ]
+      }
     },
     "Project": {
       "Attribute": [
@@ -172,7 +217,15 @@
         "ProjectHandoff",
         "ProjectArchitect"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "have": [
+          "",
+          ""
+        ],
+        "fit": [
+          ""
+        ]
+      }
     },
     "our": {
       "Attribute": [
@@ -197,16 +250,21 @@
         ]
       }
     },
-    "System": {
-      "Attribute": [
-        "SystemArchitect"
-      ],
-      "Behavior": {}
-    },
     "Class": {
       "Attribute": [
         "Classes",
         "Classmates"
+      ],
+      "Behavior": {
+        "work": [
+          "",
+          ""
+        ]
+      }
+    },
+    "System": {
+      "Attribute": [
+        "SystemArchitect"
       ],
       "Behavior": {}
     },
@@ -219,23 +277,17 @@
     "Information": {
       "Attribute": [],
       "Behavior": {
+        "learn": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "consult": [
+          "",
+          ""
+        ],
         "provides": [
-          ""
-        ]
-      }
-    },
-    "ScheduleChanges": {
-      "Attribute": [],
-      "Behavior": {
-        "happens": [
-          ""
-        ]
-      }
-    },
-    "Classes": {
-      "Attribute": [],
-      "Behavior": {
-        "OutsideOfMyExpectedWorkingHours": [
           ""
         ]
       }
@@ -259,23 +311,193 @@
     "Availability": {
       "Attribute": [],
       "Behavior": {
+        "reflect": [
+          ""
+        ]
+      }
+    },
+    "ScheduleChanges": {
+      "Attribute": [],
+      "Behavior": {
+        "happens": [
+          "",
+          ""
+        ]
+      }
+    },
+    "Classes": {
+      "Attribute": [],
+      "Behavior": {
         "use": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "provides": [
+          ""
+        ],
+        "get": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "understand": [
+          "",
+          "",
+          ""
+        ],
+        "write": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "have": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "update": [
+          "",
+          "",
+          ""
+        ],
+        "accept": [
+          "",
+          "",
+          ""
+        ],
+        "request": [
+          "",
+          "",
+          ""
+        ],
+        "share": [
+          "",
+          ""
+        ],
+        "read": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "watch": [
+          "",
+          "",
+          ""
+        ],
+        "post": [
+          "",
+          ""
+        ],
+        "learn": [
+          "",
+          ""
+        ],
+        "check": [
+          "",
+          ""
+        ],
+        "choose": [
+          "",
+          ""
+        ],
+        "offer": [
+          "",
+          ""
+        ],
+        "upgrade": [
+          "",
+          ""
+        ],
+        "exchange": [
+          "",
+          "",
+          ""
+        ],
+        "prioritize": [
+          "",
+          ""
+        ],
+        "integrate": [
+          "",
+          "",
+          ""
+        ],
+        "complete": [
+          "",
+          ""
+        ],
+        "input": [
+          "",
+          "",
           ""
         ],
         "reflect": [
+          "",
+          ""
+        ],
+        "able": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "sign": [
+          ""
+        ],
+        "Student": [
+          ""
+        ],
+        "displayed": [
+          ""
+        ],
+        "provide": [
+          ""
+        ],
+        "communicate": [
+          ""
+        ],
+        "find": [
+          ""
+        ],
+        "catch": [
+          "",
+          ""
+        ],
+        "feature": [
+          ""
+        ],
+        "coomplete": [
+          ""
+        ],
+        "matches": [
+          ""
+        ],
+        "OutsideOfMyExpectedWorkingHours": [
           ""
         ]
       }
     }
   },
   "relationship_dict": {
-    "generalization": [
-      [
-        "be",
-        "User",
-        []
-      ]
-    ],
     "aggregation": [
       [
         "User",
@@ -323,13 +545,13 @@
         []
       ],
       [
-        "System",
-        "SystemArchitect",
+        "Class",
+        "Classes",
         []
       ],
       [
-        "Class",
-        "Classes",
+        "System",
+        "SystemArchitect",
         []
       ],
       [

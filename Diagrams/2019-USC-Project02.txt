@@ -1,108 +1,93 @@
 @startuml
 hide circle
 class User {
-	Profile : string
-	Schedule : string
-	RequestRecord : string
-	LearningProgress : string
-	IdealTutor : string
-	Username : string
-	UserAmount : string
-	be : string
-	be : string
-	be : string
-	be : string
-	be : string
-	learn()
-	sign()
-	Student()
-	use()
-	input()
-	consult()
-	check()
-	get()
-	choose()
-	navigate()
-	communicate()
+	UserAmount
+	Username
+	RequestRecord
+	IdealTutor
+	Profile
 	have()
+	able()
+	communicate()
+	check()
+	input()
+	learn()
 	find()
 	exchange()
-	catch()
+	Student()
+	choose()
+	navigate()
+	sign()
+	consult()
+	use()
 	need()
-	able()
+	catch()
+	get()
 }
 class Schedule {
-	preferred : string
-	ScheduleChanges : string
-	ScheduleAvailability : string
+	ScheduleAvailability
+	preferred
+	input()
+	check()
 }
 class Tutor {
-	Availability : string
-	Students : string
-	DetailedInformation : string
-	ScheduleAvailability : string
-	Availability : string
-	TutoringRequests : string
-	accept()
-	share()
+	TutoringRequests
+	DetailedInformation
+	ScheduleAvailability
+	Students
 	post()
-	get()
-	offer()
 	update()
 	input()
+	offer()
+	share()
+	accept()
+	get()
 }
 class Student {
-	Tutor : string
-	Students : string
-	StudentUser : string
-	am : string
-	request()
-	read()
-	watch()
-	able()
-	coomplete()
+	Students
 	complete()
-	cancel()
+	able()
+	read()
 	"re-schedule"()
+	watch()
 	make()
+	request()
+	coomplete()
+	cancel()
 }
 class Website {
-	Blogs : string
+	Blogs
+	visiting()
+	find()
+	navigate()
 }
 class Project {
-	write : string
-	ProjectHandoff : string
-	ProjectArchitect : string
+	ProjectHandoff
+	write
+	fit()
+	have()
 }
 class our {
-	Project : string
-	Website : string
 }
 class LearningProgress {
-	FurtherInformation : string
+	FurtherInformation
 }
 class StudentUser {
-	Language : string
+	Language
 	Schedule()
 }
-class System {
-	SystemArchitect : string
-}
 class Class {
-	Classes : string
-	Classmates : string
+	Classmates
+	work()
+}
+class System {
 }
 class Info {
-	Information : string
 }
 class Information {
 	provides()
-}
-class ScheduleChanges {
-	happens()
-}
-class Classes {
-	OutsideOfMyExpectedWorkingHours()
+	learn()
+	consult()
 }
 class ProjectArchitect {
 	get()
@@ -111,21 +96,60 @@ class SystemArchitect {
 	integrate()
 }
 class Availability {
-	use()
 	reflect()
 }
-Availability "1" o-- "1" Tutor
-SystemArchitect "1" o-- "1" System
-Tutor "1" o-- "1" Student
-User "1" <|-- "1" be
-Classes "1" o-- "1" Class
-StudentUser "1" o-- "1" Student
-Schedule "1" o-- "1" User
-Information "1" o-- "1" Info
-ProjectArchitect "1" o-- "1" Project
-LearningProgress "1" o-- "1" User
-Website "1" o-- "1" our
-ScheduleChanges "1" o-- "1" Schedule
-Project "1" o-- "1" our
+class ScheduleChanges {
+	happens()
+}
+class Classes {
+	OutsideOfMyExpectedWorkingHours()
+	check()
+	able()
+	communicate()
+	read()
+	choose()
+	feature()
+	upgrade()
+	complete()
+	update()
+	integrate()
+	find()
+	exchange()
+	share()
+	use()
+	catch()
+	coomplete()
+	have()
+	post()
+	Student()
+	offer()
+	understand()
+	prioritize()
+	sign()
+	provides()
+	request()
+	provide()
+	reflect()
+	displayed()
+	input()
+	watch()
+	learn()
+	matches()
+	accept()
+	write()
+	get()
+}
+User o-- LearningProgress
+Info o-- Information
+Project o-- ProjectArchitect
+Schedule o-- ScheduleChanges
+our o-- Website
+Tutor o-- Availability
+our o-- Project
+System o-- SystemArchitect
+Student o-- Tutor
+Class o-- Classes
+Student o-- StudentUser
+User o-- Schedule
 
 @enduml

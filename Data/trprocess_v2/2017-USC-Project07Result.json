@@ -6,13 +6,43 @@
         "blog",
         "Posts"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "view": [
+          "",
+          ""
+        ],
+        "like": [
+          "",
+          ""
+        ],
+        "share": [
+          "",
+          ""
+        ],
+        "edit/add": [
+          "",
+          ""
+        ],
+        "save": [
+          "",
+          ""
+        ]
+      }
     },
     "Posts": {
       "Attribute": [
         "blog"
       ],
-      "Behavior": {}
+      "Behavior": {
+        "view": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
     },
     "Categories": {
       "Attribute": [
@@ -23,6 +53,34 @@
     "CategoriesAndTagsOf": {
       "Attribute": [],
       "Behavior": {
+        "view": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "delete": [
+          "",
+          ""
+        ],
+        "interact": [
+          ""
+        ],
+        "get": [
+          ""
+        ],
+        "comment": [
+          ""
+        ],
+        "share": [
+          ""
+        ],
+        "search": [
+          ""
+        ],
+        "save": [
+          ""
+        ],
         "BlogPost": [
           ""
         ]

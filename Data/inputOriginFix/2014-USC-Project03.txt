@@ -1,0 +1,26 @@
+As a driver, I can check select a location through my mobile phone so that the I can pay for my valet.
+As a driver, I can check into a location through my mobile phone so that the I can pay for my valet.
+As a valet company, I can accept mobile payments so that I can offer an easier payment option .
+As a driver, I can message my valet to retrieve my vehicle, so I don't have to wait in line.
+As a driver, I can create my profile so that I can use it for all SnapValet-related activities.
+As an establishment, I can send direct advertisements to SnapValet users so that I can attract more customers.
+The application shall be secure.
+- channel is encrypted.
+- credit card password is not stored in plain text on app.
+- credit card number is not stored in plain text on app.
+As a customer, I can enter my ticket number from the valet ticket so that I can request my car later.
+As a customer, I can enter my ticket number from the valet ticket so that I can request my car now
+The budget for the project shall not exceed $10,000.
+The system shall be capable of eventually running an iOS client.
+As a valet operator I can receive real-time requests from customers in an organized queue so that I can retrieve their car in a timely manner.
+As a valet head, I can set the valet price for each shift so that I can adjust pricing as needed.
+As a valet operator I can see if a customer has paid or not in the queue so that I know whether to collect cash.
+As a valet operator I can have my own login to my valet company's profile so that I can add employees, tracking which employees are working at which location, and have multiple locations serviced by my company, and track transactions for each location.
+As a valet operator, I can send notifications to the customer that their car is ready so that the customer does not have to wait outside while I retrieve the car.
+As a valet company I can receive an email transaction summary report for each shift so that I can control my revenue.
+As a driver I can either request or request and pay for valet so that I have the option to not enter in my credit card information if I don't want to.
+The system should be designed to work on multiple servers in the future and should be capable of handling around 100 requests at the same time.
+The system must be available almost all the time, especially during heavy usage hours.
+Code will be modular so that defects can be isolated and additions can be made easily so that in future it can be maintained by a snapvalet employee.
+As a user, I can register for an account, either as a customer or a valet, and include the relevant information.
+System back-end will have scalable, secure database.

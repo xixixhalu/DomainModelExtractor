@@ -305,31 +305,46 @@ class PreProcessor:
         tokens = [d['word'] for d in nlp_output['sentences'][0]['tokens']]
         pos_tags = [d['pos'] for d in nlp_output['sentences'][0]['tokens']]
         outputs = []
-        if tokens[0] == 'As' or tokens[0] == 'as':
-            if tokens[1] == 'a' or tokens[1] == 'an':
-                idx = 2
-            else:
-                idx = 1
-            while idx < len(pos_tags) and pos_tags[idx] not in noun_set:
-                idx += 1
-            role = tokens[idx]
-            outputs.extend(tokens[idx + 1:])
-            if outputs[0] == ',':
-                outputs = outputs[1:]
 
-            def index(tokens, original, replace):
-                for i, token in enumerate(tokens):
-                    if token == original:
-                        tokens[i] = replace
+        repalce_occured = False
+        for i in range(len(tokens)):
+            if tokens[i] == 'As' or tokens[i] == 'as':
+                # "As a xxx" pattern
+                if tokens[i + 1] == 'a' or tokens[i + 1] == 'an':
+                    idx = i + 2
+                # "As xxx" pattern should only consider when it is the start of the sentence
+                elif i == 0:
+                    idx = i + 1
+                else:
+                    continue
 
-            self.extract_actors(role, actor_map, act)
-            subjects = ['I', 'i', 'we', 'We']
-            for subject in subjects:
-                index(outputs, subject, role)
-            pronouns = ['my']
-            for pronoun in pronouns:
-                index(outputs, pronoun, role + "'s")
-        else:
+                outputs.extend(tokens[:i])
+
+                while idx < len(pos_tags) and pos_tags[idx] not in noun_set:
+                    idx += 1
+                role = tokens[idx]
+                outputs.extend(tokens[idx + 1:])
+
+                if outputs[i] == ',':
+                    outputs.pop(i)
+
+                def index(tokens, original, replace):
+                    for i, token in enumerate(tokens):
+                        if token == original:
+                            tokens[i] = replace
+
+                self.extract_actors(role, actor_map, act)
+                subjects = ['I', 'i', 'we', 'We']
+                for subject in subjects:
+                    index(outputs, subject, role)
+                pronouns = ['my']
+                for pronoun in pronouns:
+                    index(outputs, pronoun, role + "'s")
+
+                repalce_occured = True
+                break
+                
+        if not repalce_occured:
             outputs = tokens
         self.convert_back(outputs)
         res = ' '.join(outputs)

@@ -1,6 +1,6 @@
 The System shall upload Pictures to a Hashtag specified by the User .
 The System shall allow a User to reserve a Hashtag , allowing the User to specify a Password for OtherUsers to Post and ViewPictures on the Hashtag .
-The System shall allow Users to browse ( public ) Posts made in a specified Region ( such around their CurrentLocation ) .
+The System shall allow Users to browse ( public ) Posts made in a specified Region ( such as a RadiusOfXFeet around their CurrentLocation ) .
 The System shall allow Users to FlagPictures as inappropriate so that they may be taken down from PublicView .
 The System shall allow Users to tag the Pictures they post with DescriptiveText ( ex : `` Surfing with Sharks at the GreatBarrierReef '' ) .
 The System shall delete the Hashtag and Pictures associated to it after it is reserved for a CertainTime .

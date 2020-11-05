@@ -39,5 +39,5 @@ Patient should be able to track Patient's HealthStatus graphically , so that it 
 Patient can see all Patient's DietaryConstraints and medications Patient need to take before and after Surgery .
 Patient can compare Pictures to see a VisibleDifference over Time .
 Patient can either choose to install the SmartphoneApp , or by Default get SmsNotifications and not get bombarded everywhere .
-The System should be built as a HybridApp ( testing on Android only for this Class - Define which versions ) .
+The System should be built ( testing on Android only for this Class - Define which versions ) .
 The System should use Fhir for DataExchange .

@@ -329,19 +329,21 @@ class PreProcessor:
                     outputs.pop(i)
 
                 def index(tokens, original, replace):
+                    isReplaced = False
                     for i, token in enumerate(tokens):
                         if token == original:
                             tokens[i] = replace
+                            isReplaced = True
+                    return isReplaced
 
                 self.extract_actors(role, actor_map, act)
                 subjects = ['I', 'i', 'we', 'We']
                 for subject in subjects:
-                    index(outputs, subject, role)
+                    repalce_occured = index(outputs, subject, role) or repalce_occured
                 pronouns = ['my']
                 for pronoun in pronouns:
-                    index(outputs, pronoun, role + "'s")
-
-                repalce_occured = True
+                    repalce_occured = index(outputs, pronoun, role + "'s") or repalce_occured
+                
                 break
                 
         if not repalce_occured:

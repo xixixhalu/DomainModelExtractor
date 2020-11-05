@@ -23,7 +23,7 @@ Organization can look at the Stats the ongoing and PastCases , so that Organizat
 VrsSubjectMatterExpert can verify the CredibilityOfTheComplaints filed and investigate them , so that VrsSubjectMatterExpert can notify the Organizations only the ValidCases .
 Employee can post a Complaint along with Details like when , where and who was involved and also submit EvidenceOfAnyFormat like Audio , Video , Photo , DocumentEtc . .
 Organization can generate Reports for each Case , so that it can be used in BoardMeetings , LitigationEtc . .
-the User should login but the Details are not tagged to the Ticket to prevent MisuseOfCompleteAnonymity .
+As an AnonymousUser , the User should login but the Details are not tagged to the Ticket to prevent MisuseOfCompleteAnonymity .
 Vrs can assign , resolve and form ReportsOfTheCases filed by Employees , so that Employees are AssuredOfPreventionOfWorkplaceViolence .
 Vrs can email Organization on the VerifiedNews required by the Organization , so that Employees can be in ConduciveEnvironment .
 Developer can encrypt the Data , so that SecurityOfTheData is maintained .
@@ -31,6 +31,6 @@ Organization can check the WorkplaceUpdates from Vrs , so that Violence can be m
 The System should be developed so that it can be easily integrated with any TicketManagementSystem in Future with FewConfigurationalChanges , so that the Product can easily scale .
 Vrs can prioritize the WorkplaceViolenceCases , so that Time for all the Admins can be saved .
 VrsAdmin can generate the Report which can contain MediaFiles tagged to that Case for better Understanding .
-the Password will not be sent in an ApiCall or stored in the Database in a PlainTextFormat for better Security .
+As a Developer , the Password will not be sent in an ApiCall or stored in the Database in a PlainTextFormat for better Security .
 who raised a Complaint , User can request in the Portal to expedite the Process for faster Resolution .
 User should be able to update User's ContactDetails in CaseOfChange , so that User's Account will always be up to Date .

@@ -26,11 +26,11 @@ Trainer can set the Minimum , MaximumNoOfAttendees and Price per Attendees .
 Admin can see how ManyUsers are registered for the Courses and see if Admin met the Minimum . If Admin did n't , Admin would be able to cancel the Course or adjust the MinimumNumberOfTheCourse .
 Admin can move People to a DifferentClass .
 CourseAttendee will receive the ConfirmationEmail after registering for the Course .
-all UserRequirements should be analyzed and Feasibility-LRB-AsWellAsScope-RRB-OfEach should be determined .
+As a System , all UserRequirements should be analyzed and Feasibility-LRB-AsWellAsScope-RRB-OfEach should be determined .
 All Success-criticalStakeholders should agree upon Win-winCondition , and there is TeamCohesion for the Product .
-all SpecificRequirements , Documents , and Reports are maintained ; and Meetings as well as Session are noted down .
+As a Team , all SpecificRequirements , Documents , and Reports are maintained ; and Meetings as well as Session are noted down .
 Developer would be able to analyze each and every Requirement and understand their Feasibility and Architecture behind them .
-SpecificTraining should be provided to all team members for the DevelopmentAndUseOfTheProduct .
+As the Team , SpecificTraining should be provided to all team members for the DevelopmentAndUseOfTheProduct .
 Admin can adjust the NumberOfAttendees following Notification from Eventbrite .
 The System should be robust enough to support MultipleUsers at the SameTime .
 The System must be user friendly for NonExpert .

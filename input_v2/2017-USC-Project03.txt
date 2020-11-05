@@ -4,7 +4,7 @@ Coach can overwrite/modify the FinalResults .
 User expect to only see Options that User's Swimmer is qualified to sign up for .
 Coach expect the Signups to automatically close 2 Weeks before SignUps , or a Time-frame that Coach set .
 Coach have a ManualMeans of entering SwimEvents in Case the FormatOfThePageChanges .
-the FormatOfTheInformation about SwimEvents will never change .
+As the Developer , the FormatOfTheInformation about SwimEvents will never change .
 parent should be able to login to parent's Kid 's Account .
 Coach expect that if Coach modified Something from the User , that the User will automatically be notified .
 parent should be able to see Amount parent am supposed to pay .

@@ -7,3 +7,4 @@ pip3 install openpyxl
 pip3 install tqdm
 pip3 install xlrd
 pip3 install pygtrie
+pip3 install plantweb

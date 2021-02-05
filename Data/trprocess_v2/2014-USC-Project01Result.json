@@ -142,36 +142,6 @@
         ]
       }
     },
-    "GiftCard": {
-      "Attribute": [
-        "GiftCards"
-      ],
-      "Behavior": {
-        "receive": [
-          "",
-          "",
-          ""
-        ],
-        "add": [
-          "",
-          "",
-          ""
-        ]
-      }
-    },
-    "Profile": {
-      "Attribute": [
-        "Profiles"
-      ],
-      "Behavior": {
-        "update": [
-          "",
-          "",
-          "",
-          ""
-        ]
-      }
-    },
     "Thread": {
       "Attribute": [
         "Threads",
@@ -189,6 +159,36 @@
           ""
         ],
         "sorting": [
+          ""
+        ]
+      }
+    },
+    "Profile": {
+      "Attribute": [
+        "Profiles"
+      ],
+      "Behavior": {
+        "update": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    },
+    "GiftCard": {
+      "Attribute": [
+        "GiftCards"
+      ],
+      "Behavior": {
+        "receive": [
+          "",
+          "",
+          ""
+        ],
+        "add": [
+          "",
+          "",
           ""
         ]
       }
@@ -279,13 +279,13 @@
         []
       ],
       [
-        "GiftCard",
-        "GiftCards",
+        "Thread",
+        "ThreadSpecificPointBalance",
         []
       ],
       [
-        "Thread",
-        "ThreadSpecificPointBalance",
+        "GiftCard",
+        "GiftCards",
         []
       ]
     ]

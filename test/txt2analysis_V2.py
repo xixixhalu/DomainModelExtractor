@@ -2,7 +2,6 @@
 #terminal running: python2 txt2analysis.py [-i inputdir]
 #[] means optional
 #if not state -i, then use default value
-#Default value for -i is ./result/ in the same directory as txt2analysis.py
 import sys
 
 import re
@@ -34,7 +33,7 @@ if __name__=="__main__":
         pp=sys.argv[0] #this is "path/txt2analysis.py"
         nn=pp.split("/")[-1] #"txt2analysis.py"
         path=pp.replace(nn,'') #get the path of txt2analysis.py 
-        inputdir=path+"result/"
+        inputdir=path+"/"
     else:
         print ("Please retry command. Format is python2 txt2analysis.py -i inputdir.")
 

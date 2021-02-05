@@ -3,66 +3,66 @@ hide circle
 class User {
 	Points
 	Threads
-	Progress
 	Needs
-	started()
-	Lifetime()
-	redeem()
-	receive()
-	delete()
+	Progress
 	track()
+	view()
+	delete()
+	redeem()
+	gauge()
 	search()
 	relevant()
-	see()
-	update()
-	gauge()
-	answer()
-	use()
-	select()
-	edit()
-	start()
-	compare()
-	report()
-	stay()
-	view()
-	mark()
-	measure()
 	"like/dislike"()
+	stay()
+	update()
 	get()
+	compare()
+	answer()
+	report()
+	Lifetime()
+	mark()
+	select()
+	measure()
+	see()
+	receive()
+	start()
+	started()
+	edit()
+	use()
 }
 class Users {
 	more
-	notify()
-	using()
 	entice()
+	notify()
 	redeem()
 	add()
+	using()
 }
-class GiftCard {
-	receive()
-	add()
+class Thread {
+	Threads
+	"Thread/post"
+	sorting()
+	start()
+	pin()
 }
 class Profile {
 	Profiles
 	update()
 }
-class Thread {
-	Threads
-	"Thread/post"
-	pin()
-	sorting()
-	start()
+class GiftCard {
+	receive()
+	add()
 }
 class GiftCards {
 	using()
 }
 class WatPoints {
-	use()
 	view()
+	use()
 }
 class Experience {
-	personalized()
 	update()
+	personalized()
 }
 class ThreadSpecificPointBalance {
 	drop()
@@ -71,13 +71,13 @@ class UserParticipation {
 	increase()
 	notify()
 }
-User o-- ThreadSpecificPointBalance
-User o-- UserParticipation
-User o-- Users
+Thread o-- ThreadSpecificPointBalance
 GiftCard o-- GiftCards
 User o-- Profile
-Thread o-- ThreadSpecificPointBalance
-User o-- WatPoints
+User o-- Users
 User o-- Experience
+User o-- ThreadSpecificPointBalance
+User o-- UserParticipation
+User o-- WatPoints
 
 @enduml

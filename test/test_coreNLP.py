@@ -5,7 +5,7 @@ sys.path.append('../')
 from adapter import *
 import json
 
-sentence = 'As a user, I can redeem usable WAT points so that I can receive a gift card.'
+sentence = 'By sending an email to the user if they forget the password or otherwise can change in the profile instead.'
 
 output = analyze(sentence)
 

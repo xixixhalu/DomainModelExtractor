@@ -19,6 +19,9 @@ def removeSlash(line) :
     slash_pos = []
     j = 0
     index = 0
+    if '/' not in line :
+        #print('not found')
+        return [line]
     for w in doc :     
         if w.text == '/' or w.text =='and/or' :
             slash_pos.append(w.i)
@@ -83,12 +86,50 @@ def removeSlash(line) :
                     #print(doc[comb_break_point[i][k]+j])
                     #j+=1
                     new_start = sentence_part[k+1][0]+1
-                   
-                    sentence += ' '+doc[comb_break_point[i][k]+1].text
+                    for n in range(1, len(doc)-1-comb_break_point[i][k]) :
+
+                        sentence += ' '+doc[comb_break_point[i][k]+n].text
+                        if doc[comb_break_point[i][k]+n].pos_ == 'VERB' or doc[comb_break_point[i][k]+n].pos_ ==' NOUN' :
+                            new_start = comb_break_point[i][k]+n
+                            break
+            
             sentence += ' '+doc[new_start:sentence_part[k+1][1]+1].text
-                    
+            
         result_line.append(sentence)
     return result_line
+
+def removeBracket(line) :
+    doc = nlp(line) 
+    result_line = []
+    remove_index = []
+    for w in doc :
+        if w.text == '(' :
+            remove_index.append(w.i)
+        elif w.text == ')' :
+            remove_index.append(w.i)
+        else :
+            continue
+    if remove_index == [] :
+        return line
+    sentence = ''
+
+    if remove_index[0] == 0 :
+        sentence_start = remove_index[1] +1
+        index_start = 2
+    else :
+        sentence_start = 0
+        index_start = 0
+
+    for i in range(index_start,len(remove_index)) :
+        if i % 2 != 0 :
+            sentence_start = remove_index[i]+1
+        else :
+            sentence += doc[sentence_start:remove_index[i]].text + ' '
+    sentence += doc[remove_index[-1]+1:len(doc)].text
+    return sentence
+            
+            
+
           
 
 if __name__ == '__main__' :
@@ -97,6 +138,10 @@ if __name__ == '__main__' :
     line3 ="As an administrator I can verify and/or approve comments from all users  to increase accuracy of information."
     line4 = "As a driver, I can check into/select a location through my mobile phone so that the I can pay for my valet."
     line5 ="As an admin I can edit the name of gateway/switch/floor/room."
-
-    for line in removeSlash(line1) :
+    line6 = 'If there is a conflict (there is already information in the row for the designated table) the application must be able to generate and execute  a PostgreSQL UPDATE statement for the "crawled" dataset.'
+    line7 = 'As a GM, my data can seamlessly integrate with the SporTech B.I. system in a standard compliant manner. (READ: The system shall communicate in PostgreSQL.).'
+    
+    line_no_bracket =  removeBracket(line6)
+    print(line_no_bracket)
+    for line in removeSlash(line_no_bracket) :
         print(line)

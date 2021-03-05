@@ -22,6 +22,8 @@ def removeSlash(line) :
     if '/' not in line :
         #print('not found')
         return [line]
+    #for w in doc:
+    #    print(w,w.pos_)
     for w in doc :     
         if w.text == '/' or w.text =='and/or' :
             slash_pos.append(w.i)
@@ -35,6 +37,8 @@ def removeSlash(line) :
                         break_point.append(w.i-i)
                         break_point_dict[j] = [w.i-i]
                         break
+            if j not in break_point_dict :
+                break_point_dict[j] = [w.i-1]    
             break_point.append(w.i+1)
             break_point_dict[j].append(w.i+1)
             j +=1
@@ -128,20 +132,80 @@ def removeBracket(line) :
     sentence += doc[remove_index[-1]+1:len(doc)].text
     return sentence
             
-            
+def frequentWordGen (file) :
+    file_freq_word_dict = {}
+    noun_word_list = [] 
+    for line in file:
+            doc = nlp(line)
+            for word in doc :
+                if word.pos_ == 'NOUN' or word.pos_ == 'PRON' or word.pos_ == 'PROPN' or word.pos_ == 'NN' or word.pos_ == 'NNP' or word.pos_ == 'NNPS' or word.pos_ == 'NNS' :
+                    noun_word_list.append(word.lemma_)
+                    if word.lemma_ in file_freq_word_dict :
+                        file_freq_word_dict[word.lemma_] += 1
+                    else :
+                        file_freq_word_dict[word.lemma_] = 1
+    print(file_freq_word_dict)
+    return file_freq_word_dict, noun_word_list
 
-          
+def spellcheck (file_freq_word_dict, noun_word_list,spell) :
+    correct_dict = {}
+    correct_candidate_dict = {}
+    #print(file_freq_word_dict)
+    incorrect_candidate = spell.unknown(noun_word_list)
+    #print('incorrect: ', incorrect_candidate)
+    reduced_incorrect_candidate = []
+    for candidate in incorrect_candidate :
+        for word in file_freq_word_dict :
+            if candidate == word.lower() :
+                if file_freq_word_dict[word] >=2 or word.isupper() or (not word.isupper() and not word.islower()):
+                    spell.word_frequency.add(candidate)
+                else :
+                    reduced_incorrect_candidate.append(candidate)
+    #print('reduced: ',reduced_incorrect_candidate)
+    for word in reduced_incorrect_candidate :
+        correct_dict[word] = spell.correction(word)
+        correct_candidate_dict[word] = spell.candidates(word)
+    return correct_dict, correct_candidate_dict
+
+def correctFile(file_preprocess_lines, correct_dict) :
+    correct_lines = []
+    for line in file_preprocess_lines :
+        correct_line = line
+        for word in correct_dict :
+            insensitive = re.compile(re.escape(word), re.IGNORECASE)
+            correct_line = insensitive.sub(correct_dict[word],line)
+        correct_lines.append(correct_line)
+    return correct_lines
+
+
 
 if __name__ == '__main__' :
-    line1= "With this condition in place, as a general manger, I can monitor real-time twitter/facebook/instagram feeds/reaction from key sources in a continuous manner and/or on demand."
-    line2 = "The system shall notify users about special events/campaigns so that user participation will increase."
-    line3 ="As an administrator I can verify and/or approve comments from all users  to increase accuracy of information."
-    line4 = "As a driver, I can check into/select a location through my mobile phone so that the I can pay for my valet."
-    line5 ="As an admin I can edit the name of gateway/switch/floor/room."
-    line6 = 'If there is a conflict (there is already information in the row for the designated table) the application must be able to generate and execute  a PostgreSQL UPDATE statement for the "crawled" dataset.'
-    line7 = 'As a GM, my data can seamlessly integrate with the SporTech B.I. system in a standard compliant manner. (READ: The system shall communicate in PostgreSQL.).'
+    spell = SpellChecker(language='en',case_sensitive=False,distance=1)
+    #line1= "With this condition in place, as a general manger, I can monitor real-time twitter/facebook/instagram feeds/reaction from key sources in a continuous manner and/or on demand."
+    #line2 = "The system shall notify users about special events/campaigns so that user participation will increase."
+    #line3 ="As an administrator I can verify and/or approve comments from all users  to increase accuracy of information."
+    #line4 = "As a driver, I can check into/select a location through my mobile phone so that the I can pay for my valet."
+    #line5 ="As an admin I can edit the name of gateway/switch/floor/room."
+    #line6 = 'If there is a conflict (there is already information in the row for the designated table) the application must be able to generate and execute  a PostgreSQL UPDATE statement for the "crawled" dataset.'
+    #line7 = 'As a GM, my data can seamlessly integrate with the SporTech B.I. system in a standard compliant manner. (READ: The system shall communicate in PostgreSQL.).'
     
-    line_no_bracket =  removeBracket(line6)
-    print(line_no_bracket)
-    for line in removeSlash(line_no_bracket) :
-        print(line)
+    file_preprocess_lines = []
+    with open('./Data/input_origin/2014-USC-Project01.txt') as testFile :
+        lines = testFile.readlines()
+        file_freq_word_dict, noun_word_list = frequentWordGen(lines)
+        for line in lines:
+            line_no_bracket =  removeBracket(line)
+            #print(line_no_bracket)
+            line_no_slash_list = removeSlash(line_no_bracket)
+            #print(line_no_slash_list)
+            file_preprocess_lines.extend(line_no_slash_list)
+    correct_dict, correct_candidate_dict = spellcheck(file_freq_word_dict, noun_word_list,spell)
+    correct_lines = correctFile(file_preprocess_lines, correct_dict)
+    with open('./output/corrected_2014-USC-Project01.text', 'w') as outfile:
+        outfile.writelines(correct_lines)
+
+    with open('./output/mispellDetection01.text','w') as outfile1 :
+        for word in correct_dict :
+            outfile1.write(word+','+correct_dict[word]+','+str(correct_candidate_dict[word])+'\n')    
+    #for word in nlp('As a SporTech B.I. contractor, I can  add,delete,update the specific websites visited,  fields to capture from the website and frequency of crawler refreshes for each specified website.') :
+    #    print(word,word.pos_)

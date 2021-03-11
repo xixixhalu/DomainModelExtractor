@@ -1,0 +1,24 @@
+As a user, I can register my details into the system so that I can login.
+As a user, I can click on detonate bomb so that I can see how many points I have won.
+As a user , I can place bombs anywhere on the given grid.
+As a user, I can login to the game using my registered username and password so that I can play the game with my own profile.
+As a user, I can see if I have enough points to buy bombs for the new game.
+As a user, I can see the high score of the game so that I can play to beat that score.
+As a user, I can choose an avatar while registering or edit it later so that my game profile is customized to my liking.
+As a developer I should make sure to build a good and captivating user-interface so that the game attracts more users.
+As a user I can change the multiplier for each new game and get corresponding rewards after completing the game.
+As a user, I can hear sound effects of bomb explosion and prize received for more interesting gaming experience.
+As a user, I can quit the system anytime I want.
+As a user, I can see how many more bombs I am left with.
+As a user, I can see the history of the games played by me.
+As a user, I can see animations so that I can have an interesting gaming experience.
+As a user, I can log out without losing the points that I have lost or gained.
+As a user, I can recover my password if forgotten.
+The system should have code documents, design documents and architecture guidelines so that it is maintainable.
+The system should include log rotation with various levels so that the system exceptions and user actions can be logged and debugged if required without overhead space & size complexities.
+The system shall be scalable for the growing amount of users in the future. .
+As a user, I can edit my profile information.
+As a user, I can remove bombs anywhere from the given 4*4 grid.
+As a user, I should be able to place no more than 4 bombs anywhere on the given 4*4 grid.
+As a user, I can detonate bombs only after all 4 bombs have been placed on the given 4*4 grid.
+As a user, I should be prompted to play the game in landscape mode when I am trying to play in portrait mode.

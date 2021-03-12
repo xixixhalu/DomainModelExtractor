@@ -15,7 +15,7 @@ As a user I can select a particular room so that I have floor- or room-wide cont
 As an admin I should be able to add more users so that I can provide access to other users.
 As an admin I should be able to add more users so that I can revoke access to other users.
 The maximum budget for the project is $500.
-The mobile app should be written in Android with backend of mongodb and node.is
+The mobile app should be written in Android with backend of mongodb and node.is.
 System should have minimum downtime and high availability .
 System should have minimum downtime and high redundancy .
 System should be secure -  data should be transmitted over an encrypted channel.

@@ -1,21 +1,21 @@
-10-Mar-21 22:54:41 - INFO
-Unknown words: {'age;gender;ethnicity;city;zip', 'analyzed);session', 'questions;create', 'files(demographic', 'accounts(reset', 'category(each', 'csv', 'mylaspace', 'conceling', 'php', 'accounts;manage', 'css(agency', 'salesforce(several', 'category;program', 'code;school;status'}
-10-Mar-21 22:54:41 - WARNING
+12-Mar-21 15:33:33 - INFO
+Unknown words: {'mylaspace', 'csv', 'css(agency', 'accounts(reset', 'category(each', 'salesforce(several', 'php', 'conceling', 'analyzed);session', 'questions;create', 'accounts;manage', 'code;school;status', 'category;program', 'age;gender;ethnicity;city;zip', 'files(demographic'}
+12-Mar-21 15:33:33 - WARNING
 Change Line 1: 
 As a Case Manager, I can run frequency (demographic and activity reporting) on case file, so that I can save time in generating report - excel or csv format.
 Word: csv
 Change to: csi
-10-Mar-21 22:54:41 - WARNING
+12-Mar-21 15:33:33 - WARNING
 Change Line 3: 
 activities:admin work; follow ups; individual conceling; workshop; field-trips; community resources; CSS(agency); time stamps.
 Word: conceling
 Change to: canceling
-10-Mar-21 22:54:41 - WARNING
+12-Mar-21 15:33:33 - WARNING
 Change Line 11: 
 The system shall be developed using php.
 Word: php
 Change to: pop
-10-Mar-21 22:54:41 - WARNING
+12-Mar-21 15:33:33 - WARNING
 Change Line 12: 
 The system shall import existing data from Salesforce(several hundred  kids information in csv format) exported data.
 Word: csv

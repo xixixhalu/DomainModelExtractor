@@ -11,7 +11,7 @@ The system shall make sure the incoming call is assigned to a back up agent if t
 The system shall route the customer to voicemail if no agent is available.
 The system shall be deployed Heroku cloud.
 The system shall log data in PostgreSQL.
-The system shall use Twilio API for void
+The system shall use Twilio API for void.
 The system shall be developed using Ruby on Rails.
 The system shall run on Linux.
 The system interface will be built using HTML5, CSS, Javascript, Bootstrap, jQuery.

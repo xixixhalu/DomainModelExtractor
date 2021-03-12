@@ -208,6 +208,7 @@ def correctFile(file_origin_lines, file_preprocess_lines, correct_dict, file_fre
         for sentence in file_preprocess_lines[idx]:
             correct_line = sentence
             for word in correct_dict:
+                # Bo: temporary matching pattern, may not suit for all cases.
                 pattern = '(\W|^)' + word + 's{0,1}(\W)'
                 if re.search(pattern, correct_line): # case sensitive to avoid change of Proper noun
                     correct_line = re.sub(pattern, rf'\1{correct_dict[word]}\2', correct_line)

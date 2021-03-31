@@ -109,34 +109,61 @@ def removeSlash(line) :
     return result_line
 
 def removeBracket(line) :
-    doc = nlp(line) 
-    result_line = []
-    remove_index = []
-    for w in doc :
-        if w.text.startswith('('):
-            remove_index.append(w.i)
-        elif w.text.startswith(')'):
-            remove_index.append(w.i)
-        else :
-            continue
-    if remove_index == [] :
-        return line
+    index1 = sorted([i for i, ltr in enumerate(line) if ltr == '(' ])
+    index2 = sorted([i for i, ltr in enumerate(line) if ltr == ')' ])
+    if index1 == [] or index2 == []:
+       return line
     sentence = ''
-
-    if remove_index[0] == 0 :
-        sentence_start = remove_index[1] +1
-        index_start = 2
-    else :
-        sentence_start = 0
-        index_start = 0
-
-    for i in range(index_start,len(remove_index)) :
-        if i % 2 != 0 :
-            sentence_start = remove_index[i]+1
+    previous = 0
+    for i in range(0,len(index1)) :
+        if line[index1[i]-1]== ' ' or line[index1[i]+1]==' ' :
+            sentence += line[previous:index1[i]]
         else :
-            sentence += doc[sentence_start:remove_index[i]].text + ' '
-    sentence += doc[remove_index[-1]+1:len(doc)].text
+            sentence += line[previous:index1[i]]+' '
+        previous = index2[i]+1
+        if line[index2[i]-1] == ' 'or line[index2[i]+1] == ' ' :
+            sentence += ''
+        else :
+            sentence += ' '
+    
+    sentence += line[index2[-1]+1:]
+    if not sentence.endswith('\n') :
+        sentence += '\n'
+    print(sentence)
     return sentence
+    
+
+    #print(index1)
+    #index2 = [i for i, ltr in enumerate(line) if ltr == ')']
+    
+    #doc = nlp(line) 
+    #result_line = []
+    #remove_index = []
+    #for w in doc :
+    #    if w.text.startswith('('):
+    #        remove_index.append(w.i)
+    #    elif w.text.startswith(')'):
+    #        remove_index.append(w.i)
+    #    else :
+    #        continue
+    #if remove_index == [] :
+    #    return line
+    #sentence = ''
+
+    #if remove_index[0] == 0 :
+    #    sentence_start = remove_index[1] +1
+    #    index_start = 2
+    #else :
+    #    sentence_start = 0
+    #    index_start = 0
+
+    #for i in range(index_start,len(remove_index)) :
+    #    if i % 2 != 0 :
+    #        sentence_start = remove_index[i]+1
+    #    else :
+    #        sentence += doc[sentence_start:remove_index[i]].text + ' '
+    #sentence += doc[remove_index[-1]+1:len(doc)].text
+   
             
 def frequentWordGen (lines) :
     file_freq_word_dict = {}

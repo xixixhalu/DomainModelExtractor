@@ -1,0 +1,6 @@
+The System shall be developed using ReactNative .
+The System shall store persistent AccountData in a Database .
+The System shall sync to a given Device 's ContactList once given Permission .
+The System shall store the hashed Version of the Password in a Database .
+The System shall authenticate the User using an Email and Password , allowing an Individual to sign into their Account from multiple Devices .
+The System shall communicate with online Merchants , so it can offer Products from said Merchants .

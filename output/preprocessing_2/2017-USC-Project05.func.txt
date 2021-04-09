@@ -1,0 +1,17 @@
+or HouseManager , Administrator should be able to View and FilterLogs of LocksAccess .
+or HouseManager , Administrator should be able to see lock BatteryStatus , LockNames and LockCodes .
+HouseManager should be able to add Others ' .
+Manager , house should be delete ' Others ' . Others ' .
+or HouseManager , Administrator should be able to see the Hub and lock Status .
+or HouseManager , Administrator should be able to assign random Codes through a random NumberGenerator .
+Administrator should be able to allow more than one working Code per Lock .
+Administrator can create a Group of Locks and add in the Group .
+Administrator can create a Group of Locks and DeleteLocks in the Group . in the Group .
+HouseManager can select one or multiple Locks to add Locks to add/delete Codes .
+HouseManager can select one or multiple Locks to add edit Codes .
+HouseManager can select one or delete / EditCodes . locks to add/delete Codes .
+HouseManager can select one or delete / edit Codes . edit Codes .
+Administrator can add Managers ' and ` Others ' and help them reset their Password .
+Administrator can delete ' Managers ' And ' Others ' and help help them reset their Password .
+HouseStaff should be able to see given lock Number and LockCode .
+Administrator can enter Administrator's SmartthingsClientId and Secret to authorize Access to the Locks .

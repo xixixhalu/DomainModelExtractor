@@ -1,8 +1,14 @@
 import os
+import re
 
 from adapter import *
 from Parser.PosTagParser import *
 from Parser.TDParser import *
+
+from util.logger import Logger
+global logger
+
+import argparse
 
 
 # create a class to pre-process
@@ -10,55 +16,69 @@ from Parser.TDParser import *
 # 2. combine consecutive Nouns
 # 3. output another identical file
 
+FUNC_RE = '(A|a)s (the|a|an) .+(I|i|My|my) '
+
 
 class PreProcessor:
 
-    def __init__(self, file_path):
-        self.file = open(file_path)
+    def __init__(self):
+        self.count_func = 0
+        self.count_nonfunc = 0
 
-    def pre_process(self):
-        # overwrite previous output file
-        dirs = os.getcwd() + "/input_v2/"
-        if not os.path.exists(dirs):
-            os.makedirs(dirs)
+    def pre_process(self, input_path, output_path):
 
-        output = open(dirs + os.path.basename(self.file.name), "w")
-        
-        metadata = open(dirs + "meta_" + os.path.basename(self.file.name), "w")
-        actors = open(dirs + "actor_" + os.path.basename(self.file.name), "w")
+        file = open(input_path, 'r')
 
-        line = self.file.readline().strip()
+        func_output = open(output_path + ".func.txt", "w")
+        nonfunc_output = open(output_path + ".nonfunc.txt", "w")
+        metadata = open(output_path + ".meta.txt", "w")
+        actors = open(output_path + ".actor.txt", "w")
+
+        line = file.readline().strip()
         while line:
             # print("Original sentence: ", line)
             meta = []
 
             # maps combined noun to the original nouns
-            actor_map = {}
-            act = []
-            line = self.combine_nouns(line, meta, actor_map)
-            line = self.replace_role(line, actor_map, act)
+            noun_map = {}
+            acts = []
+            combine_nouns_line = self.combine_nouns(line, meta, noun_map)
+            replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)
             #print(line)
-            output.write(line + "\n")
+            if re.search(FUNC_RE, line):
+                func_output.write(replace_role_line + "\n")
+                self.count_func += 1
+            else:
+                nonfunc_output.write(replace_role_line + "\n")
+                self.count_nonfunc += 1
             metadata.write(meta.__str__() + "\n")
-            actors.write(act.__str__() + "\n")
+            actors.write(acts.__str__() + "\n")
 
             # print("Meta data: ", meta)
             # print(" ")
 
-            line = self.file.readline().strip()
+            line = file.readline().strip()
 
-        output.close()
+
+
+        logger.info("Functional count: " + str(self.count_func) + 
+                    "\nNon-functional count: " + str(self.count_nonfunc))
+
+        func_output.close()
+        nonfunc_output.close()
         metadata.close()
         actors.close()
 
+        file.close()
+
     # Note: this function use a straight forward method to combine consecutive nouns: combining consecutive NN or NNP or
     # NNS or NNPS.
-    def combine_nouns(self, line, meta, actor):
+    def combine_nouns(self, line, meta, noun_map):
         nlp_output = analyze(line)
         if nlp_output is None:
             # print(line, ": NLP API returns None. skip!")
             return ''
-        # print nlp_output
+        # print(json.dumps(nlp_output, indent=2))
 
         line_index = []
         for i in range(0, len(nlp_output['sentences'][0]['tokens']) + 1):
@@ -74,7 +94,8 @@ class PreProcessor:
         # 'merge_intervals' can process it.
         intervals = []
         intervals.extend(self.combine_JJs_NNs(line_index, pt))
-        intervals.extend(self.combine_nmod(td_key))
+        # Bo: no need to combine nmod
+        # intervals.extend(self.combine_nmod(td_key))
         intervals = self.merge_intervals(intervals)
 
         tokens = nlp_output['sentences'][0]['tokens']
@@ -87,13 +108,12 @@ class PreProcessor:
 
         new_line = ''
         i = 1
-
         # construct combined sentence
         while i < len(line_index):
             cand = tokens[i - 1]['word']
 
             if i in map:
-                cand = cand.capitalize()
+                cand = cand[0].upper() + cand[1:]
                 j = map[i]
                 i = i + 1
                 while i <= j:
@@ -101,6 +121,7 @@ class PreProcessor:
                     i = i + 1
 
                 i = i - 1
+                # cand = re.sub(r'\W+', '', cand)
 
             if cand == ',' or cand == '.':
                 new_line = new_line.strip()
@@ -121,12 +142,12 @@ class PreProcessor:
                 sub.append(tokens[i - 1]['word'])
                 combined += tokens[i - 1]['word'][0].upper() + tokens[i - 1]['word'][1:]
                 i = i + 1
-
-            actor[combined] = sub
+            # combined = re.sub(r'\W+', '', combined)
+            noun_map[combined] = sub
             meta.append((sub, pair))
 
         # print("Combined sentence: ", new_line)
-        # print("Combined nouns mapping: ", actor)
+        # print("Combined nouns mapping: ", noun_map)
 
         return str(new_line)
 
@@ -254,9 +275,10 @@ class PreProcessor:
 
         # Add all JJ to a set
         adjs = set()
-        if 'JJ' in pt:
-            for pair in pt['JJ']:
-                adjs.add(pair[0])
+        # Bo: no need to consider JJ
+        # if 'JJ' in pt:
+        #     for pair in pt['JJ']:
+        #         adjs.add(pair[0])
 
         list = []
         i = 1
@@ -299,7 +321,7 @@ class PreProcessor:
         # print("JJ + NN: ", list)
         return list
 
-    def replace_role(self, line, actor_map, act):
+    def replace_role(self, line, noun_map, act):
         nlp_output = analyze(line)
         noun_set = {'NN', 'NNP', 'NNS', 'NNPS'}
         tokens = [d['word'] for d in nlp_output['sentences'][0]['tokens']]
@@ -336,7 +358,7 @@ class PreProcessor:
                             isReplaced = True
                     return isReplaced
 
-                self.extract_actors(role, actor_map, act)
+                self.extract_actors(role, noun_map, act)
                 subjects = ['I', 'i', 'we', 'We']
                 for subject in subjects:
                     repalce_occured = index(outputs, subject, role) or repalce_occured
@@ -352,7 +374,7 @@ class PreProcessor:
         res = ' '.join(outputs)
         return res
 
-    def extract_actors(self, line, actor_map, act):
+    def extract_actors(self, line, noun_map, act):
         # print("Roles sentence: ", line)
         nlp_output = analyze(line)
         if nlp_output is None:
@@ -378,15 +400,16 @@ class PreProcessor:
             for pair in pt['NNPS']:
                 nouns.add(pair[0])
 
-        # print "Unsorted nouns index in role: ", nouns
+        # print("Unsorted nouns index in role: ", nouns)
         sorted(nouns)
         # print("Sorted nouns index in role: ", nouns)
+        # exit(1)
 
         tokens = nlp_output['sentences'][0]['tokens']
         for actor in nouns:
             actor = tokens[actor - 1]['word']
-            if actor in actor_map:
-                act.append(actor_map[actor])
+            if actor in noun_map:
+                act.append(noun_map[actor])
             else:
                 act.append(actor)
 
@@ -402,20 +425,41 @@ class PreProcessor:
 
 if __name__ == '__main__':
 
-    # p = PreProcessor(os.getcwd() + "/Data/input_origin/" + "test.txt")
+    parser = argparse.ArgumentParser(description='Preprocessing')
+    parser.add_argument('-i', '--input', type=str, metavar='', default="./output/misspelling_detect_1/",
+                        help='input path. Default: %(default)s')
+    parser.add_argument('-f', '--file', type=str, metavar='',
+                        help='input file. Example: python3 preprocessor.py -f 2014-USC-Projecct02')
+    parser.add_argument('-o', '--output', type=str, metavar='', default="./output/preprocessing_2/",
+                        help='output path. Default: %(default)s')
+    parser.add_argument('-l', '--list', action='store_true',
+                        help='list all input files. Example: python3 preprocessing.py -l')
+    args = parser.parse_args()
 
-    for year in range(2014, 2020):
-        for project in range(1, 16):
-            file_name = str(year) + '-USC-Project' + str(project).rjust(2, '0')
-            file_path = os.getcwd() + "/Data/input_origin/" + file_name + '.txt'
-            if not os.path.exists(file_path):
-                continue
-            print("Preprocessing " + file_path)
-            p = PreProcessor(file_path)
-            p.pre_process()
+    if args.file:
+        filename = args.file
+        input_path = args.input + filename + ".corrected.txt"
+        output_path = args.output + filename
 
-    # file_path = os.getcwd() + "/Data/input_origin/2014-USC-Project02.txt"
-    # print("processing " + file_path)
-    # p = PreProcessor(file_path)
-    # p.pre_process()
+        logger = Logger(output_path + '_log.txt')
+
+        p = PreProcessor()
+        p.pre_process(input_path, output_path)
+      
+    elif args.list:
+        input_path = args.input
+        files = os.listdir(input_path)
+        f_list = set()
+        pattern = '.corrected.txt'
+        for f in files:
+            if re.search(pattern, f):
+                f_list.add(re.sub(pattern, rf"", f))
+        for f in sorted(f_list):
+            print(f)  
+
+    else:
+        parser.print_help()
+
+
+    
 

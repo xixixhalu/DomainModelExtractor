@@ -1,0 +1,34 @@
+The System sends the User an Email .
+The System informs the User that the Battery is full
+The System validates that the Password is correct
+The System warns the User not to restart the System .
+The Customer selects not to ﬁll the Tank
+The System marks the Errors to be red .
+The System commands the Motor to start .
+The System keeps the User waiting .
+The System validates the Record entered by the Customer .
+The System keeps the Door open
+The System makes the User an Administrator .
+The System tells the User where to go .
+The System stops the Motor when the Tank is full
+The Server responds the Query quickly
+The System will eject the AtmCard .
+The System sends the Message to the Customer .
+The System guides where to go .
+The Motor stops when the Tank is full .
+The System starts to ﬁll the Tank .
+The Printer starts printing the Document
+The Elevator moves up or down .
+The Customer is Employee .
+The System waits for 5 Seconds .
+The AtmCard is ejected by the System .
+The AtmCard will be ejected by the System .
+The System prompts for Password .
+AtmCustomer enters the WithdrawalAmount .
+If the AtmCard is valid .
+The System restarts
+Include UcsValidatePIN
+Extend HandleCardJam
+Resume M2 .
+Repeat M4-m8 .
+Cardreader , Cashdispenser and Receiptprinter are the Schedule of Atm .

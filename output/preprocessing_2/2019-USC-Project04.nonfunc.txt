@@ -1,0 +1,20 @@
+The final Product shall be modular and integrate easily into the Rest of FieldProgress 's TechStack .
+The final Product shall accept as InputDistricts of any Size .
+The final Product shall accept as InputPrecincts of any Size .
+The final Product shall consider District when calculating the most optimal Route for Volunteers to take .
+The Precinct topography when calculating calculating the most optimal Route for Volunteers to take .
+The final Product shall render an optional Map with Voters placed as Points , and line ( s for the Volunteers to take , representing the Grouping of Voters using Colors .
+The final Product shall accept as Input a variable Number of Volunteers .
+The final Product shall accept as Input a variable TimeRange for Volunteers to Canvass .
+User should be able to InputVoterData into the System and be able to see it in Map .
+The final Product shall be executable on Windows , Linux , and Macos operating Systems .
+The final Product should have Comments describing each major Function and Class in the Code .
+The final Product shall fail gracefully on Error with a StatusCode of 0 .
+The Project should have a well documented ProjectPlan through out the DevelopmentCycle , so the whole Team knows what needs to be done and when .
+Success critical Stakeholders should be able to effectively track the ProjectProgress through VersionControlSystems like Github .
+Given VoterData and Availability of Volunteers , we should be able to work on a feasible Algorithm which automatically cuts the Turfs .
+It should Implement an efficient clustering Algorithm that Scales , seeing as this will be the main Core of the Project .
+Develop an accurate Algorithm for TurfCutting .
+A Tool where we can load a VoterList , and it produces clustered VoterList .
+We can specify # volunteers , Time per Volunteer , Time per Conversation , and Likelihood of Conversation as Parameters .
+A TestFramework for Objectively verifying its Effectiveness .

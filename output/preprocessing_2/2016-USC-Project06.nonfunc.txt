@@ -1,0 +1,3 @@
+The System should have CodeDocuments , DesignDocuments and ArchitectureGuidelines so that it is maintainable .
+The System should include LogRotation with various Levels so that the SystemExceptions and UserActions can be logged and debugged if required without OverheadSpace & SizeComplexities .
+The System shall be scalable for the growing Amount of Users in the Future . .

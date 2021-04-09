@@ -208,7 +208,7 @@ def correctFile(file_origin_lines, file_preprocess_lines, correct_dict, file_fre
         for sentence in file_preprocess_lines[idx]:
             correct_line = sentence
             for word in correct_dict:
-                # Bo: temporary matching pattern, may not suit for all cases due to capital letters and stemming/original formats.
+                # Bo: temporary matching pattern, may not suit for all cases due to capital letters and stemming/original format.
                 pattern = '(\W|^)' + word + 's{0,1}(\W)'
                 if re.search(pattern, correct_line): # case sensitive to avoid change of Proper noun
                     correct_line = re.sub(pattern, rf'\1{correct_dict[word]}\2', correct_line)
@@ -282,8 +282,11 @@ if __name__ == '__main__' :
     elif args.list:
         input_path = args.input
         files = os.listdir(input_path)
+        f_list = set()
         for f in files:
-            print(f.split(".")[0])
+            f_list.add(f.split(".")[0])
+        for f in sorted(f_list):
+            print(f) 
     else:
         parser.print_help()
 

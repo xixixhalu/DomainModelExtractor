@@ -3,6 +3,7 @@ import logging
 class Logger:
 
     def __init__(self, filename):
+        self.baseFilename = filename
         logging.basicConfig(filename=filename, 
                             level=logging.INFO,
                             filemode='w',

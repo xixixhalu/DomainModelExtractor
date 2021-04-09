@@ -6,7 +6,7 @@ ssr_matching_cmd='python3 ssr_matching.py '
 rule_transforming_cmd='python3 rule_transforming.py '
 
 usage() { 
-	echo "Usage:	$0 [-m|-p|-s] [-f <filename>]" 1>&2;
+	echo "Usage:	$0 [-m|-p|-s|-t] [-f <filename>]" 1>&2;
 	echo "Parameters:	
 	-m 	Misspelling detection
 	-p 	Preprosessing
@@ -82,7 +82,7 @@ shift "$((OPTIND - 1))"
 
 ###
 
-if [ -z "${PREPROCESSING}" ] && [ -z "${PREPROCESSING}" ] && [ -z "${SSR_MATCHING}" ] && [ -z "${RULE_TRANSFORMING}" ]; then
+if [ -z "${MISSPELL_DETECTION}" ] && [ -z "${PREPROCESSING}" ] && [ -z "${SSR_MATCHING}" ] && [ -z "${RULE_TRANSFORMING}" ]; then
     usage
 fi
 

@@ -1,0 +1,75 @@
+{
+  "domain": "2017-USC-Project06",
+  "entity_dict": {
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "input",
+      "target": "InsulinLevel",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Trend",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "connect",
+      "target": "Cgm",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "set",
+      "target": "Level",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "want",
+      "target": "InsulinRecommendation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "want",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "download",
+      "target": "Application",
+      "para": []
+    }
+  ]
+}

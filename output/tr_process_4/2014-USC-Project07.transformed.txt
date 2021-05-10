@@ -1,0 +1,111 @@
+{
+  "domain": "2014-USC-Project07",
+  "entity_dict": {
+    "ESS": {
+      "name": "ESS",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "odule",
+      "action": "detect",
+      "target": "Edge",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "use",
+      "target": "odule",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "use",
+      "target": "Module",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "WaitCondition",
+      "para": []
+    },
+    {
+      "actor": "odule",
+      "action": "detect",
+      "target": "Cliff",
+      "para": []
+    },
+    {
+      "actor": "odule",
+      "action": "detect",
+      "target": "Direction",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "Instruction",
+      "para": []
+    },
+    {
+      "actor": "odule",
+      "action": "detect",
+      "target": "Speed",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "use",
+      "target": "Sound",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "turn",
+      "target": "LEDs",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "create",
+      "target": "Song",
+      "para": []
+    },
+    {
+      "actor": "odule",
+      "action": "detect",
+      "target": "ElapsedTime",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "Function",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "LoopConstruct",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "create",
+      "target": "ProgramFile",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "InstructionConstruct",
+      "para": []
+    }
+  ]
+}

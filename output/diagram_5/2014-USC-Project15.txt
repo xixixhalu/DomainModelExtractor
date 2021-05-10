@@ -1,0 +1,106 @@
+@startuml
+hide circle
+class VOLUNTEERCOACH<actor> {
+}
+class GOTRLA<actor> {
+}
+class VolunteerCoach<actor> {
+}
+class Staff<actor> {
+}
+class Edit<actor> {
+}
+class Volunteer<actor> {
+}
+class Admin<actor> {
+}
+class EditProgramStaff<actor> {
+}
+class User<actor> {
+}
+class CAN {
+	ANY()
+}
+class TEAMSHAVINGISSUESIMMEDIATELY {
+}
+class staff {
+	analyze()
+	export()
+}
+class Data {
+}
+class GOTRLA {
+	have()
+	schedule()
+	monitor()
+	Update()
+	REGULARLY()
+	Add()
+	support()
+}
+class ATTENDANCESHEET {
+}
+class TeamRoster {
+}
+class Volunteer {
+	conduct()
+	access()
+}
+class Class {
+}
+class Coach {
+	conduct()
+	take()
+}
+class AttendanceData {
+}
+class VolunteerCoach {
+	have()
+}
+class Staff {
+	have()
+}
+class CopyLiabilityWaiverForm {
+}
+class Attendance {
+}
+class Schedule {
+}
+class GirlData {
+}
+class Information {
+}
+class User {
+	update()
+	reset()
+}
+class AccountPassword {
+}
+class ProgramWeek {
+}
+class Admin {
+	add()
+}
+GOTRLA --> GirlData : Add
+CAN --> TEAMSHAVINGISSUESIMMEDIATELY : ANY
+Coach --> Class : conduct
+GOTRLA --> VolunteerCoach : Add
+staff --> AttendanceData : analyze
+GOTRLA --> Information : have
+staff --> Data : export
+User --> AccountPassword : update
+GOTRLA --> ATTENDANCESHEET : REGULARLY
+Volunteer --> Class : conduct
+GOTRLA --> VolunteerCoach : Update
+GOTRLA --> ProgramWeek : schedule
+GOTRLA --> TeamRoster : support
+VolunteerCoach --> CopyLiabilityWaiverForm : have
+Admin --> Staff : add
+Staff --> CopyLiabilityWaiverForm : have
+User --> AccountPassword : reset
+Coach --> Attendance : take
+Volunteer --> Schedule : access
+GOTRLA --> Class : Add
+GOTRLA --> Attendance : monitor
+
+@enduml

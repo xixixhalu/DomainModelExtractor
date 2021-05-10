@@ -1,0 +1,129 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Office<actor> {
+}
+class Doctor<actor> {
+}
+class Admin<actor> {
+}
+class Administrator<actor> {
+}
+class Developer<actor> {
+}
+class User {
+	delete()
+	view()
+	generate()
+	attach()
+	manage()
+	download()
+	access()
+	export()
+	assign()
+	add()
+	create()
+	import()
+}
+class Invoice {
+}
+class Doctor {
+	match()
+	view()
+	want()
+	recommend()
+	choose()
+	fill()
+	edit()
+}
+class Progress {
+}
+class Form {
+}
+class Product {
+}
+class Set {
+}
+class Allergy {
+}
+class Application {
+	handles()
+}
+class Information {
+}
+class VendorProductInformation {
+}
+class Data {
+}
+class Administrator {
+	save()
+}
+class PatientDocument {
+}
+class Inventory {
+}
+class VisitDetail {
+}
+class ProductInfo {
+}
+class Report {
+}
+class OrderForm {
+}
+class PatientRecord {
+}
+class Developer {
+	protect()
+}
+class App {
+}
+class Admin {
+	customize()
+}
+class Portal {
+}
+class Patient {
+}
+class CSVFile {
+	has()
+}
+class Task {
+}
+class Medication {
+}
+Doctor --> Report : view
+Doctor --> Progress : edit
+Doctor --> Product : choose
+User --> VendorProductInformation : import
+User --> Data : manage
+Doctor --> OrderForm : fill
+User --> Form : delete
+User --> Task : generate
+User --> Form : download
+Doctor --> Set : choose
+Doctor --> Product : recommend
+User --> Medication : add
+User --> PatientRecord : create
+User --> Set : download
+Doctor --> Patient : match
+User --> Data : attach
+Developer --> App : protect
+Application --> Information : handles
+Administrator --> PatientDocument : save
+Admin --> Portal : customize
+User --> Allergy : add
+User --> Inventory : manage
+Doctor --> Patient : choose
+User --> VisitDetail : view
+Doctor --> App : want
+User --> Information : access
+User --> Set : delete
+User --> ProductInfo : export
+CSVFile --> Information : has
+User --> Invoice : create
+User --> Product : add
+User --> Form : add
+User --> Task : assign
+
+@enduml

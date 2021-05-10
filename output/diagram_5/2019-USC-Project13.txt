@@ -1,0 +1,135 @@
+@startuml
+hide circle
+class Admin<actor> {
+}
+class Mentee<actor> {
+}
+class Mentor<actor> {
+}
+class User<actor> {
+}
+class Developer<actor> {
+}
+class Enduser<actor> {
+}
+class Administrator<actor> {
+}
+class Admin {
+	get()
+	export()
+	update()
+	assign()
+	view()
+	send()
+	match()
+	track()
+}
+class Mentor {
+	reset()
+	report()
+	create()
+	register()
+	select()
+	update()
+	provide()
+	monitor()
+	accept()
+	mark()
+	submit()
+}
+class Mentee {
+	reset()
+	select()
+	update()
+	send()
+	upload()
+	see()
+}
+class ContactDetail {
+}
+class Password {
+}
+class Administrator {
+	get()
+}
+class Statistics {
+}
+class Availability {
+}
+class Detail {
+}
+class Report {
+}
+class Request {
+	establish()
+}
+class Connection {
+}
+class Status {
+}
+class TrainingPhaseActivity {
+}
+class Information {
+	includes()
+}
+class Phone {
+}
+class InformationDetail {
+}
+class ActivityRecord {
+}
+class User {
+	update()
+	access()
+}
+class Site {
+}
+class Reminder {
+}
+class ActivityReport {
+}
+class List {
+}
+class Developer {
+	integrate()
+}
+class WebApplication {
+}
+class Interaction {
+}
+Developer --> WebApplication : integrate
+Mentor --> Mentee : select
+Mentee --> ContactDetail : update
+Information --> Phone : includes
+Mentor --> Interaction : report
+Mentor --> Availability : mark
+Mentor --> Report : submit
+Admin --> Mentee : track
+Mentor --> Detail : register
+Mentee --> InformationDetail : update
+Mentee --> Password : reset
+User --> Password : update
+Admin --> Mentor : track
+Admin --> Mentor : assign
+Mentor --> ActivityRecord : create
+Mentee --> Detail : upload
+Mentor --> ActivityReport : provide
+Mentor --> Password : reset
+Admin --> Report : export
+User --> Site : access
+Admin --> Reminder : send
+Request --> Connection : establish
+Administrator --> Statistics : get
+Admin --> ActivityReport : view
+Mentor --> Request : accept
+Admin --> Statistics : view
+Mentor --> Information : update
+Admin --> Report : get
+Mentee --> Request : send
+Admin --> Status : update
+Mentee --> List : see
+Mentor --> TrainingPhaseActivity : monitor
+Mentee --> Mentor : select
+Admin --> Mentor : match
+
+@enduml

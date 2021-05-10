@@ -1,0 +1,238 @@
+{
+  "domain": "2019-USC-Project03",
+  "entity_dict": {
+    "Student": {
+      "name": "Student",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Teacher": {
+      "name": "Teacher",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Parent": {
+      "name": "Parent",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Maintainer": {
+      "name": "Maintainer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "TeacherUser": {
+      "name": "TeacherUser",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Dislike": {
+      "name": "Dislike",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Bullied",
+      "para": []
+    },
+    {
+      "actor": "Teacher",
+      "action": "assign",
+      "target": "Homework",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "have",
+      "target": "Name",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "mention",
+      "target": "Someone",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "see",
+      "target": "TimeStatistic",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "upvote",
+      "target": "Answer",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "finish",
+      "target": "Homework",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "report",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "schedule",
+      "target": "Meeting",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "improve",
+      "target": "Quality",
+      "para": []
+    },
+    {
+      "actor": "Teacher",
+      "action": "contact",
+      "target": "Student",
+      "para": []
+    },
+    {
+      "actor": "Teacher",
+      "action": "send",
+      "target": "Invitation",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "upvote",
+      "target": "Question",
+      "para": []
+    },
+    {
+      "actor": "TeacherUser",
+      "action": "post",
+      "target": "Assignment",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "join",
+      "target": "DiscussionGroup",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "add",
+      "target": "Class",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "view",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "notice",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "receive",
+      "target": "Invitation",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "send",
+      "target": "Invitation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "invite",
+      "target": "People",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "monitor",
+      "target": "Stability",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "check",
+      "target": "Status",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "manage",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "create",
+      "target": "StudyGroup",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "bookmark",
+      "target": "Question",
+      "para": []
+    },
+    {
+      "actor": "TeacherUser",
+      "action": "improve",
+      "target": "Performance",
+      "para": []
+    },
+    {
+      "actor": "Teacher",
+      "action": "upload",
+      "target": "Video",
+      "para": []
+    }
+  ]
+}

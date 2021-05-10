@@ -1,0 +1,72 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Retailer<actor> {
+}
+class User {
+	waste()
+	buy()
+	minimize()
+	view()
+	follow()
+	sort()
+	viewing()
+	shop()
+	get()
+	slide()
+	see()
+	collapse()
+}
+class Detail {
+}
+class Cluster {
+}
+class Circle {
+}
+class Sort {
+}
+class Clothing {
+}
+class LoaderAnimation {
+}
+class Item {
+}
+class Collection {
+}
+class UserExperience {
+}
+class Page {
+}
+class Trend {
+}
+class Product {
+}
+class Cost {
+}
+class Version {
+}
+class Time {
+}
+User --> Sort : collapse
+User --> Version : view
+User --> Clothing : buy
+User --> LoaderAnimation : see
+User --> Product : shop
+User --> Item : see
+User --> Collection : slide
+User --> Item : view
+User --> UserExperience : get
+User --> Product : sort
+User --> Time : waste
+User --> Page : viewing
+User --> Trend : follow
+User --> Detail : view
+User --> Product : get
+User --> Cluster : view
+User --> Product : see
+User --> Cost : minimize
+User --> Circle : see
+User --> Product : view
+
+@enduml

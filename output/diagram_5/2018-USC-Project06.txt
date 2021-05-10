@@ -1,0 +1,135 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Patient<actor> {
+}
+class Support<actor> {
+}
+class Administrator<actor> {
+}
+class Family<actor> {
+}
+class Member<actor> {
+}
+class Admin<actor> {
+}
+class User {
+	manage()
+	update()
+	access()
+	delete()
+	block()
+	report()
+}
+class Profile {
+}
+class Patient {
+	attended()
+	has()
+	contact()
+	send()
+	add()
+	have()
+	posted()
+	pull()
+	get()
+	message()
+	share()
+}
+class Event {
+}
+class Invitation {
+}
+class Junk {
+}
+class member {
+	receive()
+	get()
+	send()
+}
+class Link {
+}
+class Message {
+}
+class Calendar {
+}
+class members {
+}
+class Appointment {
+}
+class Admin {
+	view()
+	post()
+}
+class List {
+}
+class Task {
+}
+class Notification {
+}
+class Account {
+}
+class Friend {
+}
+class Announcement {
+}
+class Messaging {
+}
+class CalendarEvent {
+}
+class Money {
+}
+class SupportGroup {
+	access()
+}
+class kind {
+}
+class AdMessage {
+}
+class Statistics {
+}
+class Information {
+}
+class Administrator {
+	suspense()
+}
+class HealthCondition {
+}
+class Resource {
+}
+Patient --> Information : get
+Patient --> Calendar : share
+User --> Message : block
+Patient --> Event : posted
+User --> members : manage
+User --> Information : update
+Patient --> Friend : message
+Patient --> Invitation : share
+Administrator --> Account : suspense
+Admin --> Announcement : post
+Patient --> members : message
+Patient --> Friend : pull
+Patient --> Profile : share
+Patient --> members : pull
+Patient --> HealthCondition : have
+Patient --> Messaging : send
+User --> Junk : report
+Patient --> Event : attended
+member --> Resource : receive
+Patient --> CalendarEvent : add
+Patient --> Appointment : has
+member --> Money : send
+member --> Link : send
+Admin --> List : view
+Patient --> Patient : contact
+Patient --> Message : send
+SupportGroup --> kind : access
+Patient --> Task : posted
+User --> AdMessage : report
+member --> Notification : get
+Admin --> Statistics : view
+User --> Profile : access
+User --> Account : delete
+
+@enduml

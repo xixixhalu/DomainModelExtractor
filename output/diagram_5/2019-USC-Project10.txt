@@ -1,0 +1,53 @@
+@startuml
+hide circle
+class Developer<actor> {
+}
+class User<actor> {
+}
+class VideoUser<actor> {
+}
+class User {
+	interested()
+	input()
+	find()
+}
+class Movie {
+}
+class MovieTitle {
+	get()
+}
+class Developer {
+	map()
+	filter()
+	display()
+	access()
+}
+class Data {
+}
+class IMDBAttribute {
+}
+class Media {
+}
+class VideoUser {
+	use()
+}
+class TwitterData {
+}
+class Info {
+}
+class Result {
+}
+class MediaData {
+}
+Developer --> Data : filter
+User --> Movie : find
+Developer --> Result : display
+VideoUser --> Media : use
+Developer --> IMDBAttribute : map
+User --> MovieTitle : input
+VideoUser --> TwitterData : use
+Developer --> MediaData : access
+User --> Media : interested
+MovieTitle --> Info : get
+
+@enduml

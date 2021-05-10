@@ -1,0 +1,142 @@
+{
+  "domain": "2016-USC-Project06",
+  "entity_dict": {
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Developer": {
+      "name": "Developer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "User",
+      "action": "beat",
+      "target": "Score",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "recover",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "remove",
+      "target": "Bomb",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "place",
+      "target": "Bomb",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "buy",
+      "target": "Bomb",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Score",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Reward",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "register",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "choose",
+      "target": "while",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "hear",
+      "target": "Effect",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "registered",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "change",
+      "target": "Multiplier",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "play",
+      "target": "Game",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "registered",
+      "target": "Username",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "GamingExperience",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "edit",
+      "target": "ProfileInformation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "History",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "detonate",
+      "target": "Bomb",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Animation",
+      "para": []
+    },
+    {
+      "actor": "Game",
+      "action": "attracts",
+      "target": "User",
+      "para": []
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Parent<actor> {
+}
+class Client<actor> {
+}
+class Admin<actor> {
+}
+class Member<actor> {
+}
+class Student<actor> {
+}
+class Donor<actor> {
+}
+class Admin {
+	update()
+	check()
+}
+class Information {
+}
+class User {
+	purchase()
+	receive()
+	view()
+}
+class Trailer {
+}
+class Detail {
+}
+class Mail {
+}
+class Student {
+	download()
+}
+class Page {
+}
+class Donor {
+	make()
+	support()
+}
+class DonationOnline {
+}
+class MusicNote {
+}
+class VYMACommunity {
+}
+class Update {
+}
+class parents {
+	view()
+}
+class OtherDetail {
+}
+class Client {
+	check()
+	add()
+}
+class Link {
+}
+class Dvd {
+}
+class News {
+}
+class parent {
+	set()
+}
+class Payment {
+}
+class Email {
+}
+class GoogleDrive {
+}
+class member {
+	view()
+}
+member --> Information : view
+Client --> Link : add
+Admin --> Mail : check
+Client --> Email : check
+Donor --> DonationOnline : make
+parents --> OtherDetail : view
+User --> Trailer : view
+User --> Dvd : purchase
+Client --> GoogleDrive : check
+parent --> Payment : set
+Student --> MusicNote : download
+Donor --> VYMACommunity : support
+Student --> Page : download
+Admin --> Detail : update
+User --> Update : receive
+Admin --> Information : update
+User --> News : receive
+User --> Detail : view
+
+@enduml

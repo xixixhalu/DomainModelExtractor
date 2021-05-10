@@ -1,0 +1,158 @@
+{
+  "domain": "2014-USC-Project02",
+  "entity_dict": {
+    "GM": {
+      "name": "GM",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Coach": {
+      "name": "Coach",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "SporTechBIContractor": {
+      "name": "SporTechBIContractor",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Manger": {
+      "name": "Manger",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Customer": {
+      "name": "Customer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "SoccerCoach": {
+      "name": "SoccerCoach",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Coach",
+      "action": "extract",
+      "target": "PlayerValue",
+      "para": []
+    },
+    {
+      "actor": "GM",
+      "action": "extract",
+      "target": "PlayerValue",
+      "para": []
+    },
+    {
+      "actor": "Manger",
+      "action": "monitor",
+      "target": "TwitterFeed",
+      "para": []
+    },
+    {
+      "actor": "Manger",
+      "action": "monitor",
+      "target": "FacebookFeed",
+      "para": []
+    },
+    {
+      "actor": "GM",
+      "action": "extract",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "Manger",
+      "action": "monitor",
+      "target": "FacebookReaction",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "update",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "SoccerCoach",
+      "action": "configure",
+      "target": "Schedule",
+      "para": []
+    },
+    {
+      "actor": "Manger",
+      "action": "monitor",
+      "target": "InstagramFeed",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "see",
+      "target": "Change",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "add",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "GM",
+      "action": "build",
+      "target": "Roster",
+      "para": []
+    },
+    {
+      "actor": "SporTechBIContractor",
+      "action": "update",
+      "target": "PlayerData",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "build",
+      "target": "Roster",
+      "para": []
+    },
+    {
+      "actor": "SporTechBIContractor",
+      "action": "revise",
+      "target": "PlayerData",
+      "para": []
+    },
+    {
+      "actor": "Manger",
+      "action": "monitor",
+      "target": "InstagramReaction",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "import",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "Manger",
+      "action": "monitor",
+      "target": "TwitterReaction",
+      "para": []
+    }
+  ]
+}

@@ -1,40 +1,40 @@
-System should be able to display List of Mentors to Mentees .
-System should be able to display List of Mentees to Mentors .
-System can store the Details of Mentor and Mentees in the Database .
-Admin should be able to view ActivityReports sent by the Mentors timely .
-Mentee can select the Mentor based on Mentee's Criteria .
-Mentor can select Mentor's Mentee based on Mentor's Criteria .
+System should be able to display List of Mentor to Mentee .
+System should be able to display List of Mentee to Mentor .
+System can store the Detail of Mentor and Mentee in the Database .
+Admin should be able to view ActivityReport sent by the Mentor timely .
+Mentee can select the Mentor based on Mentee's Criterion .
+Mentor can select Mentor's Mentee based on Mentor's Criterion .
 System must be able to associate Relation between Mentor and Mentee .
 User should be able to update Password .
 Mentor can provide ActivityReport about Mentor's Mentee on monthly Basis to Admin .
-Mentor should be able to create , update and track ActivityRecords of Mentee .
-Mentor should be able to submit Reports to the Admin every Month .
+Mentor should be able to create , update and track ActivityRecord of Mentee .
+Mentor should be able to submit Report to the Admin every Month .
 Mentor can reset Mentor's Password .
 Mentee can reset Mentee's Password .
-Mentee should be able to see the List of available Mentors and send a Request for Connection .
-Mentor should be able to monitor Mentor's TrainingPhaseActivities .
-Mentor should be able to accept mentee Requests to establish a Connection .
+Mentee should be able to see the List of available Mentor and send a Request for Connection .
+Mentor should be able to monitor Mentor's TrainingPhaseActivity .
+Mentor should be able to accept mentee Request to establish a Connection .
 Mentor should be able to mark Mentor's Availability .
-Admin should be able to export the Report of List of all Mentors .
-Mentee should be able to update Mentee's personal InformationDetails .
-Mentee should be able to update Mentee's personal ContactDetails .
+Admin should be able to export the Report of List of all Mentor .
+Mentee should be able to update Mentee's personal InformationDetail .
+Mentee should be able to update Mentee's personal ContactDetail .
 Mentor should be able to update Mentor's personal Information which includes Phone no , Availability , Photo , etc. . .
-Admin should be able to send Reminders to the Mentors who missed sending their monthly Report .
-Admin should be able to view the Statistics of successful Matches .
+Admin should be able to send Reminder to the Mentor who missed sending their monthly Report .
+Admin should be able to view the Statistics of successful Match .
 User should be able to load the Website quickly and able to easily access the Site .
 Admin should be able to delete .
-Admin should be deactivate Users . .
-Mentor must be able to register Mentor's Details and be shown as available for MentorshipProcess .
-Mentee must be able to upload Mentee's Details and be able to search and connect with Mentors suitable for Mentee's Profile .
-Admin must be able to track all available Mentors and Mentees , and get monthly Reports on the Progress of MentorshipProgram .
+Admin should be deactivate User . .
+Mentor must be able to register Mentor's Detail and be shown as available for MentorshipProcess .
+Mentee must be able to upload Mentee's Detail and be able to search and connect with Mentor suitable for Mentee's Profile .
+Admin must be able to track all available Mentor and Mentee , and get monthly Report on the Progress of MentorshipProgram .
 Developer must be able to integrate the WebApplication into Client 's ServerWhile , learning Technology .
 End-user must be able to navigate through the ApplicationSeamlessly .
-Admin must be able to assign Mentors to Mentees .
-Administrator should be able to get Statistics on Number of Mentors , Mentees and on pre-program SurveyAnswers and on post-program SurveyAnswers .
-Mentor can report Mentor's Interactions with Mentor's Mentee .
-Admin can export a Report with the MentorInteractions .
-Admin can export a Report with the mentee Interactions .
-Admin can update the Status of Mentor & mentees Trainings .
-Admin can match Mentors to Mentees .
+Admin must be able to assign Mentor to Mentee .
+Administrator should be able to get Statistics on Number of Mentor , Mentee and on pre-program SurveyAnswer and on post-program SurveyAnswer .
+Mentor can report Mentor's Interaction with Mentor's Mentee .
+Admin can export a Report with the MentorInteraction .
+Admin can export a Report with the mentee Interaction .
+Admin can update the Status of Mentor & mentees Training .
+Admin can match Mentor to Mentee .
 Mentee can opt out from the Program and from further Communication .
 Mentor can opt out from the Program and from further Communication .

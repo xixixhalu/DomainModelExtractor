@@ -1,0 +1,207 @@
+{
+  "domain": "2017-USC-Project03",
+  "entity_dict": {
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Coach": {
+      "name": "Coach",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Developer": {
+      "name": "Developer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Parent": {
+      "name": "Parent",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Treasurer": {
+      "name": "Treasurer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Maintainer": {
+      "name": "Maintainer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Headcoach": {
+      "name": "Headcoach",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Coach",
+      "action": "extract",
+      "target": "UploadEvent",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "extract",
+      "target": "PdfInformation",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "insert",
+      "target": "Database",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "see",
+      "target": "AmountDetail",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "expect",
+      "target": "Signup",
+      "para": []
+    },
+    {
+      "actor": "Headcoach",
+      "action": "generate",
+      "target": "PdfReport",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "access",
+      "target": "Database",
+      "para": []
+    },
+    {
+      "actor": "parent",
+      "action": "sign",
+      "target": "Kid",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "modify",
+      "target": "Database",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "modify",
+      "target": "Result",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "review",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "parent",
+      "action": "edit",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "parent",
+      "action": "view",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Signup",
+      "action": "close",
+      "target": "Week",
+      "para": []
+    },
+    {
+      "actor": "Signup",
+      "action": "close",
+      "target": "Timeframe",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "edit",
+      "target": "List",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "overwrite",
+      "target": "Result",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Option",
+      "para": []
+    },
+    {
+      "actor": "Headcoach",
+      "action": "generate",
+      "target": "CSVFile",
+      "para": []
+    },
+    {
+      "actor": "parent",
+      "action": "view",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "modified",
+      "target": "Something",
+      "para": []
+    },
+    {
+      "actor": "Treasurer",
+      "action": "see",
+      "target": "Amount",
+      "para": []
+    }
+  ]
+}

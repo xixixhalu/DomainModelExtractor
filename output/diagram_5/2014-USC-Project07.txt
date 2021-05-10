@@ -1,0 +1,61 @@
+@startuml
+hide circle
+class ESS<actor> {
+}
+class odule {
+	detect()
+}
+class Edge {
+}
+class ESS {
+	create()
+	use()
+	drag()
+	turn()
+}
+class Module {
+}
+class WaitCondition {
+}
+class Cliff {
+}
+class Direction {
+}
+class Instruction {
+}
+class Speed {
+}
+class Sound {
+}
+class LEDs {
+}
+class Song {
+}
+class ElapsedTime {
+}
+class Function {
+}
+class LoopConstruct {
+}
+class ProgramFile {
+}
+class InstructionConstruct {
+}
+ESS --> Instruction : drag
+ESS --> LEDs : turn
+ESS --> ProgramFile : create
+odule --> Cliff : detect
+ESS --> Function : drag
+ESS --> odule : use
+odule --> Edge : detect
+odule --> Speed : detect
+ESS --> Module : use
+ESS --> Song : create
+ESS --> InstructionConstruct : drag
+odule --> Direction : detect
+ESS --> LoopConstruct : drag
+ESS --> Sound : use
+odule --> ElapsedTime : detect
+ESS --> WaitCondition : drag
+
+@enduml

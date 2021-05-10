@@ -1,0 +1,157 @@
+{
+  "domain": "2018-USC-Project07",
+  "entity_dict": {
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Client": {
+      "name": "Client",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Developer": {
+      "name": "Developer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Maintainer": {
+      "name": "Maintainer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Administer": {
+      "name": "Administer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Way",
+      "action": "draw",
+      "target": "Attention",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Score",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "purchase",
+      "target": "Version",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "practice",
+      "target": "Math",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "keep",
+      "target": "LevelProgress",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "check",
+      "target": "Score",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "publish",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "erase",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "have",
+      "target": "ScreenSpace",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "publish",
+      "target": "IOSVersion",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "have",
+      "target": "Documentation",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "design",
+      "target": "DescriptionPage",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "Ability",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "change",
+      "target": "Theme",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "understand",
+      "target": "Code",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "design",
+      "target": "LevelPage",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "track",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "install",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "Administer",
+      "action": "see",
+      "target": "Analytic",
+      "para": []
+    }
+  ]
+}

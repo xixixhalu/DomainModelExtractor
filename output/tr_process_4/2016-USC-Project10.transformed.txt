@@ -1,0 +1,199 @@
+{
+  "domain": "2016-USC-Project10",
+  "entity_dict": {
+    "Youth": {
+      "name": "Youth",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "CaseManager": {
+      "name": "CaseManager",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Administrator": {
+      "name": "Administrator",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Staff": {
+      "name": "Staff",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "CaseManager",
+      "action": "export",
+      "target": "Case",
+      "para": []
+    },
+    {
+      "actor": "Staff",
+      "action": "view",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "view",
+      "target": "File",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "create",
+      "target": "Activity",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "delete",
+      "target": "Document",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "provide",
+      "target": "Feedback",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "delete",
+      "target": "Case",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "SecurityQuestion",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "view",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "delete",
+      "target": "Case",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "transfer",
+      "target": "Case",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "activate",
+      "target": "YouthAccount",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "view",
+      "target": "LogRecord",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "view",
+      "target": "Case",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "send",
+      "target": "Email",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "modify",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "delete",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "see",
+      "target": "Result",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "add",
+      "target": "File",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "view",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "recover",
+      "target": "LoginInformation",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "contact",
+      "target": "CaseManager",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "review",
+      "target": "Feedback",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "view",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "take",
+      "target": "Survey",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "view",
+      "target": "Record",
+      "para": []
+    }
+  ]
+}

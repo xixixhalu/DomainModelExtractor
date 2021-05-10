@@ -1,0 +1,100 @@
+@startuml
+hide circle
+class Youth<actor> {
+}
+class CaseManager<actor> {
+}
+class Administrator<actor> {
+}
+class User<actor> {
+}
+class Staff<actor> {
+}
+class CaseManager {
+	see()
+	export()
+	view()
+	send()
+	review()
+	delete()
+	activate()
+	add()
+}
+class Case {
+}
+class Staff {
+	view()
+}
+class Information {
+}
+class Youth {
+	view()
+	provide()
+	contact()
+	take()
+}
+class File {
+}
+class Administrator {
+	modify()
+	create()
+	transfer()
+	view()
+	delete()
+}
+class Activity {
+}
+class Document {
+}
+class Feedback {
+}
+class User {
+	recover()
+	create()
+}
+class SecurityQuestion {
+}
+class Profile {
+}
+class YouthAccount {
+}
+class LogRecord {
+}
+class Email {
+}
+class Result {
+}
+class LoginInformation {
+}
+class Survey {
+}
+class Record {
+}
+Staff --> Information : view
+CaseManager --> Result : see
+CaseManager --> YouthAccount : activate
+Administrator --> Case : delete
+CaseManager --> File : add
+Youth --> File : view
+Administrator --> Case : transfer
+CaseManager --> Information : view
+User --> LoginInformation : recover
+Administrator --> Activity : create
+Youth --> CaseManager : contact
+User --> SecurityQuestion : create
+CaseManager --> Document : delete
+CaseManager --> Feedback : review
+Youth --> Profile : view
+Youth --> Survey : take
+Youth --> Feedback : provide
+Administrator --> Record : view
+CaseManager --> Case : delete
+Administrator --> Profile : view
+Administrator --> LogRecord : view
+CaseManager --> Case : view
+CaseManager --> Email : send
+CaseManager --> Case : export
+Administrator --> Profile : modify
+Administrator --> Profile : delete
+
+@enduml

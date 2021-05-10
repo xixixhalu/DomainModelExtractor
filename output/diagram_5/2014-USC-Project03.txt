@@ -1,0 +1,113 @@
+@startuml
+hide circle
+class Driver<actor> {
+}
+class Company<actor> {
+}
+class Establishment<actor> {
+}
+class Customer<actor> {
+}
+class Operator<actor> {
+}
+class Head<actor> {
+}
+class User<actor> {
+}
+class Operator {
+	receive()
+	retrieve()
+	add()
+	track()
+	have()
+	send()
+}
+class Employee {
+}
+class Location {
+}
+class Request {
+}
+class Company {
+	offer()
+	receive()
+	accept()
+	control()
+}
+class PaymentOption {
+}
+class Transaction {
+}
+class Head {
+	adjust()
+	set()
+}
+class Pricing {
+}
+class Establishment {
+	attract()
+	send()
+}
+class Advertisement {
+}
+class Driver {
+	have()
+	create()
+	select()
+	message()
+}
+class Profile {
+}
+class Payment {
+}
+class Notification {
+}
+class Valet {
+}
+class Revenue {
+}
+class Customer {
+	request()
+	enter()
+}
+class TicketNumber {
+}
+class Price {
+}
+class Car {
+}
+class EmailTransactionSummaryReport {
+}
+class Login {
+}
+class Option {
+}
+class User {
+	include()
+}
+class Information {
+}
+Operator --> Location : have
+Driver --> Profile : create
+Head --> Price : set
+Operator --> Request : receive
+Company --> Payment : accept
+Operator --> Car : retrieve
+Company --> EmailTransactionSummaryReport : receive
+Company --> PaymentOption : offer
+Establishment --> Advertisement : send
+Operator --> Transaction : track
+Driver --> Location : select
+Operator --> Login : have
+Customer --> Car : request
+Head --> Pricing : adjust
+Driver --> Option : have
+Operator --> Notification : send
+User --> Information : include
+Driver --> Valet : message
+Establishment --> Customer : attract
+Company --> Revenue : control
+Operator --> Employee : add
+Customer --> TicketNumber : enter
+
+@enduml

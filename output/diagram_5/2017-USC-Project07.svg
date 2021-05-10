@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="231px" preserveAspectRatio="none" style="width:881px;height:231px;background:#FFFFFF;" version="1.1" viewBox="0 0 881 231" width="881px" zoomAndPan="magnify"><defs><filter height="300%" id="ftezkw1fscepp" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3b3e4d82bd72d9beea30453587036ffc]
+class Scriptwriter--><rect codeLine="25" fill="#FEFECE" filter="url(#ftezkw1fscepp)" height="52.7734" id="Scriptwriter" style="stroke:#A80036;stroke-width:1.5;" width="111" x="7" y="29"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="70" x="10" y="45.1387">Scriptwriter</text><rect fill="#FFFFFF" height="15.9688" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="33" x="88" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="31" x="89" y="38.1387">actor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="117" y1="52.9688" y2="52.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="117" y1="60.9688" y2="60.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="27" x="13" y="75.1792">get()</text><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="8" fill="#FEFECE" filter="url(#ftezkw1fscepp)" height="78.3828" id="User" style="stroke:#A80036;stroke-width:1.5;" width="70" x="162.5" y="16.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="29" x="165.5" y="32.6387">User</text><rect fill="#FFFFFF" height="15.9688" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="33" x="202.5" y="13.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="31" x="203.5" y="25.6387">actor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="163.5" x2="231.5" y1="40.4688" y2="40.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="163.5" x2="231.5" y1="48.4688" y2="48.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="35" x="168.5" y="62.6792">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="40" x="168.5" y="75.4839">share()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="28" x="168.5" y="88.2886">like()</text><!--MD5=[db6d18d8099558415abc41d00477ab92]
+class Admin--><rect codeLine="15" fill="#FEFECE" filter="url(#ftezkw1fscepp)" height="91.1875" id="Admin" style="stroke:#A80036;stroke-width:1.5;" width="78" x="471.5" y="10"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="37" x="474.5" y="26.1387">Admin</text><rect fill="#FFFFFF" height="15.9688" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="33" x="519.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="31" x="520.5" y="19.1387">actor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="472.5" x2="548.5" y1="33.9688" y2="33.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="472.5" x2="548.5" y1="41.9688" y2="41.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="29" x="477.5" y="56.1792">add()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="46" x="477.5" y="68.9839">delete()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="30" x="477.5" y="81.7886">edit()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="36" x="477.5" y="94.5933">save()</text><!--MD5=[9bb0bdd047fba1a3c8d48282c35b4537]
+class Post--><rect codeLine="13" fill="#FEFECE" filter="url(#ftezkw1fscepp)" height="39.9688" id="Post" style="stroke:#A80036;stroke-width:1.5;" width="31" x="291" y="178"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="25" x="294" y="194.1387">Post</text><line style="stroke:#A80036;stroke-width:1.5;" x1="292" x2="321" y1="201.9688" y2="201.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="292" x2="321" y1="209.9688" y2="209.9688"/><!--MD5=[dcee833d056c5d7af3e761670f78721f]
+class UserComment--><rect codeLine="21" fill="#FEFECE" filter="url(#ftezkw1fscepp)" height="39.9688" id="UserComment" style="stroke:#A80036;stroke-width:1.5;" width="92" x="482.5" y="178"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="86" x="485.5" y="194.1387">UserComment</text><line style="stroke:#A80036;stroke-width:1.5;" x1="483.5" x2="573.5" y1="201.9688" y2="201.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="483.5" x2="573.5" y1="209.9688" y2="209.9688"/><!--MD5=[a96594a83e2ecdc78cbf17c2ddf01934]
+class Category--><rect codeLine="23" fill="#FEFECE" filter="url(#ftezkw1fscepp)" height="39.9688" id="Category" style="stroke:#A80036;stroke-width:1.5;" width="61" x="610" y="178"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="55" x="613" y="194.1387">Category</text><line style="stroke:#A80036;stroke-width:1.5;" x1="611" x2="670" y1="201.9688" y2="201.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="611" x2="670" y1="209.9688" y2="209.9688"/><!--MD5=[1a502b0dbedafd291c48f46ef8646183]
+class Feedback--><rect codeLine="28" fill="#FEFECE" filter="url(#ftezkw1fscepp)" height="39.9688" id="Feedback" style="stroke:#A80036;stroke-width:1.5;" width="66" x="29.5" y="178"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="60" x="32.5" y="194.1387">Feedback</text><line style="stroke:#A80036;stroke-width:1.5;" x1="30.5" x2="94.5" y1="201.9688" y2="201.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="30.5" x2="94.5" y1="209.9688" y2="209.9688"/><!--MD5=[39d6d2ea03de602dbf4d534e70c872a9]
+class Tag--><rect codeLine="30" fill="#FEFECE" filter="url(#ftezkw1fscepp)" height="39.9688" id="Tag" style="stroke:#A80036;stroke-width:1.5;" width="28" x="706.5" y="178"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="22" x="709.5" y="194.1387">Tag</text><line style="stroke:#A80036;stroke-width:1.5;" x1="707.5" x2="733.5" y1="201.9688" y2="201.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="707.5" x2="733.5" y1="209.9688" y2="209.9688"/><!--MD5=[09e3160644ea82bed9dc2bfdc7bfe5c8]
+class Producer--><rect codeLine="32" fill="#FEFECE" filter="url(#ftezkw1fscepp)" height="52.7734" id="Producer" style="stroke:#A80036;stroke-width:1.5;" width="60" x="788.5" y="29"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="54" x="791.5" y="45.1387">Producer</text><line style="stroke:#A80036;stroke-width:1.5;" x1="789.5" x2="847.5" y1="52.9688" y2="52.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="789.5" x2="847.5" y1="60.9688" y2="60.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="38" x="794.5" y="75.1792">using()</text><!--MD5=[5fc2c51f642af57547148ed1a4199032]
+class FeedbackForm--><rect codeLine="35" fill="#FEFECE" filter="url(#ftezkw1fscepp)" height="39.9688" id="FeedbackForm" style="stroke:#A80036;stroke-width:1.5;" width="97" x="770" y="178"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="91" x="773" y="194.1387">FeedbackForm</text><line style="stroke:#A80036;stroke-width:1.5;" x1="771" x2="866" y1="201.9688" y2="201.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="771" x2="866" y1="209.9688" y2="209.9688"/><!--MD5=[3ee005b10afe37ab00bc601fe8c9dd91]
+link Scriptwriter to Feedback--><path codeLine="37" d="M60.7913,82.135 C59.7808,100.479 58.8198,125.7589 59.5,148 C59.7456,156.0291 60.2169,164.7878 60.7146,172.6506 " fill="none" id="Scriptwriter-to-Feedback" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="61.0608,177.931,64.4631,168.6885,60.7335,172.9417,56.4803,169.2121,61.0608,177.931" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="60.5" y="144.0669">get</text><!--MD5=[a83e61acaefd7edf9b7418f062ec8667]
+link Admin to UserComment--><path codeLine="38" d="M516.245,101.341 C519.286,125.0796 522.9,153.2914 525.412,172.8996 " fill="none" id="Admin-to-UserComment" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="526.058,177.9408,528.8819,168.5055,525.4226,172.9813,520.9468,169.522,526.058,177.9408" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="523.5" y="144.0669">delete</text><!--MD5=[77c575690b0287b9077f2f97ff7c450d]
+link User to Post--><path codeLine="39" d="M162.475,81.006 C147.125,93.91 130.751,111.175 122.5,131 C119.597,137.9756 117.896,142.0093 122.5,148 C142.487,174.0057 242.041,189.1364 285.804,194.6261 " fill="none" id="User-to-Post" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="290.855,195.2479,282.4102,190.1798,285.8924,194.6379,281.4342,198.12,290.855,195.2479" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="123.5" y="144.0669">view</text><!--MD5=[77c575690b0287b9077f2f97ff7c450d]
+link User to Post--><path codeLine="41" d="M186.735,94.821 C184.078,112.336 184.409,132.57 194.5,148 C214.757,178.9732 259.382,190.4859 285.78,194.6787 " fill="none" id="User-to-Post-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="290.804,195.4232,282.4875,190.1473,285.858,194.6903,281.3149,198.0609,290.804,195.4232" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="36" x="195.5" y="144.0669">share</text><!--MD5=[77c575690b0287b9077f2f97ff7c450d]
+link User to Post--><path codeLine="43" d="M226.997,94.521 C246.621,119.8163 271.766,152.2286 288.468,173.757 " fill="none" id="User-to-Post-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="291.692,177.9122,289.3351,168.3495,288.6269,173.9619,283.0145,173.2537,291.692,177.9122" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="269.5" y="144.0669">like</text><!--MD5=[dc199ec68092ac8089dca5bc20ed836a]
+link Producer to FeedbackForm--><path codeLine="40" d="M818.5,82.27 C818.5,108.008 818.5,147.2786 818.5,172.5439 " fill="none" id="Producer-to-FeedbackForm" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="818.5,177.7128,822.5,168.7128,818.5,172.7128,814.5,168.7128,818.5,177.7128" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="819.5" y="144.0669">using</text><!--MD5=[e1157d990c71223888f6eba0861fc13e]
+link Admin to Category--><path codeLine="42" d="M549.504,98.655 C572.457,123.4614 600.588,153.8641 619.442,174.2413 " fill="none" id="Admin-to-Category" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="622.851,177.9259,619.6747,168.6033,619.4553,174.2559,613.8027,174.0365,622.851,177.9259" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="596.5" y="144.0669">add</text><!--MD5=[d53d37b3aa2ec70df3b748f86ef4db62]
+link Admin to Tag--><path codeLine="44" d="M549.514,80 C572.954,94.346 603.231,113.281 629.5,131 C655.006,148.2042 683.606,169.2468 701.818,182.8769 " fill="none" id="Admin-to-Tag" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="706.216,186.1756,701.416,177.5756,702.216,183.1756,696.616,183.9756,706.216,186.1756" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="653.5" y="144.0669">add</text><!--MD5=[9d419e28e6a453de17836b09fd865dae]
+link Admin to Post--><path codeLine="45" d="M471.345,64.313 C432.408,73.918 373.19,93.741 335.5,131 C324.006,142.3628 316.728,159.0569 312.338,172.812 " fill="none" id="Admin-to-Post" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="310.849,177.7313,317.285,170.2763,312.2977,172.9458,309.6282,167.9584,310.849,177.7313" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="336.5" y="144.0669">save</text><!--MD5=[9d419e28e6a453de17836b09fd865dae]
+link Admin to Post--><path codeLine="46" d="M471.167,83.59 C427.952,113.353 360.236,159.9909 326.706,183.0839 " fill="none" id="Admin-to-Post-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="322.401,186.0483,332.0821,184.2382,326.519,183.2125,327.5448,177.6494,322.401,186.0483" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="397.5" y="144.0669">add</text><!--MD5=[9d419e28e6a453de17836b09fd865dae]
+link Admin to Post--><path codeLine="47" d="M478.732,101.119 C465.316,117.541 448.605,135.2289 430.5,148 C397.871,171.0163 352.913,185.2627 327.057,192.1076 " fill="none" id="Admin-to-Post-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="322.149,193.3783,331.8642,194.9955,326.9895,192.1254,329.8596,187.2507,322.149,193.3783" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="452.5" y="144.0669">edit</text><!--MD5=[55c6380db0a98206f031aa7567c471ae]
+@startuml
+hide circle
+class Scriptwriter<actor> {
+}
+class User<actor> {
+}
+class Admin<actor> {
+}
+class User {
+	view()
+	share()
+	like()
+}
+class Post {
+}
+class Admin {
+	add()
+	delete()
+	edit()
+	save()
+}
+class UserComment {
+}
+class Category {
+}
+class Scriptwriter {
+	get()
+}
+class Feedback {
+}
+class Tag {
+}
+class Producer {
+	using()
+}
+class FeedbackForm {
+}
+Scriptwriter - -> Feedback : get
+Admin - -> UserComment : delete
+User - -> Post : view
+Producer - -> FeedbackForm : using
+User - -> Post : share
+Admin - -> Category : add
+User - -> Post : like
+Admin - -> Tag : add
+Admin - -> Post : save
+Admin - -> Post : add
+Admin - -> Post : edit
+@enduml
+
+PlantUML version 1.2021.6beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

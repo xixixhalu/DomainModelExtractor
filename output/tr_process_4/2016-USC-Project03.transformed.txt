@@ -1,0 +1,99 @@
+{
+  "domain": "2016-USC-Project03",
+  "entity_dict": {
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "User",
+      "action": "pick",
+      "target": "Answer",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Answer",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "run",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "consume",
+      "target": "inline",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "access",
+      "target": "Material",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Hint",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "play",
+      "target": "Video",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "fastforward",
+      "target": "Video",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "click",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "access",
+      "target": "TextContents",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "fastforward",
+      "target": "Audio",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Page",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "click",
+      "target": "GirlBill",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "play",
+      "target": "Audio",
+      "para": []
+    }
+  ]
+}

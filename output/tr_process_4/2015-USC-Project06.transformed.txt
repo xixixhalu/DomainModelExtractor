@@ -1,0 +1,204 @@
+{
+  "domain": "2015-USC-Project06",
+  "entity_dict": {
+    "Manager": {
+      "name": "Manager",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Contractor": {
+      "name": "Contractor",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Architect": {
+      "name": "Architect",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "ProjectManager": {
+      "name": "ProjectManager",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Contractor",
+      "action": "send",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "report",
+      "target": "Change",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "ask",
+      "target": "Issue",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "send",
+      "target": "Instruction",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "enter",
+      "target": "Report",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "enter",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "see",
+      "target": "MeetingMinute",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "access",
+      "target": "logs",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "edit",
+      "target": "MeetingInformation",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "track",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "manage",
+      "target": "Resource",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "edit",
+      "target": "TaskCategory",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "approve",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "send",
+      "target": "MeetingMinute",
+      "para": []
+    },
+    {
+      "actor": "Event",
+      "action": "taken",
+      "target": "Place",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "make",
+      "target": "Decision",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "edit",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "save",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "save",
+      "target": "Status",
+      "para": []
+    },
+    {
+      "actor": "ProjectManager",
+      "action": "track",
+      "target": "TaskProgress",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "see",
+      "target": "Task",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "create",
+      "target": "Project",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "find",
+      "target": "Topic",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "see",
+      "target": "Summary",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "ask",
+      "target": "Question",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "modify",
+      "target": "Project",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "get",
+      "target": "GeneratedPDFReport",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "approve",
+      "target": "Request",
+      "para": []
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Developer<actor> {
+}
+class Admin<actor> {
+}
+class Developer {
+	enable()
+	allow()
+	provide()
+}
+class User {
+	view()
+	keep()
+	return()
+}
+class Item {
+	using()
+}
+class Source {
+}
+class Track {
+}
+class Product {
+}
+class Admin {
+	maintain()
+}
+class Database {
+}
+class LoginSystem {
+}
+User --> Track : keep
+Developer --> User : allow
+Admin --> Database : maintain
+Developer --> User : enable
+Developer --> LoginSystem : provide
+User --> Product : return
+Item --> Source : using
+User --> Item : view
+
+@enduml

@@ -1,11 +1,11 @@
-Developer can map ImdbAttributes with Respect to TwitterMentions or Hashtags .
+Developer can map IMDBAttribute with Respect to TwitterMentions or Hashtag .
 Developer can filter the Data pulled from Twitter with a specific Timestamp to reduce the DataSize .
-Developer can design a backend System which can provide Apis to FrontendSystem for DemoPurposes .
-User can find the popular Movies with higher Rankings by searching in the System .
-VideoUser can use TwitterData , or other social Media , to recommend to prime video UsersMovies and TvShows .
-VideoUser can see what TvShows are trending on social Media .
-VideoUser can see what TvMovies are trending on social Media .
-Developer can access social MediaData to create a Tool that maps the Data to ImdbTitles .
-Developer can display the Results of the Tool by creating a Website where the MovieTitles are ranked by social MediaBuzz .
-User can input MovieTitles to get the related Info like Comments pulled from social Media of certain Movies which User 'm interested in .
-Developer can script most of the ImdbTitles and link them to TwitterMentions . As a Developer , Developer can script most of the ImdbTitles and link them to TwitterHashtags . As a Developer , Developer can script most of the ImdbPages and link them to TwitterMentions . As a Developer , Developer can script most of the ImdbPages and link them to TwitterHashtags .
+Developer can design a backend System which can provide Api to FrontendSystem for DemoPurpose .
+User can find the popular Movie with higher Ranking by searching in the System .
+VideoUser can use TwitterData , or other social Media , to recommend to prime video UserMovie and TvShow .
+VideoUser can see what TvShow are trending on social Media .
+VideoUser can see what TvMovie are trending on social Media .
+Developer can access social MediaData to create a Tool that maps the Data to IMDBTitle .
+Developer can display the Result of the Tool by creating a Website where the MovieTitle are ranked by social MediaBuzz .
+User can input MovieTitle to get the related Info like Comment pulled from social Media of certain Movie which User 'm interested in .
+Developer can script most of the IMDBTitle and link them to TwitterMentions . As a Developer , Developer can script most of the IMDBTitle and link them to TwitterHashtags . As a Developer , Developer can script most of the IMDBPage and link them to TwitterMentions . As a Developer , Developer can script most of the IMDBPage and link them to TwitterHashtag .

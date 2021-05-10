@@ -1,0 +1,50 @@
+@startuml
+hide circle
+class Scriptwriter<actor> {
+}
+class User<actor> {
+}
+class Admin<actor> {
+}
+class User {
+	view()
+	share()
+	like()
+}
+class Post {
+}
+class Admin {
+	add()
+	delete()
+	edit()
+	save()
+}
+class UserComment {
+}
+class Category {
+}
+class Scriptwriter {
+	get()
+}
+class Feedback {
+}
+class Tag {
+}
+class Producer {
+	using()
+}
+class FeedbackForm {
+}
+Scriptwriter --> Feedback : get
+Admin --> UserComment : delete
+User --> Post : view
+Producer --> FeedbackForm : using
+User --> Post : share
+Admin --> Category : add
+User --> Post : like
+Admin --> Tag : add
+Admin --> Post : save
+Admin --> Post : add
+Admin --> Post : edit
+
+@enduml

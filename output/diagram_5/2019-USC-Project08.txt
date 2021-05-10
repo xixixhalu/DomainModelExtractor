@@ -1,0 +1,176 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Patient<actor> {
+}
+class Doctor<actor> {
+}
+class DoctorUser<actor> {
+}
+class CareTeam<actor> {
+}
+class Admin<actor> {
+}
+class HealthcareExecutive<actor> {
+}
+class App<actor> {
+}
+class Book {
+	reschedules()
+	get()
+}
+class Appointment {
+}
+class CareTeam {
+	add()
+	input()
+	remove()
+}
+class Recommendation {
+}
+class Admin {
+	add()
+	access()
+	remove()
+}
+class Entry {
+}
+class Patient {
+	answer()
+	add()
+	track()
+	completed()
+	reschedule()
+	have()
+	miss()
+	do()
+	save()
+	cancel()
+	receive()
+	update()
+	install()
+	snooze()
+	get()
+	compare()
+	take()
+	bookscancels()
+}
+class Questionnaire {
+}
+class Information {
+}
+class Survey {
+}
+class Doctor {
+	modify()
+	register()
+	use()
+	enroll()
+	get()
+}
+class Amount {
+}
+class ContactInformation {
+}
+class HealthcareExecutive {
+	see()
+}
+class Data {
+}
+class Reminder {
+}
+class Access {
+}
+class Database {
+}
+class DoctorUser {
+	view()
+}
+class QuestionnaireResponse {
+}
+class Notification {
+}
+class App {
+}
+class User {
+	answer()
+	completed()
+	receive()
+}
+class TimeNotification {
+}
+class Pre {
+}
+class PostopReminder {
+}
+class SurveyResponse {
+}
+class Ride {
+}
+class Prescription {
+}
+class Task {
+}
+class Confirmation {
+}
+class Picture {
+	see()
+}
+class Difference {
+}
+class graphically {
+}
+class SMSNotification {
+}
+class HealthRecommendationArticle {
+}
+class Trend {
+}
+Patient --> Ride : get
+Patient --> Appointment : bookscancels
+Admin --> Entry : remove
+Patient --> Questionnaire : do
+Admin --> Database : access
+Patient --> HealthRecommendationArticle : save
+Admin --> Entry : add
+Doctor --> Prescription : modify
+Patient --> Picture : take
+Patient --> Appointment : reschedule
+Doctor --> Patient : enroll
+CareTeam --> Information : input
+User --> Task : completed
+DoctorUser --> QuestionnaireResponse : view
+Patient --> Picture : compare
+Patient --> Appointment : cancel
+Patient --> Survey : do
+Patient --> Confirmation : get
+Doctor --> Notification : get
+HealthcareExecutive --> Trend : see
+Patient --> Notification : get
+Patient --> App : install
+Patient --> Recommendation : receive
+Doctor --> Patient : register
+User --> Amount : answer
+Patient --> Amount : answer
+Picture --> Difference : see
+User --> TimeNotification : receive
+Patient --> ContactInformation : update
+Book --> Notification : get
+Patient --> Task : completed
+CareTeam --> Patient : remove
+Patient --> graphically : track
+Book --> Appointment : reschedules
+Doctor --> App : use
+HealthcareExecutive --> Data : see
+Patient --> Pre : add
+Patient --> SMSNotification : get
+Patient --> Reminder : snooze
+Patient --> PostopReminder : add
+CareTeam --> Patient : add
+CareTeam --> Recommendation : input
+Patient --> Access : have
+DoctorUser --> SurveyResponse : view
+Patient --> Appointment : miss
+
+@enduml

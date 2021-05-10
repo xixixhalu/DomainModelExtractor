@@ -1,0 +1,53 @@
+@startuml
+hide circle
+class CaseManager<actor> {
+}
+class CaseManager {
+	manage()
+	monitor()
+	run()
+	create()
+	save()
+	upload()
+}
+class Frequency {
+}
+class YouthService {
+}
+class Document {
+}
+class TimeLogingActivity {
+}
+class Time {
+}
+class Account {
+}
+class Youth {
+	have()
+}
+class Access {
+}
+class ManagementService {
+}
+class MonitorCase {
+}
+class Activity {
+	have()
+}
+class Category {
+}
+class CaseFile {
+}
+CaseManager --> YouthService : monitor
+Youth --> Access : have
+CaseManager --> Time : save
+CaseManager --> Frequency : run
+CaseManager --> Document : upload
+Activity --> Category : have
+CaseManager --> ManagementService : create
+CaseManager --> CaseFile : manage
+CaseManager --> Account : manage
+CaseManager --> TimeLogingActivity : save
+CaseManager --> MonitorCase : save
+
+@enduml

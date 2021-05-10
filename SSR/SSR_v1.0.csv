@@ -1,0 +1,35 @@
+﻿Rule,Sentence Structure,TDs,POS-tags,start word,sentence example
+SSR1,SVIODO,"nsubj(A,B), iobj(A,C), dobj(A,D)",,,The system sends the user an email.
+SSR2,SVDOThatClause,"nsubj(A,B), dobj(A,C), mark(D,E), nsubj(D,F)",,,The system informs the user that the battery is full
+SSR3,SVThatClause,"nsubj(A,B), mark(C,D), nsubj(C,E)",,,The system validates that the password is correct
+SSR4,SVDONotToInf,"nsubj(A,B), dobj(A,C), neg(D,E), mark(D,F), acl(C,D)",,,The system warns the user not to restart the system.
+SSR5,SVNotToInf,"nsubj(A,B), neg(C,D), mark(C,E), xcomp(A,C), dobj(C,F)",,,The customer selects not to ﬁll the tank
+SSR6,SVDOtobeComp,"nsubj(A,B), nsubj(C,D), mark(C,E), cop(C,F), xcomp(A,C)",,,The system marks the errors to be red.
+SSR7,SVDOToInf,"nsubj(A,B), dobj(A,C), mark(D,E), acl(C,D)",,,The system commands the motor to start.
+SSR8,SVDOPresentPart,"nsubj(A,B), dobj(A,C), acl(C,D)",D==VBG,,The system keeps the user waiting.
+SSR9,SVDOPastPart,"nsubj(A,B), dobj(A,C), acl(C,D)",D==VBN,,The system validates the record entered by the customer.
+SSR10,SVDOAdj,"nsubj(A,B), nsubj(C,D), xcomp(A,C)",C==JJ,,The system keeps the door open
+SSR11,SVDONoun,"nsubj(A,B), nsubj(C,D), xcomp(A,C)",C==NN,,The system makes the user an administrator.
+SSR12,SVDOConjToInf,"nsubj(A,B), dobj(A,C), advmod(D,E),mark(D,F), xcomp(A,D)",,,The system tells the user where to go.
+SSR13,SVDOConjClause,"nsubj(A,B), dobj(A,C), advmod(D,E), nsubj(D,F)",,,The system stops the motor when the tank is full
+SSR14,SVDOAdverbial,"nsubj(A,B), dobj(A,C), advmod(A,D)",,,The server responds the query quickly
+SSR15,SAuxVDO,"nsubj(A,B), aux(A,C), dobj(A,D)",,,The system will eject the ATM card.
+SSR16,SVDOPO,"nsubj(A,B), dobj(A,C)",,,The system sends the message to the customer.
+SSR17,SVConjToInf,"nsubj(A,B), advmod(C,D), mark(C,E), xcomp(A,C)",,,The system guides where to go.
+SSR18,SVConjClause,"nsubj(A,B), advmod(C,D), nsubj(C,E), advcl(A,C)",,,The motor stops when the tank is full.
+SSR19,SVToInf,"nsubj(A,B), mark(C,D), xcomp(A,C)",,,The system starts to ﬁll the tank.
+SSR20,SVGerund,"nsubj(A,B), xcomp(A,C)",,,The printer starts printing the document
+SSR21,SVAdverbialAdjunct,"nsubj(A,B), advmod(A,C)",,,The elevator moves up or down.
+SSR22,SVPredicative,"nsubj(A,B), cop(A,C)",,,The customer is employee.
+SSR23,SVForComp,"nsubj(A,B), nummod(D,E), case(D,C)",,,The system waits for 5 seconds.
+SSR24,SVPassPO,"nsubjpass(A,B), auxpass(A,C), case(E,D)",,,The ATM card is ejected by the system.
+SSR25,SAuxVPassPO,"nsubjpass(A,B), aux(A,C), auxpass(A,D), case(F,E)",,,The ATM card will be ejected by the system.
+SSR26,SVPO,"nsubj(A,B), case(D,C)",,,The system prompts for password.
+SSR27,SVDO,"nsubj(A,B), dobj(A,C)",,,ATM customer enters the withdrawal amount.
+SSR28,Conditional,"mark(A,B)",,,If the ATM card is valid.
+SSR29,SV,"nsubj(A,B)",,,The system restarts
+SSR30,INCLUDE,,,Include,Include UCS Validate PIN
+SSR31,EXTEND,,,Extend,Extend Handle Card Jam
+SSR32,RESUME,,,Resume,Resume M2.
+SSR33,REPEAT,,,Repeat,Repeat M4-M8.
+SSR34,,,,,

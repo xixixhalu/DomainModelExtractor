@@ -1,0 +1,152 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Expert<actor> {
+}
+class GuestUser<actor> {
+}
+class Expert {
+	manage()
+	see()
+	sign()
+	receive()
+	given()
+	keep()
+	set()
+	view()
+	make()
+	update()
+}
+class Track {
+}
+class Feedback {
+}
+class User {
+	had()
+	access()
+	manage()
+	view()
+	see()
+	sign()
+	rate()
+	schedule()
+	have()
+	took()
+	video()
+	get()
+	update()
+}
+class Chat {
+}
+class GuestUser {
+	take()
+	access()
+}
+class Quiz {
+	find()
+}
+class PaymentMethod {
+}
+class SessionAppointmentHistory {
+}
+class Transcript {
+	gain()
+}
+class PersonalityData {
+}
+class ProfileBio {
+}
+class Appointment {
+}
+class Access {
+}
+class Time {
+}
+class Status {
+}
+class Payment {
+}
+class PaymentHistory {
+}
+class MessageHistory {
+}
+class Advice {
+}
+class Rating {
+}
+class LinkedInAs {
+}
+class Calculator {
+}
+class History {
+}
+class ContentLibrary {
+	provides()
+}
+class Session {
+}
+class Feature {
+}
+class Facebook {
+}
+class VideoStreamingLibrary {
+}
+class Calendar {
+}
+class Gmail {
+}
+class Change {
+}
+class Notification {
+}
+class Topic {
+}
+class MoneyBelief {
+}
+class Profile {
+}
+class VideoRecord {
+	gain()
+}
+User --> Chat : video
+Expert --> Calendar : manage
+User --> Appointment : had
+Expert --> ProfileBio : update
+Expert --> Rating : view
+User --> Gmail : sign
+GuestUser --> Quiz : take
+Expert --> LinkedInAs : sign
+Expert --> Change : make
+User --> PaymentMethod : update
+User --> Calculator : access
+Expert --> Notification : receive
+User --> Expert : rate
+User --> Access : get
+ContentLibrary --> Topic : provides
+Expert --> History : see
+User --> SessionAppointmentHistory : see
+Expert --> Time : set
+Expert --> Appointment : manage
+User --> ContentLibrary : access
+Quiz --> MoneyBelief : find
+Expert --> Status : set
+User --> Session : schedule
+Transcript --> PersonalityData : gain
+Expert --> Advice : given
+Expert --> Payment : receive
+User --> Advice : took
+User --> Appointment : manage
+User --> Profile : view
+GuestUser --> Feature : access
+Expert --> Track : keep
+Expert --> PaymentHistory : see
+User --> Facebook : sign
+Expert --> Feedback : view
+User --> MessageHistory : see
+VideoRecord --> PersonalityData : gain
+User --> PaymentHistory : see
+User --> VideoStreamingLibrary : access
+User --> Advice : have
+
+@enduml

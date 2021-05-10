@@ -1,0 +1,50 @@
+@startuml
+hide circle
+class TourCreator<actor> {
+}
+class Owner<actor> {
+}
+class TourTaker<actor> {
+}
+class TourCreator {
+	promote()
+	upload()
+	view()
+	create()
+}
+class Area {
+}
+class TourTaker {
+	select()
+	view()
+	have()
+	search()
+}
+class Tour {
+}
+class Video {
+}
+class Access {
+}
+class Information {
+}
+class Owner {
+	authorize()
+	delete()
+}
+class Picture {
+}
+TourCreator --> Video : upload
+TourCreator --> Area : promote
+TourCreator --> Tour : create
+TourTaker --> Information : view
+TourCreator --> Picture : upload
+TourTaker --> Access : have
+Owner --> TourCreator : authorize
+TourTaker --> Tour : select
+Owner --> Tour : delete
+TourCreator --> Tour : view
+TourCreator --> Information : upload
+TourTaker --> Tour : search
+
+@enduml

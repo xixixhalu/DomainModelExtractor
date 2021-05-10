@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="361px" preserveAspectRatio="none" style="width:775px;height:361px;background:#FFFFFF;" version="1.1" viewBox="0 0 775 361" width="775px" zoomAndPan="magnify"><defs><filter height="300%" id="f1v6sb0pbs40g9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[d342058c8fb6f80e9d50d673c6908241]
+class Developer--><rect codeLine="18" fill="#FEFECE" filter="url(#f1v6sb0pbs40g9)" height="91.1875" id="Developer" style="stroke:#A80036;stroke-width:1.5;" width="105" x="116" y="10"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="64" x="119" y="26.1387">Developer</text><rect fill="#FFFFFF" height="15.9688" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="33" x="191" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="31" x="192" y="19.1387">actor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="117" x2="220" y1="33.9688" y2="33.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="117" x2="220" y1="41.9688" y2="41.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="33" x="122" y="56.1792">map()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="34" x="122" y="68.9839">filter()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="122" y="81.7886">display()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="47" x="122" y="94.5933">access()</text><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="8" fill="#FEFECE" filter="url(#f1v6sb0pbs40g9)" height="78.3828" id="User" style="stroke:#A80036;stroke-width:1.5;" width="79" x="439" y="16.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="29" x="446.5" y="32.6387">User</text><rect fill="#FFFFFF" height="15.9688" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="33" x="488" y="13.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="31" x="489" y="25.6387">actor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="440" x2="517" y1="40.4688" y2="40.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="440" x2="517" y1="48.4688" y2="48.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="67" x="445" y="62.6792">interested()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="36" x="445" y="75.4839">input()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="29" x="445" y="88.2886">find()</text><!--MD5=[e4d1f8ee945ed4d256b1e0ee32730ba8]
+class VideoUser--><rect codeLine="30" fill="#FEFECE" filter="url(#f1v6sb0pbs40g9)" height="52.7734" id="VideoUser" style="stroke:#A80036;stroke-width:1.5;" width="105" x="639" y="29"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="64" x="642" y="45.1387">VideoUser</text><rect fill="#FFFFFF" height="15.9688" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="33" x="714" y="26"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="31" x="715" y="38.1387">actor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="640" x2="743" y1="52.9688" y2="52.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="640" x2="743" y1="60.9688" y2="60.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="29" x="645" y="75.1792">use()</text><!--MD5=[e69084ab16b022bdbef99762ea85e9d6]
+class Movie--><rect codeLine="13" fill="#FEFECE" filter="url(#f1v6sb0pbs40g9)" height="39.9688" id="Movie" style="stroke:#A80036;stroke-width:1.5;" width="42" x="379.5" y="184.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="36" x="382.5" y="200.6387">Movie</text><line style="stroke:#A80036;stroke-width:1.5;" x1="380.5" x2="420.5" y1="208.4688" y2="208.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="380.5" x2="420.5" y1="216.4688" y2="216.4688"/><!--MD5=[09f2b4df697bb9de0eb3c9107cb1d16d]
+class MovieTitle--><rect codeLine="15" fill="#FEFECE" filter="url(#f1v6sb0pbs40g9)" height="52.7734" id="MovieTitle" style="stroke:#A80036;stroke-width:1.5;" width="67" x="457" y="178"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="61" x="460" y="194.1387">MovieTitle</text><line style="stroke:#A80036;stroke-width:1.5;" x1="458" x2="523" y1="201.9688" y2="201.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="458" x2="523" y1="209.9688" y2="209.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="27" x="463" y="224.1792">get()</text><!--MD5=[60c9ed31c535bee25c55ce21b5b01399]
+class Data--><rect codeLine="24" fill="#FEFECE" filter="url(#f1v6sb0pbs40g9)" height="39.9688" id="Data" style="stroke:#A80036;stroke-width:1.5;" width="33" x="7" y="184.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="27" x="10" y="200.6387">Data</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="39" y1="208.4688" y2="208.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="39" y1="216.4688" y2="216.4688"/><!--MD5=[bb80c988b307e74cbc886ea5eab249e5]
+class IMDBAttribute--><rect codeLine="26" fill="#FEFECE" filter="url(#f1v6sb0pbs40g9)" height="39.9688" id="IMDBAttribute" style="stroke:#A80036;stroke-width:1.5;" width="87" x="75" y="184.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="81" x="78" y="200.6387">IMDBAttribute</text><line style="stroke:#A80036;stroke-width:1.5;" x1="76" x2="161" y1="208.4688" y2="208.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="76" x2="161" y1="216.4688" y2="216.4688"/><!--MD5=[9d93cc8568a88ed605ddd50c0dd874e2]
+class Media--><rect codeLine="28" fill="#FEFECE" filter="url(#f1v6sb0pbs40g9)" height="39.9688" id="Media" style="stroke:#A80036;stroke-width:1.5;" width="42" x="585.5" y="184.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="36" x="588.5" y="200.6387">Media</text><line style="stroke:#A80036;stroke-width:1.5;" x1="586.5" x2="626.5" y1="208.4688" y2="208.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="586.5" x2="626.5" y1="216.4688" y2="216.4688"/><!--MD5=[48ddc19a927e510832be6e81b528f8f6]
+class TwitterData--><rect codeLine="33" fill="#FEFECE" filter="url(#f1v6sb0pbs40g9)" height="39.9688" id="TwitterData" style="stroke:#A80036;stroke-width:1.5;" width="74" x="687.5" y="184.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="68" x="690.5" y="200.6387">TwitterData</text><line style="stroke:#A80036;stroke-width:1.5;" x1="688.5" x2="760.5" y1="208.4688" y2="208.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="688.5" x2="760.5" y1="216.4688" y2="216.4688"/><!--MD5=[88dbfe8572c16244f15eec58f6037418]
+class Info--><rect codeLine="35" fill="#FEFECE" filter="url(#f1v6sb0pbs40g9)" height="39.9688" id="Info" style="stroke:#A80036;stroke-width:1.5;" width="28" x="476.5" y="308"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="22" x="479.5" y="324.1387">Info</text><line style="stroke:#A80036;stroke-width:1.5;" x1="477.5" x2="503.5" y1="331.9688" y2="331.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="477.5" x2="503.5" y1="339.9688" y2="339.9688"/><!--MD5=[2741598bdf59a7d7e0d5c97658fd3022]
+class Result--><rect codeLine="37" fill="#FEFECE" filter="url(#f1v6sb0pbs40g9)" height="39.9688" id="Result" style="stroke:#A80036;stroke-width:1.5;" width="42" x="197.5" y="184.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="36" x="200.5" y="200.6387">Result</text><line style="stroke:#A80036;stroke-width:1.5;" x1="198.5" x2="238.5" y1="208.4688" y2="208.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="198.5" x2="238.5" y1="216.4688" y2="216.4688"/><!--MD5=[f04caf4d3883690db4799f0a11b3f223]
+class MediaData--><rect codeLine="39" fill="#FEFECE" filter="url(#f1v6sb0pbs40g9)" height="39.9688" id="MediaData" style="stroke:#A80036;stroke-width:1.5;" width="69" x="275" y="184.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="63" x="278" y="200.6387">MediaData</text><line style="stroke:#A80036;stroke-width:1.5;" x1="276" x2="343" y1="208.4688" y2="208.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="276" x2="343" y1="216.4688" y2="216.4688"/><!--MD5=[4caf7d2653aeb743222e74bb2bbfc946]
+link Developer to Data--><path codeLine="41" d="M124.602,101.004 C97.765,128.211 64.7014,161.73 43.8542,182.865 " fill="none" id="Developer-to-Data" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="40.1079,186.663,49.2759,183.0648,43.6192,183.1034,43.5806,177.4467,40.1079,186.663" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="93.5" y="144.0669">filter</text><!--MD5=[0d5397961f71e6fa31c8351a30aa0029]
+link User to Movie--><path codeLine="42" d="M458.21,94.739 C443.907,121.695 425.203,156.944 413.024,179.896 " fill="none" id="User-to-Movie" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="410.679,184.317,418.4322,178.2434,413.0236,179.9008,411.3662,174.4921,410.679,184.317" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="438.5" y="144.0669">find</text><!--MD5=[449003eb1088381ff0c1f593ce792dc8]
+link Developer to Result--><path codeLine="43" d="M183.637,101.004 C192.418,126.82 203.133,158.321 210.347,179.53 " fill="none" id="Developer-to-Result" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="212.012,184.425,212.9004,174.6163,210.4017,179.6914,205.3266,177.1927,212.012,184.425" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="200.5" y="144.0669">display</text><!--MD5=[798f7c510e47a485a685746a418bbc5c]
+link VideoUser to Media--><path codeLine="44" d="M676.694,82.105 C660.777,109.633 635.681,153.035 620.204,179.801 " fill="none" id="VideoUser-to-Media" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="617.618,184.273,625.5859,178.484,620.1208,179.9445,618.6603,174.4794,617.618,184.273" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="647.5" y="144.0669">use</text><!--MD5=[7208e1d8c53c7d6a89b76610240e95a7]
+link Developer to IMDBAttribute--><path codeLine="45" d="M153.363,101.004 C144.582,126.82 133.867,158.321 126.653,179.53 " fill="none" id="Developer-to-IMDBAttribute" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="124.988,184.425,131.6734,177.1927,126.5983,179.6914,124.0996,174.6163,124.988,184.425" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="143.5" y="144.0669">map</text><!--MD5=[abf5bd966f873e30c721e88f8064908e]
+link User to MovieTitle--><path codeLine="46" d="M474.441,94.925 C473.43,111.338 473.199,130.669 475.5,148 C476.588,156.194 478.541,164.894 480.687,172.916 " fill="none" id="User-to-MovieTitle" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="482.042,177.812,483.4979,168.0713,480.709,172.993,475.7874,170.2041,482.042,177.812" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="32" x="476.5" y="144.0669">input</text><!--MD5=[adf66082a9595fb39097941c81aff626]
+link VideoUser to TwitterData--><path codeLine="47" d="M697.248,82.105 C703.377,109.405 713.01,152.318 719.03,179.134 " fill="none" id="VideoUser-to-TwitterData" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="720.184,184.273,722.1145,174.6152,719.0883,179.3945,714.309,176.3683,720.184,184.273" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="713.5" y="144.0669">use</text><!--MD5=[a5d9da4320bbd63e4d6ee31a113ba442]
+link Developer to MediaData--><path codeLine="48" d="M221.036,98.953 C232.484,109.029 244.234,120.046 254.5,131 C268.892,146.357 283.199,165.364 293.613,180.064 " fill="none" id="Developer-to-MediaData" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="296.715,184.478,294.8122,174.8147,293.8398,180.3874,288.2672,179.415,296.715,184.478" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="270.5" y="144.0669">access</text><!--MD5=[478f285255d4ca4880442b35c8107bbf]
+link User to Media--><path codeLine="49" d="M511.796,94.739 C535.464,121.92 566.474,157.532 586.444,180.467 " fill="none" id="User-to-Media" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="589.796,184.317,586.9003,174.9035,586.5117,180.547,580.8682,180.1584,589.796,184.317" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="65" x="559.5" y="144.0669">interested</text><!--MD5=[4f570b29594b2824d2f9efdacd0c953a]
+link MovieTitle to Info--><path codeLine="50" d="M490.5,231.267 C490.5,252.3301 490.5,281.9042 490.5,302.5902 " fill="none" id="MovieTitle-to-Info" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="490.5,307.6472,494.5,298.6472,490.5,302.6472,486.5,298.6472,490.5,307.6472" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="491.5" y="274.0669">get</text><!--MD5=[3d2bf35ed744e4d2d252e1aa933dae11]
+@startuml
+hide circle
+class Developer<actor> {
+}
+class User<actor> {
+}
+class VideoUser<actor> {
+}
+class User {
+	interested()
+	input()
+	find()
+}
+class Movie {
+}
+class MovieTitle {
+	get()
+}
+class Developer {
+	map()
+	filter()
+	display()
+	access()
+}
+class Data {
+}
+class IMDBAttribute {
+}
+class Media {
+}
+class VideoUser {
+	use()
+}
+class TwitterData {
+}
+class Info {
+}
+class Result {
+}
+class MediaData {
+}
+Developer - -> Data : filter
+User - -> Movie : find
+Developer - -> Result : display
+VideoUser - -> Media : use
+Developer - -> IMDBAttribute : map
+User - -> MovieTitle : input
+VideoUser - -> TwitterData : use
+Developer - -> MediaData : access
+User - -> Media : interested
+MovieTitle - -> Info : get
+@enduml
+
+PlantUML version 1.2021.6beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

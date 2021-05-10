@@ -1,0 +1,69 @@
+@startuml
+hide circle
+class Admin<actor> {
+}
+class User<actor> {
+}
+class Admin {
+	switch()
+	see()
+	edit()
+	assign()
+	delete()
+	revoke()
+	add()
+	provide()
+}
+class Id {
+}
+class User {
+	turn()
+	select()
+	have()
+	choose()
+	add()
+}
+class Control {
+}
+class Room {
+}
+class Image {
+}
+class Name {
+}
+class Username {
+}
+class Floor {
+}
+class Access {
+}
+class GatewayId {
+}
+class Screen {
+}
+class Switch {
+}
+class Light {
+}
+class Gateway {
+}
+User --> Username : choose
+User --> Room : select
+User --> Light : turn
+User --> Image : add
+Admin --> Access : provide
+Admin --> GatewayId : see
+Admin --> User : add
+Admin --> Access : revoke
+Admin --> Switch : assign
+User --> Control : have
+Admin --> Gateway : delete
+User --> Floor : select
+Admin --> Name : edit
+User --> Screen : add
+Admin --> Switch : delete
+Admin --> Floor : delete
+Admin --> Room : delete
+Admin --> Id : switch
+
+@enduml

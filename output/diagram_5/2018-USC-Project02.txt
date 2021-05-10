@@ -1,0 +1,126 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Administrator<actor> {
+}
+class ServiceProvider<actor> {
+}
+class Admin<actor> {
+}
+class SiteAdmin<actor> {
+}
+class User {
+	reset()
+	receive()
+	add()
+	export()
+	search()
+	create()
+	track()
+	rate()
+	read()
+	make()
+	adjust()
+	find()
+	leave()
+	report()
+	have()
+	see()
+	activate()
+	view()
+	start()
+	manage()
+}
+class Access {
+}
+class ServiceProvider {
+}
+class PropertyInformation {
+}
+class Notification {
+}
+class Page {
+}
+class FactorAuthentication {
+}
+class EmailNotificationSetting {
+}
+class DiscussionBoard {
+	using()
+}
+class TextInput {
+}
+class TrackingToolData {
+}
+class InvestmentProperty {
+}
+class Password {
+}
+class Profile {
+}
+class List {
+}
+class Review {
+}
+class Administrator {
+	moderate()
+	verify()
+	post()
+	view()
+}
+class Identity {
+}
+class Investment {
+}
+class Discussion {
+}
+class SiteDiscussionBoard {
+}
+class SitePermission {
+}
+class Account {
+}
+class WebsiteUtilizationStatistics {
+}
+class Article {
+}
+class SiteBlog {
+}
+class Performance {
+}
+class Admin {
+	remove()
+}
+User --> Performance : see
+Administrator --> User : moderate
+User --> PropertyInformation : add
+User --> Password : reset
+User --> InvestmentProperty : track
+User --> User : report
+User --> Investment : manage
+User --> Notification : receive
+Admin --> User : remove
+User --> Discussion : start
+User --> Page : make
+User --> SiteDiscussionBoard : read
+User --> FactorAuthentication : activate
+DiscussionBoard --> TextInput : using
+User --> Review : leave
+User --> EmailNotificationSetting : adjust
+User --> SitePermission : have
+User --> ServiceProvider : rate
+User --> Profile : make
+User --> ServiceProvider : search
+User --> TrackingToolData : export
+User --> Account : create
+User --> List : view
+Administrator --> WebsiteUtilizationStatistics : view
+User --> Review : read
+Administrator --> Article : post
+User --> Access : have
+Administrator --> Identity : verify
+User --> SiteBlog : read
+User --> ServiceProvider : find
+
+@enduml

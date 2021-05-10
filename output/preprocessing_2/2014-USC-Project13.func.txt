@@ -1,17 +1,17 @@
-Admin can delete a Switch so that it 's no longer available for Others .
-Admin can delete a Gateway so that it 's no longer available for Others .
-User can add favourite Screens so that they are easily acessible .
-User can turn on Lights using MobileApplications .
-User can turn off the Lights using using MobileApplications .
-User can add Images for each Switch so that they are recognizable .
-User can add Images for Gateway so that they are recognizable .
-Admin can assign different Switches to different Users so that the AccessControl is limited .
-User can turn on the Lights in the House so that all the Lights can be controlled at once .
-User can turn off all the Lights in the House so that all the Lights can be controlled controlled at once .
-User can select a particular Floor so that User have Floor - or room-wide Control of Lights .
-User can select a particular Room so that User have Floor - or room-wide Control of Lights .
-Admin should be able to add more Users so that Admin can provide Access to other Users .
-Admin should be able to add more Users so that Admin can revoke Access to other Users .
+Admin can delete a Switch so that it 's no longer available for Other .
+Admin can delete a Gateway so that it 's no longer available for Other .
+User can add favourite Screen so that they are easily acessible .
+User can turn on Light using MobileApplication .
+User can turn off the Light using using MobileApplication .
+User can add Image for each Switch so that they are recognizable .
+User can add Image for Gateway so that they are recognizable .
+Admin can assign different Switch to different User so that the AccessControl is limited .
+User can turn on the Light in the House so that all the Light can be controlled at once .
+User can turn off all the Light in the House so that all the Light can be controlled controlled at once .
+User can select a particular Floor so that User have Floor - or room-wide Control of Light .
+User can select a particular Room so that User have Floor - or room-wide Control of Light .
+Admin should be able to add more User so that Admin can provide Access to other User .
+Admin should be able to add more User so that Admin can revoke Access to other User .
 Admin can delete Switch .
 Admin can delete Floor .
 Admin can delete Room .

@@ -1,0 +1,89 @@
+{
+  "domain": "2019-USC-Project10",
+  "entity_dict": {
+    "Developer": {
+      "name": "Developer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "VideoUser": {
+      "name": "VideoUser",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Movie",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "input",
+      "target": "MovieTitle",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "filter",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "map",
+      "target": "IMDBAttribute",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "interested",
+      "target": "Media",
+      "para": []
+    },
+    {
+      "actor": "VideoUser",
+      "action": "use",
+      "target": "Media",
+      "para": []
+    },
+    {
+      "actor": "VideoUser",
+      "action": "use",
+      "target": "TwitterData",
+      "para": []
+    },
+    {
+      "actor": "MovieTitle",
+      "action": "get",
+      "target": "Info",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "display",
+      "target": "Result",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "access",
+      "target": "MediaData",
+      "para": []
+    }
+  ]
+}

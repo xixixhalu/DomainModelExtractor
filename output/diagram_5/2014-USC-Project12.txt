@@ -1,0 +1,82 @@
+@startuml
+hide circle
+class Consumer<actor> {
+}
+class IConsumer<actor> {
+}
+class Corporation<actor> {
+}
+class Provider<actor> {
+}
+class User<actor> {
+}
+class User {
+	share()
+	have()
+	create()
+	filter()
+	find()
+}
+class Location {
+	access()
+}
+class Corporation {
+	view()
+}
+class Employee {
+}
+class Consumer {
+	compare()
+	create()
+	rate()
+	join()
+}
+class Review {
+}
+class Provider {
+	share()
+	send()
+}
+class Pricing {
+}
+class Offering {
+}
+class Content {
+}
+class Network {
+}
+class Access {
+}
+class HealthcarePrice {
+}
+class Price {
+}
+class HealthProfile {
+	attach()
+}
+class Offer {
+}
+class Notification {
+}
+class HealthCarePricing {
+}
+Corporation --> Employee : view
+User --> Access : have
+Provider --> Content : share
+Provider --> Pricing : share
+User --> HealthCarePricing : share
+User --> Notification : filter
+HealthProfile --> Offer : attach
+Consumer --> HealthcarePrice : compare
+User --> Location : find
+Location --> Provider : access
+Provider --> Offering : share
+Corporation --> Price : view
+Consumer --> Review : create
+User --> HealthProfile : create
+Consumer --> Network : join
+Consumer --> Network : create
+Provider --> Offering : send
+Consumer --> Provider : rate
+
+@enduml

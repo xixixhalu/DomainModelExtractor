@@ -1,0 +1,82 @@
+@startuml
+hide circle
+class GM<actor> {
+}
+class Coach<actor> {
+}
+class SporTechBIContractor<actor> {
+}
+class Manger<actor> {
+}
+class Customer<actor> {
+}
+class SoccerCoach<actor> {
+}
+class Coach {
+	build()
+	extract()
+}
+class PlayerValue {
+}
+class GM {
+	build()
+	extract()
+}
+class Manger {
+	monitor()
+}
+class TwitterFeed {
+}
+class FacebookFeed {
+}
+class Data {
+}
+class FacebookReaction {
+}
+class Customer {
+	import()
+	see()
+	add()
+	update()
+}
+class SoccerCoach {
+	configure()
+}
+class Schedule {
+}
+class InstagramFeed {
+}
+class Change {
+}
+class Roster {
+}
+class SporTechBIContractor {
+	revise()
+	update()
+}
+class PlayerData {
+}
+class InstagramReaction {
+}
+class TwitterReaction {
+}
+Manger --> FacebookFeed : monitor
+Manger --> InstagramFeed : monitor
+Customer --> Change : see
+GM --> PlayerValue : extract
+Customer --> Data : update
+GM --> Data : extract
+Customer --> Data : import
+SporTechBIContractor --> PlayerData : update
+Coach --> Roster : build
+Manger --> InstagramReaction : monitor
+GM --> Roster : build
+Manger --> TwitterFeed : monitor
+SporTechBIContractor --> PlayerData : revise
+Coach --> PlayerValue : extract
+SoccerCoach --> Schedule : configure
+Manger --> FacebookReaction : monitor
+Manger --> TwitterReaction : monitor
+Customer --> Data : add
+
+@enduml

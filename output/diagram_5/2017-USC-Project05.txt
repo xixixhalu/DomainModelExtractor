@@ -1,0 +1,64 @@
+@startuml
+hide circle
+class Administrator<actor> {
+}
+class HouseManager<actor> {
+}
+class House<actor> {
+}
+class HouseStaff<actor> {
+}
+class Lock {
+	adddelete()
+	add()
+}
+class Code {
+	edit()
+}
+class Administrator {
+	enter()
+	add()
+	lock()
+	see()
+	assign()
+	create()
+}
+class Manager {
+}
+class Secret {
+}
+class locks {
+	adddelete()
+}
+class Status {
+}
+class HouseManager {
+	select()
+	add()
+	delete()
+}
+class Other {
+}
+class SmartThingsClientId {
+}
+class Hub {
+}
+class Group {
+}
+locks --> Code : adddelete
+Administrator --> Manager : add
+Administrator --> Hub : see
+HouseManager --> Lock : select
+Code --> Code : edit
+Administrator --> Status : lock
+Lock --> Code : adddelete
+Administrator --> Code : assign
+Administrator --> Secret : enter
+Lock --> Lock : add
+HouseManager --> locks : delete
+Administrator --> Group : create
+Lock --> Code : add
+Administrator --> SmartThingsClientId : enter
+HouseManager --> Other : add
+
+@enduml

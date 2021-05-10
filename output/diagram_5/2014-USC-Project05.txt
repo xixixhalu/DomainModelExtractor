@@ -1,0 +1,40 @@
+@startuml
+hide circle
+class SaleAgent<actor> {
+}
+class SaleManager<actor> {
+}
+class SaleAgent {
+	save()
+	clicktocall()
+	request()
+	close()
+}
+class ConferenceCall {
+}
+class Time {
+}
+class SaleManager {
+	assure()
+	train()
+	use()
+}
+class Agent {
+}
+class Customer {
+}
+class Sale {
+}
+class Recording {
+}
+class Quality {
+}
+SaleManager --> Recording : use
+SaleAgent --> Customer : clicktocall
+SaleAgent --> Time : save
+SaleManager --> Quality : assure
+SaleAgent --> Sale : close
+SaleManager --> Agent : train
+SaleAgent --> ConferenceCall : request
+
+@enduml

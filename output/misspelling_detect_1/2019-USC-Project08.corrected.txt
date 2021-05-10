@@ -3,7 +3,7 @@ As a user , I should have to answer a minimum amount of PRO questions.
 As a patient , I should have to answer a minimum amount of PRO questions.
 As a doctor, I should be notified if my patients health declines after surgery.
 As a patient user, I can receive real time notifications for my reminders and appointments.
-As a patient user, I can indicate that I have completed certain tasks .
+As a patient user, I can indicate that I have completed certain tasks  .
 As a doctor user, I can check if a patient has completed certain tasks.
 As a doctor user, I can view the the survey responses of my patients.
 As a doctor user, I can view the the questionnaire responses of my patients.
@@ -25,7 +25,7 @@ As a care team, I can remove patients from my list.
 As a admin, I can access the database of the App server, and manually add entries from backend.
 As a admin, I can access the database of the App server, and manually remove entries from backend.
 As a patient, I should be able to take pictures.
-As a patient, I should be provided with guidance on how to best capture pictures .
+As a patient, I should be provided with guidance on how to best capture pictures  .
 As a patient, I should be able to be guided by an avatar for basic tutorial.
 As a patient, I can do my questionnaire from within the app.
 As a patient, I can do my surveys from within the app.
@@ -38,7 +38,7 @@ As a patient, I should cancel an appointment.
 As a patient, I should reschedule an appointment.
 As a patient, I should be able to rate whether an educational article is relevant to me or not.
 As a patient, I should be able to rate whether an educational video is relevant to me or not.
-As the healthcare executive , I can see the collected data and trends of all patient outcomes, so I can study how to improve our performance.
+As the healthcare executive  , I can see the collected data and trends of all patient outcomes, so I can study how to improve our performance.
 The system should be intuitive to use for patients.
 As a patient, I can manually add pre or post-op reminders in addition to the standard ones set by my doctor.
 As the doctor's staff, I can register the patient under 5 steps.
@@ -50,5 +50,5 @@ As a patient, I should be able to track my health status graphically, so that it
 As a patient, I can see all my dietary constraints and medications I need to take before and after surgery.
 As a patient, I can compare pictures to see a visible difference over time.
 As a patient, I can either choose to install the smartphone app, or by default get SMS notifications and not get bombarded everywhere.
-The system should be built as a hybrid app .
+The system should be built as a hybrid app  .
 The system should use FHIR for data exchange.

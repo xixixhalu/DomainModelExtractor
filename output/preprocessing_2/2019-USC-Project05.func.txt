@@ -1,33 +1,33 @@
-User can submit Reports of WorkplaceViolence or Conflict both anonymously or anonymously , so that User's Problems are known to some SubjectMatterExpert and can be resolved as soon as possible .
-User can add Comments to User's submitted Report , so that User can add additional Information to the Complaint which can be useful to the subject MatterExperts .
-Admin can filter Reports based on Level of Severity , so that Admin can address high-risk Complaints first .
-Organization can view all the Reports that have been resolved by Vrs , so that Organization can understand the current State of Affairs at the Workplace in Terms of Violence and Conflicts .
-VrsAdmin can view all the Cases .
-Organization can make sure all Organization's Clients are safe from any WorkplaceViolence .
-Organization can redirect the Employees to another Organization based on the Severity of the Situation .
-User can be anonymous about User's Identity when submitting ViolenceReports .
-Vrs can delete any irrelevant Complaints that have been reported , so that Employees of an Organization are not falsely accused of a Crime or Conflict .
-Developer can re-use already available open-source TicketManagement or CaseManagementSystems , so that Developer can minimize DevelopmentTime and Costs .
-who has Access to ticketing System , VrsAdmin can filter Tickets based on Organization , Severity , complaint type and Period of Time .
-VrsAdmin can view and download the Case filed by the Employee .
-VrsAdmin can edit the Assigned and TicketStatus .
-Employee can view all Employee's Cases .
-Employee can edit Employee's ProfileDetails .
-Employee should be able to check the Status of the Cases Employee filed .
-Employee should be able to check the Status of the Complaints Employee filed .
-Vrs can view the Complaints filed and assign them to subject MatterExperts .
-Vrs can filter out Cases based on their Status for Ease of viewing .
-Vrs can generate Reports for the Cases filed and also SummaryReports per Organization .
+User can submit Report of WorkplaceViolence or Conflict both anonymously or anonymously , so that User's Problem are known to some SubjectMatterExpert and can be resolved as soon as possible .
+User can add Comment to User's submitted Report , so that User can add additional Information to the Complaint which can be useful to the subject MatterExpert .
+Admin can filter Report based on Level of Severity , so that Admin can address high-risk Complaint first .
+Organization can view all the Report that have been resolved by VRS , so that Organization can understand the current State of Affair at the Workplace in Term of Violence and Conflict .
+VRSAdmin can view all the Case .
+Organization can make sure all Organization's Client are safe from any WorkplaceViolence .
+Organization can redirect the Employee to another Organization based on the Severity of the Situation .
+User can be anonymous about User's Identity when submitting ViolenceReport .
+VRS can delete any irrelevant Complaint that have been reported , so that Employee of an Organization are not falsely accused of a Crime or Conflict .
+Developer can re-use already available open-source TicketManagement or CaseManagementSystem , so that Developer can minimize DevelopmentTime and Cost .
+who has Access to ticketing System , VRSAdmin can filter Ticket based on Organization , Severity , complaint type and Period of Time .
+VRSAdmin can view and download the Case filed by the Employee .
+VRSAdmin can edit the Assigned and TicketStatus .
+Employee can view all Employee's Case .
+Employee can edit Employee's ProfileDetail .
+Employee should be able to check the Status of the Case Employee filed .
+Employee should be able to check the Status of the Complaint Employee filed .
+VRS can view the Complaint filed and assign them to subject MatterExpert .
+VRS can filter out Case based on their Status for Ease of viewing .
+VRS can generate Report for the Case filed and also SummaryReport per Organization .
 Employee can file an anonymous Complaint if Employee want to and Employee expect Employee's Anonymity to be maintained .
-Employee can track the Status of the Complaints and have 2-way Communication with Vrs in the CommentsSection of the ticketing System .
-VrsSubjectMatterExpert can verify the Credibility of the Complaints filed and investigate them , so that VrsSubjectMatterExpert can notify the Organizations only the valid Cases .
-Employee can post a Complaint along with Details like when , where and who was involved and also submit Evidence of any Format like Audio , Video , Photo , DocumentEtc . .
-Vrs can assign , resolve and form Reports of the Cases filed by Employees , so that Employees are assured of Prevention of WorkplaceViolence .
-Vrs can email Organization on the verified News required by the Organization , so that Employees can be in conducive Environment .
+Employee can track the Status of the Complaint and have 2-way Communication with VRS in the CommentSection of the ticketing System .
+VRSSubjectMatterExpert can verify the Credibility of the Complaint filed and investigate them , so that VRSSubjectMatterExpert can notify the Organization only the valid Case .
+Employee can post a Complaint along with Detail like when , where and who was involved and also submit Evidence of any Format like Audio , Video , Photo , DocumentEtc . .
+VRS can assign , resolve and form Report of the Case filed by Employee , so that Employee are assured of Prevention of WorkplaceViolence .
+VRS can email Organization on the verified News required by the Organization , so that Employee can be in conducive Environment .
 Developer can encrypt the Data , so that Security of the Data is maintained .
-Organization can check the WorkplaceUpdates from Vrs , so that Violence can be mitigated .
-Vrs can prioritize the WorkplaceViolenceCases , so that Time for all the Admins can be saved .
-VrsAdmin can generate the Report which can contain MediaFiles tagged to that Case for better Understanding .
-As a Developer , the Password will not be sent in an ApiCall or stored in the Database in a plain TextFormat for better Security .
+Organization can check the WorkplaceUpdate from VRS , so that Violence can be mitigated .
+VRS can prioritize the WorkplaceViolenceCase , so that Time for all the Admin can be saved .
+VRSAdmin can generate the Report which can contain MediaFile tagged to that Case for better Understanding .
+As a Developer , the Password will not be sent in an APICall or stored in the Database in a plain TextFormat for better Security .
 who raised a Complaint , User can request in the Portal to expedite the Process for faster Resolution .
-User should be able to update User's ContactDetails in Case of Change , so that User's Account will always be up to Date .
+User should be able to update User's ContactDetail in Case of Change , so that User's Account will always be up to Date .

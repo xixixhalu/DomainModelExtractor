@@ -1,0 +1,131 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Owner<actor> {
+}
+class Admin<actor> {
+}
+class Owner {
+	delete()
+	use()
+	hide()
+	make()
+	edit()
+	access()
+	add()
+}
+class Project {
+}
+class User {
+	tag()
+	view()
+	delete()
+	reset()
+	enter()
+	set()
+	mark()
+	join()
+	filter()
+	add()
+	create()
+	adjust()
+	save()
+	upload()
+	edit()
+	see()
+	export()
+}
+class Comment {
+}
+class Demo {
+}
+class Post {
+}
+class ProjectSettingPage {
+	give()
+}
+class WinCondition {
+}
+class Someone {
+}
+class People {
+}
+class BusinessValue {
+}
+class Ease {
+}
+class Password {
+}
+class AdminRights {
+}
+class WinConditionCategory {
+}
+class Admin {
+	edit()
+}
+class List {
+}
+class Picture {
+}
+class ProjectListPage {
+}
+class Page {
+}
+class Category {
+}
+class WeightCoefficient {
+}
+class Coefficient {
+}
+class comments {
+}
+class reply {
+}
+class Importance {
+}
+class View {
+}
+class Penalty {
+}
+class PrioritizationResult {
+}
+class ProfileInformation {
+}
+User --> Demo : see
+User --> Penalty : set
+User --> Ease : set
+Owner --> Page : access
+User --> Post : delete
+Owner --> Project : delete
+User --> Password : reset
+User --> Comment : delete
+User --> Project : join
+Owner --> ProjectSettingPage : use
+User --> PrioritizationResult : save
+User --> Category : mark
+User --> WinCondition : export
+User --> ProfileInformation : edit
+User --> WinCondition : create
+User --> WeightCoefficient : enter
+User --> Someone : tag
+Owner --> Project : make
+User --> People : see
+User --> BusinessValue : set
+User --> Coefficient : adjust
+ProjectSettingPage --> AdminRights : give
+Owner --> Project : add
+User --> WinConditionCategory : create
+User --> WinCondition : delete
+Admin --> comments : edit
+Admin --> Post : edit
+User --> reply : add
+Owner --> Project : hide
+Owner --> List : edit
+User --> Importance : adjust
+User --> Picture : upload
+User --> Comment : add
+User --> View : filter
+User --> ProjectListPage : view
+
+@enduml

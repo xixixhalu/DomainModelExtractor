@@ -1,0 +1,255 @@
+{
+  "domain": "2018-USC-Project06",
+  "entity_dict": {
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Patient": {
+      "name": "Patient",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Support": {
+      "name": "Support",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Administrator": {
+      "name": "Administrator",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Family": {
+      "name": "Family",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Member": {
+      "name": "Member",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "User",
+      "action": "access",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "posted",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "share",
+      "target": "Invitation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "report",
+      "target": "Junk",
+      "para": []
+    },
+    {
+      "actor": "member",
+      "action": "send",
+      "target": "Link",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "block",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "share",
+      "target": "Calendar",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "pull",
+      "target": "members",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "attended",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "has",
+      "target": "Appointment",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "view",
+      "target": "List",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "send",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "posted",
+      "target": "Task",
+      "para": []
+    },
+    {
+      "actor": "member",
+      "action": "get",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "manage",
+      "target": "members",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "message",
+      "target": "Friend",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "post",
+      "target": "Announcement",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "share",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "send",
+      "target": "Messaging",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "add",
+      "target": "CalendarEvent",
+      "para": []
+    },
+    {
+      "actor": "member",
+      "action": "send",
+      "target": "Money",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "contact",
+      "target": "Patient",
+      "para": []
+    },
+    {
+      "actor": "SupportGroup",
+      "action": "access",
+      "target": "kind",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "report",
+      "target": "AdMessage",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "view",
+      "target": "Statistics",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "get",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "suspense",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "message",
+      "target": "members",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "pull",
+      "target": "Friend",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "have",
+      "target": "HealthCondition",
+      "para": []
+    },
+    {
+      "actor": "member",
+      "action": "receive",
+      "target": "Resource",
+      "para": []
+    }
+  ]
+}

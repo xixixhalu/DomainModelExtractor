@@ -1,0 +1,197 @@
+{
+  "domain": "2014-USC-Project15",
+  "entity_dict": {
+    "VOLUNTEERCOACH": {
+      "name": "VOLUNTEERCOACH",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "GOTRLA": {
+      "name": "GOTRLA",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "VolunteerCoach": {
+      "name": "VolunteerCoach",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Staff": {
+      "name": "Staff",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Edit": {
+      "name": "Edit",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Volunteer": {
+      "name": "Volunteer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "EditProgramStaff": {
+      "name": "EditProgramStaff",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "CAN",
+      "action": "ANY",
+      "target": "TEAMSHAVINGISSUESIMMEDIATELY",
+      "para": []
+    },
+    {
+      "actor": "staff",
+      "action": "export",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "REGULARLY",
+      "target": "ATTENDANCESHEET",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "support",
+      "target": "TeamRoster",
+      "para": []
+    },
+    {
+      "actor": "Volunteer",
+      "action": "conduct",
+      "target": "Class",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "conduct",
+      "target": "Class",
+      "para": []
+    },
+    {
+      "actor": "staff",
+      "action": "analyze",
+      "target": "AttendanceData",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "Add",
+      "target": "VolunteerCoach",
+      "para": []
+    },
+    {
+      "actor": "Staff",
+      "action": "have",
+      "target": "CopyLiabilityWaiverForm",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "take",
+      "target": "Attendance",
+      "para": []
+    },
+    {
+      "actor": "Volunteer",
+      "action": "access",
+      "target": "Schedule",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "Add",
+      "target": "Class",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "monitor",
+      "target": "Attendance",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "Add",
+      "target": "GirlData",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "have",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "AccountPassword",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "Update",
+      "target": "VolunteerCoach",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "schedule",
+      "target": "ProgramWeek",
+      "para": []
+    },
+    {
+      "actor": "VolunteerCoach",
+      "action": "have",
+      "target": "CopyLiabilityWaiverForm",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "Staff",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reset",
+      "target": "AccountPassword",
+      "para": []
+    }
+  ]
+}

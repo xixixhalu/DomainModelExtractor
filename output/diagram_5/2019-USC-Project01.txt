@@ -1,0 +1,70 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class SystemAdmin<actor> {
+}
+class Admin<actor> {
+}
+class User {
+	disable()
+	update()
+	see()
+	resume()
+	sort()
+	find()
+	filter()
+	look()
+}
+class Papers {
+}
+class Admin {
+	approve()
+	remove()
+	reject()
+	authorize()
+}
+class Content {
+}
+class Event {
+}
+class Position {
+}
+class SystemAdmin {
+	approve()
+}
+class Request {
+}
+class Media {
+}
+class Profile {
+}
+class Alumnus {
+}
+class Calendar {
+}
+class UserProfile {
+}
+class Updated {
+}
+class ResearchPapers {
+}
+class Account {
+}
+SystemAdmin --> Request : approve
+User --> Event : see
+User --> Papers : look
+User --> Alumnus : look
+User --> ResearchPapers : sort
+Admin --> Profile : authorize
+User --> Media : update
+User --> Position : find
+User --> Updated : resume
+User --> Calendar : filter
+User --> Account : disable
+Admin --> Content : remove
+User --> Profile : see
+Admin --> UserProfile : approve
+Admin --> UserProfile : reject
+
+@enduml

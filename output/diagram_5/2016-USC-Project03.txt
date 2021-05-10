@@ -1,0 +1,51 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class User {
+	run()
+	fastforward()
+	see()
+	click()
+	consume()
+	pick()
+	view()
+	access()
+	play()
+}
+class Answer {
+}
+class App {
+}
+class inline {
+}
+class Material {
+}
+class Hint {
+}
+class Video {
+}
+class TextContents {
+}
+class Audio {
+}
+class Page {
+}
+class GirlBill {
+}
+User --> Material : access
+User --> Audio : play
+User --> Answer : see
+User --> Video : fastforward
+User --> App : run
+User --> Page : view
+User --> Answer : pick
+User --> App : click
+User --> Hint : see
+User --> TextContents : access
+User --> inline : consume
+User --> GirlBill : click
+User --> Video : play
+User --> Audio : fastforward
+
+@enduml

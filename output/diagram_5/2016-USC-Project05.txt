@@ -1,0 +1,105 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class User {
+	need()
+	free()
+	use()
+	download()
+	sort()
+	keep()
+	let()
+	save()
+	like()
+	review()
+	reset()
+	express()
+	forget()
+	comment()
+	maintain()
+	see()
+	report()
+	enter()
+	change()
+	extend()
+	delete()
+	choose()
+	upload()
+	create()
+	make()
+}
+class QualityPicture {
+}
+class Register {
+}
+class Lot {
+}
+class ResolutionPicture {
+}
+class Picture {
+}
+class Record {
+}
+class Password {
+}
+class Event {
+}
+class Browser {
+}
+class Size {
+}
+class Felling {
+}
+class upload {
+}
+class Privacy {
+}
+class Time {
+}
+class type {
+}
+class Storage {
+}
+class RAWPicture {
+}
+class Comment {
+}
+class EventExit {
+}
+User --> Time : upload
+User --> Picture : review
+User --> Picture : report
+User --> upload : delete
+User --> type : change
+User --> Record : keep
+User --> Storage : save
+User --> Picture : maintain
+User --> Password : forget
+User --> RAWPicture : upload
+User --> Event : delete
+User --> Comment : make
+User --> Size : choose
+User --> Event : extend
+User --> Browser : use
+User --> Password : enter
+User --> EventExit : let
+User --> Picture : sort
+User --> QualityPicture : review
+User --> Password : reset
+User --> Felling : express
+User --> Picture : upload
+User --> Event : create
+User --> Picture : download
+User --> Picture : see
+User --> Time : save
+User --> Register : need
+User --> Event : maintain
+User --> ResolutionPicture : download
+User --> Picture : comment
+User --> Lot : free
+User --> Picture : like
+User --> Privacy : keep
+User --> ResolutionPicture : upload
+
+@enduml

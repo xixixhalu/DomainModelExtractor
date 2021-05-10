@@ -1,0 +1,134 @@
+@startuml
+hide circle
+class Developer<actor> {
+}
+class Admin<actor> {
+}
+class Contributor<actor> {
+}
+class Admin {
+	delete()
+	create()
+	modify()
+	pull()
+	check()
+	send()
+	filter()
+	view()
+	approve()
+	change()
+	edit()
+	end()
+	export()
+	set()
+	reject()
+	receive()
+}
+class Pitch {
+}
+class Goal {
+}
+class ProjectProgress {
+}
+class Contributor {
+	create()
+	modify()
+	add()
+	remove()
+	receive()
+	send()
+	filter()
+	view()
+	track()
+	pitch()
+	end()
+	make()
+}
+class Change {
+}
+class Message {
+}
+class Detail {
+}
+class type {
+}
+class ContributorAccount {
+}
+class PublishingCalendar {
+}
+class Developer {
+	do()
+}
+class KnowledgeTransfer {
+}
+class WeekGoal {
+}
+class Draft {
+}
+class Piece {
+}
+class DraftIdea {
+}
+class Session {
+}
+class Account {
+}
+class SuccessRate {
+}
+class details {
+}
+class Profile {
+}
+class Progress {
+}
+class Notification {
+}
+class Vertical {
+}
+class Idea {
+}
+Admin --> Account : delete
+Admin --> type : change
+Contributor --> Pitch : filter
+Admin --> Pitch : edit
+Admin --> Session : end
+Contributor --> Change : make
+Admin --> Piece : receive
+Admin --> Message : receive
+Admin --> Profile : edit
+Admin --> Detail : view
+Admin --> Admin : create
+Contributor --> Draft : remove
+Admin --> Pitch : reject
+Admin --> ContributorAccount : create
+Admin --> PublishingCalendar : approve
+Admin --> Account : create
+Contributor --> Session : end
+Admin --> PublishingCalendar : export
+Admin --> Pitch : view
+Admin --> Pitch : approve
+Contributor --> Goal : view
+Contributor --> SuccessRate : track
+Admin --> Message : send
+Contributor --> Detail : add
+Contributor --> Vertical : view
+Developer --> KnowledgeTransfer : do
+Admin --> details : view
+Contributor --> Idea : pitch
+Admin --> WeekGoal : view
+Admin --> Goal : view
+Admin --> Profile : modify
+Contributor --> Message : send
+Contributor --> Draft : modify
+Admin --> Progress : view
+Admin --> Pitch : filter
+Contributor --> Piece : receive
+Contributor --> Detail : view
+Admin --> Goal : check
+Admin --> Goal : set
+Admin --> Pitch : pull
+Admin --> Notification : receive
+Admin --> ProjectProgress : view
+Contributor --> DraftIdea : create
+
+@enduml

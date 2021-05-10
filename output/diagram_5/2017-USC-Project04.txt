@@ -1,0 +1,107 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Student<actor> {
+}
+class Competitor<actor> {
+}
+class User {
+	finished()
+	invite()
+	send()
+	play()
+	click()
+	do()
+	use()
+	see()
+	give()
+	submit()
+	check()
+	pick()
+	get()
+	receive()
+}
+class Button {
+}
+class Reward {
+}
+class FinishTime {
+}
+class Notification {
+}
+class Suggestion {
+	challenge()
+}
+class Detail {
+}
+class ChallengeNotification {
+}
+class ChallengeTask {
+}
+class Challenge {
+}
+class ChallengeScore {
+}
+class IPhoneModel {
+}
+class Competitor {
+	post()
+	view()
+	verify()
+}
+class Student {
+	see()
+	select()
+}
+class Friend {
+	participate()
+}
+class Rank {
+}
+class Topic {
+}
+class Idea {
+}
+class Post {
+}
+class Time {
+}
+class ChallengeRequest {
+}
+class OpponentPost {
+}
+class ChallengePost {
+}
+class ChallengeGame {
+}
+User --> Idea : submit
+User --> Notification : receive
+Student --> Challenge : see
+Competitor --> Post : view
+User --> Suggestion : give
+User --> Friend : invite
+User --> Time : see
+User --> Detail : get
+Friend --> Challenge : participate
+User --> ChallengeNotification : get
+User --> ChallengeRequest : send
+User --> IPhoneModel : use
+User --> ChallengeTask : do
+User --> Competitor : pick
+Competitor --> OpponentPost : verify
+User --> Challenge : check
+User --> Notification : get
+Competitor --> ChallengePost : post
+User --> ChallengeScore : use
+User --> Challenge : finished
+Student --> Competitor : select
+User --> ChallengeGame : play
+User --> Button : click
+User --> Challenge : see
+User --> Rank : see
+User --> Reward : get
+Suggestion --> Topic : challenge
+User --> FinishTime : see
+
+@enduml

@@ -1,0 +1,127 @@
+@startuml
+hide circle
+class Admin<actor> {
+}
+class User<actor> {
+}
+class Maintainer<actor> {
+}
+class Password<actor> {
+}
+class Entrepreneur<actor> {
+}
+class Mentor<actor> {
+}
+class Questionnaire<actor> {
+}
+class Edit<actor> {
+}
+class Re<actor> {
+}
+class Questionnaire {
+	provides()
+}
+class Information {
+}
+class User {
+	send()
+	share()
+	receive()
+	delete()
+	like()
+	use()
+	change()
+	post()
+}
+class Message {
+}
+class Entrepreneur {
+	complete()
+	see()
+	have()
+}
+class Mentor {
+	identify()
+	view()
+	assign()
+	create()
+}
+class Post {
+}
+class Admin {
+	add()
+	increase()
+	disable()
+	use()
+}
+class Account {
+}
+class Profile {
+	provides()
+}
+class Quality {
+}
+class Weakness {
+}
+class CurriculumContent {
+}
+class CourseContent {
+}
+class Version {
+}
+class MentorInformation {
+}
+class Homework {
+}
+class Algorithm {
+	match()
+}
+class Maintainer {
+	build()
+	update()
+}
+class App {
+}
+class EntrepreneurStrength {
+}
+class Issue {
+}
+class Access {
+}
+class Application {
+}
+class Password {
+}
+class LessonContent {
+}
+User --> Password : change
+Entrepreneur --> MentorInformation : see
+Questionnaire --> Information : provides
+Mentor --> LessonContent : create
+Mentor --> Homework : assign
+Admin --> Account : disable
+User --> Message : send
+Profile --> Information : provides
+Admin --> Algorithm : use
+Entrepreneur --> Profile : complete
+Algorithm --> Mentor : match
+Entrepreneur --> Mentor : have
+Algorithm --> Entrepreneur : match
+Entrepreneur --> Questionnaire : complete
+Admin --> Quality : increase
+Maintainer --> App : build
+Mentor --> Profile : view
+Mentor --> EntrepreneurStrength : identify
+Mentor --> Weakness : identify
+User --> Post : like
+User --> Issue : post
+Mentor --> CurriculumContent : create
+User --> Account : delete
+Admin --> CourseContent : add
+User --> Message : receive
+Entrepreneur --> Access : have
+User --> Post : share
+User --> Version : use
+Maintainer --> Application : update
+
+@enduml

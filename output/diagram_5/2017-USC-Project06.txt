@@ -1,0 +1,43 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class User {
+	input()
+	download()
+	view()
+	want()
+	set()
+	see()
+	connect()
+	use()
+	create()
+}
+class App {
+}
+class InsulinLevel {
+}
+class Trend {
+}
+class Information {
+}
+class Cgm {
+}
+class Level {
+}
+class InsulinRecommendation {
+}
+class Application {
+}
+User --> InsulinRecommendation : want
+User --> InsulinLevel : input
+User --> Cgm : connect
+User --> App : use
+User --> Information : want
+User --> Trend : see
+User --> Information : view
+User --> Level : set
+User --> Application : download
+User --> Information : create
+
+@enduml

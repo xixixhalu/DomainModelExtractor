@@ -1,0 +1,101 @@
+@startuml
+hide circle
+class AdultLearner<actor> {
+}
+class ExperientialLearningCenterStaff<actor> {
+}
+class CollegeStudent<actor> {
+}
+class MBVStudent<actor> {
+}
+class Executive<actor> {
+}
+class Employer<actor> {
+}
+class Veteran<actor> {
+}
+class CollegeStudent {
+	improve()
+	use()
+}
+class Competence {
+}
+class MBVStudent {
+	improve()
+	use()
+}
+class ConflictResolutionSkill {
+}
+class Employee {
+	practice()
+}
+class ProductConflictResolutionSkill {
+}
+class Veteran {
+	compare()
+	see()
+}
+class Graph {
+}
+class ConflictManagementSkill {
+}
+class AdultLearner {
+	take()
+	have()
+	improve()
+	resolve()
+	practice()
+	view()
+}
+class Practice {
+}
+class Score {
+}
+class ThoughtProcess {
+}
+class Team {
+	resolve()
+}
+class Conflict {
+}
+class ExperientialLearningCenterStaff {
+	take()
+}
+class Training {
+}
+class Decision {
+}
+class Program {
+	integrates()
+}
+class Executive {
+	encourage()
+}
+class Assessment {
+}
+class Confidence {
+}
+class Experience {
+}
+CollegeStudent --> Program : use
+MBVStudent --> ConflictResolutionSkill : improve
+Team --> Conflict : resolve
+Executive --> Employee : encourage
+AdultLearner --> ConflictManagementSkill : improve
+Employee --> ProductConflictResolutionSkill : practice
+AdultLearner --> Assessment : take
+MBVStudent --> Score : use
+Veteran --> Graph : see
+CollegeStudent --> Confidence : improve
+Program --> Experience : integrates
+CollegeStudent --> ConflictManagementSkill : improve
+AdultLearner --> Score : view
+AdultLearner --> Practice : have
+Veteran --> ThoughtProcess : compare
+AdultLearner --> ConflictResolutionSkill : practice
+ExperientialLearningCenterStaff --> Training : take
+AdultLearner --> Conflict : resolve
+Veteran --> Decision : compare
+CollegeStudent --> Competence : improve
+
+@enduml

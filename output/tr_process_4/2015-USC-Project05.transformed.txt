@@ -1,0 +1,101 @@
+{
+  "domain": "2015-USC-Project05",
+  "entity_dict": {
+    "TourCreator": {
+      "name": "TourCreator",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Owner": {
+      "name": "Owner",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "TourTaker": {
+      "name": "TourTaker",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "TourCreator",
+      "action": "promote",
+      "target": "Area",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "select",
+      "target": "Tour",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "upload",
+      "target": "Video",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "upload",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "view",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "authorize",
+      "target": "TourCreator",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "view",
+      "target": "Tour",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "search",
+      "target": "Tour",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "create",
+      "target": "Tour",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "upload",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "delete",
+      "target": "Tour",
+      "para": []
+    }
+  ]
+}

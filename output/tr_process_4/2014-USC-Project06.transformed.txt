@@ -1,0 +1,209 @@
+{
+  "domain": "2014-USC-Project06",
+  "entity_dict": {
+    "Student": {
+      "name": "Student",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Administrator": {
+      "name": "Administrator",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "User",
+      "action": "leave",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "accept",
+      "target": "ConnectionRequest",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "join",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Recommendation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Video",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Optometrist",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Advertisement",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Someone",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "follow",
+      "target": "School",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "grow",
+      "target": "Network",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Office",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reject",
+      "target": "ConnectionRequest",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "Presence",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Article",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "unfollow",
+      "target": "Company",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "import",
+      "target": "LinkedInInformation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "write",
+      "target": "LetterRecommendation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "cancel",
+      "target": "Connection",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "upload",
+      "target": "ProfilePicture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "follow",
+      "target": "Company",
+      "para": []
+    }
+  ]
+}

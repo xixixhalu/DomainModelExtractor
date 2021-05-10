@@ -1,0 +1,106 @@
+@startuml
+hide circle
+class Student<actor> {
+}
+class User<actor> {
+}
+class Administrator<actor> {
+}
+class User {
+	follow()
+	accept()
+	reject()
+	write()
+	upload()
+	update()
+	delete()
+	unfollow()
+	have()
+	add()
+	create()
+	see()
+	share()
+	leave()
+	send()
+	find()
+	join()
+	import()
+	cancel()
+}
+class Group {
+}
+class ConnectionRequest {
+}
+class Profile {
+}
+class Recommendation {
+}
+class Video {
+}
+class Optometrist {
+}
+class Advertisement {
+}
+class Someone {
+}
+class School {
+}
+class Student {
+	grow()
+}
+class Network {
+}
+class Office {
+}
+class Presence {
+}
+class Information {
+}
+class Article {
+}
+class Company {
+}
+class LinkedInInformation {
+}
+class Message {
+}
+class LetterRecommendation {
+}
+class Connection {
+}
+class Request {
+}
+class ProfilePicture {
+}
+User --> Profile : update
+Student --> Network : grow
+User --> Company : unfollow
+User --> Recommendation : see
+User --> Office : find
+User --> LinkedInInformation : import
+User --> Video : share
+User --> Message : send
+User --> Optometrist : find
+User --> School : follow
+User --> Profile : delete
+User --> LetterRecommendation : write
+User --> Profile : create
+User --> Advertisement : see
+User --> Group : create
+User --> Connection : cancel
+User --> Profile : add
+User --> Profile : see
+User --> Request : send
+User --> Someone : find
+User --> Message : see
+User --> ConnectionRequest : reject
+User --> ProfilePicture : upload
+User --> Group : leave
+User --> Presence : have
+User --> Company : follow
+User --> ConnectionRequest : accept
+User --> Information : find
+User --> Group : join
+User --> Article : share
+
+@enduml

@@ -1,27 +1,27 @@
 User expect that User's Information is secure .
 Coach can review the Information of who signed up before printing it as a Pdf .
 Coach can review the Information of who signed up before printing it as a Csv .
-Coach can overwrite the final Results .
-Coach can modify the final Results .
-User expect to only see Options that User's Swimmer is qualified to sign up for .
-Coach expect the Signups to automatically close 2 Weeks before SignUps , or a Time-frame that Coach set .
+Coach can overwrite the final Result .
+Coach can modify the final Result .
+User expect to only see Option that User's Swimmer is qualified to sign up for .
+Coach expect the Signup to automatically close 2 Week before SignUp , or a Time-frame that Coach set .
 parent should be able to login to parent's Kid 's Account .
 Coach expect that if Coach modified Something from the User , that the User will automatically be notified .
 parent should be able to see Amount parent am supposed to pay .
 parent should be able to view Event categorically .
-User should be able to see the Events in which User's Kid is signed up .
-Coach should be able to extract PdfInformation and UploadEvents on Website .
-Coach should be able to edit the List of Events all Kids are signed up for .
-parent should be able to edit the signed up Events before the Deadline .
-parent should not be able to sign up parent's Kid for the EventsPost the Deadline .
+User should be able to see the Event in which User's Kid is signed up .
+Coach should be able to extract PdfInformation and UploadEvent on Website .
+Coach should be able to edit the List of Event all Kid are signed up for .
+parent should be able to edit the signed up Event before the Deadline .
+parent should not be able to sign up parent's Kid for the EventPost the Deadline .
 Treasurer should be able to see the total Amount to be collected in the Month .
-Developer should have the Access to the Database of the RegistrationIds and Date of Birth of Children .
+Developer should have the Access to the Database of the RegistrationIds and Date of Birth of Child .
 parent should be able to view the payee Information .
 Maintainer should be able to access the Database .
 Maintainer should be able to modify the Database .
 Maintainer should be able to modify the Website .
 Maintainer should have Access to Documentation and the SourceCode .
-Head-coach should be able to generate final PdfReport and CsvFile .
-parent can login into parent's KidsAccount with a RegistrationKey .
-Maintainer can insert , delete , or modify the Database of the Events or of the Kids .
-Maintainer can see the AmountDetails for the Kids that they owe .
+Head-coach should be able to generate final PdfReport and CSVFile .
+parent can login into parent's KidAccount with a RegistrationKey .
+Maintainer can insert , delete , or modify the Database of the Event or of the Kid .
+Maintainer can see the AmountDetail for the Kid that they owe .

@@ -10,7 +10,7 @@ The pipeline shall store a model for image classification.
 The pipeline shall pre-process training images.
 As a user, I can choose one tag that I want to detect in my images.
 The pipeline shall use deep learning algorithm.
-As a user, I can upload multiple images(each with a label to choose at the same time.
+As a user, I can upload multiple images  at the same time.
 The pipeline shall handle the image with noise.
 The pipeline shall get the images from the Facebook via Facebook API.
 As a client I can upload an image to the pipeline and see a text <classification> along with the initial image.

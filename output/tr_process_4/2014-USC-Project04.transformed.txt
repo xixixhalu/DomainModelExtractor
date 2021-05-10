@@ -1,0 +1,179 @@
+{
+  "domain": "2014-USC-Project04",
+  "entity_dict": {
+    "Consumer": {
+      "name": "Consumer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Florist": {
+      "name": "Florist",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Customer": {
+      "name": "Customer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Consumer",
+      "action": "place",
+      "target": "Order",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "have",
+      "target": "Option",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "view",
+      "target": "Review",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "upload",
+      "target": "Catalog",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "check",
+      "target": "OrderHistory",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "schedule",
+      "target": "Appointment",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "receive",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "create",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "receive",
+      "target": "Payment",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "have",
+      "target": "Convenience",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "market",
+      "target": "Service",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "have",
+      "target": "Record",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "have",
+      "target": "Record",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "cancel",
+      "target": "Order",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "cancel",
+      "target": "Order",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "view",
+      "target": "Ranking",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "receive",
+      "target": "Recommendation",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "create",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "provide",
+      "target": "ProductStatus",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "track",
+      "target": "OrderHistory",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "make",
+      "target": "PurchasingDecision",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "cancel",
+      "target": "RefundConsumer",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "use",
+      "target": "MarketAnalyticTool",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "track",
+      "target": "Order",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "rank",
+      "target": "Product",
+      "para": []
+    }
+  ]
+}

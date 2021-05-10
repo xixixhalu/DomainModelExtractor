@@ -1,17 +1,17 @@
-As a GM , I can both extract and visualize player value so that I can build roster for the next season and make informed decisions affecting the bottom-line.
-As a coach , I can both extract and visualize player value so that I can build roster for the next season and make informed decisions affecting the bottom-line.
+As a GM , I can both extract and visualize player value  so that I can build roster for the next season and make informed decisions affecting the bottom-line.
+As a coach , I can both extract and visualize player value  so that I can build roster for the next season and make informed decisions affecting the bottom-line.
 As a GM, I can extract data related to finances and operations, including staff and player salaries, revenue, cost accounting.
-As a GM, my data can seamlessly integrate with the SporTech B.I. system in a standard compliant manner. .
-Webcrawler must be able to visit public sites, extract simple structured relational data , generate PostgreSQL INSERT statements on a configurable schedule, and check for conflicts within the existing SQL DB. 
-The crawler must be able to perform the above functions for all common forms of relational data 
+As a GM, my data can seamlessly integrate with the SporTech B.I. system in a standard compliant manner.  .
+Webcrawler must be able to visit public sites, extract simple structured relational data  , generate PostgreSQL INSERT statements on a configurable schedule, and check for conflicts within the existing SQL DB. 
+The crawler must be able to perform the above functions for all common forms of relational data  
 If there is no data existing for the unique identifier for the row within the table, execute the insert statements for the dataset.
-If there is a conflict the application must be able to generate and execute  a PostgreSQL UPDATE statement for the "crawled" dataset.
+If there is a conflict  the application must be able to generate and execute  a PostgreSQL UPDATE statement for the "crawled" dataset.
 As a SporTech B.I. contractor, I can  add,delete,update the specific websites visited,  fields to capture from the website and frequency of crawler refresh for each specified website.
 Webcrawler app must function in a persistent manner - if we set it using the above GUI, it should run without intervention if there are no errors.
-The system must be able to function on a major open-source OS .
-The crawler should be able identify and ingest into a Hadoop data store, unstructured data , on a configurable schedule, and check for conflicts within the existing data store.
-The crawler should be able identify and ingest into a Hive data store, unstructured data , on a configurable schedule, and check for conflicts within the existing data store.
-The crawler should be able identify and ingest into a Pig NoSQL data store , unstructured data , on a configurable schedule , and check check for conflicts within the existing data store.
+The system must be able to function on a major open-source OS  .
+The crawler should be able identify and ingest into a Hadoop data store, unstructured data  , on a configurable schedule, and check for conflicts within the existing data store.
+The crawler should be able identify and ingest into a Hive data store, unstructured data  , on a configurable schedule, and check for conflicts within the existing data store.
+The crawler should be able identify and ingest into a Pig NoSQL data store , unstructured data   , on a configurable schedule , and check check for conflicts within the existing data store.
 All webcrawler functionality from the relational data base ingest should be mirrored for unstructured data ingest.   .
 With this condition in place, as a general manger, I can monitor real-time twitter  feeds from key sources in a continuous manner .
 With this condition in place, as a general manger, I can monitor real-time twitter  feeds from key sources on demand . .
@@ -27,13 +27,13 @@ With this condition in place, as a general manger, I can monitor real-time insta
 With this condition in place, as a general manger, I can monitor real-time instagram  reaction from key sources on demand . .
 The crawler shall self correct simple errors it encounters during the SQL ingest process.
 The crawler should have some kind of visualization tool which allows engineers to view a snapshot of the interactions between the crawler, datasources and STBI databases.
-The crawler should search for new datasources automatically .
+The crawler should search for new datasources automatically  .
 The system shall be a web-based management GUI. As a customer, I could manage the tool from anywhere without the need to worry about the SporTech B.I. system having to launch from a program on a desktop or server.
 The system shall serve as the "nerve center" for the STBI ecosystem.  It can ingest all kinds of structured data, both automatically and on demand.
-There should be a portal that allows the user to drag and drop information in many different formats and then the crawler should organize, sort and identify the datatype and then ingest into the PostgreSQL DB. 
-This would remove most of the work that a human would have to do to interact with the data before it is ready to be analyzed and visualized.
-The system shall have two portals . One would be for the SporTech B.I contractors and would have many more advanced features and controls.  The second would be a simple, web-based, customer-facing portal so that the customer could ingest their data "self-service" and see the impact in their apps immediately.
-The system shall have two portals . One would be for the SporTech B.I contractors and would have many more advanced features and controls.  The second would be a simple, web-based, customer-facing portal so that the customer could ingest their data "self-service" and see the impact in their dashboards immediately.
+There should be a portal that allows the user to drag and drop information in many different formats  and then the crawler should organize, sort and identify the datatype and then ingest into the PostgreSQL DB. 
+This would remove most  of the work that a human would have to do to interact with the data before it is ready to be analyzed and visualized.
+The system shall have two portals  . One would be for the SporTech B.I contractors and would have many more advanced features and controls.  The second would be a simple, web-based, customer-facing portal so that the customer could ingest their data "self-service" and see the impact in their apps immediately.
+The system shall have two portals  . One would be for the SporTech B.I contractors and would have many more advanced features and controls.  The second would be a simple, web-based, customer-facing portal so that the customer could ingest their data "self-service" and see the impact in their dashboards immediately.
 As a customer, I can import existing data from an excel sheet by dragging and dropping it into STBI so that I can update data to my current model and see the changes.
 As a customer, I can import existing data from an excel sheet by dragging and dropping it into STBI so that I can add data to my current model and see the changes.
 the crawler should organize, sort and identify the datatype and then ingest into the DB.

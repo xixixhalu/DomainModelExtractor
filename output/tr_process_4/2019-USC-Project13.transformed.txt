@@ -1,0 +1,261 @@
+{
+  "domain": "2019-USC-Project13",
+  "entity_dict": {
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Mentee": {
+      "name": "Mentee",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Mentor": {
+      "name": "Mentor",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Developer": {
+      "name": "Developer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Enduser": {
+      "name": "Enduser",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Administrator": {
+      "name": "Administrator",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Admin",
+      "action": "match",
+      "target": "Mentor",
+      "para": []
+    },
+    {
+      "actor": "Mentee",
+      "action": "update",
+      "target": "ContactDetail",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "track",
+      "target": "Mentee",
+      "para": []
+    },
+    {
+      "actor": "Mentee",
+      "action": "reset",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "reset",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "get",
+      "target": "Statistics",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "select",
+      "target": "Mentee",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "mark",
+      "target": "Availability",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "track",
+      "target": "Mentor",
+      "para": []
+    },
+    {
+      "actor": "Mentee",
+      "action": "upload",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "export",
+      "target": "Report",
+      "para": []
+    },
+    {
+      "actor": "Request",
+      "action": "establish",
+      "target": "Connection",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "accept",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "view",
+      "target": "Statistics",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "get",
+      "target": "Report",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "update",
+      "target": "Status",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "monitor",
+      "target": "TrainingPhaseActivity",
+      "para": []
+    },
+    {
+      "actor": "Information",
+      "action": "includes",
+      "target": "Phone",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "submit",
+      "target": "Report",
+      "para": []
+    },
+    {
+      "actor": "Mentee",
+      "action": "update",
+      "target": "InformationDetail",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "create",
+      "target": "ActivityRecord",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "access",
+      "target": "Site",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "send",
+      "target": "Reminder",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "view",
+      "target": "ActivityReport",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "update",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Mentee",
+      "action": "send",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "Mentee",
+      "action": "see",
+      "target": "List",
+      "para": []
+    },
+    {
+      "actor": "Mentee",
+      "action": "select",
+      "target": "Mentor",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "integrate",
+      "target": "WebApplication",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "report",
+      "target": "Interaction",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "register",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "assign",
+      "target": "Mentor",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "provide",
+      "target": "ActivityReport",
+      "para": []
+    }
+  ]
+}

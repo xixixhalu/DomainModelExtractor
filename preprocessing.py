@@ -17,6 +17,7 @@ import argparse
 # 3. output another identical file
 
 FUNC_RE = '(A|a)s (the|a|an) .+(I|i|My|my) '
+LEMMA_STOP_WORDS = {'data'}
 
 
 class PreProcessor:
@@ -71,6 +72,20 @@ class PreProcessor:
 
         file.close()
 
+    # Note: this function check if a word is in stop words dict, if no, return lemma form, otherwise, return original word.
+    def filter_stop_word(self, idx, nlp_output):
+        tokens = nlp_output['sentences'][0]['tokens']
+        word = tokens[idx]['word']
+        is_stop_word = False
+        for w in LEMMA_STOP_WORDS:
+            if word.lower() == w or w.endswith(word.lower()):
+                is_stop_word = True
+        if not is_stop_word:
+            word = tokens[idx]['lemma']
+        else:
+            word = tokens[idx]['word']
+        return word
+
     # Note: this function use a straight forward method to combine consecutive nouns: combining consecutive NN or NNP or
     # NNS or NNPS.
     def combine_nouns(self, line, meta, noun_map):
@@ -97,7 +112,6 @@ class PreProcessor:
         # Bo: no need to combine nmod
         # intervals.extend(self.combine_nmod(td_key))
         intervals = self.merge_intervals(intervals)
-
         tokens = nlp_output['sentences'][0]['tokens']
 
         intervals = self._check_intervals(intervals, tokens)
@@ -108,16 +122,18 @@ class PreProcessor:
 
         new_line = ''
         i = 1
+
         # construct combined sentence
         while i < len(line_index):
             cand = tokens[i - 1]['word']
 
             if i in map:
+                cand = self.filter_stop_word(i-1, nlp_output)
                 cand = cand[0].upper() + cand[1:]
                 j = map[i]
                 i = i + 1
                 while i <= j:
-                    cand += tokens[i - 1]['word'][0].upper() + tokens[i - 1]['word'][1:]
+                    cand += self.filter_stop_word(i-1, nlp_output)[0].upper() + self.filter_stop_word(i-1, nlp_output)[1:]
                     i = i + 1
 
                 i = i - 1
@@ -139,8 +155,8 @@ class PreProcessor:
             sub = []
             i = pair[0]
             while i <= pair[1]:
-                sub.append(tokens[i - 1]['word'])
-                combined += tokens[i - 1]['word'][0].upper() + tokens[i - 1]['word'][1:]
+                sub.append(self.filter_stop_word(i-1, nlp_output))
+                combined += self.filter_stop_word(i-1, nlp_output)[0].upper() + self.filter_stop_word(i-1, nlp_output)[1:]
                 i = i + 1
             # combined = re.sub(r'\W+', '', combined)
             noun_map[combined] = sub
@@ -411,7 +427,7 @@ class PreProcessor:
             if actor in noun_map:
                 act.append(noun_map[actor])
             else:
-                act.append(actor)
+                act.append([actor])
 
         # print("Actors: ", act)
 

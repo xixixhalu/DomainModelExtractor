@@ -1,0 +1,245 @@
+{
+  "domain": "2016-USC-Project08",
+  "entity_dict": {
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Maintainer": {
+      "name": "Maintainer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Password": {
+      "name": "Password",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Entrepreneur": {
+      "name": "Entrepreneur",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Mentor": {
+      "name": "Mentor",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Questionnaire": {
+      "name": "Questionnaire",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Edit": {
+      "name": "Edit",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Re": {
+      "name": "Re",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Questionnaire",
+      "action": "provides",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "Entrepreneur",
+      "action": "have",
+      "target": "Mentor",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "like",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "disable",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Entrepreneur",
+      "action": "complete",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Entrepreneur",
+      "action": "complete",
+      "target": "Questionnaire",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "increase",
+      "target": "Quality",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "view",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "identify",
+      "target": "Weakness",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "create",
+      "target": "CurriculumContent",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "CourseContent",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "Version",
+      "para": []
+    },
+    {
+      "actor": "Entrepreneur",
+      "action": "see",
+      "target": "MentorInformation",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "assign",
+      "target": "Homework",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "use",
+      "target": "Algorithm",
+      "para": []
+    },
+    {
+      "actor": "Algorithm",
+      "action": "match",
+      "target": "Mentor",
+      "para": []
+    },
+    {
+      "actor": "Algorithm",
+      "action": "match",
+      "target": "Entrepreneur",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "build",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "identify",
+      "target": "EntrepreneurStrength",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "post",
+      "target": "Issue",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "Entrepreneur",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "update",
+      "target": "Application",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "change",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "create",
+      "target": "LessonContent",
+      "para": []
+    },
+    {
+      "actor": "Profile",
+      "action": "provides",
+      "target": "Information",
+      "para": []
+    }
+  ]
+}

@@ -4,20 +4,22 @@ misspelling_cmd='python3 misspelling.py '
 preprocessing_cmd='python3 preprocessing.py '
 ssr_matching_cmd='python3 ssr_matching.py '
 rule_transforming_cmd='python3 rule_transforming.py '
+visualizing_cmd='python3 visualizing.py '
 
 usage() { 
-	echo "Usage:	$0 [-m|-p|-s|-t] [-f <filename>]" 1>&2;
+	echo "Usage:	$0 [-m|-p|-s|-t|-v] [-f <filename>]" 1>&2;
 	echo "Parameters:	
 	-m 	Misspelling detection
 	-p 	Preprosessing
 	-s 	SSR matching
 	-t 	Rule transformation
+	-v 	Visualization
 	-f 	Specify a project file. Default: all project files"
 	echo "Example:
-	sh run.sh -mpst
-	sh run.sh -mpst -f 2014-USC-Project02
-	sh run.sh [-m|-p|-s|-t]
-	sh run.sh [-m|-p|-s|-t] -f 2014-USC-Project02"
+	sh run.sh -mpstv
+	sh run.sh -mpstv -f 2014-USC-Project02
+	sh run.sh [-m|-p|-s|-t|-v]
+	sh run.sh [-m|-p|-s|-t|-v] -f 2014-USC-Project02"
 	exit 1; 
 }
 
@@ -30,7 +32,7 @@ misspell_detect() {
 	done
 }
 
-preprocessing() {
+preprocess() {
 	files=$1
 	for f in "${files[@]}"
 	do
@@ -39,7 +41,7 @@ preprocessing() {
 	done
 }
 
-ssr_matching() {
+ssr_match() {
 	files=$1
 	for f in "${files[@]}"
 	do
@@ -48,7 +50,7 @@ ssr_matching() {
 	done
 }
 
-rule_transforming() {
+rule_transform() {
 	files=$1
 	for f in "${files[@]}"
 	do
@@ -57,7 +59,16 @@ rule_transforming() {
 	done
 }
 
-while getopts mpstf: o; do
+visualize() {
+	files=$1
+	for f in "${files[@]}"
+	do
+		echo "Visualizing $f..."
+		eval $visualizing_cmd"-f "$f
+	done
+}
+
+while getopts mpstvf: o; do
   case $o in
     (m) 
 		MISSPELL_DETECTION=true
@@ -71,6 +82,9 @@ while getopts mpstf: o; do
 	(t) 
 		RULE_TRANSFORMING=true
 		;;
+	(v) 
+		VISUALIZING=true
+		;;
     (f) 
 		file=$OPTARG
 		;;
@@ -82,7 +96,7 @@ shift "$((OPTIND - 1))"
 
 ###
 
-if [ -z "${MISSPELL_DETECTION}" ] && [ -z "${PREPROCESSING}" ] && [ -z "${SSR_MATCHING}" ] && [ -z "${RULE_TRANSFORMING}" ]; then
+if [ -z "${MISSPELL_DETECTION}" ] && [ -z "${PREPROCESSING}" ] && [ -z "${SSR_MATCHING}" ] && [ -z "${RULE_TRANSFORMING}" ] && [ -z "${VISUALIZING}" ]; then
     usage
 fi
 
@@ -101,7 +115,7 @@ if [[ "$PREPROCESSING" = true ]]; then
  	else
  		files=($file)
  	fi
-	preprocessing $files
+	preprocess $files
 fi
 
 if [[ "$SSR_MATCHING" = true ]]; then
@@ -110,7 +124,7 @@ if [[ "$SSR_MATCHING" = true ]]; then
  	else
  		files=($file)
  	fi
-	ssr_matching $files
+	ssr_match $files
 fi
 
 if [[ "$RULE_TRANSFORMING" = true ]]; then
@@ -119,5 +133,14 @@ if [[ "$RULE_TRANSFORMING" = true ]]; then
  	else
  		files=($file)
  	fi
-	rule_transforming $files
+	rule_transform $files
+fi
+
+if [[ "$VISUALIZING" = true ]]; then
+	if [ -z "${file}" ]; then
+ 		files=($(eval $visualizing_cmd"-l"))
+ 	else
+ 		files=($file)
+ 	fi
+	visualize $files
 fi

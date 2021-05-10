@@ -1,0 +1,357 @@
+{
+  "domain": "2019-USC-Project02",
+  "entity_dict": {
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Tutor": {
+      "name": "Tutor",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Student": {
+      "name": "Student",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Maintainer": {
+      "name": "Maintainer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Developer": {
+      "name": "Developer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Leader": {
+      "name": "Leader",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Tester": {
+      "name": "Tester",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Programmer": {
+      "name": "Programmer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "FeasibilityAnalysis": {
+      "name": "FeasibilityAnalysis",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "ProjectArchitect": {
+      "name": "ProjectArchitect",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Client": {
+      "name": "Client",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "SystemArchitect": {
+      "name": "SystemArchitect",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "StudentUser": {
+      "name": "StudentUser",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Tutor",
+      "action": "offer",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "AutoResponse",
+      "para": []
+    },
+    {
+      "actor": "Information",
+      "action": "provides",
+      "target": "Understanding",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "post",
+      "target": "Blog",
+      "para": []
+    },
+    {
+      "actor": "Programmer",
+      "action": "get",
+      "target": "Description",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "cancel",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "update",
+      "target": "CourseVideo",
+      "para": []
+    },
+    {
+      "actor": "Availability",
+      "action": "reflect",
+      "target": "Fact",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "coomplete",
+      "target": "RequestForm",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "watch",
+      "target": "LessonVideo",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "understand",
+      "target": "Technology",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "make",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "need",
+      "target": "PaymentMethod",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "have",
+      "target": "Project",
+      "para": []
+    },
+    {
+      "actor": "Instructor",
+      "action": "matches",
+      "target": "Language",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "check",
+      "target": "RequestRecord",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "learn",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "ProjectArchitect",
+      "action": "get",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "input",
+      "target": "ScheduleAvailability",
+      "para": []
+    },
+    {
+      "actor": "Programmer",
+      "action": "prioritize",
+      "target": "Task",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "request",
+      "target": "TutoringTime",
+      "para": []
+    },
+    {
+      "actor": "FeasibilityAnalysis",
+      "action": "figure",
+      "target": "Possibility",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "manage",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "consult",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "check",
+      "target": "Schedule",
+      "para": []
+    },
+    {
+      "actor": "Tester",
+      "action": "write",
+      "target": "IntegrationTest",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "Question",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "read",
+      "target": "Description",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "CourseScheduleChoice",
+      "para": []
+    },
+    {
+      "actor": "Leader",
+      "action": "learn",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "upgrade",
+      "target": "Resource",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "complete",
+      "target": "EvaluationForm",
+      "para": []
+    },
+    {
+      "actor": "Possibility",
+      "action": "fit",
+      "target": "Project",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "Application",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "get",
+      "target": "Schedule",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "choose",
+      "target": "PaymentMethod",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "share",
+      "target": "PresentationMaterial",
+      "para": []
+    },
+    {
+      "actor": "SystemArchitect",
+      "action": "integrate",
+      "target": "Module",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "exchange",
+      "target": "Thought",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "input",
+      "target": "Schedule",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "understand",
+      "target": "Technology",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "read",
+      "target": "Blog",
+      "para": []
+    }
+  ]
+}

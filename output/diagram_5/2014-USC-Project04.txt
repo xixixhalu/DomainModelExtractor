@@ -1,0 +1,100 @@
+@startuml
+hide circle
+class Consumer<actor> {
+}
+class Florist<actor> {
+}
+class Customer<actor> {
+}
+class Consumer {
+	track()
+	schedule()
+	place()
+	cancel()
+	view()
+	check()
+	rank()
+	make()
+	have()
+	receive()
+}
+class Order {
+}
+class Option {
+}
+class Review {
+}
+class Florist {
+	track()
+	market()
+	provide()
+	cancel()
+	have()
+	create()
+	receive()
+	use()
+	upload()
+}
+class Catalog {
+}
+class OrderHistory {
+}
+class Appointment {
+}
+class Information {
+}
+class Customer {
+	receive()
+	create()
+}
+class Profile {
+}
+class Payment {
+}
+class Convenience {
+}
+class Service {
+}
+class Record {
+}
+class Ranking {
+}
+class Recommendation {
+}
+class ProductStatus {
+}
+class PurchasingDecision {
+}
+class RefundConsumer {
+}
+class MarketAnalyticTool {
+}
+class Product {
+}
+Florist --> ProductStatus : provide
+Florist --> Record : have
+Consumer --> Ranking : view
+Consumer --> Order : cancel
+Florist --> Catalog : upload
+Florist --> OrderHistory : track
+Florist --> Order : cancel
+Consumer --> PurchasingDecision : make
+Consumer --> OrderHistory : check
+Florist --> RefundConsumer : cancel
+Consumer --> Appointment : schedule
+Florist --> MarketAnalyticTool : use
+Consumer --> Information : receive
+Florist --> Service : market
+Consumer --> Record : have
+Consumer --> Order : track
+Consumer --> Product : rank
+Customer --> Profile : create
+Florist --> Payment : receive
+Consumer --> Convenience : have
+Consumer --> Order : place
+Consumer --> Option : have
+Customer --> Recommendation : receive
+Consumer --> Review : view
+Florist --> Profile : create
+
+@enduml

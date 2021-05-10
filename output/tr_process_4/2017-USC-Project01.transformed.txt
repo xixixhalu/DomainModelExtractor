@@ -1,0 +1,137 @@
+{
+  "domain": "2017-USC-Project01",
+  "entity_dict": {
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Contributor": {
+      "name": "Contributor",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "User",
+      "action": "export",
+      "target": "SoftwareQualityMetric",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "VerificationEmail",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "have",
+      "target": "Ability",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Statistics",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Evolution",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "reset",
+      "target": "UserPassword",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "analyze",
+      "target": "Impact",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "manage",
+      "target": "UserPermission",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "see",
+      "target": "List",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reset",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "ask",
+      "target": "Admin",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "perform",
+      "target": "Analysis",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Email",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "confirm",
+      "target": "Registration",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "restrict",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "give",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "terminate",
+      "target": "Account",
+      "para": []
+    }
+  ]
+}

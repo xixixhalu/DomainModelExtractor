@@ -1,0 +1,75 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Shelter<actor> {
+}
+class User {
+	want()
+	see()
+	go()
+	visit()
+	cancel()
+	modify()
+	apply()
+	use()
+	inform()
+	get()
+	have()
+}
+class Information {
+}
+class Appointment {
+}
+class Agency {
+}
+class Pet {
+}
+class Picture {
+}
+class Filter {
+}
+class Shelter {
+	want()
+	input()
+	get()
+}
+class Ability {
+}
+class Ui {
+}
+class filters {
+}
+class SchedulingFunction {
+}
+class type {
+}
+class ShelterInformation {
+}
+class Result {
+}
+class Reminder {
+}
+class Notification {
+}
+User --> Information : see
+User --> Pet : go
+User --> Result : have
+User --> Picture : see
+User --> Filter : apply
+Shelter --> Ability : want
+Shelter --> Notification : get
+User --> Ui : use
+User --> Information : modify
+User --> filters : apply
+User --> SchedulingFunction : want
+User --> User : see
+User --> type : apply
+User --> Information : want
+Shelter --> ShelterInformation : input
+User --> Appointment : cancel
+User --> Reminder : get
+User --> Shelter : visit
+User --> Agency : inform
+
+@enduml

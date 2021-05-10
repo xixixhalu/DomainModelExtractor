@@ -7,7 +7,7 @@ As a user I can turn off the lights using using Mobile applications.
 As a user I can add images for each switch so that they are recognizable.
 As a user I can add images for gateway so that they are recognizable.
 As an admin I can assign different switches to different users so that the access control is limited.
-The mobile system should use a single protocol to communicate with gateway .
+The mobile system should use a single protocol to communicate with gateway  .
 As a user I can turn on the lights in the house so that all the lights can be controlled at once.
 As a user I can turn off all the lights in the house so that all the lights can be controlled controlled at once.
 As a user I can select a particular floor so that I have floor- or room-wide control of lights.
@@ -19,8 +19,8 @@ The mobile app should be written in Android with backend of mongodb and node.is.
 System should have minimum downtime and high availability .
 System should have minimum downtime and high redundancy .
 System should be secure -  data should be transmitted over an encrypted channel.
-Do not use toggle for turning on lights so that more features can be added .
-Do not use toggle for turning off the lights so that more features can be added added .
+Do not use toggle for turning on lights so that more features can be added  .
+Do not use toggle for turning off the lights so that more features can be added added  .
 As an admin I can delete switch .
 As an admin I can delete floor .
 As an admin I can delete room .

@@ -1,0 +1,95 @@
+{
+  "domain": "2017-USC-Project07",
+  "entity_dict": {
+    "Scriptwriter": {
+      "name": "Scriptwriter",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "like",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "UserComment",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "Category",
+      "para": []
+    },
+    {
+      "actor": "Scriptwriter",
+      "action": "get",
+      "target": "Feedback",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "Tag",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "edit",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Producer",
+      "action": "using",
+      "target": "FeedbackForm",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "save",
+      "target": "Post",
+      "para": []
+    }
+  ]
+}

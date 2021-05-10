@@ -1,19 +1,19 @@
 Admin can manage UserPermission .
 User should receive an Email after registering so that User am able to confirm User's Registration .
-User should only see Projects User have been assigned to so that User am not exposed to sensitive Information .
-Admin should be able to associate Projects and Users so that Admin can restrict Access appropriately .
-User should be able to export SoftwareQualityMetrics so that User can perform off-line statistical Analysis .
+User should only see Project User have been assigned to so that User am not exposed to sensitive Information .
+Admin should be able to associate Project and User so that Admin can restrict Access appropriately .
+User should be able to export SoftwareQualityMetric so that User can perform off-line statistical Analysis .
 to the Project , Contributor should be able to ask the Admin to give Access to another User to the Project .
 User should be able to reset User's Password with User's Email if forgotten .
 User should be able to request for analyzing User's Project .
 User should receive a VerificationEmail on Signup .
-Admin should have the Ability to grant Access of the Projects to the User .
-Admin should have the deny Access of the Projects to the User .
+Admin should have the Ability to grant Access of the Project to the User .
+Admin should have the deny Access of the Project to the User .
 User should be able to view various Statistics about the Project .
-Contributor should be able to access all the Projects Contributor worked on so that Contributor can analyze Contributor's Impact .
-Admin should be able to reset UsersPasswords when .
-Admin should be able to reset UsersPasswords if required required .
+Contributor should be able to access all the Project Contributor worked on so that Contributor can analyze Contributor's Impact .
+Admin should be able to reset UserPassword when .
+Admin should be able to reset UserPassword if required required .
 Admin should be able to terminate or block an Account temporarily
 Admin should be able to terminate or block an Account permanently .
-User should be able to see the Evolution of Open-source Projects .
-Contributor should be able to see the List of analyzed Projects that Contributor have contributed to , Contributor am given Access to , or any other open SourceProject .
+User should be able to see the Evolution of Open-source Project .
+Contributor should be able to see the List of analyzed Project that Contributor have contributed to , Contributor am given Access to , or any other open SourceProject .

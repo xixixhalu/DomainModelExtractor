@@ -1,0 +1,189 @@
+{
+  "domain": "2014-USC-Project03",
+  "entity_dict": {
+    "Driver": {
+      "name": "Driver",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Company": {
+      "name": "Company",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Establishment": {
+      "name": "Establishment",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Customer": {
+      "name": "Customer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Operator": {
+      "name": "Operator",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Head": {
+      "name": "Head",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Operator",
+      "action": "add",
+      "target": "Employee",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "have",
+      "target": "Location",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "receive",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "Company",
+      "action": "offer",
+      "target": "PaymentOption",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "track",
+      "target": "Transaction",
+      "para": []
+    },
+    {
+      "actor": "Head",
+      "action": "adjust",
+      "target": "Pricing",
+      "para": []
+    },
+    {
+      "actor": "Establishment",
+      "action": "send",
+      "target": "Advertisement",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "create",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Company",
+      "action": "accept",
+      "target": "Payment",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "send",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "message",
+      "target": "Valet",
+      "para": []
+    },
+    {
+      "actor": "Company",
+      "action": "control",
+      "target": "Revenue",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "enter",
+      "target": "TicketNumber",
+      "para": []
+    },
+    {
+      "actor": "Head",
+      "action": "set",
+      "target": "Price",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "retrieve",
+      "target": "Car",
+      "para": []
+    },
+    {
+      "actor": "Company",
+      "action": "receive",
+      "target": "EmailTransactionSummaryReport",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "select",
+      "target": "Location",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "have",
+      "target": "Login",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "request",
+      "target": "Car",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "have",
+      "target": "Option",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "include",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Establishment",
+      "action": "attract",
+      "target": "Customer",
+      "para": []
+    }
+  ]
+}

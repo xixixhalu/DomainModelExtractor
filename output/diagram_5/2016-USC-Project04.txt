@@ -1,0 +1,40 @@
+@startuml
+hide circle
+class Input<actor> {
+}
+class User<actor> {
+}
+class Client<actor> {
+}
+class Client {
+	train()
+	extract()
+	upload()
+	see()
+	replace()
+}
+class Model {
+}
+class User {
+	choose()
+	upload()
+}
+class Tag {
+}
+class Machine {
+}
+class Image {
+}
+class Pipeline {
+}
+class classification {
+}
+Client --> Machine : replace
+Client --> Model : extract
+Client --> classification : see
+User --> Image : upload
+Client --> Image : upload
+User --> Tag : choose
+Client --> Pipeline : train
+
+@enduml

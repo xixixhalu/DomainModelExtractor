@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="387px" preserveAspectRatio="none" style="width:761px;height:387px;background:#FFFFFF;" version="1.1" viewBox="0 0 761 387" width="761px" zoomAndPan="magnify"><defs><filter height="300%" id="fjfuweoy2fy52" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[d3bb6ba6f6edb088347a3eeef9f808bc]
+class JobSeeker--><rect codeLine="4" fill="#FEFECE" filter="url(#fjfuweoy2fy52)" height="116.7969" id="JobSeeker" style="stroke:#A80036;stroke-width:1.5;" width="105" x="229.5" y="10"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="64" x="232.5" y="26.1387">JobSeeker</text><rect fill="#FFFFFF" height="15.9688" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="33" x="304.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="31" x="305.5" y="19.1387">actor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="230.5" x2="333.5" y1="33.9688" y2="33.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="230.5" x2="333.5" y1="41.9688" y2="41.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="49" x="235.5" y="56.1792">contact()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="36" x="235.5" y="68.9839">save()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="40" x="235.5" y="81.7886">email()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="36" x="235.5" y="94.5933">mark()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="45" x="235.5" y="107.3979">create()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="43" x="235.5" y="120.2026">select()</text><!--MD5=[ad932b6f5864965112044123d6bad487]
+class Someone--><rect codeLine="12" fill="#FEFECE" filter="url(#fjfuweoy2fy52)" height="39.9688" id="Someone" style="stroke:#A80036;stroke-width:1.5;" width="64" x="199" y="210.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="58" x="202" y="226.6387">Someone</text><line style="stroke:#A80036;stroke-width:1.5;" x1="200" x2="262" y1="234.4688" y2="234.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="200" x2="262" y1="242.4688" y2="242.4688"/><!--MD5=[9f8bee8d056a665630cc3bc6e1e3c7c6]
+class JobSearch--><rect codeLine="14" fill="#FEFECE" filter="url(#fjfuweoy2fy52)" height="39.9688" id="JobSearch" style="stroke:#A80036;stroke-width:1.5;" width="68" x="7" y="210.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="62" x="10" y="226.6387">JobSearch</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="74" y1="234.4688" y2="234.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="74" y1="242.4688" y2="242.4688"/><!--MD5=[f9a29335b499db729be669fd1bd54958]
+class Account--><rect codeLine="16" fill="#FEFECE" filter="url(#fjfuweoy2fy52)" height="52.7734" id="Account" style="stroke:#A80036;stroke-width:1.5;" width="54" x="110" y="204"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="48" x="113" y="220.1387">Account</text><line style="stroke:#A80036;stroke-width:1.5;" x1="111" x2="163" y1="227.9688" y2="227.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="111" x2="163" y1="235.9688" y2="235.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="42" x="116" y="250.1792">saves()</text><!--MD5=[ea0779d5893e382eddb4c95271b5b7a7]
+class LoginCredentials--><rect codeLine="19" fill="#FEFECE" filter="url(#fjfuweoy2fy52)" height="39.9688" id="LoginCredentials" style="stroke:#A80036;stroke-width:1.5;" width="106" x="84" y="334"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="100" x="87" y="350.1387">LoginCredentials</text><line style="stroke:#A80036;stroke-width:1.5;" x1="85" x2="189" y1="357.9688" y2="357.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="85" x2="189" y1="365.9688" y2="365.9688"/><!--MD5=[b8e0354e0f3f5cbf52553869b78c0afa]
+class Job--><rect codeLine="21" fill="#FEFECE" filter="url(#fjfuweoy2fy52)" height="39.9688" id="Job" style="stroke:#A80036;stroke-width:1.5;" width="26" x="550" y="210.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="20" x="553" y="226.6387">Job</text><line style="stroke:#A80036;stroke-width:1.5;" x1="551" x2="575" y1="234.4688" y2="234.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="551" x2="575" y1="242.4688" y2="242.4688"/><!--MD5=[8f3fa1c68227f7296546d55286502fc6]
+class Frequency--><rect codeLine="23" fill="#FEFECE" filter="url(#fjfuweoy2fy52)" height="39.9688" id="Frequency" style="stroke:#A80036;stroke-width:1.5;" width="70" x="298" y="210.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="64" x="301" y="226.6387">Frequency</text><line style="stroke:#A80036;stroke-width:1.5;" x1="299" x2="367" y1="234.4688" y2="234.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="299" x2="367" y1="242.4688" y2="242.4688"/><!--MD5=[ad45ed51012ae03798874bc5890b1e2e]
+class REFERsySystem--><rect codeLine="25" fill="#FEFECE" filter="url(#fjfuweoy2fy52)" height="52.7734" id="REFERsySystem" style="stroke:#A80036;stroke-width:1.5;" width="100" x="533" y="42"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="94" x="536" y="58.1387">REFERsySystem</text><line style="stroke:#A80036;stroke-width:1.5;" x1="534" x2="632" y1="65.9688" y2="65.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="534" x2="632" y1="73.9688" y2="73.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="37" x="539" y="88.1792">fetch()</text><!--MD5=[1888608331b38da42b1c8c3bbba38902]
+class JobListing--><rect codeLine="28" fill="#FEFECE" filter="url(#fjfuweoy2fy52)" height="52.7734" id="JobListing" style="stroke:#A80036;stroke-width:1.5;" width="64" x="668" y="42"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="58" x="671" y="58.1387">JobListing</text><line style="stroke:#A80036;stroke-width:1.5;" x1="669" x2="731" y1="65.9688" y2="65.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="669" x2="731" y1="73.9688" y2="73.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="37" x="674" y="88.1792">have()</text><!--MD5=[8aa1040de69c42256540211c136b2f65]
+class NetworkFriend--><rect codeLine="31" fill="#FEFECE" filter="url(#fjfuweoy2fy52)" height="39.9688" id="NetworkFriend" style="stroke:#A80036;stroke-width:1.5;" width="94" x="653" y="210.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="88" x="656" y="226.6387">NetworkFriend</text><line style="stroke:#A80036;stroke-width:1.5;" x1="654" x2="746" y1="234.4688" y2="234.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="654" x2="746" y1="242.4688" y2="242.4688"/><!--MD5=[003656e1a5c2d6cee151be86461e7c94]
+class JobNotification--><rect codeLine="33" fill="#FEFECE" filter="url(#fjfuweoy2fy52)" height="39.9688" id="JobNotification" style="stroke:#A80036;stroke-width:1.5;" width="92" x="403" y="210.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="86" x="406" y="226.6387">JobNotification</text><line style="stroke:#A80036;stroke-width:1.5;" x1="404" x2="494" y1="234.4688" y2="234.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="404" x2="494" y1="242.4688" y2="242.4688"/><!--MD5=[5c2521f8962e96b32b0cbfc07cc570ea]
+link JobSeeker to Account--><path codeLine="35" d="M229.004,113.697 C214.381,126.959 198.981,141.99 186,157 C174.661,170.112 163.696,185.938 155.024,199.454 " fill="none" id="JobSeeker-to-Account" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="152.173,203.942,160.3758,198.491,154.8545,199.7219,153.6236,194.2006,152.173,203.942" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41" x="187" y="170.0669">create</text><!--MD5=[ed19ca453feb5a4622f3b161a38cfa86]
+link JobSeeker to JobSearch--><path codeLine="36" d="M229.49,97.672 C200.171,114.006 163.344,135.538 132,157 C109.222,172.596 84.8301,192.202 67.0385,207.092 " fill="none" id="JobSeeker-to-JobSearch" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="63.1186,210.386,72.582,207.6575,66.9463,207.169,67.4348,201.5333,63.1186,210.386" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="133" y="170.0669">save</text><!--MD5=[b9e201e5b59ba0186d5b63a04cc66ef3]
+link REFERsySystem to Job--><path codeLine="37" d="M579.787,95.207 C576.003,125.477 569.765,175.384 566.052,205.083 " fill="none" id="REFERsySystem-to-Job" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="565.39,210.384,570.4775,201.9509,566.0114,205.4228,562.5395,200.9567,565.39,210.384" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="33" x="573" y="170.0669">fetch</text><!--MD5=[b01f798c5c7c362fb8b623b9e6042e48]
+link JobSeeker to Job--><path codeLine="38" d="M334.758,99.441 C364.5,116.329 402.332,137.825 436,157 C474.883,179.145 520.424,205.162 545.025,219.223 " fill="none" id="JobSeeker-to-Job" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="549.657,221.871,543.8293,213.9313,545.3164,219.3892,539.8585,220.8763,549.657,221.871" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="33" x="465" y="170.0669">mark</text><!--MD5=[56a95d9b8ecd6e1a7f62c67975efb7a3]
+link JobSeeker to Someone--><path codeLine="39" d="M251.057,127.296 C246.795,137.007 242.895,147.137 240,157 C235.387,172.716 233.138,191.026 232.041,205.313 " fill="none" id="JobSeeker-to-Someone" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="231.687,210.382,236.3048,201.6828,232.0356,205.3942,228.3242,201.125,231.687,210.382" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="241" y="170.0669">contact</text><!--MD5=[d75d942ede053b3e4379c8cf7ff7755a]
+link JobListing to NetworkFriend--><path codeLine="40" d="M700,95.207 C700,125.477 700,175.384 700,205.083 " fill="none" id="JobListing-to-NetworkFriend" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="700,210.384,704,201.384,700,205.384,696,201.384,700,210.384" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="32" x="701" y="170.0669">have</text><!--MD5=[7afcde1a89c4684ab686bb573f46ec45]
+link JobSeeker to Frequency--><path codeLine="41" d="M300.412,127.264 C309.023,154.279 318.806,184.969 325.386,205.614 " fill="none" id="JobSeeker-to-Frequency" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="326.905,210.379,327.9829,200.5893,325.3866,205.6151,320.3607,203.0188,326.905,210.379" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="317" y="170.0669">select</text><!--MD5=[f75b51317e35e99b240f0c2a75f7d420]
+link Account to LoginCredentials--><path codeLine="42" d="M137,257.267 C137,278.3301 137,307.9042 137,328.5902 " fill="none" id="Account-to-LoginCredentials" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="137,333.6472,141,324.6472,137,328.6472,133,324.6472,137,333.6472" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="138" y="300.0669">saves</text><!--MD5=[f2f7238e9655a667b5a5458913a1ca7e]
+link JobSeeker to JobNotification--><path codeLine="43" d="M334.84,120.125 C365.136,149.151 401.684,184.168 425.126,206.627 " fill="none" id="JobSeeker-to-JobNotification" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="428.773,210.121,425.0414,201.0064,425.1626,206.662,419.507,206.7832,428.773,210.121" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="392" y="170.0669">email</text><!--MD5=[615efb7bce192670bd5fedfe6f243baf]
+@startuml
+hide circle
+class JobSeeker<actor> {
+}
+class JobSeeker {
+	contact()
+	save()
+	email()
+	mark()
+	create()
+	select()
+}
+class Someone {
+}
+class JobSearch {
+}
+class Account {
+	saves()
+}
+class LoginCredentials {
+}
+class Job {
+}
+class Frequency {
+}
+class REFERsySystem {
+	fetch()
+}
+class JobListing {
+	have()
+}
+class NetworkFriend {
+}
+class JobNotification {
+}
+JobSeeker - -> Account : create
+JobSeeker - -> JobSearch : save
+REFERsySystem - -> Job : fetch
+JobSeeker - -> Job : mark
+JobSeeker - -> Someone : contact
+JobListing - -> NetworkFriend : have
+JobSeeker - -> Frequency : select
+Account - -> LoginCredentials : saves
+JobSeeker - -> JobNotification : email
+@enduml
+
+PlantUML version 1.2021.6beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

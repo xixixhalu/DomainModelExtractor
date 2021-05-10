@@ -1,0 +1,126 @@
+{
+  "domain": "2017-USC-Project05",
+  "entity_dict": {
+    "Administrator": {
+      "name": "Administrator",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "HouseManager": {
+      "name": "HouseManager",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "House": {
+      "name": "House",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "HouseStaff": {
+      "name": "HouseStaff",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Lock",
+      "action": "adddelete",
+      "target": "Code",
+      "para": []
+    },
+    {
+      "actor": "Lock",
+      "action": "add",
+      "target": "Code",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "add",
+      "target": "Manager",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "enter",
+      "target": "Secret",
+      "para": []
+    },
+    {
+      "actor": "locks",
+      "action": "adddelete",
+      "target": "Code",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "lock",
+      "target": "Status",
+      "para": []
+    },
+    {
+      "actor": "HouseManager",
+      "action": "add",
+      "target": "Other",
+      "para": []
+    },
+    {
+      "actor": "HouseManager",
+      "action": "select",
+      "target": "Lock",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "assign",
+      "target": "Code",
+      "para": []
+    },
+    {
+      "actor": "HouseManager",
+      "action": "delete",
+      "target": "locks",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "enter",
+      "target": "SmartThingsClientId",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "see",
+      "target": "Hub",
+      "para": []
+    },
+    {
+      "actor": "Lock",
+      "action": "add",
+      "target": "Lock",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "create",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "Code",
+      "action": "edit",
+      "target": "Code",
+      "para": []
+    }
+  ]
+}

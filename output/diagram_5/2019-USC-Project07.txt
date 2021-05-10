@@ -1,0 +1,80 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Developer<actor> {
+}
+class Maintainer<actor> {
+}
+class Developer {
+	maintainable()
+	publish()
+	provide()
+	change()
+	restructure()
+	fix()
+}
+class Project {
+}
+class User {
+	view()
+	understand()
+	skip()
+	play()
+	track()
+	get()
+}
+class Question {
+}
+class Graph {
+}
+class App {
+}
+class Option {
+	enables()
+}
+class Hint {
+}
+class Maintainer {
+	get()
+}
+class UserAnalytic {
+}
+class Feedback {
+}
+class Component {
+	have()
+}
+class Structure {
+}
+class SourceCode {
+}
+class Report {
+}
+class Point {
+}
+class Ui {
+}
+class Progress {
+}
+class ProgressReport {
+}
+Developer --> Graph : fix
+Developer --> Project : restructure
+User --> Point : understand
+Developer --> App : publish
+Developer --> SourceCode : maintainable
+User --> Feedback : get
+User --> Hint : get
+Option --> User : enables
+User --> App : play
+Developer --> Ui : change
+User --> Progress : track
+User --> Report : view
+User --> Question : skip
+User --> ProgressReport : view
+Developer --> Option : provide
+Component --> Structure : have
+Maintainer --> UserAnalytic : get
+
+@enduml

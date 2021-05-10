@@ -1,0 +1,80 @@
+@startuml
+hide circle
+class Admin<actor> {
+}
+class User<actor> {
+}
+class Contributor<actor> {
+}
+class User {
+	perform()
+	view()
+	reset()
+	confirm()
+	receive()
+	see()
+	export()
+}
+class SoftwareQualityMetric {
+}
+class VerificationEmail {
+}
+class Admin {
+	give()
+	terminate()
+	reset()
+	manage()
+	restrict()
+	have()
+}
+class Ability {
+}
+class Access {
+}
+class Statistics {
+}
+class Evolution {
+}
+class UserPassword {
+}
+class Contributor {
+	analyze()
+	ask()
+	see()
+}
+class Impact {
+}
+class UserPermission {
+}
+class List {
+}
+class Password {
+}
+class Analysis {
+}
+class Email {
+}
+class Registration {
+}
+class Account {
+}
+Admin --> Ability : have
+User --> SoftwareQualityMetric : export
+Contributor --> Impact : analyze
+User --> Evolution : see
+User --> Password : reset
+User --> Analysis : perform
+Admin --> Access : restrict
+Admin --> Access : give
+Admin --> Access : have
+User --> VerificationEmail : receive
+Admin --> UserPermission : manage
+Admin --> UserPassword : reset
+Contributor --> Admin : ask
+Admin --> Account : terminate
+User --> Email : receive
+User --> Statistics : view
+User --> Registration : confirm
+Contributor --> List : see
+
+@enduml

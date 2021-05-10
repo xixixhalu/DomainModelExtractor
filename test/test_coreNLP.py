@@ -5,7 +5,7 @@ sys.path.append('../')
 from adapter import *
 import json
 
-sentence = 'By sending an email to the user if they forget the password or otherwise can change in the profile instead.'
+sentence = 'GM can both extracts and visualizes PlayerLibraries so that GM can build Roster for the next Season and make informed Decisions affecting the bottom-line .'
 
 output = analyze(sentence)
 

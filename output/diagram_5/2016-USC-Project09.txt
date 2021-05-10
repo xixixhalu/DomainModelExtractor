@@ -1,0 +1,93 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Admin<actor> {
+}
+class FarmManager<actor> {
+}
+class FarmContractor<actor> {
+}
+class User {
+	watch()
+	change()
+	get()
+	disable()
+	create()
+	do()
+	view()
+	share()
+	access()
+	identify()
+	receive()
+	toggle()
+}
+class Display {
+}
+class Material {
+}
+class Temperature {
+}
+class Admin {
+	upload()
+	create()
+	delete()
+	define()
+}
+class Video {
+}
+class Location {
+}
+class Sign {
+}
+class Quiz {
+}
+class Role {
+}
+class Contents {
+}
+class Metric {
+}
+class Information {
+}
+class EmergencyContactList {
+}
+class Checklist {
+}
+class Content {
+}
+class Profile {
+}
+class Account {
+}
+class NotificationTone {
+}
+class VibrationLevel {
+}
+class TemperatureData {
+}
+User --> Temperature : receive
+User --> Account : disable
+Admin --> Content : create
+User --> NotificationTone : change
+Admin --> Video : upload
+User --> VibrationLevel : change
+User --> Location : share
+User --> Video : watch
+User --> Sign : identify
+User --> TemperatureData : view
+User --> User : create
+User --> EmergencyContactList : create
+User --> Quiz : do
+User --> Information : get
+User --> Checklist : create
+Admin --> Role : define
+Admin --> Contents : delete
+User --> Metric : create
+User --> Display : toggle
+Admin --> Quiz : create
+User --> Material : access
+User --> Information : receive
+User --> Profile : create
+
+@enduml

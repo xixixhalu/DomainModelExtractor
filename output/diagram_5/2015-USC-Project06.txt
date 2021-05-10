@@ -1,0 +1,118 @@
+@startuml
+hide circle
+class Manager<actor> {
+}
+class Contractor<actor> {
+}
+class Architect<actor> {
+}
+class ProjectManager<actor> {
+}
+class Contractor {
+	report()
+	ask()
+	send()
+	see()
+	enter()
+	manage()
+}
+class Message {
+}
+class Change {
+}
+class Issue {
+}
+class Manager {
+	make()
+	track()
+	edit()
+	access()
+	get()
+	save()
+	send()
+	find()
+	see()
+	modify()
+	approve()
+	create()
+}
+class Instruction {
+}
+class Report {
+}
+class Data {
+}
+class MeetingMinute {
+}
+class logs {
+}
+class MeetingInformation {
+}
+class Progress {
+}
+class Resource {
+}
+class TaskCategory {
+}
+class Comment {
+}
+class Event {
+	taken()
+}
+class Place {
+}
+class Decision {
+}
+class Information {
+}
+class Status {
+}
+class ProjectManager {
+	track()
+}
+class TaskProgress {
+}
+class Task {
+}
+class Project {
+}
+class Topic {
+}
+class Summary {
+}
+class Question {
+}
+class GeneratedPDFReport {
+}
+class Request {
+}
+Contractor --> Issue : ask
+Manager --> Request : approve
+Manager --> Information : edit
+Manager --> Progress : save
+Manager --> Instruction : send
+Manager --> Status : save
+Manager --> TaskCategory : edit
+Contractor --> Report : enter
+ProjectManager --> TaskProgress : track
+Contractor --> Data : enter
+Contractor --> Task : see
+Contractor --> MeetingMinute : see
+Manager --> Project : create
+Manager --> logs : access
+Manager --> Progress : track
+Manager --> MeetingInformation : edit
+Manager --> Topic : find
+Manager --> Comment : approve
+Manager --> Summary : see
+Manager --> MeetingMinute : send
+Contractor --> Question : ask
+Contractor --> Message : send
+Event --> Place : taken
+Contractor --> Resource : manage
+Manager --> Project : modify
+Contractor --> Change : report
+Manager --> Decision : make
+Manager --> GeneratedPDFReport : get
+
+@enduml

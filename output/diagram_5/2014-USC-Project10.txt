@@ -1,0 +1,46 @@
+@startuml
+hide circle
+class JobSeeker<actor> {
+}
+class JobSeeker {
+	contact()
+	save()
+	email()
+	mark()
+	create()
+	select()
+}
+class Someone {
+}
+class JobSearch {
+}
+class Account {
+	saves()
+}
+class LoginCredentials {
+}
+class Job {
+}
+class Frequency {
+}
+class REFERsySystem {
+	fetch()
+}
+class JobListing {
+	have()
+}
+class NetworkFriend {
+}
+class JobNotification {
+}
+JobSeeker --> Account : create
+JobSeeker --> JobSearch : save
+REFERsySystem --> Job : fetch
+JobSeeker --> Job : mark
+JobSeeker --> Someone : contact
+JobListing --> NetworkFriend : have
+JobSeeker --> Frequency : select
+Account --> LoginCredentials : saves
+JobSeeker --> JobNotification : email
+
+@enduml

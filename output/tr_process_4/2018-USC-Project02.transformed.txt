@@ -1,0 +1,223 @@
+{
+  "domain": "2018-USC-Project02",
+  "entity_dict": {
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Administrator": {
+      "name": "Administrator",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "ServiceProvider": {
+      "name": "ServiceProvider",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "SiteAdmin": {
+      "name": "SiteAdmin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "ServiceProvider",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "PropertyInformation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "make",
+      "target": "Page",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "activate",
+      "target": "FactorAuthentication",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "adjust",
+      "target": "EmailNotificationSetting",
+      "para": []
+    },
+    {
+      "actor": "DiscussionBoard",
+      "action": "using",
+      "target": "TextInput",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "export",
+      "target": "TrackingToolData",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "track",
+      "target": "InvestmentProperty",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reset",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "make",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "List",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "read",
+      "target": "Review",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "verify",
+      "target": "Identity",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "moderate",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "report",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "manage",
+      "target": "Investment",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "start",
+      "target": "Discussion",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "read",
+      "target": "SiteDiscussionBoard",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "leave",
+      "target": "Review",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "SitePermission",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "rate",
+      "target": "ServiceProvider",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "search",
+      "target": "ServiceProvider",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "view",
+      "target": "WebsiteUtilizationStatistics",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "post",
+      "target": "Article",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "read",
+      "target": "SiteBlog",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Performance",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "remove",
+      "target": "User",
+      "para": []
+    }
+  ]
+}

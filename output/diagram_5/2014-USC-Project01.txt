@@ -1,0 +1,120 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Administrator<actor> {
+}
+class Maintainer<actor> {
+}
+class GiftCard {
+	using()
+}
+class Point {
+}
+class User {
+	usable()
+	start()
+	track()
+	receive()
+	report()
+	update()
+	select()
+	gauge()
+	get()
+	see()
+	redeem()
+	use()
+	dislike()
+	search()
+	answer()
+	mark()
+	view()
+	delete()
+	like()
+}
+class Profile {
+}
+class Maintainer {
+	add()
+	manage()
+	edit()
+	create()
+	entice()
+}
+class Comment {
+}
+class Post {
+}
+class NewsFeed {
+}
+class Answer {
+}
+class OrderingCriterion {
+}
+class Event {
+}
+class WATPoint {
+}
+class Forum {
+}
+class Progress {
+}
+class PointBalance {
+}
+class Leaderboard {
+}
+class Gift {
+}
+class Thread {
+}
+class Detail {
+}
+class Credibility {
+}
+class Information {
+}
+class Administrator {
+	pin()
+}
+class Lifetime {
+}
+class Product {
+}
+class Question {
+}
+User --> Thread : delete
+Maintainer --> Comment : manage
+Maintainer --> Event : create
+User --> Question : answer
+User --> Gift : redeem
+User --> Post : delete
+User --> WATPoint : redeem
+Maintainer --> Thread : manage
+User --> NewsFeed : get
+User --> WATPoint : view
+Maintainer --> Detail : edit
+User --> GiftCard : receive
+User --> Comment : mark
+Maintainer --> User : entice
+User --> Credibility : gauge
+User --> Answer : see
+User --> Answer : like
+User --> OrderingCriterion : select
+User --> Information : see
+User --> Forum : search
+User --> WATPoint : use
+User --> Profile : view
+User --> Answer : dislike
+Administrator --> Thread : pin
+User --> Progress : track
+User --> Thread : start
+GiftCard --> Point : using
+User --> Lifetime : view
+User --> PointBalance : usable
+User --> Thread : report
+User --> Profile : update
+Maintainer --> GiftCard : add
+Maintainer --> Product : add
+User --> Leaderboard : view
+
+@enduml

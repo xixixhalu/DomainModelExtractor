@@ -1,0 +1,165 @@
+{
+  "domain": "2016-USC-Project02",
+  "entity_dict": {
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Parent": {
+      "name": "Parent",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Client": {
+      "name": "Client",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Member": {
+      "name": "Member",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Student": {
+      "name": "Student",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Donor": {
+      "name": "Donor",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Admin",
+      "action": "update",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Trailer",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "update",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "check",
+      "target": "Mail",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "download",
+      "target": "Page",
+      "para": []
+    },
+    {
+      "actor": "Donor",
+      "action": "make",
+      "target": "DonationOnline",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "download",
+      "target": "MusicNote",
+      "para": []
+    },
+    {
+      "actor": "Donor",
+      "action": "support",
+      "target": "VYMACommunity",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Update",
+      "para": []
+    },
+    {
+      "actor": "parents",
+      "action": "view",
+      "target": "OtherDetail",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "add",
+      "target": "Link",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "purchase",
+      "target": "Dvd",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "News",
+      "para": []
+    },
+    {
+      "actor": "parent",
+      "action": "set",
+      "target": "Payment",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "check",
+      "target": "Email",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "check",
+      "target": "GoogleDrive",
+      "para": []
+    },
+    {
+      "actor": "member",
+      "action": "view",
+      "target": "Information",
+      "para": []
+    }
+  ]
+}

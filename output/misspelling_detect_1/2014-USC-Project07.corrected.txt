@@ -9,7 +9,7 @@ As an ESS, I can drag and drop while construct construct in which I can further 
 As an ESS, I can drag and drop while construct construct in which I can further drag and drop the loop constructs.
 As an ESS, I can drag and drop a wait condition  in which I can further drag and drop the instructions constructs.
 As an ESS, I can drag and drop a wait condition  in which I can further drag and drop the loop constructs.
-The system shall detect and show logic errors in an easy-to-read way.
+The system shall detect and show logic errors  in an easy-to-read way.
 The system shall be a native windows 7 and above application.
 The system shall generate instructions for iRobot in C which is then later compiled for deployment on the microcontroller using the APIs of iRobot.
 As an ESS, I can drag and drop the built-in functions of the iRobot to control its behavior .

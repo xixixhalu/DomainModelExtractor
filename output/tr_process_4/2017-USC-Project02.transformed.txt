@@ -1,0 +1,146 @@
+{
+  "domain": "2017-USC-Project02",
+  "entity_dict": {
+    "Developer": {
+      "name": "Developer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Volunteer": {
+      "name": "Volunteer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Manager": {
+      "name": "Manager",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "AdminUser": {
+      "name": "AdminUser",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Button",
+      "action": "email",
+      "target": "Darin",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "request",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "Status",
+      "para": []
+    },
+    {
+      "actor": "AdminUser",
+      "action": "get",
+      "target": "EmailNotification",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "click",
+      "target": "Button",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "change",
+      "target": "Status",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "read",
+      "target": "logs",
+      "para": []
+    },
+    {
+      "actor": "Volunteer",
+      "action": "check",
+      "target": "Availability",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "reserve",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "Darin",
+      "action": "reorder",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "import",
+      "target": "Spreadsheet",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "checkout",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "Volunteer",
+      "action": "view",
+      "target": "Reservation",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "Volunteer",
+      "action": "check",
+      "target": "Location",
+      "para": []
+    }
+  ]
+}

@@ -66,12 +66,7 @@ class Identifier:
 
 
 if __name__ == '__main__':
-    sentence = 'As a user, I can redeem usable WAT points so that I can receive a gift card.'
-    #sentence = 'As a user, I can like/dislike an answer so that other users can gauge the credibility of the answer.'
-    #sentence = 'As a user, I can view other users\' profiles so that I can see their information and points.'
-    # sentence = 'As a user, I can view the leaderboard by sorting it either based on Schools or graduation date.'
-    # sentence = '"As a user, I can start a thread by posting a question so that other users might answer that question with credible information.'
-    # sentence = 'The system helps user to distrubute tasks.'
-    # sentence = "The child is a good thing"
+    # sentence = "The system sends the user an email."
+    sentence = "GM can both extract and visualize PlayerValue so that GM can build Roster for the next Season and make informed Decision affecting the bottom-line ."
     identifier = Identifier()
     identifier.identify(sentence)

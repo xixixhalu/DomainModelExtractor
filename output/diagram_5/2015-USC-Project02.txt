@@ -1,0 +1,132 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Admin<actor> {
+}
+class Admin {
+	change()
+	generate()
+	list()
+	update()
+	restore()
+	have()
+	browse()
+	delete()
+	perform()
+	manage()
+	suspend()
+	create()
+}
+class User {
+	post()
+	keep()
+	moderate()
+	upload()
+	create()
+	sort()
+	save()
+	have()
+	delete()
+	like()
+	take()
+	write()
+	shut()
+	remove()
+	use()
+	reserve()
+	choose()
+	report()
+}
+class Photo {
+}
+class Hashtag {
+}
+class Event {
+}
+class Picture {
+	give()
+}
+class Application {
+}
+class Control {
+}
+class ExpirationDate {
+}
+class Contents {
+}
+class EventHashtag {
+}
+class SystemSetting {
+}
+class Report {
+}
+class Login {
+}
+class Information {
+}
+class Public {
+}
+class Tourist {
+	search()
+}
+class Location {
+}
+class Radius {
+}
+class Name {
+}
+class AdminFeature {
+}
+class EventAttendee {
+	use()
+}
+class Caption {
+}
+Admin --> Event : update
+User --> Hashtag : use
+User --> Picture : sort
+Admin --> Event : delete
+Admin --> User : browse
+User --> Picture : post
+User --> Picture : upload
+Admin --> Control : have
+User --> Picture : remove
+User --> Event : shut
+User --> Hashtag : save
+Admin --> Picture : delete
+Admin --> ExpirationDate : change
+User --> Picture : save
+Admin --> Information : have
+Admin --> Contents : manage
+Admin --> Picture : restore
+User --> Public : create
+Admin --> EventHashtag : create
+EventAttendee --> Hashtag : use
+User --> Caption : write
+User --> Picture : like
+User --> Control : have
+Tourist --> Location : search
+User --> Picture : choose
+User --> Picture : take
+Admin --> User : manage
+Picture --> Control : give
+User --> Radius : choose
+Admin --> SystemSetting : change
+Admin --> Picture : list
+Admin --> Report : generate
+Admin --> Name : change
+Admin --> User : suspend
+User --> Picture : report
+Admin --> AdminFeature : perform
+User --> Photo : keep
+User --> Event : create
+User --> Login : create
+User --> Event : remove
+User --> Hashtag : reserve
+User --> Application : use
+User --> Photo : take
+User --> Picture : moderate
+User --> Picture : delete
+
+@enduml

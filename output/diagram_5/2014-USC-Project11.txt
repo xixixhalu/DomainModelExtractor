@@ -1,0 +1,127 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class CourseAttendee<actor> {
+}
+class Trainer<actor> {
+}
+class Enterprise<actor> {
+}
+class Administrator<actor> {
+}
+class Admin<actor> {
+}
+class Team<actor> {
+}
+class Developer<actor> {
+}
+class Developer {
+	understand()
+	analyze()
+}
+class Feasibility {
+}
+class Administrator {
+	adjust()
+	have()
+	receive()
+}
+class Rating {
+}
+class Request {
+}
+class Notification {
+	receive()
+}
+class Change {
+}
+class User {
+	share()
+	setup()
+	request()
+	see()
+}
+class Course {
+}
+class CourseAttendee {
+	Rate()
+	compare()
+	receive()
+	see()
+}
+class Schedule {
+}
+class Price {
+}
+class Trainer {
+	compare()
+	put()
+	offer()
+	see()
+	set()
+}
+class reviews {
+}
+class Account {
+}
+class Calendar {
+}
+class Admin {
+	adjust()
+	move()
+	schedule()
+	cancel()
+}
+class ConfirmationEmail {
+}
+class Number {
+}
+class Dashboard {
+}
+class Minimum {
+}
+class Architecture {
+}
+class People {
+}
+class Requirement {
+}
+class AccountRegistrationInformation {
+}
+class Enterprise {
+	compare()
+	getting()
+}
+class Value {
+}
+Developer --> Feasibility : understand
+CourseAttendee --> CourseAttendee : Rate
+Enterprise --> Price : compare
+CourseAttendee --> ConfirmationEmail : receive
+Enterprise --> Value : getting
+Administrator --> Rating : adjust
+CourseAttendee --> Schedule : see
+Trainer --> Course : offer
+Admin --> Number : adjust
+Administrator --> Request : receive
+Administrator --> Dashboard : have
+CourseAttendee --> Price : compare
+Trainer --> Rating : see
+Notification --> Change : receive
+Trainer --> Price : compare
+Trainer --> Minimum : set
+Trainer --> reviews : see
+Developer --> Architecture : understand
+User --> Course : share
+User --> Account : setup
+User --> Number : see
+Trainer --> Calendar : put
+Admin --> People : move
+Developer --> Requirement : analyze
+Admin --> Course : cancel
+User --> Course : request
+Administrator --> AccountRegistrationInformation : receive
+Admin --> Course : schedule
+
+@enduml

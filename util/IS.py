@@ -21,28 +21,28 @@ class ISDeDup:
 class ISDomain:
 
     class ISRelation:
-        def __init__(self, source, target, ass_type="default", multiplicity=('1','1'), para=[]):
+        def __init__(self, source, dest, ass_type="default", multiplicity=('1','1'), para=[]):
             '''
             ass_type : "association", "generalization", "aggregation", "default"
             multiplicity: ('1','1'), ('1','*'), ('*', '*')
             para: a string list
             '''
-            self.__source = source
-            self.__target = target
-            self.__ass_type = ass_type
-            self.__multiplicity = multiplicity
-            self.__para = para
+            self.source = source
+            self.dest = dest
+            self.ass_type = ass_type
+            self.multiplicity = multiplicity
+            self.para = para
 
         def add_para(self, para):
             self.__para.append(para)
 
         def asdict(self):
             obj = {
-                "source" : self.__source,
-                "target" : self.__target,
-                "type" : self.__ass_type,
-                "multiplicity" : self.__multiplicity,
-                "para" : tuple(ISDeDup.de_dup_list(self.__para))
+                "source" : self.source,
+                "dest" : self.dest,
+                "type" : self.ass_type,
+                "multiplicity" : self.multiplicity,
+                "para" : tuple(ISDeDup.de_dup_list(self.para))
 
             }
             return obj
@@ -53,13 +53,13 @@ class ISDomain:
             '''
             att_type : all those primitive types, "object", "default"
             '''
-            self.__name = attr_name
-            self.__type = attr_type
+            self.name = attr_name
+            self.type = attr_type
 
         def asdict(self):
             obj = {
-                "name" : self.__name,
-                "type" : self.__type,
+                "name" : self.name,
+                "type" : self.type,
             }
             return obj
 
@@ -69,37 +69,39 @@ class ISDomain:
             '''
             entity_type : entity, actor, default.
             '''
-            self.__name = entity_name
-            self.__type = [entity_type]
-            self.__attributes = []
+            self.name = entity_name
+            self.type = [entity_type]
+            self.attributes = []
 
         def add_entity_attribute(self, attr):
-            self.__attributes.append(attr)
+            self.attributes.append(attr)
 
         def add_entity_type(self, entity_type):
-            self.__type.append(entity_type)
+            self.type.append(entity_type)
             
         def asdict(self):
             obj = {
-                "name" : self.__name,
-                "type" : ISDeDup.de_dup_list(self.__type),
-                "attributes" : ISDeDup.de_dup_list(self.__attributes)
+                "name" : self.name,
+                "type" : ISDeDup.de_dup_list(self.type),
+                "attributes" : ISDeDup.de_dup_list(self.attributes)
             }
             return obj
 
 
     class ISBehavior:
-        def __init__(self, actor, action, target=""):
-            self.__actor = actor
-            self.__action = action
-            self.__target = target
+        def __init__(self, actor, action, target="", para=[]):
+            self.actor = actor
+            self.action = action
+            self.target = target
+            self.para = para
 
 
         def asdict(self):
             obj = {
-                "actor" : self.__actor,
-                "action" : self.__action,
-                "target" : self.__target
+                "actor" : self.actor,
+                "action" : self.action,
+                "target" : self.target,
+                "para" : tuple(ISDeDup.de_dup_list(self.para))
             }
             return obj
 
@@ -114,9 +116,23 @@ class ISDomain:
         return self.__name
 
     # Relation ops
-    def add_relation(self, source, target, ass_type="default", multiplicity=('1','1'), para=[]):
-        relation = self.ISRelation(source, target, ass_type, multiplicity, para)
+    def add_relation(self, source, dest, ass_type="default", multiplicity=('1','1'), para=[]):
+        # if actor not in self.__entity_dict:
+        #     self.add_entity(actor)
+        # if dest not in self.__entity_dict:
+        #     self.add_entity(dest)
+        relation = self.ISRelation(source, dest, ass_type, multiplicity, para)
         self.__relation_list.append(relation)
+
+    def delete_relation(self, source="", dest=""):
+        for relation in self.__relation_list:
+            if source != "" and relation.source == source and dest == "":
+                self.__relation_list.remove(relation)
+            elif dest != "" and relation.dest ==  dest and source == "":
+                self.__relation_list.remove(relation)
+            elif source != "" and dest != "" and relation.source == source and relation.dest == target:
+                self.__relation_list.remove(relation)
+
 
     def relation_asdict(self):
          return json.loads(json.dumps(ISDeDup.de_dup_list(self.__relation_list), cls=ISComplexEncoder))
@@ -129,6 +145,9 @@ class ISDomain:
         else:
             self.__entity_dict[entity_name].add_entity_type(entity_type)
 
+    def delete_entity(self, entity_name):
+        self.__entity_dict.pop(entity_name, None)
+
     def add_entity_attribute(self, entity_name, attr_name, attr_type="default"):
         if entity_name not in self.__entity_dict:
             self.add_entity(entity_name)
@@ -140,8 +159,23 @@ class ISDomain:
 
     # Behavior ops
     def add_behavior(self, actor, action, target=""):
+        # if actor not in self.__entity_dict:
+        #     self.add_entity(actor)
+        # if target != "" and target not in self.__entity_dict:
+        #     self.add_entity(target)
         behavior = self.ISBehavior(actor, action, target)
         self.__behavior_list.append(behavior)
+
+    def delete_behavior(self, actor="", target=""):
+        for behavior in self.__behavior_list:
+            if actor != "" and behavior.actor == actor and target == "":
+                self.__behavior_list.remove(behavior)
+            elif target != "" and behavior.target ==  target and actor == "":
+                self.__behavior_list.remove(behavior)
+            elif actor != "" and target != "" and behavior.actor == actor and behavior.target == target:
+                self.__behavior_list.remove(behavior)
+
+
 
     def behavior_asdict(self):
         return json.loads(json.dumps(ISDeDup.de_dup_list(self.__behavior_list), cls=ISComplexEncoder))

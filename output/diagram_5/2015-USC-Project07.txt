@@ -1,0 +1,156 @@
+@startuml
+hide circle
+class Vendor<actor> {
+}
+class Consumer<actor> {
+}
+class WebsiteOwner<actor> {
+}
+class WebsiteModerator<actor> {
+}
+class WebsiteEndUser<actor> {
+}
+class Consumer {
+	leave()
+	get()
+	have()
+	manage()
+	do()
+	find()
+	add()
+	search()
+	sort()
+	gain()
+	narrow()
+	reset()
+}
+class Cart {
+}
+class WebsiteModerator {
+	post()
+	sort()
+	suspend()
+	approve()
+}
+class VendorAccount {
+}
+class Product {
+}
+class EmailAddress {
+}
+class Communication {
+}
+class VolumeTotal {
+	determine()
+}
+class Vendor {
+	upload()
+	provide()
+	list()
+	manage()
+	add()
+	gather()
+	view()
+	offer()
+	compare()
+	make()
+	ship()
+	improve()
+}
+class WebsiteOwner {
+	post()
+	sort()
+	suspend()
+	approve()
+}
+class Blog {
+}
+class Time {
+}
+class Comment {
+}
+class Account {
+}
+class TransactionTotal {
+	determine()
+}
+class Date {
+}
+class Discount {
+}
+class PasswordReset {
+}
+class Item {
+}
+class Purchase {
+}
+class Promotion {
+}
+class Knowledge {
+}
+class ItemPrice {
+}
+class Service {
+}
+class Password {
+}
+class Recommendation {
+}
+class Video {
+}
+class Access {
+}
+class SearchResult {
+}
+class Price {
+}
+class Pricing {
+}
+class Feedback {
+}
+class Understanding {
+}
+WebsiteModerator --> VendorAccount : approve
+Consumer --> Item : add
+Vendor --> Video : upload
+Consumer --> Account : manage
+WebsiteOwner --> VendorAccount : approve
+Consumer --> Product : search
+Consumer --> Access : get
+Vendor --> Item : list
+VolumeTotal --> Vendor : determine
+WebsiteOwner --> Blog : post
+Consumer --> SearchResult : narrow
+Consumer --> Purchase : do
+Vendor --> Time : view
+Vendor --> Price : compare
+Vendor --> Promotion : offer
+Consumer --> EmailAddress : reset
+Consumer --> Comment : leave
+Consumer --> Product : find
+Vendor --> Product : add
+WebsiteOwner --> Communication : post
+Consumer --> Knowledge : gain
+WebsiteOwner --> Account : suspend
+WebsiteModerator --> Vendor : sort
+Consumer --> Product : sort
+Vendor --> ItemPrice : manage
+Vendor --> Pricing : make
+WebsiteModerator --> Communication : post
+TransactionTotal --> Vendor : determine
+WebsiteModerator --> Blog : post
+Vendor --> Date : view
+WebsiteModerator --> Account : suspend
+Vendor --> Product : improve
+Vendor --> Feedback : gather
+Vendor --> Service : improve
+Vendor --> Discount : provide
+Consumer --> Understanding : have
+Consumer --> Password : manage
+Consumer --> Cart : manage
+Vendor --> Product : ship
+Consumer --> PasswordReset : get
+Consumer --> Recommendation : get
+WebsiteOwner --> Vendor : sort
+
+@enduml

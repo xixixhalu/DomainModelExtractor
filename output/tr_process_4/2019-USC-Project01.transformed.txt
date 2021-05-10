@@ -1,0 +1,119 @@
+{
+  "domain": "2019-USC-Project01",
+  "entity_dict": {
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "SystemAdmin": {
+      "name": "SystemAdmin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "User",
+      "action": "look",
+      "target": "Papers",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "remove",
+      "target": "Content",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Position",
+      "para": []
+    },
+    {
+      "actor": "SystemAdmin",
+      "action": "approve",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "Media",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "look",
+      "target": "Alumnus",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "filter",
+      "target": "Calendar",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "reject",
+      "target": "UserProfile",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "authorize",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "resume",
+      "target": "Updated",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "approve",
+      "target": "UserProfile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sort",
+      "target": "ResearchPapers",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "disable",
+      "target": "Account",
+      "para": []
+    }
+  ]
+}

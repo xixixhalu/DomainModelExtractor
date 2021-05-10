@@ -16,7 +16,7 @@ As a user, I can log out without losing the points that I have lost or gained.
 As a user, I can recover my password if forgotten.
 The system should have code documents, design documents and architecture guidelines so that it is maintainable.
 The system should include log rotation with various levels so that the system exceptions and user actions can be logged and debugged if required without overhead space & size complexities.
-The system shall be scalable for the growing amount of users in the future. .
+The system shall be scalable for the growing amount of users in the future.  .
 As a user, I can edit my profile information.
 As a user, I can remove bombs anywhere from the given 4*4 grid.
 As a user, I should be able to place no more than 4 bombs anywhere on the given 4*4 grid.

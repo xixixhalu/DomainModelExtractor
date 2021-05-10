@@ -1,8 +1,8 @@
-System can provide an Ui for Users to ViewImages .
-User can choose one Tag that User want to detect in User's Images .
-User can upload multiple Images ( each with a Label to choose at the same Time .
+System can provide an UI for User to ViewImage .
+User can choose one Tag that User want to detect in User's Image .
+User can upload multiple Image at the same Time .
 Client can upload an Image to the Pipeline and see a Text <classification> along with the initial Image .
-Client can re train the Pipeline by giving a new Topic and a new Set of Images .
+Client can re train the Pipeline by giving a new Topic and a new Set of Image .
 Client can run the entire System in Client's own Unix based Server .
 Client can replace the Machine learning Algorithm used for training the Model without a major PipelineReactor .
 Client can extract and replace the resulting Model after the trainning Phase is complete .

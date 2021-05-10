@@ -1,0 +1,235 @@
+@startuml
+hide circle
+class LanguageLearner<actor> {
+}
+class English<actor> {
+}
+class SpeakerLanguageLearner<actor> {
+}
+class LanguageTeacher<actor> {
+}
+class WebsiteOwner<actor> {
+}
+class User<actor> {
+}
+class Practitioner<actor> {
+}
+class Student<actor> {
+}
+class WebsiteProfessor<actor> {
+}
+class WebsiteUser<actor> {
+}
+class UniversityStudent<actor> {
+}
+class Tutor<actor> {
+}
+class Speaker<actor> {
+}
+class WebsiteUser {
+	get()
+	pull()
+	practice()
+	offer()
+	avoid()
+	receive()
+	report()
+}
+class Experience {
+}
+class MarketingPlan {
+	increase()
+}
+class UserNumber {
+}
+class UniversityStudent {
+	post()
+}
+class Announcement {
+}
+class SpeakerLanguageLearner {
+	learn()
+	know()
+}
+class World {
+}
+class WebsiteOwner {
+	send()
+	assess()
+	inform()
+	generate()
+	post()
+	offer()
+	monitor()
+	make()
+	view()
+	maintain()
+	suggest()
+}
+class Need {
+}
+class English {
+	achieve()
+}
+class Goal {
+}
+class Alert {
+}
+class NotificationEmail {
+}
+class Practitioner {
+	help()
+}
+class Student {
+	register()
+	modify()
+	avoid()
+}
+class WebsiteProfessor {
+	offer()
+}
+class Meeting {
+}
+class User {
+	forget()
+	review()
+	add()
+	reset()
+	subscribe()
+}
+class PrivacyPolicy {
+}
+class Advertisement {
+}
+class Behavior {
+}
+class harassments {
+}
+class Service {
+}
+class LanguageLearner {
+	find()
+	practice()
+	do()
+	prioritize()
+	order()
+	search()
+	know()
+}
+class LanguageLearners {
+}
+class Language {
+}
+class Server {
+}
+class UserStatistics {
+}
+class Matches {
+}
+class Password {
+}
+class InteractionTask {
+}
+class LanguageSkill {
+}
+class while {
+}
+class Email {
+}
+class internet {
+}
+class HelpStudent {
+	adjust()
+}
+class LearningPlan {
+}
+class numbers {
+}
+class Money {
+}
+class Account {
+}
+class People {
+}
+class SearchResult {
+}
+class Eg {
+	meet()
+}
+class Learner {
+}
+class Speaker {
+	use()
+}
+class System {
+}
+class LanguageTeacher {
+	give()
+}
+class Assignment {
+}
+class Usage {
+}
+class LanguageAssignment {
+}
+class USCChineseLearner {
+	meet()
+}
+class Question {
+}
+class Tutor {
+	evaluate()
+}
+class LanguageLevel {
+}
+MarketingPlan --> UserNumber : increase
+WebsiteOwner --> Server : maintain
+LanguageTeacher --> Assignment : give
+WebsiteProfessor --> Meeting : offer
+SpeakerLanguageLearner --> Language : learn
+WebsiteOwner --> UserStatistics : view
+LanguageLearner --> LanguageLearners : search
+MarketingPlan --> numbers : increase
+Student --> Usage : avoid
+UniversityStudent --> Announcement : post
+WebsiteUser --> Language : practice
+LanguageLearner --> LanguageAssignment : do
+User --> User : review
+WebsiteOwner --> Money : make
+LanguageLearner --> Matches : prioritize
+Student --> PrivacyPolicy : modify
+SpeakerLanguageLearner --> World : know
+Student --> Account : register
+User --> Password : forget
+USCChineseLearner --> Learner : meet
+WebsiteOwner --> Meeting : offer
+WebsiteOwner --> MarketingPlan : generate
+WebsiteUser --> Advertisement : avoid
+WebsiteUser --> People : pull
+WebsiteOwner --> Need : assess
+WebsiteOwner --> InteractionTask : suggest
+UniversityStudent --> Question : post
+WebsiteUser --> Behavior : report
+LanguageLearner --> SearchResult : order
+WebsiteUser --> LanguageSkill : offer
+English --> Goal : achieve
+Tutor --> LanguageLevel : evaluate
+WebsiteUser --> harassments : avoid
+LanguageLearner --> while : know
+Eg --> Learner : meet
+WebsiteOwner --> Alert : post
+User --> User : add
+User --> Service : subscribe
+WebsiteOwner --> Email : send
+WebsiteOwner --> User : inform
+WebsiteUser --> NotificationEmail : receive
+Speaker --> System : use
+WebsiteOwner --> internet : monitor
+LanguageLearner --> LanguageLearners : find
+WebsiteUser --> Experience : get
+User --> Password : reset
+Practitioner --> Student : help
+LanguageLearner --> Language : practice
+HelpStudent --> LearningPlan : adjust
+
+@enduml

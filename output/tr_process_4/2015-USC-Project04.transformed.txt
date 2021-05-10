@@ -1,0 +1,177 @@
+{
+  "domain": "2015-USC-Project04",
+  "entity_dict": {
+    "AdultLearner": {
+      "name": "AdultLearner",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "ExperientialLearningCenterStaff": {
+      "name": "ExperientialLearningCenterStaff",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "CollegeStudent": {
+      "name": "CollegeStudent",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "MBVStudent": {
+      "name": "MBVStudent",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Executive": {
+      "name": "Executive",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Employer": {
+      "name": "Employer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Veteran": {
+      "name": "Veteran",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "CollegeStudent",
+      "action": "improve",
+      "target": "Competence",
+      "para": []
+    },
+    {
+      "actor": "MBVStudent",
+      "action": "improve",
+      "target": "ConflictResolutionSkill",
+      "para": []
+    },
+    {
+      "actor": "Employee",
+      "action": "practice",
+      "target": "ProductConflictResolutionSkill",
+      "para": []
+    },
+    {
+      "actor": "Veteran",
+      "action": "see",
+      "target": "Graph",
+      "para": []
+    },
+    {
+      "actor": "CollegeStudent",
+      "action": "improve",
+      "target": "ConflictManagementSkill",
+      "para": []
+    },
+    {
+      "actor": "AdultLearner",
+      "action": "have",
+      "target": "Practice",
+      "para": []
+    },
+    {
+      "actor": "MBVStudent",
+      "action": "use",
+      "target": "Score",
+      "para": []
+    },
+    {
+      "actor": "Veteran",
+      "action": "compare",
+      "target": "ThoughtProcess",
+      "para": []
+    },
+    {
+      "actor": "Team",
+      "action": "resolve",
+      "target": "Conflict",
+      "para": []
+    },
+    {
+      "actor": "AdultLearner",
+      "action": "practice",
+      "target": "ConflictResolutionSkill",
+      "para": []
+    },
+    {
+      "actor": "ExperientialLearningCenterStaff",
+      "action": "take",
+      "target": "Training",
+      "para": []
+    },
+    {
+      "actor": "AdultLearner",
+      "action": "resolve",
+      "target": "Conflict",
+      "para": []
+    },
+    {
+      "actor": "Veteran",
+      "action": "compare",
+      "target": "Decision",
+      "para": []
+    },
+    {
+      "actor": "CollegeStudent",
+      "action": "use",
+      "target": "Program",
+      "para": []
+    },
+    {
+      "actor": "Executive",
+      "action": "encourage",
+      "target": "Employee",
+      "para": []
+    },
+    {
+      "actor": "AdultLearner",
+      "action": "improve",
+      "target": "ConflictManagementSkill",
+      "para": []
+    },
+    {
+      "actor": "AdultLearner",
+      "action": "take",
+      "target": "Assessment",
+      "para": []
+    },
+    {
+      "actor": "CollegeStudent",
+      "action": "improve",
+      "target": "Confidence",
+      "para": []
+    },
+    {
+      "actor": "Program",
+      "action": "integrates",
+      "target": "Experience",
+      "para": []
+    },
+    {
+      "actor": "AdultLearner",
+      "action": "view",
+      "target": "Score",
+      "para": []
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Coach<actor> {
+}
+class Developer<actor> {
+}
+class Parent<actor> {
+}
+class Treasurer<actor> {
+}
+class Maintainer<actor> {
+}
+class Headcoach<actor> {
+}
+class Coach {
+	overwrite()
+	edit()
+	extract()
+	modified()
+	expect()
+	modify()
+	review()
+}
+class UploadEvent {
+}
+class PdfInformation {
+}
+class Maintainer {
+	see()
+	insert()
+	modify()
+	access()
+	have()
+}
+class Database {
+}
+class AmountDetail {
+}
+class Signup {
+	close()
+}
+class Headcoach {
+	generate()
+}
+class PdfReport {
+}
+class Access {
+}
+class parent {
+	edit()
+	sign()
+	view()
+}
+class Kid {
+}
+class Developer {
+	have()
+}
+class Result {
+}
+class Information {
+}
+class Event {
+}
+class User {
+	see()
+}
+class Week {
+}
+class Timeframe {
+}
+class List {
+}
+class Option {
+}
+class CSVFile {
+}
+class Something {
+}
+class Treasurer {
+	see()
+}
+class Amount {
+}
+User --> Event : see
+Coach --> PdfInformation : extract
+Maintainer --> Database : access
+parent --> Event : view
+Signup --> Week : close
+parent --> Kid : sign
+Maintainer --> Database : insert
+Signup --> Timeframe : close
+Maintainer --> AmountDetail : see
+Coach --> List : edit
+Coach --> Signup : expect
+Coach --> Result : overwrite
+Headcoach --> PdfReport : generate
+Maintainer --> Access : have
+User --> Option : see
+Headcoach --> CSVFile : generate
+Developer --> Access : have
+Maintainer --> Database : modify
+parent --> Information : view
+Coach --> Result : modify
+Coach --> Something : modified
+Coach --> Information : review
+Treasurer --> Amount : see
+parent --> Event : edit
+Coach --> UploadEvent : extract
+
+@enduml

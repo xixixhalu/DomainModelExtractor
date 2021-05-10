@@ -1,0 +1,197 @@
+{
+  "domain": "2017-USC-Project04",
+  "entity_dict": {
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Student": {
+      "name": "Student",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Competitor": {
+      "name": "Competitor",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "User",
+      "action": "click",
+      "target": "Button",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Reward",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "FinishTime",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "give",
+      "target": "Suggestion",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "ChallengeNotification",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "do",
+      "target": "ChallengeTask",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "check",
+      "target": "Challenge",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "ChallengeScore",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "IPhoneModel",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "pick",
+      "target": "Competitor",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "see",
+      "target": "Challenge",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "invite",
+      "target": "Friend",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "select",
+      "target": "Competitor",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Challenge",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Rank",
+      "para": []
+    },
+    {
+      "actor": "Suggestion",
+      "action": "challenge",
+      "target": "Topic",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "submit",
+      "target": "Idea",
+      "para": []
+    },
+    {
+      "actor": "Competitor",
+      "action": "view",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "Friend",
+      "action": "participate",
+      "target": "Challenge",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "ChallengeRequest",
+      "para": []
+    },
+    {
+      "actor": "Competitor",
+      "action": "verify",
+      "target": "OpponentPost",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "Competitor",
+      "action": "post",
+      "target": "ChallengePost",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "finished",
+      "target": "Challenge",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "play",
+      "target": "ChallengeGame",
+      "para": []
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+@startuml
+hide circle
+class Developer<actor> {
+}
+class Admin<actor> {
+}
+class Volunteer<actor> {
+}
+class Manager<actor> {
+}
+class User<actor> {
+}
+class AdminUser<actor> {
+}
+class Button {
+	email()
+}
+class Darin {
+	reorder()
+}
+class User {
+	checkout()
+	request()
+	view()
+	update()
+}
+class Account {
+}
+class Detail {
+}
+class Status {
+}
+class AdminUser {
+	get()
+}
+class EmailNotification {
+}
+class Manager {
+	click()
+}
+class Admin {
+	read()
+	add()
+	reserve()
+	change()
+}
+class logs {
+}
+class Volunteer {
+	check()
+	view()
+}
+class Availability {
+}
+class Item {
+}
+class Developer {
+	import()
+}
+class Spreadsheet {
+}
+class Reservation {
+}
+class Location {
+}
+User --> Status : update
+Admin --> Item : add
+Manager --> Button : click
+Developer --> Spreadsheet : import
+User --> Account : request
+Volunteer --> Availability : check
+Volunteer --> Location : check
+Admin --> Status : change
+User --> Item : checkout
+AdminUser --> EmailNotification : get
+Admin --> Item : reserve
+User --> Detail : view
+Volunteer --> Reservation : view
+Button --> Darin : email
+Admin --> logs : read
+Darin --> Item : reorder
+
+@enduml

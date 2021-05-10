@@ -1,0 +1,70 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class User {
+	update()
+	reset()
+	receive()
+	install()
+	add()
+	create()
+	view()
+	set()
+	provide()
+	remove()
+	forgotten()
+	enter()
+	purchase()
+}
+class Information {
+}
+class Budget {
+}
+class Password {
+}
+class GiftBuddyContact {
+}
+class Interest {
+}
+class GiftBuddyAccount {
+}
+class GiftRecommendation {
+}
+class Date {
+}
+class Feedback {
+}
+class Application {
+}
+class Gift {
+}
+class Contact {
+}
+class Group {
+}
+class Notification {
+}
+class One {
+}
+User --> GiftBuddyContact : set
+User --> Group : remove
+User --> Interest : enter
+User --> Notification : receive
+User --> GiftBuddyContact : add
+User --> User : view
+User --> GiftBuddyAccount : create
+User --> Information : view
+User --> One : forgotten
+User --> GiftRecommendation : receive
+User --> Date : enter
+User --> Information : add
+User --> Feedback : provide
+User --> Application : install
+User --> Information : update
+User --> Gift : purchase
+User --> Budget : set
+User --> Contact : remove
+User --> Password : reset
+
+@enduml

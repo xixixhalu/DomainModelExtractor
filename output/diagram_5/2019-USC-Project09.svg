@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="503px" preserveAspectRatio="none" style="width:421px;height:503px;background:#FFFFFF;" version="1.1" viewBox="0 0 421 503" width="421px" zoomAndPan="magnify"><defs><filter height="300%" id="fagp3l42ibbzh" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="13" fill="#FEFECE" filter="url(#fagp3l42ibbzh)" height="78.3828" id="User" style="stroke:#A80036;stroke-width:1.5;" width="70" x="77" y="165"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="29" x="80" y="181.1387">User</text><rect fill="#FFFFFF" height="15.9688" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="33" x="117" y="162"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="31" x="118" y="174.1387">actor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="78" x2="146" y1="188.9688" y2="188.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="78" x2="146" y1="196.9688" y2="196.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="35" x="83" y="211.1792">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="37" x="83" y="223.9839">keep()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="42" x="83" y="236.7886">return()</text><!--MD5=[d342058c8fb6f80e9d50d673c6908241]
+class Developer--><rect codeLine="8" fill="#FEFECE" filter="url(#fagp3l42ibbzh)" height="78.3828" id="Developer" style="stroke:#A80036;stroke-width:1.5;" width="105" x="110.5" y="10"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="64" x="113.5" y="26.1387">Developer</text><rect fill="#FFFFFF" height="15.9688" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="33" x="185.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="31" x="186.5" y="19.1387">actor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="111.5" x2="214.5" y1="33.9688" y2="33.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="111.5" x2="214.5" y1="41.9688" y2="41.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="116.5" y="56.1792">enable()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="37" x="116.5" y="68.9839">allow()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="51" x="116.5" y="81.7886">provide()</text><!--MD5=[db6d18d8099558415abc41d00477ab92]
+class Admin--><rect codeLine="27" fill="#FEFECE" filter="url(#fagp3l42ibbzh)" height="52.7734" id="Admin" style="stroke:#A80036;stroke-width:1.5;" width="78" x="317" y="22.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="37" x="320" y="38.6387">Admin</text><rect fill="#FFFFFF" height="15.9688" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="33" x="365" y="19.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="31" x="366" y="31.6387">actor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="318" x2="394" y1="46.4688" y2="46.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="318" x2="394" y1="54.4688" y2="54.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="323" y="68.6792">maintain()</text><!--MD5=[44a1b4afaef76c16e6c9ec4990ad0c8d]
+class Item--><rect codeLine="18" fill="#FEFECE" filter="url(#fagp3l42ibbzh)" height="52.7734" id="Item" style="stroke:#A80036;stroke-width:1.5;" width="50" x="7" y="320"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="26" x="19" y="336.1387">Item</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="56" y1="343.9688" y2="343.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="56" y1="351.9688" y2="351.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="38" x="13" y="366.1792">using()</text><!--MD5=[43d3c0ba1d3b9c6f5e40c8769cc5b343]
+class Source--><rect codeLine="21" fill="#FEFECE" filter="url(#fagp3l42ibbzh)" height="39.9688" id="Source" style="stroke:#A80036;stroke-width:1.5;" width="49" x="7.5" y="450"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="43" x="10.5" y="466.1387">Source</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8.5" x2="55.5" y1="473.9688" y2="473.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8.5" x2="55.5" y1="481.9688" y2="481.9688"/><!--MD5=[3b034ebaa87c9ec5e8fb5410143f628f]
+class Track--><rect codeLine="23" fill="#FEFECE" filter="url(#fagp3l42ibbzh)" height="39.9688" id="Track" style="stroke:#A80036;stroke-width:1.5;" width="39" x="92.5" y="326.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="33" x="95.5" y="342.6387">Track</text><line style="stroke:#A80036;stroke-width:1.5;" x1="93.5" x2="130.5" y1="350.4688" y2="350.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="93.5" x2="130.5" y1="358.4688" y2="358.4688"/><!--MD5=[72136138052d025cffdce3c22fbd185f]
+class Product--><rect codeLine="25" fill="#FEFECE" filter="url(#fagp3l42ibbzh)" height="39.9688" id="Product" style="stroke:#A80036;stroke-width:1.5;" width="51" x="166.5" y="326.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="45" x="169.5" y="342.6387">Product</text><line style="stroke:#A80036;stroke-width:1.5;" x1="167.5" x2="216.5" y1="350.4688" y2="350.4688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="167.5" x2="216.5" y1="358.4688" y2="358.4688"/><!--MD5=[ed3afe56f065d25b4329669e73deaf58]
+class Database--><rect codeLine="30" fill="#FEFECE" filter="url(#fagp3l42ibbzh)" height="39.9688" id="Database" style="stroke:#A80036;stroke-width:1.5;" width="63" x="324.5" y="184"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="57" x="327.5" y="200.1387">Database</text><line style="stroke:#A80036;stroke-width:1.5;" x1="325.5" x2="386.5" y1="207.9688" y2="207.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="325.5" x2="386.5" y1="215.9688" y2="215.9688"/><!--MD5=[e1e79fb7675434802d8a5d105105c07e]
+class LoginSystem--><rect codeLine="32" fill="#FEFECE" filter="url(#fagp3l42ibbzh)" height="39.9688" id="LoginSystem" style="stroke:#A80036;stroke-width:1.5;" width="83" x="206.5" y="184"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="77" x="209.5" y="200.1387">LoginSystem</text><line style="stroke:#A80036;stroke-width:1.5;" x1="207.5" x2="288.5" y1="207.9688" y2="207.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="207.5" x2="288.5" y1="215.9688" y2="215.9688"/><!--MD5=[250b7f4159edd758a3fb2644dc1f4a4c]
+link User to Track--><path codeLine="34" d="M112,243.021 C112,267.895 112,299.65 112,321.172 " fill="none" id="User-to-Track" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="112,326.412,116,317.412,112,321.412,108,317.412,112,326.412" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="113" y="286.0669">keep</text><!--MD5=[cc80b15a1005322d35f5aa76e49edf09]
+link Developer to User--><path codeLine="35" d="M110.326,84.776 C100.0662,94.239 90.7275,105.408 85,118 C79.0048,131.18 80.9926,146.073 85.931,159.669 " fill="none" id="Developer-to-User" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="87.8746,164.614,88.3059,154.7746,86.046,159.9604,80.8602,157.7004,87.8746,164.614" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="33" x="86" y="131.0669">allow</text><!--MD5=[cc80b15a1005322d35f5aa76e49edf09]
+link Developer to User--><path codeLine="37" d="M150.262,88.214 C143.021,109.938 133.93,137.211 126.426,159.722 " fill="none" id="Developer-to-User-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="124.752,164.743,131.3928,157.4698,126.3331,159.9996,123.8033,154.9399,124.752,164.743" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="141" y="131.0669">enable</text><!--MD5=[9ffb623563958c437f43103b0bfab89b]
+link Admin to Database--><path codeLine="36" d="M356,75.609 C356,104.279 356,150.403 356,178.579 " fill="none" id="Admin-to-Database" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="356,183.624,360,174.624,356,178.624,352,174.624,356,183.624" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="357" y="131.0669">maintain</text><!--MD5=[caa6320277df905ac55ee668020bc92e]
+link Developer to LoginSystem--><path codeLine="38" d="M184.23,88.214 C200.088,116.758 221.27,154.885 234.777,179.198 " fill="none" id="Developer-to-LoginSystem" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="237.372,183.869,236.4965,174.0591,234.9432,179.4986,229.5038,177.9452,237.372,183.869" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="210" y="131.0669">provide</text><!--MD5=[057ee07bb7b2e2aedbcccdbc42ce2201]
+link User to Product--><path codeLine="39" d="M135.532,243.285 C141.336,252.929 147.471,263.299 153,273 C162.156,289.064 172.019,307.408 179.535,321.625 " fill="none" id="User-to-Product" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="181.989,326.279,181.3282,316.4523,179.6563,321.8565,174.2522,320.1846,181.989,326.279" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="39" x="163" y="286.0669">return</text><!--MD5=[9b3225193b6386674c8a141945291f2c]
+link Item to Source--><path codeLine="40" d="M32,373.267 C32,394.3301 32,423.9042 32,444.5902 " fill="none" id="Item-to-Source" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="32,449.6472,36,440.6472,32,444.6472,28,440.6472,32,449.6472" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="33" y="416.0669">using</text><!--MD5=[53a588df3f5f0f7f452d1b4562b14650]
+link User to Item--><path codeLine="41" d="M89.3893,243.015 C83.6628,252.758 77.5605,263.242 72,273 C64.1399,286.794 55.6174,302.179 48.4667,315.215 " fill="none" id="User-to-Item" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="45.898,319.904,53.7307,313.9333,48.3006,315.5191,46.7148,310.0891,45.898,319.904" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="73" y="286.0669">view</text><!--MD5=[478197f02967027b0d0aad9ed0d2bc08]
+@startuml
+hide circle
+class User<actor> {
+}
+class Developer<actor> {
+}
+class Admin<actor> {
+}
+class Developer {
+	enable()
+	allow()
+	provide()
+}
+class User {
+	view()
+	keep()
+	return()
+}
+class Item {
+	using()
+}
+class Source {
+}
+class Track {
+}
+class Product {
+}
+class Admin {
+	maintain()
+}
+class Database {
+}
+class LoginSystem {
+}
+User - -> Track : keep
+Developer - -> User : allow
+Admin - -> Database : maintain
+Developer - -> User : enable
+Developer - -> LoginSystem : provide
+User - -> Product : return
+Item - -> Source : using
+User - -> Item : view
+@enduml
+
+PlantUML version 1.2021.6beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

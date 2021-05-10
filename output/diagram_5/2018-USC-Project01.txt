@@ -1,0 +1,108 @@
+@startuml
+hide circle
+class Administrator<actor> {
+}
+class Maintainer<actor> {
+}
+class Developer<actor> {
+}
+class User<actor> {
+}
+class Administrator {
+	block()
+	close()
+	see()
+	cancel()
+	edit()
+	add()
+}
+class AccountInformation {
+}
+class User {
+	contact()
+	lost()
+	block()
+	import()
+	leaved()
+	follow()
+	receive()
+	see()
+	delete()
+	entered()
+	create()
+	have()
+	get()
+}
+class Venue {
+}
+class Info {
+}
+class Route {
+}
+class Information {
+}
+class Message {
+}
+class Question {
+}
+class Entrance {
+}
+class LocationInformation {
+}
+class Maintainer {
+	process()
+	see()
+	withdraw()
+}
+class Policy {
+}
+class Friend {
+}
+class UserAccount {
+}
+class Option {
+}
+class Account {
+}
+class Event {
+}
+class Profession {
+}
+class Recommendation {
+}
+class Analytic {
+}
+class Detail {
+}
+User --> Option : have
+User --> Venue : leaved
+User --> LocationInformation : get
+User --> Info : receive
+User --> Venue : see
+Maintainer --> Account : withdraw
+User --> Route : see
+Administrator --> Event : add
+User --> Information : see
+User --> Message : block
+User --> Message : lost
+User --> Profession : see
+User --> User : contact
+Administrator --> Information : see
+Administrator --> Account : block
+Administrator --> Venue : close
+User --> Recommendation : receive
+User --> Question : see
+Maintainer --> Analytic : see
+User --> Entrance : see
+Maintainer --> Message : process
+User --> Information : import
+User --> User : see
+User --> Policy : follow
+Administrator --> Event : cancel
+Administrator --> Detail : edit
+Administrator --> AccountInformation : see
+User --> Friend : delete
+User --> UserAccount : create
+User --> Venue : entered
+
+@enduml

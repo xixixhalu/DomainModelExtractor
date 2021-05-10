@@ -1,0 +1,77 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Business<actor> {
+}
+class Administrator<actor> {
+}
+class TipCalculator {
+	calculate()
+	split()
+}
+class Tip {
+}
+class User {
+	review()
+	download()
+	see()
+	use()
+	add()
+	lookup()
+	like()
+	submit()
+	reduced()
+	have()
+}
+class Question {
+}
+class Administrator {
+	assign()
+	verify()
+	approve()
+}
+class Comment {
+}
+class Business {
+	claim()
+}
+class Number {
+}
+class TravelGuide {
+}
+class SearchResult {
+}
+class List {
+	shows()
+}
+class Information {
+}
+class Application {
+}
+class Friction {
+}
+class TravelTippingGuide {
+}
+class Access {
+}
+Business --> Business : claim
+TipCalculator --> Tip : calculate
+User --> Friction : reduced
+Administrator --> Number : assign
+Administrator --> Comment : verify
+User --> Business : lookup
+User --> TipCalculator : use
+List --> Business : shows
+User --> TravelGuide : download
+User --> Access : have
+Administrator --> Comment : approve
+User --> Application : like
+User --> Question : submit
+TipCalculator --> Tip : split
+User --> TravelTippingGuide : review
+User --> Business : add
+User --> Information : like
+User --> SearchResult : see
+
+@enduml

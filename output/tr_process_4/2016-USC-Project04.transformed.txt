@@ -1,0 +1,71 @@
+{
+  "domain": "2016-USC-Project04",
+  "entity_dict": {
+    "Input": {
+      "name": "Input",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Client": {
+      "name": "Client",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Client",
+      "action": "extract",
+      "target": "Model",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "choose",
+      "target": "Tag",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "replace",
+      "target": "Machine",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "upload",
+      "target": "Image",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "train",
+      "target": "Pipeline",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "see",
+      "target": "classification",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "upload",
+      "target": "Image",
+      "para": []
+    }
+  ]
+}

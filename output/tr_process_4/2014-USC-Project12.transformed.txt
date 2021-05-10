@@ -1,0 +1,151 @@
+{
+  "domain": "2014-USC-Project12",
+  "entity_dict": {
+    "Consumer": {
+      "name": "Consumer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "IConsumer": {
+      "name": "IConsumer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Corporation": {
+      "name": "Corporation",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Provider": {
+      "name": "Provider",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Location",
+      "para": []
+    },
+    {
+      "actor": "Corporation",
+      "action": "view",
+      "target": "Employee",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "create",
+      "target": "Review",
+      "para": []
+    },
+    {
+      "actor": "Provider",
+      "action": "share",
+      "target": "Pricing",
+      "para": []
+    },
+    {
+      "actor": "Provider",
+      "action": "share",
+      "target": "Offering",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "rate",
+      "target": "Provider",
+      "para": []
+    },
+    {
+      "actor": "Provider",
+      "action": "share",
+      "target": "Content",
+      "para": []
+    },
+    {
+      "actor": "Location",
+      "action": "access",
+      "target": "Provider",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "join",
+      "target": "Network",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "compare",
+      "target": "HealthcarePrice",
+      "para": []
+    },
+    {
+      "actor": "Corporation",
+      "action": "view",
+      "target": "Price",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "HealthProfile",
+      "para": []
+    },
+    {
+      "actor": "HealthProfile",
+      "action": "attach",
+      "target": "Offer",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "filter",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "Provider",
+      "action": "send",
+      "target": "Offering",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "HealthCarePricing",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "create",
+      "target": "Network",
+      "para": []
+    }
+  ]
+}

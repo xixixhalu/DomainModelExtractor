@@ -1,0 +1,131 @@
+{
+  "domain": "2019-USC-Project07",
+  "entity_dict": {
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Developer": {
+      "name": "Developer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Maintainer": {
+      "name": "Maintainer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Developer",
+      "action": "restructure",
+      "target": "Project",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "skip",
+      "target": "Question",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "fix",
+      "target": "Graph",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "play",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "provide",
+      "target": "Option",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "publish",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Hint",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "get",
+      "target": "UserAnalytic",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Feedback",
+      "para": []
+    },
+    {
+      "actor": "Component",
+      "action": "have",
+      "target": "Structure",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "maintainable",
+      "target": "SourceCode",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Report",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "understand",
+      "target": "Point",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "change",
+      "target": "Ui",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "track",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "Option",
+      "action": "enables",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "ProgressReport",
+      "para": []
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "domain": "2014-USC-Project08",
+  "entity_dict": {
+    "CaseManager": {
+      "name": "CaseManager",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "CaseManager",
+      "action": "run",
+      "target": "Frequency",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "monitor",
+      "target": "YouthService",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "upload",
+      "target": "Document",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "save",
+      "target": "TimeLogingActivity",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "save",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "manage",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "create",
+      "target": "ManagementService",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "save",
+      "target": "MonitorCase",
+      "para": []
+    },
+    {
+      "actor": "Activity",
+      "action": "have",
+      "target": "Category",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "manage",
+      "target": "CaseFile",
+      "para": []
+    }
+  ]
+}

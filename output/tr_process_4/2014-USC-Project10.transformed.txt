@@ -1,0 +1,69 @@
+{
+  "domain": "2014-USC-Project10",
+  "entity_dict": {
+    "JobSeeker": {
+      "name": "JobSeeker",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "JobSeeker",
+      "action": "contact",
+      "target": "Someone",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "save",
+      "target": "JobSearch",
+      "para": []
+    },
+    {
+      "actor": "Account",
+      "action": "saves",
+      "target": "LoginCredentials",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "create",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "mark",
+      "target": "Job",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "select",
+      "target": "Frequency",
+      "para": []
+    },
+    {
+      "actor": "REFERsySystem",
+      "action": "fetch",
+      "target": "Job",
+      "para": []
+    },
+    {
+      "actor": "JobListing",
+      "action": "have",
+      "target": "NetworkFriend",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "email",
+      "target": "JobNotification",
+      "para": []
+    }
+  ]
+}

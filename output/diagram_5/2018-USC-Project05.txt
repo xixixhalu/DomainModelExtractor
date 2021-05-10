@@ -1,0 +1,118 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Admin<actor> {
+}
+class Supplier<actor> {
+}
+class Maintainer<actor> {
+}
+class User {
+	save()
+	customise()
+	add()
+	want()
+	replace()
+	produce()
+	send()
+	share()
+	canuse()
+	existed()
+	log()
+	delete()
+	see()
+	customize()
+	view()
+}
+class Coffee {
+}
+class Recipe {
+	contains()
+}
+class BaseRecipe {
+}
+class Paypal {
+	purchase()
+}
+class DefaultPaymentMethod {
+}
+class existed {
+	existed()
+}
+class account {
+}
+class Maintainer {
+	update()
+	track()
+}
+class Kiosk {
+}
+class OrderHistory {
+}
+class ApplePay {
+	purchase()
+}
+class Picture {
+}
+class Allergen {
+}
+class Supplier {
+	receive()
+}
+class Update {
+}
+class Order {
+}
+class Location {
+}
+class Someone {
+}
+class Color {
+}
+class App {
+}
+class Theme {
+}
+class CoffeeRecipe {
+}
+class NutritionDetail {
+}
+class Password {
+	existed()
+}
+class Admin {
+	have()
+}
+class Portal {
+}
+User --> BaseRecipe : customize
+User --> Someone : send
+User --> Paypal : canuse
+User --> Recipe : share
+User --> Color : customize
+User --> DefaultPaymentMethod : add
+User --> Recipe : view
+User --> account : existed
+existed --> account : existed
+User --> App : log
+User --> Picture : save
+Maintainer --> Kiosk : track
+User --> Theme : customize
+Recipe --> Allergen : contains
+User --> CoffeeRecipe : produce
+User --> OrderHistory : view
+Supplier --> Update : receive
+User --> Recipe : delete
+Maintainer --> Location : update
+User --> NutritionDetail : see
+ApplePay --> Coffee : purchase
+User --> Order : replace
+User --> Coffee : customise
+Password --> account : existed
+Paypal --> Coffee : purchase
+User --> Recipe : want
+User --> ApplePay : canuse
+Admin --> Portal : have
+
+@enduml

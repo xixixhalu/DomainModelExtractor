@@ -1,0 +1,232 @@
+{
+  "domain": "2014-USC-Project11",
+  "entity_dict": {
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "CourseAttendee": {
+      "name": "CourseAttendee",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Trainer": {
+      "name": "Trainer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Enterprise": {
+      "name": "Enterprise",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Administrator": {
+      "name": "Administrator",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Team": {
+      "name": "Team",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Developer": {
+      "name": "Developer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "Developer",
+      "action": "understand",
+      "target": "Feasibility",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "adjust",
+      "target": "Rating",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "receive",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "Notification",
+      "action": "receive",
+      "target": "Change",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Course",
+      "para": []
+    },
+    {
+      "actor": "CourseAttendee",
+      "action": "see",
+      "target": "Schedule",
+      "para": []
+    },
+    {
+      "actor": "CourseAttendee",
+      "action": "compare",
+      "target": "Price",
+      "para": []
+    },
+    {
+      "actor": "Trainer",
+      "action": "see",
+      "target": "reviews",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "setup",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Trainer",
+      "action": "put",
+      "target": "Calendar",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "cancel",
+      "target": "Course",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "request",
+      "target": "Course",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "schedule",
+      "target": "Course",
+      "para": []
+    },
+    {
+      "actor": "CourseAttendee",
+      "action": "Rate",
+      "target": "CourseAttendee",
+      "para": []
+    },
+    {
+      "actor": "CourseAttendee",
+      "action": "receive",
+      "target": "ConfirmationEmail",
+      "para": []
+    },
+    {
+      "actor": "Trainer",
+      "action": "offer",
+      "target": "Course",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "adjust",
+      "target": "Number",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "have",
+      "target": "Dashboard",
+      "para": []
+    },
+    {
+      "actor": "Trainer",
+      "action": "see",
+      "target": "Rating",
+      "para": []
+    },
+    {
+      "actor": "Trainer",
+      "action": "compare",
+      "target": "Price",
+      "para": []
+    },
+    {
+      "actor": "Trainer",
+      "action": "set",
+      "target": "Minimum",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "understand",
+      "target": "Architecture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Number",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "move",
+      "target": "People",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "analyze",
+      "target": "Requirement",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "receive",
+      "target": "AccountRegistrationInformation",
+      "para": []
+    },
+    {
+      "actor": "Enterprise",
+      "action": "compare",
+      "target": "Price",
+      "para": []
+    },
+    {
+      "actor": "Enterprise",
+      "action": "getting",
+      "target": "Value",
+      "para": []
+    }
+  ]
+}

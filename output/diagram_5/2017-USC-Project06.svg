@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="295px" preserveAspectRatio="none" style="width:892px;height:295px;background:#FFFFFF;" version="1.1" viewBox="0 0 892 295" width="892px" zoomAndPan="magnify"><defs><filter height="300%" id="f16nnif43qbwct" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="4" fill="#FEFECE" filter="url(#f16nnif43qbwct)" height="155.2109" id="User" style="stroke:#A80036;stroke-width:1.5;" width="74" x="331" y="10"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="29" x="336" y="26.1387">User</text><rect fill="#FFFFFF" height="15.9688" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="33" x="375" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="31" x="376" y="19.1387">actor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="332" x2="404" y1="33.9688" y2="33.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="332" x2="404" y1="41.9688" y2="41.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="36" x="337" y="56.1792">input()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="62" x="337" y="68.9839">download()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="35" x="337" y="81.7886">view()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="35" x="337" y="94.5933">want()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="26" x="337" y="107.3979">set()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="30" x="337" y="120.2026">see()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="53" x="337" y="133.0073">connect()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="29" x="337" y="145.812">use()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="45" x="337" y="158.6167">create()</text><!--MD5=[335f4d9be48430461c68bf6d6fdba145]
+class App--><rect codeLine="15" fill="#FEFECE" filter="url(#f16nnif43qbwct)" height="39.9688" id="App" style="stroke:#A80036;stroke-width:1.5;" width="30" x="7" y="242"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="24" x="10" y="258.1387">App</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="36" y1="265.9688" y2="265.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="36" y1="273.9688" y2="273.9688"/><!--MD5=[17860b448baa28c9c681e1cca68137e5]
+class InsulinLevel--><rect codeLine="17" fill="#FEFECE" filter="url(#f16nnif43qbwct)" height="39.9688" id="InsulinLevel" style="stroke:#A80036;stroke-width:1.5;" width="75" x="72.5" y="242"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="69" x="75.5" y="258.1387">InsulinLevel</text><line style="stroke:#A80036;stroke-width:1.5;" x1="73.5" x2="146.5" y1="265.9688" y2="265.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="73.5" x2="146.5" y1="273.9688" y2="273.9688"/><!--MD5=[a7998728ec5159d0ecbc950d0709be7b]
+class Trend--><rect codeLine="19" fill="#FEFECE" filter="url(#f16nnif43qbwct)" height="39.9688" id="Trend" style="stroke:#A80036;stroke-width:1.5;" width="41" x="182.5" y="242"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="35" x="185.5" y="258.1387">Trend</text><line style="stroke:#A80036;stroke-width:1.5;" x1="183.5" x2="222.5" y1="265.9688" y2="265.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="183.5" x2="222.5" y1="273.9688" y2="273.9688"/><!--MD5=[30fd7b95ab383a5e7c83ea23d4ea0fbf]
+class Information--><rect codeLine="21" fill="#FEFECE" filter="url(#f16nnif43qbwct)" height="39.9688" id="Information" style="stroke:#A80036;stroke-width:1.5;" width="73" x="295.5" y="242"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="67" x="298.5" y="258.1387">Information</text><line style="stroke:#A80036;stroke-width:1.5;" x1="296.5" x2="367.5" y1="265.9688" y2="265.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="296.5" x2="367.5" y1="273.9688" y2="273.9688"/><!--MD5=[35cd7d935612d06e478b32bcb8fd56aa]
+class Cgm--><rect codeLine="23" fill="#FEFECE" filter="url(#f16nnif43qbwct)" height="39.9688" id="Cgm" style="stroke:#A80036;stroke-width:1.5;" width="33" x="470.5" y="242"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="27" x="473.5" y="258.1387">Cgm</text><line style="stroke:#A80036;stroke-width:1.5;" x1="471.5" x2="502.5" y1="265.9688" y2="265.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="471.5" x2="502.5" y1="273.9688" y2="273.9688"/><!--MD5=[eedde156c9dded963040b22578af45fa]
+class Level--><rect codeLine="25" fill="#FEFECE" filter="url(#f16nnif43qbwct)" height="39.9688" id="Level" style="stroke:#A80036;stroke-width:1.5;" width="38" x="550" y="242"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="32" x="553" y="258.1387">Level</text><line style="stroke:#A80036;stroke-width:1.5;" x1="551" x2="587" y1="265.9688" y2="265.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="551" x2="587" y1="273.9688" y2="273.9688"/><!--MD5=[eb7615ce44b85c9c693fe4d7b6ac1bf3]
+class InsulinRecommendation--><rect codeLine="27" fill="#FEFECE" filter="url(#f16nnif43qbwct)" height="39.9688" id="InsulinRecommendation" style="stroke:#A80036;stroke-width:1.5;" width="147" x="623.5" y="242"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="141" x="626.5" y="258.1387">InsulinRecommendation</text><line style="stroke:#A80036;stroke-width:1.5;" x1="624.5" x2="769.5" y1="265.9688" y2="265.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="624.5" x2="769.5" y1="273.9688" y2="273.9688"/><!--MD5=[0b4e4b4980470ea387cc45de9bd14b5b]
+class Application--><rect codeLine="29" fill="#FEFECE" filter="url(#f16nnif43qbwct)" height="39.9688" id="Application" style="stroke:#A80036;stroke-width:1.5;" width="72" x="806" y="242"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="66" x="809" y="258.1387">Application</text><line style="stroke:#A80036;stroke-width:1.5;" x1="807" x2="877" y1="265.9688" y2="265.9688"/><line style="stroke:#A80036;stroke-width:1.5;" x1="807" x2="877" y1="273.9688" y2="273.9688"/><!--MD5=[ad3a3fb4b35ea0921dac4f10f34d41ed]
+link User to InsulinRecommendation--><path codeLine="31" d="M405.101,107.953 C467.135,140.478 591.451,205.6587 655.994,239.5001 " fill="none" id="User-to-InsulinRecommendation" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="660.537,241.8817,654.4232,234.1602,656.1086,239.5602,650.7087,241.2456,660.537,241.8817" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="32" x="601" y="208.0669">want</text><!--MD5=[7d3768d70d730e278c2b46aad89340d2]
+link User to InsulinLevel--><path codeLine="32" d="M330.722,103.943 C289.153,122.171 221.057,155.109 170,195 C154.186,207.3554 139.007,224.115 127.873,237.6535 " fill="none" id="User-to-InsulinLevel" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="124.551,241.7433,133.3298,237.2788,127.7031,237.8621,127.1198,232.2354,124.551,241.7433" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="32" x="171" y="208.0669">input</text><!--MD5=[a605240c0b2d5e7f595ec2b99311cce8]
+link User to Cgm--><path codeLine="33" d="M405,142.135 C427.095,174.163 454.045,213.2292 470.869,237.6165 " fill="none" id="User-to-Cgm" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="473.889,241.9943,472.0709,232.3147,471.0498,237.8786,465.4858,236.8575,473.889,241.9943" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="453" y="208.0669">connect</text><!--MD5=[0214f9738810ef8e203a2a515b7b8642]
+link User to App--><path codeLine="34" d="M330.668,101.874 C281.031,120.233 191.176,155.494 119,195 C90.7612,210.4567 60.4188,231.9841 41.3333,246.1951 " fill="none" id="User-to-App" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="37.2019,249.2881,46.8038,247.0963,41.2045,246.2915,42.0093,240.6922,37.2019,249.2881" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="120" y="208.0669">use</text><!--MD5=[9d661380b54d9bff4ee137bc0bb1b8a2]
+link User to Information--><path codeLine="35" d="M330.873,111.352 C304.216,130.117 270.385,159.359 255,195 C245.514,216.9743 267.814,234.2215 290.817,245.5658 " fill="none" id="User-to-Information" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="295.418,247.7556,289.0122,240.2746,290.9038,245.6058,285.5725,247.4974,295.418,247.7556" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="32" x="256" y="208.0669">want</text><!--MD5=[9d661380b54d9bff4ee137bc0bb1b8a2]
+link User to Information--><path codeLine="37" d="M336.311,165.275 C333.305,175.137 330.736,185.2092 329,195 C327.681,202.4395 328.769,204.448 329,212 C329.246,220.0291 329.717,228.7878 330.215,236.6506 " fill="none" id="User-to-Information-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="330.561,241.931,333.9634,232.6885,330.2338,236.9417,325.9805,233.2121,330.561,241.931" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="330" y="208.0669">view</text><!--MD5=[9d661380b54d9bff4ee137bc0bb1b8a2]
+link User to Information--><path codeLine="40" d="M372.863,165.059 C372.009,180.856 369.721,197.1848 365,212 C362.11,221.0697 356.978,230.0037 351.609,237.7081 " fill="none" id="User-to-Information-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="348.615,241.855,357.1263,236.8993,351.5417,237.8011,350.64,232.2166,348.615,241.855" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41" x="371" y="208.0669">create</text><!--MD5=[0a4221e411748d8d90e6808bfd758b5b]
+link User to Trend--><path codeLine="36" d="M330.976,105.724 C297.042,123.405 247.955,154.1 220,195 C211.571,207.332 207.321,223.5513 205.179,236.825 " fill="none" id="User-to-Trend" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="204.432,241.9394,209.6905,233.6118,205.1545,236.9919,201.7745,232.4559,204.432,241.9394" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="221" y="208.0669">see</text><!--MD5=[594bfbd9f471216885001b4108416bf1]
+link User to Level--><path codeLine="38" d="M405.284,112.336 C435.715,132.601 479.073,163.372 513,195 C527.045,208.0935 541.022,224.5595 551.498,237.7691 " fill="none" id="User-to-Level" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="554.634,241.7568,552.2167,232.2092,551.544,237.8259,545.9273,237.1532,554.634,241.7568" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="531" y="208.0669">set</text><!--MD5=[4981c864524f50ab1b82211e3369f909]
+link User to Application--><path codeLine="39" d="M405.194,102.036 C492.565,133.832 710.358,213.0925 801.201,246.1521 " fill="none" id="User-to-Application" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="805.953,247.8818,798.8637,241.045,801.2545,246.1718,796.1277,248.5626,805.953,247.8818" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="703" y="208.0669">download</text><!--MD5=[94b51cd748e1ed0327e30cbd2c9ecc5f]
+@startuml
+hide circle
+class User<actor> {
+}
+class User {
+	input()
+	download()
+	view()
+	want()
+	set()
+	see()
+	connect()
+	use()
+	create()
+}
+class App {
+}
+class InsulinLevel {
+}
+class Trend {
+}
+class Information {
+}
+class Cgm {
+}
+class Level {
+}
+class InsulinRecommendation {
+}
+class Application {
+}
+User - -> InsulinRecommendation : want
+User - -> InsulinLevel : input
+User - -> Cgm : connect
+User - -> App : use
+User - -> Information : want
+User - -> Trend : see
+User - -> Information : view
+User - -> Level : set
+User - -> Application : download
+User - -> Information : create
+@enduml
+
+PlantUML version 1.2021.6beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

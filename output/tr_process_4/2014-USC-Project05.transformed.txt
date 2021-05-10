@@ -1,0 +1,64 @@
+{
+  "domain": "2014-USC-Project05",
+  "entity_dict": {
+    "SaleAgent": {
+      "name": "SaleAgent",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "SaleManager": {
+      "name": "SaleManager",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "SaleAgent",
+      "action": "request",
+      "target": "ConferenceCall",
+      "para": []
+    },
+    {
+      "actor": "SaleAgent",
+      "action": "save",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "train",
+      "target": "Agent",
+      "para": []
+    },
+    {
+      "actor": "SaleAgent",
+      "action": "clicktocall",
+      "target": "Customer",
+      "para": []
+    },
+    {
+      "actor": "SaleAgent",
+      "action": "close",
+      "target": "Sale",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "use",
+      "target": "Recording",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "assure",
+      "target": "Quality",
+      "para": []
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "domain": "2016-USC-Project01",
+  "entity_dict": {
+    "User": {
+      "name": "User",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Retailer": {
+      "name": "Retailer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    }
+  },
+  "relation_list": [],
+  "behavior_list": [
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Cluster",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Circle",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "collapse",
+      "target": "Sort",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "buy",
+      "target": "Clothing",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "LoaderAnimation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "slide",
+      "target": "Collection",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "UserExperience",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "viewing",
+      "target": "Page",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "follow",
+      "target": "Trend",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "minimize",
+      "target": "Cost",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Version",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "waste",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sort",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "shop",
+      "target": "Product",
+      "para": []
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+@startuml
+hide circle
+class Client<actor> {
+}
+class Board<actor> {
+}
+class Member<actor> {
+}
+class WaWITPersonnel<actor> {
+}
+class Time {
+	entering()
+}
+class Data {
+}
+class member {
+	publish()
+	keep()
+	integrate()
+	access()
+}
+class Blog {
+}
+class WaWITPersonnel {
+	analyse()
+	track()
+	generate()
+	capture()
+}
+class Service {
+}
+class Client {
+	uses()
+	provide()
+	got()
+	save()
+	booked()
+	register()
+}
+class Center {
+}
+class Online {
+}
+class Media {
+}
+class TimeClient {
+}
+class type {
+}
+class Feedback {
+}
+class Portal {
+}
+class Appointment {
+}
+class Job {
+}
+class Date {
+}
+class Report {
+}
+Client --> Center : uses
+WaWITPersonnel --> TimeClient : capture
+Client --> Job : got
+WaWITPersonnel --> Report : generate
+member --> Portal : access
+Time --> Data : entering
+Client --> Feedback : provide
+Client --> Online : register
+WaWITPersonnel --> Service : analyse
+Client --> Time : save
+WaWITPersonnel --> type : track
+Client --> Appointment : booked
+member --> Media : integrate
+member --> Blog : publish
+member --> Date : keep
+
+@enduml

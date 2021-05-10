@@ -7,6 +7,7 @@ from tqdm import tqdm
 
 import re
 import argparse
+import copy
 
 from util.logger import Logger
 global logger
@@ -66,10 +67,14 @@ class Matcher:
         # read POS rule
         POS_tags = line.loc['POS-tags']
         if str(POS_tags) != 'nan':
-            pos_list = POS_tags.split("==")
-            pos_var = pos_list[0].strip()
-            pos_type = pos_list[1].strip()
-            rule_POS_dict[pos_var] = pos_type
+            POS_tags_sep = re.split('[(,)]', POS_tags)
+            POS_tags_sep = [PT for PT in POS_tags_sep if PT != '']
+            for pos_tag_item in POS_tags_sep:
+                pos_list = pos_tag_item.split("==")
+                pos_var = pos_list[0].strip()
+                pos_type = pos_list[1].strip()
+                pos_type = pos_type.replace("*", '\\w*')
+                rule_POS_dict[pos_var] = pos_type
 
         # read start word
         keywords = line.loc['Keywords']
@@ -96,14 +101,22 @@ class Matcher:
     # Note: A sentence should start with the keyword, if we have keyword in rule to match. And parameter keywords
     # is a list, it should only contains one element.(since one sentence cannot start with two different words)
     # Return: When the string starts with this keyword, return True; otherwise, return False.
-    def match_keywords(self, line, keywords):
-        flag = True
-        for word in keywords:
-            if not line.startswith(word):
-                flag = False
-                break
+    # def match_keywords(self, line, keywords):
+    #     flag = True
+    #     for word in keywords:
+    #         if not line.startswith(word):
+    #             flag = False
+    #             break
 
-        return flag
+    #     return flag
+
+    def match_keywords(self, line, keywords):
+        lower_line = line.lower()
+        for word in keywords:
+            if not word in lower_line:
+                return False
+
+        return True
 
 
     def match_pos(self, var_map, rule_pos_tag, nlp_output):
@@ -113,42 +126,46 @@ class Matcher:
         for var in rule_pos_tag:
             flag = False
             var_pos = rule_pos_tag[var]
-            if var_pos not in pt:
+            r = re.compile(var_pos)
+            temp_list = list(filter(r.match, pt.keys()))
+            if not temp_list:
                 break
-            for cand_tup in pt[var_pos]:
-                # find it
-                # Ziyu: only when the two elements in tup are the same, it might be true.
-                if cand_tup[0] == cand_tup[1] and cand_tup[0] == var_map[var]:
-                    flag = True
+            for temp_item in temp_list:
+                for cand_tup in pt[temp_item]:
+                    # find it
+                    # Ziyu: only when the two elements in tup are the same, it might be true.
+                    if cand_tup[0] == cand_tup[1] and cand_tup[0] == var_map[var]:
+                        flag = True
+                        break
+                if flag:
                     break
             if not flag:
-                break
-
+                break         
         return flag
 
 
-    def match_tds(self, rule_tds, td_key):
+    def match_tds(self, rule_tds, text_tds):
         # check number of TDs
         td_count = {}
         for tup in rule_tds:
             td_count[tup[0]] = 1 + td_count.get(tup[0], 0)
         flag = True
         for key in td_count:
-            if td_key.get(key) is None or len(td_key.get(key)) < td_count.get(key):
+            if text_tds.get(key) is None or len(text_tds.get(key)) < td_count.get(key):
                 flag = False
                 break
 
         if not flag:
             return False, None
 
-        return self.dfs_match_tds(rule_tds, td_key, 0, {}, {})
+        return self.dfs_match_tds(rule_tds, text_tds, 0, {}, [])
+    
 
-    # Note: the assumption here is that variables and indexes are 1 to 1 mapping. Each variable is mapped to only one
-    # unique index.
-    def dfs_match_tds(self, rule_tds, text_tds, rule_pos, var_to_index, index_to_var):
+    def dfs_match_tds(self, rule_tds, text_tds, rule_pos, var_to_index, var_to_index_list):
+        
         if rule_pos == len(rule_tds):
-
-            return True, var_to_index
+            var_to_index_list.append(var_to_index)
+            return True, var_to_index_list
 
         key_to_match = rule_tds[rule_pos][0]
         var1 = rule_tds[rule_pos][1]
@@ -157,37 +174,22 @@ class Matcher:
             cand1 = candidate_index[0]
             cand2 = candidate_index[1]
 
-            # If one of the candidate index has been assigned to a variable before, and that variable is not the same as
-            # the current variable we are going to match, which means that we are going to assign one index to two
-            # different variables, and such situation violates the 1:1 mapping assumption. We skip this candidate.
-            if cand1 in index_to_var and index_to_var[cand1] is not None and index_to_var[cand1] is not var1:
-                continue
-            if cand2 in index_to_var and index_to_var[cand2] is not None and index_to_var[cand2] is not var2:
-                continue
+            temp_var_to_index = copy.deepcopy(var_to_index)
 
-            # If one of the variable has been assigned to an index, and the assigned index is not the same as the
-            # current "candidate" index, which means that we are going to assign two different indexes to one variable,
-            # which violates the 1:1 mapping assumption. We skip this candidate index.
-            if var1 in var_to_index and var_to_index[var1] is not None and var_to_index[var1] is not cand1:
+            if var1 in temp_var_to_index and temp_var_to_index[var1] != cand1:
                 continue
-            if var2 in var_to_index and var_to_index[var2] is not None and var_to_index[var2] is not cand2:
+            if var2 in temp_var_to_index and temp_var_to_index[var2] != cand2:
                 continue
 
-            var_to_index[var1] = cand1
-            var_to_index[var2] = cand2
-            index_to_var[cand1] = var1
-            index_to_var[cand2] = var2
+            temp_var_to_index[var1] = cand1
+            temp_var_to_index[var2] = cand2
 
-            # Ziyu: it only output the first valid result
-            if self.dfs_match_tds(rule_tds, text_tds, rule_pos + 1, var_to_index, index_to_var)[0] is True:
-                return True, var_to_index
+            self.dfs_match_tds(rule_tds, text_tds, rule_pos + 1, temp_var_to_index, var_to_index_list)[0]
 
-            var_to_index[var1] = None
-            var_to_index[var2] = None
-            index_to_var[cand1] = None
-            index_to_var[cand2] = None
-
-        return False, var_to_index
+        if not var_to_index_list:
+            return False, var_to_index_list
+        else:
+            return True, var_to_index_list
 
 
 if __name__ == '__main__':
@@ -198,7 +200,7 @@ if __name__ == '__main__':
                         help='input file. Example: python3 ssr_matching.py -f 2014-USC-Projecct02')
     parser.add_argument('-o', '--output', type=str, metavar='', default="./output/ssr_match_3/",
                         help='output path. Default: %(default)s')
-    parser.add_argument('-s', '--ssr', type=str, metavar='', default="./SSR/update_SSR.xlsx",
+    parser.add_argument('-s', '--ssr', type=str, metavar='', default="./SSR/SSR.xlsx",
                         help='sentence structure path. Default: %(default)s')
     parser.add_argument('-l', '--list', action='store_true',
                         help='list all input files. Example: python3 ssr_matching.py -l')
@@ -211,6 +213,7 @@ if __name__ == '__main__':
         rule_obj = pd.read_excel(args.ssr)
 
         logger = Logger(output_path + '_log.txt')
+        logger_count_ssr = {}
 
         ssr_name_num = dict()
         ssrNum = list(rule_obj['Rule'])
@@ -249,9 +252,7 @@ if __name__ == '__main__':
                         s_dic = ssr.build_tokens(nlp_output)
 
                         td_key = enhancedTD(nlp_output)
-                        # print(td_key)
-
-                        for i in range(1, len(ssrNum)):
+                        for i in range(1, len(ssrNum)+1):
                             rule_result = ssr.parse_rule(rule_obj, i)
                             # split rule result
                             rule_name = rule_result[0]
@@ -260,13 +261,25 @@ if __name__ == '__main__':
                             rule_keywords = rule_result[3]
 
                             td_res = ssr.match_tds(rule_tds, td_key)
-                            if td_res[0] and ssr.match_pos(td_res[1], rule_pos_tags, nlp_output) and ssr.match_keywords(
-                                    ssr.sentence, rule_keywords):  # tell whether both td and postag can match
-                                sentence_info['TD'] = td_key
-                                sentence_info['Pos-tag'] = parsePosTag(nlp_output)
-                                sentence_info['Index'] = s_dic
-                                sentence_info['Keywords'] = list(rule_keywords)
-                                output_result_file[rule_name].append({s:sentence_info})
+                            if td_res[0]:
+                                for var_map in td_res[1]:
+                                    if ssr.match_pos(var_map, rule_pos_tags, nlp_output) and ssr.match_keywords(
+                                        ssr.sentence, rule_keywords):  # tell whether both td and postag can match
+                                        s_info = copy.deepcopy(sentence_info)
+                                        s_info['Sentence'] = s
+                                        s_info['Result'] = var_map
+                                        s_info['Index'] = s_dic
+                                        s_info['TD'] = td_key
+                                        s_info['Pos-tag'] = parsePosTag(nlp_output)
+                                        s_info['Keywords'] = list(rule_keywords)
+                                        output_result_file[rule_name].append(s_info)
+
+                            logger_count_ssr[rule_name] = len(output_result_file[rule_name])
+            
+            rst_report = ""
+            for k, v in logger_count_ssr.items():
+                rst_report += k + ', ' + str(v) + "\n"
+            logger.info("SSR, # of sentences\n" + rst_report)
             # wrute the result into json file
             with open(output_path + '.ssr.txt', 'w') as jsonwriter:
                 json.dump(output_result, jsonwriter, indent=2)

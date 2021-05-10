@@ -1,22 +1,17 @@
-25-Mar-21 14:43:46 - INFO
-Unknown words: {'salesforce(several', 'analyzed);session', 'mylaspace', 'files(demographic', 'conceling', 'css(agency', 'php', 'age;gender;ethnicity;city;zip', 'category;program', 'questions;create', 'code;school;status', 'csv', 'accounts;manage', 'accounts(reset', 'category(each'}
-25-Mar-21 14:43:46 - WARNING
+10-May-21 12:57:06 - INFO
+Unknown words: {'conceling', 'category;program', 'code;school;status', 'php', 'csv', 'mylaspace', 'salesforce', 'age;gender;ethnicity;city;zip', 'css'}
+10-May-21 12:57:06 - WARNING
 Change Line 1: 
 As a Case Manager, I can run frequency (demographic and activity reporting) on case file, so that I can save time in generating report - excel or csv format.
 Word: csv
 Change to: csi
-25-Mar-21 14:43:46 - WARNING
+10-May-21 12:57:06 - WARNING
 Change Line 3: 
 activities:admin work; follow ups; individual conceling; workshop; field-trips; community resources; CSS(agency); time stamps.
 Word: conceling
 Change to: canceling
-25-Mar-21 14:43:46 - WARNING
+10-May-21 12:57:06 - WARNING
 Change Line 11: 
 The system shall be developed using php.
 Word: php
 Change to: pop
-25-Mar-21 14:43:46 - WARNING
-Change Line 12: 
-The system shall import existing data from Salesforce(several hundred  kids information in csv format) exported data.
-Word: csv
-Change to: csi

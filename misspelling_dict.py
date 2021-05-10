@@ -34,13 +34,14 @@ def main():
     # DATA_FILES = glob.glob(DATA_DIR + "/[0-9]*-USC-Project[0-9]*.txt")
     DATA_DIR = "./output/misspelling_detect_1"
     DATA_FILES = glob.glob(DATA_DIR + "/[0-9]*-USC-Project[0-9]*corrected.txt")
+
     wordCount = word_count(DATA_FILES)
     wordFreq = word_freq_count(wordCount, 1)
     print("#words appears once: %d " %len(wordFreq))
     spell = SpellChecker()
     
     # load glossary 
-    glossary = read_glossary("./output/misspelling_detect_1/glossary/glossary.txt")
+    glossary = read_glossary("./Glossary/glossary.txt")
     spell.word_frequency.load_words(glossary)
 
     misspelled = spell.unknown(wordFreq)
@@ -49,8 +50,8 @@ def main():
     print(res)
     # write results 
     
-    OUTPUT_DIR = "./output/misspelling_detect_1/glossary/"
-    with open(OUTPUT_DIR + "dictionary.txt", "w") as f:
+    OUTPUT_DIR = "./Glossary/"
+    with open(OUTPUT_DIR + "output.txt", "w") as f:
     	for word in res:
     		f.write('%s\n' % word)
 

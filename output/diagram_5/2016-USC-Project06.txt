@@ -1,0 +1,75 @@
+@startuml
+hide circle
+class User<actor> {
+}
+class Developer<actor> {
+}
+class User {
+	detonate()
+	get()
+	see()
+	recover()
+	change()
+	register()
+	choose()
+	play()
+	remove()
+	registered()
+	edit()
+	place()
+	hear()
+	beat()
+	have()
+	buy()
+}
+class Score {
+}
+class Password {
+}
+class Bomb {
+}
+class Reward {
+}
+class Detail {
+}
+class while {
+}
+class Effect {
+}
+class Multiplier {
+}
+class Game {
+	attracts()
+}
+class Username {
+}
+class GamingExperience {
+}
+class ProfileInformation {
+}
+class History {
+}
+class Animation {
+}
+User --> Bomb : place
+User --> Bomb : buy
+User --> History : see
+User --> Score : see
+User --> Reward : get
+User --> Detail : register
+User --> while : choose
+User --> Effect : hear
+User --> Password : registered
+User --> Multiplier : change
+User --> Animation : see
+User --> Game : play
+User --> Score : beat
+User --> Username : registered
+User --> Password : recover
+User --> GamingExperience : have
+Game --> User : attracts
+User --> Bomb : remove
+User --> Bomb : detonate
+User --> ProfileInformation : edit
+
+@enduml

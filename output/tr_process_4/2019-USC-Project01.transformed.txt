@@ -32,12 +32,6 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "remove",
-      "target": "Content",
-      "para": []
-    },
-    {
       "actor": "User",
       "action": "see",
       "target": "Event",
@@ -50,39 +44,9 @@
       "para": []
     },
     {
-      "actor": "SystemAdmin",
-      "action": "approve",
-      "target": "Request",
-      "para": []
-    },
-    {
       "actor": "User",
-      "action": "update",
-      "target": "Media",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "look",
-      "target": "Alumnus",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "filter",
-      "target": "Calendar",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "reject",
-      "target": "UserProfile",
+      "action": "sort",
+      "target": "ResearchPapers",
       "para": []
     },
     {
@@ -92,9 +56,27 @@
       "para": []
     },
     {
+      "actor": "Admin",
+      "action": "reject",
+      "target": "UserProfile",
+      "para": []
+    },
+    {
       "actor": "User",
-      "action": "resume",
-      "target": "Updated",
+      "action": "filter",
+      "target": "Calendar",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "disable",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "Media",
       "para": []
     },
     {
@@ -105,14 +87,32 @@
     },
     {
       "actor": "User",
-      "action": "sort",
-      "target": "ResearchPapers",
+      "action": "resume",
+      "target": "Updated",
       "para": []
     },
     {
       "actor": "User",
-      "action": "disable",
-      "target": "Account",
+      "action": "see",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "SystemAdmin",
+      "action": "approve",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "remove",
+      "target": "Content",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "look",
+      "target": "Alumnus",
       "para": []
     }
   ]

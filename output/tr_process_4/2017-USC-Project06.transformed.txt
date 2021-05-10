@@ -13,14 +13,14 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "use",
-      "target": "App",
+      "action": "want",
+      "target": "Information",
       "para": []
     },
     {
       "actor": "User",
-      "action": "input",
-      "target": "InsulinLevel",
+      "action": "download",
+      "target": "Application",
       "para": []
     },
     {
@@ -31,32 +31,8 @@
     },
     {
       "actor": "User",
-      "action": "create",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "connect",
-      "target": "Cgm",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "set",
       "target": "Level",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "want",
-      "target": "InsulinRecommendation",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "want",
-      "target": "Information",
       "para": []
     },
     {
@@ -67,8 +43,32 @@
     },
     {
       "actor": "User",
-      "action": "download",
-      "target": "Application",
+      "action": "input",
+      "target": "InsulinLevel",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "connect",
+      "target": "Cgm",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "want",
+      "target": "InsulinRecommendation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Information",
       "para": []
     }
   ]

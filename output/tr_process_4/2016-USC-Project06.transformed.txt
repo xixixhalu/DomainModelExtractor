@@ -20,68 +20,8 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "beat",
-      "target": "Score",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "recover",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "remove",
-      "target": "Bomb",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "place",
-      "target": "Bomb",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "buy",
-      "target": "Bomb",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Score",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Reward",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "register",
-      "target": "Detail",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "choose",
-      "target": "while",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "hear",
-      "target": "Effect",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "registered",
-      "target": "Password",
+      "action": "have",
+      "target": "GamingExperience",
       "para": []
     },
     {
@@ -98,18 +38,6 @@
     },
     {
       "actor": "User",
-      "action": "registered",
-      "target": "Username",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "GamingExperience",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "edit",
       "target": "ProfileInformation",
       "para": []
@@ -122,20 +50,92 @@
     },
     {
       "actor": "User",
+      "action": "see",
+      "target": "Animation",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "detonate",
       "target": "Bomb",
       "para": []
     },
     {
       "actor": "User",
+      "action": "beat",
+      "target": "Score",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "remove",
+      "target": "Bomb",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "registered",
+      "target": "Username",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Reward",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "hear",
+      "target": "Effect",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "registered",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "see",
-      "target": "Animation",
+      "target": "Score",
       "para": []
     },
     {
       "actor": "Game",
       "action": "attracts",
       "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "register",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "place",
+      "target": "Bomb",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "choose",
+      "target": "while",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "recover",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "buy",
+      "target": "Bomb",
       "para": []
     }
   ]

@@ -54,15 +54,9 @@
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "Coach",
-      "action": "extract",
-      "target": "UploadEvent",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "extract",
-      "target": "PdfInformation",
+      "actor": "parent",
+      "action": "sign",
+      "target": "Kid",
       "para": []
     },
     {
@@ -72,15 +66,63 @@
       "para": []
     },
     {
-      "actor": "Maintainer",
-      "action": "see",
-      "target": "AmountDetail",
+      "actor": "Coach",
+      "action": "extract",
+      "target": "PdfInformation",
       "para": []
     },
     {
       "actor": "Coach",
-      "action": "expect",
-      "target": "Signup",
+      "action": "edit",
+      "target": "List",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "modify",
+      "target": "Result",
+      "para": []
+    },
+    {
+      "actor": "Signup",
+      "action": "close",
+      "target": "Timeframe",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Treasurer",
+      "action": "see",
+      "target": "Amount",
+      "para": []
+    },
+    {
+      "actor": "parent",
+      "action": "view",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "parent",
+      "action": "edit",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "modified",
+      "target": "Something",
+      "para": []
+    },
+    {
+      "actor": "Signup",
+      "action": "close",
+      "target": "Week",
       "para": []
     },
     {
@@ -96,32 +138,8 @@
       "para": []
     },
     {
-      "actor": "Maintainer",
-      "action": "access",
-      "target": "Database",
-      "para": []
-    },
-    {
-      "actor": "parent",
-      "action": "sign",
-      "target": "Kid",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "have",
-      "target": "Access",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "modify",
-      "target": "Database",
-      "para": []
-    },
-    {
       "actor": "Coach",
-      "action": "modify",
+      "action": "overwrite",
       "target": "Result",
       "para": []
     },
@@ -132,45 +150,15 @@
       "para": []
     },
     {
-      "actor": "parent",
-      "action": "edit",
-      "target": "Event",
+      "actor": "Maintainer",
+      "action": "access",
+      "target": "Database",
       "para": []
     },
     {
       "actor": "User",
       "action": "see",
       "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "parent",
-      "action": "view",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "Signup",
-      "action": "close",
-      "target": "Week",
-      "para": []
-    },
-    {
-      "actor": "Signup",
-      "action": "close",
-      "target": "Timeframe",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "edit",
-      "target": "List",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "overwrite",
-      "target": "Result",
       "para": []
     },
     {
@@ -180,27 +168,39 @@
       "para": []
     },
     {
+      "actor": "Coach",
+      "action": "extract",
+      "target": "UploadEvent",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "expect",
+      "target": "Signup",
+      "para": []
+    },
+    {
+      "actor": "parent",
+      "action": "view",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "see",
+      "target": "AmountDetail",
+      "para": []
+    },
+    {
       "actor": "Headcoach",
       "action": "generate",
       "target": "CSVFile",
       "para": []
     },
     {
-      "actor": "parent",
-      "action": "view",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "modified",
-      "target": "Something",
-      "para": []
-    },
-    {
-      "actor": "Treasurer",
-      "action": "see",
-      "target": "Amount",
+      "actor": "Maintainer",
+      "action": "modify",
+      "target": "Database",
       "para": []
     }
   ]

@@ -14,84 +14,84 @@ class Student<actor> {
 }
 class Donor<actor> {
 }
-class Admin {
-	update()
-	check()
+class member {
+	view()
 }
 class Information {
 }
-class User {
-	purchase()
-	receive()
-	view()
-}
-class Trailer {
-}
-class Detail {
-}
-class Mail {
-}
-class Student {
-	download()
-}
-class Page {
-}
 class Donor {
-	make()
 	support()
+	make()
 }
 class DonationOnline {
 }
-class MusicNote {
+class Admin {
+	check()
+	update()
+}
+class Detail {
+}
+class Client {
+	check()
+	add()
+}
+class GoogleDrive {
 }
 class VYMACommunity {
 }
-class Update {
+class Link {
+}
+class Email {
 }
 class parents {
 	view()
 }
 class OtherDetail {
 }
-class Client {
-	check()
-	add()
+class User {
+	purchase()
+	view()
+	receive()
 }
-class Link {
+class Student {
+	download()
 }
-class Dvd {
+class Page {
 }
 class News {
+}
+class Trailer {
 }
 class parent {
 	set()
 }
 class Payment {
 }
-class Email {
+class Mail {
 }
-class GoogleDrive {
+class Update {
 }
-class member {
-	view()
+class MusicNote {
 }
-member --> Information : view
-Client --> Link : add
-Admin --> Mail : check
-Client --> Email : check
-Donor --> DonationOnline : make
-parents --> OtherDetail : view
-User --> Trailer : view
-User --> Dvd : purchase
-Client --> GoogleDrive : check
-parent --> Payment : set
-Student --> MusicNote : download
-Donor --> VYMACommunity : support
-Student --> Page : download
+class Dvd {
+}
 Admin --> Detail : update
+User --> Dvd : purchase
 User --> Update : receive
 Admin --> Information : update
+Student --> Page : download
 User --> News : receive
 User --> Detail : view
+Donor --> DonationOnline : make
+parent --> Payment : set
+Client --> Link : add
+Student --> MusicNote : download
+Client --> GoogleDrive : check
+User --> Trailer : view
+Admin --> Mail : check
+Client --> Email : check
+member --> Information : view
+parents --> OtherDetail : view
+Donor --> VYMACommunity : support
 
 @enduml

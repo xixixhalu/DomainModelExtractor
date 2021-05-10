@@ -20,56 +20,14 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "see",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "want",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "cancel",
-      "target": "Appointment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "inform",
-      "target": "Agency",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "go",
-      "target": "Pet",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Picture",
+      "action": "use",
+      "target": "Ui",
       "para": []
     },
     {
       "actor": "User",
       "action": "apply",
-      "target": "Filter",
-      "para": []
-    },
-    {
-      "actor": "Shelter",
-      "action": "want",
-      "target": "Ability",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "use",
-      "target": "Ui",
+      "target": "type",
       "para": []
     },
     {
@@ -80,31 +38,7 @@
     },
     {
       "actor": "User",
-      "action": "want",
-      "target": "SchedulingFunction",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "apply",
-      "target": "type",
-      "para": []
-    },
-    {
-      "actor": "Shelter",
-      "action": "input",
-      "target": "ShelterInformation",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "visit",
-      "target": "Shelter",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
+      "action": "modify",
       "target": "Information",
       "para": []
     },
@@ -115,12 +49,6 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "get",
-      "target": "Reminder",
-      "para": []
-    },
-    {
       "actor": "Shelter",
       "action": "get",
       "target": "Notification",
@@ -128,8 +56,80 @@
     },
     {
       "actor": "User",
-      "action": "modify",
+      "action": "see",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Shelter",
+      "action": "want",
+      "target": "Ability",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "want",
       "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "visit",
+      "target": "Shelter",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "cancel",
+      "target": "Appointment",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "go",
+      "target": "Pet",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "want",
+      "target": "SchedulingFunction",
+      "para": []
+    },
+    {
+      "actor": "Shelter",
+      "action": "input",
+      "target": "ShelterInformation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Reminder",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "inform",
+      "target": "Agency",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "apply",
+      "target": "Filter",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Picture",
       "para": []
     }
   ]

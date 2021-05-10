@@ -6,115 +6,115 @@ class Administrator<actor> {
 }
 class Maintainer<actor> {
 }
-class GiftCard {
-	using()
-}
-class Point {
-}
 class User {
-	usable()
-	start()
-	track()
+	like()
+	select()
+	get()
+	redeem()
 	receive()
+	gauge()
+	delete()
+	usable()
+	see()
+	use()
 	report()
 	update()
-	select()
-	gauge()
-	get()
-	see()
-	redeem()
-	use()
+	answer()
+	track()
 	dislike()
 	search()
-	answer()
-	mark()
+	start()
 	view()
-	delete()
-	like()
-}
-class Profile {
-}
-class Maintainer {
-	add()
-	manage()
-	edit()
-	create()
-	entice()
-}
-class Comment {
-}
-class Post {
-}
-class NewsFeed {
-}
-class Answer {
-}
-class OrderingCriterion {
-}
-class Event {
-}
-class WATPoint {
-}
-class Forum {
-}
-class Progress {
+	mark()
 }
 class PointBalance {
 }
-class Leaderboard {
-}
-class Gift {
+class Maintainer {
+	add()
+	edit()
+	create()
+	manage()
+	entice()
 }
 class Thread {
 }
+class WATPoint {
+}
+class Event {
+}
+class Answer {
+}
+class Lifetime {
+}
 class Detail {
 }
-class Credibility {
+class GiftCard {
+	using()
 }
-class Information {
+class Question {
+}
+class Product {
+}
+class NewsFeed {
+}
+class Comment {
+}
+class Leaderboard {
+}
+class OrderingCriterion {
+}
+class Gift {
+}
+class Profile {
+}
+class Progress {
 }
 class Administrator {
 	pin()
 }
-class Lifetime {
+class Forum {
 }
-class Product {
+class Post {
 }
-class Question {
+class Information {
 }
-User --> Thread : delete
-Maintainer --> Comment : manage
-Maintainer --> Event : create
-User --> Question : answer
-User --> Gift : redeem
-User --> Post : delete
+class Credibility {
+}
+class Point {
+}
 User --> WATPoint : redeem
-Maintainer --> Thread : manage
+User --> WATPoint : use
+Maintainer --> Product : add
+Maintainer --> Comment : manage
+User --> Gift : redeem
+User --> Thread : delete
+User --> Profile : update
+Maintainer --> Event : create
 User --> NewsFeed : get
+User --> Profile : view
+User --> Answer : like
+User --> Progress : track
+User --> Lifetime : view
+Administrator --> Thread : pin
+User --> GiftCard : receive
+User --> Thread : start
+User --> Question : answer
 User --> WATPoint : view
 Maintainer --> Detail : edit
-User --> GiftCard : receive
+User --> Thread : report
+User --> Forum : search
 User --> Comment : mark
+User --> Post : delete
+User --> Answer : see
+User --> Leaderboard : view
+User --> Information : see
+User --> PointBalance : usable
 Maintainer --> User : entice
 User --> Credibility : gauge
-User --> Answer : see
-User --> Answer : like
-User --> OrderingCriterion : select
-User --> Information : see
-User --> Forum : search
-User --> WATPoint : use
-User --> Profile : view
-User --> Answer : dislike
-Administrator --> Thread : pin
-User --> Progress : track
-User --> Thread : start
-GiftCard --> Point : using
-User --> Lifetime : view
-User --> PointBalance : usable
-User --> Thread : report
-User --> Profile : update
 Maintainer --> GiftCard : add
-Maintainer --> Product : add
-User --> Leaderboard : view
+Maintainer --> Thread : manage
+User --> Answer : dislike
+GiftCard --> Point : using
+User --> OrderingCriterion : select
 
 @enduml

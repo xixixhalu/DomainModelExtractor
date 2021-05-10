@@ -9,100 +9,100 @@ class Developer<actor> {
 class User<actor> {
 }
 class Administrator {
-	block()
+	edit()
+	cancel()
 	close()
 	see()
-	cancel()
-	edit()
-	add()
-}
-class AccountInformation {
-}
-class User {
-	contact()
-	lost()
 	block()
-	import()
-	leaved()
-	follow()
-	receive()
-	see()
-	delete()
-	entered()
-	create()
-	have()
-	get()
-}
-class Venue {
-}
-class Info {
-}
-class Route {
-}
-class Information {
-}
-class Message {
-}
-class Question {
-}
-class Entrance {
-}
-class LocationInformation {
-}
-class Maintainer {
-	process()
-	see()
-	withdraw()
-}
-class Policy {
-}
-class Friend {
-}
-class UserAccount {
-}
-class Option {
+	add()
 }
 class Account {
 }
-class Event {
+class User {
+	import()
+	follow()
+	entered()
+	leaved()
+	create()
+	lost()
+	receive()
+	have()
+	block()
+	delete()
+	get()
+	contact()
+	see()
 }
-class Profession {
+class Entrance {
 }
-class Recommendation {
+class Information {
+}
+class AccountInformation {
+}
+class Info {
+}
+class Maintainer {
+	withdraw()
+	process()
+	see()
 }
 class Analytic {
 }
+class Message {
+}
+class Event {
+}
+class Question {
+}
+class Friend {
+}
+class Option {
+}
+class Venue {
+}
+class Policy {
+}
+class LocationInformation {
+}
+class Route {
+}
+class Profession {
+}
+class UserAccount {
+}
+class Recommendation {
+}
 class Detail {
 }
-User --> Option : have
-User --> Venue : leaved
-User --> LocationInformation : get
-User --> Info : receive
-User --> Venue : see
-Maintainer --> Account : withdraw
-User --> Route : see
-Administrator --> Event : add
 User --> Information : see
-User --> Message : block
-User --> Message : lost
-User --> Profession : see
-User --> User : contact
-Administrator --> Information : see
-Administrator --> Account : block
-Administrator --> Venue : close
-User --> Recommendation : receive
 User --> Question : see
-Maintainer --> Analytic : see
-User --> Entrance : see
-Maintainer --> Message : process
-User --> Information : import
-User --> User : see
-User --> Policy : follow
-Administrator --> Event : cancel
-Administrator --> Detail : edit
+User --> User : contact
+User --> Message : lost
 Administrator --> AccountInformation : see
 User --> Friend : delete
-User --> UserAccount : create
+User --> Route : see
+User --> Info : receive
 User --> Venue : entered
+Administrator --> Information : see
+User --> Information : import
+Maintainer --> Analytic : see
+Maintainer --> Account : withdraw
+User --> Message : block
+User --> User : see
+Administrator --> Event : cancel
+User --> Venue : see
+Maintainer --> Message : process
+User --> Profession : see
+User --> Option : have
+User --> UserAccount : create
+User --> Venue : leaved
+User --> Recommendation : receive
+Administrator --> Venue : close
+Administrator --> Detail : edit
+Administrator --> Account : block
+User --> Policy : follow
+Administrator --> Event : add
+User --> Entrance : see
+User --> LocationInformation : get
 
 @enduml

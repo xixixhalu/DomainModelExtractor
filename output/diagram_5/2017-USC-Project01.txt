@@ -6,75 +6,75 @@ class User<actor> {
 }
 class Contributor<actor> {
 }
-class User {
-	perform()
-	view()
-	reset()
-	confirm()
-	receive()
-	see()
-	export()
-}
-class SoftwareQualityMetric {
-}
-class VerificationEmail {
-}
 class Admin {
-	give()
-	terminate()
-	reset()
-	manage()
-	restrict()
 	have()
-}
-class Ability {
+	reset()
+	terminate()
+	restrict()
+	give()
+	manage()
 }
 class Access {
 }
-class Statistics {
-}
-class Evolution {
-}
 class UserPassword {
 }
-class Contributor {
-	analyze()
-	ask()
+class User {
 	see()
-}
-class Impact {
-}
-class UserPermission {
-}
-class List {
+	perform()
+	view()
+	receive()
+	export()
+	reset()
+	confirm()
 }
 class Password {
 }
-class Analysis {
+class Contributor {
+	analyze()
+	see()
+	ask()
+}
+class Impact {
 }
 class Email {
 }
-class Registration {
+class Evolution {
+}
+class Statistics {
+}
+class SoftwareQualityMetric {
 }
 class Account {
 }
-Admin --> Ability : have
-User --> SoftwareQualityMetric : export
-Contributor --> Impact : analyze
-User --> Evolution : see
-User --> Password : reset
-User --> Analysis : perform
-Admin --> Access : restrict
-Admin --> Access : give
+class Analysis {
+}
+class UserPermission {
+}
+class VerificationEmail {
+}
+class Ability {
+}
+class List {
+}
+class Registration {
+}
 Admin --> Access : have
 User --> VerificationEmail : receive
-Admin --> UserPermission : manage
-Admin --> UserPassword : reset
-Contributor --> Admin : ask
-Admin --> Account : terminate
 User --> Email : receive
-User --> Statistics : view
-User --> Registration : confirm
+User --> Password : reset
+User --> Analysis : perform
+User --> SoftwareQualityMetric : export
+Admin --> Account : terminate
 Contributor --> List : see
+Admin --> UserPassword : reset
+Admin --> Ability : have
+User --> Evolution : see
+Contributor --> Admin : ask
+Admin --> UserPermission : manage
+Admin --> Access : give
+User --> Registration : confirm
+Contributor --> Impact : analyze
+Admin --> Access : restrict
+User --> Statistics : view
 
 @enduml

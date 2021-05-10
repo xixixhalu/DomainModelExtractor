@@ -47,15 +47,39 @@
   "relation_list": [],
   "behavior_list": [
     {
+      "actor": "Manger",
+      "action": "monitor",
+      "target": "FacebookFeed",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "import",
+      "target": "Data",
+      "para": []
+    },
+    {
       "actor": "Coach",
-      "action": "extract",
-      "target": "PlayerValue",
+      "action": "build",
+      "target": "Roster",
+      "para": []
+    },
+    {
+      "actor": "Manger",
+      "action": "monitor",
+      "target": "TwitterReaction",
       "para": []
     },
     {
       "actor": "GM",
       "action": "extract",
-      "target": "PlayerValue",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "SoccerCoach",
+      "action": "configure",
+      "target": "Schedule",
       "para": []
     },
     {
@@ -65,33 +89,21 @@
       "para": []
     },
     {
-      "actor": "Manger",
-      "action": "monitor",
-      "target": "FacebookFeed",
-      "para": []
-    },
-    {
       "actor": "GM",
       "action": "extract",
-      "target": "Data",
+      "target": "PlayerValue",
       "para": []
     },
     {
       "actor": "Manger",
       "action": "monitor",
-      "target": "FacebookReaction",
+      "target": "InstagramReaction",
       "para": []
     },
     {
       "actor": "Customer",
       "action": "update",
       "target": "Data",
-      "para": []
-    },
-    {
-      "actor": "SoccerCoach",
-      "action": "configure",
-      "target": "Schedule",
       "para": []
     },
     {
@@ -107,27 +119,15 @@
       "para": []
     },
     {
-      "actor": "Customer",
-      "action": "add",
-      "target": "Data",
-      "para": []
-    },
-    {
-      "actor": "GM",
-      "action": "build",
-      "target": "Roster",
-      "para": []
-    },
-    {
       "actor": "SporTechBIContractor",
       "action": "update",
       "target": "PlayerData",
       "para": []
     },
     {
-      "actor": "Coach",
-      "action": "build",
-      "target": "Roster",
+      "actor": "Customer",
+      "action": "add",
+      "target": "Data",
       "para": []
     },
     {
@@ -137,21 +137,21 @@
       "para": []
     },
     {
-      "actor": "Manger",
-      "action": "monitor",
-      "target": "InstagramReaction",
+      "actor": "GM",
+      "action": "build",
+      "target": "Roster",
       "para": []
     },
     {
-      "actor": "Customer",
-      "action": "import",
-      "target": "Data",
+      "actor": "Coach",
+      "action": "extract",
+      "target": "PlayerValue",
       "para": []
     },
     {
       "actor": "Manger",
       "action": "monitor",
-      "target": "TwitterReaction",
+      "target": "FacebookReaction",
       "para": []
     }
   ]

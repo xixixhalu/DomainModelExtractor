@@ -5,71 +5,71 @@ class User<actor> {
 class Shelter<actor> {
 }
 class User {
-	want()
-	see()
-	go()
-	visit()
-	cancel()
-	modify()
-	apply()
 	use()
 	inform()
-	get()
 	have()
-}
-class Information {
-}
-class Appointment {
-}
-class Agency {
-}
-class Pet {
-}
-class Picture {
-}
-class Filter {
-}
-class Shelter {
-	want()
-	input()
+	go()
+	see()
 	get()
-}
-class Ability {
+	want()
+	cancel()
+	visit()
+	modify()
+	apply()
 }
 class Ui {
 }
-class filters {
-}
-class SchedulingFunction {
-}
 class type {
 }
-class ShelterInformation {
+class filters {
+}
+class Information {
 }
 class Result {
 }
-class Reminder {
+class Shelter {
+	get()
+	want()
+	input()
 }
 class Notification {
 }
-User --> Information : see
-User --> Pet : go
-User --> Result : have
-User --> Picture : see
-User --> Filter : apply
-Shelter --> Ability : want
-Shelter --> Notification : get
-User --> Ui : use
+class Ability {
+}
+class Appointment {
+}
+class Pet {
+}
+class SchedulingFunction {
+}
+class ShelterInformation {
+}
+class Reminder {
+}
+class Agency {
+}
+class Filter {
+}
+class Picture {
+}
 User --> Information : modify
-User --> filters : apply
-User --> SchedulingFunction : want
-User --> User : see
-User --> type : apply
-User --> Information : want
-Shelter --> ShelterInformation : input
-User --> Appointment : cancel
 User --> Reminder : get
-User --> Shelter : visit
+User --> Result : have
 User --> Agency : inform
+Shelter --> Notification : get
+User --> User : see
+Shelter --> Ability : want
+User --> Information : want
+User --> Shelter : visit
+User --> Appointment : cancel
+User --> Filter : apply
+User --> Pet : go
+User --> Ui : use
+User --> SchedulingFunction : want
+User --> type : apply
+Shelter --> ShelterInformation : input
+User --> Picture : see
+User --> filters : apply
+User --> Information : see
 
 @enduml

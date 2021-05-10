@@ -3,68 +3,68 @@ hide circle
 class User<actor> {
 }
 class User {
-	update()
-	reset()
-	receive()
-	install()
-	add()
-	create()
 	view()
-	set()
-	provide()
-	remove()
-	forgotten()
-	enter()
+	install()
+	receive()
 	purchase()
-}
-class Information {
-}
-class Budget {
-}
-class Password {
-}
-class GiftBuddyContact {
-}
-class Interest {
-}
-class GiftBuddyAccount {
-}
-class GiftRecommendation {
-}
-class Date {
-}
-class Feedback {
-}
-class Application {
-}
-class Gift {
-}
-class Contact {
+	provide()
+	create()
+	reset()
+	update()
+	forgotten()
+	add()
+	remove()
+	set()
+	enter()
 }
 class Group {
 }
-class Notification {
+class GiftBuddyAccount {
+}
+class GiftBuddyContact {
+}
+class Contact {
+}
+class Budget {
+}
+class GiftRecommendation {
+}
+class Gift {
+}
+class Password {
+}
+class Interest {
+}
+class Application {
 }
 class One {
 }
-User --> GiftBuddyContact : set
-User --> Group : remove
-User --> Interest : enter
-User --> Notification : receive
-User --> GiftBuddyContact : add
-User --> User : view
-User --> GiftBuddyAccount : create
-User --> Information : view
-User --> One : forgotten
-User --> GiftRecommendation : receive
-User --> Date : enter
-User --> Information : add
-User --> Feedback : provide
-User --> Application : install
-User --> Information : update
-User --> Gift : purchase
-User --> Budget : set
+class Information {
+}
+class Feedback {
+}
+class Date {
+}
+class Notification {
+}
 User --> Contact : remove
+User --> Feedback : provide
+User --> User : view
+User --> Date : enter
+User --> Budget : set
+User --> GiftRecommendation : receive
+User --> Gift : purchase
+User --> Notification : receive
 User --> Password : reset
+User --> Interest : enter
+User --> Group : remove
+User --> Application : install
+User --> One : forgotten
+User --> GiftBuddyAccount : create
+User --> Information : add
+User --> GiftBuddyContact : set
+User --> Information : view
+User --> Information : update
+User --> GiftBuddyContact : add
 
 @enduml

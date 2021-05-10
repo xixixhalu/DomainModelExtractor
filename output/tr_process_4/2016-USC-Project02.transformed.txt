@@ -54,33 +54,9 @@
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "Admin",
-      "action": "update",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "User",
+      "actor": "member",
       "action": "view",
-      "target": "Trailer",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "update",
-      "target": "Detail",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "check",
-      "target": "Mail",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "download",
-      "target": "Page",
+      "target": "Information",
       "para": []
     },
     {
@@ -90,63 +66,9 @@
       "para": []
     },
     {
-      "actor": "Student",
-      "action": "download",
-      "target": "MusicNote",
-      "para": []
-    },
-    {
-      "actor": "Donor",
-      "action": "support",
-      "target": "VYMACommunity",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "Update",
-      "para": []
-    },
-    {
-      "actor": "parents",
-      "action": "view",
-      "target": "OtherDetail",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "add",
-      "target": "Link",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "purchase",
-      "target": "Dvd",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "News",
-      "para": []
-    },
-    {
-      "actor": "parent",
-      "action": "set",
-      "target": "Payment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
+      "actor": "Admin",
+      "action": "update",
       "target": "Detail",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "check",
-      "target": "Email",
       "para": []
     },
     {
@@ -156,9 +78,87 @@
       "para": []
     },
     {
-      "actor": "member",
-      "action": "view",
+      "actor": "Donor",
+      "action": "support",
+      "target": "VYMACommunity",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "update",
       "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "add",
+      "target": "Link",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "check",
+      "target": "Email",
+      "para": []
+    },
+    {
+      "actor": "parents",
+      "action": "view",
+      "target": "OtherDetail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "download",
+      "target": "Page",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "News",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Trailer",
+      "para": []
+    },
+    {
+      "actor": "parent",
+      "action": "set",
+      "target": "Payment",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "check",
+      "target": "Mail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Update",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "download",
+      "target": "MusicNote",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "purchase",
+      "target": "Dvd",
       "para": []
     }
   ]

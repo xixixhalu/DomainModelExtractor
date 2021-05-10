@@ -7,13 +7,13 @@ class User<actor> {
 class Client<actor> {
 }
 class Client {
+	see()
 	train()
 	extract()
-	upload()
-	see()
 	replace()
+	upload()
 }
-class Model {
+class Image {
 }
 class User {
 	choose()
@@ -21,19 +21,19 @@ class User {
 }
 class Tag {
 }
-class Machine {
-}
-class Image {
-}
-class Pipeline {
+class Model {
 }
 class classification {
 }
-Client --> Machine : replace
+class Pipeline {
+}
+class Machine {
+}
 Client --> Model : extract
+Client --> Image : upload
+Client --> Machine : replace
 Client --> classification : see
 User --> Image : upload
-Client --> Image : upload
 User --> Tag : choose
 Client --> Pipeline : train
 

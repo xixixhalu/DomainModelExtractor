@@ -40,21 +40,21 @@
   "relation_list": [],
   "behavior_list": [
     {
+      "actor": "Administrator",
+      "action": "verify",
+      "target": "Identity",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "leave",
+      "target": "Review",
+      "para": []
+    },
+    {
       "actor": "User",
       "action": "have",
       "target": "Access",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "find",
-      "target": "ServiceProvider",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "PropertyInformation",
       "para": []
     },
     {
@@ -65,20 +65,62 @@
     },
     {
       "actor": "User",
-      "action": "make",
-      "target": "Page",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "activate",
-      "target": "FactorAuthentication",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "adjust",
       "target": "EmailNotificationSetting",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "remove",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "manage",
+      "target": "Investment",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "List",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "SitePermission",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "moderate",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "post",
+      "target": "Article",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "report",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "read",
+      "target": "SiteDiscussionBoard",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "start",
+      "target": "Discussion",
       "para": []
     },
     {
@@ -95,8 +137,20 @@
     },
     {
       "actor": "User",
-      "action": "track",
-      "target": "InvestmentProperty",
+      "action": "make",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "ServiceProvider",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "PropertyInformation",
       "para": []
     },
     {
@@ -108,67 +162,13 @@
     {
       "actor": "User",
       "action": "make",
-      "target": "Profile",
+      "target": "Page",
       "para": []
     },
     {
       "actor": "User",
-      "action": "view",
-      "target": "List",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "read",
-      "target": "Review",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "verify",
-      "target": "Identity",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "moderate",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "report",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "manage",
-      "target": "Investment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "start",
-      "target": "Discussion",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "read",
-      "target": "SiteDiscussionBoard",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "leave",
-      "target": "Review",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "SitePermission",
+      "action": "activate",
+      "target": "FactorAuthentication",
       "para": []
     },
     {
@@ -185,20 +185,8 @@
     },
     {
       "actor": "User",
-      "action": "create",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "view",
-      "target": "WebsiteUtilizationStatistics",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "post",
-      "target": "Article",
+      "action": "track",
+      "target": "InvestmentProperty",
       "para": []
     },
     {
@@ -214,9 +202,21 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "remove",
-      "target": "User",
+      "actor": "User",
+      "action": "read",
+      "target": "Review",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "view",
+      "target": "WebsiteUtilizationStatistics",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Account",
       "para": []
     }
   ]

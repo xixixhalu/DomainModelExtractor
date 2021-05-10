@@ -5,68 +5,68 @@ class User<actor> {
 class Retailer<actor> {
 }
 class User {
-	waste()
-	buy()
-	minimize()
-	view()
-	follow()
 	sort()
-	viewing()
-	shop()
-	get()
 	slide()
-	see()
+	get()
 	collapse()
-}
-class Detail {
-}
-class Cluster {
-}
-class Circle {
+	view()
+	waste()
+	follow()
+	minimize()
+	shop()
+	viewing()
+	see()
+	buy()
 }
 class Sort {
+}
+class Item {
+}
+class Circle {
 }
 class Clothing {
 }
 class LoaderAnimation {
 }
-class Item {
-}
-class Collection {
-}
-class UserExperience {
-}
-class Page {
+class Product {
 }
 class Trend {
 }
-class Product {
-}
 class Cost {
+}
+class Cluster {
 }
 class Version {
 }
+class Detail {
+}
+class UserExperience {
+}
 class Time {
 }
-User --> Sort : collapse
-User --> Version : view
+class Page {
+}
+class Collection {
+}
 User --> Clothing : buy
+User --> Item : view
+User --> Time : waste
 User --> LoaderAnimation : see
 User --> Product : shop
-User --> Item : see
-User --> Collection : slide
-User --> Item : view
-User --> UserExperience : get
-User --> Product : sort
-User --> Time : waste
-User --> Page : viewing
 User --> Trend : follow
-User --> Detail : view
-User --> Product : get
-User --> Cluster : view
 User --> Product : see
 User --> Cost : minimize
-User --> Circle : see
+User --> Collection : slide
+User --> Cluster : view
 User --> Product : view
+User --> Product : sort
+User --> Product : get
+User --> Version : view
+User --> Sort : collapse
+User --> Detail : view
+User --> Item : see
+User --> UserExperience : get
+User --> Circle : see
+User --> Page : viewing
 
 @enduml

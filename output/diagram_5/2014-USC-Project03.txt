@@ -14,100 +14,100 @@ class Head<actor> {
 }
 class User<actor> {
 }
-class Operator {
-	receive()
-	retrieve()
-	add()
-	track()
-	have()
-	send()
-}
-class Employee {
-}
-class Location {
-}
-class Request {
-}
-class Company {
-	offer()
-	receive()
-	accept()
-	control()
-}
-class PaymentOption {
-}
-class Transaction {
-}
 class Head {
-	adjust()
 	set()
+	adjust()
 }
-class Pricing {
+class Price {
 }
-class Establishment {
-	attract()
-	send()
+class Customer {
+	enter()
+	request()
 }
-class Advertisement {
+class TicketNumber {
 }
 class Driver {
-	have()
 	create()
 	select()
+	have()
 	message()
 }
 class Profile {
 }
-class Payment {
-}
-class Notification {
-}
-class Valet {
-}
-class Revenue {
-}
-class Customer {
-	request()
-	enter()
-}
-class TicketNumber {
-}
-class Price {
+class Operator {
+	add()
+	track()
+	receive()
+	send()
+	retrieve()
+	have()
 }
 class Car {
 }
-class EmailTransactionSummaryReport {
+class Company {
+	receive()
+	control()
+	offer()
+	accept()
 }
-class Login {
+class Payment {
 }
 class Option {
+}
+class Employee {
+}
+class Establishment {
+	send()
+	attract()
+}
+class Advertisement {
+}
+class Transaction {
 }
 class User {
 	include()
 }
 class Information {
 }
-Operator --> Location : have
-Driver --> Profile : create
-Head --> Price : set
-Operator --> Request : receive
-Company --> Payment : accept
-Operator --> Car : retrieve
-Company --> EmailTransactionSummaryReport : receive
-Company --> PaymentOption : offer
-Establishment --> Advertisement : send
+class Notification {
+}
+class PaymentOption {
+}
+class Valet {
+}
+class Revenue {
+}
+class Location {
+}
+class EmailTransactionSummaryReport {
+}
+class Pricing {
+}
+class Request {
+}
+class Login {
+}
 Operator --> Transaction : track
-Driver --> Location : select
-Operator --> Login : have
-Customer --> Car : request
-Head --> Pricing : adjust
-Driver --> Option : have
-Operator --> Notification : send
-User --> Information : include
-Driver --> Valet : message
-Establishment --> Customer : attract
-Company --> Revenue : control
-Operator --> Employee : add
+Establishment --> Advertisement : send
 Customer --> TicketNumber : enter
+Driver --> Valet : message
+Company --> Revenue : control
+Driver --> Profile : create
+Operator --> Location : have
+Company --> EmailTransactionSummaryReport : receive
+Operator --> Car : retrieve
+Driver --> Option : have
+Operator --> Employee : add
+Head --> Pricing : adjust
+Company --> Payment : accept
+Establishment --> Customer : attract
+Driver --> Location : select
+Operator --> Request : receive
+User --> Information : include
+Operator --> Login : have
+Operator --> Notification : send
+Customer --> Car : request
+Head --> Price : set
+Company --> PaymentOption : offer
 
 @enduml

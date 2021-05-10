@@ -32,15 +32,33 @@
       "para": []
     },
     {
-      "actor": "TourTaker",
-      "action": "select",
+      "actor": "TourCreator",
+      "action": "upload",
+      "target": "Video",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "view",
       "target": "Tour",
       "para": []
     },
     {
       "actor": "TourCreator",
       "action": "upload",
-      "target": "Video",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "view",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "search",
+      "target": "Tour",
       "para": []
     },
     {
@@ -50,32 +68,14 @@
       "para": []
     },
     {
-      "actor": "TourCreator",
-      "action": "upload",
-      "target": "Information",
-      "para": []
-    },
-    {
       "actor": "TourTaker",
-      "action": "view",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "authorize",
-      "target": "TourCreator",
-      "para": []
-    },
-    {
-      "actor": "TourCreator",
-      "action": "view",
+      "action": "select",
       "target": "Tour",
       "para": []
     },
     {
-      "actor": "TourTaker",
-      "action": "search",
+      "actor": "Owner",
+      "action": "delete",
       "target": "Tour",
       "para": []
     },
@@ -93,8 +93,8 @@
     },
     {
       "actor": "Owner",
-      "action": "delete",
-      "target": "Tour",
+      "action": "authorize",
+      "target": "TourCreator",
       "para": []
     }
   ]

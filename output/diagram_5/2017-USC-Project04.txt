@@ -6,102 +6,102 @@ class Student<actor> {
 }
 class Competitor<actor> {
 }
-class User {
-	finished()
-	invite()
-	send()
-	play()
-	click()
-	do()
-	use()
-	see()
-	give()
-	submit()
-	check()
-	pick()
-	get()
-	receive()
-}
-class Button {
-}
-class Reward {
-}
-class FinishTime {
-}
-class Notification {
-}
 class Suggestion {
 	challenge()
 }
-class Detail {
-}
-class ChallengeNotification {
-}
-class ChallengeTask {
-}
-class Challenge {
-}
-class ChallengeScore {
-}
-class IPhoneModel {
-}
-class Competitor {
-	post()
-	view()
-	verify()
-}
-class Student {
-	see()
-	select()
-}
-class Friend {
-	participate()
-}
-class Rank {
-}
 class Topic {
 }
-class Idea {
-}
-class Post {
+class User {
+	click()
+	check()
+	pick()
+	play()
+	submit()
+	invite()
+	get()
+	use()
+	receive()
+	send()
+	finished()
+	give()
+	do()
+	see()
 }
 class Time {
 }
-class ChallengeRequest {
+class Competitor {
+	verify()
+	post()
+	view()
 }
 class OpponentPost {
 }
 class ChallengePost {
 }
+class Challenge {
+}
+class Student {
+	select()
+	see()
+}
+class ChallengeTask {
+}
+class Friend {
+	participate()
+}
+class ChallengeScore {
+}
+class Reward {
+}
+class Detail {
+}
+class Notification {
+}
+class ChallengeRequest {
+}
+class Button {
+}
+class IPhoneModel {
+}
+class Rank {
+}
 class ChallengeGame {
 }
-User --> Idea : submit
-User --> Notification : receive
-Student --> Challenge : see
-Competitor --> Post : view
-User --> Suggestion : give
-User --> Friend : invite
-User --> Time : see
-User --> Detail : get
-Friend --> Challenge : participate
-User --> ChallengeNotification : get
-User --> ChallengeRequest : send
-User --> IPhoneModel : use
-User --> ChallengeTask : do
-User --> Competitor : pick
+class Idea {
+}
+class ChallengeNotification {
+}
+class Post {
+}
+class FinishTime {
+}
 Competitor --> OpponentPost : verify
-User --> Challenge : check
-User --> Notification : get
-Competitor --> ChallengePost : post
-User --> ChallengeScore : use
-User --> Challenge : finished
-Student --> Competitor : select
-User --> ChallengeGame : play
-User --> Button : click
+User --> ChallengeRequest : send
+User --> Notification : receive
+User --> Suggestion : give
 User --> Challenge : see
+Competitor --> ChallengePost : post
+Student --> Challenge : see
 User --> Rank : see
+User --> Challenge : check
+User --> ChallengeGame : play
+Student --> Competitor : select
+User --> Idea : submit
 User --> Reward : get
-Suggestion --> Topic : challenge
+User --> ChallengeTask : do
+User --> Friend : invite
+User --> ChallengeNotification : get
+Friend --> Challenge : participate
+Competitor --> Post : view
+User --> ChallengeScore : use
+User --> Detail : get
+User --> Notification : get
 User --> FinishTime : see
+Suggestion --> Topic : challenge
+User --> Competitor : pick
+User --> Button : click
+User --> Time : see
+User --> Challenge : finished
+User --> IPhoneModel : use
 
 @enduml

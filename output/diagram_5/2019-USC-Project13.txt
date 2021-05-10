@@ -14,122 +14,122 @@ class Enduser<actor> {
 }
 class Administrator<actor> {
 }
-class Admin {
-	get()
-	export()
-	update()
-	assign()
-	view()
-	send()
-	match()
-	track()
-}
 class Mentor {
-	reset()
-	report()
 	create()
-	register()
-	select()
-	update()
-	provide()
-	monitor()
 	accept()
-	mark()
 	submit()
-}
-class Mentee {
 	reset()
-	select()
 	update()
-	send()
-	upload()
-	see()
-}
-class ContactDetail {
-}
-class Password {
-}
-class Administrator {
-	get()
-}
-class Statistics {
-}
-class Availability {
-}
-class Detail {
-}
-class Report {
-}
-class Request {
-	establish()
-}
-class Connection {
-}
-class Status {
+	mark()
+	select()
+	register()
+	monitor()
+	provide()
+	report()
 }
 class TrainingPhaseActivity {
 }
-class Information {
-	includes()
-}
-class Phone {
-}
-class InformationDetail {
-}
-class ActivityRecord {
-}
-class User {
+class Admin {
+	track()
+	assign()
 	update()
-	access()
+	send()
+	export()
+	view()
+	match()
+	get()
 }
-class Site {
-}
-class Reminder {
+class Report {
 }
 class ActivityReport {
 }
+class Interaction {
+}
+class Mentee {
+	upload()
+	reset()
+	update()
+	select()
+	send()
+	see()
+}
+class InformationDetail {
+}
+class Statistics {
+}
+class Detail {
+}
+class ContactDetail {
+}
+class Reminder {
+}
+class Password {
+}
 class List {
+}
+class Availability {
+}
+class User {
+	access()
+	update()
+}
+class Request {
+	establish()
 }
 class Developer {
 	integrate()
 }
 class WebApplication {
 }
-class Interaction {
+class Connection {
 }
-Developer --> WebApplication : integrate
-Mentor --> Mentee : select
-Mentee --> ContactDetail : update
-Information --> Phone : includes
-Mentor --> Interaction : report
+class Information {
+	includes()
+}
+class Phone {
+}
+class Site {
+}
+class ActivityRecord {
+}
+class Status {
+}
+class Administrator {
+	get()
+}
 Mentor --> Availability : mark
-Mentor --> Report : submit
-Admin --> Mentee : track
-Mentor --> Detail : register
-Mentee --> InformationDetail : update
-Mentee --> Password : reset
-User --> Password : update
-Admin --> Mentor : track
-Admin --> Mentor : assign
-Mentor --> ActivityRecord : create
-Mentee --> Detail : upload
-Mentor --> ActivityReport : provide
-Mentor --> Password : reset
-Admin --> Report : export
-User --> Site : access
-Admin --> Reminder : send
-Request --> Connection : establish
-Administrator --> Statistics : get
-Admin --> ActivityReport : view
 Mentor --> Request : accept
-Admin --> Statistics : view
-Mentor --> Information : update
+Mentor --> Report : submit
 Admin --> Report : get
-Mentee --> Request : send
 Admin --> Status : update
-Mentee --> List : see
-Mentor --> TrainingPhaseActivity : monitor
-Mentee --> Mentor : select
+Admin --> Statistics : view
+User --> Password : update
+Mentor --> ActivityReport : provide
+Admin --> Mentor : assign
+Administrator --> Statistics : get
+Mentee --> Request : send
+Admin --> Mentee : track
+Mentor --> Password : reset
+Mentee --> Detail : upload
+Admin --> Mentor : track
+Admin --> Report : export
+Mentor --> Interaction : report
+Mentor --> Mentee : select
+Developer --> WebApplication : integrate
+Admin --> ActivityReport : view
+Mentee --> ContactDetail : update
+Request --> Connection : establish
+Mentee --> InformationDetail : update
+Admin --> Reminder : send
+Information --> Phone : includes
+Mentor --> Detail : register
 Admin --> Mentor : match
+User --> Site : access
+Mentee --> Password : reset
+Mentor --> Information : update
+Mentee --> List : see
+Mentee --> Mentor : select
+Mentor --> TrainingPhaseActivity : monitor
+Mentor --> ActivityRecord : create
 
 @enduml

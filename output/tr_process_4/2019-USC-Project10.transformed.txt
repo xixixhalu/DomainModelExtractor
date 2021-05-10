@@ -27,8 +27,8 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "find",
-      "target": "Movie",
+      "action": "interested",
+      "target": "Media",
       "para": []
     },
     {
@@ -50,9 +50,15 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "interested",
-      "target": "Media",
+      "actor": "Developer",
+      "action": "access",
+      "target": "MediaData",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "display",
+      "target": "Result",
       "para": []
     },
     {
@@ -74,15 +80,9 @@
       "para": []
     },
     {
-      "actor": "Developer",
-      "action": "display",
-      "target": "Result",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "access",
-      "target": "MediaData",
+      "actor": "User",
+      "action": "find",
+      "target": "Movie",
       "para": []
     }
   ]

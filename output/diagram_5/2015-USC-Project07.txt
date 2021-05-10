@@ -11,146 +11,146 @@ class WebsiteModerator<actor> {
 class WebsiteEndUser<actor> {
 }
 class Consumer {
+	find()
 	leave()
-	get()
+	add()
+	do()
+	search()
+	reset()
 	have()
 	manage()
-	do()
-	find()
-	add()
-	search()
-	sort()
 	gain()
+	get()
+	sort()
 	narrow()
-	reset()
-}
-class Cart {
-}
-class WebsiteModerator {
-	post()
-	sort()
-	suspend()
-	approve()
-}
-class VendorAccount {
-}
-class Product {
-}
-class EmailAddress {
-}
-class Communication {
-}
-class VolumeTotal {
-	determine()
-}
-class Vendor {
-	upload()
-	provide()
-	list()
-	manage()
-	add()
-	gather()
-	view()
-	offer()
-	compare()
-	make()
-	ship()
-	improve()
-}
-class WebsiteOwner {
-	post()
-	sort()
-	suspend()
-	approve()
-}
-class Blog {
-}
-class Time {
 }
 class Comment {
+}
+class WebsiteModerator {
+	approve()
+	post()
+	suspend()
+	sort()
 }
 class Account {
 }
 class TransactionTotal {
 	determine()
 }
-class Date {
-}
-class Discount {
-}
-class PasswordReset {
+class Vendor {
+	ship()
+	offer()
+	view()
+	list()
+	add()
+	compare()
+	make()
+	improve()
+	gather()
+	manage()
+	provide()
+	upload()
 }
 class Item {
 }
-class Purchase {
+class Pricing {
+}
+class Product {
 }
 class Promotion {
 }
-class Knowledge {
+class WebsiteOwner {
+	approve()
+	post()
+	suspend()
+	sort()
+}
+class Blog {
+}
+class Cart {
+}
+class Communication {
+}
+class Feedback {
 }
 class ItemPrice {
 }
-class Service {
+class Discount {
+}
+class Understanding {
+}
+class VolumeTotal {
+	determine()
+}
+class EmailAddress {
+}
+class Purchase {
 }
 class Password {
+}
+class VendorAccount {
 }
 class Recommendation {
 }
 class Video {
 }
-class Access {
+class Service {
+}
+class Time {
 }
 class SearchResult {
 }
+class Knowledge {
+}
+class Date {
+}
 class Price {
 }
-class Pricing {
+class Access {
 }
-class Feedback {
+class PasswordReset {
 }
-class Understanding {
-}
-WebsiteModerator --> VendorAccount : approve
-Consumer --> Item : add
+WebsiteModerator --> Account : suspend
 Vendor --> Video : upload
-Consumer --> Account : manage
-WebsiteOwner --> VendorAccount : approve
-Consumer --> Product : search
-Consumer --> Access : get
-Vendor --> Item : list
+Vendor --> Product : ship
+Vendor --> Pricing : make
+Consumer --> Product : find
+Vendor --> Service : improve
+WebsiteOwner --> Account : suspend
+Consumer --> Product : sort
+Vendor --> Promotion : offer
+Vendor --> Time : view
 VolumeTotal --> Vendor : determine
+Consumer --> Account : manage
+WebsiteOwner --> Vendor : sort
+Vendor --> Product : add
+Consumer --> EmailAddress : reset
 WebsiteOwner --> Blog : post
 Consumer --> SearchResult : narrow
-Consumer --> Purchase : do
-Vendor --> Time : view
-Vendor --> Price : compare
-Vendor --> Promotion : offer
-Consumer --> EmailAddress : reset
-Consumer --> Comment : leave
-Consumer --> Product : find
-Vendor --> Product : add
-WebsiteOwner --> Communication : post
-Consumer --> Knowledge : gain
-WebsiteOwner --> Account : suspend
-WebsiteModerator --> Vendor : sort
-Consumer --> Product : sort
-Vendor --> ItemPrice : manage
-Vendor --> Pricing : make
-WebsiteModerator --> Communication : post
+Vendor --> Item : list
 TransactionTotal --> Vendor : determine
-WebsiteModerator --> Blog : post
+Consumer --> Item : add
+Consumer --> Cart : manage
+Consumer --> Purchase : do
+Consumer --> Knowledge : gain
+WebsiteModerator --> Communication : post
+WebsiteModerator --> Vendor : sort
+Consumer --> Product : search
 Vendor --> Date : view
-WebsiteModerator --> Account : suspend
 Vendor --> Product : improve
 Vendor --> Feedback : gather
-Vendor --> Service : improve
-Vendor --> Discount : provide
-Consumer --> Understanding : have
+WebsiteOwner --> Communication : post
+Vendor --> Price : compare
 Consumer --> Password : manage
-Consumer --> Cart : manage
-Vendor --> Product : ship
+Vendor --> ItemPrice : manage
+Consumer --> Access : get
+WebsiteModerator --> VendorAccount : approve
+Vendor --> Discount : provide
+Consumer --> Comment : leave
 Consumer --> PasswordReset : get
 Consumer --> Recommendation : get
-WebsiteOwner --> Vendor : sort
+Consumer --> Understanding : have
+WebsiteModerator --> Blog : post
+WebsiteOwner --> VendorAccount : approve
 
 @enduml

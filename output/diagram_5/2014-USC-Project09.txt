@@ -13,18 +13,20 @@ class TipCalculator {
 class Tip {
 }
 class User {
-	review()
-	download()
-	see()
-	use()
-	add()
 	lookup()
+	review()
 	like()
-	submit()
+	add()
+	see()
 	reduced()
+	download()
+	use()
+	submit()
 	have()
 }
-class Question {
+class Application {
+}
+class TravelTippingGuide {
 }
 class Administrator {
 	assign()
@@ -33,45 +35,43 @@ class Administrator {
 }
 class Comment {
 }
+class Question {
+}
 class Business {
 	claim()
 }
 class Number {
 }
-class TravelGuide {
+class Access {
 }
-class SearchResult {
+class TravelGuide {
 }
 class List {
 	shows()
 }
-class Information {
-}
-class Application {
+class SearchResult {
 }
 class Friction {
 }
-class TravelTippingGuide {
+class Information {
 }
-class Access {
-}
-Business --> Business : claim
-TipCalculator --> Tip : calculate
+TipCalculator --> Tip : split
 User --> Friction : reduced
-Administrator --> Number : assign
-Administrator --> Comment : verify
+User --> Question : submit
+User --> TravelTippingGuide : review
+Business --> Business : claim
+User --> Information : like
+List --> Business : shows
+TipCalculator --> Tip : calculate
+User --> Access : have
 User --> Business : lookup
 User --> TipCalculator : use
-List --> Business : shows
-User --> TravelGuide : download
-User --> Access : have
-Administrator --> Comment : approve
-User --> Application : like
-User --> Question : submit
-TipCalculator --> Tip : split
-User --> TravelTippingGuide : review
-User --> Business : add
-User --> Information : like
 User --> SearchResult : see
+User --> Business : add
+Administrator --> Comment : verify
+User --> TravelGuide : download
+User --> Application : like
+Administrator --> Comment : approve
+Administrator --> Number : assign
 
 @enduml

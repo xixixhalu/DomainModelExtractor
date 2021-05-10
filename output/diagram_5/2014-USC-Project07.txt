@@ -2,60 +2,60 @@
 hide circle
 class ESS<actor> {
 }
+class ESS {
+	drag()
+	create()
+	use()
+	turn()
+}
+class Function {
+}
 class odule {
 	detect()
 }
 class Edge {
 }
-class ESS {
-	create()
-	use()
-	drag()
-	turn()
-}
-class Module {
-}
-class WaitCondition {
-}
-class Cliff {
-}
-class Direction {
-}
-class Instruction {
-}
-class Speed {
+class Song {
 }
 class Sound {
 }
-class LEDs {
-}
-class Song {
-}
-class ElapsedTime {
-}
-class Function {
+class Module {
 }
 class LoopConstruct {
 }
-class ProgramFile {
+class Speed {
+}
+class LEDs {
+}
+class WaitCondition {
+}
+class Direction {
 }
 class InstructionConstruct {
 }
-ESS --> Instruction : drag
-ESS --> LEDs : turn
-ESS --> ProgramFile : create
-odule --> Cliff : detect
-ESS --> Function : drag
-ESS --> odule : use
-odule --> Edge : detect
-odule --> Speed : detect
-ESS --> Module : use
-ESS --> Song : create
-ESS --> InstructionConstruct : drag
-odule --> Direction : detect
-ESS --> LoopConstruct : drag
+class Instruction {
+}
+class ProgramFile {
+}
+class ElapsedTime {
+}
+class Cliff {
+}
 ESS --> Sound : use
 odule --> ElapsedTime : detect
+odule --> Speed : detect
+ESS --> Instruction : drag
+odule --> Edge : detect
+odule --> Direction : detect
+ESS --> Function : drag
+ESS --> Module : use
+odule --> Cliff : detect
+ESS --> LEDs : turn
+ESS --> ProgramFile : create
+ESS --> Song : create
+ESS --> odule : use
+ESS --> LoopConstruct : drag
+ESS --> InstructionConstruct : drag
 ESS --> WaitCondition : drag
 
 @enduml

@@ -14,49 +14,20 @@ class Member<actor> {
 }
 class Admin<actor> {
 }
-class User {
-	manage()
-	update()
-	access()
-	delete()
-	block()
-	report()
-}
-class Profile {
-}
 class Patient {
 	attended()
-	has()
-	contact()
-	send()
-	add()
 	have()
-	posted()
 	pull()
 	get()
 	message()
+	contact()
+	posted()
+	has()
+	send()
+	add()
 	share()
 }
 class Event {
-}
-class Invitation {
-}
-class Junk {
-}
-class member {
-	receive()
-	get()
-	send()
-}
-class Link {
-}
-class Message {
-}
-class Calendar {
-}
-class members {
-}
-class Appointment {
 }
 class Admin {
 	view()
@@ -64,21 +35,37 @@ class Admin {
 }
 class List {
 }
-class Task {
-}
-class Notification {
+class Administrator {
+	suspense()
 }
 class Account {
 }
-class Friend {
+class User {
+	report()
+	update()
+	manage()
+	delete()
+	block()
+	access()
+}
+class Junk {
+}
+class member {
+	send()
+	receive()
+	get()
+}
+class Link {
+}
+class HealthCondition {
+}
+class Money {
+}
+class Task {
 }
 class Announcement {
 }
-class Messaging {
-}
-class CalendarEvent {
-}
-class Money {
+class members {
 }
 class SupportGroup {
 	access()
@@ -87,49 +74,62 @@ class kind {
 }
 class AdMessage {
 }
-class Statistics {
+class Messaging {
+}
+class CalendarEvent {
+}
+class Message {
+}
+class Friend {
 }
 class Information {
 }
-class Administrator {
-	suspense()
+class Calendar {
 }
-class HealthCondition {
+class Notification {
+}
+class Appointment {
+}
+class Invitation {
+}
+class Profile {
 }
 class Resource {
 }
-Patient --> Information : get
-Patient --> Calendar : share
-User --> Message : block
-Patient --> Event : posted
-User --> members : manage
-User --> Information : update
-Patient --> Friend : message
+class Statistics {
+}
 Patient --> Invitation : share
-Administrator --> Account : suspense
-Admin --> Announcement : post
-Patient --> members : message
-Patient --> Friend : pull
+User --> AdMessage : report
+member --> Link : send
+User --> Account : delete
+Admin --> List : view
 Patient --> Profile : share
 Patient --> members : pull
-Patient --> HealthCondition : have
 Patient --> Messaging : send
-User --> Junk : report
-Patient --> Event : attended
+Patient --> Event : posted
+Administrator --> Account : suspense
 member --> Resource : receive
 Patient --> CalendarEvent : add
-Patient --> Appointment : has
-member --> Money : send
-member --> Link : send
-Admin --> List : view
+Patient --> HealthCondition : have
+User --> Profile : access
 Patient --> Patient : contact
 Patient --> Message : send
-SupportGroup --> kind : access
-Patient --> Task : posted
-User --> AdMessage : report
-member --> Notification : get
 Admin --> Statistics : view
-User --> Profile : access
-User --> Account : delete
+member --> Money : send
+Patient --> Friend : message
+Patient --> Information : get
+Patient --> Task : posted
+Patient --> Friend : pull
+User --> Information : update
+User --> Junk : report
+Admin --> Announcement : post
+User --> Message : block
+User --> members : manage
+Patient --> Calendar : share
+Patient --> members : message
+member --> Notification : get
+SupportGroup --> kind : access
+Patient --> Appointment : has
+Patient --> Event : attended
 
 @enduml

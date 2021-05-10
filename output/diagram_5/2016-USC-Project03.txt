@@ -3,49 +3,49 @@ hide circle
 class User<actor> {
 }
 class User {
-	run()
+	access()
 	fastforward()
-	see()
 	click()
+	run()
+	see()
 	consume()
 	pick()
 	view()
-	access()
 	play()
 }
 class Answer {
 }
-class App {
-}
-class inline {
-}
 class Material {
-}
-class Hint {
 }
 class Video {
 }
-class TextContents {
+class App {
 }
 class Audio {
 }
-class Page {
-}
 class GirlBill {
 }
-User --> Material : access
-User --> Audio : play
-User --> Answer : see
-User --> Video : fastforward
-User --> App : run
-User --> Page : view
-User --> Answer : pick
+class inline {
+}
+class Page {
+}
+class TextContents {
+}
+class Hint {
+}
 User --> App : click
-User --> Hint : see
-User --> TextContents : access
-User --> inline : consume
-User --> GirlBill : click
-User --> Video : play
+User --> Answer : see
 User --> Audio : fastforward
+User --> App : run
+User --> Material : access
+User --> TextContents : access
+User --> Answer : pick
+User --> inline : consume
+User --> Audio : play
+User --> Video : fastforward
+User --> Video : play
+User --> Page : view
+User --> GirlBill : click
+User --> Hint : see
 
 @enduml

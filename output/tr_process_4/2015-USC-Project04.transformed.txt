@@ -54,15 +54,9 @@
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "CollegeStudent",
-      "action": "improve",
-      "target": "Competence",
-      "para": []
-    },
-    {
-      "actor": "MBVStudent",
-      "action": "improve",
-      "target": "ConflictResolutionSkill",
+      "actor": "Veteran",
+      "action": "compare",
+      "target": "ThoughtProcess",
       "para": []
     },
     {
@@ -72,57 +66,21 @@
       "para": []
     },
     {
-      "actor": "Veteran",
-      "action": "see",
-      "target": "Graph",
-      "para": []
-    },
-    {
-      "actor": "CollegeStudent",
-      "action": "improve",
-      "target": "ConflictManagementSkill",
-      "para": []
-    },
-    {
       "actor": "AdultLearner",
-      "action": "have",
-      "target": "Practice",
+      "action": "take",
+      "target": "Assessment",
       "para": []
     },
     {
       "actor": "MBVStudent",
-      "action": "use",
-      "target": "Score",
-      "para": []
-    },
-    {
-      "actor": "Veteran",
-      "action": "compare",
-      "target": "ThoughtProcess",
-      "para": []
-    },
-    {
-      "actor": "Team",
-      "action": "resolve",
-      "target": "Conflict",
-      "para": []
-    },
-    {
-      "actor": "AdultLearner",
-      "action": "practice",
+      "action": "improve",
       "target": "ConflictResolutionSkill",
       "para": []
     },
     {
-      "actor": "ExperientialLearningCenterStaff",
-      "action": "take",
-      "target": "Training",
-      "para": []
-    },
-    {
-      "actor": "AdultLearner",
-      "action": "resolve",
-      "target": "Conflict",
+      "actor": "Veteran",
+      "action": "see",
+      "target": "Graph",
       "para": []
     },
     {
@@ -133,14 +91,26 @@
     },
     {
       "actor": "CollegeStudent",
-      "action": "use",
-      "target": "Program",
+      "action": "improve",
+      "target": "Confidence",
       "para": []
     },
     {
-      "actor": "Executive",
-      "action": "encourage",
-      "target": "Employee",
+      "actor": "AdultLearner",
+      "action": "have",
+      "target": "Practice",
+      "para": []
+    },
+    {
+      "actor": "AdultLearner",
+      "action": "resolve",
+      "target": "Conflict",
+      "para": []
+    },
+    {
+      "actor": "AdultLearner",
+      "action": "practice",
+      "target": "ConflictResolutionSkill",
       "para": []
     },
     {
@@ -150,15 +120,9 @@
       "para": []
     },
     {
-      "actor": "AdultLearner",
-      "action": "take",
-      "target": "Assessment",
-      "para": []
-    },
-    {
       "actor": "CollegeStudent",
       "action": "improve",
-      "target": "Confidence",
+      "target": "Competence",
       "para": []
     },
     {
@@ -168,9 +132,45 @@
       "para": []
     },
     {
+      "actor": "CollegeStudent",
+      "action": "use",
+      "target": "Program",
+      "para": []
+    },
+    {
+      "actor": "MBVStudent",
+      "action": "use",
+      "target": "Score",
+      "para": []
+    },
+    {
       "actor": "AdultLearner",
       "action": "view",
       "target": "Score",
+      "para": []
+    },
+    {
+      "actor": "ExperientialLearningCenterStaff",
+      "action": "take",
+      "target": "Training",
+      "para": []
+    },
+    {
+      "actor": "CollegeStudent",
+      "action": "improve",
+      "target": "ConflictManagementSkill",
+      "para": []
+    },
+    {
+      "actor": "Team",
+      "action": "resolve",
+      "target": "Conflict",
+      "para": []
+    },
+    {
+      "actor": "Executive",
+      "action": "encourage",
+      "target": "Employee",
       "para": []
     }
   ]

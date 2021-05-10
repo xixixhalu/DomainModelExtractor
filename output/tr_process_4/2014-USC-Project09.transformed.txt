@@ -27,80 +27,14 @@
   "behavior_list": [
     {
       "actor": "TipCalculator",
-      "action": "calculate",
-      "target": "Tip",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "submit",
-      "target": "Question",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "verify",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "approve",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "Business",
-      "action": "claim",
-      "target": "Business",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "assign",
-      "target": "Number",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "download",
-      "target": "TravelGuide",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "SearchResult",
-      "para": []
-    },
-    {
-      "actor": "List",
-      "action": "shows",
-      "target": "Business",
-      "para": []
-    },
-    {
-      "actor": "TipCalculator",
       "action": "split",
       "target": "Tip",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "like",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "lookup",
-      "target": "Business",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "use",
-      "target": "TipCalculator",
+      "actor": "TipCalculator",
+      "action": "calculate",
+      "target": "Tip",
       "para": []
     },
     {
@@ -111,14 +45,80 @@
     },
     {
       "actor": "User",
+      "action": "review",
+      "target": "TravelTippingGuide",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "verify",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "submit",
+      "target": "Question",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "lookup",
+      "target": "Business",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "assign",
+      "target": "Number",
+      "para": []
+    },
+    {
+      "actor": "Business",
+      "action": "claim",
+      "target": "Business",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "download",
+      "target": "TravelGuide",
+      "para": []
+    },
+    {
+      "actor": "List",
+      "action": "shows",
+      "target": "Business",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "SearchResult",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "reduced",
       "target": "Friction",
       "para": []
     },
     {
       "actor": "User",
-      "action": "review",
-      "target": "TravelTippingGuide",
+      "action": "use",
+      "target": "TipCalculator",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "approve",
+      "target": "Comment",
       "para": []
     },
     {
@@ -129,8 +129,8 @@
     },
     {
       "actor": "User",
-      "action": "have",
-      "target": "Access",
+      "action": "like",
+      "target": "Information",
       "para": []
     }
   ]

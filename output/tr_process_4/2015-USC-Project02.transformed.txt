@@ -20,50 +20,8 @@
   "behavior_list": [
     {
       "actor": "Admin",
-      "action": "suspend",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "keep",
-      "target": "Photo",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "reserve",
-      "target": "Hashtag",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "update",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "post",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "save",
-      "target": "Hashtag",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "save",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "use",
-      "target": "Application",
+      "action": "change",
+      "target": "SystemSetting",
       "para": []
     },
     {
@@ -73,51 +31,45 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "manage",
-      "target": "User",
+      "actor": "User",
+      "action": "upload",
+      "target": "Picture",
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "change",
-      "target": "ExpirationDate",
+      "actor": "User",
+      "action": "remove",
+      "target": "Event",
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "manage",
-      "target": "Contents",
-      "para": []
-    },
-    {
-      "actor": "Admin",
+      "actor": "User",
       "action": "create",
-      "target": "EventHashtag",
+      "target": "Public",
       "para": []
     },
     {
       "actor": "User",
-      "action": "like",
-      "target": "Picture",
+      "action": "take",
+      "target": "Photo",
       "para": []
     },
     {
       "actor": "User",
-      "action": "choose",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "Picture",
-      "action": "give",
-      "target": "Control",
+      "action": "create",
+      "target": "Login",
       "para": []
     },
     {
       "actor": "Admin",
-      "action": "change",
-      "target": "SystemSetting",
+      "action": "perform",
+      "target": "AdminFeature",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "Hashtag",
       "para": []
     },
     {
@@ -128,68 +80,14 @@
     },
     {
       "actor": "User",
-      "action": "report",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "Login",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "moderate",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "sort",
-      "target": "Picture",
+      "action": "use",
+      "target": "Application",
       "para": []
     },
     {
       "actor": "Admin",
-      "action": "browse",
+      "action": "manage",
       "target": "User",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "have",
-      "target": "Control",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "shut",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "have",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "Public",
-      "para": []
-    },
-    {
-      "actor": "Tourist",
-      "action": "search",
-      "target": "Location",
       "para": []
     },
     {
@@ -205,6 +103,54 @@
       "para": []
     },
     {
+      "actor": "User",
+      "action": "post",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "moderate",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "have",
+      "target": "Control",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "report",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "take",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "change",
+      "target": "ExpirationDate",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "like",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "Picture",
+      "para": []
+    },
+    {
       "actor": "Admin",
       "action": "change",
       "target": "Name",
@@ -212,56 +158,32 @@
     },
     {
       "actor": "Admin",
-      "action": "perform",
-      "target": "AdminFeature",
+      "action": "suspend",
+      "target": "User",
       "para": []
     },
     {
       "actor": "User",
-      "action": "remove",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "take",
+      "action": "keep",
       "target": "Photo",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "delete",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "use",
-      "target": "Hashtag",
-      "para": []
-    },
-    {
       "actor": "Admin",
-      "action": "delete",
+      "action": "update",
       "target": "Event",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "upload",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "remove",
-      "target": "Picture",
-      "para": []
-    },
-    {
       "actor": "Admin",
-      "action": "delete",
-      "target": "Picture",
+      "action": "create",
+      "target": "EventHashtag",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Event",
       "para": []
     },
     {
@@ -271,9 +193,87 @@
       "para": []
     },
     {
+      "actor": "User",
+      "action": "sort",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reserve",
+      "target": "Hashtag",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "save",
+      "target": "Hashtag",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "save",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "Tourist",
+      "action": "search",
+      "target": "Location",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "manage",
+      "target": "Contents",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "choose",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "remove",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "Picture",
+      "action": "give",
+      "target": "Control",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "have",
+      "target": "Information",
+      "para": []
+    },
+    {
       "actor": "EventAttendee",
       "action": "use",
       "target": "Hashtag",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "browse",
+      "target": "User",
       "para": []
     },
     {
@@ -284,8 +284,8 @@
     },
     {
       "actor": "User",
-      "action": "take",
-      "target": "Picture",
+      "action": "shut",
+      "target": "Event",
       "para": []
     }
   ]

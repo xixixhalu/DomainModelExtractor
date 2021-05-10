@@ -6,39 +6,39 @@ class Developer<actor> {
 }
 class Admin<actor> {
 }
-class Developer {
-	enable()
-	allow()
-	provide()
-}
 class User {
 	view()
-	keep()
 	return()
+	keep()
+}
+class Track {
 }
 class Item {
 	using()
 }
-class Source {
+class Developer {
+	provide()
+	enable()
+	allow()
 }
-class Track {
+class LoginSystem {
 }
 class Product {
+}
+class Source {
 }
 class Admin {
 	maintain()
 }
 class Database {
 }
-class LoginSystem {
-}
+Item --> Source : using
+Developer --> LoginSystem : provide
 User --> Track : keep
-Developer --> User : allow
+User --> Product : return
+User --> Item : view
 Admin --> Database : maintain
 Developer --> User : enable
-Developer --> LoginSystem : provide
-User --> Product : return
-Item --> Source : using
-User --> Item : view
+Developer --> User : allow
 
 @enduml

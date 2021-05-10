@@ -26,63 +26,57 @@
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "Expert",
-      "action": "keep",
-      "target": "Track",
+      "actor": "Quiz",
+      "action": "find",
+      "target": "MoneyBelief",
       "para": []
     },
     {
       "actor": "Expert",
-      "action": "view",
-      "target": "Feedback",
+      "action": "sign",
+      "target": "LinkedInAs",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "video",
-      "target": "Chat",
+      "actor": "Expert",
+      "action": "given",
+      "target": "Advice",
       "para": []
     },
     {
-      "actor": "GuestUser",
-      "action": "take",
-      "target": "Quiz",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "update",
-      "target": "PaymentMethod",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "SessionAppointmentHistory",
-      "para": []
-    },
-    {
-      "actor": "Transcript",
+      "actor": "VideoRecord",
       "action": "gain",
       "target": "PersonalityData",
       "para": []
     },
     {
-      "actor": "Expert",
-      "action": "update",
-      "target": "ProfileBio",
+      "actor": "User",
+      "action": "access",
+      "target": "ContentLibrary",
       "para": []
     },
     {
       "actor": "User",
-      "action": "had",
-      "target": "Appointment",
+      "action": "rate",
+      "target": "Expert",
+      "para": []
+    },
+    {
+      "actor": "GuestUser",
+      "action": "access",
+      "target": "Feature",
       "para": []
     },
     {
       "actor": "User",
       "action": "get",
       "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "video",
+      "target": "Chat",
       "para": []
     },
     {
@@ -93,8 +87,32 @@
     },
     {
       "actor": "Expert",
-      "action": "set",
-      "target": "Status",
+      "action": "view",
+      "target": "Feedback",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "access",
+      "target": "VideoStreamingLibrary",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "manage",
+      "target": "Appointment",
+      "para": []
+    },
+    {
+      "actor": "Expert",
+      "action": "see",
+      "target": "History",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "Advice",
       "para": []
     },
     {
@@ -104,7 +122,121 @@
       "para": []
     },
     {
+      "actor": "User",
+      "action": "view",
+      "target": "Profile",
+      "para": []
+    },
+    {
       "actor": "Expert",
+      "action": "see",
+      "target": "PaymentHistory",
+      "para": []
+    },
+    {
+      "actor": "Expert",
+      "action": "set",
+      "target": "Status",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "had",
+      "target": "Appointment",
+      "para": []
+    },
+    {
+      "actor": "Expert",
+      "action": "view",
+      "target": "Rating",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sign",
+      "target": "Facebook",
+      "para": []
+    },
+    {
+      "actor": "Expert",
+      "action": "manage",
+      "target": "Calendar",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "schedule",
+      "target": "Session",
+      "para": []
+    },
+    {
+      "actor": "Expert",
+      "action": "receive",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "Expert",
+      "action": "update",
+      "target": "ProfileBio",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "access",
+      "target": "Calculator",
+      "para": []
+    },
+    {
+      "actor": "Transcript",
+      "action": "gain",
+      "target": "PersonalityData",
+      "para": []
+    },
+    {
+      "actor": "ContentLibrary",
+      "action": "provides",
+      "target": "Topic",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "PaymentMethod",
+      "para": []
+    },
+    {
+      "actor": "GuestUser",
+      "action": "take",
+      "target": "Quiz",
+      "para": []
+    },
+    {
+      "actor": "Expert",
+      "action": "make",
+      "target": "Change",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "took",
+      "target": "Advice",
+      "para": []
+    },
+    {
+      "actor": "Expert",
+      "action": "manage",
+      "target": "Appointment",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "SessionAppointmentHistory",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "see",
       "target": "PaymentHistory",
       "para": []
@@ -116,147 +248,15 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "have",
-      "target": "Advice",
-      "para": []
-    },
-    {
       "actor": "Expert",
-      "action": "view",
-      "target": "Rating",
-      "para": []
-    },
-    {
-      "actor": "Expert",
-      "action": "sign",
-      "target": "LinkedInAs",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "access",
-      "target": "Calculator",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "rate",
-      "target": "Expert",
-      "para": []
-    },
-    {
-      "actor": "Expert",
-      "action": "see",
-      "target": "History",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "access",
-      "target": "ContentLibrary",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "schedule",
-      "target": "Session",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "manage",
-      "target": "Appointment",
-      "para": []
-    },
-    {
-      "actor": "GuestUser",
-      "action": "access",
-      "target": "Feature",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "sign",
-      "target": "Facebook",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "access",
-      "target": "VideoStreamingLibrary",
-      "para": []
-    },
-    {
-      "actor": "Expert",
-      "action": "manage",
-      "target": "Calendar",
+      "action": "keep",
+      "target": "Track",
       "para": []
     },
     {
       "actor": "User",
       "action": "sign",
       "target": "Gmail",
-      "para": []
-    },
-    {
-      "actor": "Expert",
-      "action": "make",
-      "target": "Change",
-      "para": []
-    },
-    {
-      "actor": "Expert",
-      "action": "receive",
-      "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "ContentLibrary",
-      "action": "provides",
-      "target": "Topic",
-      "para": []
-    },
-    {
-      "actor": "Expert",
-      "action": "manage",
-      "target": "Appointment",
-      "para": []
-    },
-    {
-      "actor": "Quiz",
-      "action": "find",
-      "target": "MoneyBelief",
-      "para": []
-    },
-    {
-      "actor": "Expert",
-      "action": "given",
-      "target": "Advice",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "took",
-      "target": "Advice",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "VideoRecord",
-      "action": "gain",
-      "target": "PersonalityData",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "PaymentHistory",
       "para": []
     }
   ]

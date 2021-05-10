@@ -27,178 +27,178 @@ class SystemArchitect<actor> {
 class StudentUser<actor> {
 }
 class Tutor {
-	offer()
-	update()
-	get()
-	input()
-	post()
 	share()
-}
-class Information {
-	provides()
-}
-class User {
-	exchange()
-	consult()
-	need()
 	get()
-	have()
-	choose()
 	input()
-	check()
-	learn()
-	use()
+	offer()
+	post()
+	update()
 }
-class AutoResponse {
+class PresentationMaterial {
 }
-class Understanding {
-}
-class Blog {
-}
-class Programmer {
-	prioritize()
-	get()
-}
-class Description {
-}
-class Student {
-	request()
-	watch()
-	read()
-	complete()
-	make()
-	coomplete()
-	cancel()
-}
-class Time {
-}
-class CourseVideo {
-}
-class Availability {
-	reflect()
-}
-class Fact {
-}
-class RequestForm {
-}
-class LessonVideo {
-}
-class Developer {
-	understand()
-}
-class Technology {
-}
-class Comment {
-}
-class PaymentMethod {
-}
-class Client {
-	have()
+class Possibility {
+	fit()
 }
 class Project {
-}
-class Instructor {
-	matches()
-}
-class Language {
-}
-class RequestRecord {
-}
-class Notification {
 }
 class ProjectArchitect {
 	get()
 }
 class Detail {
 }
-class ScheduleAvailability {
-}
-class Task {
-}
-class TutoringTime {
-}
-class FeasibilityAnalysis {
-	figure()
-}
-class Possibility {
-	fit()
-}
-class Maintainer {
-	understand()
-	upgrade()
-	manage()
-}
-class Schedule {
-}
-class Tester {
-	write()
-}
-class IntegrationTest {
+class User {
+	use()
+	have()
+	exchange()
+	need()
+	get()
+	input()
+	learn()
+	check()
+	consult()
+	choose()
 }
 class Question {
 }
-class CourseScheduleChoice {
+class Student {
+	watch()
+	coomplete()
+	request()
+	cancel()
+	complete()
+	make()
+	read()
 }
-class Leader {
-	learn()
-}
-class Resource {
-}
-class EvaluationForm {
-}
-class Application {
-}
-class PresentationMaterial {
+class Time {
 }
 class SystemArchitect {
 	integrate()
 }
 class Module {
 }
+class Maintainer {
+	manage()
+	understand()
+	upgrade()
+}
+class Technology {
+}
+class Information {
+	provides()
+}
+class Understanding {
+}
+class Description {
+}
+class Tester {
+	write()
+}
+class IntegrationTest {
+}
+class Comment {
+}
+class Schedule {
+}
+class RequestForm {
+}
+class Instructor {
+	matches()
+}
+class Language {
+}
+class Programmer {
+	get()
+	prioritize()
+}
+class Task {
+}
+class Blog {
+}
+class PaymentMethod {
+}
+class Application {
+}
+class Availability {
+	reflect()
+}
+class Fact {
+}
+class Client {
+	have()
+}
+class FeasibilityAnalysis {
+	figure()
+}
+class AutoResponse {
+}
+class RequestRecord {
+}
+class LessonVideo {
+}
 class Thought {
 }
-User --> AutoResponse : get
-Tutor --> ScheduleAvailability : input
+class CourseVideo {
+}
+class EvaluationForm {
+}
+class CourseScheduleChoice {
+}
+class ScheduleAvailability {
+}
+class Developer {
+	understand()
+}
+class TutoringTime {
+}
+class Notification {
+}
+class Leader {
+	learn()
+}
+class Resource {
+}
 Student --> Blog : read
-Developer --> Technology : understand
-Information --> Understanding : provides
-Programmer --> Task : prioritize
-Leader --> Information : learn
-Student --> Comment : make
-Maintainer --> Resource : upgrade
-Student --> Description : read
-Tutor --> Blog : post
-Student --> TutoringTime : request
-User --> PaymentMethod : need
-Student --> EvaluationForm : complete
-Programmer --> Description : get
-FeasibilityAnalysis --> Possibility : figure
 Possibility --> Project : fit
-Client --> Project : have
-User --> Application : use
-Student --> Time : cancel
-Maintainer --> Information : manage
-Tutor --> Schedule : get
-User --> Schedule : input
-User --> Information : consult
-Instructor --> Language : matches
-User --> PaymentMethod : choose
+Student --> Description : read
 Tutor --> CourseVideo : update
-User --> Schedule : check
-Tutor --> PresentationMaterial : share
-User --> RequestRecord : check
-Availability --> Fact : reflect
-Tester --> IntegrationTest : write
-User --> Notification : get
-SystemArchitect --> Module : integrate
-Student --> RequestForm : coomplete
-User --> Question : have
-User --> Information : learn
-User --> Thought : exchange
-Tutor --> Information : offer
-Student --> LessonVideo : watch
+User --> Information : consult
+User --> Application : use
+Student --> EvaluationForm : complete
 ProjectArchitect --> Detail : get
+Tester --> IntegrationTest : write
+Programmer --> Description : get
 User --> CourseScheduleChoice : have
+Maintainer --> Resource : upgrade
+Student --> Comment : make
+User --> Question : have
+Availability --> Fact : reflect
+Tutor --> ScheduleAvailability : input
+Tutor --> Schedule : get
+Student --> Time : cancel
+Client --> Project : have
+Student --> RequestForm : coomplete
+Developer --> Technology : understand
+User --> Information : learn
+FeasibilityAnalysis --> Possibility : figure
+Student --> TutoringTime : request
+SystemArchitect --> Module : integrate
+User --> AutoResponse : get
+Instructor --> Language : matches
+User --> PaymentMethod : need
+User --> RequestRecord : check
+User --> Schedule : check
+Tutor --> Information : offer
 Maintainer --> Technology : understand
+User --> Schedule : input
+Student --> LessonVideo : watch
+Programmer --> Task : prioritize
+User --> Notification : get
+Information --> Understanding : provides
+User --> Thought : exchange
+Tutor --> PresentationMaterial : share
+Tutor --> Blog : post
+Leader --> Information : learn
+Maintainer --> Information : manage
+User --> PaymentMethod : choose
 
 @enduml

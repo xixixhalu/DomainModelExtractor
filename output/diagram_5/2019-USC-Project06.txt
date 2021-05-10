@@ -6,126 +6,126 @@ class Owner<actor> {
 }
 class Admin<actor> {
 }
-class Owner {
-	delete()
-	use()
-	hide()
-	make()
-	edit()
-	access()
-	add()
-}
-class Project {
-}
 class User {
-	tag()
-	view()
-	delete()
-	reset()
-	enter()
-	set()
-	mark()
 	join()
-	filter()
 	add()
-	create()
+	mark()
 	adjust()
-	save()
-	upload()
+	delete()
 	edit()
+	view()
+	tag()
 	see()
+	save()
 	export()
+	set()
+	upload()
+	enter()
+	filter()
+	create()
+	reset()
 }
 class Comment {
 }
-class Demo {
+class PrioritizationResult {
 }
 class Post {
+}
+class Owner {
+	add()
+	access()
+	make()
+	hide()
+	edit()
+	delete()
+	use()
 }
 class ProjectSettingPage {
 	give()
 }
-class WinCondition {
+class Project {
 }
 class Someone {
 }
-class People {
-}
-class BusinessValue {
+class Coefficient {
 }
 class Ease {
-}
-class Password {
-}
-class AdminRights {
-}
-class WinConditionCategory {
 }
 class Admin {
 	edit()
 }
-class List {
+class Penalty {
 }
-class Picture {
+class ProfileInformation {
 }
-class ProjectListPage {
+class Demo {
 }
 class Page {
 }
+class People {
+}
+class WinCondition {
+}
+class List {
+}
+class ProjectListPage {
+}
+class Picture {
+}
+class View {
+}
 class Category {
-}
-class WeightCoefficient {
-}
-class Coefficient {
 }
 class comments {
 }
 class reply {
 }
+class Password {
+}
+class WeightCoefficient {
+}
 class Importance {
 }
-class View {
+class BusinessValue {
 }
-class Penalty {
+class AdminRights {
 }
-class PrioritizationResult {
+class WinConditionCategory {
 }
-class ProfileInformation {
-}
-User --> Demo : see
+User --> Comment : add
 User --> Penalty : set
-User --> Ease : set
-Owner --> Page : access
-User --> Post : delete
-Owner --> Project : delete
-User --> Password : reset
-User --> Comment : delete
+User --> Importance : adjust
 User --> Project : join
 Owner --> ProjectSettingPage : use
-User --> PrioritizationResult : save
-User --> Category : mark
 User --> WinCondition : export
 User --> ProfileInformation : edit
-User --> WinCondition : create
-User --> WeightCoefficient : enter
-User --> Someone : tag
-Owner --> Project : make
-User --> People : see
 User --> BusinessValue : set
-User --> Coefficient : adjust
-ProjectSettingPage --> AdminRights : give
-Owner --> Project : add
-User --> WinConditionCategory : create
-User --> WinCondition : delete
-Admin --> comments : edit
-Admin --> Post : edit
-User --> reply : add
-Owner --> Project : hide
-Owner --> List : edit
-User --> Importance : adjust
 User --> Picture : upload
-User --> Comment : add
+Owner --> Project : add
+ProjectSettingPage --> AdminRights : give
 User --> View : filter
+User --> Someone : tag
+User --> WinConditionCategory : create
+User --> Category : mark
+User --> Coefficient : adjust
+User --> Ease : set
+Owner --> Project : hide
+User --> Demo : see
+Admin --> comments : edit
+Owner --> Page : access
+User --> reply : add
+Admin --> Post : edit
+User --> People : see
+Owner --> Project : make
+User --> Password : reset
+User --> Comment : delete
+User --> WinCondition : create
+User --> WinCondition : delete
+User --> PrioritizationResult : save
+Owner --> List : edit
+Owner --> Project : delete
+User --> WeightCoefficient : enter
+User --> Post : delete
 User --> ProjectListPage : view
 
 @enduml

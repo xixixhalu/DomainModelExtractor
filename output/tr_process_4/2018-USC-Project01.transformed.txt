@@ -34,74 +34,8 @@
   "behavior_list": [
     {
       "actor": "Administrator",
-      "action": "see",
-      "target": "AccountInformation",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "entered",
-      "target": "Venue",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "leaved",
-      "target": "Venue",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "Info",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Route",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "lost",
-      "target": "Message",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "close",
-      "target": "Venue",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Question",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "contact",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "block",
-      "target": "Message",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "see",
-      "target": "Information",
+      "target": "Account",
       "para": []
     },
     {
@@ -112,8 +46,26 @@
     },
     {
       "actor": "User",
-      "action": "get",
-      "target": "LocationInformation",
+      "action": "see",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "see",
+      "target": "AccountInformation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Info",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "see",
+      "target": "Analytic",
       "para": []
     },
     {
@@ -124,14 +76,26 @@
     },
     {
       "actor": "User",
+      "action": "see",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "import",
       "target": "Information",
       "para": []
     },
     {
+      "actor": "Administrator",
+      "action": "cancel",
+      "target": "Event",
+      "para": []
+    },
+    {
       "actor": "User",
-      "action": "follow",
-      "target": "Policy",
+      "action": "see",
+      "target": "Question",
       "para": []
     },
     {
@@ -142,26 +106,26 @@
     },
     {
       "actor": "User",
-      "action": "create",
-      "target": "UserAccount",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "have",
       "target": "Option",
       "para": []
     },
     {
       "actor": "User",
-      "action": "see",
+      "action": "leaved",
       "target": "Venue",
       "para": []
     },
     {
-      "actor": "Maintainer",
-      "action": "withdraw",
-      "target": "Account",
+      "actor": "Administrator",
+      "action": "close",
+      "target": "Venue",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "follow",
+      "target": "Policy",
       "para": []
     },
     {
@@ -172,38 +136,74 @@
     },
     {
       "actor": "User",
+      "action": "get",
+      "target": "LocationInformation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "contact",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "lost",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Route",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "entered",
+      "target": "Venue",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "see",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "withdraw",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "block",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Venue",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "see",
       "target": "Profession",
       "para": []
     },
     {
-      "actor": "Administrator",
-      "action": "block",
-      "target": "Account",
+      "actor": "User",
+      "action": "create",
+      "target": "UserAccount",
       "para": []
     },
     {
       "actor": "User",
       "action": "receive",
       "target": "Recommendation",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "see",
-      "target": "Analytic",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "cancel",
-      "target": "Event",
       "para": []
     },
     {

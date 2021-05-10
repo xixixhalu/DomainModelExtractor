@@ -26,39 +26,15 @@
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "Developer",
-      "action": "allow",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "Item",
-      "action": "using",
-      "target": "Source",
-      "para": []
-    },
-    {
       "actor": "User",
       "action": "keep",
       "target": "Track",
       "para": []
     },
     {
-      "actor": "Developer",
-      "action": "enable",
-      "target": "User",
-      "para": []
-    },
-    {
       "actor": "User",
-      "action": "return",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "maintain",
-      "target": "Database",
+      "action": "view",
+      "target": "Item",
       "para": []
     },
     {
@@ -69,8 +45,32 @@
     },
     {
       "actor": "User",
-      "action": "view",
-      "target": "Item",
+      "action": "return",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "enable",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Item",
+      "action": "using",
+      "target": "Source",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "maintain",
+      "target": "Database",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "allow",
+      "target": "User",
       "para": []
     }
   ]

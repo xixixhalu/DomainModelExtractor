@@ -27,209 +27,203 @@ class Tutor<actor> {
 class Speaker<actor> {
 }
 class WebsiteUser {
-	get()
-	pull()
-	practice()
 	offer()
-	avoid()
-	receive()
 	report()
+	pull()
+	avoid()
+	practice()
+	receive()
+	get()
 }
-class Experience {
-}
-class MarketingPlan {
-	increase()
-}
-class UserNumber {
+class NotificationEmail {
 }
 class UniversityStudent {
 	post()
 }
-class Announcement {
-}
-class SpeakerLanguageLearner {
-	learn()
-	know()
-}
-class World {
-}
-class WebsiteOwner {
-	send()
-	assess()
-	inform()
-	generate()
-	post()
-	offer()
-	monitor()
-	make()
-	view()
-	maintain()
-	suggest()
-}
-class Need {
+class Question {
 }
 class English {
 	achieve()
 }
 class Goal {
 }
-class Alert {
+class HelpStudent {
+	adjust()
 }
-class NotificationEmail {
-}
-class Practitioner {
-	help()
-}
-class Student {
-	register()
-	modify()
-	avoid()
+class LearningPlan {
 }
 class WebsiteProfessor {
 	offer()
 }
 class Meeting {
 }
-class User {
-	forget()
-	review()
-	add()
-	reset()
-	subscribe()
-}
-class PrivacyPolicy {
-}
-class Advertisement {
-}
-class Behavior {
-}
-class harassments {
-}
-class Service {
-}
-class LanguageLearner {
-	find()
-	practice()
-	do()
-	prioritize()
-	order()
-	search()
+class SpeakerLanguageLearner {
 	know()
+	learn()
 }
-class LanguageLearners {
+class World {
 }
-class Language {
-}
-class Server {
-}
-class UserStatistics {
-}
-class Matches {
-}
-class Password {
-}
-class InteractionTask {
-}
-class LanguageSkill {
-}
-class while {
-}
-class Email {
+class WebsiteOwner {
+	offer()
+	post()
+	assess()
+	send()
+	suggest()
+	generate()
+	monitor()
+	maintain()
+	view()
+	inform()
+	make()
 }
 class internet {
-}
-class HelpStudent {
-	adjust()
-}
-class LearningPlan {
-}
-class numbers {
-}
-class Money {
-}
-class Account {
-}
-class People {
-}
-class SearchResult {
-}
-class Eg {
-	meet()
-}
-class Learner {
-}
-class Speaker {
-	use()
-}
-class System {
-}
-class LanguageTeacher {
-	give()
-}
-class Assignment {
-}
-class Usage {
-}
-class LanguageAssignment {
-}
-class USCChineseLearner {
-	meet()
-}
-class Question {
 }
 class Tutor {
 	evaluate()
 }
 class LanguageLevel {
 }
-MarketingPlan --> UserNumber : increase
-WebsiteOwner --> Server : maintain
-LanguageTeacher --> Assignment : give
-WebsiteProfessor --> Meeting : offer
+class User {
+	add()
+	subscribe()
+	review()
+	reset()
+	forget()
+}
+class Service {
+}
+class People {
+}
+class Advertisement {
+}
+class LanguageLearner {
+	do()
+	practice()
+	find()
+	prioritize()
+	search()
+	order()
+	know()
+}
+class LanguageAssignment {
+}
+class Language {
+}
+class Alert {
+}
+class MarketingPlan {
+	increase()
+}
+class Matches {
+}
+class LanguageTeacher {
+	give()
+}
+class Assignment {
+}
+class SearchResult {
+}
+class LanguageSkill {
+}
+class Experience {
+}
+class while {
+}
+class Student {
+	register()
+	modify()
+	avoid()
+}
+class Account {
+}
+class Server {
+}
+class harassments {
+}
+class LanguageLearners {
+}
+class Password {
+}
+class Usage {
+}
+class numbers {
+}
+class UserStatistics {
+}
+class InteractionTask {
+}
+class USCChineseLearner {
+	meet()
+}
+class Learner {
+}
+class PrivacyPolicy {
+}
+class Announcement {
+}
+class Money {
+}
+class UserNumber {
+}
+class Behavior {
+}
+class Practitioner {
+	help()
+}
+class Email {
+}
+class Need {
+}
+class Eg {
+	meet()
+}
+UniversityStudent --> Question : post
+User --> Service : subscribe
+MarketingPlan --> numbers : increase
+WebsiteUser --> LanguageSkill : offer
+Practitioner --> Student : help
+WebsiteUser --> People : pull
+WebsiteUser --> Language : practice
+English --> Goal : achieve
 SpeakerLanguageLearner --> Language : learn
 WebsiteOwner --> UserStatistics : view
 LanguageLearner --> LanguageLearners : search
-MarketingPlan --> numbers : increase
-Student --> Usage : avoid
-UniversityStudent --> Announcement : post
-WebsiteUser --> Language : practice
-LanguageLearner --> LanguageAssignment : do
-User --> User : review
-WebsiteOwner --> Money : make
-LanguageLearner --> Matches : prioritize
-Student --> PrivacyPolicy : modify
-SpeakerLanguageLearner --> World : know
-Student --> Account : register
-User --> Password : forget
-USCChineseLearner --> Learner : meet
-WebsiteOwner --> Meeting : offer
-WebsiteOwner --> MarketingPlan : generate
+WebsiteUser --> Experience : get
+WebsiteOwner --> Email : send
 WebsiteUser --> Advertisement : avoid
-WebsiteUser --> People : pull
-WebsiteOwner --> Need : assess
 WebsiteOwner --> InteractionTask : suggest
-UniversityStudent --> Question : post
-WebsiteUser --> Behavior : report
-LanguageLearner --> SearchResult : order
-WebsiteUser --> LanguageSkill : offer
-English --> Goal : achieve
-Tutor --> LanguageLevel : evaluate
-WebsiteUser --> harassments : avoid
+HelpStudent --> LearningPlan : adjust
 LanguageLearner --> while : know
+WebsiteOwner --> User : inform
+WebsiteOwner --> Need : assess
+LanguageLearner --> LanguageAssignment : do
+USCChineseLearner --> Learner : meet
+WebsiteProfessor --> Meeting : offer
+Student --> Account : register
+LanguageLearner --> Language : practice
+User --> Password : reset
+Student --> PrivacyPolicy : modify
+WebsiteOwner --> Server : maintain
 Eg --> Learner : meet
 WebsiteOwner --> Alert : post
-User --> User : add
-User --> Service : subscribe
-WebsiteOwner --> Email : send
-WebsiteOwner --> User : inform
-WebsiteUser --> NotificationEmail : receive
-Speaker --> System : use
+SpeakerLanguageLearner --> World : know
+WebsiteOwner --> Meeting : offer
+UniversityStudent --> Announcement : post
+WebsiteUser --> harassments : avoid
+WebsiteOwner --> MarketingPlan : generate
+WebsiteOwner --> Money : make
 WebsiteOwner --> internet : monitor
 LanguageLearner --> LanguageLearners : find
-WebsiteUser --> Experience : get
-User --> Password : reset
-Practitioner --> Student : help
-LanguageLearner --> Language : practice
-HelpStudent --> LearningPlan : adjust
+LanguageLearner --> Matches : prioritize
+WebsiteUser --> Behavior : report
+User --> User : review
+User --> Password : forget
+MarketingPlan --> UserNumber : increase
+Tutor --> LanguageLevel : evaluate
+WebsiteUser --> NotificationEmail : receive
+LanguageTeacher --> Assignment : give
+Student --> Usage : avoid
+User --> User : add
+LanguageLearner --> SearchResult : order
 
 @enduml

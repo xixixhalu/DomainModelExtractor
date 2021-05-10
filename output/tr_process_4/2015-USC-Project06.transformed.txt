@@ -34,85 +34,7 @@
   "behavior_list": [
     {
       "actor": "Contractor",
-      "action": "send",
-      "target": "Message",
-      "para": []
-    },
-    {
-      "actor": "Contractor",
-      "action": "report",
-      "target": "Change",
-      "para": []
-    },
-    {
-      "actor": "Contractor",
-      "action": "ask",
-      "target": "Issue",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "send",
-      "target": "Instruction",
-      "para": []
-    },
-    {
-      "actor": "Contractor",
-      "action": "enter",
-      "target": "Report",
-      "para": []
-    },
-    {
-      "actor": "Contractor",
-      "action": "enter",
-      "target": "Data",
-      "para": []
-    },
-    {
-      "actor": "Contractor",
       "action": "see",
-      "target": "MeetingMinute",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "access",
-      "target": "logs",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "edit",
-      "target": "MeetingInformation",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "track",
-      "target": "Progress",
-      "para": []
-    },
-    {
-      "actor": "Contractor",
-      "action": "manage",
-      "target": "Resource",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "edit",
-      "target": "TaskCategory",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "approve",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "send",
       "target": "MeetingMinute",
       "para": []
     },
@@ -124,14 +46,38 @@
     },
     {
       "actor": "Manager",
-      "action": "make",
-      "target": "Decision",
+      "action": "see",
+      "target": "Summary",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "send",
+      "target": "Instruction",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "modify",
+      "target": "Project",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "ask",
+      "target": "Question",
       "para": []
     },
     {
       "actor": "Manager",
       "action": "edit",
       "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "enter",
+      "target": "Report",
       "para": []
     },
     {
@@ -147,15 +93,33 @@
       "para": []
     },
     {
-      "actor": "ProjectManager",
-      "action": "track",
-      "target": "TaskProgress",
+      "actor": "Contractor",
+      "action": "see",
+      "target": "Task",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "edit",
+      "target": "MeetingInformation",
       "para": []
     },
     {
       "actor": "Contractor",
-      "action": "see",
-      "target": "Task",
+      "action": "manage",
+      "target": "Resource",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "access",
+      "target": "logs",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "send",
+      "target": "MeetingMinute",
       "para": []
     },
     {
@@ -165,27 +129,9 @@
       "para": []
     },
     {
-      "actor": "Manager",
-      "action": "find",
-      "target": "Topic",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "see",
-      "target": "Summary",
-      "para": []
-    },
-    {
       "actor": "Contractor",
-      "action": "ask",
-      "target": "Question",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "modify",
-      "target": "Project",
+      "action": "enter",
+      "target": "Data",
       "para": []
     },
     {
@@ -198,6 +144,60 @@
       "actor": "Manager",
       "action": "approve",
       "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "approve",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "track",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "make",
+      "target": "Decision",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "find",
+      "target": "Topic",
+      "para": []
+    },
+    {
+      "actor": "ProjectManager",
+      "action": "track",
+      "target": "TaskProgress",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "send",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "ask",
+      "target": "Issue",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "edit",
+      "target": "TaskCategory",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "report",
+      "target": "Change",
       "para": []
     }
   ]

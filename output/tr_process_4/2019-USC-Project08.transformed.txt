@@ -61,15 +61,57 @@
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "Book",
-      "action": "reschedules",
-      "target": "Appointment",
+      "actor": "Patient",
+      "action": "take",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "get",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "modify",
+      "target": "Prescription",
       "para": []
     },
     {
       "actor": "CareTeam",
-      "action": "input",
-      "target": "Recommendation",
+      "action": "add",
+      "target": "Patient",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "get",
+      "target": "Ride",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "completed",
+      "target": "Task",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "get",
+      "target": "SMSNotification",
+      "para": []
+    },
+    {
+      "actor": "DoctorUser",
+      "action": "view",
+      "target": "QuestionnaireResponse",
+      "para": []
+    },
+    {
+      "actor": "HealthcareExecutive",
+      "action": "see",
+      "target": "Data",
       "para": []
     },
     {
@@ -79,15 +121,63 @@
       "para": []
     },
     {
+      "actor": "Picture",
+      "action": "see",
+      "target": "Difference",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "remove",
+      "target": "Entry",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "receive",
+      "target": "Recommendation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "completed",
+      "target": "Task",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "bookscancels",
+      "target": "Appointment",
+      "para": []
+    },
+    {
+      "actor": "Book",
+      "action": "get",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "compare",
+      "target": "Picture",
+      "para": []
+    },
+    {
       "actor": "Patient",
       "action": "do",
       "target": "Questionnaire",
       "para": []
     },
     {
-      "actor": "Patient",
-      "action": "reschedule",
-      "target": "Appointment",
+      "actor": "Doctor",
+      "action": "register",
+      "target": "Patient",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "use",
+      "target": "App",
       "para": []
     },
     {
@@ -98,68 +188,20 @@
     },
     {
       "actor": "Patient",
-      "action": "do",
-      "target": "Survey",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "register",
-      "target": "Patient",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "answer",
-      "target": "Amount",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "update",
-      "target": "ContactInformation",
-      "para": []
-    },
-    {
-      "actor": "HealthcareExecutive",
-      "action": "see",
-      "target": "Data",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "snooze",
-      "target": "Reminder",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "have",
-      "target": "Access",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "bookscancels",
-      "target": "Appointment",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "access",
-      "target": "Database",
-      "para": []
-    },
-    {
-      "actor": "DoctorUser",
-      "action": "view",
-      "target": "QuestionnaireResponse",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
       "action": "get",
       "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "add",
+      "target": "PostopReminder",
+      "para": []
+    },
+    {
+      "actor": "CareTeam",
+      "action": "remove",
+      "target": "Patient",
       "para": []
     },
     {
@@ -175,140 +217,32 @@
       "para": []
     },
     {
-      "actor": "CareTeam",
-      "action": "remove",
-      "target": "Patient",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "use",
-      "target": "App",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "add",
-      "target": "Pre",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "add",
-      "target": "PostopReminder",
-      "para": []
-    },
-    {
-      "actor": "DoctorUser",
-      "action": "view",
-      "target": "SurveyResponse",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "get",
-      "target": "Ride",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "modify",
-      "target": "Prescription",
-      "para": []
-    },
-    {
       "actor": "User",
-      "action": "completed",
-      "target": "Task",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "get",
-      "target": "Confirmation",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "get",
-      "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "Picture",
-      "action": "see",
-      "target": "Difference",
-      "para": []
-    },
-    {
-      "actor": "Book",
-      "action": "get",
-      "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "completed",
-      "target": "Task",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "track",
-      "target": "graphically",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "get",
-      "target": "SMSNotification",
+      "action": "answer",
+      "target": "Amount",
       "para": []
     },
     {
       "actor": "CareTeam",
-      "action": "add",
-      "target": "Patient",
+      "action": "input",
+      "target": "Recommendation",
       "para": []
     },
     {
       "actor": "Patient",
-      "action": "take",
-      "target": "Picture",
+      "action": "snooze",
+      "target": "Reminder",
       "para": []
     },
     {
       "actor": "Patient",
-      "action": "miss",
-      "target": "Appointment",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "remove",
-      "target": "Entry",
+      "action": "answer",
+      "target": "Amount",
       "para": []
     },
     {
       "actor": "Patient",
-      "action": "save",
-      "target": "HealthRecommendationArticle",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "enroll",
-      "target": "Patient",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "compare",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "cancel",
+      "action": "reschedule",
       "target": "Appointment",
       "para": []
     },
@@ -320,14 +254,80 @@
     },
     {
       "actor": "Patient",
-      "action": "receive",
-      "target": "Recommendation",
+      "action": "cancel",
+      "target": "Appointment",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "answer",
-      "target": "Amount",
+      "actor": "Patient",
+      "action": "add",
+      "target": "Pre",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "miss",
+      "target": "Appointment",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "update",
+      "target": "ContactInformation",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "track",
+      "target": "graphically",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "access",
+      "target": "Database",
+      "para": []
+    },
+    {
+      "actor": "DoctorUser",
+      "action": "view",
+      "target": "SurveyResponse",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "enroll",
+      "target": "Patient",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "save",
+      "target": "HealthRecommendationArticle",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "do",
+      "target": "Survey",
+      "para": []
+    },
+    {
+      "actor": "Book",
+      "action": "reschedules",
+      "target": "Appointment",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "get",
+      "target": "Confirmation",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "have",
+      "target": "Access",
       "para": []
     }
   ]

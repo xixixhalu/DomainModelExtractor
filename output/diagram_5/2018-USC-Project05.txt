@@ -9,38 +9,37 @@ class Supplier<actor> {
 class Maintainer<actor> {
 }
 class User {
-	save()
-	customise()
 	add()
-	want()
-	replace()
-	produce()
-	send()
+	log()
 	share()
 	canuse()
-	existed()
-	log()
-	delete()
+	produce()
+	send()
+	save()
+	want()
+	customise()
 	see()
 	customize()
+	existed()
 	view()
+	replace()
+	delete()
 }
-class Coffee {
+class Theme {
+}
+class Picture {
+}
+class account {
 }
 class Recipe {
 	contains()
 }
-class BaseRecipe {
+class Someone {
 }
 class Paypal {
 	purchase()
 }
-class DefaultPaymentMethod {
-}
-class existed {
-	existed()
-}
-class account {
+class OrderHistory {
 }
 class Maintainer {
 	update()
@@ -48,71 +47,72 @@ class Maintainer {
 }
 class Kiosk {
 }
-class OrderHistory {
-}
-class ApplePay {
-	purchase()
-}
-class Picture {
-}
-class Allergen {
-}
-class Supplier {
-	receive()
-}
-class Update {
-}
-class Order {
-}
-class Location {
-}
-class Someone {
-}
-class Color {
-}
-class App {
-}
-class Theme {
-}
-class CoffeeRecipe {
-}
-class NutritionDetail {
-}
-class Password {
-	existed()
+class Coffee {
 }
 class Admin {
 	have()
 }
 class Portal {
 }
-User --> BaseRecipe : customize
-User --> Someone : send
-User --> Paypal : canuse
+class Color {
+}
+class Location {
+}
+class DefaultPaymentMethod {
+}
+class Supplier {
+	receive()
+}
+class Update {
+}
+class App {
+}
+class existed {
+	existed()
+}
+class Password {
+	existed()
+}
+class Order {
+}
+class ApplePay {
+	purchase()
+}
+class Allergen {
+}
+class CoffeeRecipe {
+}
+class NutritionDetail {
+}
+class BaseRecipe {
+}
+User --> account : existed
+User --> App : log
 User --> Recipe : share
 User --> Color : customize
-User --> DefaultPaymentMethod : add
-User --> Recipe : view
-User --> account : existed
-existed --> account : existed
-User --> App : log
-User --> Picture : save
-Maintainer --> Kiosk : track
-User --> Theme : customize
-Recipe --> Allergen : contains
-User --> CoffeeRecipe : produce
-User --> OrderHistory : view
-Supplier --> Update : receive
 User --> Recipe : delete
-Maintainer --> Location : update
-User --> NutritionDetail : see
-ApplePay --> Coffee : purchase
-User --> Order : replace
-User --> Coffee : customise
+existed --> account : existed
+User --> Recipe : view
+User --> Someone : send
 Password --> account : existed
-Paypal --> Coffee : purchase
 User --> Recipe : want
+User --> Paypal : canuse
+User --> Order : replace
+Paypal --> Coffee : purchase
+User --> OrderHistory : view
 User --> ApplePay : canuse
+Recipe --> Allergen : contains
+Maintainer --> Kiosk : track
 Admin --> Portal : have
+User --> CoffeeRecipe : produce
+Maintainer --> Location : update
+User --> Coffee : customise
+User --> DefaultPaymentMethod : add
+User --> NutritionDetail : see
+User --> Theme : customize
+User --> BaseRecipe : customize
+User --> Picture : save
+Supplier --> Update : receive
+ApplePay --> Coffee : purchase
 
 @enduml

@@ -9,85 +9,85 @@ class FarmManager<actor> {
 class FarmContractor<actor> {
 }
 class User {
-	watch()
-	change()
-	get()
-	disable()
-	create()
-	do()
-	view()
-	share()
-	access()
-	identify()
 	receive()
 	toggle()
-}
-class Display {
-}
-class Material {
-}
-class Temperature {
-}
-class Admin {
-	upload()
+	do()
+	share()
+	access()
+	get()
+	view()
 	create()
-	delete()
-	define()
-}
-class Video {
-}
-class Location {
-}
-class Sign {
-}
-class Quiz {
-}
-class Role {
-}
-class Contents {
-}
-class Metric {
-}
-class Information {
-}
-class EmergencyContactList {
-}
-class Checklist {
-}
-class Content {
+	disable()
+	watch()
+	identify()
+	change()
 }
 class Profile {
 }
+class Video {
+}
+class Information {
+}
+class Admin {
+	upload()
+	define()
+	delete()
+	create()
+}
 class Account {
+}
+class Checklist {
+}
+class Metric {
+}
+class Temperature {
+}
+class Contents {
+}
+class Quiz {
+}
+class Location {
 }
 class NotificationTone {
 }
-class VibrationLevel {
+class Material {
+}
+class EmergencyContactList {
+}
+class Sign {
 }
 class TemperatureData {
 }
-User --> Temperature : receive
-User --> Account : disable
-Admin --> Content : create
-User --> NotificationTone : change
-Admin --> Video : upload
-User --> VibrationLevel : change
-User --> Location : share
-User --> Video : watch
-User --> Sign : identify
-User --> TemperatureData : view
-User --> User : create
-User --> EmergencyContactList : create
-User --> Quiz : do
+class Display {
+}
+class Role {
+}
+class VibrationLevel {
+}
+class Content {
+}
 User --> Information : get
-User --> Checklist : create
-Admin --> Role : define
-Admin --> Contents : delete
-User --> Metric : create
+User --> TemperatureData : view
+User --> EmergencyContactList : create
 User --> Display : toggle
-Admin --> Quiz : create
+Admin --> Video : upload
+User --> Account : disable
+Admin --> Role : define
+User --> Checklist : create
+User --> VibrationLevel : change
+User --> User : create
+Admin --> Content : create
+User --> Metric : create
+User --> NotificationTone : change
+User --> Temperature : receive
 User --> Material : access
+Admin --> Contents : delete
+User --> Quiz : do
 User --> Information : receive
 User --> Profile : create
+User --> Sign : identify
+User --> Video : watch
+User --> Location : share
+Admin --> Quiz : create
 
 @enduml

@@ -5,65 +5,65 @@ class Admin<actor> {
 class User<actor> {
 }
 class Admin {
-	switch()
-	see()
-	edit()
-	assign()
-	delete()
+	provide()
 	revoke()
 	add()
-	provide()
-}
-class Id {
-}
-class User {
-	turn()
-	select()
-	have()
-	choose()
-	add()
-}
-class Control {
-}
-class Room {
-}
-class Image {
-}
-class Name {
-}
-class Username {
+	delete()
+	edit()
+	see()
+	assign()
+	switch()
 }
 class Floor {
 }
+class User {
+	select()
+	add()
+	choose()
+	turn()
+	have()
+}
+class Image {
+}
+class Room {
+}
+class Name {
+}
 class Access {
-}
-class GatewayId {
-}
-class Screen {
 }
 class Switch {
 }
+class Id {
+}
 class Light {
+}
+class Screen {
+}
+class Username {
+}
+class GatewayId {
+}
+class Control {
 }
 class Gateway {
 }
-User --> Username : choose
-User --> Room : select
-User --> Light : turn
-User --> Image : add
-Admin --> Access : provide
-Admin --> GatewayId : see
-Admin --> User : add
-Admin --> Access : revoke
 Admin --> Switch : assign
-User --> Control : have
-Admin --> Gateway : delete
 User --> Floor : select
+User --> Light : turn
+User --> Control : have
 Admin --> Name : edit
-User --> Screen : add
-Admin --> Switch : delete
-Admin --> Floor : delete
+User --> Username : choose
+Admin --> User : add
+User --> Image : add
 Admin --> Room : delete
 Admin --> Id : switch
+Admin --> Gateway : delete
+Admin --> Access : revoke
+Admin --> GatewayId : see
+Admin --> Access : provide
+Admin --> Switch : delete
+User --> Screen : add
+User --> Room : select
+Admin --> Floor : delete
 
 @enduml

@@ -16,40 +16,71 @@ class Admin<actor> {
 }
 class Dislike<actor> {
 }
-class User {
-	mention()
-	get()
-	invite()
-	report()
+class Student {
+	bookmark()
+	add()
+	join()
+	view()
+	finish()
+	send()
+	upvote()
+	have()
+	receive()
+	create()
+	manage()
+	schedule()
+	check()
 }
-class Bullied {
+class Status {
+}
+class Admin {
+	improve()
+	delete()
+	notice()
+}
+class Quality {
+}
+class Question {
+}
+class Post {
 }
 class Teacher {
-	upload()
-	send()
 	contact()
+	upload()
 	assign()
+	send()
 }
 class Homework {
 }
-class Student {
-	view()
-	schedule()
-	bookmark()
-	join()
-	upvote()
-	check()
-	have()
-	add()
-	manage()
-	create()
-	send()
-	finish()
-	receive()
+class Invitation {
 }
-class Name {
+class Group {
+}
+class Video {
+}
+class TeacherUser {
+	improve()
+	post()
+}
+class Assignment {
+}
+class User {
+	get()
+	invite()
+	mention()
+	report()
 }
 class Someone {
+}
+class People {
+}
+class Answer {
+}
+class DiscussionGroup {
+}
+class Performance {
+}
+class Class {
 }
 class Maintainer {
 	monitor()
@@ -57,75 +88,44 @@ class Maintainer {
 }
 class TimeStatistic {
 }
-class Answer {
+class Stability {
 }
-class Post {
+class Name {
+}
+class Bullied {
 }
 class Meeting {
 }
-class Admin {
-	notice()
-	delete()
-	improve()
-}
-class Quality {
-}
-class Invitation {
-}
-class Question {
-}
-class TeacherUser {
-	post()
-	improve()
-}
-class Assignment {
-}
-class DiscussionGroup {
-}
-class Class {
-}
-class People {
-}
-class Stability {
-}
-class Status {
-}
-class Group {
-}
 class StudyGroup {
 }
-class Performance {
-}
-class Video {
-}
-User --> Bullied : get
-Student --> Question : bookmark
-TeacherUser --> Assignment : post
-TeacherUser --> Performance : improve
-Student --> DiscussionGroup : join
-Teacher --> Homework : assign
-Teacher --> Video : upload
-Student --> Class : add
-Student --> Answer : upvote
-Student --> Name : have
-Student --> Post : view
-Student --> Homework : finish
-Admin --> Post : delete
-User --> Post : report
-Admin --> Post : notice
-Student --> Invitation : receive
-Student --> Meeting : schedule
-Student --> Invitation : send
-User --> People : invite
-Admin --> Quality : improve
-Maintainer --> Stability : monitor
-Teacher --> Student : contact
 Student --> Status : check
-Teacher --> Invitation : send
-Student --> Group : manage
-Student --> Question : upvote
-Maintainer --> TimeStatistic : see
-User --> Someone : mention
+Student --> Meeting : schedule
+Student --> Answer : upvote
+Teacher --> Student : contact
+Student --> Invitation : receive
+Student --> DiscussionGroup : join
+Admin --> Quality : improve
 Student --> StudyGroup : create
+Teacher --> Invitation : send
+Student --> Question : upvote
+Student --> Post : view
+TeacherUser --> Performance : improve
+Admin --> Post : delete
+Student --> Question : bookmark
+Student --> Group : manage
+Student --> Homework : finish
+Teacher --> Homework : assign
+Student --> Class : add
+Teacher --> Video : upload
+Student --> Invitation : send
+Maintainer --> TimeStatistic : see
+TeacherUser --> Assignment : post
+Maintainer --> Stability : monitor
+User --> Someone : mention
+User --> Post : report
+Student --> Name : have
+User --> People : invite
+User --> Bullied : get
+Admin --> Post : notice
 
 @enduml

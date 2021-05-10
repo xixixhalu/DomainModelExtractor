@@ -8,63 +8,63 @@ class Admin<actor> {
 }
 class User {
 	disable()
-	update()
-	see()
 	resume()
 	sort()
+	look()
 	find()
 	filter()
-	look()
+	see()
+	update()
 }
 class Papers {
-}
-class Admin {
-	approve()
-	remove()
-	reject()
-	authorize()
-}
-class Content {
 }
 class Event {
 }
 class Position {
+}
+class ResearchPapers {
+}
+class Admin {
+	remove()
+	authorize()
+	approve()
+	reject()
+}
+class Profile {
+}
+class UserProfile {
+}
+class Calendar {
+}
+class Account {
+}
+class Media {
+}
+class Updated {
 }
 class SystemAdmin {
 	approve()
 }
 class Request {
 }
-class Media {
-}
-class Profile {
+class Content {
 }
 class Alumnus {
 }
-class Calendar {
-}
-class UserProfile {
-}
-class Updated {
-}
-class ResearchPapers {
-}
-class Account {
-}
-SystemAdmin --> Request : approve
-User --> Event : see
-User --> Papers : look
-User --> Alumnus : look
-User --> ResearchPapers : sort
-Admin --> Profile : authorize
-User --> Media : update
-User --> Position : find
 User --> Updated : resume
-User --> Calendar : filter
-User --> Account : disable
+User --> Papers : look
 Admin --> Content : remove
-User --> Profile : see
-Admin --> UserProfile : approve
 Admin --> UserProfile : reject
+User --> ResearchPapers : sort
+User --> Profile : see
+User --> Media : update
+User --> Event : see
+User --> Alumnus : look
+User --> Calendar : filter
+SystemAdmin --> Request : approve
+Admin --> UserProfile : approve
+Admin --> Profile : authorize
+User --> Position : find
+User --> Account : disable
 
 @enduml

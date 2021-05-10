@@ -3,41 +3,41 @@ hide circle
 class User<actor> {
 }
 class User {
-	input()
-	download()
-	view()
-	want()
-	set()
-	see()
-	connect()
 	use()
+	input()
+	connect()
+	see()
+	download()
 	create()
-}
-class App {
-}
-class InsulinLevel {
-}
-class Trend {
+	set()
+	want()
+	view()
 }
 class Information {
 }
-class Cgm {
+class Application {
+}
+class Trend {
 }
 class Level {
 }
+class InsulinLevel {
+}
+class Cgm {
+}
 class InsulinRecommendation {
 }
-class Application {
+class App {
 }
-User --> InsulinRecommendation : want
-User --> InsulinLevel : input
-User --> Cgm : connect
-User --> App : use
-User --> Information : want
-User --> Trend : see
-User --> Information : view
-User --> Level : set
 User --> Application : download
+User --> InsulinRecommendation : want
+User --> Information : view
+User --> Information : want
+User --> InsulinLevel : input
+User --> Trend : see
+User --> App : use
+User --> Cgm : connect
+User --> Level : set
 User --> Information : create
 
 @enduml

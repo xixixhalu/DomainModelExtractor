@@ -54,45 +54,15 @@
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "Operator",
-      "action": "add",
-      "target": "Employee",
-      "para": []
-    },
-    {
-      "actor": "Operator",
-      "action": "have",
-      "target": "Location",
-      "para": []
-    },
-    {
-      "actor": "Operator",
-      "action": "receive",
-      "target": "Request",
-      "para": []
-    },
-    {
-      "actor": "Company",
-      "action": "offer",
-      "target": "PaymentOption",
-      "para": []
-    },
-    {
-      "actor": "Operator",
-      "action": "track",
-      "target": "Transaction",
-      "para": []
-    },
-    {
       "actor": "Head",
-      "action": "adjust",
-      "target": "Pricing",
+      "action": "set",
+      "target": "Price",
       "para": []
     },
     {
-      "actor": "Establishment",
-      "action": "send",
-      "target": "Advertisement",
+      "actor": "Customer",
+      "action": "enter",
+      "target": "TicketNumber",
       "para": []
     },
     {
@@ -102,15 +72,63 @@
       "para": []
     },
     {
+      "actor": "Operator",
+      "action": "retrieve",
+      "target": "Car",
+      "para": []
+    },
+    {
       "actor": "Company",
       "action": "accept",
       "target": "Payment",
       "para": []
     },
     {
+      "actor": "Driver",
+      "action": "have",
+      "target": "Option",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "add",
+      "target": "Employee",
+      "para": []
+    },
+    {
+      "actor": "Establishment",
+      "action": "send",
+      "target": "Advertisement",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "track",
+      "target": "Transaction",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "include",
+      "target": "Information",
+      "para": []
+    },
+    {
       "actor": "Operator",
       "action": "send",
       "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "request",
+      "target": "Car",
+      "para": []
+    },
+    {
+      "actor": "Company",
+      "action": "offer",
+      "target": "PaymentOption",
       "para": []
     },
     {
@@ -126,27 +144,27 @@
       "para": []
     },
     {
-      "actor": "Customer",
-      "action": "enter",
-      "target": "TicketNumber",
-      "para": []
-    },
-    {
-      "actor": "Head",
-      "action": "set",
-      "target": "Price",
-      "para": []
-    },
-    {
       "actor": "Operator",
-      "action": "retrieve",
-      "target": "Car",
+      "action": "have",
+      "target": "Location",
       "para": []
     },
     {
       "actor": "Company",
       "action": "receive",
       "target": "EmailTransactionSummaryReport",
+      "para": []
+    },
+    {
+      "actor": "Head",
+      "action": "adjust",
+      "target": "Pricing",
+      "para": []
+    },
+    {
+      "actor": "Establishment",
+      "action": "attract",
+      "target": "Customer",
       "para": []
     },
     {
@@ -157,32 +175,14 @@
     },
     {
       "actor": "Operator",
+      "action": "receive",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "Operator",
       "action": "have",
       "target": "Login",
-      "para": []
-    },
-    {
-      "actor": "Customer",
-      "action": "request",
-      "target": "Car",
-      "para": []
-    },
-    {
-      "actor": "Driver",
-      "action": "have",
-      "target": "Option",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "include",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Establishment",
-      "action": "attract",
-      "target": "Customer",
       "para": []
     }
   ]

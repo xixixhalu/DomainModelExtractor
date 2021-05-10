@@ -9,110 +9,110 @@ class Architect<actor> {
 class ProjectManager<actor> {
 }
 class Contractor {
-	report()
-	ask()
-	send()
-	see()
 	enter()
 	manage()
-}
-class Message {
-}
-class Change {
-}
-class Issue {
-}
-class Manager {
-	make()
-	track()
-	edit()
-	access()
-	get()
-	save()
 	send()
-	find()
+	ask()
+	report()
 	see()
-	modify()
-	approve()
-	create()
-}
-class Instruction {
-}
-class Report {
-}
-class Data {
 }
 class MeetingMinute {
-}
-class logs {
-}
-class MeetingInformation {
-}
-class Progress {
-}
-class Resource {
-}
-class TaskCategory {
-}
-class Comment {
 }
 class Event {
 	taken()
 }
 class Place {
 }
-class Decision {
+class Manager {
+	modify()
+	get()
+	track()
+	make()
+	send()
+	access()
+	edit()
+	approve()
+	find()
+	see()
+	save()
+	create()
+}
+class Summary {
+}
+class Instruction {
+}
+class Project {
+}
+class Question {
 }
 class Information {
 }
+class Report {
+}
+class Progress {
+}
 class Status {
+}
+class Task {
+}
+class MeetingInformation {
+}
+class Resource {
+}
+class logs {
+}
+class Data {
+}
+class GeneratedPDFReport {
+}
+class Request {
+}
+class Comment {
+}
+class Decision {
+}
+class Topic {
 }
 class ProjectManager {
 	track()
 }
 class TaskProgress {
 }
-class Task {
+class Message {
 }
-class Project {
+class Issue {
 }
-class Topic {
+class TaskCategory {
 }
-class Summary {
+class Change {
 }
-class Question {
-}
-class GeneratedPDFReport {
-}
-class Request {
-}
-Contractor --> Issue : ask
+Contractor --> Change : report
+Manager --> GeneratedPDFReport : get
+Manager --> Summary : see
+Manager --> MeetingInformation : edit
 Manager --> Request : approve
-Manager --> Information : edit
-Manager --> Progress : save
 Manager --> Instruction : send
+Manager --> Comment : approve
+Manager --> Project : modify
+Manager --> Progress : track
+Contractor --> Question : ask
+Manager --> Decision : make
 Manager --> Status : save
-Manager --> TaskCategory : edit
+Manager --> Information : edit
+Manager --> Topic : find
+Contractor --> Task : see
 Contractor --> Report : enter
 ProjectManager --> TaskProgress : track
-Contractor --> Data : enter
-Contractor --> Task : see
-Contractor --> MeetingMinute : see
-Manager --> Project : create
-Manager --> logs : access
-Manager --> Progress : track
-Manager --> MeetingInformation : edit
-Manager --> Topic : find
-Manager --> Comment : approve
-Manager --> Summary : see
-Manager --> MeetingMinute : send
-Contractor --> Question : ask
-Contractor --> Message : send
-Event --> Place : taken
 Contractor --> Resource : manage
-Manager --> Project : modify
-Contractor --> Change : report
-Manager --> Decision : make
-Manager --> GeneratedPDFReport : get
+Manager --> Progress : save
+Contractor --> Message : send
+Manager --> logs : access
+Contractor --> MeetingMinute : see
+Contractor --> Issue : ask
+Manager --> MeetingMinute : send
+Manager --> Project : create
+Manager --> TaskCategory : edit
+Event --> Place : taken
+Contractor --> Data : enter
 
 @enduml

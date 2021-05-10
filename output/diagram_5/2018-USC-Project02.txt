@@ -10,41 +10,58 @@ class Admin<actor> {
 }
 class SiteAdmin<actor> {
 }
+class Administrator {
+	post()
+	verify()
+	view()
+	moderate()
+}
+class Identity {
+}
 class User {
-	reset()
-	receive()
-	add()
-	export()
-	search()
-	create()
-	track()
-	rate()
 	read()
-	make()
-	adjust()
+	activate()
+	add()
+	track()
+	create()
+	have()
 	find()
 	leave()
-	report()
-	have()
+	rate()
+	make()
 	see()
-	activate()
-	view()
+	search()
 	start()
+	adjust()
+	receive()
+	reset()
+	view()
+	report()
+	export()
 	manage()
+}
+class Review {
 }
 class Access {
 }
-class ServiceProvider {
-}
-class PropertyInformation {
-}
 class Notification {
 }
-class Page {
-}
-class FactorAuthentication {
-}
 class EmailNotificationSetting {
+}
+class Admin {
+	remove()
+}
+class Investment {
+}
+class List {
+}
+class SitePermission {
+}
+class Article {
+}
+class SiteDiscussionBoard {
+}
+class Discussion {
 }
 class DiscussionBoard {
 	using()
@@ -53,74 +70,57 @@ class TextInput {
 }
 class TrackingToolData {
 }
-class InvestmentProperty {
+class Profile {
+}
+class ServiceProvider {
+}
+class PropertyInformation {
 }
 class Password {
 }
-class Profile {
+class Page {
 }
-class List {
+class FactorAuthentication {
 }
-class Review {
-}
-class Administrator {
-	moderate()
-	verify()
-	post()
-	view()
-}
-class Identity {
-}
-class Investment {
-}
-class Discussion {
-}
-class SiteDiscussionBoard {
-}
-class SitePermission {
-}
-class Account {
-}
-class WebsiteUtilizationStatistics {
-}
-class Article {
+class InvestmentProperty {
 }
 class SiteBlog {
 }
 class Performance {
 }
-class Admin {
-	remove()
+class WebsiteUtilizationStatistics {
 }
-User --> Performance : see
-Administrator --> User : moderate
-User --> PropertyInformation : add
-User --> Password : reset
-User --> InvestmentProperty : track
-User --> User : report
-User --> Investment : manage
-User --> Notification : receive
-Admin --> User : remove
-User --> Discussion : start
-User --> Page : make
-User --> SiteDiscussionBoard : read
-User --> FactorAuthentication : activate
-DiscussionBoard --> TextInput : using
+class Account {
+}
 User --> Review : leave
-User --> EmailNotificationSetting : adjust
-User --> SitePermission : have
-User --> ServiceProvider : rate
-User --> Profile : make
-User --> ServiceProvider : search
-User --> TrackingToolData : export
-User --> Account : create
-User --> List : view
 Administrator --> WebsiteUtilizationStatistics : view
-User --> Review : read
-Administrator --> Article : post
+User --> Profile : make
+Administrator --> User : moderate
 User --> Access : have
-Administrator --> Identity : verify
-User --> SiteBlog : read
+User --> Account : create
 User --> ServiceProvider : find
+Administrator --> Article : post
+User --> Notification : receive
+User --> PropertyInformation : add
+User --> EmailNotificationSetting : adjust
+User --> Password : reset
+User --> List : view
+User --> Page : make
+Admin --> User : remove
+User --> Investment : manage
+User --> FactorAuthentication : activate
+User --> User : report
+User --> SiteDiscussionBoard : read
+User --> ServiceProvider : rate
+User --> SitePermission : have
+User --> ServiceProvider : search
+User --> Discussion : start
+User --> InvestmentProperty : track
+User --> SiteBlog : read
+DiscussionBoard --> TextInput : using
+Administrator --> Identity : verify
+User --> Performance : see
+User --> TrackingToolData : export
+User --> Review : read
 
 @enduml

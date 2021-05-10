@@ -12,39 +12,10 @@ class User<actor> {
 }
 class AdminUser<actor> {
 }
-class Button {
-	email()
+class Developer {
+	import()
 }
-class Darin {
-	reorder()
-}
-class User {
-	checkout()
-	request()
-	view()
-	update()
-}
-class Account {
-}
-class Detail {
-}
-class Status {
-}
-class AdminUser {
-	get()
-}
-class EmailNotification {
-}
-class Manager {
-	click()
-}
-class Admin {
-	read()
-	add()
-	reserve()
-	change()
-}
-class logs {
+class Spreadsheet {
 }
 class Volunteer {
 	check()
@@ -52,32 +23,61 @@ class Volunteer {
 }
 class Availability {
 }
+class Admin {
+	reserve()
+	read()
+	change()
+	add()
+}
+class Status {
+}
+class Darin {
+	reorder()
+}
 class Item {
 }
-class Developer {
-	import()
+class Manager {
+	click()
 }
-class Spreadsheet {
+class Button {
+	email()
+}
+class User {
+	update()
+	view()
+	checkout()
+	request()
+}
+class AdminUser {
+	get()
+}
+class EmailNotification {
+}
+class Account {
 }
 class Reservation {
 }
 class Location {
 }
-User --> Status : update
-Admin --> Item : add
-Manager --> Button : click
-Developer --> Spreadsheet : import
-User --> Account : request
-Volunteer --> Availability : check
-Volunteer --> Location : check
-Admin --> Status : change
-User --> Item : checkout
+class Detail {
+}
+class logs {
+}
 AdminUser --> EmailNotification : get
+Admin --> logs : read
+Volunteer --> Availability : check
+Volunteer --> Reservation : view
+Darin --> Item : reorder
+User --> Status : update
+User --> Account : request
+Button --> Darin : email
 Admin --> Item : reserve
 User --> Detail : view
-Volunteer --> Reservation : view
-Button --> Darin : email
-Admin --> logs : read
-Darin --> Item : reorder
+Developer --> Spreadsheet : import
+User --> Item : checkout
+Admin --> Item : add
+Volunteer --> Location : check
+Admin --> Status : change
+Manager --> Button : click
 
 @enduml

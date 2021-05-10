@@ -5,36 +5,36 @@ class SaleAgent<actor> {
 class SaleManager<actor> {
 }
 class SaleAgent {
-	save()
-	clicktocall()
-	request()
 	close()
+	request()
+	clicktocall()
+	save()
+}
+class Sale {
+}
+class SaleManager {
+	train()
+	use()
+	assure()
+}
+class Recording {
 }
 class ConferenceCall {
 }
 class Time {
 }
-class SaleManager {
-	assure()
-	train()
-	use()
+class Quality {
 }
 class Agent {
 }
 class Customer {
 }
-class Sale {
-}
-class Recording {
-}
-class Quality {
-}
-SaleManager --> Recording : use
-SaleAgent --> Customer : clicktocall
-SaleAgent --> Time : save
-SaleManager --> Quality : assure
-SaleAgent --> Sale : close
 SaleManager --> Agent : train
+SaleAgent --> Time : save
+SaleAgent --> Customer : clicktocall
+SaleManager --> Recording : use
+SaleManager --> Quality : assure
 SaleAgent --> ConferenceCall : request
+SaleAgent --> Sale : close
 
 @enduml

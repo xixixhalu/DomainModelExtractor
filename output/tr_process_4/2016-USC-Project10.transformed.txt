@@ -40,15 +40,57 @@
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "CaseManager",
-      "action": "export",
-      "target": "Case",
+      "actor": "Administrator",
+      "action": "view",
+      "target": "Profile",
       "para": []
     },
     {
-      "actor": "Staff",
+      "actor": "Administrator",
+      "action": "modify",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "recover",
+      "target": "LoginInformation",
+      "para": []
+    },
+    {
+      "actor": "Youth",
       "action": "view",
-      "target": "Information",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "see",
+      "target": "Result",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "view",
+      "target": "LogRecord",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "delete",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "contact",
+      "target": "CaseManager",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "view",
+      "target": "Case",
       "para": []
     },
     {
@@ -64,24 +106,6 @@
       "para": []
     },
     {
-      "actor": "CaseManager",
-      "action": "delete",
-      "target": "Document",
-      "para": []
-    },
-    {
-      "actor": "Youth",
-      "action": "provide",
-      "target": "Feedback",
-      "para": []
-    },
-    {
-      "actor": "CaseManager",
-      "action": "delete",
-      "target": "Case",
-      "para": []
-    },
-    {
       "actor": "User",
       "action": "create",
       "target": "SecurityQuestion",
@@ -89,14 +113,14 @@
     },
     {
       "actor": "Administrator",
-      "action": "view",
-      "target": "Profile",
+      "action": "delete",
+      "target": "Case",
       "para": []
     },
     {
-      "actor": "Administrator",
-      "action": "delete",
-      "target": "Case",
+      "actor": "CaseManager",
+      "action": "add",
+      "target": "File",
       "para": []
     },
     {
@@ -107,20 +131,8 @@
     },
     {
       "actor": "CaseManager",
-      "action": "activate",
-      "target": "YouthAccount",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "view",
-      "target": "LogRecord",
-      "para": []
-    },
-    {
-      "actor": "CaseManager",
-      "action": "view",
-      "target": "Case",
+      "action": "review",
+      "target": "Feedback",
       "para": []
     },
     {
@@ -130,57 +142,15 @@
       "para": []
     },
     {
-      "actor": "Administrator",
-      "action": "modify",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "delete",
-      "target": "Profile",
+      "actor": "CaseManager",
+      "action": "activate",
+      "target": "YouthAccount",
       "para": []
     },
     {
       "actor": "CaseManager",
-      "action": "see",
-      "target": "Result",
-      "para": []
-    },
-    {
-      "actor": "CaseManager",
-      "action": "add",
-      "target": "File",
-      "para": []
-    },
-    {
-      "actor": "CaseManager",
-      "action": "view",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "recover",
-      "target": "LoginInformation",
-      "para": []
-    },
-    {
-      "actor": "Youth",
-      "action": "contact",
-      "target": "CaseManager",
-      "para": []
-    },
-    {
-      "actor": "CaseManager",
-      "action": "review",
-      "target": "Feedback",
-      "para": []
-    },
-    {
-      "actor": "Youth",
-      "action": "view",
-      "target": "Profile",
+      "action": "export",
+      "target": "Case",
       "para": []
     },
     {
@@ -190,9 +160,39 @@
       "para": []
     },
     {
+      "actor": "CaseManager",
+      "action": "delete",
+      "target": "Document",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "view",
+      "target": "Information",
+      "para": []
+    },
+    {
       "actor": "Administrator",
       "action": "view",
       "target": "Record",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "provide",
+      "target": "Feedback",
+      "para": []
+    },
+    {
+      "actor": "Staff",
+      "action": "view",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "delete",
+      "target": "Case",
       "para": []
     }
   ]

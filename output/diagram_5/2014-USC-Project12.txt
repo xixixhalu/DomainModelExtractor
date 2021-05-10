@@ -10,20 +10,16 @@ class Provider<actor> {
 }
 class User<actor> {
 }
-class User {
+class Provider {
 	share()
-	have()
-	create()
-	filter()
-	find()
+	send()
 }
-class Location {
-	access()
+class Offering {
 }
 class Corporation {
 	view()
 }
-class Employee {
+class Price {
 }
 class Consumer {
 	compare()
@@ -31,52 +27,56 @@ class Consumer {
 	rate()
 	join()
 }
-class Review {
-}
-class Provider {
-	share()
-	send()
-}
-class Pricing {
-}
-class Offering {
+class Network {
 }
 class Content {
 }
-class Network {
+class User {
+	create()
+	share()
+	filter()
+	have()
+	find()
 }
 class Access {
 }
+class Location {
+	access()
+}
+class HealthCarePricing {
+}
+class Review {
+}
+class Pricing {
+}
+class Employee {
+}
 class HealthcarePrice {
 }
-class Price {
+class Notification {
 }
 class HealthProfile {
 	attach()
 }
 class Offer {
 }
-class Notification {
-}
-class HealthCarePricing {
-}
-Corporation --> Employee : view
-User --> Access : have
 Provider --> Content : share
+Corporation --> Price : view
+Consumer --> Network : create
+Location --> Provider : access
+HealthProfile --> Offer : attach
+Consumer --> Provider : rate
 Provider --> Pricing : share
 User --> HealthCarePricing : share
 User --> Notification : filter
-HealthProfile --> Offer : attach
-Consumer --> HealthcarePrice : compare
 User --> Location : find
-Location --> Provider : access
+Provider --> Offering : send
+User --> Access : have
 Provider --> Offering : share
-Corporation --> Price : view
+Consumer --> Network : join
 Consumer --> Review : create
 User --> HealthProfile : create
-Consumer --> Network : join
-Consumer --> Network : create
-Provider --> Offering : send
-Consumer --> Provider : rate
+Corporation --> Employee : view
+Consumer --> HealthcarePrice : compare
 
 @enduml

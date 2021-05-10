@@ -26,9 +26,21 @@
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "User",
-      "action": "view",
-      "target": "Post",
+      "actor": "Producer",
+      "action": "using",
+      "target": "FeedbackForm",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "Category",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "Tag",
       "para": []
     },
     {
@@ -38,21 +50,21 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "add",
+      "actor": "User",
+      "action": "view",
       "target": "Post",
       "para": []
     },
     {
       "actor": "Admin",
-      "action": "delete",
-      "target": "UserComment",
+      "action": "save",
+      "target": "Post",
       "para": []
     },
     {
       "actor": "Admin",
-      "action": "add",
-      "target": "Category",
+      "action": "edit",
+      "target": "Post",
       "para": []
     },
     {
@@ -69,25 +81,13 @@
     },
     {
       "actor": "Admin",
+      "action": "delete",
+      "target": "UserComment",
+      "para": []
+    },
+    {
+      "actor": "Admin",
       "action": "add",
-      "target": "Tag",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "edit",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "Producer",
-      "action": "using",
-      "target": "FeedbackForm",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "save",
       "target": "Post",
       "para": []
     }

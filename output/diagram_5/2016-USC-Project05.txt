@@ -3,103 +3,103 @@ hide circle
 class User<actor> {
 }
 class User {
-	need()
+	save()
+	review()
+	maintain()
 	free()
+	let()
+	sort()
+	extend()
+	forget()
+	create()
+	keep()
+	report()
+	see()
+	need()
+	express()
+	upload()
+	choose()
+	delete()
+	change()
 	use()
 	download()
-	sort()
-	keep()
-	let()
-	save()
-	like()
-	review()
 	reset()
-	express()
-	forget()
-	comment()
-	maintain()
-	see()
-	report()
-	enter()
-	change()
-	extend()
-	delete()
-	choose()
-	upload()
-	create()
 	make()
-}
-class QualityPicture {
+	like()
+	comment()
+	enter()
 }
 class Register {
 }
-class Lot {
-}
-class ResolutionPicture {
+class EventExit {
 }
 class Picture {
 }
-class Record {
-}
-class Password {
-}
 class Event {
-}
-class Browser {
-}
-class Size {
-}
-class Felling {
-}
-class upload {
-}
-class Privacy {
-}
-class Time {
-}
-class type {
-}
-class Storage {
 }
 class RAWPicture {
 }
+class type {
+}
+class Lot {
+}
+class Storage {
+}
+class Browser {
+}
 class Comment {
 }
-class EventExit {
+class Time {
 }
-User --> Time : upload
-User --> Picture : review
-User --> Picture : report
-User --> upload : delete
-User --> type : change
+class QualityPicture {
+}
+class Felling {
+}
+class Password {
+}
+class Size {
+}
+class Record {
+}
+class upload {
+}
+class ResolutionPicture {
+}
+class Privacy {
+}
 User --> Record : keep
-User --> Storage : save
-User --> Picture : maintain
-User --> Password : forget
-User --> RAWPicture : upload
-User --> Event : delete
-User --> Comment : make
-User --> Size : choose
-User --> Event : extend
-User --> Browser : use
-User --> Password : enter
-User --> EventExit : let
 User --> Picture : sort
 User --> QualityPicture : review
-User --> Password : reset
-User --> Felling : express
-User --> Picture : upload
-User --> Event : create
-User --> Picture : download
-User --> Picture : see
-User --> Time : save
-User --> Register : need
-User --> Event : maintain
-User --> ResolutionPicture : download
-User --> Picture : comment
-User --> Lot : free
+User --> RAWPicture : upload
 User --> Picture : like
-User --> Privacy : keep
+User --> Felling : express
+User --> upload : delete
+User --> Picture : download
+User --> type : change
+User --> Time : upload
+User --> Event : create
+User --> Lot : free
+User --> Event : delete
 User --> ResolutionPicture : upload
+User --> Storage : save
+User --> Time : save
+User --> Picture : upload
+User --> Password : enter
+User --> Browser : use
+User --> ResolutionPicture : download
+User --> Register : need
+User --> Privacy : keep
+User --> Event : maintain
+User --> Comment : make
+User --> Password : forget
+User --> Picture : comment
+User --> Picture : report
+User --> EventExit : let
+User --> Picture : maintain
+User --> Picture : review
+User --> Password : reset
+User --> Picture : see
+User --> Size : choose
+User --> Event : extend
 
 @enduml

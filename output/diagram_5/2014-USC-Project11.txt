@@ -16,112 +16,112 @@ class Team<actor> {
 }
 class Developer<actor> {
 }
+class CourseAttendee {
+	Rate()
+	see()
+	compare()
+	receive()
+}
+class Price {
+}
+class Trainer {
+	set()
+	see()
+	compare()
+	offer()
+	put()
+}
+class reviews {
+}
 class Developer {
 	understand()
 	analyze()
 }
-class Feasibility {
+class Requirement {
+}
+class User {
+	setup()
+	request()
+	share()
+	see()
+}
+class Course {
 }
 class Administrator {
 	adjust()
-	have()
 	receive()
+	have()
+}
+class Dashboard {
 }
 class Rating {
 }
-class Request {
+class Account {
+}
+class Admin {
+	cancel()
+	adjust()
+	move()
+	schedule()
+}
+class People {
+}
+class Schedule {
 }
 class Notification {
 	receive()
 }
 class Change {
 }
-class User {
-	share()
-	setup()
-	request()
-	see()
+class Minimum {
 }
-class Course {
-}
-class CourseAttendee {
-	Rate()
-	compare()
-	receive()
-	see()
-}
-class Schedule {
-}
-class Price {
-}
-class Trainer {
-	compare()
-	put()
-	offer()
-	see()
-	set()
-}
-class reviews {
-}
-class Account {
+class Feasibility {
 }
 class Calendar {
 }
-class Admin {
-	adjust()
-	move()
-	schedule()
-	cancel()
+class Request {
 }
 class ConfirmationEmail {
 }
 class Number {
 }
-class Dashboard {
-}
-class Minimum {
-}
-class Architecture {
-}
-class People {
-}
-class Requirement {
-}
 class AccountRegistrationInformation {
 }
 class Enterprise {
-	compare()
 	getting()
+	compare()
 }
 class Value {
 }
-Developer --> Feasibility : understand
-CourseAttendee --> CourseAttendee : Rate
-Enterprise --> Price : compare
-CourseAttendee --> ConfirmationEmail : receive
-Enterprise --> Value : getting
-Administrator --> Rating : adjust
-CourseAttendee --> Schedule : see
-Trainer --> Course : offer
-Admin --> Number : adjust
-Administrator --> Request : receive
-Administrator --> Dashboard : have
+class Architecture {
+}
 CourseAttendee --> Price : compare
-Trainer --> Rating : see
-Notification --> Change : receive
-Trainer --> Price : compare
-Trainer --> Minimum : set
-Trainer --> reviews : see
+Enterprise --> Value : getting
+Trainer --> Course : offer
+Administrator --> Dashboard : have
+Developer --> Feasibility : understand
 Developer --> Architecture : understand
-User --> Course : share
-User --> Account : setup
-User --> Number : see
-Trainer --> Calendar : put
-Admin --> People : move
-Developer --> Requirement : analyze
+Trainer --> reviews : see
+Trainer --> Rating : see
 Admin --> Course : cancel
+User --> Course : share
+Trainer --> Calendar : put
+Developer --> Requirement : analyze
 User --> Course : request
+Trainer --> Price : compare
+User --> Account : setup
+Administrator --> Request : receive
+CourseAttendee --> ConfirmationEmail : receive
+Admin --> People : move
+User --> Number : see
+CourseAttendee --> Schedule : see
 Administrator --> AccountRegistrationInformation : receive
+Administrator --> Rating : adjust
 Admin --> Course : schedule
+Notification --> Change : receive
+CourseAttendee --> CourseAttendee : Rate
+Trainer --> Minimum : set
+Enterprise --> Price : compare
+Admin --> Number : adjust
 
 @enduml

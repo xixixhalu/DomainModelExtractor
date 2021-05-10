@@ -26,9 +26,81 @@
   "relation_list": [],
   "behavior_list": [
     {
+      "actor": "Admin",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "reset",
+      "target": "UserPassword",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "restrict",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reset",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "analyze",
+      "target": "Impact",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Email",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Evolution",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Statistics",
+      "para": []
+    },
+    {
       "actor": "User",
       "action": "export",
       "target": "SoftwareQualityMetric",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "give",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "terminate",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "perform",
+      "target": "Analysis",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "manage",
+      "target": "UserPermission",
       "para": []
     },
     {
@@ -44,39 +116,9 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "have",
-      "target": "Access",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Statistics",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Evolution",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "reset",
-      "target": "UserPassword",
-      "para": []
-    },
-    {
       "actor": "Contributor",
-      "action": "analyze",
-      "target": "Impact",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "manage",
-      "target": "UserPermission",
+      "action": "ask",
+      "target": "Admin",
       "para": []
     },
     {
@@ -87,50 +129,8 @@
     },
     {
       "actor": "User",
-      "action": "reset",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "Contributor",
-      "action": "ask",
-      "target": "Admin",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "perform",
-      "target": "Analysis",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "Email",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "confirm",
       "target": "Registration",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "restrict",
-      "target": "Access",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "give",
-      "target": "Access",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "terminate",
-      "target": "Account",
       "para": []
     }
   ]

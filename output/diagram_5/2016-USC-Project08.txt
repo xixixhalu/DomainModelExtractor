@@ -18,110 +18,110 @@ class Edit<actor> {
 }
 class Re<actor> {
 }
-class Questionnaire {
-	provides()
+class Maintainer {
+	update()
+	build()
 }
-class Information {
+class App {
 }
-class User {
-	send()
-	share()
-	receive()
-	delete()
-	like()
+class Admin {
 	use()
-	change()
-	post()
+	disable()
+	add()
+	increase()
 }
-class Message {
-}
-class Entrepreneur {
-	complete()
-	see()
-	have()
+class Quality {
 }
 class Mentor {
-	identify()
 	view()
+	identify()
 	assign()
 	create()
 }
-class Post {
+class Weakness {
 }
-class Admin {
-	add()
-	increase()
-	disable()
-	use()
-}
-class Account {
+class Entrepreneur {
+	see()
+	have()
+	complete()
 }
 class Profile {
 	provides()
 }
-class Quality {
+class Information {
 }
-class Weakness {
+class Account {
 }
-class CurriculumContent {
-}
-class CourseContent {
+class User {
+	like()
+	delete()
+	share()
+	post()
+	send()
+	use()
+	receive()
+	change()
 }
 class Version {
 }
-class MentorInformation {
+class Issue {
 }
-class Homework {
+class Post {
+}
+class Application {
+}
+class Access {
 }
 class Algorithm {
 	match()
 }
-class Maintainer {
-	build()
-	update()
-}
-class App {
-}
-class EntrepreneurStrength {
-}
-class Issue {
-}
-class Access {
-}
-class Application {
-}
-class Password {
+class Message {
 }
 class LessonContent {
 }
-User --> Password : change
-Entrepreneur --> MentorInformation : see
-Questionnaire --> Information : provides
-Mentor --> LessonContent : create
+class Password {
+}
+class MentorInformation {
+}
+class Questionnaire {
+	provides()
+}
+class EntrepreneurStrength {
+}
+class CurriculumContent {
+}
+class Homework {
+}
+class CourseContent {
+}
 Mentor --> Homework : assign
-Admin --> Account : disable
+Maintainer --> App : build
+Entrepreneur --> Profile : complete
+User --> Message : receive
 User --> Message : send
 Profile --> Information : provides
-Admin --> Algorithm : use
-Entrepreneur --> Profile : complete
-Algorithm --> Mentor : match
-Entrepreneur --> Mentor : have
-Algorithm --> Entrepreneur : match
-Entrepreneur --> Questionnaire : complete
+Admin --> CourseContent : add
+User --> Post : like
 Admin --> Quality : increase
-Maintainer --> App : build
+Mentor --> LessonContent : create
+Admin --> Account : disable
+User --> Password : change
+Mentor --> Weakness : identify
+Entrepreneur --> MentorInformation : see
+User --> Version : use
+User --> Account : delete
+Questionnaire --> Information : provides
+User --> Issue : post
 Mentor --> Profile : view
 Mentor --> EntrepreneurStrength : identify
-Mentor --> Weakness : identify
-User --> Post : like
-User --> Issue : post
-Mentor --> CurriculumContent : create
-User --> Account : delete
-Admin --> CourseContent : add
-User --> Message : receive
-Entrepreneur --> Access : have
 User --> Post : share
-User --> Version : use
+Entrepreneur --> Questionnaire : complete
 Maintainer --> Application : update
+Algorithm --> Mentor : match
+Mentor --> CurriculumContent : create
+Entrepreneur --> Access : have
+Entrepreneur --> Mentor : have
+Admin --> Algorithm : use
+Algorithm --> Entrepreneur : match
 
 @enduml

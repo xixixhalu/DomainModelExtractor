@@ -8,25 +8,27 @@ class VideoUser<actor> {
 }
 class User {
 	interested()
-	input()
 	find()
+	input()
 }
-class Movie {
+class Media {
 }
 class MovieTitle {
 	get()
 }
 class Developer {
-	map()
-	filter()
-	display()
 	access()
+	display()
+	filter()
+	map()
 }
 class Data {
 }
 class IMDBAttribute {
 }
-class Media {
+class MediaData {
+}
+class Result {
 }
 class VideoUser {
 	use()
@@ -35,19 +37,17 @@ class TwitterData {
 }
 class Info {
 }
-class Result {
-}
-class MediaData {
+class Movie {
 }
 Developer --> Data : filter
-User --> Movie : find
+User --> Media : interested
 Developer --> Result : display
-VideoUser --> Media : use
+MovieTitle --> Info : get
 Developer --> IMDBAttribute : map
 User --> MovieTitle : input
-VideoUser --> TwitterData : use
+User --> Movie : find
+VideoUser --> Media : use
 Developer --> MediaData : access
-User --> Media : interested
-MovieTitle --> Info : get
+VideoUser --> TwitterData : use
 
 @enduml

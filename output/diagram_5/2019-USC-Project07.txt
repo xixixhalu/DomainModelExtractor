@@ -6,32 +6,51 @@ class Developer<actor> {
 }
 class Maintainer<actor> {
 }
-class Developer {
-	maintainable()
-	publish()
-	provide()
-	change()
-	restructure()
-	fix()
+class Component {
+	have()
 }
-class Project {
-}
-class User {
-	view()
-	understand()
-	skip()
-	play()
-	track()
-	get()
-}
-class Question {
-}
-class Graph {
-}
-class App {
+class Structure {
 }
 class Option {
 	enables()
+}
+class User {
+	understand()
+	get()
+	track()
+	view()
+	skip()
+	play()
+}
+class Point {
+}
+class Progress {
+}
+class Developer {
+	restructure()
+	publish()
+	maintainable()
+	fix()
+	change()
+	provide()
+}
+class Graph {
+}
+class Feedback {
+}
+class SourceCode {
+}
+class ProgressReport {
+}
+class App {
+}
+class Question {
+}
+class Project {
+}
+class Ui {
+}
+class Report {
 }
 class Hint {
 }
@@ -40,41 +59,22 @@ class Maintainer {
 }
 class UserAnalytic {
 }
-class Feedback {
-}
-class Component {
-	have()
-}
-class Structure {
-}
-class SourceCode {
-}
-class Report {
-}
-class Point {
-}
-class Ui {
-}
-class Progress {
-}
-class ProgressReport {
-}
 Developer --> Graph : fix
-Developer --> Project : restructure
 User --> Point : understand
-Developer --> App : publish
-Developer --> SourceCode : maintainable
-User --> Feedback : get
-User --> Hint : get
-Option --> User : enables
-User --> App : play
-Developer --> Ui : change
-User --> Progress : track
-User --> Report : view
-User --> Question : skip
-User --> ProgressReport : view
-Developer --> Option : provide
 Component --> Structure : have
+User --> ProgressReport : view
+Developer --> Ui : change
+User --> Report : view
+User --> App : play
+User --> Feedback : get
 Maintainer --> UserAnalytic : get
+User --> Progress : track
+Developer --> Project : restructure
+Developer --> App : publish
+Option --> User : enables
+Developer --> SourceCode : maintainable
+Developer --> Option : provide
+User --> Hint : get
+User --> Question : skip
 
 @enduml

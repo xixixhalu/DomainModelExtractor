@@ -33,14 +33,56 @@
   "relation_list": [],
   "behavior_list": [
     {
+      "actor": "Administrator",
+      "action": "see",
+      "target": "Hub",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "assign",
+      "target": "Code",
+      "para": []
+    },
+    {
+      "actor": "HouseManager",
+      "action": "select",
+      "target": "Lock",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "enter",
+      "target": "SmartThingsClientId",
+      "para": []
+    },
+    {
       "actor": "Lock",
       "action": "adddelete",
       "target": "Code",
       "para": []
     },
     {
-      "actor": "Lock",
+      "actor": "Administrator",
+      "action": "enter",
+      "target": "Secret",
+      "para": []
+    },
+    {
+      "actor": "HouseManager",
       "action": "add",
+      "target": "Other",
+      "para": []
+    },
+    {
+      "actor": "locks",
+      "action": "adddelete",
+      "target": "Code",
+      "para": []
+    },
+    {
+      "actor": "Code",
+      "action": "edit",
       "target": "Code",
       "para": []
     },
@@ -52,37 +94,19 @@
     },
     {
       "actor": "Administrator",
-      "action": "enter",
-      "target": "Secret",
-      "para": []
-    },
-    {
-      "actor": "locks",
-      "action": "adddelete",
-      "target": "Code",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
       "action": "lock",
       "target": "Status",
       "para": []
     },
     {
-      "actor": "HouseManager",
-      "action": "add",
-      "target": "Other",
-      "para": []
-    },
-    {
-      "actor": "HouseManager",
-      "action": "select",
-      "target": "Lock",
-      "para": []
-    },
-    {
       "actor": "Administrator",
-      "action": "assign",
+      "action": "create",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "Lock",
+      "action": "add",
       "target": "Code",
       "para": []
     },
@@ -93,33 +117,9 @@
       "para": []
     },
     {
-      "actor": "Administrator",
-      "action": "enter",
-      "target": "SmartThingsClientId",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "see",
-      "target": "Hub",
-      "para": []
-    },
-    {
       "actor": "Lock",
       "action": "add",
       "target": "Lock",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "create",
-      "target": "Group",
-      "para": []
-    },
-    {
-      "actor": "Code",
-      "action": "edit",
-      "target": "Code",
       "para": []
     }
   ]

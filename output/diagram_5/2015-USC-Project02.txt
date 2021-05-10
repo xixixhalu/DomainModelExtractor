@@ -6,127 +6,127 @@ class Admin<actor> {
 }
 class Admin {
 	change()
+	perform()
 	generate()
 	list()
-	update()
-	restore()
+	delete()
+	suspend()
+	manage()
 	have()
 	browse()
-	delete()
-	perform()
-	manage()
-	suspend()
+	restore()
+	update()
 	create()
+}
+class SystemSetting {
 }
 class User {
-	post()
-	keep()
-	moderate()
-	upload()
-	create()
-	sort()
-	save()
-	have()
-	delete()
-	like()
-	take()
-	write()
-	shut()
 	remove()
-	use()
 	reserve()
-	choose()
+	keep()
+	upload()
+	write()
+	use()
+	save()
+	post()
+	shut()
+	like()
+	delete()
+	moderate()
+	have()
 	report()
+	choose()
+	take()
+	sort()
+	create()
 }
-class Photo {
-}
-class Hashtag {
-}
-class Event {
+class Control {
 }
 class Picture {
 	give()
 }
-class Application {
+class Event {
 }
-class Control {
+class Public {
 }
-class ExpirationDate {
-}
-class Contents {
-}
-class EventHashtag {
-}
-class SystemSetting {
-}
-class Report {
+class Photo {
 }
 class Login {
 }
-class Information {
+class AdminFeature {
 }
-class Public {
+class Hashtag {
+}
+class Report {
+}
+class Application {
+}
+class Radius {
+}
+class ExpirationDate {
+}
+class Name {
+}
+class EventHashtag {
 }
 class Tourist {
 	search()
 }
 class Location {
 }
-class Radius {
+class Contents {
 }
-class Name {
-}
-class AdminFeature {
+class Information {
 }
 class EventAttendee {
 	use()
 }
 class Caption {
 }
-Admin --> Event : update
-User --> Hashtag : use
-User --> Picture : sort
-Admin --> Event : delete
-Admin --> User : browse
-User --> Picture : post
-User --> Picture : upload
-Admin --> Control : have
 User --> Picture : remove
-User --> Event : shut
-User --> Hashtag : save
-Admin --> Picture : delete
-Admin --> ExpirationDate : change
-User --> Picture : save
-Admin --> Information : have
-Admin --> Contents : manage
-Admin --> Picture : restore
-User --> Public : create
-Admin --> EventHashtag : create
-EventAttendee --> Hashtag : use
-User --> Caption : write
-User --> Picture : like
-User --> Control : have
-Tourist --> Location : search
-User --> Picture : choose
-User --> Picture : take
-Admin --> User : manage
-Picture --> Control : give
-User --> Radius : choose
-Admin --> SystemSetting : change
-Admin --> Picture : list
-Admin --> Report : generate
-Admin --> Name : change
-Admin --> User : suspend
-User --> Picture : report
-Admin --> AdminFeature : perform
-User --> Photo : keep
-User --> Event : create
-User --> Login : create
-User --> Event : remove
-User --> Hashtag : reserve
-User --> Application : use
-User --> Photo : take
-User --> Picture : moderate
 User --> Picture : delete
+User --> Event : remove
+Admin --> AdminFeature : perform
+Picture --> Control : give
+Admin --> Name : change
+Admin --> Information : have
+User --> Public : create
+User --> Hashtag : use
+Admin --> User : suspend
+User --> Photo : keep
+Admin --> Report : generate
+EventAttendee --> Hashtag : use
+Admin --> Event : update
+Admin --> Event : delete
+Admin --> EventHashtag : create
+User --> Application : use
+Admin --> User : browse
+User --> Caption : write
+User --> Event : create
+User --> Photo : take
+User --> Login : create
+Admin --> User : manage
+Admin --> Picture : restore
+User --> Radius : choose
+User --> Event : shut
+User --> Picture : sort
+User --> Hashtag : reserve
+Admin --> Picture : list
+User --> Hashtag : save
+User --> Picture : post
+User --> Picture : save
+User --> Picture : moderate
+Admin --> SystemSetting : change
+Admin --> Control : have
+Tourist --> Location : search
+User --> Picture : report
+User --> Picture : take
+Admin --> Contents : manage
+User --> Control : have
+Admin --> ExpirationDate : change
+Admin --> Picture : delete
+User --> Picture : upload
+User --> Picture : like
+User --> Picture : choose
 
 @enduml

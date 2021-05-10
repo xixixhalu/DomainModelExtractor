@@ -10,86 +10,86 @@ class Maintainer<actor> {
 }
 class Administer<actor> {
 }
-class Way {
-	draw()
-}
-class Attention {
-}
 class User {
-	have()
 	check()
-	keep()
-	track()
-	practice()
-	change()
-	erase()
 	install()
-	purchase()
+	erase()
+	have()
 	share()
-}
-class Score {
-}
-class Version {
-}
-class Math {
+	purchase()
+	keep()
+	practice()
+	track()
+	change()
 }
 class LevelProgress {
 }
-class Maintainer {
-	have()
-	publish()
-}
-class App {
-}
-class Progress {
-}
-class Client {
-	have()
-	publish()
-}
-class ScreenSpace {
-}
-class IOSVersion {
-}
-class Documentation {
+class Score {
 }
 class Developer {
 	design()
 	understand()
 }
-class DescriptionPage {
+class LevelPage {
+}
+class Progress {
 }
 class Ability {
 }
-class Theme {
-}
 class Code {
 }
-class LevelPage {
+class Client {
+	publish()
+	have()
+}
+class ScreenSpace {
+}
+class Maintainer {
+	publish()
+	have()
+}
+class Documentation {
+}
+class Math {
+}
+class App {
+}
+class Version {
+}
+class Theme {
+}
+class IOSVersion {
 }
 class Administer {
 	see()
 }
 class Analytic {
 }
-User --> Score : share
-Developer --> DescriptionPage : design
-Developer --> LevelPage : design
+class DescriptionPage {
+}
+class Way {
+	draw()
+}
+class Attention {
+}
 User --> Version : purchase
-User --> Ability : have
-User --> Progress : track
-User --> Math : practice
-User --> App : install
-User --> LevelProgress : keep
-Administer --> Analytic : see
-Maintainer --> Documentation : have
-User --> Score : check
-Maintainer --> App : publish
-User --> Progress : erase
-Client --> ScreenSpace : have
-Client --> IOSVersion : publish
-Way --> Attention : draw
 User --> Theme : change
+Administer --> Analytic : see
+Developer --> LevelPage : design
+Maintainer --> App : publish
+Developer --> DescriptionPage : design
+User --> Progress : erase
+User --> Ability : have
+Way --> Attention : draw
+User --> Progress : track
 Developer --> Code : understand
+User --> App : install
+User --> Score : check
+Client --> ScreenSpace : have
+Maintainer --> Documentation : have
+User --> Math : practice
+User --> LevelProgress : keep
+Client --> IOSVersion : publish
+User --> Score : share
 
 @enduml

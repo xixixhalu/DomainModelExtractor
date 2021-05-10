@@ -47,51 +47,9 @@
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "Button",
-      "action": "email",
-      "target": "Darin",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "request",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Detail",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "update",
-      "target": "Status",
-      "para": []
-    },
-    {
-      "actor": "AdminUser",
-      "action": "get",
-      "target": "EmailNotification",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "click",
-      "target": "Button",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "change",
-      "target": "Status",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "read",
-      "target": "logs",
+      "actor": "Developer",
+      "action": "import",
+      "target": "Spreadsheet",
       "para": []
     },
     {
@@ -102,8 +60,8 @@
     },
     {
       "actor": "Admin",
-      "action": "reserve",
-      "target": "Item",
+      "action": "change",
+      "target": "Status",
       "para": []
     },
     {
@@ -113,9 +71,15 @@
       "para": []
     },
     {
-      "actor": "Developer",
-      "action": "import",
-      "target": "Spreadsheet",
+      "actor": "Manager",
+      "action": "click",
+      "target": "Button",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "Status",
       "para": []
     },
     {
@@ -125,9 +89,9 @@
       "para": []
     },
     {
-      "actor": "Volunteer",
-      "action": "view",
-      "target": "Reservation",
+      "actor": "AdminUser",
+      "action": "get",
+      "target": "EmailNotification",
       "para": []
     },
     {
@@ -137,9 +101,45 @@
       "para": []
     },
     {
+      "actor": "User",
+      "action": "request",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Button",
+      "action": "email",
+      "target": "Darin",
+      "para": []
+    },
+    {
+      "actor": "Volunteer",
+      "action": "view",
+      "target": "Reservation",
+      "para": []
+    },
+    {
       "actor": "Volunteer",
       "action": "check",
       "target": "Location",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "reserve",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "read",
+      "target": "logs",
       "para": []
     }
   ]

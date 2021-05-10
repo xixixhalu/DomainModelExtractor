@@ -7,128 +7,128 @@ class Admin<actor> {
 class Contributor<actor> {
 }
 class Admin {
-	delete()
-	create()
-	modify()
-	pull()
-	check()
-	send()
-	filter()
-	view()
 	approve()
-	change()
-	edit()
-	end()
-	export()
 	set()
 	reject()
+	end()
+	modify()
+	create()
+	send()
+	edit()
+	filter()
+	pull()
+	change()
+	view()
+	delete()
+	check()
+	export()
 	receive()
 }
-class Pitch {
+class Profile {
 }
-class Goal {
-}
-class ProjectProgress {
+class WeekGoal {
 }
 class Contributor {
-	create()
-	modify()
-	add()
-	remove()
-	receive()
-	send()
-	filter()
-	view()
 	track()
-	pitch()
 	end()
+	modify()
+	create()
+	send()
+	add()
+	filter()
 	make()
-}
-class Change {
-}
-class Message {
+	remove()
+	view()
+	receive()
+	pitch()
 }
 class Detail {
 }
-class type {
+class Goal {
+}
+class Draft {
+}
+class Message {
 }
 class ContributorAccount {
 }
+class type {
+}
+class DraftIdea {
+}
 class PublishingCalendar {
+}
+class Pitch {
+}
+class SuccessRate {
+}
+class Idea {
+}
+class Account {
+}
+class Change {
 }
 class Developer {
 	do()
 }
 class KnowledgeTransfer {
 }
-class WeekGoal {
-}
-class Draft {
+class details {
 }
 class Piece {
 }
-class DraftIdea {
+class Notification {
 }
 class Session {
 }
-class Account {
-}
-class SuccessRate {
-}
-class details {
-}
-class Profile {
-}
 class Progress {
-}
-class Notification {
 }
 class Vertical {
 }
-class Idea {
+class ProjectProgress {
 }
-Admin --> Account : delete
-Admin --> type : change
-Contributor --> Pitch : filter
-Admin --> Pitch : edit
-Admin --> Session : end
-Contributor --> Change : make
-Admin --> Piece : receive
-Admin --> Message : receive
-Admin --> Profile : edit
+Contributor --> Detail : view
+Admin --> Progress : view
 Admin --> Detail : view
-Admin --> Admin : create
-Contributor --> Draft : remove
-Admin --> Pitch : reject
-Admin --> ContributorAccount : create
-Admin --> PublishingCalendar : approve
-Admin --> Account : create
-Contributor --> Session : end
-Admin --> PublishingCalendar : export
-Admin --> Pitch : view
-Admin --> Pitch : approve
-Contributor --> Goal : view
-Contributor --> SuccessRate : track
-Admin --> Message : send
-Contributor --> Detail : add
+Contributor --> DraftIdea : create
+Admin --> type : change
+Admin --> Goal : check
 Contributor --> Vertical : view
 Developer --> KnowledgeTransfer : do
-Admin --> details : view
-Contributor --> Idea : pitch
-Admin --> WeekGoal : view
-Admin --> Goal : view
-Admin --> Profile : modify
-Contributor --> Message : send
-Contributor --> Draft : modify
-Admin --> Progress : view
-Admin --> Pitch : filter
+Contributor --> Draft : remove
 Contributor --> Piece : receive
-Contributor --> Detail : view
-Admin --> Goal : check
-Admin --> Goal : set
-Admin --> Pitch : pull
-Admin --> Notification : receive
+Admin --> details : view
+Contributor --> Goal : view
+Admin --> PublishingCalendar : export
 Admin --> ProjectProgress : view
-Contributor --> DraftIdea : create
+Admin --> Goal : set
+Admin --> Message : receive
+Admin --> Piece : receive
+Admin --> Goal : view
+Contributor --> Detail : add
+Admin --> Pitch : approve
+Contributor --> Message : send
+Admin --> Pitch : pull
+Admin --> PublishingCalendar : approve
+Admin --> Pitch : reject
+Admin --> Pitch : view
+Contributor --> Pitch : filter
+Admin --> Message : send
+Contributor --> Draft : modify
+Contributor --> Session : end
+Admin --> Pitch : filter
+Admin --> ContributorAccount : create
+Contributor --> SuccessRate : track
+Admin --> Account : delete
+Admin --> Notification : receive
+Contributor --> Idea : pitch
+Admin --> Profile : modify
+Admin --> Session : end
+Admin --> Account : create
+Admin --> WeekGoal : view
+Admin --> Admin : create
+Contributor --> Change : make
+Admin --> Pitch : edit
+Admin --> Profile : edit
 
 @enduml

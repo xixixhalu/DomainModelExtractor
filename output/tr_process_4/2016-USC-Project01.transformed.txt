@@ -20,26 +20,20 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "view",
-      "target": "Detail",
+      "action": "collapse",
+      "target": "Sort",
       "para": []
     },
     {
       "actor": "User",
-      "action": "view",
-      "target": "Cluster",
+      "action": "see",
+      "target": "Item",
       "para": []
     },
     {
       "actor": "User",
       "action": "see",
       "target": "Circle",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "collapse",
-      "target": "Sort",
       "para": []
     },
     {
@@ -56,32 +50,8 @@
     },
     {
       "actor": "User",
-      "action": "see",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "slide",
-      "target": "Collection",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "UserExperience",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "viewing",
-      "target": "Page",
+      "action": "shop",
+      "target": "Product",
       "para": []
     },
     {
@@ -92,7 +62,7 @@
     },
     {
       "actor": "User",
-      "action": "get",
+      "action": "see",
       "target": "Product",
       "para": []
     },
@@ -105,25 +75,7 @@
     {
       "actor": "User",
       "action": "view",
-      "target": "Version",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "waste",
-      "target": "Time",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Product",
+      "target": "Cluster",
       "para": []
     },
     {
@@ -134,7 +86,55 @@
     },
     {
       "actor": "User",
-      "action": "shop",
+      "action": "get",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Version",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "UserExperience",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "waste",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "viewing",
+      "target": "Page",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "slide",
+      "target": "Collection",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
       "target": "Product",
       "para": []
     }

@@ -18,89 +18,89 @@ class EditProgramStaff<actor> {
 }
 class User<actor> {
 }
+class staff {
+	analyze()
+	export()
+}
+class AttendanceData {
+}
+class GOTRLA {
+	support()
+	have()
+	REGULARLY()
+	Update()
+	schedule()
+	monitor()
+	Add()
+}
+class ProgramWeek {
+}
 class CAN {
 	ANY()
 }
 class TEAMSHAVINGISSUESIMMEDIATELY {
 }
-class staff {
-	analyze()
-	export()
+class GirlData {
 }
-class Data {
-}
-class GOTRLA {
+class VolunteerCoach {
 	have()
-	schedule()
-	monitor()
-	Update()
-	REGULARLY()
-	Add()
-	support()
 }
-class ATTENDANCESHEET {
+class CopyLiabilityWaiverForm {
+}
+class User {
+	reset()
+	update()
+}
+class AccountPassword {
+}
+class Information {
+}
+class Coach {
+	take()
+	conduct()
+}
+class Class {
+}
+class Attendance {
 }
 class TeamRoster {
+}
+class Staff {
+	have()
+}
+class Admin {
+	add()
+}
+class Data {
 }
 class Volunteer {
 	conduct()
 	access()
 }
-class Class {
-}
-class Coach {
-	conduct()
-	take()
-}
-class AttendanceData {
-}
-class VolunteerCoach {
-	have()
-}
-class Staff {
-	have()
-}
-class CopyLiabilityWaiverForm {
-}
-class Attendance {
-}
 class Schedule {
 }
-class GirlData {
+class ATTENDANCESHEET {
 }
-class Information {
-}
-class User {
-	update()
-	reset()
-}
-class AccountPassword {
-}
-class ProgramWeek {
-}
-class Admin {
-	add()
-}
-GOTRLA --> GirlData : Add
-CAN --> TEAMSHAVINGISSUESIMMEDIATELY : ANY
-Coach --> Class : conduct
-GOTRLA --> VolunteerCoach : Add
+Staff --> CopyLiabilityWaiverForm : have
 staff --> AttendanceData : analyze
+User --> AccountPassword : update
+Admin --> Staff : add
 GOTRLA --> Information : have
 staff --> Data : export
-User --> AccountPassword : update
-GOTRLA --> ATTENDANCESHEET : REGULARLY
-Volunteer --> Class : conduct
-GOTRLA --> VolunteerCoach : Update
 GOTRLA --> ProgramWeek : schedule
-GOTRLA --> TeamRoster : support
-VolunteerCoach --> CopyLiabilityWaiverForm : have
-Admin --> Staff : add
-Staff --> CopyLiabilityWaiverForm : have
-User --> AccountPassword : reset
-Coach --> Attendance : take
 Volunteer --> Schedule : access
+CAN --> TEAMSHAVINGISSUESIMMEDIATELY : ANY
+VolunteerCoach --> CopyLiabilityWaiverForm : have
+Coach --> Attendance : take
+GOTRLA --> GirlData : Add
+GOTRLA --> ATTENDANCESHEET : REGULARLY
+User --> AccountPassword : reset
+Volunteer --> Class : conduct
+GOTRLA --> VolunteerCoach : Add
 GOTRLA --> Class : Add
+GOTRLA --> VolunteerCoach : Update
+Coach --> Class : conduct
 GOTRLA --> Attendance : monitor
+GOTRLA --> TeamRoster : support
 
 @enduml

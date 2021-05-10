@@ -14,100 +14,100 @@ class Maintainer<actor> {
 }
 class Headcoach<actor> {
 }
-class Coach {
-	overwrite()
+class parent {
+	sign()
+	view()
 	edit()
-	extract()
-	modified()
-	expect()
-	modify()
-	review()
 }
-class UploadEvent {
-}
-class PdfInformation {
+class Kid {
 }
 class Maintainer {
 	see()
 	insert()
 	modify()
-	access()
 	have()
+	access()
 }
 class Database {
 }
-class AmountDetail {
+class Coach {
+	edit()
+	review()
+	modify()
+	modified()
+	expect()
+	extract()
+	overwrite()
+}
+class PdfInformation {
+}
+class List {
+}
+class Result {
 }
 class Signup {
 	close()
 }
-class Headcoach {
-	generate()
-}
-class PdfReport {
-}
-class Access {
-}
-class parent {
-	edit()
-	sign()
-	view()
-}
-class Kid {
+class Timeframe {
 }
 class Developer {
 	have()
 }
-class Result {
-}
-class Information {
-}
-class Event {
-}
-class User {
-	see()
-}
-class Week {
-}
-class Timeframe {
-}
-class List {
-}
-class Option {
-}
-class CSVFile {
-}
-class Something {
+class Access {
 }
 class Treasurer {
 	see()
 }
 class Amount {
 }
-User --> Event : see
+class Information {
+}
+class Event {
+}
+class Something {
+}
+class Week {
+}
+class Headcoach {
+	generate()
+}
+class PdfReport {
+}
+class User {
+	see()
+}
+class Option {
+}
+class UploadEvent {
+}
+class AmountDetail {
+}
+class CSVFile {
+}
+Headcoach --> PdfReport : generate
+Developer --> Access : have
+Treasurer --> Amount : see
+Maintainer --> Database : insert
+Maintainer --> Access : have
+Coach --> Result : overwrite
+Coach --> Information : review
 Coach --> PdfInformation : extract
 Maintainer --> Database : access
-parent --> Event : view
-Signup --> Week : close
-parent --> Kid : sign
-Maintainer --> Database : insert
-Signup --> Timeframe : close
-Maintainer --> AmountDetail : see
 Coach --> List : edit
-Coach --> Signup : expect
-Coach --> Result : overwrite
-Headcoach --> PdfReport : generate
-Maintainer --> Access : have
+Signup --> Timeframe : close
+User --> Event : see
 User --> Option : see
-Headcoach --> CSVFile : generate
-Developer --> Access : have
-Maintainer --> Database : modify
-parent --> Information : view
 Coach --> Result : modify
-Coach --> Something : modified
-Coach --> Information : review
-Treasurer --> Amount : see
-parent --> Event : edit
 Coach --> UploadEvent : extract
+parent --> Information : view
+Coach --> Signup : expect
+parent --> Event : view
+parent --> Event : edit
+Maintainer --> AmountDetail : see
+Coach --> Something : modified
+Headcoach --> CSVFile : generate
+Signup --> Week : close
+Maintainer --> Database : modify
+parent --> Kid : sign
 
 @enduml

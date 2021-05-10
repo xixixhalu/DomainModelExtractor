@@ -27,8 +27,8 @@
   "behavior_list": [
     {
       "actor": "Client",
-      "action": "extract",
-      "target": "Model",
+      "action": "upload",
+      "target": "Image",
       "para": []
     },
     {
@@ -39,20 +39,8 @@
     },
     {
       "actor": "Client",
-      "action": "replace",
-      "target": "Machine",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "upload",
-      "target": "Image",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "train",
-      "target": "Pipeline",
+      "action": "extract",
+      "target": "Model",
       "para": []
     },
     {
@@ -63,6 +51,18 @@
     },
     {
       "actor": "Client",
+      "action": "train",
+      "target": "Pipeline",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "replace",
+      "target": "Machine",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "upload",
       "target": "Image",
       "para": []

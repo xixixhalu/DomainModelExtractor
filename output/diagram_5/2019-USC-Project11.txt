@@ -6,147 +6,147 @@ class Expert<actor> {
 }
 class GuestUser<actor> {
 }
-class Expert {
-	manage()
-	see()
-	sign()
-	receive()
-	given()
-	keep()
-	set()
-	view()
-	make()
-	update()
-}
-class Track {
-}
-class Feedback {
-}
-class User {
-	had()
-	access()
-	manage()
-	view()
-	see()
-	sign()
-	rate()
-	schedule()
-	have()
-	took()
-	video()
-	get()
-	update()
-}
-class Chat {
-}
-class GuestUser {
-	take()
-	access()
-}
 class Quiz {
 	find()
 }
-class PaymentMethod {
+class MoneyBelief {
 }
-class SessionAppointmentHistory {
-}
-class Transcript {
-	gain()
-}
-class PersonalityData {
-}
-class ProfileBio {
-}
-class Appointment {
-}
-class Access {
-}
-class Time {
-}
-class Status {
-}
-class Payment {
-}
-class PaymentHistory {
-}
-class MessageHistory {
-}
-class Advice {
-}
-class Rating {
+class Expert {
+	keep()
+	see()
+	receive()
+	make()
+	given()
+	manage()
+	view()
+	sign()
+	update()
+	set()
 }
 class LinkedInAs {
 }
-class Calculator {
-}
-class History {
-}
-class ContentLibrary {
-	provides()
-}
-class Session {
-}
-class Feature {
-}
-class Facebook {
-}
-class VideoStreamingLibrary {
-}
-class Calendar {
-}
-class Gmail {
-}
-class Change {
-}
-class Notification {
-}
-class Topic {
-}
-class MoneyBelief {
-}
-class Profile {
+class Advice {
 }
 class VideoRecord {
 	gain()
 }
+class PersonalityData {
+}
+class User {
+	see()
+	rate()
+	manage()
+	get()
+	view()
+	schedule()
+	video()
+	sign()
+	had()
+	took()
+	have()
+	update()
+	access()
+}
+class ContentLibrary {
+	provides()
+}
+class GuestUser {
+	access()
+	take()
+}
+class Feature {
+}
+class Access {
+}
+class Chat {
+}
+class Time {
+}
+class Feedback {
+}
+class VideoStreamingLibrary {
+}
+class Appointment {
+}
+class History {
+}
+class Payment {
+}
+class Profile {
+}
+class PaymentHistory {
+}
+class Status {
+}
+class Rating {
+}
+class Facebook {
+}
+class Calendar {
+}
+class Session {
+}
+class Notification {
+}
+class ProfileBio {
+}
+class Calculator {
+}
+class Transcript {
+	gain()
+}
+class Topic {
+}
+class PaymentMethod {
+}
+class Change {
+}
+class SessionAppointmentHistory {
+}
+class MessageHistory {
+}
+class Track {
+}
+class Gmail {
+}
+Expert --> Advice : given
+User --> Profile : view
 User --> Chat : video
-Expert --> Calendar : manage
-User --> Appointment : had
-Expert --> ProfileBio : update
-Expert --> Rating : view
-User --> Gmail : sign
-GuestUser --> Quiz : take
-Expert --> LinkedInAs : sign
-Expert --> Change : make
-User --> PaymentMethod : update
-User --> Calculator : access
-Expert --> Notification : receive
-User --> Expert : rate
+Transcript --> PersonalityData : gain
 User --> Access : get
 ContentLibrary --> Topic : provides
-Expert --> History : see
-User --> SessionAppointmentHistory : see
-Expert --> Time : set
-Expert --> Appointment : manage
-User --> ContentLibrary : access
-Quiz --> MoneyBelief : find
-Expert --> Status : set
-User --> Session : schedule
-Transcript --> PersonalityData : gain
-Expert --> Advice : given
-Expert --> Payment : receive
-User --> Advice : took
-User --> Appointment : manage
-User --> Profile : view
-GuestUser --> Feature : access
-Expert --> Track : keep
 Expert --> PaymentHistory : see
+VideoRecord --> PersonalityData : gain
+User --> PaymentMethod : update
+Expert --> Status : set
+User --> ContentLibrary : access
+GuestUser --> Quiz : take
+User --> Appointment : had
+Expert --> Change : make
+User --> Expert : rate
+Expert --> Rating : view
+Expert --> Time : set
+User --> Advice : took
 User --> Facebook : sign
 Expert --> Feedback : view
-User --> MessageHistory : see
-VideoRecord --> PersonalityData : gain
-User --> PaymentHistory : see
+Expert --> Appointment : manage
+User --> SessionAppointmentHistory : see
+Expert --> Calendar : manage
 User --> VideoStreamingLibrary : access
+GuestUser --> Feature : access
+User --> PaymentHistory : see
+User --> Session : schedule
+User --> Appointment : manage
+User --> MessageHistory : see
+Expert --> Notification : receive
+Quiz --> MoneyBelief : find
+Expert --> History : see
+Expert --> Track : keep
+Expert --> ProfileBio : update
 User --> Advice : have
+User --> Gmail : sign
+Expert --> LinkedInAs : sign
+Expert --> Payment : receive
+User --> Calculator : access
 
 @enduml

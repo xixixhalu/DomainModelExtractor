@@ -10,91 +10,91 @@ class User<actor> {
 }
 class Staff<actor> {
 }
-class CaseManager {
-	see()
-	export()
+class Administrator {
+	delete()
+	transfer()
+	create()
+	modify()
 	view()
-	send()
-	review()
+}
+class Profile {
+}
+class User {
+	create()
+	recover()
+}
+class LoginInformation {
+}
+class Youth {
+	take()
+	provide()
+	view()
+	contact()
+}
+class CaseManager {
 	delete()
 	activate()
+	review()
+	export()
+	send()
 	add()
+	see()
+	view()
+}
+class Result {
+}
+class LogRecord {
 }
 class Case {
+}
+class File {
+}
+class Activity {
+}
+class SecurityQuestion {
+}
+class Feedback {
+}
+class Email {
+}
+class YouthAccount {
+}
+class Survey {
+}
+class Document {
+}
+class Information {
+}
+class Record {
 }
 class Staff {
 	view()
 }
-class Information {
-}
-class Youth {
-	view()
-	provide()
-	contact()
-	take()
-}
-class File {
-}
-class Administrator {
-	modify()
-	create()
-	transfer()
-	view()
-	delete()
-}
-class Activity {
-}
-class Document {
-}
-class Feedback {
-}
-class User {
-	recover()
-	create()
-}
-class SecurityQuestion {
-}
-class Profile {
-}
-class YouthAccount {
-}
-class LogRecord {
-}
-class Email {
-}
-class Result {
-}
-class LoginInformation {
-}
-class Survey {
-}
-class Record {
-}
-Staff --> Information : view
-CaseManager --> Result : see
-CaseManager --> YouthAccount : activate
-Administrator --> Case : delete
-CaseManager --> File : add
-Youth --> File : view
-Administrator --> Case : transfer
-CaseManager --> Information : view
-User --> LoginInformation : recover
-Administrator --> Activity : create
-Youth --> CaseManager : contact
-User --> SecurityQuestion : create
-CaseManager --> Document : delete
-CaseManager --> Feedback : review
-Youth --> Profile : view
-Youth --> Survey : take
-Youth --> Feedback : provide
-Administrator --> Record : view
-CaseManager --> Case : delete
-Administrator --> Profile : view
-Administrator --> LogRecord : view
-CaseManager --> Case : view
-CaseManager --> Email : send
 CaseManager --> Case : export
-Administrator --> Profile : modify
+User --> LoginInformation : recover
+User --> SecurityQuestion : create
+CaseManager --> File : add
+Youth --> Survey : take
+Administrator --> Case : delete
+CaseManager --> Document : delete
+Youth --> Profile : view
+CaseManager --> Information : view
+CaseManager --> Result : see
+Administrator --> Record : view
+Administrator --> LogRecord : view
+Youth --> File : view
+Administrator --> Activity : create
+Youth --> Feedback : provide
 Administrator --> Profile : delete
+Youth --> CaseManager : contact
+Staff --> Information : view
+CaseManager --> Case : view
+CaseManager --> Case : delete
+Administrator --> Case : transfer
+CaseManager --> Feedback : review
+CaseManager --> Email : send
+Administrator --> Profile : view
+CaseManager --> YouthAccount : activate
+Administrator --> Profile : modify
 
 @enduml

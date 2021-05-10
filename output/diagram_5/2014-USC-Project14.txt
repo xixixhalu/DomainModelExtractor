@@ -8,18 +8,15 @@ class Member<actor> {
 }
 class WaWITPersonnel<actor> {
 }
-class Time {
-	entering()
-}
-class Data {
-}
 class member {
-	publish()
-	keep()
 	integrate()
+	keep()
 	access()
+	publish()
 }
-class Blog {
+class Portal {
+}
+class Media {
 }
 class WaWITPersonnel {
 	analyse()
@@ -29,50 +26,53 @@ class WaWITPersonnel {
 }
 class Service {
 }
+class Blog {
+}
 class Client {
 	uses()
 	provide()
-	got()
 	save()
-	booked()
+	got()
 	register()
+	booked()
 }
 class Center {
 }
-class Online {
+class Time {
+	entering()
 }
-class Media {
-}
-class TimeClient {
-}
-class type {
-}
-class Feedback {
-}
-class Portal {
+class Data {
 }
 class Appointment {
 }
-class Job {
+class type {
 }
 class Date {
 }
+class Feedback {
+}
 class Report {
 }
-Client --> Center : uses
-WaWITPersonnel --> TimeClient : capture
-Client --> Job : got
-WaWITPersonnel --> Report : generate
-member --> Portal : access
-Time --> Data : entering
-Client --> Feedback : provide
-Client --> Online : register
-WaWITPersonnel --> Service : analyse
-Client --> Time : save
-WaWITPersonnel --> type : track
-Client --> Appointment : booked
-member --> Media : integrate
-member --> Blog : publish
+class Job {
+}
+class TimeClient {
+}
+class Online {
+}
 member --> Date : keep
+Client --> Time : save
+Client --> Center : uses
+Client --> Job : got
+WaWITPersonnel --> Service : analyse
+member --> Portal : access
+Client --> Appointment : booked
+Client --> Online : register
+Client --> Feedback : provide
+member --> Blog : publish
+member --> Media : integrate
+WaWITPersonnel --> type : track
+Time --> Data : entering
+WaWITPersonnel --> Report : generate
+WaWITPersonnel --> TimeClient : capture
 
 @enduml

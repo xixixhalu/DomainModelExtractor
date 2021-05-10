@@ -12,6 +12,12 @@
   "relation_list": [],
   "behavior_list": [
     {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "Function",
+      "para": []
+    },
+    {
       "actor": "odule",
       "action": "detect",
       "target": "Edge",
@@ -19,8 +25,14 @@
     },
     {
       "actor": "ESS",
+      "action": "create",
+      "target": "Song",
+      "para": []
+    },
+    {
+      "actor": "ESS",
       "action": "use",
-      "target": "odule",
+      "target": "Sound",
       "para": []
     },
     {
@@ -32,25 +44,7 @@
     {
       "actor": "ESS",
       "action": "drag",
-      "target": "WaitCondition",
-      "para": []
-    },
-    {
-      "actor": "odule",
-      "action": "detect",
-      "target": "Cliff",
-      "para": []
-    },
-    {
-      "actor": "odule",
-      "action": "detect",
-      "target": "Direction",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "drag",
-      "target": "Instruction",
+      "target": "LoopConstruct",
       "para": []
     },
     {
@@ -61,38 +55,38 @@
     },
     {
       "actor": "ESS",
-      "action": "use",
-      "target": "Sound",
-      "para": []
-    },
-    {
-      "actor": "ESS",
       "action": "turn",
       "target": "LEDs",
       "para": []
     },
     {
       "actor": "ESS",
-      "action": "create",
-      "target": "Song",
+      "action": "drag",
+      "target": "WaitCondition",
       "para": []
     },
     {
       "actor": "odule",
       "action": "detect",
-      "target": "ElapsedTime",
+      "target": "Direction",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "use",
+      "target": "odule",
       "para": []
     },
     {
       "actor": "ESS",
       "action": "drag",
-      "target": "Function",
+      "target": "InstructionConstruct",
       "para": []
     },
     {
       "actor": "ESS",
       "action": "drag",
-      "target": "LoopConstruct",
+      "target": "Instruction",
       "para": []
     },
     {
@@ -102,9 +96,15 @@
       "para": []
     },
     {
-      "actor": "ESS",
-      "action": "drag",
-      "target": "InstructionConstruct",
+      "actor": "odule",
+      "action": "detect",
+      "target": "ElapsedTime",
+      "para": []
+    },
+    {
+      "actor": "odule",
+      "action": "detect",
+      "target": "Cliff",
       "para": []
     }
   ]

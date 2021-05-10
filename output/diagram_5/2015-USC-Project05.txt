@@ -7,44 +7,44 @@ class Owner<actor> {
 class TourTaker<actor> {
 }
 class TourCreator {
-	promote()
 	upload()
+	promote()
 	view()
 	create()
 }
 class Area {
 }
-class TourTaker {
-	select()
-	view()
-	have()
-	search()
+class Video {
 }
 class Tour {
 }
-class Video {
+class Information {
+}
+class TourTaker {
+	view()
+	have()
+	search()
+	select()
 }
 class Access {
 }
-class Information {
-}
 class Owner {
-	authorize()
 	delete()
+	authorize()
 }
 class Picture {
 }
-TourCreator --> Video : upload
+TourTaker --> Tour : search
 TourCreator --> Area : promote
 TourCreator --> Tour : create
-TourTaker --> Information : view
-TourCreator --> Picture : upload
 TourTaker --> Access : have
-Owner --> TourCreator : authorize
-TourTaker --> Tour : select
-Owner --> Tour : delete
-TourCreator --> Tour : view
 TourCreator --> Information : upload
-TourTaker --> Tour : search
+TourCreator --> Picture : upload
+TourCreator --> Video : upload
+TourTaker --> Tour : select
+Owner --> TourCreator : authorize
+TourTaker --> Information : view
+TourCreator --> Tour : view
+Owner --> Tour : delete
 
 @enduml

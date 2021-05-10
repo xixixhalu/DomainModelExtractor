@@ -3,44 +3,44 @@ hide circle
 class JobSeeker<actor> {
 }
 class JobSeeker {
+	create()
+	mark()
+	email()
 	contact()
 	save()
-	email()
-	mark()
-	create()
 	select()
 }
-class Someone {
-}
-class JobSearch {
-}
-class Account {
-	saves()
-}
-class LoginCredentials {
-}
-class Job {
-}
-class Frequency {
+class JobNotification {
 }
 class REFERsySystem {
 	fetch()
+}
+class Job {
+}
+class JobSearch {
+}
+class Someone {
 }
 class JobListing {
 	have()
 }
 class NetworkFriend {
 }
-class JobNotification {
+class Account {
+	saves()
 }
-JobSeeker --> Account : create
-JobSeeker --> JobSearch : save
-REFERsySystem --> Job : fetch
+class Frequency {
+}
+class LoginCredentials {
+}
 JobSeeker --> Job : mark
+JobSeeker --> Account : create
 JobSeeker --> Someone : contact
-JobListing --> NetworkFriend : have
-JobSeeker --> Frequency : select
-Account --> LoginCredentials : saves
+REFERsySystem --> Job : fetch
 JobSeeker --> JobNotification : email
+JobSeeker --> Frequency : select
+JobSeeker --> JobSearch : save
+JobListing --> NetworkFriend : have
+Account --> LoginCredentials : saves
 
 @enduml

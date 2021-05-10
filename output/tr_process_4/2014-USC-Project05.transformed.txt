@@ -20,6 +20,18 @@
   "behavior_list": [
     {
       "actor": "SaleAgent",
+      "action": "close",
+      "target": "Sale",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "use",
+      "target": "Recording",
+      "para": []
+    },
+    {
+      "actor": "SaleAgent",
       "action": "request",
       "target": "ConferenceCall",
       "para": []
@@ -32,6 +44,12 @@
     },
     {
       "actor": "SaleManager",
+      "action": "assure",
+      "target": "Quality",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
       "action": "train",
       "target": "Agent",
       "para": []
@@ -40,24 +58,6 @@
       "actor": "SaleAgent",
       "action": "clicktocall",
       "target": "Customer",
-      "para": []
-    },
-    {
-      "actor": "SaleAgent",
-      "action": "close",
-      "target": "Sale",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
-      "action": "use",
-      "target": "Recording",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
-      "action": "assure",
-      "target": "Quality",
       "para": []
     }
   ]

@@ -13,7 +13,91 @@
   "behavior_list": [
     {
       "actor": "User",
+      "action": "remove",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "GiftBuddyAccount",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "set",
+      "target": "GiftBuddyContact",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "add",
+      "target": "GiftBuddyContact",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "remove",
+      "target": "Contact",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "set",
+      "target": "Budget",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "GiftRecommendation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "purchase",
+      "target": "Gift",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reset",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "enter",
+      "target": "Interest",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "install",
+      "target": "Application",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "forgotten",
+      "target": "One",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
       "target": "Information",
       "para": []
     },
@@ -25,56 +109,8 @@
     },
     {
       "actor": "User",
-      "action": "set",
-      "target": "Budget",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "reset",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "set",
-      "target": "GiftBuddyContact",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "enter",
-      "target": "Interest",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "GiftBuddyContact",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "GiftBuddyAccount",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "GiftRecommendation",
+      "action": "provide",
+      "target": "Feedback",
       "para": []
     },
     {
@@ -85,44 +121,8 @@
     },
     {
       "actor": "User",
-      "action": "provide",
-      "target": "Feedback",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "install",
-      "target": "Application",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "purchase",
-      "target": "Gift",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "remove",
-      "target": "Contact",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "remove",
-      "target": "Group",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "receive",
       "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "forgotten",
-      "target": "One",
       "para": []
     }
   ]

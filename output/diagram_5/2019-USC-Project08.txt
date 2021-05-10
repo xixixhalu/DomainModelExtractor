@@ -16,161 +16,161 @@ class HealthcareExecutive<actor> {
 }
 class App<actor> {
 }
-class Book {
-	reschedules()
+class Patient {
+	track()
+	have()
+	update()
+	bookscancels()
+	compare()
+	miss()
+	snooze()
+	save()
 	get()
+	add()
+	reschedule()
+	take()
+	cancel()
+	do()
+	receive()
+	completed()
+	answer()
+	install()
 }
-class Appointment {
+class Picture {
+	see()
+}
+class Doctor {
+	use()
+	modify()
+	get()
+	enroll()
+	register()
+}
+class Notification {
+}
+class Prescription {
 }
 class CareTeam {
 	add()
+	remove()
 	input()
-	remove()
 }
-class Recommendation {
+class Ride {
 }
-class Admin {
-	add()
-	access()
-	remove()
+class Task {
 }
-class Entry {
-}
-class Patient {
-	answer()
-	add()
-	track()
-	completed()
-	reschedule()
-	have()
-	miss()
-	do()
-	save()
-	cancel()
-	receive()
-	update()
-	install()
-	snooze()
-	get()
-	compare()
-	take()
-	bookscancels()
-}
-class Questionnaire {
-}
-class Information {
-}
-class Survey {
-}
-class Doctor {
-	modify()
-	register()
-	use()
-	enroll()
-	get()
-}
-class Amount {
-}
-class ContactInformation {
-}
-class HealthcareExecutive {
-	see()
-}
-class Data {
-}
-class Reminder {
-}
-class Access {
-}
-class Database {
+class SMSNotification {
 }
 class DoctorUser {
 	view()
 }
 class QuestionnaireResponse {
 }
-class Notification {
-}
-class App {
-}
-class User {
-	answer()
-	completed()
-	receive()
-}
-class TimeNotification {
-}
-class Pre {
-}
-class PostopReminder {
-}
-class SurveyResponse {
-}
-class Ride {
-}
-class Prescription {
-}
-class Task {
-}
-class Confirmation {
-}
-class Picture {
+class HealthcareExecutive {
 	see()
+}
+class Data {
+}
+class Admin {
+	add()
+	remove()
+	access()
+}
+class Entry {
 }
 class Difference {
 }
-class graphically {
+class Recommendation {
 }
-class SMSNotification {
+class User {
+	completed()
+	answer()
+	receive()
 }
-class HealthRecommendationArticle {
+class Appointment {
+}
+class Book {
+	reschedules()
+	get()
+}
+class Questionnaire {
+}
+class App {
+}
+class Information {
+}
+class PostopReminder {
+}
+class TimeNotification {
+}
+class Amount {
+}
+class Reminder {
 }
 class Trend {
 }
-Patient --> Ride : get
-Patient --> Appointment : bookscancels
-Admin --> Entry : remove
-Patient --> Questionnaire : do
-Admin --> Database : access
-Patient --> HealthRecommendationArticle : save
-Admin --> Entry : add
-Doctor --> Prescription : modify
-Patient --> Picture : take
-Patient --> Appointment : reschedule
-Doctor --> Patient : enroll
-CareTeam --> Information : input
-User --> Task : completed
-DoctorUser --> QuestionnaireResponse : view
-Patient --> Picture : compare
-Patient --> Appointment : cancel
-Patient --> Survey : do
-Patient --> Confirmation : get
-Doctor --> Notification : get
-HealthcareExecutive --> Trend : see
-Patient --> Notification : get
-Patient --> App : install
-Patient --> Recommendation : receive
-Doctor --> Patient : register
+class Pre {
+}
+class ContactInformation {
+}
+class graphically {
+}
+class Database {
+}
+class SurveyResponse {
+}
+class HealthRecommendationArticle {
+}
+class Survey {
+}
+class Confirmation {
+}
+class Access {
+}
+CareTeam --> Patient : add
 User --> Amount : answer
-Patient --> Amount : answer
-Picture --> Difference : see
-User --> TimeNotification : receive
-Patient --> ContactInformation : update
-Book --> Notification : get
+Doctor --> Patient : enroll
+Patient --> Ride : get
+User --> Task : completed
+Patient --> HealthRecommendationArticle : save
+CareTeam --> Recommendation : input
+Patient --> Appointment : bookscancels
+Patient --> Picture : take
 Patient --> Task : completed
-CareTeam --> Patient : remove
-Patient --> graphically : track
+Patient --> Reminder : snooze
+Patient --> Survey : do
+Doctor --> Prescription : modify
+Patient --> SMSNotification : get
+Patient --> Amount : answer
+Book --> Notification : get
 Book --> Appointment : reschedules
+Patient --> Appointment : reschedule
+Patient --> Picture : compare
+Patient --> Confirmation : get
+HealthcareExecutive --> Trend : see
+Patient --> Questionnaire : do
+DoctorUser --> QuestionnaireResponse : view
+Patient --> Access : have
+Patient --> Appointment : cancel
+Doctor --> Patient : register
+Patient --> Pre : add
 Doctor --> App : use
 HealthcareExecutive --> Data : see
-Patient --> Pre : add
-Patient --> SMSNotification : get
-Patient --> Reminder : snooze
-Patient --> PostopReminder : add
-CareTeam --> Patient : add
-CareTeam --> Recommendation : input
-Patient --> Access : have
 DoctorUser --> SurveyResponse : view
 Patient --> Appointment : miss
+CareTeam --> Information : input
+Patient --> ContactInformation : update
+Admin --> Entry : add
+Patient --> Notification : get
+Patient --> graphically : track
+Patient --> PostopReminder : add
+Picture --> Difference : see
+Admin --> Database : access
+CareTeam --> Patient : remove
+Admin --> Entry : remove
+Doctor --> Notification : get
+Patient --> App : install
+Patient --> Recommendation : receive
+User --> TimeNotification : receive
 
 @enduml

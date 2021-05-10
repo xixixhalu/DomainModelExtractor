@@ -41,60 +41,12 @@
   "behavior_list": [
     {
       "actor": "Consumer",
-      "action": "manage",
-      "target": "Cart",
-      "para": []
-    },
-    {
-      "actor": "WebsiteModerator",
-      "action": "approve",
-      "target": "VendorAccount",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "search",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "reset",
-      "target": "EmailAddress",
-      "para": []
-    },
-    {
-      "actor": "WebsiteModerator",
-      "action": "post",
-      "target": "Communication",
-      "para": []
-    },
-    {
-      "actor": "VolumeTotal",
-      "action": "determine",
-      "target": "Vendor",
-      "para": []
-    },
-    {
-      "actor": "WebsiteOwner",
-      "action": "post",
-      "target": "Blog",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "view",
-      "target": "Time",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
       "action": "leave",
       "target": "Comment",
       "para": []
     },
     {
-      "actor": "WebsiteOwner",
+      "actor": "WebsiteModerator",
       "action": "suspend",
       "target": "Account",
       "para": []
@@ -106,15 +58,75 @@
       "para": []
     },
     {
+      "actor": "Consumer",
+      "action": "add",
+      "target": "Item",
+      "para": []
+    },
+    {
       "actor": "Vendor",
-      "action": "view",
-      "target": "Date",
+      "action": "make",
+      "target": "Pricing",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "sort",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "offer",
+      "target": "Promotion",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "sort",
+      "target": "Vendor",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "post",
+      "target": "Blog",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "manage",
+      "target": "Cart",
+      "para": []
+    },
+    {
+      "actor": "WebsiteModerator",
+      "action": "post",
+      "target": "Communication",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "gather",
+      "target": "Feedback",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "manage",
+      "target": "ItemPrice",
       "para": []
     },
     {
       "actor": "Vendor",
       "action": "provide",
       "target": "Discount",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "have",
+      "target": "Understanding",
       "para": []
     },
     {
@@ -125,8 +137,20 @@
     },
     {
       "actor": "Consumer",
-      "action": "get",
-      "target": "PasswordReset",
+      "action": "find",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "suspend",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "VolumeTotal",
+      "action": "determine",
+      "target": "Vendor",
       "para": []
     },
     {
@@ -136,9 +160,9 @@
       "para": []
     },
     {
-      "actor": "WebsiteOwner",
-      "action": "approve",
-      "target": "VendorAccount",
+      "actor": "Consumer",
+      "action": "reset",
+      "target": "EmailAddress",
       "para": []
     },
     {
@@ -154,86 +178,14 @@
       "para": []
     },
     {
-      "actor": "Vendor",
-      "action": "offer",
-      "target": "Promotion",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "add",
-      "target": "Product",
-      "para": []
-    },
-    {
       "actor": "Consumer",
-      "action": "gain",
-      "target": "Knowledge",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "manage",
-      "target": "ItemPrice",
-      "para": []
-    },
-    {
-      "actor": "WebsiteModerator",
-      "action": "post",
-      "target": "Blog",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "improve",
+      "action": "search",
       "target": "Product",
       "para": []
     },
     {
       "actor": "Vendor",
       "action": "improve",
-      "target": "Service",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "manage",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "get",
-      "target": "Recommendation",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "upload",
-      "target": "Video",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "get",
-      "target": "Access",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "narrow",
-      "target": "SearchResult",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "compare",
-      "target": "Price",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "find",
       "target": "Product",
       "para": []
     },
@@ -244,51 +196,99 @@
       "para": []
     },
     {
-      "actor": "WebsiteModerator",
-      "action": "sort",
-      "target": "Vendor",
-      "para": []
-    },
-    {
       "actor": "Consumer",
-      "action": "sort",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "make",
-      "target": "Pricing",
+      "action": "manage",
+      "target": "Password",
       "para": []
     },
     {
       "actor": "WebsiteModerator",
-      "action": "suspend",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "gather",
-      "target": "Feedback",
+      "action": "approve",
+      "target": "VendorAccount",
       "para": []
     },
     {
       "actor": "Consumer",
-      "action": "have",
-      "target": "Understanding",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "add",
-      "target": "Item",
+      "action": "get",
+      "target": "Recommendation",
       "para": []
     },
     {
       "actor": "WebsiteOwner",
+      "action": "approve",
+      "target": "VendorAccount",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "upload",
+      "target": "Video",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "improve",
+      "target": "Service",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "view",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "add",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "narrow",
+      "target": "SearchResult",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "gain",
+      "target": "Knowledge",
+      "para": []
+    },
+    {
+      "actor": "WebsiteModerator",
       "action": "sort",
       "target": "Vendor",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "view",
+      "target": "Date",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "compare",
+      "target": "Price",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "get",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "get",
+      "target": "PasswordReset",
+      "para": []
+    },
+    {
+      "actor": "WebsiteModerator",
+      "action": "post",
+      "target": "Blog",
       "para": []
     }
   ]

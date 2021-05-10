@@ -34,56 +34,8 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "customise",
-      "target": "Coffee",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "want",
-      "target": "Recipe",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "customize",
-      "target": "BaseRecipe",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "canuse",
-      "target": "Paypal",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "DefaultPaymentMethod",
-      "para": []
-    },
-    {
-      "actor": "existed",
-      "action": "existed",
-      "target": "account",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "track",
-      "target": "Kiosk",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "OrderHistory",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "canuse",
-      "target": "ApplePay",
+      "target": "Theme",
       "para": []
     },
     {
@@ -93,87 +45,9 @@
       "para": []
     },
     {
-      "actor": "Recipe",
-      "action": "contains",
-      "target": "Allergen",
-      "para": []
-    },
-    {
-      "actor": "Supplier",
-      "action": "receive",
-      "target": "Update",
-      "para": []
-    },
-    {
-      "actor": "ApplePay",
-      "action": "purchase",
-      "target": "Coffee",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "replace",
-      "target": "Order",
-      "para": []
-    },
-    {
-      "actor": "Paypal",
-      "action": "purchase",
-      "target": "Coffee",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "update",
-      "target": "Location",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "send",
-      "target": "Someone",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "Recipe",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "customize",
-      "target": "Color",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Recipe",
-      "para": []
-    },
-    {
       "actor": "User",
       "action": "existed",
       "target": "account",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "log",
-      "target": "App",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "customize",
-      "target": "Theme",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "produce",
-      "target": "CoffeeRecipe",
       "para": []
     },
     {
@@ -184,8 +58,86 @@
     },
     {
       "actor": "User",
-      "action": "see",
-      "target": "NutritionDetail",
+      "action": "view",
+      "target": "Recipe",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "Someone",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "canuse",
+      "target": "Paypal",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "OrderHistory",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "track",
+      "target": "Kiosk",
+      "para": []
+    },
+    {
+      "actor": "Paypal",
+      "action": "purchase",
+      "target": "Coffee",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "have",
+      "target": "Portal",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "customize",
+      "target": "Color",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Recipe",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "update",
+      "target": "Location",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "DefaultPaymentMethod",
+      "para": []
+    },
+    {
+      "actor": "Supplier",
+      "action": "receive",
+      "target": "Update",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "log",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "existed",
+      "action": "existed",
+      "target": "account",
       "para": []
     },
     {
@@ -195,9 +147,57 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "have",
-      "target": "Portal",
+      "actor": "User",
+      "action": "want",
+      "target": "Recipe",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "replace",
+      "target": "Order",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "canuse",
+      "target": "ApplePay",
+      "para": []
+    },
+    {
+      "actor": "Recipe",
+      "action": "contains",
+      "target": "Allergen",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "produce",
+      "target": "CoffeeRecipe",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "customise",
+      "target": "Coffee",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "NutritionDetail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "customize",
+      "target": "BaseRecipe",
+      "para": []
+    },
+    {
+      "actor": "ApplePay",
+      "action": "purchase",
+      "target": "Coffee",
       "para": []
     }
   ]

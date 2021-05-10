@@ -20,20 +20,8 @@
   "behavior_list": [
     {
       "actor": "Admin",
-      "action": "switch",
-      "target": "Id",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "Control",
-      "para": []
-    },
-    {
-      "actor": "Admin",
       "action": "delete",
-      "target": "Room",
+      "target": "Floor",
       "para": []
     },
     {
@@ -43,48 +31,6 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "edit",
-      "target": "Name",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "choose",
-      "target": "Username",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "add",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "select",
-      "target": "Floor",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "revoke",
-      "target": "Access",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "see",
-      "target": "GatewayId",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "Screen",
-      "para": []
-    },
-    {
       "actor": "User",
       "action": "select",
       "target": "Room",
@@ -92,7 +38,13 @@
     },
     {
       "actor": "Admin",
-      "action": "provide",
+      "action": "edit",
+      "target": "Name",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "revoke",
       "target": "Access",
       "para": []
     },
@@ -104,7 +56,19 @@
     },
     {
       "actor": "Admin",
-      "action": "delete",
+      "action": "add",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "switch",
+      "target": "Id",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "select",
       "target": "Floor",
       "para": []
     },
@@ -112,6 +76,42 @@
       "actor": "User",
       "action": "turn",
       "target": "Light",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "Room",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "provide",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "Screen",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "choose",
+      "target": "Username",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "see",
+      "target": "GatewayId",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "Control",
       "para": []
     },
     {

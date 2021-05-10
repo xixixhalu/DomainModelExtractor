@@ -13,14 +13,50 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "review",
-      "target": "QualityPicture",
+      "action": "need",
+      "target": "Register",
       "para": []
     },
     {
       "actor": "User",
-      "action": "need",
-      "target": "Register",
+      "action": "let",
+      "target": "EventExit",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "extend",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sort",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "upload",
+      "target": "RAWPicture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "download",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "change",
+      "target": "type",
       "para": []
     },
     {
@@ -31,38 +67,8 @@
     },
     {
       "actor": "User",
-      "action": "upload",
-      "target": "ResolutionPicture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "review",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "keep",
-      "target": "Record",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "maintain",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "forget",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "delete",
-      "target": "Event",
+      "action": "save",
+      "target": "Storage",
       "para": []
     },
     {
@@ -73,7 +79,49 @@
     },
     {
       "actor": "User",
-      "action": "sort",
+      "action": "maintain",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "make",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "save",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "review",
+      "target": "QualityPicture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "express",
+      "target": "Felling",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "comment",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "maintain",
       "target": "Picture",
       "para": []
     },
@@ -85,56 +133,14 @@
     },
     {
       "actor": "User",
-      "action": "create",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "choose",
       "target": "Size",
       "para": []
     },
     {
       "actor": "User",
-      "action": "extend",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "express",
-      "target": "Felling",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "delete",
-      "target": "upload",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "report",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "maintain",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "comment",
-      "target": "Picture",
+      "action": "keep",
+      "target": "Record",
       "para": []
     },
     {
@@ -145,8 +151,8 @@
     },
     {
       "actor": "User",
-      "action": "keep",
-      "target": "Privacy",
+      "action": "delete",
+      "target": "upload",
       "para": []
     },
     {
@@ -157,26 +163,20 @@
     },
     {
       "actor": "User",
-      "action": "change",
-      "target": "type",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "save",
-      "target": "Storage",
+      "action": "create",
+      "target": "Event",
       "para": []
     },
     {
       "actor": "User",
       "action": "upload",
-      "target": "RAWPicture",
+      "target": "ResolutionPicture",
       "para": []
     },
     {
       "actor": "User",
-      "action": "make",
-      "target": "Comment",
+      "action": "upload",
+      "target": "Picture",
       "para": []
     },
     {
@@ -187,32 +187,32 @@
     },
     {
       "actor": "User",
-      "action": "let",
-      "target": "EventExit",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "upload",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "download",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "save",
-      "target": "Time",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "download",
       "target": "ResolutionPicture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "keep",
+      "target": "Privacy",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "forget",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "report",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "review",
+      "target": "Picture",
       "para": []
     }
   ]

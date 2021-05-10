@@ -61,33 +61,15 @@
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "VRS",
-      "action": "generate",
-      "target": "Report",
-      "para": []
-    },
-    {
       "actor": "User",
-      "action": "submit",
-      "target": "Report",
+      "action": "add",
+      "target": "Information",
       "para": []
     },
     {
-      "actor": "Employee",
-      "action": "post",
-      "target": "Complaint",
-      "para": []
-    },
-    {
-      "actor": "VRSAdmin",
-      "action": "edit",
-      "target": "Assigned",
-      "para": []
-    },
-    {
-      "actor": "VRSAdmin",
-      "action": "edit",
-      "target": "TicketStatus",
+      "actor": "Developer",
+      "action": "minimize",
+      "target": "DevelopmentTime",
       "para": []
     },
     {
@@ -97,15 +79,15 @@
       "para": []
     },
     {
-      "actor": "Organization",
-      "action": "view",
-      "target": "Report",
+      "actor": "VRS",
+      "action": "prioritize",
+      "target": "WorkplaceViolenceCase",
       "para": []
     },
     {
-      "actor": "Report",
-      "action": "contain",
-      "target": "MediaFile",
+      "actor": "VRS",
+      "action": "delete",
+      "target": "Complaint",
       "para": []
     },
     {
@@ -115,33 +97,9 @@
       "para": []
     },
     {
-      "actor": "Employee",
-      "action": "submit",
-      "target": "Evidence",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "VRSAdmin",
-      "action": "filter",
-      "target": "Ticket",
-      "para": []
-    },
-    {
-      "actor": "Employee",
-      "action": "view",
-      "target": "Case",
+      "actor": "VRSSubjectMatterExpert",
+      "action": "notify",
+      "target": "Organization",
       "para": []
     },
     {
@@ -152,14 +110,8 @@
     },
     {
       "actor": "User",
-      "action": "expedite",
-      "target": "Process",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "reuse",
-      "target": "TicketManagement",
+      "action": "update",
+      "target": "ContactDetail",
       "para": []
     },
     {
@@ -169,15 +121,15 @@
       "para": []
     },
     {
-      "actor": "VRSSubjectMatterExpert",
-      "action": "verify",
-      "target": "Credibility",
+      "actor": "Developer",
+      "action": "reuse",
+      "target": "CaseManagementSystem",
       "para": []
     },
     {
       "actor": "VRSAdmin",
-      "action": "view",
-      "target": "Case",
+      "action": "edit",
+      "target": "Assigned",
       "para": []
     },
     {
@@ -188,14 +140,20 @@
     },
     {
       "actor": "VRS",
-      "action": "view",
-      "target": "Complaint",
+      "action": "email",
+      "target": "Organization",
       "para": []
     },
     {
-      "actor": "VRS",
-      "action": "delete",
-      "target": "Complaint",
+      "actor": "Report",
+      "action": "contain",
+      "target": "MediaFile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "Comment",
       "para": []
     },
     {
@@ -205,33 +163,9 @@
       "para": []
     },
     {
-      "actor": "Organization",
-      "action": "redirect",
-      "target": "Employee",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "minimize",
-      "target": "DevelopmentTime",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "update",
-      "target": "ContactDetail",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "minimize",
-      "target": "Cost",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "reuse",
-      "target": "CaseManagementSystem",
+      "actor": "Employee",
+      "action": "file",
+      "target": "Complaint",
       "para": []
     },
     {
@@ -241,57 +175,15 @@
       "para": []
     },
     {
-      "actor": "Employee",
-      "action": "edit",
-      "target": "ProfileDetail",
-      "para": []
-    },
-    {
-      "actor": "VRS",
-      "action": "prioritize",
-      "target": "WorkplaceViolenceCase",
-      "para": []
-    },
-    {
-      "actor": "Employee",
-      "action": "expect",
-      "target": "Anonymity",
-      "para": []
-    },
-    {
-      "actor": "VRS",
-      "action": "email",
-      "target": "Organization",
-      "para": []
-    },
-    {
-      "actor": "Employee",
-      "action": "file",
-      "target": "Complaint",
+      "actor": "VRSAdmin",
+      "action": "filter",
+      "target": "Ticket",
       "para": []
     },
     {
       "actor": "Admin",
       "action": "address",
       "target": "Complaint",
-      "para": []
-    },
-    {
-      "actor": "Employee",
-      "action": "track",
-      "target": "Status",
-      "para": []
-    },
-    {
-      "actor": "VRSSubjectMatterExpert",
-      "action": "verify",
-      "target": "Case",
-      "para": []
-    },
-    {
-      "actor": "Employee",
-      "action": "have",
-      "target": "Communication",
       "para": []
     },
     {
@@ -302,14 +194,122 @@
     },
     {
       "actor": "VRSSubjectMatterExpert",
-      "action": "notify",
-      "target": "Organization",
+      "action": "verify",
+      "target": "Case",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "submit",
+      "target": "Report",
+      "para": []
+    },
+    {
+      "actor": "Employee",
+      "action": "view",
+      "target": "Case",
+      "para": []
+    },
+    {
+      "actor": "Employee",
+      "action": "track",
+      "target": "Status",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "minimize",
+      "target": "Cost",
+      "para": []
+    },
+    {
+      "actor": "Employee",
+      "action": "have",
+      "target": "Communication",
+      "para": []
+    },
+    {
+      "actor": "Employee",
+      "action": "expect",
+      "target": "Anonymity",
+      "para": []
+    },
+    {
+      "actor": "Organization",
+      "action": "view",
+      "target": "Report",
+      "para": []
+    },
+    {
+      "actor": "VRS",
+      "action": "view",
+      "target": "Complaint",
+      "para": []
+    },
+    {
+      "actor": "Employee",
+      "action": "submit",
+      "target": "Evidence",
+      "para": []
+    },
+    {
+      "actor": "Employee",
+      "action": "edit",
+      "target": "ProfileDetail",
+      "para": []
+    },
+    {
+      "actor": "VRSAdmin",
+      "action": "edit",
+      "target": "TicketStatus",
       "para": []
     },
     {
       "actor": "VRS",
       "action": "assign",
       "target": "Report",
+      "para": []
+    },
+    {
+      "actor": "VRSSubjectMatterExpert",
+      "action": "verify",
+      "target": "Credibility",
+      "para": []
+    },
+    {
+      "actor": "VRS",
+      "action": "generate",
+      "target": "Report",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "reuse",
+      "target": "TicketManagement",
+      "para": []
+    },
+    {
+      "actor": "Employee",
+      "action": "post",
+      "target": "Complaint",
+      "para": []
+    },
+    {
+      "actor": "VRSAdmin",
+      "action": "view",
+      "target": "Case",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "expedite",
+      "target": "Process",
+      "para": []
+    },
+    {
+      "actor": "Organization",
+      "action": "redirect",
+      "target": "Employee",
       "para": []
     }
   ]

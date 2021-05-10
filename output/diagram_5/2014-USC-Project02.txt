@@ -12,43 +12,45 @@ class Customer<actor> {
 }
 class SoccerCoach<actor> {
 }
-class Coach {
-	build()
-	extract()
-}
-class PlayerValue {
-}
-class GM {
-	build()
-	extract()
-}
 class Manger {
 	monitor()
 }
-class TwitterFeed {
-}
 class FacebookFeed {
-}
-class Data {
-}
-class FacebookReaction {
 }
 class Customer {
 	import()
 	see()
-	add()
 	update()
+	add()
+}
+class Data {
+}
+class Coach {
+	build()
+	extract()
+}
+class Roster {
+}
+class TwitterReaction {
+}
+class GM {
+	build()
+	extract()
 }
 class SoccerCoach {
 	configure()
 }
 class Schedule {
 }
+class TwitterFeed {
+}
+class PlayerValue {
+}
+class InstagramReaction {
+}
 class InstagramFeed {
 }
 class Change {
-}
-class Roster {
 }
 class SporTechBIContractor {
 	revise()
@@ -56,27 +58,25 @@ class SporTechBIContractor {
 }
 class PlayerData {
 }
-class InstagramReaction {
+class FacebookReaction {
 }
-class TwitterReaction {
-}
-Manger --> FacebookFeed : monitor
-Manger --> InstagramFeed : monitor
-Customer --> Change : see
-GM --> PlayerValue : extract
-Customer --> Data : update
-GM --> Data : extract
+SoccerCoach --> Schedule : configure
+Manger --> TwitterReaction : monitor
+GM --> Roster : build
 Customer --> Data : import
 SporTechBIContractor --> PlayerData : update
-Coach --> Roster : build
-Manger --> InstagramReaction : monitor
-GM --> Roster : build
-Manger --> TwitterFeed : monitor
-SporTechBIContractor --> PlayerData : revise
+Customer --> Change : see
 Coach --> PlayerValue : extract
-SoccerCoach --> Schedule : configure
+Manger --> TwitterFeed : monitor
+Manger --> InstagramFeed : monitor
 Manger --> FacebookReaction : monitor
-Manger --> TwitterReaction : monitor
+Manger --> FacebookFeed : monitor
 Customer --> Data : add
+GM --> Data : extract
+Coach --> Roster : build
+Customer --> Data : update
+GM --> PlayerValue : extract
+SporTechBIContractor --> PlayerData : revise
+Manger --> InstagramReaction : monitor
 
 @enduml

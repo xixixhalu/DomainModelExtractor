@@ -13,117 +13,117 @@ class Administrator<actor> {
 class Developer<actor> {
 }
 class User {
-	delete()
-	view()
-	generate()
 	attach()
+	access()
 	manage()
 	download()
-	access()
 	export()
-	assign()
 	add()
-	create()
-	import()
-}
-class Invoice {
-}
-class Doctor {
-	match()
 	view()
-	want()
-	recommend()
-	choose()
-	fill()
-	edit()
-}
-class Progress {
-}
-class Form {
-}
-class Product {
+	generate()
+	create()
+	delete()
+	assign()
+	import()
 }
 class Set {
 }
-class Allergy {
+class Doctor {
+	want()
+	edit()
+	view()
+	fill()
+	recommend()
+	match()
+	choose()
 }
-class Application {
-	handles()
+class Patient {
 }
-class Information {
-}
-class VendorProductInformation {
-}
-class Data {
-}
-class Administrator {
-	save()
-}
-class PatientDocument {
-}
-class Inventory {
-}
-class VisitDetail {
-}
-class ProductInfo {
-}
-class Report {
+class Task {
 }
 class OrderForm {
-}
-class PatientRecord {
-}
-class Developer {
-	protect()
-}
-class App {
 }
 class Admin {
 	customize()
 }
 class Portal {
 }
-class Patient {
+class Inventory {
+}
+class Form {
+}
+class Allergy {
 }
 class CSVFile {
 	has()
 }
-class Task {
+class Information {
+}
+class Report {
+}
+class Product {
+}
+class ProductInfo {
+}
+class VisitDetail {
+}
+class App {
+}
+class Developer {
+	protect()
+}
+class Data {
+}
+class VendorProductInformation {
+}
+class PatientRecord {
+}
+class Administrator {
+	save()
+}
+class PatientDocument {
 }
 class Medication {
 }
-Doctor --> Report : view
-Doctor --> Progress : edit
-Doctor --> Product : choose
-User --> VendorProductInformation : import
-User --> Data : manage
-Doctor --> OrderForm : fill
-User --> Form : delete
-User --> Task : generate
-User --> Form : download
-Doctor --> Set : choose
-Doctor --> Product : recommend
-User --> Medication : add
-User --> PatientRecord : create
-User --> Set : download
-Doctor --> Patient : match
-User --> Data : attach
-Developer --> App : protect
-Application --> Information : handles
-Administrator --> PatientDocument : save
-Admin --> Portal : customize
-User --> Allergy : add
-User --> Inventory : manage
-Doctor --> Patient : choose
+class Invoice {
+}
+class Progress {
+}
+class Application {
+	handles()
+}
 User --> VisitDetail : view
-Doctor --> App : want
-User --> Information : access
-User --> Set : delete
-User --> ProductInfo : export
-CSVFile --> Information : has
-User --> Invoice : create
-User --> Product : add
+Doctor --> Patient : choose
+User --> Form : download
 User --> Form : add
+User --> Invoice : create
+Doctor --> App : want
 User --> Task : assign
+Doctor --> Progress : edit
+Doctor --> OrderForm : fill
+Developer --> App : protect
+Doctor --> Product : choose
+Doctor --> Set : choose
+Application --> Information : handles
+User --> Product : add
+User --> Allergy : add
+User --> Data : attach
+Doctor --> Patient : match
+User --> VendorProductInformation : import
+User --> Inventory : manage
+CSVFile --> Information : has
+Admin --> Portal : customize
+User --> PatientRecord : create
+Doctor --> Report : view
+User --> Data : manage
+Doctor --> Product : recommend
+Administrator --> PatientDocument : save
+User --> ProductInfo : export
+User --> Task : generate
+User --> Form : delete
+User --> Set : delete
+User --> Information : access
+User --> Set : download
+User --> Medication : add
 
 @enduml

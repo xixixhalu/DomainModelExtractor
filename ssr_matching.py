@@ -200,7 +200,7 @@ if __name__ == '__main__':
                         help='input file. Example: python3 ssr_matching.py -f 2014-USC-Projecct02')
     parser.add_argument('-o', '--output', type=str, metavar='', default="./output/ssr_match_3/",
                         help='output path. Default: %(default)s')
-    parser.add_argument('-s', '--ssr', type=str, metavar='', default="./SSR/update_SSR.xlsx",
+    parser.add_argument('-s', '--ssr', type=str, metavar='', default="./SSR/SSR.xlsx",
                         help='sentence structure path. Default: %(default)s')
     parser.add_argument('-l', '--list', action='store_true',
                         help='list all input files. Example: python3 ssr_matching.py -l')

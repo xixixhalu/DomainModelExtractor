@@ -40,8 +40,9 @@ sh launch_server.sh
 ```python
 python test/test_coreNLP.py
 ```
-
-Now the work environment is successfully setup!!
+```diff
++ Now the working environment is fully setup!
+```
 
 ## Featured Commands
 

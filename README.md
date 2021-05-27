@@ -41,6 +41,8 @@ sh launch_server.sh
 python test/test_coreNLP.py
 ```
 
+Now the work environment is successfully setup!!
+
 ## Featured Commands
 
 ```shell

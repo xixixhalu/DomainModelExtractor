@@ -205,17 +205,30 @@ def spellcheck (file_freq_word_dict, noun_word_list) :
         if len(file_freq_word_dict[word]) >= CORRECT_WORD_FREQUENCY:
             spell_checker.word_frequency.add(word)
     incorrect_candidate = spell_checker.unknown([w["lemma"] for w in noun_word_list])
-    logger.info("Unknown words: " + str(incorrect_candidate))
 
-    for candidate in incorrect_candidate :
+    glossary_list = []
+    incorrect_words = list(incorrect_candidate)
+    with open("./Glossary/glossary.txt", 'r') as myfile:
+        s = myfile.readlines()
+        for word in s:
+            glossary_list.append(word.rstrip().lower())
+
+    for unknown_words in incorrect_candidate:
+        if unknown_words.lower() in glossary_list:
+            incorrect_words.remove(unknown_words)
+    if incorrect_words:
+        logger.info("Unknown words: " + str(incorrect_words))
+    else:
+        logger.info("No Unknown words")
+        
+    for candidate in incorrect_words:
         correction = spell_checker.correction(candidate)
         if (candidate.lower() == correction.lower()):
             continue
         else:
             correct_dict[candidate] = correction
-
     return correct_dict
-    
+
     # reduced_incorrect_candidate = []
     # for candidate in incorrect_candidate :
     #     for word in file_freq_word_dict :

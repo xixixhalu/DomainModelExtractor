@@ -4,13 +4,17 @@ import string
 from spellchecker import SpellChecker
 import re
 import os
+from pathlib import Path
+
+
 
 def word_count(file):
     # output word count on txt files without punctuation
-    data = str()
     with open(file, "r") as myfile:
         s = myfile.read().replace('\n', ' ').lower()
-        data += s.translate(str.maketrans('', '', string.punctuation))
+        del_str=string.punctuation
+        replace_punctuation=' '*len(del_str)
+        data=s.translate(str.maketrans(del_str,replace_punctuation))
 
     data = data.split(' ')
     fdist1 = nltk.FreqDist(data)
@@ -34,11 +38,15 @@ def read_glossary(file):
 
 
 def main():
-    # DATA_DIR = "./Data/input_origin"
-    # DATA_FILES = glob.glob(DATA_DIR + "/[0-9]*-USC-Project[0-9]*.txt")
-    DATA_DIR = "./output/misspelling_detect_1"
-    DATA_FILES = glob.iglob(DATA_DIR + "/[0-9]*-USC-Project[0-9]*corrected.txt")
+    DATA_DIR = "./Data/input_origin"
+    DATA_FILES = glob.iglob(DATA_DIR + "/[0-9]*-USC-Project[0-9]*.txt")
+    #DATA_DIR = "./output/misspelling_detect_1"
+    #ATA_FILES = glob.iglob(DATA_DIR + "/[0-9]*-USC-Project[0-9]*corrected.txt")
     OUTPUT_DIR = "./Glossary/output/"
+    output_folder=Path(OUTPUT_DIR)
+    if not output_folder:
+        os.mkdir(OUTPUT_DIR)
+
     spell = SpellChecker()
 
     # load glossary
@@ -57,9 +65,10 @@ def main():
         filename = os.path.basename(file)
         i=i+len(res)
         # write results
-        with open (OUTPUT_DIR+filename+'output.txt','w') as f:
+        with open (OUTPUT_DIR+filename[:18]+'_corrected.txt','w') as f:
             for word in res:
-                f.write('%s\n' % word)
+                if len(word)>1:
+                    f.write('%s\n' % word)
 
     print("#words appears once: %d " % j)
     print("#words misspelled: %d " % i)

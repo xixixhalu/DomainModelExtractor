@@ -1,7 +1,7 @@
 import json
 
 def TypeDep(data):
-    tdjson = data['sentences'][0]['basicDependencies']
+    tdjson = data['sentences'][0]['enhancedDependencies']
 
     result1 = {}
     result2 = {}

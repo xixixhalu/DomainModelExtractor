@@ -16,154 +16,6 @@ import argparse
 
 CHECK_EDIT_DISTANCE = 1
 CORRECT_WORD_FREQUENCY = 2
-
-def removeSlash(line) :
-    if '/' not in line :
-        return [line]
-
-    doc = nlp(line) 
-    result_line = []
-    break_point  = []
-    break_point_dict = {}
-    slash_pos = []
-    j = 0
-    index = 0
-    # for w in doc:
-    #    print(w,w.pos_)
-    for w in doc :     
-        if w.text == '/' or w.text =='and/or' :
-            slash_pos.append(w.i)
-            for i in range(1, w.i) :
-                if doc[w.i - i].pos_ == doc[w.i+1].pos_ :
-                    if doc[w.i-i-1].tag_ == 'HYPH' :
-                        break_point.append(w.i-i-2)
-                        break_point_dict[j] = [w.i-i-2]
-                        break
-                    else :
-                        break_point.append(w.i-i)
-                        break_point_dict[j] = [w.i-i]
-                        break
-            if j not in break_point_dict :
-                break_point_dict[j] = [w.i-1]    
-            break_point.append(w.i+1)
-            break_point_dict[j].append(w.i+1)
-            j +=1
-    #print(break_point_dict)
-    j = 0
-    dict_j = {}
-    dict_j[0] = break_point_dict[0]
-    for key in break_point_dict :
-        if key != 0 :
-
-            if break_point_dict[key-1][-1] == break_point_dict[key][0] :
-                dict_j[j].extend(break_point_dict[key])
-                dict_j[j] = list(collections.OrderedDict.fromkeys(dict_j[j]))  
-
-            else :
-                j+= 1
-                dict_j[j] = break_point_dict[key]
-    #print(dict_j)
-    all_break_point = list(dict_j.values())
-    
-    comb_break_point = list(itertools.product(*all_break_point))
-    comb_break_point = [list(ele) for ele in comb_break_point]         
-    sentence_part = [[0,all_break_point[0][0]-1]]
-    
-    for i in range(1,len(all_break_point)) :
-        part = [all_break_point[i-1][-1]+1,all_break_point[i][0]-1]
-        sentence_part.append(part)
-
-    sentence_part.append([all_break_point[-1][-1]+1, len(doc)-1])
-    #print('sentence_part: ', sentence_part)
-    #print('slash_pos:' , slash_pos)
-    #print('all_break_point: ' , all_break_point)
-    #print('comb_break_point', comb_break_point)
-    
-    for i in range(0, len(comb_break_point )):
-        sentence = doc[sentence_part[0][0]:sentence_part[0][1]+1].text
-        for k in range(0,len(comb_break_point[i])) :
-            index = all_break_point[k].index(comb_break_point[i][k])
-            new_start = sentence_part[k+1][0]
-            
-            if index < len(all_break_point[k])-1 :
-                sentence += ' '+doc[all_break_point[k][index]:all_break_point[k][index+1]-1].text
-                if doc[all_break_point[k][index+1]].pos_ != 'VERB' and doc[all_break_point[k][index+1]].pos_ != 'NOUN' :
-                    new_start =  sentence_part[k+1][0]+1
-            else :
-                sentence += ' '+doc[comb_break_point[i][k]].text
-                #j = 0
-                if doc[comb_break_point[i][k]].pos_ != 'VERB' and doc[comb_break_point[i][k]].pos_ != 'NOUN' :
-                    #print(doc[comb_break_point[i][k]+j])
-                    #j+=1
-                    new_start = sentence_part[k+1][0]+1
-                    for n in range(1, len(doc)-1-comb_break_point[i][k]) :
-
-                        sentence += ' '+doc[comb_break_point[i][k]+n].text
-                        if doc[comb_break_point[i][k]+n].pos_ == 'VERB' or doc[comb_break_point[i][k]+n].pos_ ==' NOUN' :
-                            new_start = comb_break_point[i][k]+n
-                            break
-            
-            sentence += ' '+doc[new_start:sentence_part[k+1][1]+1].text
-            
-        result_line.append(sentence)
-    return result_line
-
-def removeBracket(line) :
-    index1 = sorted([i for i, ltr in enumerate(line) if ltr == '(' ])
-    index2 = sorted([i for i, ltr in enumerate(line) if ltr == ')' ])
-    if index1 == [] or index2 == []:
-       return line
-    sentence = ''
-    previous = 0
-    for i in range(0,len(index1)) :
-        if line[index1[i]-1]== ' ' or line[index1[i]+1]==' ' :
-            sentence += line[previous:index1[i]]
-        else :
-            sentence += line[previous:index1[i]]+' '
-        previous = index2[i]+1
-        if line[index2[i]-1] == ' 'or line[index2[i]+1] == ' ' :
-            sentence += ''
-        else :
-            sentence += ' '
-    
-    sentence += line[index2[-1]+1:]
-    if not sentence.endswith('\n') :
-        sentence += '\n'
-    print(sentence)
-    return sentence
-    
-
-    #print(index1)
-    #index2 = [i for i, ltr in enumerate(line) if ltr == ')']
-    
-    #doc = nlp(line) 
-    #result_line = []
-    #remove_index = []
-    #for w in doc :
-    #    if w.text.startswith('('):
-    #        remove_index.append(w.i)
-    #    elif w.text.startswith(')'):
-    #        remove_index.append(w.i)
-    #    else :
-    #        continue
-    #if remove_index == [] :
-    #    return line
-    #sentence = ''
-
-    #if remove_index[0] == 0 :
-    #    sentence_start = remove_index[1] +1
-    #    index_start = 2
-    #else :
-    #    sentence_start = 0
-    #    index_start = 0
-
-    #for i in range(index_start,len(remove_index)) :
-    #    if i % 2 != 0 :
-    #        sentence_start = remove_index[i]+1
-    #    else :
-    #        sentence += doc[sentence_start:remove_index[i]].text + ' '
-    #sentence += doc[remove_index[-1]+1:len(doc)].text
-   
             
 def frequentWordGen (lines) :
     file_freq_word_dict = {}
@@ -195,8 +47,12 @@ def spellcheck (file_freq_word_dict, noun_word_list) :
     correct_dict = {}
     noun_list = []
     word_line = {}
+    incorrect_dict = {}
+    incorrect_candidate_mapper = {}
     # print(file_freq_word_dict)
     # print(noun_word_list)
+    for w in noun_word_list:
+        incorrect_candidate_mapper[w["lemma"].lower()] = w["lemma"]
 
     spell_checker = SpellChecker(language='en', case_sensitive=True, distance=CHECK_EDIT_DISTANCE)
 
@@ -205,7 +61,15 @@ def spellcheck (file_freq_word_dict, noun_word_list) :
         if len(file_freq_word_dict[word]) >= CORRECT_WORD_FREQUENCY:
             spell_checker.word_frequency.add(word)
     incorrect_candidate = spell_checker.unknown([w["lemma"] for w in noun_word_list])
-    logger.info("Unknown words: " + str(incorrect_candidate))
+    for w in incorrect_candidate:
+        incorrect_dict[w] = file_freq_word_dict[incorrect_candidate_mapper[w]]
+
+    # Prepare logger message
+    msg = ""
+    for w in incorrect_dict:
+        lines = [str(idx+1) for idx in incorrect_dict[w]]
+        msg += w + ", line " + ','.join(lines) + '\n'
+    logger.info("Unknown words: " + msg)
 
     for candidate in incorrect_candidate :
         correction = spell_checker.correction(candidate)
@@ -281,21 +145,27 @@ if __name__ == '__main__' :
             lines = testFile.readlines()
             for idx, line in enumerate(lines):
                 file_origin_lines[idx] = line
-                try:
-                    line_no_bracket = removeBracket(line)
-                except:
-                    logger.error("removeBracket: Cannot process Line " + str(idx) + "\n" + line)
-                    # line_no_bracket = line
-                    continue
-                # print(line_no_bracket)
-                try:
-                    line_no_slash_list = removeSlash(line_no_bracket)
-                except:
-                    logger.error("removeSlash: Cannot process Line " + str(idx) + "\n" + line)
-                    # line_no_slash_list = line_no_bracket
-                    continue
-                # print(line_no_slash_list)
-                file_preprocess_lines[idx] = line_no_slash_list
+                file_preprocess_lines[idx] = [line]
+
+        # with open(input_path + '.txt') as testFile :
+        #     lines = testFile.readlines()
+        #     for idx, line in enumerate(lines):
+        #         file_origin_lines[idx] = line
+        #         try:
+        #             line_no_bracket = removeBracket(line)
+        #         except:
+        #             logger.error("removeBracket: Cannot process Line " + str(idx) + "\n" + line)
+        #             # line_no_bracket = line
+        #             continue
+        #         # print(line_no_bracket)
+        #         try:
+        #             line_no_slash_list = removeSlash(line_no_bracket)
+        #         except:
+        #             logger.error("removeSlash: Cannot process Line " + str(idx) + "\n" + line)
+        #             # line_no_slash_list = line_no_bracket
+        #             continue
+        #         # print(line_no_slash_list)
+        #         file_preprocess_lines[idx] = line_no_slash_list
 
         file_freq_word_dict, noun_word_list = frequentWordGen(file_preprocess_lines)
         correct_dict = spellcheck(file_freq_word_dict, noun_word_list)

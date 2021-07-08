@@ -16,7 +16,7 @@ import argparse
 
 CHECK_EDIT_DISTANCE = 1
 CORRECT_WORD_FREQUENCY = 2
-            
+
 def frequentWordGen (lines) :
     file_freq_word_dict = {}
     noun_word_list = []
@@ -40,19 +40,15 @@ def frequentWordGen (lines) :
 
 def spellcheck (file_freq_word_dict, noun_word_list) :
     '''
-    Bo: 
+    Bo:
     Add those words which appear more than CORRECT_WORD_FREQUENCY times to the dictionary.
     Check those words which appear only once.
     '''
     correct_dict = {}
     noun_list = []
     word_line = {}
-    incorrect_dict = {}
-    incorrect_candidate_mapper = {}
     # print(file_freq_word_dict)
     # print(noun_word_list)
-    for w in noun_word_list:
-        incorrect_candidate_mapper[w["lemma"].lower()] = w["lemma"]
 
     spell_checker = SpellChecker(language='en', case_sensitive=True, distance=CHECK_EDIT_DISTANCE)
 
@@ -61,24 +57,45 @@ def spellcheck (file_freq_word_dict, noun_word_list) :
         if len(file_freq_word_dict[word]) >= CORRECT_WORD_FREQUENCY:
             spell_checker.word_frequency.add(word)
     incorrect_candidate = spell_checker.unknown([w["lemma"] for w in noun_word_list])
-    for w in incorrect_candidate:
-        incorrect_dict[w] = file_freq_word_dict[incorrect_candidate_mapper[w]]
+
+    # Apply glossary
+    glossary_set = set()
+    incorrect_words = set(incorrect_candidate)
+    with open("./Glossary/glossary.txt", 'r') as myfile:
+        s = myfile.readlines()
+        for word in s:
+            glossary_set.add(word.rstrip().lower())
+
+    for unknown_words in incorrect_candidate:
+        if unknown_words.lower() in glossary_set:
+            incorrect_words.remove(unknown_words)
 
     # Prepare logger message
-    msg = ""
-    for w in incorrect_dict:
-        lines = [str(idx+1) for idx in incorrect_dict[w]]
-        msg += w + ", line " + ','.join(lines) + '\n'
-    logger.info("Unknown words: " + msg)
+    incorrect_dict = {}
+    incorrect_candidate_mapper = {}
+    for w in noun_word_list:
+        incorrect_candidate_mapper[w["lemma"].lower()] = w["lemma"]
+    for w in incorrect_words:
+        incorrect_dict[w] = file_freq_word_dict[incorrect_candidate_mapper[w]]
 
-    for candidate in incorrect_candidate :
+
+    if incorrect_words:
+        msg = ""
+        for w in incorrect_dict:
+            lines = [str(idx+1) for idx in incorrect_dict[w]]
+            msg += w + ", line " + ','.join(lines) + '\n'
+        logger.info("Unknown words: \n" + msg)
+    else:
+        logger.info("No Unknown words")
+        
+    for candidate in incorrect_words:
         correction = spell_checker.correction(candidate)
         if (candidate.lower() == correction.lower()):
             continue
         else:
             correct_dict[candidate] = correction
-
     return correct_dict
+
     # reduced_incorrect_candidate = []
     # for candidate in incorrect_candidate :
     #     for word in file_freq_word_dict :
@@ -109,7 +126,7 @@ def correctFile(file_origin_lines, file_preprocess_lines, correct_dict, file_fre
     return correct_lines
 
 if __name__ == '__main__' :
-    
+
     #line1= "With this condition in place, as a general manger, I can monitor real-time twitter/facebook/instagram feeds/reaction from key sources in a continuous manner and/or on demand."
     #line2 = "The system shall notify users about special events/campaigns so that user participation will increase."
     #line3 ="As an administrator I can verify and/or approve comments from all users  to increase accuracy of information."
@@ -117,7 +134,7 @@ if __name__ == '__main__' :
     #line5 ="As an admin I can edit the name of gateway/switch/floor/room."
     #line6 = 'If there is a conflict (there is already information in the row for the designated table) the application must be able to generate and execute  a PostgreSQL UPDATE statement for the "crawled" dataset.'
     #line7 = 'As a GM, my data can seamlessly integrate with the SporTech B.I. system in a standard compliant manner. (READ: The system shall communicate in PostgreSQL.).'
-    
+
     parser = argparse.ArgumentParser(description='Misspelling Detection')
     parser.add_argument('-i', '--input', type=str, metavar='', default="./Data/input_origin/",
                         help='input path. Default: %(default)s')
@@ -135,7 +152,7 @@ if __name__ == '__main__' :
         output_path = args.output + filename
         # filename = '2014-USC-Project02'
         # input_path = './Data/input_origin/' + filename
-        # output_path = './output/misspelling_detect_1/' + filename 
+        # output_path = './output/misspelling_detect_1/' + filename
         nlp = spacy.load('en_core_web_sm')
         logger = Logger(output_path + '_log.txt')
 
@@ -173,7 +190,7 @@ if __name__ == '__main__' :
         correct_lines = correctFile(file_origin_lines, file_preprocess_lines, correct_dict, file_freq_word_dict)
         with open(output_path + '.corrected.txt', 'w') as outfile:
             outfile.writelines(correct_lines)
-      
+
         #for word in nlp('As a SporTech B.I. contractor, I can  add,delete,update the specific websites visited,  fields to capture from the website and frequency of crawler refreshes for each specified website.') :
         #    print(word,word.pos_)
     elif args.list:
@@ -183,9 +200,6 @@ if __name__ == '__main__' :
         for f in files:
             f_list.add(f.split(".")[0])
         for f in sorted(f_list):
-            print(f) 
+            print(f)
     else:
         parser.print_help()
-
-
-    

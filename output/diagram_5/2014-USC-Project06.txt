@@ -1,106 +1,151 @@
 @startuml
 hide circle
 class Student<actor> {
+	network
 }
 class User<actor> {
+	connection
+	linkedInInformation
+	message
+	area
+	network
+	profile
 }
 class Administrator<actor> {
 }
+class Connection {
+	activity
+}
 class User {
-	join()
-	send()
-	delete()
-	unfollow()
-	find()
-	add()
-	reject()
 	have()
-	write()
-	create()
-	update()
-	accept()
-	share()
-	cancel()
-	upload()
-	see()
-	import()
+	think()
+	search()
+	work()
 	follow()
 	leave()
-}
-class Message {
-}
-class Optometrist {
-}
-class ConnectionRequest {
-}
-class Office {
+	receive()
+	connect()
+	want()
+	cancel()
+	join()
+	create()
+	send()
+	comment()
+	find()
+	see()
+	accept()
+	add()
+	upload()
+	import()
+	write()
+	invite()
+	share()
 }
 class Profile {
 }
-class Information {
+class Advertisement {
 }
-class Request {
-}
-class ProfilePicture {
-}
-class Article {
-}
-class Company {
-}
-class Connection {
-}
-class LetterRecommendation {
+class Message {
 }
 class Someone {
-}
-class Group {
-}
-class School {
-}
-class Presence {
+	work()
 }
 class Recommendation {
 }
+class People {
+}
+class Request {
+	join()
+}
+class Group {
+}
+class Activity {
+}
+class Point {
+}
+class Administrator {
+	add()
+}
+class Optometrist {
+}
+class Post {
+}
+class Company {
+}
+class LetterRecommendation {
+}
 class LinkedInInformation {
-}
-class Student {
-	grow()
-}
-class Network {
-}
-class Advertisement {
 }
 class Video {
 }
-User --> School : follow
-User --> Office : find
-User --> LetterRecommendation : write
-User --> Presence : have
-User --> Profile : delete
-User --> Someone : find
-User --> Profile : add
-User --> Profile : see
+class Article {
+}
+class Office {
+}
+class Student {
+	grow()
+	connect()
+}
+class Information {
+}
+class School {
+}
+class ProfilePicture {
+}
+class Presence {
+}
+class Network {
+}
+class Ad {
+}
+class Space {
+}
 User --> Recommendation : see
-User --> Information : find
-User --> LinkedInInformation : import
-User --> Request : send
 User --> Company : follow
-User --> Connection : cancel
-User --> ConnectionRequest : reject
+User --> User : search
+User --> People : invite
+User --> Information : find
+Someone --> User : work
+User o-- Profile : see
+User --> Administrator : send
+User o-- Message : see
+User --> School : see
+User o-- Profile : add
+User o-- Profile : create
 User --> ProfilePicture : upload
-Student --> Network : grow
-User --> Article : share
-User --> Advertisement : see
-User --> Group : join
-User --> Message : see
-User --> Message : send
-User --> Profile : create
-User --> Video : share
+User --> Company : see
+User --> Request : send
+User --> User : send
+User o-- Profile : import
+User --> LetterRecommendation : write
+User o-- Connection : cancel
+Student --> Student : connect
+User --> User : write
 User --> Group : create
-User --> Optometrist : find
 User --> Group : leave
-User --> Profile : update
-User --> ConnectionRequest : accept
-User --> Company : unfollow
+User --> Presence : have
+User --> Activity : see
+User o-- LinkedInInformation : import
+Student o-- Network : grow
+User --> User : supported_by
+User --> Someone : find
+User --> Video : share
+User --> Point : leave
+Administrator --> Ad : add
+User --> Advertisement : see
+User --> Company : find
+User --> Group : join
+User --> User : comment
+User --> User : cancel
+User --> Office : find
+User o-- Message : send
+Administrator --> Space : add
+User --> Article : share
+User --> Optometrist : find
+Someone --> Company : work
+User --> User : find
+User --> Post : comment
+User --> User : see
+Student --> Student : supported_by
 
 @enduml

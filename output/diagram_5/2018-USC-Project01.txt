@@ -7,102 +7,146 @@ class Maintainer<actor> {
 class Developer<actor> {
 }
 class User<actor> {
+	friend
+	account
+	information
+	area
+	accountInformation
+}
+class Event {
+	information
+}
+class Other {
+	friendRequest
+}
+class Venue {
+	detail
+	be()
 }
 class Administrator {
-	edit()
+	add()
+	see()
+	block()
+	open()
 	cancel()
 	close()
-	see()
-	block()
-	add()
-}
-class Account {
-}
-class User {
-	import()
-	follow()
-	entered()
-	leaved()
-	create()
-	lost()
-	receive()
-	have()
-	block()
-	delete()
-	get()
-	contact()
-	see()
-}
-class Entrance {
-}
-class Information {
+	edit()
 }
 class AccountInformation {
 }
-class Info {
-}
-class Maintainer {
-	withdraw()
-	process()
+class User {
+	delete()
+	follow()
+	search()
+	confirm()
+	enter()
+	consent()
+	close()
+	leave()
+	call()
+	unblock()
+	message()
+	import()
+	find()
+	have()
+	lose()
 	see()
-}
-class Analytic {
-}
-class Message {
-}
-class Event {
-}
-class Question {
+	block()
+	create()
+	get()
+	reject()
+	receive()
+	contact()
 }
 class Friend {
 }
-class Option {
+class Maintainer {
+	guarantee()
+	process()
+	see()
+	make()
+	withdraw()
 }
-class Venue {
-}
-class Policy {
+class Account {
 }
 class LocationInformation {
 }
-class Route {
+class UserAccount {
+}
+class Developer {
+	guarantee()
+}
+class Question {
+}
+class Information {
 }
 class Profession {
 }
-class UserAccount {
+class Policy {
+}
+class Message {
+}
+class FriendRequest {
+}
+class Info {
 }
 class Recommendation {
 }
+class Facebook {
+}
+class Route {
+}
 class Detail {
 }
-User --> Information : see
-User --> Question : see
-User --> User : contact
-User --> Message : lost
-Administrator --> AccountInformation : see
-User --> Friend : delete
-User --> Route : see
-User --> Info : receive
-User --> Venue : entered
-Administrator --> Information : see
-User --> Information : import
-Maintainer --> Analytic : see
-Maintainer --> Account : withdraw
-User --> Message : block
-User --> User : see
-Administrator --> Event : cancel
-User --> Venue : see
-Maintainer --> Message : process
-User --> Profession : see
-User --> Option : have
-User --> UserAccount : create
-User --> Venue : leaved
-User --> Recommendation : receive
-Administrator --> Venue : close
+class TutorialEntrance {
+	introduce()
+}
+class GPSRecording {
+	let()
+}
+class Analytics {
+}
+class Option {
+}
 Administrator --> Detail : edit
-Administrator --> Account : block
-User --> Policy : follow
 Administrator --> Event : add
-User --> Entrance : see
+Maintainer --> Account : withdraw
+Maintainer --> User : process
+User --> Message : lose
+User --> Venue : leave
 User --> LocationInformation : get
+User --> User : contact
+User --> Profession : see
+Maintainer --> Message : process
+User --> UserAccount : create
+User --> Policy : follow
+Maintainer --> User : guarantee
+User --> TutorialEntrance : see
+User --> User : see
+User --> Message : block
+Developer --> User : guarantee
+User o-- Information : import
+User --> Venue : see
+User --> FriendRequest : reject
+User --> User : confirm
+User --> User : call
+User o-- Friend : delete
+Maintainer --> Analytics : see
+User --> Event : receive
+User o-- Info : receive
+User --> Option : have
+User --> Question : see
+User --> Recommendation : receive
+User --> Event : see
+Administrator --> Venue : close
+Administrator --> Event : cancel
+Administrator --> AccountInformation : see
+User --> Facebook : import
+User o-- Information : see
+Administrator --> Information : see
+User --> Route : see
+Administrator --> Account : block
+User o-- Friend : see
+User --> Venue : enter
 
 @enduml

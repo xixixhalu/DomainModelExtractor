@@ -1,127 +1,177 @@
 @startuml
 hide circle
 class User<actor> {
+	registration
+	course
 }
 class CourseAttendee<actor> {
 }
 class Trainer<actor> {
+	profile
+	calendar
+	price
 }
 class Enterprise<actor> {
 }
 class Administrator<actor> {
 }
-class Admin<actor> {
-}
 class Team<actor> {
 }
 class Developer<actor> {
 }
-class CourseAttendee {
-	Rate()
-	see()
-	compare()
-	receive()
-}
-class Price {
-}
 class Trainer {
+	attach()
+	offer()
 	set()
+	continue()
 	see()
 	compare()
-	offer()
 	put()
 }
-class reviews {
-}
-class Developer {
-	understand()
-	analyze()
-}
-class Requirement {
+class No {
 }
 class User {
-	setup()
 	request()
 	share()
 	see()
+	filter()
+	search()
+	setup()
+	register()
 }
 class Course {
+	start()
+	offer()
+}
+class CourseAttendee {
+	rate()
+	receive()
+	see()
+	pay()
+	review()
+	compare()
+	decide()
 }
 class Administrator {
-	adjust()
 	receive()
-	have()
-}
-class Dashboard {
-}
-class Rating {
-}
-class Account {
-}
-class Admin {
-	cancel()
+	see()
+	inquirycourse()
+	verify()
+	delete()
 	adjust()
-	move()
-	schedule()
-}
-class People {
-}
-class Schedule {
-}
-class Notification {
-	receive()
-}
-class Change {
-}
-class Minimum {
-}
-class Feasibility {
-}
-class Calendar {
+	create()
+	update()
 }
 class Request {
 }
+class Enterprise {
+	compare()
+	get()
+}
+class Admin {
+	do()
+	attach()
+	move()
+	meet()
+	see()
+	cancel()
+	adjust()
+	schedule()
+}
+class Developer {
+	analyze()
+	understand()
+}
+class Requirement {
+}
+class Change {
+}
+class Rating {
+}
+class Feasibility {
+}
+class Architecture {
+}
+class Price {
+	see()
+}
+class Class {
+}
+class Calendar {
+}
+class Twitter {
+}
+class Review {
+}
+class CourseInformation {
+}
+class EventBrite {
+}
+class Email {
+}
+class Schedule {
+}
+class LinkedIn {
+}
 class ConfirmationEmail {
+}
+class Variety {
+}
+class People {
+}
+class Location {
+}
+class Value {
+}
+class FaceBook {
 }
 class Number {
 }
 class AccountRegistrationInformation {
 }
-class Enterprise {
-	getting()
-	compare()
+class Account {
 }
-class Value {
-}
-class Architecture {
-}
-CourseAttendee --> Price : compare
-Enterprise --> Value : getting
-Trainer --> Course : offer
-Administrator --> Dashboard : have
-Developer --> Feasibility : understand
-Developer --> Architecture : understand
-Trainer --> reviews : see
-Trainer --> Rating : see
-Admin --> Course : cancel
-User --> Course : share
-Trainer --> Calendar : put
-Developer --> Requirement : analyze
-User --> Course : request
-Trainer --> Price : compare
-User --> Account : setup
-Administrator --> Request : receive
-CourseAttendee --> ConfirmationEmail : receive
-Admin --> People : move
-User --> Number : see
-CourseAttendee --> Schedule : see
-Administrator --> AccountRegistrationInformation : receive
-Administrator --> Rating : adjust
-Admin --> Course : schedule
-Notification --> Change : receive
-CourseAttendee --> CourseAttendee : Rate
-Trainer --> Minimum : set
+CourseAttendee --> Course : pay
 Enterprise --> Price : compare
+CourseAttendee --> ConfirmationEmail : receive
+Administrator --> AccountRegistrationInformation : receive
+Administrator --> Request : receive
+Admin --> Course : cancel
+Trainer --> Rating : see
+User --> Variety : see
+Admin --> Course : schedule
+Trainer o-- Calendar : put
+CourseAttendee --> CourseAttendee : rate
+User --> Account : setup
+User o-- Course : register
+User --> Rating : filter
+User --> Twitter : share
+Trainer o-- Price : compare
+Developer --> Requirement : analyze
+Admin --> People : move
+Trainer --> Review : see
+CourseAttendee --> Price : compare
+User o-- Course : search
+Administrator --> Change : receive
+User --> Review : filter
+Administrator --> CourseInformation : update
+Administrator --> Rating : adjust
+Trainer --> Location : offer
+CourseAttendee --> EventBrite : pay
+Enterprise --> Value : get
+Developer --> Feasibility : understand
 Admin --> Number : adjust
+User --> Email : share
+Trainer --> No : set
+Administrator --> Trainer : receive
+User --> FaceBook : share
+CourseAttendee --> Schedule : see
+Developer --> Architecture : understand
+User o-- Course : share
+User --> Number : see
+User o-- Course : request
+Trainer --> Course : offer
+User --> LinkedIn : share
+Admin --> Class : move
 
 @enduml

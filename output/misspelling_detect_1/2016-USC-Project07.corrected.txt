@@ -10,7 +10,5 @@ As a User, I should be able to see pet's information,so that I can decide whethe
 As a user, I should be able to see the pets' pictures quickly so that I do not have to wait.
 As a user I want my information to be kept secure so that it cannot be misused.
 As a user I want to be able to see the information of the shelters so that I can contact them.
-As a shelter I can input shelter information  so that my information stays up to date.
-As a user I want to apply type etc filters on search results sorted so that I can have more accurate results.
-As a user I want to apply locations etc filters on search results sorted so that I can have more accurate results.
-As a user I want to apply price etc filters on search results sorted so that I can have more accurate results.
+As a shelter I can input shelter information (not pets) so that my information stays up to date.
+As a user I want to apply type/locations/price etc filters on search results sorted so that I can have more accurate results.

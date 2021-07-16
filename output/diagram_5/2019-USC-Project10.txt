@@ -6,48 +6,65 @@ class User<actor> {
 }
 class VideoUser<actor> {
 }
-class User {
-	interested()
-	find()
-	input()
-}
-class Media {
-}
-class MovieTitle {
-	get()
-}
 class Developer {
-	access()
+	design()
+	script()
 	display()
 	filter()
+	access()
+	link()
+	create()
 	map()
-}
-class Data {
 }
 class IMDBAttribute {
 }
-class MediaData {
+class User {
+	search()
+	input()
+	find()
+}
+class Hashtag {
 }
 class Result {
 }
 class VideoUser {
 	use()
+	see()
 }
 class TwitterData {
+	recommend()
 }
-class Info {
+class Media {
+	recommend()
 }
 class Movie {
+	trend()
 }
-Developer --> Data : filter
-User --> Media : interested
-Developer --> Result : display
-MovieTitle --> Info : get
-Developer --> IMDBAttribute : map
+class MovieTitle {
+	get()
+}
+class TwitterMentions {
+}
+class Data {
+}
+class MediaData {
+	create()
+}
+class Ranking {
+}
+User --> Ranking : find
+Developer --> Hashtag : link
+VideoUser --> TwitterData : use
+Developer --> TwitterMentions : map
+Developer --> Hashtag : map
+Developer --> MediaData : access
+User --> Ranking : supported_by
 User --> MovieTitle : input
 User --> Movie : find
+Developer --> Result : display
 VideoUser --> Media : use
-Developer --> MediaData : access
-VideoUser --> TwitterData : use
+Developer --> IMDBAttribute : map
+Developer --> Data : filter
+Movie --> Media : trend
 
 @enduml

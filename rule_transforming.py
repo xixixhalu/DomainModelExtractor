@@ -36,9 +36,16 @@ class Transformation:
         for arg in arg_list:
             arg_pair = arg.strip().split('=')
             arg_pair[0] = arg_pair[0].strip()
-            arg_pair[1] = re.sub(r'\W+', '', variables[arg_pair[1]]).strip()
+            arg = ''
+            # print(method_to_call.__name__)
+            if re.search("\"", arg_pair[1]):
+                arg = re.sub(r"\"", '', arg_pair[1]).strip()
+            else:
+                arg = '_'.join([re.sub(r'\W+', '', variables[i]).strip() for i in str(arg_pair[1])])
+            # arg_pair[1] = re.sub(r'\W+', '', variables[arg_pair[1]]).strip()
 
-            arguments[arg_pair[0]] = arg_pair[1]
+            # arguments[arg_pair[0]] = arg_pair[1]
+            arguments[arg_pair[0]] = arg
 
         method_to_call(**arguments)
 
@@ -64,7 +71,6 @@ class Transformation:
             while line:
                 entity_list = eval(line)
                 for entity_word in entity_list:
-                    print(entity_word[0])
                     entity = ""
                     for word in entity_word[0]:
                         word = re.sub(r'\W+', '', word)
@@ -83,21 +89,23 @@ class Transformation:
 
         # Iterate transformation rules
         for tr in tr_name:
+            if str(tr) == 'nan':
+                continue
             try:
                 line = rule_obj.loc[tr]
             except:
                 print("Error! Check the log")
                 logger.error(tr + ' not found! Try the other RULEs!')
                 continue
+
             ssr_name = line.loc['Sentence Structure'].strip()
             action = line.loc['Action'].strip()
             transformation_rule = line.loc['Transformation'].strip()
-            
+
             # Iterate sentences matched to SSR
             for s in data[ssr_name]:
                 s_index = s['Index']
                 s_result = s['Result']
-
                 # Iterate matched variables
                 variables = {}
                 for var, idx in s_result.items():

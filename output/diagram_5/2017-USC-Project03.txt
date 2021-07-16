@@ -1,113 +1,145 @@
 @startuml
 hide circle
 class User<actor> {
-}
-class Coach<actor> {
+	kid
+	swimmer
+	information
 }
 class Developer<actor> {
 }
 class Parent<actor> {
+	kid
+	account
+	kidAccount
 }
 class Treasurer<actor> {
 }
 class Maintainer<actor> {
 }
-class Headcoach<actor> {
-}
-class parent {
-	sign()
-	view()
-	edit()
+class Head<actor> {
 }
 class Kid {
-}
-class Maintainer {
-	see()
-	insert()
-	modify()
-	have()
-	access()
-}
-class Database {
-}
-class Coach {
-	edit()
-	review()
-	modify()
-	modified()
-	expect()
-	extract()
-	overwrite()
-}
-class PdfInformation {
-}
-class List {
-}
-class Result {
-}
-class Signup {
-	close()
-}
-class Timeframe {
-}
-class Developer {
-	have()
-}
-class Access {
+	account
 }
 class Treasurer {
 	see()
 }
-class Amount {
+class User {
+	expect()
+	see()
 }
 class Information {
 }
+class Parent {
+	see()
+	edit()
+	sign()
+	login()
+	view()
+}
 class Event {
+}
+class Coach {
+	overwrite()
+	review()
+	extract()
+	set()
+	edit()
+	modify()
+	close()
+	expect()
+	upload()
+}
+class Maintainer {
+	see()
+	modify()
+	delete()
+	have()
+	access()
+	insert()
+}
+class Database {
+}
+class Amount {
+	collect()
+}
+class Developer {
+	have()
+}
+class Date {
+}
+class Access {
 }
 class Something {
 }
-class Week {
+class Frame {
 }
-class Headcoach {
+class Swimmer {
+	sign()
+}
+class Head {
 	generate()
-}
-class PdfReport {
-}
-class User {
-	see()
-}
-class Option {
-}
-class UploadEvent {
-}
-class AmountDetail {
 }
 class CSVFile {
 }
-Headcoach --> PdfReport : generate
-Developer --> Access : have
-Treasurer --> Amount : see
-Maintainer --> Database : insert
+class List {
+}
+class PdfInformation {
+}
+class Week {
+}
+class SourceCode {
+}
+class Documentation {
+}
+class RegistrationKey {
+}
+class PdfReport {
+}
+class AmountDetail {
+}
+class KidAccount {
+}
+class Signup {
+}
+class Option {
+}
+class Result {
+}
+Parent --> Event : edit
+Parent --> RegistrationKey : login
+Coach --> Event : upload
+Head --> PdfReport : generate
 Maintainer --> Access : have
-Coach --> Result : overwrite
-Coach --> Information : review
-Coach --> PdfInformation : extract
-Maintainer --> Database : access
-Coach --> List : edit
-Signup --> Timeframe : close
-User --> Event : see
-User --> Option : see
-Coach --> Result : modify
-Coach --> UploadEvent : extract
-parent --> Information : view
-Coach --> Signup : expect
-parent --> Event : view
-parent --> Event : edit
+Parent --> RegistrationKey : supported_by
+Head --> CSVFile : generate
+Maintainer --> Database : insert
 Maintainer --> AmountDetail : see
-Coach --> Something : modified
-Headcoach --> CSVFile : generate
-Signup --> Week : close
-Maintainer --> Database : modify
-parent --> Kid : sign
+Developer --> Database : have
+Parent o-- KidAccount : login
+Coach --> Information : review
+Treasurer --> Amount : see
+Developer --> Date : have
+Coach --> Signup : expect
+Coach --> List : edit
+Parent o-- Kid : sign
+Maintainer --> Kid : insert
+Maintainer --> Kid : see
+User --> Option : see
+Coach --> PdfInformation : extract
+Coach --> User : modify
+Parent --> Event : view
+Coach --> Result : overwrite
+Developer --> Access : have
+Coach --> Week : close
+User --> Event : see
+Maintainer --> SourceCode : have
+Coach --> Something : modify
+User o-- Information : expect
+Parent --> Information : view
+Maintainer --> Documentation : have
+Coach --> Frame : close
+Maintainer --> Event : insert
+Maintainer --> Database : access
 
 @enduml

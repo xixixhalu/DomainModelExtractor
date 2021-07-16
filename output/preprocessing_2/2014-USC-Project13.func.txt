@@ -1,25 +1,15 @@
-Admin can delete a Switch so that it 's no longer available for Other .
-Admin can delete a Gateway so that it 's no longer available for Other .
+admin can delete a Switch so that it 's no longer available for Other .
+admin can delete a Gateway so that it 's no longer available for Other .
 User can add favourite Screen so that they are easily acessible .
-User can turn on Light using MobileApplication .
-User can turn off the Light using using MobileApplication .
+User can turn on , off the Light using Mobile Application .
 User can add Image for each Switch so that they are recognizable .
 User can add Image for Gateway so that they are recognizable .
-Admin can assign different Switch to different User so that the AccessControl is limited .
-User can turn on the Light in the House so that all the Light can be controlled at once .
-User can turn off all the Light in the House so that all the Light can be controlled controlled at once .
-User can select a particular Floor so that User have Floor - or room-wide Control of Light .
-User can select a particular Room so that User have Floor - or room-wide Control of Light .
-Admin should be able to add more User so that Admin can provide Access to other User .
-Admin should be able to add more User so that Admin can revoke Access to other User .
-Admin can delete Switch .
-Admin can delete Floor .
-Admin can delete Room .
-Admin can edit the Name of Gateway .
-Admin can edit the Name of Switch .
-Admin can edit the Name of Floor .
-Admin can edit the Name of Room .
-Admin can see GatewayId .
-Admin can switch Id .
-Admin can incorporate debugging by Papertrail .
-User can choose either Username to log in .
+admin can assign different Switch to different User so that the AccessControl is limited .
+User can turn on , off all the Light in the House so that all the Light can be controlled at once .
+User can select a particular Floor , Room so that User have Floor - or Room - wide Control of Light .
+admin should be able to add more User so that admin can provide , revoke Access to other User .
+admin can delete Switch , Floor , Room .
+admin can edit the Name of Gateway , Switch , Floor , Room .
+admin can see Gateway , switch Id .
+admin can incorporate debugging by Papertrail .
+User can choose either username , Email to log in .

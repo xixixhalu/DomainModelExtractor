@@ -1,8 +1,12 @@
 @startuml
 hide circle
 class Student<actor> {
+	group
 }
 class Teacher<actor> {
+	student
+	class
+	time
 }
 class Parent<actor> {
 }
@@ -12,120 +16,127 @@ class Maintainer<actor> {
 }
 class TeacherUser<actor> {
 }
-class Admin<actor> {
-}
-class Dislike<actor> {
-}
 class Student {
-	bookmark()
-	add()
-	join()
-	view()
-	finish()
-	send()
-	upvote()
-	have()
-	receive()
 	create()
+	talk_about()
+	add()
 	manage()
-	schedule()
+	view()
+	have()
+	find()
+	bookmark()
+	send()
+	talk()
+	upvote()
+	finish()
+	receive()
 	check()
+	schedule()
+	join()
 }
-class Status {
-}
-class Admin {
-	improve()
-	delete()
-	notice()
-}
-class Quality {
-}
-class Question {
-}
-class Post {
+class Message {
 }
 class Teacher {
 	contact()
 	upload()
-	assign()
 	send()
+	assign()
+	see()
+	check()
 }
-class Homework {
+class Meeting {
 }
 class Invitation {
 }
-class Group {
+class Homework {
 }
-class Video {
+class User {
+	report()
+	dislike()
+	invite()
+	mention()
+	post()
 }
 class TeacherUser {
 	improve()
 	post()
 }
-class Assignment {
+class Maintainer {
+	see()
+	monitor()
 }
-class User {
-	get()
-	invite()
-	mention()
-	report()
-}
-class Someone {
-}
-class People {
-}
-class Answer {
+class TimeStatistic {
 }
 class DiscussionGroup {
 }
-class Performance {
+class People {
 }
-class Class {
+class Someone {
 }
-class Maintainer {
-	monitor()
-	see()
+class Video {
 }
-class TimeStatistic {
+class Status {
+}
+class Admin {
+	delete()
+	notice()
+}
+class Group {
+}
+class Post {
+}
+class Discussion {
+}
+class StudyGroup {
 }
 class Stability {
 }
 class Name {
 }
-class Bullied {
+class Performance {
 }
-class Meeting {
+class Answer {
 }
-class StudyGroup {
+class Tutor {
 }
-Student --> Status : check
-Student --> Meeting : schedule
-Student --> Answer : upvote
-Teacher --> Student : contact
-Student --> Invitation : receive
-Student --> DiscussionGroup : join
-Admin --> Quality : improve
-Student --> StudyGroup : create
-Teacher --> Invitation : send
-Student --> Question : upvote
-Student --> Post : view
-TeacherUser --> Performance : improve
-Admin --> Post : delete
-Student --> Question : bookmark
-Student --> Group : manage
-Student --> Homework : finish
+class Question {
+}
+class Assignment {
+}
 Teacher --> Homework : assign
-Student --> Class : add
-Teacher --> Video : upload
+Student --> Tutor : schedule
 Student --> Invitation : send
-Maintainer --> TimeStatistic : see
-TeacherUser --> Assignment : post
-Maintainer --> Stability : monitor
-User --> Someone : mention
 User --> Post : report
-Student --> Name : have
-User --> People : invite
-User --> Bullied : get
+Teacher --> Invitation : send
+Teacher o-- Student : assign
+Student --> Post : view
 Admin --> Post : notice
+TeacherUser --> Student : post
+Student --> Question : bookmark
+User --> Discussion : invite
+Admin --> Post : delete
+Maintainer --> TimeStatistic : see
+User --> Post : mention
+Teacher o-- Student : send
+Student --> Message : send
+Student --> DiscussionGroup : join
+TeacherUser --> Assignment : post
+Student --> Tutor : supported_by
+Student --> Student : send
+Student --> StudyGroup : create
+User --> People : invite
+Maintainer --> Stability : monitor
+Teacher o-- Student : contact
+Student --> Name : have
+User --> Someone : mention
+Student --> Message : receive
+TeacherUser --> Performance : improve
+Teacher --> Video : upload
+Student --> Homework : finish
+Student --> Meeting : schedule
+Student --> Status : check
+Student --> Answer : upvote
+Student --> Invitation : receive
+Student o-- Group : manage
 
 @enduml

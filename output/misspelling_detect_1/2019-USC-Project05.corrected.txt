@@ -10,11 +10,10 @@ As a VRS, I can delete any irrelevant complaints that have been reported, so tha
 As a developer, I can re-use already available open-source ticket management or case management systems, so that I can minimize development time and costs.
 As a VRS admin who has access to ticketing system, I can filter tickets based on organization, severity, complaint type and period of time.
 As a VRS admin, I can view and download the case filed by the employee.
-As a VRS admin, I can edit the assigned and ticket status.
+As a VRS admin, I can edit the assignee and ticket status.
 As an employee, I can view all my cases.
 As an employee, I can edit my profile details.
-As an employee, I should be able to check the status of the cases I filed.
-As an employee, I should be able to check the status of the complaints I filed.
+As an employee, I should be able to check the status of the cases/complaints I filed.
 As a VRS, I can view the complaints filed and assign them to subject matter experts.
 As a VRS, I can filter out cases based on their status for ease of viewing.
 As a VRS, I can generate reports for the cases filed and also summary reports per organization.

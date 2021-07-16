@@ -1,39 +1,35 @@
 The System shall upload Picture to a Hashtag specified by the User .
-The System shall allow a User to reserve a Hashtag , allowing the User to specify a Password for other User to Post and ViewPicture on the Hashtag .
+The System shall allow a User to reserve a Hashtag , allowing the User to specify a Password for other User to post and view Picture on the Hashtag .
 The System shall allow User to browse Post made in a specified Region .
 The System shall allow User to FlagPicture as inappropriate so that they may be taken down from public View .
 The System shall allow User to tag the Picture they post with descriptive Text .
 The System shall delete the Hashtag and Picture associated to it after it is reserved for a certain Time .
-The System shall invalidate the Functionality of uploading Picture for a User if he keeps sending malicious Picture .
+The System shall invalidate the Functionality of UploadingPicture for a User if he keeps sending malicious Picture .
 The System shall allow User to download Picture he like .
 The System shall allow User to delete the Picture he uploaded by Mistake .
 The System shall allow the HashtagHolder to delete Picture that is inappropriate .
 The System shall provide an Interface for User to search for a specific Hashtag .
 The System shall prevent User from posting Picture to private reserved Hashtag without the proper Permission . .
-The System shall allow Administrator to remove any Picture .
-The System shall allow Maintainer to remove any Picture .
-The System shall allow Moderator to remove any Picture .
+The System shall allow Administrator , Maintainer , Moderator to remove any Picture .
 The System shall provide Storage and Access to Picture for a Set or indefinite Amount of Time .
 The System shall allow the User to make Payment for a private Hashtag .
 The System shall provide an Interface for User to create a new Account or Login to an existing One .
-The System shall allow the User to post Picture to a specific LocationEg . USCCampus .
-The System shall provide an alert Message to the hashtag Holder when his is about to expire .
-The System shall provide an alert Message to the hashtag Holder when her Hashtag is is about to expire .
-The System shall provide an Interface for the hashtag Holder to invite his to post to the Hashtag .
-The System shall provide an Interface for the hashtag Holder to invite her Friend to post Post to the Hashtag .
+The System shall allow the User to post Picture to a specific LocationEg . . UscCampus .
+The System shall provide an alert Message to the hashtag Holder when his , her Hashtag is about to expire .
+The System shall provide an Interface for the hashtag Holder to invite his , her Friend to post to the Hashtag .
 The System shall inform the hashtag Holder if there are new Picture posted to the Hashtag .
 The System shall have authentication for private Event to make sure only certain People have Access to the Picture of this Hashtag .
 The System shall have delete PictureFunction to let User delete their uploaded Picture .
 The System shall be capable to set the geographical Scope in which User are interested in the SharingPicture .
 The System shall have Category for Picture to let UserBrowserPicture with certain Tag .
 The System shall have ManagementFunction for private and public Event to delete irrelevant Picture .
-The System shall capture the Photo when UserPressCameraShutter .
-The System shall upload the Photo when User hit UploadButton .
+The System shall capture the Photo when User press CameraShutter .
+The System shall upload the Photo when User hit upload Button .
 The System shall provide a hashtag ReservationOption when User want to upload Picture to a specific Hashtag .
 The System shall provide Option either by Location or by hashtag to share Picture when User start to upload Picture .
-The System shall provide a delete Function when User what to delete Photo with in the specific Hashtag online .
-The System shall provide recover PictureFunction when UserDelete picture by Mistake .
-The System should allow UserImportFriend from other social NetworkApp . LikeFacebook , GoogleCantact .
+The System shall provide a delete Function when User what to delete Photo with in the specific hashtag online .
+The System shall provide recover PictureFunction when User deletes Picture by Mistake .
+The System should allow UserImportFriend from other social NetworkApp . Like Facebook , GoogleCantact .
 The System shall make the too old Event invisible to avoid crowded GeoScope .
 The System should allow Administrator to close some UserProfile when they continue posting illegal Picture .
-The System shall allow User to SearchPicture by Name , joined FriendName , Date , Hashtag , Location , EventName .
+The System shall allow User to search Picture by Name , joined FriendName , Date , Hashtag , Location , EventName .

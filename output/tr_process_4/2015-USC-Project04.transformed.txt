@@ -1,12 +1,25 @@
 {
   "domain": "2015-USC-Project04",
   "entity_dict": {
-    "AdultLearner": {
-      "name": "AdultLearner",
+    "Learner": {
+      "name": "Learner",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "conflictresolutionskill",
+          "type": "default"
+        },
+        {
+          "name": "conflictmanagementskill",
+          "type": "default"
+        },
+        {
+          "name": "gameScore",
+          "type": "default"
+        }
+      ]
     },
     "ExperientialLearningCenterStaff": {
       "name": "ExperientialLearningCenterStaff",
@@ -20,17 +33,35 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "conflictmanagementskill",
+          "type": "default"
+        },
+        {
+          "name": "competence",
+          "type": "default"
+        }
+      ]
     },
     "MBVStudent": {
       "name": "MBVStudent",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "progress",
+          "type": "default"
+        },
+        {
+          "name": "team",
+          "type": "default"
+        }
+      ]
     },
-    "Executive": {
-      "name": "Executive",
+    "ConflictResolutionExercise": {
+      "name": "ConflictResolutionExercise",
       "type": [
         "actor"
       ],
@@ -41,46 +72,95 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "company",
+          "type": "default"
+        }
+      ]
     },
     "Veteran": {
       "name": "Veteran",
       "type": [
         "actor"
       ],
+      "attributes": [
+        {
+          "name": "thoughtprocess",
+          "type": "default"
+        },
+        {
+          "name": "decision",
+          "type": "default"
+        }
+      ]
+    },
+    "Civilian": {
+      "name": "Civilian",
+      "type": [
+        "actor"
+      ],
       "attributes": []
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "Learner",
+      "dest": "Experience",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "MBVStudent",
+      "dest": "Teammate",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Civilian",
+      "dest": "Veteran",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
     {
       "actor": "Veteran",
       "action": "compare",
-      "target": "ThoughtProcess",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Employee",
+      "actor": "Learner",
       "action": "practice",
-      "target": "ProductConflictResolutionSkill",
+      "target": "Experience",
       "para": []
     },
     {
-      "actor": "AdultLearner",
-      "action": "take",
-      "target": "Assessment",
+      "actor": "Learner",
+      "action": "view",
+      "target": "Experience",
       "para": []
     },
     {
-      "actor": "MBVStudent",
-      "action": "improve",
-      "target": "ConflictResolutionSkill",
-      "para": []
-    },
-    {
-      "actor": "Veteran",
-      "action": "see",
-      "target": "Graph",
+      "actor": "Employer",
+      "action": "adopt",
+      "target": "",
       "para": []
     },
     {
@@ -90,51 +170,21 @@
       "para": []
     },
     {
-      "actor": "CollegeStudent",
-      "action": "improve",
-      "target": "Confidence",
-      "para": []
-    },
-    {
-      "actor": "AdultLearner",
-      "action": "have",
-      "target": "Practice",
-      "para": []
-    },
-    {
-      "actor": "AdultLearner",
-      "action": "resolve",
-      "target": "Conflict",
-      "para": []
-    },
-    {
-      "actor": "AdultLearner",
+      "actor": "ConflictResolutionExercise",
       "action": "practice",
-      "target": "ConflictResolutionSkill",
+      "target": "ProductConflictResolutionSkill",
       "para": []
     },
     {
-      "actor": "AdultLearner",
-      "action": "improve",
-      "target": "ConflictManagementSkill",
+      "actor": "ExperientialLearningCenterStaff",
+      "action": "take",
+      "target": "ExperientialLearningCenterStaff",
       "para": []
     },
     {
-      "actor": "CollegeStudent",
-      "action": "improve",
-      "target": "Competence",
-      "para": []
-    },
-    {
-      "actor": "Program",
-      "action": "integrates",
-      "target": "Experience",
-      "para": []
-    },
-    {
-      "actor": "CollegeStudent",
-      "action": "use",
-      "target": "Program",
+      "actor": "Team",
+      "action": "resolve",
+      "target": "",
       "para": []
     },
     {
@@ -144,21 +194,21 @@
       "para": []
     },
     {
-      "actor": "AdultLearner",
-      "action": "view",
-      "target": "Score",
+      "actor": "Learner",
+      "action": "need",
+      "target": "",
       "para": []
     },
     {
-      "actor": "ExperientialLearningCenterStaff",
-      "action": "take",
-      "target": "Training",
+      "actor": "Learner",
+      "action": "judge",
+      "target": "",
       "para": []
     },
     {
-      "actor": "CollegeStudent",
+      "actor": "Learner",
       "action": "improve",
-      "target": "ConflictManagementSkill",
+      "target": "Conflictmanagementskill",
       "para": []
     },
     {
@@ -168,9 +218,339 @@
       "para": []
     },
     {
-      "actor": "Executive",
+      "actor": "Student",
+      "action": "improve",
+      "target": "Conflictmanagementskill",
+      "para": []
+    },
+    {
+      "actor": "Civilian",
+      "action": "interact",
+      "target": "Veteran",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "resolve",
+      "target": "Experience",
+      "para": []
+    },
+    {
+      "actor": "ConflictResolutionExercise",
+      "action": "encourage",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "DecisionOther",
+      "action": "make",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "progress",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ExperientialLearningCenterStaff",
+      "action": "take",
+      "target": "Training",
+      "para": []
+    },
+    {
+      "actor": "MBVStudent",
+      "action": "improve",
+      "target": "ConflictResolutionSkill",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Program",
+      "action": "integrate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CollegeStudent",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "MBVStudent",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "take",
+      "target": "Learner",
+      "para": []
+    },
+    {
+      "actor": "MBVStudent",
+      "action": "collaborate",
+      "target": "Teammate",
+      "para": []
+    },
+    {
+      "actor": "Program",
+      "action": "integrate",
+      "target": "Business",
+      "para": []
+    },
+    {
+      "actor": "ConflictResolutionExercise",
       "action": "encourage",
       "target": "Employee",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "resolve",
+      "target": "Setting",
+      "para": []
+    },
+    {
+      "actor": "CollegeStudent",
+      "action": "improve",
+      "target": "Confidence",
+      "para": []
+    },
+    {
+      "actor": "CollegeStudent",
+      "action": "improve",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ConflictResolutionExercise",
+      "action": "practice",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Veteran",
+      "action": "compare",
+      "target": "Thoughtprocess",
+      "para": []
+    },
+    {
+      "actor": "ExperientialLearningCenterStaff",
+      "action": "take",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "know",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ExperientialLearningCenterStaff",
+      "action": "help",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CollegeStudent",
+      "action": "want",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "practice",
+      "target": "Conflictresolutionskill",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "take",
+      "target": "Assessment",
+      "para": []
+    },
+    {
+      "actor": "CollegeStudent",
+      "action": "improve",
+      "target": "Competence",
+      "para": []
+    },
+    {
+      "actor": "Civilian",
+      "action": "interact",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Veteran",
+      "action": "want",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "MBVStudent",
+      "action": "improve",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "DecisionOther",
+      "action": "make",
+      "target": "Situation",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "view",
+      "target": "GameScore",
+      "para": []
+    },
+    {
+      "actor": "MBVStudent",
+      "action": "want",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Veteran",
+      "action": "see",
+      "target": "Veteran",
+      "para": []
+    },
+    {
+      "actor": "CollegeStudent",
+      "action": "improve",
+      "target": "Conflictmanagementskill",
+      "para": []
+    },
+    {
+      "actor": "MBVStudent",
+      "action": "participate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CollegeStudent",
+      "action": "use",
+      "target": "Program",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "have",
+      "target": "Practice",
+      "para": []
+    },
+    {
+      "actor": "Employer",
+      "action": "adopt",
+      "target": "Company",
+      "para": []
+    },
+    {
+      "actor": "Program",
+      "action": "integrate",
+      "target": "Experience",
+      "para": []
+    },
+    {
+      "actor": "Veteran",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "take",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Score",
+      "action": "keep",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "improve",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "practice",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "resolve",
+      "target": "Conflict",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "resolve",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Veteran",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "MBVStudent",
+      "action": "collaborate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Civilian",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Veteran",
+      "action": "compare",
+      "target": "DecisionCivilian",
+      "para": []
+    },
+    {
+      "actor": "Veteran",
+      "action": "see",
+      "target": "Graph",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "improve",
+      "target": "",
       "para": []
     }
   ]

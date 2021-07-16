@@ -1,72 +1,105 @@
 @startuml
 hide circle
 class User<actor> {
+	phone
+	priceRange
 }
 class Retailer<actor> {
+	website
+}
+class Product {
+	shopWidget
 }
 class User {
-	sort()
-	slide()
-	get()
+	see()
+	shop()
 	collapse()
+	sort()
+	click()
+	minimize()
 	view()
 	waste()
 	follow()
-	minimize()
-	shop()
-	viewing()
-	see()
+	slide()
 	buy()
+	get()
+	focus()
 }
-class Sort {
+class Price {
 }
 class Item {
 }
-class Circle {
+class CreationTime {
 }
-class Clothing {
+class Detail {
 }
-class LoaderAnimation {
-}
-class Product {
+class Popularity {
 }
 class Trend {
 }
 class Cost {
 }
-class Cluster {
-}
-class Version {
-}
-class Detail {
-}
-class UserExperience {
+class Circle {
 }
 class Time {
 }
-class Page {
+class ProductImage {
+}
+class LoaderAnimation {
+}
+class MenuBox {
+}
+class Media {
+}
+class Clothing {
+}
+class Retailer {
+	have()
+}
+class Phone {
+}
+class Userexperience {
 }
 class Collection {
 }
-User --> Clothing : buy
+class Page {
+}
+class Default {
+}
+class Display {
+}
+class Version {
+}
+class Cluster {
+}
 User --> Item : view
-User --> Time : waste
-User --> LoaderAnimation : see
-User --> Product : shop
-User --> Trend : follow
-User --> Product : see
-User --> Cost : minimize
-User --> Collection : slide
-User --> Cluster : view
-User --> Product : view
 User --> Product : sort
+User --> Clothing : buy
 User --> Product : get
-User --> Version : view
-User --> Sort : collapse
-User --> Detail : view
-User --> Item : see
-User --> UserExperience : get
+User --> Cost : minimize
+User --> Trend : follow
+User o-- Phone : view
 User --> Circle : see
-User --> Page : viewing
+User --> Userexperience : get
+User --> Time : waste
+User --> Product : waste
+User --> Collection : slide
+User --> CreationTime : sort
+User --> ProductImage : view
+User --> Page : view
+User --> Product : view
+User --> Detail : view
+User --> Default : view
+User --> LoaderAnimation : see
+User --> Display : slide
+User --> MenuBox : collapse
+User --> Item : see
+User --> Product : see
+User --> Version : view
+User --> Product : shop
+User --> Media : buy
+User o-- Price : sort
+User --> Cluster : view
+User --> Popularity : sort
 
 @enduml

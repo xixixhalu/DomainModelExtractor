@@ -27,7 +27,64 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "area",
+          "type": "default"
+        },
+        {
+          "name": "friend",
+          "type": "default"
+        },
+        {
+          "name": "information",
+          "type": "default"
+        },
+        {
+          "name": "account",
+          "type": "default"
+        },
+        {
+          "name": "accountInformation",
+          "type": "default"
+        }
+      ]
+    },
+    "Event": {
+      "name": "Event",
+      "type": [
+        "entity"
+      ],
+      "attributes": [
+        {
+          "name": "information",
+          "type": "default"
+        }
+      ]
+    },
+    "Other": {
+      "name": "Other",
+      "type": [
+        "entity"
+      ],
+      "attributes": [
+        {
+          "name": "friendRequest",
+          "type": "default"
+        }
+      ]
+    },
+    "Venue": {
+      "name": "Venue",
+      "type": [
+        "entity"
+      ],
+      "attributes": [
+        {
+          "name": "detail",
+          "type": "default"
+        }
+      ]
     }
   },
   "relation_list": [],
@@ -35,19 +92,19 @@
     {
       "actor": "Administrator",
       "action": "block",
-      "target": "Account",
+      "target": "",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "see",
-      "target": "Entrance",
+      "actor": "Administrator",
+      "action": "edit",
+      "target": "",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "see",
-      "target": "Information",
+      "actor": "Administrator",
+      "action": "close",
+      "target": "Venue",
       "para": []
     },
     {
@@ -58,116 +115,14 @@
     },
     {
       "actor": "User",
-      "action": "receive",
-      "target": "Info",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
       "action": "see",
-      "target": "Analytic",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "process",
-      "target": "Message",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "import",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "cancel",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Question",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "delete",
       "target": "Friend",
       "para": []
     },
     {
       "actor": "User",
-      "action": "have",
-      "target": "Option",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "leaved",
-      "target": "Venue",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "close",
-      "target": "Venue",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "follow",
-      "target": "Policy",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "add",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "LocationInformation",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "contact",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "lost",
-      "target": "Message",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Route",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "entered",
-      "target": "Venue",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "see",
-      "target": "Information",
+      "action": "find",
+      "target": "",
       "para": []
     },
     {
@@ -178,20 +133,8 @@
     },
     {
       "actor": "User",
-      "action": "block",
-      "target": "Message",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Venue",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Profession",
+      "action": "get",
+      "target": "LocationInformation",
       "para": []
     },
     {
@@ -202,14 +145,416 @@
     },
     {
       "actor": "User",
+      "action": "block",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "guarantee",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "unblock",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "guarantee",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Venue",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "confirm",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "message",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "Friend",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Question",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "call",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "close",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "leave",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "cancel",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "close",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "see",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "block",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "lose",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "contact",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "enter",
+      "target": "Venue",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "add",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Profession",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "follow",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "follow",
+      "target": "Policy",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "block",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reject",
+      "target": "FriendRequest",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "process",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "lose",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Info",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "withdraw",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "enter",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "consent",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "guarantee",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "guarantee",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "receive",
       "target": "Recommendation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "import",
+      "target": "Facebook",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Route",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "confirm",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "call",
+      "target": "User",
       "para": []
     },
     {
       "actor": "Administrator",
       "action": "edit",
       "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reject",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "process",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "import",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "make",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "leave",
+      "target": "Venue",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "cancel",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "contact",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "TutorialEntrance",
+      "para": []
+    },
+    {
+      "actor": "TutorialEntrance",
+      "action": "introduce",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "process",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "GPSRecording",
+      "action": "let",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "search",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "import",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "open",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Venue",
+      "action": "be",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "see",
+      "target": "Analytics",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "Option",
       "para": []
     }
   ]

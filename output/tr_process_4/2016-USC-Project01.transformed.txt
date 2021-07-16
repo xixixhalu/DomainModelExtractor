@@ -6,106 +6,48 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "phone",
+          "type": "default"
+        },
+        {
+          "name": "priceRange",
+          "type": "default"
+        }
+      ]
     },
     "Retailer": {
       "name": "Retailer",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "website",
+          "type": "default"
+        }
+      ]
+    },
+    "Product": {
+      "name": "Product",
+      "type": [
+        "entity"
+      ],
+      "attributes": [
+        {
+          "name": "shopWidget",
+          "type": "default"
+        }
+      ]
     }
   },
   "relation_list": [],
   "behavior_list": [
     {
       "actor": "User",
-      "action": "collapse",
-      "target": "Sort",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Circle",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "buy",
-      "target": "Clothing",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "LoaderAnimation",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "shop",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "follow",
-      "target": "Trend",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "minimize",
-      "target": "Cost",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Cluster",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "sort",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Version",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Detail",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "UserExperience",
+      "target": "Price",
       "para": []
     },
     {
@@ -117,13 +59,193 @@
     {
       "actor": "User",
       "action": "waste",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "click",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sort",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sort",
+      "target": "CreationTime",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "slide",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sort",
+      "target": "Popularity",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "buy",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "follow",
+      "target": "Trend",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "minimize",
+      "target": "Cost",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "focus",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Circle",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "waste",
       "target": "Time",
       "para": []
     },
     {
       "actor": "User",
-      "action": "viewing",
-      "target": "Page",
+      "action": "shop",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sort",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "ProductImage",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "minimize",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "waste",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "LoaderAnimation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "collapse",
+      "target": "MenuBox",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "buy",
+      "target": "Media",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "shop",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "buy",
+      "target": "Clothing",
+      "para": []
+    },
+    {
+      "actor": "Retailer",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Phone",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Userexperience",
       "para": []
     },
     {
@@ -135,7 +257,49 @@
     {
       "actor": "User",
       "action": "view",
-      "target": "Product",
+      "target": "Page",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "follow",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Default",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "slide",
+      "target": "Display",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Version",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "collapse",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Cluster",
       "para": []
     }
   ]

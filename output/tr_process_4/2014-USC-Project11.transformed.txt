@@ -6,7 +6,16 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "course",
+          "type": "default"
+        },
+        {
+          "name": "registration",
+          "type": "default"
+        }
+      ]
     },
     "CourseAttendee": {
       "name": "CourseAttendee",
@@ -20,7 +29,20 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "calendar",
+          "type": "default"
+        },
+        {
+          "name": "profile",
+          "type": "default"
+        },
+        {
+          "name": "price",
+          "type": "default"
+        }
+      ]
     },
     "Enterprise": {
       "name": "Enterprise",
@@ -31,13 +53,6 @@
     },
     "Administrator": {
       "name": "Administrator",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
-    },
-    "Admin": {
-      "name": "Admin",
       "type": [
         "actor"
       ],
@@ -61,15 +76,63 @@
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "CourseAttendee",
-      "action": "compare",
-      "target": "Price",
+      "actor": "Trainer",
+      "action": "set",
+      "target": "No",
       "para": []
     },
     {
       "actor": "Trainer",
+      "action": "compare",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "request",
+      "target": "Course",
+      "para": []
+    },
+    {
+      "actor": "CourseAttendee",
+      "action": "decide",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "receive",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "CourseAttendee",
+      "action": "pay",
+      "target": "Course",
+      "para": []
+    },
+    {
+      "actor": "Enterprise",
+      "action": "compare",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "see",
-      "target": "reviews",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "adjust",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "see",
+      "target": "",
       "para": []
     },
     {
@@ -80,38 +143,26 @@
     },
     {
       "actor": "User",
-      "action": "request",
-      "target": "Course",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "have",
-      "target": "Dashboard",
+      "action": "search",
+      "target": "",
       "para": []
     },
     {
       "actor": "Trainer",
-      "action": "see",
-      "target": "Rating",
+      "action": "put",
+      "target": "",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "setup",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "move",
-      "target": "People",
+      "actor": "Administrator",
+      "action": "receive",
+      "target": "Change",
       "para": []
     },
     {
       "actor": "CourseAttendee",
-      "action": "see",
-      "target": "Schedule",
+      "action": "review",
+      "target": "",
       "para": []
     },
     {
@@ -121,20 +172,20 @@
       "para": []
     },
     {
-      "actor": "Notification",
-      "action": "receive",
-      "target": "Change",
+      "actor": "User",
+      "action": "request",
+      "target": "",
       "para": []
     },
     {
       "actor": "Trainer",
-      "action": "set",
-      "target": "Minimum",
+      "action": "attach",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Trainer",
-      "action": "offer",
+      "actor": "User",
+      "action": "register",
       "target": "Course",
       "para": []
     },
@@ -145,9 +196,51 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "cancel",
-      "target": "Course",
+      "actor": "Administrator",
+      "action": "receive",
+      "target": "Trainer",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "understand",
+      "target": "Architecture",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "receive",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "adjust",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Trainer",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "update",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "delete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Price",
+      "action": "see",
+      "target": "",
       "para": []
     },
     {
@@ -157,21 +250,147 @@
       "para": []
     },
     {
+      "actor": "Admin",
+      "action": "do",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Trainer",
+      "action": "offer",
+      "target": "Course",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "move",
+      "target": "Class",
+      "para": []
+    },
+    {
+      "actor": "CourseAttendee",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "move",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "Trainer",
       "action": "put",
       "target": "Calendar",
       "para": []
     },
     {
+      "actor": "Administrator",
+      "action": "verify",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CourseAttendee",
+      "action": "pay",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "meet",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Twitter",
+      "para": []
+    },
+    {
+      "actor": "Course",
+      "action": "start",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "Trainer",
-      "action": "compare",
-      "target": "Price",
+      "action": "see",
+      "target": "Review",
+      "para": []
+    },
+    {
+      "actor": "Trainer",
+      "action": "set",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Enterprise",
+      "action": "get",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "cancel",
+      "target": "Course",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "understand",
+      "target": "",
       "para": []
     },
     {
       "actor": "Administrator",
-      "action": "receive",
-      "target": "Request",
+      "action": "update",
+      "target": "CourseInformation",
+      "para": []
+    },
+    {
+      "actor": "Trainer",
+      "action": "offer",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CourseAttendee",
+      "action": "pay",
+      "target": "EventBrite",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Email",
+      "para": []
+    },
+    {
+      "actor": "CourseAttendee",
+      "action": "see",
+      "target": "Schedule",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "search",
+      "target": "Course",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "LinkedIn",
       "para": []
     },
     {
@@ -183,13 +402,13 @@
     {
       "actor": "User",
       "action": "see",
-      "target": "Number",
+      "target": "Variety",
       "para": []
     },
     {
-      "actor": "Administrator",
-      "action": "receive",
-      "target": "AccountRegistrationInformation",
+      "actor": "CourseAttendee",
+      "action": "rate",
+      "target": "CourseAttendee",
       "para": []
     },
     {
@@ -199,15 +418,117 @@
       "para": []
     },
     {
+      "actor": "User",
+      "action": "register",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Trainer",
+      "action": "compare",
+      "target": "Price",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "move",
+      "target": "People",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "filter",
+      "target": "Rating",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "CourseAttendee",
-      "action": "Rate",
-      "target": "CourseAttendee",
+      "action": "compare",
+      "target": "Price",
+      "para": []
+    },
+    {
+      "actor": "Trainer",
+      "action": "offer",
+      "target": "Location",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "analyze",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "schedule",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Trainer",
+      "action": "continue",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "cancel",
+      "target": "",
       "para": []
     },
     {
       "actor": "Enterprise",
+      "action": "get",
+      "target": "Value",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "setup",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "filter",
+      "target": "Review",
+      "para": []
+    },
+    {
+      "actor": "CourseAttendee",
+      "action": "rate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "filter",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "FaceBook",
+      "para": []
+    },
+    {
+      "actor": "CourseAttendee",
       "action": "compare",
-      "target": "Price",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Number",
       "para": []
     },
     {
@@ -217,15 +538,57 @@
       "para": []
     },
     {
-      "actor": "Enterprise",
-      "action": "getting",
-      "target": "Value",
+      "actor": "Course",
+      "action": "offer",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Developer",
-      "action": "understand",
-      "target": "Architecture",
+      "actor": "CourseAttendee",
+      "action": "receive",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Enterprise",
+      "action": "compare",
+      "target": "Price",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "receive",
+      "target": "AccountRegistrationInformation",
+      "para": []
+    },
+    {
+      "actor": "Trainer",
+      "action": "see",
+      "target": "Rating",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "attach",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "inquirycourse",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "setup",
+      "target": "Account",
       "para": []
     }
   ]

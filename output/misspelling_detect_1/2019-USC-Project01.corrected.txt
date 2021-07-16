@@ -5,36 +5,32 @@ As a user, I can look up alumni according to their companies.
 As a user, I can update my social media in order to keep my resume updated.
 As a system, I can fetch the resume from Linkedin for each user and persist it into data storage.
 As a system, the portal will be supported and rendered correctly on mobile devices too.
-As a user, I will be able to see events from #case twitter page on the portal.
+As a user, I will be able to see events from #csse twitter page on the portal.
 As a system, I can fetch research documents from the server and see them in a timestamp sorted way.
 As an admin, I will be able to login to the system.
-As an admin, I will be able to approve a user profile.
-As an admin, I will be able to reject a user profile.
-As a system, I will get updated information from #case social media accounts  .
+As an admin, I will be able to approve/reject a user profile.
+As a system, I will get updated information from #csse social media accounts (fu , twitter).
 The system shall fetch LinkedIn data of approved users automatically and periodically.
-The system shall render correctly on any platform  .
+The system shall render correctly on any platform (desktop, tablets, mobile phones).
 As a user, I can authenticate myself via LinkedIn in order to logininto the system.
 The system shall fetch latest CSSE events from Facebook.
 The system shall export events for the user to add in their calendar.
 As a user, I should be able to find the current professional position of CSSE professors, researchers and alumni.
 As an admin, I can authorize a user's profile, when they first Login.
 As a system, I can render across different platforms.
-As a user, I keep updated with events on social media having #case.
+As a user, I keep updated with events on social media having #csse.
 As a system, I can get user information from LinkedIn.
 As a user, I can sort the research papers to see the ones of my interest.
-As a user, I can see profiles of case professors and alumni.
+As a user, I can see profiles of csse professors and alumni.
 As an admin, I can remove content that is innapropriate for this portal.
 As a user, I can disable my account, so none of my information is visible to other users.
 As a user, my profile picture will automatically upload from my latest LinkedIn profile picture.
 As a user, I can filter the calendar by different categories of events.
 As a user, I can search for users and click directly into their LinkedIn profile.
-As a system, I can highlight events that are trending or have high view counts.
-As a system, I can highlight documents that are trending or have high view counts.
-As a system, I can highlight users that are trending or have high view counts.
+As a system, I can highlight events/documents/users that are trending or have high view counts.
 As a user, I can log in to the portal using LinkedIn.
 The system shall render on mobile responsively.
-The system shall fetch relevant events information from social media  .
+The system shall fetch relevant events information from social media (Twitter/FB).
 As a user, I can search for available research papers.
-As a system, I can fetch tweets from the official CSSE social-media account  .
-As a system, I can fetch communication from the official CSSE social-media account  .
-As a system, I can fetch user information  from LinkedIn.
+As a system, I can fetch tweets/communication from the official CSSE social-media account (Twitter).
+As a system, I can fetch user information (resume, job history) from LinkedIn.

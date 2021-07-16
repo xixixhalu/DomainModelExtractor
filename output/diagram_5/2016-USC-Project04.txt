@@ -3,38 +3,62 @@ hide circle
 class Input<actor> {
 }
 class User<actor> {
+	image
 }
 class Client<actor> {
-}
-class Client {
-	see()
-	train()
-	extract()
-	replace()
-	upload()
-}
-class Image {
+	unix
 }
 class User {
 	choose()
+	detect()
 	upload()
+	want()
 }
 class Tag {
 }
-class Model {
-}
-class classification {
+class Client {
+	extract()
+	run()
+	replace()
+	train()
+	give()
+	see_along()
+	upload()
+	see()
 }
 class Pipeline {
 }
-class Machine {
+class Unix {
 }
-Client --> Model : extract
+class Classification {
+}
+class Image {
+}
+class Set {
+}
+class Model {
+}
+class MachineLearningAlgorithm {
+}
+class Time {
+}
+class Topic {
+}
+Client --> Classification : see
+Client --> Image : see
+Client --> Classification : see_along
+Client --> Topic : give
+User --> User : choose
+Client --> Pipeline : upload
 Client --> Image : upload
-Client --> Machine : replace
-Client --> classification : see
-User --> Image : upload
-User --> Tag : choose
+User --> Time : upload
+Client --> Model : replace
 Client --> Pipeline : train
+Client o-- Unix : run
+Client --> Image : supported_by
+User --> Tag : choose
+Client --> MachineLearningAlgorithm : replace
+Client --> Set : give
+User o-- Image : upload
 
 @enduml

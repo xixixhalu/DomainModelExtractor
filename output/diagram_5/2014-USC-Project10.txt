@@ -1,46 +1,81 @@
 @startuml
 hide circle
 class JobSeeker<actor> {
+	logincredential
+	network
 }
-class JobSeeker {
-	create()
-	mark()
-	email()
-	contact()
-	save()
-	select()
+class Networkcontact {
+	provide()
 }
-class JobNotification {
-}
-class REFERsySystem {
-	fetch()
-}
-class Job {
-}
-class JobSearch {
-}
-class Someone {
+class Reference {
 }
 class JobListing {
 	have()
 }
-class NetworkFriend {
+class Networkfriend {
+	refer()
 }
 class Account {
-	saves()
+	save()
+}
+class JobSeeker {
+	create()
+	see()
+	contact()
+	select()
+	mark()
+	unsubscribe()
+	browse()
+	save()
+	subscribe()
+	email()
+	search()
+}
+class Keyword {
+}
+class Job {
+}
+class JobNotification {
+}
+class Network {
+}
+class REFERsySystem {
+	fetch()
+	connect()
+}
+class Location {
+}
+class EmailNotification {
+}
+class Indeedcom {
+}
+class Favorite {
+}
+class Logincredential {
+}
+class JobSearch {
 }
 class Frequency {
 }
-class LoginCredentials {
+class Someone {
 }
-JobSeeker --> Job : mark
-JobSeeker --> Account : create
-JobSeeker --> Someone : contact
+JobSeeker --> JobListing : browse
+JobSeeker o-- Network : contact
 REFERsySystem --> Job : fetch
-JobSeeker --> JobNotification : email
+JobSeeker --> EmailNotification : unsubscribe
 JobSeeker --> Frequency : select
+Account --> Logincredential : save
+JobSeeker --> Job : mark
+Networkcontact --> Reference : provide
+REFERsySystem --> Indeedcom : connect
+JobSeeker --> Account : create
+JobSeeker --> Job : search
 JobSeeker --> JobSearch : save
-JobListing --> NetworkFriend : have
-Account --> LoginCredentials : saves
+JobSeeker --> JobNotification : email
+JobSeeker --> Keyword : search
+JobSeeker --> Someone : contact
+JobSeeker --> Favorite : mark
+JobSeeker --> Location : search
+JobListing --> Networkfriend : have
 
 @enduml

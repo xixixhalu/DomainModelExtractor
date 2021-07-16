@@ -19,9 +19,10 @@ def UML_graphic(domain_data, output_path):
             entity_name += "<actor>"
         viewer.add_entity(entity_name)
         for attr in v['attributes']:
-            if re.search("\W", attr) != None:
-                attr = '"' + attr + '"'
-            viewer.add_attribute(entity_name, attr)
+            attr_name = attr['name']
+            if re.search("\W", attr_name) != None:
+                attr_name = '"' + attr_name + '"'
+            viewer.add_attribute(entity_name, attr_name)
 
     for behavior in domain_data['behavior_list']:
         actor = behavior['actor']
@@ -35,19 +36,28 @@ def UML_graphic(domain_data, output_path):
             target = '"' + target + '"'
         viewer.add_behavior(actor, action, parameters=behavior['para'])
         if not target == "":
-            uml_asso = UMLAssociation(actor, target, "association", action)
+            try:
+                actor_attrs = [attr['name'] for attr in domain_data['entity_dict'][actor]['attributes']]
+            except:
+                actor_attrs = []
+            r = re.compile(target, re.IGNORECASE)
+            if list(filter(r.match, actor_attrs)):
+                uml_asso = UMLAssociation(actor, target, "aggregation", action)
+            else:
+                uml_asso = UMLAssociation(actor, target, "association", action)
             viewer.add_association(uml_asso)
 
             
     for relation in domain_data['relation_list']:
         source = relation['source']
         dest = relation['dest']
-        ass_type = relation['ass_type']
+        ass_type = relation['type']
+        msg = relation['msg']
         if re.search("\W", source) != None:
             source = '"' + source + '"'
         if re.search("\W", dest) != None:
             dest = '"' + dest + '"'
-        uml_asso = UMLAssociation(source, dest, ass_type)
+        uml_asso = UMLAssociation(source, dest, ass_type, msg)
         viewer.add_association(uml_asso)         
         
     # viewer.save_to_file(path=output_path)

@@ -57,7 +57,7 @@ class Identifier:
 
     def identify(self, sentence):
         self.__output = analyze(sentence)
-        td_result = enhancedTD(self.__output)
+        td_result = pure_enhancedTD(self.__output)
         pt_result = parsePosTag(self.__output)
 
         self.__display('Sentence', sentence)
@@ -67,6 +67,6 @@ class Identifier:
 
 if __name__ == '__main__':
     # sentence = "The system sends the user an email."
-    sentence = "The user will keep the Blog updated."
+    sentence = "User can command the Motor to start."
     identifier = Identifier()
     identifier.identify(sentence)

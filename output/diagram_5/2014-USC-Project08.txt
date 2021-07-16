@@ -2,52 +2,54 @@
 hide circle
 class CaseManager<actor> {
 }
-class CaseManager {
-	save()
-	create()
-	monitor()
-	manage()
-	run()
-	upload()
-}
-class MonitorCase {
+class Time {
+	loge()
 }
 class Activity {
 	have()
 }
-class Category {
+class CaseManager {
+	monitor()
+	create()
+	run()
+	save()
+	upload()
+	manage()
+}
+class CaseFile {
 }
 class Youth {
+	access()
 	have()
 }
-class Access {
+class Category {
 }
-class Time {
+class Frequency {
 }
 class Document {
 }
 class Account {
 }
-class TimeLogingActivity {
+class Case {
 }
-class YouthService {
+class Access {
 }
 class ManagementService {
 }
-class CaseFile {
+class YouthService {
 }
-class Frequency {
-}
-CaseManager --> Account : manage
+CaseManager --> Frequency : run
+CaseManager --> CaseFile : manage
+CaseManager --> Case : upload
+CaseManager --> YouthService : monitor
+Time --> Activity : loge
+CaseManager --> Document : upload
 CaseManager --> ManagementService : create
+Youth --> Access : have
 CaseManager --> Time : save
 Activity --> Category : have
-CaseManager --> MonitorCase : save
-CaseManager --> TimeLogingActivity : save
-CaseManager --> CaseFile : manage
-CaseManager --> Document : upload
-CaseManager --> YouthService : monitor
-CaseManager --> Frequency : run
-Youth --> Access : have
+CaseManager --> Account : manage
+CaseManager --> Case : monitor
+CaseManager --> CaseFile : run
 
 @enduml

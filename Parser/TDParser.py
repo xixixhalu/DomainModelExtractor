@@ -105,7 +105,7 @@ def getType(result, ind1, ind2):  # Retrieve the TD type of two words with the g
 
 if __name__ == '__main__':
     data = json.load(open('3.json'))
-    result = TypeDep(data)
+    result = pure_enhancedTD(data)
     print(result)
     TD = getType(result, 3, 2)
     print(TD)

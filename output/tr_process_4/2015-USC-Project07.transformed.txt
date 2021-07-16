@@ -6,28 +6,72 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "pricing",
+          "type": "default"
+        },
+        {
+          "name": "service",
+          "type": "default"
+        },
+        {
+          "name": "itemprice",
+          "type": "default"
+        },
+        {
+          "name": "product",
+          "type": "default"
+        },
+        {
+          "name": "item",
+          "type": "default"
+        },
+        {
+          "name": "profile",
+          "type": "default"
+        }
+      ]
     },
     "Consumer": {
       "name": "Consumer",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "cart",
+          "type": "default"
+        },
+        {
+          "name": "password",
+          "type": "default"
+        },
+        {
+          "name": "account",
+          "type": "default"
+        },
+        {
+          "name": "reset",
+          "type": "default"
+        },
+        {
+          "name": "searchresult",
+          "type": "default"
+        }
+      ]
     },
     "WebsiteOwner": {
       "name": "WebsiteOwner",
       "type": [
         "actor"
       ],
-      "attributes": []
-    },
-    "WebsiteModerator": {
-      "name": "WebsiteModerator",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "customer",
+          "type": "default"
+        }
+      ]
     },
     "WebsiteEndUser": {
       "name": "WebsiteEndUser",
@@ -37,204 +81,59 @@
       "attributes": []
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "Vendor",
+      "dest": "Consumer",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "WebsiteOwner",
+      "dest": "Vendor",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
     {
-      "actor": "Consumer",
-      "action": "leave",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "WebsiteModerator",
-      "action": "suspend",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "TransactionTotal",
+      "actor": "Transaction",
       "action": "determine",
-      "target": "Vendor",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Consumer",
+      "actor": "WebsiteOwner",
+      "action": "help",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Transaction",
+      "action": "total",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
       "action": "add",
-      "target": "Item",
+      "target": "",
       "para": []
     },
     {
       "actor": "Vendor",
-      "action": "make",
-      "target": "Pricing",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "sort",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "offer",
-      "target": "Promotion",
-      "para": []
-    },
-    {
-      "actor": "WebsiteOwner",
-      "action": "sort",
-      "target": "Vendor",
-      "para": []
-    },
-    {
-      "actor": "WebsiteOwner",
-      "action": "post",
-      "target": "Blog",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "manage",
-      "target": "Cart",
-      "para": []
-    },
-    {
-      "actor": "WebsiteModerator",
-      "action": "post",
-      "target": "Communication",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "gather",
-      "target": "Feedback",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "manage",
-      "target": "ItemPrice",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "provide",
-      "target": "Discount",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "have",
-      "target": "Understanding",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "ship",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "find",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "WebsiteOwner",
-      "action": "suspend",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "VolumeTotal",
-      "action": "determine",
-      "target": "Vendor",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "manage",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "reset",
-      "target": "EmailAddress",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "list",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "do",
-      "target": "Purchase",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "search",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "improve",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "WebsiteOwner",
-      "action": "post",
-      "target": "Communication",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "manage",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "WebsiteModerator",
-      "action": "approve",
-      "target": "VendorAccount",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "get",
-      "target": "Recommendation",
-      "para": []
-    },
-    {
-      "actor": "WebsiteOwner",
-      "action": "approve",
-      "target": "VendorAccount",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "upload",
-      "target": "Video",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "improve",
-      "target": "Service",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "view",
-      "target": "Time",
+      "action": "compare",
+      "target": "Price",
       "para": []
     },
     {
@@ -246,19 +145,97 @@
     {
       "actor": "Consumer",
       "action": "narrow",
-      "target": "SearchResult",
+      "target": "Searchresult",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "sell",
+      "target": "Volume",
       "para": []
     },
     {
       "actor": "Consumer",
-      "action": "gain",
-      "target": "Knowledge",
+      "action": "narrow_down",
+      "target": "Searchresult",
       "para": []
     },
     {
-      "actor": "WebsiteModerator",
+      "actor": "Consumer",
+      "action": "add",
+      "target": "Cart",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "see",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "post",
+      "target": "Issue",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "ensure",
+      "target": "ServiceQuality",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "ensure",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "approve",
+      "target": "Application",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "reset",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "publish",
+      "target": "BlogPost",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "manage",
+      "target": "Cart",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
       "action": "sort",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "get",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "post",
       "target": "Vendor",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "provide",
+      "target": "Discount",
       "para": []
     },
     {
@@ -268,9 +245,27 @@
       "para": []
     },
     {
+      "actor": "Consumer",
+      "action": "find",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "get",
+      "target": "Recommendation",
+      "para": []
+    },
+    {
       "actor": "Vendor",
-      "action": "compare",
-      "target": "Price",
+      "action": "inform",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "see",
+      "target": "",
       "para": []
     },
     {
@@ -281,14 +276,572 @@
     },
     {
       "actor": "Consumer",
-      "action": "get",
-      "target": "PasswordReset",
+      "action": "refer",
+      "target": "",
       "para": []
     },
     {
-      "actor": "WebsiteModerator",
+      "actor": "Vendor",
+      "action": "upload",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "sort",
+      "target": "Vendor",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "sort",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Item",
+      "action": "reach",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "WebsiteEndUser",
+      "action": "find",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "leave",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "view",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "Knowledge",
+      "action": "become",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "improve",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "ship",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "leave",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "rate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "upload",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "provide",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "look",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "leave",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Item",
+      "action": "increase",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Transaction",
+      "action": "determine",
+      "target": "Vendor",
+      "para": []
+    },
+    {
+      "actor": "Event",
+      "action": "happen",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Information",
+      "action": "gain",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "approve",
+      "target": "VendorAccount",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "search",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "participate",
+      "target": "ForumDiscussion",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "gain",
+      "target": "Knowledge",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "make",
+      "target": "Pricing",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "rate",
+      "target": "Vendor",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "look",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Communication",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "communicate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "review",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "add",
+      "target": "ProductCatalog",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "offer",
+      "target": "Promotion",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "communicate",
+      "target": "Consumer",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "reset",
+      "target": "EmailAddress",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
       "action": "post",
-      "target": "Blog",
+      "target": "Consumer",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "sort",
+      "target": "Price",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "improve",
+      "target": "Service",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "publish",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "manage",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "subscribe",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "approve",
+      "target": "Submission",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "narrow_down",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "search",
+      "target": "Health",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "communicate",
+      "target": "Vendor",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "sell",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "buy",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "sort",
+      "target": "Popularity",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "reset",
+      "target": "Reset",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "ship",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "suspend",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "gain",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "gather",
+      "target": "Consumer",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "look_up",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "help",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "search",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "upload",
+      "target": "ProductIntroductiveVideo",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "gather",
+      "target": "Feedback",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "list",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "have",
+      "target": "Understanding",
+      "para": []
+    },
+    {
+      "actor": "Promotion",
+      "action": "attract",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "compare",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "improve",
+      "target": "Future",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "narrow",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "get",
+      "target": "Service",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "post",
+      "target": "Communication",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "suspend",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "manage",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "find",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "improve",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Product",
+      "action": "be",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "manage",
+      "target": "Itemprice",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "convince",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "manage",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "do",
+      "target": "Purchase",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "provide",
+      "target": "Consumer",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "add",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "keep",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "manage",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "offer",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "refer",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "list",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "participate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "do",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "make",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "approve",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "sort",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "gather",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "communicate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "publish",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "post",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Product",
+      "action": "suit",
+      "target": "",
       "para": []
     }
   ]

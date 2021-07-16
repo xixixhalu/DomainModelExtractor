@@ -13,26 +13,104 @@
   "behavior_list": [
     {
       "actor": "ESS",
+      "action": "turn",
+      "target": "Led",
+      "para": []
+    },
+    {
+      "actor": "ESS",
       "action": "drag",
       "target": "Function",
       "para": []
     },
     {
-      "actor": "odule",
-      "action": "detect",
-      "target": "Edge",
+      "actor": "ESS",
+      "action": "drag",
+      "target": "WhileConstruct",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "sense",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "make",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "Instruction",
+      "para": []
+    },
+    {
+      "actor": "Irobot",
+      "action": "go",
+      "target": "",
       "para": []
     },
     {
       "actor": "ESS",
       "action": "create",
-      "target": "Song",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "copy",
+      "target": "ESS",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "turn",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "save",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "Module",
       "para": []
     },
     {
       "actor": "ESS",
       "action": "use",
-      "target": "Sound",
+      "target": "NavigationD",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "turn_on",
+      "target": "Led",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "Note",
       "para": []
     },
     {
@@ -44,49 +122,25 @@
     {
       "actor": "ESS",
       "action": "drag",
-      "target": "LoopConstruct",
-      "para": []
-    },
-    {
-      "actor": "odule",
-      "action": "detect",
-      "target": "Speed",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "turn",
-      "target": "LEDs",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "drag",
       "target": "WaitCondition",
       "para": []
     },
     {
-      "actor": "odule",
-      "action": "detect",
-      "target": "Direction",
+      "actor": "ESS",
+      "action": "copy",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "create",
+      "target": "Song",
       "para": []
     },
     {
       "actor": "ESS",
       "action": "use",
-      "target": "odule",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "drag",
-      "target": "InstructionConstruct",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "drag",
-      "target": "Instruction",
+      "target": "DModule",
       "para": []
     },
     {
@@ -96,15 +150,57 @@
       "para": []
     },
     {
-      "actor": "odule",
-      "action": "detect",
-      "target": "ElapsedTime",
+      "actor": "ESS",
+      "action": "turn_on",
+      "target": "",
       "para": []
     },
     {
-      "actor": "odule",
+      "actor": "ESS",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Odule",
       "action": "detect",
-      "target": "Cliff",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drop",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "reprogram",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "load",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "copy",
+      "target": "Pasteinstruction",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "ESS",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "sense",
+      "target": "Odule",
       "para": []
     }
   ]

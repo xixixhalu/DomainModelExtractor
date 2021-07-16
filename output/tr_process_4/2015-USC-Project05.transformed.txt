@@ -6,7 +6,16 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "area",
+          "type": "default"
+        },
+        {
+          "name": "tour",
+          "type": "default"
+        }
+      ]
     },
     "Owner": {
       "name": "Owner",
@@ -27,50 +36,74 @@
   "behavior_list": [
     {
       "actor": "TourCreator",
-      "action": "promote",
-      "target": "Area",
-      "para": []
-    },
-    {
-      "actor": "TourCreator",
       "action": "upload",
-      "target": "Video",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "delete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "access",
+      "target": "Radius",
       "para": []
     },
     {
       "actor": "TourCreator",
-      "action": "view",
-      "target": "Tour",
-      "para": []
-    },
-    {
-      "actor": "TourCreator",
-      "action": "upload",
-      "target": "Information",
+      "action": "edit",
+      "target": "",
       "para": []
     },
     {
       "actor": "TourTaker",
-      "action": "view",
-      "target": "Information",
+      "action": "click",
+      "target": "TourTaker",
       "para": []
     },
     {
       "actor": "TourTaker",
-      "action": "search",
-      "target": "Tour",
+      "action": "click",
+      "target": "",
       "para": []
     },
     {
       "actor": "TourTaker",
-      "action": "have",
-      "target": "Access",
+      "action": "use",
+      "target": "Value",
       "para": []
     },
     {
       "actor": "TourTaker",
       "action": "select",
       "target": "Tour",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "create",
+      "target": "TourConductorWebsite",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "upload",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "upload",
+      "target": "Stop",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "choose",
+      "target": "List",
       "para": []
     },
     {
@@ -81,8 +114,20 @@
     },
     {
       "actor": "TourCreator",
-      "action": "create",
-      "target": "Tour",
+      "action": "delete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "search",
+      "target": "",
       "para": []
     },
     {
@@ -92,9 +137,117 @@
       "para": []
     },
     {
+      "actor": "TourTaker",
+      "action": "access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "view",
+      "target": "TourCreator",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "click",
+      "target": "Stop",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "access",
+      "target": "Tour",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "promote",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "upload",
+      "target": "Video",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "view",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "view",
+      "target": "Stop",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "promote",
+      "target": "Area",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "create",
+      "target": "Tour",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "search",
+      "target": "Tour",
+      "para": []
+    },
+    {
+      "actor": "TourCreator",
+      "action": "view",
+      "target": "Tour",
+      "para": []
+    },
+    {
       "actor": "Owner",
       "action": "authorize",
       "target": "TourCreator",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "choose",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "authorize",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "TourTaker",
+      "action": "select",
+      "target": "",
       "para": []
     }
   ]

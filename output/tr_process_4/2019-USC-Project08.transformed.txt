@@ -6,42 +6,96 @@
       "type": [
         "actor"
       ],
-      "attributes": []
-    },
-    "Patient": {
-      "name": "Patient",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "fingerprintScanner",
+          "type": "default"
+        }
+      ]
     },
     "Doctor": {
       "name": "Doctor",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "patientHealth",
+          "type": "default"
+        }
+      ]
+    },
+    "PatientUser": {
+      "name": "PatientUser",
+      "type": [
+        "actor"
+      ],
+      "attributes": [
+        {
+          "name": "reminder",
+          "type": "default"
+        }
+      ]
     },
     "DoctorUser": {
       "name": "DoctorUser",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "patient",
+          "type": "default"
+        }
+      ]
     },
     "CareTeam": {
       "name": "CareTeam",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "list",
+          "type": "default"
+        }
+      ]
     },
-    "Admin": {
-      "name": "Admin",
+    "Patient": {
+      "name": "Patient",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "questionnaire",
+          "type": "default"
+        },
+        {
+          "name": "constraint",
+          "type": "default"
+        },
+        {
+          "name": "healthstatus",
+          "type": "default"
+        },
+        {
+          "name": "doctor",
+          "type": "default"
+        },
+        {
+          "name": "timeline",
+          "type": "default"
+        },
+        {
+          "name": "surgery",
+          "type": "default"
+        },
+        {
+          "name": "recoveryprocess",
+          "type": "default"
+        }
+      ]
     },
     "HealthcareExecutive": {
       "name": "HealthcareExecutive",
@@ -50,110 +104,157 @@
       ],
       "attributes": []
     },
-    "App": {
-      "name": "App",
+    "Hybrid": {
+      "name": "Hybrid",
       "type": [
         "actor"
       ],
       "attributes": []
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "Educationcontent",
+      "dest": "Recovery",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Educationcontent",
+      "dest": "Preparation",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
-    {
-      "actor": "Patient",
-      "action": "take",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "get",
-      "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "modify",
-      "target": "Prescription",
-      "para": []
-    },
-    {
-      "actor": "CareTeam",
-      "action": "add",
-      "target": "Patient",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "get",
-      "target": "Ride",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "completed",
-      "target": "Task",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "get",
-      "target": "SMSNotification",
-      "para": []
-    },
-    {
-      "actor": "DoctorUser",
-      "action": "view",
-      "target": "QuestionnaireResponse",
-      "para": []
-    },
     {
       "actor": "HealthcareExecutive",
       "action": "see",
-      "target": "Data",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "add",
-      "target": "Entry",
+      "actor": "Patient",
+      "action": "snooze",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Picture",
-      "action": "see",
-      "target": "Difference",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "remove",
-      "target": "Entry",
+      "actor": "Doctor",
+      "action": "register",
+      "target": "",
       "para": []
     },
     {
       "actor": "Patient",
       "action": "receive",
-      "target": "Recommendation",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "completed",
-      "target": "Task",
+      "target": "",
       "para": []
     },
     {
       "actor": "Patient",
-      "action": "bookscancels",
+      "action": "fill",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CareTeam",
+      "action": "input",
+      "target": "Recommendation",
+      "para": []
+    },
+    {
+      "actor": "PatientUser",
+      "action": "receive",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "see",
+      "target": "History",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "take",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "PatientUser",
+      "action": "complete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "HealthcareExecutive",
+      "action": "study",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "need",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Staff",
+      "action": "enroll",
+      "target": "Step",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "dismiss",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "PatientHealth",
+      "action": "decline",
+      "target": "Surgery",
+      "para": []
+    },
+    {
+      "actor": "PatientUser",
+      "action": "receive",
       "target": "Appointment",
       "para": []
     },
     {
-      "actor": "Book",
-      "action": "get",
-      "target": "Notification",
+      "actor": "CareTeam",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "update",
+      "target": "ContactInformation",
+      "para": []
+    },
+    {
+      "actor": "Educationcontent",
+      "action": "help",
+      "target": "Preparation",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "do",
+      "target": "App",
       "para": []
     },
     {
@@ -164,14 +265,62 @@
     },
     {
       "actor": "Patient",
-      "action": "do",
-      "target": "Questionnaire",
+      "action": "add",
+      "target": "Reminder",
       "para": []
     },
     {
-      "actor": "Doctor",
-      "action": "register",
-      "target": "Patient",
+      "actor": "Patient",
+      "action": "add",
+      "target": "Addition",
+      "para": []
+    },
+    {
+      "actor": "PatientUser",
+      "action": "indicate",
+      "target": "PatientUser",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "fill",
+      "target": "Instruction",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "choose",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "get",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "get",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "receive",
+      "target": "Resource",
+      "para": []
+    },
+    {
+      "actor": "PatientUser",
+      "action": "indicate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "miss",
+      "target": "",
       "para": []
     },
     {
@@ -181,87 +330,27 @@
       "para": []
     },
     {
-      "actor": "CareTeam",
-      "action": "input",
-      "target": "Information",
-      "para": []
-    },
-    {
       "actor": "Patient",
       "action": "get",
-      "target": "Notification",
+      "target": "Book",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "modify",
+      "target": "",
       "para": []
     },
     {
       "actor": "Patient",
-      "action": "add",
-      "target": "PostopReminder",
-      "para": []
-    },
-    {
-      "actor": "CareTeam",
-      "action": "remove",
-      "target": "Patient",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "install",
-      "target": "App",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "TimeNotification",
+      "action": "do",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "answer",
-      "target": "Amount",
-      "para": []
-    },
-    {
-      "actor": "CareTeam",
-      "action": "input",
-      "target": "Recommendation",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "snooze",
-      "target": "Reminder",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "answer",
-      "target": "Amount",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "reschedule",
-      "target": "Appointment",
-      "para": []
-    },
-    {
-      "actor": "HealthcareExecutive",
-      "action": "see",
-      "target": "Trend",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "cancel",
-      "target": "Appointment",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "add",
-      "target": "Pre",
+      "target": "",
       "para": []
     },
     {
@@ -272,50 +361,80 @@
     },
     {
       "actor": "Patient",
-      "action": "update",
-      "target": "ContactInformation",
+      "action": "see",
+      "target": "Constraint",
       "para": []
     },
     {
       "actor": "Patient",
-      "action": "track",
-      "target": "graphically",
+      "action": "guide",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "access",
-      "target": "Database",
+      "actor": "Patient",
+      "action": "receive",
+      "target": "Recommendation",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "snooze",
+      "target": "Reminder",
       "para": []
     },
     {
       "actor": "DoctorUser",
       "action": "view",
-      "target": "SurveyResponse",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "enroll",
-      "target": "Patient",
+      "target": "",
       "para": []
     },
     {
       "actor": "Patient",
-      "action": "save",
-      "target": "HealthRecommendationArticle",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "do",
+      "action": "fill",
       "target": "Survey",
       "para": []
     },
     {
-      "actor": "Book",
-      "action": "reschedules",
-      "target": "Appointment",
+      "actor": "Admin",
+      "action": "remove",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "track",
+      "target": "Healthstatus",
+      "para": []
+    },
+    {
+      "actor": "DoctorUser",
+      "action": "check",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "complete",
+      "target": "Task",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "PatientHealth",
+      "action": "decline",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "PatientUser",
+      "action": "receive",
+      "target": "Reminder",
       "para": []
     },
     {
@@ -325,9 +444,297 @@
       "para": []
     },
     {
+      "actor": "Picture",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "save",
+      "target": "Healthrecommendationarticle",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "take",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "get",
+      "target": "Ride",
+      "para": []
+    },
+    {
+      "actor": "Educationcontent",
+      "action": "help",
+      "target": "Surgery",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "modify",
+      "target": "Prescription",
+      "para": []
+    },
+    {
+      "actor": "CareTeam",
+      "action": "input",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "login",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "update",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "HealthcareExecutive",
+      "action": "see",
+      "target": "Outcome",
+      "para": []
+    },
+    {
+      "actor": "PatientUser",
+      "action": "complete",
+      "target": "Task",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "install",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "get",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "compare",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Educationcontent",
+      "action": "help",
+      "target": "Recovery",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "access",
+      "target": "Database",
+      "para": []
+    },
+    {
+      "actor": "Educationcontent",
+      "action": "help",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Book",
+      "action": "reschedule",
+      "target": "Appointment",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "get",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "save",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "DoctorUser",
+      "action": "view",
+      "target": "Survey",
+      "para": []
+    },
+    {
+      "actor": "Staff",
+      "action": "enroll",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "get",
+      "target": "Reward",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "get",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "remove",
+      "target": "Backend",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Staff",
+      "action": "enroll",
+      "target": "Patient",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "do",
+      "target": "Questionnaire",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "install",
+      "target": "SmartphoneApp",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "take",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "login",
+      "target": "FingerprintScanner",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "track",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "App",
+      "action": "do",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "rate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Book",
+      "action": "reschedule",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "Patient",
       "action": "have",
       "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "CareTeam",
+      "action": "input",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "PatientUser",
+      "action": "receive",
+      "target": "TimeNotification",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "remove",
+      "target": "Entry",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "answer",
+      "target": "Amount",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "complete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "login",
+      "target": "Application",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "access",
+      "target": "Educationcontent",
       "para": []
     }
   ]

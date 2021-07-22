@@ -131,10 +131,13 @@ def correctFile(file_origin_lines, file_preprocess_lines, correct_dict):
 
 
 def word_count(file):
+    regex = "((?!-)[A-Za-z0-9-]" + "{1,63}(?<!-)\\.)" + "+[A-Za-z]{2,6}"
+    pattern = re.compile(regex)
     with open(file, "r") as myfile:
         sentence_list=myfile.readlines()
         for indx,line in enumerate(sentence_list):
             line = line.strip().lower()
+            line = re.sub(pattern, '', line) # remove domain name and URL in sentences
             del_str = string.punctuation
             replace_punctuation = ' ' * len(del_str)
             line = line.translate(str.maketrans(del_str, replace_punctuation))
@@ -169,21 +172,24 @@ def spell_check(file, glossary_file):
     spell.word_frequency.load_words(glossary)
 
 
-    for i, j in word_count(file):
+    for i, idx in word_count(file):
         wordFreq = word_freq_count(i, 1)
         misspelled = spell.unknown(wordFreq)
         if misspelled:
             for word in misspelled:
                 if len(word) > 1:
                     word_list.append(word)
-                    res.append((word, j))
+                    res.append((word, idx))
+
+    # To remove the words that appear once in the single sentence but multiple times in whole file
+
     for word in word_list:
         if word_list.count(word) == 1:
             update_word_list.append(word)
 
-    for word, line in res:
+    for word, idx in res:
         if word in update_word_list:
-            update_res[word] = line
+            update_res[word] = idx
 
     if update_res:
         msg = ""

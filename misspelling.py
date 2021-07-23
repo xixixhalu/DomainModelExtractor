@@ -8,15 +8,16 @@ import itertools
 import spacy
 import en_core_web_sm
 global nlp
-
 from util.logger import Logger
 global logger
-
+import string
+import nltk
 import argparse
 
 CHECK_EDIT_DISTANCE = 1
-CORRECT_WORD_FREQUENCY = 2
+#CORRECT_WORD_FREQUENCY = 2
 
+'''
 def frequentWordGen (lines) :
     file_freq_word_dict = {}
     noun_word_list = []
@@ -38,12 +39,12 @@ def frequentWordGen (lines) :
     # print(noun_word_list)
     return file_freq_word_dict, noun_word_list
 
-def spellcheck (file_freq_word_dict, noun_word_list) :
-    '''
-    Bo:
-    Add those words which appear more than CORRECT_WORD_FREQUENCY times to the dictionary.
-    Check those words which appear only once.
-    '''
+def spellcheck (file_freq_word_dict, noun_word_list,check_file) :
+    
+    #Bo:
+    #Add those words which appear more than CORRECT_WORD_FREQUENCY times to the dictionary.
+    #Check those words which appear only once.
+
     correct_dict = {}
     noun_list = []
     word_line = {}
@@ -59,6 +60,7 @@ def spellcheck (file_freq_word_dict, noun_word_list) :
     incorrect_candidate = spell_checker.unknown([w["lemma"] for w in noun_word_list])
 
     # Apply glossary
+    res = check_all_word(check_file)
     glossary_set = set()
     incorrect_words = set(incorrect_candidate)
     with open("./Glossary/glossary.txt", 'r') as myfile:
@@ -71,6 +73,7 @@ def spellcheck (file_freq_word_dict, noun_word_list) :
             incorrect_words.remove(unknown_words)
 
     # Prepare logger message
+    # Add incorrect word line index
     incorrect_dict = {}
     incorrect_candidate_mapper = {}
     for w in noun_word_list:
@@ -79,12 +82,12 @@ def spellcheck (file_freq_word_dict, noun_word_list) :
         incorrect_dict[w] = file_freq_word_dict[incorrect_candidate_mapper[w]]
 
 
-    if incorrect_words:
+    if incorrect_words or res:
         msg = ""
         for w in incorrect_dict:
             lines = [str(idx+1) for idx in incorrect_dict[w]]
             msg += w + ", line " + ','.join(lines) + '\n'
-        logger.info("Unknown words: \n" + msg)
+        logger.info("Unknown words: \n" + msg+str(res))
     else:
         logger.info("No Unknown words")
         
@@ -109,12 +112,13 @@ def spellcheck (file_freq_word_dict, noun_word_list) :
     #     correct_dict[word] = spell.correction(word)
     #     correct_candidate_dict[word] = spell.candidates(word)
     # return correct_dict, correct_candidate_dict
+'''
 
-def correctFile(file_origin_lines, file_preprocess_lines, correct_dict, file_freq_word_dict):
+def correctFile(file_origin_lines, file_preprocess_lines, correct_dict):
     correct_lines = []
     for idx in file_preprocess_lines:
         for sentence in file_preprocess_lines[idx]:
-            correct_line = sentence
+            correct_line = sentence.lower()
             for word in correct_dict:
                 # Bo: temporary matching pattern, may not suit for all cases due to capital letters and stemming/original format.
                 pattern = '(\W|^)' + re.escape(word) + '\\({0,1}e{0,1}s{0,1}\\){0,1}(\W)'
@@ -124,6 +128,90 @@ def correctFile(file_origin_lines, file_preprocess_lines, correct_dict, file_fre
             correct_lines.append(correct_line)
 
     return correct_lines
+
+
+def word_count(file):
+    regex = "((?!-)[A-Za-z0-9-]" + "{1,63}(?<!-)\\.)" + "+[A-Za-z]{2,6}"
+    pattern = re.compile(regex)
+    with open(file, "r") as myfile:
+        sentence_list=myfile.readlines()
+        for indx,line in enumerate(sentence_list):
+            line = line.strip().lower()
+            line = re.sub(pattern, '', line) # remove domain name and URL in sentences
+            del_str = string.punctuation
+            replace_punctuation = ' ' * len(del_str)
+            line = line.translate(str.maketrans(del_str, replace_punctuation))
+            fdist1 = nltk.FreqDist(line.split())
+            yield [fdist1.most_common(),indx+1]
+
+def word_freq_count(wordCount, n):
+    # output words with frequency n
+    ret = []
+    for word, freq in wordCount:
+        if freq == n:
+            ret.append(word)
+    return ret
+
+def read_glossary(file):
+    # output a list of strings in glossary file
+    with open(file, "r") as myfile:
+        ret = myfile.read().lower().split('\n')
+    return ret
+
+
+def spell_check(file, glossary_file):
+    spell = SpellChecker(language='en', case_sensitive=True, distance=CHECK_EDIT_DISTANCE)
+    correct_dict = {}
+    res = []
+    word_list = []
+    update_word_list = []
+    update_res = {}
+
+    # load glossary
+    glossary = read_glossary(glossary_file)
+    spell.word_frequency.load_words(glossary)
+
+
+    for i, idx in word_count(file):
+        wordFreq = word_freq_count(i, 1)
+        misspelled = spell.unknown(wordFreq)
+        if misspelled:
+            for word in misspelled:
+                if len(word) > 1:
+                    word_list.append(word)
+                    res.append((word, idx))
+
+    # To remove the words that appear once in the single sentence but multiple times in whole file
+
+    for word in word_list:
+        if word_list.count(word) == 1:
+            update_word_list.append(word)
+
+    for word, idx in res:
+        if word in update_word_list:
+            update_res[word] = idx
+
+    if update_res:
+        msg = ""
+        for w in update_res:
+            #msg += w[0] + ", line " + str(w[1]) + '\n'
+            msg += w + ", line " + str(update_res[w]) + '\n'
+        logger.info("Unknown words: \n" + msg)
+    else:
+        logger.info("No Unknown words")
+
+    for candidate in update_res:
+        #correction = spell.correction(candidate[0])
+        #if candidate[0].lower() == correction.lower():
+
+        correction = spell.correction(candidate)
+        if candidate.lower() == correction.lower():
+            continue
+        else:
+            correct_dict[candidate] = correction
+
+    return correct_dict
+
 
 if __name__ == '__main__' :
 
@@ -155,6 +243,8 @@ if __name__ == '__main__' :
         # output_path = './output/misspelling_detect_1/' + filename
         nlp = spacy.load('en_core_web_sm')
         logger = Logger(output_path + '_log.txt')
+        check_file=input_path+'.txt'
+        glossary_file="./Glossary/glossary.txt"
 
         file_origin_lines = {}
         file_preprocess_lines = {}
@@ -184,10 +274,10 @@ if __name__ == '__main__' :
         #         # print(line_no_slash_list)
         #         file_preprocess_lines[idx] = line_no_slash_list
 
-        file_freq_word_dict, noun_word_list = frequentWordGen(file_preprocess_lines)
-        correct_dict = spellcheck(file_freq_word_dict, noun_word_list)
+        #file_freq_word_dict, noun_word_list = frequentWordGen(file_preprocess_lines)
 
-        correct_lines = correctFile(file_origin_lines, file_preprocess_lines, correct_dict, file_freq_word_dict)
+        correct_dict = spell_check(check_file, glossary_file)
+        correct_lines = correctFile(file_origin_lines, file_preprocess_lines, correct_dict)
         with open(output_path + '.corrected.txt', 'w') as outfile:
             outfile.writelines(correct_lines)
 

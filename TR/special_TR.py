@@ -149,7 +149,7 @@ def S_TR2(domain):
                 b.actor = pair[1]
             if b.target == pair[0]:
                 b.target = pair[1]
-        for key in enentity_dict.keys():
+        for key in entity_dict.keys():
             if key == pair[0]:
                 domain.add_relation(source=pair[0], dest=[1], ass_type='generalization')
 

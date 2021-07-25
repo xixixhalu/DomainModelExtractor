@@ -5,7 +5,7 @@ sys.path.append('../')
 from adapter import *
 import json
 
-sentence = 'SporTechB.IContractor can update the PlayerData as the Season progresses .'
+sentence = 'As an admin, I can delete / deactivate Users.'
 
 output = analyze(sentence)
 

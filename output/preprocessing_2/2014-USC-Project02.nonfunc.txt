@@ -1,24 +1,24 @@
-GM's Data can seamlessly integrate with the SporTechB.I.System in a standard compliant Manner . .
-GM's Data can seamlessly integrate with the SporTechB.I.System in a standard compliant Manner . .
-GM's Data can seamlessly integrate with the SporTechB.I.System in a standard compliant Manner . .
-GM's Data can seamlessly integrate with the SporTechB.I.System in a standard compliant Manner . .
-SporTechB.I.Contractor can add , delete , update the specific Website visited , Field to capture from the Website and Frequency of CrawlerRefresh for each specified Website .
-SporTechB.I.Contractor can add , delete , update the specific Website visited , Field to capture from the Website and Frequency of CrawlerRefresh for each specified Website .
-SporTechB.I.Contractor can add , delete , update the specific Website visited , Field to capture from the Website and Frequency of CrawlerRefresh for each specified Website .
-SporTechB.I.Contractor can add , delete , update the specific Website visited , Field to capture from the Website and Frequency of CrawlerRefresh for each specified Website .
-With this Condition in Place , Manger can monitor real - TimeTwitter , Facebook , InstagramFeed , Reaction from key Source in a continuous Manner and , or on Demand .
-With this Condition in Place , Manger can monitor real - TimeTwitter , Facebook , InstagramFeed , Reaction from key Source in a continuous Manner and , or on Demand .
-With this Condition in Place , Manger can monitor real - TimeTwitter , Facebook , InstagramFeed , Reaction from key Source in a continuous Manner and , or on Demand .
-The System shall serve as the " NerveCenter " for the STBIEcosystem . It can ingest all kinds of structured Data , both automatically and on Demand .
-The System shall serve as the " NerveCenter " for the STBIEcosystem . It can ingest all kinds of structured Data , both automatically and on Demand .
-The System shall serve as the " NerveCenter " for the STBIEcosystem . It can ingest all kinds of structured Data , both automatically and on Demand .
-Customer can import existing Data from an ExcelSheet by dragging and dropping it into STBI so that Customer can update , add Data to Customer's current Model and see the Change .
-SoccerCoach can configure the Schedule for the Crawler to run at predefined Time .
-SoccerCoach can configure the Schedule for the Crawler to run at predefined Time .
-SoccerCoach can specify which Website the Crawler should visit via the WebsiteGui .
-SoccerCoach can specify which Website the Crawler should visit via the WebsiteGui .
-SoccerCoach can specify which Website the Crawler should visit via the WebsiteGui .
-SoccerCoach can specify which Website the Crawler should visit via the WebsiteGui .
-SoccerCoach can specify which Website the Crawler should visit via the WebsiteGui .
-SoccerCoach can specify which Website the Crawler should visit via the WebsiteGui .
-SoccerCoach can specify which Website the Crawler should visit via the WebsiteGui .
+Webcrawler must be able to visit public Site , extract simple structured relational Data , generate PostgreSQLINSERTStatement on a configurable Schedule , and check for Conflict within the existing SqlDb .
+The Crawler must be able to perform the above Function for all common Form of relational Data
+If there is no Data existing for the unique Identifier for the Row within the Table , execute the InsertStatement for the Dataset .
+If there is a Conflict the Application must be able to generate and execute a PostgreSQLUpdateStatement for the " crawled " Dataset .
+WebcrawlerApp must function in a persistent Manner - if we set it using the above Gui , it should run without Intervention if there are no Error .
+The System must be able to function on a major open - SourceOs .
+The Crawler should be able identify and ingest into a Hadoop , Hive , PigNoSQLDataStore , unstructured Data , on a configurable Schedule , and check for Conflict within the existing DataStore .
+All WebcrawlerFunctionality from the relational DataBaseIngest should be mirrored for unstructured Data ingest . .
+The Crawler shall Self correct simple Error it encounters during the Sql ingest Process .
+The Crawler should have some kind of VisualizationTool which allows Engineer to view a Snapshot of the Interaction between the Crawler , Datasource and STBIDatabase .
+The Crawler should search for new Datasource automatically .
+There should be a Portal that allows the User to drag and drop Information in many different Format and then the Crawler should organize , sort and identify the Datatype and then ingest into the PostgreSQLDb .
+This would remove most of the Work that a Human would have to do to interact with the Data before it is ready to be analyzed and visualized .
+The System shall have two Portal . One would be for the SporTechB.IContractor and would have many more advanced Feature and Control . The Second would be a simple , Web - based , Customer - FacingPortal so that the Customer could ingest their Data " Self - Service " and see the Impact in their App , Dashboard immediately .
+the Crawler should organize , sort and identify the Datatype and then ingest into the Db .
+The WebCrawler shall gather Video from the Page being crawled and ingest into STBI as is so that the Coach and Fan is able to watch the relevant VideosPa . .
+The Webcrawler shall gather HeadShot of Player from the BiographyPage on the Website being crawled so that the Player 's Picture can be shown on the Report being generated .
+The WebCrawler shall crawl Youtube to gather Video of specific Player .
+The WebCrawler shall get Comment , Name and Number of members , likes from specified FacebookPage .
+The WebCrawler shall get Number of Follower , the Comment and the Number of Retweet for a specified TwitterAccount .
+The WebCrawler shall gather InstagramPicture , Number of Likes and the Comment from particular InstagramAccount .
+The WebCrawler shall gather PlayerInformation from the Website in the WebsiteList .
+The WebCrawler shall gather TeamInformation from the Website in the WebsiteList .
+The Crawler shall ingest crawled Data into PostgreSQLDatabase .

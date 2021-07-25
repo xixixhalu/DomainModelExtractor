@@ -144,15 +144,6 @@ class ISDomain:
     def get_name(self):
         return self.__name
 
-    def get_relation(self):
-        return self.__relation_list
-
-    def get_entity(self):
-        return self.__entity_dict
-
-    def get_behavior(self):
-        return self.__behavior_list
-
     # Relation ops
     def add_relation(self, source, dest, ass_type="default", msg='', multiplicity=('1','1'), para=[]):
         # if actor not in self.__entity_dict:

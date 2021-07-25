@@ -49,8 +49,8 @@
   },
   "relation_list": [
     {
-      "source": "Data",
-      "dest": "SporTechBISystem",
+      "source": "Manger",
+      "dest": "Condition",
       "type": "association",
       "msg": "supported_by",
       "multiplicity": [
@@ -60,8 +60,8 @@
       "para": []
     },
     {
-      "source": "Manger",
-      "dest": "Condition",
+      "source": "Data",
+      "dest": "SporTechBISystem",
       "type": "association",
       "msg": "supported_by",
       "multiplicity": [
@@ -73,14 +73,8 @@
   ],
   "behavior_list": [
     {
-      "actor": "Customer",
-      "action": "import",
-      "target": "ExcelSheet",
-      "para": []
-    },
-    {
-      "actor": "Customer",
-      "action": "see",
+      "actor": "GM",
+      "action": "visualize",
       "target": "",
       "para": []
     },
@@ -92,25 +86,19 @@
     },
     {
       "actor": "Customer",
-      "action": "import",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Manger",
-      "action": "monitor",
-      "target": "Condition",
-      "para": []
-    },
-    {
-      "actor": "SporTechBIContractor",
-      "action": "add",
+      "action": "manage",
       "target": "",
       "para": []
     },
     {
       "actor": "GM",
-      "action": "affect",
+      "action": "build",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "import",
       "target": "",
       "para": []
     },
@@ -121,15 +109,15 @@
       "para": []
     },
     {
-      "actor": "Manger",
-      "action": "monitor",
-      "target": "Source",
+      "actor": "GM",
+      "action": "build",
+      "target": "Roster",
       "para": []
     },
     {
-      "actor": "Customer",
-      "action": "manage",
-      "target": "Need",
+      "actor": "Manger",
+      "action": "monitor",
+      "target": "Condition",
       "para": []
     },
     {
@@ -139,8 +127,32 @@
       "para": []
     },
     {
+      "actor": "Manger",
+      "action": "monitor",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "GM",
-      "action": "extract",
+      "action": "make",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SoccerCoach",
+      "action": "specify",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "GM",
+      "action": "affect",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Data",
+      "action": "integrate",
       "target": "",
       "para": []
     },
@@ -151,9 +163,9 @@
       "para": []
     },
     {
-      "actor": "GM",
-      "action": "build",
-      "target": "",
+      "actor": "Manger",
+      "action": "monitor",
+      "target": "Demand",
       "para": []
     },
     {
@@ -165,31 +177,25 @@
     {
       "actor": "GM",
       "action": "extract",
-      "target": "PlayerValue",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "import",
+      "target": "ExcelSheet",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "add",
+      "target": "Model",
       "para": []
     },
     {
       "actor": "GM",
       "action": "make",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Customer",
-      "action": "update",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SoccerCoach",
-      "action": "specify",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Data",
-      "action": "integrate",
-      "target": "SporTechBISystem",
+      "target": "Decision",
       "para": []
     },
     {
@@ -199,20 +205,14 @@
       "para": []
     },
     {
-      "actor": "Manger",
-      "action": "monitor",
-      "target": "Demand",
+      "actor": "Data",
+      "action": "integrate",
+      "target": "SporTechBISystem",
       "para": []
     },
     {
-      "actor": "GM",
-      "action": "build",
-      "target": "Roster",
-      "para": []
-    },
-    {
-      "actor": "Customer",
-      "action": "add",
+      "actor": "SporTechBIContractor",
+      "action": "update",
       "target": "",
       "para": []
     },
@@ -223,26 +223,14 @@
       "para": []
     },
     {
-      "actor": "Data",
-      "action": "integrate",
+      "actor": "SporTechBIContractor",
+      "action": "add",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "GM",
-      "action": "make",
-      "target": "Decision",
       "para": []
     },
     {
       "actor": "SoccerCoach",
       "action": "configure",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GM",
-      "action": "visualize",
       "target": "",
       "para": []
     },
@@ -253,9 +241,45 @@
       "para": []
     },
     {
+      "actor": "Customer",
+      "action": "import",
+      "target": "Data",
+      "para": []
+    },
+    {
       "actor": "GM",
       "action": "extract",
-      "target": "Data",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "GM",
+      "action": "extract",
+      "target": "PlayerValue",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "update",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "manage",
+      "target": "Need",
+      "para": []
+    },
+    {
+      "actor": "Manger",
+      "action": "monitor",
+      "target": "Source",
       "para": []
     },
     {
@@ -266,31 +290,7 @@
     },
     {
       "actor": "Customer",
-      "action": "add",
-      "target": "Model",
-      "para": []
-    },
-    {
-      "actor": "Customer",
-      "action": "import",
-      "target": "Data",
-      "para": []
-    },
-    {
-      "actor": "Customer",
-      "action": "manage",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SporTechBIContractor",
-      "action": "update",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Manger",
-      "action": "monitor",
+      "action": "see",
       "target": "",
       "para": []
     }

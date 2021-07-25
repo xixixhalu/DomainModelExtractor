@@ -16,8 +16,9 @@ global logger
 
 from util.IS import *
 
-from TR.special_TR import *
+from TR import *
 
+STOP_WORDS = {'system', 'tool', 'website'}
 
 class Transformation:
     def __init__(self, filename, ssr_input_path, pre_input_path):
@@ -108,19 +109,30 @@ class Transformation:
                 # Iterate matched variables
                 variables = {}
                 for var, idx in s_result.items():
-                    word = s_index[str(idx)]
-                    r = re.compile(re.sub(r'\W+', '', word), re.IGNORECASE)
-                    rst_list = list(filter(r.match, list(self.domain.entity_asdict().keys())))
-                    if rst_list:
-                        variables[var] = rst_list[0]
-                    else:
-                        variables[var] = s_index[str(idx)]
+                    variables[var] = s_index[str(idx)]
 
                 self.transform(action, variables, transformation_rule)
 
     def extra_operation(self):
-        S_TR1(self.domain)
-        S_TR2(self.domain)
+        # filter stop words
+        for entity in self.domain.entity_asdict():
+            if entity.lower() in STOP_WORDS:
+                self.domain.delete_entity(entity)
+        for behavior in self.domain.behavior_asdict():
+            actor = behavior['actor']
+            target = behavior['target']
+            if actor.lower() in STOP_WORDS:
+                self.domain.delete_behavior(actor=actor)
+            if target.lower() in STOP_WORDS:
+                self.domain.delete_behavior(target=target)
+        for relation in self.domain.relation_asdict():
+            source = relation['source']
+            dest = relation['dest']
+            if source.lower() in STOP_WORDS:
+                self.domain.delete_relation(actor=source)
+            if dest.lower() in STOP_WORDS:
+                self.domain.delete_relation(dest=dest)
+
 
 
 if __name__ == '__main__':

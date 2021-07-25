@@ -44,27 +44,26 @@ class PreProcessor:
         line = file.readline().strip()
         while line:
             # print("Original sentence: ", line)
-            meta = []
-
-            # maps combined noun to the original nouns
-            noun_map = {}
-            acts = []
-            # try:
-            line_no_bracket = self.removeBracket(line)
-            # except:
-            #     logger.error("removeBracket: Cannot process sentence > " + line)
-            #     line_no_bracket = line
-            # try:
-            line_no_slash = self.removeSlash(line_no_bracket)
-            # except:
-            #     logger.error("removeSlash: Cannot process sentence > " + line)
-            #     lines_no_slash = line_no_bracket
-
-            
-            combine_nouns_line = self.combine_nouns(line_no_slash, meta, noun_map)
-            replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)
-            #print(line)
             if re.search(FUNC_RE, line):
+                meta = []
+
+                # maps combined noun to the original nouns
+                noun_map = {}
+                acts = []
+                try:
+                    line_no_bracket = self.removeBracket(line)
+                except:
+                    logger.error("removeBracket: Cannot process sentence > " + line)
+                    line_no_bracket = line
+                try:
+                    line_no_slash = self.removeSlash(line_no_bracket)
+                except:
+                    logger.error("removeSlash: Cannot process sentence > " + line)
+                    lines_no_slash = line_no_bracket
+
+                combine_nouns_line = self.combine_nouns(line_no_slash, meta, noun_map)
+                replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)
+            
                 func_output.write(replace_role_line + "\n")
                 self.count_func += 1
             else:
@@ -122,6 +121,7 @@ class PreProcessor:
         # print("POS Tags: ", pt)
         td_key = pure_enhancedTD(nlp_output)
         # print("Type Dependencies: ", td_key)
+        tokens = nlp_output['sentences'][0]['tokens']
 
         # Note: if you want to combine other words, please add them as a list of intervals so that the function
         # 'merge_intervals' can process it.
@@ -130,7 +130,7 @@ class PreProcessor:
         # Bo: no need to combine nmod
         # intervals.extend(self.combine_nmod(td_key))
         intervals = self.merge_intervals(intervals)
-        tokens = nlp_output['sentences'][0]['tokens']
+        
 
         intervals = self._check_intervals(intervals, tokens)
 
@@ -294,6 +294,12 @@ class PreProcessor:
     def combine_JJs_NNs(self, line_index, pt):
         # Add all NN or NNP or NNS or NNPS to a set
         nouns = set()
+        # dashes = set()
+
+        # if 'HYPH' in pt:
+        #     for pair in pt['HYPH']:
+        #         if tokens[pair[0] - 1]['originalText'] == '-':
+        #             dashes.add(pair[0])
         if 'NN' in pt:
             for pair in pt['NN']:
                 nouns.add(pair[0])

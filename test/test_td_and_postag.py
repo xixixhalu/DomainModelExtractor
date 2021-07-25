@@ -67,6 +67,6 @@ class Identifier:
 
 if __name__ == '__main__':
     # sentence = "The system sends the user an email."
-    sentence = "User can command the Motor to start."
+    sentence = "Customer can buy Apple, Pear, Banana."
     identifier = Identifier()
     identifier.identify(sentence)

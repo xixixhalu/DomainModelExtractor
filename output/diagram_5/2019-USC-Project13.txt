@@ -1,135 +1,167 @@
 @startuml
 hide circle
-class Admin<actor> {
-}
 class Mentee<actor> {
+	profile
+	password
+	information
+	detail
+	criterion
 }
 class Mentor<actor> {
+	availability
+	interaction
+	mentee
+	password
+	information
+	detail
+	trainingphaseactivity
+	criterion
 }
 class User<actor> {
 }
 class Developer<actor> {
 }
-class Enduser<actor> {
+class End<actor> {
 }
 class Administrator<actor> {
 }
-class Mentor {
-	create()
-	accept()
-	submit()
-	reset()
-	update()
-	mark()
-	select()
-	register()
-	monitor()
-	provide()
-	report()
-}
-class TrainingPhaseActivity {
+class Client {
+	serverWhile
 }
 class Admin {
-	track()
-	assign()
 	update()
-	send()
-	export()
-	view()
-	match()
 	get()
+	assign()
+	export()
+	track()
+	send()
+	match()
+	view()
+	delete()
 }
-class Report {
+class Mentor {
+	update()
+	monitor()
+	create()
+	show()
+	register()
+	mark()
+	miss()
+	submit()
+	provide()
+	report()
+	track()
+	send()
+	select()
+	accept()
+	reset()
+}
+class Administrator {
+	get()
 }
 class ActivityReport {
 }
 class Interaction {
 }
+class ActivityRecord {
+}
 class Mentee {
-	upload()
-	reset()
 	update()
-	select()
-	send()
 	see()
+	upload()
+	opt()
+	opt_out()
+	send()
+	select()
+	reset()
 }
-class InformationDetail {
-}
-class Statistics {
+class User {
+	update()
+	load()
+	access()
 }
 class Detail {
 }
-class ContactDetail {
-}
 class Reminder {
 }
-class Password {
-}
-class List {
-}
-class Availability {
-}
-class User {
-	access()
-	update()
+class Status {
 }
 class Request {
 	establish()
+}
+class Information {
+	include()
+}
+class Availability {
+}
+class Report {
+}
+class Site {
+}
+class Phone {
+}
+class Password {
+}
+class Basis {
+}
+class Program {
+}
+class Communication {
+}
+class Trainingphaseactivity {
+}
+class Statistics {
 }
 class Developer {
 	integrate()
 }
 class WebApplication {
 }
-class Connection {
+class End {
+	navigate()
 }
-class Information {
-	includes()
+class List {
 }
-class Phone {
-}
-class Site {
-}
-class ActivityRecord {
-}
-class Status {
-}
-class Administrator {
-	get()
-}
-Mentor --> Availability : mark
 Mentor --> Request : accept
+Mentor --> ActivityRecord : create
+Mentor o-- Trainingphaseactivity : monitor
+Mentee o-- Information : update
+Mentee o-- Detail : upload
+Admin --> Report : export
+Administrator --> Statistics : get
+Mentor o-- Detail : register
+Admin --> Mentor : assign
+User --> Site : access
+Admin --> Reminder : send
+Developer --> WebApplication : integrate
+Information --> Phone : include
+Admin --> Mentor : export
+Admin --> Statistics : view
+Mentee o-- Password : reset
+Admin --> Mentor : match
 Mentor --> Report : submit
+Mentor o-- Mentee : select
+Mentor o-- Password : reset
+Admin --> Mentor : track
 Admin --> Report : get
 Admin --> Status : update
-Admin --> Statistics : view
-User --> Password : update
-Mentor --> ActivityReport : provide
-Admin --> Mentor : assign
-Administrator --> Statistics : get
-Mentee --> Request : send
+Mentor --> Admin : provide
 Admin --> Mentee : track
-Mentor --> Password : reset
-Mentee --> Detail : upload
-Admin --> Mentor : track
-Admin --> Report : export
-Mentor --> Interaction : report
-Mentor --> Mentee : select
-Developer --> WebApplication : integrate
-Admin --> ActivityReport : view
-Mentee --> ContactDetail : update
-Request --> Connection : establish
-Mentee --> InformationDetail : update
-Admin --> Reminder : send
-Information --> Phone : includes
-Mentor --> Detail : register
-Admin --> Mentor : match
-User --> Site : access
-Mentee --> Password : reset
-Mentor --> Information : update
 Mentee --> List : see
+Mentor --> Report : send
+Mentor --> Basis : provide
+Admin --> Mentor : supported_by
+Mentee --> Request : send
+Admin --> Mentee : match
+User --> Password : update
+Mentee --> Program : opt
+Admin --> ActivityReport : view
+Admin --> User : delete
 Mentee --> Mentor : select
-Mentor --> TrainingPhaseActivity : monitor
-Mentor --> ActivityRecord : create
+Mentor --> ActivityReport : provide
+Mentor o-- Information : update
+Mentee --> Communication : opt
+Mentor o-- Availability : mark
+Mentor o-- Interaction : report
 
 @enduml

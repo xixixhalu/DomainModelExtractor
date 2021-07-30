@@ -1,6 +1,10 @@
 @startuml
 hide circle
 class User<actor> {
+	levelprogress
+	score
+	preference
+	progress
 }
 class Client<actor> {
 }
@@ -10,86 +14,104 @@ class Maintainer<actor> {
 }
 class Administer<actor> {
 }
-class User {
-	check()
-	install()
-	erase()
-	have()
-	share()
-	purchase()
-	keep()
-	practice()
-	track()
-	change()
-}
-class LevelProgress {
-}
-class Score {
-}
-class Developer {
-	design()
-	understand()
-}
-class LevelPage {
-}
-class Progress {
-}
-class Ability {
-}
-class Code {
-}
-class Client {
-	publish()
-	have()
-}
-class ScreenSpace {
+class Other {
+	attention
+	score
 }
 class Maintainer {
-	publish()
 	have()
+	publish()
 }
 class Documentation {
 }
-class Math {
+class User {
+	check()
+	track()
+	purchase()
+	cheat()
+	practice()
+	have()
+	sign()
+	keep()
+	start()
+	share()
+	change()
+	install()
+	erase()
+	switch()
+	download()
 }
 class App {
 }
-class Version {
+class Client {
+	have()
+	publish()
 }
-class Theme {
+class ScreenSpace {
 }
-class IOSVersion {
-}
-class Administer {
-	see()
-}
-class Analytic {
-}
-class DescriptionPage {
+class Developer {
+	understand()
+	design()
 }
 class Way {
 	draw()
 }
+class Administer {
+	see()
+}
 class Attention {
 }
-User --> Version : purchase
-User --> Theme : change
-Administer --> Analytic : see
-Developer --> LevelPage : design
-Maintainer --> App : publish
-Developer --> DescriptionPage : design
-User --> Progress : erase
-User --> Ability : have
-Way --> Attention : draw
-User --> Progress : track
-Developer --> Code : understand
+class Score {
+}
+class Progress {
+}
+class Time {
+}
+class Google {
+}
+class Math {
+}
+class ColorTheme {
+}
+class Code {
+}
+class Version {
+	remove()
+}
+class IosVersion {
+}
+class Levelprogress {
+}
+class Ability {
+}
+class Analytics {
+}
+class Description {
+}
+class Language {
+}
+User --> App : track
 User --> App : install
-User --> Score : check
 Client --> ScreenSpace : have
+User o-- Score : check
+User o-- Progress : erase
+User --> Version : purchase
+Way --> Attention : draw
+Client --> IosVersion : publish
 Maintainer --> Documentation : have
+User o-- Score : share
+User o-- Levelprogress : keep
+Maintainer --> App : publish
+User o-- Progress : track
+User --> Ability : have
+User --> Time : practice
+Administer --> Analytics : see
+User --> Google : check
+Developer --> Description : design
 User --> Math : practice
-User --> LevelProgress : keep
-Client --> IOSVersion : publish
-User --> Score : share
+User --> Language : switch
+User --> ColorTheme : change
+Developer --> Code : understand
+Way --> App : draw
 
 @enduml

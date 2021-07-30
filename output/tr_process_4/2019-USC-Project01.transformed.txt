@@ -6,17 +6,47 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "information",
+          "type": "default"
+        },
+        {
+          "name": "profilePicture",
+          "type": "default"
+        },
+        {
+          "name": "request",
+          "type": "default"
+        },
+        {
+          "name": "resume",
+          "type": "default"
+        },
+        {
+          "name": "profile",
+          "type": "default"
+        },
+        {
+          "name": "account",
+          "type": "default"
+        },
+        {
+          "name": "interest",
+          "type": "default"
+        },
+        {
+          "name": "profilepicture",
+          "type": "default"
+        },
+        {
+          "name": "media",
+          "type": "default"
+        }
+      ]
     },
     "SystemAdmin": {
       "name": "SystemAdmin",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
-    },
-    "Admin": {
-      "name": "Admin",
       "type": [
         "actor"
       ],
@@ -27,20 +57,20 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "look",
-      "target": "Papers",
+      "action": "look_up",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "see",
-      "target": "Event",
+      "action": "search",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "find",
-      "target": "Position",
+      "action": "search",
+      "target": "Researchpaper",
       "para": []
     },
     {
@@ -50,21 +80,33 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "authorize",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "reject",
-      "target": "UserProfile",
+      "actor": "User",
+      "action": "click",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "filter",
-      "target": "Calendar",
+      "action": "look_up",
+      "target": "Papers",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "Media",
+      "para": []
+    },
+    {
+      "actor": "ProfilePicture",
+      "action": "upload",
+      "target": "Profilepicture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "look_up",
+      "target": "Alumnus",
       "para": []
     },
     {
@@ -75,8 +117,8 @@
     },
     {
       "actor": "User",
-      "action": "update",
-      "target": "Media",
+      "action": "filter",
+      "target": "Calendar",
       "para": []
     },
     {
@@ -86,9 +128,21 @@
       "para": []
     },
     {
+      "actor": "Admin",
+      "action": "authorize",
+      "target": "Profile",
+      "para": []
+    },
+    {
       "actor": "User",
-      "action": "resume",
-      "target": "Updated",
+      "action": "trend",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "authorize",
+      "target": "",
       "para": []
     },
     {
@@ -98,9 +152,45 @@
       "para": []
     },
     {
-      "actor": "SystemAdmin",
-      "action": "approve",
-      "target": "Request",
+      "actor": "User",
+      "action": "keep",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sort",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "authenticate",
+      "target": "LinkedIn",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "remove",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "log",
+      "target": "Portal",
       "para": []
     },
     {
@@ -110,9 +200,147 @@
       "para": []
     },
     {
+      "actor": "SystemAdmin",
+      "action": "approve",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "ResearchPapers",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "authenticate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Media",
+      "action": "keep",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "look",
+      "target": "Papers",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "log",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "authenticate",
+      "target": "Logininto",
+      "para": []
+    },
+    {
+      "actor": "SystemAdmin",
+      "action": "approve",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "log_in",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "look",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "search",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "ProfilePicture",
+      "action": "upload",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Position",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "approve",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "filter",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "login",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "User",
       "action": "look",
       "target": "Alumnus",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "look",
+      "target": "Company",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "click",
+      "target": "Linkedinprofile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "log",
+      "target": "Linkedin",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "disable",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "filter",
+      "target": "Category",
       "para": []
     }
   ]

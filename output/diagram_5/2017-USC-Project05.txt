@@ -1,64 +1,73 @@
 @startuml
 hide circle
 class Administrator<actor> {
+	smartThingsClientId
 }
 class HouseManager<actor> {
-}
-class House<actor> {
 }
 class HouseStaff<actor> {
 }
 class Administrator {
-	create()
+	delete()
 	see()
+	filter()
+	allow()
+	assign()
 	enter()
 	lock()
+	create()
+	help()
+	view()
 	add()
-	assign()
 }
-class Hub {
+class Secret {
+	authorize()
 }
 class Code {
-	edit()
+}
+class Log {
+}
+class Manager {
 }
 class HouseManager {
 	select()
 	add()
-	delete()
 }
-class Lock {
-	adddelete()
-	add()
+class HouseStaff {
+	see()
+	lock()
 }
-class SmartThingsClientId {
+class Batterystatus {
 }
-class Secret {
+class Hub {
+}
+class LockStatus {
 }
 class Other {
 }
-class locks {
-	adddelete()
+class Name {
 }
-class Manager {
-}
-class Status {
+class Lock {
+	add()
 }
 class Group {
 }
-Lock --> Code : adddelete
-locks --> Code : adddelete
-Lock --> Lock : add
-Administrator --> Secret : enter
+class SmartThingsClientId {
+	authorize()
+}
 HouseManager --> Lock : select
-Administrator --> Group : create
 Administrator --> Hub : see
-Code --> Code : edit
-Administrator --> Manager : add
-HouseManager --> Other : add
-Administrator --> SmartThingsClientId : enter
-Lock --> Code : add
+Administrator --> Code : lock
+Administrator o-- SmartThingsClientId : enter
+Administrator --> Secret : enter
+Administrator --> Log : view
+Administrator --> Name : lock
+Administrator --> Group : create
+Administrator --> LockStatus : see
+Administrator --> Batterystatus : see
+Administrator --> Manager : delete
+Administrator --> Other : delete
+HouseStaff --> Code : lock
 Administrator --> Code : assign
-HouseManager --> locks : delete
-Administrator --> Status : lock
 
 @enduml

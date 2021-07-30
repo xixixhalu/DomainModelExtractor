@@ -1,78 +1,105 @@
 @startuml
 hide circle
 class Client<actor> {
+	convenience
 }
 class Board<actor> {
 }
 class Member<actor> {
 }
-class WaWITPersonnel<actor> {
+class WaWItPersonnel<actor> {
 }
-class member {
-	integrate()
-	keep()
-	access()
+class Member {
 	publish()
+	access()
+	keep()
+	integrate()
+}
+class User {
 }
 class Portal {
 }
-class Media {
-}
-class WaWITPersonnel {
-	analyse()
-	track()
-	generate()
-	capture()
-}
-class Service {
-}
-class Blog {
-}
 class Client {
-	uses()
 	provide()
+	show_up()
+	use()
+	get()
+	show()
 	save()
-	got()
+	check()
+	complete()
+	enroll()
+	book()
 	register()
-	booked()
-}
-class Center {
-}
-class Time {
-	entering()
-}
-class Data {
-}
-class Appointment {
-}
-class type {
-}
-class Date {
 }
 class Feedback {
 }
-class Report {
+class Convenience {
 }
-class Job {
+class Blog {
 }
-class TimeClient {
+class WaWItPersonnel {
+	capture()
+	analyse()
+	generate()
+	enter()
+	track()
+}
+class Event {
 }
 class Online {
 }
-member --> Date : keep
-Client --> Time : save
-Client --> Center : uses
-Client --> Job : got
-WaWITPersonnel --> Service : analyse
-member --> Portal : access
-Client --> Appointment : booked
-Client --> Online : register
+class Session {
+}
+class Job {
+}
+class Board {
+	share()
+}
+class Time {
+}
+class JobSearch {
+}
+class Media {
+}
+class Appointment {
+}
+class Center {
+}
+class Service {
+}
+class Increase {
+}
+class Timeclient {
+}
+class Type {
+}
+class Report {
+}
+class BoardDocument {
+}
+Client --> Service : check
+WaWItPersonnel --> Service : analyse
+Member --> Event : keep
+Client o-- Convenience : provide
+Member --> Increase : keep
+Client --> Online : check
+WaWItPersonnel --> Center : enter
+Client --> Session : show
+WaWItPersonnel --> Timeclient : capture
+Client --> Job : get
+WaWItPersonnel --> Type : track
+Client --> Center : use
+Member --> Blog : publish
+WaWItPersonnel --> WaWItPersonnel : generate
 Client --> Feedback : provide
-member --> Blog : publish
-member --> Media : integrate
-WaWITPersonnel --> type : track
-Time --> Data : entering
-WaWITPersonnel --> Report : generate
-WaWITPersonnel --> TimeClient : capture
+WaWItPersonnel --> Report : generate
+Client --> Time : save
+Board --> BoardDocument : share
+Client --> JobSearch : enroll
+Member --> Media : integrate
+Client --> Appointment : book
+Member --> Portal : access
+Member --> User : keep
 
 @enduml

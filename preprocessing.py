@@ -8,10 +8,16 @@ from Parser.TDParser import *
 from util.logger import Logger
 global logger
 
+from util.Map import Map
+
+import itertools
+import collections
+
 import argparse
 
 
 # create a class to pre-process
+# 0. Remove brackets, remove slashes
 # 1. replace I with role
 # 2. combine consecutive Nouns
 # 3. output another identical file
@@ -38,15 +44,26 @@ class PreProcessor:
         line = file.readline().strip()
         while line:
             # print("Original sentence: ", line)
-            meta = []
-
-            # maps combined noun to the original nouns
-            noun_map = {}
-            acts = []
-            combine_nouns_line = self.combine_nouns(line, meta, noun_map)
-            replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)
-            #print(line)
             if re.search(FUNC_RE, line):
+                meta = []
+
+                # maps combined noun to the original nouns
+                noun_map = {}
+                acts = []
+                try:
+                    line_no_bracket = self.removeBracket(line)
+                except:
+                    logger.error("removeBracket: Cannot process sentence > " + line)
+                    line_no_bracket = line
+                try:
+                    line_no_slash = self.removeSlash(line_no_bracket)
+                except:
+                    logger.error("removeSlash: Cannot process sentence > " + line)
+                    lines_no_slash = line_no_bracket
+
+                combine_nouns_line = self.combine_nouns(line_no_slash, meta, noun_map)
+                replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)
+            
                 func_output.write(replace_role_line + "\n")
                 self.count_func += 1
             else:
@@ -55,8 +72,8 @@ class PreProcessor:
             metadata.write(meta.__str__() + "\n")
             actors.write(acts.__str__() + "\n")
 
-            # print("Meta data: ", meta)
-            # print(" ")
+                # print("Meta data: ", meta)
+                # print(" ")
 
             line = file.readline().strip()
 
@@ -75,15 +92,14 @@ class PreProcessor:
     # Note: this function check if a word is in stop words dict, if no, return lemma form, otherwise, return original word.
     def filter_stop_word(self, idx, nlp_output):
         tokens = nlp_output['sentences'][0]['tokens']
-        word = tokens[idx]['word']
+        word = tokens[idx]['originalText']
         is_stop_word = False
         for w in LEMMA_STOP_WORDS:
-            if word.lower() == w or w.endswith(word.lower()):
+            if word.lower() == w: #or w.endswith(word.lower()):
                 is_stop_word = True
+                break
         if not is_stop_word:
             word = tokens[idx]['lemma']
-        else:
-            word = tokens[idx]['word']
         return word
 
     # Note: this function use a straight forward method to combine consecutive nouns: combining consecutive NN or NNP or
@@ -96,6 +112,7 @@ class PreProcessor:
         # print(json.dumps(nlp_output, indent=2))
 
         line_index = []
+        # print(nlp_output)
         for i in range(0, len(nlp_output['sentences'][0]['tokens']) + 1):
             line_index.append(i)
         # print("According index:", line_index)
@@ -104,6 +121,7 @@ class PreProcessor:
         # print("POS Tags: ", pt)
         td_key = pure_enhancedTD(nlp_output)
         # print("Type Dependencies: ", td_key)
+        tokens = nlp_output['sentences'][0]['tokens']
 
         # Note: if you want to combine other words, please add them as a list of intervals so that the function
         # 'merge_intervals' can process it.
@@ -112,7 +130,7 @@ class PreProcessor:
         # Bo: no need to combine nmod
         # intervals.extend(self.combine_nmod(td_key))
         intervals = self.merge_intervals(intervals)
-        tokens = nlp_output['sentences'][0]['tokens']
+        
 
         intervals = self._check_intervals(intervals, tokens)
 
@@ -276,6 +294,12 @@ class PreProcessor:
     def combine_JJs_NNs(self, line_index, pt):
         # Add all NN or NNP or NNS or NNPS to a set
         nouns = set()
+        # dashes = set()
+
+        # if 'HYPH' in pt:
+        #     for pair in pt['HYPH']:
+        #         if tokens[pair[0] - 1]['originalText'] == '-':
+        #             dashes.add(pair[0])
         if 'NN' in pt:
             for pair in pt['NN']:
                 nouns.add(pair[0])
@@ -360,6 +384,7 @@ class PreProcessor:
 
                 while idx < len(pos_tags) and pos_tags[idx] not in noun_set:
                     idx += 1
+
                 role = tokens[idx]
                 outputs.extend(tokens[idx + 1:])
 
@@ -378,7 +403,7 @@ class PreProcessor:
                 subjects = ['I', 'i', 'we', 'We']
                 for subject in subjects:
                     repalce_occured = index(outputs, subject, role) or repalce_occured
-                pronouns = ['my']
+                pronouns = ['my', 'My']
                 for pronoun in pronouns:
                     repalce_occured = index(outputs, pronoun, role + "'s") or repalce_occured
                 
@@ -438,6 +463,70 @@ class PreProcessor:
             elif token == "-RRB-":
                 tokens[i] = ")"
 
+    def removeSlash(self, line) :
+        if '/' not in line :
+            return line
+        pattern1 = '(\w)\s*' + re.escape('/')
+        pattern2 = re.escape('/') + '\s*(\S)'
+        if re.search(pattern1, line): 
+            line = re.sub(pattern1, rf'\1 ,', line)
+        if re.search(pattern2, line): 
+            line = re.sub(pattern2, rf', \1', line)
+        return line
+
+    def removeBracket(self, line) :
+        index1 = sorted([i for i, ltr in enumerate(line) if ltr == '(' ])
+        index2 = sorted([i for i, ltr in enumerate(line) if ltr == ')' ])
+        if index1 == [] or index2 == []:
+           return line
+        sentence = ''
+        previous = 0
+        for i in range(0,len(index1)) :
+            if index1[i]-1 >= 0 and line[index1[i]-1]== ' ' or line[index1[i]+1]==' ' :
+                sentence += line[previous:index1[i]]
+            else :
+                sentence += line[previous:index1[i]]+' '
+            previous = index2[i]+1
+            if line[index2[i]-1] == ' ' or index2[i]+1 < len(line) and line[index2[i]+1] == ' ' :
+                sentence += ''
+            else :
+                sentence += ' '
+        sentence += line[index2[-1]+1:]
+        if not sentence.endswith('\n') :
+            sentence += '\n'
+        # print(sentence)
+        return sentence
+
+        #print(index1)
+        #index2 = [i for i, ltr in enumerate(line) if ltr == ')']
+        
+        #doc = nlp(line) 
+        #result_line = []
+        #remove_index = []
+        #for w in doc :
+        #    if w.text.startswith('('):
+        #        remove_index.append(w.i)
+        #    elif w.text.startswith(')'):
+        #        remove_index.append(w.i)
+        #    else :
+        #        continue
+        #if remove_index == [] :
+        #    return line
+        #sentence = ''
+
+        #if remove_index[0] == 0 :
+        #    sentence_start = remove_index[1] +1
+        #    index_start = 2
+        #else :
+        #    sentence_start = 0
+        #    index_start = 0
+
+        #for i in range(index_start,len(remove_index)) :
+        #    if i % 2 != 0 :
+        #        sentence_start = remove_index[i]+1
+        #    else :
+        #        sentence += doc[sentence_start:remove_index[i]].text + ' '
+        #sentence += doc[remove_index[-1]+1:len(doc)].text
 
 if __name__ == '__main__':
 

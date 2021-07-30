@@ -1,82 +1,97 @@
 @startuml
 hide circle
 class GM<actor> {
-}
-class Coach<actor> {
+	data
 }
 class SporTechBIContractor<actor> {
 }
 class Manger<actor> {
 }
 class Customer<actor> {
+	model
 }
 class SoccerCoach<actor> {
+}
+class Customer {
+	see()
+	drop()
+	import()
+	add()
+	drag()
+	update()
+	manage()
+}
+class ExcelSheet {
+}
+class Season {
+	progress()
 }
 class Manger {
 	monitor()
 }
-class FacebookFeed {
+class Condition {
 }
-class Customer {
-	import()
-	see()
+class SporTechBIContractor {
 	update()
 	add()
 }
-class Data {
-}
-class Coach {
-	build()
-	extract()
-}
-class Roster {
-}
-class TwitterReaction {
-}
 class GM {
 	build()
+	affect()
 	extract()
-}
-class SoccerCoach {
-	configure()
+	visualize()
+	make()
 }
 class Schedule {
+	run()
 }
-class TwitterFeed {
+class Source {
 }
-class PlayerValue {
-}
-class InstagramReaction {
-}
-class InstagramFeed {
+class Need {
 }
 class Change {
 }
-class SporTechBIContractor {
-	revise()
-	update()
+class SoccerCoach {
+	configure()
+	specify()
 }
-class PlayerData {
+class Line {
 }
-class FacebookReaction {
+class PlayerValue {
 }
-SoccerCoach --> Schedule : configure
-Manger --> TwitterReaction : monitor
-GM --> Roster : build
+class Data {
+	integrate()
+}
+class SporTechBISystem {
+}
+class Demand {
+}
+class Roster {
+}
+class Decision {
+}
+class Reaction {
+}
+class Model {
+}
+Customer --> ExcelSheet : import
+GM o-- Data : extract
+Manger --> Reaction : monitor
+Manger --> Source : monitor
 Customer --> Data : import
-SporTechBIContractor --> PlayerData : update
+Customer --> Need : manage
 Customer --> Change : see
-Coach --> PlayerValue : extract
-Manger --> TwitterFeed : monitor
-Manger --> InstagramFeed : monitor
-Manger --> FacebookReaction : monitor
-Manger --> FacebookFeed : monitor
-Customer --> Data : add
-GM --> Data : extract
-Coach --> Roster : build
-Customer --> Data : update
+Customer o-- Model : add
+Data --> SporTechBISystem : supported_by
+Manger --> Condition : supported_by
+SoccerCoach --> Schedule : configure
+GM --> Line : affect
+Manger --> Condition : monitor
 GM --> PlayerValue : extract
-SporTechBIContractor --> PlayerData : revise
-Manger --> InstagramReaction : monitor
+Data --> SporTechBISystem : integrate
+GM --> Decision : make
+Customer --> Data : add
+Manger --> Demand : monitor
+GM --> Roster : build
 
 @enduml

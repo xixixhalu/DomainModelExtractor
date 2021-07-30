@@ -1,29 +1,20 @@
 {
   "domain": "2016-USC-Project08",
   "entity_dict": {
-    "Admin": {
-      "name": "Admin",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
-    },
     "User": {
       "name": "User",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "account",
+          "type": "default"
+        }
+      ]
     },
     "Maintainer": {
       "name": "Maintainer",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
-    },
-    "Password": {
-      "name": "Password",
       "type": [
         "actor"
       ],
@@ -42,41 +33,116 @@
         "actor"
       ],
       "attributes": []
-    },
-    "Questionnaire": {
-      "name": "Questionnaire",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
-    },
-    "Edit": {
-      "name": "Edit",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
-    },
-    "Re": {
-      "name": "Re",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
     }
   },
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "Maintainer",
-      "action": "build",
-      "target": "App",
+      "actor": "Mentor",
+      "action": "assign",
+      "target": "Homework",
       "para": []
     },
     {
       "actor": "Admin",
-      "action": "increase",
-      "target": "Quality",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "identify",
+      "target": "EntrepreneurStrength",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "review",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Algorithm",
+      "action": "match",
+      "target": "Mentor",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sign_up",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sign",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "update",
+      "target": "Application",
+      "para": []
+    },
+    {
+      "actor": "Questionnaire",
+      "action": "provide",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "track",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Entrepreneur",
+      "action": "have",
+      "target": "Mentor",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sign",
+      "target": "Application",
       "para": []
     },
     {
@@ -86,21 +152,9 @@
       "para": []
     },
     {
-      "actor": "Entrepreneur",
-      "action": "complete",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "Profile",
-      "action": "provides",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "disable",
-      "target": "Account",
+      "actor": "User",
+      "action": "delete",
+      "target": "",
       "para": []
     },
     {
@@ -110,9 +164,105 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "delete",
+      "actor": "Admin",
+      "action": "add",
+      "target": "CourseContent",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "disable",
       "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Algorithm",
+      "action": "match",
+      "target": "Entrepreneur",
+      "para": []
+    },
+    {
+      "actor": "Entrepreneur",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Algorithm",
+      "action": "match",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "disable",
+      "target": "Entrepreneur",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "post",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "increase",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Entrepreneur",
+      "action": "submit",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Entrepreneur",
+      "action": "submit",
+      "target": "Curriculum",
+      "para": []
+    },
+    {
+      "actor": "Entrepreneur",
+      "action": "see",
+      "target": "MentorInformation",
+      "para": []
+    },
+    {
+      "actor": "Entrepreneur",
+      "action": "submit",
+      "target": "HomeworkAssignment",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "access",
+      "target": "CommunityForum",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "NewsFeed",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Entrepreneur",
+      "action": "have",
+      "target": "Curriculum",
       "para": []
     },
     {
@@ -123,20 +273,74 @@
     },
     {
       "actor": "User",
-      "action": "share",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "update",
-      "target": "Application",
+      "action": "like",
+      "target": "",
       "para": []
     },
     {
       "actor": "Entrepreneur",
       "action": "have",
-      "target": "Access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "change",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "disable",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Questionnaire",
+      "action": "provide",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "increase",
+      "target": "Quality",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "build",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "create",
+      "target": "Lesson",
+      "para": []
+    },
+    {
+      "actor": "Entrepreneur",
+      "action": "complete",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "assign",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "comment",
+      "target": "",
       "para": []
     },
     {
@@ -146,9 +350,57 @@
       "para": []
     },
     {
+      "actor": "Entrepreneur",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Entrepreneur",
+      "action": "complete",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "User",
-      "action": "receive",
-      "target": "Message",
+      "action": "comment",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "comment",
+      "target": "Issue",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "update",
+      "target": "AppStore",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "update",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "build",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "view",
+      "target": "Questionnaire",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "identify",
+      "target": "",
       "para": []
     },
     {
@@ -158,87 +410,9 @@
       "para": []
     },
     {
-      "actor": "Mentor",
-      "action": "create",
-      "target": "LessonContent",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "change",
-      "target": "Password",
-      "para": []
-    },
-    {
       "actor": "Entrepreneur",
-      "action": "see",
-      "target": "MentorInformation",
-      "para": []
-    },
-    {
-      "actor": "Questionnaire",
-      "action": "provides",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Mentor",
-      "action": "view",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "Mentor",
-      "action": "identify",
-      "target": "EntrepreneurStrength",
-      "para": []
-    },
-    {
-      "actor": "Entrepreneur",
-      "action": "complete",
-      "target": "Questionnaire",
-      "para": []
-    },
-    {
-      "actor": "Algorithm",
-      "action": "match",
-      "target": "Mentor",
-      "para": []
-    },
-    {
-      "actor": "Mentor",
-      "action": "create",
-      "target": "CurriculumContent",
-      "para": []
-    },
-    {
-      "actor": "Entrepreneur",
-      "action": "have",
-      "target": "Mentor",
-      "para": []
-    },
-    {
-      "actor": "Algorithm",
-      "action": "match",
-      "target": "Entrepreneur",
-      "para": []
-    },
-    {
-      "actor": "Mentor",
-      "action": "assign",
-      "target": "Homework",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "send",
-      "target": "Message",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "add",
-      "target": "CourseContent",
+      "action": "submit",
+      "target": "App",
       "para": []
     }
   ]

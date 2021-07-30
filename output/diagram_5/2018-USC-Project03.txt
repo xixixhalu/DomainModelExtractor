@@ -3,132 +3,173 @@ hide circle
 class Developer<actor> {
 }
 class Admin<actor> {
+	session
+	profile
 }
 class Contributor<actor> {
-}
-class Admin {
-	approve()
-	set()
-	reject()
-	end()
-	modify()
-	create()
-	send()
-	edit()
-	filter()
-	pull()
-	change()
-	view()
-	delete()
-	check()
-	export()
-	receive()
-}
-class Profile {
-}
-class WeekGoal {
-}
-class Contributor {
-	track()
-	end()
-	modify()
-	create()
-	send()
-	add()
-	filter()
-	make()
-	remove()
-	view()
-	receive()
-	pitch()
-}
-class Detail {
-}
-class Goal {
+	session
+	successrate
+	profile
 }
 class Draft {
+	detail
 }
-class Message {
+class Member {
+	type
+}
+class Week {
+	goal
+}
+class Admin {
+	filter()
+	export()
+	send()
+	delete()
+	log_out()
+	set()
+	receive()
+	approve()
+	check()
+	pull()
+	edit()
+	modify()
+	view()
+	log()
+	change()
+	create()
+	end()
 }
 class ContributorAccount {
 }
-class type {
+class Contributor {
+	sign_out()
+	filter()
+	end()
+	pitch()
+	add()
+	receive()
+	track()
+	sign()
+	modify()
+	remove()
+	create()
+	view()
+	log()
+	send()
+	make()
 }
-class DraftIdea {
+class Detail {
 }
-class PublishingCalendar {
+class CSVFile {
+}
+class User {
+}
+class Change {
 }
 class Pitch {
+	review()
+	need()
 }
-class SuccessRate {
+class Criterion {
+}
+class Goal {
 }
 class Idea {
 }
-class Account {
+class Session {
 }
-class Change {
+class WeekGoal {
+}
+class Future {
+}
+class PitchConversionRatio {
+}
+class Message {
+}
+class Stage {
+}
+class Profile {
+}
+class Site {
+}
+class PublishingCalendar {
+}
+class Notification {
+}
+class Progress {
+}
+class Successrate {
+}
+class Pitchboard {
 }
 class Developer {
 	do()
 }
-class KnowledgeTransfer {
+class Publishingcalendar {
 }
-class details {
+class Type {
 }
-class Piece {
+class Account {
 }
-class Notification {
+class Projectprogress {
 }
-class Session {
+class DraftIdea {
 }
-class Progress {
-}
-class Vertical {
-}
-class ProjectProgress {
-}
-Contributor --> Detail : view
-Admin --> Progress : view
-Admin --> Detail : view
-Contributor --> DraftIdea : create
-Admin --> type : change
-Admin --> Goal : check
-Contributor --> Vertical : view
-Developer --> KnowledgeTransfer : do
-Contributor --> Draft : remove
-Contributor --> Piece : receive
-Admin --> details : view
-Contributor --> Goal : view
-Admin --> PublishingCalendar : export
-Admin --> ProjectProgress : view
-Admin --> Goal : set
-Admin --> Message : receive
-Admin --> Piece : receive
-Admin --> Goal : view
-Contributor --> Detail : add
-Admin --> Pitch : approve
-Contributor --> Message : send
-Admin --> Pitch : pull
-Admin --> PublishingCalendar : approve
-Admin --> Pitch : reject
-Admin --> Pitch : view
-Contributor --> Pitch : filter
-Admin --> Message : send
-Contributor --> Draft : modify
-Contributor --> Session : end
-Admin --> Pitch : filter
-Admin --> ContributorAccount : create
-Contributor --> SuccessRate : track
-Admin --> Account : delete
+Contributor --> User : send
 Admin --> Notification : receive
-Contributor --> Idea : pitch
-Admin --> Profile : modify
-Admin --> Session : end
-Admin --> Account : create
-Admin --> WeekGoal : view
-Admin --> Admin : create
+Admin --> Pitch : approve
+Admin --> Site : log
+Admin --> User : send
+Admin --> Detail : view
+Contributor --> Detail : add
+Contributor --> Draft : remove
+Admin --> Pitch : filter
+Admin --> Projectprogress : view
 Contributor --> Change : make
-Admin --> Pitch : edit
-Admin --> Profile : edit
+Contributor --> Message : send
+Admin o-- Profile : modify
+Admin --> Progress : view
+Admin --> Message : send
+Contributor --> Projectprogress : view
+Contributor --> Pitch : filter
+Admin --> Contributor : create
+Contributor o-- Successrate : track
+Contributor --> Stage : receive
+Admin --> Account : create
+Contributor --> Criterion : filter
+Admin --> Pitch : pull
+Admin --> Message : receive
+Admin --> Pitchboard : view
+Admin --> Admin : create
+Admin --> Goal : view
+Contributor --> Goal : view
+Admin --> Goal : check
+Admin --> Criterion : filter
+Contributor o-- Profile : make
+Admin --> User : receive
+Contributor --> Idea : pitch
+Admin o-- Session : end
+Admin o-- Profile : edit
+Admin --> Stage : receive
+Contributor --> DraftIdea : create
+Contributor --> Draft : modify
+Contributor --> Notification : receive
+Contributor --> Draft : track
+Contributor --> Pitchboard : view
+Contributor o-- Session : end
+Admin --> Publishingcalendar : export
+Admin --> ContributorAccount : create
+Contributor --> PitchConversionRatio : track
+Contributor --> Site : log
+Admin --> Goal : set
+Admin --> Type : change
+Admin --> PublishingCalendar : pull
+Admin --> WeekGoal : view
+Contributor --> Detail : view
+Admin --> Account : delete
+Admin --> PublishingCalendar : approve
+Admin --> Week : set
+Admin --> Future : set
+Admin --> CSVFile : export
 
 @enduml

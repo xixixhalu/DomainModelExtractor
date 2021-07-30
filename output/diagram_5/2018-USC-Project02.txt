@@ -1,126 +1,212 @@
 @startuml
 hide circle
 class User<actor> {
+	emailnotificationsetting
+	password
+	investment
+	tooldata
+	investmentProfile
+}
+class ServiceProvider<actor> {
+	page
 }
 class Administrator<actor> {
 }
-class ServiceProvider<actor> {
-}
-class Admin<actor> {
-}
 class SiteAdmin<actor> {
 }
+class User {
+	login()
+	have()
+	input()
+	see()
+	leave()
+	make()
+	vote()
+	choose()
+	track()
+	manage()
+	access()
+	rate()
+	share()
+	add()
+	start()
+	adjust()
+	create()
+	comment()
+	reset()
+	view()
+	export()
+	read()
+	find()
+	search()
+	report()
+	receive()
+	activate()
+	like()
+	want()
+	use()
+}
+class List {
+}
 class Administrator {
-	post()
 	verify()
 	view()
+	post()
 	moderate()
 }
 class Identity {
 }
-class User {
-	read()
-	activate()
-	add()
-	track()
-	create()
-	have()
-	find()
-	leave()
-	rate()
-	make()
-	see()
-	search()
-	start()
-	adjust()
-	receive()
-	reset()
-	view()
-	report()
-	export()
-	manage()
+class Expense {
 }
 class Review {
 }
-class Access {
-}
-class Notification {
-}
-class EmailNotificationSetting {
-}
-class Admin {
-	remove()
-}
-class Investment {
-}
-class List {
-}
-class SitePermission {
-}
-class Article {
-}
-class SiteDiscussionBoard {
-}
-class Discussion {
-}
-class DiscussionBoard {
-	using()
-}
-class TextInput {
-}
-class TrackingToolData {
+class SiteAdmin {
+	have()
 }
 class Profile {
 }
 class ServiceProvider {
+	reply()
+	see()
 }
-class PropertyInformation {
-}
-class Password {
-}
-class Page {
-}
-class FactorAuthentication {
-}
-class InvestmentProperty {
-}
-class SiteBlog {
+class Name {
 }
 class Performance {
 }
+class TextInput {
+}
+class City {
+}
+class Password {
+}
+class DiscussionBoard {
+}
+class Phonenumber {
+}
+class Type {
+}
+class Email {
+}
+class Admin {
+	remove()
+}
+class Tooldata {
+}
+class SiteBlog {
+}
 class WebsiteUtilizationStatistics {
+}
+class InvestmentProfile {
+}
+class Inside {
+}
+class Discussion {
+}
+class Rent {
+}
+class File {
+}
+class Article {
 }
 class Account {
 }
-User --> Review : leave
-Administrator --> WebsiteUtilizationStatistics : view
-User --> Profile : make
-Administrator --> User : moderate
-User --> Access : have
-User --> Account : create
-User --> ServiceProvider : find
-Administrator --> Article : post
+class LoanAmount {
+}
+class PropertyInformation {
+}
+class SitePermission {
+}
+class Blog {
+}
+class InvestmentProperty {
+}
+class SiteDiscussionBoard {
+}
+class Emailnotificationsetting {
+}
+class SocialMediaSite {
+}
+class Link {
+}
+class CommentReviewOther {
+	register()
+}
+class BlogPost {
+}
+class Address {
+}
+class EmailAuthenticationSystem {
+}
+class Investment {
+}
+class ServiceProviderContactInformation {
+}
+class Notification {
+}
+class FactorAuthentication {
+}
+class Page {
+}
+class PurchasePrice {
+}
+class Payment {
+}
+User --> DiscussionBoard : search
 User --> Notification : receive
-User --> PropertyInformation : add
-User --> EmailNotificationSetting : adjust
-User --> Password : reset
-User --> List : view
-User --> Page : make
-Admin --> User : remove
-User --> Investment : manage
+User --> File : export
+Administrator --> User : moderate
+User --> Profile : make
+User --> Review : read
+User o-- Email : find
 User --> FactorAuthentication : activate
-User --> User : report
-User --> SiteDiscussionBoard : read
-User --> ServiceProvider : rate
-User --> SitePermission : have
+User --> SocialMediaSite : use
 User --> ServiceProvider : search
+User --> ServiceProvider : rate
+User --> List : view
+User --> Review : vote
+Administrator --> Article : post
+Admin --> User : remove
+User --> Link : create
+User --> Name : find
+User --> Page : make
+User o-- Tooldata : export
+User --> ServiceProvider : find
+User --> User : report
+User --> Account : create
+Administrator --> Blog : post
+User --> Performance : see
+User --> PurchasePrice : input
+User --> SiteBlog : read
+User --> LoanAmount : input
+User --> BlogPost : share
+User --> TextInput : use
+Administrator --> WebsiteUtilizationStatistics : view
+User --> PropertyInformation : add
+User --> Payment : input
+User --> Address : input
+User --> City : search
+User o-- InvestmentProfile : manage
+User --> SitePermission : have
+ServiceProvider --> Review : reply
+User o-- Emailnotificationsetting : adjust
+User --> EmailAuthenticationSystem : reset
+User o-- Password : reset
+User --> ServiceProvider : make
+User o-- Investment : manage
+User --> Inside : share
+User --> DiscussionBoard : start
+User --> Blog : comment
+Administrator --> Identity : verify
+User o-- Email : receive
 User --> Discussion : start
 User --> InvestmentProperty : track
-User --> SiteBlog : read
-DiscussionBoard --> TextInput : using
-Administrator --> Identity : verify
-User --> Performance : see
-User --> TrackingToolData : export
-User --> Review : read
+User --> Expense : input
+User --> ServiceProviderContactInformation : access
+User --> Phonenumber : find
+User --> Rent : input
+User --> Type : search
+ServiceProvider --> Review : see
+User --> SiteDiscussionBoard : read
+User --> Review : leave
 
 @enduml

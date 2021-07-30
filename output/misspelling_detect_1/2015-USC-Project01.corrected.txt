@@ -1,26 +1,22 @@
 The system shall upload pictures to a hashtag specified by the user.
 The system shall allow a user to reserve a hashtag, allowing the user to specify a password for other users to post and view pictures on the hashtag.
-The system shall allow users to browse  posts made in a specified region  .
+The system shall allow users to browse (public) posts made in a specified region (such as a radius of X feet around their current location).
 The system shall allow users to flag pictures as inappropriate so that they may be taken down from public view.
-The system shall allow users to tag the pictures they post with descriptive text  .
+The system shall allow users to tag the pictures they post with descriptive text (ex: "Surfing with sharks at the Great Barrier Reef").
 The system shall delete the Hashtag and pictures associated to it after it is reserved for a certain time.
 The system shall invalidate the functionality of uploading pictures for a user if he keeps sending malicious pictures.
 The system shall allow users to download pictures he like.
 The system shall allow users to delete the picture he uploaded by mistake.
 The system shall allow the Hashtag holder to delete pictures that is inappropriate.
 The system shall provide an interface for users to search for a specific hashtag.
-The system shall prevent users from posting pictures to private reserved hashtags without the proper permissions.  .
-The system shall allow administrators to remove any pictures  .
-The system shall allow maintainers to remove any pictures  .
-The system shall allow moderators to remove any pictures  .
+The system shall prevent users from posting pictures to private reserved hashtags without the proper permissions. (Ex. Is the owner or has the password).
+The system shall allow administrators/maintainers/moderators to remove any pictures (usually inappropriate).
 The system shall provide storage and access to pictures for a set or indefinite amount of time.
 The system shall allow the user to make payment for a private hashtag.
 The system shall provide an interface for users to create a new account or login to an existing one.
 The system shall allow the user to post pictures to a specific location eg. USC Campus.
-The system shall provide an alert message to the hashtag holder when his is about to expire.
-The system shall provide an alert message to the hashtag holder when her hashtag is is about to expire.
-The system shall provide an interface for the hashtag holder to invite his to post to the hashtag.
-The system shall provide an interface for the hashtag holder to invite her friends to post post to the hashtag.
+The system shall provide an alert message to the hashtag holder when his/her hashtag is about to expire.
+The system shall provide an interface for the hashtag holder to invite his/her friends to post to the hashtag.
 The system shall inform the hashtag holder if there are new pictures posted to the hashtag.
 The system shall have authentication for private event to make sure only certain people have access to the pictures of this hashtag.
 The system shall have delete picture function to let user delete their uploaded pictures.

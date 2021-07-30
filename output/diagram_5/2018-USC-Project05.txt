@@ -1,49 +1,73 @@
 @startuml
 hide circle
 class User<actor> {
-}
-class Admin<actor> {
+	coffee
+	recipeList
+	coffeeRecipe
+	recipe
+	coffeeApp
+	username
+	orderhistory
+	order
 }
 class Supplier<actor> {
 }
 class Maintainer<actor> {
 }
 class User {
-	add()
-	log()
-	share()
-	canuse()
 	produce()
-	send()
-	save()
-	want()
-	customise()
 	see()
-	customize()
-	existed()
-	view()
-	replace()
+	save()
 	delete()
+	browse()
+	identify()
+	vend()
+	change()
+	want()
+	log_in()
+	like()
+	canuse()
+	replace()
+	add()
+	earn()
+	exist()
+	update()
+	check()
+	choose()
+	send()
+	hold()
+	customise()
+	view()
+	customize()
+	share()
+	log()
 }
-class Theme {
+class Supplier {
+	receive()
 }
-class Picture {
+class Mediaaccount {
 }
-class account {
-}
-class Recipe {
-	contains()
-}
-class Someone {
-}
-class Paypal {
-	purchase()
-}
-class OrderHistory {
+class Baserecipe {
 }
 class Maintainer {
 	update()
 	track()
+}
+class Recipe {
+	contain()
+}
+class Order {
+}
+class Phone {
+}
+class Color {
+}
+class Apple {
+	pay()
+	purchase()
+	paypal()
+}
+class Picture {
 }
 class Kiosk {
 }
@@ -54,65 +78,59 @@ class Admin {
 }
 class Portal {
 }
-class Color {
+class CoffeeRecipe {
 }
-class Location {
+class Orderhistory {
+}
+class Reward {
 }
 class DefaultPaymentMethod {
 }
-class Supplier {
-	receive()
-}
-class Update {
+class Cup {
+	purchase()
 }
 class App {
 }
-class existed {
-	existed()
-}
-class Password {
-	existed()
-}
-class Order {
-}
-class ApplePay {
-	purchase()
+class Location {
 }
 class Allergen {
 }
-class CoffeeRecipe {
-}
 class NutritionDetail {
 }
-class BaseRecipe {
+class Theme {
 }
-User --> account : existed
-User --> App : log
-User --> Recipe : share
+class Someone {
+}
+class Update {
+}
+class List {
+}
+User --> Phone : save
+User --> List : browse
+User o-- Order : send
+User --> Mediaaccount : exist
 User --> Color : customize
-User --> Recipe : delete
-existed --> account : existed
-User --> Recipe : view
-User --> Someone : send
-Password --> account : existed
-User --> Recipe : want
-User --> Paypal : canuse
-User --> Order : replace
-Paypal --> Coffee : purchase
-User --> OrderHistory : view
-User --> ApplePay : canuse
-Recipe --> Allergen : contains
-Maintainer --> Kiosk : track
-Admin --> Portal : have
-User --> CoffeeRecipe : produce
-Maintainer --> Location : update
-User --> Coffee : customise
 User --> DefaultPaymentMethod : add
-User --> NutritionDetail : see
-User --> Theme : customize
-User --> BaseRecipe : customize
+User o-- Recipe : share
+User o-- Recipe : save
+User o-- Recipe : want
+User --> App : log
+Maintainer --> Location : update
 User --> Picture : save
+Recipe --> Allergen : contain
+Maintainer --> Kiosk : track
+User --> Baserecipe : customize
+User --> NutritionDetail : see
+Apple --> Coffee : purchase
+User --> Reward : earn
+User --> Theme : customize
+User o-- Recipe : delete
+Admin --> Portal : have
+User --> Someone : send
+User o-- Order : replace
+User o-- CoffeeRecipe : produce
 Supplier --> Update : receive
-ApplePay --> Coffee : purchase
+User o-- Orderhistory : view
+User o-- Coffee : customise
 
 @enduml

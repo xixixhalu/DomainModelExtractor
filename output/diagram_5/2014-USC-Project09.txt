@@ -3,75 +3,94 @@ hide circle
 class User<actor> {
 }
 class Business<actor> {
+	business
 }
 class Administrator<actor> {
 }
-class TipCalculator {
-	calculate()
-	split()
-}
-class Tip {
-}
 class User {
-	lookup()
-	review()
-	like()
-	add()
 	see()
-	reduced()
 	download()
-	use()
-	submit()
 	have()
+	share()
+	lookup()
+	show()
+	add()
+	submit()
+	use()
+	review()
+	reduce()
+	search()
+	like()
+	get()
 }
-class Application {
-}
-class TravelTippingGuide {
+class Category {
 }
 class Administrator {
-	assign()
 	verify()
+	assign()
 	approve()
-}
-class Comment {
-}
-class Question {
 }
 class Business {
 	claim()
 }
-class Number {
+class TipCalculator {
+	split()
+	calculate()
+}
+class Location {
 }
 class Access {
 }
-class TravelGuide {
-}
-class List {
-	shows()
-}
 class SearchResult {
 }
-class Friction {
+class Question {
+}
+class Comment {
+}
+class TravelGuide {
 }
 class Information {
 }
-TipCalculator --> Tip : split
-User --> Friction : reduced
-User --> Question : submit
-User --> TravelTippingGuide : review
-Business --> Business : claim
-User --> Information : like
-List --> Business : shows
-TipCalculator --> Tip : calculate
-User --> Access : have
-User --> Business : lookup
-User --> TipCalculator : use
-User --> SearchResult : see
+class Friction {
+}
+class Guide {
+}
+class List {
+}
+class Application {
+}
+class Tip {
+}
+class Customer {
+}
+class Name {
+}
+class TipSureNumber {
+}
+User --> Customer : supported_by
 User --> Business : add
-Administrator --> Comment : verify
-User --> TravelGuide : download
+User --> Access : have
 User --> Application : like
+User --> Business : show
+User --> Location : search
+User --> TipCalculator : use
+User --> Tip : get
+Administrator --> User : approve
+User --> SearchResult : see
+User --> Customer : reduce
+User --> Question : submit
+User --> Name : search
 Administrator --> Comment : approve
-Administrator --> Number : assign
+User --> User : see
+Administrator --> TipSureNumber : assign
+User --> TravelGuide : download
+User --> Business : search
+User --> Information : like
+User --> Friction : reduce
+User --> List : see
+User --> Business : lookup
+User --> Category : search
+User --> Guide : review
+Business o-- Business : claim
 
 @enduml

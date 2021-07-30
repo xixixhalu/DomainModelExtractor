@@ -1,80 +1,94 @@
 @startuml
 hide circle
 class User<actor> {
+	point
+	progressreport
+	performance
 }
 class Developer<actor> {
 }
 class Maintainer<actor> {
 }
-class Component {
-	have()
-}
-class Structure {
-}
-class Option {
-	enables()
-}
-class User {
-	understand()
-	get()
-	track()
-	view()
-	skip()
-	play()
-}
-class Point {
-}
-class Progress {
-}
 class Developer {
-	restructure()
-	publish()
-	maintainable()
-	fix()
 	change()
+	hand()
 	provide()
-}
-class Graph {
-}
-class Feedback {
-}
-class SourceCode {
-}
-class ProgressReport {
+	publish()
+	restructure()
+	fix()
+	hand_off()
 }
 class App {
 }
+class User {
+	play()
+	understand()
+	track()
+	answer()
+	proceed()
+	have()
+	get()
+	view()
+	skip()
+}
 class Question {
+}
+class Time {
+	fix()
+}
+class Option {
+	enable()
 }
 class Project {
 }
+class Point {
+}
 class Ui {
-}
-class Report {
-}
-class Hint {
 }
 class Maintainer {
 	get()
 }
 class UserAnalytic {
 }
-Developer --> Graph : fix
-User --> Point : understand
-Component --> Structure : have
-User --> ProgressReport : view
-Developer --> Ui : change
-User --> Report : view
-User --> App : play
-User --> Feedback : get
-Maintainer --> UserAnalytic : get
-User --> Progress : track
-Developer --> Project : restructure
-Developer --> App : publish
-Option --> User : enables
-Developer --> SourceCode : maintainable
-Developer --> Option : provide
-User --> Hint : get
+class Graph {
+}
+class SourceCode {
+}
+class Trouble {
+}
+class Progress {
+}
+class Report {
+}
+class Component {
+	have()
+}
+class Structure {
+}
+class Progressreport {
+}
+class Hint {
+}
+class Feedback {
+}
 User --> Question : skip
+User o-- Progressreport : view
+Developer --> Ui : change
+User --> Hint : get
+Maintainer --> UserAnalytic : get
+User --> Feedback : get
+Developer --> Graph : fix
+Developer --> SourceCode : hand_off
+Developer --> Project : restructure
+Option --> User : enable
+Developer --> SourceCode : hand
+Developer --> Option : provide
+User --> Trouble : have
+User o-- Progress : track
+User --> Report : view
+User o-- Point : understand
+Component --> Structure : have
+Developer --> App : publish
+User --> App : play
 
 @enduml

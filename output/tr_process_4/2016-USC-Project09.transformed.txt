@@ -6,7 +6,24 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "metric",
+          "type": "default"
+        },
+        {
+          "name": "location",
+          "type": "default"
+        },
+        {
+          "name": "account",
+          "type": "default"
+        },
+        {
+          "name": "schedule",
+          "type": "default"
+        }
+      ]
     },
     "Admin": {
       "name": "Admin",
@@ -22,98 +39,37 @@
       ],
       "attributes": []
     },
-    "FarmContractor": {
-      "name": "FarmContractor",
+    "Tommorow": {
+      "name": "Tommorow",
       "type": [
-        "actor"
+        "entity"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "weather",
+          "type": "default"
+        }
+      ]
     }
   },
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "User",
-      "action": "create",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "watch",
-      "target": "Video",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "upload",
-      "target": "Video",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "disable",
-      "target": "Account",
+      "actor": "HealthData",
+      "action": "collect",
+      "target": "Farmer",
       "para": []
     },
     {
       "actor": "User",
       "action": "create",
-      "target": "Checklist",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "Metric",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "receive",
-      "target": "Temperature",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "delete",
-      "target": "Contents",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "do",
-      "target": "Quiz",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "Location",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "change",
-      "target": "NotificationTone",
+      "target": "",
       "para": []
     },
     {
@@ -124,8 +80,116 @@
     },
     {
       "actor": "User",
+      "action": "toggle",
+      "target": "Display",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "disable",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "report",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
       "action": "create",
-      "target": "EmergencyContactList",
+      "target": "Content",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "define",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "know",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "opt",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "watch",
+      "target": "Video",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Location",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "upload",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "FarmManager",
+      "action": "search",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "change",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "change",
+      "target": "VibrationLevel",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "disable",
+      "target": "Account",
       "para": []
     },
     {
@@ -135,8 +199,8 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "create",
+      "actor": "User",
+      "action": "do",
       "target": "Quiz",
       "para": []
     },
@@ -148,8 +212,110 @@
     },
     {
       "actor": "User",
+      "action": "change",
+      "target": "NotificationTone",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "toggle",
-      "target": "Display",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "wear",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Temperature",
+      "action": "collect",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Metric",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "create",
+      "target": "Quiz",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "EmergencyContactList",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "upload",
+      "target": "Video",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "do",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "HealthData",
+      "action": "collect",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "identify",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "Contents",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "feel",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "TextMessage",
+      "action": "receive",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "feel",
+      "target": "Order",
       "para": []
     },
     {
@@ -159,15 +325,57 @@
       "para": []
     },
     {
+      "actor": "Admin",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "User",
-      "action": "change",
-      "target": "VibrationLevel",
+      "action": "use",
+      "target": "",
       "para": []
     },
     {
       "actor": "Admin",
       "action": "create",
-      "target": "Content",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Weather",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "watch",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Checklist",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "modify",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Temperature",
+      "action": "collect",
+      "target": "Farmer",
       "para": []
     }
   ]

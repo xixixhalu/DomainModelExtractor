@@ -1,101 +1,172 @@
 @startuml
 hide circle
-class AdultLearner<actor> {
+class Learner<actor> {
+	gameScore
+	conflictmanagementskill
+	conflictresolutionskill
 }
 class ExperientialLearningCenterStaff<actor> {
 }
 class CollegeStudent<actor> {
+	competence
+	conflictmanagementskill
 }
 class MBVStudent<actor> {
+	progress
+	team
 }
-class Executive<actor> {
+class ConflictResolutionExercise<actor> {
 }
 class Employer<actor> {
+	company
 }
 class Veteran<actor> {
+	decision
+	thoughtprocess
+}
+class Civilian<actor> {
 }
 class Veteran {
 	compare()
+	want()
 	see()
+	use()
 }
-class ThoughtProcess {
+class Learner {
+	practice()
+	improve()
+	resolve()
+	have()
+	judge()
+	view()
+	need()
+	know()
+	progress()
+	take()
 }
-class Employee {
+class Experience {
+}
+class Employer {
+	adopt()
+}
+class Decision {
+}
+class ConflictResolutionExercise {
+	encourage()
 	practice()
 }
 class ProductConflictResolutionSkill {
 }
-class AdultLearner {
-	view()
-	improve()
-	take()
-	practice()
-	resolve()
-	have()
-}
-class Assessment {
-}
-class MBVStudent {
-	improve()
-	use()
-}
-class ConflictResolutionSkill {
-}
-class Graph {
-}
-class Decision {
-}
-class CollegeStudent {
-	improve()
-	use()
-}
-class Confidence {
-}
-class Practice {
-}
-class Conflict {
-}
-class ConflictManagementSkill {
-}
-class Competence {
-}
-class Program {
-	integrates()
-}
-class Experience {
-}
-class Score {
-}
 class ExperientialLearningCenterStaff {
+	help()
 	take()
-}
-class Training {
 }
 class Team {
 	resolve()
 }
-class Executive {
-	encourage()
+class MBVStudent {
+	use()
+	participate()
+	collaborate()
+	improve()
+	want()
 }
-CollegeStudent --> Program : use
-AdultLearner --> ConflictResolutionSkill : practice
-AdultLearner --> Conflict : resolve
-Employee --> ProductConflictResolutionSkill : practice
-MBVStudent --> Score : use
-AdultLearner --> Score : view
-AdultLearner --> Assessment : take
-ExperientialLearningCenterStaff --> Training : take
-CollegeStudent --> Confidence : improve
+class Score {
+	keep()
+}
+class Conflictmanagementskill {
+}
+class Conflict {
+}
+class Student {
+	use()
+	improve()
+}
+class Civilian {
+	use()
+	interact()
+}
+class DecisionOther {
+	make()
+}
+class Training {
+}
+class ConflictResolutionSkill {
+}
+class Program {
+	integrate()
+}
+class CollegeStudent {
+	want()
+	use()
+	improve()
+}
+class Teammate {
+}
+class Business {
+}
+class Employee {
+}
+class Setting {
+}
+class Confidence {
+}
+class Thoughtprocess {
+}
+class Conflictresolutionskill {
+}
+class Assessment {
+}
+class Competence {
+}
+class Situation {
+}
+class GameScore {
+}
+class Practice {
+}
+class Company {
+}
+class DecisionCivilian {
+}
+class Graph {
+}
+Civilian --> Veteran : supported_by
+Veteran o-- Decision : compare
+Learner --> Assessment : take
+CollegeStudent o-- Competence : improve
 MBVStudent --> ConflictResolutionSkill : improve
-CollegeStudent --> ConflictManagementSkill : improve
+ConflictResolutionExercise --> ProductConflictResolutionSkill : practice
+DecisionOther --> Situation : make
+Veteran --> Veteran : see
+ExperientialLearningCenterStaff --> ExperientialLearningCenterStaff : take
+Learner o-- GameScore : view
+Learner --> Learner : take
+CollegeStudent o-- Conflictmanagementskill : improve
+MBVStudent --> Teammate : collaborate
+MBVStudent --> Score : use
+Program --> Experience : integrate
+Program --> Business : integrate
+CollegeStudent --> Program : use
+Learner o-- Conflictmanagementskill : improve
+Learner --> Practice : have
+ConflictResolutionExercise --> Employee : encourage
 Team --> Conflict : resolve
+Employer o-- Company : adopt
+Learner --> Setting : resolve
+Learner --> Experience : supported_by
+Student --> Conflictmanagementskill : improve
+Learner o-- Conflict : resolve
+Learner --> Experience : view
+CollegeStudent --> Confidence : improve
+Learner --> Experience : resolve
+Veteran --> DecisionCivilian : compare
+Learner --> Experience : practice
+Veteran o-- Thoughtprocess : compare
+Civilian --> Veteran : interact
+ExperientialLearningCenterStaff --> Training : take
 Veteran --> Graph : see
-Executive --> Employee : encourage
-Veteran --> Decision : compare
-AdultLearner --> Practice : have
-AdultLearner --> ConflictManagementSkill : improve
-CollegeStudent --> Competence : improve
-Program --> Experience : integrates
-Veteran --> ThoughtProcess : compare
+Learner o-- Conflictresolutionskill : practice
+MBVStudent --> Teammate : supported_by
 
 @enduml

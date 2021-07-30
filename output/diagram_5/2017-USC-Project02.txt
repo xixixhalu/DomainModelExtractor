@@ -2,39 +2,47 @@
 hide circle
 class Developer<actor> {
 }
-class Admin<actor> {
-}
 class Volunteer<actor> {
 }
 class Manager<actor> {
 }
 class User<actor> {
 }
-class AdminUser<actor> {
+class Admin<actor> {
 }
-class Developer {
-	import()
+class User {
+	search()
+	request()
+	get()
+	update()
+	return()
+	click()
+	view()
+	check_out()
+	check()
+	browse()
 }
-class Spreadsheet {
+class STEMInventory {
+}
+class Admin {
+	read()
+	add()
+	reserve()
+	change()
+}
+class Item {
+	be()
 }
 class Volunteer {
-	check()
 	view()
+	manage()
+	check()
 }
 class Availability {
 }
-class Admin {
-	reserve()
-	read()
-	change()
-	add()
+class Reservation {
 }
-class Status {
-}
-class Darin {
-	reorder()
-}
-class Item {
+class ItemLog {
 }
 class Manager {
 	click()
@@ -42,42 +50,46 @@ class Manager {
 class Button {
 	email()
 }
-class User {
-	update()
-	view()
-	checkout()
-	request()
+class Developer {
+	import()
 }
-class AdminUser {
-	get()
-}
-class EmailNotification {
-}
-class Account {
-}
-class Reservation {
+class InventorySystem {
 }
 class Location {
 }
+class Status {
+}
+class Account {
+}
+class Spreadsheet {
+}
+class EmailNotification {
+}
+class Darin {
+	reorder()
+}
+class Inventory {
+}
 class Detail {
 }
-class logs {
-}
-AdminUser --> EmailNotification : get
-Admin --> logs : read
-Volunteer --> Availability : check
-Volunteer --> Reservation : view
-Darin --> Item : reorder
-User --> Status : update
-User --> Account : request
-Button --> Darin : email
-Admin --> Item : reserve
-User --> Detail : view
-Developer --> Spreadsheet : import
-User --> Item : checkout
-Admin --> Item : add
-Volunteer --> Location : check
+User --> STEMInventory : browse
+Admin --> ItemLog : read
 Admin --> Status : change
+User --> Inventory : update
 Manager --> Button : click
+User --> Detail : view
+Admin --> Item : reserve
+Volunteer --> Availability : check
+Developer --> InventorySystem : import
+User --> Item : return
+Volunteer --> Location : check
+User --> Item : search
+Admin --> Item : add
+User --> Status : update
+User --> EmailNotification : get
+User --> Item : click
+User --> Account : request
+Developer --> Spreadsheet : import
+Volunteer --> Reservation : view
 
 @enduml

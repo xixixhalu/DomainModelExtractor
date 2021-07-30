@@ -12,9 +12,33 @@
   "relation_list": [],
   "behavior_list": [
     {
+      "actor": "Time",
+      "action": "loge",
+      "target": "Activity",
+      "para": []
+    },
+    {
       "actor": "CaseManager",
-      "action": "save",
-      "target": "MonitorCase",
+      "action": "run",
+      "target": "CaseFile",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "manage",
+      "target": "CaseFile",
       "para": []
     },
     {
@@ -24,21 +48,39 @@
       "para": []
     },
     {
-      "actor": "Youth",
-      "action": "have",
-      "target": "Access",
+      "actor": "CaseManager",
+      "action": "upload",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "monitor",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "run",
+      "target": "Frequency",
       "para": []
     },
     {
       "actor": "CaseManager",
       "action": "save",
-      "target": "Time",
+      "target": "",
       "para": []
     },
     {
       "actor": "CaseManager",
       "action": "upload",
       "target": "Document",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "have",
+      "target": "",
       "para": []
     },
     {
@@ -49,14 +91,14 @@
     },
     {
       "actor": "CaseManager",
-      "action": "save",
-      "target": "TimeLogingActivity",
+      "action": "upload",
+      "target": "Case",
       "para": []
     },
     {
-      "actor": "CaseManager",
-      "action": "monitor",
-      "target": "YouthService",
+      "actor": "Youth",
+      "action": "have",
+      "target": "Access",
       "para": []
     },
     {
@@ -67,14 +109,44 @@
     },
     {
       "actor": "CaseManager",
+      "action": "monitor",
+      "target": "Case",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
       "action": "manage",
-      "target": "CaseFile",
+      "target": "",
       "para": []
     },
     {
       "actor": "CaseManager",
       "action": "run",
-      "target": "Frequency",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Time",
+      "action": "loge",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "save",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "monitor",
+      "target": "YouthService",
+      "para": []
+    },
+    {
+      "actor": "Activity",
+      "action": "have",
+      "target": "",
       "para": []
     }
   ]

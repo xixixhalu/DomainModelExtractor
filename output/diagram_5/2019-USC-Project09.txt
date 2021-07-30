@@ -1,44 +1,57 @@
 @startuml
 hide circle
 class User<actor> {
+	bidding
 }
 class Developer<actor> {
 }
-class Admin<actor> {
-}
 class User {
-	view()
+	pay()
+	go()
 	return()
+	visit()
+	participate()
+	view()
+	place()
 	keep()
 }
-class Track {
-}
-class Item {
-	using()
+class Raffle {
 }
 class Developer {
-	provide()
 	enable()
+	provide()
+	search()
 	allow()
 }
-class LoginSystem {
+class Loginsystem {
 }
-class Product {
+class Cause {
 }
-class Source {
+class Mine {
+}
+class Database {
+	remove()
 }
 class Admin {
 	maintain()
 }
-class Database {
+class Product {
 }
-Item --> Source : using
-Developer --> LoginSystem : provide
-User --> Track : keep
+class Account {
+}
+class Track {
+}
+class Story {
+}
 User --> Product : return
-User --> Item : view
-Admin --> Database : maintain
 Developer --> User : enable
+User --> Mine : place
+Developer --> Loginsystem : provide
+Database --> Account : remove
+User --> Story : visit
+User --> Raffle : participate
+User --> Cause : visit
+User --> Track : keep
 Developer --> User : allow
 
 @enduml

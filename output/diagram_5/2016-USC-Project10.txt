@@ -1,100 +1,122 @@
 @startuml
 hide circle
 class Youth<actor> {
+	feedback
+	profile
+	survey
+	casemanager
+	case
 }
 class CaseManager<actor> {
+	youth
+	case
 }
 class Administrator<actor> {
 }
 class User<actor> {
+	record
+	loginInformation
 }
 class Staff<actor> {
 }
-class Administrator {
-	delete()
-	transfer()
-	create()
-	modify()
-	view()
-}
-class Profile {
-}
-class User {
-	create()
-	recover()
-}
-class LoginInformation {
-}
-class Youth {
-	take()
-	provide()
-	view()
-	contact()
-}
 class CaseManager {
+	view()
+	deactivate()
+	add()
+	send_out()
 	delete()
 	activate()
 	review()
 	export()
 	send()
-	add()
 	see()
+}
+class Youth {
 	view()
+	contact()
+	take()
+	provide()
 }
-class Result {
-}
-class LogRecord {
+class Document {
 }
 class Case {
 }
+class Administrator {
+	view()
+	add()
+	delete()
+	create()
+	make()
+	edit()
+	manage()
+	modify()
+	transfer()
+}
+class Result {
+}
+class Casemanager {
+}
+class User {
+	recover()
+	answer()
+	create()
+}
+class LogRecord {
+}
+class Email {
+}
 class File {
+	belong()
+}
+class Staff {
+	view()
+}
+class Information {
+}
+class Survey {
+}
+class Feedback {
+}
+class Profile {
 }
 class Activity {
 }
 class SecurityQuestion {
 }
-class Feedback {
-}
-class Email {
-}
 class YouthAccount {
-}
-class Survey {
-}
-class Document {
-}
-class Information {
 }
 class Record {
 }
-class Staff {
-	view()
+class LoginInformation {
 }
-CaseManager --> Case : export
-User --> LoginInformation : recover
-User --> SecurityQuestion : create
-CaseManager --> File : add
-Youth --> Survey : take
-Administrator --> Case : delete
-CaseManager --> Document : delete
-Youth --> Profile : view
-CaseManager --> Information : view
 CaseManager --> Result : see
-Administrator --> Record : view
-Administrator --> LogRecord : view
-Youth --> File : view
-Administrator --> Activity : create
-Youth --> Feedback : provide
-Administrator --> Profile : delete
-Youth --> CaseManager : contact
-Staff --> Information : view
-CaseManager --> Case : view
-CaseManager --> Case : delete
-Administrator --> Case : transfer
-CaseManager --> Feedback : review
-CaseManager --> Email : send
-Administrator --> Profile : view
-CaseManager --> YouthAccount : activate
+CaseManager --> Email : send_out
+CaseManager o-- Youth : add
+Youth o-- Profile : view
+Youth o-- Casemanager : contact
 Administrator --> Profile : modify
+Administrator --> Activity : create
+Administrator --> LogRecord : view
+User --> SecurityQuestion : create
+CaseManager --> Email : send
+CaseManager --> YouthAccount : activate
+Youth --> File : view
+Administrator --> Case : delete
+Administrator --> Record : view
+CaseManager --> Information : view
+Staff --> Information : view
+User o-- LoginInformation : recover
+Youth o-- Survey : take
+Administrator --> Profile : delete
+Administrator --> Case : transfer
+CaseManager --> Document : delete
+Youth o-- Feedback : provide
+CaseManager o-- Case : export
+CaseManager o-- Case : delete
+Administrator --> Profile : view
+CaseManager o-- Case : view
+CaseManager --> File : add
+Administrator --> Document : make
+CaseManager --> Feedback : review
 
 @enduml

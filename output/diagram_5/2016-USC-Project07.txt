@@ -1,75 +1,98 @@
 @startuml
 hide circle
 class User<actor> {
+	location
+	appointment
+	information
 }
 class Shelter<actor> {
+	information
+}
+class Pet {
+	information
+	picture
 }
 class User {
-	use()
-	inform()
-	have()
-	go()
-	see()
-	get()
-	want()
 	cancel()
+	make()
+	go()
+	update()
+	book()
+	inform()
+	contact()
+	want()
 	visit()
-	modify()
+	have()
+	wait()
+	decide()
 	apply()
+	get()
+	see()
+	forget()
+	use()
+	know()
+	modify()
 }
-class Ui {
-}
-class type {
-}
-class filters {
-}
-class Information {
-}
-class Result {
+class SchedulingFunction {
+	integrate()
 }
 class Shelter {
 	get()
-	want()
 	input()
+	know()
+	control()
+	want()
 }
-class Notification {
-}
-class Ability {
+class Information {
+	stay_up()
+	stay()
 }
 class Appointment {
 }
-class Pet {
+class Filter {
 }
-class SchedulingFunction {
-}
-class ShelterInformation {
-}
-class Reminder {
+class Ability {
+	select()
 }
 class Agency {
 }
-class Filter {
+class GoogleCalendar {
+}
+class Date {
 }
 class Picture {
 }
-User --> Information : modify
-User --> Reminder : get
-User --> Result : have
+class Ui {
+}
+class Result {
+}
+class Reminder {
+}
+class Notification {
+}
+class ShelterInformation {
+}
+User o-- Information : modify
+User o-- Information : want
+Shelter o-- Information : input
 User --> Agency : inform
-Shelter --> Notification : get
-User --> User : see
-Shelter --> Ability : want
-User --> Information : want
-User --> Shelter : visit
-User --> Appointment : cancel
-User --> Filter : apply
-User --> Pet : go
-User --> Ui : use
-User --> SchedulingFunction : want
-User --> type : apply
 Shelter --> ShelterInformation : input
+SchedulingFunction --> GoogleCalendar : supported_by
+User o-- Appointment : get
+User --> Filter : apply
+SchedulingFunction --> GoogleCalendar : integrate
+Information --> Date : stay
 User --> Picture : see
-User --> filters : apply
-User --> Information : see
+User o-- Information : see
+Shelter --> Ability : want
+User --> Shelter : visit
+User --> User : decide
+User --> Ui : use
+User --> Result : have
+User --> Reminder : get
+User --> Pet : go
+Shelter --> Notification : get
+User o-- Appointment : book
+User --> SchedulingFunction : want
 
 @enduml

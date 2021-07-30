@@ -1,156 +1,239 @@
 @startuml
 hide circle
 class Vendor<actor> {
+	item
+	profile
+	pricing
+	itemprice
+	service
+	product
 }
 class Consumer<actor> {
+	searchresult
+	password
+	account
+	reset
+	cart
 }
 class WebsiteOwner<actor> {
-}
-class WebsiteModerator<actor> {
+	customer
 }
 class WebsiteEndUser<actor> {
 }
-class Consumer {
-	find()
-	leave()
-	add()
-	do()
-	search()
-	reset()
-	have()
-	manage()
-	gain()
-	get()
-	sort()
-	narrow()
-}
-class Comment {
-}
-class WebsiteModerator {
-	approve()
-	post()
-	suspend()
-	sort()
-}
-class Account {
-}
-class TransactionTotal {
+class Transaction {
 	determine()
-}
-class Vendor {
-	ship()
-	offer()
-	view()
-	list()
-	add()
-	compare()
-	make()
-	improve()
-	gather()
-	manage()
-	provide()
-	upload()
-}
-class Item {
-}
-class Pricing {
-}
-class Product {
-}
-class Promotion {
+	total()
 }
 class WebsiteOwner {
-	approve()
+	sell()
 	post()
-	suspend()
+	communicate()
 	sort()
+	suspend()
+	approve()
+	help()
 }
-class Blog {
-}
-class Cart {
-}
-class Communication {
-}
-class Feedback {
-}
-class ItemPrice {
-}
-class Discount {
-}
-class Understanding {
-}
-class VolumeTotal {
-	determine()
-}
-class EmailAddress {
-}
-class Purchase {
-}
-class Password {
-}
-class VendorAccount {
-}
-class Recommendation {
-}
-class Video {
-}
-class Service {
-}
-class Time {
-}
-class SearchResult {
-}
-class Knowledge {
-}
-class Date {
+class Vendor {
+	improve()
+	manage()
+	look()
+	offer()
+	upload()
+	publish()
+	add()
+	gather()
+	inform()
+	make()
+	provide()
+	ship()
+	communicate()
+	list()
+	view()
+	convince()
+	look_up()
+	compare()
+	buy()
+	ensure()
 }
 class Price {
 }
+class Product {
+	suit()
+	be()
+}
+class Consumer {
+	leave()
+	sort()
+	manage()
+	rate()
+	keep()
+	look()
+	refer()
+	gain()
+	do()
+	find()
+	help()
+	search()
+	add()
+	reset()
+	subscribe()
+	narrow()
+	narrow_down()
+	see()
+	get()
+	participate()
+	review()
+	have()
+}
+class Searchresult {
+}
+class Volume {
+}
+class Cart {
+}
+class Item {
+	increase()
+	reach()
+}
+class Issue {
+}
+class ServiceQuality {
+}
+class Application {
+}
+class BlogPost {
+}
+class Discount {
+}
+class Date {
+}
+class Recommendation {
+}
 class Access {
 }
-class PasswordReset {
+class WebsiteEndUser {
+	find()
 }
-WebsiteModerator --> Account : suspend
-Vendor --> Video : upload
-Vendor --> Product : ship
-Vendor --> Pricing : make
-Consumer --> Product : find
-Vendor --> Service : improve
-WebsiteOwner --> Account : suspend
-Consumer --> Product : sort
-Vendor --> Promotion : offer
-Vendor --> Time : view
-VolumeTotal --> Vendor : determine
-Consumer --> Account : manage
-WebsiteOwner --> Vendor : sort
-Vendor --> Product : add
-Consumer --> EmailAddress : reset
-WebsiteOwner --> Blog : post
-Consumer --> SearchResult : narrow
-Vendor --> Item : list
-TransactionTotal --> Vendor : determine
-Consumer --> Item : add
-Consumer --> Cart : manage
-Consumer --> Purchase : do
-Consumer --> Knowledge : gain
-WebsiteModerator --> Communication : post
-WebsiteModerator --> Vendor : sort
-Consumer --> Product : search
-Vendor --> Date : view
-Vendor --> Product : improve
-Vendor --> Feedback : gather
-WebsiteOwner --> Communication : post
-Vendor --> Price : compare
-Consumer --> Password : manage
-Vendor --> ItemPrice : manage
-Consumer --> Access : get
-WebsiteModerator --> VendorAccount : approve
-Vendor --> Discount : provide
-Consumer --> Comment : leave
-Consumer --> PasswordReset : get
-Consumer --> Recommendation : get
-Consumer --> Understanding : have
-WebsiteModerator --> Blog : post
+class Comment {
+}
+class Time {
+}
+class Knowledge {
+	become()
+}
+class Profile {
+}
+class Event {
+	happen()
+}
+class Information {
+	gain()
+}
+class VendorAccount {
+}
+class ForumDiscussion {
+}
+class Pricing {
+}
+class Communication {
+	see()
+}
+class ProductCatalog {
+}
+class Promotion {
+	attract()
+}
+class EmailAddress {
+}
+class Service {
+}
+class Submission {
+}
+class Health {
+}
+class Popularity {
+}
+class Reset {
+}
+class Account {
+}
+class ProductIntroductiveVideo {
+}
+class Feedback {
+}
+class Understanding {
+}
+class Future {
+}
+class Itemprice {
+}
+class Password {
+}
+class Purchase {
+}
+WebsiteOwner --> Submission : approve
+WebsiteOwner --> Volume : sell
 WebsiteOwner --> VendorAccount : approve
+WebsiteOwner --> Vendor : sort
+WebsiteOwner --> Vendor : communicate
+Vendor o-- Itemprice : manage
+Consumer o-- Cart : manage
+Consumer --> ForumDiscussion : participate
+Vendor --> Consumer : gather
+Consumer --> Vendor : rate
+Consumer o-- Password : manage
+Consumer --> Access : get
+Consumer o-- Cart : add
+Consumer --> Knowledge : gain
+Consumer --> Popularity : sort
+Vendor o-- Pricing : make
+Consumer --> Purchase : do
+Consumer --> Item : see
+Consumer --> Item : add
+Consumer o-- Reset : reset
+WebsiteOwner --> Communication : post
+Consumer o-- Account : manage
+Consumer --> Comment : leave
+WebsiteOwner --> Issue : post
+Consumer --> Comment : refer
+WebsiteOwner --> Account : suspend
+Vendor --> ProductCatalog : add
+Vendor --> Time : view
+Consumer --> Service : get
+Vendor o-- Item : list
+Vendor --> ServiceQuality : ensure
+Consumer --> Product : sort
+Vendor o-- Product : improve
+Vendor --> Promotion : offer
+Vendor o-- Product : publish
+Vendor o-- Product : ship
+Vendor --> ProductIntroductiveVideo : upload
+Vendor --> Consumer : supported_by
+WebsiteOwner --> Application : approve
+WebsiteOwner --> Consumer : post
+Consumer --> Product : leave
+WebsiteOwner --> Vendor : supported_by
+Vendor --> Consumer : communicate
+Transaction --> Vendor : determine
+Vendor --> Feedback : gather
+Vendor --> BlogPost : publish
+Consumer --> EmailAddress : reset
+Consumer --> Price : sort
+Vendor --> Price : compare
+Consumer --> Recommendation : get
+Vendor o-- Profile : upload
+Consumer --> Health : search
+Consumer --> Understanding : have
+WebsiteOwner --> Vendor : post
+Vendor o-- Product : add
+Vendor --> Future : improve
+Vendor --> Discount : provide
+Vendor o-- Service : improve
+Consumer o-- Searchresult : narrow_down
+Consumer --> Product : search
+Vendor --> Consumer : provide
+Consumer --> Product : find
+Vendor --> Date : view
+Consumer o-- Searchresult : narrow
 
 @enduml

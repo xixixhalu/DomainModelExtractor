@@ -1,80 +1,95 @@
 @startuml
 hide circle
-class Admin<actor> {
-}
 class User<actor> {
+	email
+	password
+	project
+	registration
 }
 class Contributor<actor> {
-}
-class Admin {
-	have()
-	reset()
-	terminate()
-	restrict()
-	give()
-	manage()
-}
-class Access {
-}
-class UserPassword {
-}
-class User {
-	see()
-	perform()
-	view()
-	receive()
-	export()
-	reset()
-	confirm()
-}
-class Password {
+	impact
 }
 class Contributor {
-	analyze()
 	see()
+	access()
+	contribute()
+	work()
+	analyze()
 	ask()
 }
-class Impact {
-}
-class Email {
-}
-class Evolution {
-}
-class Statistics {
-}
-class SoftwareQualityMetric {
-}
-class Account {
+class User {
+	confirm()
+	see()
+	view()
+	request()
+	receive()
+	reset()
+	perform()
+	export()
 }
 class Analysis {
 }
+class Admin {
+	terminate()
+	associate()
+	manage()
+	reset()
+	restrict()
+	block()
+	have()
+}
 class UserPermission {
 }
-class VerificationEmail {
-}
-class Ability {
+class Email {
 }
 class List {
 }
+class Ability {
+}
+class Password {
+}
+class SoftwareQualityMetric {
+}
+class Statistics {
+}
+class Evolution {
+}
+class VerificationEmail {
+}
+class Access {
+}
 class Registration {
 }
-Admin --> Access : have
-User --> VerificationEmail : receive
-User --> Email : receive
-User --> Password : reset
-User --> Analysis : perform
-User --> SoftwareQualityMetric : export
-Admin --> Account : terminate
+class Signup {
+}
+class Project {
+}
+class Impact {
+}
+class UserPassword {
+}
+class Source {
+	project()
+}
+class Account {
+}
+User --> Signup : receive
 Contributor --> List : see
-Admin --> UserPassword : reset
+Admin --> Account : terminate
+User --> SoftwareQualityMetric : export
+User --> Statistics : view
+Admin --> Access : restrict
+Admin --> UserPermission : manage
+Admin --> Project : associate
+Admin --> User : associate
 Admin --> Ability : have
 User --> Evolution : see
-Contributor --> Admin : ask
-Admin --> UserPermission : manage
-Admin --> Access : give
-User --> Registration : confirm
-Contributor --> Impact : analyze
-Admin --> Access : restrict
-User --> Statistics : view
+User o-- Registration : confirm
+User o-- Email : receive
+User --> Analysis : perform
+Contributor o-- Impact : analyze
+Admin --> UserPassword : reset
+User o-- Password : reset
+User --> VerificationEmail : receive
 
 @enduml

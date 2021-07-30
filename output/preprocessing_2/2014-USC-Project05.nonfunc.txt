@@ -1,15 +1,15 @@
 The System shall connect to backup Agent if multiple Customer answer Call simultaneously .
-The System shall log call DetailInformation so that we can pull Analytic on it .
-The System shall make sure the incoming Call is assigned to a back up Agent if the primary Agent is unavailable so that less Customer go to voicemail .
-The System shall route the Customer to voicemail if no Agent is available .
+The System shall log CallDetailInformation so that we can pull Analytics on it .
+The System shall make sure the incoming Call is assigned to a back up Agent if the primary Agent is unavailable so that less Customer go to Voicemail .
+The System shall route the Customer to Voicemail if no Agent is available .
 The System shall be deployed HerokuCloud .
 The System shall log Data in PostgreSQL .
-The System shall use TwilioAPI for Void .
+The System shall use TwilioAPI for Voip .
 The System shall be developed using Ruby on Rails .
 The System shall run on Linux .
-The SystemInterface will be built using HTML5 , CSS , Javascript , Bootstrap , jQuery .
+The SystemInterface will be built using HTML5 , Css , Javascript , Bootstrap , jQuery .
 The System will be integrated with the SnAppCRM .
-The System should be able to handle 200 Simultaneous incoming and outgoing Call .
+The System should be able to handle 200 simultaneous Incoming and outgoing Call .
 The System should be able to RouteCall within a 2 Seconds to a open Agent .
 The AutoDialer should be able to make 10 simultaneous Call to find an available Customer for the Agent .
-The System shall automatically provision a Number and Voice-mailbox for each new User automatically .
+The System shall automatically Provision a Number and Voice - Mailbox for each new User automatically .

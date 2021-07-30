@@ -6,11 +6,48 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "insulinUsage",
+          "type": "default"
+        },
+        {
+          "name": "cgm",
+          "type": "default"
+        },
+        {
+          "name": "account",
+          "type": "default"
+        },
+        {
+          "name": "foodConsumption",
+          "type": "default"
+        },
+        {
+          "name": "bloodSugar",
+          "type": "default"
+        },
+        {
+          "name": "information",
+          "type": "default"
+        }
+      ]
     }
   },
   "relation_list": [],
   "behavior_list": [
+    {
+      "actor": "User",
+      "action": "map",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "set",
+      "target": "Level",
+      "para": []
+    },
     {
       "actor": "User",
       "action": "want",
@@ -25,26 +62,92 @@
     },
     {
       "actor": "User",
+      "action": "want",
+      "target": "InsulinRecommendation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "see",
       "target": "Trend",
       "para": []
     },
     {
       "actor": "User",
-      "action": "set",
-      "target": "Level",
+      "action": "use",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "Level",
+      "action": "warn",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "view",
-      "target": "Information",
+      "action": "download",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sign_up",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "login",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Information",
+      "action": "store",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sign",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "connect",
+      "target": "Application",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "set",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "input",
-      "target": "InsulinLevel",
+      "target": "Meal",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Information",
       "para": []
     },
     {
@@ -55,20 +158,62 @@
     },
     {
       "actor": "User",
-      "action": "want",
-      "target": "InsulinRecommendation",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "BloodSugar",
+      "action": "get",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "use",
-      "target": "App",
+      "action": "input",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "customize",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Information",
       "para": []
     },
     {
       "actor": "User",
       "action": "create",
-      "target": "Information",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "connect",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "want",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "App",
+      "action": "visualize",
+      "target": "",
       "para": []
     }
   ]

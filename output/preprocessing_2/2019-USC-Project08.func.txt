@@ -1,11 +1,9 @@
-User should have to answer a minimum Amount of PRO Question .
-Patient should have to answer a minimum Amount of PRO Question .
+Patient , User should have to answer a minimum Amount of PRO Question .
 Doctor should be notified if Doctor's PatientHealth declines after Surgery .
-User can receive real TimeNotification for User's Reminder and Appointment .
-User can indicate that User have completed certain Task .
+PatientUser can receive real TimeNotification for PatientUser's Reminder and Appointment .
+PatientUser can indicate that PatientUser have completed certain Task .
 DoctorUser can check if a Patient has completed certain Task .
-DoctorUser can view the the SurveyResponse of DoctorUser's Patient .
-DoctorUser can view the the QuestionnaireResponse of DoctorUser's Patient .
+DoctorUser can view the the Survey , QuestionnaireResponse of DoctorUser's Patient .
 User can login to the Application using Username and Password or with User's FingerprintScanner .
 CareTeam can input the relevant medical Information or Recommendation related to surgical Procedure for each medical Center into the SystemDatabase .
 Patient can update personal ContactInformation saved on the Server .
@@ -14,34 +12,25 @@ Patient can get Reward by filling out the required Survey or following certain r
 Doctor can modify Prescription based on Patient ' RecoveryProcess .
 Patient have Access to roughly personalized EducationContents like Video or Article that will help with Recovery or Preparation for Surgery .
 Patient can locally save the useful HealthRecommendationArticle provided by Doctor .
-Patient can see the History of Photo Patient took for the App .
-Patient can see the History of Video Patient took for the App .
-CareTeam can add Patient from CareTeam's List .
-CareTeam can remove Patient from CareTeam's List .
-Admin can access the Database of the AppServer , and manually add Entry from Backend .
-Admin can access the Database of the AppServer , and manually remove Entry from Backend .
+Patient can see the History of Photo , Video Patient took for the App .
+CareTeam can add , remove Patient from CareTeam's List .
+admin can access the Database of the AppServer , and manually add , remove Entry from Backend .
+Patient should be able to see the Website , ContactInformation of Patient's HealthCenter , Provider , Doctor , Nurse etc. . .
 Patient should be able to take Picture .
+Patient should have Access to review Post-opNote from Patient's Doctor , Surgeon on any previous Surgery , Treatment .
 Patient should be provided with Guidance on how to best capture Picture .
 Patient should be able to be guided by an Avatar for basic Tutorial .
-Patient can do Patient's Questionnaire from within the App .
-Patient can do Patient's Survey from within the App .
-Doctor should get a Notification when a patient Book get a Notification when a Patient books/cancels an Appointment .
-Doctor should get a Notification when a patient Book reschedules an Appointment .
-Doctor should get a Notification when a Patient cancels get a Notification when a Patient books/cancels an Appointment .
-Doctor should get a Notification when a Patient cancels Reschedule an Appointment .
-Patient should get a Confirmation after Patient book an Appointment .
-Patient should cancel an Appointment .
-Patient should reschedule an Appointment .
-Patient should be able to Rate whether an educational Article is relevant to me or not .
-Patient should be able to Rate whether an educational Video is relevant to me or not .
+Patient can do Patient's Questionnaire , Survey from within the App .
+Doctor should get a Notification when a patient Book , Cancels , reschedules an Appointment .
+Patient should get a Confirmation after Patient book , cancel , reschedule an Appointment .
+Patient should be able to Rate whether an educational Article , Video is relevant to me or not .
 HealthcareExecutive can see the collected Data and Trend of all patient Outcome , so HealthcareExecutive can study how to improve our Performance .
-Patient can manually add Pre or Post-opReminder in Addition to the standard One set by Patient's Doctor .
-'s Staff , Doctor can register the Patient under 5 Step .
-'s Staff , Doctor can enroll the Patient under 5 Step .
+Patient can manually add pre or post-op Reminder in Addition to the standard One set by Patient's Doctor .
+'s Staff , Doctor can register , enroll the Patient under 5 Step .
 Patient can snooze a Reminder but still be reminded until Patient dismiss it .
 Patient can receive Recommendation of common Answer and Resource related to Patient's Surgery based on Patient's Timeline .
-Doctor can use this App to do certain Follow-upAppointment via Telemedicine , so those Patient who ca n't get Ride easily wo n't have to miss these crucial Appointment .
+Doctor can use this App to do certain follow - up Appointment via Telemedicine , so those Patient who ca n't get Ride easily wo n't have to miss these crucial Appointment .
 Patient should be able to track Patient's HealthStatus graphically , so that it is easily understandable .
-Patient can see all Patient's DietaryConstraint and medications Patient need to take before and after Surgery .
+Patient can see all Patient's dietary Constraint and Medication Patient need to take before and after Surgery .
 Patient can compare Picture to see a visible Difference over Time .
-Patient can either choose to install the smartphone App , or by Default get SMSNotification and not get bombarded everywhere .
+Patient can either choose to install the SmartphoneApp , or by Default get SmsNotification and not get bombarded everywhere .

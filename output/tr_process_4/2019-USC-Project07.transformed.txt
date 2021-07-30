@@ -6,7 +6,20 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "point",
+          "type": "default"
+        },
+        {
+          "name": "progressreport",
+          "type": "default"
+        },
+        {
+          "name": "performance",
+          "type": "default"
+        }
+      ]
     },
     "Developer": {
       "name": "Developer",
@@ -26,51 +39,9 @@
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "Component",
-      "action": "have",
-      "target": "Structure",
-      "para": []
-    },
-    {
-      "actor": "Option",
-      "action": "enables",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "understand",
-      "target": "Point",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "track",
-      "target": "Progress",
-      "para": []
-    },
-    {
       "actor": "Developer",
-      "action": "fix",
-      "target": "Graph",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Feedback",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "maintainable",
-      "target": "SourceCode",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "ProgressReport",
+      "action": "hand_off",
+      "target": "",
       "para": []
     },
     {
@@ -81,14 +52,44 @@
     },
     {
       "actor": "User",
-      "action": "skip",
-      "target": "Question",
+      "action": "understand",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "play",
       "target": "App",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "change",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "skip",
+      "target": "Question",
+      "para": []
+    },
+    {
+      "actor": "Time",
+      "action": "fix",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Option",
+      "action": "enable",
+      "target": "",
       "para": []
     },
     {
@@ -104,9 +105,93 @@
       "para": []
     },
     {
+      "actor": "User",
+      "action": "understand",
+      "target": "Point",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "publish",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "Developer",
       "action": "change",
       "target": "Ui",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "get",
+      "target": "UserAnalytic",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "fix",
+      "target": "Graph",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Option",
+      "action": "enable",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "fix",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "provide",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "hand",
+      "target": "SourceCode",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "play",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "Trouble",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "get",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "proceed",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "track",
+      "target": "Progress",
       "para": []
     },
     {
@@ -116,15 +201,75 @@
       "para": []
     },
     {
+      "actor": "Developer",
+      "action": "hand",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "skip",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "track",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "hand_off",
+      "target": "SourceCode",
+      "para": []
+    },
+    {
+      "actor": "Component",
+      "action": "have",
+      "target": "Structure",
+      "para": []
+    },
+    {
+      "actor": "Component",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "answer",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Progressreport",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "restructure",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "User",
       "action": "get",
       "target": "Hint",
       "para": []
     },
     {
-      "actor": "Maintainer",
+      "actor": "User",
       "action": "get",
-      "target": "UserAnalytic",
+      "target": "Feedback",
       "para": []
     }
   ]

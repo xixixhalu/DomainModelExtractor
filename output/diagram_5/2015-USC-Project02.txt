@@ -1,132 +1,205 @@
 @startuml
 hide circle
 class User<actor> {
-}
-class Admin<actor> {
-}
-class Admin {
-	change()
-	perform()
-	generate()
-	list()
-	delete()
-	suspend()
-	manage()
-	have()
-	browse()
-	restore()
-	update()
-	create()
-}
-class SystemSetting {
-}
-class User {
-	remove()
-	reserve()
-	keep()
-	upload()
-	write()
-	use()
-	save()
-	post()
-	shut()
-	like()
-	delete()
-	moderate()
-	have()
-	report()
-	choose()
-	take()
-	sort()
-	create()
-}
-class Control {
-}
-class Picture {
-	give()
+	picture
+	login
+	profile
+	phone
+	facebookAccount
+	history
+	event
+	geo
+	username
+	gallery
+	hashtag
 }
 class Event {
+	name
+	hashtag
+	start()
+	see()
+	invite()
 }
-class Public {
+class Admin {
+	password
+	page
+	update()
+	login()
+	browse()
+	suspend()
+	have()
+	restore()
+	generate()
+	change()
+	manage()
+	create()
+	delete()
+	list()
+	perform()
 }
-class Photo {
-}
-class Login {
-}
-class AdminFeature {
+class User {
+	take()
+	view()
+	sort()
+	choose()
+	have()
+	ensure()
+	post()
+	participate()
+	remove()
+	invite()
+	save()
+	like()
+	upload()
+	keep()
+	moderate()
+	login()
+	write()
+	want()
+	shut()
+	delete()
+	reserve()
+	shut_down()
+	report()
+	create()
+	use()
 }
 class Hashtag {
-}
-class Report {
-}
-class Application {
+	post()
+	save()
+	see()
+	expire()
 }
 class Radius {
 }
-class ExpirationDate {
+class Picture {
+	give()
+	be()
+	introduce()
 }
-class Name {
-}
-class EventHashtag {
+class Distance {
 }
 class Tourist {
 	search()
+	see()
 }
-class Location {
+class BrowsingPicture {
+}
+class Popularity {
+}
+class Caption {
+}
+class People {
+	miss()
+	see()
+	access()
+}
+class Page {
+}
+class Application {
+}
+class Gallery {
 }
 class Contents {
 }
-class Information {
+class Control {
+}
+class SystemSetting {
+}
+class EventHashtag {
+}
+class Photo {
+}
+class App {
+}
+class Password {
+}
+class Login {
 }
 class EventAttendee {
 	use()
 }
-class Caption {
+class PicShareApp {
 }
-User --> Picture : remove
-User --> Picture : delete
-User --> Event : remove
-Admin --> AdminFeature : perform
-Picture --> Control : give
-Admin --> Name : change
-Admin --> Information : have
-User --> Public : create
-User --> Hashtag : use
-Admin --> User : suspend
-User --> Photo : keep
-Admin --> Report : generate
-EventAttendee --> Hashtag : use
-Admin --> Event : update
-Admin --> Event : delete
-Admin --> EventHashtag : create
-User --> Application : use
+class Date {
+}
+class Location {
+}
+class Report {
+}
+class Feature {
+}
+class Profile {
+}
+class Username {
+}
+User o-- Picture : moderate
+User --> App : take
 Admin --> User : browse
-User --> Caption : write
-User --> Event : create
-User --> Photo : take
-User --> Login : create
-Admin --> User : manage
+Admin --> Admin : list
 Admin --> Picture : restore
-User --> Radius : choose
-User --> Event : shut
-User --> Picture : sort
-User --> Hashtag : reserve
+Admin --> Admin : restore
+Admin --> Event : delete
+People --> Password : see
 Admin --> Picture : list
-User --> Hashtag : save
-User --> Picture : post
-User --> Picture : save
-User --> Picture : moderate
-Admin --> SystemSetting : change
-Admin --> Control : have
-Tourist --> Location : search
-User --> Picture : report
-User --> Picture : take
-Admin --> Contents : manage
-User --> Control : have
-Admin --> ExpirationDate : change
 Admin --> Picture : delete
-User --> Picture : upload
-User --> Picture : like
-User --> Picture : choose
+User --> BrowsingPicture : choose
+User o-- Hashtag : use
+User o-- Picture : use
+User o-- Event : keep
+User o-- Login : create
+User o-- Gallery : choose
+User --> Radius : choose
+User o-- Event : shut
+Admin --> Control : have
+User o-- Profile : use
+User o-- Picture : report
+Admin --> User : suspend
+Admin --> Contents : manage
+Admin o-- Password : login
+User o-- Picture : post
+User o-- Event : shut_down
+User --> Popularity : sort
+User o-- User : moderate
+User --> Control : have
+User o-- Picture : delete
+User o-- Event : remove
+User --> Caption : write
+User --> PicShareApp : take
+Admin --> SystemSetting : change
+EventAttendee --> Hashtag : use
+User o-- Picture : like
+Admin --> Admin : browse
+User o-- Picture : choose
+Picture --> Control : give
+User o-- Picture : sort
+User o-- User : delete
+User --> Date : sort
+Admin --> EventHashtag : create
+User --> Location : post
+User o-- Event : create
+User o-- Hashtag : reserve
+User o-- Event : moderate
+User --> Photo : take
+Admin --> Username : supported_by
+User o-- Hashtag : save
+Tourist --> Location : search
+User o-- Picture : upload
+Admin --> User : manage
+Admin --> Event : update
+User --> Application : login
+Admin --> Report : generate
+User --> Distance : sort
+User --> Photo : keep
+Admin --> Username : login
+Admin --> Password : supported_by
+User o-- Event : save
+User o-- Picture : take
+User --> Application : use
+Admin --> Picture : supported_by
+Admin o-- Page : login
+User o-- Picture : save
+Admin --> Feature : perform
+User --> Profile : supported_by
 
 @enduml

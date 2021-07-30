@@ -12,6 +12,7 @@ import copy
 from util.logger import Logger
 global logger
 
+LEMMA_STOP_WORDS = {'data'}
 
 # create a class Matcher here and store identifier and input in it
 class Matcher:
@@ -40,12 +41,13 @@ class Matcher:
         rule_POS_dict = {}
         rule_keywords = set()
 
-        try:
-            line = file_obj.loc[rule]
-        except:
-            print('No such a RULE! Please try another RULE!')
-            rule = input('No such a RULE! Please try another RULE!\nEnter:')
-            self.parse_rule(rule_obj, int(rule))
+        # try:
+        line = file_obj.loc[rule]
+        # except:
+        #     print('No such a RULE! Please try another RULE!')
+        #     rule = input('No such a RULE! Please try another RULE!\nEnter:')
+        #     self.parse_rule(rule_obj, int(rule))
+
 
         # read name
         rule_name = line.loc['Sentence Structure'].strip()
@@ -59,6 +61,7 @@ class Matcher:
             length = len(TDs_sep)
             for i in range(0, length, 3):
                 td_name = TDs_sep[i].strip()
+                td_name = "^" + td_name.replace("*", ':{0,1}.*') + "$"
                 var1 = TDs_sep[i + 1].strip()
                 var2 = TDs_sep[i + 2].strip()
                 tup = (td_name, var1, var2)
@@ -73,7 +76,7 @@ class Matcher:
                 pos_list = pos_tag_item.split("==")
                 pos_var = pos_list[0].strip()
                 pos_type = pos_list[1].strip()
-                pos_type = pos_type.replace("*", '\\w*')
+                pos_type = "^" + pos_type.replace("*", '\\w*') + "$"
                 rule_POS_dict[pos_var] = pos_type
 
         # read start word
@@ -89,12 +92,25 @@ class Matcher:
 
         return rule_name, rule_TD_list, rule_POS_dict, rule_keywords
 
+    
+    # Note: this function check if a word is in stop words dict, if no, return lemma form, otherwise, return original word.
+    def filter_stop_word(self, idx, nlp_output):
+        tokens = nlp_output['sentences'][0]['tokens']
+        word = tokens[idx]['originalText']
+        is_stop_word = False
+        for w in LEMMA_STOP_WORDS:
+            if word.lower() == w: #or w.endswith(word.lower()):
+                is_stop_word = True
+                break
+        if not is_stop_word:
+            word = tokens[idx]['lemma']
+        return word
+
 
     def build_tokens(self, nlp_output):
         tokens = {}
         for t in nlp_output['sentences'][0]['tokens']:
-            tokens[t['index']] = t['word']
-
+            tokens[t['index']] = self.filter_stop_word(t['index']-1, nlp_output)
         return tokens
 
 
@@ -150,8 +166,11 @@ class Matcher:
         for tup in rule_tds:
             td_count[tup[0]] = 1 + td_count.get(tup[0], 0)
         flag = True
+
         for key in td_count:
-            if text_tds.get(key) is None or len(text_tds.get(key)) < td_count.get(key):
+            r = re.compile(key)
+            temp_list = list(filter(r.match, text_tds.keys()))
+            if len(temp_list) == 0 or len(temp_list) < td_count.get(key):
                 flag = False
                 break
 
@@ -162,7 +181,6 @@ class Matcher:
     
 
     def dfs_match_tds(self, rule_tds, text_tds, rule_pos, var_to_index, var_to_index_list):
-        
         if rule_pos == len(rule_tds):
             var_to_index_list.append(var_to_index)
             return True, var_to_index_list
@@ -170,21 +188,24 @@ class Matcher:
         key_to_match = rule_tds[rule_pos][0]
         var1 = rule_tds[rule_pos][1]
         var2 = rule_tds[rule_pos][2]
-        for candidate_index in text_tds[key_to_match]:
-            cand1 = candidate_index[0]
-            cand2 = candidate_index[1]
+        r = re.compile(key_to_match)
+        temp_list = list(filter(r.match, text_tds.keys()))
+        for key in temp_list:
+            for candidate_index in text_tds[key]:
+                cand1 = candidate_index[0]
+                cand2 = candidate_index[1]
 
-            temp_var_to_index = copy.deepcopy(var_to_index)
+                temp_var_to_index = copy.deepcopy(var_to_index)
 
-            if var1 in temp_var_to_index and temp_var_to_index[var1] != cand1:
-                continue
-            if var2 in temp_var_to_index and temp_var_to_index[var2] != cand2:
-                continue
+                if var1 in temp_var_to_index and temp_var_to_index[var1] != cand1:
+                    continue
+                if var2 in temp_var_to_index and temp_var_to_index[var2] != cand2:
+                    continue
 
-            temp_var_to_index[var1] = cand1
-            temp_var_to_index[var2] = cand2
+                temp_var_to_index[var1] = cand1
+                temp_var_to_index[var2] = cand2
 
-            self.dfs_match_tds(rule_tds, text_tds, rule_pos + 1, temp_var_to_index, var_to_index_list)[0]
+                self.dfs_match_tds(rule_tds, text_tds, rule_pos + 1, temp_var_to_index, var_to_index_list)[0]
 
         if not var_to_index_list:
             return False, var_to_index_list
@@ -200,7 +221,8 @@ if __name__ == '__main__':
                         help='input file. Example: python3 ssr_matching.py -f 2014-USC-Projecct02')
     parser.add_argument('-o', '--output', type=str, metavar='', default="./output/ssr_match_3/",
                         help='output path. Default: %(default)s')
-    parser.add_argument('-s', '--ssr', type=str, metavar='', default="./SSR/SSR.xlsx",
+    # parser.add_argument('-s', '--ssr', type=str, metavar='', default="./SSR/SSR.xlsx",
+    parser.add_argument('-s', '--ssr', type=str, metavar='', default="./SSR/SSR-test.xlsx",
                         help='sentence structure path. Default: %(default)s')
     parser.add_argument('-l', '--list', action='store_true',
                         help='list all input files. Example: python3 ssr_matching.py -l')
@@ -251,9 +273,13 @@ if __name__ == '__main__':
                         # collect word and punctuation indices in the sentence to a dictionary
                         s_dic = ssr.build_tokens(nlp_output)
 
-                        td_key = enhancedTD(nlp_output)
+                        td_key = pure_enhancedTD(nlp_output)
                         for i in range(1, len(ssrNum)+1):
-                            rule_result = ssr.parse_rule(rule_obj, i)
+                            try:
+                                rule_result = ssr.parse_rule(rule_obj, i)
+                            except:
+                                # print("Failed to parse Rule line", i, ". Skip!")
+                                continue
                             # split rule result
                             rule_name = rule_result[0]
                             rule_tds = rule_result[1]

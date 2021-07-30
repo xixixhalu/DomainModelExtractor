@@ -2,17 +2,14 @@ As a user, I can use a hashtag for a picture taken in a special event such as a 
 As a user, I can take many pictures to introduce my geo-location, so the tourists using the app will search the location and see what's there.
 As a user, I can create my login with specific username and password or Facebook account, so I can use them to login to the application.
 As a user, I can login to the application using my registered username or my Facebook account, so I can use the application with my own profile.
-As a user, I can reserve my event's hashtag for a limited time  , so I and event attendees can use the hashtag to post pictures of the event.
+As a user, I can reserve my event's hashtag for a limited time (one week), so I and event attendees can use the hashtag to post pictures of the event.
 As a user, I can delete pictures that I posted, so they are no longer accessible.
 As a user, I can report any inappropriate picture, so that it will be removed from the event.
 As a user, I can moderate the pictures in an event that I created, so that pictures that I don't like will be removed from the event.
 As a user, I can shut down my own event, so that I can remove my event and all pictures in the event before reserved time is up.
 As a user, I can take a photo from the PicShare app or choose a picture from my gallery, so that I can take a picture from another app.
 As a user, I can set up a private event that only invited people can see and access via password, so that I can ensure only the people I want to participate may participate.
-As a user, I can save one or many pictures from an event to my phone so that I can keep the photos after the event expires.
-As a user, I can save one or many pictures from an event to my phone so that I can keep the photos after the hashtag expires.
-As a user, I can save one or many pictures from an hashtag to my phone so that I can keep the photos after the event expires.
-As a user, I can save one or many pictures from an hashtag to my phone so that I can keep the photos after the hashtag expires.
+As a user, I can save one or many pictures from an event/hashtag to my phone so that I can keep the photos after the event/hashtag expires.
 As a user, I can save the hashtags to save time searching for them later and see my history of hashtags.
 As a user, i can choose if users can upload pictures, or only post pictures captured live, which would give me more control over contention my private event.
 As a user, I can sort pictures in events by date or popularity, and I can sort pictures in location by distance, date or popularity,  so that I can have more control over picture viewing.
@@ -20,8 +17,7 @@ As a user, I can like a picture.
 As a user, I can post only captured live pictures to nearby location, so that all the pictures will be from that area.
 As a user, I can choose the radius for browsing pictures in nearby locations, so that I can view the ones closest to me.
 As a user, I can write a caption for the pictures before posting them, so that my pictures will be more descriptive.
-As a user, I can create a public without posting a picture in it, so that I can reserve the hashtag before the event starts.
-As a user, I can create a private event without posting posting a picture in it, so that I can reserve the hashtag before the event starts.
+As a user, I can create a public/private event without posting a picture in it, so that I can reserve the hashtag before the event starts.
 As an admin, I can login into my administrative page with my password and username, so that I can perform admin features.
 As an admin, I can browse users of the app and view pictures that they posted, so that I can manage users and their contents.
 As an admin, I can suspend a user, so that I can have more control over users.

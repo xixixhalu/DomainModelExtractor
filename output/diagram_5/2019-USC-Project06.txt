@@ -1,131 +1,177 @@
 @startuml
 hide circle
 class User<actor> {
+	post
+	desktop
+	profileInformation
+	password
+	profilePicture
+	comment
+	winCondition
 }
 class Owner<actor> {
 }
-class Admin<actor> {
+class People {
+	comment
+	agree()
+}
+class Everyone {
+	post
 }
 class User {
-	join()
-	add()
-	mark()
-	adjust()
-	delete()
-	edit()
-	view()
-	tag()
-	see()
 	save()
-	export()
-	set()
-	upload()
-	enter()
-	filter()
 	create()
+	mark()
+	log()
+	add()
+	upload()
+	filter()
+	tag()
+	disagree()
+	set()
+	delete()
+	view()
+	export()
+	join()
+	see()
+	log_out()
 	reset()
+	sort()
+	agree()
+	forget()
+	edit()
+	adjust()
+	enter()
+	want()
 }
-class Comment {
-}
-class PrioritizationResult {
-}
-class Post {
+class Coefficient {
 }
 class Owner {
-	add()
-	access()
-	make()
-	hide()
-	edit()
 	delete()
 	use()
+	access()
+	add()
+	edit()
+	make()
+}
+class Project {
+}
+class BusinessValue {
+	remember()
 }
 class ProjectSettingPage {
 	give()
 }
-class Project {
+class TOPSISAnalysis {
 }
-class Someone {
+class While {
 }
-class Coefficient {
+class PrioritizationResult {
 }
 class Ease {
-}
-class Admin {
-	edit()
-}
-class Penalty {
-}
-class ProfileInformation {
-}
-class Demo {
-}
-class Page {
-}
-class People {
-}
-class WinCondition {
-}
-class List {
-}
-class ProjectListPage {
-}
-class Picture {
-}
-class View {
-}
-class Category {
-}
-class comments {
-}
-class reply {
-}
-class Password {
-}
-class WeightCoefficient {
+	remember()
 }
 class Importance {
 }
-class BusinessValue {
+class Admin {
+	delete()
+	edit()
 }
-class AdminRights {
+class Post {
 }
-class WinConditionCategory {
+class Wincondition {
 }
-User --> Comment : add
-User --> Penalty : set
-User --> Importance : adjust
-User --> Project : join
-Owner --> ProjectSettingPage : use
-User --> WinCondition : export
-User --> ProfileInformation : edit
-User --> BusinessValue : set
-User --> Picture : upload
+class List {
+}
+class Someone {
+}
+class ProjectListPage {
+}
+class Criterion {
+}
+class Penalty {
+	remember()
+}
+class Winconditioncategory {
+}
+class View {
+}
+class WinCondition {
+	excel()
+}
+class Comment {
+}
+class Need {
+}
+class WeightCoefficient {
+}
+class Demo {
+}
+class Category {
+}
+class Upvote {
+}
+class ProfileInformation {
+}
+class SettingPage {
+}
+class Picture {
+}
+class Password {
+}
+class Reply {
+}
+class MinimumMarketableFeature {
+}
+class Homepage {
+}
 Owner --> Project : add
-ProjectSettingPage --> AdminRights : give
-User --> View : filter
-User --> Someone : tag
-User --> WinConditionCategory : create
-User --> Category : mark
-User --> Coefficient : adjust
-User --> Ease : set
-Owner --> Project : hide
+User --> While : adjust
 User --> Demo : see
-Admin --> comments : edit
-Owner --> Page : access
-User --> reply : add
-Admin --> Post : edit
-User --> People : see
-Owner --> Project : make
-User --> Password : reset
-User --> Comment : delete
-User --> WinCondition : create
-User --> WinCondition : delete
+User o-- WinCondition : agree
+User --> Category : filter
+User o-- WinCondition : export
+User --> Category : mark
 User --> PrioritizationResult : save
+User o-- Comment : add
+User --> Upvote : sort
+User --> Winconditioncategory : create
+User --> Coefficient : adjust
+User --> Homepage : view
+People --> WinCondition : supported_by
+User --> Importance : adjust
+User o-- ProfileInformation : edit
+User --> View : filter
+User --> WinCondition : supported_by
+Owner --> Project : make
+User --> User : delete
+User --> Penalty : set
+User --> Project : join
+User o-- WinCondition : delete
+User --> Ease : set
+Owner --> ProjectSettingPage : use
+User o-- Post : delete
+User o-- Comment : delete
+Owner --> SettingPage : access
+User o-- Wincondition : create
+User --> Need : set
+User --> Picture : upload
 Owner --> List : edit
-Owner --> Project : delete
 User --> WeightCoefficient : enter
-User --> Post : delete
+User o-- Password : reset
+Admin --> Post : edit
+User --> Someone : tag
+People --> WinCondition : agree
+Owner --> Project : access
+User --> BusinessValue : set
+User --> People : see
+Admin --> Comment : edit
 User --> ProjectListPage : view
+User --> Reply : add
+User o-- WinCondition : sort
+User o-- Comment : tag
+User --> MinimumMarketableFeature : mark
+User --> Criterion : enter
+User --> TOPSISAnalysis : save
 
 @enduml

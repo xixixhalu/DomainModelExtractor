@@ -8,14 +8,11 @@ As a user, I should be able to reset my password with my email if forgotten.
 The system shall be https.
 As a user, I should be able to request for analyzing my project.
 As a user, I should receive a verification email on signup.
-As an admin, I should have the ability to grant access of the projects to the user.
-As an admin, I should have the deny access of the projects to the user.
+As an admin, I should have the ability to grant/deny access of the projects to the user.
 As a user, I should be able to view various statistics about the project.
 As a contributor, I should be able to access all the projects I worked on so that I can analyze my impact.
-As an admin, I should be able to reset users passwords when .
-As an admin, I should be able to reset users passwords if required required.
-As an admin, I should be able to terminate or block an account temporarily 
-As an admin, I should be able to terminate or block an account permanently . 
+As an admin, I should be able to reset users passwords when/if required.
+As an admin, I should be able to terminate or block an account temporarily/permanently.
 As a user, I should be able to see the evolution of Open-source projects.
 As a contributor, I should be able to see the list of analyzed projects that I have contributed to, I am given access to, or any other open source project.
 The system shall be in react.js.

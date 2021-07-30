@@ -2,81 +2,95 @@
 hide circle
 class Consumer<actor> {
 }
-class IConsumer<actor> {
-}
 class Corporation<actor> {
+	employee
 }
 class Provider<actor> {
 }
 class User<actor> {
+	profile
+	location
+}
+class Consumer {
+	join()
+	create()
+	register()
+	compare()
+	rate()
+}
+class Network {
+}
+class Offering {
+	drive()
+}
+class User {
+	create()
+	share()
+	follow()
+	find()
+	have()
+	receive()
+	filter()
+}
+class Notification {
+}
+class Corporation {
+	view()
+}
+class Content {
+	drive()
+}
+class Access {
+}
+class HealthProfile {
+	attach()
 }
 class Provider {
 	share()
 	send()
 }
-class Offering {
-}
-class Corporation {
-	view()
-}
 class Price {
 }
-class Consumer {
-	compare()
-	create()
-	rate()
-	join()
+class Review {
 }
-class Network {
+class Offer {
 }
-class Content {
+class Gain {
+	access()
+	feature()
 }
-class User {
-	create()
-	share()
-	filter()
-	have()
-	find()
+class Pricing {
+	drive()
 }
-class Access {
+class HealthCarePricing {
+}
+class HealthcarePrice {
 }
 class Location {
 	access()
 }
-class HealthCarePricing {
-}
-class Review {
-}
-class Pricing {
-}
 class Employee {
 }
-class HealthcarePrice {
-}
-class Notification {
-}
-class HealthProfile {
-	attach()
-}
-class Offer {
-}
-Provider --> Content : share
-Corporation --> Price : view
-Consumer --> Network : create
-Location --> Provider : access
-HealthProfile --> Offer : attach
-Consumer --> Provider : rate
-Provider --> Pricing : share
-User --> HealthCarePricing : share
-User --> Notification : filter
-User --> Location : find
-Provider --> Offering : send
 User --> Access : have
-Provider --> Offering : share
+Provider --> User : send
 Consumer --> Network : join
-Consumer --> Review : create
+Provider --> Offering : send
+HealthProfile --> Provider : attach
+User o-- Location : find
 User --> HealthProfile : create
-Corporation --> Employee : view
+Corporation --> Price : view
+Corporation o-- Employee : view
+Consumer --> User : register
+Consumer --> Review : create
+User --> Notification : filter
+HealthProfile --> Offer : attach
+User --> Notification : follow
+Provider --> Offering : share
+Provider --> Pricing : share
+Consumer --> Provider : rate
+Provider --> Content : share
+User --> HealthCarePricing : share
 Consumer --> HealthcarePrice : compare
+Consumer --> Network : create
 
 @enduml

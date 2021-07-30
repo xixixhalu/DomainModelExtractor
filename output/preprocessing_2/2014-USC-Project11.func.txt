@@ -1,18 +1,18 @@
-User can search for Course locally based on : Location , Category , Price , Date , keyword .
-CourseAttendee can see the Schedule of Training and it based on CourseName , Trainer , Location , DateRange for a particular Course .
+User can search for Course locally based on : Location , Category , Price , Date , Keyword .
+CourseAttendee can see the Schedule of Training and it based on course Name , Trainer , Location , DateRange for a particular Course .
 User can request a Course that is not on Calendar .
 User can filter by Rating and Review .
 CourseAttendee can compare the Price and decide based on Price .
 Trainer can offer Course in specific Location .
 Trainer can put Trainer's Calendar of Availability so Admin can schedule a Course .
-Trainer can see the Rating and reviews to continue to improve myself and the Course .
+Trainer can see the Rating and Review to continue to improve myself and the Course .
 Trainer can compare Trainer's Price to maximize .
 User can see the Variety of Course available by Category and most popular .
 User can see which Trainer and Course are rated highest .
 Enterprise can compare Price of Course to see if Enterprise 'm getting a good Value .
 Administrator can receive AccountRegistrationInformation from the Trainer .
-Administrator can create , delete and inquiry Course as well as update CourseInformation such as Date and Time .
-Administrator can see which courses and which Trainer are profitable .
+Administrator can create , delete and InquiryCourse as well as update CourseInformation such as Date and Time .
+Administrator can see which Course and which Trainer are profitable .
 Administrator can adjust the Rating of Course and Trainer .
 Administrator can receive the Request from Trainer about which Course to offer and when the Course start and verify them .
 Administrator will have a Dashboard to display Notification similar to DatabaseFunctions.i can receive any Change of Update .
@@ -22,13 +22,13 @@ User will be able to request to cancel User's Registration .
 User can register for a Course after logging in to the System .
 User can share the Course through FaceBook , Twitter , LinkedIn and Email .
 User would be able to see minimum Number of People registered for the Course .
-Trainer can set the Minimum , Maximum no of Attendee and Price per Attendee .
-Admin can see how many User are registered for the Course and see if Admin met the Minimum . If Admin did n't , Admin would be able to cancel the Course or adjust the minimum Number of the Course .
-Admin can move People to a different Class .
+Trainer can set the minimum , maximum No of Attendee and Price per Attendee .
+admin can see how many User are registered for the Course and see if admin met the Minimum . If admin did n't , Admin would be able to cancel the Course or adjust the minimum Number of the Course .
+admin can move People to a different Class .
 CourseAttendee will receive the ConfirmationEmail after registering for the Course .
 Developer would be able to analyze each and every Requirement and understand their Feasibility and Architecture behind them .
-Admin can adjust the Number of Attendee following Notification from Eventbrite .
-CourseAttendee can Rate and Review the Course CourseAttendee attended .
+admin can adjust the Number of Attendee following Notification from Eventbrite .
+CourseAttendee can rate and review the Course CourseAttendee attended .
 CourseAttendee could pay for the Course through EventBrite .
-Trainer would be able to attach one of the Option to Trainer's Profile : ActiveDuty , Veteran , MilitaryFamily .
-Admin would be able to attach one of the Option to Trainer ' Profile : ActiveDuty , Veteran , MilitaryFamily .
+Trainer would be able to attach one of the Option to Trainer's Profile : Active Duty , Veteran , MilitaryFamily .
+admin would be able to attach one of the Option to Trainer ' Profile : ActiveDuty , Veteran , Military Family .

@@ -1,0 +1,8 @@
+15-Jul-21 22:38:19 - ERROR
+Traceback (most recent call last):
+  File "rule_transforming.py", line 169, in <module>
+    p.extra_operation()
+  File "rule_transforming.py", line 132, in extra_operation
+    self.domain.delete_relation(actor=source)
+TypeError: delete_relation() got an unexpected keyword argument 'actor'
+

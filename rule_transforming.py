@@ -16,9 +16,8 @@ global logger
 
 from util.IS import *
 
-from TR import *
+from TR.special_TR import *
 
-STOP_WORDS = {'system', 'tool', 'website'}
 
 class Transformation:
     def __init__(self, filename, ssr_input_path, pre_input_path):
@@ -36,9 +35,16 @@ class Transformation:
         for arg in arg_list:
             arg_pair = arg.strip().split('=')
             arg_pair[0] = arg_pair[0].strip()
-            arg_pair[1] = re.sub(r'\W+', '', variables[arg_pair[1]]).strip()
+            arg = ''
+            # print(method_to_call.__name__)
+            if re.search("\"", arg_pair[1]):
+                arg = re.sub(r"\"", '', arg_pair[1]).strip()
+            else:
+                arg = '_'.join([re.sub(r'\W+', '', variables[i]).strip() for i in str(arg_pair[1])])
+            # arg_pair[1] = re.sub(r'\W+', '', variables[arg_pair[1]]).strip()
 
-            arguments[arg_pair[0]] = arg_pair[1]
+            # arguments[arg_pair[0]] = arg_pair[1]
+            arguments[arg_pair[0]] = arg
 
         method_to_call(**arguments)
 
@@ -64,7 +70,6 @@ class Transformation:
             while line:
                 entity_list = eval(line)
                 for entity_word in entity_list:
-                    print(entity_word[0])
                     entity = ""
                     for word in entity_word[0]:
                         word = re.sub(r'\W+', '', word)
@@ -83,48 +88,39 @@ class Transformation:
 
         # Iterate transformation rules
         for tr in tr_name:
+            if str(tr) == 'nan':
+                continue
             try:
                 line = rule_obj.loc[tr]
             except:
                 print("Error! Check the log")
                 logger.error(tr + ' not found! Try the other RULEs!')
                 continue
+
             ssr_name = line.loc['Sentence Structure'].strip()
             action = line.loc['Action'].strip()
             transformation_rule = line.loc['Transformation'].strip()
-            
+
             # Iterate sentences matched to SSR
             for s in data[ssr_name]:
                 s_index = s['Index']
                 s_result = s['Result']
-
                 # Iterate matched variables
                 variables = {}
                 for var, idx in s_result.items():
-                    variables[var] = s_index[str(idx)]
+                    word = s_index[str(idx)]
+                    r = re.compile(re.sub(r'\W+', '', word), re.IGNORECASE)
+                    rst_list = list(filter(r.match, list(self.domain.entity_asdict().keys())))
+                    if rst_list:
+                        variables[var] = rst_list[0]
+                    else:
+                        variables[var] = s_index[str(idx)]
 
                 self.transform(action, variables, transformation_rule)
 
     def extra_operation(self):
-        # filter stop words
-        for entity in self.domain.entity_asdict():
-            if entity.lower() in STOP_WORDS:
-                self.domain.delete_entity(entity)
-        for behavior in self.domain.behavior_asdict():
-            actor = behavior['actor']
-            target = behavior['target']
-            if actor.lower() in STOP_WORDS:
-                self.domain.delete_behavior(actor=actor)
-            if target.lower() in STOP_WORDS:
-                self.domain.delete_behavior(target=target)
-        for relation in self.domain.relation_asdict():
-            source = relation['source']
-            dest = relation['dest']
-            if source.lower() in STOP_WORDS:
-                self.domain.delete_relation(actor=source)
-            if dest.lower() in STOP_WORDS:
-                self.domain.delete_relation(dest=dest)
-
+        S_TR1(self.domain)
+        S_TR2(self.domain)
 
 
 if __name__ == '__main__':

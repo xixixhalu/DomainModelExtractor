@@ -1,7 +1,6 @@
-demographic Info-age ; Gender ; Ethnicity ; City ; ZipCode ; School ; Status
-demographic Info-age ; Gender ; Ethnicity ; City ; ZipCategory ; Program ;
-Activity : AdminWork ; follow Up ; individual Canceling ; Workshop ; Field-trip ; CommunityResource ; CSS ; TimeStamp .
-The System shall be more secure ; Session timer ; YouthUser can only access their own Document ; SecurityQuestion ; CaseManagerAccess control ; .
-The System shall be deployed on Mylaspace ; Redirect from . Org . Net to . Com .
-The System shall be developed using Pop .
+demographic Info - Age ; Gender ; Ethnicity ; City ; ZipCode ; School ; Status , Category ; Program ;
+Activity : admin Work ; FollowUp ; individual Canceling ; Workshop ; Field - Trip ; CommunityResource ; Css ; TimeStamp .
+The System shall be more secure ; SessionTimer ; YouthUser can only access their own Document ; SecurityQuestion ; CaseManagerAccessControl ; .
+The System shall be deployed on Mylaspace ; redirect from . Org . net To . Com .
+The System shall be developed using Php .
 The System shall import existing Data from Salesforce exported Data .

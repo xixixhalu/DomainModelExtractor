@@ -231,8 +231,8 @@ def topological_sort_ssr(ssrIndependence):
         else:
             nodes = str(ssrIndependence[i]).split(',')
             for node in nodes:
-                out_nodes[int(node)].append(i + 1)
-                in_nodes[i + 1].append(int(node))
+                out_nodes[int(float(node))].append(i + 1)
+                in_nodes[i + 1].append(int(float(node)))
             in_degree.append(len(nodes))
 
     match_order = []

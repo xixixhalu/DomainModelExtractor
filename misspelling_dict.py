@@ -21,6 +21,19 @@ def word_count(file):
     return fdist1.most_common()
 
 
+    #with open(file, "r") as file:
+        #sentence_list=myfile.readlines()
+        #for line in setence_list:
+            #line=line.strip().lower()
+            #del_str = string.punctuation
+            #replace_punctuation = ' ' * len(del_str)
+            #line=line.translate(str.maketrans(del_str,replace_punctuation))
+
+
+
+
+
+
 def word_freq_count(wordCount, n):
     # output words with frequency n
     ret = []

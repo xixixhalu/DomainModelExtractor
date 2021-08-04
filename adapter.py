@@ -50,7 +50,7 @@ def analyze(sentence):
     # Json response of all the annotations
     safe_sentence = urllib.parse.quote_plus(sentence)
     output = nlp.annotate(safe_sentence, properties={
-        "annotators": "tokenize,ssplit,parse,lemma,pos",
+        "annotators": "tokenize,ssplit,pos,lemma,parse,depparse",
         "outputFormat": "json",
         # Only split the sentence at End Of Line. We assume that this method only takes in one single sentence.
         "ssplit.eolonly": "true",

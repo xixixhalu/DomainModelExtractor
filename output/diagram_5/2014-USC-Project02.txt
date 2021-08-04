@@ -12,34 +12,42 @@ class Customer<actor> {
 }
 class SoccerCoach<actor> {
 }
-class GM {
-	make()
-	visualize()
-	build()
-	affect()
-	extract()
+class Customer {
+	see()
+	drop()
+	import()
+	add()
+	drag()
+	update()
+	manage()
+}
+class ExcelSheet {
 }
 class Season {
 	progress()
-}
-class Customer {
-	import()
-	add()
-	manage()
-	drag()
-	update()
-	see()
-	drop()
-}
-class Schedule {
-	run()
-}
-class Roster {
 }
 class Manger {
 	monitor()
 }
 class Condition {
+}
+class SporTechBIContractor {
+	update()
+	add()
+}
+class GM {
+	build()
+	affect()
+	extract()
+	visualize()
+	make()
+}
+class Schedule {
+	run()
+}
+class Source {
+}
+class Need {
 }
 class Change {
 }
@@ -47,51 +55,43 @@ class SoccerCoach {
 	configure()
 	specify()
 }
-class Data {
-	integrate()
-}
-class Demand {
-}
 class Line {
-}
-class ExcelSheet {
-}
-class Model {
-}
-class Decision {
-}
-class SporTechBISystem {
-}
-class SporTechBIContractor {
-	add()
-	update()
-}
-class Reaction {
 }
 class PlayerValue {
 }
-class Need {
+class Data {
+	integrate()
 }
-class Source {
+class SporTechBISystem {
 }
-Manger --> Condition : supported_by
-GM --> PlayerValue : extract
-Customer --> Change : see
-SoccerCoach --> Schedule : configure
-Customer --> Need : manage
-Manger --> Demand : monitor
-Manger --> Source : monitor
-Data --> SporTechBISystem : supported_by
-GM --> Line : affect
-Customer --> Data : add
-GM o-- Data : extract
+class Demand {
+}
+class Roster {
+}
+class Decision {
+}
+class Reaction {
+}
+class Model {
+}
 Customer --> ExcelSheet : import
-Customer o-- Model : add
-Manger --> Condition : monitor
-GM --> Decision : make
-Data --> SporTechBISystem : integrate
-Customer --> Data : import
+GM o-- Data : extract
 Manger --> Reaction : monitor
+Manger --> Source : monitor
+Customer --> Data : import
+Customer --> Need : manage
+Customer --> Change : see
+Customer o-- Model : add
+Data --> SporTechBISystem : supported_by
+Manger --> Condition : supported_by
+SoccerCoach --> Schedule : configure
+GM --> Line : affect
+Manger --> Condition : monitor
+GM --> PlayerValue : extract
+Data --> SporTechBISystem : integrate
+GM --> Decision : make
+Customer --> Data : add
+Manger --> Demand : monitor
 GM --> Roster : build
 
 @enduml

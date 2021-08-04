@@ -6,14 +6,44 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "languageAssignment",
+          "type": "default"
+        },
+        {
+          "name": "language",
+          "type": "default"
+        },
+        {
+          "name": "teacher",
+          "type": "default"
+        },
+        {
+          "name": "searchResult",
+          "type": "default"
+        },
+        {
+          "name": "match",
+          "type": "default"
+        },
+        {
+          "name": "assignment",
+          "type": "default"
+        }
+      ]
     },
     "English": {
       "name": "English",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "goal",
+          "type": "default"
+        }
+      ]
     },
     "SpeakerLanguageLearner": {
       "name": "SpeakerLanguageLearner",
@@ -27,14 +57,28 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "student",
+          "type": "default"
+        }
+      ]
     },
     "WebsiteOwner": {
       "name": "WebsiteOwner",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "website",
+          "type": "default"
+        },
+        {
+          "name": "userBase",
+          "type": "default"
+        }
+      ]
     },
     "User": {
       "name": "User",
@@ -55,21 +99,32 @@
       "type": [
         "actor"
       ],
-      "attributes": []
-    },
-    "WebsiteProfessor": {
-      "name": "WebsiteProfessor",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "privacypolicy",
+          "type": "default"
+        },
+        {
+          "name": "info",
+          "type": "default"
+        }
+      ]
     },
     "WebsiteUser": {
       "name": "WebsiteUser",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "languageskill",
+          "type": "default"
+        },
+        {
+          "name": "account",
+          "type": "default"
+        }
+      ]
     },
     "UniversityStudent": {
       "name": "UniversityStudent",
@@ -91,10 +146,64 @@
         "actor"
       ],
       "attributes": []
+    },
+    "people": {
+      "name": "People",
+      "type": [
+        "entity"
+      ],
+      "attributes": [
+        {
+          "name": "help",
+          "type": "default"
+        }
+      ]
+    },
+    "user": {
+      "name": "User",
+      "type": [
+        "entity"
+      ],
+      "attributes": [
+        {
+          "name": "friendList",
+          "type": "default"
+        },
+        {
+          "name": "password",
+          "type": "default"
+        },
+        {
+          "name": "chatlog",
+          "type": "default"
+        },
+        {
+          "name": "behavior",
+          "type": "default"
+        }
+      ]
+    },
+    "someone": {
+      "name": "Someone",
+      "type": [
+        "entity"
+      ],
+      "attributes": [
+        {
+          "name": "advertisement",
+          "type": "default"
+        }
+      ]
     }
   },
   "relation_list": [],
   "behavior_list": [
+    {
+      "actor": "Speaker",
+      "action": "help",
+      "target": "",
+      "para": []
+    },
     {
       "actor": "WebsiteUser",
       "action": "receive",
@@ -102,153 +211,9 @@
       "para": []
     },
     {
-      "actor": "UniversityStudent",
-      "action": "post",
-      "target": "Question",
-      "para": []
-    },
-    {
-      "actor": "English",
-      "action": "achieve",
-      "target": "Goal",
-      "para": []
-    },
-    {
-      "actor": "HelpStudent",
-      "action": "adjust",
-      "target": "LearningPlan",
-      "para": []
-    },
-    {
-      "actor": "WebsiteProfessor",
-      "action": "offer",
-      "target": "Meeting",
-      "para": []
-    },
-    {
-      "actor": "SpeakerLanguageLearner",
-      "action": "know",
-      "target": "World",
-      "para": []
-    },
-    {
-      "actor": "WebsiteOwner",
-      "action": "monitor",
-      "target": "internet",
-      "para": []
-    },
-    {
-      "actor": "Tutor",
-      "action": "evaluate",
-      "target": "LanguageLevel",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "subscribe",
-      "target": "Service",
-      "para": []
-    },
-    {
       "actor": "WebsiteUser",
-      "action": "pull",
-      "target": "People",
-      "para": []
-    },
-    {
-      "actor": "WebsiteUser",
-      "action": "avoid",
-      "target": "Advertisement",
-      "para": []
-    },
-    {
-      "actor": "LanguageLearner",
-      "action": "do",
-      "target": "LanguageAssignment",
-      "para": []
-    },
-    {
-      "actor": "LanguageLearner",
       "action": "practice",
-      "target": "Language",
-      "para": []
-    },
-    {
-      "actor": "WebsiteOwner",
-      "action": "post",
-      "target": "Alert",
-      "para": []
-    },
-    {
-      "actor": "WebsiteOwner",
-      "action": "generate",
-      "target": "MarketingPlan",
-      "para": []
-    },
-    {
-      "actor": "LanguageLearner",
-      "action": "prioritize",
-      "target": "Matches",
-      "para": []
-    },
-    {
-      "actor": "LanguageTeacher",
-      "action": "give",
-      "target": "Assignment",
-      "para": []
-    },
-    {
-      "actor": "LanguageLearner",
-      "action": "order",
-      "target": "SearchResult",
-      "para": []
-    },
-    {
-      "actor": "WebsiteUser",
-      "action": "offer",
-      "target": "LanguageSkill",
-      "para": []
-    },
-    {
-      "actor": "SpeakerLanguageLearner",
-      "action": "learn",
-      "target": "Language",
-      "para": []
-    },
-    {
-      "actor": "WebsiteUser",
-      "action": "get",
-      "target": "Experience",
-      "para": []
-    },
-    {
-      "actor": "LanguageLearner",
-      "action": "know",
-      "target": "while",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "register",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "WebsiteOwner",
-      "action": "maintain",
-      "target": "Server",
-      "para": []
-    },
-    {
-      "actor": "WebsiteUser",
-      "action": "avoid",
-      "target": "harassments",
-      "para": []
-    },
-    {
-      "actor": "LanguageLearner",
-      "action": "find",
-      "target": "LanguageLearners",
+      "target": "",
       "para": []
     },
     {
@@ -258,51 +223,21 @@
       "para": []
     },
     {
-      "actor": "Student",
-      "action": "avoid",
-      "target": "Usage",
+      "actor": "LanguageLearner",
+      "action": "use",
+      "target": "Teacher",
       "para": []
     },
     {
-      "actor": "MarketingPlan",
-      "action": "increase",
-      "target": "numbers",
+      "actor": "Topic",
+      "action": "talk",
+      "target": "",
       "para": []
     },
     {
-      "actor": "WebsiteUser",
-      "action": "practice",
+      "actor": "SpeakerLanguageLearner",
+      "action": "learn",
       "target": "Language",
-      "para": []
-    },
-    {
-      "actor": "WebsiteOwner",
-      "action": "view",
-      "target": "UserStatistics",
-      "para": []
-    },
-    {
-      "actor": "WebsiteOwner",
-      "action": "suggest",
-      "target": "InteractionTask",
-      "para": []
-    },
-    {
-      "actor": "USCChineseLearner",
-      "action": "meet",
-      "target": "Learner",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "modify",
-      "target": "PrivacyPolicy",
-      "para": []
-    },
-    {
-      "actor": "UniversityStudent",
-      "action": "post",
-      "target": "Announcement",
       "para": []
     },
     {
@@ -313,26 +248,44 @@
     },
     {
       "actor": "User",
-      "action": "review",
+      "action": "retrieve",
+      "target": "Chatlog",
+      "para": []
+    },
+    {
+      "actor": "LanguageTeacher",
+      "action": "give",
+      "target": "Student",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "generate",
+      "target": "MarketingPlan",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "inform",
       "target": "User",
       "para": []
     },
     {
-      "actor": "MarketingPlan",
-      "action": "increase",
-      "target": "UserNumber",
+      "actor": "HelpStudent",
+      "action": "adjust",
+      "target": "LearningPlan",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "add",
-      "target": "User",
+      "actor": "English",
+      "action": "use",
+      "target": "Speakerlanguagelearner",
       "para": []
     },
     {
-      "actor": "WebsiteUser",
-      "action": "report",
-      "target": "Behavior",
+      "actor": "LanguageLearner",
+      "action": "practice",
+      "target": "Language",
       "para": []
     },
     {
@@ -342,9 +295,285 @@
       "para": []
     },
     {
+      "actor": "English",
+      "action": "talk",
+      "target": "Speakerlanguagelearner",
+      "para": []
+    },
+    {
+      "actor": "HelpStudent",
+      "action": "adjust",
+      "target": "OfficeHour",
+      "para": []
+    },
+    {
+      "actor": "WebsiteUser",
+      "action": "pull",
+      "target": "Blacklist",
+      "para": []
+    },
+    {
+      "actor": "WebsiteUser",
+      "action": "report",
+      "target": "Behavior",
+      "para": []
+    },
+    {
       "actor": "LanguageLearner",
       "action": "search",
+      "target": "LanguageLearner",
+      "para": []
+    },
+    {
+      "actor": "WebsiteUser",
+      "action": "pull",
+      "target": "People",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "view",
+      "target": "WebsiteOwner",
+      "para": []
+    },
+    {
+      "actor": "English",
+      "action": "learn",
+      "target": "English",
+      "para": []
+    },
+    {
+      "actor": "SpeakerLanguageLearner",
+      "action": "use",
+      "target": "LanguageLearner",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "register",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "meet",
+      "target": "Learner",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "generate",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "avoid",
+      "target": "Usage",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reset",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "WebsiteUser",
+      "action": "offer",
+      "target": "Languageskill",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "prioritize",
+      "target": "Match",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "exchange",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "review",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "evaluate",
+      "target": "LanguageLevel",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "meet",
+      "target": "Thursdays",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "have",
+      "target": "Degree",
+      "para": []
+    },
+    {
+      "actor": "Practitioner",
+      "action": "increase",
+      "target": "Languageproficiency",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "find",
       "target": "LanguageLearners",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "post",
+      "target": "WebsiteBlog",
+      "para": []
+    },
+    {
+      "actor": "WebsiteUser",
+      "action": "practice",
+      "target": "Language",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "know",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "WebsiteUser",
+      "action": "avoid",
+      "target": "Advertisement",
+      "para": []
+    },
+    {
+      "actor": "WebsiteUser",
+      "action": "get",
+      "target": "Experience",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "view",
+      "target": "Userstatistic",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "FriendList",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "find",
+      "target": "Topic",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "modify",
+      "target": "Privacypolicy",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "maintain",
+      "target": "DevelopmentPhase",
+      "para": []
+    },
+    {
+      "actor": "LanguageTeacher",
+      "action": "give",
+      "target": "EnglishTalkingAssignment",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "maintain",
+      "target": "Server",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reset",
+      "target": "Email",
+      "para": []
+    },
+    {
+      "actor": "WebsiteUser",
+      "action": "avoid",
+      "target": "Harassment",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "offer",
+      "target": "Meeting",
+      "para": []
+    },
+    {
+      "actor": "WebsiteUser",
+      "action": "offer",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "UniversityStudent",
+      "action": "post",
+      "target": "Member",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "post",
+      "target": "Alert",
+      "para": []
+    },
+    {
+      "actor": "WebsiteUser",
+      "action": "report",
+      "target": "WebsiteUser",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "add",
+      "target": "Research",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "get",
+      "target": "Touch",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "subscribe",
+      "target": "Service",
+      "para": []
+    },
+    {
+      "actor": "Practitioner",
+      "action": "increase",
+      "target": "",
       "para": []
     },
     {
@@ -355,8 +584,86 @@
     },
     {
       "actor": "WebsiteOwner",
-      "action": "inform",
+      "action": "add",
+      "target": "Suggestion",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "know",
+      "target": "Culture",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "send",
       "target": "User",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "do",
+      "target": "LanguageAssignment",
+      "para": []
+    },
+    {
+      "actor": "WebsiteUser",
+      "action": "find",
+      "target": "Action",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "order",
+      "target": "SearchResult",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "practice",
+      "target": "LanguageLearner",
+      "para": []
+    },
+    {
+      "actor": "HelpStudent",
+      "action": "chat",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Speaker",
+      "action": "know",
+      "target": "World",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "chat",
+      "target": "Teacher",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "learn",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SpeakerLanguageLearner",
+      "action": "talk",
+      "target": "LanguageLearner",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "evaluate",
+      "target": "HelpStudent",
       "para": []
     },
     {
@@ -366,21 +673,39 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "reset",
-      "target": "Password",
+      "actor": "SpeakerLanguageLearner",
+      "action": "know",
+      "target": "World",
       "para": []
     },
     {
-      "actor": "Eg",
-      "action": "meet",
-      "target": "Learner",
+      "actor": "UniversityStudent",
+      "action": "post",
+      "target": "Announcement",
       "para": []
     },
     {
       "actor": "WebsiteOwner",
       "action": "offer",
-      "target": "Meeting",
+      "target": "Member",
+      "para": []
+    },
+    {
+      "actor": "English",
+      "action": "achieve",
+      "target": "Goal",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "search",
+      "target": "Languagelearner",
+      "para": []
+    },
+    {
+      "actor": "WebsiteOwner",
+      "action": "suggest",
+      "target": "InteractionTask",
       "para": []
     }
   ]

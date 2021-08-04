@@ -1,17 +1,11 @@
-or HouseManager , Administrator should be able to View and FilterLog of LockAccess .
-or HouseManager , Administrator should be able to see lock BatteryStatus , LockName and LockCode .
-HouseManager should be able to add Other ' .
-Manager , house should be delete ' Other ' . Other ' .
-or HouseManager , Administrator should be able to see the Hub and lock Status .
+or HouseManager , Administrator should be able to view and filter Log of LockAccess .
+or HouseManager , Administrator should be able to see lock BatteryStatus , lock Name and lock Code .
+HouseManager should be able to add , delete ' Other ' .
+or HouseManager , Administrator should be able to see the Hub and LockStatus .
 or HouseManager , Administrator should be able to assign random Code through a random NumberGenerator .
 Administrator should be able to allow more than one working Code per Lock .
-Administrator can create a Group of Lock and add in the Group .
-Administrator can create a Group of Lock and DeleteLock in the Group . in the Group .
-HouseManager can select one or multiple Lock to add Lock to add/delete Code .
-HouseManager can select one or multiple Lock to add edit Code .
-HouseManager can select one or delete / EditCodes . locks to add/delete Code .
-HouseManager can select one or delete / edit Code . edit Code .
-Administrator can add Manager ' and ` Other ' and help them reset their Password .
-Administrator can delete ' Manager ' And ' Other ' and help help them reset their Password .
-HouseStaff should be able to see given lock Number and LockCode .
+Administrator can create a Group of Lock and add , delete Lock in the Group .
+HouseManager can select one or multiple Lock to add , delete , edit Code .
+Administrator can add , delete ' Manager ' and ' Other ' and help them reset their Password .
+HouseStaff should be able to see given LockNumber and lock Code .
 Administrator can enter Administrator's SmartThingsClientId and Secret to authorize Access to the Lock .

@@ -1,75 +1,103 @@
 @startuml
 hide circle
 class User<actor> {
+	password
+	username
+	detail
+	profileInformation
+	liking
+	gameProfile
+	profile
 }
 class Developer<actor> {
 }
 class User {
-	recover()
-	edit()
-	detonate()
-	registered()
-	register()
-	hear()
-	have()
-	remove()
+	mute()
+	login()
+	click()
 	place()
-	change()
-	buy()
-	play()
-	get()
+	try()
+	have()
 	see()
-	beat()
+	log_out()
+	change()
+	register()
 	choose()
-}
-class GamingExperience {
-}
-class Multiplier {
-}
-class Game {
-	attracts()
-}
-class ProfileInformation {
-}
-class History {
-}
-class Animation {
+	log()
+	gain()
+	win()
+	remove()
+	beat()
+	lose()
+	recover()
+	get()
+	edit()
+	hear()
+	quit()
+	unmute()
+	play()
+	want()
+	detonate()
 }
 class Bomb {
 }
-class Score {
-}
-class Username {
-}
-class Reward {
+class Animation {
 }
 class Effect {
 }
+class Game {
+	attract()
+}
 class Password {
+}
+class Avatar {
+}
+class Developer {
+	make()
+}
+class Profile {
+}
+class Score {
+}
+class Gamingexperience {
+}
+class History {
+}
+class Volume {
+}
+class Sound {
+}
+class Point {
 }
 class Detail {
 }
-class while {
+class Reward {
 }
-User --> ProfileInformation : edit
-User --> Detail : register
-User --> Bomb : buy
-User --> History : see
+class ProfileInformation {
+}
+User --> Avatar : choose
 User --> Animation : see
-User --> Bomb : detonate
-User --> while : choose
-User --> Score : beat
-User --> Bomb : place
-User --> Bomb : remove
-User --> Username : registered
-User --> Reward : get
-User --> Password : recover
 User --> Effect : hear
-User --> GamingExperience : have
-User --> Password : registered
-User --> Multiplier : change
+User --> Bomb : click
+User --> Bomb : remove
+User o-- Game : login
+User o-- Profile : play
+User --> Bomb : place
+User --> Reward : get
+User o-- ProfileInformation : edit
 User --> Score : see
-User --> Game : play
-Game --> User : attracts
+User o-- Game : change
+User --> Profile : supported_by
+User --> Gamingexperience : have
+User --> History : see
+User o-- Game : play
+User --> Volume : change
+User --> Score : beat
+User --> Sound : unmute
+User --> Point : have
+User --> Bomb : detonate
+User o-- Detail : register
+User o-- Password : recover
+Game --> User : attract
 
 @enduml

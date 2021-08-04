@@ -6,14 +6,44 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "profile",
+          "type": "default"
+        },
+        {
+          "name": "feedback",
+          "type": "default"
+        },
+        {
+          "name": "casemanager",
+          "type": "default"
+        },
+        {
+          "name": "survey",
+          "type": "default"
+        },
+        {
+          "name": "case",
+          "type": "default"
+        }
+      ]
     },
     "CaseManager": {
       "name": "CaseManager",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "case",
+          "type": "default"
+        },
+        {
+          "name": "youth",
+          "type": "default"
+        }
+      ]
     },
     "Administrator": {
       "name": "Administrator",
@@ -27,7 +57,16 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "loginInformation",
+          "type": "default"
+        },
+        {
+          "name": "record",
+          "type": "default"
+        }
+      ]
     },
     "Staff": {
       "name": "Staff",
@@ -40,9 +79,273 @@
   "relation_list": [],
   "behavior_list": [
     {
+      "actor": "CaseManager",
+      "action": "add",
+      "target": "Youth",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "delete",
+      "target": "Document",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "view",
+      "target": "Case",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "see",
+      "target": "Result",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "make",
+      "target": "Document",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "contact",
+      "target": "Casemanager",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "recover",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "activate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "edit",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "send",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "view",
+      "target": "LogRecord",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "contact",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "transfer",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "send",
+      "target": "Email",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "provide",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "view",
+      "target": "File",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "delete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "export",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Staff",
+      "action": "view",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Staff",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "take",
+      "target": "Survey",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "deactivate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "modify",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "delete",
+      "target": "Case",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "transfer",
+      "target": "Case",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "export",
+      "target": "Case",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "review",
+      "target": "Feedback",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "answer",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "send_out",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "Administrator",
       "action": "view",
       "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "send_out",
+      "target": "Email",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "take",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Youth",
+      "action": "view",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "create",
+      "target": "Activity",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "SecurityQuestion",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "activate",
+      "target": "YouthAccount",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "manage",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "view",
+      "target": "Record",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "review",
+      "target": "",
       "para": []
     },
     {
@@ -58,114 +361,6 @@
       "para": []
     },
     {
-      "actor": "Youth",
-      "action": "view",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "CaseManager",
-      "action": "see",
-      "target": "Result",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "view",
-      "target": "LogRecord",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "delete",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "Youth",
-      "action": "contact",
-      "target": "CaseManager",
-      "para": []
-    },
-    {
-      "actor": "CaseManager",
-      "action": "view",
-      "target": "Case",
-      "para": []
-    },
-    {
-      "actor": "Youth",
-      "action": "view",
-      "target": "File",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "create",
-      "target": "Activity",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "SecurityQuestion",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "delete",
-      "target": "Case",
-      "para": []
-    },
-    {
-      "actor": "CaseManager",
-      "action": "add",
-      "target": "File",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "transfer",
-      "target": "Case",
-      "para": []
-    },
-    {
-      "actor": "CaseManager",
-      "action": "review",
-      "target": "Feedback",
-      "para": []
-    },
-    {
-      "actor": "CaseManager",
-      "action": "send",
-      "target": "Email",
-      "para": []
-    },
-    {
-      "actor": "CaseManager",
-      "action": "activate",
-      "target": "YouthAccount",
-      "para": []
-    },
-    {
-      "actor": "CaseManager",
-      "action": "export",
-      "target": "Case",
-      "para": []
-    },
-    {
-      "actor": "Youth",
-      "action": "take",
-      "target": "Survey",
-      "para": []
-    },
-    {
-      "actor": "CaseManager",
-      "action": "delete",
-      "target": "Document",
-      "para": []
-    },
-    {
       "actor": "CaseManager",
       "action": "view",
       "target": "Information",
@@ -173,8 +368,38 @@
     },
     {
       "actor": "Administrator",
+      "action": "delete",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "delete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "make",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "File",
+      "action": "belong",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "CaseManager",
       "action": "view",
-      "target": "Record",
+      "target": "",
       "para": []
     },
     {
@@ -184,15 +409,15 @@
       "para": []
     },
     {
-      "actor": "Staff",
-      "action": "view",
-      "target": "Information",
+      "actor": "CaseManager",
+      "action": "delete",
+      "target": "Case",
       "para": []
     },
     {
       "actor": "CaseManager",
-      "action": "delete",
-      "target": "Case",
+      "action": "add",
+      "target": "File",
       "para": []
     }
   ]

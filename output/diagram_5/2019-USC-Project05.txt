@@ -1,10 +1,14 @@
 @startuml
 hide circle
 class User<actor> {
-}
-class Admin<actor> {
+	problem
+	contactDetail
+	identity
+	account
+	report
 }
 class Organization<actor> {
+	client
 }
 class VRSAdmin<actor> {
 }
@@ -13,154 +17,196 @@ class VRS<actor> {
 class Developer<actor> {
 }
 class Employee<actor> {
+	case
+	profiledetail
+	anonymity
 }
 class VRSSubjectMatterExpert<actor> {
+}
+class VRS {
+	form()
+	email()
+	filter_out()
+	assign()
+	view()
+	prioritize()
+	generate()
+	resolve()
+	delete()
+	filter()
 }
 class User {
 	submit()
 	update()
+	request()
 	expedite()
 	add()
 }
-class Information {
+class Report {
+	tag()
+	contain()
 }
 class Developer {
 	reuse()
 	encrypt()
 	minimize()
 }
-class DevelopmentTime {
+class Cost {
 }
-class VRS {
-	delete()
-	prioritize()
-	assign()
-	view()
-	generate()
-	email()
-	filter()
-}
-class SummaryReport {
-}
-class WorkplaceViolenceCase {
-}
-class Complaint {
+class Developmenttime {
 }
 class Organization {
 	check()
 	view()
 	understand()
 	redirect()
-}
-class State {
-}
-class VRSSubjectMatterExpert {
-	notify()
-	verify()
-}
-class WorkplaceUpdate {
-}
-class ContactDetail {
-}
-class Admin {
-	address()
-	filter()
-}
-class Report {
-	contain()
-}
-class CaseManagementSystem {
+	make()
 }
 class VRSAdmin {
-	edit()
-	filter()
 	view()
 	generate()
-}
-class Assigned {
-}
-class Data {
-}
-class MediaFile {
-}
-class Comment {
-}
-class Employee {
-	track()
-	view()
-	check()
-	expect()
-	submit()
+	download()
 	edit()
-	post()
-	have()
-	file()
-}
-class Status {
+	filter()
 }
 class Ticket {
 }
+class Employee {
+	want()
+	post()
+	submit()
+	check()
+	post_along()
+	file()
+	view()
+	track()
+	expect()
+	have()
+	edit()
+}
+class Document {
+}
+class Complaint {
+}
+class Admin {
+	filter()
+}
 class Case {
 }
-class Cost {
+class VRSSubjectMatterExpert {
+	verify()
+	notify()
+	investigate()
 }
-class Communication {
+class Managementsystem {
 }
-class Anonymity {
+class Workplace {
 }
-class Evidence {
+class WorkplaceUpdate {
 }
-class ProfileDetail {
+class Status {
 }
-class TicketStatus {
+class MediaFile {
+	tag()
 }
 class Credibility {
 }
-class TicketManagement {
+class Comment {
+}
+class Detail {
+}
+class ContactDetail {
 }
 class Process {
 }
-User --> Information : add
-VRS --> WorkplaceViolenceCase : prioritize
-Developer --> Cost : minimize
-Developer --> Data : encrypt
-VRSAdmin --> Case : view
-User --> Process : expedite
-VRS --> Complaint : delete
-Employee --> Communication : have
-VRS --> Organization : email
-Report --> MediaFile : contain
-Organization --> Employee : redirect
-Employee --> Anonymity : expect
-VRS --> SummaryReport : generate
-Organization --> State : understand
-User --> Comment : add
-Organization --> Report : view
-VRS --> Complaint : view
-VRSAdmin --> Report : generate
-VRSSubjectMatterExpert --> Organization : notify
-Employee --> Evidence : submit
-Organization --> WorkplaceUpdate : check
-Employee --> Complaint : file
-Developer --> DevelopmentTime : minimize
-Employee --> ProfileDetail : edit
-Employee --> Status : check
-User --> ContactDetail : update
+class Data {
+}
+class Anonymity {
+}
+class State {
+}
+class Waycommunication {
+}
+class Account {
+	be()
+}
+class CommentSection {
+}
+class Profiledetail {
+}
+class Ease {
+}
+class Violencecase {
+}
+class Evidence {
+}
+class Assignee {
+}
+class Information {
+}
+class Portal {
+}
+class TicketStatus {
+}
+class News {
+}
+class SubjectMatterExpert {
+}
 VRSAdmin --> TicketStatus : edit
-VRSAdmin --> Ticket : filter
-Admin --> Report : filter
-VRS --> Report : assign
-Admin --> Complaint : address
-VRSSubjectMatterExpert --> Credibility : verify
+Developer --> Developmenttime : minimize
+User o-- ContactDetail : update
+User --> Complaint : add
+VRS --> Complaint : view
+VRS --> News : email
+VRSAdmin --> Report : generate
+Organization --> Organization : view
+VRS --> Organization : email
 VRS --> Case : filter
-Developer --> CaseManagementSystem : reuse
+Employee o-- Profiledetail : edit
+VRS --> SubjectMatterExpert : assign
+VRSAdmin --> Ticket : filter
+User --> Process : expedite
+Organization --> WorkplaceUpdate : check
+VRS --> Ease : filter
+VRSAdmin --> Case : view
+Organization --> Organization : redirect
+Employee --> Status : check
+VRS --> Violencecase : prioritize
+Developer --> Data : encrypt
+Employee --> Document : submit
+MediaFile --> Case : tag
+Employee --> Evidence : submit
+Employee o-- Anonymity : expect
+Admin --> Report : filter
 VRS --> Report : generate
-VRSSubjectMatterExpert --> Case : verify
-Developer --> TicketManagement : reuse
-User --> Report : submit
-VRSAdmin --> Assigned : edit
-Employee --> Case : view
 Employee --> Complaint : post
+Organization --> Report : view
+Organization --> State : understand
+VRS --> Case : filter_out
+VRSAdmin --> Assignee : edit
+Employee --> Complaint : file
+VRSSubjectMatterExpert --> Organization : notify
+VRSSubjectMatterExpert --> Case : verify
+Employee o-- Case : view
+Employee --> Waycommunication : have
+Employee --> Detail : post
+VRS --> Complaint : delete
 Employee --> Status : track
+VRSSubjectMatterExpert --> Credibility : verify
+VRS --> Case : assign
+Employee --> Complaint : post_along
+VRS --> Report : assign
+User --> Information : add
+Organization --> VRS : check
+User o-- Report : submit
+Organization --> Employee : redirect
+User o-- Report : add
+User --> Comment : add
+User --> Portal : request
+Employee --> CommentSection : have
+Developer --> Managementsystem : reuse
+Developer --> Cost : minimize
+Organization --> Workplace : understand
+Employee --> Detail : supported_by
 
 @enduml

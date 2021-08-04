@@ -5,7 +5,7 @@ sys.path.append('../')
 from adapter import *
 import json
 
-sentence = 'GM can both extracts and visualizes PlayerLibraries so that GM can build Roster for the next Season and make informed Decisions affecting the bottom-line .'
+sentence = 'SporTechB.IContractor can update the PlayerData as the Season progresses .'
 
 output = analyze(sentence)
 

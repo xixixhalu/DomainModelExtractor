@@ -1,23 +1,21 @@
 User want to see the Performance of User's Investment over Time using the VisualizationTool .
 User can view a List of ServiceProvider .
-User can view a List of ServiceProvider .
 User can login using SocialMediaSite .
 User would like to leave Review for ServiceProvider .
-ServiceProvider , verified can reply to Review left on verified's Page .
+ServiceProvider can reply to Review left on ServiceProvider's Page .
 User can manage Investment to User's InvestmentProfile .
 User can make Page or Profile for ServiceProvider .
 User can search for ServiceProvider .
-User can search for ServiceProvider .
-Administrator can moderate the User created content .
-User have Access to Service providers ContactInformation .
+Administrator can moderate the User created Content .
+User have Access to ServiceProviderContactInformation .
 ServiceProvider can see the Review posted about me by Other .
 User can vote on Review .
-Admin can remove a flagged User .
+admin can remove a flagged User .
 User can report other User .
 Administrator can verify the Identity of a ServiceProvider .
 User can comment on the Blog .
 Administrator can view WebsiteUtilizationStatistics .
-User can add PropertyInformation to the TrackingTool .
+User can add PropertyInformation to the tracking Tool .
 User can find a ServiceProvider by Email , PhoneNumber , or Name .
 User can rate a ServiceProvider without leaving TextReview .
 Administrator can post Article to the Blog .
@@ -27,7 +25,7 @@ User have at least every SitePermission that a non-registered User has .
 SiteAdmin have at least all of the same Permission as a registered User .
 User can read Review .
 User can create an Account from a Link on the HomePage .
-User can share blog Post on popular social MediaApplication through Link inside of the Blog .
+User can share BlogPost on popular social MediaApplication through Link inside of the Blog .
 User can read the SiteBlog .
 User can search ServiceProvider by State , City , and service type .
 User track an InvestmentProperty by inputting the Address , Rent , PurchasePrice , LoanAmount , down Payment , and Expense .
@@ -36,4 +34,4 @@ User can search the DiscussionBoard using TextInput .
 User can read the SiteDiscussionBoard .
 User can choose to activate two FactorAuthentication for Login .
 User can adjust User's EmailNotificationSetting .
-User can export User's TrackingToolData to a `` Csv '' File .
+User can export User's tracking ToolData to a " Csv " File .

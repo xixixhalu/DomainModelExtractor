@@ -3,10 +3,11 @@ hide circle
 class User<actor> {
 }
 class Parent<actor> {
+	detail
+	tuition
 }
 class Client<actor> {
-}
-class Admin<actor> {
+	email
 }
 class Member<actor> {
 }
@@ -14,84 +15,132 @@ class Student<actor> {
 }
 class Donor<actor> {
 }
-class member {
-	view()
+class Child {
+	tuition
+}
+class Admin {
+	mail
+	update()
+	check()
+}
+class VYMA {
+	newsletter
 }
 class Information {
+}
+class User {
+	have()
+	receive()
+	search()
+	view()
+	purchase()
+	subscribe()
+}
+class Detail {
+}
+class Parent {
+	set_up()
+	register()
+	view()
+	pay()
+	set()
+}
+class Password {
+}
+class Payment {
+}
+class Client {
+	add()
+	check()
+}
+class Googledrive {
+}
+class Student {
+	download()
+	practice()
+	register()
+}
+class Concert {
+}
+class Newsletter {
+}
+class Rehearsal {
+}
+class Member {
+	view()
+}
+class Feedback {
+	provide()
+}
+class ContactUsPage {
+}
+class MusicNote {
+}
+class Update {
+}
+class Page {
 }
 class Donor {
 	support()
 	make()
 }
-class DonationOnline {
+class Online {
 }
-class Admin {
-	check()
-	update()
+class Email {
 }
-class Detail {
+class Place {
 }
-class Client {
-	check()
-	add()
+class Calendar {
 }
-class GoogleDrive {
+class NewsSection {
+}
+class OtherDetail {
+}
+class Trailer {
+}
+class Applicant {
+}
+class News {
 }
 class VYMACommunity {
 }
 class Link {
 }
-class Email {
-}
-class parents {
-	view()
-}
-class OtherDetail {
-}
-class User {
-	purchase()
-	view()
-	receive()
-}
-class Student {
-	download()
-}
-class Page {
-}
-class News {
-}
-class Trailer {
-}
-class parent {
-	set()
-}
-class Payment {
-}
 class Mail {
 }
-class Update {
+class Endeavor {
 }
-class MusicNote {
-}
-class Dvd {
-}
-Admin --> Detail : update
-User --> Dvd : purchase
+User --> Trailer : view
+Parent --> Password : view
+Parent --> Online : register
 User --> Update : receive
-Admin --> Information : update
+Parent --> Payment : set
+Client --> Applicant : check
 Student --> Page : download
 User --> News : receive
-User --> Detail : view
-Donor --> DonationOnline : make
-parent --> Payment : set
-Client --> Link : add
-Student --> MusicNote : download
-Client --> GoogleDrive : check
-User --> Trailer : view
-Admin --> Mail : check
-Client --> Email : check
-member --> Information : view
-parents --> OtherDetail : view
+Student --> Online : register
+Client --> Googledrive : check
+Client --> Information : check
 Donor --> VYMACommunity : support
+Donor --> Online : make
+Student --> Concert : practice
+Client --> Link : add
+Client o-- Email : check
+Parent --> Payment : set_up
+User --> Newsletter : subscribe
+Admin --> Detail : update
+Admin o-- Mail : check
+Student --> Rehearsal : practice
+User --> Place : view
+Feedback --> User : provide
+Parent --> OtherDetail : view
+Member --> Information : view
+Donor --> Endeavor : support
+Member --> Calendar : view
+Admin --> Information : update
+Student --> MusicNote : download
+Admin --> NewsSection : update
+Feedback --> ContactUsPage : provide
+User --> Detail : view
 
 @enduml

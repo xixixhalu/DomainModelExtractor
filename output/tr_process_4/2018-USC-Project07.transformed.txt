@@ -6,7 +6,24 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "preference",
+          "type": "default"
+        },
+        {
+          "name": "progress",
+          "type": "default"
+        },
+        {
+          "name": "levelprogress",
+          "type": "default"
+        },
+        {
+          "name": "score",
+          "type": "default"
+        }
+      ]
     },
     "Client": {
       "name": "Client",
@@ -35,50 +52,36 @@
         "actor"
       ],
       "attributes": []
+    },
+    "Other": {
+      "name": "Other",
+      "type": [
+        "entity"
+      ],
+      "attributes": [
+        {
+          "name": "attention",
+          "type": "default"
+        },
+        {
+          "name": "score",
+          "type": "default"
+        }
+      ]
     }
   },
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "User",
-      "action": "keep",
-      "target": "LevelProgress",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "Score",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "design",
-      "target": "LevelPage",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "erase",
-      "target": "Progress",
-      "para": []
-    },
-    {
-      "actor": "User",
+      "actor": "Maintainer",
       "action": "have",
-      "target": "Ability",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "understand",
-      "target": "Code",
+      "target": "Documentation",
       "para": []
     },
     {
       "actor": "User",
-      "action": "check",
-      "target": "Score",
+      "action": "track",
+      "target": "App",
       "para": []
     },
     {
@@ -88,15 +91,45 @@
       "para": []
     },
     {
-      "actor": "Maintainer",
-      "action": "have",
-      "target": "Documentation",
+      "actor": "Developer",
+      "action": "design",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "practice",
-      "target": "Math",
+      "action": "keep",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Way",
+      "action": "draw",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administer",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Way",
+      "action": "draw",
+      "target": "Attention",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Score",
       "para": []
     },
     {
@@ -107,14 +140,164 @@
     },
     {
       "actor": "User",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "erase",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "practice",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "install",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "download",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "practice",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "check",
+      "target": "Google",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "practice",
+      "target": "Math",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "change",
+      "target": "ColorTheme",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "switch",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "understand",
+      "target": "Code",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Version",
+      "action": "remove",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "purchase",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Way",
+      "action": "draw",
       "target": "App",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "publish",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "purchase",
       "target": "Version",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "change",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "check",
+      "target": "Score",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "publish",
+      "target": "IosVersion",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "keep",
+      "target": "Levelprogress",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "install",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "understand",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "track",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "erase",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "start",
+      "target": "",
       "para": []
     },
     {
@@ -125,32 +308,50 @@
     },
     {
       "actor": "User",
-      "action": "change",
-      "target": "Theme",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "publish",
-      "target": "IOSVersion",
+      "action": "have",
+      "target": "Ability",
       "para": []
     },
     {
       "actor": "Administer",
       "action": "see",
-      "target": "Analytic",
+      "target": "Analytics",
       "para": []
     },
     {
       "actor": "Developer",
       "action": "design",
-      "target": "DescriptionPage",
+      "target": "Description",
       "para": []
     },
     {
-      "actor": "Way",
-      "action": "draw",
-      "target": "Attention",
+      "actor": "User",
+      "action": "cheat",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "publish",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sign",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "check",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "switch",
+      "target": "Language",
       "para": []
     }
   ]

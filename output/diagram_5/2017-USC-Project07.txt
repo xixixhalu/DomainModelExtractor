@@ -6,45 +6,58 @@ class User<actor> {
 }
 class Admin<actor> {
 }
-class Producer {
-	using()
+class User {
+	comment()
+	like()
+	log()
+	share()
+	view()
+	trend()
+	search()
 }
-class FeedbackForm {
+class BlogPost {
 }
 class Admin {
+	save()
+	edit()
 	delete()
 	add()
-	edit()
-	save()
 }
-class Category {
-}
-class Tag {
-}
-class User {
-	share()
-	like()
-	view()
+class Draft {
 }
 class Post {
 }
+class Category {
+}
 class Scriptwriter {
 	get()
+	interact()
+}
+class Mediaplatform {
+}
+class Author {
+}
+class Blogpost {
 }
 class Feedback {
 }
 class UserComment {
 }
-User --> Post : view
-Admin --> Tag : add
-Producer --> FeedbackForm : using
+User --> Category : view
+User --> BlogPost : search
+Admin --> Post : edit
+User --> BlogPost : view
+User --> Post : trend
+Admin --> Draft : save
+Admin --> UserComment : delete
+User --> Blogpost : view
+User --> Mediaplatform : share
 User --> Post : share
 Admin --> Post : save
-Admin --> UserComment : delete
-Admin --> Post : edit
-User --> Post : like
-Admin --> Category : add
-Admin --> Post : add
+User --> Post : view
+User --> BlogPost : comment
+User --> BlogPost : like
 Scriptwriter --> Feedback : get
+User --> Author : view
 
 @enduml

@@ -1,70 +1,115 @@
 @startuml
 hide circle
 class User<actor> {
+	profilepicture
+	resume
+	account
+	profilePicture
+	media
+	profile
+	interest
+	request
+	information
 }
 class SystemAdmin<actor> {
 }
-class Admin<actor> {
-}
 class User {
-	disable()
-	resume()
-	sort()
+	authenticate()
 	look()
-	find()
+	trend()
+	keep()
+	search()
+	look_up()
+	click()
+	disable()
+	log()
 	filter()
 	see()
+	find()
+	log_in()
+	sort()
 	update()
+}
+class Researchpaper {
+}
+class ResearchPapers {
+	see()
 }
 class Papers {
 }
-class Event {
+class Media {
+	keep()
 }
-class Position {
+class ProfilePicture {
+	upload()
 }
-class ResearchPapers {
+class Profilepicture {
 }
-class Admin {
-	remove()
-	authorize()
-	approve()
-	reject()
-}
-class Profile {
-}
-class UserProfile {
-}
-class Calendar {
+class Alumnus {
 }
 class Account {
 }
-class Media {
+class Calendar {
 }
-class Updated {
+class Admin {
+	authorize()
+	remove()
+	approve()
+	login()
+}
+class UserProfile {
+}
+class Profile {
+}
+class Event {
+}
+class LinkedIn {
+}
+class Portal {
+}
+class Content {
 }
 class SystemAdmin {
 	approve()
 }
 class Request {
 }
-class Content {
+class Logininto {
 }
-class Alumnus {
+class Position {
 }
-User --> Updated : resume
+class Company {
+}
+class Linkedinprofile {
+}
+class Linkedin {
+}
+class Category {
+}
+User --> Alumnus : look_up
 User --> Papers : look
-Admin --> Content : remove
-Admin --> UserProfile : reject
-User --> ResearchPapers : sort
-User --> Profile : see
-User --> Media : update
-User --> Event : see
-User --> Alumnus : look
+ProfilePicture --> Profilepicture : upload
+User o-- Account : disable
+User --> Logininto : authenticate
 User --> Calendar : filter
-SystemAdmin --> Request : approve
+User --> Alumnus : look
+User --> User : search
+User --> Position : find
 Admin --> UserProfile : approve
 Admin --> Profile : authorize
-User --> Position : find
-User --> Account : disable
+User --> Company : look
+User o-- Profile : see
+User o-- Media : update
+User --> Linkedinprofile : click
+User --> Event : see
+User --> Papers : look_up
+User --> Linkedin : log
+User --> LinkedIn : authenticate
+User --> Category : filter
+User --> Portal : log
+User --> Researchpaper : search
+Admin --> Content : remove
+SystemAdmin --> Request : approve
+User --> ResearchPapers : sort
 
 @enduml

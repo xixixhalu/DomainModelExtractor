@@ -13,52 +13,86 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "session",
+          "type": "default"
+        },
+        {
+          "name": "profile",
+          "type": "default"
+        }
+      ]
     },
     "Contributor": {
       "name": "Contributor",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "session",
+          "type": "default"
+        },
+        {
+          "name": "profile",
+          "type": "default"
+        },
+        {
+          "name": "successrate",
+          "type": "default"
+        }
+      ]
+    },
+    "Draft": {
+      "name": "Draft",
+      "type": [
+        "entity"
+      ],
+      "attributes": [
+        {
+          "name": "detail",
+          "type": "default"
+        }
+      ]
+    },
+    "Member": {
+      "name": "Member",
+      "type": [
+        "entity"
+      ],
+      "attributes": [
+        {
+          "name": "type",
+          "type": "default"
+        }
+      ]
+    },
+    "Week": {
+      "name": "Week",
+      "type": [
+        "entity"
+      ],
+      "attributes": [
+        {
+          "name": "goal",
+          "type": "default"
+        }
+      ]
     }
   },
   "relation_list": [],
   "behavior_list": [
     {
       "actor": "Admin",
-      "action": "modify",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "view",
-      "target": "WeekGoal",
-      "para": []
-    },
-    {
-      "actor": "Contributor",
-      "action": "view",
-      "target": "Detail",
-      "para": []
-    },
-    {
-      "actor": "Admin",
       "action": "check",
-      "target": "Goal",
-      "para": []
-    },
-    {
-      "actor": "Contributor",
-      "action": "remove",
-      "target": "Draft",
+      "target": "",
       "para": []
     },
     {
       "actor": "Admin",
-      "action": "receive",
-      "target": "Message",
+      "action": "end",
+      "target": "",
       "para": []
     },
     {
@@ -68,51 +102,99 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "change",
-      "target": "type",
+      "actor": "Contributor",
+      "action": "view",
+      "target": "Detail",
       "para": []
     },
     {
       "actor": "Contributor",
-      "action": "create",
-      "target": "DraftIdea",
+      "action": "sign",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "pitch",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "view",
+      "target": "",
       "para": []
     },
     {
       "actor": "Admin",
       "action": "export",
-      "target": "PublishingCalendar",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "view",
-      "target": "Goal",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "approve",
-      "target": "Pitch",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "view",
-      "target": "Pitch",
+      "target": "CSVFile",
       "para": []
     },
     {
       "actor": "Contributor",
-      "action": "modify",
+      "action": "send",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "remove",
       "target": "Draft",
       "para": []
     },
     {
       "actor": "Contributor",
+      "action": "sign_out",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "make",
+      "target": "Change",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "filter",
+      "target": "Pitch",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "receive",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "filter",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
       "action": "track",
-      "target": "SuccessRate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "filter",
+      "target": "Criterion",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "modify",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "view",
+      "target": "Goal",
       "para": []
     },
     {
@@ -123,134 +205,68 @@
     },
     {
       "actor": "Admin",
-      "action": "create",
-      "target": "Account",
+      "action": "send",
+      "target": "User",
       "para": []
     },
     {
       "actor": "Contributor",
-      "action": "make",
-      "target": "Change",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "view",
-      "target": "Detail",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "do",
-      "target": "KnowledgeTransfer",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "view",
-      "target": "details",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "set",
-      "target": "Goal",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "receive",
-      "target": "Piece",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "pull",
-      "target": "Pitch",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "reject",
-      "target": "Pitch",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "send",
-      "target": "Message",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "filter",
-      "target": "Pitch",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "delete",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "receive",
-      "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "Admin",
       "action": "end",
       "target": "Session",
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "create",
-      "target": "Admin",
+      "actor": "Contributor",
+      "action": "modify",
+      "target": "Draft",
       "para": []
     },
     {
       "actor": "Admin",
-      "action": "edit",
+      "action": "view",
+      "target": "WeekGoal",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "set",
+      "target": "Future",
+      "para": []
+    },
+    {
+      "actor": "Pitch",
+      "action": "need",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "track",
+      "target": "PitchConversionRatio",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "approve",
       "target": "Pitch",
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "edit",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "view",
-      "target": "Progress",
+      "actor": "Contributor",
+      "action": "send",
+      "target": "Message",
       "para": []
     },
     {
       "actor": "Contributor",
-      "action": "view",
-      "target": "Vertical",
-      "para": []
-    },
-    {
-      "actor": "Contributor",
-      "action": "receive",
-      "target": "Piece",
-      "para": []
-    },
-    {
-      "actor": "Contributor",
-      "action": "view",
-      "target": "Goal",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "view",
-      "target": "ProjectProgress",
+      "action": "end",
+      "target": "",
       "para": []
     },
     {
@@ -261,8 +277,62 @@
     },
     {
       "actor": "Contributor",
+      "action": "receive",
+      "target": "Stage",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "create",
+      "target": "Admin",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "pull",
+      "target": "Pitch",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "log_out",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
       "action": "send",
       "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "edit",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "filter",
+      "target": "Criterion",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "log",
+      "target": "Site",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "track",
+      "target": "Draft",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "set",
+      "target": "Goal",
       "para": []
     },
     {
@@ -272,15 +342,291 @@
       "para": []
     },
     {
+      "actor": "Pitch",
+      "action": "review",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "send",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "pull",
+      "target": "PublishingCalendar",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "receive",
+      "target": "Notification",
+      "para": []
+    },
+    {
       "actor": "Contributor",
+      "action": "make",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "view",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "change",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "export",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "view",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "track",
+      "target": "Successrate",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "set",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "view",
+      "target": "Pitchboard",
+      "para": []
+    },
+    {
+      "actor": "Admin",
       "action": "filter",
       "target": "Pitch",
       "para": []
     },
     {
+      "actor": "Admin",
+      "action": "check",
+      "target": "Goal",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "do",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "Contributor",
+      "action": "send",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "approve",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
       "action": "end",
       "target": "Session",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "remove",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "export",
+      "target": "Publishingcalendar",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "log",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "change",
+      "target": "Type",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "filter",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "set",
+      "target": "Week",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "receive",
+      "target": "Stage",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "log",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "receive",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "receive",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "view",
+      "target": "Projectprogress",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "modify",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "log",
+      "target": "Site",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "create",
+      "target": "Contributor",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "make",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "view",
+      "target": "Projectprogress",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "modify",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "create",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "receive",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "view",
+      "target": "Goal",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "create",
+      "target": "DraftIdea",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "edit",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "receive",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "view",
+      "target": "Pitchboard",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "pull",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "create",
+      "target": "",
       "para": []
     }
   ]

@@ -6,14 +6,44 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "network",
+          "type": "default"
+        }
+      ]
     },
     "User": {
       "name": "User",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "profile",
+          "type": "default"
+        },
+        {
+          "name": "network",
+          "type": "default"
+        },
+        {
+          "name": "connection",
+          "type": "default"
+        },
+        {
+          "name": "message",
+          "type": "default"
+        },
+        {
+          "name": "linkedInInformation",
+          "type": "default"
+        },
+        {
+          "name": "area",
+          "type": "default"
+        }
+      ]
     },
     "Administrator": {
       "name": "Administrator",
@@ -21,170 +51,49 @@
         "actor"
       ],
       "attributes": []
+    },
+    "Connection": {
+      "name": "Connection",
+      "type": [
+        "entity"
+      ],
+      "attributes": [
+        {
+          "name": "activity",
+          "type": "default"
+        }
+      ]
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "User",
+      "dest": "User",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Student",
+      "dest": "Student",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
-    {
-      "actor": "User",
-      "action": "send",
-      "target": "Message",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "find",
-      "target": "Optometrist",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "accept",
-      "target": "ConnectionRequest",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "find",
-      "target": "Office",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "delete",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "find",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "send",
-      "target": "Request",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "upload",
-      "target": "ProfilePicture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "Article",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "follow",
-      "target": "Company",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "cancel",
-      "target": "Connection",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "write",
-      "target": "LetterRecommendation",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "find",
-      "target": "Someone",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "join",
-      "target": "Group",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "Group",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "leave",
-      "target": "Group",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "update",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "unfollow",
-      "target": "Company",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "follow",
-      "target": "School",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "Presence",
-      "para": []
-    },
     {
       "actor": "User",
       "action": "add",
       "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Recommendation",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "import",
-      "target": "LinkedInInformation",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "reject",
-      "target": "ConnectionRequest",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "grow",
-      "target": "Network",
       "para": []
     },
     {
@@ -195,14 +104,428 @@
     },
     {
       "actor": "User",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "search",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Someone",
+      "action": "work",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Recommendation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "invite",
+      "target": "People",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "accept",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "see",
       "target": "Message",
       "para": []
     },
     {
       "actor": "User",
+      "action": "send",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "cancel",
+      "target": "Connection",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "leave",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "import",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Activity",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Someone",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "leave",
+      "target": "Point",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "work",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "join",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Optometrist",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "comment",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "cancel",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "comment",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "Administrator",
+      "para": []
+    },
+    {
+      "actor": "Someone",
+      "action": "work",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "search",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Company",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "write",
+      "target": "LetterRecommendation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "upload",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "invite",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "connect",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "write",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "import",
+      "target": "LinkedInInformation",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "share",
       "target": "Video",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "leave",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Company",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Article",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Office",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "connect",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "School",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "write",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "upload",
+      "target": "ProfilePicture",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "grow",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "follow",
+      "target": "Company",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "connect",
+      "target": "Student",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "import",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "want",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "Presence",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "think",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "follow",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "grow",
+      "target": "Network",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Request",
+      "action": "join",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "cancel",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "add",
+      "target": "Ad",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "add",
+      "target": "Space",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "comment",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Someone",
+      "action": "work",
+      "target": "Company",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "join",
+      "target": "",
       "para": []
     }
   ]

@@ -6,14 +6,28 @@
       "type": [
         "actor"
       ],
-      "attributes": []
-    },
-    "Company": {
-      "name": "Company",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "phone",
+          "type": "default"
+        },
+        {
+          "name": "valet",
+          "type": "default"
+        },
+        {
+          "name": "creditCardInformation",
+          "type": "default"
+        },
+        {
+          "name": "vehicle",
+          "type": "default"
+        },
+        {
+          "name": "profile",
+          "type": "default"
+        }
+      ]
     },
     "Establishment": {
       "name": "Establishment",
@@ -27,17 +41,39 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "car",
+          "type": "default"
+        },
+        {
+          "name": "ticketNumber",
+          "type": "default"
+        }
+      ]
     },
-    "Operator": {
-      "name": "Operator",
+    "ValetOperator": {
+      "name": "ValetOperator",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "profile",
+          "type": "default"
+        },
+        {
+          "name": "company",
+          "type": "default"
+        },
+        {
+          "name": "login",
+          "type": "default"
+        }
+      ]
     },
-    "Head": {
-      "name": "Head",
+    "ValetHead": {
+      "name": "ValetHead",
       "type": [
         "actor"
       ],
@@ -49,14 +85,156 @@
         "actor"
       ],
       "attributes": []
+    },
+    "ValetCompany": {
+      "name": "ValetCompany",
+      "type": [
+        "entity"
+      ],
+      "attributes": [
+        {
+          "name": "profile",
+          "type": "default"
+        },
+        {
+          "name": "revenue",
+          "type": "default"
+        }
+      ]
     }
   },
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "Head",
+      "actor": "Driver",
+      "action": "check",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
+      "action": "service",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
+      "action": "send",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "include",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
+      "action": "send",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "ValetCompany",
+      "action": "receive",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "message",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
+      "action": "know",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Location",
+      "action": "service",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "message",
+      "target": "Valet",
+      "para": []
+    },
+    {
+      "actor": "ValetCompany",
+      "action": "offer",
+      "target": "Paymentoption",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "register",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetHead",
       "action": "set",
-      "target": "Price",
+      "target": "ValetPrice",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
+      "action": "add",
+      "target": "Employee",
+      "para": []
+    },
+    {
+      "actor": "Establishment",
+      "action": "send",
+      "target": "SnapValetUser",
+      "para": []
+    },
+    {
+      "actor": "ValetHead",
+      "action": "set",
+      "target": "Shift",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
+      "action": "track",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
+      "action": "send",
+      "target": "Customer",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
+      "action": "track",
+      "target": "Location",
+      "para": []
+    },
+    {
+      "actor": "ValetCompany",
+      "action": "control",
+      "target": "Revenue",
+      "para": []
+    },
+    {
+      "actor": "ValetHead",
+      "action": "adjust",
+      "target": "",
       "para": []
     },
     {
@@ -67,56 +245,50 @@
     },
     {
       "actor": "Driver",
-      "action": "create",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "Operator",
-      "action": "retrieve",
-      "target": "Car",
-      "para": []
-    },
-    {
-      "actor": "Company",
-      "action": "accept",
-      "target": "Payment",
-      "para": []
-    },
-    {
-      "actor": "Driver",
       "action": "have",
       "target": "Option",
       "para": []
     },
     {
-      "actor": "Operator",
-      "action": "add",
-      "target": "Employee",
+      "actor": "ValetOperator",
+      "action": "see",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Establishment",
+      "actor": "Driver",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
+      "action": "retrieve",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Employee",
+      "action": "work",
+      "target": "Location",
+      "para": []
+    },
+    {
+      "actor": "Valet",
+      "action": "retrieve",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
       "action": "send",
-      "target": "Advertisement",
+      "target": "Car",
       "para": []
     },
     {
-      "actor": "Operator",
-      "action": "track",
-      "target": "Transaction",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "include",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Operator",
-      "action": "send",
-      "target": "Notification",
+      "actor": "Employee",
+      "action": "work",
+      "target": "",
       "para": []
     },
     {
@@ -126,39 +298,51 @@
       "para": []
     },
     {
-      "actor": "Company",
-      "action": "offer",
-      "target": "PaymentOption",
+      "actor": "Driver",
+      "action": "use",
+      "target": "Activity",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "request",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Location",
+      "action": "service",
+      "target": "Company",
       "para": []
     },
     {
       "actor": "Driver",
-      "action": "message",
-      "target": "Valet",
+      "action": "wait",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Company",
-      "action": "control",
-      "target": "Revenue",
+      "actor": "Establishment",
+      "action": "send",
+      "target": "Advertisement",
       "para": []
     },
     {
-      "actor": "Operator",
-      "action": "have",
-      "target": "Location",
+      "actor": "ValetCompany",
+      "action": "accept",
+      "target": "Payment",
       "para": []
     },
     {
-      "actor": "Company",
+      "actor": "ValetOperator",
+      "action": "track",
+      "target": "Transaction",
+      "para": []
+    },
+    {
+      "actor": "ValetCompany",
       "action": "receive",
       "target": "EmailTransactionSummaryReport",
-      "para": []
-    },
-    {
-      "actor": "Head",
-      "action": "adjust",
-      "target": "Pricing",
       "para": []
     },
     {
@@ -168,21 +352,177 @@
       "para": []
     },
     {
-      "actor": "Driver",
-      "action": "select",
-      "target": "Location",
-      "para": []
-    },
-    {
-      "actor": "Operator",
+      "actor": "ValetOperator",
       "action": "receive",
-      "target": "Request",
+      "target": "Customer",
       "para": []
     },
     {
-      "actor": "Operator",
+      "actor": "ValetOperator",
+      "action": "receive",
+      "target": "Timerequest",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "pay",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetCompany",
+      "action": "control",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetCompany",
+      "action": "receive",
+      "target": "Shift",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "create",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Establishment",
+      "action": "send",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetHead",
+      "action": "set",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetCompany",
+      "action": "accept",
+      "target": "ValetCompany",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "include",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "register",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
+      "action": "retrieve",
+      "target": "Manner",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
+      "action": "receive",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetHead",
+      "action": "adjust",
+      "target": "Pricing",
+      "para": []
+    },
+    {
+      "actor": "Establishment",
+      "action": "attract",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "want",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "wait",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "pay",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "pay",
+      "target": "Valet",
+      "para": []
+    },
+    {
+      "actor": "ValetCompany",
+      "action": "accept",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "request",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "enter",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
+      "action": "retrieve",
+      "target": "Car",
+      "para": []
+    },
+    {
+      "actor": "ValetOperator",
       "action": "have",
       "target": "Login",
+      "para": []
+    },
+    {
+      "actor": "ValetCompany",
+      "action": "offer",
+      "target": "",
       "para": []
     }
   ]

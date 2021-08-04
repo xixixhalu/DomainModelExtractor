@@ -6,14 +6,20 @@
       "type": [
         "actor"
       ],
-      "attributes": []
-    },
-    "Coach": {
-      "name": "Coach",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "kid",
+          "type": "default"
+        },
+        {
+          "name": "information",
+          "type": "default"
+        },
+        {
+          "name": "swimmer",
+          "type": "default"
+        }
+      ]
     },
     "Developer": {
       "name": "Developer",
@@ -27,7 +33,20 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "kid",
+          "type": "default"
+        },
+        {
+          "name": "kidAccount",
+          "type": "default"
+        },
+        {
+          "name": "account",
+          "type": "default"
+        }
+      ]
     },
     "Treasurer": {
       "name": "Treasurer",
@@ -43,20 +62,74 @@
       ],
       "attributes": []
     },
-    "Headcoach": {
-      "name": "Headcoach",
+    "Head": {
+      "name": "Head",
       "type": [
         "actor"
       ],
       "attributes": []
+    },
+    "Kid": {
+      "name": "Kid",
+      "type": [
+        "entity"
+      ],
+      "attributes": [
+        {
+          "name": "account",
+          "type": "default"
+        }
+      ]
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "Parent",
+      "dest": "RegistrationKey",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
     {
-      "actor": "parent",
-      "action": "sign",
-      "target": "Kid",
+      "actor": "Treasurer",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "expect",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "view",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "edit",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "upload",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "",
       "para": []
     },
     {
@@ -67,8 +140,140 @@
     },
     {
       "actor": "Coach",
-      "action": "extract",
-      "target": "PdfInformation",
+      "action": "set",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Amount",
+      "action": "collect",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "have",
+      "target": "Date",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "see",
+      "target": "Kid",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "modify",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "overwrite",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "sign",
+      "target": "Kid",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "review",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "insert",
+      "target": "Kid",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "modify",
+      "target": "Something",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "close",
+      "target": "Frame",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "expect",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "sign",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "access",
+      "target": "Database",
+      "para": []
+    },
+    {
+      "actor": "Swimmer",
+      "action": "sign",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Head",
+      "action": "generate",
+      "target": "CSVFile",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "have",
+      "target": "Database",
+      "para": []
+    },
+    {
+      "actor": "Treasurer",
+      "action": "see",
+      "target": "Amount",
       "para": []
     },
     {
@@ -79,68 +284,20 @@
     },
     {
       "actor": "Coach",
-      "action": "modify",
-      "target": "Result",
-      "para": []
-    },
-    {
-      "actor": "Signup",
       "action": "close",
-      "target": "Timeframe",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "have",
-      "target": "Access",
-      "para": []
-    },
-    {
-      "actor": "Treasurer",
-      "action": "see",
-      "target": "Amount",
-      "para": []
-    },
-    {
-      "actor": "parent",
-      "action": "view",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "parent",
-      "action": "edit",
-      "target": "Event",
+      "target": "",
       "para": []
     },
     {
       "actor": "Coach",
-      "action": "modified",
-      "target": "Something",
-      "para": []
-    },
-    {
-      "actor": "Signup",
-      "action": "close",
-      "target": "Week",
-      "para": []
-    },
-    {
-      "actor": "Headcoach",
-      "action": "generate",
-      "target": "PdfReport",
+      "action": "extract",
+      "target": "PdfInformation",
       "para": []
     },
     {
       "actor": "Maintainer",
-      "action": "have",
-      "target": "Access",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "overwrite",
-      "target": "Result",
+      "action": "insert",
+      "target": "",
       "para": []
     },
     {
@@ -150,39 +307,117 @@
       "para": []
     },
     {
-      "actor": "Maintainer",
-      "action": "access",
-      "target": "Database",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Option",
+      "actor": "Coach",
+      "action": "close",
+      "target": "Week",
       "para": []
     },
     {
       "actor": "Coach",
       "action": "extract",
-      "target": "UploadEvent",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "modify",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "have",
+      "target": "SourceCode",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "have",
+      "target": "Documentation",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "view",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "edit",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "upload",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "login",
+      "target": "RegistrationKey",
       "para": []
     },
     {
       "actor": "Coach",
       "action": "expect",
-      "target": "Signup",
+      "target": "",
       "para": []
     },
     {
-      "actor": "parent",
-      "action": "view",
+      "actor": "Head",
+      "action": "generate",
+      "target": "PdfReport",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "delete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "insert",
       "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Head",
+      "action": "generate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "login",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "edit",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "have",
+      "target": "",
       "para": []
     },
     {
@@ -192,15 +427,39 @@
       "para": []
     },
     {
-      "actor": "Headcoach",
-      "action": "generate",
-      "target": "CSVFile",
+      "actor": "Maintainer",
+      "action": "access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "login",
+      "target": "KidAccount",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "expect",
+      "target": "Signup",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Option",
       "para": []
     },
     {
       "actor": "Maintainer",
       "action": "modify",
-      "target": "Database",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "overwrite",
+      "target": "Result",
       "para": []
     }
   ]

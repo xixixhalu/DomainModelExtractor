@@ -17,10 +17,9 @@ As an administrator, I can view, add, edit, or delete any user's records or prof
 As an administrator, I can transfer a youth's case between case managers.
 As a case manager or administrator, I can send out a mass e-mail.
 As a case manager, I can activate or deactivate youth accounts as needed.
-The system design shall be documented to increase maintainability and allow for transfer of knowledge.
-The system structure shall be documented to increase maintainability and allow for transfer of knowledge.
+The system design/structure shall be documented to increase maintainability and allow for transfer of knowledge.
 As an administrator, I can make certain documents unavailable to a youth.
 As a case manager, I cannot delete any documents or cases.
-The system shall record all the users' log information  .
+The system shall record all the users' log information (login/logout/time logged in).
 As an administrator, I can view the log records created by the system.
 As an administrator or case manager, I can create and manage activities.

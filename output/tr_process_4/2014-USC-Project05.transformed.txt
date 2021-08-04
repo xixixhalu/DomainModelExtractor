@@ -19,15 +19,21 @@
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "SaleAgent",
-      "action": "close",
-      "target": "Sale",
+      "actor": "SaleManager",
+      "action": "listen",
+      "target": "Call",
       "para": []
     },
     {
       "actor": "SaleManager",
-      "action": "use",
-      "target": "Recording",
+      "action": "listen",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SaleAgent",
+      "action": "save",
+      "target": "",
       "para": []
     },
     {
@@ -37,9 +43,15 @@
       "para": []
     },
     {
-      "actor": "SaleAgent",
-      "action": "save",
-      "target": "Time",
+      "actor": "SaleManager",
+      "action": "listen_in",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "assure",
+      "target": "",
       "para": []
     },
     {
@@ -51,13 +63,109 @@
     {
       "actor": "SaleManager",
       "action": "train",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "train",
       "target": "Agent",
       "para": []
     },
     {
+      "actor": "SaleManager",
+      "action": "jump_in",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "SaleAgent",
-      "action": "clicktocall",
-      "target": "Customer",
+      "action": "close",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "use",
+      "target": "SaleManager",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "use",
+      "target": "Recording",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "speak",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "guide",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "jump",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SaleAgent",
+      "action": "request",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SaleAgent",
+      "action": "save",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "SaleAgent",
+      "action": "click",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "speak",
+      "target": "AgentWhile",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "help",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "record",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SaleManager",
+      "action": "call",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "SaleAgent",
+      "action": "close",
+      "target": "Sale",
       "para": []
     }
   ]

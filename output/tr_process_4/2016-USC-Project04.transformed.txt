@@ -13,22 +13,44 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "image",
+          "type": "default"
+        }
+      ]
     },
     "Client": {
       "name": "Client",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "unix",
+          "type": "default"
+        }
+      ]
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "Client",
+      "dest": "Image",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
     {
-      "actor": "Client",
-      "action": "upload",
-      "target": "Image",
+      "actor": "User",
+      "action": "detect",
+      "target": "",
       "para": []
     },
     {
@@ -39,14 +61,62 @@
     },
     {
       "actor": "Client",
-      "action": "extract",
-      "target": "Model",
+      "action": "see_along",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "upload",
+      "target": "Pipeline",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "train",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "want",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "run",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "run",
+      "target": "Unix",
       "para": []
     },
     {
       "actor": "Client",
       "action": "see",
-      "target": "classification",
+      "target": "Classification",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "upload",
+      "target": "Image",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "upload",
+      "target": "Image",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "choose",
+      "target": "",
       "para": []
     },
     {
@@ -57,14 +127,86 @@
     },
     {
       "actor": "Client",
+      "action": "upload",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "give",
+      "target": "Set",
+      "para": []
+    },
+    {
+      "actor": "Client",
       "action": "replace",
-      "target": "Machine",
+      "target": "Model",
       "para": []
     },
     {
       "actor": "User",
       "action": "upload",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "see",
       "target": "Image",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "replace",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "extract",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "give",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "replace",
+      "target": "MachineLearningAlgorithm",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "see_along",
+      "target": "Classification",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "choose",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "upload",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "give",
+      "target": "Topic",
       "para": []
     }
   ]

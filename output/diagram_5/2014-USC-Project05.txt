@@ -4,37 +4,50 @@ class SaleAgent<actor> {
 }
 class SaleManager<actor> {
 }
-class SaleAgent {
-	close()
-	request()
-	clicktocall()
-	save()
-}
-class Sale {
-}
 class SaleManager {
-	train()
+	help()
+	jump()
+	jump_in()
 	use()
+	call()
+	record()
+	train()
+	speak()
+	listen()
 	assure()
+	guide()
+	listen_in()
 }
-class Recording {
+class Call {
+}
+class SaleAgent {
+	save()
+	request()
+	click()
+	close()
 }
 class ConferenceCall {
-}
-class Time {
 }
 class Quality {
 }
 class Agent {
 }
-class Customer {
+class Recording {
 }
-SaleManager --> Agent : train
-SaleAgent --> Time : save
-SaleAgent --> Customer : clicktocall
+class Time {
+}
+class AgentWhile {
+}
+class Sale {
+}
+SaleAgent --> ConferenceCall : request
+SaleManager --> AgentWhile : speak
+SaleManager --> SaleManager : use
 SaleManager --> Recording : use
 SaleManager --> Quality : assure
-SaleAgent --> ConferenceCall : request
+SaleManager --> Call : listen
 SaleAgent --> Sale : close
+SaleAgent --> Time : save
+SaleManager --> Agent : train
 
 @enduml

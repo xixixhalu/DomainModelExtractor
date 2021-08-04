@@ -1,7 +1,10 @@
-10-May-21 16:03:07 - INFO
-Unknown words: {'postgresql', 'javascript', 'snapp', 'voip', 'html5', 'crm', 'heroku', 'css', 'twilio', 'jquery'}
-10-May-21 16:03:07 - WARNING
-Change Line 14: 
-The system shall use Twilio API for voip.
-Word: voip
-Change to: void
+14-Jul-21 16:55:20 - INFO
+Unknown words: 
+d, line 4
+callee, line 4
+
+14-Jul-21 16:55:20 - WARNING
+Change Line 4: 
+The system shall log call detail information (caller number & id, callee number & id, duration, start date & time, end date & time, mute link to the recording, conference link, listening in link, XML file as text)  so that we can pull analytics on it.
+Word: callee
+Change to: called

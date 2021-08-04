@@ -1,12 +1,12 @@
 The Pipeline shall accept a Set of Image as an Input .
 The Pipeline shall be controlled directly to Administrator .
 The Pipeline provides additional Functionality to the EndUser of the System .
-The Pipeline utilizes the provided Machine learning Algorithm .
-The UI is user friendly , clean , and efficient .
+The Pipeline utilizes the provided MachineLearningAlgorithm .
+The UI is User friendly , clean , and efficient .
 The Pipeline shall send Text and Image to the User when correct Image has been found .
 The Pipeline shall use DetectorModel to detect the Image uploaded by the User .
 The Pipeline shall store a Model for ImageClassification .
 The Pipeline shall pre-process TrainingImage .
 The Pipeline shall use deep LearningAlgorithm .
 The Pipeline shall handle the Image with Noise .
-The Pipeline shall get the Image from the Facebook via FacebookAPI .
+The Pipeline shall get the Image from the Facebook via FacebookApi .

@@ -23,12 +23,84 @@
       "attributes": []
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "User",
+      "dest": "Ranking",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
     {
+      "actor": "Developer",
+      "action": "access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "map",
+      "target": "IMDBAttribute",
+      "para": []
+    },
+    {
       "actor": "User",
-      "action": "interested",
+      "action": "find",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "script",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "map",
+      "target": "Hashtag",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "display",
+      "target": "Result",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "link",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "VideoUser",
+      "action": "use",
+      "target": "TwitterData",
+      "para": []
+    },
+    {
+      "actor": "Media",
+      "action": "recommend",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Movie",
+      "action": "trend",
       "target": "Media",
+      "para": []
+    },
+    {
+      "actor": "VideoUser",
+      "action": "use",
+      "target": "",
       "para": []
     },
     {
@@ -38,15 +110,57 @@
       "para": []
     },
     {
+      "actor": "User",
+      "action": "input",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "map",
+      "target": "TwitterMentions",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "search",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "Developer",
       "action": "filter",
       "target": "Data",
       "para": []
     },
     {
+      "actor": "VideoUser",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "Developer",
-      "action": "map",
-      "target": "IMDBAttribute",
+      "action": "display",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "TwitterData",
+      "action": "recommend",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Movie",
+      "action": "trend",
+      "target": "",
       "para": []
     },
     {
@@ -57,8 +171,8 @@
     },
     {
       "actor": "Developer",
-      "action": "display",
-      "target": "Result",
+      "action": "filter",
+      "target": "",
       "para": []
     },
     {
@@ -68,21 +182,45 @@
       "para": []
     },
     {
-      "actor": "VideoUser",
-      "action": "use",
-      "target": "TwitterData",
+      "actor": "Developer",
+      "action": "link",
+      "target": "Hashtag",
+      "para": []
+    },
+    {
+      "actor": "MediaData",
+      "action": "create",
+      "target": "",
       "para": []
     },
     {
       "actor": "MovieTitle",
       "action": "get",
-      "target": "Info",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "find",
       "target": "Movie",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "map",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "design",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Ranking",
       "para": []
     }
   ]

@@ -1,5 +1,4 @@
 The System shall send a VerificationCode when a User is trying to log in , in Order to increase SystemSecurity .
 The System shall automatically log User out after ten Minute of Inactivity .
-The SystemDesign shall be documented to increase maintainability and allow for Transfer of Knowledge .
-The SystemStructure shall be documented to increase maintainability and allow for Transfer of Knowledge .
+The SystemDesign , Structure shall be documented to increase maintainability and allow for Transfer of Knowledge .
 The System shall record all the User ' LogInformation .

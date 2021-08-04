@@ -27,8 +27,8 @@ The System prompts for Password .
 ATMCustomer enters the WithdrawalAmount .
 If the ATMCard is valid .
 The System restarts
-Include UCSValidatePIN
+Include UCSValidatePin
 Extend HandleCardJam
 Resume M2 .
-Repeat M4-M8 .
+Repeat M4 - M8 .
 CardReader , CashDispenser and ReceiptPrinter are the Schedule of ATM .

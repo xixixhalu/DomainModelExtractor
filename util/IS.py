@@ -1,4 +1,5 @@
 import json
+import re
 
 class ISComplexEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -18,18 +19,45 @@ class ISDeDup:
             else:
                 return [dict(t) for t in {tuple(d.asdict().items()) for d in obj}]
 
+class Format:
+    @staticmethod
+    def entity(word):
+        rst = re.search(r'[a-zA-Z]{1}', word)
+        if rst:
+            return re.sub(r'(\W*)[a-zA-Z]',rf'\1'+rst.group().upper() , word, 1)
+        else:
+            return word
+
+    @staticmethod
+    def attribute(word):
+        rst = re.search(r'[a-zA-Z]{1}', word)
+        if rst:
+            return re.sub(r'(\W*)[a-zA-Z]',rf'\1'+rst.group().lower() , word, 1)
+        else:
+            return word
+
+    @staticmethod
+    def behavior(word):
+        rst = re.search(r'[a-zA-Z]{1}', word)
+        if rst:
+            return re.sub(r'(\W*)[a-zA-Z]',rf'\1'+rst.group().lower() , word, 1)
+        else:
+            return word
+
+
 class ISDomain:
 
     class ISRelation:
-        def __init__(self, source, dest, ass_type="default", multiplicity=('1','1'), para=[]):
+        def __init__(self, source, dest, ass_type="default", msg='', multiplicity=('1','1'), para=[]):
             '''
             ass_type : "association", "generalization", "aggregation", "default"
             multiplicity: ('1','1'), ('1','*'), ('*', '*')
             para: a string list
             '''
-            self.source = source
-            self.dest = dest
+            self.source = Format.entity(source)
+            self.dest = Format.entity(dest)
             self.ass_type = ass_type
+            self.msg = msg
             self.multiplicity = multiplicity
             self.para = para
 
@@ -41,6 +69,7 @@ class ISDomain:
                 "source" : self.source,
                 "dest" : self.dest,
                 "type" : self.ass_type,
+                "msg" : self.msg,
                 "multiplicity" : self.multiplicity,
                 "para" : tuple(ISDeDup.de_dup_list(self.para))
 
@@ -53,7 +82,7 @@ class ISDomain:
             '''
             att_type : all those primitive types, "object", "default"
             '''
-            self.name = attr_name
+            self.name = Format.attribute(attr_name)
             self.type = attr_type
 
         def asdict(self):
@@ -69,7 +98,7 @@ class ISDomain:
             '''
             entity_type : entity, actor, default.
             '''
-            self.name = entity_name
+            self.name = Format.entity(entity_name)
             self.type = [entity_type]
             self.attributes = []
 
@@ -90,9 +119,9 @@ class ISDomain:
 
     class ISBehavior:
         def __init__(self, actor, action, target="", para=[]):
-            self.actor = actor
-            self.action = action
-            self.target = target
+            self.actor = Format.entity(actor)
+            self.action = Format.behavior(action)
+            self.target = Format.entity(target)
             self.para = para
 
 
@@ -115,13 +144,22 @@ class ISDomain:
     def get_name(self):
         return self.__name
 
+    def get_relation(self):
+        return self.__relation_list
+
+    def get_entity(self):
+        return self.__entity_dict
+
+    def get_behavior(self):
+        return self.__behavior_list
+
     # Relation ops
-    def add_relation(self, source, dest, ass_type="default", multiplicity=('1','1'), para=[]):
+    def add_relation(self, source, dest, ass_type="default", msg='', multiplicity=('1','1'), para=[]):
         # if actor not in self.__entity_dict:
         #     self.add_entity(actor)
         # if dest not in self.__entity_dict:
         #     self.add_entity(dest)
-        relation = self.ISRelation(source, dest, ass_type, multiplicity, para)
+        relation = self.ISRelation(source, dest, ass_type, msg, multiplicity, para)
         self.__relation_list.append(relation)
 
     def delete_relation(self, source="", dest=""):
@@ -141,18 +179,18 @@ class ISDomain:
     def add_entity(self, entity_name, entity_type="entity"):
         if entity_name not in self.__entity_dict:
             entity = self.ISEntity(entity_name, entity_type)
-            self.__entity_dict[entity_name] = entity
+            self.__entity_dict[Format.entity(entity_name)] = entity
         else:
-            self.__entity_dict[entity_name].add_entity_type(entity_type)
+            self.__entity_dict[Format.entity(entity_name)].add_entity_type(entity_type)
 
     def delete_entity(self, entity_name):
-        self.__entity_dict.pop(entity_name, None)
+        self.__entity_dict.pop(Format.entity(entity_name), None)
 
     def add_entity_attribute(self, entity_name, attr_name, attr_type="default"):
-        if entity_name not in self.__entity_dict:
+        if Format.entity(entity_name) not in self.__entity_dict:
             self.add_entity(entity_name)
         attribute = self.ISAttribute(attr_name, attr_type)
-        self.__entity_dict[entity_name].add_entity_attribute(attribute)
+        self.__entity_dict[Format.entity(entity_name)].add_entity_attribute(attribute)
 
     def entity_asdict(self):
         return json.loads(json.dumps(self.__entity_dict, cls=ISComplexEncoder))
@@ -168,9 +206,11 @@ class ISDomain:
 
     def delete_behavior(self, actor="", target=""):
         for behavior in self.__behavior_list:
+            actor = Format.entity(actor)
+            target = Format.entity(target)
             if actor != "" and behavior.actor == actor and target == "":
                 self.__behavior_list.remove(behavior)
-            elif target != "" and behavior.target ==  target and actor == "":
+            elif target != "" and behavior.target == target and actor == "":
                 self.__behavior_list.remove(behavior)
             elif actor != "" and target != "" and behavior.actor == actor and behavior.target == target:
                 self.__behavior_list.remove(behavior)

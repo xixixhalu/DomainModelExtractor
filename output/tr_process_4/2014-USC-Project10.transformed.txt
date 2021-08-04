@@ -6,27 +6,60 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "network",
+          "type": "default"
+        },
+        {
+          "name": "logincredential",
+          "type": "default"
+        }
+      ]
     }
   },
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "JobSeeker",
-      "action": "email",
-      "target": "JobNotification",
+      "actor": "Networkcontact",
+      "action": "provide",
+      "target": "Reference",
       "para": []
     },
     {
-      "actor": "REFERsySystem",
-      "action": "fetch",
-      "target": "Job",
+      "actor": "JobListing",
+      "action": "have",
+      "target": "Networkfriend",
       "para": []
     },
     {
-      "actor": "JobSeeker",
+      "actor": "Account",
       "action": "save",
-      "target": "JobSearch",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Networkcontact",
+      "action": "provide",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "search",
+      "target": "Keyword",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "browse",
+      "target": "JobListing",
       "para": []
     },
     {
@@ -37,14 +70,44 @@
     },
     {
       "actor": "JobSeeker",
-      "action": "contact",
-      "target": "Someone",
+      "action": "save",
+      "target": "",
       "para": []
     },
     {
-      "actor": "JobListing",
-      "action": "have",
-      "target": "NetworkFriend",
+      "actor": "JobSeeker",
+      "action": "email",
+      "target": "JobNotification",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "contact",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Networkfriend",
+      "action": "refer",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "contact",
+      "target": "Network",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "mark",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "browse",
+      "target": "",
       "para": []
     },
     {
@@ -55,14 +118,116 @@
     },
     {
       "actor": "JobSeeker",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "email",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "search",
+      "target": "Job",
+      "para": []
+    },
+    {
+      "actor": "REFERsySystem",
+      "action": "fetch",
+      "target": "Job",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "search",
+      "target": "Location",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "unsubscribe",
+      "target": "EmailNotification",
+      "para": []
+    },
+    {
+      "actor": "JobListing",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "REFERsySystem",
+      "action": "connect",
+      "target": "Indeedcom",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "mark",
+      "target": "Favorite",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "search",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Account",
+      "action": "save",
+      "target": "Logincredential",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "save",
+      "target": "JobSearch",
+      "para": []
+    },
+    {
+      "actor": "REFERsySystem",
+      "action": "connect",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "REFERsySystem",
+      "action": "fetch",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
       "action": "select",
       "target": "Frequency",
       "para": []
     },
     {
-      "actor": "Account",
-      "action": "saves",
-      "target": "LoginCredentials",
+      "actor": "JobSeeker",
+      "action": "contact",
+      "target": "Someone",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "select",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "subscribe",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "JobSeeker",
+      "action": "unsubscribe",
+      "target": "",
       "para": []
     }
   ]

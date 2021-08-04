@@ -1,107 +1,172 @@
 @startuml
 hide circle
 class User<actor> {
+	challengescore
+	friend
+	photo
+	rank
+	challengeTask
 }
 class Student<actor> {
+	challengerList
 }
 class Competitor<actor> {
+	post
+	challengepost
+	opponentpost
+}
+class Challenger {
+	challenge()
+}
+class User {
+	submit()
+	play()
+	go()
+	pick()
+	verify()
+	use()
+	get()
+	check()
+	post()
+	invite()
+	preview()
+	try()
+	send()
+	do()
+	receive()
+	add()
+	chance()
+	go_back()
+	see()
+	know()
+	give()
+	finish()
+	click()
+	have()
+}
+class Student {
+	compete()
+	prepare()
+	select()
+	see()
+}
+class ChallengerList {
+}
+class Iphonemodel {
+	play()
+}
+class Today {
+}
+class Competitor {
+	post()
+	verify()
+	view()
+}
+class Challenge {
+	leave()
+}
+class ChallengeGame {
+}
+class ChallengeRequest {
+}
+class Idea {
+	help()
+}
+class Detail {
+}
+class Time {
+}
+class Rank {
+}
+class Button {
+}
+class Reward {
+}
+class Notification {
+}
+class App {
+}
+class Challengescore {
 }
 class Suggestion {
 	challenge()
 }
-class Topic {
-}
-class User {
-	click()
-	check()
-	pick()
-	play()
-	submit()
-	invite()
-	get()
-	use()
-	receive()
-	send()
-	finished()
-	give()
-	do()
-	see()
-}
-class Time {
-}
-class Competitor {
-	verify()
-	post()
-	view()
-}
-class OpponentPost {
-}
-class ChallengePost {
-}
-class Challenge {
-}
-class Student {
-	select()
-	see()
-}
-class ChallengeTask {
+class FinishTime {
 }
 class Friend {
-	participate()
+	challenge()
 }
-class ChallengeScore {
+class Day {
 }
-class Reward {
+class Populic {
 }
-class Detail {
+class Screen {
 }
-class Notification {
-}
-class ChallengeRequest {
-}
-class Button {
-}
-class IPhoneModel {
-}
-class Rank {
-}
-class ChallengeGame {
-}
-class Idea {
+class Photo {
 }
 class ChallengeNotification {
 }
+class Opponentpost {
+}
+class Game {
+}
+class ChallengeTask {
+}
+class Application {
+	improve()
+}
 class Post {
 }
-class FinishTime {
+class ChallengePage {
 }
-Competitor --> OpponentPost : verify
-User --> ChallengeRequest : send
-User --> Notification : receive
-User --> Suggestion : give
-User --> Challenge : see
-Competitor --> ChallengePost : post
-Student --> Challenge : see
-User --> Rank : see
-User --> Challenge : check
-User --> ChallengeGame : play
-Student --> Competitor : select
-User --> Idea : submit
-User --> Reward : get
-User --> ChallengeTask : do
-User --> Friend : invite
-User --> ChallengeNotification : get
-Friend --> Challenge : participate
-Competitor --> Post : view
-User --> ChallengeScore : use
-User --> Detail : get
-User --> Notification : get
-User --> FinishTime : see
-Suggestion --> Topic : challenge
+class Challengepost {
+}
+class Procedure {
+}
+User o-- Photo : preview
+User o-- Challenge : check
+Challenge --> User : leave
 User --> Competitor : pick
-User --> Button : click
+User o-- Challenge : finish
+User --> User : verify
+Student o-- ChallengerList : select
+User --> ChallengeGame : play
+User --> Procedure : play
+User o-- Challenge : get
+User --> ChallengeNotification : get
+User o-- Challengescore : use
+Student o-- Challenge : see
+User --> ChallengeRequest : send
+Competitor o-- Opponentpost : verify
+User --> Challenger : pick
+Competitor --> Competitor : view
+User --> Idea : submit
+User --> Game : see
+User --> FinishTime : see
+User --> Detail : get
+User o-- Friend : send
+User o-- ChallengeTask : do
 User --> Time : see
-User --> Challenge : finished
-User --> IPhoneModel : use
+User --> User : go
+User o-- Friend : invite
+User --> App : get
+User --> User : see
+Competitor o-- Post : view
+Student --> Day : see
+User o-- Rank : see
+User --> Notification : receive
+User --> Iphonemodel : use
+User --> Populic : receive
+User --> Button : click
+Competitor --> ChallengePage : view
+Competitor o-- Challengepost : post
+Challenger --> Today : challenge
+User --> Reward : get
+User --> User : get
+User --> Screen : see
+User --> Notification : get
+User --> Suggestion : give
+Student --> Competitor : select
+User o-- Challenge : see
 
 @enduml

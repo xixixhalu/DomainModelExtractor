@@ -1,12 +1,9 @@
-An an admin I can assign Name to the Gateway so that they are more recognizable .
+An an AdminI can assign Name to the Gateway so that they are more recognizable .
 The mobile System should use a single Protocol to communicate with Gateway .
 The maximum Budget for the Project is $ 500 .
 The mobile App should be written in Android with Backend of Mongodb and Node.is .
-System should have minimum Downtime and high Availability .
-System should have minimum Downtime and high Redundancy .
+System should have minimum Downtime and high Availability , Redundancy .
 System should be secure - Data should be transmitted over an encrypted Channel .
-Do not use Toggle for turning on Light so that more Feature can be added .
-Do not use Toggle for turning off the Light so that more Feature can be added added .
-As an Email to log in .
-the ServerAPI shall be documented preferably on the Web ADHERING TO standard JSStyleDocumentation .
+Do not use Toggle for turning on , off the Light so that more Feature can be added .
+the ServerApi shall be documented preferably on the WebAdhering TO standard JSStyleDocumentation .
 The ResponseTime of the System should be within 10 Seconds .

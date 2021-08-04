@@ -1,7 +1,18 @@
-10-May-21 16:03:26 - INFO
-Unknown words: {'mongodb', 'js', 'papertrail', 'd.'}
-10-May-21 16:03:26 - WARNING
+14-Jul-21 16:55:39 - INFO
+Unknown words: 
+papertrail, line 21
+js, line 23
+mqtt, line 9
+d., line 20
+/month, line 15
+
+14-Jul-21 16:55:39 - WARNING
 Change Line 14: 
 The mobile app should be written in Android with backend of mongodb and node.js.
 Word: js
 Change to: is
+14-Jul-21 16:55:39 - WARNING
+Change Line 15: 
+System should have minimum downtime( 1 hr /month max) and high availability/redundancy.
+Word: /month
+Change to: month

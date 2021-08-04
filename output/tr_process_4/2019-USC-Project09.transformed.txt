@@ -6,17 +6,15 @@
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "bidding",
+          "type": "default"
+        }
+      ]
     },
     "Developer": {
       "name": "Developer",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
-    },
-    "Admin": {
-      "name": "Admin",
       "type": [
         "actor"
       ],
@@ -27,26 +25,8 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "keep",
-      "target": "Track",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "provide",
-      "target": "LoginSystem",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "return",
-      "target": "Product",
+      "action": "participate",
+      "target": "Raffle",
       "para": []
     },
     {
@@ -56,21 +36,135 @@
       "para": []
     },
     {
-      "actor": "Item",
-      "action": "using",
-      "target": "Source",
+      "actor": "Developer",
+      "action": "provide",
+      "target": "Loginsystem",
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "maintain",
-      "target": "Database",
+      "actor": "Developer",
+      "action": "search",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "visit",
+      "target": "Cause",
       "para": []
     },
     {
       "actor": "Developer",
       "action": "allow",
       "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "visit",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "return",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "enable",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "go",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "place",
+      "target": "Mine",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "allow",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "place",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "provide",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Database",
+      "action": "remove",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "maintain",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "keep",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "return",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "participate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Database",
+      "action": "remove",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "pay",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "keep",
+      "target": "Track",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "visit",
+      "target": "Story",
       "para": []
     }
   ]

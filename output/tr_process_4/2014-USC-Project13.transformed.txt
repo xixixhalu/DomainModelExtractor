@@ -1,13 +1,6 @@
 {
   "domain": "2014-USC-Project13",
   "entity_dict": {
-    "Admin": {
-      "name": "Admin",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
-    },
     "User": {
       "name": "User",
       "type": [
@@ -20,20 +13,32 @@
   "behavior_list": [
     {
       "actor": "Admin",
-      "action": "delete",
-      "target": "Floor",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "add",
-      "target": "Image",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "edit",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "select",
-      "target": "Room",
+      "action": "turn",
+      "target": "Light",
+      "para": []
+    },
+    {
+      "actor": "Gateway",
+      "action": "switch",
+      "target": "Id",
       "para": []
     },
     {
@@ -44,8 +49,14 @@
     },
     {
       "actor": "Admin",
-      "action": "revoke",
-      "target": "Access",
+      "action": "assign",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "select",
+      "target": "",
       "para": []
     },
     {
@@ -55,39 +66,33 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "add",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "switch",
-      "target": "Id",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "select",
-      "target": "Floor",
-      "para": []
-    },
-    {
       "actor": "User",
       "action": "turn",
-      "target": "Light",
+      "target": "Application",
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "delete",
-      "target": "Room",
+      "actor": "Gateway",
+      "action": "switch",
+      "target": "",
       "para": []
     },
     {
       "actor": "Admin",
       "action": "provide",
-      "target": "Access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "turn",
+      "target": "",
       "para": []
     },
     {
@@ -98,20 +103,68 @@
     },
     {
       "actor": "User",
-      "action": "choose",
-      "target": "Username",
+      "action": "have",
+      "target": "Control",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "Image",
       "para": []
     },
     {
       "actor": "Admin",
-      "action": "see",
-      "target": "GatewayId",
+      "action": "add",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "choose",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "have",
-      "target": "Control",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "Gateway",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "turn_on",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "Switch",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "debug",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "assign",
+      "target": "User",
       "para": []
     },
     {
@@ -124,6 +177,30 @@
       "actor": "Admin",
       "action": "delete",
       "target": "Switch",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "incorporate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "select",
+      "target": "Floor",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "choose",
+      "target": "Email",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "select",
+      "target": "Room",
       "para": []
     }
   ]

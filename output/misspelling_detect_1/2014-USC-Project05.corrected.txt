@@ -1,7 +1,7 @@
 As a sales agent I can click-to-call customers.
 As a sales agent I can auto dial customers so that I save time.
 The system shall connect to backup agent if multiple customers answer calls simultaneously.
-The system shall log call detail information   so that we can pull analytics on it.
+The system shall log call detail information (caller number & id, called number & id, duration, start date & time, end date & time, mute link to the recording, conference link, listening in link, XML file as text)  so that we can pull analytics on it.
 As a sales manager, I can listen to recordings so that I can assure quality.
 As a sales manager, I can use the recordings so that I can train agents.
 As a sales manager I can listen in on active calls so that I can assure quality.
@@ -11,7 +11,7 @@ The system shall make sure the incoming call is assigned to a back up agent if t
 The system shall route the customer to voicemail if no agent is available.
 The system shall be deployed Heroku cloud.
 The system shall log data in PostgreSQL.
-The system shall use Twilio API for void.
+The system shall use Twilio API for voip.
 The system shall be developed using Ruby on Rails.
 The system shall run on Linux.
 The system interface will be built using HTML5, CSS, Javascript, Bootstrap, jQuery.

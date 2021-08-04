@@ -1,31 +1,31 @@
-As a user, I can generate tasks with varying levels of importance.
-As an office administrative user, I can manage patient data and inventory on my doctor's behalf.
-As a user, I can trust the the application securely handles personal information (e.g., full names, social security numbers, credit card information, etc.).
-As a doctor, my patients' and my data will be preserved for a specified amount of time after the free trial ends or a subscription ends.
-As a user, I can access information such as articles or videos that will train me to use the system.
-As an admin, I can customize the portal, so it aligns with my profession.
-As a user, I can track customers have been referred.
-As a user, I can have reports be automatically generated on a schedule.
-As a doctor, I can match patients to products.
-As a user, I am able to create new patient records.
-As a doctor, I am able to view a report of product purchases.
-As an administrator, I am able to save and retrieve important patient documents from within the system.
-As a developer, we have to provide separate access privileges to patient documents.
-As a developer, I need to protect the app against SQL Injections and Cross Site Scripting.
-As a user, I can create an invoice for my patients.
-As a doctor, I can recommend products for my patients in their file.
-As a user, I can import vendor product information with a csv file.
-As a doctor, I want this app to integrate with my scheduling application.
-As a user, I can have a task related to a patient.
-As a user, I can assign a task to a doctor.
-As a user, I can add allergies and medications for a specific patient.
-As a doctor, I can edit the progress of a patient along with his/her basic info like date of last visit, height and weight.
-As a user, I can view and add/edit visit details like address, emergency contact and insurance info of a specific patient and attach the data to the patient record.
-As a user, I can add multiple products by uploading a CSV file that has information of these said multiple products.
-As a user, I can export product info (either just one product or a set of products) to a CSV file.
-As a doctor, I can fill out the order form for a product to be purchased for a patient.
-As a doctor, I can choose a patient or a set of patients to recommend a product (1 product mapped to 1 or more patients).
-As a doctor, I can choose a product or a set of products to recommend to a patient (1 patient mapped to 1 or more products).
-As a user, I can delete a form or a set of forms at once.
-As a user, I can download a form or a set of forms at once.
-As a user, I can add a new form.
+as a user, i can generate tasks with varying levels of importance.
+as an office administrative user, i can manage patient data and inventory on my doctor's behalf.
+as a user, i can trust the the application securely handles personal information (e.g., full names, social security numbers, credit card information, etc.).
+as a doctor, my patients' and my data will be preserved for a specified amount of time after the free trial ends or a subscription ends.
+as a user, i can access information such as articles or videos that will train me to use the system.
+as an admin, i can customize the portal, so it aligns with my profession.
+as a user, i can track customers have been referred.
+as a user, i can have reports be automatically generated on a schedule.
+as a doctor, i can match patients to products.
+as a user, i am able to create new patient records.
+as a doctor, i am able to view a report of product purchases.
+as an administrator, i am able to save and retrieve important patient documents from within the system.
+as a developer, we have to provide separate access privileges to patient documents.
+as a developer, i need to protect the app against sql injections and cross site scripting.
+as a user, i can create an invoice for my patients.
+as a doctor, i can recommend products for my patients in their file.
+as a user, i can import vendor product information with a csv file.
+as a doctor, i want this app to integrate with my scheduling application.
+as a user, i can have a task related to a patient.
+as a user, i can assign a task to a doctor.
+as a user, i can add allergies and medications for a specific patient.
+as a doctor, i can edit the progress of a patient along with his/her basic info like date of last visit, height and weight.
+as a user, i can view and add/edit visit details like address, emergency contact and insurance info of a specific patient and attach the data to the patient record.
+as a user, i can add multiple products by uploading a csv file that has information of these said multiple products.
+as a user, i can export product info (either just one product or a set of products) to a csv file.
+as a doctor, i can fill out the order form for a product to be purchased for a patient.
+as a doctor, i can choose a patient or a set of patients to recommend a product (1 product mapped to 1 or more patients).
+as a doctor, i can choose a product or a set of products to recommend to a patient (1 patient mapped to 1 or more products).
+as a user, i can delete a form or a set of forms at once.
+as a user, i can download a form or a set of forms at once.
+as a user, i can add a new form.

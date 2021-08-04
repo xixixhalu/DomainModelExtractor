@@ -1,34 +1,34 @@
-The system sends the user an email.
-The system informs the user that the battery is full
-The system validates that the password is correct
-The system warns the user not to restart the system.
-The customer selects not to ﬁll the tank
-The system marks the errors to be red.
-The system commands the motor to start.
-The system keeps the user waiting.
-The system validates the record entered by the customer.
-The system keeps the door open
-The system makes the user an administrator.
-The system tells the user where to go.
-The system stops the motor when the tank is full
-The server responds the query quickly
-The system will eject the ATM card.
-The system sends the message to the customer.
-The system guides where to go.
-The motor stops when the tank is full.
-The system starts to ﬁll the tank.
-The printer starts printing the document
-The elevator moves up or down.
-The customer is employee.
-The system waits for 5 seconds.
-The ATM card is ejected by the system.
-The ATM card will be ejected by the system.
-The system prompts for password.
-ATM customer enters the withdrawal amount.
-If the ATM card is valid.
-The system restarts
-Include UCS Validate PIN
-Extend Handle Card Jam
-Resume M2.
-Repeat M4-M8.
-CardReader, CashDispenser and ReceiptPrinter are the schedule of ATM.
+the system sends the user an email.
+the system informs the user that the battery is full
+the system validates that the password is correct
+the system warns the user not to restart the system.
+the customer selects not to ﬁll the tank
+the system marks the errors to be red.
+the system commands the motor to start.
+the system keeps the user waiting.
+the system validates the record entered by the customer.
+the system keeps the door open
+the system makes the user an administrator.
+the system tells the user where to go.
+the system stops the motor when the tank is full
+the server responds the query quickly
+the system will eject the atm card.
+the system sends the message to the customer.
+the system guides where to go.
+the motor stops when the tank is full.
+the system starts to ﬁll the tank.
+the printer starts printing the document
+the elevator moves up or down.
+the customer is employee.
+the system waits for 5 seconds.
+the atm card is ejected by the system.
+the atm card will be ejected by the system.
+the system prompts for password.
+atm customer enters the withdrawal amount.
+if the atm card is valid.
+the system restarts
+include ucs validate pin
+extend handle card jam
+resume my.
+repeat my-my.
+cardreader, cashdispenser and receiptprinter are the schedule of atm.

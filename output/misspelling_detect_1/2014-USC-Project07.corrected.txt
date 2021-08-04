@@ -1,13 +1,13 @@
-As an ESS, I can use navigation D&D modules to make the iRobot go forward, backward, turn left and right.
-As an ESS, I can use sensing D&D module to detect cliffs/edges, speed,  direction and elapsed time.
-As an ESS, I can drag & drop the musical notes from the sounds & light module so that I can create a song.
-As an ESS, I can use the sounds & light module so that I can turn the LEDs on and off.
-As an ESS, I can drag and drop if-then-else and for/while construct in which I can further drag and drop the instructions/loop constructs.
-As an ESS, I can drag and drop a wait condition  in which I can further drag and drop the instructions/loop constructs.
-The system shall detect and show logic errors (conflicting/inconsistent instructions) in an easy-to-read way.
-The system shall be a native windows 7 and above application.
-The system shall generate instructions for iRobot in C which is then later compiled for deployment on the microcontroller using the APIs of iRobot.
-The system shall enforce a tolerance limit  of +/- 2 to 3% on sensor programmability.
-As an ESS, I can drag and drop the built-in functions of the iRobot to control its behavior/movement.
-As an ESS, I can copy & paste instructions so that I do not have to re-program.
-As an ESS, I can create, save and load program files.
+as an ess, i can use navigation d&d modules to make the irobot go forward, backward, turn left and right.
+as an ess, i can use sensing d&d module to detect cliffs/edges, speed,  direction and elapsed time.
+as an ess, i can drag & drop the musical notes from the sounds & light module so that i can create a song.
+as an ess, i can use the sounds & light module so that i can turn the leds on and off.
+as an ess, i can drag and drop if-then-else and for/while construct in which i can further drag and drop the instructions/loop constructs.
+as an ess, i can drag and drop a wait condition  in which i can further drag and drop the instructions/loop constructs.
+the system shall detect and show logic errors (conflicting/inconsistent instructions) in an easy-to-read way.
+the system shall be a native windows 7 and above application.
+the system shall generate instructions for irobot in c which is then later compiled for deployment on the microcontroller using the apis of irobot.
+the system shall enforce a tolerance limit  of +/- 2 to 3% on sensor programmability.
+as an ess, i can drag and drop the built-in functions of the irobot to control its behavior/movement.
+as an ess, i can copy & paste instructions so that i do not have to re-program.
+as an ess, i can create, save and load program files.

@@ -1,39 +1,39 @@
-As a system, I should be able to display list of mentors to mentees (based on filters).
-As a system, I should be able to display list of mentees to mentors (based on filters).
-As a system, I can store the details of mentor and mentees in the database.
-As an admin, I should be able to view activity reports sent by the mentors timely.
-As a mentee, I can select the mentor based on my criteria.
-As a mentor, I can select my mentee based on my criteria.
-As a system, I must be able to associate relation between mentor and mentee (based on their requests).
-As a user, I should be able to update password (based on entering the correct previous password).
-As a mentor, I can provide activity report about my mentee on monthly basis to admin.
-As a mentor, I should be able to create, update and track activity records of Mentee.
-As a mentor, I should be able to submit reports to the admin every month.
-As a mentor, I can reset my password.
-As a mentee, I can reset my password.
-As a mentee, I should be able to see the list of available mentors and send a request for connection.
-As a mentor, I should be able to monitor my training phase activities.
-As a mentor, I should be able to accept mentee requests to establish a connection.
-As a mentor, I should be able to mark my availability.
-As an admin, I should be able to export the report of list of all mentors.
-As a mentee, I should be able to update my personal information/contact details.
-As a mentor, I should be able to update my personal information which includes phone no, availability, photo, etc.
-As an admin, I should be able to send reminders to the mentors who missed sending their monthly report.
-As an admin, I should be able to view the statistics of successful matches.
-As a user, I should be able to load the website quickly and able to easily access the site.
-As an admin, I should be able to delete/deactivate users.
-As a mentor, I must be able to register my details and be shown as available for Mentorship process.
-As a mentee, I must be able to upload my details and be able to search and connect with mentors suitable for my profile.
-As an admin, I must be able to track all available mentors and mentees, and get monthly reports on the progress of Mentorship program.
-As a developer, I must be able to integrate the web application into client's server while, learning technology.
-As an end-user, I must be able to navigate through the application seamlessly.
-As an admin, I must be able to assign mentors to mentees.
-Mentees should be able to select mentor from available mentors but mentors can ask for mentee based on race.
-As an administrator, I should be able to get statistics on number of mentors, mentees and on pre-program survey answers and on post-program survey answers.
-The web app should be same when viewed on desktop, tablet or mobile device.
-As a mentor, I can report my interactions with my mentee.
-As an admin, I can export a report with the mentor/mentee interactions.
-As an admin, I can update the status of mentor & mentees trainings.
-As an admin, I can match mentors to mentees.
-As a mentee/mentor, I can opt out from the program and from further communication.
-The system shall render correctly on mobile platforms.
+as a system, i should be able to display list of mentors to mentees (based on filters).
+as a system, i should be able to display list of mentees to mentors (based on filters).
+as a system, i can store the details of mentor and mentees in the database.
+as an admin, i should be able to view activity reports sent by the mentors timely.
+as a mentee, i can select the mentor based on my criteria.
+as a mentor, i can select my mentee based on my criteria.
+as a system, i must be able to associate relation between mentor and mentee (based on their requests).
+as a user, i should be able to update password (based on entering the correct previous password).
+as a mentor, i can provide activity report about my mentee on monthly basis to admin.
+as a mentor, i should be able to create, update and track activity records of mentee.
+as a mentor, i should be able to submit reports to the admin every month.
+as a mentor, i can reset my password.
+as a mentee, i can reset my password.
+as a mentee, i should be able to see the list of available mentors and send a request for connection.
+as a mentor, i should be able to monitor my training phase activities.
+as a mentor, i should be able to accept mentee requests to establish a connection.
+as a mentor, i should be able to mark my availability.
+as an admin, i should be able to export the report of list of all mentors.
+as a mentee, i should be able to update my personal information/contact details.
+as a mentor, i should be able to update my personal information which includes phone no, availability, photo, etc.
+as an admin, i should be able to send reminders to the mentors who missed sending their monthly report.
+as an admin, i should be able to view the statistics of successful matches.
+as a user, i should be able to load the website quickly and able to easily access the site.
+as an admin, i should be able to delete/deactivate users.
+as a mentor, i must be able to register my details and be shown as available for mentorship process.
+as a mentee, i must be able to upload my details and be able to search and connect with mentors suitable for my profile.
+as an admin, i must be able to track all available mentors and mentees, and get monthly reports on the progress of mentorship program.
+as a developer, i must be able to integrate the web application into client's server while, learning technology.
+as an end-user, i must be able to navigate through the application seamlessly.
+as an admin, i must be able to assign mentors to mentees.
+mentees should be able to select mentor from available mentors but mentors can ask for mentee based on race.
+as an administrator, i should be able to get statistics on number of mentors, mentees and on pre-program survey answers and on post-program survey answers.
+the web app should be same when viewed on desktop, tablet or mobile device.
+as a mentor, i can report my interactions with my mentee.
+as an admin, i can export a report with the mentor/mentee interactions.
+as an admin, i can update the status of mentor & mentees trainings.
+as an admin, i can match mentors to mentees.
+as a mentee/mentor, i can opt out from the program and from further communication.
+the system shall render correctly on mobile platforms.

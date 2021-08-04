@@ -1,35 +1,35 @@
-The system shall upload pictures to a hashtag specified by the user.
-The system shall allow a user to reserve a hashtag, allowing the user to specify a password for other users to post and view pictures on the hashtag.
-The system shall allow users to browse (public) posts made in a specified region (such as a radius of X feet around their current location).
-The system shall allow users to flag pictures as inappropriate so that they may be taken down from public view.
-The system shall allow users to tag the pictures they post with descriptive text (ex: "Surfing with sharks at the Great Barrier Reef").
-The system shall delete the Hashtag and pictures associated to it after it is reserved for a certain time.
-The system shall invalidate the functionality of uploading pictures for a user if he keeps sending malicious pictures.
-The system shall allow users to download pictures he like.
-The system shall allow users to delete the picture he uploaded by mistake.
-The system shall allow the Hashtag holder to delete pictures that is inappropriate.
-The system shall provide an interface for users to search for a specific hashtag.
-The system shall prevent users from posting pictures to private reserved hashtags without the proper permissions. (Ex. Is the owner or has the password).
-The system shall allow administrators/maintainers/moderators to remove any pictures (usually inappropriate).
-The system shall provide storage and access to pictures for a set or indefinite amount of time.
-The system shall allow the user to make payment for a private hashtag.
-The system shall provide an interface for users to create a new account or login to an existing one.
-The system shall allow the user to post pictures to a specific location eg. USC Campus.
-The system shall provide an alert message to the hashtag holder when his/her hashtag is about to expire.
-The system shall provide an interface for the hashtag holder to invite his/her friends to post to the hashtag.
-The system shall inform the hashtag holder if there are new pictures posted to the hashtag.
-The system shall have authentication for private event to make sure only certain people have access to the pictures of this hashtag.
-The system shall have delete picture function to let user delete their uploaded pictures.
-The system shall be capable to set the geographical scope in which users are interested in the sharing pictures.
-The system shall have category for pictures to let users browser pictures with certain tag.
-The system shall have management function for private and public events to delete irrelevant pictures.
-The system shall capture the photo when user press camera shutter.
-The system shall upload the photo when user hit upload button.
-The system shall provide a hashtag reservation option when user want to upload pictures to a specific hashtag.
-The system shall provide option either by location or by hashtag to share picture when user start to upload picture.
-The system shall provide a delete function when user what to delete photos with in the specific hashtag online.
-The system shall provide recover picture function when user deletes picture by mistake.
-The system should allow user import friends from other social network app. Like Facebook, Google Cantact.
-The system shall make the too old events invisible to avoid crowded geo scope.
-The system should allow administrator to close some user profile when they continue posting illegal pictures.
-The system shall allow users to search pictures by name, joined friend name, date, hashtag, location,  event name.
+the system shall upload pictures to a hashtag specified by the user.
+the system shall allow a user to reserve a hashtag, allowing the user to specify a password for other users to post and view pictures on the hashtag.
+the system shall allow users to browse (public) posts made in a specified region (such as a radius of x feet around their current location).
+the system shall allow users to flag pictures as inappropriate so that they may be taken down from public view.
+the system shall allow users to tag the pictures they post with descriptive text (ex: "surfing with sharks at the great barrier reef").
+the system shall delete the hashtag and pictures associated to it after it is reserved for a certain time.
+the system shall invalidate the functionality of uploading pictures for a user if he keeps sending malicious pictures.
+the system shall allow users to download pictures he like.
+the system shall allow users to delete the picture he uploaded by mistake.
+the system shall allow the hashtag holder to delete pictures that is inappropriate.
+the system shall provide an interface for users to search for a specific hashtag.
+the system shall prevent users from posting pictures to private reserved hashtags without the proper permissions. (ex. is the owner or has the password).
+the system shall allow administrators/maintainers/moderators to remove any pictures (usually inappropriate).
+the system shall provide storage and access to pictures for a set or indefinite amount of time.
+the system shall allow the user to make payment for a private hashtag.
+the system shall provide an interface for users to create a new account or login to an existing one.
+the system shall allow the user to post pictures to a specific location eg. usc campus.
+the system shall provide an alert message to the hashtag holder when his/her hashtag is about to expire.
+the system shall provide an interface for the hashtag holder to invite his/her friends to post to the hashtag.
+the system shall inform the hashtag holder if there are new pictures posted to the hashtag.
+the system shall have authentication for private event to make sure only certain people have access to the pictures of this hashtag.
+the system shall have delete picture function to let user delete their uploaded pictures.
+the system shall be capable to set the geographical scope in which users are interested in the sharing pictures.
+the system shall have category for pictures to let users browser pictures with certain tag.
+the system shall have management function for private and public events to delete irrelevant pictures.
+the system shall capture the photo when user press camera shutter.
+the system shall upload the photo when user hit upload button.
+the system shall provide a hashtag reservation option when user want to upload pictures to a specific hashtag.
+the system shall provide option either by location or by hashtag to share picture when user start to upload picture.
+the system shall provide a delete function when user what to delete photos with in the specific hashtag online.
+the system shall provide recover picture function when user deletes picture by mistake.
+the system should allow user import friends from other social network app. like facebook, google contact.
+the system shall make the too old events invisible to avoid crowded geo scope.
+the system should allow administrator to close some user profile when they continue posting illegal pictures.
+the system shall allow users to search pictures by name, joined friend name, date, hashtag, location,  event name.

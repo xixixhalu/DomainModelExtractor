@@ -1,21 +1,18 @@
-14-Jul-21 16:55:26 - INFO
+29-Jul-21 17:53:39 - INFO
 Unknown words: 
-service(activities, line 5
-css(agency, line 3
-files(demographic, line 8
-analyzed);session, line 9
 conceling, line 3
-accounts(reset, line 6
-code;school;status, line 2
-accounts;manage, line 6
-questions;create, line 6
-age;gender;ethnicity;city;zip, line 2
-salesforce(several, line 12
-category(each, line 5
-category;program, line 2
 
-14-Jul-21 16:55:26 - WARNING
+29-Jul-21 17:53:39 - INFO
+Unknown words: 
+loging, line 7
+
+29-Jul-21 17:53:39 - WARNING
 Change Line 3: 
 activities:admin work; follow ups; individual conceling; workshop; field-trips; community resources; CSS(agency); time stamps.
 Word: conceling
 Change to: canceling
+29-Jul-21 17:53:39 - WARNING
+Change Line 7: 
+As a Case Manager, I can massive email through the system and automatic record activities, so that I save time loging activities.
+Word: loging
+Change to: losing

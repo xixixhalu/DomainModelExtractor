@@ -1,36 +1,36 @@
-As a user, I can submit reports of workplace violence or conflict both anonymously or anonymously, so that my problems are known to some subject matter expert and can be resolved as soon as possible.
-As a user, I can add comments to my submitted report, so that I can add additional information to the complaint which can be useful to the subject matter experts.
-As an admin, I can filter reports based on level of severity, so that I can address high-risk complaints first.
-As an organization, I can view all the reports that have been resolved by VRS, so that I can understand the current state of affairs at the workplace in terms of violence and conflicts.
-As a VRS admin, I can view all the cases.
-As an organization, I can make sure all my clients are safe from any workplace violence.
-As an organization, I can redirect the employees to another organization based on the severity of the situation.
-As a user, I can be anonymous about my identity when submitting violence reports.
-As a VRS, I can delete any irrelevant complaints that have been reported, so that employees of an organization are not falsely accused of a crime or conflict.
-As a developer, I can re-use already available open-source ticket management or case management systems, so that I can minimize development time and costs.
-As a VRS admin who has access to ticketing system, I can filter tickets based on organization, severity, complaint type and period of time.
-As a VRS admin, I can view and download the case filed by the employee.
-As a VRS admin, I can edit the assignee and ticket status.
-As an employee, I can view all my cases.
-As an employee, I can edit my profile details.
-As an employee, I should be able to check the status of the cases/complaints I filed.
-As a VRS, I can view the complaints filed and assign them to subject matter experts.
-As a VRS, I can filter out cases based on their status for ease of viewing.
-As a VRS, I can generate reports for the cases filed and also summary reports per organization.
-As an employee, I can file an anonymous complaint if I want to and I expect my anonymity to be maintained.
-As an employee, I can track the status of the complaints and have 2-way communication with VRS in the comments section of the ticketing system.
-As an organization, we can look at the stats the ongoing and past cases, so that we can take the corresponding action to create a safe workplace.
-As a VRS subject matter expert, I can verify the credibility of the complaints filed and investigate them, so that we can notify the organizations only the valid cases.
-As an employee, I can post a complaint along with details like when, where and who was involved and also submit evidence of any format like audio, video, photo, document etc.
-As an organization, we can generate reports for each case, so that it can be used in board meetings, litigation etc.
-As an anonymous user, the user should login but the details are not tagged to the ticket to prevent misuse of complete anonymity.
-As a VRS, I can assign, resolve and form reports of the cases filed by employees, so that employees are assured of prevention of workplace violence.
-As a VRS, I can email organization on the verified news required by the Organization, so that employees can be in conducive environment.
-As a developer, I can encrypt the data, so that security of the data is maintained.
-As an organization, I can check the workplace updates from VRS, so that violence can be mitigated.
-The system should be developed so that it can be easily integrated with any ticket management system in future with few configurational changes, so that the product can easily scale.
-As a VRS, I can prioritize the workplace violence cases, so that time for all the admins can be saved.
-As a VRS admin, I can generate the report which can contain media files tagged to that case for better understanding.
-As a developer, the password will not be sent in an API call or stored in the database in a plain text format for better security.
-As a user who raised a complaint, I can request in the portal to expedite the process for faster resolution.
-As a user, I should be able to update my contact details in case of change, so that my account will always be up to date.
+as a user, i can submit reports of workplace violence or conflict both anonymously or anonymously, so that my problems are known to some subject matter expert and can be resolved as soon as possible.
+as a user, i can add comments to my submitted report, so that i can add additional information to the complaint which can be useful to the subject matter experts.
+as an admin, i can filter reports based on level of severity, so that i can address high-risk complaints first.
+as an organization, i can view all the reports that have been resolved by vrs, so that i can understand the current state of affairs at the workplace in terms of violence and conflicts.
+as a vrs admin, i can view all the cases.
+as an organization, i can make sure all my clients are safe from any workplace violence.
+as an organization, i can redirect the employees to another organization based on the severity of the situation.
+as a user, i can be anonymous about my identity when submitting violence reports.
+as a vrs, i can delete any irrelevant complaints that have been reported, so that employees of an organization are not falsely accused of a crime or conflict.
+as a developer, i can re-use already available open-source ticket management or case management systems, so that i can minimize development time and costs.
+as a vrs admin who has access to ticketing system, i can filter tickets based on organization, severity, complaint type and period of time.
+as a vrs admin, i can view and download the case filed by the employee.
+as a vrs admin, i can edit the assignee and ticket status.
+as an employee, i can view all my cases.
+as an employee, i can edit my profile details.
+as an employee, i should be able to check the status of the cases/complaints i filed.
+as a vrs, i can view the complaints filed and assign them to subject matter experts.
+as a vrs, i can filter out cases based on their status for ease of viewing.
+as a vrs, i can generate reports for the cases filed and also summary reports per organization.
+as an employee, i can file an anonymous complaint if i want to and i expect my anonymity to be maintained.
+as an employee, i can track the status of the complaints and have 2-way communication with vrs in the comments section of the ticketing system.
+as an organization, we can look at the stats the ongoing and past cases, so that we can take the corresponding action to create a safe workplace.
+as a vrs subject matter expert, i can verify the credibility of the complaints filed and investigate them, so that we can notify the organizations only the valid cases.
+as an employee, i can post a complaint along with details like when, where and who was involved and also submit evidence of any format like audio, video, photo, document etc.
+as an organization, we can generate reports for each case, so that it can be used in board meetings, litigation etc.
+as an anonymous user, the user should login but the details are not tagged to the ticket to prevent misuse of complete anonymity.
+as a vrs, i can assign, resolve and form reports of the cases filed by employees, so that employees are assured of prevention of workplace violence.
+as a vrs, i can email organization on the verified news required by the organization, so that employees can be in conducive environment.
+as a developer, i can encrypt the data, so that security of the data is maintained.
+as an organization, i can check the workplace updates from vrs, so that violence can be mitigated.
+the system should be developed so that it can be easily integrated with any ticket management system in future with few configurational changes, so that the product can easily scale.
+as a vrs, i can prioritize the workplace violence cases, so that time for all the admins can be saved.
+as a vrs admin, i can generate the report which can contain media files tagged to that case for better understanding.
+as a developer, the password will not be sent in an api call or stored in the database in a plain text format for better security.
+as a user who raised a complaint, i can request in the portal to expedite the process for faster resolution.
+as a user, i should be able to update my contact details in case of change, so that my account will always be up to date.

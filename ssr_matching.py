@@ -212,6 +212,40 @@ class Matcher:
         else:
             return True, var_to_index_list
 
+def topological_sort_ssr(ssrIndependence):
+
+    # in_nodes is a dict where key is SSR and value are SSRs from key's independence
+    in_nodes = {}
+    # out_nodes is a dict where key is SSR and value are SSRs whose independence includes key
+    out_nodes = {}
+    for i in range(len(ssrIndependence)):
+        in_nodes[i + 1] = []
+        out_nodes[i + 1] = []
+
+    in_degree = []
+    no_incoming = []
+    for i in range(len(ssrIndependence)):
+        if pd.isnull(ssrIndependence[i]):
+            no_incoming.append(i + 1)
+            in_degree.append(0)
+        else:
+            nodes = str(ssrIndependence[i]).split(',')
+            for node in nodes:
+                out_nodes[int(float(node))].append(i + 1)
+                in_nodes[i + 1].append(int(float(node)))
+            in_degree.append(len(nodes))
+
+    match_order = []
+    while no_incoming:
+        node = no_incoming.pop(0)
+        match_order.append(node)
+        for out_node in out_nodes[node]:
+            in_degree[out_node - 1] -= 1
+            if in_degree[out_node - 1] == 0:
+                no_incoming.append(out_node)
+
+    return match_order, in_nodes
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='SSR Matching')
@@ -240,6 +274,7 @@ if __name__ == '__main__':
         ssr_name_num = dict()
         ssrNum = list(rule_obj['Rule'])
         ssrName = list(rule_obj['Sentence Structure'])
+        ssrIndependence = list(rule_obj['Independence'])
 
         rule_obj.set_index(["Rule"], inplace=True)
 
@@ -247,8 +282,9 @@ if __name__ == '__main__':
             ssr_name_num[ssrNum[i]] = ssrName[i]
         # initialize the output
         output_result = dict()
-        for i in range(len(ssrName)):
-            output_result[ssrName[i]] = []
+        match_order, in_nodes = topological_sort_ssr(ssrIndependence)
+        for i in match_order:
+            output_result[ssrName[i - 1]] = []
 
         output_result_file = output_result
         # file_name = 'test'
@@ -257,6 +293,7 @@ if __name__ == '__main__':
         else:
             f = open(input_path, 'r')
             sentences = f.read().split('\n')
+            matched_dict = {}
             for s in tqdm(sentences):  # travel each sentence
                 if len(s) > 0:  # tell whether s is a blank line
 
@@ -274,12 +311,17 @@ if __name__ == '__main__':
                         s_dic = ssr.build_tokens(nlp_output)
 
                         td_key = pure_enhancedTD(nlp_output)
-                        for i in range(1, len(ssrNum)+1):
+                        for i in match_order:
                             try:
                                 rule_result = ssr.parse_rule(rule_obj, i)
                             except:
                                 # print("Failed to parse Rule line", i, ". Skip!")
                                 continue
+                            if i not in matched_dict:
+                                matched_dict[i] = {}
+                            matched_dict[i][s] = []
+
+                            rule_result = ssr.parse_rule(rule_obj, i)
                             # split rule result
                             rule_name = rule_result[0]
                             rule_tds = rule_result[1]
@@ -289,8 +331,26 @@ if __name__ == '__main__':
                             td_res = ssr.match_tds(rule_tds, td_key)
                             if td_res[0]:
                                 for var_map in td_res[1]:
+                                    matched = False
+                                    indices = []
+                                    for key in var_map:
+                                        indices.append(var_map[key])
+                                    if in_nodes[i]:
+                                        for rule in in_nodes[i]:
+                                            if rule in matched_dict:
+                                                if s in matched_dict[rule]:
+                                                    for lst in matched_dict[rule][s]:
+                                                        if set(indices) <= set(lst):
+                                                            # change the flag matched to True if all the indices
+                                                            # of the sentence matched by this SSR are matched by
+                                                            # the SSR of its independence
+                                                            matched = True
+                                                            break
+
                                     if ssr.match_pos(var_map, rule_pos_tags, nlp_output) and ssr.match_keywords(
-                                        ssr.sentence, rule_keywords):  # tell whether both td and postag can match
+                                            ssr.sentence, rule_keywords) and not matched:
+                                        # tell whether both td and postag can match
+                                        # skip the following if indices already matched by SSR from independence
                                         s_info = copy.deepcopy(sentence_info)
                                         s_info['Sentence'] = s
                                         s_info['Result'] = var_map
@@ -300,8 +360,10 @@ if __name__ == '__main__':
                                         s_info['Keywords'] = list(rule_keywords)
                                         output_result_file[rule_name].append(s_info)
 
+                                        matched_dict[i][s].append(indices)
+
                             logger_count_ssr[rule_name] = len(output_result_file[rule_name])
-            
+
             rst_report = ""
             for k, v in logger_count_ssr.items():
                 rst_report += k + ', ' + str(v) + "\n"
@@ -310,7 +372,7 @@ if __name__ == '__main__':
             with open(output_path + '.ssr.txt', 'w') as jsonwriter:
                 json.dump(output_result, jsonwriter, indent=2)
             f.close()
-      
+
     elif args.list:
         input_path = args.input
         files = os.listdir(input_path)
@@ -320,7 +382,7 @@ if __name__ == '__main__':
             if re.search(pattern, f):
                 f_list.add(re.sub(pattern, rf"", f))
         for f in sorted(f_list):
-            print(f)  
+            print(f)
 
     else:
         parser.print_help()

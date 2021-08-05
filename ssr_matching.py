@@ -188,6 +188,14 @@ class Matcher:
         key_to_match = rule_tds[rule_pos][0]
         var1 = rule_tds[rule_pos][1]
         var2 = rule_tds[rule_pos][2]
+
+        filter_flag = False
+        if rule_tds[rule_pos][0].startswith('~'):
+            Filter_flag = True
+            key_to_match.replace('~', '')
+            var1.replace('*', 'filter_value1')
+            var2.replace('*', 'filter_value2')
+
         r = re.compile(key_to_match)
         temp_list = list(filter(r.match, text_tds.keys()))
         for key in temp_list:
@@ -197,10 +205,21 @@ class Matcher:
 
                 temp_var_to_index = copy.deepcopy(var_to_index)
 
-                if var1 in temp_var_to_index and temp_var_to_index[var1] != cand1:
-                    continue
-                if var2 in temp_var_to_index and temp_var_to_index[var2] != cand2:
-                    continue
+                if not filter_flag:
+                    if var1 in temp_var_to_index and temp_var_to_index[var1] != cand1:
+                        continue
+                    if var2 in temp_var_to_index and temp_var_to_index[var2] != cand2:
+                        continue
+                else:
+                    if (var1 in temp_var_to_index and temp_var_to_index[var1] == cand1 and
+                        var2 == 'filter_value2'):
+                        continue
+                    if (var2 in temp_var_to_index and temp_var_to_index[var2] == cand2 and
+                        var1 == 'filter_value1'):
+                        continue
+                    if (var1 in temp_var_to_index and temp_var_to_index[var1] == cand1 and
+                        var2 in temp_var_to_index and temp_var_to_index[var2] == cand2):
+                        continue
 
                 temp_var_to_index[var1] = cand1
                 temp_var_to_index[var2] = cand2
@@ -321,7 +340,7 @@ if __name__ == '__main__':
                                 matched_dict[i] = {}
                             matched_dict[i][s] = []
 
-                            rule_result = ssr.parse_rule(rule_obj, i)
+                            # rule_result = ssr.parse_rule(rule_obj, i)
                             # split rule result
                             rule_name = rule_result[0]
                             rule_tds = rule_result[1]

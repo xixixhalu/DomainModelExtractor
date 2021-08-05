@@ -114,19 +114,6 @@ def spellcheck (file_freq_word_dict, noun_word_list,check_file) :
     # return correct_dict, correct_candidate_dict
 '''
 
-def correctFile(file_origin_lines, file_preprocess_lines, correct_dict):
-    correct_lines = []
-    for idx in file_preprocess_lines:
-        for sentence in file_preprocess_lines[idx]:
-            correct_line = sentence.lower()
-            for word in correct_dict:
-                # Bo: temporary matching pattern, may not suit for all cases due to capital letters and stemming/original format.
-                pattern = '(\W|^)' + re.escape(word) + '\\({0,1}e{0,1}s{0,1}\\){0,1}(\W)'
-                if re.search(pattern, correct_line): # case sensitive to avoid change of Proper noun
-                    correct_line = re.sub(pattern, rf'\1{correct_dict[word]}\2', correct_line)
-                    logger.warning("Change Line " + str(idx + 1) + ": " + "\n" + file_origin_lines[idx] + "Word: " + word + "\nChange to: " + correct_dict[word])
-            correct_lines.append(correct_line)
-
 
 def word_line_index(file):
     del_str = string.punctuation
@@ -152,7 +139,7 @@ def word_freq(file):
     with open(file, "r") as myfile:
         # return the word frequency in the entire file
         s = myfile.read().replace('\n', ' ').lower()
-        s = re.sub(pattern, '', s)  # remove domain name and URL in sentences
+        s = re.sub(pattern, '', s)  # filter out domain name and URL in sentences
         del_str = string.punctuation
         replace_punctuation = ' ' * len(del_str)
         data = s.translate(str.maketrans(del_str, replace_punctuation))
@@ -216,7 +203,7 @@ def correctFile(file_origin_lines, file_preprocess_lines, correct_dict):
     correct_lines = []
     for idx in file_preprocess_lines:
         for sentence in file_preprocess_lines[idx]:
-            correct_line = sentence.lower()
+            correct_line = sentence
             for word in correct_dict:
                 # Bo: temporary matching pattern, may not suit for all cases due to capital letters and stemming/original format.
                 pattern = '(\W|^)' + re.escape(word) + '\\({0,1}e{0,1}s{0,1}\\){0,1}(\W)' #pattern = '(\W|^)' + word + 's{0,1}(\W)'

@@ -203,7 +203,7 @@ def correctFile(file_origin_lines, file_preprocess_lines, correct_dict):
     correct_lines = []
     for idx in file_preprocess_lines:
         for sentence in file_preprocess_lines[idx]:
-            correct_line = sentence.lower()
+            correct_line = sentence
             for word in correct_dict:
                 # Bo: temporary matching pattern, may not suit for all cases due to capital letters and stemming/original format.
                 pattern = '(\W|^)' + re.escape(word) + '\\({0,1}e{0,1}s{0,1}\\){0,1}(\W)' #pattern = '(\W|^)' + word + 's{0,1}(\W)'

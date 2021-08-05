@@ -1,0 +1,18 @@
+the final product shall be modular and integrate easily into the rest of field progress's tech stack.
+the final product shall accept as input districts/precincts of any size.
+the final product shall consider district/precinct topography (hills, freeways, etc.) when calculating the most optimal route for volunteers to take.
+the final product shall render an optional map with voters placed as points, and line(s) indicating the best route(s) for the volunteers to take, representing the grouping of voters using colors.
+the final product shall accept as input a variable number of volunteers.
+the final product shall accept as input a variable time range for volunteers to canvass (e.g. 2 hours).
+user should be able to input voter data into the system and be able to see it in map.
+the final product shall be executable on windows, linux, and macos operating systems.
+the final product should have comments describing each major function and class in the code.
+the final product shall fail gracefully on error with a status code of 0.
+the project should have a well documented project plan through out the development cycle, so the whole team knows what needs to be done and when (this would help streamline the project).
+success critical stakeholders should be able to effectively track the project progress through version control systems like github.
+given voter data and availability of volunteers, we should be able to work on a feasible algorithm which automatically cuts the turfs.
+it should implement an efficient clustering algorithm that scales, seeing as this will be the main core of the project.
+develop an accurate algorithm for turf cutting.
+a tool where we can load a voter list, and it produces clustered voter list.
+we can specify # volunteers, time per volunteer, time per conversation, and likelihood of conversation as parameters.
+a test framework for objectively verifying its effectiveness.

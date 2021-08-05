@@ -1,0 +1,31 @@
+as a user i expect that my information is secure.
+as a coach i can review the information of who signed up before printing it as a pdf/csv.
+as a coach i can overwrite/modify the final results.
+as a user, i expect to only see options that my swimmer is qualified to sign up for.
+as the coach, i expect the signup to automatically close 2 weeks before sign ups, or a time-frame that i set.
+as coach, i have a manual means of entering swim events in case the format of the page changes.
+as the developer, the format of the information about swim events will never change.
+as a parent i should be able to login to my kid's account.
+as a coach i expect that if i modified something from the user, that the user will automatically be notified.
+as a parent, i should be able to see amount i am supposed to pay.
+as a parent, i should be able to view event categorically.
+as a user, i should be able to see the events in which my kid is signed up.
+as a coach, i should be able to extract pdf information and upload events on website.
+as a coach, i should be able to edit the list of events all kids are signed up for.
+as a parent i should be able to edit the signed up events before the deadline.
+system shall render correctly on mobile platforms.
+as a parent, i should not be able to sign up my kid for the events post the deadline.
+as the treasurer i should be able to see the total amount to be collected in the month.
+the system shall render correctly on all browsers.
+the system shall be user-friendly and intuitive.
+as a developer i should have the access to the database of the registration  ids and date of birth of children.
+the system should allow the user to sign up his kid in at most four events.
+system should allow to signup events after authenticating the member's date of birth with the event deadline.
+as a parent i should be able to view the payee information.
+as a maintainer, i should be able  to access/modify the database.
+as a maintainer, i should be able to modify the website.
+as a maintainer, i should have access to documentation and the source code.
+as a head-coach, i should be able to generate final pdf report and csv file.
+as a parent, i can login into my kids account with a registration key.
+as a maintainer, i can insert, delete, or modify the database of the events or of the kids.
+as a maintainer, i can see the amount details for the kids that they owe.

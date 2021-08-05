@@ -1,0 +1,57 @@
+as a developer, i can do relatively low-cost knowledge transfer to new staff with the aid of well-written documentation.
+system shall be easy and pleasant to use.
+as the super admin, i can log into the site with a username and password.
+as the admin, i can log into the site with a username and password.
+as a contributor, i can log into the site with a username and password.
+as a contributor, i can view overall project progress, current week goal, verticals in work.
+as a contributor, i can view goals made in past weeks or goals made for future weeks.
+as a contributor, i can receive notifications as a piece of content moves through the various stages of development (approved, rejected, parked).
+as a contributor, i can send or receive message to or from other users.
+as a contributor, i can track my own success rate by the draft to approved pitch conversion ratio.
+as a contributor, i can sign out of the system and end my current session.
+as a contributor, i can create a new draft idea and add details.
+as a contributor, i can modify a draft.
+as a contributor, i can remove a draft.
+as a contributor, i can view a draft's details.
+as a contributor, i can pitch a drafted idea.
+as a contributor, i can view the details of a pitch in the global pitch board.
+as a contributor, i can filter pitches by criteria such as status, creator id etc.
+as a contributor, i can make changes to my own profile.
+as a super admin, i can view overall project progress, goal vertical, number of pitches needed by each vertical, progress of each vertical.
+as a super admin, i can view goals made for past weeks or future weeks.
+as a super admin, i can receive notifications as a piece of content moves through the various stages of development (approved, rejected, parked).
+as a super admin, i can receive or send messages from or to other users.
+as a super admin, i can log out of the system and end their current session.
+as a super admin, i can view or edit the details of a pitch in the global pitch board.
+as a super admin, i can approve/reject a pitch.
+as a super admin, i can filter pitches by criteria.
+as a super admin, i can view/edit a pitch in the weekly publishing calendar.
+as a super admin, i can approve the publishing calendar.
+as a super admin, i can filter pitches by criteria.
+as a super admin, i can export the weekly publishing calendar into a csv file.
+as a super admin, i can view/edit a pitch in the parking board.
+as a super admin, i can pull a parked pitch into publishing calendar.
+as a super admin, i can view team member details.
+as a super admin, i can change a member's account type.
+as a super admin, i can create a new admin or contributor account.
+as a super admin, i can delete an existing account.
+as a super admin, i can set goals for current week and future weeks.
+as a super admin, i can check past weeks' goals.
+as a super admin, i can modify my own profile.
+as an admin, i can view project progress, current week goals and progress of each vertical.
+as an admin, i can view goals made in past weeks or made for future weeks.
+as an admin, i can receive notification as a piece of content moves through the various stages of development (approved, rejected, parked).
+as an admin, i can send or receive messages to or from other users.
+as an admin, i can log out of the system and end my session.
+as an admin, i can view/edit a pitch in the global pitch board.
+as an admin, i can approve/reject a pitch.
+as an admin, i can filter pitches by criteria.
+as an admin, i can view member details.
+as an admin, i can change a member's account type.
+as an admin, i can create a new account for admin or contributor.
+as an admin, i can delete an existing account.
+as an admin, i can edit my own profile.
+for each vertical, show number of draft, number of pitches submitted, number of pitches approved/ parked/ rejected.
+as a super admin, i will receive notification as a new pitch needs to be reviewed.
+when weekly deadline approves, weekly publishing calendar needs to be reviewed.
+as an admin, i will receive notification as a new pitch needs to be reviewed.

@@ -1,0 +1,21 @@
+as a admin, i can manage user permission.
+as a user, i should receive an email after registering so that i am able to confirm my registration.
+as a user, i should only see projects i have been assigned to so that i am not exposed to sensitive information.
+as an admin, i should be able to associate projects and users so that i can restrict access appropriately.
+as a user, i should be able to export software quality metrics so that i can perform off-line statistical analysis.
+as a contributor to the project, i should be able to ask the admin to give access to another user to the project.
+as a user, i should be able to reset my password with my email if forgotten.
+the system shall be https.
+as a user, i should be able to request for analyzing my project.
+as a user, i should receive a verification email on signup.
+as an admin, i should have the ability to grant/deny access of the projects to the user.
+as a user, i should be able to view various statistics about the project.
+as a contributor, i should be able to access all the projects i worked on so that i can analyze my impact.
+as an admin, i should be able to reset users passwords when/if required.
+as an admin, i should be able to terminate or block an account temporarily/permanently.
+as a user, i should be able to see the evolution of open-source projects.
+as a contributor, i should be able to see the list of analyzed projects that i have contributed to, i am given access to, or any other open source project.
+the system shall be in react.js.
+20 users should be able to work with the system simultaneously.
+user should be able to smoothly interact with the system scatterplot chart of the coevolution of a project with 10000 data points for up to 4 metrics.
+user should be able to open project analysis view in system with a load time of less than or equal to 2 seconds.

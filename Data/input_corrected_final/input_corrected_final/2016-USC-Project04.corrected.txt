@@ -1,0 +1,20 @@
+the pipeline shall accept a set of images as an input.
+as a system, i can provide an ui for users to view images.
+the pipeline shall be controlled directly to administrator.
+the pipeline provides additional functionality to the end user of the system.
+the pipeline utilizes the provided machine learning algorithms.
+the ui is user friendly, clean, and efficient.
+the pipeline shall send text and image to the user when correct image has been found.
+the pipeline shall use detector model to detect the images uploaded by the users.
+the pipeline shall store a model for image classification.
+the pipeline shall pre-process training images.
+as a user, i can choose one tag that i want to detect in my images.
+the pipeline shall use deep learning algorithm.
+as a user, i can upload multiple images(each with a label to choose) at the same time.
+the pipeline shall handle the image with noise.
+the pipeline shall get the images from the facebook via facebook api.
+as a client i can upload an image to the pipeline and see a text <classification> along with the initial image.
+as a client i can re train the pipeline by giving a new topic and a new set of images.
+as a client i can run the entire system in my own unix based server.
+as a client i can replace the machine learning algorithm used for training the model without a major pipeline refactor.
+as a client i can extract and replace the resulting model after the trainning phase is complete.

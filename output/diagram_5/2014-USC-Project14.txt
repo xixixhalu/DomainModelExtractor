@@ -7,99 +7,76 @@ class Board<actor> {
 }
 class Member<actor> {
 }
-class WaWItPersonnel<actor> {
+class WaWITPersonnel<actor> {
 }
-class Member {
-	publish()
-	access()
-	keep()
-	integrate()
-}
-class User {
-}
-class Portal {
-}
-class Client {
-	provide()
-	show_up()
-	use()
-	get()
-	show()
-	save()
-	check()
-	complete()
-	enroll()
-	book()
-	register()
-}
-class Feedback {
-}
-class Convenience {
-}
-class Blog {
-}
-class WaWItPersonnel {
-	capture()
+class WaWITPersonnel {
 	analyse()
+	use()
 	generate()
-	enter()
 	track()
-}
-class Event {
-}
-class Online {
-}
-class Session {
-}
-class Job {
-}
-class Board {
-	share()
-}
-class Time {
-}
-class JobSearch {
-}
-class Media {
+	capture()
 }
 class Appointment {
 }
 class Center {
 }
+class Client {
+	enter()
+	get()
+	use()
+	show_up()
+	check_in()
+	provide()
+	enroll()
+	register()
+	save()
+}
+class Time {
+	enter()
+}
+class Data {
+}
+class Number {
+	use()
+}
+class Member {
+	keep()
+	access()
+}
+class User {
+}
+class Job {
+}
 class Service {
+	use()
 }
-class Increase {
+class Event {
 }
-class Timeclient {
+class Feedback {
+}
+class Portal {
+}
+class Board {
+	share()
 }
 class Type {
 }
 class Report {
 }
-class BoardDocument {
-}
-Client --> Service : check
-WaWItPersonnel --> Service : analyse
-Member --> Event : keep
-Client o-- Convenience : provide
-Member --> Increase : keep
-Client --> Online : check
-WaWItPersonnel --> Center : enter
-Client --> Session : show
-WaWItPersonnel --> Timeclient : capture
 Client --> Job : get
-WaWItPersonnel --> Type : track
-Client --> Center : use
-Member --> Blog : publish
-WaWItPersonnel --> WaWItPersonnel : generate
-Client --> Feedback : provide
-WaWItPersonnel --> Report : generate
-Client --> Time : save
-Board --> BoardDocument : share
-Client --> JobSearch : enroll
-Member --> Media : integrate
-Client --> Appointment : book
-Member --> Portal : access
 Member --> User : keep
+WaWITPersonnel --> Type : track
+Time --> Data : enter
+WaWITPersonnel --> Center : use
+Member --> Portal : access
+Number --> Center : use
+Client --> Center : enter
+Member --> Event : keep
+WaWITPersonnel --> Report : generate
+WaWITPersonnel --> Client : capture
+Client --> Center : use
+Time o-- Client
+Client --> Feedback : provide
+WaWITPersonnel --> Appointment : track
 
 @enduml

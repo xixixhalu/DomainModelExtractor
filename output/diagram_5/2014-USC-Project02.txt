@@ -12,86 +12,84 @@ class Customer<actor> {
 }
 class SoccerCoach<actor> {
 }
-class Customer {
-	see()
-	drop()
-	import()
-	add()
-	drag()
-	update()
-	manage()
-}
-class ExcelSheet {
-}
-class Season {
-	progress()
-}
 class Manger {
 	monitor()
 }
-class Condition {
-}
-class SporTechBIContractor {
-	update()
-	add()
+class Timetwitter {
 }
 class GM {
-	build()
-	affect()
-	extract()
-	visualize()
 	make()
+	build()
+	extract()
 }
-class Schedule {
+class Data {
+	integrate()
+}
+class Crawler {
 	run()
 }
-class Source {
+class PlayerValue {
 }
-class Need {
+class Coach {
+	visualize()
+	extract()
+}
+class Decision {
+	affect()
+}
+class Customer {
+	drop()
+	import()
+	see()
+	update()
+	drag()
+	add()
+}
+class Field {
+	capture()
+}
+class Line {
 }
 class Change {
+}
+class SporTechBIContractor {
+	add()
+	update()
+}
+class Roster {
+}
+class Sportechbisystem {
+	launch()
+}
+class Season {
+	progress()
 }
 class SoccerCoach {
 	configure()
 	specify()
 }
-class Line {
+class Schedule {
 }
-class PlayerValue {
+class Instagram {
+	feed()
 }
-class Data {
-	integrate()
+class Manner {
 }
-class SporTechBISystem {
+class Condition {
 }
-class Demand {
-}
-class Roster {
-}
-class Decision {
-}
-class Reaction {
-}
-class Model {
-}
-Customer --> ExcelSheet : import
-GM o-- Data : extract
-Manger --> Reaction : monitor
-Manger --> Source : monitor
-Customer --> Data : import
-Customer --> Need : manage
-Customer --> Change : see
-Customer o-- Model : add
-Data --> SporTechBISystem : supported_by
-Manger --> Condition : supported_by
-SoccerCoach --> Schedule : configure
-GM --> Line : affect
-Manger --> Condition : monitor
-GM --> PlayerValue : extract
-Data --> SporTechBISystem : integrate
-GM --> Decision : make
 Customer --> Data : add
-Manger --> Demand : monitor
+Manger --> Timetwitter : monitor
+Customer --> Change : see
+Manger --> Condition : supported_by
+GM --> PlayerValue : extract
+Decision --> Line : affect
 GM --> Roster : build
+SoccerCoach --> Schedule : configure
+Data --> Sportechbisystem : supported_by
+GM o-- Data : extract
+Coach --> PlayerValue : extract
+Data --> Manner : integrate
+GM --> Decision : make
+Customer --> Data : import
 
 @enduml

@@ -1,43 +1,43 @@
-the system should have a database of care instructions associated with surgeries and medical institutions.
-as a user/patient, i should have to answer a minimum amount of pro questions.
-as a doctor, i should be notified if my patients health declines after surgery.
-as a patient user, i can receive real time notifications for my reminders and appointments.
-as a patient user, i can indicate that i have completed certain tasks (like a checklist).
-as a doctor user, i can check if a patient has completed certain tasks.
-as a doctor user, i can view the the survey/questionnaire responses of my patients.
-as a user, i can login to the application using username and password or with my fingerprint scanner.
-as a care team, i can input the relevant medical information or recommendations related to surgical procedures for each medical center into the system database.
-as a patient, i can update personal contact information saved on the server.
-as a patient who does not have smart phone, i can still get notifications through messages.
-as a patient, i can get rewards by filling out the required survey or following certain required medical instructions.
-as a doctor, i can modify prescriptions based on patients' recovery process.
-as a patient, i have access to roughly personalized education contents like videos or articles that will help with recovery or preparation for surgeries.
-as a patient, i can locally save the useful health recommendation articles provided by doctors.
-as a patient, i can see the history of photos/videos i took for the app.
-the system shall render properly on android phones.
-the system should be built as native android application.
-the system should comply with hipaa.
-as a care team, i can add/remove patients from my list.
-as a admin, i can access the database of the app server, and manually add/remove entries from backend.
-as a patient, i should be able to see the website/ contact information of my health center/ provider, doctor, nurse etc.
-as a patient, i should be able to take pictures.
-as a patient, i should have access to review post-op notes from my doctor/ surgeon on any previous surgeries/ treatments.
-as a patient, i should be provided with guidance on how to best capture pictures (i.e. selfies, body parts etc).
-as a patient, i should be able to be guided by an avatar for basic tutorial.
-as a patient, i can do my questionnaire/surveys from within the app.
-as a doctor, i should get a notification when a patient books/cancels/reschedule an appointment.
-as a patient, i should get a confirmation after i book/cancel/reschedule an appointment.
-as a patient, i should be able to rate whether an educational article/video is relevant to me or not.
-as the healthcare executive (the paying customer), i can see the collected data and trends of all patient outcomes, so i can study how to improve our performance.
-the system should be intuitive to use for patients.
-as a patient, i can manually add pre or post-op reminders in addition to the standard ones set by my doctor.
-as the doctor's staff, i can register/enroll the patient under 5 steps.
-as a patient, i can snooze a reminder but still be reminded until i dismiss it.
-as a patient, i can receive recommendations of common answers and resources related to my surgery based on my timeline.
-as a doctor, i can use this app to do certain follow-up appointments via telemedicine, so those patients who can't get rides easily won't have to miss these crucial appointments.
-as a patient, i should be able to track my health status graphically, so that it is easily understandable.
-as a patient, i can see all my dietary constraints and medications i need to take before and after surgery.
-as a patient, i can compare pictures to see a visible difference over time.
-as a patient, i can either choose to install the smartphone app, or by default get sms notifications and not get bombarded everywhere.
-the system should be built as a hybrid app (testing on android only for this class - define which versions).
-the system should use fhir for data exchange.
+The system should have a database of care instructions associated with surgeries and medical institutions.
+As a user/patient, I should have to answer a minimum amount of PRO questions.
+As a doctor, I should be notified if my patients health declines after surgery.
+As a patient user, I can receive real time notifications for my reminders and appointments.
+As a patient user, I can indicate that I have completed certain tasks (like a checklist).
+As a doctor user, I can check if a patient has completed certain tasks.
+As a doctor user, I can view the the survey/questionnaire responses of my patients.
+As a user, I can login to the application using username and password or with my fingerprint scanner.
+As a care team, I can input the relevant medical information or recommendations related to surgical procedures for each medical center into the system database.
+As a patient, I can update personal contact information saved on the server.
+As a patient who does not have smart phone, I can still get notifications through messages.
+As a patient, I can get rewards by filling out the required survey or following certain required medical instructions.
+As a doctor, I can modify prescriptions based on patients' recovery process.
+As a patient, I have access to roughly personalized education contents like videos or articles that will help with recovery or preparation for surgeries.
+As a patient, I can locally save the useful health recommendation articles provided by doctors.
+As a patient, I can see the history of photos/videos I took for the app.
+The system shall render properly on android phones.
+The system should be built as native Android application.
+The system should comply with HIPAA.
+As a care team, I can add/remove patients from my list.
+As a admin, I can access the database of the App server, and manually add/remove entries from backend.
+As a patient, I should be able to see the website/ contact information of my health center/ provider, doctor, nurse etc.
+As a patient, I should be able to take pictures.
+As a patient, I should have access to review post-op notes from my doctor/ surgeon on any previous surgeries/ treatments.
+As a patient, I should be provided with guidance on how to best capture pictures (i.e. selfies, body parts etc).
+As a patient, I should be able to be guided by an avatar for basic tutorial.
+As a patient, I can do my questionnaire/surveys from within the app.
+As a doctor, I should get a notification when a patient books/cancels/reschedule an appointment.
+As a patient, I should get a confirmation after I book/cancel/reschedule an appointment.
+As a patient, I should be able to rate whether an educational article/video is relevant to me or not.
+As the healthcare executive (the paying customer), I can see the collected data and trends of all patient outcomes, so I can study how to improve our performance.
+The system should be intuitive to use for patients.
+As a patient, I can manually add pre or post-op reminders in addition to the standard ones set by my doctor.
+As the doctor's staff, I can register/enroll the patient under 5 steps.
+As a patient, I can snooze a reminder but still be reminded until I dismiss it.
+As a patient, I can receive recommendations of common answers and resources related to my surgery based on my timeline.
+As a doctor, I can use this app to do certain follow-up appointments via telemedicine, so those patients who can't get rides easily won't have to miss these crucial appointments.
+As a patient, I should be able to track my health status graphically, so that it is easily understandable.
+As a patient, I can see all my dietary constraints and medications I need to take before and after surgery.
+As a patient, I can compare pictures to see a visible difference over time.
+As a patient, I can either choose to install the smartphone app, or by default get SMS notifications and not get bombarded everywhere.
+The system should be built as a hybrid app (testing on Android only for this class - define which versions).
+The system should use FHIR for data exchange.

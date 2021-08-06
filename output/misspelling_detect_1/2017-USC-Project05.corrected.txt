@@ -1,11 +1,11 @@
-as an administrator or house manager, i should be able to view and filter logs of locks access.
-as an administrator or house manager, i should be able to see lock battery status, lock names and lock codes.
-as a house manager, i should be able to add/delete 'others'.
-as an administrator or house manager, i should be able to see the hub (offline/online) and lock (locked/unlocked) status.
-as an administrator or house manager, i should be able to assign random codes through a random number generator.
-as an administrator, i should be able to allow more than one working code per lock.
-as an administrator, i can create a group of locks and add/delete locks in the group.
-as a house manager, i can select one or multiple locks to add/delete/edit codes.
-as an administrator, i can add/delete 'managers' and 'others' and help them reset their password.
-as a house staff, i should be able to see given lock number and lock code.
-as an administrator, i can enter my smartthings client id and secret to authorize access to the locks.
+As an administrator or house manager, I should be able to view and filter logs of locks access.
+As an administrator or house manager, I should be able to see lock battery status, lock names and lock codes.
+As a house manager, I should be able to add/delete 'others'.
+As an administrator or house manager, I should be able to see the hub (offline/online) and lock (locked/unlocked) status.
+As an administrator or house manager, I should be able to assign random codes through a random number generator.
+As an administrator, I should be able to allow more than one working code per lock.
+As an administrator, I can create a group of locks and add/delete locks in the group.
+As a house manager, I can select one or multiple locks to add/delete/edit codes.
+As an administrator, I can add/delete 'managers' and 'others' and help them reset their password.
+As a house staff, I should be able to see given lock number and lock code.
+As an administrator, I can enter my SmartThings client id and secret to authorize access to the locks.

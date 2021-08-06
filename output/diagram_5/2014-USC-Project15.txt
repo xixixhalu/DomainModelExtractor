@@ -1,156 +1,134 @@
 @startuml
 hide circle
-class VOLUNTEERCOACH<actor> {
+class VolunteerCoach<actor> {
+	team
+	classRoster
 }
 class GOTRLA<actor> {
-}
-class VolunteerCoach<actor> {
 }
 class Staff<actor> {
 }
 class Volunteer<actor> {
-	team
-	classroster
 }
 class Admin<actor> {
 }
 class User<actor> {
+	accountpassword
 }
-class REGULARLY {
-	attendancesheet
-}
-class IMMEDIATELYCHECKEACHSITE {
-	attendancesheet
+class Site {
+	attendanceSheet
 }
 class Girl {
-	paperWork
-	turn()
+	paperwork
+	turn_in()
 }
-class Coach {
-	take()
-	know()
-	conduct()
+class Program {
 }
-class Attendance {
+class Quality {
 }
-class VOLUNTEERCOACH {
-	check()
+class Week {
 }
-class GIRLS {
+class Sheet {
 }
-class ROSTERREMOTELY {
+class Roster {
 }
 class GOTRLA {
-	have()
-	monitor()
-	add()
-	edit()
-	support()
-	access()
-	offer()
-	update()
-	schedule()
-	can()
 	delete()
 	login()
-}
-class VolunteerCoach {
-	identify()
+	schedule()
+	check()
+	add()
+	support()
 	have()
-}
-class Copyliabilitywaiverform {
-}
-class TeamRoster {
-}
-class Staff {
-	export()
-	analyze()
-	have()
+	offer()
 	monitor()
 }
-class PaperWork {
+class Staff {
+	have()
+	analyze()
+	monitor()
+	export()
 }
-class Volunteer {
-	view()
-	access()
+class Coach {
 	login()
-	conduct()
-	know()
+	access()
+	view()
 	check()
+	have()
+	know()
+	identify()
+	take()
+}
+class SUPPORT {
+}
+class DateInformation {
+}
+class Data {
+}
+class Team {
+	have()
 }
 class User {
-	reset()
 	login()
+	reset()
 }
 class Class {
 }
-class OTHERCOACHES {
-}
-class INREALTIME {
-}
-class Up {
-}
-class Application {
-}
 class Admin {
+	remove()
+	have()
 	add()
 }
-class EditProgramStaff {
-}
-class AttendanceData {
+class Privilege {
 }
 class GOTRLASTAFF {
 	monitor()
 }
-class GirlData {
-}
-class Data {
-}
-class Semester {
-}
-class ProgramQUALITYIMMEDIATELY {
-}
-class Attendancesheet {
-}
-class EFFICIENTLY {
-}
-class SUPPORT {
-}
-class ProgramWeek {
-}
-class Team {
+class Paperwork {
 }
 class Schedule {
 }
-Staff --> Copyliabilitywaiverform : have
-VOLUNTEERCOACH --> GIRLS : check
-GOTRLA --> Class : add
-GOTRLA --> Attendance : monitor
-VOLUNTEERCOACH --> ROSTERREMOTELY : check
-GOTRLA --> Attendancesheet : can
-GOTRLA --> Up : have
-GOTRLASTAFF --> EFFICIENTLY : monitor
-Volunteer --> Application : login
-VolunteerCoach --> Copyliabilitywaiverform : have
+class Attendance {
+}
+class Issue {
+}
+class CopyLiabilityWaiverForm {
+}
+class VolunteerCoach {
+}
+class Volunteer {
+}
+Attendance o-- Sheet
+GOTRLA --> Sheet : check
+Class o-- Roster
+GOTRLA --> Data : delete
+Attendance o-- Data
+Coach --> Schedule : access
+Team o-- Roster
 GOTRLA --> SUPPORT : offer
-GOTRLA --> TeamRoster : support
-GOTRLA --> ProgramWeek : schedule
-Admin --> EditProgramStaff : add
-Staff --> AttendanceData : analyze
-Girl o-- PaperWork : turn
-GOTRLA --> VolunteerCoach : add
-Coach --> Class : conduct
-GOTRLA --> GOTRLA : add
-Volunteer o-- Team : check
-GOTRLA --> GirlData : add
-GOTRLA --> Coach : schedule
-Volunteer --> Schedule : access
-Staff --> Data : export
-Volunteer o-- Class : conduct
-Volunteer --> Semester : login
-VOLUNTEERCOACH --> OTHERCOACHES : check
+Program o-- Week
+GOTRLA --> Attendance : monitor
+Program o-- Quality
+Coach --> DateInformation : have
+GOTRLA --> DateInformation : have
+Coach --> Roster : view
+Staff --> Data : analyze
+Team --> Issue : have
 Coach --> Attendance : take
-VOLUNTEERCOACH --> INREALTIME : check
-GOTRLASTAFF --> ProgramQUALITYIMMEDIATELY : monitor
+Coach --> Team : check
+Coach --> Coach : access
+Staff --> CopyLiabilityWaiverForm : have
+Coach --> CopyLiabilityWaiverForm : have
+GOTRLA --> Class : delete
+Staff --> Data : export
+GOTRLA --> Week : schedule
+GOTRLA --> Roster : support
+VolunteerCoach <|-- Coach
+Admin --> Privilege : have
+GOTRLA --> Coach : delete
+Girl o-- Paperwork : turn_in
+Volunteer o-- Coach
+GOTRLASTAFF --> Quality : monitor
+Girl o-- Data
 
 @enduml

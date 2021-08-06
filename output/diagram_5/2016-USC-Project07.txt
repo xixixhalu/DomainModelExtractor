@@ -1,98 +1,89 @@
 @startuml
 hide circle
 class User<actor> {
-	location
 	appointment
+	location
 	information
 }
 class Shelter<actor> {
 	information
 }
 class Pet {
-	information
 	picture
+	information
 }
 class User {
 	cancel()
-	make()
-	go()
-	update()
-	book()
-	inform()
-	contact()
-	want()
-	visit()
-	have()
-	wait()
-	decide()
-	apply()
-	get()
-	see()
-	forget()
-	use()
-	know()
 	modify()
-}
-class SchedulingFunction {
-	integrate()
-}
-class Shelter {
-	get()
-	input()
+	keep()
+	update()
+	decide()
+	book()
+	have()
 	know()
-	control()
+	get()
+	contact()
+	user()
+	make()
+	apply()
+	inform()
 	want()
+	see()
+	visit()
 }
 class Information {
 	stay_up()
-	stay()
 }
-class Appointment {
+class UI {
 }
-class Filter {
-}
-class Ability {
+class Shelter {
 	select()
+	know()
+	get()
+	control()
+	want()
+	input()
+}
+class Type {
 }
 class Agency {
 }
-class GoogleCalendar {
-}
-class Date {
-}
-class Picture {
-}
-class Ui {
-}
 class Result {
 }
-class Reminder {
+class Appointment {
 }
 class Notification {
 }
-class ShelterInformation {
+class SchedulingFunction {
 }
-User o-- Information : modify
-User o-- Information : want
-Shelter o-- Information : input
-User --> Agency : inform
-Shelter --> ShelterInformation : input
-SchedulingFunction --> GoogleCalendar : supported_by
-User o-- Appointment : get
-User --> Filter : apply
-SchedulingFunction --> GoogleCalendar : integrate
-Information --> Date : stay
-User --> Picture : see
-User o-- Information : see
-Shelter --> Ability : want
+class Reminder {
+}
+class Picture {
+}
+class Ability {
+}
+class Animal {
+}
+class GoogleCalendar {
+}
+User --> UI : user
 User --> Shelter : visit
 User --> User : decide
-User --> Ui : use
-User --> Result : have
-User --> Reminder : get
-User --> Pet : go
-Shelter --> Notification : get
+Shelter o-- Information : input
 User o-- Appointment : book
+User --> Result : have
+Shelter --> Notification : get
 User --> SchedulingFunction : want
+User o-- Information : modify
+User --> Pet : see
+User --> Reminder : get
+User --> Agency : inform
+User --> Picture : see
+Shelter --> Ability : want
+Shelter --> Animal : select
+User o-- Information : see
+SchedulingFunction --> GoogleCalendar : supported_by
+User o-- Information : want
+User --> Type : apply
 
 @enduml

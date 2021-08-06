@@ -1,159 +1,159 @@
 @startuml
 hide circle
 class User<actor> {
-	experience
 	peer
-	need
-	point
-	thread
-	profile
-	watpoint
-	pointbalance
+	lifetime
 	progress
+	thread
+	pointBalance
+	point
+	watPoint
+	profile
+	experience
 }
 class Administrator<actor> {
 }
 class Maintainer<actor> {
 }
-class Peer {
-	point
+class Wat {
+}
+class System {
+}
+class Card {
+	user()
+}
+class Balance {
+	drop()
 }
 class User {
-	sort()
 	get()
-	gauge()
-	answer()
-	delete()
-	start()
-	measure()
-	use()
-	measure_up()
-	stay()
 	compare()
-	search()
-	see()
-	select()
-	redeem()
-	receive()
-	participate()
-	report()
-	track()
-	edit()
-	mark()
+	start()
+	user()
 	post()
+	edit()
+	delete()
+	answer()
+	receive()
+	search()
+	report()
+	redeem()
+	track()
+	select()
+	gauge()
 	update()
+	like()
+	mark()
 	view()
-	join()
+	see()
+}
+class Post {
+}
+class Semester {
+}
+class Gift {
+	user()
 }
 class Point {
 }
+class Thread {
+	start()
+}
+class Page {
+}
+class Detail {
+	create()
+}
+class Answer {
+}
+class Profile {
+}
+class Maintainer {
+	manage()
+	entice()
+	edit()
+	create()
+	join()
+	add()
+	participate()
+}
+class Product {
+}
+class Forum {
+}
+class Event {
+}
+class Stay {
+	engage()
+}
+class Administrator {
+	pin()
+}
+class Lifetime {
+}
 class Comment {
 }
-class GiftCard {
-	use()
+class Newsfeed {
+}
+class Question {
+}
+class Credibility {
+}
+class Progress {
+}
+class Item {
 }
 class Leaderboard {
 }
 class Information {
 }
-class Watpoint {
+class Peer {
 }
-class Answer {
-}
-class Page {
-}
-class Gift {
-}
-class Post {
-}
-class Pointbalance {
-	drop()
-}
-class Maintainer {
-	create()
-	edit()
-	manage()
-	entice()
-	add()
-}
-class Product {
-}
-class Thread {
-}
-class Credibility {
-}
-class Question {
-}
-class Event {
-}
-class Progress {
-}
-class Detail {
-}
-class Orderingcriterion {
-}
-class Administrator {
-	pin()
-}
-class Other {
-}
-class NewsFeed {
-}
-class Profile {
-}
-class Topic {
-}
-class Forum {
-}
-class GiftStore {
-}
-User --> Information : see
-User --> Other : measure
-User --> Information : supported_by
-User o-- Thread : delete
-Maintainer --> Comment : manage
-User o-- Watpoint : view
-User o-- Point : see
-User --> Answer : see
-Administrator --> Thread : pin
-User o-- Point : track
-User --> Credibility : gauge
-Maintainer --> User : entice
-User --> Question : answer
-User --> Answer : mark
-User --> NewsFeed : get
-User --> Question : mark
-User --> Question : post
-User --> Page : view
-User o-- Profile : update
-Maintainer --> Event : create
-User --> Gift : redeem
-User --> Information : answer
-User o-- Profile : view
-Maintainer --> Maintainer : create
+Gift --> Point : user
 User o-- Progress : track
-User o-- Thread : start
-User o-- Thread : edit
-User o-- Watpoint : redeem
-User --> Post : delete
-User o-- Point : use
-User --> Topic : see
-Maintainer --> GiftCard : add
-User o-- Pointbalance : view
-GiftCard --> Point : use
-User --> Forum : report
-User --> Comment : mark
-User o-- Watpoint : use
-Maintainer --> Detail : edit
-Maintainer --> Product : add
-User --> Forum : search
-User --> GiftCard : receive
+Maintainer --> Card : add
+User o-- Thread : delete
+User --> Card : receive
+Administrator --> Thread : pin
+User --> Item : redeem
+User o-- Profile : view
+User --> Page : view
+Maintainer --> Event : create
+User --> Question : answer
+User o-- Lifetime : view
 User o-- Thread : report
-User --> Orderingcriterion : select
-Maintainer --> GiftStore : add
-User --> Leaderboard : view
+User o-- Point : see
+Detail --> System : create
+User o-- Point : user
+User --> Answer : see
+Card --> Point : user
+Gift o-- Card
+Maintainer --> User : entice
+User o-- Profile : update
+Maintainer --> Comment : manage
 Maintainer --> Thread : manage
-User o-- Thread : see
+User --> Leaderboard : view
+User o-- Thread : start
+User --> Newsfeed : get
+User o-- Point : redeem
+User o-- Point : view
+User --> Gift : redeem
+User --> Comment : mark
+Maintainer --> Product : add
+User --> Information : see
+User --> Question : post
+Wat o-- System
+User --> Post : delete
+User --> Peer : supported_by
+User --> Forum : search
+User --> Credibility : gauge
+User --> Semester : view
 User o-- Thread : view
+Point o-- Balance
+User --> Information : supported_by
+Detail --> Event : create
+User --> Balance : view
+User o-- Point : track
+Wat o-- Point
 
 @enduml

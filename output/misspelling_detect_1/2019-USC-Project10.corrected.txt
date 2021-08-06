@@ -1,11 +1,11 @@
-as a developer, i can map imdb attributes with respect to twitter mentions or hashtags.
-as a developer, i can filter the data pulled from twitter with a specific timestamp to reduce the data size.
-as a developer, i can design a backend system which can provide apis to fronted system for demo purposes.
-as a user, i can find the popular movies with higher rankings by searching in the system.
-client can retrieve the data from aws do data processing for the machine learning models accordingly.
-as a prime video user, i can use twitter data, or other social media, to recommend to prime video users movies and tv shows.
-as a prime video user, i can see what tv shows/movies are trending on social media.
-as a developer, i can access social media data to create a tool that maps the data to imdb titles.
-as a developer, i can display the results of the tool by creating a website where the movie titles are ranked by social media buzz.
-as a user, i can input movie titles to get the related info like comments pulled from social media of certain movies which i'm interested in.
-as a developer, i can script most of the imdb titles/pages and link them to twitter mentions/hashtags.
+As a developer, I can map IMDB attributes with respect to Twitter mentions or hashtags.
+As a developer, I can filter the data pulled from Twitter with a specific timestamp to reduce the data size.
+As a developer, I can design a backend system which can provide APIs to frontend system for demo purposes.
+As a user, I can find the popular movies with higher rankings by searching in the system.
+Client can retrieve the data from AWS do data processing for the machine learning models accordingly.
+As a prime video user, I can use twitter data, or other social media, to recommend to prime video users movies and tv shows.
+As a prime video user, I can see what tv shows/movies are trending on social media.
+As a developer, I can access social media data to create a tool that maps the data to IMDB titles.
+As a developer, I can display the results of the tool by creating a website where the movie titles are ranked by social media buzz.
+As a user, I can input movie titles to get the related info like comments pulled from social media of certain movies which I'm interested in.
+As a developer, I can script most of the IMDB titles/pages and link them to Twitter mentions/hashtags.

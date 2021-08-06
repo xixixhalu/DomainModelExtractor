@@ -13,62 +13,8 @@
   "behavior_list": [
     {
       "actor": "ESS",
-      "action": "turn",
-      "target": "Led",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "drag",
-      "target": "Function",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "drag",
-      "target": "WhileConstruct",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "sense",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "make",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "drag",
-      "target": "Instruction",
-      "para": []
-    },
-    {
-      "actor": "Irobot",
-      "action": "go",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "create",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "copy",
-      "target": "ESS",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "turn",
-      "target": "",
+      "action": "use",
+      "target": "NavigationD",
       "para": []
     },
     {
@@ -78,63 +24,9 @@
       "para": []
     },
     {
-      "actor": "ESS",
-      "action": "drag",
-      "target": "Module",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "use",
-      "target": "NavigationD",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "turn_on",
-      "target": "Led",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "drag",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "drag",
-      "target": "Note",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "use",
-      "target": "Module",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "drag",
-      "target": "WaitCondition",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "copy",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "create",
-      "target": "Song",
+      "actor": "DDM",
+      "action": "detect",
+      "target": "Time",
       "para": []
     },
     {
@@ -145,13 +37,7 @@
     },
     {
       "actor": "ESS",
-      "action": "create",
-      "target": "ProgramFile",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "turn_on",
+      "action": "drag",
       "target": "",
       "para": []
     },
@@ -162,9 +48,15 @@
       "para": []
     },
     {
-      "actor": "Odule",
-      "action": "detect",
-      "target": "",
+      "actor": "ESS",
+      "action": "drag",
+      "target": "Construct",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "Note",
       "para": []
     },
     {
@@ -174,8 +66,8 @@
       "para": []
     },
     {
-      "actor": "ESS",
-      "action": "reprogram",
+      "actor": "IRobot",
+      "action": "go",
       "target": "",
       "para": []
     },
@@ -187,20 +79,80 @@
     },
     {
       "actor": "ESS",
-      "action": "copy",
-      "target": "Pasteinstruction",
+      "action": "drag",
+      "target": "WaitCondition",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "lead",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "create",
+      "target": "ProgramFile",
+      "para": []
+    },
+    {
+      "actor": "DDM",
+      "action": "detect",
+      "target": "",
       "para": []
     },
     {
       "actor": "ESS",
       "action": "drag",
-      "target": "ESS",
+      "target": "Function",
       "para": []
     },
     {
       "actor": "ESS",
-      "action": "sense",
-      "target": "Odule",
+      "action": "create",
+      "target": "Song",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "control",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "Instruction",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "make",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "copy",
+      "target": "Instruction",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "control",
+      "target": "Movement",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "paste",
+      "target": "",
       "para": []
     }
   ]

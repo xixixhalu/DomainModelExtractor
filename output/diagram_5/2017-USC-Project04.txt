@@ -1,172 +1,143 @@
 @startuml
 hide circle
 class User<actor> {
-	challengescore
-	friend
 	photo
 	rank
+	friend
 	challengeTask
+	challenge
+	challengeScore
 }
 class Student<actor> {
 	challengerList
 }
 class Competitor<actor> {
 	post
-	challengepost
-	opponentpost
+	challengePost
+	opponentPost
 }
-class Challenger {
-	challenge()
+class Task {
+}
+class Score {
+}
+class Request {
 }
 class User {
-	submit()
-	play()
-	go()
-	pick()
-	verify()
-	use()
-	get()
-	check()
-	post()
-	invite()
-	preview()
-	try()
-	send()
-	do()
-	receive()
-	add()
-	chance()
-	go_back()
-	see()
 	know()
-	give()
+	receive()
+	do()
+	pick()
 	finish()
-	click()
+	submit()
+	get()
+	play()
+	check()
+	invite()
+	send()
+	user()
 	have()
-}
-class Student {
-	compete()
-	prepare()
-	select()
+	verify()
+	give()
 	see()
-}
-class ChallengerList {
+	add()
+	buy()
+	participate()
+	go()
 }
 class Iphonemodel {
-	play()
 }
-class Today {
+class Student {
+	see()
+	prepare()
+	compete()
+	select()
+}
+class Photo {
+}
+class Reward {
+}
+class FinishTime {
+}
+class Sth {
+}
+class Chance {
+	click()
+}
+class Button {
 }
 class Competitor {
 	post()
 	verify()
 	view()
 }
+class Post {
+}
 class Challenge {
-	leave()
-}
-class ChallengeGame {
-}
-class ChallengeRequest {
-}
-class Idea {
-	help()
-}
-class Detail {
-}
-class Time {
+	have()
 }
 class Rank {
 }
-class Button {
-}
-class Reward {
-}
-class Notification {
-}
-class App {
-}
-class Challengescore {
+class Time {
+	remain()
 }
 class Suggestion {
-	challenge()
-}
-class FinishTime {
-}
-class Friend {
-	challenge()
-}
-class Day {
-}
-class Populic {
-}
-class Screen {
-}
-class Photo {
-}
-class ChallengeNotification {
-}
-class Opponentpost {
 }
 class Game {
 }
-class ChallengeTask {
+class Notification {
+}
+class Detail {
+}
+class Idea {
 }
 class Application {
 	improve()
 }
-class Post {
+class OpponentPost {
 }
-class ChallengePage {
+class Day {
 }
-class Challengepost {
+class Friend {
 }
-class Procedure {
+class Challenger {
+	challenge()
 }
-User o-- Photo : preview
-User o-- Challenge : check
-Challenge --> User : leave
-User --> Competitor : pick
-User o-- Challenge : finish
-User --> User : verify
-Student o-- ChallengerList : select
-User --> ChallengeGame : play
-User --> Procedure : play
-User o-- Challenge : get
-User --> ChallengeNotification : get
-User o-- Challengescore : use
-Student o-- Challenge : see
-User --> ChallengeRequest : send
-Competitor o-- Opponentpost : verify
-User --> Challenger : pick
-Competitor --> Competitor : view
-User --> Idea : submit
-User --> Game : see
 User --> FinishTime : see
-User --> Detail : get
-User o-- Friend : send
-User o-- ChallengeTask : do
-User --> Time : see
-User --> User : go
+User --> Score : user
 User o-- Friend : invite
-User --> App : get
-User --> User : see
-Competitor o-- Post : view
-Student --> Day : see
-User o-- Rank : see
-User --> Notification : receive
-User --> Iphonemodel : use
-User --> Populic : receive
-User --> Button : click
-Competitor --> ChallengePage : view
-Competitor o-- Challengepost : post
-Challenger --> Today : challenge
-User --> Reward : get
-User --> User : get
-User --> Screen : see
+User --> Sth : buy
 User --> Notification : get
-User --> Suggestion : give
-Student --> Competitor : select
+User o-- Challenge : verify
+User --> Task : do
+Student o-- Challenge : see
+Challenge o-- Game
+User --> Request : send
+Challenge o-- Score
+User --> Detail : get
+Challenge o-- Request
+Chance --> Button : click
+Challenge o-- Post
+Challenge o-- Task
+User --> Idea : submit
+User o-- Challenge : participate
+Competitor o-- Post : post
+User --> Game : see
 User o-- Challenge : see
+User o-- Challenge : send
+User o-- Challenge : check
+User --> Iphonemodel : user
+User o-- Challenge : finish
+Student --> Competitor : select
+User --> Competitor : pick
+User --> Notification : receive
+User o-- Rank : see
+Competitor o-- Post : view
+Competitor o-- OpponentPost : verify
+User o-- Photo : add
+User --> Suggestion : give
+Student --> Day : see
+User --> Game : play
+User --> Reward : get
+Challenge o-- Notification
 
 @enduml

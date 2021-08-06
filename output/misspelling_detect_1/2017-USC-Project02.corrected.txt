@@ -1,18 +1,18 @@
-as a developer, i can import a spreadsheet of items into the inventory system.
-as an admin, i can add new items to the system.
-as an admin, i can read the item logs from the system.
-as a volunteer, i can check the current availability and location of an item in the system.
-as a manager, i can click a button to e-mail darin to re-order a given item.
-as a user, i can request an account for a specific user type (org, volunteer, admin).
-as a user, i can update an items "status" in the inventory when i check-out or return an item.
-as an admin user, i can get an email notification when an item is out of stock.
-as a user, i can return an item i've checked out.
-as a user, i can browse through the stem inventory.
-as a admin, i can change the status of an item.
-as a admin, i can reserve an item.
-the website should be rendered properly on mobile platforms.
-as a user, i can click on an item to view its details such as status, quantity, location.
-as a user, i can view items i have checked out.
-as a user, i can search for a specific item.
-the website should show image thumbnails in the browse mode.
-as a volunteer, i can view and manage reservations.
+As a developer, I can import a spreadsheet of items into the inventory system.
+As an admin, I can add new items to the system.
+As an admin, I can read the item logs from the system.
+As a volunteer, I can check the current availability and location of an item in the system.
+As a manager, I can click a button to e-mail Darin to re-order a given item.
+As a User, I can request an account for a specific user type (org, volunteer, admin).
+As a user, I can update an items "status" in the inventory when I check-out or return an item.
+As an admin user, I can get an email notification when an item is out of stock.
+As a user, I can return an item I've checked out.
+As a user, I can browse through the STEM inventory.
+As a Admin, I can change the status of an item.
+As a Admin, I can reserve an item.
+The website should be rendered properly on mobile platforms.
+As a user, I can click on an item to view its details such as status, quantity, location.
+As a user, I can view items I have checked out.
+As a user, I can search for a specific item.
+The website should show image thumbnails in the browse mode.
+As a volunteer, I can view and manage reservations.

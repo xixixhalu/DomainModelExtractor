@@ -15,11 +15,11 @@
       ],
       "attributes": [
         {
-          "name": "tuition",
+          "name": "detail",
           "type": "default"
         },
         {
-          "name": "detail",
+          "name": "child",
           "type": "default"
         }
       ]
@@ -32,6 +32,18 @@
       "attributes": [
         {
           "name": "email",
+          "type": "default"
+        }
+      ]
+    },
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": [
+        {
+          "name": "mail",
           "type": "default"
         }
       ]
@@ -69,18 +81,6 @@
         }
       ]
     },
-    "Admin": {
-      "name": "Admin",
-      "type": [
-        "entity"
-      ],
-      "attributes": [
-        {
-          "name": "mail",
-          "type": "default"
-        }
-      ]
-    },
     "VYMA": {
       "name": "VYMA",
       "type": [
@@ -92,20 +92,87 @@
           "type": "default"
         }
       ]
+    },
+    "Section": {
+      "name": "Section",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "News",
+      "dest": "Section",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
     {
-      "actor": "Admin",
-      "action": "update",
-      "target": "Information",
+      "actor": "Donor",
+      "action": "support",
+      "target": "Vymacommunity",
+      "para": []
+    },
+    {
+      "actor": "Section",
+      "action": "trigger",
+      "target": "Notification",
       "para": []
     },
     {
       "actor": "User",
+      "action": "purchase",
+      "target": "Dvd",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "register",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "set_up",
+      "target": "Payment",
+      "para": []
+    },
+    {
+      "actor": "Parent",
       "action": "view",
-      "target": "Detail",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "check",
+      "target": "Mail",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "check",
+      "target": "GoogleDrive",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "update",
+      "target": "Roster",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "",
       "para": []
     },
     {
@@ -115,99 +182,33 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "subscribe",
-      "target": "",
-      "para": []
-    },
-    {
       "actor": "Admin",
       "action": "update",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Parent",
-      "action": "set",
-      "target": "Payment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "check",
-      "target": "Googledrive",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "purchase",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "check",
-      "target": "",
+      "target": "Detail",
       "para": []
     },
     {
       "actor": "Student",
       "action": "practice",
-      "target": "Concert",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "subscribe",
-      "target": "Newsletter",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "check",
       "target": "",
       "para": []
     },
     {
-      "actor": "Student",
-      "action": "practice",
-      "target": "Rehearsal",
+      "actor": "User",
+      "action": "have",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Client",
-      "action": "check",
-      "target": "Information",
+      "actor": "Donor",
+      "action": "make",
+      "target": "",
       "para": []
     },
     {
       "actor": "Parent",
       "action": "set_up",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "Member",
-      "action": "view",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Member",
-      "action": "view",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Feedback",
-      "action": "provide",
-      "target": "ContactUsPage",
       "para": []
     },
     {
@@ -217,68 +218,8 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "receive",
-      "target": "Update",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "download",
-      "target": "Page",
-      "para": []
-    },
-    {
-      "actor": "Donor",
-      "action": "make",
-      "target": "Online",
-      "para": []
-    },
-    {
-      "actor": "Donor",
-      "action": "make",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "register",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "check",
-      "target": "Email",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "register",
-      "target": "Online",
-      "para": []
-    },
-    {
       "actor": "Parent",
-      "action": "set_up",
-      "target": "Payment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Place",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "download",
+      "action": "pay",
       "target": "",
       "para": []
     },
@@ -289,9 +230,51 @@
       "para": []
     },
     {
+      "actor": "User",
+      "action": "receive",
+      "target": "Update",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "add",
+      "target": "Link",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Detail",
+      "para": []
+    },
+    {
       "actor": "Admin",
       "action": "update",
-      "target": "NewsSection",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "News",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "register",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "check",
+      "target": "Email",
       "para": []
     },
     {
@@ -307,117 +290,9 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "update",
-      "target": "Detail",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "check",
-      "target": "Applicant",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "News",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "practice",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Feedback",
-      "action": "provide",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Donor",
-      "action": "support",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Donor",
-      "action": "support",
-      "target": "VYMACommunity",
-      "para": []
-    },
-    {
-      "actor": "Parent",
-      "action": "pay",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "add",
-      "target": "Link",
-      "para": []
-    },
-    {
-      "actor": "Parent",
-      "action": "register",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Parent",
-      "action": "register",
-      "target": "Online",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "check",
-      "target": "Mail",
-      "para": []
-    },
-    {
-      "actor": "Parent",
-      "action": "set",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Parent",
+      "actor": "Member",
       "action": "view",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Feedback",
-      "action": "provide",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Donor",
-      "action": "support",
-      "target": "Endeavor",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "search",
-      "target": "",
+      "target": "Information",
       "para": []
     }
   ]

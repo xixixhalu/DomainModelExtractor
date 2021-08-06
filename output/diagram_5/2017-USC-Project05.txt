@@ -7,67 +7,51 @@ class HouseManager<actor> {
 }
 class HouseStaff<actor> {
 }
-class Administrator {
-	delete()
+class House {
+}
+class Staff {
 	see()
-	filter()
-	allow()
-	assign()
-	enter()
-	lock()
-	create()
+}
+class Administrator {
 	help()
-	view()
+	enter()
+	allow()
 	add()
+	create()
+	delete()
 }
 class Secret {
 	authorize()
 }
-class Code {
-}
-class Log {
+class Access {
 }
 class Manager {
-}
-class HouseManager {
-	select()
 	add()
-}
-class HouseStaff {
-	see()
-	lock()
-}
-class Batterystatus {
-}
-class Hub {
-}
-class LockStatus {
-}
-class Other {
-}
-class Name {
+	select()
 }
 class Lock {
-	add()
+}
+class Code {
 }
 class Group {
 }
 class SmartThingsClientId {
-	authorize()
 }
-HouseManager --> Lock : select
-Administrator --> Hub : see
-Administrator --> Code : lock
-Administrator o-- SmartThingsClientId : enter
-Administrator --> Secret : enter
-Administrator --> Log : view
-Administrator --> Name : lock
-Administrator --> Group : create
-Administrator --> LockStatus : see
-Administrator --> Batterystatus : see
+class HouseManager {
+}
+class HouseStaff {
+}
+Administrator --> Group : delete
+Administrator --> Lock : delete
 Administrator --> Manager : delete
-Administrator --> Other : delete
-HouseStaff --> Code : lock
-Administrator --> Code : assign
+Secret --> Access : authorize
+Administrator o-- SmartThingsClientId : enter
+Administrator --> Code : allow
+HouseManager <|-- Manager
+House o-- Staff
+Administrator --> Group : create
+HouseStaff <|-- Staff
+Manager --> Lock : select
+House o-- Manager
 
 @enduml

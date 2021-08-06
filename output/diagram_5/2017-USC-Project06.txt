@@ -1,62 +1,66 @@
 @startuml
 hide circle
 class User<actor> {
+	insulinusage
+	foodConsumption
 	information
 	cgm
-	insulinUsage
 	bloodSugar
-	foodConsumption
 	account
 }
+class Insulin {
+}
+class Recommendation {
+}
 class User {
-	input()
 	see()
-	sign()
-	set()
-	download()
-	connect()
-	create()
-	use()
-	login()
 	customize()
+	store()
+	create()
+	user()
+	connect()
 	want()
 	sign_up()
-	map()
 	view()
-}
-class Level {
-	warn()
-}
-class Information {
-	store()
-}
-class Application {
-}
-class InsulinRecommendation {
-}
-class Trend {
-}
-class App {
+	input()
+	download()
+	set()
 	visualize()
 }
-class Meal {
+class App {
+	warn()
+}
+class Account {
+}
+class Level {
+	take()
+	warn()
 }
 class Cgm {
+}
+class Information {
 }
 class BloodSugar {
 	get()
 }
-User --> Application : connect
-User o-- Information : create
-User --> Application : download
-User --> App : create
-User --> App : use
-User o-- Information : view
-User --> Level : set
-User --> InsulinRecommendation : want
-User o-- Cgm : connect
-User o-- Information : want
-User --> Meal : input
+class Meal {
+}
+class Trend {
+}
+class Application {
+}
 User --> Trend : see
+User --> Recommendation : want
+Insulin o-- Recommendation
+User o-- Information : view
+User o-- Information : want
+User o-- Cgm : connect
+User --> Level : set
+User --> App : user
+Insulin o-- Level
+User --> Meal : input
+User --> Application : download
+User o-- Information : create
+User o-- Account : create
 
 @enduml

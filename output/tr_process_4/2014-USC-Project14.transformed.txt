@@ -27,16 +27,76 @@
       ],
       "attributes": []
     },
-    "WaWItPersonnel": {
-      "name": "WaWItPersonnel",
+    "WaWITPersonnel": {
+      "name": "WaWITPersonnel",
       "type": [
         "actor"
       ],
       "attributes": []
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "Time",
+      "dest": "Client",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
+    {
+      "actor": "WaWITPersonnel",
+      "action": "track",
+      "target": "Appointment",
+      "para": []
+    },
+    {
+      "actor": "WaWITPersonnel",
+      "action": "analyse",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "WaWITPersonnel",
+      "action": "use",
+      "target": "Center",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "enter",
+      "target": "Center",
+      "para": []
+    },
+    {
+      "actor": "Time",
+      "action": "enter",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "show_up",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Number",
+      "action": "use",
+      "target": "Center",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "register",
+      "target": "",
+      "para": []
+    },
     {
       "actor": "Member",
       "action": "keep",
@@ -44,44 +104,14 @@
       "para": []
     },
     {
-      "actor": "Member",
-      "action": "access",
-      "target": "Portal",
-      "para": []
-    },
-    {
       "actor": "Client",
-      "action": "provide",
-      "target": "Feedback",
+      "action": "get",
+      "target": "Job",
       "para": []
     },
     {
-      "actor": "Client",
-      "action": "provide",
-      "target": "Convenience",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "complete",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Member",
-      "action": "publish",
-      "target": "Blog",
-      "para": []
-    },
-    {
-      "actor": "WaWItPersonnel",
-      "action": "capture",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "book",
+      "actor": "Service",
+      "action": "use",
       "target": "",
       "para": []
     },
@@ -92,212 +122,68 @@
       "para": []
     },
     {
-      "actor": "Member",
-      "action": "keep",
-      "target": "",
-      "para": []
-    },
-    {
       "actor": "Client",
-      "action": "check",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "WaWItPersonnel",
-      "action": "generate",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "save",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "enroll",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Member",
-      "action": "integrate",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "check",
-      "target": "Online",
-      "para": []
-    },
-    {
-      "actor": "WaWItPersonnel",
-      "action": "analyse",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "show",
-      "target": "Session",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "get",
-      "target": "Job",
-      "para": []
-    },
-    {
-      "actor": "Board",
-      "action": "share",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "WaWItPersonnel",
-      "action": "generate",
-      "target": "WaWItPersonnel",
+      "action": "provide",
+      "target": "Feedback",
       "para": []
     },
     {
       "actor": "Member",
       "action": "access",
+      "target": "Portal",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "use",
+      "target": "Center",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "enroll",
       "target": "",
       "para": []
     },
     {
       "actor": "Client",
       "action": "save",
-      "target": "Time",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "register",
       "target": "",
       "para": []
     },
     {
       "actor": "Client",
-      "action": "get",
+      "action": "check_in",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "enroll",
-      "target": "JobSearch",
-      "para": []
-    },
-    {
-      "actor": "Member",
-      "action": "publish",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Member",
-      "action": "integrate",
-      "target": "Media",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "book",
-      "target": "Appointment",
-      "para": []
-    },
-    {
-      "actor": "WaWItPersonnel",
-      "action": "track",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "provide",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "use",
-      "target": "Center",
-      "para": []
-    },
-    {
-      "actor": "WaWItPersonnel",
-      "action": "analyse",
-      "target": "Service",
-      "para": []
-    },
-    {
-      "actor": "Member",
-      "action": "keep",
-      "target": "Increase",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "check",
-      "target": "Service",
-      "para": []
-    },
-    {
-      "actor": "WaWItPersonnel",
-      "action": "capture",
-      "target": "Timeclient",
-      "para": []
-    },
-    {
-      "actor": "WaWItPersonnel",
-      "action": "enter",
-      "target": "Center",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "show_up",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "use",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "WaWItPersonnel",
-      "action": "track",
-      "target": "Type",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "show",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "WaWItPersonnel",
-      "action": "generate",
-      "target": "Report",
       "para": []
     },
     {
       "actor": "Board",
       "action": "share",
-      "target": "BoardDocument",
+      "target": "",
       "para": []
     },
     {
-      "actor": "WaWItPersonnel",
-      "action": "enter",
+      "actor": "WaWITPersonnel",
+      "action": "track",
+      "target": "Type",
+      "para": []
+    },
+    {
+      "actor": "WaWITPersonnel",
+      "action": "generate",
+      "target": "Report",
+      "para": []
+    },
+    {
+      "actor": "WaWITPersonnel",
+      "action": "capture",
+      "target": "Client",
+      "para": []
+    },
+    {
+      "actor": "WaWITPersonnel",
+      "action": "track",
       "target": "",
       "para": []
     }

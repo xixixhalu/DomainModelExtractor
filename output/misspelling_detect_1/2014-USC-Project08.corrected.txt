@@ -1,12 +1,12 @@
-as a case manager, i can run frequency (demographic and activity reporting) on case file, so that i can save time in generating report - excel or csv format.
+As a Case Manager, I can run frequency (demographic and activity reporting) on case file, so that I can save time in generating report - excel or csv format.
 demographic info-age;gender;ethnicity;city;zip code;school;status/category;program;
-activities:admin work; follow ups; individual canceling; workshop; field-trips; community resources; css(agency); time stamps.
-as a case manager,  i can upload documents for each case, so that youth can have an access to them.
-as a case manager, i can create management services ,those activities will have category(each activity attached to a kid), so that i can monitor youth service(activities).
-as a case manager, i manage accounts(reset need security questions;create accounts; delete accounts;manage kids under their own domain ), so that youth can access.
-as a case manager, i can massive email through the system and automatic record activities, so that i save time losing activities.
-as a case manager,  i can electronically manage case files(demographic,  activity, and documents), so that i can save time and monitor cases.
-the system shall be more secure (what is secure need to be analyzed);session timer; youth user can only access their own documents; security questions; case manager access control;.
-the system shall be deployed on mylaspace; redirect from .org .net to .com.
-the system shall be developed using php.
-the system shall import existing data from salesforce(several hundred  kids information in csv format) exported data.
+activities:admin work; follow ups; individual canceling; workshop; field-trips; community resources; CSS(agency); time stamps.
+As a Case Manager,  I can upload documents for each case, so that youth can have an access to them.
+As a Case Manager, I can create management services ,those activities will have category(each activity attached to a kid), so that I can monitor youth service(activities).
+As a Case Manager, I manage accounts(reset need security questions;create accounts; delete accounts;manage kids under their own domain ), so that youth can access.
+As a Case Manager, I can massive email through the system and automatic record activities, so that I save time losing activities.
+As a Case Manager,  I can electronically manage case files(demographic,  activity, and documents), so that I can save time and monitor cases.
+The system shall be more secure (what is secure need to be analyzed);session timer; youth user can only access their own documents; security questions; case manager access control;.
+The system shall be deployed on mylaspace; redirect from .org .net to .com.
+The system shall be developed using php.
+The system shall import existing data from Salesforce(several hundred  kids information in csv format) exported data.

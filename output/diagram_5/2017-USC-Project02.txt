@@ -2,94 +2,92 @@
 hide circle
 class Developer<actor> {
 }
+class Admin<actor> {
+}
 class Volunteer<actor> {
 }
 class Manager<actor> {
 }
 class User<actor> {
 }
-class Admin<actor> {
+class AdminUser<actor> {
+}
+class Log {
 }
 class User {
-	search()
-	request()
-	get()
-	update()
-	return()
-	click()
-	view()
-	check_out()
-	check()
 	browse()
-}
-class STEMInventory {
-}
-class Admin {
-	read()
-	add()
-	reserve()
-	change()
-}
-class Item {
-	be()
-}
-class Volunteer {
+	click()
+	get()
+	request()
+	search()
+	update()
 	view()
-	manage()
-	check()
+	return()
 }
-class Availability {
-}
-class Reservation {
-}
-class ItemLog {
+class Detail {
 }
 class Manager {
 	click()
+	email()
 }
 class Button {
-	email()
+}
+class Inventory {
+}
+class Item {
+}
+class EmailNotification {
+}
+class Admin {
+	add()
+	change()
+	read()
+	reserve()
+}
+class Status {
+}
+class Volunteer {
+	check()
+	view()
+	manager()
+}
+class Availability {
 }
 class Developer {
 	import()
 }
-class InventorySystem {
+class Spreadsheet {
 }
-class Location {
+class Darin {
 }
-class Status {
+class Reservation {
 }
 class Account {
 }
-class Spreadsheet {
+class Location {
 }
-class EmailNotification {
+class AdminUser {
 }
-class Darin {
-	reorder()
-}
-class Inventory {
-}
-class Detail {
-}
-User --> STEMInventory : browse
-Admin --> ItemLog : read
-Admin --> Status : change
-User --> Inventory : update
-Manager --> Button : click
-User --> Detail : view
-Admin --> Item : reserve
-Volunteer --> Availability : check
-Developer --> InventorySystem : import
-User --> Item : return
-Volunteer --> Location : check
-User --> Item : search
-Admin --> Item : add
-User --> Status : update
 User --> EmailNotification : get
-User --> Item : click
+Admin --> Status : change
+User --> Detail : view
+User --> Status : update
 User --> Account : request
+Admin --> Log : read
+Volunteer --> Location : check
+Manager --> Button : click
+AdminUser <|-- User
+User --> Inventory : update
+Admin o-- User
+Item o-- Log
+Volunteer --> Availability : check
+User --> User : view
+User --> User : return
 Developer --> Spreadsheet : import
+Manager --> Darin : email
+User --> Item : click
 Volunteer --> Reservation : view
+Admin --> Item : add
+Admin --> Item : reserve
 
 @enduml

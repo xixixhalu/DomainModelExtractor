@@ -1,140 +1,129 @@
 @startuml
 hide circle
 class User<actor> {
-	phone
 	storage
-	eventexit
-	record
 	event
-	felling
-	privacy
 	computer
+	felling
 	password
+	privacy
+	phone
+	record
+	eventExit
 }
 class User {
-	review()
-	maintain()
-	keep()
-	enter()
-	change()
-	reset()
-	make()
-	need()
-	download()
-	sort()
-	choose()
-	report()
-	use()
-	forget()
-	let()
-	share()
-	save()
-	delete()
-	log()
-	comment()
-	upload()
-	like()
-	express()
-	free()
-	look()
-	search()
 	see()
-	find()
-	create()
-	login()
-	extend()
+	look()
 	want()
-}
-class Felling {
-}
-class Computer {
-}
-class Resolutionpicture {
-}
-class Privacy {
-}
-class Picture {
-}
-class Size {
-	download()
-}
-class Popularity {
-}
-class Lot {
-}
-class Event {
-}
-class Password {
-}
-class Browser {
+	like()
+	free()
+	need()
 	visit()
-}
-class Storage {
-}
-class FacebookAccount {
-}
-class Time {
+	search()
+	change()
+	review()
+	express()
+	extend()
+	enter()
+	choose()
+	let()
+	save()
+	create()
+	user()
+	delete()
+	forget()
+	picture()
+	keep()
+	log_in()
+	comment()
+	make()
+	download()
+	login()
+	upload()
+	reset()
+	maintain()
+	find()
+	report()
 }
 class Record {
 }
-class Eventexit {
+class Time {
 }
-class Charge {
+class Event {
 }
-class Register {
+class Lot {
 }
-class Comment {
+class Picture {
 }
-class PictureOwner {
+class Password {
 }
-class Type {
+class Upload {
+}
+class Resolutionpicture {
 }
 class Qualitypicture {
 }
-User --> Popularity : review
-User --> PictureOwner : make
-User o-- Event : delete
-User --> Lot : free
-User --> Type : change
-User --> Picture : report
-User o-- Event : extend
-User --> Time : upload
-User --> Charge : supported_by
-User o-- Computer : download
-User o-- Record : keep
-User o-- Event : see
-User --> Picture : like
-User o-- Event : search
-User o-- Event : create
-User --> Picture : comment
-User --> Picture : maintain
-User --> Resolutionpicture : upload
-User --> Qualitypicture : review
-User o-- Eventexit : let
-User o-- Event : upload
-User o-- Felling : express
-User --> Picture : sort
+class Computer {
+}
+class Felling {
+}
+class SharewebWebsite {
+}
+class Privacy {
+}
+class Storage {
+}
+class Browser {
+}
+class Comment {
+}
+class Type {
+}
+class Register {
+}
+class Size {
+}
+class Charge {
+}
+class FacebookAccount {
+}
 User --> Time : supported_by
-User o-- Password : forget
-User --> Charge : extend
+User --> Picture : comment
 User --> FacebookAccount : supported_by
-User o-- Event : maintain
-User o-- Password : reset
-User --> Time : review
-User --> Resolutionpicture : download
-User --> Browser : use
+User --> Upload : delete
 User --> Picture : upload
-User --> Register : need
-User --> Time : save
+User --> User : delete
+User --> Picture : maintain
 User o-- Storage : save
-User o-- Privacy : keep
+User --> Resolutionpicture : upload
+User o-- Password : reset
+User --> Picture : report
+User --> Browser : user
+User o-- Event : create
+User --> Qualitypicture : review
+User o-- Event : delete
 User --> Comment : make
-User --> FacebookAccount : login
-User --> Picture : download
-User --> Picture : see
+User o-- Event : see
+User o-- Password : forget
+User o-- Computer : download
+User o-- Event : picture
 User --> Picture : review
-User --> Time : download
+User --> Type : change
+User --> Lot : free
+User o-- Felling : express
+User --> Register : need
+User --> Resolutionpicture : download
+User --> Picture : like
+User --> Picture : download
 User o-- Password : enter
 User --> Size : choose
+User o-- Record : keep
+User --> Charge : supported_by
+User o-- Event : extend
+User --> SharewebWebsite : visit
+User --> Picture : see
+User o-- Privacy : keep
+User --> Time : save
+User o-- Event : maintain
 
 @enduml

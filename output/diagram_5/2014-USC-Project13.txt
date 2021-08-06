@@ -1,66 +1,53 @@
 @startuml
 hide circle
-class User<actor> {
+class Admin<actor> {
 }
-class Admin {
-	edit()
-	debug()
-	see()
-	assign()
-	add()
-	provide()
-	delete()
-	incorporate()
+class User<actor> {
 }
 class User {
 	have()
-	turn()
-	select()
-	choose()
 	add()
+	select()
 	turn_on()
+	choose()
 }
-class Light {
+class Admin {
+	see()
+	add()
+	assign()
+	edit()
+	provide()
+	incorporate()
+	delete()
 }
 class Gateway {
-	switch()
 }
-class Id {
+class Floor {
 }
 class Name {
 }
-class Switch {
+class Image {
 }
-class Application {
+class Light {
+	user()
+}
+class Mobileapplication {
 }
 class Screen {
 }
 class Control {
 }
-class Image {
+class Debugging {
 }
-class Floor {
-}
-class Email {
-}
-class Room {
-}
-User --> Control : have
-User --> Image : add
-Gateway --> Id : switch
-User --> Room : select
-User --> Application : turn
-Admin --> User : assign
-Admin --> Switch : delete
-Admin --> Name : edit
-Admin --> User : add
-User --> Light : turn
-User --> Gateway : add
 User --> Screen : add
-Admin --> Gateway : delete
+User --> Image : add
 User --> Floor : select
-User --> Email : choose
-Admin --> Switch : assign
-User --> Switch : add
+Admin --> User : add
+Admin --> Debugging : incorporate
+Admin --> Gateway : delete
+User --> Control : have
+Light --> Mobileapplication : user
+Admin --> Name : edit
+Admin --> Gateway : see
 
 @enduml

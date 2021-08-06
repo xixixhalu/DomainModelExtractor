@@ -4,148 +4,122 @@ class Student<actor> {
 	network
 }
 class User<actor> {
-	connection
-	linkedInInformation
-	message
-	area
 	network
+	area
+	pastmessage
 	profile
+	linkedininformation
+	connection
 }
 class Administrator<actor> {
 }
 class Connection {
-	activity
+	activite
 }
 class User {
-	have()
-	think()
-	search()
-	work()
-	follow()
-	leave()
+	see()
 	receive()
-	connect()
-	want()
-	cancel()
-	join()
-	create()
 	send()
+	cancel()
+	upload()
+	work()
+	connect()
+	leave()
+	add()
+	share()
+	accept()
+	follow()
+	want()
+	create()
+	import()
 	comment()
 	find()
-	see()
-	accept()
-	add()
-	upload()
-	import()
-	write()
+	have()
 	invite()
-	share()
+	think()
+	write()
 }
-class Profile {
+class Linkedininformation {
 }
-class Advertisement {
+class Information {
 }
-class Message {
-}
-class Someone {
-	work()
-}
-class Recommendation {
-}
-class People {
+class Network {
 }
 class Request {
 	join()
 }
+class Message {
+}
+class Advertisement {
+}
+class Video {
+}
+class Profilepicture {
+}
+class Presence {
+}
+class People {
+	join()
+}
 class Group {
 }
-class Activity {
+class Profile {
 }
-class Point {
+class Pastmessage {
 }
-class Administrator {
-	add()
+class Someone {
+	work()
 }
-class Optometrist {
+class BlackprofessionalsNet {
+}
+class Office {
+}
+class LetterRecommendation {
+}
+class Article {
 }
 class Post {
 }
 class Company {
 }
-class LetterRecommendation {
-}
-class LinkedInInformation {
-}
-class Video {
-}
-class Article {
-}
-class Office {
-}
 class Student {
 	grow()
-	connect()
 }
-class Information {
+class Activite {
 }
-class School {
+class Optometrist {
 }
-class ProfilePicture {
-}
-class Presence {
-}
-class Network {
-}
-class Ad {
-}
-class Space {
+class Recommendation {
 }
 User --> Recommendation : see
-User --> Company : follow
-User --> User : search
-User --> People : invite
-User --> Information : find
-Someone --> User : work
-User o-- Profile : see
-User --> Administrator : send
-User o-- Message : see
-User --> School : see
-User o-- Profile : add
-User o-- Profile : create
-User --> ProfilePicture : upload
-User --> Company : see
-User --> Request : send
-User --> User : send
-User o-- Profile : import
-User --> LetterRecommendation : write
-User o-- Connection : cancel
-Student --> Student : connect
-User --> User : write
-User --> Group : create
-User --> Group : leave
-User --> Presence : have
-User --> Activity : see
-User o-- LinkedInInformation : import
-Student o-- Network : grow
-User --> User : supported_by
-User --> Someone : find
-User --> Video : share
-User --> Point : leave
-Administrator --> Ad : add
-User --> Advertisement : see
-User --> Company : find
-User --> Group : join
-User --> User : comment
-User --> User : cancel
-User --> Office : find
-User o-- Message : send
-Administrator --> Space : add
-User --> Article : share
-User --> Optometrist : find
-Someone --> Company : work
-User --> User : find
-User --> Post : comment
-User --> User : see
 Student --> Student : supported_by
+User --> Video : share
+User --> LetterRecommendation : write
+User --> Message : send
+User --> Profilepicture : upload
+User --> Request : send
+User --> Advertisement : see
+User --> Article : share
+User o-- Connection : cancel
+User --> Presence : have
+User --> Post : comment
+User --> Group : create
+User --> Company : follow
+People --> Group : join
+Student o-- Network : grow
+User --> Group : leave
+User o-- Profile : see
+User o-- Network : invite
+User --> Office : find
+User --> Activite : see
+User o-- Profile : create
+User o-- Pastmessage : see
+User --> Optometrist : find
+User --> Someone : find
+User --> Company : want
+User --> User : supported_by
+User --> BlackprofessionalsNet : have
+User --> Information : find
+User o-- Linkedininformation : import
 
 @enduml

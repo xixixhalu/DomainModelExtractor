@@ -13,92 +13,14 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "run",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "return",
-      "target": "HomePage",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "fast",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "access",
-      "target": "Material",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "see",
+      "action": "go",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "pick",
-      "target": "Answer",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "click",
-      "target": "GirlBill",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "access",
-      "target": "TextContents",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "pause",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Page",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "click",
-      "target": "App",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "return",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "return",
-      "target": "Chapter",
       "para": []
     },
     {
@@ -110,25 +32,121 @@
     {
       "actor": "User",
       "action": "view",
-      "target": "",
+      "target": "Page",
       "para": []
     },
     {
       "actor": "User",
-      "action": "see",
-      "target": "Hint",
+      "action": "play",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "access",
-      "target": "",
+      "target": "Textcontent",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "List",
       "para": []
     },
     {
       "actor": "User",
       "action": "pick",
-      "target": "QuizQuestion",
+      "target": "Answer",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "fast",
+      "target": "Audio",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "fast",
+      "target": "Video",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "run",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "access",
+      "target": "Material",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "click",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "App",
+      "action": "run",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "play",
+      "target": "Audio",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "return",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "click",
+      "target": "GirlBill",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "pause",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "fast",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "",
       "para": []
     },
     {
@@ -145,44 +163,20 @@
     },
     {
       "actor": "User",
-      "action": "click",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "pick",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "play",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "play",
-      "target": "Audio",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "go",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "run",
       "target": "App",
       "para": []
     },
     {
-      "actor": "App",
-      "action": "run",
-      "target": "",
+      "actor": "User",
+      "action": "click",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Hint",
       "para": []
     }
   ]

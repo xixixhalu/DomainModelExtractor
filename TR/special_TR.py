@@ -23,7 +23,7 @@ def S_TR1(domain):
         source = relation['source']
         dest = relation['dest']
         if source.lower() in STOP_WORDS:
-            domain.delete_relation(actor=source)
+            domain.delete_relation(source=source)
         if dest.lower() in STOP_WORDS:
             domain.delete_relation(dest=dest)
 
@@ -134,6 +134,8 @@ def S_TR2(domain):
 
     transform_map = []
     for key in new_map.keys():
+        if key == '':
+            continue
         if key not in entities:
             domain.add_entity(entity_name=key, entity_type='shared')
         for w in new_map[key]:
@@ -153,5 +155,5 @@ def S_TR2(domain):
                 b.target = pair[1]
         for key in entity_dict.keys():
             if key == pair[0]:
-                domain.add_relation(source=pair[0], dest=[1], ass_type='generalization')
+                domain.add_relation(source=pair[0], dest=pair[1], ass_type='generalization')
 

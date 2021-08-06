@@ -8,18 +8,6 @@
       ],
       "attributes": [
         {
-          "name": "insulinUsage",
-          "type": "default"
-        },
-        {
-          "name": "cgm",
-          "type": "default"
-        },
-        {
-          "name": "account",
-          "type": "default"
-        },
-        {
           "name": "foodConsumption",
           "type": "default"
         },
@@ -28,74 +16,63 @@
           "type": "default"
         },
         {
+          "name": "cgm",
+          "type": "default"
+        },
+        {
           "name": "information",
+          "type": "default"
+        },
+        {
+          "name": "account",
+          "type": "default"
+        },
+        {
+          "name": "insulinusage",
           "type": "default"
         }
       ]
+    },
+    "Insulin": {
+      "name": "Insulin",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Recommendation": {
+      "name": "Recommendation",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "Insulin",
+      "dest": "Level",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Insulin",
+      "dest": "Recommendation",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
-    {
-      "actor": "User",
-      "action": "map",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "set",
-      "target": "Level",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "want",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "download",
-      "target": "Application",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "want",
-      "target": "InsulinRecommendation",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "use",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Trend",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "use",
-      "target": "App",
-      "para": []
-    },
-    {
-      "actor": "Level",
-      "action": "warn",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "download",
-      "target": "",
-      "para": []
-    },
     {
       "actor": "User",
       "action": "sign_up",
@@ -103,51 +80,27 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "login",
+      "actor": "App",
+      "action": "warn",
       "target": "",
       "para": []
     },
     {
-      "actor": "Information",
+      "actor": "User",
+      "action": "create",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "store",
       "target": "",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "sign",
+      "actor": "Level",
+      "action": "warn",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "connect",
-      "target": "Application",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "set",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "input",
-      "target": "Meal",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "Information",
       "para": []
     },
     {
@@ -163,21 +116,9 @@
       "para": []
     },
     {
-      "actor": "BloodSugar",
-      "action": "get",
-      "target": "",
-      "para": []
-    },
-    {
       "actor": "User",
-      "action": "input",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "",
+      "action": "create",
+      "target": "Information",
       "para": []
     },
     {
@@ -193,27 +134,69 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "create",
-      "target": "App",
+      "actor": "BloodSugar",
+      "action": "get",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "connect",
+      "action": "input",
+      "target": "Meal",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Trend",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "download",
+      "target": "Application",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "visualize",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "set",
+      "target": "Level",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "user",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "Level",
+      "action": "take",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "want",
+      "target": "Recommendation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "download",
       "target": "",
       "para": []
     },
     {
-      "actor": "App",
-      "action": "visualize",
-      "target": "",
+      "actor": "User",
+      "action": "want",
+      "target": "Information",
       "para": []
     }
   ]

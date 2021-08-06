@@ -1,13 +1,13 @@
 Developer can import a Spreadsheet of Item into the InventorySystem .
-admin can add new Item to the System .
-admin can read the ItemLog from the System .
+Admin can add new Item to the System .
+Admin can read the ItemLog from the System .
 Volunteer can check the current Availability and Location of an Item in the System .
 Manager can click a Button to e-mail Darin to re-order a given Item .
 User can request an Account for a specific user type .
 User can update an Item " Status " in the Inventory when User check - out or return an Item .
-User , admin can get an EmailNotification when an Item is Out of Stock .
+AdminUser can get an EmailNotification when an Item is out of Stock .
 User can return an Item User 've checked out .
-User can browse through the STEMInventory .
+User can browse through the StemInventory .
 Admin can change the Status of an Item .
 Admin can reserve an Item .
 User can click on an Item to view its Detail such as Status , Quantity , Location .

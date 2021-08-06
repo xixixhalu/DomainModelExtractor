@@ -34,6 +34,8 @@ class PreProcessor:
 
     def pre_process(self, input_path, output_path):
 
+        CONNECTOR = '!#%'
+        # Connector used for RemoveSlash
         file = open(input_path, 'r')
 
         func_output = open(output_path + ".func.txt", "w")
@@ -55,17 +57,24 @@ class PreProcessor:
                 except:
                     logger.error("removeBracket: Cannot process sentence > " + line)
                     line_no_bracket = line
-                try:
-                    line_no_slash = self.removeSlash(line_no_bracket)
-                except:
-                    logger.error("removeSlash: Cannot process sentence > " + line)
-                    lines_no_slash = line_no_bracket
+                # try:
+                line_no_slash = self.removeSlash(line_no_bracket,CONNECTOR=CONNECTOR)
+                print(line_no_slash)
+                for i in line_no_slash:
+                    combine_nouns_line = self.combine_nouns(i, meta, noun_map)
+                    replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)                        
+                    func_output.write(replace_role_line + "\n")
+                    self.count_func += 1   
+                        # After processing using "RemoveSlash", line_no_slash will become a list.
+                        # Loop in the list so that every function will be wriiten into the file.
 
-                combine_nouns_line = self.combine_nouns(line_no_slash, meta, noun_map)
-                replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)
-            
-                func_output.write(replace_role_line + "\n")
-                self.count_func += 1
+                # except:
+                #     logger.error("removeSlash: Cannot process sentence > " + line)
+                    
+                #     combine_nouns_line = self.combine_nouns(line_no_bracket, meta, noun_map)
+                #     replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)
+                #     func_output.write(replace_role_line + "\n")
+                #     self.count_func += 1
             else:
                 nonfunc_output.write(replace_role_line + "\n")
                 self.count_nonfunc += 1
@@ -463,16 +472,65 @@ class PreProcessor:
             elif token == "-RRB-":
                 tokens[i] = ")"
 
-    def removeSlash(self, line) :
-        if '/' not in line :
-            return line
-        pattern1 = '(\w)\s*' + re.escape('/')
-        pattern2 = re.escape('/') + '\s*(\S)'
-        if re.search(pattern1, line): 
-            line = re.sub(pattern1, rf'\1 ,', line)
-        if re.search(pattern2, line): 
-            line = re.sub(pattern2, rf', \1', line)
-        return line
+
+    def detectSlash(self, sentences):
+        # sentences is a list with only one sentence inside !!!!!
+        temp = set()
+        for i in sentences:
+            print(i)
+            if '/' in i:
+                print(re.search('(([a-zA-Z!#%]+)/[a-zA-Z!#%]+)',i))
+                match = re.search('(([a-zA-Z!#%]+)/[a-zA-Z!#%]+)',i).group(0)
+                print(match)
+                spl = match.split('/')
+                temp.add(i.replace(match,spl[0]))
+                temp.add(i.replace(match,spl[1]))
+            else:
+                return sentences
+        return self.detectSlash(temp)
+
+
+
+    def removeSlash(self, line, CONNECTOR) :
+        # if '/' not in line :
+        #     return line
+        # pattern1 = '(\w)\s*' + re.escape('/')
+        # pattern2 = re.escape('/') + '\s*(\S)'
+        # if re.search(pattern1, line): 
+        #     line = re.sub(pattern1, rf'\1 ,', line)
+        # if re.search(pattern2, line): 
+        #     line = re.sub(pattern2, rf', \1', line)
+        # return line
+        sen = line
+        output = analyze(line)
+        info = output['sentences'][0]['enhancedDependencies']
+        print(info)
+        for i in info:
+            dependency = i['dep']
+
+            if 'compound' in dependency or dependency == 'amod':
+                origin = i['governorGloss'] + ' ' + i['dependentGloss']
+
+                replace = i['governorGloss'] + CONNECTOR + i['dependentGloss']
+                print(sen)
+                sen = sen.replace(origin,replace)
+                print(sen)
+
+        while True:
+            if ' / ' in sen:
+                sen = sen.replace(' / ','/')
+            elif ' /' in sen:
+                sen = sen.replace(' /','/')
+            elif '/ ' in sen:
+                sen = sen.replace('/ ','/')
+            else:
+                break
+
+        temp = self.detectSlash([sen])
+        output = []
+        for j in temp:
+            output.append(j.replace('!#%',' '))
+        return output
 
     def removeBracket(self, line) :
         index1 = sorted([i for i, ltr in enumerate(line) if ltr == '(' ])

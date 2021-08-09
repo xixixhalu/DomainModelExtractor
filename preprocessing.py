@@ -59,14 +59,14 @@ class PreProcessor:
                     line_no_bracket = line
                 # try:
                 line_no_slash = self.removeSlash(line_no_bracket,CONNECTOR=CONNECTOR)
-                print(line_no_slash)
+                # After processing using "RemoveSlash", line_no_slash will become a list.
                 for i in line_no_slash:
+
                     combine_nouns_line = self.combine_nouns(i, meta, noun_map)
                     replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)                        
                     func_output.write(replace_role_line + "\n")
                     self.count_func += 1   
-                        # After processing using "RemoveSlash", line_no_slash will become a list.
-                        # Loop in the list so that every function will be wriiten into the file.
+                    # Loop in the list so that every function will be wriiten into the file.
 
                 # except:
                 #     logger.error("removeSlash: Cannot process sentence > " + line)
@@ -476,19 +476,20 @@ class PreProcessor:
     def detectSlash(self, sentences):
         # sentences is a list with only one sentence inside !!!!!
         temp = set()
-        for i in sentences:
-            print(i)
+
+        for i in sentences:         
             if '/' in i:
-                print(re.search('(([a-zA-Z!#%]+)/[a-zA-Z!#%]+)',i))
                 match = re.search('(([a-zA-Z!#%]+)/[a-zA-Z!#%]+)',i).group(0)
-                print(match)
+                # Use regular expression to find the format consecutive_string/consecutive_string
                 spl = match.split('/')
+                # Get the consecutive stirng before and after '/'
                 temp.add(i.replace(match,spl[0]))
                 temp.add(i.replace(match,spl[1]))
+                # Add these two stirngs into a set to avoid duplicate.
             else:
                 return sentences
         return self.detectSlash(temp)
-
+        # Do the recursion to repeat the steps above so that the sentences with '/' will be devided into multiple sentences w/o '/'
 
 
     def removeSlash(self, line, CONNECTOR) :
@@ -502,21 +503,22 @@ class PreProcessor:
         #     line = re.sub(pattern2, rf', \1', line)
         # return line
         sen = line
+        # We will make many changes to 'line'. So we copy this value and modify on the copied element. 
         output = analyze(line)
+        # Use corenlp to get the type dependency
         info = output['sentences'][0]['enhancedDependencies']
-        print(info)
+        # find the enhanced dependencies.
         for i in info:
             dependency = i['dep']
-
+            # Check if the dependency contains compound or advmod
             if 'compound' in dependency or dependency == 'amod':
                 origin = i['governorGloss'] + ' ' + i['dependentGloss']
-
                 replace = i['governorGloss'] + CONNECTOR + i['dependentGloss']
-                print(sen)
+                # If yes, add the connector to the related words. For example, wake up will become 'wake' + CONNECTOR + 'up' 
                 sen = sen.replace(origin,replace)
-                print(sen)
 
         while True:
+            # This is to make a good format of slash. This will delete the empty space left and right to '/'.
             if ' / ' in sen:
                 sen = sen.replace(' / ','/')
             elif ' /' in sen:
@@ -525,11 +527,19 @@ class PreProcessor:
                 sen = sen.replace('/ ','/')
             else:
                 break
+        if 'and/or' in sen:
+            sen = sen.replace(' and/or ','/')
+        # Change the sentence with 'and/or' to '/' 
+        if '+/-' in sen:
+            sen = sen.replace(' +/- ','±')
+            # process with the special case.
 
         temp = self.detectSlash([sen])
+        # Use the detectSlash function to divide the sentence
         output = []
         for j in temp:
-            output.append(j.replace('!#%',' '))
+            output.append(j.replace(CONNECTOR,' '))
+            # Remove the connector.
         return output
 
     def removeBracket(self, line) :

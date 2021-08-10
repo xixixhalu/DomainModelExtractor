@@ -1,205 +1,189 @@
 @startuml
 hide circle
 class User<actor> {
-	picture
-	login
-	profile
-	phone
-	facebookAccount
-	history
-	event
-	geo
 	username
 	gallery
-	hashtag
+	event
+	profile
+	login
+	history
+	phone
+	facebookAccount
+	location
+	picture
+}
+class Admin<actor> {
+	page
+	password
 }
 class Event {
-	name
 	hashtag
+	name
 	start()
-	see()
 	invite()
 }
-class Admin {
-	password
-	page
-	update()
-	login()
-	browse()
-	suspend()
-	have()
-	restore()
-	generate()
-	change()
-	manage()
-	create()
-	delete()
-	list()
-	perform()
+class Attendee {
+	user()
+	post()
 }
 class User {
-	take()
+	introduce()
 	view()
-	sort()
-	choose()
-	have()
-	ensure()
 	post()
-	participate()
-	remove()
-	invite()
-	save()
-	like()
-	upload()
-	keep()
-	moderate()
-	login()
-	write()
-	want()
-	shut()
-	delete()
-	reserve()
-	shut_down()
-	report()
 	create()
-	use()
-}
-class Hashtag {
-	post()
+	write()
+	keep()
+	have()
+	delete()
+	set_up()
+	reserve()
+	ensure()
+	user()
+	upload()
 	save()
+	remove()
+	moderate()
+	report()
+	choose()
+	take()
+	shut_down()
+	login()
+	like()
+	picture()
 	see()
-	expire()
-}
-class Radius {
 }
 class Picture {
-	give()
-	be()
-	introduce()
-}
-class Distance {
 }
 class Tourist {
+	user()
 	search()
 	see()
 }
-class BrowsingPicture {
+class Location {
 }
-class Popularity {
+class Admin {
+	perform()
+	delete()
+	manage()
+	browse()
+	update()
+	reserve()
+	suspend()
+	generate()
+	restore()
+	create()
+	have()
+	list()
+	change()
 }
-class Caption {
-}
-class People {
-	miss()
-	see()
-	access()
-}
-class Page {
-}
-class Application {
-}
-class Gallery {
-}
-class Contents {
+class Adminfeature {
 }
 class Control {
 }
-class SystemSetting {
-}
-class EventHashtag {
+class People {
+	miss()
 }
 class Photo {
 }
-class App {
+class History {
 }
-class Password {
+class Information {
+}
+class Time {
+	be()
+	search()
 }
 class Login {
 }
-class EventAttendee {
-	use()
-}
-class PicShareApp {
-}
-class Date {
-}
-class Location {
+class Name {
 }
 class Report {
 }
-class Feature {
+class Hashtag {
+	expire()
 }
-class Profile {
+class App {
+}
+class Application {
+	user()
+}
+class FacebookAccount {
+}
+class SystemSetting {
+}
+class Radius {
+}
+class Caption {
+}
+class Contents {
 }
 class Username {
 }
-User o-- Picture : moderate
-User --> App : take
-Admin --> User : browse
-Admin --> Admin : list
-Admin --> Picture : restore
-Admin --> Admin : restore
-Admin --> Event : delete
-People --> Password : see
-Admin --> Picture : list
-Admin --> Picture : delete
-User --> BrowsingPicture : choose
-User o-- Hashtag : use
-User o-- Picture : use
-User o-- Event : keep
-User o-- Login : create
-User o-- Gallery : choose
-User --> Radius : choose
-User o-- Event : shut
-Admin --> Control : have
-User o-- Profile : use
-User o-- Picture : report
-Admin --> User : suspend
-Admin --> Contents : manage
-Admin o-- Password : login
-User o-- Picture : post
-User o-- Event : shut_down
-User --> Popularity : sort
-User o-- User : moderate
+class Expirationdate {
+}
+class Password {
+}
+class Profile {
+}
 User --> Control : have
-User o-- Picture : delete
-User o-- Event : remove
-User --> Caption : write
-User --> PicShareApp : take
 Admin --> SystemSetting : change
-EventAttendee --> Hashtag : use
-User o-- Picture : like
-Admin --> Admin : browse
-User o-- Picture : choose
-Picture --> Control : give
-User o-- Picture : sort
-User o-- User : delete
-User --> Date : sort
-Admin --> EventHashtag : create
-User --> Location : post
-User o-- Event : create
-User o-- Hashtag : reserve
-User o-- Event : moderate
+User o-- Picture : report
 User --> Photo : take
+Admin --> User : browse
+User --> Hashtag : reserve
 Admin --> Username : supported_by
-User o-- Hashtag : save
-Tourist --> Location : search
+User o-- Picture : choose
 User o-- Picture : upload
-Admin --> User : manage
-Admin --> Event : update
-User --> Application : login
-Admin --> Report : generate
-User --> Distance : sort
-User --> Photo : keep
-Admin --> Username : login
-Admin --> Password : supported_by
-User o-- Event : save
-User o-- Picture : take
-User --> Application : use
+User o-- Event : shut_down
+User o-- Picture : post
+User o-- Event : create
+User --> Radius : choose
+Admin --> Expirationdate : change
 Admin --> Picture : supported_by
-Admin o-- Page : login
+Admin --> User : suspend
+Admin --> Picture : restore
+Admin --> Report : generate
+Event o-- Hashtag
+User o-- User : ensure
+Admin --> Control : have
+User o-- Event : picture
+Admin --> Password : supported_by
+People --> Event : miss
 User o-- Picture : save
-Admin --> Feature : perform
+User o-- Location : introduce
+User --> Photo : keep
+User o-- Picture : take
 User --> Profile : supported_by
+User --> Caption : write
+User o-- Picture : delete
+User o-- History : see
+Admin --> Event : update
+Event --> People : invite
+User o-- Event : moderate
+Event o-- Attendee
+Admin --> Hashtag : create
+Attendee --> Hashtag : user
+Admin --> Information : have
+User o-- Picture : moderate
+User o-- Picture : like
+User --> Hashtag : user
+Tourist --> App : user
+User --> Hashtag : save
+Attendee --> Picture : post
+Admin --> Picture : delete
+Admin --> Event : delete
+Admin --> User : manage
+Application --> Username : user
+Tourist --> Location : search
+User o-- Event : set_up
+User o-- Login : create
+Admin --> Picture : list
+User o-- Location : picture
+Admin --> Contents : manage
+Application --> FacebookAccount : user
+User --> Application : user
+User o-- Event : remove
+Admin --> Adminfeature : perform
+Admin --> Name : change
 
 @enduml

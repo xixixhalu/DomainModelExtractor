@@ -8,27 +8,7 @@
       ],
       "attributes": [
         {
-          "name": "username",
-          "type": "default"
-        },
-        {
-          "name": "coffee",
-          "type": "default"
-        },
-        {
-          "name": "recipe",
-          "type": "default"
-        },
-        {
           "name": "coffeeApp",
-          "type": "default"
-        },
-        {
-          "name": "orderhistory",
-          "type": "default"
-        },
-        {
-          "name": "recipeList",
           "type": "default"
         },
         {
@@ -36,10 +16,41 @@
           "type": "default"
         },
         {
+          "name": "orderHistory",
+          "type": "default"
+        },
+        {
+          "name": "recipelist",
+          "type": "default"
+        },
+        {
+          "name": "coffeeSelection",
+          "type": "default"
+        },
+        {
+          "name": "coffee",
+          "type": "default"
+        },
+        {
+          "name": "username",
+          "type": "default"
+        },
+        {
+          "name": "recipe",
+          "type": "default"
+        },
+        {
           "name": "coffeeRecipe",
           "type": "default"
         }
       ]
+    },
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
     },
     "Supplier": {
       "name": "Supplier",
@@ -54,13 +65,67 @@
         "actor"
       ],
       "attributes": []
+    },
+    "History": {
+      "name": "History",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "Order",
+      "dest": "History",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Coffee",
+      "dest": "Recipe",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
     {
+      "actor": "Supplier",
+      "action": "receive",
+      "target": "Update",
+      "para": []
+    },
+    {
       "actor": "User",
-      "action": "earn",
+      "action": "hold",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Recipe",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "produce",
+      "target": "Recipe",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "update",
       "target": "",
       "para": []
     },
@@ -72,169 +137,13 @@
     },
     {
       "actor": "User",
-      "action": "exist",
-      "target": "Mediaaccount",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "customize",
-      "target": "Baserecipe",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "check",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "track",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "delete",
-      "target": "Recipe",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "exist",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "replace",
-      "target": "Order",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "identify",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "save",
-      "target": "Phone",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "send",
       "target": "Order",
       "para": []
     },
     {
       "actor": "User",
-      "action": "view",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "canuse",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "customize",
-      "target": "Color",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "Recipe",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "log",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "customise",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "save",
-      "target": "Recipe",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "like",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "hold",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "want",
-      "target": "Recipe",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "replace",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "change",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Apple",
-      "action": "pay",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "save",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "choose",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Apple",
-      "action": "paypal",
       "target": "",
       "para": []
     },
@@ -245,111 +154,15 @@
       "para": []
     },
     {
-      "actor": "Maintainer",
-      "action": "track",
-      "target": "Kiosk",
+      "actor": "User",
+      "action": "replace",
+      "target": "Order",
       "para": []
     },
     {
       "actor": "User",
-      "action": "log_in",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Apple",
-      "action": "purchase",
+      "action": "customise",
       "target": "Coffee",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "have",
-      "target": "Portal",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "produce",
-      "target": "CoffeeRecipe",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Orderhistory",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "browse",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "delete",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "earn",
-      "target": "Reward",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "DefaultPaymentMethod",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "customize",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "send",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Cup",
-      "action": "purchase",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Recipe",
-      "action": "contain",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "log",
-      "target": "App",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "vend",
-      "target": "",
       "para": []
     },
     {
@@ -360,14 +173,164 @@
     },
     {
       "actor": "User",
+      "action": "customize",
+      "target": "Color",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "log_in",
+      "target": "MediaAccount",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "log_in",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ApplePay",
+      "action": "purchase",
+      "target": "Coffee",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "track",
+      "target": "Kiosk",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "vend",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "browse",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "exist",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Paypal",
+      "action": "purchase",
+      "target": "Coffee",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "Cup",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "save",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "earn",
+      "target": "Reward",
       "para": []
     },
     {
       "actor": "Recipe",
       "action": "contain",
       "target": "Allergen",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "want",
+      "target": "Recipe",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "identify",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "History",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "track",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Recipe",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "have",
+      "target": "Portal",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "save",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "save",
+      "target": "Phone",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "DefaultPaymentMethod",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "Recipe",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "check",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "like",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "customize",
+      "target": "Theme",
       "para": []
     },
     {
@@ -379,55 +342,7 @@
     {
       "actor": "User",
       "action": "customize",
-      "target": "Theme",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "send",
-      "target": "Someone",
-      "para": []
-    },
-    {
-      "actor": "Supplier",
-      "action": "receive",
-      "target": "Update",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "produce",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "want",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "update",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "customise",
-      "target": "Coffee",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "browse",
-      "target": "List",
-      "para": []
-    },
-    {
-      "actor": "Apple",
-      "action": "purchase",
-      "target": "",
+      "target": "Baserecipe",
       "para": []
     }
   ]

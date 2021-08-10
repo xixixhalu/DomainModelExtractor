@@ -21,40 +21,29 @@
         "actor"
       ],
       "attributes": []
+    },
+    "Form": {
+      "name": "Form",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "Feedback",
+      "dest": "Form",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
-    {
-      "actor": "User",
-      "action": "comment",
-      "target": "BlogPost",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "trend",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "search",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "edit",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "save",
-      "target": "Draft",
-      "para": []
-    },
     {
       "actor": "Admin",
       "action": "save",
@@ -62,87 +51,45 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "view",
-      "target": "Category",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "comment",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "log",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Scriptwriter",
-      "action": "get",
-      "target": "",
+      "actor": "Admin",
+      "action": "delete",
+      "target": "Usercomment",
       "para": []
     },
     {
       "actor": "User",
       "action": "like",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "Mediaplatform",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "trend",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Author",
-      "para": []
-    },
-    {
-      "actor": "Scriptwriter",
-      "action": "interact",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Blogpost",
+      "target": "BlogPost",
       "para": []
     },
     {
       "actor": "User",
       "action": "search",
-      "target": "BlogPost",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "MediaPlatform",
+      "para": []
+    },
+    {
+      "actor": "Producer",
+      "action": "user",
+      "target": "Form",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "log_in",
+      "target": "",
       "para": []
     },
     {
       "actor": "Admin",
-      "action": "edit",
-      "target": "Post",
+      "action": "add",
+      "target": "",
       "para": []
     },
     {
@@ -154,31 +101,43 @@
     {
       "actor": "User",
       "action": "view",
-      "target": "BlogPost",
+      "target": "Post",
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "delete",
+      "actor": "Scriptwriter",
+      "action": "get",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "trend",
       "target": "",
       "para": []
     },
     {
       "actor": "Admin",
-      "action": "save",
+      "action": "edit",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "delete",
-      "target": "UserComment",
       "para": []
     },
     {
       "actor": "User",
       "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "trend",
       "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Scriptwriter",
+      "action": "interact",
+      "target": "",
       "para": []
     },
     {
@@ -189,14 +148,14 @@
     },
     {
       "actor": "User",
-      "action": "like",
+      "action": "view",
       "target": "BlogPost",
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "add",
-      "target": "",
+      "actor": "User",
+      "action": "comment",
+      "target": "BlogPost",
       "para": []
     }
   ]

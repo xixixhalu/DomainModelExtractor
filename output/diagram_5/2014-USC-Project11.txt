@@ -2,176 +2,144 @@
 hide circle
 class User<actor> {
 	registration
-	course
+	courseAttendee
 }
 class CourseAttendee<actor> {
 }
 class Trainer<actor> {
-	profile
 	calendar
 	price
+	profile
 }
 class Enterprise<actor> {
 }
 class Administrator<actor> {
 }
+class Admin<actor> {
+}
 class Team<actor> {
 }
 class Developer<actor> {
 }
+class RegistrationInformation {
+}
 class Trainer {
-	attach()
 	offer()
 	set()
-	continue()
-	see()
-	compare()
 	put()
-}
-class No {
-}
-class User {
-	request()
-	share()
 	see()
-	filter()
-	search()
-	setup()
-	register()
-}
-class Course {
-	start()
-	offer()
-}
-class CourseAttendee {
-	rate()
-	receive()
-	see()
-	pay()
-	review()
 	compare()
-	decide()
-}
-class Administrator {
-	receive()
-	see()
-	inquirycourse()
-	verify()
-	delete()
-	adjust()
-	create()
-	update()
-}
-class Request {
-}
-class Enterprise {
-	compare()
-	get()
-}
-class Admin {
-	do()
+	maximize()
 	attach()
-	move()
-	meet()
-	see()
-	cancel()
-	adjust()
-	schedule()
+	continue()
+}
+class Review {
 }
 class Developer {
 	analyze()
 	understand()
 }
-class Requirement {
+class Feasibility {
 }
-class Change {
+class Duty {
+}
+class User {
+	filter()
+	setup()
+	see()
+	share()
+	search()
+	register()
+	request()
+}
+class CourseAttendee {
+	decide()
+	offer()
+	rate()
+	see()
+	receive()
+	compare()
+	attend()
+	verify()
+	review()
+	start()
+	pay()
+}
+class Administrator {
+	delete()
+	have()
+	meet()
+	create()
+	receive()
+	cancel()
+	see()
+	move()
+	attach()
+	adjust()
+}
+class Price {
 }
 class Rating {
 }
-class Feasibility {
-}
-class Architecture {
-}
-class Price {
-	see()
-}
-class Class {
-}
-class Calendar {
-}
-class Twitter {
-}
-class Review {
-}
-class CourseInformation {
-}
-class EventBrite {
-}
-class Email {
-}
-class Schedule {
-}
-class LinkedIn {
-}
-class ConfirmationEmail {
-}
-class Variety {
-}
 class People {
 }
-class Location {
+class Minimum {
+}
+class Enterprise {
+	see()
+	compare()
+	get()
 }
 class Value {
 }
-class FaceBook {
+class Account {
 }
 class Number {
 }
-class AccountRegistrationInformation {
+class Schedule {
 }
-class Account {
+class Dashboard {
 }
-CourseAttendee --> Course : pay
-Enterprise --> Price : compare
-CourseAttendee --> ConfirmationEmail : receive
-Administrator --> AccountRegistrationInformation : receive
-Administrator --> Request : receive
-Admin --> Course : cancel
-Trainer --> Rating : see
-User --> Variety : see
-Admin --> Course : schedule
-Trainer o-- Calendar : put
-CourseAttendee --> CourseAttendee : rate
-User --> Account : setup
-User o-- Course : register
-User --> Rating : filter
-User --> Twitter : share
-Trainer o-- Price : compare
-Developer --> Requirement : analyze
-Admin --> People : move
-Trainer --> Review : see
-CourseAttendee --> Price : compare
-User o-- Course : search
-Administrator --> Change : receive
-User --> Review : filter
-Administrator --> CourseInformation : update
-Administrator --> Rating : adjust
-Trainer --> Location : offer
-CourseAttendee --> EventBrite : pay
-Enterprise --> Value : get
+class Requirement {
+}
+class Location {
+}
+class Calendar {
+}
+class Request {
+}
+class ConfirmationEmail {
+}
+class Architecture {
+}
 Developer --> Feasibility : understand
-Admin --> Number : adjust
-User --> Email : share
-Trainer --> No : set
-Administrator --> Trainer : receive
-User --> FaceBook : share
-CourseAttendee --> Schedule : see
-Developer --> Architecture : understand
-User o-- Course : share
+CourseAttendee --> ConfirmationEmail : receive
+Account o-- RegistrationInformation
+Trainer --> Duty : attach
 User --> Number : see
-User o-- Course : request
-Trainer --> Course : offer
-User --> LinkedIn : share
-Admin --> Class : move
+Developer --> Architecture : understand
+Administrator --> Number : adjust
+User o-- CourseAttendee : request
+CourseAttendee --> Schedule : see
+User o-- CourseAttendee : share
+Administrator --> RegistrationInformation : receive
+Administrator --> Dashboard : have
+CourseAttendee --> Price : compare
+Trainer --> CourseAttendee : offer
+Administrator --> Rating : adjust
+Trainer --> Rating : see
+Administrator --> CourseAttendee : cancel
+Developer --> Requirement : analyze
+Enterprise --> Price : compare
+Administrator --> People : move
+Trainer --> Location : offer
+Trainer --> Minimum : set
+Trainer o-- Calendar : put
+Trainer o-- Price : compare
+Trainer --> Review : see
+Administrator --> Minimum : meet
+Enterprise --> Value : get
+Administrator --> Request : receive
+User --> Account : setup
 
 @enduml

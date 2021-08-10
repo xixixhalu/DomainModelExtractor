@@ -20,7 +20,7 @@
       ],
       "attributes": [
         {
-          "name": "behalf",
+          "name": "doctor",
           "type": "default"
         }
       ]
@@ -36,15 +36,27 @@
           "type": "default"
         },
         {
+          "name": "patient",
+          "type": "default"
+        },
+        {
           "name": "behalf",
           "type": "default"
         },
         {
           "name": "data",
           "type": "default"
-        },
+        }
+      ]
+    },
+    "Admin": {
+      "name": "Admin",
+      "type": [
+        "actor"
+      ],
+      "attributes": [
         {
-          "name": "patient",
+          "name": "profession",
           "type": "default"
         }
       ]
@@ -63,25 +75,49 @@
       ],
       "attributes": []
     },
-    "Admin": {
-      "name": "Admin",
+    "Record": {
+      "name": "Record",
       "type": [
-        "entity"
+        "shared"
       ],
-      "attributes": [
-        {
-          "name": "profession",
-          "type": "default"
-        }
-      ]
+      "attributes": []
+    },
+    "Info": {
+      "name": "Info",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
   "relation_list": [
+    {
+      "source": "Product",
+      "dest": "Info",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
     {
       "source": "User",
       "dest": "CsvFile",
       "type": "association",
       "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Patient",
+      "dest": "Record",
+      "type": "aggregation",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -102,15 +138,9 @@
   ],
   "behavior_list": [
     {
-      "actor": "Doctor",
-      "action": "edit",
-      "target": "Progress",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "edit",
-      "target": "",
+      "actor": "User",
+      "action": "manage",
+      "target": "Behalf",
       "para": []
     },
     {
@@ -120,63 +150,75 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "assign",
-      "target": "Doctor",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "choose",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "attach",
-      "target": "PatientRecord",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "upload",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "OrderForm",
-      "action": "purchase",
-      "target": "",
+      "actor": "CSVFile",
+      "action": "say",
+      "target": "Product",
       "para": []
     },
     {
       "actor": "User",
       "action": "create",
+      "target": "Invoice",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "protect",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Record",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "fill_out",
       "target": "",
       "para": []
     },
     {
-      "actor": "CSVFile",
-      "action": "have",
+      "actor": "Office",
+      "action": "manage",
+      "target": "Behalf",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "want",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "match",
+      "target": "Patient",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "access",
       "target": "Information",
       "para": []
     },
     {
       "actor": "Doctor",
-      "action": "fill",
-      "target": "",
+      "action": "recommend",
+      "target": "File",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "save",
+      "target": "Patientdocument",
       "para": []
     },
     {
       "actor": "User",
-      "action": "trust",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "recommend",
-      "target": "Product",
+      "action": "have",
+      "target": "Task",
       "para": []
     },
     {
@@ -186,51 +228,15 @@
       "para": []
     },
     {
-      "actor": "Administrator",
-      "action": "save",
-      "target": "Document",
-      "para": []
-    },
-    {
       "actor": "Doctor",
-      "action": "view",
-      "target": "Report",
-      "para": []
-    },
-    {
-      "actor": "Information",
-      "action": "train",
+      "action": "integrate",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "Product",
       "para": []
     },
     {
       "actor": "User",
       "action": "download",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "recommend",
-      "target": "Patient",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "choose",
-      "target": "Product",
+      "target": "Form",
       "para": []
     },
     {
@@ -242,217 +248,73 @@
     {
       "actor": "User",
       "action": "add",
-      "target": "Form",
-      "para": []
-    },
-    {
-      "actor": "Information",
-      "action": "use",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "integrate",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "match",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "import",
-      "target": "CsvFile",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "import",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "want",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "manage",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "access",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "upload",
-      "target": "CSVFile",
-      "para": []
-    },
-    {
-      "actor": "CSVFile",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "delete",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "assign",
-      "target": "Task",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "generate",
-      "target": "Task",
+      "target": "Product",
       "para": []
     },
     {
       "actor": "Doctor",
       "action": "choose",
-      "target": "Set",
+      "target": "Patient",
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "customize",
-      "target": "",
+      "actor": "Office",
+      "action": "manage",
+      "target": "Inventory",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "protect",
+      "actor": "OrderForm",
+      "action": "purchase",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "track",
-      "target": "",
+      "target": "Customer",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "manage",
-      "target": "Data",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "Patientrecord",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "generate",
-      "target": "Level",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "assign",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "need",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "export",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "download",
-      "target": "Form",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "generate",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "Allergy",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "download",
-      "target": "Set",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "Medication",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "Patient",
-      "para": []
-    },
-    {
-      "actor": "Product",
-      "action": "recommend",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Trialend",
+      "actor": "Trial",
       "action": "end",
       "target": "",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "delete",
-      "target": "Form",
-      "para": []
-    },
-    {
       "actor": "Doctor",
-      "action": "choose",
-      "target": "Patient",
+      "action": "recommend",
+      "target": "Product",
       "para": []
     },
     {
       "actor": "Doctor",
       "action": "fill_out",
-      "target": "",
+      "target": "OrderForm",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "choose",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "edit",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "export",
+      "target": "Info",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "generate",
+      "target": "Task",
       "para": []
     },
     {
@@ -462,123 +324,9 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "edit",
-      "target": "VisitDetail",
-      "para": []
-    },
-    {
-      "actor": "Application",
-      "action": "handle",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "delete",
-      "target": "Set",
-      "para": []
-    },
-    {
       "actor": "Patient",
       "action": "recommend",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "access",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "export",
-      "target": "ProductInfo",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "customize",
-      "target": "Portal",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "fill",
-      "target": "OrderForm",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "recommend",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "match",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "view",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "attach",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "want",
-      "target": "App",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "manage",
-      "target": "Behalf",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "export",
-      "target": "CSVFile",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "protect",
-      "target": "App",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "Invoice",
-      "para": []
-    },
-    {
-      "actor": "Set",
-      "action": "recommend",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Doctor",
-      "action": "fill_out",
-      "target": "OrderForm",
       "para": []
     },
     {
@@ -588,33 +336,117 @@
       "para": []
     },
     {
-      "actor": "Application",
-      "action": "handle",
-      "target": "Information",
-      "para": []
-    },
-    {
       "actor": "User",
       "action": "have",
-      "target": "Task",
+      "target": "",
       "para": []
     },
     {
       "actor": "Doctor",
-      "action": "match",
-      "target": "Patient",
+      "action": "view",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "edit",
+      "action": "manage",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "Allergy",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "customize",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "assign",
+      "target": "Task",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "trust",
+      "target": "Application",
+      "para": []
+    },
+    {
+      "actor": "CSVFile",
+      "action": "have",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "protect",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Doctor",
+      "action": "view",
+      "target": "Report",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Office",
+      "action": "manage",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "Information",
+      "action": "user",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "Form",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "Form",
       "para": []
     },
     {
       "actor": "User",
       "action": "attach",
       "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "Medication",
       "para": []
     }
   ]

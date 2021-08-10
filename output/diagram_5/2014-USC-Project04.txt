@@ -1,150 +1,132 @@
 @startuml
 hide circle
 class Consumer<actor> {
-	orderhistory
 	order
 	experience
-	option
-	need
+	occasion
+	orderHistory
 }
 class Florist<actor> {
+	pastTransaction
 	service
-	orderhistory
-	transaction
+	orderHistory
 }
 class Customer<actor> {
 }
-class Consumer {
-	chat()
-	have()
-	want()
-	share()
-	view()
-	schedule()
-	cancel()
-	talk()
-	make()
-	receive()
-	search()
-	get()
-	place()
-	review()
-	track()
-	check()
-	buy()
-	rank()
+class History {
+}
+class Status {
 }
 class Florist {
-	market()
-	have()
-	cancel()
-	create()
-	receive()
-	use()
-	track()
 	provide()
-	upload()
-}
-class MarketAnalyticTool {
-}
-class Ranking {
-}
-class Market {
-}
-class ProductStatus {
 	confirm()
-}
-class RefundConsumer {
-}
-class Payment {
-}
-class Customer {
+	cancel()
+	track()
 	create()
+	upload()
 	receive()
-}
-class Recommendation {
-}
-class Convenience {
-}
-class Order {
-}
-class Record {
-}
-class FlowerSeeker {
-}
-class Profile {
-}
-class Orderhistory {
-}
-class Experience {
-}
-class Appointment {
+	market()
+	use()
+	have()
 }
 class Catalog {
 }
-class Need {
-}
-class Shoppingexperience {
-}
-class Delivery {
-}
-class Service {
-}
-class Product {
-}
-class Pickup {
-}
-class Option {
-}
-class Purchasingdecision {
+class Consumer {
+	check()
+	schedule()
+	get()
+	buy()
+	view()
+	rank()
+	cancel()
+	place()
+	review()
+	track()
+	search()
+	want()
+	deliver()
+	receive()
+	talk()
+	make()
+	have()
 }
 class Review {
 }
-class Information {
+class Record {
+}
+class Order {
+}
+class Customer {
+	receive()
+	create()
+}
+class Profile {
+}
+class Appointment {
+}
+class Decision {
+}
+class Refundconsumer {
+}
+class Ranking {
+}
+class MarketAnalyticTool {
 }
 class Event {
 }
-Florist --> RefundConsumer : cancel
-Consumer --> Product : search
-Consumer o-- Order : cancel
-Florist --> Payment : receive
-Consumer --> Pickup : place
-Customer --> Profile : create
-Consumer --> Florist : schedule
-Consumer --> Florist : place
-Consumer --> Consumer : view
-Consumer o-- Option : search
-Consumer --> Appointment : schedule
-Florist --> MarketAnalyticTool : use
-Florist --> Record : have
-Consumer --> Purchasingdecision : make
-Florist --> Catalog : upload
-Consumer o-- Order : track
-Customer --> Recommendation : receive
+class Shoppingexperience {
+}
+class Information {
+}
+class Service {
+}
+class Option {
+}
+class FlowerSeeker {
+}
+class Convenience {
+}
+class Payment {
+}
+class Recommendation {
+}
+class Product {
+}
+class Experience {
+}
 Consumer --> Product : rank
-Consumer o-- Order : place
-Florist --> Florist : upload
-Consumer --> Convenience : have
-Consumer --> Review : view
-Florist o-- Orderhistory : track
-Florist o-- Service : market
-Florist --> FlowerSeeker : create
-Consumer --> Florist : chat
-Florist o-- Order : cancel
-Consumer --> Information : receive
-Consumer o-- Need : search
 Consumer --> Record : have
-Consumer o-- Experience : share
-Consumer --> Event : talk
-Consumer --> Shoppingexperience : have
-Consumer --> Experience : supported_by
-Consumer --> Ranking : view
 Consumer --> Florist : supported_by
-Customer --> FlowerSeeker : create
-Florist --> Market : use
-Consumer --> Delivery : place
+Florist --> Record : have
+Product o-- Status
+Consumer o-- Order : place
+Customer --> Profile : create
+Florist --> History : track
+Consumer o-- Order : track
+Florist o-- Order : cancel
+Order o-- History
+Florist o-- Order : confirm
+Florist o-- Service : market
+Consumer --> Appointment : schedule
+Florist --> Catalog : upload
+Consumer --> Option : have
+Consumer --> Decision : make
+Florist --> FlowerSeeker : create
+Florist --> Refundconsumer : cancel
 Florist --> Profile : create
-Consumer o-- Orderhistory : check
-Florist --> ProductStatus : provide
+Consumer --> History : check
+Consumer --> Review : view
+Consumer --> Ranking : view
+Consumer --> Convenience : have
+Customer --> FlowerSeeker : create
+Consumer --> Experience : supported_by
+Florist --> MarketAnalyticTool : use
+Florist --> Status : provide
+Florist --> Payment : receive
+Consumer --> Event : talk
+Customer --> Recommendation : receive
+Consumer o-- Order : cancel
+Consumer --> Shoppingexperience : have
+Consumer --> Information : receive
 
 @enduml

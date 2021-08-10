@@ -92,31 +92,30 @@ class Transformation:
                 continue
             try:
                 line = rule_obj.loc[tr]
+                ssr_name = line.loc['Sentence Structure'].strip()
+                action = line.loc['Action'].strip()
+                transformation_rule = line.loc['Transformation'].strip()
+
+                # Iterate sentences matched to SSR
+                for s in data[ssr_name]:
+                    s_index = s['Index']
+                    s_result = s['Result']
+                    # Iterate matched variables
+                    variables = {}
+                    for var, idx in s_result.items():
+                        word = s_index[str(idx)]
+                        r = re.compile("^" + re.sub(r'\W+', '', word) + "$", re.IGNORECASE)
+                        rst_list = list(filter(r.match, list(self.domain.entity_asdict().keys())))
+                        if rst_list:
+                            variables[var] = rst_list[0]
+                        else:
+                            variables[var] = s_index[str(idx)]
+                    self.transform(action, variables, transformation_rule)
             except:
-                print("Error! Check the log")
-                logger.error(tr + ' not found! Try the other RULEs!')
+                # print("Error! Check the log")
+                logger.error(sys.exc_info()[0])
                 continue
-
-            ssr_name = line.loc['Sentence Structure'].strip()
-            action = line.loc['Action'].strip()
-            transformation_rule = line.loc['Transformation'].strip()
-
-            # Iterate sentences matched to SSR
-            for s in data[ssr_name]:
-                s_index = s['Index']
-                s_result = s['Result']
-                # Iterate matched variables
-                variables = {}
-                for var, idx in s_result.items():
-                    word = s_index[str(idx)]
-                    r = re.compile(re.sub(r'\W+', '', word), re.IGNORECASE)
-                    rst_list = list(filter(r.match, list(self.domain.entity_asdict().keys())))
-                    if rst_list:
-                        variables[var] = rst_list[0]
-                    else:
-                        variables[var] = s_index[str(idx)]
-
-                self.transform(action, variables, transformation_rule)
+            
 
     def extra_operation(self):
         S_TR1(self.domain)

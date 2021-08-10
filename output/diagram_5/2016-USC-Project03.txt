@@ -3,59 +3,57 @@ hide circle
 class User<actor> {
 }
 class User {
-	consume()
-	run()
 	have()
-	share()
-	click()
-	return()
 	access()
-	assess()
-	fast()
-	view()
-	pause()
-	go()
-	pick()
-	play()
 	see()
+	fast()
+	return()
+	assess()
+	run()
+	click()
+	pick()
+	go()
+	pause()
+	consume()
+	view()
+	share()
+	play()
 }
-class HomePage {
+class Page {
 }
-class Material {
+class Textcontent {
+}
+class List {
 }
 class Answer {
 }
-class GirlBill {
+class Audio {
 }
-class TextContents {
+class Video {
 }
-class Page {
+class Material {
 }
 class App {
 	run()
 }
-class Chapter {
-}
-class Hint {
-}
-class QuizQuestion {
+class GirlBill {
 }
 class YoutubeVideo {
 }
-class Audio {
+class Hint {
 }
-User --> Chapter : return
-User --> Audio : play
-User --> QuizQuestion : pick
-User --> Answer : pick
-User --> Page : view
-User --> HomePage : return
 User --> Hint : see
-User --> App : run
+User --> List : see
+User --> Video : fast
+User --> Page : view
 User --> GirlBill : click
+User --> Answer : pick
 User --> YoutubeVideo : play
+User --> App : run
 User --> App : click
 User --> Material : access
-User --> TextContents : access
+User --> Textcontent : access
+User --> Audio : play
+User --> Audio : fast
 
 @enduml

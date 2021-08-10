@@ -2,61 +2,45 @@
 hide circle
 class User<actor> {
 	point
-	progressreport
 	performance
+	progressReport
 }
 class Developer<actor> {
 }
 class Maintainer<actor> {
 }
+class Analytic {
+}
 class Developer {
-	change()
-	hand()
-	provide()
+	hand_off()
 	publish()
 	restructure()
+	provide()
 	fix()
-	hand_off()
-}
-class App {
-}
-class User {
-	play()
-	understand()
-	track()
-	answer()
-	proceed()
-	have()
-	get()
-	view()
-	skip()
-}
-class Question {
-}
-class Time {
-	fix()
-}
-class Option {
-	enable()
-}
-class Project {
-}
-class Point {
-}
-class Ui {
-}
-class Maintainer {
-	get()
-}
-class UserAnalytic {
+	make()
+	change()
 }
 class Graph {
 }
-class SourceCode {
+class User {
+	track()
+	skip()
+	view()
+	have()
+	get()
+	proceed()
+	understand()
+	play()
 }
-class Trouble {
+class App {
 }
-class Progress {
+class Option {
+	rate()
+	enable()
+}
+class UI {
+}
+class Feedback {
 }
 class Report {
 }
@@ -65,30 +49,43 @@ class Component {
 }
 class Structure {
 }
-class Progressreport {
+class Maintainer {
+	get()
+}
+class Trouble {
+	answer()
+}
+class Question {
 }
 class Hint {
 }
-class Feedback {
+class Project {
 }
-User --> Question : skip
-User o-- Progressreport : view
-Developer --> Ui : change
-User --> Hint : get
-Maintainer --> UserAnalytic : get
-User --> Feedback : get
-Developer --> Graph : fix
-Developer --> SourceCode : hand_off
-Developer --> Project : restructure
-Option --> User : enable
-Developer --> SourceCode : hand
-Developer --> Option : provide
-User --> Trouble : have
-User o-- Progress : track
-User --> Report : view
-User o-- Point : understand
+class SourceCode {
+}
+class Point {
+}
+class Progress {
+}
+Option --> App : rate
+Progress o-- Report
 Component --> Structure : have
-Developer --> App : publish
 User --> App : play
+User o-- Progress : track
+User o-- Analytic
+Developer --> App : publish
+User --> Question : skip
+Maintainer --> Analytic : get
+User --> Report : view
+Trouble --> Question : answer
+User --> Hint : get
+User --> Feedback : get
+Developer --> Option : provide
+Option --> User : enable
+Developer --> Project : restructure
+User o-- Point : understand
+Developer --> SourceCode : hand_off
+Developer --> UI : change
+Developer --> Graph : fix
 
 @enduml

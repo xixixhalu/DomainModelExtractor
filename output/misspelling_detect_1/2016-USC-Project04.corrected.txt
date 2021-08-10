@@ -16,5 +16,5 @@ The pipeline shall get the images from the Facebook via Facebook API.
 As a client I can upload an image to the pipeline and see a text <classification> along with the initial image.
 As a client I can re train the pipeline by giving a new topic and a new set of images.
 As a client I can run the entire system in my own unix based server.
-As a client I can replace the machine learning algorithm used for training the model without a major pipeline reactor.
+As a client I can replace the machine learning algorithm used for training the model without a major pipeline refactor.
 As a client I can extract and replace the resulting model after the trainning phase is complete.

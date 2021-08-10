@@ -8,89 +8,88 @@ class Corporation<actor> {
 class Provider<actor> {
 }
 class User<actor> {
-	profile
 	location
+	profile
 }
-class Consumer {
-	join()
-	create()
-	register()
-	compare()
-	rate()
+class Health {
 }
-class Network {
+class CarePricing {
+}
+class Profile {
+	attach()
+}
+class Provider {
+	send()
+	share()
 }
 class Offering {
 	drive()
 }
 class User {
-	create()
-	share()
-	follow()
+	access()
 	find()
-	have()
-	receive()
+	follow()
 	filter()
+	have()
+	create()
+	receive()
 }
 class Notification {
+}
+class Consumer {
+	register()
+	join()
+	rate()
+	create()
+	compare()
+}
+class Network {
+}
+class Offer {
+}
+class Review {
 }
 class Corporation {
 	view()
 }
-class Content {
-	drive()
-}
-class Access {
-}
-class HealthProfile {
-	attach()
-}
-class Provider {
-	share()
-	send()
-}
 class Price {
 }
-class Review {
-}
-class Offer {
-}
-class Gain {
-	access()
+class Access {
 	feature()
+}
+class Employee {
+}
+class PushContent {
+}
+class Location {
 }
 class Pricing {
 	drive()
 }
-class HealthCarePricing {
-}
 class HealthcarePrice {
 }
-class Location {
-	access()
+class Content {
+	drive()
 }
-class Employee {
-}
-User --> Access : have
-Provider --> User : send
-Consumer --> Network : join
-Provider --> Offering : send
-HealthProfile --> Provider : attach
-User o-- Location : find
-User --> HealthProfile : create
-Corporation --> Price : view
-Corporation o-- Employee : view
-Consumer --> User : register
-Consumer --> Review : create
-User --> Notification : filter
-HealthProfile --> Offer : attach
-User --> Notification : follow
+Health o-- Profile
+Profile --> Offer : attach
 Provider --> Offering : share
-Provider --> Pricing : share
-Consumer --> Provider : rate
-Provider --> Content : share
-User --> HealthCarePricing : share
 Consumer --> HealthcarePrice : compare
+Consumer --> Review : create
+Provider --> Content : share
+User --> Notification : filter
+Health o-- CarePricing
+Provider --> Offering : send
+Provider --> Pricing : share
+Corporation --> Price : view
+Consumer --> Provider : rate
+Access --> CarePricing : feature
+Corporation o-- Employee : view
+User o-- Profile : create
+User --> PushContent : receive
+Consumer --> Network : join
+User o-- Location : find
 Consumer --> Network : create
+User --> Provider : access
 
 @enduml

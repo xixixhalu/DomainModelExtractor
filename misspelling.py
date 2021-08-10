@@ -139,7 +139,7 @@ def word_freq(file):
     with open(file, "r") as myfile:
         # return the word frequency in the entire file
         s = myfile.read().replace('\n', ' ').lower()
-        s = re.sub(pattern, '', s)  # remove domain name and URL in sentences
+        s = re.sub(pattern, '', s)  # filter out domain name and URL in sentences
         del_str = string.punctuation
         replace_punctuation = ' ' * len(del_str)
         data = s.translate(str.maketrans(del_str, replace_punctuation))
@@ -203,7 +203,7 @@ def correctFile(file_origin_lines, file_preprocess_lines, correct_dict):
     correct_lines = []
     for idx in file_preprocess_lines:
         for sentence in file_preprocess_lines[idx]:
-            correct_line = sentence.lower()
+            correct_line = sentence
             for word in correct_dict:
                 # Bo: temporary matching pattern, may not suit for all cases due to capital letters and stemming/original format.
                 pattern = '(\W|^)' + re.escape(word) + '\\({0,1}e{0,1}s{0,1}\\){0,1}(\W)' #pattern = '(\W|^)' + word + 's{0,1}(\W)'

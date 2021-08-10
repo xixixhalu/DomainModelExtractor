@@ -1,95 +1,97 @@
 @startuml
 hide circle
+class Admin<actor> {
+}
 class User<actor> {
-	email
 	password
+	email
 	project
 	registration
 }
 class Contributor<actor> {
 	impact
 }
-class Contributor {
-	see()
-	access()
-	contribute()
-	work()
-	analyze()
-	ask()
-}
 class User {
-	confirm()
-	see()
+	perform()
 	view()
-	request()
+	see()
+	confirm()
 	receive()
 	reset()
-	perform()
+	request()
 	export()
-}
-class Analysis {
-}
-class Admin {
-	terminate()
-	associate()
-	manage()
-	reset()
-	restrict()
-	block()
-	have()
-}
-class UserPermission {
-}
-class Email {
-}
-class List {
-}
-class Ability {
-}
-class Password {
-}
-class SoftwareQualityMetric {
-}
-class Statistics {
-}
-class Evolution {
 }
 class VerificationEmail {
 }
-class Access {
-}
 class Registration {
 }
-class Signup {
+class Statistics {
+}
+class Contributor {
+	work()
+	access()
+	ask()
+	analyze()
+	see()
+	contribute()
+}
+class List {
+	give()
+}
+class Email {
+}
+class Evolution {
+}
+class Password {
+}
+class Admin {
+	restrict()
+	block()
+	have()
+	terminate()
+	manage()
+	associate()
+	reset()
 }
 class Project {
 }
-class Impact {
-}
-class UserPassword {
-}
-class Source {
-	project()
-}
 class Account {
 }
-User --> Signup : receive
-Contributor --> List : see
-Admin --> Account : terminate
-User --> SoftwareQualityMetric : export
-User --> Statistics : view
-Admin --> Access : restrict
-Admin --> UserPermission : manage
-Admin --> Project : associate
-Admin --> User : associate
-Admin --> Ability : have
-User --> Evolution : see
+class Analysis {
+}
+class Userpermission {
+}
+class Access {
+}
+class Ability {
+}
+class Signup {
+}
+class Impact {
+}
+class SoftwareQualityMetric {
+}
+class Userpassword {
+}
 User o-- Registration : confirm
+Admin --> Project : associate
+User --> Statistics : view
+Contributor --> List : contribute
+Contributor o-- Impact : analyze
+User --> SoftwareQualityMetric : export
+Contributor --> List : see
+Admin --> Userpassword : reset
+Admin --> Account : terminate
 User o-- Email : receive
 User --> Analysis : perform
-Contributor o-- Impact : analyze
-Admin --> UserPassword : reset
-User o-- Password : reset
+Admin --> Userpermission : manage
+User --> Evolution : see
+Admin --> Access : restrict
+Admin --> Ability : have
+User --> Signup : receive
+Contributor --> Admin : ask
 User --> VerificationEmail : receive
+Admin --> User : associate
+User o-- Password : reset
 
 @enduml

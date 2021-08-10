@@ -3,66 +3,58 @@ hide circle
 class ESS<actor> {
 }
 class ESS {
-	have()
-	turn()
-	save()
-	turn_on()
-	sense()
+	lead()
+	use()
+	make()
+	paste()
+	control()
 	drop()
-	load()
-	drag()
+	have()
 	create()
 	copy()
-	use()
-	reprogram()
-	make()
-}
-class Led {
-}
-class Function {
-}
-class WhileConstruct {
-}
-class Instruction {
-}
-class Irobot {
-	go()
-}
-class Module {
+	save()
+	load()
+	drag()
 }
 class NavigationD {
 }
-class Note {
+class DDM {
+	detect()
 }
-class WaitCondition {
-}
-class Song {
+class Time {
 }
 class DModule {
 }
+class Construct {
+}
+class Note {
+}
+class IRobot {
+	go()
+}
+class WaitCondition {
+}
 class ProgramFile {
 }
-class Odule {
-	detect()
+class Function {
 }
-class Pasteinstruction {
+class Song {
 }
-ESS --> Note : drag
-ESS --> Pasteinstruction : copy
-ESS --> ESS : copy
-ESS --> Module : use
-ESS --> WhileConstruct : drag
-ESS --> Module : drag
-ESS --> Led : turn
-ESS --> DModule : use
+class Instruction {
+}
+class Movement {
+}
 ESS --> ProgramFile : create
+ESS --> Note : drag
 ESS --> Instruction : drag
-ESS --> WaitCondition : drag
-ESS --> Odule : sense
+ESS --> DModule : use
 ESS --> NavigationD : use
-ESS --> ESS : drag
 ESS --> Function : drag
+ESS --> Movement : control
+ESS --> WaitCondition : drag
+ESS --> Construct : drag
 ESS --> Song : create
-ESS --> Led : turn_on
+ESS --> Instruction : copy
+DDM --> Time : detect
 
 @enduml

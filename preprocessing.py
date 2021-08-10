@@ -44,26 +44,25 @@ class PreProcessor:
         line = file.readline().strip()
         while line:
             # print("Original sentence: ", line)
-            if re.search(FUNC_RE, line):
-                meta = []
+            meta = []
+            # maps combined noun to the original nouns
+            noun_map = {}
+            acts = []
+            try:
+                line_no_bracket = self.removeBracket(line)
+            except:
+                logger.error("removeBracket: Cannot process sentence > " + line)
+                line_no_bracket = line
+            try:
+                line_no_slash = self.removeSlash(line_no_bracket)
+            except:
+                logger.error("removeSlash: Cannot process sentence > " + line)
+                lines_no_slash = line_no_bracket
 
-                # maps combined noun to the original nouns
-                noun_map = {}
-                acts = []
-                try:
-                    line_no_bracket = self.removeBracket(line)
-                except:
-                    logger.error("removeBracket: Cannot process sentence > " + line)
-                    line_no_bracket = line
-                try:
-                    line_no_slash = self.removeSlash(line_no_bracket)
-                except:
-                    logger.error("removeSlash: Cannot process sentence > " + line)
-                    lines_no_slash = line_no_bracket
-
-                combine_nouns_line = self.combine_nouns(line_no_slash, meta, noun_map)
-                replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)
+            combine_nouns_line = self.combine_nouns(line_no_slash, meta, noun_map)
+            replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)
             
+            if re.search(FUNC_RE, line):
                 func_output.write(replace_role_line + "\n")
                 self.count_func += 1
             else:

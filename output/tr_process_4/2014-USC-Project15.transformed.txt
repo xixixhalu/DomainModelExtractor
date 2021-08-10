@@ -1,22 +1,24 @@
 {
   "domain": "2014-USC-Project15",
   "entity_dict": {
-    "VOLUNTEERCOACH": {
-      "name": "VOLUNTEERCOACH",
+    "VolunteerCoach": {
+      "name": "VolunteerCoach",
       "type": [
         "actor"
       ],
-      "attributes": []
+      "attributes": [
+        {
+          "name": "classRoster",
+          "type": "default"
+        },
+        {
+          "name": "team",
+          "type": "default"
+        }
+      ]
     },
     "GOTRLA": {
       "name": "GOTRLA",
-      "type": [
-        "actor"
-      ],
-      "attributes": []
-    },
-    "VolunteerCoach": {
-      "name": "VolunteerCoach",
       "type": [
         "actor"
       ],
@@ -34,16 +36,7 @@
       "type": [
         "actor"
       ],
-      "attributes": [
-        {
-          "name": "classroster",
-          "type": "default"
-        },
-        {
-          "name": "team",
-          "type": "default"
-        }
-      ]
+      "attributes": []
     },
     "Admin": {
       "name": "Admin",
@@ -57,28 +50,21 @@
       "type": [
         "actor"
       ],
-      "attributes": []
-    },
-    "REGULARLY": {
-      "name": "REGULARLY",
-      "type": [
-        "entity"
-      ],
       "attributes": [
         {
-          "name": "attendancesheet",
+          "name": "accountpassword",
           "type": "default"
         }
       ]
     },
-    "IMMEDIATELYCHECKEACHSITE": {
-      "name": "IMMEDIATELYCHECKEACHSITE",
+    "Site": {
+      "name": "Site",
       "type": [
         "entity"
       ],
       "attributes": [
         {
-          "name": "attendancesheet",
+          "name": "attendanceSheet",
           "type": "default"
         }
       ]
@@ -90,66 +76,153 @@
       ],
       "attributes": [
         {
-          "name": "paperWork",
+          "name": "paperwork",
           "type": "default"
         }
       ]
+    },
+    "Program": {
+      "name": "Program",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Quality": {
+      "name": "Quality",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Week": {
+      "name": "Week",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Sheet": {
+      "name": "Sheet",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Roster": {
+      "name": "Roster",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "VolunteerCoach",
+      "dest": "Coach",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Volunteer",
+      "dest": "Coach",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Girl",
+      "dest": "Data",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Attendance",
+      "dest": "Sheet",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Class",
+      "dest": "Roster",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Attendance",
+      "dest": "Data",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Team",
+      "dest": "Roster",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Program",
+      "dest": "Week",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Program",
+      "dest": "Quality",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
     {
-      "actor": "Coach",
-      "action": "take",
-      "target": "Attendance",
-      "para": []
-    },
-    {
-      "actor": "VOLUNTEERCOACH",
+      "actor": "GOTRLA",
       "action": "check",
-      "target": "GIRLS",
-      "para": []
-    },
-    {
-      "actor": "VOLUNTEERCOACH",
-      "action": "check",
-      "target": "ROSTERREMOTELY",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "access",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "VolunteerCoach",
-      "action": "have",
-      "target": "Copyliabilitywaiverform",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "support",
-      "target": "TeamRoster",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "can",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Staff",
-      "action": "export",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Staff",
-      "action": "have",
-      "target": "",
+      "target": "Sheet",
       "para": []
     },
     {
@@ -159,273 +232,15 @@
       "para": []
     },
     {
-      "actor": "Girl",
-      "action": "turn",
-      "target": "PaperWork",
-      "para": []
-    },
-    {
       "actor": "GOTRLA",
-      "action": "update",
+      "action": "add",
       "target": "",
       "para": []
     },
     {
-      "actor": "Volunteer",
-      "action": "access",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "VolunteerCoach",
+      "actor": "Coach",
       "action": "identify",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "schedule",
-      "target": "Coach",
-      "para": []
-    },
-    {
-      "actor": "VOLUNTEERCOACH",
-      "action": "check",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "monitor",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "login",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Staff",
-      "action": "analyze",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "conduct",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "delete",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Volunteer",
-      "action": "conduct",
-      "target": "Class",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "VOLUNTEERCOACH",
-      "action": "check",
-      "target": "OTHERCOACHES",
-      "para": []
-    },
-    {
-      "actor": "VOLUNTEERCOACH",
-      "action": "check",
-      "target": "INREALTIME",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "schedule",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "add",
-      "target": "GOTRLA",
-      "para": []
-    },
-    {
-      "actor": "VolunteerCoach",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "have",
-      "target": "Up",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "support",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "edit",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Volunteer",
-      "action": "login",
-      "target": "Application",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "monitor",
-      "target": "Attendance",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "add",
-      "target": "EditProgramStaff",
-      "para": []
-    },
-    {
-      "actor": "Staff",
-      "action": "analyze",
-      "target": "AttendanceData",
-      "para": []
-    },
-    {
-      "actor": "Volunteer",
-      "action": "view",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Volunteer",
-      "action": "login",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GOTRLASTAFF",
-      "action": "monitor",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "add",
-      "target": "GirlData",
-      "para": []
-    },
-    {
-      "actor": "Staff",
-      "action": "export",
-      "target": "Data",
-      "para": []
-    },
-    {
-      "actor": "Volunteer",
-      "action": "check",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Volunteer",
-      "action": "login",
-      "target": "Semester",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "reset",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "know",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GOTRLASTAFF",
-      "action": "monitor",
-      "target": "ProgramQUALITYIMMEDIATELY",
-      "para": []
-    },
-    {
-      "actor": "Girl",
-      "action": "turn",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Volunteer",
-      "action": "conduct",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "conduct",
-      "target": "Class",
-      "para": []
-    },
-    {
-      "actor": "Volunteer",
-      "action": "know",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Staff",
-      "action": "have",
-      "target": "Copyliabilitywaiverform",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "login",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "can",
-      "target": "Attendancesheet",
-      "para": []
-    },
-    {
-      "actor": "GOTRLASTAFF",
-      "action": "monitor",
-      "target": "EFFICIENTLY",
       "para": []
     },
     {
@@ -435,45 +250,183 @@
       "para": []
     },
     {
-      "actor": "GOTRLA",
-      "action": "schedule",
-      "target": "ProgramWeek",
+      "actor": "Coach",
+      "action": "have",
+      "target": "DateInformation",
       "para": []
     },
     {
-      "actor": "GOTRLA",
-      "action": "add",
-      "target": "Class",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "offer",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GOTRLA",
-      "action": "add",
-      "target": "VolunteerCoach",
+      "actor": "Staff",
+      "action": "analyze",
+      "target": "Data",
       "para": []
     },
     {
       "actor": "Coach",
-      "action": "take",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Volunteer",
       "action": "check",
       "target": "Team",
       "para": []
     },
     {
-      "actor": "Volunteer",
+      "actor": "GOTRLA",
+      "action": "delete",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "login",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "delete",
+      "target": "Class",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "have",
+      "target": "Privilege",
+      "para": []
+    },
+    {
+      "actor": "GOTRLASTAFF",
+      "action": "monitor",
+      "target": "Quality",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "login",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "delete",
+      "target": "Coach",
+      "para": []
+    },
+    {
+      "actor": "Girl",
+      "action": "turn_in",
+      "target": "Paperwork",
+      "para": []
+    },
+    {
+      "actor": "Coach",
       "action": "access",
       "target": "Schedule",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "monitor",
+      "target": "Attendance",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "login",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "view",
+      "target": "Roster",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "know",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Team",
+      "action": "have",
+      "target": "Issue",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "have",
+      "target": "DateInformation",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "take",
+      "target": "Attendance",
+      "para": []
+    },
+    {
+      "actor": "Staff",
+      "action": "have",
+      "target": "CopyLiabilityWaiverForm",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "access",
+      "target": "Coach",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reset",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "schedule",
+      "target": "Week",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "remove",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "check",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Staff",
+      "action": "export",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "Girl",
+      "action": "turn_in",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "have",
+      "target": "CopyLiabilityWaiverForm",
+      "para": []
+    },
+    {
+      "actor": "GOTRLA",
+      "action": "support",
+      "target": "Roster",
       "para": []
     }
   ]

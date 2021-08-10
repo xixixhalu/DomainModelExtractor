@@ -1,130 +1,107 @@
 @startuml
 hide circle
 class User<actor> {
-	password
-	giftBuddyAccount
-	one
-	interest
-	phone
-	emailaddress
-	giftBuddyContact
+	emailAddress
 	contact
+	giftBuddyAccount
+	phone
+	giftBuddyContact
+	password
 }
 class Contact {
-	interest
 	information
 }
+class Buddy {
+}
+class Recommendation {
+}
 class User {
-	save()
-	enter()
+	select()
 	add()
-	update()
-	view()
-	receive()
 	reset()
-	remove()
-	login()
-	provide()
-	search()
-	input_in()
-	use()
-	discard()
-	purchase()
-	create()
-	input()
-	navigate()
-	forget()
 	set()
+	input()
+	purchase()
+	remove()
+	forget()
+	discard()
+	search()
+	update()
+	create()
+	login()
+	view()
+	save()
 	install()
+	receive()
+	provide()
+	enter()
 }
-class PhoneNumber {
+class Case {
 }
-class GiftRecommendation {
+class Interest {
+}
+class Password {
+	user()
+	name()
+}
+class GiftBuddyApp {
+	user()
+}
+class Account {
 }
 class Information {
+}
+class Phone {
+}
+class Budget {
+}
+class Group {
 }
 class Date {
 	pass()
 }
 class Gift {
 }
-class GiftBuddyAccount {
-}
-class Password {
-}
-class Shoppinglink {
-}
-class Series {
-}
-class Group {
-}
-class Mediaaccount {
-}
-class Case {
-}
-class Budget {
-}
-class Favorite {
-}
-class Notification {
-}
 class Application {
-}
-class Phone {
-}
-class Feedback {
-}
-class GiftGiving {
-}
-class Name {
-}
-class GiftBuddyContact {
-}
-class One {
-}
-class Event {
-}
-class GiftBuddyApp {
 }
 class EmailAddress {
 }
+class Giftbuddyaccount {
+}
+class Notification {
+}
+class Feedback {
+}
+class Option {
+}
+class GiftBuddy {
+}
 User --> Information : view
-User o-- One : forget
-User o-- GiftBuddyContact : set
-User --> PhoneNumber : use
-User o-- Password : reset
+User --> Interest : input
 User o-- Contact : remove
-User --> GiftRecommendation : receive
-User --> Information : add
-User --> Information : update
-User --> Shoppinglink : navigate
-User --> Event : receive
-User o-- Phone : install
-User --> Series : enter
-User --> GiftBuddyApp : login
-User --> User : view
-User --> Group : remove
+User --> Interest : enter
+User o-- Password : reset
 User --> Date : enter
-User o-- EmailAddress : use
-User --> Feedback : provide
-User --> Mediaaccount : use
-User --> GiftGiving : set
-User --> Case : reset
-User --> Name : use
-User o-- Gift : view
-User --> Budget : set
-User o-- GiftBuddyAccount : remove
-User o-- Gift : purchase
-User --> Application : install
-User o-- Contact : input
-User o-- Password : use
-User o-- Gift : search
-User --> Favorite : set
-User o-- GiftBuddyContact : search
-User o-- Contact : enter
-User --> User : receive
+User --> Recommendation : receive
 User --> Notification : receive
-User o-- GiftBuddyAccount : create
+User --> Option : supported_by
+User --> Information : update
+User o-- Phone : install
+User o-- Contact : set
 User o-- Gift : provide
+User --> Budget : set
+User --> Feedback : provide
+Gift o-- Buddy
+GiftBuddy o-- Contact
+User --> Group : remove
+User o-- Gift : purchase
+Gift o-- Recommendation
+User --> Application : install
+User o-- Gift : view
+User --> Case : forget
+GiftBuddyApp --> Account : user
+Password --> EmailAddress : user
+User o-- Giftbuddyaccount : create
+User --> Case : reset
 
 @enduml

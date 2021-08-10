@@ -5,7 +5,7 @@ Webcrawler must be able to visit public sites, extract simple structured relatio
 The crawler must be able to perform the above functions for all common forms of relational data (integers, decimal numbers, dates, strings, booleans etc.)
 If there is no data existing for the unique identifier for the row within the table, execute the insert statements for the dataset.
 If there is a conflict (there is already information in the row for the designated table) the application must be able to generate and execute  a PostgreSQL UPDATE statement for the "crawled" dataset.
-As a SporTech B.I. contractor, I can  add,delete,update the specific websites visited,  fields to capture from the website and frequency of crawler refresh for each specified website.
+As a SporTech B.I. contractor, I can  add,delete,update the specific websites visited,  fields to capture from the website and frequency of crawler refreshes for each specified website.
 Webcrawler app must function in a persistent manner - if we set it using the above GUI, it should run without intervention if there are no errors.
 The system must be able to function on a major open-source OS (READ: Some well known distro of Linux like Ubuntu or Debian).
 The crawler should be able identify and ingest into a Hadoop/Hive/Pig NoSQL data store, unstructured data (social media information, pictures, videos etc), on a configurable schedule, and check for conflicts within the existing data store.

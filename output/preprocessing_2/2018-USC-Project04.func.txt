@@ -1,16 +1,16 @@
 User can generate Task with varying Level of Importance .
 administrative User , Office can manage patient Data and Inventory on Office's Doctor 's Behalf .
 User can trust the the Application securely handles personal Information .
-Doctor's Patient ' and Doctor's Data will be preserved for a specified Amount of Time after the free TrialEnd or a Subscription ends .
+Doctor's Patient ' and Doctor's Data will be preserved for a specified Amount of Time after the free Trial ends or a Subscription ends .
 User can access Information such as Article or Video that will train me to use the System .
-admin can customize the Portal , so it aligns with admin's Profession .
+Admin can customize the portal , so it aligns with Admin's Profession .
 User can track Customer have been referred .
 User can have Report be automatically generated on a Schedule .
 Doctor can match Patient to Product .
 User am able to create new PatientRecord .
 Doctor am able to view a Report of ProductPurchase .
-Administrator am able to save and retrieve important patient Document from within the System .
-Developer need to protect the App against SQLInjections and CrossSiteScripting .
+Administrator am able to save and retrieve important PatientDocument from within the System .
+Developer need to protect the App against SqlInjection and CrossSiteScripting .
 User can create an Invoice for User's Patient .
 Doctor can recommend Product for Doctor's Patient in their File .
 User can import VendorProductInformation with a CsvFile .

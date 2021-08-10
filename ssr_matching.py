@@ -168,12 +168,13 @@ class Matcher:
         flag = True
 
         for key in td_count:
+            if '~' in key:
+                continue
             r = re.compile(key)
             temp_list = list(filter(r.match, text_tds.keys()))
-            if len(temp_list) == 0 or len(temp_list) < td_count.get(key):
+            if len(temp_list) == 0: #or len(temp_list) < td_count.get(key):
                 flag = False
                 break
-
         if not flag:
             return False, None
 
@@ -190,11 +191,9 @@ class Matcher:
         var2 = rule_tds[rule_pos][2]
 
         filter_flag = False
-        if rule_tds[rule_pos][0].startswith('~'):
-            Filter_flag = True
-            key_to_match.replace('~', '')
-            var1.replace('*', 'filter_value1')
-            var2.replace('*', 'filter_value2')
+        if '~' in rule_tds[rule_pos][0]:
+            filter_flag = True
+            key_to_match = key_to_match.replace('~', '')
 
         r = re.compile(key_to_match)
         temp_list = list(filter(r.match, text_tds.keys()))
@@ -210,21 +209,21 @@ class Matcher:
                         continue
                     if var2 in temp_var_to_index and temp_var_to_index[var2] != cand2:
                         continue
+                    temp_var_to_index[var1] = cand1
+                    temp_var_to_index[var2] = cand2
+
                 else:
                     if (var1 in temp_var_to_index and temp_var_to_index[var1] == cand1 and
-                        var2 == 'filter_value2'):
+                        var2 == '*'):
                         continue
                     if (var2 in temp_var_to_index and temp_var_to_index[var2] == cand2 and
-                        var1 == 'filter_value1'):
+                        var1 == '*'):
                         continue
                     if (var1 in temp_var_to_index and temp_var_to_index[var1] == cand1 and
                         var2 in temp_var_to_index and temp_var_to_index[var2] == cand2):
                         continue
 
-                temp_var_to_index[var1] = cand1
-                temp_var_to_index[var2] = cand2
-
-                self.dfs_match_tds(rule_tds, text_tds, rule_pos + 1, temp_var_to_index, var_to_index_list)[0]
+                self.dfs_match_tds(rule_tds, text_tds, rule_pos + 1, temp_var_to_index, var_to_index_list)
 
         if not var_to_index_list:
             return False, var_to_index_list
@@ -275,7 +274,7 @@ if __name__ == '__main__':
     parser.add_argument('-o', '--output', type=str, metavar='', default="./output/ssr_match_3/",
                         help='output path. Default: %(default)s')
     # parser.add_argument('-s', '--ssr', type=str, metavar='', default="./SSR/SSR.xlsx",
-    parser.add_argument('-s', '--ssr', type=str, metavar='', default="./SSR/SSR-test.xlsx",
+    parser.add_argument('-s', '--ssr', type=str, metavar='', default="./SSR/SSR.xlsx",
                         help='sentence structure path. Default: %(default)s')
     parser.add_argument('-l', '--list', action='store_true',
                         help='list all input files. Example: python3 ssr_matching.py -l')

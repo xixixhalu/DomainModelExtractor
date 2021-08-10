@@ -1,0 +1,23 @@
+As a sales agent I can click-to-call customers.
+As a sales agent I can auto dial customers so that I save time.
+The system shall connect to backup agent if multiple customers answer calls simultaneously.
+The system shall log call detail information (caller number & id, callee number & id, duration, start date & time, end date & time, mute link to the recording, conference link, listening in link, XML file as text)  so that we can pull analytics on it.
+As a sales manager, I can listen to recordings so that I can assure quality.
+As a sales manager, I can use the recordings so that I can train agents.
+As a sales manager I can listen in on active calls so that I can assure quality.
+As a sales manager, I can jump in to calls so that I can help close the deal.
+As a sales agent, I can quickly and easily request the conference call of a manager so that I can close a sale.
+The system shall make sure the incoming call is assigned to a back up agent if the primary agent is unavailable so that less customers go to voicemail.
+The system shall route the customer to voicemail if no agent is available.
+The system shall be deployed Heroku cloud.
+The system shall log data in PostgreSQL.
+The system shall use Twilio API for voip.
+The system shall be developed using Ruby on Rails.
+The system shall run on Linux.
+The system interface will be built using HTML5, CSS, Javascript, Bootstrap, jQuery.
+The system will be integrated with the SnApp CRM.
+As a sales manager, I can speak only to the agent while listening to the call so that i can guide him.
+The system should be able to handle 200 simultaneous incoming and outgoing calls.
+The system should be able to route calls within a 2 seconds to a open agent.
+The auto dialer should be able to make 10 simultaneous calls to find an available customer for the agent.
+The system shall automatically provision a number and voice-mailbox for each new user automatically.

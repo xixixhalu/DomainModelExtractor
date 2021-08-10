@@ -1,0 +1,24 @@
+As an admin I can delete a switch so that it's no longer available for others.
+An an admin I can assign names to the gateways so that they are more recognizable.
+As an admin I can delete a gateway so that it's no longer available for others.
+As a user I can add favourite screens so that they are easily acessible.
+As a user I can turn on/off the lights using Mobile applications.
+As a user I can add images for each switch so that they are recognizable.
+As a user I can add images for gateway so that they are recognizable.
+As an admin I can assign different switches to different users so that the access control is limited.
+The mobile system should use a single protocol to communicate with gateway (MQTT).
+As a user I can turn on/off all the lights in the house so that all the lights can be controlled at once.
+As a user I can select a particular floor/room so that I have floor- or room-wide control of lights.
+As an admin I should be able to add more users so that I can provide/revoke access to other users.
+The maximum budget for the project is $500.
+The mobile app should be written in Android with backend of mongodb and node.js.
+System should have minimum downtime( 1 hr /month max) and high availability/redundancy.
+System should be secure - data should be transmitted over an encrypted channel.
+Do not use toggle for turning on/off the lights so that more features can be added ( dimming the light etc).
+As an admin I can delete switch/floor/room.
+As an admin I can edit the name of gateway/switch/floor/room.
+As an admin I can see gateway/switch id.
+As an admin I can incorporate debugging by papertrail.
+As an user I can choose either username/email to log in.
+the server API shall be documented preferably on the web ADHERING TO standard JS style documentation.
+The response time of the system should be within 10 seconds.

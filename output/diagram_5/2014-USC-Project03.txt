@@ -1,11 +1,15 @@
 @startuml
 hide circle
 class Driver<actor> {
-	creditCardInformation
-	valet
-	profile
 	vehicle
+	creditcardinformation
 	phone
+	profile
+	valetCompany
+}
+class ValetCompany<actor> {
+	profile
+	revenue
 }
 class Establishment<actor> {
 }
@@ -16,41 +20,74 @@ class Customer<actor> {
 class ValetOperator<actor> {
 	company
 	login
-	profile
+	valetCompany
 }
 class ValetHead<actor> {
 }
 class User<actor> {
 }
-class ValetCompany {
-	revenue
-	profile
+class Valet {
+}
+class Head {
+	adjust()
+	set()
+}
+class Price {
+}
+class Operator {
+	receive()
+	send()
+	retrieve()
+	see()
+	have()
+	add()
+	know()
+}
+class Company {
+	offer()
+	accept()
 	receive()
 	control()
-	accept()
-	offer()
+}
+class Revenue {
 }
 class Driver {
-	use()
 	create()
 	check()
-	have()
-	wait()
-	want()
-	request()
-	pay()
-	message()
-}
-class ValetOperator {
-	see()
 	retrieve()
+	pay()
+	user()
 	have()
-	receive()
-	add()
+	request()
+	want()
+}
+class Login {
+}
+class Tracking {
+}
+class Timerequest {
+}
+class Queue {
+}
+class Pricing {
+}
+class Customer {
+	have()
+	request()
+	enter()
+	pay()
+}
+class TicketNumber {
+}
+class Employee {
+	work()
+}
+class Paymentoption {
+}
+class Profile {
+}
+class Location {
 	service()
-	send()
-	track()
-	know()
 }
 class User {
 	register()
@@ -58,105 +95,64 @@ class User {
 }
 class Information {
 }
-class Notification {
-}
-class Location {
-	service()
-}
-class Valet {
-	retrieve()
-}
-class Paymentoption {
-}
-class ValetHead {
-	set()
-	adjust()
-}
-class ValetPrice {
-}
-class Employee {
-	work()
-}
-class Establishment {
-	send()
-	attract()
-}
-class SnapValetUser {
-}
-class Shift {
-}
-class Customer {
-	have()
-	wait()
-	request()
-	pay()
-	enter()
-}
-class Revenue {
-}
-class TicketNumber {
-}
-class Option {
-}
 class Car {
-}
-class Activity {
-}
-class Company {
-}
-class Advertisement {
 }
 class Payment {
 }
-class Transaction {
+class Vehicle {
+}
+class Establishment {
+	attract()
+	send()
+}
+class TrackTransaction {
 }
 class EmailTransactionSummaryReport {
 }
-class Timerequest {
-}
-class Profile {
-}
-class Account {
+class Notification {
 }
 class Manner {
 }
-class Pricing {
+class Advertisement {
 }
-class Login {
+class Option {
 }
-ValetOperator --> Timerequest : receive
-Driver o-- Valet : message
-Employee --> Location : work
-Customer o-- Car : request
-ValetCompany --> Paymentoption : offer
-Driver o-- Profile : create
-Driver o-- Valet : pay
-ValetOperator --> Car : send
-ValetCompany --> ValetCompany : accept
-Establishment --> Customer : attract
-ValetHead --> ValetPrice : set
-User --> Account : register
-Driver --> Activity : use
-ValetOperator --> Employee : add
-ValetOperator --> Manner : retrieve
-Location --> Company : service
-ValetHead --> Pricing : adjust
-ValetCompany --> Shift : receive
-Establishment --> SnapValetUser : send
-ValetOperator --> Car : retrieve
+class ValetCompany {
+}
+class ValetOperator {
+}
+class ValetHead {
+}
+Operator --> Manner : retrieve
+Head --> Price : set
 Establishment --> Advertisement : send
-ValetHead --> Shift : set
-ValetCompany --> Payment : accept
-ValetOperator o-- Login : have
-ValetOperator --> Customer : send
-ValetOperator --> Transaction : track
-Driver --> Option : have
-ValetOperator --> Location : track
+Operator --> Login : have
 User --> Information : include
-ValetCompany --> EmailTransactionSummaryReport : receive
-ValetCompany o-- Revenue : control
-ValetOperator --> Customer : receive
+Driver --> Option : have
+Valet o-- Operator
+Operator --> Tracking : add
+Customer o-- Car : request
+ValetCompany <|-- Company
+Operator --> Timerequest : receive
+Company --> Payment : accept
+Valet o-- Price
+ValetOperator <|-- Operator
+Operator --> Queue : receive
+Driver o-- Vehicle : retrieve
+Valet o-- Head
+Head --> Pricing : adjust
+Employee --> Tracking : work
+ValetHead <|-- Head
+Establishment --> Customer : attract
+Operator --> TrackTransaction : add
 Customer o-- TicketNumber : enter
-ValetOperator --> Notification : send
+Company --> EmailTransactionSummaryReport : receive
+Operator --> Employee : add
+Operator --> Notification : send
+Company --> Paymentoption : offer
+Operator --> Car : retrieve
+Valet o-- Company
+Driver o-- Profile : create
+Company --> Revenue : control
 
 @enduml

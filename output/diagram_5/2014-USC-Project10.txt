@@ -1,81 +1,70 @@
 @startuml
 hide circle
 class JobSeeker<actor> {
-	logincredential
+	loginCredentials
 	network
 }
-class Networkcontact {
+class Network {
+}
+class Contact {
 	provide()
 }
-class Reference {
+class Friend {
+	refer()
 }
-class JobListing {
+class Job {
+}
+class Search {
+}
+class Listing {
 	have()
 }
-class Networkfriend {
-	refer()
+class Seeker {
+	subscribe()
+	contact()
+	see()
+	save()
+	mark()
+	search()
+	create()
+	browse()
+	unsubscribe()
+	select()
+}
+class Someone {
+}
+class RefersySystem {
+	connect()
+	fetch()
+}
+class Frequency {
+}
+class Reference {
 }
 class Account {
 	save()
 }
+class LoginCredentials {
+}
+class Message {
+}
 class JobSeeker {
-	create()
-	see()
-	contact()
-	select()
-	mark()
-	unsubscribe()
-	browse()
-	save()
-	subscribe()
-	email()
-	search()
 }
-class Keyword {
-}
-class Job {
-}
-class JobNotification {
-}
-class Network {
-}
-class REFERsySystem {
-	fetch()
-	connect()
-}
-class Location {
-}
-class EmailNotification {
-}
-class Indeedcom {
-}
-class Favorite {
-}
-class Logincredential {
-}
-class JobSearch {
-}
-class Frequency {
-}
-class Someone {
-}
-JobSeeker --> JobListing : browse
-JobSeeker o-- Network : contact
-REFERsySystem --> Job : fetch
-JobSeeker --> EmailNotification : unsubscribe
-JobSeeker --> Frequency : select
-Account --> Logincredential : save
-JobSeeker --> Job : mark
-Networkcontact --> Reference : provide
-REFERsySystem --> Indeedcom : connect
-JobSeeker --> Account : create
-JobSeeker --> Job : search
-JobSeeker --> JobSearch : save
-JobSeeker --> JobNotification : email
-JobSeeker --> Keyword : search
-JobSeeker --> Someone : contact
-JobSeeker --> Favorite : mark
-JobSeeker --> Location : search
-JobListing --> Networkfriend : have
+RefersySystem --> Seeker : fetch
+Seeker --> Search : save
+Seeker --> Seeker : mark
+Network o-- Friend
+Job o-- Search
+Network o-- Contact
+Seeker --> Someone : contact
+Contact --> Reference : provide
+Seeker --> Account : create
+Job o-- Listing
+Job o-- Seeker
+Listing --> Friend : have
+JobSeeker <|-- Seeker
+Seeker --> Message : supported_by
+Account --> LoginCredentials : save
+Seeker --> Frequency : select
 
 @enduml

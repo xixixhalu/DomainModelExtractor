@@ -1,7 +1,7 @@
 The final product shall be modular and integrate easily into the rest of Field Progress's tech stack.
 The final product shall accept as input districts/precincts of any size.
 The final product shall consider district/precinct topography (hills, freeways, etc.) when calculating the most optimal route for volunteers to take.
-The final product shall render an optional map with voters placed as points, and lines indicating the best routes for the volunteers to take, representing the grouping of voters using colors.
+The final product shall render an optional map with voters placed as points, and line(s) indicating the best route(s) for the volunteers to take, representing the grouping of voters using colors.
 The final product shall accept as input a variable number of volunteers.
 The final product shall accept as input a variable time range for volunteers to canvass (e.g. 2 hours).
 User should be able to input voter data into the system and be able to see it in map.

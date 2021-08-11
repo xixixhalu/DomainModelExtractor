@@ -14,158 +14,163 @@
         "actor"
       ],
       "attributes": []
+    },
+    "Sale": {
+      "name": "Sale",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Manager": {
+      "name": "Manager",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "SaleAgent",
+      "dest": "Agent",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Sale",
+      "dest": "Agent",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "SaleManager",
+      "dest": "Manager",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Sale",
+      "dest": "Manager",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
     {
-      "actor": "SaleManager",
+      "actor": "Manager",
+      "action": "close",
+      "target": "Deal",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "close",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Manager",
       "action": "listen",
       "target": "Call",
       "para": []
     },
     {
-      "actor": "SaleManager",
-      "action": "listen",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SaleAgent",
-      "action": "save",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SaleAgent",
-      "action": "request",
-      "target": "ConferenceCall",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
+      "actor": "Manager",
       "action": "listen_in",
       "target": "",
       "para": []
     },
     {
-      "actor": "SaleManager",
-      "action": "assure",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
-      "action": "assure",
-      "target": "Quality",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
-      "action": "train",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
-      "action": "use",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
-      "action": "train",
-      "target": "Agent",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
-      "action": "jump_in",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SaleAgent",
-      "action": "close",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
-      "action": "use",
-      "target": "SaleManager",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
-      "action": "use",
-      "target": "Recording",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
-      "action": "speak",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
-      "action": "guide",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
+      "actor": "Manager",
       "action": "jump",
       "target": "",
       "para": []
     },
     {
-      "actor": "SaleAgent",
+      "actor": "Agent",
       "action": "request",
+      "target": "ConferenceCall",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "speak",
       "target": "",
       "para": []
     },
     {
-      "actor": "SaleAgent",
-      "action": "save",
-      "target": "Time",
+      "actor": "Auto",
+      "action": "dial",
+      "target": "Customer",
       "para": []
     },
     {
-      "actor": "SaleAgent",
+      "actor": "Manager",
+      "action": "assure",
+      "target": "Quality",
+      "para": []
+    },
+    {
+      "actor": "Agent",
+      "action": "dial",
+      "target": "Customer",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "guide",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "train",
+      "target": "Agent",
+      "para": []
+    },
+    {
+      "actor": "Agent",
       "action": "click",
       "target": "",
       "para": []
     },
     {
-      "actor": "SaleManager",
-      "action": "speak",
-      "target": "AgentWhile",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
-      "action": "help",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
-      "action": "record",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SaleManager",
-      "action": "call",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SaleAgent",
+      "actor": "Agent",
       "action": "close",
-      "target": "Sale",
+      "target": "Agent",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "use",
+      "target": "Recording",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "listen",
+      "target": "",
       "para": []
     }
   ]

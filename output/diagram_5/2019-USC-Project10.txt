@@ -6,65 +6,75 @@ class User<actor> {
 }
 class VideoUser<actor> {
 }
+class Size {
+}
+class Title {
+}
+class VideoUser {
+	see()
+	recommend()
+	user()
+}
+class Media {
+}
 class Developer {
-	design()
-	script()
 	display()
-	filter()
 	access()
-	link()
+	script()
 	create()
+	filter()
 	map()
-}
-class IMDBAttribute {
-}
-class User {
-	search()
-	input()
-	find()
-}
-class Hashtag {
+	design()
 }
 class Result {
 }
-class VideoUser {
-	use()
-	see()
-}
 class TwitterData {
-	recommend()
-}
-class Media {
-	recommend()
 }
 class Movie {
 	trend()
 }
-class MovieTitle {
-	get()
-}
-class TwitterMentions {
-}
 class Data {
+	pull()
 }
-class MediaData {
-	create()
+class BackendSystem {
+	provide()
 }
-class Ranking {
+class Api {
 }
-User --> Ranking : find
-Developer --> Hashtag : link
-VideoUser --> TwitterData : use
-Developer --> TwitterMentions : map
-Developer --> Hashtag : map
-Developer --> MediaData : access
-User --> Ranking : supported_by
-User --> MovieTitle : input
-User --> Movie : find
-Developer --> Result : display
-VideoUser --> Media : use
-Developer --> IMDBAttribute : map
-Developer --> Data : filter
+class Hashtag {
+}
+class User {
+	get()
+	input()
+	find()
+}
+class Tv {
+	show()
+}
+class Info {
+	pull()
+}
+class Timestamp {
+	reduce()
+}
+class IMDB {
+}
+class Respect {
+}
+Timestamp --> Size : reduce
+VideoUser --> TwitterData : user
+VideoUser --> Media : user
+Data o-- Size
 Movie --> Media : trend
+Developer --> BackendSystem : design
+IMDB --> Respect : supported_by
+Developer --> Hashtag : script
+User --> Title : input
+Developer --> Result : display
+User --> Movie : find
+Media o-- Data
+Developer --> Data : access
+BackendSystem --> Api : provide
+Movie o-- Title
 
 @enduml

@@ -46,6 +46,7 @@ class PreProcessor:
         line = file.readline().strip()
         while line:
             # print("Original sentence: ", line)
+
             if re.search(FUNC_RE, line):
                 meta = []
 
@@ -57,36 +58,27 @@ class PreProcessor:
                 except:
                     logger.error("removeBracket: Cannot process sentence > " + line)
                     line_no_bracket = line
-                # try:
-                line_no_slash = self.removeSlash(line_no_bracket,CONNECTOR=CONNECTOR)
-                # After processing using "RemoveSlash", line_no_slash will become a list.
-                for i in line_no_slash:
-
-                    combine_nouns_line = self.combine_nouns(i, meta, noun_map)
-                    replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)                        
-                    func_output.write(replace_role_line + "\n")
+                try:
+                    lines_no_slash = self.removeSlash(line_no_bracket,CONNECTOR=CONNECTOR)
+                    # After processing using "RemoveSlash", lines_no_slash will become a list.
+                    for i in lines_no_slash:
+                        combine_nouns_line = self.combine_nouns(i, meta, noun_map)
+                        replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)                        
+                        func_output.write(replace_role_line + "\n")
                     self.count_func += 1   
                     # Loop in the list so that every function will be wriiten into the file.
 
-                # except:
-                #     logger.error("removeSlash: Cannot process sentence > " + line)
+                except:
+                    logger.error("removeSlash: Cannot process sentence > " + line)
                     
-                #     combine_nouns_line = self.combine_nouns(line_no_bracket, meta, noun_map)
-                #     replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)
-                #     func_output.write(replace_role_line + "\n")
-                #     self.count_func += 1
             else:
                 nonfunc_output.write(replace_role_line + "\n")
                 self.count_nonfunc += 1
+                
             metadata.write(meta.__str__() + "\n")
             actors.write(acts.__str__() + "\n")
 
-                # print("Meta data: ", meta)
-                # print(" ")
-
             line = file.readline().strip()
-
-
 
         logger.info("Functional count: " + str(self.count_func) + 
                     "\nNon-functional count: " + str(self.count_nonfunc))
@@ -95,7 +87,6 @@ class PreProcessor:
         nonfunc_output.close()
         metadata.close()
         actors.close()
-
         file.close()
 
     # Note: this function check if a word is in stop words dict, if no, return lemma form, otherwise, return original word.

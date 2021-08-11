@@ -5,19 +5,19 @@ Tutor can accept TutoringRequest in Accordance with Tutor's Availability .
 Student can request a specific TutoringTime with Student's Tutor .
 Tutor can share PresentationMaterial , to include Powerpoint and Video , with Tutor's Student .
 Developer , Maintainer can easily understand the Technology used to create the Platform via thorough Documentation and through the Use of common , well established , supported Technology .
-Maintainer can manage the Information of Tutor and Course displayed on admin Page .
+Maintainer can manage the Information of Tutor and Course displayed on AdminPage .
 Student can read Description of Tutor in their Page , including their basic Information and Lesson given by them .
 Student can watch LessonVideo at any Time online .
 Tutor can post Blog on the Website .
 of the Company , Leader can learn statistical Information including LessonView , Lesson - Sale , UserAmount , etc. . .
 User can consult Information about all Tutor .
-User can learn about what ProgramELA can provide and what Key feature they have before User request Tutoring .
+User can learn about what ProgramELA can provide and what key Feature they have before User request Tutoring .
 User can check User's RequestRecord and the Schedule .
 User can get the Notification in Time when ScheduleChange or Something else happens .
-Tutor can get a reasonable Schedule , not schedule Class outside of Tutor's expected working Hour .
+Tutor can get a reasonable Schedule , not ScheduleClass outside of Tutor's expected working Hour .
 User can choose different PaymentMethod .
 User can navigate the Website easily .
-Tutor can offer Tutor's detailed Information such as Education , Experience , SubjectExpertise , Availability , etc. .
+Tutor can offer Tutor's detailed Information such as Education , Experience , subject Expertise , Availability , etc. .
 Maintainer can upgrade the Resource such as Course ' Material , Exercise , Video , etc. . .
 Tester can easily write some IntegrationTest on the Project .
 Programmer can get a clear Description of the Requirement from the Client .
@@ -37,11 +37,11 @@ User need the PaymentMethod to work to purchase a Class .
 User need to be able to find User's ideal Tutor through the Info User provided .
 User need to be able to schedule Time with the Tutor User choose .
 User need to be able to view the Video of Class .
-and a Tutor , User need to be able to use live - streaming Feature for one - on - one Class .
-Student am able to coomplete a RequestForm .
+and a Tutor , User need to be able to use live - StreamingFeature for one - on - one Class .
+Student am able to complete a RequestForm .
 User can get an AutoResponse in Email after submitting the Request .
 Student can complete an EvaluationForm .
-StudentUser can be paired with an Instructor who matches StudentUser's Language and schedule if available .
+StudentUser can be paired with an Instructor who matches StudentUser's Language and Schedule if available .
 Tutor can input Tutor's ScheduleAvailability into the System .
 Tutor's Availability will reflect the Fact that Tutor am now booked .
 Student can cancel or re-schedule TutoringTime within a specific TimeWindow .

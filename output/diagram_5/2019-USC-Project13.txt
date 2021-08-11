@@ -1,21 +1,13 @@
 @startuml
 hide circle
-class Mentee<actor> {
-	profile
-	password
-	information
-	detail
-	criterion
+class Admin<actor> {
 }
-class Mentor<actor> {
-	availability
-	interaction
-	mentee
-	password
-	information
+class Mentee<actor> {
 	detail
-	trainingphaseactivity
 	criterion
+	password
+	profile
+	information
 }
 class User<actor> {
 }
@@ -25,143 +17,96 @@ class End<actor> {
 }
 class Administrator<actor> {
 }
+class Mentor {
+	trainingPhaseActivity
+	detail
+	criterion
+	interaction
+	availability
+	password
+	mentee
+	information
+	send()
+}
 class Client {
-	serverWhile
+	server
 }
 class Admin {
-	update()
-	get()
-	assign()
-	export()
-	track()
-	send()
-	match()
-	view()
 	delete()
-}
-class Mentor {
+	export()
+	assign()
+	view()
+	send()
 	update()
-	monitor()
-	create()
-	show()
-	register()
-	mark()
-	miss()
-	submit()
-	provide()
-	report()
 	track()
-	send()
-	select()
-	accept()
-	reset()
-}
-class Administrator {
 	get()
-}
-class ActivityReport {
-}
-class Interaction {
-}
-class ActivityRecord {
-}
-class Mentee {
-	update()
-	see()
-	upload()
-	opt()
-	opt_out()
-	send()
-	select()
-	reset()
-}
-class User {
-	update()
-	load()
-	access()
-}
-class Detail {
-}
-class Reminder {
-}
-class Status {
-}
-class Request {
-	establish()
-}
-class Information {
-	include()
-}
-class Availability {
+	match()
 }
 class Report {
-}
-class Site {
-}
-class Phone {
-}
-class Password {
-}
-class Basis {
-}
-class Program {
-}
-class Communication {
-}
-class Trainingphaseactivity {
-}
-class Statistics {
 }
 class Developer {
 	integrate()
 }
 class WebApplication {
 }
-class End {
+class Mentee {
+	send()
+	opt_out()
+	update()
+	upload()
+	reset()
+	select()
+	see()
+}
+class User {
 	navigate()
+	update()
+}
+class Password {
+}
+class Information {
+	include()
+}
+class Detail {
+}
+class Request {
+}
+class Statistics {
 }
 class List {
 }
-Mentor --> Request : accept
-Mentor --> ActivityRecord : create
-Mentor o-- Trainingphaseactivity : monitor
-Mentee o-- Information : update
-Mentee o-- Detail : upload
-Admin --> Report : export
-Administrator --> Statistics : get
-Mentor o-- Detail : register
-Admin --> Mentor : assign
-User --> Site : access
-Admin --> Reminder : send
-Developer --> WebApplication : integrate
-Information --> Phone : include
-Admin --> Mentor : export
-Admin --> Statistics : view
-Mentee o-- Password : reset
-Admin --> Mentor : match
-Mentor --> Report : submit
-Mentor o-- Mentee : select
-Mentor o-- Password : reset
-Admin --> Mentor : track
-Admin --> Report : get
-Admin --> Status : update
-Mentor --> Admin : provide
+class Administrator {
+	get()
+}
+class ActivityReport {
+}
+class Photo {
+}
+class Reminder {
+}
+class Status {
+}
 Admin --> Mentee : track
+Admin --> Report : get
+Admin --> Mentor : match
+Developer --> WebApplication : integrate
+Admin --> ActivityReport : view
+User --> Password : update
+Mentee o-- Password : reset
+Information --> Photo : include
+Admin --> Mentor : supported_by
+Admin --> Mentor : assign
+Mentee o-- Information : update
+Admin --> Reminder : send
+Mentee o-- Detail : upload
+Admin --> Status : update
+Mentee --> Request : send
+Admin --> Statistics : view
+Admin --> Report : export
+Mentee --> Mentor : select
 Mentee --> List : see
 Mentor --> Report : send
-Mentor --> Basis : provide
-Admin --> Mentor : supported_by
-Mentee --> Request : send
-Admin --> Mentee : match
-User --> Password : update
-Mentee --> Program : opt
-Admin --> ActivityReport : view
-Admin --> User : delete
-Mentee --> Mentor : select
-Mentor --> ActivityReport : provide
-Mentor o-- Information : update
-Mentee --> Communication : opt
-Mentor o-- Availability : mark
-Mentor o-- Interaction : report
+Administrator --> Statistics : get
+Admin --> Mentor : track
 
 @enduml

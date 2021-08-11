@@ -6,59 +6,38 @@ class User<actor> {
 	image
 }
 class Client<actor> {
-	unix
+	server
 }
 class User {
-	choose()
 	detect()
-	upload()
+	choose()
 	want()
+	upload()
+	view()
 }
 class Tag {
 }
 class Client {
-	extract()
-	run()
 	replace()
-	train()
-	give()
-	see_along()
 	upload()
+	extract()
 	see()
-}
-class Pipeline {
-}
-class Unix {
-}
-class Classification {
 }
 class Image {
 }
-class Set {
-}
 class Model {
 }
-class MachineLearningAlgorithm {
+class Algorithm {
 }
-class Time {
+class Ui {
+	view()
 }
-class Topic {
-}
-Client --> Classification : see
-Client --> Image : see
-Client --> Classification : see_along
-Client --> Topic : give
-User --> User : choose
-Client --> Pipeline : upload
-Client --> Image : upload
-User --> Time : upload
-Client --> Model : replace
-Client --> Pipeline : train
-Client o-- Unix : run
-Client --> Image : supported_by
-User --> Tag : choose
-Client --> MachineLearningAlgorithm : replace
-Client --> Set : give
+Client --> Model : extract
 User o-- Image : upload
+User --> Tag : want
+Client --> Algorithm : replace
+User o-- Image : view
+User --> Tag : choose
+Client --> Image : upload
 
 @enduml

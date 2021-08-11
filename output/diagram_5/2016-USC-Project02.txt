@@ -3,11 +3,14 @@ hide circle
 class User<actor> {
 }
 class Parent<actor> {
+	child
 	detail
-	tuition
 }
 class Client<actor> {
 	email
+}
+class Admin<actor> {
+	mail
 }
 class Member<actor> {
 }
@@ -18,129 +21,101 @@ class Donor<actor> {
 class Child {
 	tuition
 }
-class Admin {
-	mail
-	update()
-	check()
-}
 class VYMA {
 	newsletter
 }
-class Information {
+class Section {
+	trigger()
+}
+class Donor {
+	make()
+	support()
+}
+class Vymacommunity {
+}
+class Notification {
 }
 class User {
 	have()
-	receive()
-	search()
 	view()
 	purchase()
-	subscribe()
+	receive()
 }
-class Detail {
-}
-class Parent {
-	set_up()
-	register()
-	view()
-	pay()
-	set()
-}
-class Password {
-}
-class Payment {
-}
-class Client {
-	add()
-	check()
-}
-class Googledrive {
+class Dvd {
 }
 class Student {
 	download()
 	practice()
+	view()
 	register()
 }
-class Concert {
+class Parent {
+	set_up()
+	pay()
+	view()
+	register()
 }
-class Newsletter {
+class Payment {
 }
-class Rehearsal {
+class Admin {
+	check()
+	update()
+}
+class Mail {
+}
+class Client {
+	check()
+	add()
+}
+class GoogleDrive {
+}
+class Roster {
+}
+class Password {
+}
+class Detail {
+}
+class MusicNote {
 }
 class Member {
 	view()
 }
-class Feedback {
-	provide()
-}
-class ContactUsPage {
-}
-class MusicNote {
+class Calendar {
 }
 class Update {
 }
-class Page {
+class Link {
 }
-class Donor {
-	support()
-	make()
+class Information {
 }
-class Online {
+class News {
 }
 class Email {
-}
-class Place {
-}
-class Calendar {
-}
-class NewsSection {
 }
 class OtherDetail {
 }
 class Trailer {
 }
-class Applicant {
-}
-class News {
-}
-class VYMACommunity {
-}
-class Link {
-}
-class Mail {
-}
-class Endeavor {
-}
-User --> Trailer : view
-Parent --> Password : view
-Parent --> Online : register
-User --> Update : receive
-Parent --> Payment : set
-Client --> Applicant : check
-Student --> Page : download
-User --> News : receive
-Student --> Online : register
-Client --> Googledrive : check
-Client --> Information : check
-Donor --> VYMACommunity : support
-Donor --> Online : make
-Student --> Concert : practice
-Client --> Link : add
-Client o-- Email : check
-Parent --> Payment : set_up
-User --> Newsletter : subscribe
-Admin --> Detail : update
-Admin o-- Mail : check
-Student --> Rehearsal : practice
-User --> Place : view
-Feedback --> User : provide
-Parent --> OtherDetail : view
-Member --> Information : view
-Donor --> Endeavor : support
-Member --> Calendar : view
-Admin --> Information : update
-Student --> MusicNote : download
-Admin --> NewsSection : update
-Feedback --> ContactUsPage : provide
 User --> Detail : view
+Member --> Calendar : view
+User --> Dvd : purchase
+User --> Update : receive
+Parent --> Payment : set_up
+Client --> Link : add
+Member --> Information : view
+Admin o-- Mail : check
+Admin --> Information : update
+Donor --> Vymacommunity : support
+User --> News : receive
+Client --> GoogleDrive : check
+Section --> Notification : trigger
+Client o-- Email : check
+Admin --> Roster : update
+Parent --> OtherDetail : view
+Parent --> Password : view
+User --> Trailer : view
+News o-- Section
+Admin --> Detail : update
+Student --> MusicNote : download
 
 @enduml

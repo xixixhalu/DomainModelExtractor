@@ -5,53 +5,52 @@ class User<actor> {
 }
 class Developer<actor> {
 }
+class Admin<actor> {
+}
 class User {
-	pay()
-	go()
 	return()
-	visit()
 	participate()
 	view()
+	go()
 	place()
 	keep()
+	visit()
 }
-class Raffle {
+class Auction {
+}
+class Item {
+	user()
+	win()
 }
 class Developer {
-	enable()
 	provide()
 	search()
+	enable()
+	pay()
 	allow()
 }
-class Loginsystem {
+class LoginSystem {
 }
-class Cause {
+class Source {
 }
-class Mine {
+class Product {
+	purchase()
 }
-class Database {
-	remove()
+class Track {
 }
 class Admin {
 	maintain()
 }
-class Product {
+class Database {
 }
-class Account {
-}
-class Track {
-}
-class Story {
-}
-User --> Product : return
-Developer --> User : enable
-User --> Mine : place
-Developer --> Loginsystem : provide
-Database --> Account : remove
-User --> Story : visit
-User --> Raffle : participate
-User --> Cause : visit
 User --> Track : keep
+User --> Item : visit
+Item --> Source : user
 Developer --> User : allow
+Developer --> User : enable
+Admin --> Database : maintain
+Developer --> LoginSystem : provide
+User --> Auction : participate
+Item --> Auction : win
 
 @enduml

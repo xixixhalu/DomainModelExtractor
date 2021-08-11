@@ -1,212 +1,163 @@
 @startuml
 hide circle
 class User<actor> {
-	emailnotificationsetting
+	emailNotificationSetting
+	trackingToolData
+	investmentProfile
 	password
 	investment
-	tooldata
-	investmentProfile
 }
 class ServiceProvider<actor> {
 	page
 }
 class Administrator<actor> {
 }
+class Admin<actor> {
+}
 class SiteAdmin<actor> {
 }
+class Site {
+}
+class DiscussionBoard {
+}
+class Permission {
+}
+class Post {
+}
 class User {
-	login()
-	have()
-	input()
-	see()
-	leave()
 	make()
-	vote()
-	choose()
-	track()
-	manage()
-	access()
+	export()
+	report()
+	login()
+	receive()
+	start()
+	have()
+	create()
 	rate()
+	adjust()
+	leave()
+	vote()
+	manage()
+	view()
+	activate()
+	reset()
 	share()
 	add()
-	start()
-	adjust()
-	create()
 	comment()
-	reset()
-	view()
-	export()
 	read()
-	find()
+	see()
 	search()
-	report()
-	receive()
-	activate()
-	like()
-	want()
-	use()
+	find()
 }
-class List {
+class Content {
 }
-class Administrator {
-	verify()
-	view()
-	post()
-	moderate()
+class PropertyInformation {
 }
-class Identity {
-}
-class Expense {
-}
-class Review {
-}
-class SiteAdmin {
-	have()
-}
-class Profile {
+class FactorAuthentication {
 }
 class ServiceProvider {
 	reply()
 	see()
 }
-class Name {
-}
-class Performance {
-}
-class TextInput {
-}
-class City {
-}
-class Password {
-}
-class DiscussionBoard {
-}
-class Phonenumber {
-}
-class Type {
-}
-class Email {
-}
-class Admin {
-	remove()
-}
-class Tooldata {
-}
-class SiteBlog {
-}
-class WebsiteUtilizationStatistics {
-}
-class InvestmentProfile {
-}
-class Inside {
-}
-class Discussion {
-}
-class Rent {
-}
-class File {
-}
-class Article {
-}
 class Account {
-}
-class LoanAmount {
-}
-class PropertyInformation {
-}
-class SitePermission {
-}
-class Blog {
-}
-class InvestmentProperty {
-}
-class SiteDiscussionBoard {
-}
-class Emailnotificationsetting {
-}
-class SocialMediaSite {
-}
-class Link {
-}
-class CommentReviewOther {
-	register()
-}
-class BlogPost {
-}
-class Address {
-}
-class EmailAuthenticationSystem {
-}
-class Investment {
-}
-class ServiceProviderContactInformation {
-}
-class Notification {
-}
-class FactorAuthentication {
 }
 class Page {
 }
-class PurchasePrice {
+class Profile {
 }
-class Payment {
+class Review {
+	post()
 }
-User --> DiscussionBoard : search
-User --> Notification : receive
-User --> File : export
-Administrator --> User : moderate
-User --> Profile : make
-User --> Review : read
-User o-- Email : find
-User --> FactorAuthentication : activate
-User --> SocialMediaSite : use
-User --> ServiceProvider : search
-User --> ServiceProvider : rate
-User --> List : view
-User --> Review : vote
-Administrator --> Article : post
-Admin --> User : remove
-User --> Link : create
-User --> Name : find
-User --> Page : make
-User o-- Tooldata : export
-User --> ServiceProvider : find
-User --> User : report
-User --> Account : create
-Administrator --> Blog : post
+class Blog {
+}
+class TrackingToolData {
+}
+class Mediaapplication {
+}
+class Investment {
+}
+class Discussion {
+}
+class Administrator {
+	remove()
+	post()
+	verify()
+	moderate()
+	view()
+}
+class WebsiteUtilizationStatistics {
+}
+class Password {
+}
+class Notification {
+}
+class Time {
+	user()
+}
+class VisualizationTool {
+}
+class List {
+}
+class Performance {
+}
+class Discussionboard {
+	user()
+}
+class TextInput {
+}
+class Article {
+}
+class EmailNotificationSetting {
+}
+class Identity {
+}
+class Admin {
+	have()
+}
+class Access {
+}
+class SiteAdmin {
+}
 User --> Performance : see
-User --> PurchasePrice : input
-User --> SiteBlog : read
-User --> LoanAmount : input
-User --> BlogPost : share
-User --> TextInput : use
-Administrator --> WebsiteUtilizationStatistics : view
-User --> PropertyInformation : add
-User --> Payment : input
-User --> Address : input
-User --> City : search
-User o-- InvestmentProfile : manage
-User --> SitePermission : have
-ServiceProvider --> Review : reply
-User o-- Emailnotificationsetting : adjust
-User --> EmailAuthenticationSystem : reset
-User o-- Password : reset
-User --> ServiceProvider : make
-User o-- Investment : manage
-User --> Inside : share
-User --> DiscussionBoard : start
+Blog o-- Post
+User --> FactorAuthentication : activate
+User --> ServiceProvider : find
+Site o-- Blog
+User --> ServiceProvider : search
+Discussionboard --> TextInput : user
 User --> Blog : comment
-Administrator --> Identity : verify
-User o-- Email : receive
-User --> Discussion : start
-User --> InvestmentProperty : track
-User --> Expense : input
-User --> ServiceProviderContactInformation : access
-User --> Phonenumber : find
-User --> Rent : input
-User --> Type : search
-ServiceProvider --> Review : see
-User --> SiteDiscussionBoard : read
+User --> Account : create
 User --> Review : leave
+User --> Permission : have
+User --> DiscussionBoard : read
+User --> Page : make
+Administrator --> Article : post
+User --> User : report
+User o-- Password : reset
+User --> Profile : make
+User o-- EmailNotificationSetting : adjust
+User --> Review : vote
+User --> Review : read
+User --> Blog : read
+Administrator --> Identity : verify
+User --> Notification : receive
+Site o-- Permission
+User --> ServiceProvider : rate
+User o-- TrackingToolData : export
+User --> Post : share
+User --> Access : have
+Administrator --> User : remove
+Site o-- Admin
+User --> Mediaapplication : share
+User o-- Investment : manage
+User --> Discussionboard : search
+Time --> VisualizationTool : user
+SiteAdmin <|-- Admin
+User --> Content : create
+User --> List : view
+Site o-- DiscussionBoard
+User --> Discussion : start
+User --> PropertyInformation : add
+Administrator --> WebsiteUtilizationStatistics : view
 
 @enduml

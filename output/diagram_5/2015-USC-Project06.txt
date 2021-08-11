@@ -5,9 +5,9 @@ class Manager<actor> {
 	interest
 }
 class Contractor<actor> {
-	work
-	information
 	resource
+	information
+	work
 	comment
 }
 class Architect<actor> {
@@ -15,179 +15,133 @@ class Architect<actor> {
 }
 class ProjectManager<actor> {
 }
-class Manager {
-	add()
-	log_in()
-	tell()
-	reject()
-	make()
-	track()
-	disapprove()
-	see()
-	send_out()
-	approve()
-	take()
-	search()
-	edit()
-	create()
-	send()
-	talk()
-	save()
-	log()
-	modify()
-	access()
-	find()
-	get()
+class Category {
+}
+class Meeting {
+}
+class Log {
+}
+class Minute {
 }
 class Contractor {
-	log_in()
-	correct()
-	enter()
-	log()
-	manage()
-	report()
-	see()
-	ask()
 	send()
-}
-class Question {
-}
-class Task {
-}
-class Notification {
-}
-class List {
+	ask()
+	edit()
+	save()
+	manager()
+	log_in()
+	report()
+	enter()
+	see()
 }
 class Report {
 }
-class Project {
-}
-class Resource {
-}
-class ProjectManager {
+class Manager {
+	access()
 	track()
-	plan()
-}
-class Status {
-}
-class Message {
-}
-class MeetingMinute {
-}
-class Decision {
-}
-class Architect {
-	communicate()
-	report()
-}
-class Colleague {
-}
-class Taskprogress {
-}
-class People {
-	get()
-}
-class Information {
-}
-class App {
+	add()
+	modify()
+	find()
+	reject()
+	edit()
+	save()
+	approve()
+	create()
+	search()
+	talk()
+	log_in()
+	send_out()
+	disapprove()
+	make()
+	see()
+	take()
 }
 class Summary {
 }
-class Personnel {
+class ProjectManager {
+	plan()
+	track()
+}
+class Progress {
+}
+class Resource {
+}
+class Task {
+}
+class Question {
+}
+class Topic {
+}
+class Status {
 }
 class Event {
 	take()
 }
-class Minute {
-}
-class MeetingLog {
-}
-class Topic {
-}
-class Design {
-}
-class Data {
-}
-class ProjectCompletion {
-}
-class MeetingInformation {
-}
-class Progress {
-}
-class Everyone {
-	know()
-}
-class Instruction {
-}
 class Place {
-}
-class Request {
-}
-class Comment {
-}
-class TaskCategory {
-}
-class Company {
 }
 class Note {
 }
+class Decision {
+}
+class Information {
+}
+class Meetinginformation {
+}
+class Everyone {
+	do()
+}
 class Change {
 }
-class Client {
+class Request {
 }
-class Issue {
+class People {
+	get()
 }
-class Anytime {
+class Message {
 }
-Contractor --> Data : enter
-Manager --> Project : modify
-Contractor --> Report : enter
-Contractor --> Question : ask
-Manager --> Instruction : send_out
-ProjectManager --> ProjectCompletion : plan
-People --> Information : get
-Contractor --> Project : see
-Contractor --> Company : report
-Manager --> MeetingInformation : edit
-Contractor o-- Resource : manage
-Contractor --> App : log
-Manager --> Note : take
-Manager --> Project : create
+class Comment {
+}
+class Data {
+}
+class Architect {
+}
+class Colleague {
+}
+Manager --> ProjectManager : modify
+Manager --> ProjectManager : create
 Manager --> Progress : save
-Manager --> MeetingMinute : send_out
-Contractor --> MeetingMinute : see
-Manager --> Summary : see
-Manager --> Status : save
-Manager --> MeetingMinute : send
-Contractor --> Task : see
-Contractor --> Change : report
+ProjectManager --> Progress : track
+Contractor --> Report : enter
 Manager --> Information : edit
-Manager --> Personnel : send
-Manager --> App : log
-Contractor --> Message : send
-Manager --> Instruction : send
-Manager o-- Client : talk
-Contractor --> Minute : correct
-Manager --> MeetingMinute : search
-Event --> Place : take
-Contractor --> Issue : correct
+Manager --> Comment : approve
+Contractor o-- Resource : manager
+Contractor o-- Information : edit
+Contractor --> Progress : save
+Contractor --> Data : enter
 Architect --> Colleague : supported_by
-Manager --> MeetingLog : access
-Manager --> Decision : make
-Manager --> Request : approve
-Manager --> Task : reject
-Manager --> Contractor : approve
+Contractor --> Minute : see
+Manager --> Meetinginformation : edit
+Manager --> Task : approve
 Manager --> Progress : track
-Contractor --> Anytime : enter
-Contractor --> Manager : send
-Contractor --> Anytime : supported_by
-Manager --> TaskCategory : edit
-Manager --> Notification : talk
+Task o-- Progress
+Contractor --> Change : report
+Task o-- Category
+Contractor --> Question : ask
+Meeting o-- Log
+Manager --> Category : edit
+Meeting o-- Minute
 Manager --> Topic : find
-Architect --> Design : report
-Architect o-- Colleague : communicate
-ProjectManager --> Taskprogress : track
-Manager --> Comment : reject
-Manager --> List : add
+Manager --> Log : access
+Manager --> Status : save
+Manager --> Request : approve
+Manager --> Minute : send_out
+People --> Information : get
+Contractor --> Status : save
+Event --> Place : take
+Contractor --> Message : send
+Manager --> Note : take
+Contractor --> Task : see
+Manager --> Decision : make
+Manager --> Summary : see
 
 @enduml

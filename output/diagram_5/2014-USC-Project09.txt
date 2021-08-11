@@ -7,90 +7,69 @@ class Business<actor> {
 }
 class Administrator<actor> {
 }
+class SureNumber {
+}
+class Calculator {
+}
 class User {
-	see()
-	download()
+	user()
+	calculate()
 	have()
-	share()
-	lookup()
-	show()
 	add()
-	submit()
-	use()
-	review()
-	reduce()
-	search()
-	like()
 	get()
-}
-class Category {
-}
-class Administrator {
-	verify()
-	assign()
-	approve()
+	download()
+	search()
+	submit()
+	split()
+	see()
+	share()
+	review()
+	lookup()
 }
 class Business {
 	claim()
 }
-class TipCalculator {
-	split()
-	calculate()
-}
-class Location {
-}
-class Access {
-}
-class SearchResult {
-}
-class Question {
-}
-class Comment {
+class Search {
+	result()
 }
 class TravelGuide {
 }
-class Information {
+class Administrator {
+	assign()
+	verify()
+	approve()
 }
-class Friction {
-}
-class Guide {
-}
-class List {
-}
-class Application {
+class Comment {
+	increase()
 }
 class Tip {
 }
+class Friction {
+}
+class Access {
+}
+class Question {
+}
+class Guide {
+}
 class Customer {
 }
-class Name {
-}
-class TipSureNumber {
-}
-User --> Customer : supported_by
 User --> Business : add
-User --> Access : have
-User --> Application : like
-User --> Business : show
-User --> Location : search
-User --> TipCalculator : use
-User --> Tip : get
-Administrator --> User : approve
-User --> SearchResult : see
-User --> Customer : reduce
-User --> Question : submit
-User --> Name : search
-Administrator --> Comment : approve
-User --> User : see
-Administrator --> TipSureNumber : assign
-User --> TravelGuide : download
-User --> Business : search
-User --> Information : like
-User --> Friction : reduce
-User --> List : see
 User --> Business : lookup
-User --> Category : search
+Tip o-- SureNumber
+Administrator --> Comment : approve
+User --> Access : have
+User --> Tip : split
+Tip o-- Calculator
 User --> Guide : review
+User --> Tip : calculate
+User --> Friction : get
+User --> Tip : get
+Administrator --> SureNumber : assign
+User --> TravelGuide : download
 Business o-- Business : claim
+User --> Customer : supported_by
+User --> Question : submit
+User --> Calculator : user
 
 @enduml

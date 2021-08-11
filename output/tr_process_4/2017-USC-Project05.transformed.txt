@@ -26,44 +26,85 @@
         "actor"
       ],
       "attributes": []
+    },
+    "House": {
+      "name": "House",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Staff": {
+      "name": "Staff",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "HouseManager",
+      "dest": "Manager",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "House",
+      "dest": "Manager",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "HouseStaff",
+      "dest": "Staff",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "House",
+      "dest": "Staff",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
     {
       "actor": "Administrator",
-      "action": "filter",
+      "action": "help",
       "target": "",
       "para": []
     },
     {
       "actor": "Secret",
       "action": "authorize",
-      "target": "",
+      "target": "Access",
       "para": []
     },
     {
-      "actor": "Administrator",
-      "action": "lock",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "delete",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "assign",
-      "target": "Code",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "view",
-      "target": "Log",
+      "actor": "Manager",
+      "action": "select",
+      "target": "Lock",
       "para": []
     },
     {
@@ -74,92 +115,32 @@
     },
     {
       "actor": "Administrator",
-      "action": "help",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "HouseManager",
-      "action": "select",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "enter",
-      "target": "Secret",
-      "para": []
-    },
-    {
-      "actor": "HouseStaff",
-      "action": "see",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "assign",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "see",
-      "target": "Batterystatus",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "see",
-      "target": "Hub",
-      "para": []
-    },
-    {
-      "actor": "HouseStaff",
-      "action": "lock",
+      "action": "allow",
       "target": "Code",
       "para": []
     },
     {
       "actor": "Administrator",
-      "action": "see",
-      "target": "LockStatus",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "allow",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "HouseStaff",
-      "action": "lock",
+      "action": "add",
       "target": "",
       "para": []
     },
     {
       "actor": "Administrator",
       "action": "delete",
-      "target": "Other",
+      "target": "Lock",
       "para": []
     },
     {
       "actor": "Administrator",
-      "action": "lock",
-      "target": "Name",
+      "action": "delete",
+      "target": "Group",
       "para": []
     },
     {
-      "actor": "Lock",
-      "action": "add",
-      "target": "",
+      "actor": "Administrator",
+      "action": "enter",
+      "target": "SmartThingsClientId",
       "para": []
     },
     {
@@ -170,55 +151,19 @@
     },
     {
       "actor": "Administrator",
-      "action": "lock",
-      "target": "Code",
-      "para": []
-    },
-    {
-      "actor": "HouseManager",
-      "action": "select",
-      "target": "Lock",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "view",
+      "action": "allow",
       "target": "",
       "para": []
     },
     {
-      "actor": "Administrator",
-      "action": "enter",
-      "target": "SmartThingsClientId",
-      "para": []
-    },
-    {
-      "actor": "HouseManager",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
+      "actor": "Staff",
       "action": "see",
       "target": "",
       "para": []
     },
     {
-      "actor": "Administrator",
-      "action": "create",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "enter",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SmartThingsClientId",
-      "action": "authorize",
+      "actor": "Manager",
+      "action": "add",
       "target": "",
       "para": []
     }

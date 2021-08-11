@@ -2,8 +2,9 @@
 
 Extract Domain information from User Stories
 
-# Features (Proposed)
+# Features
 
+- Misspelling Detect and Preprocess user stories.
 - Analyze TDs and Pos-tags.
 - Extract Enities, Attributes, Behaviors, Relationship from inputs
 - Construct UML Class
@@ -20,7 +21,7 @@ Extract Domain information from User Stories
 
 - Clone this project to your local
 
-- Download Stanford coreNLP package from [HERE](http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip); COPY and UNZIP it to the dir of `DomainModelExtractor`
+- Download Stanford coreNLP package (V4.2.2) from [HERE](http://nlp.stanford.edu/software/stanford-corenlp-4.2.2.zip); COPY and UNZIP it to the dir of `DomainModelExtractor`
   - More detail at [https://stanfordnlp.github.io/CoreNLP/](https://stanfordnlp.github.io/CoreNLP/)
   - How to setup and use Stanford CoreNLP Server with Python [https://www.khalidalnajjar.com/setup-use-stanford-corenlp-server-python/](https://www.khalidalnajjar.com/setup-use-stanford-corenlp-server-python/)
   

@@ -8,15 +8,15 @@
       ],
       "attributes": [
         {
+          "name": "performance",
+          "type": "default"
+        },
+        {
           "name": "point",
           "type": "default"
         },
         {
-          "name": "progressreport",
-          "type": "default"
-        },
-        {
-          "name": "performance",
+          "name": "progressReport",
           "type": "default"
         }
       ]
@@ -34,100 +34,40 @@
         "actor"
       ],
       "attributes": []
+    },
+    "Analytic": {
+      "name": "Analytic",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "Progress",
+      "dest": "Report",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "User",
+      "dest": "Analytic",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
-    {
-      "actor": "Developer",
-      "action": "hand_off",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "publish",
-      "target": "App",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "understand",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "play",
-      "target": "App",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "change",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "skip",
-      "target": "Question",
-      "para": []
-    },
-    {
-      "actor": "Time",
-      "action": "fix",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Option",
-      "action": "enable",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "restructure",
-      "target": "Project",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "provide",
-      "target": "Option",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "understand",
-      "target": "Point",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "publish",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "change",
-      "target": "Ui",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "get",
-      "target": "UserAnalytic",
-      "para": []
-    },
     {
       "actor": "Developer",
       "action": "fix",
@@ -136,62 +76,32 @@
     },
     {
       "actor": "User",
-      "action": "view",
-      "target": "",
+      "action": "play",
+      "target": "App",
       "para": []
     },
     {
       "actor": "Option",
-      "action": "enable",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "fix",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "provide",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "hand",
-      "target": "SourceCode",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "play",
+      "action": "rate",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "have",
-      "target": "Trouble",
+      "action": "understand",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Maintainer",
+      "actor": "Developer",
+      "action": "change",
+      "target": "UI",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "get",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "proceed",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "track",
-      "target": "Progress",
+      "target": "Feedback",
       "para": []
     },
     {
@@ -201,33 +111,9 @@
       "para": []
     },
     {
-      "actor": "Developer",
-      "action": "hand",
-      "target": "",
-      "para": []
-    },
-    {
       "actor": "User",
-      "action": "have",
+      "action": "play",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "skip",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "track",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "hand_off",
-      "target": "SourceCode",
       "para": []
     },
     {
@@ -237,27 +123,39 @@
       "para": []
     },
     {
-      "actor": "Component",
-      "action": "have",
+      "actor": "Developer",
+      "action": "make",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "answer",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Progressreport",
       "para": []
     },
     {
       "actor": "Developer",
-      "action": "restructure",
+      "action": "provide",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "fix",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "publish",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "get",
+      "target": "Analytic",
+      "para": []
+    },
+    {
+      "actor": "Trouble",
+      "action": "answer",
+      "target": "Question",
       "para": []
     },
     {
@@ -268,8 +166,104 @@
     },
     {
       "actor": "User",
+      "action": "proceed",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "get",
-      "target": "Feedback",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "provide",
+      "target": "Option",
+      "para": []
+    },
+    {
+      "actor": "Option",
+      "action": "enable",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "restructure",
+      "target": "Project",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "hand_off",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "skip",
+      "target": "Question",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "hand_off",
+      "target": "SourceCode",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "publish",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "skip",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "understand",
+      "target": "Point",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "restructure",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "get",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Option",
+      "action": "rate",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "track",
+      "target": "Progress",
       "para": []
     }
   ]

@@ -8,23 +8,7 @@
       ],
       "attributes": [
         {
-          "name": "desktop",
-          "type": "default"
-        },
-        {
-          "name": "profilePicture",
-          "type": "default"
-        },
-        {
           "name": "post",
-          "type": "default"
-        },
-        {
-          "name": "password",
-          "type": "default"
-        },
-        {
-          "name": "profileInformation",
           "type": "default"
         },
         {
@@ -34,11 +18,34 @@
         {
           "name": "comment",
           "type": "default"
+        },
+        {
+          "name": "profileinformation",
+          "type": "default"
+        },
+        {
+          "name": "password",
+          "type": "default"
+        },
+        {
+          "name": "desktop",
+          "type": "default"
+        },
+        {
+          "name": "profilepicture",
+          "type": "default"
         }
       ]
     },
     "Owner": {
       "name": "Owner",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Admin": {
+      "name": "Admin",
       "type": [
         "actor"
       ],
@@ -67,14 +74,57 @@
           "type": "default"
         }
       ]
+    },
+    "Rights": {
+      "name": "Rights",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Win": {
+      "name": "Win",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "ListPage": {
+      "name": "ListPage",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
   "relation_list": [
     {
-      "source": "User",
-      "dest": "WinCondition",
-      "type": "association",
-      "msg": "supported_by",
+      "source": "Project",
+      "dest": "SettingPage",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Admin",
+      "dest": "Rights",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "WinCondition",
+      "dest": "Category",
+      "type": "aggregation",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -91,9 +141,59 @@
         "1"
       ],
       "para": []
+    },
+    {
+      "source": "User",
+      "dest": "WinCondition",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Project",
+      "dest": "ListPage",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Win",
+      "dest": "Category",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Win",
+      "dest": "Condition",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
     }
   ],
   "behavior_list": [
+    {
+      "actor": "User",
+      "action": "forget",
+      "target": "",
+      "para": []
+    },
     {
       "actor": "User",
       "action": "adjust",
@@ -101,123 +201,9 @@
       "para": []
     },
     {
-      "actor": "Owner",
-      "action": "access",
-      "target": "Project",
-      "para": []
-    },
-    {
-      "actor": "BusinessValue",
-      "action": "remember",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "ProjectSettingPage",
-      "action": "give",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "delete",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "access",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "delete",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "save",
-      "target": "TOPSISAnalysis",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "adjust",
-      "target": "While",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "save",
-      "target": "PrioritizationResult",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Ease",
-      "action": "remember",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "reset",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "log_out",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "adjust",
-      "target": "Importance",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "edit",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "mark",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "edit",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "make",
-      "target": "Project",
-      "para": []
-    },
-    {
       "actor": "User",
       "action": "upload",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "sort",
-      "target": "",
+      "target": "Picture",
       "para": []
     },
     {
@@ -234,14 +220,86 @@
     },
     {
       "actor": "User",
-      "action": "create",
-      "target": "Wincondition",
+      "action": "reply",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "adjust",
+      "target": "Importance",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Demo",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "upload",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "ListPage",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "filter",
+      "target": "View",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "edit",
+      "target": "List",
       "para": []
     },
     {
       "actor": "Owner",
-      "action": "edit",
-      "target": "List",
+      "action": "user",
+      "target": "SettingPage",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reset",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "set",
+      "target": "BusinessValue",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "People",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "WinCondition",
       "para": []
     },
     {
@@ -252,25 +310,49 @@
     },
     {
       "actor": "User",
-      "action": "view",
-      "target": "ProjectListPage",
+      "action": "adjust",
+      "target": "Category",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "add",
+      "target": "Project",
       "para": []
     },
     {
       "actor": "User",
-      "action": "enter",
-      "target": "Criterion",
+      "action": "disagree",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "delete",
-      "target": "User",
+      "action": "join",
+      "target": "Project",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "set",
+      "actor": "Goal",
+      "action": "user",
+      "target": "Slider",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "edit",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "Comment",
+      "action": "user",
+      "target": "Username",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "give",
       "target": "",
       "para": []
     },
@@ -282,50 +364,26 @@
     },
     {
       "actor": "User",
-      "action": "log",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "create",
-      "target": "Winconditioncategory",
-      "para": []
-    },
-    {
-      "actor": "People",
-      "action": "agree",
-      "target": "",
+      "target": "Category",
       "para": []
     },
     {
       "actor": "User",
-      "action": "view",
-      "target": "",
+      "action": "mark",
+      "target": "Category",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "export",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "enter",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "filter",
-      "target": "View",
-      "para": []
-    },
-    {
-      "actor": "User",
+      "actor": "Owner",
       "action": "delete",
-      "target": "WinCondition",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "quote",
+      "target": "",
       "para": []
     },
     {
@@ -336,128 +394,20 @@
     },
     {
       "actor": "User",
-      "action": "tag",
-      "target": "",
+      "action": "create",
+      "target": "WinCondition",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "set",
-      "target": "Need",
+      "actor": "Owner",
+      "action": "edit",
+      "target": "List",
       "para": []
     },
     {
       "actor": "User",
       "action": "enter",
       "target": "WeightCoefficient",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "set",
-      "target": "BusinessValue",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "edit",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "disagree",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "save",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "export",
-      "target": "WinCondition",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "agree",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "edit",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Demo",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "sort",
-      "target": "WinCondition",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "filter",
-      "target": "Category",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "sort",
-      "target": "Upvote",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "edit",
-      "target": "ProfileInformation",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "add",
-      "target": "Project",
-      "para": []
-    },
-    {
-      "actor": "Penalty",
-      "action": "remember",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "use",
-      "target": "ProjectSettingPage",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "delete",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "join",
-      "target": "Project",
       "para": []
     },
     {
@@ -468,134 +418,62 @@
     },
     {
       "actor": "User",
-      "action": "join",
+      "action": "win",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "upload",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "reset",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "People",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "filter",
+      "action": "sort",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "add",
-      "target": "Reply",
-      "para": []
-    },
-    {
-      "actor": "People",
-      "action": "agree",
-      "target": "WinCondition",
-      "para": []
-    },
-    {
-      "actor": "WinCondition",
-      "action": "excel",
+      "action": "export",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "forget",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "mark",
-      "target": "MinimumMarketableFeature",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "want",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "tag",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "use",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "agree",
+      "action": "export",
       "target": "WinCondition",
       "para": []
     },
     {
       "actor": "User",
-      "action": "see",
-      "target": "",
+      "action": "win",
+      "target": "Condition",
       "para": []
     },
     {
       "actor": "User",
-      "action": "mark",
-      "target": "Category",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Homepage",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "set",
-      "target": "Ease",
+      "action": "save",
+      "target": "Prioritization",
       "para": []
     },
     {
       "actor": "User",
       "action": "edit",
-      "target": "",
+      "target": "Profileinformation",
       "para": []
     },
     {
       "actor": "User",
-      "action": "adjust",
+      "action": "log_out",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "edit",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "give",
+      "target": "Rights",
       "para": []
     }
   ]

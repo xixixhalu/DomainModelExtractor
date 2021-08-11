@@ -1,5 +1,5 @@
-User can mark a Category as MinimumMarketableFeature when creating it .
-User can save the PrioritizationResult from the TOPSISAnalysis .
+User can mark a Category as Minimum Marketable Feature when creating it .
+User can save the Prioritization results from the TopsisAnalysis .
 User can adjust the Importance of each Goal using the Slider .
 User can enter WeightCoefficient according to the Criterion for a WinCondition while using Topsis .
 User can adjust the Coefficient on each Win - WinCategory while evaluating its Effect on the Project .
@@ -17,17 +17,17 @@ User can edit User's ProfileInformation such as Name , Surname , ProfilePicture 
 User can see People that agree with User's WinCondition .
 User can quote , reply on other People 's Comment .
 User want to export the WinCondition to excel .
-User want to sort WinCondition by Criterion .
-User can tag Someone to User's Comment using Username .
+User want to sort win Condition by Criterion .
+User can tag Someone to User's Comment using @username .
 User can agree or disagree with a WinCondition .
 Owner can make a Project private or public .
 or Admin , Owner can edit the List of approved members from the ProjectSettingPage .
-Owner can use the ProjectSettingPage to give admin Rights to a project member .
+Owner can use the ProjectSettingPage to give AdminRights to a project member .
 User can view the ProjectListPage from the Homepage .
 User can delete only User's own Post and Comment .
-admin can edit and delete Everyone 's Post and Comment .
+Admin can edit and delete Everyone 's Post and Comment .
 Owner can add a new Project .
 Owner can access the SettingPage for the Project .
 Owner can delete , hide a Project from the ProjectSettingPage .
 User can sort according to the Upvote .
-User can add Comment and reply to Comment .
+User can add Comment and Reply to Comment .

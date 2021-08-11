@@ -23,7 +23,7 @@ def S_TR1(domain):
         source = relation['source']
         dest = relation['dest']
         if source.lower() in STOP_WORDS:
-            domain.delete_relation(actor=source)
+            domain.delete_relation(source=source)
         if dest.lower() in STOP_WORDS:
             domain.delete_relation(dest=dest)
 
@@ -88,14 +88,17 @@ def S_TR2(domain):
         return word_map
         
     root = TrieNode('')
-    # add(root, 'Player')
-    # add(root, 'PlayerData')
-    # add(root, 'PlayerValue')
-    # add(root, 'Admin')
-    # add(root, 'AdminFileOne')
-    # add(root, 'AdminFileTwo')
-    # add(root, 'AdminFile')
-    # add(root, 'PlayerAddressTwo')
+
+    # add_word(root, 'Player')
+    # add_word(root, 'PlayerData')
+    # add_word(root, 'PlayerValue')
+    # add_word(root, 'AdminValue')
+    # add_word(root, 'AdminData')    
+    # add_word(root, 'Admin')
+    # add_word(root, 'AdminFileOne')
+    # add_word(root, 'AdminFileTwo')
+    # add_word(root, 'AdminFile')
+    # add_word(root, 'PlayerAddressTwo')
     # add_word(root, 'Data')
     # add_word(root, 'AdminData')
     # print(TrieNodeEncoder().encode(root))
@@ -104,7 +107,6 @@ def S_TR2(domain):
     relation_list = domain.get_relation()
     entity_dict = domain.get_entity()
     behavior_list = domain.get_behavior()
-    # print(behavior_list.to)
     entities = set(entity_dict.keys())
     entities.update(item.actor for item in behavior_list)
     entities.update(item.target for item in behavior_list)
@@ -112,17 +114,17 @@ def S_TR2(domain):
     entities.update(item.dest for item in relation_list)
     for e in entities:
         add_word(root, e)
-
+    # print(TrieNodeEncoder().encode(root))
     
     new_map = reconstruct_word(root, '', {})
-    # print(new_map)
+    # print(new_map, len(new_map))
     # print(entities)
     
     def transform_helper(word_map, prefix, entities):
         key = list(word_map.keys())[0]
         if key not in entities:
             domain.add_entity(entity_name=key, entity_type='shared')
-            domain.add_relation(source=prefix, dest=key, ass_type='aggregation')
+        domain.add_relation(source=prefix, dest=key, ass_type='aggregation')
 
         if not word_map[key]:
             return (prefix + key, key)
@@ -132,6 +134,8 @@ def S_TR2(domain):
 
     transform_map = []
     for key in new_map.keys():
+        if key == '':
+            continue
         if key not in entities:
             domain.add_entity(entity_name=key, entity_type='shared')
         for w in new_map[key]:
@@ -151,5 +155,5 @@ def S_TR2(domain):
                 b.target = pair[1]
         for key in entity_dict.keys():
             if key == pair[0]:
-                domain.add_relation(source=pair[0], dest=[1], ass_type='generalization')
+                domain.add_relation(source=pair[0], dest=pair[1], ass_type='generalization')
 

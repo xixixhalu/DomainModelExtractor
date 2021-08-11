@@ -1,16 +1,16 @@
-admin can manage UserPermission .
+Admin can manage UserPermission .
 User should receive an Email after registering so that User am able to confirm User's Registration .
 User should only see Project User have been assigned to so that User am not exposed to sensitive Information .
-admin should be able to associate Project and User so that admin can restrict Access appropriately .
+Admin should be able to associate Project and User so that Admin can restrict Access appropriately .
 User should be able to export SoftwareQualityMetric so that User can perform off - Line statistical Analysis .
-to the Project , Contributor should be able to ask the admin to give Access to another User to the Project .
+to the Project , Contributor should be able to ask the Admin to give Access to another User to the Project .
 User should be able to reset User's Password with User's Email if forgotten .
 User should be able to request for analyzing User's Project .
 User should receive a VerificationEmail on Signup .
-admin should have the Ability to grant , deny Access of the Project to the User .
+Admin should have the Ability to grant , deny Access of the Project to the User .
 User should be able to view various Statistics about the Project .
 Contributor should be able to access all the Project Contributor worked on so that Contributor can analyze Contributor's Impact .
-admin should be able to reset UserPassword when , if required .
-admin should be able to terminate or block an Account temporarily , permanently .
+Admin should be able to reset UserPassword when , if required .
+Admin should be able to terminate or block an Account temporarily , permanently .
 User should be able to see the Evolution of Open - SourceProject .
-Contributor should be able to see the List of analyzed Project that Contributor have contributed to , Contributor am given Access to , or any other open Source project .
+Contributor should be able to see the List of analyzed Project that Contributor have contributed to , Contributor am given Access to , or any other open SourceProject .

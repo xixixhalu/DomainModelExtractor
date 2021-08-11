@@ -8,19 +8,15 @@
       ],
       "attributes": [
         {
-          "name": "need",
-          "type": "default"
-        },
-        {
-          "name": "option",
-          "type": "default"
-        },
-        {
-          "name": "orderhistory",
+          "name": "orderHistory",
           "type": "default"
         },
         {
           "name": "experience",
+          "type": "default"
+        },
+        {
+          "name": "occasion",
           "type": "default"
         },
         {
@@ -36,15 +32,15 @@
       ],
       "attributes": [
         {
-          "name": "orderhistory",
-          "type": "default"
-        },
-        {
           "name": "service",
           "type": "default"
         },
         {
-          "name": "transaction",
+          "name": "pastTransaction",
+          "type": "default"
+        },
+        {
+          "name": "orderHistory",
           "type": "default"
         }
       ]
@@ -53,6 +49,20 @@
       "name": "Customer",
       "type": [
         "actor"
+      ],
+      "attributes": []
+    },
+    "History": {
+      "name": "History",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Status": {
+      "name": "Status",
+      "type": [
+        "shared"
       ],
       "attributes": []
     }
@@ -79,43 +89,101 @@
         "1"
       ],
       "para": []
+    },
+    {
+      "source": "Product",
+      "dest": "Status",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Order",
+      "dest": "History",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
     }
   ],
   "behavior_list": [
     {
+      "actor": "Florist",
+      "action": "upload",
+      "target": "Catalog",
+      "para": []
+    },
+    {
       "actor": "Consumer",
-      "action": "place",
-      "target": "Florist",
+      "action": "view",
+      "target": "Review",
       "para": []
     },
     {
       "actor": "Florist",
-      "action": "market",
-      "target": "",
+      "action": "track",
+      "target": "History",
       "para": []
     },
     {
       "actor": "Florist",
       "action": "have",
-      "target": "",
+      "target": "Record",
       "para": []
     },
     {
       "actor": "Consumer",
-      "action": "review",
+      "action": "cancel",
+      "target": "Order",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "want",
       "target": "",
       "para": []
     },
     {
-      "actor": "Florist",
-      "action": "provide",
-      "target": "",
+      "actor": "Customer",
+      "action": "create",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "track",
+      "target": "Order",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "schedule",
+      "target": "Appointment",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "make",
+      "target": "Decision",
       "para": []
     },
     {
       "actor": "Florist",
-      "action": "use",
-      "target": "MarketAnalyticTool",
+      "action": "cancel",
+      "target": "Refundconsumer",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "confirm",
+      "target": "Order",
       "para": []
     },
     {
@@ -127,235 +195,13 @@
     {
       "actor": "Florist",
       "action": "use",
-      "target": "Market",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "provide",
-      "target": "ProductStatus",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "cancel",
-      "target": "RefundConsumer",
+      "target": "MarketAnalyticTool",
       "para": []
     },
     {
       "actor": "Consumer",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "receive",
-      "target": "Payment",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "schedule",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "check",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "want",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "view",
-      "target": "Consumer",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "schedule",
-      "target": "Florist",
-      "para": []
-    },
-    {
-      "actor": "Customer",
-      "action": "receive",
-      "target": "Recommendation",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "track",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "track",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "share",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "have",
-      "target": "Convenience",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "cancel",
-      "target": "Order",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "have",
-      "target": "Record",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "have",
-      "target": "Record",
-      "para": []
-    },
-    {
-      "actor": "Customer",
-      "action": "create",
-      "target": "FlowerSeeker",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "create",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "check",
-      "target": "Orderhistory",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "share",
-      "target": "Experience",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "make",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "buy",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Customer",
-      "action": "create",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "cancel",
-      "target": "Order",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "create",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "schedule",
-      "target": "Appointment",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "upload",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "upload",
-      "target": "Catalog",
-      "para": []
-    },
-    {
-      "actor": "Customer",
-      "action": "create",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "place",
-      "target": "Order",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "receive",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "receive",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "upload",
-      "target": "Florist",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "track",
-      "target": "Orderhistory",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "chat",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "search",
-      "target": "Need",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "get",
-      "target": "",
+      "action": "talk",
+      "target": "Event",
       "para": []
     },
     {
@@ -365,105 +211,9 @@
       "para": []
     },
     {
-      "actor": "Florist",
-      "action": "use",
-      "target": "",
-      "para": []
-    },
-    {
       "actor": "Consumer",
-      "action": "chat",
-      "target": "Florist",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "cancel",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "cancel",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "place",
-      "target": "Delivery",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "view",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "talk",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Florist",
-      "action": "market",
-      "target": "Service",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "search",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "place",
-      "target": "Pickup",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "search",
-      "target": "Option",
-      "para": []
-    },
-    {
-      "actor": "Customer",
-      "action": "receive",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "make",
-      "target": "Purchasingdecision",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "track",
-      "target": "Order",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "view",
-      "target": "Review",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "rank",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "search",
-      "target": "",
+      "action": "check",
+      "target": "History",
       "para": []
     },
     {
@@ -474,20 +224,44 @@
     },
     {
       "actor": "Consumer",
-      "action": "place",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "ProductStatus",
-      "action": "confirm",
+      "action": "search",
       "target": "",
       "para": []
     },
     {
       "actor": "Consumer",
-      "action": "talk",
-      "target": "Event",
+      "action": "have",
+      "target": "Record",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "buy",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "place",
+      "target": "Order",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "market",
+      "target": "Service",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "have",
+      "target": "Option",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "get",
+      "target": "",
       "para": []
     },
     {
@@ -497,9 +271,81 @@
       "para": []
     },
     {
+      "actor": "Florist",
+      "action": "cancel",
+      "target": "Order",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "deliver",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "create",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "review",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "have",
+      "target": "Convenience",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "provide",
+      "target": "Status",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "confirm",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "receive",
+      "target": "Payment",
+      "para": []
+    },
+    {
+      "actor": "Florist",
+      "action": "market",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "receive",
+      "target": "Recommendation",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "create",
+      "target": "FlowerSeeker",
+      "para": []
+    },
+    {
       "actor": "Consumer",
       "action": "rank",
-      "target": "",
+      "target": "Product",
       "para": []
     }
   ]

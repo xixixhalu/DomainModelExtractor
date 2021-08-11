@@ -1,10 +1,10 @@
 @startuml
 hide circle
 class User<actor> {
-	location
-	metric
-	schedule
 	account
+	schedule
+	weight
+	location
 }
 class Admin<actor> {
 }
@@ -13,113 +13,107 @@ class FarmManager<actor> {
 class Tommorow {
 	weather
 }
-class HealthData {
-	collect()
+class Tone {
 }
-class Farmer {
-}
-class User {
-	watch()
-	identify()
-	wear()
-	access()
-	know()
-	feel()
-	receive()
-	opt()
-	toggle()
-	modify()
-	do()
-	change()
-	disable()
-	create()
-	use()
-	share()
-	view()
-	report()
-	have()
-}
-class Material {
-}
-class Display {
+class Data {
 }
 class Admin {
-	delete()
-	create()
-	access()
-	see()
-	define()
 	upload()
+	define()
+	access()
+	delete()
 	add()
+	create()
+	see()
 }
-class Content {
+class FarmManager {
+	search()
+}
+class User {
+	feel()
+	watch()
+	wear()
+	opt()
+	disable()
+	toggle()
+	identify()
+	change()
+	access()
+	user()
+	know()
+	share()
+	create()
+	modify()
+	view()
+	receive()
+	do()
+}
+class Checklist {
+}
+class EmergencyContactList {
+}
+class Role {
+}
+class Feature {
+}
+class Notification {
 }
 class Video {
 }
 class Location {
 }
-class FarmManager {
-	search()
-}
-class VibrationLevel {
-}
-class Account {
-}
-class Sign {
-}
-class Quiz {
-}
-class TemperatureData {
-}
-class NotificationTone {
+class Weight {
 }
 class Temperature {
-	collect()
-}
-class Metric {
-}
-class EmergencyContactList {
-}
-class Notification {
-}
-class Contents {
-}
-class TextMessage {
-	receive()
-}
-class Order {
-}
-class Role {
-}
-class Weather {
 }
 class Information {
 }
-class Checklist {
+class Contents {
 }
-Admin --> Content : create
+class Account {
+}
+class Quiz {
+}
+class Content {
+}
+class App {
+	get()
+}
+class HealthData {
+}
+class Display {
+}
+class VibrationLevel {
+}
+class Material {
+}
+class Order {
+}
+Admin --> Role : define
+User --> Feature : user
+User --> Checklist : create
+App --> Information : get
+User --> EmergencyContactList : create
+User --> Notification : receive
 User --> Video : watch
+User --> Data : view
 Admin --> Video : upload
+Admin --> HealthData : access
 User o-- Location : share
 User --> Display : toggle
-User --> Notification : receive
-User --> VibrationLevel : change
-Admin --> Contents : delete
-Temperature --> Farmer : collect
-User o-- Account : disable
-User --> Order : feel
-HealthData --> Farmer : collect
-User --> Sign : identify
-Admin --> Role : define
 User --> Quiz : do
-User --> Material : access
-User --> Weather : receive
-User --> TemperatureData : view
+User o-- Weight : create
+User --> Tone : change
+Admin --> Temperature : access
+User --> VibrationLevel : change
 User --> Information : receive
-User --> NotificationTone : change
+User --> Material : access
+Temperature o-- Data
+Admin --> Contents : delete
+User --> Order : feel
+Admin --> Content : create
+User o-- Account : disable
+Notification o-- Tone
 Admin --> Quiz : create
-User --> Checklist : create
-User o-- Metric : create
-User --> EmergencyContactList : create
 
 @enduml

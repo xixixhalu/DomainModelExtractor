@@ -1,5 +1,7 @@
 @startuml
 hide circle
+class Admin<actor> {
+}
 class User<actor> {
 	account
 }
@@ -7,126 +9,91 @@ class Maintainer<actor> {
 }
 class Entrepreneur<actor> {
 }
-class Mentor<actor> {
-}
-class Mentor {
-	create()
-	assign()
-	view()
-	review()
-	identify()
-	track()
-}
-class Homework {
-}
-class Admin {
-	disable()
-	increase()
-	add()
-	use()
-}
-class EntrepreneurStrength {
-}
 class User {
 	sign_up()
-	delete()
-	post()
-	change()
-	send()
+	user()
 	access()
-	comment()
-	sign()
 	share()
+	send()
+	post()
+	delete()
 	like()
-	use()
-}
-class Algorithm {
-	match()
+	change()
+	comment()
 }
 class Maintainer {
 	build()
 	update()
 }
-class Application {
+class App {
 }
-class Questionnaire {
-	provide()
-}
-class Information {
-}
-class Account {
-}
-class Entrepreneur {
-	see()
-	submit()
-	have()
-	complete()
-}
-class Weakness {
+class Comment {
 }
 class Version {
 }
-class CourseContent {
+class Admin {
+	increase()
+	user()
+	disable()
+	add()
 }
-class Curriculum {
+class Algorithm {
+	match()
 }
-class MentorInformation {
+class Entrepreneur {
+	have()
+	see()
+	complete()
+	submit()
 }
-class HomeworkAssignment {
-}
-class CommunityForum {
-}
-class NewsFeed {
-}
-class Issue {
-}
-class Post {
+class Profile {
+	provide()
 }
 class Quality {
 }
-class App {
+class Post {
 }
-class Lesson {
+class Edit {
 }
-class Profile {
+class Issue {
+}
+class Account {
+}
+class Information {
+}
+class NewsFeed {
+}
+class CourseContent {
+}
+class Mentor {
+	assign()
 }
 class Access {
 }
-class AppStore {
+class Application {
 }
-User --> Post : comment
-Maintainer --> Application : update
-Admin --> Algorithm : use
-Entrepreneur --> Curriculum : have
-Entrepreneur --> Access : have
-Mentor --> Homework : assign
-User --> Issue : comment
-Entrepreneur --> HomeworkAssignment : submit
-Questionnaire --> Information : provide
-Entrepreneur --> App : submit
-User --> CommunityForum : access
-User o-- Account : delete
-Maintainer --> AppStore : update
-Entrepreneur --> Mentor : have
-User --> Post : like
-User --> NewsFeed : share
-User --> Application : sign
-Mentor --> Questionnaire : view
-Admin --> Account : disable
-User --> Issue : post
-Entrepreneur --> Profile : complete
-Mentor --> Weakness : identify
-User --> Post : share
-User --> Version : use
-Admin --> Quality : increase
-Admin --> CourseContent : add
-Entrepreneur --> MentorInformation : see
-Mentor --> EntrepreneurStrength : identify
 Maintainer --> App : build
-Admin --> Entrepreneur : disable
+Profile --> Information : provide
+User --> Comment : post
 Algorithm --> Entrepreneur : match
-Mentor --> Lesson : create
-Entrepreneur --> Curriculum : submit
+User --> NewsFeed : share
+User --> Version : user
 Algorithm --> Mentor : match
+Entrepreneur --> Edit : submit
+Entrepreneur --> Access : have
+Admin --> Application : add
+Admin --> Algorithm : user
+Admin --> Account : disable
+Maintainer --> Application : update
+Mentor o-- Information
+Entrepreneur --> Profile : complete
+User --> Issue : post
+User o-- Account : delete
+Admin --> Quality : increase
+Entrepreneur --> Information : see
+User --> Post : comment
+User --> NewsFeed : comment
+Admin --> CourseContent : add
+User --> Post : share
 
 @enduml

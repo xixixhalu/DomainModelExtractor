@@ -1,74 +1,74 @@
 @startuml
 hide circle
 class TourCreator<actor> {
-	tour
 	area
+	tourCreator
 }
 class Owner<actor> {
 }
 class TourTaker<actor> {
 }
-class TourCreator {
-	promote()
-	upload()
-	edit()
-	delete()
-	create()
+class Tour {
+}
+class Taker {
+	search()
+	select()
 	view()
+	choose()
+	click()
+	have()
+}
+class ConductorWebsite {
+}
+class Creator {
+	view()
+	create()
+	upload()
+	use()
+	promote()
+	delete()
+}
+class Picture {
+}
+class Area {
+}
+class Stop {
+}
+class Access {
+}
+class Information {
+}
+class Value {
+}
+class Video {
 }
 class Owner {
 	authorize()
 	delete()
 }
 class TourTaker {
-	select()
-	access()
-	search()
-	click()
-	choose()
-	view()
-	use()
 }
-class Radius {
+class TourCreator {
 }
-class Value {
-}
-class Tour {
-}
-class TourConductorWebsite {
-}
-class Information {
-}
-class Stop {
-}
-class List {
-}
-class Picture {
-}
-class Video {
-}
-class Area {
-}
-TourTaker --> Radius : access
-TourTaker --> TourTaker : click
-TourTaker --> Value : use
-Owner --> TourCreator : authorize
-TourTaker --> Tour : select
-TourTaker --> List : choose
-Owner --> Tour : delete
-TourTaker --> Tour : access
-TourCreator --> Picture : upload
-TourTaker --> Stop : click
-TourCreator --> Stop : upload
-TourCreator --> TourCreator : view
-TourTaker --> Information : view
-TourCreator --> Information : upload
-TourCreator --> Video : upload
-TourTaker --> Stop : view
-TourCreator o-- Tour : create
-TourCreator o-- Area : promote
-TourTaker --> Tour : search
-TourCreator o-- Tour : view
-TourCreator --> TourConductorWebsite : create
+Creator --> Picture : upload
+Creator --> Creator : create
+Creator --> Creator : delete
+Creator --> Value : use
+Creator --> Area : promote
+Creator --> Video : upload
+Taker --> Stop : click
+Owner --> Creator : authorize
+Taker --> Creator : select
+Creator --> ConductorWebsite : create
+Creator --> Information : upload
+Taker --> Information : view
+Owner --> Creator : delete
+Tour o-- Creator
+TourTaker <|-- Taker
+Tour o-- Taker
+TourCreator <|-- Creator
+Tour o-- ConductorWebsite
+Taker --> Access : have
+Taker --> Creator : search
 
 @enduml

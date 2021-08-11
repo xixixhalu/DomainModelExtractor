@@ -63,6 +63,7 @@ visualize() {
 	files=$1
 	for f in "${files[@]}"
 	do
+		#sleep .5
 		echo "Visualizing $f..."
 		eval $visualizing_cmd"-f "$f
 	done

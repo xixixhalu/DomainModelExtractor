@@ -8,19 +8,15 @@
       ],
       "attributes": [
         {
+          "name": "score",
+          "type": "default"
+        },
+        {
           "name": "preference",
           "type": "default"
         },
         {
           "name": "progress",
-          "type": "default"
-        },
-        {
-          "name": "levelprogress",
-          "type": "default"
-        },
-        {
-          "name": "score",
           "type": "default"
         }
       ]
@@ -46,120 +42,20 @@
       ],
       "attributes": []
     },
-    "Administer": {
-      "name": "Administer",
+    "Analytic": {
+      "name": "Analytic",
       "type": [
         "actor"
       ],
       "attributes": []
-    },
-    "Other": {
-      "name": "Other",
-      "type": [
-        "entity"
-      ],
-      "attributes": [
-        {
-          "name": "attention",
-          "type": "default"
-        },
-        {
-          "name": "score",
-          "type": "default"
-        }
-      ]
     }
   },
   "relation_list": [],
   "behavior_list": [
     {
-      "actor": "Maintainer",
-      "action": "have",
-      "target": "Documentation",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "track",
-      "target": "App",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "have",
-      "target": "ScreenSpace",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "design",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "keep",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Way",
-      "action": "draw",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Administer",
-      "action": "see",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Way",
-      "action": "draw",
-      "target": "Attention",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "Score",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "track",
-      "target": "Progress",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
       "actor": "User",
       "action": "erase",
       "target": "Progress",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "practice",
-      "target": "Time",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "install",
-      "target": "",
       "para": []
     },
     {
@@ -170,20 +66,26 @@
     },
     {
       "actor": "User",
-      "action": "practice",
+      "action": "switch",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "check",
-      "target": "Google",
+      "action": "change",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "practice",
-      "target": "Math",
+      "action": "track",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "download",
+      "target": "App",
       "para": []
     },
     {
@@ -193,27 +95,21 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "switch",
-      "target": "",
+      "actor": "Client",
+      "action": "publish",
+      "target": "Iosversion",
       "para": []
     },
     {
       "actor": "Developer",
       "action": "understand",
-      "target": "Code",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "have",
       "target": "",
       "para": []
     },
     {
-      "actor": "Version",
-      "action": "remove",
-      "target": "",
+      "actor": "User",
+      "action": "share",
+      "target": "Score",
       "para": []
     },
     {
@@ -223,13 +119,7 @@
       "para": []
     },
     {
-      "actor": "Way",
-      "action": "draw",
-      "target": "App",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
+      "actor": "Client",
       "action": "publish",
       "target": "",
       "para": []
@@ -242,8 +132,38 @@
     },
     {
       "actor": "User",
-      "action": "change",
+      "action": "practice",
+      "target": "Math",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "have",
+      "target": "ScreenSpace",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "cheat",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "keep",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "publish",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "understand",
+      "target": "Code",
       "para": []
     },
     {
@@ -253,9 +173,27 @@
       "para": []
     },
     {
-      "actor": "Client",
-      "action": "publish",
-      "target": "IosVersion",
+      "actor": "User",
+      "action": "have",
+      "target": "Ability",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "install",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "start",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Way",
+      "action": "draw",
+      "target": "Attention",
       "para": []
     },
     {
@@ -265,20 +203,50 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "keep",
-      "target": "Levelprogress",
+      "actor": "Developer",
+      "action": "design",
+      "target": "Description",
       "para": []
     },
     {
       "actor": "User",
-      "action": "install",
+      "action": "sign",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "publish",
       "target": "App",
       "para": []
     },
     {
+      "actor": "Maintainer",
+      "action": "have",
+      "target": "Documentation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "erase",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "keep",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "check",
+      "target": "GoogleLeaderboard",
+      "para": []
+    },
+    {
       "actor": "Developer",
-      "action": "understand",
+      "action": "design",
       "target": "",
       "para": []
     },
@@ -290,68 +258,8 @@
     },
     {
       "actor": "User",
-      "action": "erase",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "start",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "publish",
+      "action": "track",
       "target": "App",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "Ability",
-      "para": []
-    },
-    {
-      "actor": "Administer",
-      "action": "see",
-      "target": "Analytics",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "design",
-      "target": "Description",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "cheat",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "publish",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "sign",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "check",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "switch",
-      "target": "Language",
       "para": []
     }
   ]

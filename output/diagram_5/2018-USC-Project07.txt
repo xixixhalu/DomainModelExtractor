@@ -1,10 +1,9 @@
 @startuml
 hide circle
 class User<actor> {
-	levelprogress
+	progress
 	score
 	preference
-	progress
 }
 class Client<actor> {
 }
@@ -12,106 +11,86 @@ class Developer<actor> {
 }
 class Maintainer<actor> {
 }
-class Administer<actor> {
-}
-class Other {
-	attention
-	score
-}
-class Maintainer {
-	have()
-	publish()
-}
-class Documentation {
+class Analytic<actor> {
 }
 class User {
+	start()
+	switch()
+	change()
+	share()
 	check()
-	track()
-	purchase()
-	cheat()
-	practice()
-	have()
 	sign()
 	keep()
-	start()
-	share()
-	change()
-	install()
+	track()
+	practice()
 	erase()
-	switch()
+	purchase()
+	cheat()
 	download()
+	have()
+	install()
+}
+class Progress {
 }
 class App {
 }
+class ColorTheme {
+}
 class Client {
-	have()
 	publish()
+	have()
+}
+class Iosversion {
+}
+class Developer {
+	design()
+	understand()
+}
+class Score {
+}
+class Version {
+}
+class Math {
 }
 class ScreenSpace {
 }
-class Developer {
-	understand()
-	design()
+class Maintainer {
+	publish()
+	have()
+}
+class Code {
+}
+class Ability {
 }
 class Way {
 	draw()
 }
-class Administer {
-	see()
-}
 class Attention {
-}
-class Score {
-}
-class Progress {
-}
-class Time {
-}
-class Google {
-}
-class Math {
-}
-class ColorTheme {
-}
-class Code {
-}
-class Version {
-	remove()
-}
-class IosVersion {
-}
-class Levelprogress {
-}
-class Ability {
-}
-class Analytics {
 }
 class Description {
 }
-class Language {
+class Documentation {
 }
+class GoogleLeaderboard {
+}
+User o-- Progress : erase
+User o-- Progress : keep
+Maintainer --> Documentation : have
+User --> App : download
 User --> App : track
-User --> App : install
+User o-- Score : share
+User --> Version : purchase
+User --> GoogleLeaderboard : check
+User --> Math : practice
 Client --> ScreenSpace : have
 User o-- Score : check
-User o-- Progress : erase
-User --> Version : purchase
-Way --> Attention : draw
-Client --> IosVersion : publish
-Maintainer --> Documentation : have
-User o-- Score : share
-User o-- Levelprogress : keep
-Maintainer --> App : publish
-User o-- Progress : track
-User --> Ability : have
-User --> Time : practice
-Administer --> Analytics : see
-User --> Google : check
-Developer --> Description : design
-User --> Math : practice
-User --> Language : switch
-User --> ColorTheme : change
 Developer --> Code : understand
-Way --> App : draw
+Client --> Iosversion : publish
+User --> Ability : have
+Maintainer --> App : publish
+Way --> Attention : draw
+Developer --> Description : design
+User o-- Progress : track
+User --> ColorTheme : change
 
 @enduml

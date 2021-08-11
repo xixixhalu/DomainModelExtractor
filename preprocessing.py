@@ -34,6 +34,8 @@ class PreProcessor:
 
     def pre_process(self, input_path, output_path):
 
+        CONNECTOR = '!#%'
+        # Connector used for RemoveSlash
         file = open(input_path, 'r')
 
         func_output = open(output_path + ".func.txt", "w")
@@ -44,39 +46,39 @@ class PreProcessor:
         line = file.readline().strip()
         while line:
             # print("Original sentence: ", line)
-            meta = []
-            # maps combined noun to the original nouns
-            noun_map = {}
-            acts = []
-            try:
-                line_no_bracket = self.removeBracket(line)
-            except:
-                logger.error("removeBracket: Cannot process sentence > " + line)
-                line_no_bracket = line
-            try:
-                line_no_slash = self.removeSlash(line_no_bracket)
-            except:
-                logger.error("removeSlash: Cannot process sentence > " + line)
-                lines_no_slash = line_no_bracket
 
-            combine_nouns_line = self.combine_nouns(line_no_slash, meta, noun_map)
-            replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)
-            
             if re.search(FUNC_RE, line):
-                func_output.write(replace_role_line + "\n")
-                self.count_func += 1
+                meta = []
+
+                # maps combined noun to the original nouns
+                noun_map = {}
+                acts = []
+                try:
+                    line_no_bracket = self.removeBracket(line)
+                except:
+                    logger.error("removeBracket: Cannot process sentence > " + line)
+                    line_no_bracket = line
+                try:
+                    lines_no_slash = self.removeSlash(line_no_bracket,CONNECTOR=CONNECTOR)
+                    # After processing using "RemoveSlash", lines_no_slash will become a list.
+                    for i in lines_no_slash:
+                        combine_nouns_line = self.combine_nouns(i, meta, noun_map)
+                        replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)                        
+                        func_output.write(replace_role_line + "\n")
+                    self.count_func += 1   
+                    # Loop in the list so that every function will be wriiten into the file.
+
+                except:
+                    logger.error("removeSlash: Cannot process sentence > " + line)
+                    
             else:
                 nonfunc_output.write(replace_role_line + "\n")
                 self.count_nonfunc += 1
+                
             metadata.write(meta.__str__() + "\n")
             actors.write(acts.__str__() + "\n")
 
-                # print("Meta data: ", meta)
-                # print(" ")
-
             line = file.readline().strip()
-
-
 
         logger.info("Functional count: " + str(self.count_func) + 
                     "\nNon-functional count: " + str(self.count_nonfunc))
@@ -85,7 +87,6 @@ class PreProcessor:
         nonfunc_output.close()
         metadata.close()
         actors.close()
-
         file.close()
 
     # Note: this function check if a word is in stop words dict, if no, return lemma form, otherwise, return original word.
@@ -462,16 +463,75 @@ class PreProcessor:
             elif token == "-RRB-":
                 tokens[i] = ")"
 
-    def removeSlash(self, line) :
-        if '/' not in line :
-            return line
-        pattern1 = '(\w)\s*' + re.escape('/')
-        pattern2 = re.escape('/') + '\s*(\S)'
-        if re.search(pattern1, line): 
-            line = re.sub(pattern1, rf'\1 ,', line)
-        if re.search(pattern2, line): 
-            line = re.sub(pattern2, rf', \1', line)
-        return line
+
+    def detectSlash(self, sentences):
+        # sentences is a list with only one sentence inside !!!!!
+        temp = set()
+
+        for i in sentences:         
+            if '/' in i:
+                match = re.search('(([a-zA-Z!#%]+)/[a-zA-Z!#%]+)',i).group(0)
+                # Use regular expression to find the format consecutive_string/consecutive_string
+                spl = match.split('/')
+                # Get the consecutive stirng before and after '/'
+                temp.add(i.replace(match,spl[0]))
+                temp.add(i.replace(match,spl[1]))
+                # Add these two stirngs into a set to avoid duplicate.
+            else:
+                return sentences
+        return self.detectSlash(temp)
+        # Do the recursion to repeat the steps above so that the sentences with '/' will be devided into multiple sentences w/o '/'
+
+
+    def removeSlash(self, line, CONNECTOR) :
+        # if '/' not in line :
+        #     return line
+        # pattern1 = '(\w)\s*' + re.escape('/')
+        # pattern2 = re.escape('/') + '\s*(\S)'
+        # if re.search(pattern1, line): 
+        #     line = re.sub(pattern1, rf'\1 ,', line)
+        # if re.search(pattern2, line): 
+        #     line = re.sub(pattern2, rf', \1', line)
+        # return line
+        sen = line
+        # We will make many changes to 'line'. So we copy this value and modify on the copied element. 
+        output = analyze(line)
+        # Use corenlp to get the type dependency
+        info = output['sentences'][0]['enhancedDependencies']
+        # find the enhanced dependencies.
+        for i in info:
+            dependency = i['dep']
+            # Check if the dependency contains compound or advmod
+            if 'compound' in dependency or dependency == 'amod':
+                origin = i['governorGloss'] + ' ' + i['dependentGloss']
+                replace = i['governorGloss'] + CONNECTOR + i['dependentGloss']
+                # If yes, add the connector to the related words. For example, wake up will become 'wake' + CONNECTOR + 'up' 
+                sen = sen.replace(origin,replace)
+
+        while True:
+            # This is to make a good format of slash. This will delete the empty space left and right to '/'.
+            if ' / ' in sen:
+                sen = sen.replace(' / ','/')
+            elif ' /' in sen:
+                sen = sen.replace(' /','/')
+            elif '/ ' in sen:
+                sen = sen.replace('/ ','/')
+            else:
+                break
+        if 'and/or' in sen:
+            sen = sen.replace(' and/or ','/')
+        # Change the sentence with 'and/or' to '/' 
+        if '+/-' in sen:
+            sen = sen.replace(' +/- ','±')
+            # process with the special case.
+
+        temp = self.detectSlash([sen])
+        # Use the detectSlash function to divide the sentence
+        output = []
+        for j in temp:
+            output.append(j.replace(CONNECTOR,' '))
+            # Remove the connector.
+        return output
 
     def removeBracket(self, line) :
         index1 = sorted([i for i, ltr in enumerate(line) if ltr == '(' ])

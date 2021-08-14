@@ -191,14 +191,17 @@ class Matcher:
         var2 = rule_tds[rule_pos][2]
 
         filter_flag = False
+        is_found = False
         if '~' in rule_tds[rule_pos][0]:
             filter_flag = True
             key_to_match = key_to_match.replace('~', '')
 
         r = re.compile(key_to_match)
         temp_list = list(filter(r.match, text_tds.keys()))
+
         for key in temp_list:
             for candidate_index in text_tds[key]:
+
                 cand1 = candidate_index[0]
                 cand2 = candidate_index[1]
 
@@ -212,18 +215,25 @@ class Matcher:
                     temp_var_to_index[var1] = cand1
                     temp_var_to_index[var2] = cand2
 
+                    self.dfs_match_tds(rule_tds, text_tds, rule_pos + 1, temp_var_to_index, var_to_index_list)
+
                 else:
                     if (var1 in temp_var_to_index and temp_var_to_index[var1] == cand1 and
                         var2 == '*'):
-                        continue
-                    if (var2 in temp_var_to_index and temp_var_to_index[var2] == cand2 and
+                        is_found = True
+                        break
+                    elif (var2 in temp_var_to_index and temp_var_to_index[var2] == cand2 and
                         var1 == '*'):
-                        continue
-                    if (var1 in temp_var_to_index and temp_var_to_index[var1] == cand1 and
+                        is_found = True
+                        break
+                    elif (var1 in temp_var_to_index and temp_var_to_index[var1] == cand1 and
                         var2 in temp_var_to_index and temp_var_to_index[var2] == cand2):
-                        continue
-
-                self.dfs_match_tds(rule_tds, text_tds, rule_pos + 1, temp_var_to_index, var_to_index_list)
+                        is_found = True
+                        break
+            if filter_flag and is_found:
+                return False, {}
+        if filter_flag:
+            self.dfs_match_tds(rule_tds, text_tds, rule_pos + 1, temp_var_to_index, var_to_index_list)
 
         if not var_to_index_list:
             return False, var_to_index_list
@@ -355,15 +365,18 @@ if __name__ == '__main__':
                                         indices.append(var_map[key])
                                     if in_nodes[i]:
                                         for rule in in_nodes[i]:
-                                            if rule in matched_dict:
-                                                if s in matched_dict[rule]:
-                                                    for lst in matched_dict[rule][s]:
-                                                        if set(indices) <= set(lst):
-                                                            # change the flag matched to True if all the indices
-                                                            # of the sentence matched by this SSR are matched by
-                                                            # the SSR of its independence
-                                                            matched = True
-                                                            break
+                                            if rule in matched_dict and s in matched_dict[rule]:
+                                                for lst in matched_dict[rule][s]:
+                                                    if set(indices) <= set(lst):
+                                                        # change the flag matched to True if all the indices
+                                                        # of the sentence matched by this SSR are matched by
+                                                        # the SSR of its independence
+                                                        matched = True
+                                                        break
+                                            if matched:
+                                                break
+                                    if matched:
+                                        break
 
                                     if ssr.match_pos(var_map, rule_pos_tags, nlp_output) and ssr.match_keywords(
                                             ssr.sentence, rule_keywords) and not matched:

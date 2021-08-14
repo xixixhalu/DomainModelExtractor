@@ -24,7 +24,7 @@ import argparse
 
 FUNC_RE = '(A|a)s (the|a|an) .+(I|i|My|my) '
 LEMMA_STOP_WORDS = {'data'}
-
+CONNECTOR = '!#%'
 
 class PreProcessor:
 
@@ -33,8 +33,6 @@ class PreProcessor:
         self.count_nonfunc = 0
 
     def pre_process(self, input_path, output_path):
-
-        CONNECTOR = '!#%'
         # Connector used for RemoveSlash
         file = open(input_path, 'r')
 
@@ -46,35 +44,39 @@ class PreProcessor:
         line = file.readline().strip()
         while line:
             # print("Original sentence: ", line)
+            meta = []
+            # maps combined noun to the original nouns
+            noun_map = {}
+            acts = []
 
+            is_func = True
             if re.search(FUNC_RE, line):
-                meta = []
-
-                # maps combined noun to the original nouns
-                noun_map = {}
-                acts = []
-                try:
-                    line_no_bracket = self.removeBracket(line)
-                except:
-                    logger.error("removeBracket: Cannot process sentence > " + line)
-                    line_no_bracket = line
-                try:
-                    lines_no_slash = self.removeSlash(line_no_bracket,CONNECTOR=CONNECTOR)
-                    # After processing using "RemoveSlash", lines_no_slash will become a list.
-                    for i in lines_no_slash:
-                        combine_nouns_line = self.combine_nouns(i, meta, noun_map)
-                        replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)                        
-                        func_output.write(replace_role_line + "\n")
-                    self.count_func += 1   
-                    # Loop in the list so that every function will be wriiten into the file.
-
-                except:
-                    logger.error("removeSlash: Cannot process sentence > " + line)
-                    
+                self.count_func += 1 
             else:
-                nonfunc_output.write(replace_role_line + "\n")
+                is_func = False
                 self.count_nonfunc += 1
                 
+
+            try:
+                line_no_bracket = self.removeBracket(line)
+            except:
+                logger.error("removeBracket: Cannot process sentence > " + line)
+                line_no_bracket = line
+            try:
+                lines_no_slash = self.removeSlash(line_no_bracket,CONNECTOR=CONNECTOR)
+            except:
+                logger.error("removeSlash: Cannot process sentence > " + line) 
+
+            # After processing using "RemoveSlash", lines_no_slash will become a list.
+            # Loop in the list so that every function will be wriiten into the file.
+            for i in lines_no_slash:
+                combine_nouns_line = self.combine_nouns(i, meta, noun_map)
+                replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)                        
+                if is_func:
+                    func_output.write(replace_role_line + "\n")
+                else:
+                    nonfunc_output.write(replace_role_line + "\n")
+                    
             metadata.write(meta.__str__() + "\n")
             actors.write(acts.__str__() + "\n")
 
@@ -294,12 +296,11 @@ class PreProcessor:
     def combine_JJs_NNs(self, line_index, pt):
         # Add all NN or NNP or NNS or NNPS to a set
         nouns = set()
-        # dashes = set()
+        hyphs = set()
 
-        # if 'HYPH' in pt:
-        #     for pair in pt['HYPH']:
-        #         if tokens[pair[0] - 1]['originalText'] == '-':
-        #             dashes.add(pair[0])
+        if 'HYPH' in pt:
+            for pair in pt['HYPH']:
+                hyphs.add(pair[0])
         if 'NN' in pt:
             for pair in pt['NN']:
                 nouns.add(pair[0])
@@ -315,7 +316,7 @@ class PreProcessor:
 
         # Add all JJ to a set
         adjs = set()
-        # Bo: no need to consider JJ
+        # Bo: no need to consider JJ for now.
         # if 'JJ' in pt:
         #     for pair in pt['JJ']:
         #         adjs.add(pair[0])
@@ -323,6 +324,9 @@ class PreProcessor:
         list = []
         i = 1
         while i < len(line_index):
+            if i > 0 and (i-1) in hyphs:
+                i = i + 1
+                continue
             if i in adjs:
                 flag = False
                 j = i + 1

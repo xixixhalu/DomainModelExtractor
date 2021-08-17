@@ -93,24 +93,29 @@ class Matcher:
         return rule_name, rule_TD_list, rule_POS_dict, rule_keywords
 
     
-    # Note: this function check if a word is in stop words dict, if no, return lemma form, otherwise, return original word.
-    def filter_stop_word(self, idx, nlp_output):
+    def shape_word(self, idx, nlp_output):
         tokens = nlp_output['sentences'][0]['tokens']
-        word = tokens[idx]['originalText']
+        original_word = tokens[idx]['originalText']
+        lemma_word = tokens[idx]['lemma']
         is_stop_word = False
         for w in LEMMA_STOP_WORDS:
-            if word.lower() == w: #or w.endswith(word.lower()):
+            if original_word.lower() == w: #or w.endswith(word.lower()):
                 is_stop_word = True
                 break
         if not is_stop_word:
-            word = tokens[idx]['lemma']
+            word = original_word
+        else:
+            if original_word.lower().startswith(lemma_word.lower()):
+                lemma_word = original_word[:len(lemma_word)] = lemma_word[len(lemma_word):]
+            word = lemma_word
+
         return word
 
 
     def build_tokens(self, nlp_output):
         tokens = {}
         for t in nlp_output['sentences'][0]['tokens']:
-            tokens[t['index']] = self.filter_stop_word(t['index']-1, nlp_output)
+            tokens[t['index']] = self.shape_word(t['index']-1, nlp_output)
         return tokens
 
 

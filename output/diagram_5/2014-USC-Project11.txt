@@ -1,15 +1,15 @@
 @startuml
 hide circle
 class User<actor> {
+	course
 	registration
-	courseAttendee
 }
 class CourseAttendee<actor> {
 }
 class Trainer<actor> {
 	calendar
-	price
 	profile
+	price
 }
 class Enterprise<actor> {
 }
@@ -23,17 +23,74 @@ class Developer<actor> {
 }
 class RegistrationInformation {
 }
+class Attendee {
+	attend()
+	review()
+	pay()
+	rate()
+	compare()
+	decide()
+	base()
+	receive()
+	see()
+}
+class Enterprise {
+	compare()
+	get()
+}
+class Value {
+}
+class Admin {
+	cancel()
+	attach()
+	meet()
+	move()
+	adjust()
+	see()
+}
+class Minimum {
+}
+class Administrator {
+	delete()
+	have()
+	create()
+	receive()
+	adjust()
+	see()
+}
+class User {
+	setup()
+	request()
+	share()
+	register()
+	see()
+	filter()
+	search()
+}
+class Number {
+}
 class Trainer {
 	offer()
-	set()
-	put()
-	see()
-	compare()
-	maximize()
 	attach()
-	continue()
+	set()
+	compare()
+	rate()
+	see()
+	put()
 }
-class Review {
+class Course {
+	verify()
+	start()
+	offer()
+	rate()
+}
+class People {
+}
+class Price {
+	see()
+	maximize()
+}
+class Location {
 }
 class Developer {
 	analyze()
@@ -41,105 +98,68 @@ class Developer {
 }
 class Feasibility {
 }
+class Schedule {
+}
 class Duty {
 }
-class User {
-	filter()
-	setup()
-	see()
-	share()
-	search()
-	register()
-	request()
+class Calendar {
 }
-class CourseAttendee {
-	decide()
-	offer()
-	rate()
-	see()
-	receive()
-	compare()
-	attend()
-	verify()
-	review()
-	start()
-	pay()
-}
-class Administrator {
-	delete()
-	have()
-	meet()
-	create()
-	receive()
-	cancel()
-	see()
-	move()
-	attach()
-	adjust()
-}
-class Price {
-}
-class Rating {
-}
-class People {
-}
-class Minimum {
-}
-class Enterprise {
-	see()
-	compare()
-	get()
-}
-class Value {
+class ConfirmationEmail {
 }
 class Account {
 }
-class Number {
+class Request {
 }
-class Schedule {
+class Rating {
+	continue()
+}
+class Review {
+	continue()
 }
 class Dashboard {
 }
 class Requirement {
 }
-class Location {
-}
-class Calendar {
-}
-class Request {
-}
-class ConfirmationEmail {
-}
 class Architecture {
 }
-Developer --> Feasibility : understand
-CourseAttendee --> ConfirmationEmail : receive
-Account o-- RegistrationInformation
-Trainer --> Duty : attach
-User --> Number : see
-Developer --> Architecture : understand
-Administrator --> Number : adjust
-User o-- CourseAttendee : request
-CourseAttendee --> Schedule : see
-User o-- CourseAttendee : share
-Administrator --> RegistrationInformation : receive
-Administrator --> Dashboard : have
-CourseAttendee --> Price : compare
-Trainer --> CourseAttendee : offer
-Administrator --> Rating : adjust
-Trainer --> Rating : see
-Administrator --> CourseAttendee : cancel
-Developer --> Requirement : analyze
-Enterprise --> Price : compare
-Administrator --> People : move
-Trainer --> Location : offer
-Trainer --> Minimum : set
-Trainer o-- Calendar : put
-Trainer o-- Price : compare
+class CourseAttendee {
+}
+class Class {
+}
+Admin --> Minimum : meet
+Admin --> Course : cancel
+Attendee --> Price : compare
 Trainer --> Review : see
-Administrator --> Minimum : meet
-Enterprise --> Value : get
-Administrator --> Request : receive
+Administrator --> Dashboard : have
+Trainer --> Duty : attach
+Enterprise --> Price : compare
+User --> Number : see
+Developer --> Requirement : analyze
+Trainer --> Minimum : set
+Course o-- Attendee
+User o-- Course : share
+Trainer o-- Calendar : put
+Trainer --> Course : offer
+Developer --> Architecture : understand
+Admin --> Number : adjust
+Account o-- RegistrationInformation
+Trainer o-- Price : compare
+Calendar <|-- Course
+Admin --> People : move
+CourseAttendee <|-- Attendee
+User o-- Course : request
+Attendee --> Schedule : base
+Attendee --> ConfirmationEmail : receive
+People --> Class : to
+Attendee --> Price : decide
 User --> Account : setup
+Trainer --> Location : offer
+Administrator --> Request : receive
+Trainer --> Rating : see
+Administrator --> RegistrationInformation : receive
+Attendee --> Schedule : see
+Enterprise --> Value : get
+Administrator --> Rating : adjust
+Developer --> Feasibility : understand
 
 @enduml

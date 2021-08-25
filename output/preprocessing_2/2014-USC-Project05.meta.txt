@@ -1,4 +1,4 @@
-[(['sale', 'agent'], (3, 4)), (['call', 'customer'], (11, 12))]
+[(['sale', 'agent'], (3, 4)), (['customer'], (12, 12))]
 [(['sale', 'agent'], (3, 4)), (['auto'], (7, 7)), (['customer'], (9, 9)), (['time'], (14, 14))]
 [(['system'], (2, 2)), (['agent'], (7, 7)), (['customer', 'answer'], (10, 11))]
 [(['system'], (2, 2)), (['call', 'detail', 'information'], (5, 7)), (['analytic'], (13, 13))]
@@ -20,4 +20,4 @@
 [(['system'], (2, 2)), (['call'], (13, 13))]
 [(['system'], (2, 2)), (['route', 'call'], (7, 8)), (['seconds'], (12, 12)), (['agent'], (16, 16))]
 [(['auto', 'dialer'], (2, 3)), (['call'], (11, 11)), (['customer'], (16, 16)), (['agent'], (19, 19))]
-[(['system'], (2, 2)), (['provision'], (5, 5)), (['number'], (7, 7)), (['voice'], (9, 9)), (['mailbox'], (11, 11)), (['user'], (15, 15))]
+[(['system'], (2, 2)), (['provision'], (5, 5)), (['number'], (7, 7)), (['voice'], (9, 9)), (['user'], (15, 15))]

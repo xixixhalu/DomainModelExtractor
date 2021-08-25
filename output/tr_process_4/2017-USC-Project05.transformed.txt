@@ -56,9 +56,42 @@
     },
     {
       "source": "House",
+      "dest": "Staff",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "House",
       "dest": "Manager",
       "type": "aggregation",
       "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Lock",
+      "dest": "EditCode",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Access",
+      "dest": "Lock",
+      "type": "association",
+      "msg": "to",
       "multiplicity": [
         "1",
         "1"
@@ -75,36 +108,25 @@
         "1"
       ],
       "para": []
-    },
-    {
-      "source": "House",
-      "dest": "Staff",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
     }
   ],
   "behavior_list": [
     {
       "actor": "Administrator",
-      "action": "help",
+      "action": "allow",
+      "target": "Code",
+      "para": []
+    },
+    {
+      "actor": "Lock",
+      "action": "add",
+      "target": "Code",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "allow",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "Secret",
-      "action": "authorize",
-      "target": "Access",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "select",
-      "target": "Lock",
       "para": []
     },
     {
@@ -115,26 +137,32 @@
     },
     {
       "actor": "Administrator",
-      "action": "allow",
-      "target": "Code",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
       "action": "add",
-      "target": "",
+      "target": "Manager",
       "para": []
     },
     {
-      "actor": "Administrator",
+      "actor": "Lock",
       "action": "delete",
-      "target": "Lock",
+      "target": "Code",
       "para": []
     },
     {
       "actor": "Administrator",
       "action": "delete",
       "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "delete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "help",
+      "target": "Manager",
       "para": []
     },
     {
@@ -144,14 +172,14 @@
       "para": []
     },
     {
-      "actor": "Administrator",
-      "action": "create",
-      "target": "Group",
+      "actor": "Manager",
+      "action": "select",
+      "target": "Lock",
       "para": []
     },
     {
-      "actor": "Administrator",
-      "action": "allow",
+      "actor": "Manager",
+      "action": "add",
       "target": "",
       "para": []
     },
@@ -162,9 +190,33 @@
       "para": []
     },
     {
-      "actor": "Manager",
+      "actor": "Administrator",
       "action": "add",
-      "target": "",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "delete",
+      "target": "Lock",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "add",
+      "target": "Lock",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "create",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "Secret",
+      "action": "authorize",
+      "target": "Access",
       "para": []
     }
   ]

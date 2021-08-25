@@ -15,79 +15,85 @@ class AdminUser<actor> {
 class Log {
 }
 class User {
-	browse()
-	click()
-	get()
-	request()
-	search()
-	update()
 	view()
+	search()
 	return()
-}
-class Detail {
-}
-class Manager {
+	update()
+	request()
+	browse()
+	get()
 	click()
-	email()
 }
-class Button {
-}
-class Inventory {
-}
-class Item {
-}
-class EmailNotification {
+class Account {
 }
 class Admin {
 	add()
-	change()
-	read()
 	reserve()
+	read()
+	change()
+}
+class Item {
+}
+class Volunteer {
+	view()
+	manage()
+	check()
+}
+class Reservation {
+}
+class Availability {
+}
+class Darin {
+	reorder()
 }
 class Status {
 }
-class Volunteer {
-	check()
-	view()
-	manager()
+class Inventory {
 }
-class Availability {
+class Location {
+}
+class EmailNotification {
 }
 class Developer {
 	import()
 }
 class Spreadsheet {
 }
-class Darin {
+class Detail {
 }
-class Reservation {
+class Manager {
+	click()
 }
-class Account {
-}
-class Location {
+class Button {
+	email()
 }
 class AdminUser {
 }
-User --> EmailNotification : get
-Admin --> Status : change
-User --> Detail : view
-User --> Status : update
-User --> Account : request
-Admin --> Log : read
-Volunteer --> Location : check
-Manager --> Button : click
-AdminUser <|-- User
-User --> Inventory : update
-Admin o-- User
-Item o-- Log
-Volunteer --> Availability : check
-User --> User : view
-User --> User : return
-Developer --> Spreadsheet : import
-Manager --> Darin : email
+class Stock {
+}
 User --> Item : click
-Volunteer --> Reservation : view
+Darin --> Item : reorder
+User --> Account : request
 Admin --> Item : add
+Volunteer --> Reservation : manage
+Admin o-- User
 Admin --> Item : reserve
+Admin --> Status : change
+Manager --> Button : click
+User --> User : return
+Button --> Darin : email
+AdminUser <|-- User
+User --> Status : update
+Admin --> Log : read
+User --> Inventory : update
+Item o-- Log
+Stock <|-- Item
+Volunteer --> Location : check
+Volunteer --> Availability : check
+User --> EmailNotification : get
+User --> User : view
+Developer --> Spreadsheet : import
+User --> Detail : view
+Volunteer --> Reservation : view
 
 @enduml

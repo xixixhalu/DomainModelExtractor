@@ -8,11 +8,7 @@
       ],
       "attributes": [
         {
-          "name": "investment",
-          "type": "default"
-        },
-        {
-          "name": "password",
+          "name": "investmentProfile",
           "type": "default"
         },
         {
@@ -20,11 +16,15 @@
           "type": "default"
         },
         {
-          "name": "investmentProfile",
+          "name": "investment",
           "type": "default"
         },
         {
           "name": "emailNotificationSetting",
+          "type": "default"
+        },
+        {
+          "name": "password",
           "type": "default"
         }
       ]
@@ -69,15 +69,36 @@
       ],
       "attributes": []
     },
-    "DiscussionBoard": {
-      "name": "DiscussionBoard",
+    "Permission": {
+      "name": "Permission",
       "type": [
         "shared"
       ],
       "attributes": []
     },
-    "Permission": {
-      "name": "Permission",
+    "Media": {
+      "name": "Media",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Application": {
+      "name": "Application",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Board": {
+      "name": "Board",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "ContactInformation": {
+      "name": "ContactInformation",
       "type": [
         "shared"
       ],
@@ -89,12 +110,162 @@
         "shared"
       ],
       "attributes": []
+    },
+    "Data": {
+      "name": "Data",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
   "relation_list": [
     {
+      "source": "TrackingTool",
+      "dest": "Data",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Media",
+      "dest": "Site",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Discussion",
+      "dest": "Board",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Investment",
+      "dest": "Profile",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
       "source": "Site",
+      "dest": "Blog",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Article",
+      "dest": "Blog",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Blog",
+      "dest": "Post",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Data",
+      "dest": "File",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "SiteAdmin",
       "dest": "Admin",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Access",
+      "dest": "ContactInformation",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Investment",
+      "dest": "Profile",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "PropertyInformation",
+      "dest": "TrackingTool",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Site",
+      "dest": "Board",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "ServiceProvider",
+      "dest": "ContactInformation",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -115,41 +286,19 @@
       "para": []
     },
     {
-      "source": "SiteAdmin",
+      "source": "Media",
+      "dest": "Application",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Site",
       "dest": "Admin",
-      "type": "generalization",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Site",
-      "dest": "DiscussionBoard",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Site",
-      "dest": "Blog",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Blog",
-      "dest": "Post",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -162,7 +311,55 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "create",
+      "action": "search",
+      "target": "ServiceProvider",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "activate",
+      "target": "FactorAuthentication",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "view",
+      "target": "WebsiteUtilizationStatistics",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "comment",
+      "target": "Blog",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "activate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "ServiceProvider",
+      "action": "reply",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "read",
+      "target": "Review",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "moderate",
       "target": "Content",
       "para": []
     },
@@ -174,80 +371,14 @@
     },
     {
       "actor": "User",
-      "action": "activate",
-      "target": "FactorAuthentication",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "search",
-      "target": "ServiceProvider",
+      "action": "see",
+      "target": "Performance",
       "para": []
     },
     {
       "actor": "User",
       "action": "create",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "make",
-      "target": "Page",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "make",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "ServiceProvider",
-      "action": "reply",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Review",
-      "action": "post",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "read",
-      "target": "Blog",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "export",
-      "target": "TrackingToolData",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "Mediaapplication",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "manage",
-      "target": "Investment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "start",
-      "target": "Discussion",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "view",
-      "target": "WebsiteUtilizationStatistics",
+      "target": "Content",
       "para": []
     },
     {
@@ -258,134 +389,8 @@
     },
     {
       "actor": "User",
-      "action": "have",
-      "target": "Permission",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "comment",
-      "target": "Blog",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "report",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "search",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "reset",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "read",
-      "target": "Review",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "vote",
-      "target": "Review",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "rate",
-      "target": "ServiceProvider",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "leave",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "activate",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Time",
-      "action": "user",
-      "target": "VisualizationTool",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "List",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Performance",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "remove",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "Discussionboard",
-      "action": "user",
-      "target": "TextInput",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "moderate",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "read",
-      "target": "DiscussionBoard",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "post",
-      "target": "Article",
       "para": []
     },
     {
@@ -396,14 +401,32 @@
     },
     {
       "actor": "User",
+      "action": "manage",
+      "target": "Investment",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "login",
+      "target": "Site",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "search",
+      "target": "Board",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "leave",
       "target": "Review",
       "para": []
     },
     {
-      "actor": "ServiceProvider",
-      "action": "see",
-      "target": "",
+      "actor": "Administrator",
+      "action": "moderate",
+      "target": "User",
       "para": []
     },
     {
@@ -414,8 +437,128 @@
     },
     {
       "actor": "User",
-      "action": "login",
+      "action": "vote",
+      "target": "Review",
+      "para": []
+    },
+    {
+      "actor": "Board",
+      "action": "use",
+      "target": "TextInput",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "Review",
+      "action": "post",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "report",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Application",
+      "para": []
+    },
+    {
+      "actor": "Time",
+      "action": "use",
+      "target": "VisualizationTool",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "export",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "remove",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "read",
+      "target": "Board",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "leave",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "create",
+      "target": "Content",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "Site",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reset",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "make",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "Permission",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "start",
+      "target": "Discussion",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "rate",
+      "target": "ServiceProvider",
       "para": []
     },
     {
@@ -426,14 +569,38 @@
     },
     {
       "actor": "User",
+      "action": "read",
+      "target": "Blog",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "have",
       "target": "Access",
       "para": []
     },
     {
       "actor": "User",
-      "action": "search",
-      "target": "Discussionboard",
+      "action": "make",
+      "target": "Page",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "List",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "post",
+      "target": "Article",
+      "para": []
+    },
+    {
+      "actor": "ServiceProvider",
+      "action": "see",
+      "target": "",
       "para": []
     }
   ]

@@ -1,25 +1,26 @@
 @startuml
 hide circle
 class VolunteerCoach<actor> {
-	team
-	classRoster
 }
 class GOTRLA<actor> {
 }
 class Staff<actor> {
 }
 class Volunteer<actor> {
+	classRoster
+	team
 }
 class Admin<actor> {
 }
 class User<actor> {
-	accountpassword
+	accountPassword
 }
 class Site {
 	attendanceSheet
 }
 class Girl {
-	paperwork
+	paperPayment
+	paperWork
 	turn_in()
 }
 class Program {
@@ -28,107 +29,134 @@ class Quality {
 }
 class Week {
 }
-class Sheet {
-}
 class Roster {
 }
-class GOTRLA {
-	delete()
-	login()
-	schedule()
-	check()
-	add()
-	support()
-	have()
-	offer()
-	monitor()
+class Paper {
 }
-class Staff {
+class Payment {
+	do()
+}
+class Work {
+	do()
+}
+class Sheet {
+}
+class Volunteer {
+	view()
+	know()
+	check()
 	have()
-	analyze()
+	access()
+	login()
+}
+class GOTRLA {
 	monitor()
-	export()
+	add()
+	oFFER()
+	support()
+	schedule()
+	delete()
+	have()
+	cHECK()
+	login()
 }
 class Coach {
-	login()
-	access()
-	view()
-	check()
-	have()
 	know()
 	identify()
 	take()
+	have()
+	cHECK()
 }
-class SUPPORT {
-}
-class DateInformation {
-}
-class Data {
+class User {
+	reset()
+	update()
+	login()
 }
 class Team {
 	have()
 }
-class User {
-	login()
-	reset()
+class SUPPORT {
+}
+class Admin {
+	have()
+	add()
+	remove()
+}
+class Staff {
+	have()
+	monitor()
+	export()
+	analyze()
 }
 class Class {
 }
-class Admin {
-	remove()
-	have()
-	add()
-}
-class Privilege {
-}
 class GOTRLASTAFF {
-	monitor()
-}
-class Paperwork {
-}
-class Schedule {
+	mONITOR()
 }
 class Attendance {
 }
-class Issue {
+class Security {
+	maintain()
+}
+class Information {
+}
+class AccountPassword {
+}
+class Privilege {
+}
+class Data {
 }
 class CopyLiabilityWaiverForm {
 }
+class Issue {
+}
+class Schedule {
+}
 class VolunteerCoach {
 }
-class Volunteer {
-}
-Attendance o-- Sheet
-GOTRLA --> Sheet : check
-Class o-- Roster
-GOTRLA --> Data : delete
-Attendance o-- Data
-Coach --> Schedule : access
-Team o-- Roster
-GOTRLA --> SUPPORT : offer
 Program o-- Week
-GOTRLA --> Attendance : monitor
-Program o-- Quality
-Coach --> DateInformation : have
-GOTRLA --> DateInformation : have
-Coach --> Roster : view
-Staff --> Data : analyze
+Team o-- Roster
 Team --> Issue : have
-Coach --> Attendance : take
-Coach --> Team : check
-Coach --> Coach : access
-Staff --> CopyLiabilityWaiverForm : have
-Coach --> CopyLiabilityWaiverForm : have
+Volunteer --> Schedule : access
+Volunteer --> Roster : access
+GOTRLA --> Attendance : monitor
 GOTRLA --> Class : delete
-Staff --> Data : export
+Staff --> CopyLiabilityWaiverForm : have
 GOTRLA --> Week : schedule
-GOTRLA --> Roster : support
-VolunteerCoach <|-- Coach
-Admin --> Privilege : have
+Attendance o-- Data
+GOTRLA --> Sheet : cHECK
+Volunteer --> Information : have
 GOTRLA --> Coach : delete
-Girl o-- Paperwork : turn_in
+Girl --> Work : turn_in
+GOTRLA --> Information : have
+Volunteer --> Roster : view
+Girl --> Payment : turn_in
+Staff --> Data : analyze
+GOTRLA --> Coach : add
+Volunteer o-- Team : check
+Volunteer --> Volunteer : access
+User o-- AccountPassword : update
 Volunteer o-- Coach
-GOTRLASTAFF --> Quality : monitor
+VolunteerCoach <|-- Coach
+GOTRLA --> SUPPORT : oFFER
+Admin --> Privilege : have
+Program o-- Staff
+GOTRLA --> Roster : support
+GOTRLA --> Data : add
+Attendance o-- Sheet
+Staff --> Data : export
+Paper o-- Work
+Admin --> Staff : add
+Admin --> Staff : remove
+Program o-- Quality
 Girl o-- Data
+Coach --> CopyLiabilityWaiverForm : have
+Class o-- Roster
+GOTRLA --> Class : add
+GOTRLA --> Data : delete
+GOTRLASTAFF --> Quality : mONITOR
+Coach --> Attendance : take
+User o-- AccountPassword : reset
+Paper o-- Payment
 
 @enduml

@@ -1,9 +1,15 @@
 ESS can use NavigationD & dModule to make the IRobot go forward , backward , turn left and right .
-ESS can use sensing D&DM odule to detect Cliff , Edge , Speed , Direction and elapsed Time .
+ESS can use sensing D&DM odule to detect Edge , Speed , Direction and elapsed Time .
+ESS can use sensing D&DM odule to detect Cliff , Speed , Direction and elapsed Time .
 ESS can drag & drop the musical Note from the Sound & light Module so that ESS can create a Song .
 ESS can use the Sound & light Module so that ESS can turn the Led on and off .
-ESS can drag and drop if - then - else and for , while Construct in which ESS can further drag and drop the Instruction , LoopConstruct .
-ESS can drag and drop a WaitCondition in which ESS can further drag and drop the Instruction , LoopConstruct .
-ESS can drag and drop the built - in Function of the IRobot to control its Behavior , Movement .
+ESS can drag and drop if - then - else and for Construct in which ESS can further drag and drop the LoopConstruct .
+ESS can drag and drop if - then - else and while Construct in which ESS can further drag and drop the LoopConstruct .
+ESS can drag and drop if - then - else and while Construct in which ESS can further drag and drop the InstructionConstruct .
+ESS can drag and drop if - then - else and for Construct in which ESS can further drag and drop the InstructionConstruct .
+ESS can drag and drop a WaitCondition in which ESS can further drag and drop the LoopConstruct .
+ESS can drag and drop a WaitCondition in which ESS can further drag and drop the InstructionConstruct .
+ESS can drag and drop the built - in Function of the IRobot to control its Behavior .
+ESS can drag and drop the built - in Function of the IRobot to control its Movement .
 ESS can copy & paste Instruction so that ESS do not have to re-program .
 ESS can create , save and load ProgramFile .

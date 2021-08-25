@@ -9,7 +9,7 @@
         "C": 14
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "should",
         "3": "be",
         "4": "able",
@@ -20,9 +20,9 @@
         "9": "which",
         "10": "provide",
         "11": "more",
-        "12": "insight",
+        "12": "Insight",
         "13": "on",
-        "14": "budgeting",
+        "14": "Budgeting",
         "15": "."
       },
       "TD": {
@@ -317,16 +317,16 @@
         "5": "on",
         "6": "Expert",
         "7": "'s",
-        "8": "calendar",
+        "8": "Calendar",
         "9": "for",
         "10": "when",
         "11": "Expert",
         "12": "be",
         "13": "available",
         "14": "for",
-        "15": "appointment",
+        "15": "Appointment",
         "16": "that",
-        "17": "user",
+        "17": "User",
         "18": "can",
         "19": "then",
         "20": "select",
@@ -763,32 +763,30 @@
     },
     {
       "FileName": "2019-USC-Project11",
-      "Sentence": "User can access VideoContentLibrary that provides various Topic on financial Therapy , Debt , AssetManagement , etc. . .",
+      "Sentence": "User can access VideoContentLibrary that provides various Topic on financial Therapy , DebtManagement , etc. . .",
       "Result": {
         "A": 6,
         "B": 4,
         "C": 11
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "access",
         "4": "VideoContentLibrary",
         "5": "that",
         "6": "provide",
         "7": "various",
-        "8": "topic",
+        "8": "Topic",
         "9": "on",
         "10": "financial",
-        "11": "therapy",
+        "11": "Therapy",
         "12": ",",
-        "13": "debt",
+        "13": "DebtManagement",
         "14": ",",
-        "15": "assetmanagement",
-        "16": ",",
-        "17": "etc.",
-        "18": ".",
-        "19": "."
+        "15": "etc.",
+        "16": ".",
+        "17": "."
       },
       "TD": {
         "ROOT": [
@@ -867,32 +865,24 @@
             14
           ],
           [
-            11,
+            3,
             16
           ],
           [
             3,
-            18
-          ],
-          [
-            3,
-            19
+            17
           ]
         ],
         "conj": [
           [
             11,
             13
-          ],
-          [
-            11,
-            15
           ]
         ],
         "advmod": [
           [
             11,
-            17
+            15
           ]
         ]
       },
@@ -913,10 +903,6 @@
           [
             13,
             13
-          ],
-          [
-            15,
-            15
           ]
         ],
         "NP": [
@@ -930,7 +916,7 @@
           ],
           [
             4,
-            18
+            16
           ],
           [
             7,
@@ -938,7 +924,7 @@
           ],
           [
             7,
-            18
+            16
           ],
           [
             10,
@@ -946,15 +932,11 @@
           ],
           [
             10,
-            18
+            16
           ],
           [
             13,
             13
-          ],
-          [
-            15,
-            15
           ]
         ],
         "MD": [
@@ -1017,74 +999,70 @@
           [
             14,
             14
-          ],
-          [
-            16,
-            16
           ]
         ],
         "FW": [
+          [
+            15,
+            15
+          ]
+        ],
+        ".": [
+          [
+            16,
+            16
+          ],
           [
             17,
             17
           ]
         ],
-        ".": [
-          [
-            18,
-            18
-          ],
-          [
-            19,
-            19
-          ]
-        ],
         "ADVP": [
           [
-            17,
-            18
+            15,
+            16
           ]
         ],
         "PP": [
           [
             9,
-            18
+            16
           ]
         ],
         "VP": [
           [
             2,
-            18
+            16
           ],
           [
             3,
-            18
+            16
           ],
           [
             6,
-            18
+            16
           ]
         ],
         "S": [
           [
             1,
-            19
+            17
           ],
           [
             6,
-            18
+            16
           ]
         ],
         "SBAR": [
           [
             5,
-            18
+            16
           ]
         ],
         "ROOT": [
           [
             1,
-            19
+            17
           ]
         ]
       },
@@ -1092,23 +1070,30 @@
     },
     {
       "FileName": "2019-USC-Project11",
-      "Sentence": "User can have on - DemandAdvice from financial Expert .",
+      "Sentence": "User can access VideoContentLibrary that provides various Topic on financial Therapy , AssetManagement , etc. . .",
       "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 6
+        "A": 6,
+        "B": 4,
+        "C": 11
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
-        "3": "have",
-        "4": "on",
-        "5": "-",
-        "6": "demandadvice",
-        "7": "from",
-        "8": "financial",
-        "9": "Expert",
-        "10": "."
+        "3": "access",
+        "4": "VideoContentLibrary",
+        "5": "that",
+        "6": "provide",
+        "7": "various",
+        "8": "Topic",
+        "9": "on",
+        "10": "financial",
+        "11": "Therapy",
+        "12": ",",
+        "13": "AssetManagement",
+        "14": ",",
+        "15": "etc.",
+        "16": ".",
+        "17": "."
       },
       "TD": {
         "ROOT": [
@@ -1121,6 +1106,10 @@
           [
             3,
             1
+          ],
+          [
+            6,
+            4
           ]
         ],
         "aux": [
@@ -1129,42 +1118,78 @@
             2
           ]
         ],
-        "case": [
+        "obj": [
           [
-            6,
+            3,
             4
           ],
           [
-            9,
-            7
-          ]
-        ],
-        "punct": [
-          [
             6,
-            5
-          ],
-          [
-            3,
-            10
+            8
           ]
         ],
-        "obl:on": [
+        "ref": [
           [
-            3,
+            4,
+            5
+          ]
+        ],
+        "acl:relcl": [
+          [
+            4,
             6
           ]
         ],
         "amod": [
           [
-            9,
-            8
+            8,
+            7
+          ],
+          [
+            11,
+            10
           ]
         ],
-        "nmod:from": [
+        "case": [
+          [
+            11,
+            9
+          ]
+        ],
+        "obl:on": [
           [
             6,
-            9
+            11
+          ]
+        ],
+        "punct": [
+          [
+            11,
+            12
+          ],
+          [
+            11,
+            14
+          ],
+          [
+            3,
+            16
+          ],
+          [
+            3,
+            17
+          ]
+        ],
+        "conj": [
+          [
+            11,
+            13
+          ]
+        ],
+        "advmod": [
+          [
+            11,
+            15
           ]
         ]
       },
@@ -1175,8 +1200,16 @@
             1
           ],
           [
-            6,
-            6
+            8,
+            8
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            13,
+            13
           ]
         ],
         "NP": [
@@ -1185,12 +1218,32 @@
             1
           ],
           [
-            6,
-            6
+            4,
+            4
           ],
           [
-            8,
-            9
+            4,
+            16
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            16
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            10,
+            16
+          ],
+          [
+            13,
+            13
           ]
         ],
         "MD": [
@@ -1205,70 +1258,118 @@
             3
           ]
         ],
-        "IN": [
+        "NNP": [
           [
             4,
             4
-          ],
-          [
-            7,
-            7
           ]
         ],
-        "HYPH": [
+        "WDT": [
           [
             5,
             5
           ]
         ],
-        "PP": [
+        "WHNP": [
           [
-            4,
+            5,
+            5
+          ]
+        ],
+        "VBZ": [
+          [
+            6,
             6
-          ],
-          [
-            7,
-            9
           ]
         ],
         "JJ": [
           [
-            8,
-            8
-          ]
-        ],
-        "NNP": [
-          [
-            9,
-            9
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            9
+            7,
+            7
           ],
-          [
-            3,
-            9
-          ]
-        ],
-        ".": [
           [
             10,
             10
           ]
         ],
+        "IN": [
+          [
+            9,
+            9
+          ]
+        ],
+        ",": [
+          [
+            12,
+            12
+          ],
+          [
+            14,
+            14
+          ]
+        ],
+        "FW": [
+          [
+            15,
+            15
+          ]
+        ],
+        ".": [
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ]
+        ],
+        "ADVP": [
+          [
+            15,
+            16
+          ]
+        ],
+        "PP": [
+          [
+            9,
+            16
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            16
+          ],
+          [
+            3,
+            16
+          ],
+          [
+            6,
+            16
+          ]
+        ],
         "S": [
           [
             1,
-            10
+            17
+          ],
+          [
+            6,
+            16
+          ]
+        ],
+        "SBAR": [
+          [
+            5,
+            16
           ]
         ],
         "ROOT": [
           [
             1,
-            10
+            17
           ]
         ]
       },
@@ -1279,235 +1380,6 @@
   "SVCcO": [
     {
       "FileName": "2019-USC-Project11",
-      "Sentence": "GuestUser can take a Quiz to find out GuestUser's MoneyBelief .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 7,
-        "D": 11
-      },
-      "Index": {
-        "1": "GuestUser",
-        "2": "can",
-        "3": "take",
-        "4": "a",
-        "5": "quiz",
-        "6": "to",
-        "7": "find",
-        "8": "out",
-        "9": "GuestUser",
-        "10": "'s",
-        "11": "MoneyBelief",
-        "12": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "det": [
-          [
-            5,
-            4
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            5
-          ],
-          [
-            7,
-            11
-          ]
-        ],
-        "nsubj:xsubj": [
-          [
-            7,
-            5
-          ]
-        ],
-        "mark": [
-          [
-            7,
-            6
-          ]
-        ],
-        "xcomp": [
-          [
-            3,
-            7
-          ]
-        ],
-        "compound:prt": [
-          [
-            7,
-            8
-          ]
-        ],
-        "nmod:poss": [
-          [
-            11,
-            9
-          ]
-        ],
-        "case": [
-          [
-            9,
-            10
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            12
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NNP": [
-          [
-            1,
-            1
-          ],
-          [
-            9,
-            9
-          ],
-          [
-            11,
-            11
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            5
-          ],
-          [
-            9,
-            10
-          ],
-          [
-            9,
-            11
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ],
-          [
-            7,
-            7
-          ]
-        ],
-        "DT": [
-          [
-            4,
-            4
-          ]
-        ],
-        "NN": [
-          [
-            5,
-            5
-          ]
-        ],
-        "TO": [
-          [
-            6,
-            6
-          ]
-        ],
-        "RP": [
-          [
-            8,
-            8
-          ]
-        ],
-        "PRT": [
-          [
-            8,
-            8
-          ]
-        ],
-        "POS": [
-          [
-            10,
-            10
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            11
-          ],
-          [
-            3,
-            11
-          ],
-          [
-            6,
-            11
-          ],
-          [
-            7,
-            11
-          ]
-        ],
-        "S": [
-          [
-            1,
-            12
-          ],
-          [
-            6,
-            11
-          ]
-        ],
-        ".": [
-          [
-            12,
-            12
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            12
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2019-USC-Project11",
       "Sentence": "User should be able to access the VideoStreamingLibrary which provide more Insight on Budgeting .",
       "Result": {
         "A": 4,
@@ -1516,7 +1388,7 @@
         "D": 8
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "should",
         "3": "be",
         "4": "able",
@@ -1527,9 +1399,9 @@
         "9": "which",
         "10": "provide",
         "11": "more",
-        "12": "insight",
+        "12": "Insight",
         "13": "on",
-        "14": "budgeting",
+        "14": "Budgeting",
         "15": "."
       },
       "TD": {
@@ -1824,16 +1696,16 @@
         "4": "able",
         "5": "to",
         "6": "make",
-        "7": "change",
+        "7": "Change",
         "8": "to",
         "9": "a",
-        "10": "appointment",
+        "10": "Appointment",
         "11": "if",
         "12": "there",
         "13": "be",
         "14": "a",
         "15": "personal",
-        "16": "emergency",
+        "16": "Emergency",
         "17": "."
       },
       "TD": {
@@ -2133,11 +2005,11 @@
         "5": "access",
         "6": "the",
         "7": "privileged",
-        "8": "feature",
+        "8": "Feature",
         "9": "like",
         "10": "make",
         "11": "a",
-        "12": "appointment",
+        "12": "Appointment",
         "13": ",",
         "14": "VideoChat",
         "15": "etc.",
@@ -2431,7 +2303,7 @@
         "B": 9
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "access",
         "4": "Tool",
@@ -2439,9 +2311,9 @@
         "6": "help",
         "7": "I",
         "8": "understand",
-        "9": "user",
+        "9": "User",
         "10": "'s",
-        "11": "finances",
+        "11": "Finances",
         "12": "."
       },
       "TD": {
@@ -2667,13 +2539,13 @@
         "3": "manage",
         "4": "Expert",
         "5": "'s",
-        "6": "calendar",
+        "6": "Calendar",
         "7": "to",
         "8": "ScheduleAppointmentAvailability",
         "9": "to",
         "10": "VideoChat",
         "11": "with",
-        "12": "user",
+        "12": "User",
         "13": "."
       },
       "TD": {
@@ -2896,7 +2768,7 @@
         "2": "can",
         "3": "take",
         "4": "a",
-        "5": "quiz",
+        "5": "Quiz",
         "6": "to",
         "7": "find",
         "8": "out",
@@ -3119,10 +2991,10 @@
         "B": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
-        "4": "user",
+        "4": "User",
         "5": "'s",
         "6": "PaymentHistory",
         "7": "."
@@ -3259,11 +3131,11 @@
         "B": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "pay",
         "4": "for",
-        "5": "user",
+        "5": "User",
         "6": "'s",
         "7": "Session",
         "8": "with",
@@ -3479,13 +3351,13 @@
         "1": "Expert",
         "2": "can",
         "3": "receive",
-        "4": "payment",
+        "4": "Payment",
         "5": "for",
         "6": "Expert",
         "7": "'s",
         "8": "Session",
         "9": "with",
-        "10": "user",
+        "10": "User",
         "11": "."
       },
       "TD": {
@@ -3680,10 +3552,10 @@
         "B": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "update",
-        "4": "user",
+        "4": "User",
         "5": "'s",
         "6": "PaymentMethod",
         "7": "."
@@ -3820,7 +3692,7 @@
         "B": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "view",
         "4": "a",
@@ -4134,7 +4006,7 @@
         "6": "Status",
         "7": "to",
         "8": "\"",
-        "9": "online",
+        "9": "Online",
         "10": "\"",
         "11": "."
       },
@@ -4325,7 +4197,7 @@
         "3": "store",
         "4": "Expert",
         "5": "'s",
-        "6": "note",
+        "6": "Note",
         "7": "securely",
         "8": "."
       },
@@ -4479,10 +4351,10 @@
         "B": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
-        "4": "user",
+        "4": "User",
         "5": "'s",
         "6": "MessageHistory",
         "7": "with",
@@ -4668,10 +4540,10 @@
         "B": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
-        "4": "user",
+        "4": "User",
         "5": "'s",
         "6": "SessionAppointmentHistory",
         "7": "."
@@ -4808,14 +4680,14 @@
         "B": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "authorize",
-        "4": "user",
+        "4": "User",
         "5": "'s",
         "6": "VideoRecord",
         "7": "and",
-        "8": "transcript",
+        "8": "Transcript",
         "9": "be",
         "10": "analyze",
         "11": "for",
@@ -5059,7 +4931,7 @@
         "5": "'s",
         "6": "VideoRecord",
         "7": "and",
-        "8": "transcript",
+        "8": "Transcript",
         "9": "be",
         "10": "analyze",
         "11": "to",
@@ -5068,7 +4940,7 @@
         "14": "about",
         "15": "Expert",
         "16": "'s",
-        "17": "client",
+        "17": "Client",
         "18": "."
       },
       "TD": {
@@ -5374,7 +5246,7 @@
         "5": "'s",
         "6": "VideoRecord",
         "7": "and",
-        "8": "transcript",
+        "8": "Transcript",
         "9": "be",
         "10": "analyze",
         "11": "to",
@@ -5383,7 +5255,7 @@
         "14": "about",
         "15": "Expert",
         "16": "'s",
-        "17": "client",
+        "17": "Client",
         "18": "."
       },
       "TD": {
@@ -5682,14 +5554,14 @@
         "B": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
         "4": "that",
-        "5": "user",
+        "5": "User",
         "6": "'s",
         "7": "personal",
-        "8": "information",
+        "8": "Information",
         "9": "be",
         "10": "secure",
         "11": "."
@@ -5897,16 +5769,16 @@
         "5": "on",
         "6": "Expert",
         "7": "'s",
-        "8": "calendar",
+        "8": "Calendar",
         "9": "for",
         "10": "when",
         "11": "Expert",
         "12": "be",
         "13": "available",
         "14": "for",
-        "15": "appointment",
+        "15": "Appointment",
         "16": "that",
-        "17": "user",
+        "17": "User",
         "18": "can",
         "19": "then",
         "20": "select",
@@ -6353,14 +6225,14 @@
         "2": "can",
         "3": "view",
         "4": "the",
-        "5": "feedback",
+        "5": "Feedback",
         "6": "and",
-        "7": "rating",
+        "7": "Rating",
         "8": "provide",
         "9": "by",
         "10": "Expert",
         "11": "'s",
-        "12": "customer",
+        "12": "Customer",
         "13": "."
       },
       "TD": {
@@ -6576,14 +6448,14 @@
       "Keywords": []
     }
   ],
-  "OPassVS": [],
+  "SPassPartVByS": [],
   "VOToInf": [],
   "SVThatClause": [],
   "SVByVO": [],
   "AO": [],
   "SVCVO": [],
-  "SVVO": [],
-  "SVVOcomma1": [],
+  "SVVOMultiComma": [],
+  "SVVO1Comma": [],
   "SVOCO": [
     {
       "FileName": "2019-USC-Project11",
@@ -6602,7 +6474,7 @@
         "5": "'s",
         "6": "VideoRecord",
         "7": "and",
-        "8": "transcript",
+        "8": "Transcript",
         "9": "be",
         "10": "analyze",
         "11": "to",
@@ -6611,7 +6483,7 @@
         "14": "about",
         "15": "Expert",
         "16": "'s",
-        "17": "client",
+        "17": "Client",
         "18": "."
       },
       "TD": {
@@ -6916,14 +6788,14 @@
         "2": "can",
         "3": "view",
         "4": "the",
-        "5": "feedback",
+        "5": "Feedback",
         "6": "and",
-        "7": "rating",
+        "7": "Rating",
         "8": "provide",
         "9": "by",
         "10": "Expert",
         "11": "'s",
-        "12": "customer",
+        "12": "Customer",
         "13": "."
       },
       "TD": {
@@ -7139,8 +7011,1446 @@
       "Keywords": []
     }
   ],
-  "SVOO": [],
-  "SVOOcomma1": [],
+  "SVOOComma": [],
+  "SVIOO": [],
+  "SVOTo": [
+    {
+      "FileName": "2019-USC-Project11",
+      "Sentence": "Expert can manage Expert's Calendar to ScheduleAppointmentAvailability to VideoChat with User .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 6,
+        "D": 8
+      },
+      "Index": {
+        "1": "Expert",
+        "2": "can",
+        "3": "manage",
+        "4": "Expert",
+        "5": "'s",
+        "6": "Calendar",
+        "7": "to",
+        "8": "ScheduleAppointmentAvailability",
+        "9": "to",
+        "10": "VideoChat",
+        "11": "with",
+        "12": "User",
+        "13": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "nmod:poss": [
+          [
+            6,
+            4
+          ]
+        ],
+        "case": [
+          [
+            4,
+            5
+          ],
+          [
+            8,
+            7
+          ],
+          [
+            10,
+            9
+          ],
+          [
+            12,
+            11
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            6
+          ]
+        ],
+        "obl:to": [
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            10
+          ]
+        ],
+        "obl:with": [
+          [
+            3,
+            12
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            13
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NNP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            10,
+            12
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "POS": [
+          [
+            5,
+            5
+          ]
+        ],
+        "NN": [
+          [
+            6,
+            6
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "IN": [
+          [
+            7,
+            7
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        "PP": [
+          [
+            7,
+            8
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            11,
+            12
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ]
+        ],
+        ".": [
+          [
+            13,
+            13
+          ]
+        ],
+        "S": [
+          [
+            1,
+            13
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            13
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project11",
+      "Sentence": "Expert can manage Expert's Calendar to ScheduleAppointmentAvailability to VideoChat with User .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 6,
+        "D": 10
+      },
+      "Index": {
+        "1": "Expert",
+        "2": "can",
+        "3": "manage",
+        "4": "Expert",
+        "5": "'s",
+        "6": "Calendar",
+        "7": "to",
+        "8": "ScheduleAppointmentAvailability",
+        "9": "to",
+        "10": "VideoChat",
+        "11": "with",
+        "12": "User",
+        "13": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "nmod:poss": [
+          [
+            6,
+            4
+          ]
+        ],
+        "case": [
+          [
+            4,
+            5
+          ],
+          [
+            8,
+            7
+          ],
+          [
+            10,
+            9
+          ],
+          [
+            12,
+            11
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            6
+          ]
+        ],
+        "obl:to": [
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            10
+          ]
+        ],
+        "obl:with": [
+          [
+            3,
+            12
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            13
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NNP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            10,
+            12
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "POS": [
+          [
+            5,
+            5
+          ]
+        ],
+        "NN": [
+          [
+            6,
+            6
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "IN": [
+          [
+            7,
+            7
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        "PP": [
+          [
+            7,
+            8
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            11,
+            12
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ]
+        ],
+        ".": [
+          [
+            13,
+            13
+          ]
+        ],
+        "S": [
+          [
+            1,
+            13
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            13
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project11",
+      "Sentence": "Expert can set Expert's Status to \" Online \" .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 6,
+        "D": 9
+      },
+      "Index": {
+        "1": "Expert",
+        "2": "can",
+        "3": "set",
+        "4": "Expert",
+        "5": "'s",
+        "6": "Status",
+        "7": "to",
+        "8": "\"",
+        "9": "Online",
+        "10": "\"",
+        "11": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "nmod:poss": [
+          [
+            6,
+            4
+          ]
+        ],
+        "case": [
+          [
+            4,
+            5
+          ],
+          [
+            9,
+            7
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            6
+          ]
+        ],
+        "punct": [
+          [
+            9,
+            8
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            3,
+            11
+          ]
+        ],
+        "obl:to": [
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NNP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "POS": [
+          [
+            5,
+            5
+          ]
+        ],
+        "IN": [
+          [
+            7,
+            7
+          ]
+        ],
+        "``": [
+          [
+            8,
+            8
+          ]
+        ],
+        "NN": [
+          [
+            9,
+            9
+          ]
+        ],
+        "''": [
+          [
+            10,
+            10
+          ]
+        ],
+        "PP": [
+          [
+            7,
+            10
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            10
+          ]
+        ],
+        ".": [
+          [
+            11,
+            11
+          ]
+        ],
+        "S": [
+          [
+            1,
+            11
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            11
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project11",
+      "Sentence": "User get Access to various informative Blog and Video .",
+      "Result": {
+        "A": 2,
+        "B": 1,
+        "C": 3,
+        "D": 7
+      },
+      "Index": {
+        "1": "User",
+        "2": "get",
+        "3": "Access",
+        "4": "to",
+        "5": "various",
+        "6": "informative",
+        "7": "Blog",
+        "8": "and",
+        "9": "Video",
+        "10": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            2
+          ]
+        ],
+        "nsubj": [
+          [
+            2,
+            1
+          ]
+        ],
+        "obj": [
+          [
+            2,
+            3
+          ]
+        ],
+        "case": [
+          [
+            7,
+            4
+          ]
+        ],
+        "amod": [
+          [
+            7,
+            5
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        "obl:to": [
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            9
+          ]
+        ],
+        "cc": [
+          [
+            9,
+            8
+          ]
+        ],
+        "conj:and": [
+          [
+            7,
+            9
+          ]
+        ],
+        "punct": [
+          [
+            2,
+            10
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "VBP": [
+          [
+            2,
+            2
+          ]
+        ],
+        "NNP": [
+          [
+            3,
+            3
+          ]
+        ],
+        "IN": [
+          [
+            4,
+            4
+          ]
+        ],
+        "JJ": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "CC": [
+          [
+            8,
+            8
+          ]
+        ],
+        "PP": [
+          [
+            4,
+            9
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            9
+          ]
+        ],
+        ".": [
+          [
+            10,
+            10
+          ]
+        ],
+        "S": [
+          [
+            1,
+            10
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            10
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project11",
+      "Sentence": "User get Access to various informative Blog and Video .",
+      "Result": {
+        "A": 2,
+        "B": 1,
+        "C": 3,
+        "D": 9
+      },
+      "Index": {
+        "1": "User",
+        "2": "get",
+        "3": "Access",
+        "4": "to",
+        "5": "various",
+        "6": "informative",
+        "7": "Blog",
+        "8": "and",
+        "9": "Video",
+        "10": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            2
+          ]
+        ],
+        "nsubj": [
+          [
+            2,
+            1
+          ]
+        ],
+        "obj": [
+          [
+            2,
+            3
+          ]
+        ],
+        "case": [
+          [
+            7,
+            4
+          ]
+        ],
+        "amod": [
+          [
+            7,
+            5
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        "obl:to": [
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            9
+          ]
+        ],
+        "cc": [
+          [
+            9,
+            8
+          ]
+        ],
+        "conj:and": [
+          [
+            7,
+            9
+          ]
+        ],
+        "punct": [
+          [
+            2,
+            10
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "VBP": [
+          [
+            2,
+            2
+          ]
+        ],
+        "NNP": [
+          [
+            3,
+            3
+          ]
+        ],
+        "IN": [
+          [
+            4,
+            4
+          ]
+        ],
+        "JJ": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "CC": [
+          [
+            8,
+            8
+          ]
+        ],
+        "PP": [
+          [
+            4,
+            9
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            9
+          ]
+        ],
+        ".": [
+          [
+            10,
+            10
+          ]
+        ],
+        "S": [
+          [
+            1,
+            10
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            10
+          ]
+        ]
+      },
+      "Keywords": []
+    }
+  ],
+  "OPassPartVByS": [],
+  "SVOPassPart": [
+    {
+      "FileName": "2019-USC-Project11",
+      "Sentence": "Expert can keep a Track of the total Income generated , total Minute talked and all the User who took the Advice .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 10,
+        "D": 5
+      },
+      "Index": {
+        "1": "Expert",
+        "2": "can",
+        "3": "keep",
+        "4": "a",
+        "5": "Track",
+        "6": "of",
+        "7": "the",
+        "8": "total",
+        "9": "Income",
+        "10": "generate",
+        "11": ",",
+        "12": "total",
+        "13": "Minute",
+        "14": "talk",
+        "15": "and",
+        "16": "all",
+        "17": "the",
+        "18": "User",
+        "19": "who",
+        "20": "take",
+        "21": "the",
+        "22": "Advice",
+        "23": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ],
+          [
+            10,
+            5
+          ],
+          [
+            14,
+            13
+          ],
+          [
+            20,
+            18
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "det": [
+          [
+            5,
+            4
+          ],
+          [
+            9,
+            7
+          ],
+          [
+            18,
+            17
+          ],
+          [
+            22,
+            21
+          ]
+        ],
+        "case": [
+          [
+            9,
+            6
+          ]
+        ],
+        "amod": [
+          [
+            9,
+            8
+          ],
+          [
+            13,
+            12
+          ]
+        ],
+        "nmod:of": [
+          [
+            5,
+            9
+          ]
+        ],
+        "dep": [
+          [
+            3,
+            10
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            15,
+            18
+          ]
+        ],
+        "punct": [
+          [
+            10,
+            11
+          ],
+          [
+            3,
+            23
+          ]
+        ],
+        "conj": [
+          [
+            10,
+            14
+          ]
+        ],
+        "det:predet": [
+          [
+            18,
+            16
+          ]
+        ],
+        "ref": [
+          [
+            18,
+            19
+          ]
+        ],
+        "acl:relcl": [
+          [
+            18,
+            20
+          ]
+        ],
+        "obj": [
+          [
+            20,
+            22
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NNP": [
+          [
+            1,
+            1
+          ],
+          [
+            13,
+            13
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            22
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            7,
+            10
+          ],
+          [
+            7,
+            22
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            12,
+            14
+          ],
+          [
+            16,
+            18
+          ],
+          [
+            16,
+            22
+          ],
+          [
+            21,
+            22
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "DT": [
+          [
+            4,
+            4
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "NN": [
+          [
+            5,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "IN": [
+          [
+            6,
+            6
+          ]
+        ],
+        "JJ": [
+          [
+            8,
+            8
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "VBN": [
+          [
+            10,
+            10
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            22
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            20,
+            22
+          ]
+        ],
+        ",": [
+          [
+            11,
+            11
+          ]
+        ],
+        "VBD": [
+          [
+            14,
+            14
+          ],
+          [
+            20,
+            20
+          ]
+        ],
+        "S": [
+          [
+            1,
+            23
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            20,
+            22
+          ]
+        ],
+        "SBAR": [
+          [
+            14,
+            14
+          ],
+          [
+            19,
+            22
+          ]
+        ],
+        "CC": [
+          [
+            15,
+            15
+          ]
+        ],
+        "PDT": [
+          [
+            16,
+            16
+          ]
+        ],
+        "WP": [
+          [
+            19,
+            19
+          ]
+        ],
+        "WHNP": [
+          [
+            19,
+            19
+          ]
+        ],
+        "PP": [
+          [
+            6,
+            22
+          ]
+        ],
+        ".": [
+          [
+            23,
+            23
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            23
+          ]
+        ]
+      },
+      "Keywords": []
+    }
+  ],
+  "SPredicativeV": [],
   "SVOblWith": [
     {
       "FileName": "2019-USC-Project11",
@@ -7151,9 +8461,9 @@
         "C": 7
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
-        "3": "videochat",
+        "3": "VideoChat",
         "4": "with",
         "5": "a",
         "6": "financial",
@@ -7320,13 +8630,13 @@
         "3": "manage",
         "4": "Expert",
         "5": "'s",
-        "6": "calendar",
+        "6": "Calendar",
         "7": "to",
         "8": "ScheduleAppointmentAvailability",
         "9": "to",
         "10": "VideoChat",
         "11": "with",
-        "12": "user",
+        "12": "User",
         "13": "."
       },
       "TD": {
@@ -7546,11 +8856,11 @@
         "C": 11
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "manage",
         "4": "a",
-        "5": "appointment",
+        "5": "Appointment",
         "6": "for",
         "7": "VideoChat",
         "8": "with",
@@ -7559,7 +8869,7 @@
         "11": "Expert",
         "12": "by",
         "13": "use",
-        "14": "calendar",
+        "14": "Calendar",
         "15": "."
       },
       "TD": {
@@ -7813,11 +9123,11 @@
         "C": 11
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "pay",
         "4": "for",
-        "5": "user",
+        "5": "User",
         "6": "'s",
         "7": "Session",
         "8": "with",
@@ -8034,13 +9344,13 @@
         "1": "Expert",
         "2": "can",
         "3": "receive",
-        "4": "payment",
+        "4": "Payment",
         "5": "for",
         "6": "Expert",
         "7": "'s",
         "8": "Session",
         "9": "with",
-        "10": "user",
+        "10": "User",
         "11": "."
       },
       "TD": {
@@ -8236,7 +9546,7 @@
         "C": 13
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "should",
         "3": "be",
         "4": "charge",
@@ -8492,7 +9802,7 @@
         "C": 7
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "chat",
         "4": "with",
@@ -8501,7 +9811,7 @@
         "7": "Expert",
         "8": "within",
         "9": "the",
-        "10": "app",
+        "10": "App",
         "11": "."
       },
       "TD": {
@@ -8697,7 +10007,7 @@
         "C": 9
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "schedule",
         "4": "a",
@@ -8872,427 +10182,21 @@
     },
     {
       "FileName": "2019-USC-Project11",
-      "Sentence": "User can sign up , in with Facebook or Gmail .",
+      "Sentence": "User can sign up with Facebook or Gmail .",
       "Result": {
         "A": 3,
         "B": 1,
-        "C": 8
+        "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "sign",
         "4": "up",
-        "5": ",",
-        "6": "in",
-        "7": "with",
-        "8": "Facebook",
-        "9": "or",
-        "10": "Gmail",
-        "11": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "compound:prt": [
-          [
-            3,
-            4
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            5
-          ],
-          [
-            3,
-            11
-          ]
-        ],
-        "case": [
-          [
-            8,
-            6
-          ],
-          [
-            8,
-            7
-          ]
-        ],
-        "obl:with": [
-          [
-            3,
-            8
-          ],
-          [
-            3,
-            10
-          ]
-        ],
-        "cc": [
-          [
-            10,
-            9
-          ]
-        ],
-        "conj:or": [
-          [
-            8,
-            10
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            8,
-            10
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ]
-        ],
-        "RP": [
-          [
-            4,
-            4
-          ]
-        ],
-        "PRT": [
-          [
-            4,
-            4
-          ]
-        ],
-        ",": [
-          [
-            5,
-            5
-          ]
-        ],
-        "IN": [
-          [
-            6,
-            6
-          ],
-          [
-            7,
-            7
-          ]
-        ],
-        "NNP": [
-          [
-            8,
-            8
-          ],
-          [
-            10,
-            10
-          ]
-        ],
-        "CC": [
-          [
-            9,
-            9
-          ]
-        ],
-        "PP": [
-          [
-            6,
-            10
-          ],
-          [
-            7,
-            10
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            10
-          ],
-          [
-            3,
-            10
-          ]
-        ],
-        ".": [
-          [
-            11,
-            11
-          ]
-        ],
-        "S": [
-          [
-            1,
-            11
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            11
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2019-USC-Project11",
-      "Sentence": "User can sign up , in with Facebook or Gmail .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 10
-      },
-      "Index": {
-        "1": "user",
-        "2": "can",
-        "3": "sign",
-        "4": "up",
-        "5": ",",
-        "6": "in",
-        "7": "with",
-        "8": "Facebook",
-        "9": "or",
-        "10": "Gmail",
-        "11": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "compound:prt": [
-          [
-            3,
-            4
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            5
-          ],
-          [
-            3,
-            11
-          ]
-        ],
-        "case": [
-          [
-            8,
-            6
-          ],
-          [
-            8,
-            7
-          ]
-        ],
-        "obl:with": [
-          [
-            3,
-            8
-          ],
-          [
-            3,
-            10
-          ]
-        ],
-        "cc": [
-          [
-            10,
-            9
-          ]
-        ],
-        "conj:or": [
-          [
-            8,
-            10
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            8,
-            10
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ]
-        ],
-        "RP": [
-          [
-            4,
-            4
-          ]
-        ],
-        "PRT": [
-          [
-            4,
-            4
-          ]
-        ],
-        ",": [
-          [
-            5,
-            5
-          ]
-        ],
-        "IN": [
-          [
-            6,
-            6
-          ],
-          [
-            7,
-            7
-          ]
-        ],
-        "NNP": [
-          [
-            8,
-            8
-          ],
-          [
-            10,
-            10
-          ]
-        ],
-        "CC": [
-          [
-            9,
-            9
-          ]
-        ],
-        "PP": [
-          [
-            6,
-            10
-          ],
-          [
-            7,
-            10
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            10
-          ],
-          [
-            3,
-            10
-          ]
-        ],
-        ".": [
-          [
-            11,
-            11
-          ]
-        ],
-        "S": [
-          [
-            1,
-            11
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            11
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2019-USC-Project11",
-      "Sentence": "Expert can sign up , in with LinkedIn .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 8
-      },
-      "Index": {
-        "1": "Expert",
-        "2": "can",
-        "3": "sign",
-        "4": "up",
-        "5": ",",
-        "6": "in",
-        "7": "with",
-        "8": "LinkedIn",
+        "5": "with",
+        "6": "Facebook",
+        "7": "or",
+        "8": "Gmail",
         "9": "."
       },
       "TD": {
@@ -9320,42 +10224,46 @@
             4
           ]
         ],
-        "punct": [
-          [
-            3,
-            5
-          ],
-          [
-            3,
-            9
-          ]
-        ],
         "case": [
           [
-            8,
-            6
-          ],
-          [
-            8,
-            7
+            6,
+            5
           ]
         ],
         "obl:with": [
           [
             3,
+            6
+          ],
+          [
+            3,
             8
+          ]
+        ],
+        "cc": [
+          [
+            8,
+            7
+          ]
+        ],
+        "conj:or": [
+          [
+            6,
+            8
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            9
           ]
         ]
       },
       "Pos-tag": {
-        "NNP": [
+        "NN": [
           [
             1,
             1
-          ],
-          [
-            8,
-            8
           ]
         ],
         "NP": [
@@ -9364,7 +10272,7 @@
             1
           ],
           [
-            8,
+            6,
             8
           ]
         ],
@@ -9392,17 +10300,23 @@
             4
           ]
         ],
-        ",": [
+        "IN": [
           [
             5,
             5
           ]
         ],
-        "IN": [
+        "NNP": [
           [
             6,
             6
           ],
+          [
+            8,
+            8
+          ]
+        ],
+        "CC": [
           [
             7,
             7
@@ -9410,11 +10324,7 @@
         ],
         "PP": [
           [
-            6,
-            8
-          ],
-          [
-            7,
+            5,
             8
           ]
         ],
@@ -9444,6 +10354,334 @@
           [
             1,
             9
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project11",
+      "Sentence": "User can sign up with Facebook or Gmail .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 8
+      },
+      "Index": {
+        "1": "User",
+        "2": "can",
+        "3": "sign",
+        "4": "up",
+        "5": "with",
+        "6": "Facebook",
+        "7": "or",
+        "8": "Gmail",
+        "9": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "compound:prt": [
+          [
+            3,
+            4
+          ]
+        ],
+        "case": [
+          [
+            6,
+            5
+          ]
+        ],
+        "obl:with": [
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        "cc": [
+          [
+            8,
+            7
+          ]
+        ],
+        "conj:or": [
+          [
+            6,
+            8
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "RP": [
+          [
+            4,
+            4
+          ]
+        ],
+        "PRT": [
+          [
+            4,
+            4
+          ]
+        ],
+        "IN": [
+          [
+            5,
+            5
+          ]
+        ],
+        "NNP": [
+          [
+            6,
+            6
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "CC": [
+          [
+            7,
+            7
+          ]
+        ],
+        "PP": [
+          [
+            5,
+            8
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        ".": [
+          [
+            9,
+            9
+          ]
+        ],
+        "S": [
+          [
+            1,
+            9
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            9
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project11",
+      "Sentence": "Expert can sign up with LinkedIn .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 6
+      },
+      "Index": {
+        "1": "Expert",
+        "2": "can",
+        "3": "sign",
+        "4": "up",
+        "5": "with",
+        "6": "LinkedIn",
+        "7": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "compound:prt": [
+          [
+            3,
+            4
+          ]
+        ],
+        "case": [
+          [
+            6,
+            5
+          ]
+        ],
+        "obl:with": [
+          [
+            3,
+            6
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            7
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NNP": [
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "RP": [
+          [
+            4,
+            4
+          ]
+        ],
+        "PRT": [
+          [
+            4,
+            4
+          ]
+        ],
+        "IN": [
+          [
+            5,
+            5
+          ]
+        ],
+        "PP": [
+          [
+            5,
+            6
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        ".": [
+          [
+            7,
+            7
+          ]
+        ],
+        "S": [
+          [
+            1,
+            7
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            7
           ]
         ]
       },
@@ -9453,466 +10691,6 @@
   "SVCc": [
     {
       "FileName": "2019-USC-Project11",
-      "Sentence": "User can access Tool to help me understand User's Finances .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 6
-      },
-      "Index": {
-        "1": "user",
-        "2": "can",
-        "3": "access",
-        "4": "Tool",
-        "5": "to",
-        "6": "help",
-        "7": "I",
-        "8": "understand",
-        "9": "user",
-        "10": "'s",
-        "11": "finances",
-        "12": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ],
-          [
-            8,
-            7
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            4
-          ],
-          [
-            8,
-            11
-          ]
-        ],
-        "nsubj:xsubj": [
-          [
-            6,
-            4
-          ]
-        ],
-        "mark": [
-          [
-            6,
-            5
-          ]
-        ],
-        "xcomp": [
-          [
-            3,
-            6
-          ]
-        ],
-        "ccomp": [
-          [
-            6,
-            8
-          ]
-        ],
-        "nmod:poss": [
-          [
-            11,
-            9
-          ]
-        ],
-        "case": [
-          [
-            9,
-            10
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            12
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ],
-          [
-            9,
-            9
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            4
-          ],
-          [
-            7,
-            7
-          ],
-          [
-            9,
-            10
-          ],
-          [
-            9,
-            11
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ],
-          [
-            6,
-            6
-          ],
-          [
-            8,
-            8
-          ]
-        ],
-        "NNP": [
-          [
-            4,
-            4
-          ]
-        ],
-        "TO": [
-          [
-            5,
-            5
-          ]
-        ],
-        "PRP": [
-          [
-            7,
-            7
-          ]
-        ],
-        "POS": [
-          [
-            10,
-            10
-          ]
-        ],
-        "NNS": [
-          [
-            11,
-            11
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            11
-          ],
-          [
-            3,
-            11
-          ],
-          [
-            5,
-            11
-          ],
-          [
-            6,
-            11
-          ],
-          [
-            8,
-            11
-          ]
-        ],
-        "S": [
-          [
-            1,
-            12
-          ],
-          [
-            5,
-            11
-          ],
-          [
-            7,
-            11
-          ]
-        ],
-        ".": [
-          [
-            12,
-            12
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            12
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2019-USC-Project11",
-      "Sentence": "GuestUser can take a Quiz to find out GuestUser's MoneyBelief .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 7
-      },
-      "Index": {
-        "1": "GuestUser",
-        "2": "can",
-        "3": "take",
-        "4": "a",
-        "5": "quiz",
-        "6": "to",
-        "7": "find",
-        "8": "out",
-        "9": "GuestUser",
-        "10": "'s",
-        "11": "MoneyBelief",
-        "12": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "det": [
-          [
-            5,
-            4
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            5
-          ],
-          [
-            7,
-            11
-          ]
-        ],
-        "nsubj:xsubj": [
-          [
-            7,
-            5
-          ]
-        ],
-        "mark": [
-          [
-            7,
-            6
-          ]
-        ],
-        "xcomp": [
-          [
-            3,
-            7
-          ]
-        ],
-        "compound:prt": [
-          [
-            7,
-            8
-          ]
-        ],
-        "nmod:poss": [
-          [
-            11,
-            9
-          ]
-        ],
-        "case": [
-          [
-            9,
-            10
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            12
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NNP": [
-          [
-            1,
-            1
-          ],
-          [
-            9,
-            9
-          ],
-          [
-            11,
-            11
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            5
-          ],
-          [
-            9,
-            10
-          ],
-          [
-            9,
-            11
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ],
-          [
-            7,
-            7
-          ]
-        ],
-        "DT": [
-          [
-            4,
-            4
-          ]
-        ],
-        "NN": [
-          [
-            5,
-            5
-          ]
-        ],
-        "TO": [
-          [
-            6,
-            6
-          ]
-        ],
-        "RP": [
-          [
-            8,
-            8
-          ]
-        ],
-        "PRT": [
-          [
-            8,
-            8
-          ]
-        ],
-        "POS": [
-          [
-            10,
-            10
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            11
-          ],
-          [
-            3,
-            11
-          ],
-          [
-            6,
-            11
-          ],
-          [
-            7,
-            11
-          ]
-        ],
-        "S": [
-          [
-            1,
-            12
-          ],
-          [
-            6,
-            11
-          ]
-        ],
-        ".": [
-          [
-            12,
-            12
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            12
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2019-USC-Project11",
       "Sentence": "User should be able to access the VideoStreamingLibrary which provide more Insight on Budgeting .",
       "Result": {
         "A": 4,
@@ -9920,7 +10698,7 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "should",
         "3": "be",
         "4": "able",
@@ -9931,9 +10709,9 @@
         "9": "which",
         "10": "provide",
         "11": "more",
-        "12": "insight",
+        "12": "Insight",
         "13": "on",
-        "14": "budgeting",
+        "14": "Budgeting",
         "15": "."
       },
       "TD": {
@@ -10227,16 +11005,16 @@
         "4": "able",
         "5": "to",
         "6": "make",
-        "7": "change",
+        "7": "Change",
         "8": "to",
         "9": "a",
-        "10": "appointment",
+        "10": "Appointment",
         "11": "if",
         "12": "there",
         "13": "be",
         "14": "a",
         "15": "personal",
-        "16": "emergency",
+        "16": "Emergency",
         "17": "."
       },
       "TD": {
@@ -10535,11 +11313,11 @@
         "5": "access",
         "6": "the",
         "7": "privileged",
-        "8": "feature",
+        "8": "Feature",
         "9": "like",
         "10": "make",
         "11": "a",
-        "12": "appointment",
+        "12": "Appointment",
         "13": ",",
         "14": "VideoChat",
         "15": "etc.",
@@ -10834,7 +11612,7 @@
         "C": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "access",
         "4": "Tool",
@@ -10842,9 +11620,9 @@
         "6": "help",
         "7": "I",
         "8": "understand",
-        "9": "user",
+        "9": "User",
         "10": "'s",
-        "11": "finances",
+        "11": "Finances",
         "12": "."
       },
       "TD": {
@@ -11268,26 +12046,25 @@
     },
     {
       "FileName": "2019-USC-Project11",
-      "Sentence": "Expert can manage Expert's Calendar to ScheduleAppointmentAvailability to VideoChat with User .",
+      "Sentence": "GuestUser can take a Quiz to find out GuestUser's MoneyBelief .",
       "Result": {
         "A": 3,
         "B": 1,
-        "C": 6
+        "C": 5
       },
       "Index": {
-        "1": "Expert",
+        "1": "GuestUser",
         "2": "can",
-        "3": "manage",
-        "4": "Expert",
-        "5": "'s",
-        "6": "calendar",
-        "7": "to",
-        "8": "ScheduleAppointmentAvailability",
-        "9": "to",
-        "10": "VideoChat",
-        "11": "with",
-        "12": "user",
-        "13": "."
+        "3": "take",
+        "4": "a",
+        "5": "Quiz",
+        "6": "to",
+        "7": "find",
+        "8": "out",
+        "9": "GuestUser",
+        "10": "'s",
+        "11": "MoneyBelief",
+        "12": "."
       },
       "TD": {
         "ROOT": [
@@ -11308,56 +12085,62 @@
             2
           ]
         ],
-        "nmod:poss": [
+        "det": [
           [
-            6,
+            5,
             4
-          ]
-        ],
-        "case": [
-          [
-            4,
-            5
-          ],
-          [
-            8,
-            7
-          ],
-          [
-            10,
-            9
-          ],
-          [
-            12,
-            11
           ]
         ],
         "obj": [
           [
             3,
+            5
+          ],
+          [
+            7,
+            11
+          ]
+        ],
+        "nsubj:xsubj": [
+          [
+            7,
+            5
+          ]
+        ],
+        "mark": [
+          [
+            7,
             6
           ]
         ],
-        "obl:to": [
+        "xcomp": [
           [
             3,
-            8
-          ],
-          [
-            3,
-            10
+            7
           ]
         ],
-        "obl:with": [
+        "compound:prt": [
           [
-            3,
-            12
+            7,
+            8
+          ]
+        ],
+        "nmod:poss": [
+          [
+            11,
+            9
+          ]
+        ],
+        "case": [
+          [
+            9,
+            10
           ]
         ],
         "punct": [
           [
             3,
-            13
+            12
           ]
         ]
       },
@@ -11368,16 +12151,12 @@
             1
           ],
           [
-            4,
-            4
+            9,
+            9
           ],
           [
-            8,
-            8
-          ],
-          [
-            10,
-            10
+            11,
+            11
           ]
         ],
         "NP": [
@@ -11390,24 +12169,12 @@
             5
           ],
           [
-            4,
-            6
-          ],
-          [
-            8,
-            8
-          ],
-          [
-            10,
+            9,
             10
           ],
           [
-            10,
-            12
-          ],
-          [
-            12,
-            12
+            9,
+            11
           ]
         ],
         "MD": [
@@ -11420,78 +12187,86 @@
           [
             3,
             3
+          ],
+          [
+            7,
+            7
           ]
         ],
-        "POS": [
+        "DT": [
+          [
+            4,
+            4
+          ]
+        ],
+        "NN": [
           [
             5,
             5
           ]
         ],
-        "NN": [
+        "TO": [
           [
             6,
             6
-          ],
-          [
-            12,
-            12
           ]
         ],
-        "IN": [
+        "RP": [
           [
-            7,
-            7
-          ],
-          [
-            9,
-            9
-          ],
-          [
-            11,
-            11
-          ]
-        ],
-        "PP": [
-          [
-            7,
+            8,
             8
-          ],
+          ]
+        ],
+        "PRT": [
           [
-            9,
-            12
-          ],
+            8,
+            8
+          ]
+        ],
+        "POS": [
           [
-            11,
-            12
+            10,
+            10
           ]
         ],
         "VP": [
           [
             2,
-            12
+            11
           ],
           [
             3,
-            12
-          ]
-        ],
-        ".": [
+            11
+          ],
           [
-            13,
-            13
+            6,
+            11
+          ],
+          [
+            7,
+            11
           ]
         ],
         "S": [
           [
             1,
-            13
+            12
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        ".": [
+          [
+            12,
+            12
           ]
         ],
         "ROOT": [
           [
             1,
-            13
+            12
           ]
         ]
       },
@@ -11501,16 +12276,16 @@
       "FileName": "2019-USC-Project11",
       "Sentence": "GuestUser can take a Quiz to find out GuestUser's MoneyBelief .",
       "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 5
+        "A": 7,
+        "B": 5,
+        "C": 11
       },
       "Index": {
         "1": "GuestUser",
         "2": "can",
         "3": "take",
         "4": "a",
-        "5": "quiz",
+        "5": "Quiz",
         "6": "to",
         "7": "find",
         "8": "out",
@@ -11734,11 +12509,11 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "manage",
         "4": "a",
-        "5": "appointment",
+        "5": "Appointment",
         "6": "for",
         "7": "VideoChat",
         "8": "with",
@@ -11747,7 +12522,7 @@
         "11": "Expert",
         "12": "by",
         "13": "use",
-        "14": "calendar",
+        "14": "Calendar",
         "15": "."
       },
       "TD": {
@@ -12001,10 +12776,10 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
-        "4": "user",
+        "4": "User",
         "5": "'s",
         "6": "PaymentHistory",
         "7": "."
@@ -12142,7 +12917,7 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "rate",
         "4": "the",
@@ -12150,9 +12925,9 @@
         "6": "Expert",
         "7": "with",
         "8": "whom",
-        "9": "user",
+        "9": "User",
         "10": "have",
-        "11": "appointment",
+        "11": "Appointment",
         "12": "."
       },
       "TD": {
@@ -12370,7 +13145,7 @@
         "C": 11
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "rate",
         "4": "the",
@@ -12378,9 +13153,9 @@
         "6": "Expert",
         "7": "with",
         "8": "whom",
-        "9": "user",
+        "9": "User",
         "10": "have",
-        "11": "appointment",
+        "11": "Appointment",
         "12": "."
       },
       "TD": {
@@ -12601,13 +13376,13 @@
         "1": "Expert",
         "2": "can",
         "3": "receive",
-        "4": "payment",
+        "4": "Payment",
         "5": "for",
         "6": "Expert",
         "7": "'s",
         "8": "Session",
         "9": "with",
-        "10": "user",
+        "10": "User",
         "11": "."
       },
       "TD": {
@@ -12803,10 +13578,10 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "update",
-        "4": "user",
+        "4": "User",
         "5": "'s",
         "6": "PaymentMethod",
         "7": "."
@@ -12944,7 +13719,7 @@
         "C": 8
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "view",
         "4": "a",
@@ -13245,201 +14020,6 @@
     },
     {
       "FileName": "2019-USC-Project11",
-      "Sentence": "Expert can set Expert's Status to \" Online \" .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 6
-      },
-      "Index": {
-        "1": "Expert",
-        "2": "can",
-        "3": "set",
-        "4": "Expert",
-        "5": "'s",
-        "6": "Status",
-        "7": "to",
-        "8": "\"",
-        "9": "online",
-        "10": "\"",
-        "11": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "nmod:poss": [
-          [
-            6,
-            4
-          ]
-        ],
-        "case": [
-          [
-            4,
-            5
-          ],
-          [
-            9,
-            7
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            6
-          ]
-        ],
-        "punct": [
-          [
-            9,
-            8
-          ],
-          [
-            9,
-            10
-          ],
-          [
-            3,
-            11
-          ]
-        ],
-        "obl:to": [
-          [
-            3,
-            9
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NNP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            4
-          ],
-          [
-            6,
-            6
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            5
-          ],
-          [
-            4,
-            6
-          ],
-          [
-            9,
-            9
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ]
-        ],
-        "POS": [
-          [
-            5,
-            5
-          ]
-        ],
-        "IN": [
-          [
-            7,
-            7
-          ]
-        ],
-        "``": [
-          [
-            8,
-            8
-          ]
-        ],
-        "NN": [
-          [
-            9,
-            9
-          ]
-        ],
-        "''": [
-          [
-            10,
-            10
-          ]
-        ],
-        "PP": [
-          [
-            7,
-            10
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            10
-          ],
-          [
-            3,
-            10
-          ]
-        ],
-        ".": [
-          [
-            11,
-            11
-          ]
-        ],
-        "S": [
-          [
-            1,
-            11
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            11
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2019-USC-Project11",
       "Sentence": "User can access financial related Calculator .",
       "Result": {
         "A": 3,
@@ -13447,12 +14027,12 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "access",
         "4": "financial",
         "5": "related",
-        "6": "calculator",
+        "6": "Calculator",
         "7": "."
       },
       "TD": {
@@ -13585,7 +14165,7 @@
         "3": "store",
         "4": "Expert",
         "5": "'s",
-        "6": "note",
+        "6": "Note",
         "7": "securely",
         "8": "."
       },
@@ -13740,10 +14320,10 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
-        "4": "user",
+        "4": "User",
         "5": "'s",
         "6": "MessageHistory",
         "7": "with",
@@ -13930,10 +14510,10 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
-        "4": "user",
+        "4": "User",
         "5": "'s",
         "6": "SessionAppointmentHistory",
         "7": "."
@@ -14078,7 +14658,7 @@
         "5": "'s",
         "6": "VideoRecord",
         "7": "and",
-        "8": "transcript",
+        "8": "Transcript",
         "9": "be",
         "10": "analyze",
         "11": "to",
@@ -14087,7 +14667,7 @@
         "14": "about",
         "15": "Expert",
         "16": "'s",
-        "17": "client",
+        "17": "Client",
         "18": "."
       },
       "TD": {
@@ -14394,7 +14974,7 @@
         "5": "'s",
         "6": "VideoRecord",
         "7": "and",
-        "8": "transcript",
+        "8": "Transcript",
         "9": "be",
         "10": "analyze",
         "11": "to",
@@ -14403,7 +14983,7 @@
         "14": "about",
         "15": "Expert",
         "16": "'s",
-        "17": "client",
+        "17": "Client",
         "18": "."
       },
       "TD": {
@@ -14703,14 +15283,14 @@
         "C": 8
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
         "4": "that",
-        "5": "user",
+        "5": "User",
         "6": "'s",
         "7": "personal",
-        "8": "information",
+        "8": "Information",
         "9": "be",
         "10": "secure",
         "11": "."
@@ -14912,7 +15492,7 @@
         "C": 12
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "should",
         "3": "be",
         "4": "able",
@@ -14923,9 +15503,9 @@
         "9": "which",
         "10": "provide",
         "11": "more",
-        "12": "insight",
+        "12": "Insight",
         "13": "on",
-        "14": "budgeting",
+        "14": "Budgeting",
         "15": "."
       },
       "TD": {
@@ -15217,14 +15797,14 @@
         "2": "can",
         "3": "see",
         "4": "the",
-        "5": "history",
+        "5": "History",
         "6": "of",
-        "7": "user",
+        "7": "User",
         "8": "whom",
         "9": "Expert",
         "10": "have",
         "11": "give",
-        "12": "advice",
+        "12": "Advice",
         "13": "to",
         "14": "."
       },
@@ -15491,14 +16071,14 @@
         "2": "can",
         "3": "see",
         "4": "the",
-        "5": "history",
+        "5": "History",
         "6": "of",
-        "7": "user",
+        "7": "User",
         "8": "whom",
         "9": "Expert",
         "10": "have",
         "11": "give",
-        "12": "advice",
+        "12": "Advice",
         "13": "to",
         "14": "."
       },
@@ -15765,14 +16345,14 @@
         "2": "can",
         "3": "see",
         "4": "the",
-        "5": "history",
+        "5": "History",
         "6": "of",
-        "7": "user",
+        "7": "User",
         "8": "whom",
         "9": "Expert",
         "10": "have",
         "11": "give",
-        "12": "advice",
+        "12": "Advice",
         "13": "to",
         "14": "."
       },
@@ -16042,16 +16622,16 @@
         "5": "on",
         "6": "Expert",
         "7": "'s",
-        "8": "calendar",
+        "8": "Calendar",
         "9": "for",
         "10": "when",
         "11": "Expert",
         "12": "be",
         "13": "available",
         "14": "for",
-        "15": "appointment",
+        "15": "Appointment",
         "16": "that",
-        "17": "user",
+        "17": "User",
         "18": "can",
         "19": "then",
         "20": "select",
@@ -16498,10 +17078,10 @@
         "1": "Expert",
         "2": "can",
         "3": "manage",
-        "4": "appointment",
+        "4": "Appointment",
         "5": "and",
         "6": "receive",
-        "7": "notification",
+        "7": "Notification",
         "8": "."
       },
       "TD": {
@@ -16660,10 +17240,10 @@
         "1": "Expert",
         "2": "can",
         "3": "manage",
-        "4": "appointment",
+        "4": "Appointment",
         "5": "and",
         "6": "receive",
-        "7": "notification",
+        "7": "Notification",
         "8": "."
       },
       "TD": {
@@ -16812,32 +17392,30 @@
     },
     {
       "FileName": "2019-USC-Project11",
-      "Sentence": "User can access VideoContentLibrary that provides various Topic on financial Therapy , Debt , AssetManagement , etc. . .",
+      "Sentence": "User can access VideoContentLibrary that provides various Topic on financial Therapy , DebtManagement , etc. . .",
       "Result": {
         "A": 3,
         "B": 1,
         "C": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "access",
         "4": "VideoContentLibrary",
         "5": "that",
         "6": "provide",
         "7": "various",
-        "8": "topic",
+        "8": "Topic",
         "9": "on",
         "10": "financial",
-        "11": "therapy",
+        "11": "Therapy",
         "12": ",",
-        "13": "debt",
+        "13": "DebtManagement",
         "14": ",",
-        "15": "assetmanagement",
-        "16": ",",
-        "17": "etc.",
-        "18": ".",
-        "19": "."
+        "15": "etc.",
+        "16": ".",
+        "17": "."
       },
       "TD": {
         "ROOT": [
@@ -16916,32 +17494,24 @@
             14
           ],
           [
-            11,
+            3,
             16
           ],
           [
             3,
-            18
-          ],
-          [
-            3,
-            19
+            17
           ]
         ],
         "conj": [
           [
             11,
             13
-          ],
-          [
-            11,
-            15
           ]
         ],
         "advmod": [
           [
             11,
-            17
+            15
           ]
         ]
       },
@@ -16962,10 +17532,6 @@
           [
             13,
             13
-          ],
-          [
-            15,
-            15
           ]
         ],
         "NP": [
@@ -16979,7 +17545,7 @@
           ],
           [
             4,
-            18
+            16
           ],
           [
             7,
@@ -16987,7 +17553,7 @@
           ],
           [
             7,
-            18
+            16
           ],
           [
             10,
@@ -16995,15 +17561,11 @@
           ],
           [
             10,
-            18
+            16
           ],
           [
             13,
             13
-          ],
-          [
-            15,
-            15
           ]
         ],
         "MD": [
@@ -17066,74 +17628,70 @@
           [
             14,
             14
-          ],
-          [
-            16,
-            16
           ]
         ],
         "FW": [
+          [
+            15,
+            15
+          ]
+        ],
+        ".": [
+          [
+            16,
+            16
+          ],
           [
             17,
             17
           ]
         ],
-        ".": [
-          [
-            18,
-            18
-          ],
-          [
-            19,
-            19
-          ]
-        ],
         "ADVP": [
           [
-            17,
-            18
+            15,
+            16
           ]
         ],
         "PP": [
           [
             9,
-            18
+            16
           ]
         ],
         "VP": [
           [
             2,
-            18
+            16
           ],
           [
             3,
-            18
+            16
           ],
           [
             6,
-            18
+            16
           ]
         ],
         "S": [
           [
             1,
-            19
+            17
           ],
           [
             6,
-            18
+            16
           ]
         ],
         "SBAR": [
           [
             5,
-            18
+            16
           ]
         ],
         "ROOT": [
           [
             1,
-            19
+            17
           ]
         ]
       },
@@ -17141,32 +17699,30 @@
     },
     {
       "FileName": "2019-USC-Project11",
-      "Sentence": "User can access VideoContentLibrary that provides various Topic on financial Therapy , Debt , AssetManagement , etc. . .",
+      "Sentence": "User can access VideoContentLibrary that provides various Topic on financial Therapy , DebtManagement , etc. . .",
       "Result": {
         "A": 6,
         "B": 4,
         "C": 8
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "access",
         "4": "VideoContentLibrary",
         "5": "that",
         "6": "provide",
         "7": "various",
-        "8": "topic",
+        "8": "Topic",
         "9": "on",
         "10": "financial",
-        "11": "therapy",
+        "11": "Therapy",
         "12": ",",
-        "13": "debt",
+        "13": "DebtManagement",
         "14": ",",
-        "15": "assetmanagement",
-        "16": ",",
-        "17": "etc.",
-        "18": ".",
-        "19": "."
+        "15": "etc.",
+        "16": ".",
+        "17": "."
       },
       "TD": {
         "ROOT": [
@@ -17245,32 +17801,24 @@
             14
           ],
           [
-            11,
+            3,
             16
           ],
           [
             3,
-            18
-          ],
-          [
-            3,
-            19
+            17
           ]
         ],
         "conj": [
           [
             11,
             13
-          ],
-          [
-            11,
-            15
           ]
         ],
         "advmod": [
           [
             11,
-            17
+            15
           ]
         ]
       },
@@ -17291,10 +17839,6 @@
           [
             13,
             13
-          ],
-          [
-            15,
-            15
           ]
         ],
         "NP": [
@@ -17308,7 +17852,7 @@
           ],
           [
             4,
-            18
+            16
           ],
           [
             7,
@@ -17316,7 +17860,7 @@
           ],
           [
             7,
-            18
+            16
           ],
           [
             10,
@@ -17324,15 +17868,11 @@
           ],
           [
             10,
-            18
+            16
           ],
           [
             13,
             13
-          ],
-          [
-            15,
-            15
           ]
         ],
         "MD": [
@@ -17395,74 +17935,684 @@
           [
             14,
             14
-          ],
-          [
-            16,
-            16
           ]
         ],
         "FW": [
+          [
+            15,
+            15
+          ]
+        ],
+        ".": [
+          [
+            16,
+            16
+          ],
           [
             17,
             17
           ]
         ],
-        ".": [
-          [
-            18,
-            18
-          ],
-          [
-            19,
-            19
-          ]
-        ],
         "ADVP": [
           [
-            17,
-            18
+            15,
+            16
           ]
         ],
         "PP": [
           [
             9,
-            18
+            16
           ]
         ],
         "VP": [
           [
             2,
-            18
+            16
           ],
           [
             3,
-            18
+            16
           ],
           [
             6,
-            18
+            16
           ]
         ],
         "S": [
           [
             1,
-            19
+            17
           ],
           [
             6,
-            18
+            16
           ]
         ],
         "SBAR": [
           [
             5,
-            18
+            16
           ]
         ],
         "ROOT": [
           [
             1,
-            19
+            17
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project11",
+      "Sentence": "User can access VideoContentLibrary that provides various Topic on financial Therapy , AssetManagement , etc. . .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 4
+      },
+      "Index": {
+        "1": "User",
+        "2": "can",
+        "3": "access",
+        "4": "VideoContentLibrary",
+        "5": "that",
+        "6": "provide",
+        "7": "various",
+        "8": "Topic",
+        "9": "on",
+        "10": "financial",
+        "11": "Therapy",
+        "12": ",",
+        "13": "AssetManagement",
+        "14": ",",
+        "15": "etc.",
+        "16": ".",
+        "17": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            4
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "ref": [
+          [
+            4,
+            5
+          ]
+        ],
+        "acl:relcl": [
+          [
+            4,
+            6
+          ]
+        ],
+        "amod": [
+          [
+            8,
+            7
+          ],
+          [
+            11,
+            10
+          ]
+        ],
+        "case": [
+          [
+            11,
+            9
+          ]
+        ],
+        "obl:on": [
+          [
+            6,
+            11
+          ]
+        ],
+        "punct": [
+          [
+            11,
+            12
+          ],
+          [
+            11,
+            14
+          ],
+          [
+            3,
+            16
+          ],
+          [
+            3,
+            17
+          ]
+        ],
+        "conj": [
+          [
+            11,
+            13
+          ]
+        ],
+        "advmod": [
+          [
+            11,
+            15
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            13,
+            13
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            16
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            16
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            10,
+            16
+          ],
+          [
+            13,
+            13
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "NNP": [
+          [
+            4,
+            4
+          ]
+        ],
+        "WDT": [
+          [
+            5,
+            5
+          ]
+        ],
+        "WHNP": [
+          [
+            5,
+            5
+          ]
+        ],
+        "VBZ": [
+          [
+            6,
+            6
+          ]
+        ],
+        "JJ": [
+          [
+            7,
+            7
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "IN": [
+          [
+            9,
+            9
+          ]
+        ],
+        ",": [
+          [
+            12,
+            12
+          ],
+          [
+            14,
+            14
+          ]
+        ],
+        "FW": [
+          [
+            15,
+            15
+          ]
+        ],
+        ".": [
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ]
+        ],
+        "ADVP": [
+          [
+            15,
+            16
+          ]
+        ],
+        "PP": [
+          [
+            9,
+            16
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            16
+          ],
+          [
+            3,
+            16
+          ],
+          [
+            6,
+            16
+          ]
+        ],
+        "S": [
+          [
+            1,
+            17
+          ],
+          [
+            6,
+            16
+          ]
+        ],
+        "SBAR": [
+          [
+            5,
+            16
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            17
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project11",
+      "Sentence": "User can access VideoContentLibrary that provides various Topic on financial Therapy , AssetManagement , etc. . .",
+      "Result": {
+        "A": 6,
+        "B": 4,
+        "C": 8
+      },
+      "Index": {
+        "1": "User",
+        "2": "can",
+        "3": "access",
+        "4": "VideoContentLibrary",
+        "5": "that",
+        "6": "provide",
+        "7": "various",
+        "8": "Topic",
+        "9": "on",
+        "10": "financial",
+        "11": "Therapy",
+        "12": ",",
+        "13": "AssetManagement",
+        "14": ",",
+        "15": "etc.",
+        "16": ".",
+        "17": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            4
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "ref": [
+          [
+            4,
+            5
+          ]
+        ],
+        "acl:relcl": [
+          [
+            4,
+            6
+          ]
+        ],
+        "amod": [
+          [
+            8,
+            7
+          ],
+          [
+            11,
+            10
+          ]
+        ],
+        "case": [
+          [
+            11,
+            9
+          ]
+        ],
+        "obl:on": [
+          [
+            6,
+            11
+          ]
+        ],
+        "punct": [
+          [
+            11,
+            12
+          ],
+          [
+            11,
+            14
+          ],
+          [
+            3,
+            16
+          ],
+          [
+            3,
+            17
+          ]
+        ],
+        "conj": [
+          [
+            11,
+            13
+          ]
+        ],
+        "advmod": [
+          [
+            11,
+            15
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            13,
+            13
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            16
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            16
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            10,
+            16
+          ],
+          [
+            13,
+            13
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "NNP": [
+          [
+            4,
+            4
+          ]
+        ],
+        "WDT": [
+          [
+            5,
+            5
+          ]
+        ],
+        "WHNP": [
+          [
+            5,
+            5
+          ]
+        ],
+        "VBZ": [
+          [
+            6,
+            6
+          ]
+        ],
+        "JJ": [
+          [
+            7,
+            7
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "IN": [
+          [
+            9,
+            9
+          ]
+        ],
+        ",": [
+          [
+            12,
+            12
+          ],
+          [
+            14,
+            14
+          ]
+        ],
+        "FW": [
+          [
+            15,
+            15
+          ]
+        ],
+        ".": [
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ]
+        ],
+        "ADVP": [
+          [
+            15,
+            16
+          ]
+        ],
+        "PP": [
+          [
+            9,
+            16
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            16
+          ],
+          [
+            3,
+            16
+          ],
+          [
+            6,
+            16
+          ]
+        ],
+        "S": [
+          [
+            1,
+            17
+          ],
+          [
+            6,
+            16
+          ]
+        ],
+        "SBAR": [
+          [
+            5,
+            16
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            17
           ]
         ]
       },
@@ -17477,7 +18627,7 @@
         "C": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "view",
         "4": "Profile",
@@ -17487,7 +18637,7 @@
         "8": "base",
         "9": "upon",
         "10": "different",
-        "11": "category",
+        "11": "Category",
         "12": "."
       },
       "TD": {
@@ -17699,14 +18849,14 @@
         "2": "can",
         "3": "view",
         "4": "the",
-        "5": "feedback",
+        "5": "Feedback",
         "6": "and",
-        "7": "rating",
+        "7": "Rating",
         "8": "provide",
         "9": "by",
         "10": "Expert",
         "11": "'s",
-        "12": "customer",
+        "12": "Customer",
         "13": "."
       },
       "TD": {
@@ -17934,14 +19084,14 @@
         "2": "can",
         "3": "view",
         "4": "the",
-        "5": "feedback",
+        "5": "Feedback",
         "6": "and",
-        "7": "rating",
+        "7": "Rating",
         "8": "provide",
         "9": "by",
         "10": "Expert",
         "11": "'s",
-        "12": "customer",
+        "12": "Customer",
         "13": "."
       },
       "TD": {
@@ -18165,7 +19315,7 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "schedule",
         "4": "a",
@@ -18340,6 +19490,215 @@
     },
     {
       "FileName": "2019-USC-Project11",
+      "Sentence": "User can have on - demand Advice from financial Expert .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 7
+      },
+      "Index": {
+        "1": "User",
+        "2": "can",
+        "3": "have",
+        "4": "on",
+        "5": "-",
+        "6": "demand",
+        "7": "Advice",
+        "8": "from",
+        "9": "financial",
+        "10": "Expert",
+        "11": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "case": [
+          [
+            6,
+            4
+          ],
+          [
+            10,
+            8
+          ]
+        ],
+        "punct": [
+          [
+            6,
+            5
+          ],
+          [
+            3,
+            11
+          ]
+        ],
+        "compound": [
+          [
+            7,
+            6
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            7
+          ]
+        ],
+        "amod": [
+          [
+            10,
+            9
+          ]
+        ],
+        "nmod:from": [
+          [
+            7,
+            10
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "IN": [
+          [
+            4,
+            4
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "HYPH": [
+          [
+            5,
+            5
+          ]
+        ],
+        "PP": [
+          [
+            4,
+            6
+          ],
+          [
+            8,
+            10
+          ]
+        ],
+        "NML": [
+          [
+            4,
+            6
+          ]
+        ],
+        "JJ": [
+          [
+            9,
+            9
+          ]
+        ],
+        "NNP": [
+          [
+            10,
+            10
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            10
+          ]
+        ],
+        ".": [
+          [
+            11,
+            11
+          ]
+        ],
+        "S": [
+          [
+            1,
+            11
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            11
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project11",
       "Sentence": "Expert can keep a Track of the total Income generated , total Minute talked and all the User who took the Advice .",
       "Result": {
         "A": 20,
@@ -18351,11 +19710,11 @@
         "2": "can",
         "3": "keep",
         "4": "a",
-        "5": "track",
+        "5": "Track",
         "6": "of",
         "7": "the",
         "8": "total",
-        "9": "income",
+        "9": "Income",
         "10": "generate",
         "11": ",",
         "12": "total",
@@ -18364,11 +19723,11 @@
         "15": "and",
         "16": "all",
         "17": "the",
-        "18": "user",
+        "18": "User",
         "19": "who",
         "20": "take",
         "21": "the",
-        "22": "advice",
+        "22": "Advice",
         "23": "."
       },
       "TD": {
@@ -18730,417 +20089,26 @@
         ]
       },
       "Keywords": []
-    },
-    {
-      "FileName": "2019-USC-Project11",
-      "Sentence": "User get Access to various informative Blog and Video .",
-      "Result": {
-        "A": 2,
-        "B": 1,
-        "C": 3
-      },
-      "Index": {
-        "1": "user",
-        "2": "get",
-        "3": "Access",
-        "4": "to",
-        "5": "various",
-        "6": "informative",
-        "7": "blog",
-        "8": "and",
-        "9": "video",
-        "10": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            2
-          ]
-        ],
-        "nsubj": [
-          [
-            2,
-            1
-          ]
-        ],
-        "obj": [
-          [
-            2,
-            3
-          ]
-        ],
-        "case": [
-          [
-            7,
-            4
-          ]
-        ],
-        "amod": [
-          [
-            7,
-            5
-          ],
-          [
-            7,
-            6
-          ]
-        ],
-        "obl:to": [
-          [
-            2,
-            7
-          ],
-          [
-            2,
-            9
-          ]
-        ],
-        "cc": [
-          [
-            9,
-            8
-          ]
-        ],
-        "conj:and": [
-          [
-            7,
-            9
-          ]
-        ],
-        "punct": [
-          [
-            2,
-            10
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ],
-          [
-            7,
-            7
-          ],
-          [
-            9,
-            9
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            3,
-            3
-          ],
-          [
-            5,
-            7
-          ],
-          [
-            5,
-            9
-          ],
-          [
-            9,
-            9
-          ]
-        ],
-        "VBP": [
-          [
-            2,
-            2
-          ]
-        ],
-        "NNP": [
-          [
-            3,
-            3
-          ]
-        ],
-        "IN": [
-          [
-            4,
-            4
-          ]
-        ],
-        "JJ": [
-          [
-            5,
-            5
-          ],
-          [
-            6,
-            6
-          ]
-        ],
-        "CC": [
-          [
-            8,
-            8
-          ]
-        ],
-        "PP": [
-          [
-            4,
-            9
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            9
-          ]
-        ],
-        ".": [
-          [
-            10,
-            10
-          ]
-        ],
-        "S": [
-          [
-            1,
-            10
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            10
-          ]
-        ]
-      },
-      "Keywords": []
     }
   ],
   "SVp": [
     {
       "FileName": "2019-USC-Project11",
-      "Sentence": "User can sign up , in with Facebook or Gmail .",
+      "Sentence": "User can sign up with Facebook or Gmail .",
       "Result": {
         "A": 3,
         "B": 1,
         "C": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "sign",
         "4": "up",
-        "5": ",",
-        "6": "in",
-        "7": "with",
-        "8": "Facebook",
-        "9": "or",
-        "10": "Gmail",
-        "11": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "compound:prt": [
-          [
-            3,
-            4
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            5
-          ],
-          [
-            3,
-            11
-          ]
-        ],
-        "case": [
-          [
-            8,
-            6
-          ],
-          [
-            8,
-            7
-          ]
-        ],
-        "obl:with": [
-          [
-            3,
-            8
-          ],
-          [
-            3,
-            10
-          ]
-        ],
-        "cc": [
-          [
-            10,
-            9
-          ]
-        ],
-        "conj:or": [
-          [
-            8,
-            10
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            8,
-            10
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ]
-        ],
-        "RP": [
-          [
-            4,
-            4
-          ]
-        ],
-        "PRT": [
-          [
-            4,
-            4
-          ]
-        ],
-        ",": [
-          [
-            5,
-            5
-          ]
-        ],
-        "IN": [
-          [
-            6,
-            6
-          ],
-          [
-            7,
-            7
-          ]
-        ],
-        "NNP": [
-          [
-            8,
-            8
-          ],
-          [
-            10,
-            10
-          ]
-        ],
-        "CC": [
-          [
-            9,
-            9
-          ]
-        ],
-        "PP": [
-          [
-            6,
-            10
-          ],
-          [
-            7,
-            10
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            10
-          ],
-          [
-            3,
-            10
-          ]
-        ],
-        ".": [
-          [
-            11,
-            11
-          ]
-        ],
-        "S": [
-          [
-            1,
-            11
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            11
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2019-USC-Project11",
-      "Sentence": "Expert can sign up , in with LinkedIn .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 4
-      },
-      "Index": {
-        "1": "Expert",
-        "2": "can",
-        "3": "sign",
-        "4": "up",
-        "5": ",",
-        "6": "in",
-        "7": "with",
-        "8": "LinkedIn",
+        "5": "with",
+        "6": "Facebook",
+        "7": "or",
+        "8": "Gmail",
         "9": "."
       },
       "TD": {
@@ -19168,42 +20136,46 @@
             4
           ]
         ],
-        "punct": [
-          [
-            3,
-            5
-          ],
-          [
-            3,
-            9
-          ]
-        ],
         "case": [
           [
-            8,
-            6
-          ],
-          [
-            8,
-            7
+            6,
+            5
           ]
         ],
         "obl:with": [
           [
             3,
+            6
+          ],
+          [
+            3,
             8
+          ]
+        ],
+        "cc": [
+          [
+            8,
+            7
+          ]
+        ],
+        "conj:or": [
+          [
+            6,
+            8
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            9
           ]
         ]
       },
       "Pos-tag": {
-        "NNP": [
+        "NN": [
           [
             1,
             1
-          ],
-          [
-            8,
-            8
           ]
         ],
         "NP": [
@@ -19212,7 +20184,7 @@
             1
           ],
           [
-            8,
+            6,
             8
           ]
         ],
@@ -19240,17 +20212,23 @@
             4
           ]
         ],
-        ",": [
+        "IN": [
           [
             5,
             5
           ]
         ],
-        "IN": [
+        "NNP": [
           [
             6,
             6
           ],
+          [
+            8,
+            8
+          ]
+        ],
+        "CC": [
           [
             7,
             7
@@ -19258,11 +20236,7 @@
         ],
         "PP": [
           [
-            6,
-            8
-          ],
-          [
-            7,
+            5,
             8
           ]
         ],
@@ -19296,6 +20270,155 @@
         ]
       },
       "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project11",
+      "Sentence": "Expert can sign up with LinkedIn .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 4
+      },
+      "Index": {
+        "1": "Expert",
+        "2": "can",
+        "3": "sign",
+        "4": "up",
+        "5": "with",
+        "6": "LinkedIn",
+        "7": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "compound:prt": [
+          [
+            3,
+            4
+          ]
+        ],
+        "case": [
+          [
+            6,
+            5
+          ]
+        ],
+        "obl:with": [
+          [
+            3,
+            6
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            7
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NNP": [
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "RP": [
+          [
+            4,
+            4
+          ]
+        ],
+        "PRT": [
+          [
+            4,
+            4
+          ]
+        ],
+        "IN": [
+          [
+            5,
+            5
+          ]
+        ],
+        "PP": [
+          [
+            5,
+            6
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        ".": [
+          [
+            7,
+            7
+          ]
+        ],
+        "S": [
+          [
+            1,
+            7
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      "Keywords": []
     }
   ],
   "SV": [
@@ -19307,12 +20430,12 @@
         "B": 1
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "search",
         "4": "through",
         "5": "a",
-        "6": "list",
+        "6": "List",
         "7": "of",
         "8": "financial",
         "9": "Expert",
@@ -19483,6 +20606,237 @@
           [
             1,
             10
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project11",
+      "Sentence": "User can access Tool to help me understand User's Finances .",
+      "Result": {
+        "A": 6,
+        "B": 4
+      },
+      "Index": {
+        "1": "User",
+        "2": "can",
+        "3": "access",
+        "4": "Tool",
+        "5": "to",
+        "6": "help",
+        "7": "I",
+        "8": "understand",
+        "9": "User",
+        "10": "'s",
+        "11": "Finances",
+        "12": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            4
+          ],
+          [
+            8,
+            11
+          ]
+        ],
+        "nsubj:xsubj": [
+          [
+            6,
+            4
+          ]
+        ],
+        "mark": [
+          [
+            6,
+            5
+          ]
+        ],
+        "xcomp": [
+          [
+            3,
+            6
+          ]
+        ],
+        "ccomp": [
+          [
+            6,
+            8
+          ]
+        ],
+        "nmod:poss": [
+          [
+            11,
+            9
+          ]
+        ],
+        "case": [
+          [
+            9,
+            10
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            12
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            9,
+            11
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "NNP": [
+          [
+            4,
+            4
+          ]
+        ],
+        "TO": [
+          [
+            5,
+            5
+          ]
+        ],
+        "PRP": [
+          [
+            7,
+            7
+          ]
+        ],
+        "POS": [
+          [
+            10,
+            10
+          ]
+        ],
+        "NNS": [
+          [
+            11,
+            11
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            11
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            8,
+            11
+          ]
+        ],
+        "S": [
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            7,
+            11
+          ]
+        ],
+        ".": [
+          [
+            12,
+            12
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            12
           ]
         ]
       },
@@ -19704,14 +21058,14 @@
         "B": 1
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "search",
         "4": "through",
         "5": "educational",
-        "6": "video",
+        "6": "Video",
         "7": "and",
-        "8": "article",
+        "8": "Article",
         "9": "."
       },
       "TD": {
@@ -19874,14 +21228,14 @@
         "B": 1
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "authorize",
-        "4": "user",
+        "4": "User",
         "5": "'s",
         "6": "VideoRecord",
         "7": "and",
-        "8": "transcript",
+        "8": "Transcript",
         "9": "be",
         "10": "analyze",
         "11": "for",
@@ -20112,6 +21466,749 @@
     },
     {
       "FileName": "2019-USC-Project11",
+      "Sentence": "User can authorize User's VideoRecord and Transcript be analyzed for PersonalityData .",
+      "Result": {
+        "A": 10,
+        "B": 6
+      },
+      "Index": {
+        "1": "User",
+        "2": "can",
+        "3": "authorize",
+        "4": "User",
+        "5": "'s",
+        "6": "VideoRecord",
+        "7": "and",
+        "8": "Transcript",
+        "9": "be",
+        "10": "analyze",
+        "11": "for",
+        "12": "PersonalityData",
+        "13": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "nmod:poss": [
+          [
+            6,
+            4
+          ]
+        ],
+        "case": [
+          [
+            4,
+            5
+          ],
+          [
+            12,
+            11
+          ]
+        ],
+        "nsubj:pass": [
+          [
+            10,
+            6
+          ],
+          [
+            10,
+            8
+          ]
+        ],
+        "cc": [
+          [
+            8,
+            7
+          ]
+        ],
+        "conj:and": [
+          [
+            6,
+            8
+          ]
+        ],
+        "aux:pass": [
+          [
+            10,
+            9
+          ]
+        ],
+        "ccomp": [
+          [
+            3,
+            10
+          ]
+        ],
+        "obl:for": [
+          [
+            10,
+            12
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            13
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "POS": [
+          [
+            5,
+            5
+          ]
+        ],
+        "NNP": [
+          [
+            6,
+            6
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "CC": [
+          [
+            7,
+            7
+          ]
+        ],
+        "VBN": [
+          [
+            10,
+            10
+          ]
+        ],
+        "IN": [
+          [
+            11,
+            11
+          ]
+        ],
+        "PP": [
+          [
+            11,
+            12
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            10,
+            12
+          ]
+        ],
+        "S": [
+          [
+            1,
+            13
+          ],
+          [
+            4,
+            12
+          ]
+        ],
+        ".": [
+          [
+            13,
+            13
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            13
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project11",
+      "Sentence": "User can authorize User's VideoRecord and Transcript be analyzed for PersonalityData .",
+      "Result": {
+        "A": 10,
+        "B": 8
+      },
+      "Index": {
+        "1": "User",
+        "2": "can",
+        "3": "authorize",
+        "4": "User",
+        "5": "'s",
+        "6": "VideoRecord",
+        "7": "and",
+        "8": "Transcript",
+        "9": "be",
+        "10": "analyze",
+        "11": "for",
+        "12": "PersonalityData",
+        "13": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "nmod:poss": [
+          [
+            6,
+            4
+          ]
+        ],
+        "case": [
+          [
+            4,
+            5
+          ],
+          [
+            12,
+            11
+          ]
+        ],
+        "nsubj:pass": [
+          [
+            10,
+            6
+          ],
+          [
+            10,
+            8
+          ]
+        ],
+        "cc": [
+          [
+            8,
+            7
+          ]
+        ],
+        "conj:and": [
+          [
+            6,
+            8
+          ]
+        ],
+        "aux:pass": [
+          [
+            10,
+            9
+          ]
+        ],
+        "ccomp": [
+          [
+            3,
+            10
+          ]
+        ],
+        "obl:for": [
+          [
+            10,
+            12
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            13
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "POS": [
+          [
+            5,
+            5
+          ]
+        ],
+        "NNP": [
+          [
+            6,
+            6
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "CC": [
+          [
+            7,
+            7
+          ]
+        ],
+        "VBN": [
+          [
+            10,
+            10
+          ]
+        ],
+        "IN": [
+          [
+            11,
+            11
+          ]
+        ],
+        "PP": [
+          [
+            11,
+            12
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            10,
+            12
+          ]
+        ],
+        "S": [
+          [
+            1,
+            13
+          ],
+          [
+            4,
+            12
+          ]
+        ],
+        ".": [
+          [
+            13,
+            13
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            13
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project11",
+      "Sentence": "User should be charged after the AppointmentSession has completed with the financial Expert .",
+      "Result": {
+        "A": 4,
+        "B": 1
+      },
+      "Index": {
+        "1": "User",
+        "2": "should",
+        "3": "be",
+        "4": "charge",
+        "5": "after",
+        "6": "the",
+        "7": "AppointmentSession",
+        "8": "have",
+        "9": "complete",
+        "10": "with",
+        "11": "the",
+        "12": "financial",
+        "13": "Expert",
+        "14": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            4
+          ]
+        ],
+        "nsubj:pass": [
+          [
+            4,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            4,
+            2
+          ],
+          [
+            9,
+            8
+          ]
+        ],
+        "aux:pass": [
+          [
+            4,
+            3
+          ]
+        ],
+        "mark": [
+          [
+            9,
+            5
+          ]
+        ],
+        "det": [
+          [
+            7,
+            6
+          ],
+          [
+            13,
+            11
+          ]
+        ],
+        "nsubj": [
+          [
+            9,
+            7
+          ]
+        ],
+        "advcl:after": [
+          [
+            4,
+            9
+          ]
+        ],
+        "case": [
+          [
+            13,
+            10
+          ]
+        ],
+        "amod": [
+          [
+            13,
+            12
+          ]
+        ],
+        "obl:with": [
+          [
+            9,
+            13
+          ]
+        ],
+        "punct": [
+          [
+            4,
+            14
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            11,
+            13
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "VBN": [
+          [
+            4,
+            4
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "IN": [
+          [
+            5,
+            5
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "DT": [
+          [
+            6,
+            6
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        "NNP": [
+          [
+            7,
+            7
+          ],
+          [
+            13,
+            13
+          ]
+        ],
+        "VBZ": [
+          [
+            8,
+            8
+          ]
+        ],
+        "JJ": [
+          [
+            12,
+            12
+          ]
+        ],
+        "NML": [
+          [
+            12,
+            13
+          ]
+        ],
+        "PP": [
+          [
+            10,
+            13
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            9,
+            13
+          ]
+        ],
+        "S": [
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            13
+          ]
+        ],
+        "SBAR": [
+          [
+            5,
+            13
+          ]
+        ],
+        ".": [
+          [
+            14,
+            14
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            14
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project11",
       "Sentence": "Expert should be able to make Change to an Appointment if there is a personal Emergency .",
       "Result": {
         "A": 13,
@@ -20124,16 +22221,16 @@
         "4": "able",
         "5": "to",
         "6": "make",
-        "7": "change",
+        "7": "Change",
         "8": "to",
         "9": "a",
-        "10": "appointment",
+        "10": "Appointment",
         "11": "if",
         "12": "there",
         "13": "be",
         "14": "a",
         "15": "personal",
-        "16": "emergency",
+        "16": "Emergency",
         "17": "."
       },
       "TD": {
@@ -20431,16 +22528,16 @@
         "5": "on",
         "6": "Expert",
         "7": "'s",
-        "8": "calendar",
+        "8": "Calendar",
         "9": "for",
         "10": "when",
         "11": "Expert",
         "12": "be",
         "13": "available",
         "14": "for",
-        "15": "appointment",
+        "15": "Appointment",
         "16": "that",
-        "17": "user",
+        "17": "User",
         "18": "can",
         "19": "then",
         "20": "select",
@@ -20890,16 +22987,16 @@
         "5": "on",
         "6": "Expert",
         "7": "'s",
-        "8": "calendar",
+        "8": "Calendar",
         "9": "for",
         "10": "when",
         "11": "Expert",
         "12": "be",
         "13": "available",
         "14": "for",
-        "15": "appointment",
+        "15": "Appointment",
         "16": "that",
-        "17": "user",
+        "17": "User",
         "18": "can",
         "19": "then",
         "20": "select",
@@ -21342,14 +23439,14 @@
         "B": 1
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "ask",
         "4": "for",
         "5": "a",
-        "6": "refund",
+        "6": "Refund",
         "7": "if",
-        "8": "user",
+        "8": "User",
         "9": "be",
         "10": "not",
         "11": "satisfied",
@@ -21358,7 +23455,7 @@
         "14": "financial",
         "15": "Guidance",
         "16": "that",
-        "17": "user",
+        "17": "User",
         "18": "receive",
         "19": "."
       },
@@ -21678,14 +23775,14 @@
         "B": 17
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "ask",
         "4": "for",
         "5": "a",
-        "6": "refund",
+        "6": "Refund",
         "7": "if",
-        "8": "user",
+        "8": "User",
         "9": "be",
         "10": "not",
         "11": "satisfied",
@@ -21694,7 +23791,7 @@
         "14": "financial",
         "15": "Guidance",
         "16": "that",
-        "17": "user",
+        "17": "User",
         "18": "receive",
         "19": "."
       },
@@ -22010,790 +24107,6 @@
       "FileName": "2019-USC-Project11",
       "Sentence": "Expert can keep a Track of the total Income generated , total Minute talked and all the User who took the Advice .",
       "Result": {
-        "A": 3,
-        "B": 1
-      },
-      "Index": {
-        "1": "Expert",
-        "2": "can",
-        "3": "keep",
-        "4": "a",
-        "5": "track",
-        "6": "of",
-        "7": "the",
-        "8": "total",
-        "9": "income",
-        "10": "generate",
-        "11": ",",
-        "12": "total",
-        "13": "Minute",
-        "14": "talk",
-        "15": "and",
-        "16": "all",
-        "17": "the",
-        "18": "user",
-        "19": "who",
-        "20": "take",
-        "21": "the",
-        "22": "advice",
-        "23": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ],
-          [
-            10,
-            5
-          ],
-          [
-            14,
-            13
-          ],
-          [
-            20,
-            18
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "det": [
-          [
-            5,
-            4
-          ],
-          [
-            9,
-            7
-          ],
-          [
-            18,
-            17
-          ],
-          [
-            22,
-            21
-          ]
-        ],
-        "case": [
-          [
-            9,
-            6
-          ]
-        ],
-        "amod": [
-          [
-            9,
-            8
-          ],
-          [
-            13,
-            12
-          ]
-        ],
-        "nmod:of": [
-          [
-            5,
-            9
-          ]
-        ],
-        "dep": [
-          [
-            3,
-            10
-          ],
-          [
-            10,
-            15
-          ],
-          [
-            15,
-            18
-          ]
-        ],
-        "punct": [
-          [
-            10,
-            11
-          ],
-          [
-            3,
-            23
-          ]
-        ],
-        "conj": [
-          [
-            10,
-            14
-          ]
-        ],
-        "det:predet": [
-          [
-            18,
-            16
-          ]
-        ],
-        "ref": [
-          [
-            18,
-            19
-          ]
-        ],
-        "acl:relcl": [
-          [
-            18,
-            20
-          ]
-        ],
-        "obj": [
-          [
-            20,
-            22
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NNP": [
-          [
-            1,
-            1
-          ],
-          [
-            13,
-            13
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            5
-          ],
-          [
-            4,
-            22
-          ],
-          [
-            7,
-            9
-          ],
-          [
-            7,
-            10
-          ],
-          [
-            7,
-            22
-          ],
-          [
-            12,
-            13
-          ],
-          [
-            12,
-            14
-          ],
-          [
-            16,
-            18
-          ],
-          [
-            16,
-            22
-          ],
-          [
-            21,
-            22
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ]
-        ],
-        "DT": [
-          [
-            4,
-            4
-          ],
-          [
-            7,
-            7
-          ],
-          [
-            17,
-            17
-          ],
-          [
-            21,
-            21
-          ]
-        ],
-        "NN": [
-          [
-            5,
-            5
-          ],
-          [
-            9,
-            9
-          ],
-          [
-            18,
-            18
-          ],
-          [
-            22,
-            22
-          ]
-        ],
-        "IN": [
-          [
-            6,
-            6
-          ]
-        ],
-        "JJ": [
-          [
-            8,
-            8
-          ],
-          [
-            12,
-            12
-          ]
-        ],
-        "VBN": [
-          [
-            10,
-            10
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            22
-          ],
-          [
-            3,
-            22
-          ],
-          [
-            10,
-            10
-          ],
-          [
-            14,
-            14
-          ],
-          [
-            20,
-            22
-          ]
-        ],
-        ",": [
-          [
-            11,
-            11
-          ]
-        ],
-        "VBD": [
-          [
-            14,
-            14
-          ],
-          [
-            20,
-            20
-          ]
-        ],
-        "S": [
-          [
-            1,
-            23
-          ],
-          [
-            14,
-            14
-          ],
-          [
-            20,
-            22
-          ]
-        ],
-        "SBAR": [
-          [
-            14,
-            14
-          ],
-          [
-            19,
-            22
-          ]
-        ],
-        "CC": [
-          [
-            15,
-            15
-          ]
-        ],
-        "PDT": [
-          [
-            16,
-            16
-          ]
-        ],
-        "WP": [
-          [
-            19,
-            19
-          ]
-        ],
-        "WHNP": [
-          [
-            19,
-            19
-          ]
-        ],
-        "PP": [
-          [
-            6,
-            22
-          ]
-        ],
-        ".": [
-          [
-            23,
-            23
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            23
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2019-USC-Project11",
-      "Sentence": "Expert can keep a Track of the total Income generated , total Minute talked and all the User who took the Advice .",
-      "Result": {
-        "A": 10,
-        "B": 5
-      },
-      "Index": {
-        "1": "Expert",
-        "2": "can",
-        "3": "keep",
-        "4": "a",
-        "5": "track",
-        "6": "of",
-        "7": "the",
-        "8": "total",
-        "9": "income",
-        "10": "generate",
-        "11": ",",
-        "12": "total",
-        "13": "Minute",
-        "14": "talk",
-        "15": "and",
-        "16": "all",
-        "17": "the",
-        "18": "user",
-        "19": "who",
-        "20": "take",
-        "21": "the",
-        "22": "advice",
-        "23": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ],
-          [
-            10,
-            5
-          ],
-          [
-            14,
-            13
-          ],
-          [
-            20,
-            18
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "det": [
-          [
-            5,
-            4
-          ],
-          [
-            9,
-            7
-          ],
-          [
-            18,
-            17
-          ],
-          [
-            22,
-            21
-          ]
-        ],
-        "case": [
-          [
-            9,
-            6
-          ]
-        ],
-        "amod": [
-          [
-            9,
-            8
-          ],
-          [
-            13,
-            12
-          ]
-        ],
-        "nmod:of": [
-          [
-            5,
-            9
-          ]
-        ],
-        "dep": [
-          [
-            3,
-            10
-          ],
-          [
-            10,
-            15
-          ],
-          [
-            15,
-            18
-          ]
-        ],
-        "punct": [
-          [
-            10,
-            11
-          ],
-          [
-            3,
-            23
-          ]
-        ],
-        "conj": [
-          [
-            10,
-            14
-          ]
-        ],
-        "det:predet": [
-          [
-            18,
-            16
-          ]
-        ],
-        "ref": [
-          [
-            18,
-            19
-          ]
-        ],
-        "acl:relcl": [
-          [
-            18,
-            20
-          ]
-        ],
-        "obj": [
-          [
-            20,
-            22
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NNP": [
-          [
-            1,
-            1
-          ],
-          [
-            13,
-            13
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            5
-          ],
-          [
-            4,
-            22
-          ],
-          [
-            7,
-            9
-          ],
-          [
-            7,
-            10
-          ],
-          [
-            7,
-            22
-          ],
-          [
-            12,
-            13
-          ],
-          [
-            12,
-            14
-          ],
-          [
-            16,
-            18
-          ],
-          [
-            16,
-            22
-          ],
-          [
-            21,
-            22
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ]
-        ],
-        "DT": [
-          [
-            4,
-            4
-          ],
-          [
-            7,
-            7
-          ],
-          [
-            17,
-            17
-          ],
-          [
-            21,
-            21
-          ]
-        ],
-        "NN": [
-          [
-            5,
-            5
-          ],
-          [
-            9,
-            9
-          ],
-          [
-            18,
-            18
-          ],
-          [
-            22,
-            22
-          ]
-        ],
-        "IN": [
-          [
-            6,
-            6
-          ]
-        ],
-        "JJ": [
-          [
-            8,
-            8
-          ],
-          [
-            12,
-            12
-          ]
-        ],
-        "VBN": [
-          [
-            10,
-            10
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            22
-          ],
-          [
-            3,
-            22
-          ],
-          [
-            10,
-            10
-          ],
-          [
-            14,
-            14
-          ],
-          [
-            20,
-            22
-          ]
-        ],
-        ",": [
-          [
-            11,
-            11
-          ]
-        ],
-        "VBD": [
-          [
-            14,
-            14
-          ],
-          [
-            20,
-            20
-          ]
-        ],
-        "S": [
-          [
-            1,
-            23
-          ],
-          [
-            14,
-            14
-          ],
-          [
-            20,
-            22
-          ]
-        ],
-        "SBAR": [
-          [
-            14,
-            14
-          ],
-          [
-            19,
-            22
-          ]
-        ],
-        "CC": [
-          [
-            15,
-            15
-          ]
-        ],
-        "PDT": [
-          [
-            16,
-            16
-          ]
-        ],
-        "WP": [
-          [
-            19,
-            19
-          ]
-        ],
-        "WHNP": [
-          [
-            19,
-            19
-          ]
-        ],
-        "PP": [
-          [
-            6,
-            22
-          ]
-        ],
-        ".": [
-          [
-            23,
-            23
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            23
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2019-USC-Project11",
-      "Sentence": "Expert can keep a Track of the total Income generated , total Minute talked and all the User who took the Advice .",
-      "Result": {
         "A": 14,
         "B": 13
       },
@@ -22802,11 +24115,11 @@
         "2": "can",
         "3": "keep",
         "4": "a",
-        "5": "track",
+        "5": "Track",
         "6": "of",
         "7": "the",
         "8": "total",
-        "9": "income",
+        "9": "Income",
         "10": "generate",
         "11": ",",
         "12": "total",
@@ -22815,11 +24128,11 @@
         "15": "and",
         "16": "all",
         "17": "the",
-        "18": "user",
+        "18": "User",
         "19": "who",
         "20": "take",
         "21": "the",
-        "22": "advice",
+        "22": "Advice",
         "23": "."
       },
       "TD": {

@@ -12,14 +12,6 @@
           "type": "default"
         },
         {
-          "name": "bloodSugar",
-          "type": "default"
-        },
-        {
-          "name": "cgm",
-          "type": "default"
-        },
-        {
           "name": "information",
           "type": "default"
         },
@@ -28,7 +20,15 @@
           "type": "default"
         },
         {
-          "name": "insulinusage",
+          "name": "cgm",
+          "type": "default"
+        },
+        {
+          "name": "insulinUsage",
+          "type": "default"
+        },
+        {
+          "name": "bloodSugar",
           "type": "default"
         }
       ]
@@ -50,10 +50,10 @@
   },
   "relation_list": [
     {
-      "source": "Insulin",
-      "dest": "Level",
-      "type": "aggregation",
-      "msg": "",
+      "source": "Cgm",
+      "dest": "Application",
+      "type": "association",
+      "msg": "to",
       "multiplicity": [
         "1",
         "1"
@@ -70,73 +70,24 @@
         "1"
       ],
       "para": []
+    },
+    {
+      "source": "Insulin",
+      "dest": "Level",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
     }
   ],
   "behavior_list": [
     {
       "actor": "User",
-      "action": "sign_up",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "App",
-      "action": "warn",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "store",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Level",
-      "action": "warn",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "connect",
-      "target": "Cgm",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "customize",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "BloodSugar",
-      "action": "get",
-      "target": "",
+      "action": "use",
+      "target": "App",
       "para": []
     },
     {
@@ -153,13 +104,19 @@
     },
     {
       "actor": "User",
-      "action": "download",
-      "target": "Application",
+      "action": "sign_up",
+      "target": "",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "visualize",
+      "actor": "Information",
+      "action": "store",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "BloodSugar",
+      "action": "get",
       "target": "",
       "para": []
     },
@@ -171,8 +128,14 @@
     },
     {
       "actor": "User",
-      "action": "user",
-      "target": "App",
+      "action": "create",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "want",
+      "target": "Recommendation",
       "para": []
     },
     {
@@ -183,20 +146,68 @@
     },
     {
       "actor": "User",
-      "action": "want",
-      "target": "Recommendation",
+      "action": "view",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Recommendation",
+      "action": "customize",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "connect",
+      "target": "Cgm",
+      "para": []
+    },
+    {
+      "actor": "Level",
+      "action": "warn",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "App",
+      "action": "warn",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "download",
-      "target": "",
+      "target": "Application",
       "para": []
     },
     {
       "actor": "User",
       "action": "want",
       "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "App",
+      "action": "visualize",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "download",
+      "target": "",
       "para": []
     }
   ]

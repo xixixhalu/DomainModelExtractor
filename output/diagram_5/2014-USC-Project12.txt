@@ -8,88 +8,90 @@ class Corporation<actor> {
 class Provider<actor> {
 }
 class User<actor> {
-	location
 	profile
+	location
 }
 class Health {
-}
-class CarePricing {
 }
 class Profile {
 	attach()
 }
-class Provider {
-	send()
-	share()
-}
-class Offering {
-	drive()
+class CarePricing {
 }
 class User {
-	access()
 	find()
-	follow()
 	filter()
-	have()
 	create()
+	connect()
+	follow()
+	have()
 	receive()
 }
-class Notification {
+class Content {
+	drive()
 }
 class Consumer {
-	register()
-	join()
 	rate()
 	create()
 	compare()
+	join()
+	register()
 }
-class Network {
-}
-class Offer {
-}
-class Review {
+class HealthcarePrice {
 }
 class Corporation {
 	view()
 }
 class Price {
 }
+class Location {
+	access()
+}
 class Access {
 	feature()
 }
-class Employee {
-}
-class PushContent {
-}
-class Location {
+class Provider {
+	send()
+	share()
 }
 class Pricing {
 	drive()
 }
-class HealthcarePrice {
+class Network {
 }
-class Content {
+class Offering {
 	drive()
 }
-Health o-- Profile
-Profile --> Offer : attach
+class Review {
+}
+class Notification {
+}
+class PushContent {
+}
+class Offer {
+}
+class Employee {
+}
 Provider --> Offering : share
-Consumer --> HealthcarePrice : compare
-Consumer --> Review : create
-Provider --> Content : share
-User --> Notification : filter
-Health o-- CarePricing
-Provider --> Offering : send
-Provider --> Pricing : share
-Corporation --> Price : view
-Consumer --> Provider : rate
+Offering --> User : to
+User o-- Profile : create
+Profile --> Offer : attach
+User o-- Location : find
 Access --> CarePricing : feature
 Corporation o-- Employee : view
-User o-- Profile : create
-User --> PushContent : receive
+Health o-- CarePricing
+Health o-- Profile
+Provider --> Pricing : share
+Consumer --> Provider : rate
+Location --> Provider : access
 Consumer --> Network : join
-User o-- Location : find
+Provider --> Offering : send
+Corporation --> Price : view
+Consumer --> Review : create
 Consumer --> Network : create
-User --> Provider : access
+Provider --> Content : share
+User --> Notification : filter
+User --> PushContent : receive
+Consumer --> HealthcarePrice : compare
 
 @enduml

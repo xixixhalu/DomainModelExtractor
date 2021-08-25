@@ -39,17 +39,6 @@
   },
   "relation_list": [
     {
-      "source": "Case",
-      "dest": "File",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
       "source": "Youth",
       "dest": "Service",
       "type": "aggregation",
@@ -62,7 +51,7 @@
     },
     {
       "source": "Case",
-      "dest": "Manager",
+      "dest": "File",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -81,6 +70,17 @@
         "1"
       ],
       "para": []
+    },
+    {
+      "source": "Case",
+      "dest": "Manager",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
     }
   ],
   "behavior_list": [
@@ -92,26 +92,14 @@
     },
     {
       "actor": "Manager",
-      "action": "manage",
-      "target": "File",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "monitor",
-      "target": "Service",
-      "para": []
-    },
-    {
-      "actor": "Manager",
       "action": "save",
       "target": "Time",
       "para": []
     },
     {
       "actor": "Manager",
-      "action": "upload",
-      "target": "Document",
+      "action": "create",
+      "target": "Activity",
       "para": []
     },
     {
@@ -127,9 +115,9 @@
       "para": []
     },
     {
-      "actor": "Time",
-      "action": "lose",
-      "target": "Activity",
+      "actor": "Youth",
+      "action": "access",
+      "target": "",
       "para": []
     },
     {
@@ -139,9 +127,27 @@
       "para": []
     },
     {
-      "actor": "Youth",
-      "action": "access",
-      "target": "",
+      "actor": "Manager",
+      "action": "create",
+      "target": "ManagementService",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "monitor",
+      "target": "Service",
+      "para": []
+    },
+    {
+      "actor": "Time",
+      "action": "lose",
+      "target": "Activity",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "upload",
+      "target": "Document",
       "para": []
     },
     {
@@ -152,8 +158,8 @@
     },
     {
       "actor": "Manager",
-      "action": "create",
-      "target": "ManagementService",
+      "action": "manage",
+      "target": "File",
       "para": []
     }
   ]

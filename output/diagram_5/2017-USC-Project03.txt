@@ -1,8 +1,8 @@
 @startuml
 hide circle
 class User<actor> {
-	information
 	swimmer
+	information
 	kid
 }
 class Coach<actor> {
@@ -21,105 +21,121 @@ class Head<actor> {
 }
 class Kid {
 	account
+	sign()
 	post()
-}
-class Detail {
 }
 class Pdf {
 }
 class Report {
 }
-class Coach {
-	expect()
-	edit()
-	modify()
-	close()
-	generate()
-	review()
-	overwrite()
-	extract()
-}
-class Treasurer {
-	see()
+class Detail {
 }
 class Maintainer {
-	insert()
-	access()
 	see()
-	delete()
-	modify()
 	have()
+	modify()
+	insert()
+	delete()
+	access()
 }
-class Something {
+class Amount {
+	collect()
 }
 class Parent {
-	login()
-	view()
 	edit()
-	see()
 	sign()
+	see()
+	view()
+	login()
 }
 class Event {
 }
-class UploadEvent {
-}
-class User {
-	see()
-	expect()
-}
-class Option {
-}
-class Information {
-}
-class Signup {
-}
-class List {
-}
 class Deadline {
 }
-class PayeeInformation {
+class Database {
 }
-class Amount {
+class Coach {
+	overwrite()
+	edit()
+	extract()
+	review()
+	generate()
+	modify()
+	expect()
+}
+class Developer {
+	have()
 }
 class Access {
 }
 class CSVFile {
 }
+class User {
+	see()
+	expect()
+}
+class Information {
+}
+class Treasurer {
+	see()
+}
+class Something {
+}
+class Signup {
+	close()
+}
+class PayeeInformation {
+}
 class Swimmer {
 	sign()
 }
-class Developer {
-	have()
+class Result {
 }
-class Database {
+class Option {
+}
+class UploadEvent {
+}
+class List {
+}
+class SourceCode {
 }
 class RegistrationKey {
 }
-Coach --> Something : modify
-Coach --> Information : extract
-Coach --> Report : generate
-Parent --> Event : view
-Parent --> PayeeInformation : view
-Maintainer --> Detail : see
-Treasurer --> Amount : see
-Parent --> Parent : see
-User --> Event : see
+class Documentation {
+}
 Coach --> UploadEvent : extract
-Maintainer --> Access : have
-User --> Option : see
-Coach --> CSVFile : generate
-User o-- Information : expect
 Parent --> Event : edit
-Developer --> Access : have
-Pdf o-- Report
-Coach --> User : expect
-Coach --> Signup : expect
 Coach --> Information : review
-Maintainer --> Database : modify
-Kid --> Deadline : post
-Amount o-- Detail
-Parent --> RegistrationKey : supported_by
 Coach --> List : edit
+Access --> SourceCode : to
+Kid --> Deadline : post
+Parent --> RegistrationKey : supported_by
+Maintainer --> Database : access
+Coach --> Signup : expect
+Maintainer --> Database : modify
+Parent --> PayeeInformation : view
+Pdf o-- Report
+User --> Event : see
+Access --> Documentation : to
+Maintainer --> Access : have
+Maintainer --> Database : delete
+Access --> Database : to
+Developer --> Access : have
+Parent --> Event : view
 Pdf o-- Information
+Parent --> Parent : see
+Coach --> CSVFile : generate
+Coach --> Result : overwrite
+User --> Option : see
+Coach --> User : expect
+User o-- Information : expect
+Maintainer --> Database : insert
+Coach --> Report : generate
+Coach --> Result : modify
+Coach --> Information : extract
+Amount o-- Detail
+Treasurer --> Amount : see
+Coach --> Something : modify
+Maintainer --> Detail : see
 
 @enduml

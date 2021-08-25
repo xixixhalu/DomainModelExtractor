@@ -20,15 +20,7 @@
       ],
       "attributes": [
         {
-          "name": "profile",
-          "type": "default"
-        },
-        {
-          "name": "connection",
-          "type": "default"
-        },
-        {
-          "name": "pastmessage",
+          "name": "linkedInInformation",
           "type": "default"
         },
         {
@@ -36,11 +28,19 @@
           "type": "default"
         },
         {
-          "name": "linkedininformation",
+          "name": "profile",
           "type": "default"
         },
         {
           "name": "area",
+          "type": "default"
+        },
+        {
+          "name": "connection",
+          "type": "default"
+        },
+        {
+          "name": "pastMessage",
           "type": "default"
         }
       ]
@@ -63,14 +63,87 @@
           "type": "default"
         }
       ]
+    },
+    "Picture": {
+      "name": "Picture",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
   "relation_list": [
+    {
+      "source": "Profile",
+      "dest": "Picture",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Message",
+      "dest": "User",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Request",
+      "dest": "Administrator",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Connection",
+      "dest": "Request",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
     {
       "source": "User",
       "dest": "User",
       "type": "association",
       "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "LinkedInInformation",
+      "dest": "Profile",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Administrator",
+      "dest": "User",
+      "type": "generalization",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -92,44 +165,50 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "import",
-      "target": "Linkedininformation",
+      "action": "share",
+      "target": "Article",
       "para": []
     },
     {
       "actor": "User",
+      "action": "follow",
+      "target": "Company",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "accept",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "Company",
       "action": "work",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "find",
-      "target": "Information",
+      "action": "import",
+      "target": "LinkedInInformation",
       "para": []
     },
     {
       "actor": "User",
       "action": "follow",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "invite",
-      "target": "Network",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "think",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "accept",
-      "target": "",
+      "target": "School",
       "para": []
     },
     {
@@ -140,152 +219,8 @@
     },
     {
       "actor": "User",
-      "action": "send",
-      "target": "Message",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Advertisement",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "Video",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "upload",
-      "target": "Profilepicture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "cancel",
-      "target": "Connection",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "Presence",
-      "para": []
-    },
-    {
-      "actor": "People",
-      "action": "join",
-      "target": "Group",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "send",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "Group",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Pastmessage",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "find",
-      "target": "Someone",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "BlackprofessionalsNet",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "find",
-      "target": "Office",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "write",
-      "target": "LetterRecommendation",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "connect",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "send",
-      "target": "Request",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "Article",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "comment",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "follow",
+      "action": "want",
       "target": "Company",
-      "para": []
-    },
-    {
-      "actor": "Someone",
-      "action": "work",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "grow",
-      "target": "Network",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Activite",
       "para": []
     },
     {
@@ -296,8 +231,92 @@
     },
     {
       "actor": "User",
+      "action": "have",
+      "target": "BlackprofessionalsNet",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "think",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "unfollow",
+      "target": "Company",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "find",
-      "target": "Optometrist",
+      "target": "Office",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Activite",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "Presence",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "upload",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Recommendation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Someone",
+      "action": "work",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "PastMessage",
       "para": []
     },
     {
@@ -308,14 +327,98 @@
     },
     {
       "actor": "User",
-      "action": "want",
-      "target": "Company",
+      "action": "write",
+      "target": "LetterRecommendation",
+      "para": []
+    },
+    {
+      "actor": "People",
+      "action": "join",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Someone",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "cancel",
+      "target": "Connection",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "invite",
+      "target": "Network",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "connect",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "see",
-      "target": "Recommendation",
+      "target": "Advertisement",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Video",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Optometrist",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "grow",
+      "target": "Network",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "comment",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reject",
+      "target": "Request",
       "para": []
     }
   ]

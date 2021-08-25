@@ -102,11 +102,11 @@ class Matcher:
             if original_word.lower() == w: #or w.endswith(word.lower()):
                 is_stop_word = True
                 break
-        if not is_stop_word:
+        if is_stop_word:
             word = original_word
         else:
             if original_word.lower().startswith(lemma_word.lower()):
-                lemma_word = original_word[:len(lemma_word)] = lemma_word[len(lemma_word):]
+                lemma_word = original_word[:len(lemma_word)] + lemma_word[len(lemma_word):]
             word = lemma_word
 
         return word
@@ -238,6 +238,7 @@ class Matcher:
             if filter_flag and is_found:
                 return False, {}
         if filter_flag:
+            temp_var_to_index = copy.deepcopy(var_to_index)
             self.dfs_match_tds(rule_tds, text_tds, rule_pos + 1, temp_var_to_index, var_to_index_list)
 
         if not var_to_index_list:
@@ -316,6 +317,7 @@ if __name__ == '__main__':
         # initialize the output
         output_result = dict()
         match_order, in_nodes = topological_sort_ssr(ssrIndependence)
+
         for i in match_order:
             output_result[ssrName[i - 1]] = []
 
@@ -339,7 +341,6 @@ if __name__ == '__main__':
                         logger.error(s, ": NLP API returns None!")
 
                     else:
-
                         # collect word and punctuation indices in the sentence to a dictionary
                         s_dic = ssr.build_tokens(nlp_output)
 
@@ -380,8 +381,6 @@ if __name__ == '__main__':
                                                         break
                                             if matched:
                                                 break
-                                    if matched:
-                                        break
 
                                     if ssr.match_pos(var_map, rule_pos_tags, nlp_output) and ssr.match_keywords(
                                             ssr.sentence, rule_keywords) and not matched:

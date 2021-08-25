@@ -2,58 +2,66 @@
 hide circle
 class User<actor> {
 }
+class Inline {
+}
 class User {
-	have()
-	access()
 	see()
-	fast()
-	return()
-	assess()
 	run()
-	click()
-	pick()
-	go()
-	pause()
-	consume()
-	view()
+	assess()
 	share()
+	click()
+	fast()
+	consume()
 	play()
+	pause()
+	return()
+	access()
+	have()
+	go()
+	pick()
+	view()
 }
-class Page {
-}
-class Textcontent {
+class GirlBill {
 }
 class List {
 }
-class Answer {
-}
 class Audio {
-}
-class Video {
-}
-class Material {
 }
 class App {
 	run()
 }
-class GirlBill {
+class TextContent {
+}
+class Answer {
+}
+class Page {
+}
+class Material {
 }
 class YoutubeVideo {
 }
+class Video {
+}
 class Hint {
 }
-User --> Hint : see
-User --> List : see
-User --> Video : fast
-User --> Page : view
-User --> GirlBill : click
-User --> Answer : pick
-User --> YoutubeVideo : play
-User --> App : run
+class QuizQuestion {
+}
 User --> App : click
-User --> Material : access
-User --> Textcontent : access
-User --> Audio : play
+User --> Inline : consume
+User --> Video : fast
 User --> Audio : fast
+User --> App : run
+User --> Answer : pick
+User --> GirlBill : view
+User --> Material : access
+User --> GirlBill : click
+User --> YoutubeVideo : play
+User --> Audio : play
+User --> Hint : see
+Answer --> QuizQuestion : to
+User --> Page : view
+User --> TextContent : access
+Video o-- Inline
+User --> List : see
 
 @enduml

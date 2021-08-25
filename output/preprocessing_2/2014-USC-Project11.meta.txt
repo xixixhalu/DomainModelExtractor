@@ -27,7 +27,7 @@
 [(['admin'], (3, 3)), (['people'], (8, 8)), (['class'], (12, 12))]
 [(['course', 'attendee'], (3, 4)), (['confirmation', 'email'], (10, 11)), (['course'], (16, 16))]
 [(['system'], (3, 3)), (['user', 'requirement'], (6, 7)), (['feasibility'], (12, 12))]
-[(['success'], (2, 2)), (['stakeholder'], (5, 5)), (['win'], (9, 9)), (['win', 'condition'], (11, 12)), (['team', 'cohesion'], (17, 18)), (['product'], (21, 21))]
+[(['success'], (2, 2)), (['stakeholder'], (5, 5)), (['win'], (9, 9)), (['condition'], (12, 12)), (['team', 'cohesion'], (17, 18)), (['product'], (21, 21))]
 [(['Team'], (3, 3)), (['requirement'], (7, 7)), (['document'], (9, 9)), (['report'], (12, 12)), (['meeting'], (17, 17)), (['session'], (21, 21))]
 [(['developer'], (3, 3)), (['requirement'], (14, 14)), (['feasibility'], (18, 18)), (['architecture'], (20, 20))]
 [(['Team'], (3, 3)), (['training'], (6, 6)), (['development'], (16, 16)), (['use'], (18, 18)), (['product'], (21, 21))]

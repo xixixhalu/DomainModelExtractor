@@ -27,95 +27,103 @@ class VYMA {
 class Section {
 	trigger()
 }
-class Donor {
-	make()
-	support()
-}
-class Vymacommunity {
-}
-class Notification {
-}
-class User {
-	have()
+class Member {
 	view()
-	purchase()
-	receive()
 }
-class Dvd {
-}
-class Student {
-	download()
-	practice()
-	view()
-	register()
+class Information {
 }
 class Parent {
 	set_up()
-	pay()
 	view()
+	pay()
 	register()
 }
 class Payment {
+}
+class Student {
+	practice()
+	view()
+	register()
+	pay()
+	download()
 }
 class Admin {
 	check()
 	update()
 }
-class Mail {
-}
 class Client {
 	check()
 	add()
 }
-class GoogleDrive {
+class Link {
 }
-class Roster {
-}
-class Password {
-}
-class Detail {
-}
-class MusicNote {
-}
-class Member {
+class User {
+	receive()
+	have()
 	view()
+	purchase()
+}
+class Mail {
 }
 class Calendar {
 }
-class Update {
-}
-class Link {
-}
-class Information {
-}
-class News {
-}
-class Email {
+class Dvd {
 }
 class OtherDetail {
 }
+class Roster {
+}
+class News {
+}
 class Trailer {
 }
-User --> Detail : view
-Member --> Calendar : view
-User --> Dvd : purchase
-User --> Update : receive
-Parent --> Payment : set_up
-Client --> Link : add
+class Concern {
+	address()
+}
+class Update {
+}
+class Detail {
+}
+class Notification {
+}
+class MusicNote {
+}
+class Page {
+}
+class Email {
+}
+class Donor {
+	support()
+	make()
+}
+class VymaCommunity {
+}
+class GoogleDrive {
+}
+class Website {
+}
+Client --> Website : add
+Notification --> Member : to
 Member --> Information : view
-Admin o-- Mail : check
-Admin --> Information : update
-Donor --> Vymacommunity : support
-User --> News : receive
-Client --> GoogleDrive : check
-Section --> Notification : trigger
-Client o-- Email : check
-Admin --> Roster : update
-Parent --> OtherDetail : view
-Parent --> Password : view
-User --> Trailer : view
 News o-- Section
-Admin --> Detail : update
+Parent --> Payment : set_up
+Admin --> Information : update
+User --> Update : receive
+User --> Detail : view
+Client --> Link : add
+User --> Trailer : view
+Section --> Notification : trigger
+Admin o-- Mail : check
 Student --> MusicNote : download
+Member --> Calendar : view
+Parent --> Page : view
+User --> Dvd : purchase
+Client o-- Email : check
+Admin --> Detail : update
+Parent --> OtherDetail : view
+Donor --> VymaCommunity : support
+Admin --> Roster : update
+Client --> GoogleDrive : check
+User --> News : receive
 
 @enduml

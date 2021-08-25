@@ -1,5 +1,7 @@
 @startuml
 hide circle
+class Coach<actor> {
+}
 class GM<actor> {
 	data
 }
@@ -12,84 +14,125 @@ class Customer<actor> {
 }
 class SoccerCoach<actor> {
 }
-class Manger {
-	monitor()
+class Reaction {
 }
-class Timetwitter {
+class Demand {
 }
-class GM {
-	make()
-	build()
-	extract()
+class SporTechBI {
 }
-class Data {
-	integrate()
+class Contractor {
+	revise()
+	update()
+	add()
 }
-class Crawler {
-	run()
+class System {
+	launch()
 }
-class PlayerValue {
+class Player {
 }
-class Coach {
-	visualize()
-	extract()
+class Value {
 }
 class Decision {
 	affect()
 }
+class Line {
+}
 class Customer {
-	drop()
-	import()
-	see()
-	update()
-	drag()
 	add()
+	update()
+	see()
+	drag()
+	import()
+	drop()
+}
+class Change {
+}
+class Data {
+	integrate()
+}
+class GM {
+	visualize()
+	extract()
+	build()
+	make()
+}
+class SoccerCoach {
+	specify()
+	configure()
+}
+class Schedule {
+}
+class Manner {
+}
+class Facebook {
+	feed()
+}
+class Roster {
 }
 class Field {
 	capture()
 }
-class Line {
-}
-class Change {
-}
-class SporTechBIContractor {
-	add()
-	update()
-}
-class Roster {
-}
-class Sportechbisystem {
-	launch()
-}
-class Season {
-	progress()
-}
-class SoccerCoach {
-	configure()
-	specify()
-}
-class Schedule {
+class Manger {
+	monitor()
 }
 class Instagram {
 	feed()
 }
-class Manner {
+class Crawler {
+	run()
+}
+class Coach {
+	visualize()
+	extract()
+	build()
+	make()
+}
+class Season {
+	progress()
+}
+class Twitter {
+	feed()
+}
+class Model {
+}
+class SporTechBIContractor {
 }
 class Condition {
 }
-Customer --> Data : add
-Manger --> Timetwitter : monitor
-Customer --> Change : see
-Manger --> Condition : supported_by
-GM --> PlayerValue : extract
+Data --> Model : to
 Decision --> Line : affect
-GM --> Roster : build
-SoccerCoach --> Schedule : configure
-Data --> Sportechbisystem : supported_by
+GM --> Value : extract
+Instagram o-- Reaction
+SporTechBIContractor <|-- Contractor
+Customer --> Change : see
+Manger --> Reaction : monitor
+Player o-- Value
+Contractor --> Data : revise
+Twitter o-- Reaction
 GM o-- Data : extract
-Coach --> PlayerValue : extract
-Data --> Manner : integrate
+Coach --> Value : extract
+SporTechBI o-- System
+Manger --> Condition : supported_by
+Contractor --> Data : update
+Instagram --> Demand : feed
+Manner o-- Demand
+SoccerCoach --> Schedule : configure
+Twitter --> Demand : feed
+Coach --> Decision : make
+Customer --> Data : add
 GM --> Decision : make
+Manger --> Demand : monitor
+Data --> Manner : integrate
+Coach --> Value : visualize
 Customer --> Data : import
+Coach --> Roster : build
+Customer --> Data : update
+SporTechBI o-- Contractor
+Facebook --> Demand : feed
+Data --> System : supported_by
+GM --> Value : visualize
+Player o-- Data
+GM --> Roster : build
+Facebook o-- Reaction
 
 @enduml

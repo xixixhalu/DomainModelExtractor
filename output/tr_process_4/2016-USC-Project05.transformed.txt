@@ -8,23 +8,7 @@
       ],
       "attributes": [
         {
-          "name": "computer",
-          "type": "default"
-        },
-        {
-          "name": "storage",
-          "type": "default"
-        },
-        {
-          "name": "felling",
-          "type": "default"
-        },
-        {
-          "name": "phone",
-          "type": "default"
-        },
-        {
-          "name": "event",
+          "name": "privacy",
           "type": "default"
         },
         {
@@ -36,11 +20,27 @@
           "type": "default"
         },
         {
-          "name": "privacy",
+          "name": "record",
           "type": "default"
         },
         {
-          "name": "record",
+          "name": "storage",
+          "type": "default"
+        },
+        {
+          "name": "phone",
+          "type": "default"
+        },
+        {
+          "name": "event",
+          "type": "default"
+        },
+        {
+          "name": "computer",
+          "type": "default"
+        },
+        {
+          "name": "felling",
           "type": "default"
         }
       ]
@@ -48,10 +48,10 @@
   },
   "relation_list": [
     {
-      "source": "User",
-      "dest": "Charge",
+      "source": "Picture",
+      "dest": "Event",
       "type": "association",
-      "msg": "supported_by",
+      "msg": "to",
       "multiplicity": [
         "1",
         "1"
@@ -60,7 +60,7 @@
     },
     {
       "source": "User",
-      "dest": "Time",
+      "dest": "Charge",
       "type": "association",
       "msg": "supported_by",
       "multiplicity": [
@@ -79,19 +79,24 @@
         "1"
       ],
       "para": []
+    },
+    {
+      "source": "User",
+      "dest": "Time",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
     }
   ],
   "behavior_list": [
     {
       "actor": "User",
-      "action": "find",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "keep",
-      "target": "Record",
+      "action": "forget",
+      "target": "Password",
       "para": []
     },
     {
@@ -102,68 +107,20 @@
     },
     {
       "actor": "User",
-      "action": "delete",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "look",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "free",
-      "target": "Lot",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "maintain",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "maintain",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "reset",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "delete",
-      "target": "Upload",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "delete",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "upload",
-      "target": "Resolutionpicture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "upload",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "review",
-      "target": "Qualitypicture",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "",
       "para": []
     },
     {
@@ -174,26 +131,80 @@
     },
     {
       "actor": "User",
+      "action": "need",
+      "target": "Register",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "keep",
+      "target": "Record",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "download",
       "target": "Computer",
       "para": []
     },
     {
       "actor": "User",
-      "action": "see",
+      "action": "use",
+      "target": "Browser",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "allow",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Browser",
+      "action": "visit",
+      "target": "SharewebWebsite",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "comment",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "make",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "log_in",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "want",
-      "target": "",
+      "action": "reset",
+      "target": "Password",
       "para": []
     },
     {
       "actor": "User",
-      "action": "picture",
+      "action": "extend",
       "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "choose",
+      "target": "Size",
       "para": []
     },
     {
@@ -204,8 +215,56 @@
     },
     {
       "actor": "User",
-      "action": "review",
+      "action": "download",
+      "target": "ResolutionPicture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "enter",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "like",
       "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "picture",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "let",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "maintain",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "Upload",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "upload",
+      "target": "ResolutionPicture",
       "para": []
     },
     {
@@ -217,19 +276,13 @@
     {
       "actor": "User",
       "action": "download",
-      "target": "Resolutionpicture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "visit",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "download",
       "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "",
       "para": []
     },
     {
@@ -240,26 +293,14 @@
     },
     {
       "actor": "User",
-      "action": "visit",
-      "target": "SharewebWebsite",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "keep",
-      "target": "Privacy",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "enter",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "comment",
+      "action": "upload",
       "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "System",
       "para": []
     },
     {
@@ -270,20 +311,26 @@
     },
     {
       "actor": "User",
-      "action": "user",
-      "target": "Browser",
+      "action": "keep",
+      "target": "Privacy",
       "para": []
     },
     {
       "actor": "User",
-      "action": "create",
-      "target": "Event",
+      "action": "look",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "make",
-      "target": "Comment",
+      "action": "want",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "review",
+      "target": "QualityPicture",
       "para": []
     },
     {
@@ -294,50 +341,20 @@
     },
     {
       "actor": "User",
+      "action": "maintain",
+      "target": "Picture",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "change",
       "target": "Type",
       "para": []
     },
     {
       "actor": "User",
-      "action": "let",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "log_in",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "need",
-      "target": "Register",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "forget",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "choose",
-      "target": "Size",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "like",
-      "target": "Picture",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "extend",
-      "target": "Event",
+      "action": "free",
+      "target": "Lot",
       "para": []
     },
     {

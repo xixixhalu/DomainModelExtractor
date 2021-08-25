@@ -12,34 +12,34 @@ class Contact {
 class Friend {
 	refer()
 }
-class Job {
+class Seeker {
+	unsubscribe()
+	mark()
+	browse()
+	create()
+	contact()
+	search()
+	save()
+	select()
+	see()
+	subscribe()
 }
 class Search {
 }
 class Listing {
 	have()
 }
-class Seeker {
-	subscribe()
-	contact()
-	see()
-	save()
-	mark()
-	search()
-	create()
-	browse()
-	unsubscribe()
-	select()
+class Job {
 }
-class Someone {
+class Frequency {
 }
 class RefersySystem {
 	connect()
 	fetch()
 }
-class Frequency {
-}
 class Reference {
+}
+class Someone {
 }
 class Account {
 	save()
@@ -50,21 +50,21 @@ class Message {
 }
 class JobSeeker {
 }
-RefersySystem --> Seeker : fetch
-Seeker --> Search : save
-Seeker --> Seeker : mark
-Network o-- Friend
-Job o-- Search
-Network o-- Contact
-Seeker --> Someone : contact
-Contact --> Reference : provide
-Seeker --> Account : create
-Job o-- Listing
-Job o-- Seeker
-Listing --> Friend : have
-JobSeeker <|-- Seeker
 Seeker --> Message : supported_by
+Listing --> Friend : have
 Account --> LoginCredentials : save
+Contact --> Reference : provide
+Seeker --> Job : mark
+Job o-- Listing
+Network o-- Contact
+Job o-- Seeker
+Seeker --> Someone : contact
+Network o-- Friend
+RefersySystem --> Job : fetch
 Seeker --> Frequency : select
+Seeker --> Account : create
+JobSeeker <|-- Seeker
+Job o-- Search
+Seeker --> Search : save
 
 @enduml

@@ -8,15 +8,7 @@
       ],
       "attributes": [
         {
-          "name": "profile",
-          "type": "default"
-        },
-        {
           "name": "requestRecord",
-          "type": "default"
-        },
-        {
-          "name": "schedule",
           "type": "default"
         },
         {
@@ -24,7 +16,15 @@
           "type": "default"
         },
         {
+          "name": "schedule",
+          "type": "default"
+        },
+        {
           "name": "learningProgress",
+          "type": "default"
+        },
+        {
+          "name": "profile",
           "type": "default"
         }
       ]
@@ -36,7 +36,7 @@
       ],
       "attributes": [
         {
-          "name": "information",
+          "name": "hour",
           "type": "default"
         },
         {
@@ -44,15 +44,15 @@
           "type": "default"
         },
         {
-          "name": "student",
-          "type": "default"
-        },
-        {
           "name": "availability",
           "type": "default"
         },
         {
-          "name": "hour",
+          "name": "information",
+          "type": "default"
+        },
+        {
+          "name": "student",
           "type": "default"
         }
       ]
@@ -71,6 +71,13 @@
     },
     "Maintainer": {
       "name": "Maintainer",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
+    "Developer": {
+      "name": "Developer",
       "type": [
         "actor"
       ],
@@ -161,20 +168,6 @@
         }
       ]
     },
-    "Video": {
-      "name": "Video",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
-    },
-    "Change": {
-      "name": "Change",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
-    },
     "Tutoring": {
       "name": "Tutoring",
       "type": [
@@ -188,100 +181,61 @@
         "shared"
       ],
       "attributes": []
+    },
+    "Change": {
+      "name": "Change",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Class": {
+      "name": "Class",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Architect": {
+      "name": "Architect",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Record": {
+      "name": "Record",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Form": {
+      "name": "Form",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "ScheduleChoice": {
+      "name": "ScheduleChoice",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Video": {
+      "name": "Video",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
   "relation_list": [
     {
-      "source": "User",
-      "dest": "StudyProcess",
-      "type": "association",
-      "msg": "supported_by",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Schedule",
-      "dest": "Availability",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Tutoring",
-      "dest": "Time",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Student",
-      "dest": "User",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Profile",
-      "dest": "Linkedin",
-      "type": "association",
-      "msg": "supported_by",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "User",
-      "dest": "Customerservice",
-      "type": "association",
-      "msg": "supported_by",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "StudentUser",
-      "dest": "User",
-      "type": "generalization",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "User",
-      "dest": "Classmate",
-      "type": "association",
-      "msg": "supported_by",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Course",
-      "dest": "Video",
+      "source": "Request",
+      "dest": "Form",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -302,9 +256,174 @@
       "para": []
     },
     {
+      "source": "Course",
+      "dest": "ScheduleChoice",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "User",
+      "dest": "Classmate",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Tutoring",
+      "dest": "Time",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "ProjectArchitect",
+      "dest": "Architect",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "User",
+      "dest": "StudyProcess",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "User",
+      "dest": "Username",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Project",
+      "dest": "Architect",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Request",
+      "dest": "Record",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "User",
+      "dest": "CustomerService",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
       "source": "Tutoring",
       "dest": "Request",
       "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Schedule",
+      "dest": "Availability",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Student",
+      "dest": "User",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "User",
+      "dest": "Password",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Course",
+      "dest": "Video",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Profile",
+      "dest": "Linkedin",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "StudentUser",
+      "dest": "User",
+      "type": "generalization",
       "msg": "",
       "multiplicity": [
         "1",
@@ -324,21 +443,10 @@
       "para": []
     },
     {
-      "source": "User",
-      "dest": "Password",
-      "type": "association",
-      "msg": "supported_by",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "User",
-      "dest": "Username",
-      "type": "association",
-      "msg": "supported_by",
+      "source": "Schedule",
+      "dest": "Class",
+      "type": "aggregation",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -348,9 +456,39 @@
   ],
   "behavior_list": [
     {
-      "actor": "Developer",
-      "action": "user",
+      "actor": "Tester",
+      "action": "write",
+      "target": "Project",
+      "para": []
+    },
+    {
+      "actor": "FeasibilityAnalysis",
+      "action": "figure_out",
+      "target": "Possibility",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "read",
+      "target": "Blog",
+      "para": []
+    },
+    {
+      "actor": "Profile",
+      "action": "log_in",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "ProgramELA",
+      "action": "provide",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "need",
+      "target": "PaymentMethod",
       "para": []
     },
     {
@@ -362,319 +500,31 @@
     {
       "actor": "User",
       "action": "check",
-      "target": "RequestRecord",
+      "target": "Record",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "get",
-      "target": "Autoresponse",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "reschedule",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Tutor",
-      "action": "post",
-      "target": "Blog",
-      "para": []
-    },
-    {
-      "actor": "Tutor",
-      "action": "input",
-      "target": "Availability",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "need",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "FeasibilityAnalysis",
-      "action": "figure_out",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Programmer",
-      "action": "prioritize",
-      "target": "Task",
-      "para": []
-    },
-    {
-      "actor": "Tutor",
-      "action": "get",
-      "target": "Schedule",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "work",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "SystemArchitect",
-      "action": "integrate",
-      "target": "Module",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "need",
-      "target": "PaymentMethod",
-      "para": []
-    },
-    {
-      "actor": "Instructor",
-      "action": "match",
-      "target": "Schedule",
-      "para": []
-    },
-    {
-      "actor": "Possibility",
-      "action": "fit",
-      "target": "ProjectArchitect",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "upgrade",
-      "target": "Resource",
-      "para": []
-    },
-    {
-      "actor": "Something",
-      "action": "happen",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "request",
-      "target": "Time",
-      "para": []
-    },
-    {
-      "actor": "ProjectArchitect",
-      "action": "get",
-      "target": "ProjectArchitect",
-      "para": []
-    },
-    {
-      "actor": "Need",
-      "action": "user",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
+      "actor": "Client",
       "action": "have",
-      "target": "Courseschedulechoice",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "sign_up",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "Question",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "consult",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "ProjectArchitect",
-      "action": "get",
-      "target": "Detail",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "exchange",
-      "target": "Thought",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "make",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Email",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "learn",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "watch",
-      "target": "LessonVideo",
-      "para": []
-    },
-    {
-      "actor": "Leader",
-      "action": "learn",
-      "target": "Information",
       "para": []
     },
     {
       "actor": "Student",
       "action": "read",
-      "target": "Blog",
+      "target": "Page",
       "para": []
     },
     {
-      "actor": "ProjectArchitect",
-      "action": "complete",
+      "actor": "PaymentMethod",
+      "action": "work",
       "target": "",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "input",
-      "target": "Schedule",
-      "para": []
-    },
-    {
-      "actor": "Tester",
-      "action": "write",
-      "target": "ProjectArchitect",
-      "para": []
-    },
-    {
-      "actor": "Programmer",
+      "actor": "Tutor",
       "action": "get",
-      "target": "Description",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "choose",
-      "target": "PaymentMethod",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "understand",
-      "target": "Technology",
-      "para": []
-    },
-    {
-      "actor": "FeasibilityAnalysis",
-      "action": "figure_out",
-      "target": "Possibility",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "understand",
-      "target": "Technology",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "learn",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Tutor",
-      "action": "offer",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Need",
-      "action": "user",
-      "target": "Streamingfeature",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "complete",
-      "target": "Requestform",
-      "para": []
-    },
-    {
-      "actor": "Change",
-      "action": "happen",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "complete",
-      "target": "EvaluationForm",
-      "para": []
-    },
-    {
-      "actor": "Instructor",
-      "action": "match",
-      "target": "Language",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "user",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Tutor",
-      "action": "accept",
-      "target": "Accordance",
-      "para": []
-    },
-    {
-      "actor": "Tutor",
-      "action": "accept",
-      "target": "Request",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "manage",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Tutor",
-      "action": "share",
-      "target": "PresentationMaterial",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Time",
-      "para": []
-    },
-    {
-      "actor": "ProgramELA",
-      "action": "provide",
-      "target": "",
+      "target": "Class",
       "para": []
     },
     {
@@ -685,50 +535,26 @@
     },
     {
       "actor": "User",
-      "action": "user",
-      "target": "Application",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "catch_up",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Availability",
-      "action": "reflect",
-      "target": "Fact",
-      "para": []
-    },
-    {
-      "actor": "Tester",
-      "action": "write",
-      "target": "IntegrationTest",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "complete",
-      "target": "",
+      "action": "have",
+      "target": "Question",
       "para": []
     },
     {
       "actor": "User",
       "action": "get",
-      "target": "Notification",
+      "target": "Time",
       "para": []
     },
     {
       "actor": "User",
-      "action": "check",
-      "target": "Schedule",
+      "action": "consult",
+      "target": "Information",
       "para": []
     },
     {
-      "actor": "Student",
-      "action": "read",
-      "target": "Page",
+      "actor": "User",
+      "action": "pair",
+      "target": "",
       "para": []
     },
     {
@@ -739,20 +565,308 @@
     },
     {
       "actor": "Student",
+      "action": "reschedule",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "check",
+      "target": "Schedule",
+      "para": []
+    },
+    {
+      "actor": "Something",
+      "action": "happen",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "Application",
+      "para": []
+    },
+    {
+      "actor": "Possibility",
+      "action": "fit",
+      "target": "Project",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "understand",
+      "target": "Technology",
+      "para": []
+    },
+    {
+      "actor": "Programmer",
+      "action": "prioritize",
+      "target": "Task",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "make",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "accept",
+      "target": "Accordance",
+      "para": []
+    },
+    {
+      "actor": "Student",
       "action": "cancel",
       "target": "Time",
       "para": []
     },
     {
-      "actor": "Profile",
-      "action": "log_in",
+      "actor": "Student",
+      "action": "complete",
+      "target": "Form",
+      "para": []
+    },
+    {
+      "actor": "Need",
+      "action": "use",
+      "target": "Feature",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "learn",
       "target": "",
       "para": []
     },
     {
-      "actor": "Client",
-      "action": "have",
+      "actor": "User",
+      "action": "exchange",
+      "target": "Thought",
+      "para": []
+    },
+    {
+      "actor": "Instructor",
+      "action": "match",
+      "target": "Language",
+      "para": []
+    },
+    {
+      "actor": "Change",
+      "action": "happen",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "learn",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "complete",
+      "target": "EvaluationForm",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "accept",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "Architect",
+      "action": "get",
+      "target": "Project",
+      "para": []
+    },
+    {
+      "actor": "Programmer",
+      "action": "get",
+      "target": "Description",
+      "para": []
+    },
+    {
+      "actor": "Availability",
+      "action": "reflect",
+      "target": "Fact",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "book",
+      "target": "Fact",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "catch_up",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Leader",
+      "action": "learn",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Need",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "watch",
+      "target": "LessonVideo",
+      "para": []
+    },
+    {
+      "actor": "Project",
+      "action": "complete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "understand",
+      "target": "Technology",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "complete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "input",
+      "target": "Schedule",
+      "para": []
+    },
+    {
+      "actor": "SystemArchitect",
+      "action": "integrate",
+      "target": "Module",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "post",
+      "target": "Blog",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "manage",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "choose",
+      "target": "PaymentMethod",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "ScheduleChoice",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sign_up",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "FeasibilityAnalysis",
+      "action": "figure_out",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "upgrade",
+      "target": "Resource",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "AutoResponse",
+      "para": []
+    },
+    {
+      "actor": "Tester",
+      "action": "write",
+      "target": "IntegrationTest",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "Architect",
+      "action": "get",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "request",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "share",
+      "target": "PresentationMaterial",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "get",
+      "target": "Schedule",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "offer",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Tutor",
+      "action": "input",
+      "target": "Availability",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Email",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "need",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Instructor",
+      "action": "match",
+      "target": "Schedule",
       "para": []
     }
   ]

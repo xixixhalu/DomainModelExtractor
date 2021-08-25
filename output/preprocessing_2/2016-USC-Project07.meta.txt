@@ -11,4 +11,4 @@
 [(['user'], (3, 3)), (['information'], (7, 7))]
 [(['user'], (3, 3)), (['information'], (12, 12)), (['shelter'], (15, 15))]
 [(['shelter'], (3, 3)), (['information'], (8, 8)), (['information'], (12, 12)), (['date'], (16, 16))]
-[(['user'], (3, 3)), (['location'], (10, 10)), (['price'], (12, 12)), (['filter'], (14, 14)), (['search', 'result'], (16, 17)), (['result'], (26, 26))]
+[(['user'], (3, 3)), (['price'], (8, 8)), (['filter'], (10, 10)), (['search', 'result'], (12, 13)), (['result'], (22, 22)), (['user'], (3, 3)), (['location'], (8, 8)), (['filter'], (10, 10)), (['search', 'result'], (12, 13)), (['result'], (22, 22)), (['user'], (3, 3)), (['filter'], (10, 10)), (['search', 'result'], (12, 13)), (['result'], (22, 22))]

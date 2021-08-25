@@ -12,14 +12,6 @@
           "type": "default"
         },
         {
-          "name": "liking",
-          "type": "default"
-        },
-        {
-          "name": "profile",
-          "type": "default"
-        },
-        {
           "name": "gameProfile",
           "type": "default"
         },
@@ -28,7 +20,15 @@
           "type": "default"
         },
         {
-          "name": "profileinformation",
+          "name": "liking",
+          "type": "default"
+        },
+        {
+          "name": "profileInformation",
+          "type": "default"
+        },
+        {
+          "name": "profile",
           "type": "default"
         },
         {
@@ -41,6 +41,13 @@
       "name": "Developer",
       "type": [
         "actor"
+      ],
+      "attributes": []
+    },
+    "Information": {
+      "name": "Information",
+      "type": [
+        "shared"
       ],
       "attributes": []
     }
@@ -56,13 +63,65 @@
         "1"
       ],
       "para": []
+    },
+    {
+      "source": "Game",
+      "dest": "Profile",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Profile",
+      "dest": "Information",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
     }
   ],
   "behavior_list": [
     {
       "actor": "User",
-      "action": "mute",
+      "action": "unmute",
+      "target": "Sound",
+      "para": []
+    },
+    {
+      "actor": "Game",
+      "action": "attract",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "unmute",
       "target": "ChangeSoundVolume",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "edit",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "leave",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "register",
+      "target": "Detail",
       "para": []
     },
     {
@@ -73,14 +132,44 @@
     },
     {
       "actor": "User",
+      "action": "have",
+      "target": "Point",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "play",
+      "target": "Game",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "beat",
       "target": "Score",
       "para": []
     },
     {
       "actor": "User",
-      "action": "see",
+      "action": "prompt",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Animation",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "make",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Score",
       "para": []
     },
     {
@@ -91,20 +180,50 @@
     },
     {
       "actor": "User",
-      "action": "see",
-      "target": "Score",
+      "action": "mute",
+      "target": "ChangeSoundVolume",
       "para": []
     },
     {
-      "actor": "Effect",
-      "action": "receive",
+      "actor": "Profile",
+      "action": "customize",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "register",
-      "target": "Detail",
+      "action": "place",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "beat",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "want",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "change",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "log_out",
+      "target": "",
       "para": []
     },
     {
@@ -121,50 +240,20 @@
     },
     {
       "actor": "User",
-      "action": "edit",
-      "target": "Profileinformation",
-      "para": []
-    },
-    {
-      "actor": "Game",
-      "action": "attract",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "click",
-      "target": "DetonateBomb",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "change",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Game",
-      "action": "user",
+      "action": "recover",
       "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "gain",
+      "target": "Point",
       "para": []
     },
     {
       "actor": "User",
       "action": "place",
       "target": "Bomb",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "make",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Reward",
       "para": []
     },
     {
@@ -175,8 +264,62 @@
     },
     {
       "actor": "User",
+      "action": "click",
+      "target": "DetonateBomb",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "see",
-      "target": "Animation",
+      "target": "History",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "login",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "unmute",
+      "target": "Game",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "choose",
+      "target": "Avatar",
+      "para": []
+    },
+    {
+      "actor": "Game",
+      "action": "use",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "Bomb",
+      "action": "place",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Reward",
+      "para": []
+    },
+    {
+      "actor": "Game",
+      "action": "use",
+      "target": "Username",
+      "para": []
+    },
+    {
+      "actor": "Effect",
+      "action": "receive",
+      "target": "",
       "para": []
     },
     {
@@ -187,80 +330,14 @@
     },
     {
       "actor": "User",
-      "action": "have",
-      "target": "Point",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "gain",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "place",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "choose",
-      "target": "Avatar",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "want",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "beat",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "detonate",
       "target": "Bomb",
       "para": []
     },
     {
       "actor": "User",
-      "action": "login",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "History",
-      "action": "play",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "log_out",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "play",
+      "action": "mute",
       "target": "Game",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "recover",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "Game",
-      "action": "user",
-      "target": "Username",
       "para": []
     }
   ]

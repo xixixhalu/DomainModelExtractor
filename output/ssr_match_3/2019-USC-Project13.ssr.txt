@@ -21,7 +21,7 @@
         "9": "Mentee",
         "10": "in",
         "11": "the",
-        "12": "database",
+        "12": "Database",
         "13": "."
       },
       "TD": {
@@ -248,7 +248,7 @@
         "4": "able",
         "5": "to",
         "6": "display",
-        "7": "list",
+        "7": "List",
         "8": "of",
         "9": "Mentor",
         "10": "to",
@@ -489,9 +489,9 @@
         "4": "able",
         "5": "to",
         "6": "display",
-        "7": "list",
+        "7": "List",
         "8": "of",
-        "9": "mentee",
+        "9": "Mentee",
         "10": "to",
         "11": "Mentor",
         "12": "."
@@ -982,13 +982,13 @@
         "D": 7
       },
       "Index": {
-        "1": "system",
+        "1": "System",
         "2": "must",
         "3": "be",
         "4": "able",
         "5": "to",
         "6": "associate",
-        "7": "relation",
+        "7": "Relation",
         "8": "between",
         "9": "Mentor",
         "10": "and",
@@ -1223,13 +1223,13 @@
         "D": 7
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "should",
         "3": "be",
         "4": "able",
         "5": "to",
         "6": "update",
-        "7": "password",
+        "7": "Password",
         "8": "."
       },
       "TD": {
@@ -1396,23 +1396,23 @@
         "D": 8
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "should",
         "3": "be",
         "4": "able",
         "5": "to",
         "6": "see",
         "7": "the",
-        "8": "list",
+        "8": "List",
         "9": "of",
         "10": "available",
         "11": "Mentor",
         "12": "and",
         "13": "send",
         "14": "a",
-        "15": "request",
+        "15": "Request",
         "16": "for",
-        "17": "connection",
+        "17": "Connection",
         "18": "."
       },
       "TD": {
@@ -1723,23 +1723,23 @@
         "D": 15
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "should",
         "3": "be",
         "4": "able",
         "5": "to",
         "6": "see",
         "7": "the",
-        "8": "list",
+        "8": "List",
         "9": "of",
         "10": "available",
         "11": "Mentor",
         "12": "and",
         "13": "send",
         "14": "a",
-        "15": "request",
+        "15": "Request",
         "16": "for",
-        "17": "connection",
+        "17": "Connection",
         "18": "."
       },
       "TD": {
@@ -2057,9 +2057,9 @@
         "5": "to",
         "6": "export",
         "7": "the",
-        "8": "report",
+        "8": "Report",
         "9": "of",
-        "10": "list",
+        "10": "List",
         "11": "of",
         "12": "all",
         "13": "Mentor",
@@ -2307,7 +2307,7 @@
     },
     {
       "FileName": "2019-USC-Project13",
-      "Sentence": "Mentee should be able to update Mentee's personal Information , ContactDetail .",
+      "Sentence": "Mentee should be able to update Mentee's personal InformationDetail .",
       "Result": {
         "A": 4,
         "B": 1,
@@ -2315,7 +2315,7 @@
         "D": 10
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "should",
         "3": "be",
         "4": "able",
@@ -2324,10 +2324,8 @@
         "7": "Mentee",
         "8": "'s",
         "9": "personal",
-        "10": "information",
-        "11": ",",
-        "12": "ContactDetail",
-        "13": "."
+        "10": "InformationDetail",
+        "11": "."
       },
       "TD": {
         "ROOT": [
@@ -2398,18 +2396,8 @@
         ],
         "punct": [
           [
-            10,
-            11
-          ],
-          [
             4,
-            13
-          ]
-        ],
-        "appos": [
-          [
-            10,
-            12
+            11
           ]
         ]
       },
@@ -2418,10 +2406,6 @@
           [
             1,
             1
-          ],
-          [
-            10,
-            10
           ]
         ],
         "NP": [
@@ -2436,14 +2420,6 @@
           [
             7,
             10
-          ],
-          [
-            7,
-            12
-          ],
-          [
-            12,
-            12
           ]
         ],
         "MD": [
@@ -2484,8 +2460,8 @@
             7
           ],
           [
-            12,
-            12
+            10,
+            10
           ]
         ],
         "POS": [
@@ -2494,56 +2470,264 @@
             8
           ]
         ],
-        ",": [
-          [
-            11,
-            11
-          ]
-        ],
         "VP": [
           [
             2,
-            12
+            10
           ],
           [
             3,
-            12
+            10
           ],
           [
             5,
-            12
+            10
           ],
           [
             6,
-            12
+            10
           ]
         ],
         "S": [
           [
             1,
-            13
+            11
           ],
           [
             5,
-            12
+            10
           ]
         ],
         "ADJP": [
           [
             4,
-            12
+            10
           ]
         ],
         ".": [
           [
-            13,
-            13
+            11,
+            11
           ]
         ],
         "ROOT": [
           [
             1,
-            13
+            11
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project13",
+      "Sentence": "Mentee should be able to update Mentee's personal ContactDetail .",
+      "Result": {
+        "A": 4,
+        "B": 1,
+        "C": 6,
+        "D": 10
+      },
+      "Index": {
+        "1": "Mentee",
+        "2": "should",
+        "3": "be",
+        "4": "able",
+        "5": "to",
+        "6": "update",
+        "7": "Mentee",
+        "8": "'s",
+        "9": "personal",
+        "10": "ContactDetail",
+        "11": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            4
+          ]
+        ],
+        "nsubj": [
+          [
+            4,
+            1
+          ]
+        ],
+        "nsubj:xsubj": [
+          [
+            6,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            4,
+            2
+          ]
+        ],
+        "cop": [
+          [
+            4,
+            3
+          ]
+        ],
+        "mark": [
+          [
+            6,
+            5
+          ]
+        ],
+        "xcomp": [
+          [
+            4,
+            6
+          ]
+        ],
+        "nmod:poss": [
+          [
+            10,
+            7
+          ]
+        ],
+        "case": [
+          [
+            7,
+            8
+          ]
+        ],
+        "amod": [
+          [
+            10,
+            9
+          ]
+        ],
+        "obj": [
+          [
+            6,
+            10
+          ]
+        ],
+        "punct": [
+          [
+            4,
+            11
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            10
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "JJ": [
+          [
+            4,
+            4
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "TO": [
+          [
+            5,
+            5
+          ]
+        ],
+        "NNP": [
+          [
+            7,
+            7
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "POS": [
+          [
+            8,
+            8
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            6,
+            10
+          ]
+        ],
+        "S": [
+          [
+            1,
+            11
+          ],
+          [
+            5,
+            10
+          ]
+        ],
+        "ADJP": [
+          [
+            4,
+            10
+          ]
+        ],
+        ".": [
+          [
+            11,
+            11
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            11
           ]
         ]
       },
@@ -2565,7 +2749,7 @@
         "4": "able",
         "5": "to",
         "6": "send",
-        "7": "reminder",
+        "7": "Reminder",
         "8": "to",
         "9": "the",
         "10": "Mentor",
@@ -3120,6 +3304,356 @@
     },
     {
       "FileName": "2019-USC-Project13",
+      "Sentence": "Admin should be able to delete User .",
+      "Result": {
+        "A": 4,
+        "B": 1,
+        "C": 6,
+        "D": 7
+      },
+      "Index": {
+        "1": "Admin",
+        "2": "should",
+        "3": "be",
+        "4": "able",
+        "5": "to",
+        "6": "delete",
+        "7": "User",
+        "8": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            4
+          ]
+        ],
+        "nsubj": [
+          [
+            4,
+            1
+          ]
+        ],
+        "nsubj:xsubj": [
+          [
+            6,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            4,
+            2
+          ]
+        ],
+        "cop": [
+          [
+            4,
+            3
+          ]
+        ],
+        "mark": [
+          [
+            6,
+            5
+          ]
+        ],
+        "xcomp": [
+          [
+            4,
+            6
+          ]
+        ],
+        "obj": [
+          [
+            6,
+            7
+          ]
+        ],
+        "punct": [
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NNP": [
+          [
+            1,
+            1
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "JJ": [
+          [
+            4,
+            4
+          ]
+        ],
+        "TO": [
+          [
+            5,
+            5
+          ]
+        ],
+        "NN": [
+          [
+            7,
+            7
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "S": [
+          [
+            1,
+            8
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "ADJP": [
+          [
+            4,
+            7
+          ]
+        ],
+        ".": [
+          [
+            8,
+            8
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project13",
+      "Sentence": "Admin should be able to deactivate User .",
+      "Result": {
+        "A": 4,
+        "B": 1,
+        "C": 6,
+        "D": 7
+      },
+      "Index": {
+        "1": "Admin",
+        "2": "should",
+        "3": "be",
+        "4": "able",
+        "5": "to",
+        "6": "deactivate",
+        "7": "User",
+        "8": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            4
+          ]
+        ],
+        "nsubj": [
+          [
+            4,
+            1
+          ]
+        ],
+        "nsubj:xsubj": [
+          [
+            6,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            4,
+            2
+          ]
+        ],
+        "cop": [
+          [
+            4,
+            3
+          ]
+        ],
+        "mark": [
+          [
+            6,
+            5
+          ]
+        ],
+        "xcomp": [
+          [
+            4,
+            6
+          ]
+        ],
+        "obj": [
+          [
+            6,
+            7
+          ]
+        ],
+        "punct": [
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NNP": [
+          [
+            1,
+            1
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "JJ": [
+          [
+            4,
+            4
+          ]
+        ],
+        "TO": [
+          [
+            5,
+            5
+          ]
+        ],
+        "NN": [
+          [
+            7,
+            7
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "S": [
+          [
+            1,
+            8
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "ADJP": [
+          [
+            4,
+            7
+          ]
+        ],
+        ".": [
+          [
+            8,
+            8
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project13",
       "Sentence": "Mentee must be able to upload Mentee's Detail and be able to search and connect with Mentor suitable for Mentee's Profile .",
       "Result": {
         "A": 4,
@@ -3128,7 +3662,7 @@
         "D": 9
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "must",
         "3": "be",
         "4": "able",
@@ -3549,7 +4083,7 @@
         "16": "Report",
         "17": "on",
         "18": "the",
-        "19": "progress",
+        "19": "Progress",
         "20": "of",
         "21": "MentorshipProgram",
         "22": "."
@@ -3922,7 +4456,7 @@
         "16": "Report",
         "17": "on",
         "18": "the",
-        "19": "progress",
+        "19": "Progress",
         "20": "of",
         "21": "MentorshipProgram",
         "22": "."
@@ -4295,7 +4829,7 @@
         "16": "Report",
         "17": "on",
         "18": "the",
-        "19": "progress",
+        "19": "Progress",
         "20": "of",
         "21": "MentorshipProgram",
         "22": "."
@@ -4650,7 +5184,7 @@
         "D": 8
       },
       "Index": {
-        "1": "developer",
+        "1": "Developer",
         "2": "must",
         "3": "be",
         "4": "able",
@@ -4661,7 +5195,7 @@
         "9": "into",
         "10": "Client",
         "11": "'s",
-        "12": "server",
+        "12": "Server",
         "13": "while",
         "14": ",",
         "15": "learn",
@@ -5165,15 +5699,15 @@
         "D": 7
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "should",
         "3": "be",
         "4": "able",
         "5": "to",
         "6": "get",
-        "7": "statistics",
+        "7": "Statistics",
         "8": "on",
-        "9": "number",
+        "9": "Number",
         "10": "of",
         "11": "Mentor",
         "12": ",",
@@ -5181,11 +5715,11 @@
         "14": "and",
         "15": "on",
         "16": "pre-program",
-        "17": "surveyanswer",
+        "17": "SurveyAnswer",
         "18": "and",
         "19": "on",
         "20": "post-program",
-        "21": "surveyanswer",
+        "21": "SurveyAnswer",
         "22": "."
       },
       "TD": {
@@ -5541,7 +6075,7 @@
         "B": 8
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "can",
         "3": "select",
         "4": "the",
@@ -5741,12 +6275,12 @@
         "B": 4
       },
       "Index": {
-        "1": "mentor",
+        "1": "Mentor",
         "2": "can",
         "3": "select",
         "4": "Mentor",
         "5": "'s",
-        "6": "mentee",
+        "6": "Mentee",
         "7": "base",
         "8": "on",
         "9": "Mentor",
@@ -5954,12 +6488,12 @@
         "B": 9
       },
       "Index": {
-        "1": "mentor",
+        "1": "Mentor",
         "2": "can",
         "3": "select",
         "4": "Mentor",
         "5": "'s",
-        "6": "mentee",
+        "6": "Mentee",
         "7": "base",
         "8": "on",
         "9": "Mentor",
@@ -6167,17 +6701,17 @@
         "B": 6
       },
       "Index": {
-        "1": "mentor",
+        "1": "Mentor",
         "2": "can",
         "3": "provide",
-        "4": "activityreport",
+        "4": "ActivityReport",
         "5": "about",
         "6": "Mentor",
         "7": "'s",
-        "8": "mentee",
+        "8": "Mentee",
         "9": "on",
         "10": "monthly",
-        "11": "basis",
+        "11": "Basis",
         "12": "to",
         "13": "Admin",
         "14": "."
@@ -6416,12 +6950,12 @@
         "B": 4
       },
       "Index": {
-        "1": "mentor",
+        "1": "Mentor",
         "2": "can",
         "3": "reset",
         "4": "Mentor",
         "5": "'s",
-        "6": "password",
+        "6": "Password",
         "7": "."
       },
       "TD": {
@@ -6560,12 +7094,12 @@
         "B": 4
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "can",
         "3": "reset",
         "4": "Mentee",
         "5": "'s",
-        "6": "password",
+        "6": "Password",
         "7": "."
       },
       "TD": {
@@ -6700,7 +7234,7 @@
         "B": 7
       },
       "Index": {
-        "1": "mentor",
+        "1": "Mentor",
         "2": "should",
         "3": "be",
         "4": "able",
@@ -6903,7 +7437,7 @@
         "B": 7
       },
       "Index": {
-        "1": "mentor",
+        "1": "Mentor",
         "2": "should",
         "3": "be",
         "4": "able",
@@ -6911,7 +7445,7 @@
         "6": "mark",
         "7": "Mentor",
         "8": "'s",
-        "9": "availability",
+        "9": "Availability",
         "10": "."
       },
       "TD": {
@@ -7102,13 +7636,13 @@
     },
     {
       "FileName": "2019-USC-Project13",
-      "Sentence": "Mentee should be able to update Mentee's personal Information , ContactDetail .",
+      "Sentence": "Mentee should be able to update Mentee's personal InformationDetail .",
       "Result": {
         "A": 10,
         "B": 7
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "should",
         "3": "be",
         "4": "able",
@@ -7117,10 +7651,8 @@
         "7": "Mentee",
         "8": "'s",
         "9": "personal",
-        "10": "information",
-        "11": ",",
-        "12": "ContactDetail",
-        "13": "."
+        "10": "InformationDetail",
+        "11": "."
       },
       "TD": {
         "ROOT": [
@@ -7191,18 +7723,8 @@
         ],
         "punct": [
           [
-            10,
-            11
-          ],
-          [
             4,
-            13
-          ]
-        ],
-        "appos": [
-          [
-            10,
-            12
+            11
           ]
         ]
       },
@@ -7211,10 +7733,6 @@
           [
             1,
             1
-          ],
-          [
-            10,
-            10
           ]
         ],
         "NP": [
@@ -7229,14 +7747,6 @@
           [
             7,
             10
-          ],
-          [
-            7,
-            12
-          ],
-          [
-            12,
-            12
           ]
         ],
         "MD": [
@@ -7277,8 +7787,8 @@
             7
           ],
           [
-            12,
-            12
+            10,
+            10
           ]
         ],
         "POS": [
@@ -7287,56 +7797,262 @@
             8
           ]
         ],
-        ",": [
-          [
-            11,
-            11
-          ]
-        ],
         "VP": [
           [
             2,
-            12
+            10
           ],
           [
             3,
-            12
+            10
           ],
           [
             5,
-            12
+            10
           ],
           [
             6,
-            12
+            10
           ]
         ],
         "S": [
           [
             1,
-            13
+            11
           ],
           [
             5,
-            12
+            10
           ]
         ],
         "ADJP": [
           [
             4,
-            12
+            10
           ]
         ],
         ".": [
           [
-            13,
-            13
+            11,
+            11
           ]
         ],
         "ROOT": [
           [
             1,
-            13
+            11
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project13",
+      "Sentence": "Mentee should be able to update Mentee's personal ContactDetail .",
+      "Result": {
+        "A": 10,
+        "B": 7
+      },
+      "Index": {
+        "1": "Mentee",
+        "2": "should",
+        "3": "be",
+        "4": "able",
+        "5": "to",
+        "6": "update",
+        "7": "Mentee",
+        "8": "'s",
+        "9": "personal",
+        "10": "ContactDetail",
+        "11": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            4
+          ]
+        ],
+        "nsubj": [
+          [
+            4,
+            1
+          ]
+        ],
+        "nsubj:xsubj": [
+          [
+            6,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            4,
+            2
+          ]
+        ],
+        "cop": [
+          [
+            4,
+            3
+          ]
+        ],
+        "mark": [
+          [
+            6,
+            5
+          ]
+        ],
+        "xcomp": [
+          [
+            4,
+            6
+          ]
+        ],
+        "nmod:poss": [
+          [
+            10,
+            7
+          ]
+        ],
+        "case": [
+          [
+            7,
+            8
+          ]
+        ],
+        "amod": [
+          [
+            10,
+            9
+          ]
+        ],
+        "obj": [
+          [
+            6,
+            10
+          ]
+        ],
+        "punct": [
+          [
+            4,
+            11
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            10
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "JJ": [
+          [
+            4,
+            4
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "TO": [
+          [
+            5,
+            5
+          ]
+        ],
+        "NNP": [
+          [
+            7,
+            7
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "POS": [
+          [
+            8,
+            8
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            6,
+            10
+          ]
+        ],
+        "S": [
+          [
+            1,
+            11
+          ],
+          [
+            5,
+            10
+          ]
+        ],
+        "ADJP": [
+          [
+            4,
+            10
+          ]
+        ],
+        ".": [
+          [
+            11,
+            11
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            11
           ]
         ]
       },
@@ -7350,7 +8066,7 @@
         "B": 7
       },
       "Index": {
-        "1": "mentor",
+        "1": "Mentor",
         "2": "should",
         "3": "be",
         "4": "able",
@@ -7359,13 +8075,13 @@
         "7": "Mentor",
         "8": "'s",
         "9": "personal",
-        "10": "information",
+        "10": "Information",
         "11": "which",
         "12": "include",
-        "13": "phone",
+        "13": "Phone",
         "14": "no",
         "15": ",",
-        "16": "availability",
+        "16": "Availability",
         "17": ",",
         "18": "Photo",
         "19": ",",
@@ -7747,7 +8463,7 @@
         "B": 7
       },
       "Index": {
-        "1": "mentor",
+        "1": "Mentor",
         "2": "must",
         "3": "be",
         "4": "able",
@@ -8063,7 +8779,7 @@
         "B": 7
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "must",
         "3": "be",
         "4": "able",
@@ -8464,7 +9180,7 @@
         "B": 21
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "must",
         "3": "be",
         "4": "able",
@@ -8865,7 +9581,7 @@
         "B": 10
       },
       "Index": {
-        "1": "developer",
+        "1": "Developer",
         "2": "must",
         "3": "be",
         "4": "able",
@@ -8876,7 +9592,7 @@
         "9": "into",
         "10": "Client",
         "11": "'s",
-        "12": "server",
+        "12": "Server",
         "13": "while",
         "14": ",",
         "15": "learn",
@@ -9171,7 +9887,7 @@
         "B": 4
       },
       "Index": {
-        "1": "mentor",
+        "1": "Mentor",
         "2": "can",
         "3": "report",
         "4": "Mentor",
@@ -9180,7 +9896,7 @@
         "7": "with",
         "8": "Mentor",
         "9": "'s",
-        "10": "mentee",
+        "10": "Mentee",
         "11": "."
       },
       "TD": {
@@ -9373,7 +10089,7 @@
         "B": 8
       },
       "Index": {
-        "1": "mentor",
+        "1": "Mentor",
         "2": "can",
         "3": "report",
         "4": "Mentor",
@@ -9382,7 +10098,7 @@
         "7": "with",
         "8": "Mentor",
         "9": "'s",
-        "10": "mentee",
+        "10": "Mentee",
         "11": "."
       },
       "TD": {
@@ -9568,155 +10284,93 @@
       "Keywords": []
     }
   ],
-  "OPassVS": [],
+  "SPassPartVByS": [],
   "VOToInf": [],
   "SVThatClause": [],
   "SVByVO": [],
   "AO": [],
   "SVCVO": [],
-  "SVVO": [],
-  "SVVOcomma1": [
+  "SVVOMultiComma": [],
+  "SVVO1Comma": [],
+  "SVOCO": [],
+  "SVOOComma": [],
+  "SVIOO": [],
+  "SVOTo": [
     {
       "FileName": "2019-USC-Project13",
-      "Sentence": "User should be able to load the Website quickly and able to easily access the Site .",
+      "Sentence": "Admin can match Mentor to Mentee .",
       "Result": {
-        "A": 4,
+        "A": 3,
         "B": 1,
-        "C": 6,
-        "D": 8
+        "C": 4,
+        "D": 6
       },
       "Index": {
-        "1": "user",
-        "2": "should",
-        "3": "be",
-        "4": "able",
+        "1": "Admin",
+        "2": "can",
+        "3": "match",
+        "4": "Mentor",
         "5": "to",
-        "6": "load",
-        "7": "the",
-        "8": "website",
-        "9": "quickly",
-        "10": "and",
-        "11": "able",
-        "12": "to",
-        "13": "easily",
-        "14": "access",
-        "15": "the",
-        "16": "site",
-        "17": "."
+        "6": "Mentee",
+        "7": "."
       },
       "TD": {
         "ROOT": [
           [
             0,
-            4
+            3
           ]
         ],
         "nsubj": [
           [
-            4,
+            3,
             1
           ]
         ],
         "aux": [
           [
-            4,
+            3,
             2
-          ]
-        ],
-        "cop": [
-          [
-            4,
-            3
-          ]
-        ],
-        "mark": [
-          [
-            6,
-            5
-          ],
-          [
-            14,
-            12
-          ]
-        ],
-        "dep": [
-          [
-            4,
-            6
-          ],
-          [
-            4,
-            11
-          ]
-        ],
-        "det": [
-          [
-            8,
-            7
-          ],
-          [
-            16,
-            15
           ]
         ],
         "obj": [
           [
-            6,
-            8
-          ],
-          [
-            14,
-            16
+            3,
+            4
           ]
         ],
-        "advmod": [
+        "case": [
           [
             6,
-            9
-          ],
-          [
-            14,
-            13
+            5
           ]
         ],
-        "cc": [
+        "obl:to": [
           [
-            11,
-            10
-          ]
-        ],
-        "conj:and": [
-          [
-            6,
-            11
-          ]
-        ],
-        "xcomp": [
-          [
-            11,
-            14
+            3,
+            6
           ]
         ],
         "punct": [
           [
-            4,
-            17
+            3,
+            7
           ]
         ]
       },
       "Pos-tag": {
-        "NN": [
+        "NNP": [
           [
             1,
             1
           ],
           [
-            8,
-            8
+            4,
+            4
           ],
           [
-            16,
-            16
+            6,
+            6
           ]
         ],
         "NP": [
@@ -9725,12 +10379,12 @@
             1
           ],
           [
-            7,
-            8
+            4,
+            4
           ],
           [
-            15,
-            16
+            6,
+            6
           ]
         ],
         "MD": [
@@ -9743,149 +10397,59 @@
           [
             3,
             3
-          ],
-          [
-            6,
-            6
-          ],
-          [
-            14,
-            14
           ]
         ],
-        "JJ": [
-          [
-            4,
-            4
-          ],
-          [
-            11,
-            11
-          ]
-        ],
-        "TO": [
+        "IN": [
           [
             5,
             5
-          ],
-          [
-            12,
-            12
           ]
         ],
-        "DT": [
+        "PP": [
           [
-            7,
-            7
-          ],
-          [
-            15,
-            15
-          ]
-        ],
-        "RB": [
-          [
-            9,
-            9
-          ],
-          [
-            13,
-            13
-          ]
-        ],
-        "ADVP": [
-          [
-            9,
-            9
-          ],
-          [
-            13,
-            13
+            5,
+            6
           ]
         ],
         "VP": [
           [
             2,
-            16
+            6
           ],
           [
             3,
-            16
-          ],
+            6
+          ]
+        ],
+        ".": [
           [
-            5,
-            9
-          ],
-          [
-            6,
-            9
-          ],
-          [
-            12,
-            16
-          ],
-          [
-            14,
-            16
+            7,
+            7
           ]
         ],
         "S": [
           [
             1,
-            17
-          ],
-          [
-            5,
-            9
-          ],
-          [
-            12,
-            16
-          ]
-        ],
-        "ADJP": [
-          [
-            4,
-            9
-          ],
-          [
-            4,
-            16
-          ],
-          [
-            11,
-            16
-          ]
-        ],
-        "CC": [
-          [
-            10,
-            10
-          ]
-        ],
-        ".": [
-          [
-            17,
-            17
+            7
           ]
         ],
         "ROOT": [
           [
             1,
-            17
+            7
           ]
         ]
       },
       "Keywords": []
     }
   ],
-  "SVOCO": [],
-  "SVOO": [],
-  "SVOOcomma1": [],
+  "OPassPartVByS": [],
+  "SVOPassPart": [],
+  "SPredicativeV": [],
   "SVOblWith": [
     {
       "FileName": "2019-USC-Project13",
-      "Sentence": "Admin can export a Report with the Mentor , MenteeInteraction .",
+      "Sentence": "Admin can export a Report with the MenteeInteraction .",
       "Result": {
         "A": 3,
         "B": 1,
@@ -9896,13 +10460,11 @@
         "2": "can",
         "3": "export",
         "4": "a",
-        "5": "report",
+        "5": "Report",
         "6": "with",
         "7": "the",
-        "8": "Mentor",
-        "9": ",",
-        "10": "MenteeInteraction",
-        "11": "."
+        "8": "MenteeInteraction",
+        "9": "."
       },
       "TD": {
         "ROOT": [
@@ -9953,18 +10515,8 @@
         ],
         "punct": [
           [
-            8,
-            9
-          ],
-          [
             3,
-            11
-          ]
-        ],
-        "appos": [
-          [
-            8,
-            10
+            9
           ]
         ]
       },
@@ -9977,10 +10529,6 @@
           [
             8,
             8
-          ],
-          [
-            10,
-            10
           ]
         ],
         "NP": [
@@ -9994,7 +10542,7 @@
           ],
           [
             7,
-            10
+            8
           ]
         ],
         "MD": [
@@ -10031,44 +10579,207 @@
             6
           ]
         ],
-        ",": [
-          [
-            9,
-            9
-          ]
-        ],
         "PP": [
           [
             6,
-            10
+            8
           ]
         ],
         "VP": [
           [
             2,
-            10
+            8
           ],
           [
             3,
-            10
+            8
           ]
         ],
         ".": [
           [
-            11,
-            11
+            9,
+            9
           ]
         ],
         "S": [
           [
             1,
-            11
+            9
           ]
         ],
         "ROOT": [
           [
             1,
-            11
+            9
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project13",
+      "Sentence": "Admin can export a Report with the MentorInteraction .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 8
+      },
+      "Index": {
+        "1": "Admin",
+        "2": "can",
+        "3": "export",
+        "4": "a",
+        "5": "Report",
+        "6": "with",
+        "7": "the",
+        "8": "MentorInteraction",
+        "9": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "det": [
+          [
+            5,
+            4
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            5
+          ]
+        ],
+        "case": [
+          [
+            8,
+            6
+          ]
+        ],
+        "obl:with": [
+          [
+            3,
+            8
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NNP": [
+          [
+            1,
+            1
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "DT": [
+          [
+            4,
+            4
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "NN": [
+          [
+            5,
+            5
+          ]
+        ],
+        "IN": [
+          [
+            6,
+            6
+          ]
+        ],
+        "PP": [
+          [
+            6,
+            8
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        ".": [
+          [
+            9,
+            9
+          ]
+        ],
+        "S": [
+          [
+            1,
+            9
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            9
           ]
         ]
       },
@@ -10091,7 +10802,7 @@
         "4": "able",
         "5": "to",
         "6": "display",
-        "7": "list",
+        "7": "List",
         "8": "of",
         "9": "Mentor",
         "10": "to",
@@ -10331,9 +11042,9 @@
         "4": "able",
         "5": "to",
         "6": "display",
-        "7": "list",
+        "7": "List",
         "8": "of",
-        "9": "mentee",
+        "9": "Mentee",
         "10": "to",
         "11": "Mentor",
         "12": "."
@@ -10822,13 +11533,13 @@
         "C": 6
       },
       "Index": {
-        "1": "system",
+        "1": "System",
         "2": "must",
         "3": "be",
         "4": "able",
         "5": "to",
         "6": "associate",
-        "7": "relation",
+        "7": "Relation",
         "8": "between",
         "9": "Mentor",
         "10": "and",
@@ -11062,13 +11773,13 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "should",
         "3": "be",
         "4": "able",
         "5": "to",
         "6": "update",
-        "7": "password",
+        "7": "Password",
         "8": "."
       },
       "TD": {
@@ -11234,23 +11945,23 @@
         "C": 6
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "should",
         "3": "be",
         "4": "able",
         "5": "to",
         "6": "see",
         "7": "the",
-        "8": "list",
+        "8": "List",
         "9": "of",
         "10": "available",
         "11": "Mentor",
         "12": "and",
         "13": "send",
         "14": "a",
-        "15": "request",
+        "15": "Request",
         "16": "for",
-        "17": "connection",
+        "17": "Connection",
         "18": "."
       },
       "TD": {
@@ -11560,23 +12271,23 @@
         "C": 13
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "should",
         "3": "be",
         "4": "able",
         "5": "to",
         "6": "see",
         "7": "the",
-        "8": "list",
+        "8": "List",
         "9": "of",
         "10": "available",
         "11": "Mentor",
         "12": "and",
         "13": "send",
         "14": "a",
-        "15": "request",
+        "15": "Request",
         "16": "for",
-        "17": "connection",
+        "17": "Connection",
         "18": "."
       },
       "TD": {
@@ -11893,9 +12604,9 @@
         "5": "to",
         "6": "export",
         "7": "the",
-        "8": "report",
+        "8": "Report",
         "9": "of",
-        "10": "list",
+        "10": "List",
         "11": "of",
         "12": "all",
         "13": "Mentor",
@@ -12143,14 +12854,14 @@
     },
     {
       "FileName": "2019-USC-Project13",
-      "Sentence": "Mentee should be able to update Mentee's personal Information , ContactDetail .",
+      "Sentence": "Mentee should be able to update Mentee's personal InformationDetail .",
       "Result": {
         "A": 4,
         "B": 1,
         "C": 6
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "should",
         "3": "be",
         "4": "able",
@@ -12159,10 +12870,8 @@
         "7": "Mentee",
         "8": "'s",
         "9": "personal",
-        "10": "information",
-        "11": ",",
-        "12": "ContactDetail",
-        "13": "."
+        "10": "InformationDetail",
+        "11": "."
       },
       "TD": {
         "ROOT": [
@@ -12233,18 +12942,8 @@
         ],
         "punct": [
           [
-            10,
-            11
-          ],
-          [
             4,
-            13
-          ]
-        ],
-        "appos": [
-          [
-            10,
-            12
+            11
           ]
         ]
       },
@@ -12253,10 +12952,6 @@
           [
             1,
             1
-          ],
-          [
-            10,
-            10
           ]
         ],
         "NP": [
@@ -12271,14 +12966,6 @@
           [
             7,
             10
-          ],
-          [
-            7,
-            12
-          ],
-          [
-            12,
-            12
           ]
         ],
         "MD": [
@@ -12319,8 +13006,8 @@
             7
           ],
           [
-            12,
-            12
+            10,
+            10
           ]
         ],
         "POS": [
@@ -12329,56 +13016,263 @@
             8
           ]
         ],
-        ",": [
-          [
-            11,
-            11
-          ]
-        ],
         "VP": [
           [
             2,
-            12
+            10
           ],
           [
             3,
-            12
+            10
           ],
           [
             5,
-            12
+            10
           ],
           [
             6,
-            12
+            10
           ]
         ],
         "S": [
           [
             1,
-            13
+            11
           ],
           [
             5,
-            12
+            10
           ]
         ],
         "ADJP": [
           [
             4,
-            12
+            10
           ]
         ],
         ".": [
           [
-            13,
-            13
+            11,
+            11
           ]
         ],
         "ROOT": [
           [
             1,
-            13
+            11
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project13",
+      "Sentence": "Mentee should be able to update Mentee's personal ContactDetail .",
+      "Result": {
+        "A": 4,
+        "B": 1,
+        "C": 6
+      },
+      "Index": {
+        "1": "Mentee",
+        "2": "should",
+        "3": "be",
+        "4": "able",
+        "5": "to",
+        "6": "update",
+        "7": "Mentee",
+        "8": "'s",
+        "9": "personal",
+        "10": "ContactDetail",
+        "11": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            4
+          ]
+        ],
+        "nsubj": [
+          [
+            4,
+            1
+          ]
+        ],
+        "nsubj:xsubj": [
+          [
+            6,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            4,
+            2
+          ]
+        ],
+        "cop": [
+          [
+            4,
+            3
+          ]
+        ],
+        "mark": [
+          [
+            6,
+            5
+          ]
+        ],
+        "xcomp": [
+          [
+            4,
+            6
+          ]
+        ],
+        "nmod:poss": [
+          [
+            10,
+            7
+          ]
+        ],
+        "case": [
+          [
+            7,
+            8
+          ]
+        ],
+        "amod": [
+          [
+            10,
+            9
+          ]
+        ],
+        "obj": [
+          [
+            6,
+            10
+          ]
+        ],
+        "punct": [
+          [
+            4,
+            11
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            10
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "JJ": [
+          [
+            4,
+            4
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "TO": [
+          [
+            5,
+            5
+          ]
+        ],
+        "NNP": [
+          [
+            7,
+            7
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "POS": [
+          [
+            8,
+            8
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            6,
+            10
+          ]
+        ],
+        "S": [
+          [
+            1,
+            11
+          ],
+          [
+            5,
+            10
+          ]
+        ],
+        "ADJP": [
+          [
+            4,
+            10
+          ]
+        ],
+        ".": [
+          [
+            11,
+            11
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            11
           ]
         ]
       },
@@ -12399,7 +13293,7 @@
         "4": "able",
         "5": "to",
         "6": "send",
-        "7": "reminder",
+        "7": "Reminder",
         "8": "to",
         "9": "the",
         "10": "Mentor",
@@ -12953,7 +13847,7 @@
     },
     {
       "FileName": "2019-USC-Project13",
-      "Sentence": "Admin should be able to delete , deactivate User .",
+      "Sentence": "Admin should be able to delete User .",
       "Result": {
         "A": 4,
         "B": 1,
@@ -12966,10 +13860,8 @@
         "4": "able",
         "5": "to",
         "6": "delete",
-        "7": ",",
-        "8": "deactivate",
-        "9": "user",
-        "10": "."
+        "7": "User",
+        "8": "."
       },
       "TD": {
         "ROOT": [
@@ -13014,26 +13906,16 @@
             6
           ]
         ],
-        "punct": [
+        "obj": [
           [
             6,
             7
-          ],
+          ]
+        ],
+        "punct": [
           [
             4,
-            10
-          ]
-        ],
-        "dep": [
-          [
-            6,
             8
-          ]
-        ],
-        "obj": [
-          [
-            8,
-            9
           ]
         ]
       },
@@ -13050,8 +13932,8 @@
             1
           ],
           [
-            9,
-            9
+            7,
+            7
           ]
         ],
         "MD": [
@@ -13068,10 +13950,6 @@
           [
             6,
             6
-          ],
-          [
-            8,
-            8
           ]
         ],
         "JJ": [
@@ -13086,62 +13964,230 @@
             5
           ]
         ],
-        ",": [
+        "NN": [
           [
             7,
             7
           ]
         ],
-        "NN": [
-          [
-            9,
-            9
-          ]
-        ],
         "VP": [
           [
             2,
-            9
+            7
           ],
           [
             3,
-            9
+            7
           ],
           [
             5,
-            9
+            7
           ],
           [
             6,
-            9
+            7
           ]
         ],
         "S": [
           [
             1,
-            10
+            8
           ],
           [
             5,
-            9
+            7
           ]
         ],
         "ADJP": [
           [
             4,
-            9
+            7
           ]
         ],
         ".": [
           [
-            10,
-            10
+            8,
+            8
           ]
         ],
         "ROOT": [
           [
             1,
-            10
+            8
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project13",
+      "Sentence": "Admin should be able to deactivate User .",
+      "Result": {
+        "A": 4,
+        "B": 1,
+        "C": 6
+      },
+      "Index": {
+        "1": "Admin",
+        "2": "should",
+        "3": "be",
+        "4": "able",
+        "5": "to",
+        "6": "deactivate",
+        "7": "User",
+        "8": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            4
+          ]
+        ],
+        "nsubj": [
+          [
+            4,
+            1
+          ]
+        ],
+        "nsubj:xsubj": [
+          [
+            6,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            4,
+            2
+          ]
+        ],
+        "cop": [
+          [
+            4,
+            3
+          ]
+        ],
+        "mark": [
+          [
+            6,
+            5
+          ]
+        ],
+        "xcomp": [
+          [
+            4,
+            6
+          ]
+        ],
+        "obj": [
+          [
+            6,
+            7
+          ]
+        ],
+        "punct": [
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NNP": [
+          [
+            1,
+            1
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "JJ": [
+          [
+            4,
+            4
+          ]
+        ],
+        "TO": [
+          [
+            5,
+            5
+          ]
+        ],
+        "NN": [
+          [
+            7,
+            7
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "S": [
+          [
+            1,
+            8
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "ADJP": [
+          [
+            4,
+            7
+          ]
+        ],
+        ".": [
+          [
+            8,
+            8
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            8
           ]
         ]
       },
@@ -13156,7 +14202,7 @@
         "C": 6
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "must",
         "3": "be",
         "4": "able",
@@ -13576,7 +14622,7 @@
         "16": "Report",
         "17": "on",
         "18": "the",
-        "19": "progress",
+        "19": "Progress",
         "20": "of",
         "21": "MentorshipProgram",
         "22": "."
@@ -13948,7 +14994,7 @@
         "16": "Report",
         "17": "on",
         "18": "the",
-        "19": "progress",
+        "19": "Progress",
         "20": "of",
         "21": "MentorshipProgram",
         "22": "."
@@ -14302,7 +15348,7 @@
         "C": 6
       },
       "Index": {
-        "1": "developer",
+        "1": "Developer",
         "2": "must",
         "3": "be",
         "4": "able",
@@ -14313,7 +15359,7 @@
         "9": "into",
         "10": "Client",
         "11": "'s",
-        "12": "server",
+        "12": "Server",
         "13": "while",
         "14": ",",
         "15": "learn",
@@ -14602,17 +15648,17 @@
     },
     {
       "FileName": "2019-USC-Project13",
-      "Sentence": "- User , End must be able to navigate through the Application seamlessly .",
+      "Sentence": "- user , End must be able to navigate through the Application seamlessly .",
       "Result": {
         "A": 7,
-        "B": 2,
+        "B": 4,
         "C": 9
       },
       "Index": {
         "1": "-",
         "2": "user",
         "3": ",",
-        "4": "end",
+        "4": "End",
         "5": "must",
         "6": "be",
         "7": "able",
@@ -14620,7 +15666,7 @@
         "9": "navigate",
         "10": "through",
         "11": "the",
-        "12": "application",
+        "12": "Application",
         "13": "seamlessly",
         "14": "."
       },
@@ -14637,7 +15683,7 @@
             1
           ],
           [
-            2,
+            7,
             3
           ],
           [
@@ -14645,21 +15691,21 @@
             14
           ]
         ],
-        "nsubj": [
+        "obl": [
           [
             7,
             2
           ]
         ],
+        "nsubj": [
+          [
+            7,
+            4
+          ]
+        ],
         "nsubj:xsubj": [
           [
             9,
-            2
-          ]
-        ],
-        "appos": [
-          [
-            2,
             4
           ]
         ],
@@ -15079,15 +16125,15 @@
         "C": 6
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "should",
         "3": "be",
         "4": "able",
         "5": "to",
         "6": "get",
-        "7": "statistics",
+        "7": "Statistics",
         "8": "on",
-        "9": "number",
+        "9": "Number",
         "10": "of",
         "11": "Mentor",
         "12": ",",
@@ -15095,11 +16141,11 @@
         "14": "and",
         "15": "on",
         "16": "pre-program",
-        "17": "surveyanswer",
+        "17": "SurveyAnswer",
         "18": "and",
         "19": "on",
         "20": "post-program",
-        "21": "surveyanswer",
+        "21": "SurveyAnswer",
         "22": "."
       },
       "TD": {
@@ -15467,7 +16513,7 @@
         "9": "Mentee",
         "10": "in",
         "11": "the",
-        "12": "database",
+        "12": "Database",
         "13": "."
       },
       "TD": {
@@ -15685,7 +16731,7 @@
         "C": 5
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "can",
         "3": "select",
         "4": "the",
@@ -15886,12 +16932,12 @@
         "C": 6
       },
       "Index": {
-        "1": "mentee",
+        "1": "Mentee",
         "2": "can",
         "3": "reset",
         "4": "Mentee",
         "5": "'s",
-        "6": "password",
+        "6": "Password",
         "7": "."
       },
       "TD": {
@@ -16020,6 +17066,244 @@
     },
     {
       "FileName": "2019-USC-Project13",
+      "Sentence": "Mentor should be able to accept MenteeRequest to establish a Connection .",
+      "Result": {
+        "A": 9,
+        "B": 7,
+        "C": 11
+      },
+      "Index": {
+        "1": "Mentor",
+        "2": "should",
+        "3": "be",
+        "4": "able",
+        "5": "to",
+        "6": "accept",
+        "7": "MenteeRequest",
+        "8": "to",
+        "9": "establish",
+        "10": "a",
+        "11": "Connection",
+        "12": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            4
+          ]
+        ],
+        "nsubj": [
+          [
+            4,
+            1
+          ]
+        ],
+        "nsubj:xsubj": [
+          [
+            6,
+            1
+          ],
+          [
+            9,
+            7
+          ]
+        ],
+        "aux": [
+          [
+            4,
+            2
+          ]
+        ],
+        "cop": [
+          [
+            4,
+            3
+          ]
+        ],
+        "mark": [
+          [
+            6,
+            5
+          ],
+          [
+            9,
+            8
+          ]
+        ],
+        "xcomp": [
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            9
+          ]
+        ],
+        "obj": [
+          [
+            6,
+            7
+          ],
+          [
+            9,
+            11
+          ]
+        ],
+        "det": [
+          [
+            11,
+            10
+          ]
+        ],
+        "punct": [
+          [
+            4,
+            12
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "VB": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "VP": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            9,
+            11
+          ]
+        ],
+        "S": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            8,
+            11
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "JJ": [
+          [
+            4,
+            4
+          ]
+        ],
+        "TO": [
+          [
+            5,
+            5
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "NNP": [
+          [
+            7,
+            7
+          ]
+        ],
+        "NP": [
+          [
+            7,
+            7
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "DT": [
+          [
+            10,
+            10
+          ]
+        ],
+        "NN": [
+          [
+            11,
+            11
+          ]
+        ],
+        "ADJP": [
+          [
+            4,
+            11
+          ]
+        ],
+        ".": [
+          [
+            12,
+            12
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            12
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project13",
       "Sentence": "Mentor should be able to update Mentor's personal Information which includes Phone no , Availability , Photo , etc. . .",
       "Result": {
         "A": 12,
@@ -16027,7 +17311,7 @@
         "C": 18
       },
       "Index": {
-        "1": "mentor",
+        "1": "Mentor",
         "2": "should",
         "3": "be",
         "4": "able",
@@ -16036,13 +17320,13 @@
         "7": "Mentor",
         "8": "'s",
         "9": "personal",
-        "10": "information",
+        "10": "Information",
         "11": "which",
         "12": "include",
-        "13": "phone",
+        "13": "Phone",
         "14": "no",
         "15": ",",
-        "16": "availability",
+        "16": "Availability",
         "17": ",",
         "18": "Photo",
         "19": ",",
@@ -16431,7 +17715,7 @@
         "4": "able",
         "5": "to",
         "6": "send",
-        "7": "reminder",
+        "7": "Reminder",
         "8": "to",
         "9": "the",
         "10": "Mentor",
@@ -16749,7 +18033,7 @@
     },
     {
       "FileName": "2019-USC-Project13",
-      "Sentence": "Admin can export a Report with the Mentor , MenteeInteraction .",
+      "Sentence": "Admin can export a Report with the MenteeInteraction .",
       "Result": {
         "A": 3,
         "B": 1,
@@ -16760,13 +18044,11 @@
         "2": "can",
         "3": "export",
         "4": "a",
-        "5": "report",
+        "5": "Report",
         "6": "with",
         "7": "the",
-        "8": "Mentor",
-        "9": ",",
-        "10": "MenteeInteraction",
-        "11": "."
+        "8": "MenteeInteraction",
+        "9": "."
       },
       "TD": {
         "ROOT": [
@@ -16817,18 +18099,8 @@
         ],
         "punct": [
           [
-            8,
-            9
-          ],
-          [
             3,
-            11
-          ]
-        ],
-        "appos": [
-          [
-            8,
-            10
+            9
           ]
         ]
       },
@@ -16841,10 +18113,6 @@
           [
             8,
             8
-          ],
-          [
-            10,
-            10
           ]
         ],
         "NP": [
@@ -16858,7 +18126,7 @@
           ],
           [
             7,
-            10
+            8
           ]
         ],
         "MD": [
@@ -16895,44 +18163,207 @@
             6
           ]
         ],
-        ",": [
-          [
-            9,
-            9
-          ]
-        ],
         "PP": [
           [
             6,
-            10
+            8
           ]
         ],
         "VP": [
           [
             2,
-            10
+            8
           ],
           [
             3,
-            10
+            8
           ]
         ],
         ".": [
           [
-            11,
-            11
+            9,
+            9
           ]
         ],
         "S": [
           [
             1,
-            11
+            9
           ]
         ],
         "ROOT": [
           [
             1,
-            11
+            9
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2019-USC-Project13",
+      "Sentence": "Admin can export a Report with the MentorInteraction .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 5
+      },
+      "Index": {
+        "1": "Admin",
+        "2": "can",
+        "3": "export",
+        "4": "a",
+        "5": "Report",
+        "6": "with",
+        "7": "the",
+        "8": "MentorInteraction",
+        "9": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "det": [
+          [
+            5,
+            4
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            5
+          ]
+        ],
+        "case": [
+          [
+            8,
+            6
+          ]
+        ],
+        "obl:with": [
+          [
+            3,
+            8
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NNP": [
+          [
+            1,
+            1
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "DT": [
+          [
+            4,
+            4
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "NN": [
+          [
+            5,
+            5
+          ]
+        ],
+        "IN": [
+          [
+            6,
+            6
+          ]
+        ],
+        "PP": [
+          [
+            6,
+            8
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        ".": [
+          [
+            9,
+            9
+          ]
+        ],
+        "S": [
+          [
+            1,
+            9
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            9
           ]
         ]
       },
@@ -17127,23 +18558,30 @@
         ]
       },
       "Keywords": []
-    },
+    }
+  ],
+  "SVp": [
     {
       "FileName": "2019-USC-Project13",
-      "Sentence": "Admin can match Mentor to Mentee .",
+      "Sentence": "Mentee can opt out from the Program and from further Communication .",
       "Result": {
         "A": 3,
         "B": 1,
         "C": 4
       },
       "Index": {
-        "1": "Admin",
+        "1": "Mentee",
         "2": "can",
-        "3": "match",
-        "4": "Mentor",
-        "5": "to",
-        "6": "Mentee",
-        "7": "."
+        "3": "opt",
+        "4": "out",
+        "5": "from",
+        "6": "the",
+        "7": "Program",
+        "8": "and",
+        "9": "from",
+        "10": "further",
+        "11": "Communication",
+        "12": "."
       },
       "TD": {
         "ROOT": [
@@ -17162,370 +18600,188 @@
           [
             3,
             2
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            4
-          ]
-        ],
-        "case": [
-          [
-            6,
-            5
-          ]
-        ],
-        "obl:to": [
-          [
-            3,
-            6
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            7
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NNP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            4
-          ],
-          [
-            6,
-            6
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            4
-          ],
-          [
-            6,
-            6
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ]
-        ],
-        "IN": [
-          [
-            5,
-            5
-          ]
-        ],
-        "PP": [
-          [
-            5,
-            6
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            6
-          ],
-          [
-            3,
-            6
-          ]
-        ],
-        ".": [
-          [
-            7,
-            7
-          ]
-        ],
-        "S": [
-          [
-            1,
-            7
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            7
-          ]
-        ]
-      },
-      "Keywords": []
-    }
-  ],
-  "SVp": [
-    {
-      "FileName": "2019-USC-Project13",
-      "Sentence": "Mentor , Mentee can opt out from the Program and from further Communication .",
-      "Result": {
-        "A": 5,
-        "B": 3,
-        "C": 6
-      },
-      "Index": {
-        "1": "mentor",
-        "2": ",",
-        "3": "Mentee",
-        "4": "can",
-        "5": "opt",
-        "6": "out",
-        "7": "from",
-        "8": "the",
-        "9": "Program",
-        "10": "and",
-        "11": "from",
-        "12": "further",
-        "13": "communication",
-        "14": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            5
-          ]
-        ],
-        "discourse": [
-          [
-            5,
-            1
-          ]
-        ],
-        "punct": [
-          [
-            5,
-            2
-          ],
-          [
-            5,
-            14
-          ]
-        ],
-        "nsubj": [
-          [
-            5,
-            3
-          ]
-        ],
-        "aux": [
-          [
-            5,
-            4
           ]
         ],
         "compound:prt": [
           [
-            5,
-            6
+            3,
+            4
           ]
         ],
         "case": [
           [
-            9,
-            7
+            7,
+            5
           ],
           [
-            13,
-            11
+            11,
+            9
           ]
         ],
         "det": [
           [
-            9,
-            8
+            7,
+            6
           ]
         ],
         "obl:from": [
           [
-            5,
-            9
+            3,
+            7
           ],
           [
-            5,
-            13
+            3,
+            11
           ]
         ],
         "cc": [
           [
-            13,
-            10
+            11,
+            8
           ]
         ],
         "amod": [
           [
-            13,
-            12
+            11,
+            10
           ]
         ],
         "conj:and": [
           [
-            9,
-            13
+            7,
+            11
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            12
           ]
         ]
       },
       "Pos-tag": {
-        "VB": [
+        "NN": [
           [
             1,
             1
           ],
           [
-            5,
-            5
+            11,
+            11
           ]
         ],
-        "VP": [
+        "NP": [
           [
             1,
             1
           ],
           [
-            4,
-            13
+            6,
+            7
           ],
           [
-            5,
-            13
+            10,
+            11
           ]
         ],
-        "S": [
-          [
-            1,
-            1
-          ],
-          [
-            1,
-            14
-          ]
-        ],
-        ",": [
+        "MD": [
           [
             2,
             2
           ]
         ],
-        "NNP": [
+        "VB": [
           [
             3,
             3
+          ]
+        ],
+        "RP": [
+          [
+            4,
+            4
+          ]
+        ],
+        "PRT": [
+          [
+            4,
+            4
+          ]
+        ],
+        "IN": [
+          [
+            5,
+            5
           ],
           [
             9,
             9
           ]
         ],
-        "NP": [
-          [
-            3,
-            3
-          ],
-          [
-            8,
-            9
-          ],
-          [
-            12,
-            13
-          ]
-        ],
-        "MD": [
-          [
-            4,
-            4
-          ]
-        ],
-        "RP": [
+        "DT": [
           [
             6,
             6
           ]
         ],
-        "PRT": [
-          [
-            6,
-            6
-          ]
-        ],
-        "IN": [
+        "NNP": [
           [
             7,
             7
+          ]
+        ],
+        "PP": [
+          [
+            5,
+            7
           ],
           [
-            11,
+            5,
+            11
+          ],
+          [
+            9,
             11
           ]
         ],
-        "DT": [
+        "CC": [
           [
             8,
             8
           ]
         ],
-        "PP": [
-          [
-            7,
-            9
-          ],
-          [
-            7,
-            13
-          ],
-          [
-            11,
-            13
-          ]
-        ],
-        "CC": [
+        "JJ": [
           [
             10,
             10
           ]
         ],
-        "JJ": [
+        "VP": [
+          [
+            2,
+            11
+          ],
+          [
+            3,
+            11
+          ]
+        ],
+        ".": [
           [
             12,
             12
           ]
         ],
-        "NN": [
+        "S": [
           [
-            13,
-            13
-          ]
-        ],
-        ".": [
-          [
-            14,
-            14
+            1,
+            12
           ]
         ],
         "ROOT": [
           [
             1,
-            14
+            12
           ]
         ]
       },

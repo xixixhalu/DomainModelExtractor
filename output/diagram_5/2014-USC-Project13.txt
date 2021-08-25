@@ -4,50 +4,73 @@ class Admin<actor> {
 }
 class User<actor> {
 }
+class Id {
+}
 class User {
 	have()
-	add()
-	select()
-	turn_on()
 	choose()
+	select()
+	add()
+	turn()
+	turn_on()
+}
+class Control {
+	limit()
 }
 class Admin {
-	see()
-	add()
 	assign()
-	edit()
+	revoke()
+	delete()
 	provide()
 	incorporate()
-	delete()
+	see()
+	add()
+	edit()
 }
-class Gateway {
+class Debugging {
 }
-class Floor {
+class Room {
 }
 class Name {
 }
 class Image {
 }
-class Light {
-	user()
+class SwitchId {
 }
-class Mobileapplication {
+class Light {
+	control()
+	use()
+}
+class MobileApplication {
+}
+class Access {
+}
+class Gateway {
+}
+class Floor {
 }
 class Screen {
 }
-class Control {
-}
-class Debugging {
-}
-User --> Screen : add
-User --> Image : add
-User --> Floor : select
-Admin --> User : add
+Access --> User : to
+Access o-- Control
 Admin --> Debugging : incorporate
-Admin --> Gateway : delete
-User --> Control : have
-Light --> Mobileapplication : user
+Admin --> Room : delete
+Admin --> User : add
+Admin --> Access : provide
+Admin --> Id : see
 Admin --> Name : edit
-Admin --> Gateway : see
+User --> Image : add
+Light --> MobileApplication : use
+User --> Room : select
+User --> Light : turn
+User --> Light : turn_on
+Admin --> Gateway : delete
+User --> Floor : select
+Admin --> Floor : delete
+User --> Screen : add
+Gateway o-- Id
+User --> Control : have
+Admin --> Access : revoke
+Admin --> SwitchId : see
 
 @enduml

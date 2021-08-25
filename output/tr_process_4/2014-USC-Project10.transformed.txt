@@ -38,8 +38,8 @@
       ],
       "attributes": []
     },
-    "Job": {
-      "name": "Job",
+    "Seeker": {
+      "name": "Seeker",
       "type": [
         "shared"
       ],
@@ -58,16 +58,20 @@
         "shared"
       ],
       "attributes": []
-    },
-    "Seeker": {
-      "name": "Seeker",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
     }
   },
   "relation_list": [
+    {
+      "source": "Job",
+      "dest": "Seeker",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
     {
       "source": "Job",
       "dest": "Listing",
@@ -80,8 +84,8 @@
       "para": []
     },
     {
-      "source": "Network",
-      "dest": "Friend",
+      "source": "Job",
+      "dest": "Search",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -102,17 +106,6 @@
       "para": []
     },
     {
-      "source": "Job",
-      "dest": "Search",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
       "source": "Network",
       "dest": "Contact",
       "type": "aggregation",
@@ -124,8 +117,8 @@
       "para": []
     },
     {
-      "source": "Job",
-      "dest": "Seeker",
+      "source": "Network",
+      "dest": "Friend",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -149,13 +142,43 @@
   "behavior_list": [
     {
       "actor": "Seeker",
-      "action": "contact",
-      "target": "Someone",
+      "action": "see",
+      "target": "",
       "para": []
     },
     {
       "actor": "Seeker",
-      "action": "see",
+      "action": "mark",
+      "target": "Job",
+      "para": []
+    },
+    {
+      "actor": "Seeker",
+      "action": "select",
+      "target": "Frequency",
+      "para": []
+    },
+    {
+      "actor": "RefersySystem",
+      "action": "connect",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contact",
+      "action": "provide",
+      "target": "Reference",
+      "para": []
+    },
+    {
+      "actor": "Seeker",
+      "action": "save",
+      "target": "Search",
+      "para": []
+    },
+    {
+      "actor": "Seeker",
+      "action": "unsubscribe",
       "target": "",
       "para": []
     },
@@ -167,50 +190,38 @@
     },
     {
       "actor": "Seeker",
-      "action": "unsubscribe",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "RefersySystem",
-      "action": "connect",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Seeker",
       "action": "subscribe",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "RefersySystem",
-      "action": "fetch",
-      "target": "Seeker",
-      "para": []
-    },
-    {
-      "actor": "Seeker",
-      "action": "mark",
-      "target": "Seeker",
-      "para": []
-    },
-    {
-      "actor": "Seeker",
-      "action": "select",
-      "target": "Frequency",
-      "para": []
-    },
-    {
-      "actor": "Contact",
-      "action": "provide",
-      "target": "Reference",
       "para": []
     },
     {
       "actor": "Seeker",
       "action": "search",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "Friend",
+      "action": "refer",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "RefersySystem",
+      "action": "fetch",
+      "target": "Job",
+      "para": []
+    },
+    {
+      "actor": "Seeker",
+      "action": "contact",
+      "target": "Someone",
+      "para": []
+    },
+    {
+      "actor": "Listing",
+      "action": "have",
+      "target": "Friend",
       "para": []
     },
     {
@@ -221,26 +232,8 @@
     },
     {
       "actor": "Seeker",
-      "action": "save",
-      "target": "Search",
-      "para": []
-    },
-    {
-      "actor": "Friend",
-      "action": "refer",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Seeker",
       "action": "create",
       "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "Listing",
-      "action": "have",
-      "target": "Friend",
       "para": []
     }
   ]

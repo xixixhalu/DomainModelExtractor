@@ -15,7 +15,7 @@
         "4": "in",
         "5": "on",
         "6": "active",
-        "7": "call",
+        "7": "Call",
         "8": "so",
         "9": "that",
         "10": "SaleManager",
@@ -270,7 +270,7 @@
         "3": "jump",
         "4": "in",
         "5": "to",
-        "6": "call",
+        "6": "Call",
         "7": "so",
         "8": "that",
         "9": "SaleManager",
@@ -278,7 +278,7 @@
         "11": "help",
         "12": "close",
         "13": "the",
-        "14": "deal",
+        "14": "Deal",
         "15": "."
       },
       "TD": {
@@ -526,17 +526,21 @@
   ],
   "SVpO": [],
   "Poss": [],
-  "OPassVS": [],
+  "SPassPartVByS": [],
   "VOToInf": [],
   "SVThatClause": [],
   "SVByVO": [],
   "AO": [],
   "SVCVO": [],
-  "SVVO": [],
-  "SVVOcomma1": [],
+  "SVVOMultiComma": [],
+  "SVVO1Comma": [],
   "SVOCO": [],
-  "SVOO": [],
-  "SVOOcomma1": [],
+  "SVOOComma": [],
+  "SVIOO": [],
+  "SVOTo": [],
+  "OPassPartVByS": [],
+  "SVOPassPart": [],
+  "SPredicativeV": [],
   "SVOblWith": [],
   "SVCc": [
     {
@@ -553,7 +557,7 @@
         "3": "jump",
         "4": "in",
         "5": "to",
-        "6": "call",
+        "6": "Call",
         "7": "so",
         "8": "that",
         "9": "SaleManager",
@@ -561,7 +565,7 @@
         "11": "help",
         "12": "close",
         "13": "the",
-        "14": "deal",
+        "14": "Deal",
         "15": "."
       },
       "TD": {
@@ -822,7 +826,7 @@
         "2": "can",
         "3": "Auto",
         "4": "dial",
-        "5": "customer",
+        "5": "Customer",
         "6": "so",
         "7": "that",
         "8": "SaleAgent",
@@ -1031,7 +1035,7 @@
         "2": "can",
         "3": "Auto",
         "4": "dial",
-        "5": "customer",
+        "5": "Customer",
         "6": "so",
         "7": "that",
         "8": "SaleAgent",
@@ -1884,7 +1888,7 @@
         "4": "in",
         "5": "on",
         "6": "active",
-        "7": "call",
+        "7": "Call",
         "8": "so",
         "9": "that",
         "10": "SaleManager",
@@ -2140,14 +2144,14 @@
         "8": "ConferenceCall",
         "9": "of",
         "10": "a",
-        "11": "manager",
+        "11": "Manager",
         "12": "so",
         "13": "that",
         "14": "SaleAgent",
         "15": "can",
         "16": "close",
         "17": "a",
-        "18": "sale",
+        "18": "Sale",
         "19": "."
       },
       "TD": {
@@ -2457,14 +2461,14 @@
         "8": "ConferenceCall",
         "9": "of",
         "10": "a",
-        "11": "manager",
+        "11": "Manager",
         "12": "so",
         "13": "that",
         "14": "SaleAgent",
         "15": "can",
         "16": "close",
         "17": "a",
-        "18": "sale",
+        "18": "Sale",
         "19": "."
       },
       "TD": {
@@ -2772,7 +2776,7 @@
         "4": "in",
         "5": "on",
         "6": "active",
-        "7": "call",
+        "7": "Call",
         "8": "so",
         "9": "that",
         "10": "SaleManager",
@@ -3013,7 +3017,7 @@
   "SV": [
     {
       "FileName": "2014-USC-Project05",
-      "Sentence": "SaleAgent can click - to - CallCustomer .",
+      "Sentence": "SaleAgent can click - to - call Customer .",
       "Result": {
         "A": 3,
         "B": 1
@@ -3025,14 +3029,15 @@
         "4": "-",
         "5": "to",
         "6": "-",
-        "7": "callcustomer",
-        "8": "."
+        "7": "call",
+        "8": "Customer",
+        "9": "."
       },
       "TD": {
         "ROOT": [
           [
             0,
-            3
+            8
           ]
         ],
         "nsubj": [
@@ -3047,6 +3052,12 @@
             2
           ]
         ],
+        "compound": [
+          [
+            8,
+            3
+          ]
+        ],
         "punct": [
           [
             3,
@@ -3057,8 +3068,8 @@
             6
           ],
           [
-            3,
-            8
+            8,
+            9
           ]
         ],
         "case": [
@@ -3088,7 +3099,7 @@
           ],
           [
             7,
-            7
+            8
           ]
         ],
         "MD": [
@@ -3123,36 +3134,40 @@
           [
             7,
             7
-          ]
-        ],
-        "PP": [
-          [
-            5,
-            7
-          ]
-        ],
-        "VP": [
-          [
-            3,
-            7
-          ]
-        ],
-        ".": [
+          ],
           [
             8,
             8
           ]
         ],
+        "PP": [
+          [
+            5,
+            8
+          ]
+        ],
+        "VP": [
+          [
+            3,
+            8
+          ]
+        ],
+        ".": [
+          [
+            9,
+            9
+          ]
+        ],
         "S": [
           [
             1,
-            8
+            9
           ]
         ],
         "ROOT": [
           [
             1,
-            8
+            9
           ]
         ]
       },
@@ -3388,7 +3403,7 @@
         "3": "jump",
         "4": "in",
         "5": "to",
-        "6": "call",
+        "6": "Call",
         "7": "so",
         "8": "that",
         "9": "SaleManager",
@@ -3396,7 +3411,7 @@
         "11": "help",
         "12": "close",
         "13": "the",
-        "14": "deal",
+        "14": "Deal",
         "15": "."
       },
       "TD": {
@@ -3660,7 +3675,7 @@
         "9": "listen",
         "10": "to",
         "11": "the",
-        "12": "call",
+        "12": "Call",
         "13": "so",
         "14": "that",
         "15": "SaleManager",
@@ -3982,7 +3997,7 @@
         "9": "listen",
         "10": "to",
         "11": "the",
-        "12": "call",
+        "12": "Call",
         "13": "so",
         "14": "that",
         "15": "SaleManager",

@@ -145,3 +145,5 @@ if [[ "$VISUALIZING" = true ]]; then
  	fi
 	visualize $files
 fi
+
+grep -r "ERROR" output/*

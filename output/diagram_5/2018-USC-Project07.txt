@@ -1,8 +1,8 @@
 @startuml
 hide circle
 class User<actor> {
-	progress
 	score
+	progress
 	preference
 }
 class Client<actor> {
@@ -13,84 +13,96 @@ class Maintainer<actor> {
 }
 class Analytic<actor> {
 }
+class Maintainer {
+	have()
+	publish()
+}
+class Documentation {
+}
 class User {
-	start()
-	switch()
-	change()
-	share()
-	check()
-	sign()
-	keep()
-	track()
-	practice()
-	erase()
 	purchase()
-	cheat()
-	download()
 	have()
 	install()
+	start()
+	share()
+	switch()
+	change()
+	keep()
+	download()
+	erase()
+	sign()
+	check()
+	track()
+	cheat()
+	practice()
 }
-class Progress {
-}
-class App {
-}
-class ColorTheme {
-}
-class Client {
-	publish()
-	have()
-}
-class Iosversion {
+class Score {
 }
 class Developer {
 	design()
 	understand()
 }
-class Score {
-}
-class Version {
-}
 class Math {
 }
-class ScreenSpace {
+class GoogleLeaderboard {
 }
-class Maintainer {
-	publish()
+class App {
+	use()
+}
+class About_levelPage {
+}
+class Progress {
+}
+class Client {
 	have()
+	publish()
 }
-class Code {
-}
-class Ability {
+class ScreenSpace {
 }
 class Way {
 	draw()
 }
 class Attention {
 }
-class Description {
+class Version {
+	remove()
 }
-class Documentation {
+class Advertisement {
 }
-class GoogleLeaderboard {
+class Code {
 }
-User o-- Progress : erase
-User o-- Progress : keep
+class Ability {
+}
+class IOSVersion {
+}
+class ColorTheme {
+}
+class Page {
+}
+class AccodomateAdvertisement {
+}
 Maintainer --> Documentation : have
-User --> App : download
 User --> App : track
-User o-- Score : share
-User --> Version : purchase
-User --> GoogleLeaderboard : check
-User --> Math : practice
-Client --> ScreenSpace : have
-User o-- Score : check
-Developer --> Code : understand
-Client --> Iosversion : publish
-User --> Ability : have
 Maintainer --> App : publish
-Way --> Attention : draw
-Developer --> Description : design
+User --> GoogleLeaderboard : check
+Client --> IOSVersion : publish
+Developer --> About_levelPage : design
 User o-- Progress : track
+User o-- Score : share
+User o-- Progress : keep
 User --> ColorTheme : change
+User o-- Progress : erase
+Developer --> Page : design
+User o-- Score : check
+Client --> ScreenSpace : have
+ScreenSpace --> AccodomateAdvertisement : to
+User --> App : download
+Attention --> App : to
+User --> Ability : have
+User --> Math : practice
+Way --> Attention : draw
+User --> Version : purchase
+Version --> Advertisement : remove
+Developer --> Code : understand
 
 @enduml

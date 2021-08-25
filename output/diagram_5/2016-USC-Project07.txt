@@ -2,88 +2,89 @@
 hide circle
 class User<actor> {
 	appointment
-	location
 	information
+	location
 }
 class Shelter<actor> {
 	information
 }
 class Pet {
-	picture
 	information
+	picture
+	list()
 }
 class User {
-	cancel()
-	modify()
-	keep()
-	update()
-	decide()
+	inform()
+	make()
 	book()
-	have()
 	know()
+	have()
 	get()
 	contact()
-	user()
-	make()
-	apply()
-	inform()
 	want()
+	update()
+	use()
+	decide()
+	cancel()
+	apply()
 	see()
 	visit()
-}
-class Information {
-	stay_up()
-}
-class UI {
-}
-class Shelter {
-	select()
-	know()
-	get()
-	control()
-	want()
-	input()
-}
-class Type {
-}
-class Agency {
-}
-class Result {
-}
-class Appointment {
-}
-class Notification {
-}
-class SchedulingFunction {
-}
-class Reminder {
+	modify()
 }
 class Picture {
 }
+class Information {
+	keep()
+	stay_up()
+}
+class Shelter {
+	control()
+	know()
+	get()
+	want()
+	input()
+}
 class Ability {
+	select()
+}
+class Appointment {
 }
 class Animal {
 }
+class Agency {
+}
+class Reminder {
+}
+class UI {
+}
+class SchedulingFunction {
+}
+class Notification {
+}
+class Filter {
+}
+class Result {
+}
 class GoogleCalendar {
 }
-User --> UI : user
-User --> Shelter : visit
-User --> User : decide
-Shelter o-- Information : input
-User o-- Appointment : book
-User --> Result : have
-Shelter --> Notification : get
-User --> SchedulingFunction : want
-User o-- Information : modify
 User --> Pet : see
-User --> Reminder : get
-User --> Agency : inform
-User --> Picture : see
-Shelter --> Ability : want
-Shelter --> Animal : select
-User o-- Information : see
-SchedulingFunction --> GoogleCalendar : supported_by
 User o-- Information : want
-User --> Type : apply
+Shelter o-- Information : input
+User o-- Information : see
+User --> Agency : inform
+User --> Reminder : get
+User --> UI : use
+Ability --> Animal : select
+User --> SchedulingFunction : want
+Shelter --> Notification : get
+User o-- Appointment : book
+SchedulingFunction --> GoogleCalendar : supported_by
+User --> User : decide
+User --> Filter : apply
+User o-- Information : modify
+User --> Shelter : visit
+User --> Picture : see
+User --> Result : have
+Shelter --> Ability : want
 
 @enduml

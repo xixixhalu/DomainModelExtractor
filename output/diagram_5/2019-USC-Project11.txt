@@ -1,210 +1,224 @@
 @startuml
 hide circle
 class User<actor> {
+	videoRecord
+	session
+	messageHistory
+	information
+	finances
 	paymentHistory
 	paymentMethod
-	finances
-	session
-	information
-	messageHistory
 	sessionAppointmentHistory
-	videoRecord
 }
 class Expert<actor> {
-	note
-	profileBio
-	session
-	client
-	calendar
-	profile
-	status
-	customer
 	videoRecord
+	note
+	profile
+	session
+	status
+	profileBio
+	client
+	customer
+	calendar
 }
 class GuestUser<actor> {
 	moneyBelief
 }
-class Video {
-}
 class Record {
-}
-class StreamingLibrary {
-	provide()
+	analyze()
 }
 class ContentLibrary {
 	provide()
 }
-class AppointmentHistory {
+class StreamingLibrary {
+	provide()
 }
-class Bio {
+class Chat {
 }
 class Method {
 }
-class User {
-	update()
-	access()
-	view()
-	schedule()
-	sign_up()
-	select()
-	get()
-	commit()
-	take()
-	search()
-	ask()
-	receive()
-	rate()
-	have()
-	help()
-	manage()
-	authorize()
-	see()
+class Bio {
+}
+class AppointmentHistory {
 }
 class Expert {
+	authorize()
+	manage()
+	view()
+	see()
+	make()
+	keep()
 	update()
 	store()
-	view()
-	set()
-	make()
-	sign_up()
-	keep()
-	receive()
-	manage()
 	give()
-	authorize()
-	see()
-}
-class Transcript {
-}
-class History {
-}
-class Appointment {
-}
-class Calendar {
-}
-class Emergency {
-	be()
+	set()
+	sign_up()
+	receive()
 }
 class Notification {
 }
+class Transcript {
+	analyze()
+}
+class User {
+	select()
+	authorize()
+	charge()
+	access()
+	manage()
+	view()
+	get()
+	see()
+	schedule()
+	take()
+	ask()
+	update()
+	search()
+	commit()
+	have()
+	rate()
+	sign_up()
+	receive()
+}
+class Appointment {
+}
+class Rating {
+}
+class MessageHistory {
+}
+class Advice {
+}
+class Track {
+}
+class Change {
+}
 class GuestUser {
-	find()
 	access()
 	take()
 }
-class Budgeting {
+class Therapy {
+}
+class Quiz {
+	find()
+}
+class Time {
+}
+class Profile {
 }
 class Topic {
 }
-class MoneyBelief {
+class History {
+}
+class Session {
+}
+class Payment {
+}
+class Calendar {
 }
 class Note {
 }
 class Access {
 }
-class Information {
-}
-class MessageHistory {
+class Status {
 }
 class Feedback {
 }
-class Demandadvice {
+class MoneyBelief {
+}
+class Emergency {
+	be()
+}
+class Information {
 }
 class Minute {
 	talk()
 }
+class Budgeting {
+}
 class Calculator {
-}
-class Time {
-}
-class Therapy {
-}
-class Advice {
-}
-class Track {
-	generate()
-}
-class Status {
-}
-class Session {
-}
-class Profile {
-}
-class Quiz {
-}
-class Payment {
-}
-class Rating {
 }
 class Feature {
 }
 class Insight {
 }
-class Change {
-}
-class Gmail {
-}
-class LinkedIn {
+class ScheduleAppointmentAvailability {
 }
 class Facebook {
 }
+class Video {
+}
+class Blog {
+}
+class Gmail {
+}
+class Online {
+}
 class FinancialExpert {
 }
-Expert --> Transcript : authorize
-Expert --> Record : authorize
+class LinkedIn {
+}
+Expert o-- Note : store
+User --> Expert : supported_by
 Payment o-- History
+User --> Appointment : have
+User --> Access : get
+Expert --> History : receive
+Calendar --> Chat : to
+Expert --> History : see
+Expert --> Record : authorize
+Session --> Expert : supported_by
+Expert --> Rating : view
+Expert --> Transcript : authorize
+Expert --> Time : set
+StreamingLibrary --> Insight : provide
 User --> FinancialExpert : supported_by
+Expert o-- Status : set
+Expert --> Advice : give
+User o-- MessageHistory : see
+User --> Profile : view
+User --> ContentLibrary : access
+Video o-- StreamingLibrary
+Calendar --> ScheduleAppointmentAvailability : to
+User --> Appointment : manage
+Expert --> User : supported_by
+User --> Expert : rate
+Expert --> Feedback : view
+ContentLibrary --> Topic : provide
+Payment o-- Method
+Session o-- AppointmentHistory
+User --> Advice : have
+Video o-- Chat
+Appointment o-- Session
+User --> AppointmentHistory : see
 User --> History : see
+Expert --> LinkedIn : supported_by
+User o-- Session : schedule
+Quiz --> MoneyBelief : find
+User --> Facebook : supported_by
+Expert --> Track : keep
+User --> Calculator : access
+Video o-- ContentLibrary
+Access --> Video : to
+Expert --> Change : make
+User o-- Information : see
+Expert --> Payment : receive
+Video o-- Record
+Expert --> History : give
+Access --> Blog : to
+Expert --> Appointment : manage
 User --> Advice : take
 Expert o-- Calendar : manage
-User --> Access : get
-Expert --> User : supported_by
-User --> Appointment : manage
-Expert --> Appointment : manage
 User --> Method : update
-User o-- Information : see
 Expert --> Bio : update
-Expert o-- Calendar : set
-Expert o-- Status : set
-Expert --> Change : make
-User o-- Session : schedule
 User --> Gmail : supported_by
-User o-- MessageHistory : see
-User --> Appointment : have
-Video o-- StreamingLibrary
-User --> AppointmentHistory : see
-Expert --> Feedback : view
-GuestUser --> Feature : access
-Video o-- ContentLibrary
-Expert --> Notification : receive
-User --> Profile : view
-Video o-- Record
-StreamingLibrary --> Insight : provide
-User --> Demandadvice : have
-Expert --> LinkedIn : supported_by
-Expert --> History : receive
-Expert --> History : give
-GuestUser --> Quiz : take
-Session --> Expert : supported_by
-StreamingLibrary --> Budgeting : provide
-User --> Calculator : access
-Appointment o-- Session
-Expert --> Payment : receive
-Session o-- AppointmentHistory
-Expert --> Advice : give
-Expert --> Time : set
-Profile o-- Bio
-ContentLibrary --> Topic : provide
-User --> Expert : rate
-Payment o-- Method
 ContentLibrary --> Therapy : provide
-User --> Facebook : supported_by
-GuestUser o-- MoneyBelief : find
-Expert --> Rating : view
-User --> ContentLibrary : access
+StreamingLibrary --> Budgeting : provide
+Expert o-- Calendar : set
 User --> StreamingLibrary : access
-Expert o-- Note : store
-Expert --> History : see
-User --> Expert : supported_by
+GuestUser --> Feature : access
+Expert --> Notification : receive
+GuestUser --> Quiz : take
+Profile o-- Bio
+Status --> Online : to
 
 @enduml

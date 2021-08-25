@@ -1,12 +1,14 @@
 @startuml
 hide circle
 class User<actor> {
+	location
 	account
 	schedule
-	weight
-	location
+	metric
 }
 class Admin<actor> {
+}
+class FarmContractor<actor> {
 }
 class FarmManager<actor> {
 }
@@ -17,103 +19,120 @@ class Tone {
 }
 class Data {
 }
-class Admin {
-	upload()
-	define()
-	access()
-	delete()
-	add()
-	create()
-	see()
+class Farm {
 }
-class FarmManager {
+class Contractor {
+	search()
+}
+class Manager {
 	search()
 }
 class User {
-	feel()
-	watch()
 	wear()
-	opt()
-	disable()
-	toggle()
-	identify()
-	change()
-	access()
-	user()
-	know()
 	share()
-	create()
-	modify()
+	disable()
 	view()
-	receive()
+	access()
 	do()
+	feel()
+	change()
+	know()
+	use()
+	watch()
+	modify()
+	toggle()
+	opt()
+	identify()
+	create()
+	receive()
+}
+class Quiz {
 }
 class Checklist {
 }
+class Admin {
+	define()
+	see()
+	create()
+	upload()
+	access()
+	add()
+	delete()
+}
 class EmergencyContactList {
-}
-class Role {
-}
-class Feature {
-}
-class Notification {
 }
 class Video {
 }
 class Location {
 }
-class Weight {
-}
-class Temperature {
-}
-class Information {
-}
-class Contents {
+class Order {
 }
 class Account {
 }
-class Quiz {
+class Notification {
 }
 class Content {
+}
+class TextMessage {
+	receive()
+}
+class Feature {
+}
+class Contents {
+}
+class Material {
 }
 class App {
 	get()
 }
-class HealthData {
+class Information {
 }
 class Display {
 }
+class HealthData {
+}
+class Role {
+}
 class VibrationLevel {
 }
-class Material {
+class Temperature {
 }
-class Order {
+class Metric {
 }
-Admin --> Role : define
-User --> Feature : user
-User --> Checklist : create
-App --> Information : get
-User --> EmergencyContactList : create
-User --> Notification : receive
-User --> Video : watch
+class FarmManager {
+}
+class FarmContractor {
+}
 User --> Data : view
-Admin --> Video : upload
-Admin --> HealthData : access
-User o-- Location : share
-User --> Display : toggle
-User --> Quiz : do
-User o-- Weight : create
+Farm o-- Contractor
+User --> Checklist : create
+Admin --> Quiz : create
 User --> Tone : change
-Admin --> Temperature : access
-User --> VibrationLevel : change
-User --> Information : receive
+Notification o-- Tone
+User --> EmergencyContactList : create
 User --> Material : access
 Temperature o-- Data
-Admin --> Contents : delete
+User --> Video : watch
+FarmContractor <|-- Contractor
+Admin --> Video : upload
+App --> Information : get
+Farm o-- Manager
+User o-- Location : share
+User --> Display : toggle
 User --> Order : feel
-Admin --> Content : create
+Admin --> HealthData : access
 User o-- Account : disable
-Notification o-- Tone
-Admin --> Quiz : create
+User --> Information : receive
+Admin --> Role : define
+User --> Notification : receive
+User --> VibrationLevel : change
+Admin --> Content : create
+TextMessage --> Content : receive
+Admin --> Temperature : access
+Admin --> Contents : delete
+User --> Quiz : do
+User --> Feature : use
+User o-- Metric : create
+FarmManager <|-- Manager
 
 @enduml

@@ -1,9 +1,9 @@
 @startuml
 hide circle
 class User<actor> {
-	point
-	performance
 	progressReport
+	performance
+	point
 }
 class Developer<actor> {
 }
@@ -12,80 +12,95 @@ class Maintainer<actor> {
 class Analytic {
 }
 class Developer {
-	hand_off()
 	publish()
-	restructure()
-	provide()
+	hand()
 	fix()
-	make()
+	restructure()
+	hand_off()
+	provide()
+	give()
 	change()
 }
-class Graph {
+class Option {
+	enable()
+}
+class Time {
+	fix()
+}
+class Project {
 }
 class User {
-	track()
-	skip()
-	view()
-	have()
 	get()
-	proceed()
+	track()
 	understand()
 	play()
+	rate()
+	view()
+	have()
+	skip()
+	show()
+	proceed()
+}
+class Hint {
+}
+class Maintainer {
+	get()
+}
+class Question {
+	answer()
 }
 class App {
 }
-class Option {
-	rate()
-	enable()
-}
 class UI {
+	make()
 }
 class Feedback {
 }
-class Report {
+class SourceCode {
 }
 class Component {
 	have()
 }
 class Structure {
 }
-class Maintainer {
-	get()
+class Bug {
+}
+class Progress {
+}
+class Report {
+}
+class Graph {
+}
+class Point {
 }
 class Trouble {
 	answer()
 }
-class Question {
+class Client {
 }
-class Hint {
-}
-class Project {
-}
-class SourceCode {
-}
-class Point {
-}
-class Progress {
-}
-Option --> App : rate
-Progress o-- Report
-Component --> Structure : have
 User --> App : play
-User o-- Progress : track
-User o-- Analytic
+Developer --> Time : give
 Developer --> App : publish
+Developer --> Graph : fix
 User --> Question : skip
 Maintainer --> Analytic : get
-User --> Report : view
-Trouble --> Question : answer
-User --> Hint : get
-User --> Feedback : get
-Developer --> Option : provide
-Option --> User : enable
-Developer --> Project : restructure
+User --> App : rate
 User o-- Point : understand
-Developer --> SourceCode : hand_off
+Trouble --> Question : answer
 Developer --> UI : change
-Developer --> Graph : fix
+Option --> User : enable
+User o-- Analytic
+User --> Feedback : get
+SourceCode --> Client : to
+Developer --> Project : restructure
+Developer --> SourceCode : hand_off
+Progress o-- Report
+Developer --> SourceCode : hand
+User --> Hint : get
+Component --> Structure : have
+Time --> Bug : fix
+User o-- Progress : track
+User --> Report : view
+Developer --> Option : provide
 
 @enduml

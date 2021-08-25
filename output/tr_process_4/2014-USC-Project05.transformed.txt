@@ -15,13 +15,6 @@
       ],
       "attributes": []
     },
-    "Sale": {
-      "name": "Sale",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
-    },
     "Manager": {
       "name": "Manager",
       "type": [
@@ -54,9 +47,9 @@
       "para": []
     },
     {
-      "source": "SaleManager",
+      "source": "Sale",
       "dest": "Manager",
-      "type": "generalization",
+      "type": "aggregation",
       "msg": "",
       "multiplicity": [
         "1",
@@ -65,9 +58,9 @@
       "para": []
     },
     {
-      "source": "Sale",
+      "source": "SaleManager",
       "dest": "Manager",
-      "type": "aggregation",
+      "type": "generalization",
       "msg": "",
       "multiplicity": [
         "1",
@@ -78,45 +71,21 @@
   ],
   "behavior_list": [
     {
-      "actor": "Manager",
+      "actor": "Agent",
       "action": "close",
-      "target": "Deal",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "close",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "listen",
-      "target": "Call",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "listen_in",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "jump",
-      "target": "",
+      "target": "Sale",
       "para": []
     },
     {
       "actor": "Agent",
-      "action": "request",
-      "target": "ConferenceCall",
+      "action": "dial",
+      "target": "Customer",
       "para": []
     },
     {
       "actor": "Manager",
-      "action": "speak",
-      "target": "",
+      "action": "use",
+      "target": "Recording",
       "para": []
     },
     {
@@ -132,14 +101,32 @@
       "para": []
     },
     {
+      "actor": "Manager",
+      "action": "listen",
+      "target": "Call",
+      "para": []
+    },
+    {
       "actor": "Agent",
-      "action": "dial",
-      "target": "Customer",
+      "action": "click",
+      "target": "",
       "para": []
     },
     {
       "actor": "Manager",
-      "action": "guide",
+      "action": "jump",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "close",
+      "target": "Deal",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "close",
       "target": "",
       "para": []
     },
@@ -151,20 +138,26 @@
     },
     {
       "actor": "Agent",
-      "action": "click",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Agent",
-      "action": "close",
-      "target": "Agent",
+      "action": "request",
+      "target": "ConferenceCall",
       "para": []
     },
     {
       "actor": "Manager",
-      "action": "use",
-      "target": "Recording",
+      "action": "listen_in",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "guide",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "speak",
+      "target": "",
       "para": []
     },
     {

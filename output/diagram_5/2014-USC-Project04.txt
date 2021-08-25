@@ -1,132 +1,137 @@
 @startuml
 hide circle
 class Consumer<actor> {
-	order
 	experience
-	occasion
 	orderHistory
+	occasion
+	order
 }
 class Florist<actor> {
 	pastTransaction
-	service
 	orderHistory
+	service
 }
 class Customer<actor> {
 }
 class History {
 }
 class Status {
-}
-class Florist {
-	provide()
 	confirm()
-	cancel()
-	track()
-	create()
-	upload()
-	receive()
-	market()
-	use()
-	have()
-}
-class Catalog {
 }
 class Consumer {
-	check()
-	schedule()
-	get()
-	buy()
 	view()
-	rank()
+	check()
 	cancel()
-	place()
-	review()
-	track()
-	search()
+	buy()
 	want()
+	track()
+	get()
+	search()
 	deliver()
-	receive()
-	talk()
+	review()
+	schedule()
+	place()
+	rank()
 	make()
 	have()
-}
-class Review {
-}
-class Record {
+	receive()
+	talk()
 }
 class Order {
 }
-class Customer {
-	receive()
+class Florist {
+	cancel()
 	create()
+	provide()
+	track()
+	receive()
+	use()
+	upload()
+	have()
+	market()
+}
+class RefundConsumer {
+}
+class Catalog {
+}
+class Customer {
+	create()
+	receive()
 }
 class Profile {
-}
-class Appointment {
-}
-class Decision {
-}
-class Refundconsumer {
-}
-class Ranking {
-}
-class MarketAnalyticTool {
-}
-class Event {
-}
-class Shoppingexperience {
-}
-class Information {
-}
-class Service {
-}
-class Option {
-}
-class FlowerSeeker {
-}
-class Convenience {
-}
-class Payment {
 }
 class Recommendation {
 }
 class Product {
 }
+class Record {
+}
+class Service {
+}
+class Convenience {
+}
+class Decision {
+}
+class Event {
+}
+class FlowerSeeker {
+}
+class Information {
+}
+class Option {
+}
+class Payment {
+}
+class Appointment {
+}
+class Review {
+}
+class MarketAnalyticTool {
+	market()
+}
+class ShoppingExperience {
+}
+class Ranking {
+}
+class Go {
+}
 class Experience {
 }
+Customer --> Profile : create
+Consumer --> Ranking : view
+Go <|-- Consumer
+Florist --> History : track
+Customer --> Recommendation : receive
+Consumer --> Experience : supported_by
+Consumer --> Information : receive
+Florist --> Catalog : upload
 Consumer --> Product : rank
-Consumer --> Record : have
-Consumer --> Florist : supported_by
 Florist --> Record : have
 Product o-- Status
-Consumer o-- Order : place
-Customer --> Profile : create
-Florist --> History : track
-Consumer o-- Order : track
-Florist o-- Order : cancel
-Order o-- History
-Florist o-- Order : confirm
-Florist o-- Service : market
-Consumer --> Appointment : schedule
-Florist --> Catalog : upload
-Consumer --> Option : have
-Consumer --> Decision : make
 Florist --> FlowerSeeker : create
-Florist --> Refundconsumer : cancel
-Florist --> Profile : create
-Consumer --> History : check
-Consumer --> Review : view
-Consumer --> Ranking : view
-Consumer --> Convenience : have
-Customer --> FlowerSeeker : create
-Consumer --> Experience : supported_by
-Florist --> MarketAnalyticTool : use
-Florist --> Status : provide
-Florist --> Payment : receive
-Consumer --> Event : talk
-Customer --> Recommendation : receive
+Consumer --> Florist : supported_by
+Consumer --> Record : have
+Consumer o-- Order : track
+Order o-- History
+Consumer --> Option : have
 Consumer o-- Order : cancel
-Consumer --> Shoppingexperience : have
-Consumer --> Information : receive
+Status --> Order : confirm
+Florist --> Profile : create
+Florist --> Payment : receive
+Consumer --> Appointment : schedule
+Florist o-- Service : market
+Florist --> RefundConsumer : cancel
+Consumer --> Product : review
+Consumer --> Convenience : have
+Consumer --> Review : view
+Consumer --> Event : talk
+Florist o-- Order : cancel
+Florist --> Status : provide
+Consumer --> Decision : make
+Florist --> MarketAnalyticTool : use
+Customer --> FlowerSeeker : create
+Consumer --> History : check
+Consumer --> ShoppingExperience : have
+Consumer o-- Order : place
 
 @enduml

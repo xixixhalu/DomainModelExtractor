@@ -3,95 +3,101 @@ hide circle
 class Admin<actor> {
 }
 class User<actor> {
-	password
+	registration
 	email
 	project
-	registration
+	password
 }
 class Contributor<actor> {
 	impact
 }
-class User {
-	perform()
-	view()
-	see()
-	confirm()
-	receive()
+class Permission {
+}
+class Admin {
 	reset()
+	manage()
+	restrict()
+	have()
+	give()
+	block()
+	terminate()
+	associate()
+}
+class User {
 	request()
+	reset()
+	view()
 	export()
+	confirm()
+	see()
+	receive()
+	assign()
+	perform()
+	expose()
 }
-class VerificationEmail {
+class SoftwareQualityMetric {
 }
-class Registration {
+class Contributor {
+	ask()
+	work()
+	contribute()
+	analyze()
+	give()
+	see()
+	access()
+}
+class Impact {
 }
 class Statistics {
 }
-class Contributor {
-	work()
-	access()
-	ask()
-	analyze()
-	see()
-	contribute()
+class Email {
+}
+class Project {
+}
+class Access {
+}
+class Password {
+}
+class Analysis {
+}
+class Ability {
 }
 class List {
 	give()
 }
-class Email {
+class Registration {
 }
-class Evolution {
-}
-class Password {
-}
-class Admin {
-	restrict()
-	block()
-	have()
-	terminate()
-	manage()
-	associate()
-	reset()
-}
-class Project {
-}
-class Account {
-}
-class Analysis {
-}
-class Userpermission {
-}
-class Access {
-}
-class Ability {
+class VerificationEmail {
 }
 class Signup {
 }
-class Impact {
+class Account {
 }
-class SoftwareQualityMetric {
+class Evolution {
 }
-class Userpassword {
-}
-User o-- Registration : confirm
+User --> SoftwareQualityMetric : export
+Admin --> Access : restrict
+User o-- Password : reset
+User o-- Password
+Admin --> Access : give
+Admin --> Permission : manage
+Contributor --> Admin : ask
 Admin --> Project : associate
+Admin --> Password : reset
+Admin --> Account : terminate
+Contributor --> Access : give
+Admin --> User : associate
+User --> Evolution : see
+User o-- Permission
+User --> Analysis : perform
+Contributor o-- Impact : analyze
+Contributor --> List : see
+Admin --> Ability : have
 User --> Statistics : view
 Contributor --> List : contribute
-Contributor o-- Impact : analyze
-User --> SoftwareQualityMetric : export
-Contributor --> List : see
-Admin --> Userpassword : reset
-Admin --> Account : terminate
-User o-- Email : receive
-User --> Analysis : perform
-Admin --> Userpermission : manage
-User --> Evolution : see
-Admin --> Access : restrict
-Admin --> Ability : have
 User --> Signup : receive
-Contributor --> Admin : ask
+User o-- Registration : confirm
 User --> VerificationEmail : receive
-Admin --> User : associate
-User o-- Password : reset
+User o-- Email : receive
 
 @enduml

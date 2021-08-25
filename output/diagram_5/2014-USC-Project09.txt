@@ -10,66 +10,66 @@ class Administrator<actor> {
 class SureNumber {
 }
 class Calculator {
+	calculate()
 }
 class User {
-	user()
-	calculate()
-	have()
-	add()
-	get()
-	download()
 	search()
 	submit()
-	split()
-	see()
 	share()
 	review()
+	have()
+	download()
+	add()
 	lookup()
+	see()
+	use()
+	get()
 }
-class Business {
-	claim()
+class Access {
 }
 class Search {
 	result()
 }
-class TravelGuide {
+class Question {
+	address()
 }
 class Administrator {
-	assign()
-	verify()
 	approve()
+	verify()
+	assign()
+}
+class Business {
+	claim()
 }
 class Comment {
 	increase()
+}
+class Guide {
 }
 class Tip {
 }
 class Friction {
 }
-class Access {
-}
-class Question {
-}
-class Guide {
+class TravelGuide {
 }
 class Customer {
 }
-User --> Business : add
-User --> Business : lookup
-Tip o-- SureNumber
-Administrator --> Comment : approve
-User --> Access : have
-User --> Tip : split
-Tip o-- Calculator
-User --> Guide : review
-User --> Tip : calculate
 User --> Friction : get
-User --> Tip : get
-Administrator --> SureNumber : assign
-User --> TravelGuide : download
-Business o-- Business : claim
+User --> Access : have
 User --> Customer : supported_by
+Administrator --> SureNumber : assign
+User --> Business : lookup
+User --> TravelGuide : download
+Administrator --> Comment : verify
+User --> Tip : get
+Business o-- Business : claim
+User --> Business : add
 User --> Question : submit
-User --> Calculator : user
+Calculator --> Tip : calculate
+Tip o-- Calculator
+User --> Calculator : use
+User --> Guide : review
+Administrator --> Comment : approve
+Tip o-- SureNumber
 
 @enduml

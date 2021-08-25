@@ -15,11 +15,11 @@
       ],
       "attributes": [
         {
-          "name": "information",
+          "name": "profile",
           "type": "default"
         },
         {
-          "name": "profile",
+          "name": "detail",
           "type": "default"
         },
         {
@@ -27,7 +27,11 @@
           "type": "default"
         },
         {
-          "name": "detail",
+          "name": "informationDetail",
+          "type": "default"
+        },
+        {
+          "name": "contactDetail",
           "type": "default"
         },
         {
@@ -71,19 +75,7 @@
       ],
       "attributes": [
         {
-          "name": "information",
-          "type": "default"
-        },
-        {
-          "name": "availability",
-          "type": "default"
-        },
-        {
           "name": "trainingPhaseActivity",
-          "type": "default"
-        },
-        {
-          "name": "mentee",
           "type": "default"
         },
         {
@@ -95,11 +87,23 @@
           "type": "default"
         },
         {
+          "name": "interaction",
+          "type": "default"
+        },
+        {
+          "name": "availability",
+          "type": "default"
+        },
+        {
+          "name": "information",
+          "type": "default"
+        },
+        {
           "name": "password",
           "type": "default"
         },
         {
-          "name": "interaction",
+          "name": "mentee",
           "type": "default"
         }
       ]
@@ -115,14 +119,76 @@
           "type": "default"
         }
       ]
+    },
+    "Interaction": {
+      "name": "Interaction",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
   "relation_list": [
     {
+      "source": "Mentor",
+      "dest": "Interaction",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
       "source": "Admin",
-      "dest": "Mentor",
+      "dest": "Interaction",
       "type": "association",
       "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Mentee",
+      "dest": "Interaction",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Mentor",
+      "dest": "Mentee",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Mentee",
+      "dest": "Request",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Information",
+      "dest": "Detail",
+      "type": "aggregation",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -133,67 +199,7 @@
   "behavior_list": [
     {
       "actor": "Admin",
-      "action": "get",
-      "target": "Report",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "integrate",
-      "target": "WebApplication",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "track",
-      "target": "Mentee",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "assign",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "update",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "assign",
-      "target": "Mentor",
-      "para": []
-    },
-    {
-      "actor": "Mentee",
-      "action": "update",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Mentee",
-      "action": "upload",
-      "target": "Detail",
-      "para": []
-    },
-    {
-      "actor": "Mentee",
-      "action": "send",
-      "target": "Request",
-      "para": []
-    },
-    {
-      "actor": "Admin",
       "action": "export",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Mentee",
-      "action": "see",
       "target": "",
       "para": []
     },
@@ -210,9 +216,39 @@
       "para": []
     },
     {
-      "actor": "User",
+      "actor": "Admin",
       "action": "update",
+      "target": "Status",
+      "para": []
+    },
+    {
+      "actor": "Mentee",
+      "action": "update",
+      "target": "ContactDetail",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "integrate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "match",
+      "target": "Mentor",
+      "para": []
+    },
+    {
+      "actor": "Mentee",
+      "action": "update",
+      "target": "Detail",
       "para": []
     },
     {
@@ -223,8 +259,26 @@
     },
     {
       "actor": "Admin",
+      "action": "send",
+      "target": "Reminder",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "assign",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
       "action": "view",
-      "target": "Statistics",
+      "target": "ActivityReport",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "track",
+      "target": "Mentor",
       "para": []
     },
     {
@@ -234,14 +288,128 @@
       "para": []
     },
     {
+      "actor": "Mentee",
+      "action": "select",
+      "target": "Mentor",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "get",
+      "target": "Report",
+      "para": []
+    },
+    {
+      "actor": "Mentee",
+      "action": "send",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "track",
+      "target": "Mentee",
+      "para": []
+    },
+    {
+      "actor": "Mentee",
+      "action": "upload",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "Request",
+      "action": "establish",
+      "target": "Connection",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "integrate",
+      "target": "WebApplication",
+      "para": []
+    },
+    {
+      "actor": "Mentee",
+      "action": "update",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "Admin",
       "action": "export",
       "target": "Report",
       "para": []
     },
     {
+      "actor": "Admin",
+      "action": "deactivate",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Mentor",
+      "action": "send",
+      "target": "Report",
+      "para": []
+    },
+    {
       "actor": "Mentee",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Information",
+      "action": "include",
+      "target": "Photo",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "update",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Mentee",
+      "action": "upload",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "get",
+      "target": "Statistics",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "get",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "track",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "End",
+      "action": "navigate",
       "target": "",
       "para": []
     },
@@ -253,104 +421,32 @@
     },
     {
       "actor": "Mentee",
-      "action": "upload",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "integrate",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Mentee",
-      "action": "select",
-      "target": "Mentor",
-      "para": []
-    },
-    {
-      "actor": "Mentor",
       "action": "send",
-      "target": "Report",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "get",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "get",
-      "target": "Statistics",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "navigate",
-      "target": "",
+      "target": "Request",
       "para": []
     },
     {
       "actor": "Admin",
-      "action": "track",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "delete",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "track",
+      "action": "assign",
       "target": "Mentor",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "deactivate",
+      "target": "",
       "para": []
     },
     {
       "actor": "Admin",
       "action": "view",
-      "target": "ActivityReport",
+      "target": "Statistics",
       "para": []
     },
     {
-      "actor": "Information",
-      "action": "include",
-      "target": "Photo",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "match",
-      "target": "Mentor",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "send",
-      "target": "Reminder",
-      "para": []
-    },
-    {
-      "actor": "Admin",
+      "actor": "Administrator",
       "action": "get",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "Mentee",
-      "action": "send",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "update",
-      "target": "Status",
       "para": []
     }
   ]

@@ -11,7 +11,7 @@
 [(['user'], (3, 3)), (['feedback'], (8, 8)), (['gift'], (12, 12)), (['date'], (16, 16))]
 [(['user'], (3, 3)), (['information'], (9, 9)), (['gift'], (13, 13))]
 [(['user'], (3, 3)), (['gift'], (10, 10)), (['gift', 'people'], (14, 15))]
-[(['user'], (3, 3)), (['date'], (11, 11)), (['contact'], (15, 15)), (['option'], (18, 18)), (['custom', 'label'], (20, 21)), (['selection'], (23, 23)), (['holiday'], (26, 26)), (['event'], (28, 28))]
+[(['user'], (3, 3)), (['date'], (11, 11)), (['contact'], (15, 15)), (['option'], (18, 18)), (['custom', 'label'], (20, 21)), (['selection'], (23, 23)), (['holiday'], (26, 26)), (['user'], (3, 3)), (['date'], (11, 11)), (['contact'], (15, 15)), (['option'], (18, 18)), (['custom', 'label'], (20, 21)), (['selection'], (23, 23)), (['event'], (26, 26))]
 [(['user'], (3, 3)), (['contact'], (11, 11)), (['group'], (14, 14)), (['contact'], (16, 16)), (['GiftBuddy', 'account'], (19, 20))]
 [(['user'], (3, 3)), (['GiftBuddy', 'contact'], (9, 10))]
 [(['user'], (3, 3)), (['GiftBuddy', 'contact'], (10, 11))]

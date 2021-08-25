@@ -1,12 +1,20 @@
 Vendor can list Vendor's Item for Sale on the Website to reach a bigger Market and IncreaseSale .
 Consumer can search for Health related Information on the Website 's Blog and Forum , to gain Knowledge on how to become healthier .
-Moderator , WebsiteOwner can post Blog highlighting Health - related Issue on the Website to provide Resource to User and also encourage Sale for WebsiteOwner's Customer .
+WebsiteOwner can post Blog highlighting Health - related Issue on the Website to provide Resource to User and also encourage Sale for WebsiteOwner's Customer .
+WebsiteModerator can post Blog highlighting Health - related Issue on the Website to provide Resource to User and also encourage Sale for WebsiteModerator's Customer .
 Consumer can participate in ForumDiscussion regarding HealthConcern and HealthProduct , to gain Knowledge for myself and help Other with similar HealthConcern .
-Moderator , WebsiteOwner can temporarily suspend the Account of a Vendor if Transaction or Fulfillment are not completed .
-Moderator , WebsiteOwner can approve VendorAccount after Application and Submission of SubscriptionFee .
-Moderator , WebsiteOwner can sort Vendor by selling Volume , Transaction total to determine best Vendor .
-Moderator , WebsiteOwner can communicate with Vendor through the Website to help promote their Product .
-Moderator , WebsiteOwner can post Site - wide Communication for PolicyUpdate for Vendor and Consumer to see .
+WebsiteModerator can temporarily suspend the Account of a Vendor if Transaction or Fulfillment are not completed .
+WebsiteOwner can temporarily suspend the Account of a Vendor if Transaction or Fulfillment are not completed .
+WebsiteOwner can approve VendorAccount after Application and Submission of SubscriptionFee .
+WebsiteModerator can approve VendorAccount after Application and Submission of SubscriptionFee .
+WebsiteOwner can sort Vendor by selling VolumeTotal to determine best Vendor .
+WebsiteOwner can sort Vendor by selling Transaction total to determine best Vendor .
+WebsiteModerator can sort Vendor by selling Transaction total to determine best Vendor .
+WebsiteModerator can sort Vendor by selling VolumeTotal to determine best Vendor .
+WebsiteOwner can communicate with Vendor through the Website to help promote their Product .
+WebsiteModerator can communicate with Vendor through the Website to help promote their Product .
+WebsiteModerator can post Site - wide Communication for PolicyUpdate for Vendor and Consumer to see .
+WebsiteOwner can post Site - wide Communication for PolicyUpdate for Vendor and Consumer to see .
 Consumer can manage Consumer's Account so that Consumer can get Access to the Service that the Website offers .
 Consumer can manage Consumer's Password so that Consumer can keep Consumer's Account safe .
 Consumer can manage Consumer's Cart so that Consumer can do the Purchase .
@@ -15,7 +23,8 @@ Consumer can add Item to Consumer's Cart for later Purchase .
 Vendor can manage Vendor's ItemPrice to improve Income .
 Vendor can communicate with the Consumer to ensure ServiceQuality .
 Consumer can search a Product based on certain SearchCondition so Consumer can narrow down Consumer's SearchResult and easily find the Product that suits me .
-Consumer can reset EmailAddress through Consumer's SecurityQuestion or verifying Id so that if the EmailAddress is changed or forgot , Consumer can still get his , hers PasswordReset .
+Consumer can reset EmailAddress through Consumer's SecurityQuestion or verifying Id so that if the EmailAddress is changed or forgot , Consumer can still get his PasswordReset .
+Consumer can reset EmailAddress through Consumer's SecurityQuestion or verifying Id so that if the EmailAddress is changed or forgot , Consumer can still get hers PasswordReset .
 Consumer can leave Comment about Product so that Other can see more clearly on the Item .
 Consumer can sort Product by Popularity or Price so Consumer can easily find the Product Consumer am looking for .
 Vendor can provide special Discount to the Consumer so that Vendor can offer Promotion in Order to attract more Consumer .

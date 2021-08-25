@@ -33,8 +33,38 @@
       ]
     }
   },
-  "relation_list": [],
+  "relation_list": [
+    {
+      "source": "Image",
+      "dest": "Pipeline",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
   "behavior_list": [
+    {
+      "actor": "Client",
+      "action": "replace",
+      "target": "Algorithm",
+      "para": []
+    },
+    {
+      "actor": "Tag",
+      "action": "detect",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "upload",
+      "target": "Image",
+      "para": []
+    },
     {
       "actor": "User",
       "action": "choose",
@@ -42,33 +72,21 @@
       "para": []
     },
     {
-      "actor": "Client",
-      "action": "see",
-      "target": "",
-      "para": []
-    },
-    {
       "actor": "User",
       "action": "upload",
       "target": "Image",
       "para": []
     },
     {
-      "actor": "Client",
-      "action": "upload",
+      "actor": "User",
+      "action": "view",
       "target": "Image",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "want",
-      "target": "Tag",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "detect",
-      "target": "",
+      "actor": "Client",
+      "action": "replace",
+      "target": "Model",
       "para": []
     },
     {
@@ -79,26 +97,20 @@
     },
     {
       "actor": "Client",
-      "action": "replace",
+      "action": "see",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Image",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "replace",
-      "target": "Algorithm",
       "para": []
     },
     {
       "actor": "Ui",
       "action": "view",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "want",
+      "target": "Tag",
       "para": []
     }
   ]

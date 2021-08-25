@@ -15,11 +15,11 @@
       ],
       "attributes": [
         {
-          "name": "detail",
+          "name": "child",
           "type": "default"
         },
         {
-          "name": "child",
+          "name": "detail",
           "type": "default"
         }
       ]
@@ -103,6 +103,17 @@
   },
   "relation_list": [
     {
+      "source": "Notification",
+      "dest": "Member",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
       "source": "News",
       "dest": "Section",
       "type": "aggregation",
@@ -116,26 +127,14 @@
   ],
   "behavior_list": [
     {
-      "actor": "Donor",
-      "action": "support",
-      "target": "Vymacommunity",
+      "actor": "Member",
+      "action": "view",
+      "target": "Information",
       "para": []
     },
     {
-      "actor": "Section",
-      "action": "trigger",
-      "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "purchase",
-      "target": "Dvd",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "register",
+      "actor": "Parent",
+      "action": "view",
       "target": "",
       "para": []
     },
@@ -147,49 +146,37 @@
     },
     {
       "actor": "Parent",
+      "action": "pay",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Student",
       "action": "view",
       "target": "",
       "para": []
     },
     {
       "actor": "Admin",
-      "action": "check",
-      "target": "Mail",
+      "action": "update",
+      "target": "Information",
       "para": []
     },
     {
       "actor": "Client",
-      "action": "check",
-      "target": "GoogleDrive",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "update",
-      "target": "Roster",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Parent",
-      "action": "view",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "update",
-      "target": "Detail",
+      "action": "add",
+      "target": "Link",
       "para": []
     },
     {
       "actor": "Student",
       "action": "practice",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "pay",
       "target": "",
       "para": []
     },
@@ -200,27 +187,9 @@
       "para": []
     },
     {
-      "actor": "Donor",
-      "action": "make",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Parent",
-      "action": "set_up",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "download",
-      "target": "MusicNote",
-      "para": []
-    },
-    {
-      "actor": "Parent",
-      "action": "pay",
-      "target": "",
+      "actor": "Admin",
+      "action": "check",
+      "target": "Mail",
       "para": []
     },
     {
@@ -232,25 +201,31 @@
     {
       "actor": "User",
       "action": "receive",
-      "target": "Update",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Client",
-      "action": "add",
-      "target": "Link",
+      "actor": "Parent",
+      "action": "set_up",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
+      "action": "purchase",
+      "target": "Dvd",
+      "para": []
+    },
+    {
+      "actor": "Parent",
       "action": "view",
-      "target": "Detail",
+      "target": "OtherDetail",
       "para": []
     },
     {
       "actor": "Admin",
       "action": "update",
-      "target": "Information",
+      "target": "Roster",
       "para": []
     },
     {
@@ -260,9 +235,45 @@
       "para": []
     },
     {
-      "actor": "Student",
+      "actor": "User",
       "action": "view",
+      "target": "Trailer",
+      "para": []
+    },
+    {
+      "actor": "Concern",
+      "action": "address",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Update",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "Section",
+      "action": "trigger",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "download",
+      "target": "MusicNote",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "view",
+      "target": "Page",
       "para": []
     },
     {
@@ -278,21 +289,39 @@
       "para": []
     },
     {
-      "actor": "Parent",
-      "action": "view",
-      "target": "OtherDetail",
+      "actor": "Donor",
+      "action": "support",
+      "target": "VymaCommunity",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "view",
-      "target": "Trailer",
+      "actor": "Client",
+      "action": "check",
+      "target": "GoogleDrive",
       "para": []
     },
     {
-      "actor": "Member",
-      "action": "view",
-      "target": "Information",
+      "actor": "Client",
+      "action": "add",
+      "target": "Website",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "register",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Donor",
+      "action": "make",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "update",
+      "target": "Detail",
       "para": []
     }
   ]

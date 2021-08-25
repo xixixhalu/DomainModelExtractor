@@ -12,12 +12,12 @@
       "Index": {
         "1": "with",
         "2": "military",
-        "3": "experience",
+        "3": "Experience",
         "4": ",",
         "5": "Learner",
         "6": "can",
         "7": "resolve",
-        "8": "conflict",
+        "8": "Conflict",
         "9": "in",
         "10": "a",
         "11": "Team",
@@ -26,7 +26,7 @@
         "14": "that",
         "15": "Learner",
         "16": "have",
-        "17": "practice",
+        "17": "Practice",
         "18": "work",
         "19": "collaboratively",
         "20": "in",
@@ -386,12 +386,12 @@
       "Index": {
         "1": "with",
         "2": "military",
-        "3": "experience",
+        "3": "Experience",
         "4": ",",
         "5": "Learner",
         "6": "can",
         "7": "resolve",
-        "8": "conflict",
+        "8": "Conflict",
         "9": "in",
         "10": "a",
         "11": "Team",
@@ -400,7 +400,7 @@
         "14": "that",
         "15": "Learner",
         "16": "have",
-        "17": "practice",
+        "17": "Practice",
         "18": "work",
         "19": "collaboratively",
         "20": "in",
@@ -763,7 +763,7 @@
         "3": "to",
         "4": "use",
         "5": "a",
-        "6": "program",
+        "6": "Program",
         "7": "design",
         "8": "for",
         "9": "ConflictResolution",
@@ -776,12 +776,12 @@
         "16": "improve",
         "17": "CollegeStudent",
         "18": "'s",
-        "19": "competence",
+        "19": "Competence",
         "20": "and",
-        "21": "confidence",
+        "21": "Confidence",
         "22": "in",
         "23": "resolve",
-        "24": "conflict",
+        "24": "Conflict",
         "25": "."
       },
       "TD": {
@@ -1227,14 +1227,14 @@
         "4": "participate",
         "5": "in",
         "6": "a",
-        "7": "program",
+        "7": "Program",
         "8": "that",
         "9": "integrate",
         "10": "military",
-        "11": "experience",
+        "11": "Experience",
         "12": "in",
         "13": "a",
-        "14": "business",
+        "14": "Business",
         "15": "set",
         "16": "so",
         "17": "that",
@@ -1242,7 +1242,7 @@
         "19": "can",
         "20": "collaborate",
         "21": "with",
-        "22": "teammate",
+        "22": "Teammate",
         "23": "to",
         "24": "improve",
         "25": "ConflictResolutionSkill",
@@ -1683,7 +1683,7 @@
         "C": 13
       },
       "Index": {
-        "1": "veteran",
+        "1": "Veteran",
         "2": "want",
         "3": "to",
         "4": "see",
@@ -1698,16 +1698,16 @@
         "13": "Situation",
         "14": "so",
         "15": "that",
-        "16": "veteran",
+        "16": "Veteran",
         "17": "can",
         "18": "see",
         "19": "that",
-        "20": "veteran",
+        "20": "Veteran",
         "21": "be",
         "22": "not",
         "23": "alone",
         "24": "in",
-        "25": "veteran",
+        "25": "Veteran",
         "26": "'s",
         "27": "ThoughtProcess",
         "28": "."
@@ -2163,10 +2163,10 @@
         "10": "interact",
         "11": "better",
         "12": "with",
-        "13": "veteran",
+        "13": "Veteran",
         "14": "in",
         "15": "the",
-        "16": "future",
+        "16": "Future",
         "17": "."
       },
       "TD": {
@@ -2445,332 +2445,6 @@
   "SVCcO": [
     {
       "FileName": "2015-USC-Project04",
-      "Sentence": "ExperientialLearningCenterStaff can take proper Training so that ExperientialLearningCenterStaff can help Student use the System to improve their ConflictManagementSkill .",
-      "Result": {
-        "A": 12,
-        "B": 11,
-        "C": 16,
-        "D": 18
-      },
-      "Index": {
-        "1": "ExperientialLearningCenterStaff",
-        "2": "can",
-        "3": "take",
-        "4": "proper",
-        "5": "training",
-        "6": "so",
-        "7": "that",
-        "8": "ExperientialLearningCenterStaff",
-        "9": "can",
-        "10": "help",
-        "11": "Student",
-        "12": "use",
-        "13": "the",
-        "14": "system",
-        "15": "to",
-        "16": "improve",
-        "17": "they",
-        "18": "ConflictManagementSkill",
-        "19": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ],
-          [
-            10,
-            8
-          ],
-          [
-            12,
-            11
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ],
-          [
-            10,
-            9
-          ]
-        ],
-        "amod": [
-          [
-            5,
-            4
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            5
-          ],
-          [
-            12,
-            14
-          ],
-          [
-            16,
-            18
-          ]
-        ],
-        "mark": [
-          [
-            10,
-            6
-          ],
-          [
-            16,
-            15
-          ]
-        ],
-        "fixed": [
-          [
-            6,
-            7
-          ]
-        ],
-        "advcl:so_that": [
-          [
-            3,
-            10
-          ]
-        ],
-        "ccomp": [
-          [
-            10,
-            12
-          ]
-        ],
-        "det": [
-          [
-            14,
-            13
-          ]
-        ],
-        "nsubj:xsubj": [
-          [
-            16,
-            14
-          ]
-        ],
-        "xcomp": [
-          [
-            12,
-            16
-          ]
-        ],
-        "nmod:poss": [
-          [
-            18,
-            17
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            19
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NNP": [
-          [
-            1,
-            1
-          ],
-          [
-            8,
-            8
-          ],
-          [
-            11,
-            11
-          ],
-          [
-            18,
-            18
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            5
-          ],
-          [
-            8,
-            8
-          ],
-          [
-            11,
-            11
-          ],
-          [
-            13,
-            14
-          ],
-          [
-            17,
-            18
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ],
-          [
-            9,
-            9
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ],
-          [
-            10,
-            10
-          ],
-          [
-            12,
-            12
-          ],
-          [
-            16,
-            16
-          ]
-        ],
-        "JJ": [
-          [
-            4,
-            4
-          ]
-        ],
-        "NN": [
-          [
-            5,
-            5
-          ],
-          [
-            14,
-            14
-          ]
-        ],
-        "IN": [
-          [
-            6,
-            6
-          ],
-          [
-            7,
-            7
-          ]
-        ],
-        "DT": [
-          [
-            13,
-            13
-          ]
-        ],
-        "TO": [
-          [
-            15,
-            15
-          ]
-        ],
-        "PRP$": [
-          [
-            17,
-            17
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            18
-          ],
-          [
-            3,
-            18
-          ],
-          [
-            9,
-            18
-          ],
-          [
-            10,
-            18
-          ],
-          [
-            12,
-            18
-          ],
-          [
-            15,
-            18
-          ],
-          [
-            16,
-            18
-          ]
-        ],
-        "S": [
-          [
-            1,
-            19
-          ],
-          [
-            8,
-            18
-          ],
-          [
-            11,
-            18
-          ],
-          [
-            15,
-            18
-          ]
-        ],
-        "SBAR": [
-          [
-            6,
-            18
-          ]
-        ],
-        ".": [
-          [
-            19,
-            19
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            19
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2015-USC-Project04",
       "Sentence": "Learner can take the Assessment so that Learner can judge how much Learner need to improve Learner's ConflictManagementSkill .",
       "Result": {
         "A": 14,
@@ -2779,7 +2453,7 @@
         "D": 19
       },
       "Index": {
-        "1": "learner",
+        "1": "Learner",
         "2": "can",
         "3": "take",
         "4": "the",
@@ -3135,7 +2809,7 @@
         "3": "to",
         "4": "use",
         "5": "a",
-        "6": "program",
+        "6": "Program",
         "7": "design",
         "8": "for",
         "9": "ConflictResolution",
@@ -3148,12 +2822,12 @@
         "16": "improve",
         "17": "CollegeStudent",
         "18": "'s",
-        "19": "competence",
+        "19": "Competence",
         "20": "and",
-        "21": "confidence",
+        "21": "Confidence",
         "22": "in",
         "23": "resolve",
-        "24": "conflict",
+        "24": "Conflict",
         "25": "."
       },
       "TD": {
@@ -3586,551 +3260,6 @@
     },
     {
       "FileName": "2015-USC-Project04",
-      "Sentence": "that is marketed to BusinessNeed so that ConflictResolutionExercise can encourage Employee to practice ProductConflictResolutionSkill .",
-      "Result": {
-        "A": 10,
-        "B": 8,
-        "C": 13,
-        "D": 14
-      },
-      "Index": {
-        "1": "that",
-        "2": "be",
-        "3": "market",
-        "4": "to",
-        "5": "BusinessNeed",
-        "6": "so",
-        "7": "that",
-        "8": "ConflictResolutionExercise",
-        "9": "can",
-        "10": "encourage",
-        "11": "employee",
-        "12": "to",
-        "13": "practice",
-        "14": "ProductConflictResolutionSkill",
-        "15": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj:pass": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux:pass": [
-          [
-            3,
-            2
-          ]
-        ],
-        "case": [
-          [
-            5,
-            4
-          ]
-        ],
-        "obl:to": [
-          [
-            3,
-            5
-          ]
-        ],
-        "mark": [
-          [
-            10,
-            6
-          ],
-          [
-            13,
-            12
-          ]
-        ],
-        "fixed": [
-          [
-            6,
-            7
-          ]
-        ],
-        "nsubj": [
-          [
-            10,
-            8
-          ]
-        ],
-        "aux": [
-          [
-            10,
-            9
-          ]
-        ],
-        "advcl:so_that": [
-          [
-            3,
-            10
-          ]
-        ],
-        "obj": [
-          [
-            10,
-            11
-          ],
-          [
-            13,
-            14
-          ]
-        ],
-        "nsubj:xsubj": [
-          [
-            13,
-            11
-          ]
-        ],
-        "xcomp": [
-          [
-            10,
-            13
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            15
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "DT": [
-          [
-            1,
-            1
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            5,
-            5
-          ],
-          [
-            8,
-            8
-          ],
-          [
-            11,
-            11
-          ],
-          [
-            14,
-            14
-          ]
-        ],
-        "VBZ": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VBN": [
-          [
-            3,
-            3
-          ]
-        ],
-        "IN": [
-          [
-            4,
-            4
-          ],
-          [
-            6,
-            6
-          ],
-          [
-            7,
-            7
-          ]
-        ],
-        "NNP": [
-          [
-            5,
-            5
-          ],
-          [
-            8,
-            8
-          ],
-          [
-            14,
-            14
-          ]
-        ],
-        "PP": [
-          [
-            4,
-            5
-          ]
-        ],
-        "MD": [
-          [
-            9,
-            9
-          ]
-        ],
-        "VB": [
-          [
-            10,
-            10
-          ],
-          [
-            13,
-            13
-          ]
-        ],
-        "NN": [
-          [
-            11,
-            11
-          ]
-        ],
-        "TO": [
-          [
-            12,
-            12
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            14
-          ],
-          [
-            3,
-            14
-          ],
-          [
-            9,
-            14
-          ],
-          [
-            10,
-            14
-          ],
-          [
-            12,
-            14
-          ],
-          [
-            13,
-            14
-          ]
-        ],
-        "S": [
-          [
-            1,
-            15
-          ],
-          [
-            8,
-            14
-          ],
-          [
-            12,
-            14
-          ]
-        ],
-        "SBAR": [
-          [
-            6,
-            14
-          ]
-        ],
-        ".": [
-          [
-            15,
-            15
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            15
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2015-USC-Project04",
-      "Sentence": "MBVStudent can use the System to quickly resolve Conflict in MBVStudent's Team .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 8,
-        "D": 9
-      },
-      "Index": {
-        "1": "MBVStudent",
-        "2": "can",
-        "3": "use",
-        "4": "the",
-        "5": "system",
-        "6": "to",
-        "7": "quickly",
-        "8": "resolve",
-        "9": "conflict",
-        "10": "in",
-        "11": "MBVStudent",
-        "12": "'s",
-        "13": "Team",
-        "14": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "det": [
-          [
-            5,
-            4
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            5
-          ],
-          [
-            8,
-            9
-          ]
-        ],
-        "nsubj:xsubj": [
-          [
-            8,
-            5
-          ]
-        ],
-        "mark": [
-          [
-            8,
-            6
-          ]
-        ],
-        "advmod": [
-          [
-            8,
-            7
-          ]
-        ],
-        "xcomp": [
-          [
-            3,
-            8
-          ]
-        ],
-        "case": [
-          [
-            13,
-            10
-          ],
-          [
-            11,
-            12
-          ]
-        ],
-        "nmod:poss": [
-          [
-            13,
-            11
-          ]
-        ],
-        "nmod:in": [
-          [
-            9,
-            13
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            14
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NNP": [
-          [
-            1,
-            1
-          ],
-          [
-            11,
-            11
-          ],
-          [
-            13,
-            13
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            5
-          ],
-          [
-            9,
-            9
-          ],
-          [
-            11,
-            12
-          ],
-          [
-            11,
-            13
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ],
-          [
-            8,
-            8
-          ]
-        ],
-        "DT": [
-          [
-            4,
-            4
-          ]
-        ],
-        "NN": [
-          [
-            5,
-            5
-          ],
-          [
-            9,
-            9
-          ]
-        ],
-        "TO": [
-          [
-            6,
-            6
-          ]
-        ],
-        "RB": [
-          [
-            7,
-            7
-          ]
-        ],
-        "ADVP": [
-          [
-            7,
-            7
-          ]
-        ],
-        "IN": [
-          [
-            10,
-            10
-          ]
-        ],
-        "POS": [
-          [
-            12,
-            12
-          ]
-        ],
-        "PP": [
-          [
-            10,
-            13
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            13
-          ],
-          [
-            3,
-            13
-          ],
-          [
-            6,
-            13
-          ],
-          [
-            8,
-            13
-          ]
-        ],
-        "S": [
-          [
-            1,
-            14
-          ],
-          [
-            6,
-            13
-          ]
-        ],
-        ".": [
-          [
-            14,
-            14
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            14
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2015-USC-Project04",
       "Sentence": "Veteran want to see Graph on what DecisionOther made in the same Situation so that Veteran can see that Veteran 'm not alone in Veteran's ThoughtProcess .",
       "Result": {
         "A": 2,
@@ -4139,7 +3268,7 @@
         "D": 5
       },
       "Index": {
-        "1": "veteran",
+        "1": "Veteran",
         "2": "want",
         "3": "to",
         "4": "see",
@@ -4154,16 +3283,16 @@
         "13": "Situation",
         "14": "so",
         "15": "that",
-        "16": "veteran",
+        "16": "Veteran",
         "17": "can",
         "18": "see",
         "19": "that",
-        "20": "veteran",
+        "20": "Veteran",
         "21": "be",
         "22": "not",
         "23": "alone",
         "24": "in",
-        "25": "veteran",
+        "25": "Veteran",
         "26": "'s",
         "27": "ThoughtProcess",
         "28": "."
@@ -4597,243 +3726,6 @@
         ]
       },
       "Keywords": []
-    },
-    {
-      "FileName": "2015-USC-Project04",
-      "Sentence": "Veteran can use the System to gain Experience working with Civilian .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 7,
-        "D": 8
-      },
-      "Index": {
-        "1": "veteran",
-        "2": "can",
-        "3": "use",
-        "4": "the",
-        "5": "system",
-        "6": "to",
-        "7": "gain",
-        "8": "experience",
-        "9": "work",
-        "10": "with",
-        "11": "Civilian",
-        "12": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "det": [
-          [
-            5,
-            4
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            5
-          ],
-          [
-            7,
-            8
-          ]
-        ],
-        "nsubj:xsubj": [
-          [
-            7,
-            5
-          ]
-        ],
-        "mark": [
-          [
-            7,
-            6
-          ]
-        ],
-        "xcomp": [
-          [
-            3,
-            7
-          ]
-        ],
-        "acl": [
-          [
-            8,
-            9
-          ]
-        ],
-        "case": [
-          [
-            11,
-            10
-          ]
-        ],
-        "obl:with": [
-          [
-            9,
-            11
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            12
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ],
-          [
-            5,
-            5
-          ],
-          [
-            8,
-            8
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            5
-          ],
-          [
-            8,
-            8
-          ],
-          [
-            8,
-            11
-          ],
-          [
-            11,
-            11
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ],
-          [
-            7,
-            7
-          ]
-        ],
-        "DT": [
-          [
-            4,
-            4
-          ]
-        ],
-        "TO": [
-          [
-            6,
-            6
-          ]
-        ],
-        "VBG": [
-          [
-            9,
-            9
-          ]
-        ],
-        "IN": [
-          [
-            10,
-            10
-          ]
-        ],
-        "NNP": [
-          [
-            11,
-            11
-          ]
-        ],
-        "PP": [
-          [
-            10,
-            11
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            11
-          ],
-          [
-            3,
-            11
-          ],
-          [
-            6,
-            11
-          ],
-          [
-            7,
-            11
-          ],
-          [
-            9,
-            11
-          ]
-        ],
-        "S": [
-          [
-            1,
-            12
-          ],
-          [
-            6,
-            11
-          ]
-        ],
-        ".": [
-          [
-            12,
-            12
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            12
-          ]
-        ]
-      },
-      "Keywords": []
     }
   ],
   "SVpO": [],
@@ -4848,7 +3740,7 @@
       "Index": {
         "1": "with",
         "2": "military",
-        "3": "experience",
+        "3": "Experience",
         "4": ",",
         "5": "Learner",
         "6": "can",
@@ -5154,6 +4046,388 @@
     },
     {
       "FileName": "2015-USC-Project04",
+      "Sentence": "with military Experience , Learner can view Learner's in - game Score so that Learner know how much Learner am progressing .",
+      "Result": {
+        "A": 13,
+        "B": 8
+      },
+      "Index": {
+        "1": "with",
+        "2": "military",
+        "3": "Experience",
+        "4": ",",
+        "5": "Learner",
+        "6": "can",
+        "7": "view",
+        "8": "Learner",
+        "9": "'s",
+        "10": "in",
+        "11": "-",
+        "12": "game",
+        "13": "Score",
+        "14": "so",
+        "15": "that",
+        "16": "Learner",
+        "17": "know",
+        "18": "how",
+        "19": "much",
+        "20": "Learner",
+        "21": "be",
+        "22": "progress",
+        "23": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            7
+          ]
+        ],
+        "case": [
+          [
+            3,
+            1
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            12,
+            10
+          ]
+        ],
+        "amod": [
+          [
+            3,
+            2
+          ]
+        ],
+        "obl:with": [
+          [
+            7,
+            3
+          ]
+        ],
+        "punct": [
+          [
+            7,
+            4
+          ],
+          [
+            12,
+            11
+          ],
+          [
+            7,
+            23
+          ]
+        ],
+        "nsubj": [
+          [
+            7,
+            5
+          ],
+          [
+            17,
+            16
+          ],
+          [
+            22,
+            20
+          ]
+        ],
+        "aux": [
+          [
+            7,
+            6
+          ],
+          [
+            22,
+            21
+          ]
+        ],
+        "nmod:poss": [
+          [
+            13,
+            8
+          ]
+        ],
+        "compound": [
+          [
+            13,
+            12
+          ]
+        ],
+        "obj": [
+          [
+            7,
+            13
+          ]
+        ],
+        "mark": [
+          [
+            17,
+            14
+          ]
+        ],
+        "fixed": [
+          [
+            14,
+            15
+          ]
+        ],
+        "advcl:so_that": [
+          [
+            7,
+            17
+          ]
+        ],
+        "advmod": [
+          [
+            19,
+            18
+          ],
+          [
+            22,
+            19
+          ]
+        ],
+        "ccomp": [
+          [
+            17,
+            22
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "IN": [
+          [
+            1,
+            1
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "JJ": [
+          [
+            2,
+            2
+          ],
+          [
+            19,
+            19
+          ]
+        ],
+        "NN": [
+          [
+            3,
+            3
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ]
+        ],
+        "NP": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            20,
+            20
+          ]
+        ],
+        "PP": [
+          [
+            1,
+            3
+          ],
+          [
+            10,
+            12
+          ]
+        ],
+        ",": [
+          [
+            4,
+            4
+          ]
+        ],
+        "NNP": [
+          [
+            5,
+            5
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            20,
+            20
+          ]
+        ],
+        "MD": [
+          [
+            6,
+            6
+          ]
+        ],
+        "VB": [
+          [
+            7,
+            7
+          ]
+        ],
+        "POS": [
+          [
+            9,
+            9
+          ]
+        ],
+        "HYPH": [
+          [
+            11,
+            11
+          ]
+        ],
+        "NML": [
+          [
+            10,
+            12
+          ]
+        ],
+        "VBP": [
+          [
+            17,
+            17
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "WRB": [
+          [
+            18,
+            18
+          ]
+        ],
+        "WHADJP": [
+          [
+            18,
+            19
+          ]
+        ],
+        "VBG": [
+          [
+            22,
+            22
+          ]
+        ],
+        "VP": [
+          [
+            6,
+            22
+          ],
+          [
+            7,
+            22
+          ],
+          [
+            17,
+            22
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "S": [
+          [
+            1,
+            23
+          ],
+          [
+            16,
+            22
+          ],
+          [
+            20,
+            22
+          ]
+        ],
+        "SBAR": [
+          [
+            14,
+            22
+          ],
+          [
+            18,
+            22
+          ]
+        ],
+        ".": [
+          [
+            23,
+            23
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            23
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2015-USC-Project04",
       "Sentence": "CollegeStudent can use the System built efficiently so that CollegeStudent can improve CollegeStudent's ConflictManagementSkill .",
       "Result": {
         "A": 15,
@@ -5447,7 +4721,7 @@
         "B": 17
       },
       "Index": {
-        "1": "learner",
+        "1": "Learner",
         "2": "can",
         "3": "take",
         "4": "the",
@@ -5801,7 +5075,7 @@
         "3": "to",
         "4": "use",
         "5": "a",
-        "6": "program",
+        "6": "Program",
         "7": "design",
         "8": "for",
         "9": "ConflictResolution",
@@ -5814,12 +5088,12 @@
         "16": "improve",
         "17": "CollegeStudent",
         "18": "'s",
-        "19": "competence",
+        "19": "Competence",
         "20": "and",
-        "21": "confidence",
+        "21": "Confidence",
         "22": "in",
         "23": "resolve",
-        "24": "conflict",
+        "24": "Conflict",
         "25": "."
       },
       "TD": {
@@ -6262,11 +5536,11 @@
         "2": "can",
         "3": "use",
         "4": "the",
-        "5": "system",
+        "5": "System",
         "6": "to",
         "7": "quickly",
         "8": "resolve",
-        "9": "conflict",
+        "9": "Conflict",
         "10": "in",
         "11": "MBVStudent",
         "12": "'s",
@@ -6521,13 +5795,13 @@
         "2": "can",
         "3": "use",
         "4": "the",
-        "5": "score",
+        "5": "Score",
         "6": "from",
         "7": "the",
-        "8": "system",
+        "8": "System",
         "9": "to",
         "10": "keep",
-        "11": "track",
+        "11": "Track",
         "12": "of",
         "13": "MBVStudent",
         "14": "'s",
@@ -6792,22 +6066,22 @@
         "B": 7
       },
       "Index": {
-        "1": "employer",
+        "1": "Employer",
         "2": "can",
         "3": "adopt",
         "4": "the",
-        "5": "system",
+        "5": "System",
         "6": "in",
         "7": "Employer",
         "8": "'s",
-        "9": "company",
+        "9": "Company",
         "10": "so",
         "11": "that",
         "12": "the",
         "13": "Team",
         "14": "can",
         "15": "resolve",
-        "16": "conflict",
+        "16": "Conflict",
         "17": "more",
         "18": "quickly",
         "19": "."
@@ -7102,7 +6376,7 @@
         "B": 25
       },
       "Index": {
-        "1": "veteran",
+        "1": "Veteran",
         "2": "want",
         "3": "to",
         "4": "see",
@@ -7117,16 +6391,16 @@
         "13": "Situation",
         "14": "so",
         "15": "that",
-        "16": "veteran",
+        "16": "Veteran",
         "17": "can",
         "18": "see",
         "19": "that",
-        "20": "veteran",
+        "20": "Veteran",
         "21": "be",
         "22": "not",
         "23": "alone",
         "24": "in",
-        "25": "veteran",
+        "25": "Veteran",
         "26": "'s",
         "27": "ThoughtProcess",
         "28": "."
@@ -7569,22 +6843,22 @@
         "B": 4
       },
       "Index": {
-        "1": "veteran",
+        "1": "Veteran",
         "2": "can",
         "3": "compare",
-        "4": "veteran",
+        "4": "Veteran",
         "5": "'s",
-        "6": "decision",
+        "6": "Decision",
         "7": "to",
         "8": "the",
         "9": "DecisionCivilian",
         "10": "make",
         "11": "so",
         "12": "that",
-        "13": "veteran",
+        "13": "Veteran",
         "14": "can",
         "15": "compare",
-        "16": "veteran",
+        "16": "Veteran",
         "17": "'s",
         "18": "ThoughtProcess",
         "19": "to",
@@ -7919,22 +7193,22 @@
         "B": 16
       },
       "Index": {
-        "1": "veteran",
+        "1": "Veteran",
         "2": "can",
         "3": "compare",
-        "4": "veteran",
+        "4": "Veteran",
         "5": "'s",
-        "6": "decision",
+        "6": "Decision",
         "7": "to",
         "8": "the",
         "9": "DecisionCivilian",
         "10": "make",
         "11": "so",
         "12": "that",
-        "13": "veteran",
+        "13": "Veteran",
         "14": "can",
         "15": "compare",
-        "16": "veteran",
+        "16": "Veteran",
         "17": "'s",
         "18": "ThoughtProcess",
         "19": "to",
@@ -8262,7 +7536,7 @@
       "Keywords": []
     }
   ],
-  "OPassVS": [],
+  "SPassPartVByS": [],
   "VOToInf": [
     {
       "FileName": "2015-USC-Project04",
@@ -8277,13 +7551,13 @@
         "2": "can",
         "3": "use",
         "4": "the",
-        "5": "score",
+        "5": "Score",
         "6": "from",
         "7": "the",
-        "8": "system",
+        "8": "System",
         "9": "to",
         "10": "keep",
-        "11": "track",
+        "11": "Track",
         "12": "of",
         "13": "MBVStudent",
         "14": "'s",
@@ -8545,937 +7819,8 @@
   "SVByVO": [],
   "AO": [],
   "SVCVO": [],
-  "SVVO": [],
-  "SVVOcomma1": [
-    {
-      "FileName": "2015-USC-Project04",
-      "Sentence": "CollegeStudent want to use a Program designed for ConflictResolution that is interactive so CollegeStudent can improve CollegeStudent's Competence and Confidence in resolving Conflict .",
-      "Result": {
-        "A": 12,
-        "B": 6,
-        "C": 16,
-        "D": 19
-      },
-      "Index": {
-        "1": "CollegeStudent",
-        "2": "want",
-        "3": "to",
-        "4": "use",
-        "5": "a",
-        "6": "program",
-        "7": "design",
-        "8": "for",
-        "9": "ConflictResolution",
-        "10": "that",
-        "11": "be",
-        "12": "interactive",
-        "13": "so",
-        "14": "CollegeStudent",
-        "15": "can",
-        "16": "improve",
-        "17": "CollegeStudent",
-        "18": "'s",
-        "19": "competence",
-        "20": "and",
-        "21": "confidence",
-        "22": "in",
-        "23": "resolve",
-        "24": "conflict",
-        "25": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            2
-          ]
-        ],
-        "nsubj": [
-          [
-            2,
-            1
-          ],
-          [
-            12,
-            6
-          ],
-          [
-            16,
-            14
-          ]
-        ],
-        "nsubj:xsubj": [
-          [
-            4,
-            1
-          ]
-        ],
-        "mark": [
-          [
-            4,
-            3
-          ]
-        ],
-        "xcomp": [
-          [
-            2,
-            4
-          ]
-        ],
-        "det": [
-          [
-            6,
-            5
-          ]
-        ],
-        "obj": [
-          [
-            4,
-            6
-          ],
-          [
-            16,
-            19
-          ],
-          [
-            16,
-            21
-          ]
-        ],
-        "acl": [
-          [
-            6,
-            7
-          ]
-        ],
-        "case": [
-          [
-            9,
-            8
-          ],
-          [
-            17,
-            18
-          ],
-          [
-            24,
-            22
-          ]
-        ],
-        "obl:for": [
-          [
-            7,
-            9
-          ]
-        ],
-        "ref": [
-          [
-            6,
-            10
-          ]
-        ],
-        "cop": [
-          [
-            12,
-            11
-          ]
-        ],
-        "acl:relcl": [
-          [
-            6,
-            12
-          ]
-        ],
-        "advmod": [
-          [
-            16,
-            13
-          ]
-        ],
-        "aux": [
-          [
-            16,
-            15
-          ]
-        ],
-        "dep": [
-          [
-            12,
-            16
-          ]
-        ],
-        "nmod:poss": [
-          [
-            19,
-            17
-          ]
-        ],
-        "cc": [
-          [
-            21,
-            20
-          ]
-        ],
-        "conj:and": [
-          [
-            19,
-            21
-          ]
-        ],
-        "amod": [
-          [
-            24,
-            23
-          ]
-        ],
-        "obl:in": [
-          [
-            16,
-            24
-          ]
-        ],
-        "punct": [
-          [
-            2,
-            25
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NNP": [
-          [
-            1,
-            1
-          ],
-          [
-            9,
-            9
-          ],
-          [
-            14,
-            14
-          ],
-          [
-            17,
-            17
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            5,
-            6
-          ],
-          [
-            5,
-            24
-          ],
-          [
-            9,
-            9
-          ],
-          [
-            9,
-            24
-          ],
-          [
-            14,
-            14
-          ],
-          [
-            17,
-            18
-          ],
-          [
-            17,
-            21
-          ],
-          [
-            24,
-            24
-          ]
-        ],
-        "VBP": [
-          [
-            2,
-            2
-          ]
-        ],
-        "TO": [
-          [
-            3,
-            3
-          ]
-        ],
-        "VB": [
-          [
-            4,
-            4
-          ],
-          [
-            16,
-            16
-          ]
-        ],
-        "DT": [
-          [
-            5,
-            5
-          ]
-        ],
-        "NN": [
-          [
-            6,
-            6
-          ],
-          [
-            19,
-            19
-          ],
-          [
-            21,
-            21
-          ],
-          [
-            24,
-            24
-          ]
-        ],
-        "VBN": [
-          [
-            7,
-            7
-          ]
-        ],
-        "IN": [
-          [
-            8,
-            8
-          ],
-          [
-            22,
-            22
-          ]
-        ],
-        "WDT": [
-          [
-            10,
-            10
-          ]
-        ],
-        "WHNP": [
-          [
-            10,
-            10
-          ]
-        ],
-        "VBZ": [
-          [
-            11,
-            11
-          ]
-        ],
-        "JJ": [
-          [
-            12,
-            12
-          ]
-        ],
-        "RB": [
-          [
-            13,
-            13
-          ]
-        ],
-        "MD": [
-          [
-            15,
-            15
-          ]
-        ],
-        "POS": [
-          [
-            18,
-            18
-          ]
-        ],
-        "CC": [
-          [
-            20,
-            20
-          ]
-        ],
-        "VBG": [
-          [
-            23,
-            23
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            24
-          ],
-          [
-            3,
-            24
-          ],
-          [
-            4,
-            24
-          ],
-          [
-            7,
-            24
-          ],
-          [
-            11,
-            24
-          ],
-          [
-            15,
-            24
-          ],
-          [
-            16,
-            24
-          ],
-          [
-            23,
-            24
-          ]
-        ],
-        "S": [
-          [
-            1,
-            25
-          ],
-          [
-            3,
-            24
-          ],
-          [
-            11,
-            24
-          ],
-          [
-            14,
-            24
-          ],
-          [
-            23,
-            24
-          ]
-        ],
-        "PP": [
-          [
-            8,
-            24
-          ],
-          [
-            22,
-            24
-          ]
-        ],
-        "SBAR": [
-          [
-            10,
-            24
-          ],
-          [
-            14,
-            24
-          ]
-        ],
-        "ADJP": [
-          [
-            12,
-            24
-          ]
-        ],
-        ".": [
-          [
-            25,
-            25
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            25
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2015-USC-Project04",
-      "Sentence": "CollegeStudent want to use a Program designed for ConflictResolution that is interactive so CollegeStudent can improve CollegeStudent's Competence and Confidence in resolving Conflict .",
-      "Result": {
-        "A": 12,
-        "B": 6,
-        "C": 16,
-        "D": 21
-      },
-      "Index": {
-        "1": "CollegeStudent",
-        "2": "want",
-        "3": "to",
-        "4": "use",
-        "5": "a",
-        "6": "program",
-        "7": "design",
-        "8": "for",
-        "9": "ConflictResolution",
-        "10": "that",
-        "11": "be",
-        "12": "interactive",
-        "13": "so",
-        "14": "CollegeStudent",
-        "15": "can",
-        "16": "improve",
-        "17": "CollegeStudent",
-        "18": "'s",
-        "19": "competence",
-        "20": "and",
-        "21": "confidence",
-        "22": "in",
-        "23": "resolve",
-        "24": "conflict",
-        "25": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            2
-          ]
-        ],
-        "nsubj": [
-          [
-            2,
-            1
-          ],
-          [
-            12,
-            6
-          ],
-          [
-            16,
-            14
-          ]
-        ],
-        "nsubj:xsubj": [
-          [
-            4,
-            1
-          ]
-        ],
-        "mark": [
-          [
-            4,
-            3
-          ]
-        ],
-        "xcomp": [
-          [
-            2,
-            4
-          ]
-        ],
-        "det": [
-          [
-            6,
-            5
-          ]
-        ],
-        "obj": [
-          [
-            4,
-            6
-          ],
-          [
-            16,
-            19
-          ],
-          [
-            16,
-            21
-          ]
-        ],
-        "acl": [
-          [
-            6,
-            7
-          ]
-        ],
-        "case": [
-          [
-            9,
-            8
-          ],
-          [
-            17,
-            18
-          ],
-          [
-            24,
-            22
-          ]
-        ],
-        "obl:for": [
-          [
-            7,
-            9
-          ]
-        ],
-        "ref": [
-          [
-            6,
-            10
-          ]
-        ],
-        "cop": [
-          [
-            12,
-            11
-          ]
-        ],
-        "acl:relcl": [
-          [
-            6,
-            12
-          ]
-        ],
-        "advmod": [
-          [
-            16,
-            13
-          ]
-        ],
-        "aux": [
-          [
-            16,
-            15
-          ]
-        ],
-        "dep": [
-          [
-            12,
-            16
-          ]
-        ],
-        "nmod:poss": [
-          [
-            19,
-            17
-          ]
-        ],
-        "cc": [
-          [
-            21,
-            20
-          ]
-        ],
-        "conj:and": [
-          [
-            19,
-            21
-          ]
-        ],
-        "amod": [
-          [
-            24,
-            23
-          ]
-        ],
-        "obl:in": [
-          [
-            16,
-            24
-          ]
-        ],
-        "punct": [
-          [
-            2,
-            25
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NNP": [
-          [
-            1,
-            1
-          ],
-          [
-            9,
-            9
-          ],
-          [
-            14,
-            14
-          ],
-          [
-            17,
-            17
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            5,
-            6
-          ],
-          [
-            5,
-            24
-          ],
-          [
-            9,
-            9
-          ],
-          [
-            9,
-            24
-          ],
-          [
-            14,
-            14
-          ],
-          [
-            17,
-            18
-          ],
-          [
-            17,
-            21
-          ],
-          [
-            24,
-            24
-          ]
-        ],
-        "VBP": [
-          [
-            2,
-            2
-          ]
-        ],
-        "TO": [
-          [
-            3,
-            3
-          ]
-        ],
-        "VB": [
-          [
-            4,
-            4
-          ],
-          [
-            16,
-            16
-          ]
-        ],
-        "DT": [
-          [
-            5,
-            5
-          ]
-        ],
-        "NN": [
-          [
-            6,
-            6
-          ],
-          [
-            19,
-            19
-          ],
-          [
-            21,
-            21
-          ],
-          [
-            24,
-            24
-          ]
-        ],
-        "VBN": [
-          [
-            7,
-            7
-          ]
-        ],
-        "IN": [
-          [
-            8,
-            8
-          ],
-          [
-            22,
-            22
-          ]
-        ],
-        "WDT": [
-          [
-            10,
-            10
-          ]
-        ],
-        "WHNP": [
-          [
-            10,
-            10
-          ]
-        ],
-        "VBZ": [
-          [
-            11,
-            11
-          ]
-        ],
-        "JJ": [
-          [
-            12,
-            12
-          ]
-        ],
-        "RB": [
-          [
-            13,
-            13
-          ]
-        ],
-        "MD": [
-          [
-            15,
-            15
-          ]
-        ],
-        "POS": [
-          [
-            18,
-            18
-          ]
-        ],
-        "CC": [
-          [
-            20,
-            20
-          ]
-        ],
-        "VBG": [
-          [
-            23,
-            23
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            24
-          ],
-          [
-            3,
-            24
-          ],
-          [
-            4,
-            24
-          ],
-          [
-            7,
-            24
-          ],
-          [
-            11,
-            24
-          ],
-          [
-            15,
-            24
-          ],
-          [
-            16,
-            24
-          ],
-          [
-            23,
-            24
-          ]
-        ],
-        "S": [
-          [
-            1,
-            25
-          ],
-          [
-            3,
-            24
-          ],
-          [
-            11,
-            24
-          ],
-          [
-            14,
-            24
-          ],
-          [
-            23,
-            24
-          ]
-        ],
-        "PP": [
-          [
-            8,
-            24
-          ],
-          [
-            22,
-            24
-          ]
-        ],
-        "SBAR": [
-          [
-            10,
-            24
-          ],
-          [
-            14,
-            24
-          ]
-        ],
-        "ADJP": [
-          [
-            12,
-            24
-          ]
-        ],
-        ".": [
-          [
-            25,
-            25
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            25
-          ]
-        ]
-      },
-      "Keywords": []
-    }
-  ],
+  "SVVOMultiComma": [],
+  "SVVO1Comma": [],
   "SVOCO": [
     {
       "FileName": "2015-USC-Project04",
@@ -9492,7 +7837,7 @@
         "3": "to",
         "4": "use",
         "5": "a",
-        "6": "program",
+        "6": "Program",
         "7": "design",
         "8": "for",
         "9": "ConflictResolution",
@@ -9505,12 +7850,12 @@
         "16": "improve",
         "17": "CollegeStudent",
         "18": "'s",
-        "19": "competence",
+        "19": "Competence",
         "20": "and",
-        "21": "confidence",
+        "21": "Confidence",
         "22": "in",
         "23": "resolve",
-        "24": "conflict",
+        "24": "Conflict",
         "25": "."
       },
       "TD": {
@@ -9942,8 +8287,681 @@
       "Keywords": []
     }
   ],
-  "SVOO": [],
-  "SVOOcomma1": [],
+  "SVOOComma": [],
+  "SVIOO": [],
+  "SVOTo": [
+    {
+      "FileName": "2015-USC-Project04",
+      "Sentence": "Veteran can compare Veteran's Decision to the DecisionCivilian made so that Veteran can compare Veteran's ThoughtProcess to theirs .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 6,
+        "D": 9
+      },
+      "Index": {
+        "1": "Veteran",
+        "2": "can",
+        "3": "compare",
+        "4": "Veteran",
+        "5": "'s",
+        "6": "Decision",
+        "7": "to",
+        "8": "the",
+        "9": "DecisionCivilian",
+        "10": "make",
+        "11": "so",
+        "12": "that",
+        "13": "Veteran",
+        "14": "can",
+        "15": "compare",
+        "16": "Veteran",
+        "17": "'s",
+        "18": "ThoughtProcess",
+        "19": "to",
+        "20": "theirs",
+        "21": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ],
+          [
+            15,
+            13
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ],
+          [
+            15,
+            14
+          ]
+        ],
+        "nmod:poss": [
+          [
+            6,
+            4
+          ],
+          [
+            18,
+            16
+          ]
+        ],
+        "case": [
+          [
+            4,
+            5
+          ],
+          [
+            9,
+            7
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            20,
+            19
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            6
+          ],
+          [
+            15,
+            18
+          ]
+        ],
+        "det": [
+          [
+            9,
+            8
+          ]
+        ],
+        "obl:to": [
+          [
+            3,
+            9
+          ],
+          [
+            15,
+            20
+          ]
+        ],
+        "dep": [
+          [
+            3,
+            10
+          ]
+        ],
+        "mark": [
+          [
+            15,
+            11
+          ]
+        ],
+        "fixed": [
+          [
+            11,
+            12
+          ]
+        ],
+        "advcl:so_that": [
+          [
+            10,
+            15
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            21
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            16,
+            16
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            16,
+            18
+          ],
+          [
+            20,
+            20
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ],
+          [
+            14,
+            14
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "POS": [
+          [
+            5,
+            5
+          ],
+          [
+            17,
+            17
+          ]
+        ],
+        "IN": [
+          [
+            7,
+            7
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            19,
+            19
+          ]
+        ],
+        "DT": [
+          [
+            8,
+            8
+          ]
+        ],
+        "NNP": [
+          [
+            9,
+            9
+          ],
+          [
+            18,
+            18
+          ]
+        ],
+        "PP": [
+          [
+            7,
+            9
+          ],
+          [
+            19,
+            20
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            9
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            10,
+            20
+          ],
+          [
+            14,
+            20
+          ],
+          [
+            15,
+            20
+          ]
+        ],
+        "S": [
+          [
+            1,
+            21
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            13,
+            20
+          ]
+        ],
+        "SBAR": [
+          [
+            2,
+            9
+          ],
+          [
+            11,
+            20
+          ]
+        ],
+        "VBD": [
+          [
+            10,
+            10
+          ]
+        ],
+        "PRP": [
+          [
+            20,
+            20
+          ]
+        ],
+        ".": [
+          [
+            21,
+            21
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            21
+          ]
+        ]
+      },
+      "Keywords": []
+    }
+  ],
+  "OPassPartVByS": [],
+  "SVOPassPart": [],
+  "SPredicativeV": [
+    {
+      "FileName": "2015-USC-Project04",
+      "Sentence": "with military Experience , Learner can practice Learner's ConflictResolutionSkill so that Learner am a more effective Communicator .",
+      "Result": {
+        "A": 18,
+        "B": 13,
+        "C": 14
+      },
+      "Index": {
+        "1": "with",
+        "2": "military",
+        "3": "Experience",
+        "4": ",",
+        "5": "Learner",
+        "6": "can",
+        "7": "practice",
+        "8": "Learner",
+        "9": "'s",
+        "10": "ConflictResolutionSkill",
+        "11": "so",
+        "12": "that",
+        "13": "Learner",
+        "14": "be",
+        "15": "a",
+        "16": "more",
+        "17": "effective",
+        "18": "Communicator",
+        "19": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            7
+          ]
+        ],
+        "case": [
+          [
+            3,
+            1
+          ],
+          [
+            8,
+            9
+          ]
+        ],
+        "amod": [
+          [
+            3,
+            2
+          ],
+          [
+            18,
+            17
+          ]
+        ],
+        "obl:with": [
+          [
+            7,
+            3
+          ]
+        ],
+        "punct": [
+          [
+            7,
+            4
+          ],
+          [
+            7,
+            19
+          ]
+        ],
+        "nsubj": [
+          [
+            7,
+            5
+          ],
+          [
+            18,
+            13
+          ]
+        ],
+        "aux": [
+          [
+            7,
+            6
+          ]
+        ],
+        "nmod:poss": [
+          [
+            10,
+            8
+          ]
+        ],
+        "obj": [
+          [
+            7,
+            10
+          ]
+        ],
+        "mark": [
+          [
+            18,
+            11
+          ]
+        ],
+        "fixed": [
+          [
+            11,
+            12
+          ]
+        ],
+        "cop": [
+          [
+            18,
+            14
+          ]
+        ],
+        "det": [
+          [
+            18,
+            15
+          ]
+        ],
+        "advmod": [
+          [
+            17,
+            16
+          ]
+        ],
+        "advcl:so_that": [
+          [
+            7,
+            18
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "IN": [
+          [
+            1,
+            1
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "JJ": [
+          [
+            2,
+            2
+          ],
+          [
+            17,
+            17
+          ]
+        ],
+        "NN": [
+          [
+            3,
+            3
+          ]
+        ],
+        "NP": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            15,
+            18
+          ]
+        ],
+        "PP": [
+          [
+            1,
+            3
+          ]
+        ],
+        ",": [
+          [
+            4,
+            4
+          ]
+        ],
+        "NNP": [
+          [
+            5,
+            5
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            18,
+            18
+          ]
+        ],
+        "MD": [
+          [
+            6,
+            6
+          ]
+        ],
+        "VB": [
+          [
+            7,
+            7
+          ]
+        ],
+        "POS": [
+          [
+            9,
+            9
+          ]
+        ],
+        "VBP": [
+          [
+            14,
+            14
+          ]
+        ],
+        "DT": [
+          [
+            15,
+            15
+          ]
+        ],
+        "RBR": [
+          [
+            16,
+            16
+          ]
+        ],
+        "ADJP": [
+          [
+            16,
+            17
+          ]
+        ],
+        "VP": [
+          [
+            6,
+            18
+          ],
+          [
+            7,
+            18
+          ],
+          [
+            14,
+            18
+          ]
+        ],
+        "S": [
+          [
+            1,
+            19
+          ],
+          [
+            13,
+            18
+          ]
+        ],
+        "SBAR": [
+          [
+            11,
+            18
+          ]
+        ],
+        ".": [
+          [
+            19,
+            19
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            19
+          ]
+        ]
+      },
+      "Keywords": []
+    }
+  ],
   "SVOblWith": [
     {
       "FileName": "2015-USC-Project04",
@@ -9956,7 +8974,7 @@
       "Index": {
         "1": "with",
         "2": "military",
-        "3": "experience",
+        "3": "Experience",
         "4": ",",
         "5": "Learner",
         "6": "can",
@@ -10262,7 +9280,7 @@
     },
     {
       "FileName": "2015-USC-Project04",
-      "Sentence": "with military Experience , Learner can view Learner's in - GameScore so that Learner know how much Learner am progressing .",
+      "Sentence": "with military Experience , Learner can view Learner's in - game Score so that Learner know how much Learner am progressing .",
       "Result": {
         "A": 7,
         "B": 5,
@@ -10271,7 +9289,7 @@
       "Index": {
         "1": "with",
         "2": "military",
-        "3": "experience",
+        "3": "Experience",
         "4": ",",
         "5": "Learner",
         "6": "can",
@@ -10280,17 +9298,18 @@
         "9": "'s",
         "10": "in",
         "11": "-",
-        "12": "gamescore",
-        "13": "so",
-        "14": "that",
-        "15": "Learner",
-        "16": "know",
-        "17": "how",
-        "18": "much",
-        "19": "Learner",
-        "20": "be",
-        "21": "progress",
-        "22": "."
+        "12": "game",
+        "13": "Score",
+        "14": "so",
+        "15": "that",
+        "16": "Learner",
+        "17": "know",
+        "18": "how",
+        "19": "much",
+        "20": "Learner",
+        "21": "be",
+        "22": "progress",
+        "23": "."
       },
       "TD": {
         "ROOT": [
@@ -10336,7 +9355,7 @@
           ],
           [
             7,
-            22
+            23
           ]
         ],
         "nsubj": [
@@ -10345,12 +9364,12 @@
             5
           ],
           [
-            16,
-            15
+            17,
+            16
           ],
           [
-            21,
-            19
+            22,
+            20
           ]
         ],
         "aux": [
@@ -10359,54 +9378,60 @@
             6
           ],
           [
-            21,
-            20
+            22,
+            21
+          ]
+        ],
+        "nmod:poss": [
+          [
+            13,
+            8
+          ]
+        ],
+        "compound": [
+          [
+            13,
+            12
           ]
         ],
         "obj": [
           [
             7,
-            8
-          ]
-        ],
-        "nmod:in": [
-          [
-            8,
-            12
+            13
           ]
         ],
         "mark": [
           [
-            16,
-            13
+            17,
+            14
           ]
         ],
         "fixed": [
           [
-            13,
-            14
+            14,
+            15
           ]
         ],
         "advcl:so_that": [
           [
             7,
-            16
+            17
           ]
         ],
         "advmod": [
           [
-            18,
-            17
+            19,
+            18
           ],
           [
-            21,
-            18
+            22,
+            19
           ]
         ],
         "ccomp": [
           [
-            16,
-            21
+            17,
+            22
           ]
         ]
       },
@@ -10421,12 +9446,12 @@
             10
           ],
           [
-            13,
-            13
-          ],
-          [
             14,
             14
+          ],
+          [
+            15,
+            15
           ]
         ],
         "JJ": [
@@ -10435,8 +9460,8 @@
             2
           ],
           [
-            18,
-            18
+            19,
+            19
           ]
         ],
         "NN": [
@@ -10447,6 +9472,10 @@
           [
             12,
             12
+          ],
+          [
+            13,
+            13
           ]
         ],
         "NP": [
@@ -10464,21 +9493,29 @@
           ],
           [
             8,
+            13
+          ],
+          [
+            12,
             12
           ],
           [
-            15,
-            15
+            16,
+            16
           ],
           [
-            19,
-            19
+            20,
+            20
           ]
         ],
         "PP": [
           [
             1,
             3
+          ],
+          [
+            10,
+            12
           ]
         ],
         ",": [
@@ -10497,12 +9534,12 @@
             8
           ],
           [
-            15,
-            15
+            16,
+            16
           ],
           [
-            19,
-            19
+            20,
+            20
           ]
         ],
         "MD": [
@@ -10537,88 +9574,88 @@
         ],
         "VBP": [
           [
-            16,
-            16
+            17,
+            17
           ],
           [
-            20,
-            20
+            21,
+            21
           ]
         ],
         "WRB": [
           [
-            17,
-            17
+            18,
+            18
           ]
         ],
         "WHADJP": [
           [
-            17,
-            18
+            18,
+            19
           ]
         ],
         "VBG": [
-          [
-            21,
-            21
-          ]
-        ],
-        "VP": [
-          [
-            6,
-            21
-          ],
-          [
-            7,
-            21
-          ],
-          [
-            16,
-            21
-          ],
-          [
-            20,
-            21
-          ],
-          [
-            21,
-            21
-          ]
-        ],
-        "S": [
-          [
-            1,
-            22
-          ],
-          [
-            15,
-            21
-          ],
-          [
-            19,
-            21
-          ]
-        ],
-        "SBAR": [
-          [
-            13,
-            21
-          ],
-          [
-            17,
-            21
-          ]
-        ],
-        ".": [
           [
             22,
             22
           ]
         ],
+        "VP": [
+          [
+            6,
+            22
+          ],
+          [
+            7,
+            22
+          ],
+          [
+            17,
+            22
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "S": [
+          [
+            1,
+            23
+          ],
+          [
+            16,
+            22
+          ],
+          [
+            20,
+            22
+          ]
+        ],
+        "SBAR": [
+          [
+            14,
+            22
+          ],
+          [
+            18,
+            22
+          ]
+        ],
+        ".": [
+          [
+            23,
+            23
+          ]
+        ],
         "ROOT": [
           [
             1,
-            22
+            23
           ]
         ]
       },
@@ -10635,12 +9672,12 @@
       "Index": {
         "1": "with",
         "2": "military",
-        "3": "experience",
+        "3": "Experience",
         "4": ",",
         "5": "Learner",
         "6": "can",
         "7": "resolve",
-        "8": "conflict",
+        "8": "Conflict",
         "9": "in",
         "10": "a",
         "11": "Team",
@@ -10649,7 +9686,7 @@
         "14": "that",
         "15": "Learner",
         "16": "have",
-        "17": "practice",
+        "17": "Practice",
         "18": "work",
         "19": "collaboratively",
         "20": "in",
@@ -11019,10 +10056,10 @@
         "10": "interact",
         "11": "better",
         "12": "with",
-        "13": "veteran",
+        "13": "Veteran",
         "14": "in",
         "15": "the",
-        "16": "future",
+        "16": "Future",
         "17": "."
       },
       "TD": {
@@ -11301,331 +10338,6 @@
   "SVCc": [
     {
       "FileName": "2015-USC-Project04",
-      "Sentence": "ExperientialLearningCenterStaff can take proper Training so that ExperientialLearningCenterStaff can help Student use the System to improve their ConflictManagementSkill .",
-      "Result": {
-        "A": 12,
-        "B": 11,
-        "C": 16
-      },
-      "Index": {
-        "1": "ExperientialLearningCenterStaff",
-        "2": "can",
-        "3": "take",
-        "4": "proper",
-        "5": "training",
-        "6": "so",
-        "7": "that",
-        "8": "ExperientialLearningCenterStaff",
-        "9": "can",
-        "10": "help",
-        "11": "Student",
-        "12": "use",
-        "13": "the",
-        "14": "system",
-        "15": "to",
-        "16": "improve",
-        "17": "they",
-        "18": "ConflictManagementSkill",
-        "19": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ],
-          [
-            10,
-            8
-          ],
-          [
-            12,
-            11
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ],
-          [
-            10,
-            9
-          ]
-        ],
-        "amod": [
-          [
-            5,
-            4
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            5
-          ],
-          [
-            12,
-            14
-          ],
-          [
-            16,
-            18
-          ]
-        ],
-        "mark": [
-          [
-            10,
-            6
-          ],
-          [
-            16,
-            15
-          ]
-        ],
-        "fixed": [
-          [
-            6,
-            7
-          ]
-        ],
-        "advcl:so_that": [
-          [
-            3,
-            10
-          ]
-        ],
-        "ccomp": [
-          [
-            10,
-            12
-          ]
-        ],
-        "det": [
-          [
-            14,
-            13
-          ]
-        ],
-        "nsubj:xsubj": [
-          [
-            16,
-            14
-          ]
-        ],
-        "xcomp": [
-          [
-            12,
-            16
-          ]
-        ],
-        "nmod:poss": [
-          [
-            18,
-            17
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            19
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NNP": [
-          [
-            1,
-            1
-          ],
-          [
-            8,
-            8
-          ],
-          [
-            11,
-            11
-          ],
-          [
-            18,
-            18
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            5
-          ],
-          [
-            8,
-            8
-          ],
-          [
-            11,
-            11
-          ],
-          [
-            13,
-            14
-          ],
-          [
-            17,
-            18
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ],
-          [
-            9,
-            9
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ],
-          [
-            10,
-            10
-          ],
-          [
-            12,
-            12
-          ],
-          [
-            16,
-            16
-          ]
-        ],
-        "JJ": [
-          [
-            4,
-            4
-          ]
-        ],
-        "NN": [
-          [
-            5,
-            5
-          ],
-          [
-            14,
-            14
-          ]
-        ],
-        "IN": [
-          [
-            6,
-            6
-          ],
-          [
-            7,
-            7
-          ]
-        ],
-        "DT": [
-          [
-            13,
-            13
-          ]
-        ],
-        "TO": [
-          [
-            15,
-            15
-          ]
-        ],
-        "PRP$": [
-          [
-            17,
-            17
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            18
-          ],
-          [
-            3,
-            18
-          ],
-          [
-            9,
-            18
-          ],
-          [
-            10,
-            18
-          ],
-          [
-            12,
-            18
-          ],
-          [
-            15,
-            18
-          ],
-          [
-            16,
-            18
-          ]
-        ],
-        "S": [
-          [
-            1,
-            19
-          ],
-          [
-            8,
-            18
-          ],
-          [
-            11,
-            18
-          ],
-          [
-            15,
-            18
-          ]
-        ],
-        "SBAR": [
-          [
-            6,
-            18
-          ]
-        ],
-        ".": [
-          [
-            19,
-            19
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            19
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2015-USC-Project04",
       "Sentence": "Learner can take the Assessment so that Learner can judge how much Learner need to improve Learner's ConflictManagementSkill .",
       "Result": {
         "A": 14,
@@ -11633,7 +10345,7 @@
         "C": 16
       },
       "Index": {
-        "1": "learner",
+        "1": "Learner",
         "2": "can",
         "3": "take",
         "4": "the",
@@ -11988,7 +10700,7 @@
         "3": "to",
         "4": "use",
         "5": "a",
-        "6": "program",
+        "6": "Program",
         "7": "design",
         "8": "for",
         "9": "ConflictResolution",
@@ -12001,12 +10713,12 @@
         "16": "improve",
         "17": "CollegeStudent",
         "18": "'s",
-        "19": "competence",
+        "19": "Competence",
         "20": "and",
-        "21": "confidence",
+        "21": "Confidence",
         "22": "in",
         "23": "resolve",
-        "24": "conflict",
+        "24": "Conflict",
         "25": "."
       },
       "TD": {
@@ -12452,14 +11164,14 @@
         "4": "participate",
         "5": "in",
         "6": "a",
-        "7": "program",
+        "7": "Program",
         "8": "that",
         "9": "integrate",
         "10": "military",
-        "11": "experience",
+        "11": "Experience",
         "12": "in",
         "13": "a",
-        "14": "business",
+        "14": "Business",
         "15": "set",
         "16": "so",
         "17": "that",
@@ -12467,7 +11179,7 @@
         "19": "can",
         "20": "collaborate",
         "21": "with",
-        "22": "teammate",
+        "22": "Teammate",
         "23": "to",
         "24": "improve",
         "25": "ConflictResolutionSkill",
@@ -12901,549 +11613,6 @@
     },
     {
       "FileName": "2015-USC-Project04",
-      "Sentence": "that is marketed to BusinessNeed so that ConflictResolutionExercise can encourage Employee to practice ProductConflictResolutionSkill .",
-      "Result": {
-        "A": 10,
-        "B": 8,
-        "C": 13
-      },
-      "Index": {
-        "1": "that",
-        "2": "be",
-        "3": "market",
-        "4": "to",
-        "5": "BusinessNeed",
-        "6": "so",
-        "7": "that",
-        "8": "ConflictResolutionExercise",
-        "9": "can",
-        "10": "encourage",
-        "11": "employee",
-        "12": "to",
-        "13": "practice",
-        "14": "ProductConflictResolutionSkill",
-        "15": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj:pass": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux:pass": [
-          [
-            3,
-            2
-          ]
-        ],
-        "case": [
-          [
-            5,
-            4
-          ]
-        ],
-        "obl:to": [
-          [
-            3,
-            5
-          ]
-        ],
-        "mark": [
-          [
-            10,
-            6
-          ],
-          [
-            13,
-            12
-          ]
-        ],
-        "fixed": [
-          [
-            6,
-            7
-          ]
-        ],
-        "nsubj": [
-          [
-            10,
-            8
-          ]
-        ],
-        "aux": [
-          [
-            10,
-            9
-          ]
-        ],
-        "advcl:so_that": [
-          [
-            3,
-            10
-          ]
-        ],
-        "obj": [
-          [
-            10,
-            11
-          ],
-          [
-            13,
-            14
-          ]
-        ],
-        "nsubj:xsubj": [
-          [
-            13,
-            11
-          ]
-        ],
-        "xcomp": [
-          [
-            10,
-            13
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            15
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "DT": [
-          [
-            1,
-            1
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            5,
-            5
-          ],
-          [
-            8,
-            8
-          ],
-          [
-            11,
-            11
-          ],
-          [
-            14,
-            14
-          ]
-        ],
-        "VBZ": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VBN": [
-          [
-            3,
-            3
-          ]
-        ],
-        "IN": [
-          [
-            4,
-            4
-          ],
-          [
-            6,
-            6
-          ],
-          [
-            7,
-            7
-          ]
-        ],
-        "NNP": [
-          [
-            5,
-            5
-          ],
-          [
-            8,
-            8
-          ],
-          [
-            14,
-            14
-          ]
-        ],
-        "PP": [
-          [
-            4,
-            5
-          ]
-        ],
-        "MD": [
-          [
-            9,
-            9
-          ]
-        ],
-        "VB": [
-          [
-            10,
-            10
-          ],
-          [
-            13,
-            13
-          ]
-        ],
-        "NN": [
-          [
-            11,
-            11
-          ]
-        ],
-        "TO": [
-          [
-            12,
-            12
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            14
-          ],
-          [
-            3,
-            14
-          ],
-          [
-            9,
-            14
-          ],
-          [
-            10,
-            14
-          ],
-          [
-            12,
-            14
-          ],
-          [
-            13,
-            14
-          ]
-        ],
-        "S": [
-          [
-            1,
-            15
-          ],
-          [
-            8,
-            14
-          ],
-          [
-            12,
-            14
-          ]
-        ],
-        "SBAR": [
-          [
-            6,
-            14
-          ]
-        ],
-        ".": [
-          [
-            15,
-            15
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            15
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2015-USC-Project04",
-      "Sentence": "MBVStudent can use the System to quickly resolve Conflict in MBVStudent's Team .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 8
-      },
-      "Index": {
-        "1": "MBVStudent",
-        "2": "can",
-        "3": "use",
-        "4": "the",
-        "5": "system",
-        "6": "to",
-        "7": "quickly",
-        "8": "resolve",
-        "9": "conflict",
-        "10": "in",
-        "11": "MBVStudent",
-        "12": "'s",
-        "13": "Team",
-        "14": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "det": [
-          [
-            5,
-            4
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            5
-          ],
-          [
-            8,
-            9
-          ]
-        ],
-        "nsubj:xsubj": [
-          [
-            8,
-            5
-          ]
-        ],
-        "mark": [
-          [
-            8,
-            6
-          ]
-        ],
-        "advmod": [
-          [
-            8,
-            7
-          ]
-        ],
-        "xcomp": [
-          [
-            3,
-            8
-          ]
-        ],
-        "case": [
-          [
-            13,
-            10
-          ],
-          [
-            11,
-            12
-          ]
-        ],
-        "nmod:poss": [
-          [
-            13,
-            11
-          ]
-        ],
-        "nmod:in": [
-          [
-            9,
-            13
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            14
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NNP": [
-          [
-            1,
-            1
-          ],
-          [
-            11,
-            11
-          ],
-          [
-            13,
-            13
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            5
-          ],
-          [
-            9,
-            9
-          ],
-          [
-            11,
-            12
-          ],
-          [
-            11,
-            13
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ],
-          [
-            8,
-            8
-          ]
-        ],
-        "DT": [
-          [
-            4,
-            4
-          ]
-        ],
-        "NN": [
-          [
-            5,
-            5
-          ],
-          [
-            9,
-            9
-          ]
-        ],
-        "TO": [
-          [
-            6,
-            6
-          ]
-        ],
-        "RB": [
-          [
-            7,
-            7
-          ]
-        ],
-        "ADVP": [
-          [
-            7,
-            7
-          ]
-        ],
-        "IN": [
-          [
-            10,
-            10
-          ]
-        ],
-        "POS": [
-          [
-            12,
-            12
-          ]
-        ],
-        "PP": [
-          [
-            10,
-            13
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            13
-          ],
-          [
-            3,
-            13
-          ],
-          [
-            6,
-            13
-          ],
-          [
-            8,
-            13
-          ]
-        ],
-        "S": [
-          [
-            1,
-            14
-          ],
-          [
-            6,
-            13
-          ]
-        ],
-        ".": [
-          [
-            14,
-            14
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            14
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2015-USC-Project04",
       "Sentence": "Veteran want to see Graph on what DecisionOther made in the same Situation so that Veteran can see that Veteran 'm not alone in Veteran's ThoughtProcess .",
       "Result": {
         "A": 2,
@@ -13451,7 +11620,7 @@
         "C": 4
       },
       "Index": {
-        "1": "veteran",
+        "1": "Veteran",
         "2": "want",
         "3": "to",
         "4": "see",
@@ -13466,16 +11635,16 @@
         "13": "Situation",
         "14": "so",
         "15": "that",
-        "16": "veteran",
+        "16": "Veteran",
         "17": "can",
         "18": "see",
         "19": "that",
-        "20": "veteran",
+        "20": "Veteran",
         "21": "be",
         "22": "not",
         "23": "alone",
         "24": "in",
-        "25": "veteran",
+        "25": "Veteran",
         "26": "'s",
         "27": "ThoughtProcess",
         "28": "."
@@ -13909,242 +12078,6 @@
         ]
       },
       "Keywords": []
-    },
-    {
-      "FileName": "2015-USC-Project04",
-      "Sentence": "Veteran can use the System to gain Experience working with Civilian .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 7
-      },
-      "Index": {
-        "1": "veteran",
-        "2": "can",
-        "3": "use",
-        "4": "the",
-        "5": "system",
-        "6": "to",
-        "7": "gain",
-        "8": "experience",
-        "9": "work",
-        "10": "with",
-        "11": "Civilian",
-        "12": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "det": [
-          [
-            5,
-            4
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            5
-          ],
-          [
-            7,
-            8
-          ]
-        ],
-        "nsubj:xsubj": [
-          [
-            7,
-            5
-          ]
-        ],
-        "mark": [
-          [
-            7,
-            6
-          ]
-        ],
-        "xcomp": [
-          [
-            3,
-            7
-          ]
-        ],
-        "acl": [
-          [
-            8,
-            9
-          ]
-        ],
-        "case": [
-          [
-            11,
-            10
-          ]
-        ],
-        "obl:with": [
-          [
-            9,
-            11
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            12
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ],
-          [
-            5,
-            5
-          ],
-          [
-            8,
-            8
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            5
-          ],
-          [
-            8,
-            8
-          ],
-          [
-            8,
-            11
-          ],
-          [
-            11,
-            11
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ],
-          [
-            7,
-            7
-          ]
-        ],
-        "DT": [
-          [
-            4,
-            4
-          ]
-        ],
-        "TO": [
-          [
-            6,
-            6
-          ]
-        ],
-        "VBG": [
-          [
-            9,
-            9
-          ]
-        ],
-        "IN": [
-          [
-            10,
-            10
-          ]
-        ],
-        "NNP": [
-          [
-            11,
-            11
-          ]
-        ],
-        "PP": [
-          [
-            10,
-            11
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            11
-          ],
-          [
-            3,
-            11
-          ],
-          [
-            6,
-            11
-          ],
-          [
-            7,
-            11
-          ],
-          [
-            9,
-            11
-          ]
-        ],
-        "S": [
-          [
-            1,
-            12
-          ],
-          [
-            6,
-            11
-          ]
-        ],
-        ".": [
-          [
-            12,
-            12
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            12
-          ]
-        ]
-      },
-      "Keywords": []
     }
   ],
   "SVByV": [],
@@ -14160,7 +12093,7 @@
       "Index": {
         "1": "with",
         "2": "military",
-        "3": "experience",
+        "3": "Experience",
         "4": ",",
         "5": "Learner",
         "6": "can",
@@ -14466,16 +12399,16 @@
     },
     {
       "FileName": "2015-USC-Project04",
-      "Sentence": "with military Experience , Learner can view Learner's in - GameScore so that Learner know how much Learner am progressing .",
+      "Sentence": "with military Experience , Learner can view Learner's in - game Score so that Learner know how much Learner am progressing .",
       "Result": {
         "A": 7,
         "B": 5,
-        "C": 8
+        "C": 13
       },
       "Index": {
         "1": "with",
         "2": "military",
-        "3": "experience",
+        "3": "Experience",
         "4": ",",
         "5": "Learner",
         "6": "can",
@@ -14484,17 +12417,18 @@
         "9": "'s",
         "10": "in",
         "11": "-",
-        "12": "gamescore",
-        "13": "so",
-        "14": "that",
-        "15": "Learner",
-        "16": "know",
-        "17": "how",
-        "18": "much",
-        "19": "Learner",
-        "20": "be",
-        "21": "progress",
-        "22": "."
+        "12": "game",
+        "13": "Score",
+        "14": "so",
+        "15": "that",
+        "16": "Learner",
+        "17": "know",
+        "18": "how",
+        "19": "much",
+        "20": "Learner",
+        "21": "be",
+        "22": "progress",
+        "23": "."
       },
       "TD": {
         "ROOT": [
@@ -14540,7 +12474,7 @@
           ],
           [
             7,
-            22
+            23
           ]
         ],
         "nsubj": [
@@ -14549,12 +12483,12 @@
             5
           ],
           [
-            16,
-            15
+            17,
+            16
           ],
           [
-            21,
-            19
+            22,
+            20
           ]
         ],
         "aux": [
@@ -14563,54 +12497,60 @@
             6
           ],
           [
-            21,
-            20
+            22,
+            21
+          ]
+        ],
+        "nmod:poss": [
+          [
+            13,
+            8
+          ]
+        ],
+        "compound": [
+          [
+            13,
+            12
           ]
         ],
         "obj": [
           [
             7,
-            8
-          ]
-        ],
-        "nmod:in": [
-          [
-            8,
-            12
+            13
           ]
         ],
         "mark": [
           [
-            16,
-            13
+            17,
+            14
           ]
         ],
         "fixed": [
           [
-            13,
-            14
+            14,
+            15
           ]
         ],
         "advcl:so_that": [
           [
             7,
-            16
+            17
           ]
         ],
         "advmod": [
           [
-            18,
-            17
+            19,
+            18
           ],
           [
-            21,
-            18
+            22,
+            19
           ]
         ],
         "ccomp": [
           [
-            16,
-            21
+            17,
+            22
           ]
         ]
       },
@@ -14625,12 +12565,12 @@
             10
           ],
           [
-            13,
-            13
-          ],
-          [
             14,
             14
+          ],
+          [
+            15,
+            15
           ]
         ],
         "JJ": [
@@ -14639,8 +12579,8 @@
             2
           ],
           [
-            18,
-            18
+            19,
+            19
           ]
         ],
         "NN": [
@@ -14651,6 +12591,10 @@
           [
             12,
             12
+          ],
+          [
+            13,
+            13
           ]
         ],
         "NP": [
@@ -14668,21 +12612,29 @@
           ],
           [
             8,
+            13
+          ],
+          [
+            12,
             12
           ],
           [
-            15,
-            15
+            16,
+            16
           ],
           [
-            19,
-            19
+            20,
+            20
           ]
         ],
         "PP": [
           [
             1,
             3
+          ],
+          [
+            10,
+            12
           ]
         ],
         ",": [
@@ -14701,12 +12653,12 @@
             8
           ],
           [
-            15,
-            15
+            16,
+            16
           ],
           [
-            19,
-            19
+            20,
+            20
           ]
         ],
         "MD": [
@@ -14741,88 +12693,88 @@
         ],
         "VBP": [
           [
-            16,
-            16
+            17,
+            17
           ],
           [
-            20,
-            20
+            21,
+            21
           ]
         ],
         "WRB": [
           [
-            17,
-            17
+            18,
+            18
           ]
         ],
         "WHADJP": [
           [
-            17,
-            18
+            18,
+            19
           ]
         ],
         "VBG": [
-          [
-            21,
-            21
-          ]
-        ],
-        "VP": [
-          [
-            6,
-            21
-          ],
-          [
-            7,
-            21
-          ],
-          [
-            16,
-            21
-          ],
-          [
-            20,
-            21
-          ],
-          [
-            21,
-            21
-          ]
-        ],
-        "S": [
-          [
-            1,
-            22
-          ],
-          [
-            15,
-            21
-          ],
-          [
-            19,
-            21
-          ]
-        ],
-        "SBAR": [
-          [
-            13,
-            21
-          ],
-          [
-            17,
-            21
-          ]
-        ],
-        ".": [
           [
             22,
             22
           ]
         ],
+        "VP": [
+          [
+            6,
+            22
+          ],
+          [
+            7,
+            22
+          ],
+          [
+            17,
+            22
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "S": [
+          [
+            1,
+            23
+          ],
+          [
+            16,
+            22
+          ],
+          [
+            20,
+            22
+          ]
+        ],
+        "SBAR": [
+          [
+            14,
+            22
+          ],
+          [
+            18,
+            22
+          ]
+        ],
+        ".": [
+          [
+            23,
+            23
+          ]
+        ],
         "ROOT": [
           [
             1,
-            22
+            23
           ]
         ]
       },
@@ -14839,12 +12791,12 @@
       "Index": {
         "1": "with",
         "2": "military",
-        "3": "experience",
+        "3": "Experience",
         "4": ",",
         "5": "Learner",
         "6": "can",
         "7": "resolve",
-        "8": "conflict",
+        "8": "Conflict",
         "9": "in",
         "10": "a",
         "11": "Team",
@@ -14853,7 +12805,7 @@
         "14": "that",
         "15": "Learner",
         "16": "have",
-        "17": "practice",
+        "17": "Practice",
         "18": "work",
         "19": "collaboratively",
         "20": "in",
@@ -15215,7 +13167,7 @@
         "2": "can",
         "3": "take",
         "4": "proper",
-        "5": "training",
+        "5": "Training",
         "6": "so",
         "7": "that",
         "8": "ExperientialLearningCenterStaff",
@@ -15224,7 +13176,7 @@
         "11": "Student",
         "12": "use",
         "13": "the",
-        "14": "system",
+        "14": "System",
         "15": "to",
         "16": "improve",
         "17": "they",
@@ -15540,7 +13492,7 @@
         "2": "can",
         "3": "take",
         "4": "proper",
-        "5": "training",
+        "5": "Training",
         "6": "so",
         "7": "that",
         "8": "ExperientialLearningCenterStaff",
@@ -15549,7 +13501,332 @@
         "11": "Student",
         "12": "use",
         "13": "the",
-        "14": "system",
+        "14": "System",
+        "15": "to",
+        "16": "improve",
+        "17": "they",
+        "18": "ConflictManagementSkill",
+        "19": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ],
+          [
+            10,
+            8
+          ],
+          [
+            12,
+            11
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ],
+          [
+            10,
+            9
+          ]
+        ],
+        "amod": [
+          [
+            5,
+            4
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            5
+          ],
+          [
+            12,
+            14
+          ],
+          [
+            16,
+            18
+          ]
+        ],
+        "mark": [
+          [
+            10,
+            6
+          ],
+          [
+            16,
+            15
+          ]
+        ],
+        "fixed": [
+          [
+            6,
+            7
+          ]
+        ],
+        "advcl:so_that": [
+          [
+            3,
+            10
+          ]
+        ],
+        "ccomp": [
+          [
+            10,
+            12
+          ]
+        ],
+        "det": [
+          [
+            14,
+            13
+          ]
+        ],
+        "nsubj:xsubj": [
+          [
+            16,
+            14
+          ]
+        ],
+        "xcomp": [
+          [
+            12,
+            16
+          ]
+        ],
+        "nmod:poss": [
+          [
+            18,
+            17
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            19
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NNP": [
+          [
+            1,
+            1
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            18,
+            18
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            17,
+            18
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            16,
+            16
+          ]
+        ],
+        "JJ": [
+          [
+            4,
+            4
+          ]
+        ],
+        "NN": [
+          [
+            5,
+            5
+          ],
+          [
+            14,
+            14
+          ]
+        ],
+        "IN": [
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "DT": [
+          [
+            13,
+            13
+          ]
+        ],
+        "TO": [
+          [
+            15,
+            15
+          ]
+        ],
+        "PRP$": [
+          [
+            17,
+            17
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            18
+          ],
+          [
+            3,
+            18
+          ],
+          [
+            9,
+            18
+          ],
+          [
+            10,
+            18
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            15,
+            18
+          ],
+          [
+            16,
+            18
+          ]
+        ],
+        "S": [
+          [
+            1,
+            19
+          ],
+          [
+            8,
+            18
+          ],
+          [
+            11,
+            18
+          ],
+          [
+            15,
+            18
+          ]
+        ],
+        "SBAR": [
+          [
+            6,
+            18
+          ]
+        ],
+        ".": [
+          [
+            19,
+            19
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            19
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2015-USC-Project04",
+      "Sentence": "ExperientialLearningCenterStaff can take proper Training so that ExperientialLearningCenterStaff can help Student use the System to improve their ConflictManagementSkill .",
+      "Result": {
+        "A": 16,
+        "B": 14,
+        "C": 18
+      },
+      "Index": {
+        "1": "ExperientialLearningCenterStaff",
+        "2": "can",
+        "3": "take",
+        "4": "proper",
+        "5": "Training",
+        "6": "so",
+        "7": "that",
+        "8": "ExperientialLearningCenterStaff",
+        "9": "can",
+        "10": "help",
+        "11": "Student",
+        "12": "use",
+        "13": "the",
+        "14": "System",
         "15": "to",
         "16": "improve",
         "17": "they",
@@ -16437,7 +14714,7 @@
         "C": 5
       },
       "Index": {
-        "1": "learner",
+        "1": "Learner",
         "2": "can",
         "3": "take",
         "4": "the",
@@ -16792,7 +15069,7 @@
         "3": "to",
         "4": "use",
         "5": "a",
-        "6": "program",
+        "6": "Program",
         "7": "design",
         "8": "for",
         "9": "ConflictResolution",
@@ -16805,12 +15082,12 @@
         "16": "improve",
         "17": "CollegeStudent",
         "18": "'s",
-        "19": "competence",
+        "19": "Competence",
         "20": "and",
-        "21": "confidence",
+        "21": "Confidence",
         "22": "in",
         "23": "resolve",
-        "24": "conflict",
+        "24": "Conflict",
         "25": "."
       },
       "TD": {
@@ -17255,7 +15532,7 @@
         "3": "to",
         "4": "use",
         "5": "a",
-        "6": "program",
+        "6": "Program",
         "7": "design",
         "8": "for",
         "9": "ConflictResolution",
@@ -17268,12 +15545,12 @@
         "16": "improve",
         "17": "CollegeStudent",
         "18": "'s",
-        "19": "competence",
+        "19": "Competence",
         "20": "and",
-        "21": "confidence",
+        "21": "Confidence",
         "22": "in",
         "23": "resolve",
-        "24": "conflict",
+        "24": "Conflict",
         "25": "."
       },
       "TD": {
@@ -17719,14 +15996,14 @@
         "4": "participate",
         "5": "in",
         "6": "a",
-        "7": "program",
+        "7": "Program",
         "8": "that",
         "9": "integrate",
         "10": "military",
-        "11": "experience",
+        "11": "Experience",
         "12": "in",
         "13": "a",
-        "14": "business",
+        "14": "Business",
         "15": "set",
         "16": "so",
         "17": "that",
@@ -17734,7 +16011,7 @@
         "19": "can",
         "20": "collaborate",
         "21": "with",
-        "22": "teammate",
+        "22": "Teammate",
         "23": "to",
         "24": "improve",
         "25": "ConflictResolutionSkill",
@@ -18181,14 +16458,14 @@
         "4": "participate",
         "5": "in",
         "6": "a",
-        "7": "program",
+        "7": "Program",
         "8": "that",
         "9": "integrate",
         "10": "military",
-        "11": "experience",
+        "11": "Experience",
         "12": "in",
         "13": "a",
-        "14": "business",
+        "14": "Business",
         "15": "set",
         "16": "so",
         "17": "that",
@@ -18196,7 +16473,7 @@
         "19": "can",
         "20": "collaborate",
         "21": "with",
-        "22": "teammate",
+        "22": "Teammate",
         "23": "to",
         "24": "improve",
         "25": "ConflictResolutionSkill",
@@ -18647,7 +16924,290 @@
         "8": "ConflictResolutionExercise",
         "9": "can",
         "10": "encourage",
-        "11": "employee",
+        "11": "Employee",
+        "12": "to",
+        "13": "practice",
+        "14": "ProductConflictResolutionSkill",
+        "15": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj:pass": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux:pass": [
+          [
+            3,
+            2
+          ]
+        ],
+        "case": [
+          [
+            5,
+            4
+          ]
+        ],
+        "obl:to": [
+          [
+            3,
+            5
+          ]
+        ],
+        "mark": [
+          [
+            10,
+            6
+          ],
+          [
+            13,
+            12
+          ]
+        ],
+        "fixed": [
+          [
+            6,
+            7
+          ]
+        ],
+        "nsubj": [
+          [
+            10,
+            8
+          ]
+        ],
+        "aux": [
+          [
+            10,
+            9
+          ]
+        ],
+        "advcl:so_that": [
+          [
+            3,
+            10
+          ]
+        ],
+        "obj": [
+          [
+            10,
+            11
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "nsubj:xsubj": [
+          [
+            13,
+            11
+          ]
+        ],
+        "xcomp": [
+          [
+            10,
+            13
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            15
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "DT": [
+          [
+            1,
+            1
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            14,
+            14
+          ]
+        ],
+        "VBZ": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VBN": [
+          [
+            3,
+            3
+          ]
+        ],
+        "IN": [
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "NNP": [
+          [
+            5,
+            5
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            14,
+            14
+          ]
+        ],
+        "PP": [
+          [
+            4,
+            5
+          ]
+        ],
+        "MD": [
+          [
+            9,
+            9
+          ]
+        ],
+        "VB": [
+          [
+            10,
+            10
+          ],
+          [
+            13,
+            13
+          ]
+        ],
+        "NN": [
+          [
+            11,
+            11
+          ]
+        ],
+        "TO": [
+          [
+            12,
+            12
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            14
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            9,
+            14
+          ],
+          [
+            10,
+            14
+          ],
+          [
+            12,
+            14
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "S": [
+          [
+            1,
+            15
+          ],
+          [
+            8,
+            14
+          ],
+          [
+            12,
+            14
+          ]
+        ],
+        "SBAR": [
+          [
+            6,
+            14
+          ]
+        ],
+        ".": [
+          [
+            15,
+            15
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            15
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2015-USC-Project04",
+      "Sentence": "that is marketed to BusinessNeed so that ConflictResolutionExercise can encourage Employee to practice ProductConflictResolutionSkill .",
+      "Result": {
+        "A": 13,
+        "B": 11,
+        "C": 14
+      },
+      "Index": {
+        "1": "that",
+        "2": "be",
+        "3": "market",
+        "4": "to",
+        "5": "BusinessNeed",
+        "6": "so",
+        "7": "that",
+        "8": "ConflictResolutionExercise",
+        "9": "can",
+        "10": "encourage",
+        "11": "Employee",
         "12": "to",
         "13": "practice",
         "14": "ProductConflictResolutionSkill",
@@ -18924,11 +17484,271 @@
         "2": "can",
         "3": "use",
         "4": "the",
-        "5": "system",
+        "5": "System",
         "6": "to",
         "7": "quickly",
         "8": "resolve",
-        "9": "conflict",
+        "9": "Conflict",
+        "10": "in",
+        "11": "MBVStudent",
+        "12": "'s",
+        "13": "Team",
+        "14": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "det": [
+          [
+            5,
+            4
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            5
+          ],
+          [
+            8,
+            9
+          ]
+        ],
+        "nsubj:xsubj": [
+          [
+            8,
+            5
+          ]
+        ],
+        "mark": [
+          [
+            8,
+            6
+          ]
+        ],
+        "advmod": [
+          [
+            8,
+            7
+          ]
+        ],
+        "xcomp": [
+          [
+            3,
+            8
+          ]
+        ],
+        "case": [
+          [
+            13,
+            10
+          ],
+          [
+            11,
+            12
+          ]
+        ],
+        "nmod:poss": [
+          [
+            13,
+            11
+          ]
+        ],
+        "nmod:in": [
+          [
+            9,
+            13
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            14
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NNP": [
+          [
+            1,
+            1
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            13,
+            13
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            11,
+            13
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "DT": [
+          [
+            4,
+            4
+          ]
+        ],
+        "NN": [
+          [
+            5,
+            5
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "TO": [
+          [
+            6,
+            6
+          ]
+        ],
+        "RB": [
+          [
+            7,
+            7
+          ]
+        ],
+        "ADVP": [
+          [
+            7,
+            7
+          ]
+        ],
+        "IN": [
+          [
+            10,
+            10
+          ]
+        ],
+        "POS": [
+          [
+            12,
+            12
+          ]
+        ],
+        "PP": [
+          [
+            10,
+            13
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            6,
+            13
+          ],
+          [
+            8,
+            13
+          ]
+        ],
+        "S": [
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            13
+          ]
+        ],
+        ".": [
+          [
+            14,
+            14
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            14
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2015-USC-Project04",
+      "Sentence": "MBVStudent can use the System to quickly resolve Conflict in MBVStudent's Team .",
+      "Result": {
+        "A": 8,
+        "B": 5,
+        "C": 9
+      },
+      "Index": {
+        "1": "MBVStudent",
+        "2": "can",
+        "3": "use",
+        "4": "the",
+        "5": "System",
+        "6": "to",
+        "7": "quickly",
+        "8": "resolve",
+        "9": "Conflict",
         "10": "in",
         "11": "MBVStudent",
         "12": "'s",
@@ -19184,13 +18004,13 @@
         "2": "can",
         "3": "use",
         "4": "the",
-        "5": "score",
+        "5": "Score",
         "6": "from",
         "7": "the",
-        "8": "system",
+        "8": "System",
         "9": "to",
         "10": "keep",
-        "11": "track",
+        "11": "Track",
         "12": "of",
         "13": "MBVStudent",
         "14": "'s",
@@ -19456,22 +18276,22 @@
         "C": 5
       },
       "Index": {
-        "1": "employer",
+        "1": "Employer",
         "2": "can",
         "3": "adopt",
         "4": "the",
-        "5": "system",
+        "5": "System",
         "6": "in",
         "7": "Employer",
         "8": "'s",
-        "9": "company",
+        "9": "Company",
         "10": "so",
         "11": "that",
         "12": "the",
         "13": "Team",
         "14": "can",
         "15": "resolve",
-        "16": "conflict",
+        "16": "Conflict",
         "17": "more",
         "18": "quickly",
         "19": "."
@@ -19767,22 +18587,22 @@
         "C": 16
       },
       "Index": {
-        "1": "employer",
+        "1": "Employer",
         "2": "can",
         "3": "adopt",
         "4": "the",
-        "5": "system",
+        "5": "System",
         "6": "in",
         "7": "Employer",
         "8": "'s",
-        "9": "company",
+        "9": "Company",
         "10": "so",
         "11": "that",
         "12": "the",
         "13": "Team",
         "14": "can",
         "15": "resolve",
-        "16": "conflict",
+        "16": "Conflict",
         "17": "more",
         "18": "quickly",
         "19": "."
@@ -20073,378 +18893,27 @@
       "FileName": "2015-USC-Project04",
       "Sentence": "Veteran can compare Veteran's Decision to the DecisionCivilian made so that Veteran can compare Veteran's ThoughtProcess to theirs .",
       "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 6
-      },
-      "Index": {
-        "1": "veteran",
-        "2": "can",
-        "3": "compare",
-        "4": "veteran",
-        "5": "'s",
-        "6": "decision",
-        "7": "to",
-        "8": "the",
-        "9": "DecisionCivilian",
-        "10": "make",
-        "11": "so",
-        "12": "that",
-        "13": "veteran",
-        "14": "can",
-        "15": "compare",
-        "16": "veteran",
-        "17": "'s",
-        "18": "ThoughtProcess",
-        "19": "to",
-        "20": "theirs",
-        "21": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ],
-          [
-            15,
-            13
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ],
-          [
-            15,
-            14
-          ]
-        ],
-        "nmod:poss": [
-          [
-            6,
-            4
-          ],
-          [
-            18,
-            16
-          ]
-        ],
-        "case": [
-          [
-            4,
-            5
-          ],
-          [
-            9,
-            7
-          ],
-          [
-            16,
-            17
-          ],
-          [
-            20,
-            19
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            6
-          ],
-          [
-            15,
-            18
-          ]
-        ],
-        "det": [
-          [
-            9,
-            8
-          ]
-        ],
-        "obl:to": [
-          [
-            3,
-            9
-          ],
-          [
-            15,
-            20
-          ]
-        ],
-        "dep": [
-          [
-            3,
-            10
-          ]
-        ],
-        "mark": [
-          [
-            15,
-            11
-          ]
-        ],
-        "fixed": [
-          [
-            11,
-            12
-          ]
-        ],
-        "advcl:so_that": [
-          [
-            10,
-            15
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            21
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            4
-          ],
-          [
-            6,
-            6
-          ],
-          [
-            13,
-            13
-          ],
-          [
-            16,
-            16
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            1,
-            9
-          ],
-          [
-            4,
-            5
-          ],
-          [
-            4,
-            6
-          ],
-          [
-            8,
-            9
-          ],
-          [
-            13,
-            13
-          ],
-          [
-            16,
-            17
-          ],
-          [
-            16,
-            18
-          ],
-          [
-            20,
-            20
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ],
-          [
-            14,
-            14
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ],
-          [
-            15,
-            15
-          ]
-        ],
-        "POS": [
-          [
-            5,
-            5
-          ],
-          [
-            17,
-            17
-          ]
-        ],
-        "IN": [
-          [
-            7,
-            7
-          ],
-          [
-            11,
-            11
-          ],
-          [
-            12,
-            12
-          ],
-          [
-            19,
-            19
-          ]
-        ],
-        "DT": [
-          [
-            8,
-            8
-          ]
-        ],
-        "NNP": [
-          [
-            9,
-            9
-          ],
-          [
-            18,
-            18
-          ]
-        ],
-        "PP": [
-          [
-            7,
-            9
-          ],
-          [
-            19,
-            20
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            9
-          ],
-          [
-            3,
-            9
-          ],
-          [
-            10,
-            20
-          ],
-          [
-            14,
-            20
-          ],
-          [
-            15,
-            20
-          ]
-        ],
-        "S": [
-          [
-            1,
-            21
-          ],
-          [
-            2,
-            9
-          ],
-          [
-            13,
-            20
-          ]
-        ],
-        "SBAR": [
-          [
-            2,
-            9
-          ],
-          [
-            11,
-            20
-          ]
-        ],
-        "VBD": [
-          [
-            10,
-            10
-          ]
-        ],
-        "PRP": [
-          [
-            20,
-            20
-          ]
-        ],
-        ".": [
-          [
-            21,
-            21
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            21
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2015-USC-Project04",
-      "Sentence": "Veteran can compare Veteran's Decision to the DecisionCivilian made so that Veteran can compare Veteran's ThoughtProcess to theirs .",
-      "Result": {
         "A": 15,
         "B": 13,
         "C": 18
       },
       "Index": {
-        "1": "veteran",
+        "1": "Veteran",
         "2": "can",
         "3": "compare",
-        "4": "veteran",
+        "4": "Veteran",
         "5": "'s",
-        "6": "decision",
+        "6": "Decision",
         "7": "to",
         "8": "the",
         "9": "DecisionCivilian",
         "10": "make",
         "11": "so",
         "12": "that",
-        "13": "veteran",
+        "13": "Veteran",
         "14": "can",
         "15": "compare",
-        "16": "veteran",
+        "16": "Veteran",
         "17": "'s",
         "18": "ThoughtProcess",
         "19": "to",
@@ -20780,14 +19249,250 @@
         "C": 5
       },
       "Index": {
-        "1": "veteran",
+        "1": "Veteran",
         "2": "can",
         "3": "use",
         "4": "the",
-        "5": "system",
+        "5": "System",
         "6": "to",
         "7": "gain",
-        "8": "experience",
+        "8": "Experience",
+        "9": "work",
+        "10": "with",
+        "11": "Civilian",
+        "12": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "det": [
+          [
+            5,
+            4
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            5
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "nsubj:xsubj": [
+          [
+            7,
+            5
+          ]
+        ],
+        "mark": [
+          [
+            7,
+            6
+          ]
+        ],
+        "xcomp": [
+          [
+            3,
+            7
+          ]
+        ],
+        "acl": [
+          [
+            8,
+            9
+          ]
+        ],
+        "case": [
+          [
+            11,
+            10
+          ]
+        ],
+        "obl:with": [
+          [
+            9,
+            11
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            12
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "DT": [
+          [
+            4,
+            4
+          ]
+        ],
+        "TO": [
+          [
+            6,
+            6
+          ]
+        ],
+        "VBG": [
+          [
+            9,
+            9
+          ]
+        ],
+        "IN": [
+          [
+            10,
+            10
+          ]
+        ],
+        "NNP": [
+          [
+            11,
+            11
+          ]
+        ],
+        "PP": [
+          [
+            10,
+            11
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            11
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            9,
+            11
+          ]
+        ],
+        "S": [
+          [
+            1,
+            12
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        ".": [
+          [
+            12,
+            12
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            12
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2015-USC-Project04",
+      "Sentence": "Veteran can use the System to gain Experience working with Civilian .",
+      "Result": {
+        "A": 7,
+        "B": 5,
+        "C": 8
+      },
+      "Index": {
+        "1": "Veteran",
+        "2": "can",
+        "3": "use",
+        "4": "the",
+        "5": "System",
+        "6": "to",
+        "7": "gain",
+        "8": "Experience",
         "9": "work",
         "10": "with",
         "11": "Civilian",
@@ -21012,15 +19717,15 @@
   "SV": [
     {
       "FileName": "2015-USC-Project04",
-      "Sentence": "with military Experience , Learner can view Learner's in - GameScore so that Learner know how much Learner am progressing .",
+      "Sentence": "with military Experience , Learner can view Learner's in - game Score so that Learner know how much Learner am progressing .",
       "Result": {
-        "A": 16,
-        "B": 15
+        "A": 17,
+        "B": 16
       },
       "Index": {
         "1": "with",
         "2": "military",
-        "3": "experience",
+        "3": "Experience",
         "4": ",",
         "5": "Learner",
         "6": "can",
@@ -21029,17 +19734,18 @@
         "9": "'s",
         "10": "in",
         "11": "-",
-        "12": "gamescore",
-        "13": "so",
-        "14": "that",
-        "15": "Learner",
-        "16": "know",
-        "17": "how",
-        "18": "much",
-        "19": "Learner",
-        "20": "be",
-        "21": "progress",
-        "22": "."
+        "12": "game",
+        "13": "Score",
+        "14": "so",
+        "15": "that",
+        "16": "Learner",
+        "17": "know",
+        "18": "how",
+        "19": "much",
+        "20": "Learner",
+        "21": "be",
+        "22": "progress",
+        "23": "."
       },
       "TD": {
         "ROOT": [
@@ -21085,7 +19791,7 @@
           ],
           [
             7,
-            22
+            23
           ]
         ],
         "nsubj": [
@@ -21094,12 +19800,12 @@
             5
           ],
           [
-            16,
-            15
+            17,
+            16
           ],
           [
-            21,
-            19
+            22,
+            20
           ]
         ],
         "aux": [
@@ -21108,54 +19814,60 @@
             6
           ],
           [
-            21,
-            20
+            22,
+            21
+          ]
+        ],
+        "nmod:poss": [
+          [
+            13,
+            8
+          ]
+        ],
+        "compound": [
+          [
+            13,
+            12
           ]
         ],
         "obj": [
           [
             7,
-            8
-          ]
-        ],
-        "nmod:in": [
-          [
-            8,
-            12
+            13
           ]
         ],
         "mark": [
           [
-            16,
-            13
+            17,
+            14
           ]
         ],
         "fixed": [
           [
-            13,
-            14
+            14,
+            15
           ]
         ],
         "advcl:so_that": [
           [
             7,
-            16
+            17
           ]
         ],
         "advmod": [
           [
-            18,
-            17
+            19,
+            18
           ],
           [
-            21,
-            18
+            22,
+            19
           ]
         ],
         "ccomp": [
           [
-            16,
-            21
+            17,
+            22
           ]
         ]
       },
@@ -21170,12 +19882,12 @@
             10
           ],
           [
-            13,
-            13
-          ],
-          [
             14,
             14
+          ],
+          [
+            15,
+            15
           ]
         ],
         "JJ": [
@@ -21184,8 +19896,8 @@
             2
           ],
           [
-            18,
-            18
+            19,
+            19
           ]
         ],
         "NN": [
@@ -21196,6 +19908,10 @@
           [
             12,
             12
+          ],
+          [
+            13,
+            13
           ]
         ],
         "NP": [
@@ -21213,21 +19929,29 @@
           ],
           [
             8,
+            13
+          ],
+          [
+            12,
             12
           ],
           [
-            15,
-            15
+            16,
+            16
           ],
           [
-            19,
-            19
+            20,
+            20
           ]
         ],
         "PP": [
           [
             1,
             3
+          ],
+          [
+            10,
+            12
           ]
         ],
         ",": [
@@ -21246,12 +19970,12 @@
             8
           ],
           [
-            15,
-            15
+            16,
+            16
           ],
           [
-            19,
-            19
+            20,
+            20
           ]
         ],
         "MD": [
@@ -21286,88 +20010,88 @@
         ],
         "VBP": [
           [
-            16,
-            16
+            17,
+            17
           ],
           [
-            20,
-            20
+            21,
+            21
           ]
         ],
         "WRB": [
           [
-            17,
-            17
+            18,
+            18
           ]
         ],
         "WHADJP": [
           [
-            17,
-            18
+            18,
+            19
           ]
         ],
         "VBG": [
-          [
-            21,
-            21
-          ]
-        ],
-        "VP": [
-          [
-            6,
-            21
-          ],
-          [
-            7,
-            21
-          ],
-          [
-            16,
-            21
-          ],
-          [
-            20,
-            21
-          ],
-          [
-            21,
-            21
-          ]
-        ],
-        "S": [
-          [
-            1,
-            22
-          ],
-          [
-            15,
-            21
-          ],
-          [
-            19,
-            21
-          ]
-        ],
-        "SBAR": [
-          [
-            13,
-            21
-          ],
-          [
-            17,
-            21
-          ]
-        ],
-        ".": [
           [
             22,
             22
           ]
         ],
+        "VP": [
+          [
+            6,
+            22
+          ],
+          [
+            7,
+            22
+          ],
+          [
+            17,
+            22
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "S": [
+          [
+            1,
+            23
+          ],
+          [
+            16,
+            22
+          ],
+          [
+            20,
+            22
+          ]
+        ],
+        "SBAR": [
+          [
+            14,
+            22
+          ],
+          [
+            18,
+            22
+          ]
+        ],
+        ".": [
+          [
+            23,
+            23
+          ]
+        ],
         "ROOT": [
           [
             1,
-            22
+            23
           ]
         ]
       },
@@ -21375,15 +20099,15 @@
     },
     {
       "FileName": "2015-USC-Project04",
-      "Sentence": "with military Experience , Learner can view Learner's in - GameScore so that Learner know how much Learner am progressing .",
+      "Sentence": "with military Experience , Learner can view Learner's in - game Score so that Learner know how much Learner am progressing .",
       "Result": {
-        "A": 21,
-        "B": 19
+        "A": 22,
+        "B": 20
       },
       "Index": {
         "1": "with",
         "2": "military",
-        "3": "experience",
+        "3": "Experience",
         "4": ",",
         "5": "Learner",
         "6": "can",
@@ -21392,17 +20116,18 @@
         "9": "'s",
         "10": "in",
         "11": "-",
-        "12": "gamescore",
-        "13": "so",
-        "14": "that",
-        "15": "Learner",
-        "16": "know",
-        "17": "how",
-        "18": "much",
-        "19": "Learner",
-        "20": "be",
-        "21": "progress",
-        "22": "."
+        "12": "game",
+        "13": "Score",
+        "14": "so",
+        "15": "that",
+        "16": "Learner",
+        "17": "know",
+        "18": "how",
+        "19": "much",
+        "20": "Learner",
+        "21": "be",
+        "22": "progress",
+        "23": "."
       },
       "TD": {
         "ROOT": [
@@ -21448,7 +20173,7 @@
           ],
           [
             7,
-            22
+            23
           ]
         ],
         "nsubj": [
@@ -21457,12 +20182,12 @@
             5
           ],
           [
-            16,
-            15
+            17,
+            16
           ],
           [
-            21,
-            19
+            22,
+            20
           ]
         ],
         "aux": [
@@ -21471,54 +20196,60 @@
             6
           ],
           [
-            21,
-            20
+            22,
+            21
+          ]
+        ],
+        "nmod:poss": [
+          [
+            13,
+            8
+          ]
+        ],
+        "compound": [
+          [
+            13,
+            12
           ]
         ],
         "obj": [
           [
             7,
-            8
-          ]
-        ],
-        "nmod:in": [
-          [
-            8,
-            12
+            13
           ]
         ],
         "mark": [
           [
-            16,
-            13
+            17,
+            14
           ]
         ],
         "fixed": [
           [
-            13,
-            14
+            14,
+            15
           ]
         ],
         "advcl:so_that": [
           [
             7,
-            16
+            17
           ]
         ],
         "advmod": [
           [
-            18,
-            17
+            19,
+            18
           ],
           [
-            21,
-            18
+            22,
+            19
           ]
         ],
         "ccomp": [
           [
-            16,
-            21
+            17,
+            22
           ]
         ]
       },
@@ -21533,12 +20264,12 @@
             10
           ],
           [
-            13,
-            13
-          ],
-          [
             14,
             14
+          ],
+          [
+            15,
+            15
           ]
         ],
         "JJ": [
@@ -21547,8 +20278,8 @@
             2
           ],
           [
-            18,
-            18
+            19,
+            19
           ]
         ],
         "NN": [
@@ -21559,6 +20290,10 @@
           [
             12,
             12
+          ],
+          [
+            13,
+            13
           ]
         ],
         "NP": [
@@ -21576,21 +20311,29 @@
           ],
           [
             8,
+            13
+          ],
+          [
+            12,
             12
           ],
           [
-            15,
-            15
+            16,
+            16
           ],
           [
-            19,
-            19
+            20,
+            20
           ]
         ],
         "PP": [
           [
             1,
             3
+          ],
+          [
+            10,
+            12
           ]
         ],
         ",": [
@@ -21609,12 +20352,12 @@
             8
           ],
           [
-            15,
-            15
+            16,
+            16
           ],
           [
-            19,
-            19
+            20,
+            20
           ]
         ],
         "MD": [
@@ -21649,88 +20392,88 @@
         ],
         "VBP": [
           [
-            16,
-            16
+            17,
+            17
           ],
           [
-            20,
-            20
+            21,
+            21
           ]
         ],
         "WRB": [
           [
-            17,
-            17
+            18,
+            18
           ]
         ],
         "WHADJP": [
           [
-            17,
-            18
+            18,
+            19
           ]
         ],
         "VBG": [
-          [
-            21,
-            21
-          ]
-        ],
-        "VP": [
-          [
-            6,
-            21
-          ],
-          [
-            7,
-            21
-          ],
-          [
-            16,
-            21
-          ],
-          [
-            20,
-            21
-          ],
-          [
-            21,
-            21
-          ]
-        ],
-        "S": [
-          [
-            1,
-            22
-          ],
-          [
-            15,
-            21
-          ],
-          [
-            19,
-            21
-          ]
-        ],
-        "SBAR": [
-          [
-            13,
-            21
-          ],
-          [
-            17,
-            21
-          ]
-        ],
-        ".": [
           [
             22,
             22
           ]
         ],
+        "VP": [
+          [
+            6,
+            22
+          ],
+          [
+            7,
+            22
+          ],
+          [
+            17,
+            22
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "S": [
+          [
+            1,
+            23
+          ],
+          [
+            16,
+            22
+          ],
+          [
+            20,
+            22
+          ]
+        ],
+        "SBAR": [
+          [
+            14,
+            22
+          ],
+          [
+            18,
+            22
+          ]
+        ],
+        ".": [
+          [
+            23,
+            23
+          ]
+        ],
         "ROOT": [
           [
             1,
-            22
+            23
           ]
         ]
       },
@@ -21746,12 +20489,12 @@
       "Index": {
         "1": "with",
         "2": "military",
-        "3": "experience",
+        "3": "Experience",
         "4": ",",
         "5": "Learner",
         "6": "can",
         "7": "resolve",
-        "8": "conflict",
+        "8": "Conflict",
         "9": "in",
         "10": "a",
         "11": "Team",
@@ -21760,7 +20503,7 @@
         "14": "that",
         "15": "Learner",
         "16": "have",
-        "17": "practice",
+        "17": "Practice",
         "18": "work",
         "19": "collaboratively",
         "20": "in",
@@ -22121,7 +20864,7 @@
         "2": "can",
         "3": "take",
         "4": "proper",
-        "5": "training",
+        "5": "Training",
         "6": "so",
         "7": "that",
         "8": "ExperientialLearningCenterStaff",
@@ -22130,7 +20873,7 @@
         "11": "Student",
         "12": "use",
         "13": "the",
-        "14": "system",
+        "14": "System",
         "15": "to",
         "16": "improve",
         "17": "they",
@@ -22441,7 +21184,7 @@
         "B": 8
       },
       "Index": {
-        "1": "learner",
+        "1": "Learner",
         "2": "can",
         "3": "take",
         "4": "the",
@@ -22796,14 +21539,14 @@
         "4": "participate",
         "5": "in",
         "6": "a",
-        "7": "program",
+        "7": "Program",
         "8": "that",
         "9": "integrate",
         "10": "military",
-        "11": "experience",
+        "11": "Experience",
         "12": "in",
         "13": "a",
-        "14": "business",
+        "14": "Business",
         "15": "set",
         "16": "so",
         "17": "that",
@@ -22811,7 +21554,7 @@
         "19": "can",
         "20": "collaborate",
         "21": "with",
-        "22": "teammate",
+        "22": "Teammate",
         "23": "to",
         "24": "improve",
         "25": "ConflictResolutionSkill",
@@ -23251,7 +21994,7 @@
         "B": 16
       },
       "Index": {
-        "1": "veteran",
+        "1": "Veteran",
         "2": "want",
         "3": "to",
         "4": "see",
@@ -23266,16 +22009,16 @@
         "13": "Situation",
         "14": "so",
         "15": "that",
-        "16": "veteran",
+        "16": "Veteran",
         "17": "can",
         "18": "see",
         "19": "that",
-        "20": "veteran",
+        "20": "Veteran",
         "21": "be",
         "22": "not",
         "23": "alone",
         "24": "in",
-        "25": "veteran",
+        "25": "Veteran",
         "26": "'s",
         "27": "ThoughtProcess",
         "28": "."

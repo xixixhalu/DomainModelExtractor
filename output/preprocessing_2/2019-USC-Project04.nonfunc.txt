@@ -1,6 +1,8 @@
 The final Product shall be modular and integrate easily into the Rest of FieldProgress 's TechStack .
-The final Product shall accept as InputDistrict , Precinct of any Size .
-The final Product shall consider District , PrecinctTopography when calculating the most optimal Route for Volunteer to take .
+The final Product shall accept as InputDistrict of any Size .
+The final Product shall accept as InputPrecinct of any Size .
+The final Product shall consider precinct Topography when calculating the most optimal Route for Volunteer to take .
+The final Product shall consider DistrictTopography when calculating the most optimal Route for Volunteer to take .
 The final Product shall render an optional Map with Voter placed as Point , and Line indicating the best Route for the Volunteer to take , representing the Grouping of Voter using Color .
 The final Product shall accept as Input a variable Number of Volunteer .
 The final Product shall accept as Input a variable TimeRange for Volunteer to Canvass .

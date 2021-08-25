@@ -1,5 +1,6 @@
 User can browse from a List of existing BaseRecipe .
-User will be given an estimated pick up , wait Time prior to submitting User's Order .
+User will be given an estimated WaitTime prior to submitting User's Order .
+User will be given an estimated pick up Time prior to submitting User's Order .
 User can see the NutritionDetail of User's customized Coffee .
 User can delete a saved Recipe which User no longer want to hold from User's RecipeList .
 User can add and save a DefaultPaymentMethod for User's Order .
@@ -24,6 +25,7 @@ User can view the Recipe from User's saved CoffeeSelection and choose to vend it
 User will be able to check if User's Recipe contains specific Allergen .
 Maintainer will be able to track any faulty Kiosk .
 Maintainer will be able to update the Location of any new Kiosk .
-User can log in , out the App with User's Username and Password or existed social MediaAccount .
+User can log in the App with User's Username and Password or existed social MediaAccount .
+User can out the App with User's Username and Password or existed social MediaAccount .
 User can update any one of customized Recipe which is stored in User's RecipeList .
 User can identify how many available Kiosk are near around me and where exactly they are .

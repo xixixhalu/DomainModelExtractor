@@ -1,8 +1,10 @@
 User expect that User's Information is secure .
-Coach can review the Information of who signed up before printing it as a Pdf , Csv .
-Coach can overwrite , modify the final Result .
+Coach can review the Information of who signed up before printing it as a Csv .
+Coach can review the Information of who signed up before printing it as a Pdf .
+Coach can overwrite the final Result .
+Coach can modify the final Result .
 User expect to only see Option that User's Swimmer is qualified to sign up for .
-Coach expect the Signup to automatically close 2 Week before SignUp , or a Time - Frame that Coach set .
+Coach expect the Signup to automatically close 2 Week before SignUp , or a Time - frame that Coach set .
 parent should be able to login to parent's Kid 's Account .
 Coach expect that if Coach modified Something from the User , that the User will automatically be notified .
 parent should be able to see Amount parent am supposed to pay .
@@ -15,10 +17,11 @@ parent should not be able to sign up parent's Kid for the Event post the Deadlin
 Treasurer should be able to see the total Amount to be collected in the Month .
 Developer should have the Access to the Database of the RegistrationId and Date of Birth of Child .
 parent should be able to view the PayeeInformation .
-Maintainer should be able to access , modify the Database .
+Maintainer should be able to access the Database .
+Maintainer should be able to modify the Database .
 Maintainer should be able to modify the Website .
 Maintainer should have Access to Documentation and the SourceCode .
-- Coach , Head should be able to generate final PdfReport and CSVFile .
+- coach , Head should be able to generate final PdfReport and CSVFile .
 parent can login into parent's Kid account with a RegistrationKey .
 Maintainer can insert , delete , or modify the Database of the Event or of the Kid .
 Maintainer can see the AmountDetail for the Kid that they owe .

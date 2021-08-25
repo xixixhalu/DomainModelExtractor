@@ -12,7 +12,7 @@
         "D": 6
       },
       "Index": {
-        "1": "maintainer",
+        "1": "Maintainer",
         "2": "be",
         "3": "able",
         "4": "to",
@@ -22,7 +22,7 @@
         "8": "PastLocation",
         "9": "of",
         "10": "all",
-        "11": "user",
+        "11": "User",
         "12": "."
       },
       "TD": {
@@ -251,7 +251,7 @@
         "D": 9
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "be",
         "3": "able",
         "4": "to",
@@ -259,10 +259,10 @@
         "6": "or",
         "7": "open",
         "8": "a",
-        "9": "venue",
+        "9": "Venue",
         "10": "for",
         "11": "certain",
-        "12": "reason",
+        "12": "Reason",
         "13": "."
       },
       "TD": {
@@ -500,13 +500,13 @@
         "B": 5
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "can",
         "3": "see",
         "4": "all",
-        "5": "user",
+        "5": "User",
         "6": "'",
-        "7": "accountinformation",
+        "7": "AccountInformation",
         "8": "."
       },
       "TD": {
@@ -651,12 +651,12 @@
         "B": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "import",
-        "4": "user",
+        "4": "User",
         "5": "'s",
-        "6": "information",
+        "6": "Information",
         "7": "from",
         "8": "Facebook",
         "9": "."
@@ -823,7 +823,7 @@
         "B": 5
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "can",
         "3": "edit",
         "4": "a",
@@ -976,11 +976,11 @@
         "B": 16
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
         "4": "other",
-        "5": "user",
+        "5": "User",
         "6": "and",
         "7": "they",
         "8": "Profession",
@@ -991,9 +991,9 @@
         "13": "be",
         "14": "at",
         "15": "in",
-        "16": "user",
+        "16": "User",
         "17": "'s",
-        "18": "area",
+        "18": "Area",
         "19": "."
       },
       "TD": {
@@ -1310,7 +1310,7 @@
         "B": 10
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
         "4": "the",
@@ -1319,9 +1319,9 @@
         "7": "from",
         "8": "I",
         "9": "to",
-        "10": "user",
+        "10": "User",
         "11": "'s",
-        "12": "friend",
+        "12": "Friend",
         "13": "."
       },
       "TD": {
@@ -1533,7 +1533,7 @@
       "Keywords": []
     }
   ],
-  "OPassVS": [],
+  "SPassPartVByS": [],
   "VOToInf": [],
   "SVThatClause": [
     {
@@ -1547,16 +1547,16 @@
         "E": 5
       },
       "Index": {
-        "1": "maintainer",
+        "1": "Maintainer",
         "2": "can",
         "3": "guarantee",
         "4": "that",
-        "5": "user",
+        "5": "User",
         "6": "could",
         "7": "not",
         "8": "lose",
         "9": "any",
-        "10": "message",
+        "10": "Message",
         "11": "."
       },
       "TD": {
@@ -1752,11 +1752,11 @@
         "E": 5
       },
       "Index": {
-        "1": "developer",
+        "1": "Developer",
         "2": "can",
         "3": "guarantee",
         "4": "that",
-        "5": "user",
+        "5": "User",
         "6": "could",
         "7": "get",
         "8": "exact",
@@ -1944,15 +1944,15 @@
         "E": 5
       },
       "Index": {
-        "1": "developer",
+        "1": "Developer",
         "2": "can",
         "3": "guarantee",
         "4": "that",
-        "5": "user",
+        "5": "User",
         "6": "could",
         "7": "receive",
         "8": "the",
-        "9": "recommendation",
+        "9": "Recommendation",
         "10": "they",
         "11": "be",
         "12": "interested",
@@ -2214,14 +2214,14 @@
         "E": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "confirm",
         "4": "that",
-        "5": "user",
+        "5": "User",
         "6": "enter",
         "7": "a",
-        "8": "venue",
+        "8": "Venue",
         "9": "."
       },
       "TD": {
@@ -2393,14 +2393,14 @@
         "E": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "confirm",
         "4": "that",
-        "5": "user",
+        "5": "User",
         "6": "leave",
         "7": "a",
-        "8": "venue",
+        "8": "Venue",
         "9": "."
       },
       "TD": {
@@ -2564,34 +2564,30 @@
   ],
   "SVByVO": [],
   "AO": [],
-  "SVCVO": [],
-  "SVVO": [],
-  "SVVOcomma1": [
+  "SVCVO": [
     {
       "FileName": "2018-USC-Project01",
-      "Sentence": "Maintainer can guarantee Maintainer will process all Message from User in a certain PeriodTime .",
+      "Sentence": "User can block or unblock the Message or Call from other User .",
       "Result": {
         "A": 3,
         "B": 1,
-        "C": 6,
-        "D": 8
+        "C": 5,
+        "D": 7
       },
       "Index": {
-        "1": "maintainer",
+        "1": "User",
         "2": "can",
-        "3": "guarantee",
-        "4": "Maintainer",
-        "5": "will",
-        "6": "process",
-        "7": "all",
-        "8": "message",
-        "9": "from",
-        "10": "user",
-        "11": "in",
-        "12": "a",
-        "13": "certain",
-        "14": "PeriodTime",
-        "15": "."
+        "3": "block",
+        "4": "or",
+        "5": "unblock",
+        "6": "the",
+        "7": "Message",
+        "8": "or",
+        "9": "Call",
+        "10": "from",
+        "11": "other",
+        "12": "User",
+        "13": "."
       },
       "TD": {
         "ROOT": [
@@ -2604,76 +2600,76 @@
           [
             3,
             1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            9,
+            1
           ]
         ],
         "aux": [
           [
             3,
             2
+          ]
+        ],
+        "cc": [
+          [
+            5,
+            4
           ],
           [
-            6,
+            9,
+            8
+          ]
+        ],
+        "conj:or": [
+          [
+            3,
             5
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "det": [
+          [
+            7,
+            6
           ]
         ],
         "obj": [
           [
             3,
-            4
-          ],
-          [
-            6,
-            8
-          ]
-        ],
-        "dep": [
-          [
-            3,
-            6
-          ]
-        ],
-        "det": [
-          [
-            8,
             7
-          ],
-          [
-            14,
-            12
           ]
         ],
         "case": [
           [
-            10,
-            9
-          ],
-          [
-            14,
-            11
-          ]
-        ],
-        "nmod:from": [
-          [
-            8,
+            12,
             10
           ]
         ],
         "amod": [
           [
-            14,
-            13
+            12,
+            11
           ]
         ],
-        "obl:in": [
+        "obl:from": [
           [
-            6,
-            14
+            9,
+            12
           ]
         ],
         "punct": [
           [
             3,
-            15
+            13
           ]
         ]
       },
@@ -2684,12 +2680,12 @@
             1
           ],
           [
-            8,
-            8
+            7,
+            7
           ],
           [
-            10,
-            10
+            12,
+            12
           ]
         ],
         "NP": [
@@ -2698,34 +2694,18 @@
             1
           ],
           [
-            4,
-            4
+            6,
+            7
           ],
           [
-            7,
-            8
-          ],
-          [
-            10,
-            10
-          ],
-          [
-            10,
-            14
-          ],
-          [
-            12,
-            14
+            11,
+            12
           ]
         ],
         "MD": [
           [
             2,
             2
-          ],
-          [
-            5,
-            5
           ]
         ],
         "VB": [
@@ -2734,21 +2714,201 @@
             3
           ],
           [
-            6,
-            6
+            5,
+            5
+          ],
+          [
+            9,
+            9
           ]
         ],
-        "NNP": [
+        "CC": [
           [
             4,
             4
           ],
           [
-            14,
-            14
+            8,
+            8
           ]
         ],
         "DT": [
+          [
+            6,
+            6
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            9,
+            12
+          ]
+        ],
+        "IN": [
+          [
+            10,
+            10
+          ]
+        ],
+        "JJ": [
+          [
+            11,
+            11
+          ]
+        ],
+        "PP": [
+          [
+            10,
+            12
+          ]
+        ],
+        ".": [
+          [
+            13,
+            13
+          ]
+        ],
+        "S": [
+          [
+            1,
+            13
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            13
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2018-USC-Project01",
+      "Sentence": "User can block or unblock the Message or Call from other User .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 9,
+        "D": 7
+      },
+      "Index": {
+        "1": "User",
+        "2": "can",
+        "3": "block",
+        "4": "or",
+        "5": "unblock",
+        "6": "the",
+        "7": "Message",
+        "8": "or",
+        "9": "Call",
+        "10": "from",
+        "11": "other",
+        "12": "User",
+        "13": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            9,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "cc": [
+          [
+            5,
+            4
+          ],
+          [
+            9,
+            8
+          ]
+        ],
+        "conj:or": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "det": [
+          [
+            7,
+            6
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            7
+          ]
+        ],
+        "case": [
+          [
+            12,
+            10
+          ]
+        ],
+        "amod": [
+          [
+            12,
+            11
+          ]
+        ],
+        "obl:from": [
+          [
+            9,
+            12
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            13
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
           [
             7,
             7
@@ -2758,82 +2918,116 @@
             12
           ]
         ],
-        "IN": [
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            11,
+            12
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
           [
             9,
             9
-          ],
-          [
-            11,
-            11
           ]
         ],
-        "JJ": [
+        "CC": [
           [
-            13,
-            13
-          ]
-        ],
-        "PP": [
-          [
-            9,
-            14
+            4,
+            4
           ],
           [
-            11,
-            14
+            8,
+            8
+          ]
+        ],
+        "DT": [
+          [
+            6,
+            6
           ]
         ],
         "VP": [
           [
             2,
-            14
+            12
           ],
           [
             3,
-            14
+            7
           ],
           [
-            5,
-            14
+            3,
+            12
           ],
           [
-            6,
-            14
+            9,
+            12
+          ]
+        ],
+        "IN": [
+          [
+            10,
+            10
+          ]
+        ],
+        "JJ": [
+          [
+            11,
+            11
+          ]
+        ],
+        "PP": [
+          [
+            10,
+            12
+          ]
+        ],
+        ".": [
+          [
+            13,
+            13
           ]
         ],
         "S": [
           [
             1,
-            15
-          ],
-          [
-            4,
-            14
-          ]
-        ],
-        "SBAR": [
-          [
-            4,
-            14
-          ]
-        ],
-        ".": [
-          [
-            15,
-            15
+            13
           ]
         ],
         "ROOT": [
           [
             1,
-            15
+            13
           ]
         ]
       },
       "Keywords": []
     }
   ],
+  "SVVOMultiComma": [],
+  "SVVO1Comma": [],
   "SVOCO": [
     {
       "FileName": "2018-USC-Project01",
@@ -2845,11 +3039,11 @@
         "D": 8
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
         "4": "other",
-        "5": "user",
+        "5": "User",
         "6": "and",
         "7": "they",
         "8": "Profession",
@@ -2860,9 +3054,9 @@
         "13": "be",
         "14": "at",
         "15": "in",
-        "16": "user",
+        "16": "User",
         "17": "'s",
-        "18": "area",
+        "18": "Area",
         "19": "."
       },
       "TD": {
@@ -3181,11 +3375,11 @@
         "D": 11
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
         "4": "other",
-        "5": "user",
+        "5": "User",
         "6": "and",
         "7": "they",
         "8": "Profession",
@@ -3196,9 +3390,9 @@
         "13": "be",
         "14": "at",
         "15": "in",
-        "16": "user",
+        "16": "User",
         "17": "'s",
-        "18": "area",
+        "18": "Area",
         "19": "."
       },
       "TD": {
@@ -3508,8 +3702,245 @@
       "Keywords": []
     }
   ],
-  "SVOO": [],
-  "SVOOcomma1": [],
+  "SVOOComma": [],
+  "SVIOO": [],
+  "SVOTo": [
+    {
+      "FileName": "2018-USC-Project01",
+      "Sentence": "User can see the certain Route from me to User's Friend .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 6,
+        "D": 12
+      },
+      "Index": {
+        "1": "User",
+        "2": "can",
+        "3": "see",
+        "4": "the",
+        "5": "certain",
+        "6": "Route",
+        "7": "from",
+        "8": "I",
+        "9": "to",
+        "10": "User",
+        "11": "'s",
+        "12": "Friend",
+        "13": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "det": [
+          [
+            6,
+            4
+          ]
+        ],
+        "amod": [
+          [
+            6,
+            5
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            6
+          ]
+        ],
+        "case": [
+          [
+            8,
+            7
+          ],
+          [
+            12,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "obl:from": [
+          [
+            3,
+            8
+          ]
+        ],
+        "nmod:poss": [
+          [
+            12,
+            10
+          ]
+        ],
+        "obl:to": [
+          [
+            3,
+            12
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            13
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            10,
+            12
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "DT": [
+          [
+            4,
+            4
+          ]
+        ],
+        "JJ": [
+          [
+            5,
+            5
+          ]
+        ],
+        "NNP": [
+          [
+            6,
+            6
+          ]
+        ],
+        "IN": [
+          [
+            7,
+            7
+          ]
+        ],
+        "PRP": [
+          [
+            8,
+            8
+          ]
+        ],
+        "PP": [
+          [
+            7,
+            8
+          ],
+          [
+            9,
+            12
+          ]
+        ],
+        "TO": [
+          [
+            9,
+            9
+          ]
+        ],
+        "POS": [
+          [
+            11,
+            11
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ]
+        ],
+        ".": [
+          [
+            13,
+            13
+          ]
+        ],
+        "S": [
+          [
+            1,
+            13
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            13
+          ]
+        ]
+      },
+      "Keywords": []
+    }
+  ],
+  "OPassPartVByS": [],
+  "SVOPassPart": [],
+  "SPredicativeV": [],
   "SVOblWith": [],
   "SVCc": [
     {
@@ -3521,7 +3952,7 @@
         "C": 5
       },
       "Index": {
-        "1": "maintainer",
+        "1": "Maintainer",
         "2": "be",
         "3": "able",
         "4": "to",
@@ -3531,7 +3962,7 @@
         "8": "PastLocation",
         "9": "of",
         "10": "all",
-        "11": "user",
+        "11": "User",
         "12": "."
       },
       "TD": {
@@ -3752,253 +4183,6 @@
     },
     {
       "FileName": "2018-USC-Project01",
-      "Sentence": "User can see a TutorialEntrance to introduce how to use the App .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 7
-      },
-      "Index": {
-        "1": "user",
-        "2": "can",
-        "3": "see",
-        "4": "a",
-        "5": "TutorialEntrance",
-        "6": "to",
-        "7": "introduce",
-        "8": "how",
-        "9": "to",
-        "10": "use",
-        "11": "the",
-        "12": "app",
-        "13": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "det": [
-          [
-            5,
-            4
-          ],
-          [
-            12,
-            11
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            5
-          ],
-          [
-            10,
-            12
-          ]
-        ],
-        "nsubj:xsubj": [
-          [
-            7,
-            5
-          ]
-        ],
-        "mark": [
-          [
-            7,
-            6
-          ],
-          [
-            10,
-            9
-          ]
-        ],
-        "xcomp": [
-          [
-            3,
-            7
-          ]
-        ],
-        "advmod": [
-          [
-            10,
-            8
-          ]
-        ],
-        "ccomp": [
-          [
-            7,
-            10
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            13
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ],
-          [
-            12,
-            12
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            5
-          ],
-          [
-            11,
-            12
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ],
-          [
-            7,
-            7
-          ],
-          [
-            10,
-            10
-          ]
-        ],
-        "DT": [
-          [
-            4,
-            4
-          ],
-          [
-            11,
-            11
-          ]
-        ],
-        "NNP": [
-          [
-            5,
-            5
-          ]
-        ],
-        "TO": [
-          [
-            6,
-            6
-          ],
-          [
-            9,
-            9
-          ]
-        ],
-        "WRB": [
-          [
-            8,
-            8
-          ]
-        ],
-        "WHADVP": [
-          [
-            8,
-            8
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            12
-          ],
-          [
-            3,
-            12
-          ],
-          [
-            6,
-            12
-          ],
-          [
-            7,
-            12
-          ],
-          [
-            9,
-            12
-          ],
-          [
-            10,
-            12
-          ]
-        ],
-        "S": [
-          [
-            1,
-            13
-          ],
-          [
-            6,
-            12
-          ],
-          [
-            9,
-            12
-          ]
-        ],
-        "SBAR": [
-          [
-            8,
-            12
-          ]
-        ],
-        ".": [
-          [
-            13,
-            13
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            13
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2018-USC-Project01",
       "Sentence": "Administrator am able to close or open a Venue for certain Reason .",
       "Result": {
         "A": 3,
@@ -4006,7 +4190,7 @@
         "C": 5
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "be",
         "3": "able",
         "4": "to",
@@ -4014,10 +4198,10 @@
         "6": "or",
         "7": "open",
         "8": "a",
-        "9": "venue",
+        "9": "Venue",
         "10": "for",
         "11": "certain",
-        "12": "reason",
+        "12": "Reason",
         "13": "."
       },
       "TD": {
@@ -4253,7 +4437,7 @@
         "C": 7
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "be",
         "3": "able",
         "4": "to",
@@ -4261,10 +4445,10 @@
         "6": "or",
         "7": "open",
         "8": "a",
-        "9": "venue",
+        "9": "Venue",
         "10": "for",
         "11": "certain",
-        "12": "reason",
+        "12": "Reason",
         "13": "."
       },
       "TD": {
@@ -4503,16 +4687,16 @@
         "C": 6
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "can",
         "3": "block",
-        "4": "user",
+        "4": "User",
         "5": "'",
-        "6": "account",
+        "6": "Account",
         "7": "when",
         "8": "they",
         "9": "do",
-        "10": "something",
+        "10": "Something",
         "11": "inappropriate",
         "12": "."
       },
@@ -4745,13 +4929,13 @@
         "C": 7
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "can",
         "3": "see",
         "4": "all",
-        "5": "user",
+        "5": "User",
         "6": "'",
-        "7": "accountinformation",
+        "7": "AccountInformation",
         "8": "."
       },
       "TD": {
@@ -4897,11 +5081,11 @@
         "C": 5
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "can",
         "3": "cancel",
         "4": "inappropriate",
-        "5": "event",
+        "5": "Event",
         "6": "."
       },
       "TD": {
@@ -5021,13 +5205,13 @@
         "C": 7
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "can",
         "3": "see",
         "4": "all",
-        "5": "event",
+        "5": "Event",
         "6": "'",
-        "7": "information",
+        "7": "Information",
         "8": "."
       },
       "TD": {
@@ -5167,16 +5351,16 @@
         "C": 10
       },
       "Index": {
-        "1": "maintainer",
+        "1": "Maintainer",
         "2": "can",
         "3": "guarantee",
         "4": "that",
-        "5": "user",
+        "5": "User",
         "6": "could",
         "7": "not",
         "8": "lose",
         "9": "any",
-        "10": "message",
+        "10": "Message",
         "11": "."
       },
       "TD": {
@@ -5370,11 +5554,11 @@
         "C": 9
       },
       "Index": {
-        "1": "developer",
+        "1": "Developer",
         "2": "can",
         "3": "guarantee",
         "4": "that",
-        "5": "user",
+        "5": "User",
         "6": "could",
         "7": "get",
         "8": "exact",
@@ -5560,15 +5744,15 @@
         "C": 9
       },
       "Index": {
-        "1": "developer",
+        "1": "Developer",
         "2": "can",
         "3": "guarantee",
         "4": "that",
-        "5": "user",
+        "5": "User",
         "6": "could",
         "7": "receive",
         "8": "the",
-        "9": "recommendation",
+        "9": "Recommendation",
         "10": "they",
         "11": "be",
         "12": "interested",
@@ -5828,20 +6012,20 @@
         "C": 5
       },
       "Index": {
-        "1": "maintainer",
+        "1": "Maintainer",
         "2": "can",
         "3": "withdraw",
         "4": "the",
-        "5": "account",
+        "5": "Account",
         "6": "of",
-        "7": "user",
+        "7": "User",
         "8": ",",
         "9": "who",
         "10": "do",
         "11": "not",
         "12": "follow",
         "13": "a",
-        "14": "policy",
+        "14": "Policy",
         "15": "."
       },
       "TD": {
@@ -6103,20 +6287,20 @@
         "C": 14
       },
       "Index": {
-        "1": "maintainer",
+        "1": "Maintainer",
         "2": "can",
         "3": "withdraw",
         "4": "the",
-        "5": "account",
+        "5": "Account",
         "6": "of",
-        "7": "user",
+        "7": "User",
         "8": ",",
         "9": "who",
         "10": "do",
         "11": "not",
         "12": "follow",
         "13": "a",
-        "14": "policy",
+        "14": "Policy",
         "15": "."
       },
       "TD": {
@@ -6378,11 +6562,11 @@
         "C": 5
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "can",
         "3": "add",
         "4": "more",
-        "5": "event",
+        "5": "Event",
         "6": "."
       },
       "TD": {
@@ -6502,19 +6686,19 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "contact",
         "4": "the",
         "5": "other",
-        "6": "user",
+        "6": "User",
         "7": "by",
         "8": "call",
         "9": "or",
         "10": "message",
         "11": "within",
         "12": "the",
-        "13": "app",
+        "13": "App",
         "14": "."
       },
       "TD": {
@@ -6744,13 +6928,13 @@
         "C": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "receive",
         "4": "Info",
         "5": "about",
         "6": "future",
-        "7": "event",
+        "7": "Event",
         "8": "."
       },
       "TD": {
@@ -6904,16 +7088,16 @@
         "C": 4
       },
       "Index": {
-        "1": "maintainer",
+        "1": "Maintainer",
         "2": "can",
         "3": "guarantee",
         "4": "Maintainer",
         "5": "will",
         "6": "process",
         "7": "all",
-        "8": "message",
+        "8": "Message",
         "9": "from",
-        "10": "user",
+        "10": "User",
         "11": "in",
         "12": "a",
         "13": "certain",
@@ -7169,7 +7353,7 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
         "4": "a",
@@ -7180,7 +7364,7 @@
         "9": "to",
         "10": "use",
         "11": "the",
-        "12": "app",
+        "12": "App",
         "13": "."
       },
       "TD": {
@@ -7416,18 +7600,18 @@
         "C": 7
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "block",
         "4": "or",
         "5": "unblock",
         "6": "the",
-        "7": "message",
+        "7": "Message",
         "8": "or",
-        "9": "call",
+        "9": "Call",
         "10": "from",
         "11": "other",
-        "12": "user",
+        "12": "User",
         "13": "."
       },
       "TD": {
@@ -7645,12 +7829,12 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "import",
-        "4": "user",
+        "4": "User",
         "5": "'s",
-        "6": "information",
+        "6": "Information",
         "7": "from",
         "8": "Facebook",
         "9": "."
@@ -7818,14 +8002,14 @@
         "C": 8
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "confirm",
         "4": "that",
-        "5": "user",
+        "5": "User",
         "6": "enter",
         "7": "a",
-        "8": "venue",
+        "8": "Venue",
         "9": "."
       },
       "TD": {
@@ -7995,7 +8179,7 @@
         "C": 7
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "can",
         "3": "edit",
         "4": "a",
@@ -8149,11 +8333,11 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
         "4": "other",
-        "5": "user",
+        "5": "User",
         "6": "and",
         "7": "they",
         "8": "Profession",
@@ -8164,9 +8348,9 @@
         "13": "be",
         "14": "at",
         "15": "in",
-        "16": "user",
+        "16": "User",
         "17": "'s",
-        "18": "area",
+        "18": "Area",
         "19": "."
       },
       "TD": {
@@ -8484,11 +8668,11 @@
         "C": 8
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
         "4": "other",
-        "5": "user",
+        "5": "User",
         "6": "and",
         "7": "they",
         "8": "Profession",
@@ -8499,9 +8683,9 @@
         "13": "be",
         "14": "at",
         "15": "in",
-        "16": "user",
+        "16": "User",
         "17": "'s",
-        "18": "area",
+        "18": "Area",
         "19": "."
       },
       "TD": {
@@ -8819,11 +9003,11 @@
         "C": 11
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
         "4": "other",
-        "5": "user",
+        "5": "User",
         "6": "and",
         "7": "they",
         "8": "Profession",
@@ -8834,9 +9018,9 @@
         "13": "be",
         "14": "at",
         "15": "in",
-        "16": "user",
+        "16": "User",
         "17": "'s",
-        "18": "area",
+        "18": "Area",
         "19": "."
       },
       "TD": {
@@ -9154,11 +9338,11 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "create",
         "4": "a",
-        "5": "useraccount",
+        "5": "UserAccount",
         "6": "."
       },
       "TD": {
@@ -9278,17 +9462,17 @@
         "C": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "have",
         "3": "the",
-        "4": "option",
+        "4": "Option",
         "5": "to",
         "6": "automatically",
         "7": "check",
         "8": "out",
         "9": "of",
         "10": "a",
-        "11": "venue",
+        "11": "Venue",
         "12": "."
       },
       "TD": {
@@ -9500,14 +9684,14 @@
         "C": 8
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "confirm",
         "4": "that",
-        "5": "user",
+        "5": "User",
         "6": "leave",
         "7": "a",
-        "8": "venue",
+        "8": "Venue",
         "9": "."
       },
       "TD": {
@@ -9677,11 +9861,11 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "delete",
         "4": "present",
-        "5": "friend",
+        "5": "Friend",
         "6": "."
       },
       "TD": {
@@ -9801,12 +9985,12 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
         "4": "frequent",
         "5": "ask",
-        "6": "question",
+        "6": "Question",
         "7": "."
       },
       "TD": {
@@ -9956,13 +10140,13 @@
         "C": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "see",
-        "4": "information",
+        "4": "Information",
         "5": "about",
         "6": "current",
-        "7": "event",
+        "7": "Event",
         "8": "."
       },
       "TD": {
@@ -10104,237 +10288,6 @@
         ]
       },
       "Keywords": []
-    },
-    {
-      "FileName": "2018-USC-Project01",
-      "Sentence": "User can see the certain Route from me to User's Friend .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 6
-      },
-      "Index": {
-        "1": "user",
-        "2": "can",
-        "3": "see",
-        "4": "the",
-        "5": "certain",
-        "6": "Route",
-        "7": "from",
-        "8": "I",
-        "9": "to",
-        "10": "user",
-        "11": "'s",
-        "12": "friend",
-        "13": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "det": [
-          [
-            6,
-            4
-          ]
-        ],
-        "amod": [
-          [
-            6,
-            5
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            6
-          ]
-        ],
-        "case": [
-          [
-            8,
-            7
-          ],
-          [
-            12,
-            9
-          ],
-          [
-            10,
-            11
-          ]
-        ],
-        "obl:from": [
-          [
-            3,
-            8
-          ]
-        ],
-        "nmod:poss": [
-          [
-            12,
-            10
-          ]
-        ],
-        "obl:to": [
-          [
-            3,
-            12
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            13
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ],
-          [
-            10,
-            10
-          ],
-          [
-            12,
-            12
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            6
-          ],
-          [
-            8,
-            8
-          ],
-          [
-            10,
-            11
-          ],
-          [
-            10,
-            12
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ]
-        ],
-        "DT": [
-          [
-            4,
-            4
-          ]
-        ],
-        "JJ": [
-          [
-            5,
-            5
-          ]
-        ],
-        "NNP": [
-          [
-            6,
-            6
-          ]
-        ],
-        "IN": [
-          [
-            7,
-            7
-          ]
-        ],
-        "PRP": [
-          [
-            8,
-            8
-          ]
-        ],
-        "PP": [
-          [
-            7,
-            8
-          ],
-          [
-            9,
-            12
-          ]
-        ],
-        "TO": [
-          [
-            9,
-            9
-          ]
-        ],
-        "POS": [
-          [
-            11,
-            11
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            12
-          ],
-          [
-            3,
-            12
-          ]
-        ],
-        ".": [
-          [
-            13,
-            13
-          ]
-        ],
-        "S": [
-          [
-            1,
-            13
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            13
-          ]
-        ]
-      },
-      "Keywords": []
     }
   ],
   "SVp": [],
@@ -10347,14 +10300,14 @@
         "B": 1
       },
       "Index": {
-        "1": "maintainer",
+        "1": "Maintainer",
         "2": "can",
         "3": "make",
         "4": "sure",
         "5": "the",
-        "6": "information",
+        "6": "Information",
         "7": "of",
-        "8": "user",
+        "8": "User",
         "9": "be",
         "10": "secure",
         "11": "."
@@ -10567,13 +10520,13 @@
         "B": 1
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "close",
         "4": "GpsRecording",
         "5": "let",
         "6": "no",
-        "7": "one",
+        "7": "One",
         "8": "find",
         "9": "I",
         "10": "on",
@@ -10792,13 +10745,13 @@
         "B": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "close",
         "4": "GpsRecording",
         "5": "let",
         "6": "no",
-        "7": "one",
+        "7": "One",
         "8": "find",
         "9": "I",
         "10": "on",
@@ -11011,13 +10964,259 @@
     },
     {
       "FileName": "2018-USC-Project01",
+      "Sentence": "User can see a TutorialEntrance to introduce how to use the App .",
+      "Result": {
+        "A": 7,
+        "B": 5
+      },
+      "Index": {
+        "1": "User",
+        "2": "can",
+        "3": "see",
+        "4": "a",
+        "5": "TutorialEntrance",
+        "6": "to",
+        "7": "introduce",
+        "8": "how",
+        "9": "to",
+        "10": "use",
+        "11": "the",
+        "12": "App",
+        "13": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "det": [
+          [
+            5,
+            4
+          ],
+          [
+            12,
+            11
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            5
+          ],
+          [
+            10,
+            12
+          ]
+        ],
+        "nsubj:xsubj": [
+          [
+            7,
+            5
+          ]
+        ],
+        "mark": [
+          [
+            7,
+            6
+          ],
+          [
+            10,
+            9
+          ]
+        ],
+        "xcomp": [
+          [
+            3,
+            7
+          ]
+        ],
+        "advmod": [
+          [
+            10,
+            8
+          ]
+        ],
+        "ccomp": [
+          [
+            7,
+            10
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            13
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            11,
+            12
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "DT": [
+          [
+            4,
+            4
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        "NNP": [
+          [
+            5,
+            5
+          ]
+        ],
+        "TO": [
+          [
+            6,
+            6
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "WRB": [
+          [
+            8,
+            8
+          ]
+        ],
+        "WHADVP": [
+          [
+            8,
+            8
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            7,
+            12
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            10,
+            12
+          ]
+        ],
+        "S": [
+          [
+            1,
+            13
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            9,
+            12
+          ]
+        ],
+        "SBAR": [
+          [
+            8,
+            12
+          ]
+        ],
+        ".": [
+          [
+            13,
+            13
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            13
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2018-USC-Project01",
       "Sentence": "User can reject or consent to other 's FriendRequest .",
       "Result": {
         "A": 3,
         "B": 1
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "reject",
         "4": "or",
@@ -11208,7 +11407,7 @@
         "B": 1
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "reject",
         "4": "or",
@@ -11386,462 +11585,6 @@
           [
             1,
             10
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2018-USC-Project01",
-      "Sentence": "User can block or unblock the Message or Call from other User .",
-      "Result": {
-        "A": 5,
-        "B": 1
-      },
-      "Index": {
-        "1": "user",
-        "2": "can",
-        "3": "block",
-        "4": "or",
-        "5": "unblock",
-        "6": "the",
-        "7": "message",
-        "8": "or",
-        "9": "call",
-        "10": "from",
-        "11": "other",
-        "12": "user",
-        "13": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ],
-          [
-            5,
-            1
-          ],
-          [
-            9,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "cc": [
-          [
-            5,
-            4
-          ],
-          [
-            9,
-            8
-          ]
-        ],
-        "conj:or": [
-          [
-            3,
-            5
-          ],
-          [
-            3,
-            9
-          ]
-        ],
-        "det": [
-          [
-            7,
-            6
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            7
-          ]
-        ],
-        "case": [
-          [
-            12,
-            10
-          ]
-        ],
-        "amod": [
-          [
-            12,
-            11
-          ]
-        ],
-        "obl:from": [
-          [
-            9,
-            12
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            13
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ],
-          [
-            7,
-            7
-          ],
-          [
-            12,
-            12
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            6,
-            7
-          ],
-          [
-            11,
-            12
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ],
-          [
-            5,
-            5
-          ],
-          [
-            9,
-            9
-          ]
-        ],
-        "CC": [
-          [
-            4,
-            4
-          ],
-          [
-            8,
-            8
-          ]
-        ],
-        "DT": [
-          [
-            6,
-            6
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            12
-          ],
-          [
-            3,
-            7
-          ],
-          [
-            3,
-            12
-          ],
-          [
-            9,
-            12
-          ]
-        ],
-        "IN": [
-          [
-            10,
-            10
-          ]
-        ],
-        "JJ": [
-          [
-            11,
-            11
-          ]
-        ],
-        "PP": [
-          [
-            10,
-            12
-          ]
-        ],
-        ".": [
-          [
-            13,
-            13
-          ]
-        ],
-        "S": [
-          [
-            1,
-            13
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            13
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2018-USC-Project01",
-      "Sentence": "User can block or unblock the Message or Call from other User .",
-      "Result": {
-        "A": 9,
-        "B": 1
-      },
-      "Index": {
-        "1": "user",
-        "2": "can",
-        "3": "block",
-        "4": "or",
-        "5": "unblock",
-        "6": "the",
-        "7": "message",
-        "8": "or",
-        "9": "call",
-        "10": "from",
-        "11": "other",
-        "12": "user",
-        "13": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ],
-          [
-            5,
-            1
-          ],
-          [
-            9,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "cc": [
-          [
-            5,
-            4
-          ],
-          [
-            9,
-            8
-          ]
-        ],
-        "conj:or": [
-          [
-            3,
-            5
-          ],
-          [
-            3,
-            9
-          ]
-        ],
-        "det": [
-          [
-            7,
-            6
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            7
-          ]
-        ],
-        "case": [
-          [
-            12,
-            10
-          ]
-        ],
-        "amod": [
-          [
-            12,
-            11
-          ]
-        ],
-        "obl:from": [
-          [
-            9,
-            12
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            13
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ],
-          [
-            7,
-            7
-          ],
-          [
-            12,
-            12
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            6,
-            7
-          ],
-          [
-            11,
-            12
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ],
-          [
-            5,
-            5
-          ],
-          [
-            9,
-            9
-          ]
-        ],
-        "CC": [
-          [
-            4,
-            4
-          ],
-          [
-            8,
-            8
-          ]
-        ],
-        "DT": [
-          [
-            6,
-            6
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            12
-          ],
-          [
-            3,
-            7
-          ],
-          [
-            3,
-            12
-          ],
-          [
-            9,
-            12
-          ]
-        ],
-        "IN": [
-          [
-            10,
-            10
-          ]
-        ],
-        "JJ": [
-          [
-            11,
-            11
-          ]
-        ],
-        "PP": [
-          [
-            10,
-            12
-          ]
-        ],
-        ".": [
-          [
-            13,
-            13
-          ]
-        ],
-        "S": [
-          [
-            1,
-            13
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            13
           ]
         ]
       },
@@ -11855,7 +11598,7 @@
         "B": 1
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "search",
         "4": "for",
@@ -11863,10 +11606,10 @@
         "6": "there",
         "7": "be",
         "8": "different",
-        "9": "venue",
+        "9": "Venue",
         "10": "on",
         "11": "a",
-        "12": "map",
+        "12": "Map",
         "13": "."
       },
       "TD": {
@@ -12105,7 +11848,7 @@
         "B": 9
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "search",
         "4": "for",
@@ -12113,10 +11856,10 @@
         "6": "there",
         "7": "be",
         "8": "different",
-        "9": "venue",
+        "9": "Venue",
         "10": "on",
         "11": "a",
-        "12": "map",
+        "12": "Map",
         "13": "."
       },
       "TD": {
@@ -12355,12 +12098,12 @@
         "B": 1
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "find",
         "4": "all",
         "5": "of",
-        "6": "friend",
+        "6": "Friend",
         "7": "around",
         "8": "I",
         "9": "."

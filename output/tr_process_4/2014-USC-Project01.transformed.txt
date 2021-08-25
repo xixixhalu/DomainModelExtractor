@@ -8,7 +8,7 @@
       ],
       "attributes": [
         {
-          "name": "progress",
+          "name": "peer",
           "type": "default"
         },
         {
@@ -16,19 +16,7 @@
           "type": "default"
         },
         {
-          "name": "lifetime",
-          "type": "default"
-        },
-        {
-          "name": "point",
-          "type": "default"
-        },
-        {
-          "name": "profile",
-          "type": "default"
-        },
-        {
-          "name": "watPoint",
+          "name": "pointBalance",
           "type": "default"
         },
         {
@@ -36,11 +24,23 @@
           "type": "default"
         },
         {
-          "name": "peer",
+          "name": "point",
           "type": "default"
         },
         {
-          "name": "pointBalance",
+          "name": "watPoint",
+          "type": "default"
+        },
+        {
+          "name": "lifetime",
+          "type": "default"
+        },
+        {
+          "name": "profile",
+          "type": "default"
+        },
+        {
+          "name": "progress",
           "type": "default"
         }
       ]
@@ -59,6 +59,20 @@
       ],
       "attributes": []
     },
+    "Store": {
+      "name": "Store",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Card": {
+      "name": "Card",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
     "Wat": {
       "name": "Wat",
       "type": [
@@ -68,13 +82,6 @@
     },
     "System": {
       "name": "System",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
-    },
-    "Card": {
-      "name": "Card",
       "type": [
         "shared"
       ],
@@ -90,8 +97,41 @@
   },
   "relation_list": [
     {
+      "source": "Point",
+      "dest": "Balance",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Product",
+      "dest": "Store",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
       "source": "Gift",
-      "dest": "Card",
+      "dest": "Store",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Wat",
+      "dest": "Point",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -112,10 +152,10 @@
       "para": []
     },
     {
-      "source": "User",
-      "dest": "Peer",
-      "type": "association",
-      "msg": "supported_by",
+      "source": "Gift",
+      "dest": "Card",
+      "type": "aggregation",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -123,10 +163,10 @@
       "para": []
     },
     {
-      "source": "Point",
-      "dest": "Balance",
-      "type": "aggregation",
-      "msg": "",
+      "source": "User",
+      "dest": "Peer",
+      "type": "association",
+      "msg": "supported_by",
       "multiplicity": [
         "1",
         "1"
@@ -143,24 +183,121 @@
         "1"
       ],
       "para": []
-    },
-    {
-      "source": "Wat",
-      "dest": "Point",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
     }
   ],
   "behavior_list": [
     {
+      "actor": "Detail",
+      "action": "create",
+      "target": "System",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "mark",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "post",
+      "target": "Question",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "start",
+      "target": "Thread",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "gauge",
+      "target": "Credibility",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "report",
+      "target": "Thread",
+      "para": []
+    },
+    {
+      "actor": "Detail",
+      "action": "create",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Trash",
+      "action": "degrade",
+      "target": "Quality",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "track",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "redeem",
+      "target": "Gift",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "Thread",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "manage",
+      "target": "Thread",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "dislike",
+      "target": "Answer",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Page",
+      "para": []
+    },
+    {
       "actor": "User",
       "action": "like",
-      "target": "",
+      "target": "Answer",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "compare",
+      "target": "Point",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Card",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Answer",
       "para": []
     },
     {
@@ -172,25 +309,61 @@
     {
       "actor": "User",
       "action": "view",
-      "target": "Semester",
+      "target": "Thread",
       "para": []
     },
     {
-      "actor": "Gift",
-      "action": "user",
+      "actor": "Point",
+      "action": "redeem",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "Card",
+      "action": "use",
       "target": "Point",
       "para": []
     },
     {
       "actor": "User",
-      "action": "delete",
-      "target": "Thread",
+      "action": "overpenalize",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "view",
-      "target": "Page",
+      "action": "start",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "create",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "add",
+      "target": "Card",
+      "para": []
+    },
+    {
+      "actor": "Gift",
+      "action": "use",
+      "target": "Point",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "NewsFeed",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "gauge",
+      "target": "",
       "para": []
     },
     {
@@ -200,38 +373,44 @@
       "para": []
     },
     {
-      "actor": "Detail",
-      "action": "create",
-      "target": "System",
-      "para": []
-    },
-    {
       "actor": "User",
-      "action": "see",
-      "target": "Answer",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "update",
-      "target": "Profile",
+      "action": "answer",
+      "target": "Question",
       "para": []
     },
     {
       "actor": "Maintainer",
-      "action": "manage",
-      "target": "Thread",
+      "action": "entice",
+      "target": "User",
       "para": []
     },
     {
       "actor": "User",
-      "action": "redeem",
-      "target": "Point",
+      "action": "edit",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "join",
+      "target": "",
       "para": []
     },
     {
       "actor": "Maintainer",
       "action": "edit",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Point",
+      "para": []
+    },
+    {
+      "actor": "Stay",
+      "action": "engage",
       "target": "",
       "para": []
     },
@@ -248,30 +427,6 @@
       "para": []
     },
     {
-      "actor": "Detail",
-      "action": "create",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "Stay",
-      "action": "engage",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Balance",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "participate",
-      "target": "",
-      "para": []
-    },
-    {
       "actor": "User",
       "action": "track",
       "target": "Point",
@@ -279,140 +434,8 @@
     },
     {
       "actor": "User",
-      "action": "post",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "pin",
-      "target": "Thread",
-      "para": []
-    },
-    {
-      "actor": "Balance",
-      "action": "drop",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "view",
-      "target": "Lifetime",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "compare",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "report",
-      "target": "Thread",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "entice",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "manage",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Newsfeed",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Point",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "post",
-      "target": "Question",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "gauge",
-      "target": "Credibility",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "redeem",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "mark",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Thread",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "gauge",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "track",
-      "target": "Progress",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "Card",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "redeem",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "add",
-      "target": "Card",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "create",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "answer",
-      "target": "Question",
+      "target": "Semester",
       "para": []
     },
     {
@@ -423,14 +446,14 @@
     },
     {
       "actor": "User",
-      "action": "user",
-      "target": "Point",
+      "action": "view",
+      "target": "Balance",
       "para": []
     },
     {
-      "actor": "Card",
-      "action": "user",
-      "target": "Point",
+      "actor": "Administrator",
+      "action": "pin",
+      "target": "Thread",
       "para": []
     },
     {
@@ -441,31 +464,13 @@
     },
     {
       "actor": "Maintainer",
-      "action": "join",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Thread",
-      "action": "start",
-      "target": "",
+      "action": "manage",
+      "target": "Comment",
       "para": []
     },
     {
       "actor": "User",
-      "action": "redeem",
-      "target": "Gift",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "start",
-      "target": "Thread",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "edit",
+      "action": "post",
       "target": "",
       "para": []
     },
@@ -476,9 +481,51 @@
       "para": []
     },
     {
+      "actor": "Maintainer",
+      "action": "edit",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Lifetime",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "Point",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "redeem",
+      "target": "Point",
+      "para": []
+    },
+    {
       "actor": "User",
       "action": "see",
       "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Information",
+      "action": "highlight",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Balance",
+      "action": "drop",
+      "target": "",
       "para": []
     }
   ]

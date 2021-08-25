@@ -8,11 +8,11 @@
       ],
       "attributes": [
         {
-          "name": "client",
+          "name": "interest",
           "type": "default"
         },
         {
-          "name": "interest",
+          "name": "client",
           "type": "default"
         }
       ]
@@ -24,15 +24,15 @@
       ],
       "attributes": [
         {
-          "name": "information",
-          "type": "default"
-        },
-        {
           "name": "resource",
           "type": "default"
         },
         {
           "name": "work",
+          "type": "default"
+        },
+        {
+          "name": "information",
           "type": "default"
         },
         {
@@ -80,21 +80,14 @@
         "shared"
       ],
       "attributes": []
-    },
-    "Minute": {
-      "name": "Minute",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
     }
   },
   "relation_list": [
     {
-      "source": "Architect",
-      "dest": "Colleague",
-      "type": "association",
-      "msg": "supported_by",
+      "source": "Meeting",
+      "dest": "Information",
+      "type": "aggregation",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -102,8 +95,85 @@
       "para": []
     },
     {
-      "source": "Task",
-      "dest": "Progress",
+      "source": "Meeting",
+      "dest": "Minute",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Request",
+      "dest": "Comment",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Message",
+      "dest": "Manager",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Minute",
+      "dest": "Attendee",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Change",
+      "dest": "Company",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Work",
+      "dest": "Status",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Date",
+      "dest": "Customer",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Meeting",
+      "dest": "Log",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -124,8 +194,8 @@
       "para": []
     },
     {
-      "source": "Meeting",
-      "dest": "Log",
+      "source": "Task",
+      "dest": "Progress",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -135,8 +205,30 @@
       "para": []
     },
     {
-      "source": "Meeting",
-      "dest": "Minute",
+      "source": "Architect",
+      "dest": "Colleague",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "ProjectManager",
+      "dest": "Manager",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Project",
+      "dest": "Manager",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -149,26 +241,26 @@
   "behavior_list": [
     {
       "actor": "Contractor",
-      "action": "enter",
-      "target": "Report",
+      "action": "ask",
+      "target": "Minute",
       "para": []
     },
     {
       "actor": "Manager",
-      "action": "see",
-      "target": "Summary",
+      "action": "create",
+      "target": "Project",
       "para": []
     },
     {
-      "actor": "ProjectManager",
-      "action": "track",
-      "target": "Progress",
+      "actor": "Manager",
+      "action": "log_in",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Contractor",
-      "action": "manager",
-      "target": "Resource",
+      "actor": "Manager",
+      "action": "send_out",
+      "target": "",
       "para": []
     },
     {
@@ -179,44 +271,86 @@
     },
     {
       "actor": "Manager",
-      "action": "approve",
-      "target": "Task",
+      "action": "add",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Contractor",
+      "actor": "People",
+      "action": "get",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Manager",
       "action": "save",
       "target": "Progress",
       "para": []
     },
     {
       "actor": "Manager",
-      "action": "reject",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Contractor",
-      "action": "ask",
-      "target": "Question",
+      "action": "modify",
+      "target": "Project",
       "para": []
     },
     {
       "actor": "Manager",
-      "action": "find",
-      "target": "Topic",
+      "action": "access",
+      "target": "Log",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "approve",
+      "target": "Task",
       "para": []
     },
     {
       "actor": "Manager",
       "action": "send_out",
+      "target": "Minute",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "talk",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "save",
       "target": "",
       "para": []
     },
     {
       "actor": "Manager",
+      "action": "disapprove",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "approve",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
       "action": "save",
       "target": "Status",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "manage",
+      "target": "Resource",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "plan",
+      "target": "",
       "para": []
     },
     {
@@ -233,86 +367,8 @@
     },
     {
       "actor": "Manager",
-      "action": "send_out",
-      "target": "Minute",
-      "para": []
-    },
-    {
-      "actor": "Manager",
       "action": "make",
       "target": "Decision",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "save",
-      "target": "Progress",
-      "para": []
-    },
-    {
-      "actor": "Contractor",
-      "action": "edit",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "edit",
-      "target": "Meetinginformation",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "search",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Everyone",
-      "action": "do",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Contractor",
-      "action": "report",
-      "target": "Change",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "edit",
-      "target": "Category",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "log_in",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "ProjectManager",
-      "action": "plan",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "access",
-      "target": "Log",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "track",
-      "target": "Progress",
       "para": []
     },
     {
@@ -322,9 +378,33 @@
       "para": []
     },
     {
-      "actor": "People",
-      "action": "get",
-      "target": "Information",
+      "actor": "Manager",
+      "action": "search",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Work",
+      "action": "know",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "save",
+      "target": "Status",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "see",
+      "target": "Task",
+      "para": []
+    },
+    {
+      "actor": "Information",
+      "action": "access",
+      "target": "",
       "para": []
     },
     {
@@ -335,19 +415,79 @@
     },
     {
       "actor": "Contractor",
-      "action": "save",
-      "target": "Status",
+      "action": "ask",
+      "target": "QuestionIssue",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "report",
+      "target": "Change",
       "para": []
     },
     {
       "actor": "Manager",
-      "action": "modify",
-      "target": "ProjectManager",
+      "action": "track",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "edit",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "ask",
+      "target": "Issue",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "enter",
+      "target": "Report",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "save",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "send",
+      "target": "Minute",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "find",
+      "target": "Topic",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "see",
+      "target": "Summary",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "edit",
+      "target": "Category",
       "para": []
     },
     {
       "actor": "Contractor",
       "action": "log_in",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Everyone",
+      "action": "know",
       "target": "",
       "para": []
     },
@@ -358,26 +498,8 @@
       "para": []
     },
     {
-      "actor": "Contractor",
-      "action": "save",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Contractor",
-      "action": "see",
-      "target": "Task",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "approve",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "talk",
+      "actor": "Status",
+      "action": "report",
       "target": "",
       "para": []
     },
@@ -389,14 +511,8 @@
     },
     {
       "actor": "Manager",
-      "action": "create",
-      "target": "ProjectManager",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "disapprove",
-      "target": "",
+      "action": "reject",
+      "target": "Comment",
       "para": []
     }
   ]

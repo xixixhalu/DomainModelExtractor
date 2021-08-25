@@ -1,15 +1,15 @@
 @startuml
 hide circle
 class Driver<actor> {
-	vehicle
-	creditcardinformation
-	phone
 	profile
-	valetCompany
+	valet
+	phone
+	creditCardInformation
+	vehicle
 }
 class ValetCompany<actor> {
-	profile
 	revenue
+	profile
 }
 class Establishment<actor> {
 }
@@ -19,103 +19,102 @@ class Customer<actor> {
 }
 class ValetOperator<actor> {
 	company
-	login
 	valetCompany
+	login
 }
 class ValetHead<actor> {
 }
 class User<actor> {
 }
-class Valet {
+class Operator {
+	see()
+	send()
+	know()
+	have()
+	retrieve()
+	add()
+	receive()
 }
 class Head {
-	adjust()
 	set()
+	adjust()
 }
 class Price {
-}
-class Operator {
-	receive()
-	send()
-	retrieve()
-	see()
-	have()
-	add()
-	know()
 }
 class Company {
 	offer()
 	accept()
+	service()
 	receive()
 	control()
 }
-class Revenue {
+class Location {
 }
 class Driver {
 	create()
-	check()
-	retrieve()
-	pay()
-	user()
-	have()
 	request()
+	check()
+	select()
 	want()
+	have()
+	pay()
+	use()
 }
-class Login {
+class Option {
 }
-class Tracking {
-}
-class Timerequest {
-}
-class Queue {
-}
-class Pricing {
+class Notification {
 }
 class Customer {
 	have()
+	pay()
 	request()
 	enter()
-	pay()
+}
+class Car {
+}
+class Manner {
 }
 class TicketNumber {
+}
+class Payment {
 }
 class Employee {
 	work()
 }
-class Paymentoption {
-}
-class Profile {
-}
-class Location {
-	service()
-}
 class User {
-	register()
 	include()
+	register()
 }
-class Information {
-}
-class Car {
-}
-class Payment {
-}
-class Vehicle {
-}
-class Establishment {
-	attract()
-	send()
+class Login {
 }
 class TrackTransaction {
 }
+class Revenue {
+}
+class Valet {
+	retrieve()
+}
+class Vehicle {
+}
+class Profile {
+}
+class Queue {
+}
+class Information {
+}
 class EmailTransactionSummaryReport {
 }
-class Notification {
-}
-class Manner {
+class Establishment {
+	send()
+	attract()
 }
 class Advertisement {
 }
-class Option {
+class Request {
+}
+class Tracking {
+}
+class Pricing {
 }
 class ValetCompany {
 }
@@ -123,36 +122,44 @@ class ValetOperator {
 }
 class ValetHead {
 }
+class SnapValetUser {
+}
+Company --> Option : offer
+Driver --> Option : have
+Operator --> Tracking : add
+Operator --> Car : retrieve
+Operator --> Notification : send
+Employee --> Tracking : work
+Valet --> Vehicle : retrieve
+Head --> Pricing : adjust
+Notification --> Customer : to
+Customer o-- Car : request
+Driver o-- Profile : create
+Valet o-- Head
+ValetCompany <|-- Company
 Operator --> Manner : retrieve
+Operator --> Queue : receive
+ValetOperator <|-- Operator
 Head --> Price : set
+Customer o-- TicketNumber : enter
+User --> Information : include
+Valet o-- Operator
+ValetHead <|-- Head
+Company --> Payment : accept
+Company --> EmailTransactionSummaryReport : receive
+Valet o-- Company
+Operator --> Employee : add
+Driver --> Location : select
+Company --> Revenue : control
+Valet o-- Price
+Establishment --> Customer : attract
+Advertisement --> SnapValetUser : to
 Establishment --> Advertisement : send
 Operator --> Login : have
-User --> Information : include
-Driver --> Option : have
-Valet o-- Operator
-Operator --> Tracking : add
-Customer o-- Car : request
-ValetCompany <|-- Company
-Operator --> Timerequest : receive
-Company --> Payment : accept
-Valet o-- Price
-ValetOperator <|-- Operator
-Operator --> Queue : receive
-Driver o-- Vehicle : retrieve
-Valet o-- Head
-Head --> Pricing : adjust
-Employee --> Tracking : work
-ValetHead <|-- Head
-Establishment --> Customer : attract
+Payment o-- Option
+Company --> Location : service
+Operator --> Request : receive
 Operator --> TrackTransaction : add
-Customer o-- TicketNumber : enter
-Company --> EmailTransactionSummaryReport : receive
-Operator --> Employee : add
-Operator --> Notification : send
-Company --> Paymentoption : offer
-Operator --> Car : retrieve
-Valet o-- Company
-Driver o-- Profile : create
-Company --> Revenue : control
+Driver --> Location : check
 
 @enduml

@@ -1,159 +1,176 @@
 @startuml
 hide circle
 class User<actor> {
-	peer
-	lifetime
-	progress
-	thread
 	pointBalance
+	thread
+	experience
+	profile
+	peer
+	progress
+	lifetime
 	point
 	watPoint
-	profile
-	experience
 }
 class Administrator<actor> {
 }
 class Maintainer<actor> {
 }
+class Store {
+}
+class Card {
+	use()
+}
 class Wat {
 }
 class System {
 }
-class Card {
-	user()
-}
 class Balance {
 	drop()
-}
-class User {
-	get()
-	compare()
-	start()
-	user()
-	post()
-	edit()
-	delete()
-	answer()
-	receive()
-	search()
-	report()
-	redeem()
-	track()
-	select()
-	gauge()
-	update()
-	like()
-	mark()
-	view()
-	see()
-}
-class Post {
-}
-class Semester {
-}
-class Gift {
-	user()
-}
-class Point {
-}
-class Thread {
-	start()
-}
-class Page {
 }
 class Detail {
 	create()
 }
-class Answer {
+class User {
+	see()
+	compare()
+	track()
+	receive()
+	edit()
+	dislike()
+	view()
+	start()
+	get()
+	mark()
+	delete()
+	answer()
+	select()
+	like()
+	update()
+	overpenalize()
+	search()
+	join()
+	use()
+	report()
+	post()
+	gauge()
+	redeem()
+}
+class Comment {
+}
+class Question {
 }
 class Profile {
 }
+class Thread {
+}
+class Credibility {
+}
+class Event {
+}
+class Trash {
+	degrade()
+}
+class Quality {
+}
+class Progress {
+}
+class Gift {
+	use()
+}
 class Maintainer {
 	manage()
-	entice()
-	edit()
-	create()
-	join()
 	add()
-	participate()
+	create()
+	edit()
+	entice()
+}
+class Answer {
+}
+class Page {
+}
+class Point {
+	redeem()
+}
+class Post {
+}
+class Item {
+}
+class NewsFeed {
+}
+class Stay {
+	engage()
 }
 class Product {
 }
 class Forum {
 }
-class Event {
-}
-class Stay {
-	engage()
+class Semester {
 }
 class Administrator {
 	pin()
 }
-class Lifetime {
-}
-class Comment {
-}
-class Newsfeed {
-}
-class Question {
-}
-class Credibility {
-}
-class Progress {
-}
-class Item {
-}
 class Leaderboard {
 }
+class Lifetime {
+}
 class Information {
+	highlight()
 }
 class Peer {
 }
-Gift --> Point : user
+User --> Question : post
+Maintainer --> User : entice
+Maintainer --> Detail : edit
+User o-- Profile : update
+User --> Answer : like
+User o-- Profile : view
+Point o-- Balance
+User o-- Thread : view
+User o-- Point : compare
+User o-- Thread : start
+Maintainer --> Product : add
+User o-- Point : use
+Product --> Store : to
+Gift o-- Store
+Wat o-- Point
+User --> Credibility : gauge
+User --> Forum : search
+User --> Answer : see
+User o-- Point : track
+Wat o-- System
+User --> Card : receive
+Gift o-- Card
+User --> Peer : supported_by
+Detail --> Event : create
+User --> Semester : view
+User --> Post : delete
+User o-- Point : see
+User o-- Thread : delete
+Administrator --> Thread : pin
+Card --> Point : use
+User --> Information : supported_by
+Trash --> Quality : degrade
+User --> Balance : view
+Point --> Item : redeem
+Maintainer --> Comment : manage
+Maintainer --> Event : create
 User o-- Progress : track
 Maintainer --> Card : add
-User o-- Thread : delete
-User --> Card : receive
-Administrator --> Thread : pin
-User --> Item : redeem
-User o-- Profile : view
-User --> Page : view
-Maintainer --> Event : create
-User --> Question : answer
-User o-- Lifetime : view
-User o-- Thread : report
-User o-- Point : see
-Detail --> System : create
-User o-- Point : user
-User --> Answer : see
-Card --> Point : user
-Gift o-- Card
-Maintainer --> User : entice
-User o-- Profile : update
-Maintainer --> Comment : manage
-Maintainer --> Thread : manage
 User --> Leaderboard : view
-User o-- Thread : start
-User --> Newsfeed : get
-User o-- Point : redeem
-User o-- Point : view
+User o-- Thread : report
+Gift --> Point : use
 User --> Gift : redeem
-User --> Comment : mark
-Maintainer --> Product : add
+Maintainer --> Event : edit
+User --> Question : answer
 User --> Information : see
-User --> Question : post
-Wat o-- System
-User --> Post : delete
-User --> Peer : supported_by
-User --> Forum : search
-User --> Credibility : gauge
-User --> Semester : view
-User o-- Thread : view
-Point o-- Balance
-User --> Information : supported_by
-Detail --> Event : create
-User --> Balance : view
-User o-- Point : track
-Wat o-- Point
+Detail --> System : create
+Maintainer --> Thread : manage
+User --> NewsFeed : get
+User --> Page : view
+User o-- Lifetime : view
+User --> Comment : mark
+User --> Answer : dislike
+User o-- Point : view
+User o-- Point : redeem
 
 @enduml

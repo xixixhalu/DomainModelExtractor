@@ -8,15 +8,11 @@
       ],
       "attributes": [
         {
-          "name": "giftBuddyAccount",
-          "type": "default"
-        },
-        {
-          "name": "emailAddress",
-          "type": "default"
-        },
-        {
           "name": "giftBuddyContact",
+          "type": "default"
+        },
+        {
+          "name": "giftBuddyAccount",
           "type": "default"
         },
         {
@@ -24,11 +20,15 @@
           "type": "default"
         },
         {
-          "name": "phone",
+          "name": "contact",
           "type": "default"
         },
         {
-          "name": "contact",
+          "name": "emailAddress",
+          "type": "default"
+        },
+        {
+          "name": "phone",
           "type": "default"
         }
       ]
@@ -52,6 +52,13 @@
       ],
       "attributes": []
     },
+    "App": {
+      "name": "App",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
     "Recommendation": {
       "name": "Recommendation",
       "type": [
@@ -62,10 +69,10 @@
   },
   "relation_list": [
     {
-      "source": "User",
-      "dest": "Option",
-      "type": "association",
-      "msg": "supported_by",
+      "source": "GiftBuddy",
+      "dest": "App",
+      "type": "aggregation",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -84,8 +91,8 @@
       "para": []
     },
     {
-      "source": "GiftBuddy",
-      "dest": "Contact",
+      "source": "Gift",
+      "dest": "Recommendation",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -95,10 +102,10 @@
       "para": []
     },
     {
-      "source": "Gift",
-      "dest": "Recommendation",
-      "type": "aggregation",
-      "msg": "",
+      "source": "User",
+      "dest": "Option",
+      "type": "association",
+      "msg": "supported_by",
       "multiplicity": [
         "1",
         "1"
@@ -109,32 +116,8 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "select",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "reset",
       "target": "Case",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "input",
-      "target": "Interest",
-      "para": []
-    },
-    {
-      "actor": "Password",
-      "action": "name",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GiftBuddyApp",
-      "action": "user",
-      "target": "Account",
       "para": []
     },
     {
@@ -145,32 +128,44 @@
     },
     {
       "actor": "User",
-      "action": "receive",
-      "target": "Recommendation",
+      "action": "discard",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "reset",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "install",
-      "target": "Phone",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "set",
+      "action": "remove",
       "target": "Contact",
       "para": []
     },
     {
       "actor": "User",
-      "action": "update",
-      "target": "Information",
+      "action": "purchase",
+      "target": "Gift",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Recommendation",
+      "para": []
+    },
+    {
+      "actor": "App",
+      "action": "use",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "enter",
+      "target": "Date",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "save",
+      "target": "",
       "para": []
     },
     {
@@ -181,25 +176,19 @@
     },
     {
       "actor": "User",
-      "action": "set",
-      "target": "Budget",
+      "action": "install",
+      "target": "Phone",
       "para": []
     },
     {
       "actor": "User",
-      "action": "enter",
-      "target": "Interest",
+      "action": "reset",
+      "target": "Password",
       "para": []
     },
     {
       "actor": "User",
-      "action": "remove",
-      "target": "Group",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "save",
+      "action": "add",
       "target": "",
       "para": []
     },
@@ -211,14 +200,8 @@
     },
     {
       "actor": "User",
-      "action": "purchase",
+      "action": "view",
       "target": "Gift",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "login",
-      "target": "",
       "para": []
     },
     {
@@ -228,26 +211,20 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "view",
-      "target": "Gift",
-      "para": []
-    },
-    {
       "actor": "Password",
-      "action": "user",
+      "action": "use",
       "target": "EmailAddress",
       "para": []
     },
     {
       "actor": "User",
-      "action": "create",
-      "target": "Giftbuddyaccount",
+      "action": "update",
+      "target": "Information",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "purchase",
+      "actor": "Password",
+      "action": "name",
       "target": "",
       "para": []
     },
@@ -259,31 +236,19 @@
     },
     {
       "actor": "User",
-      "action": "discard",
-      "target": "",
+      "action": "remove",
+      "target": "Group",
       "para": []
     },
     {
       "actor": "User",
       "action": "enter",
-      "target": "Date",
+      "target": "Interest",
       "para": []
     },
     {
       "actor": "User",
-      "action": "receive",
-      "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "remove",
-      "target": "Contact",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
+      "action": "purchase",
       "target": "",
       "para": []
     },
@@ -296,13 +261,49 @@
     {
       "actor": "User",
       "action": "view",
-      "target": "",
+      "target": "User",
       "para": []
     },
     {
       "actor": "User",
       "action": "provide",
       "target": "Feedback",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "set",
+      "target": "Budget",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "login",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "GiftBuddyAccount",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "set",
+      "target": "GiftBuddyContact",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "input",
+      "target": "Interest",
       "para": []
     }
   ]

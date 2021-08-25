@@ -1,8 +1,9 @@
 @startuml
 hide circle
 class Learner<actor> {
-	conflictManagementSkill
+	score
 	conflictResolutionSkill
+	conflictManagementSkill
 }
 class ExperientialLearningCenterStaff<actor> {
 }
@@ -11,8 +12,8 @@ class CollegeStudent<actor> {
 	competence
 }
 class MBVStudent<actor> {
-	progress
 	team
+	progress
 }
 class ConflictResolutionExercise<actor> {
 }
@@ -20,129 +21,131 @@ class Employer<actor> {
 	company
 }
 class Veteran<actor> {
-	decision
 	thoughtProcess
+	decision
+}
+class ManagementSkill {
+}
+class Resolution {
+}
+class Exercise {
+	encourage()
 }
 class Other {
 	make()
 }
-class Conflict {
-}
-class Resolution {
-}
-class Skill {
-}
-class ManagementSkill {
-}
-class ExperientialLearningCenterStaff {
-	help()
-	take()
-}
-class Training {
-}
-class Veteran {
-	compare()
-	see()
-	gain()
-}
-class Experience {
+class Civilian {
 }
 class Learner {
+	resolve()
+	practice()
 	judge()
 	view()
+	take()
+	progress()
+	improve()
 	have()
 	know()
-	progress()
+}
+class Team {
 	resolve()
-	improve()
-	take()
-	practice()
 }
-class Student {
-	improve()
+class Practice {
+	work()
 }
-class ConflictResolutionExercise {
-	practice()
-	encourage()
+class Veteran {
+	see()
+	compare()
 }
-class Decision {
+class ThoughtProcess {
 }
 class Graph {
 }
-class Score {
-	keep()
+class Assessment {
 }
-class Program {
-	integrate()
+class Conflict {
 }
-class MBVStudent {
-	participate()
-	resolve()
-	use()
-	collaborate()
+class ConflictResolutionSkill {
 }
 class CollegeStudent {
 	use()
 	improve()
 }
-class Employee {
-}
-class Team {
-	resolve()
-}
-class Confidence {
-}
-class Practice {
-	work()
+class Competence {
 }
 class Teammate {
 	improve()
 }
-class Situation {
+class Decision {
 }
-class Assessment {
+class Employee {
+	practice()
+}
+class Program {
+	integrate()
+}
+class Experience {
+}
+class Score {
+	keep()
+}
+class MBVStudent {
+	collaborate()
+	use()
+	participate()
+}
+class ExperientialLearningCenterStaff {
+	take()
+	help()
 }
 class ProductConflictResolutionSkill {
 }
-class Competence {
+class Confidence {
+}
+class Situation {
 }
 class Business {
 }
-class ThoughtProcess {
+class Training {
 }
 class ConflictResolution {
 }
-ExperientialLearningCenterStaff --> Training : take
-Team --> ConflictResolutionExercise : resolve
-Program --> Business : integrate
-Student --> ManagementSkill : improve
-Veteran --> Experience : gain
-MBVStudent --> Score : use
-Veteran o-- ThoughtProcess : compare
-CollegeStudent --> ConflictResolutionExercise : improve
-Conflict o-- ManagementSkill
-Learner --> Skill : practice
-Conflict o-- Resolution
-CollegeStudent --> Program : use
-CollegeStudent --> Confidence : improve
-Learner --> Experience : supported_by
-Veteran o-- Decision : compare
-Practice --> Team : work
-ConflictResolution o-- Skill
-Veteran --> Graph : see
-Teammate --> Skill : improve
-Decision o-- Other
-Learner --> ManagementSkill : improve
-Program --> Experience : integrate
-Other --> Situation : make
-Learner --> Assessment : take
-Learner --> Learner : view
+class ConflictResolutionExercise {
+}
+class Communicator {
+}
 Learner --> Team : resolve
-MBVStudent --> ConflictResolutionExercise : resolve
+Practice --> Team : work
+Program --> Business : integrate
+ExperientialLearningCenterStaff --> Training : take
+Learner --> ManagementSkill : improve
+Exercise --> Employee : encourage
+ConflictResolutionExercise <|-- Exercise
+Veteran o-- ThoughtProcess : compare
 CollegeStudent --> ManagementSkill : improve
-ConflictResolutionExercise --> Employee : encourage
-ConflictResolutionExercise --> ProductConflictResolutionSkill : practice
-Learner --> ConflictResolutionExercise : resolve
+Conflict o-- ManagementSkill
+Veteran --> Graph : see
+Program --> Experience : integrate
+Communicator <|-- Learner
+Learner --> Assessment : take
+Learner o-- Conflict : resolve
+Learner --> Experience : supported_by
+Learner o-- Score : view
+Decision o-- Other
+Decision --> Civilian : to
+ConflictResolution o-- Exercise
+Conflict o-- Resolution
+Learner o-- ConflictResolutionSkill : practice
+Decision o-- Civilian
+Team --> Conflict : resolve
+Employee --> ProductConflictResolutionSkill : practice
 CollegeStudent o-- Competence : improve
+CollegeStudent --> Confidence : improve
+CollegeStudent o-- Conflict : improve
+MBVStudent --> Score : use
+CollegeStudent --> Program : use
+Teammate --> ConflictResolutionSkill : improve
+Veteran o-- Decision : compare
+Other --> Situation : make
 
 @enduml

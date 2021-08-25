@@ -11,87 +11,103 @@ class SlideLayout {
 }
 class Image {
 }
+class Experience {
+}
 class User {
-	buy()
-	see()
-	minimize()
-	follow()
-	get()
-	waste()
-	slide()
-	sort()
-	collapse()
-	view()
-	shop()
 	list()
+	shop()
+	buy()
+	minimize()
+	slide()
+	collapse()
+	get()
+	view()
+	follow()
+	sort()
+	see()
+	waste()
+}
+class Item {
 }
 class Page {
+}
+class LoaderAnimation {
 }
 class Product {
 	list()
 }
+class Detail {
+}
 class Clothing {
 }
-class Media {
-	user()
+class ShopWidget {
+	click()
 }
-class Frenzy {
+class Customer {
+	redirect()
 }
-class Item {
+class Circle {
 }
 class Trend {
 }
-class Cost {
-}
 class Collection {
 }
-class Loaderanimation {
+class Time {
+}
+class Media {
+	use()
+}
+class Frenzy {
+}
+class Phone {
+}
+class Cluster {
+}
+class Cost {
+}
+class Version {
+}
+class Traffic {
+	increase()
 }
 class Retailer {
 	have()
 }
-class Detail {
-}
-class Time {
-}
-class Userexperience {
-}
-class Cluster {
-}
-class Version {
-}
-class Phone {
-}
-class Circle {
-}
 class Display {
 }
-User --> Product : shop
-User --> Product : waste
-User --> Clothing : buy
-User --> Product : see
-User --> Version : view
-User --> Trend : follow
-User o-- Phone : view
-User --> Cost : minimize
-User --> Product : view
-User --> Circle : see
-User --> Collection : slide
-User --> Display : slide
-User --> Product : get
-User --> Product : sort
-User --> Loaderanimation : see
+class Popularity {
+}
+class Price {
+}
 User --> SlideLayout : view
-User --> Item : view
-Product o-- SlideLayout
-User --> Item : see
 Product o-- Image
 User --> Detail : view
-User --> Cluster : view
+User o-- Phone : view
+User --> Product : get
+User --> Clothing : buy
 User --> Image : view
-User --> Time : waste
-User --> Userexperience : get
-Media --> Frenzy : user
+User --> Product : shop
+User --> Product : view
+User --> Cluster : view
+User --> Circle : see
+User --> Cost : minimize
+User --> Item : see
+User --> Trend : follow
+User --> Version : view
+User --> Product : sort
+User --> Product : see
 User --> Page : view
+Popularity <|-- Product
+User --> Collection : slide
+User --> Time : waste
+User --> Display : slide
+User --> Experience : get
+Price <|-- Product
+User --> Item : view
+Product o-- SlideLayout
+Media --> Frenzy : use
+User --> Product : waste
+User --> LoaderAnimation : see
+User o-- Experience
 
 @enduml

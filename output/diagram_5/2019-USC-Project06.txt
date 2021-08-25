@@ -1,13 +1,13 @@
 @startuml
 hide circle
 class User<actor> {
-	password
-	profilepicture
 	comment
-	desktop
-	post
+	profileInformation
 	winCondition
-	profileinformation
+	password
+	post
+	desktop
+	profilePicture
 }
 class Owner<actor> {
 }
@@ -19,141 +19,146 @@ class People {
 class Everyone {
 	post
 }
-class Rights {
-}
-class Win {
-}
 class ListPage {
 }
+class Rights {
+}
 class User {
-	save()
-	add()
-	join()
-	disagree()
 	edit()
-	enter()
-	mark()
-	delete()
-	reply()
-	reset()
-	export()
-	forget()
-	upload()
-	tag()
 	sort()
-	set()
+	export()
 	see()
-	log_out()
-	adjust()
-	view()
-	win()
-	quote()
-	filter()
+	forget()
 	create()
-}
-class Coefficient {
-}
-class Picture {
-}
-class Post {
-}
-class Owner {
-	give()
-	access()
-	user()
-	edit()
-	make()
+	adjust()
+	mark()
+	tag()
+	join()
+	reply()
+	win()
 	add()
+	quote()
+	enter()
+	disagree()
+	view()
+	save()
+	set()
+	upload()
+	reset()
+	filter()
 	delete()
+	log_out()
 }
-class Importance {
+class Comment {
+	use()
 }
-class Demo {
-}
-class View {
-}
-class Admin {
-	delete()
-	edit()
-}
-class List {
-}
-class SettingPage {
-}
-class Password {
+class WinCondition {
+	excel()
 }
 class BusinessValue {
 }
-class Comment {
-	user()
-}
-class WinCondition {
-}
-class Someone {
-}
-class Category {
+class Owner {
+	use()
+	edit()
+	add()
+	make()
+	access()
+	delete()
+	hide()
 }
 class Project {
 }
+class WeightCoefficient {
+}
+class Coefficient {
+}
+class Admin {
+	edit()
+	delete()
+}
+class ProfileInformation {
+}
 class Goal {
-	user()
+	use()
 }
 class Slider {
 }
+class SettingPage {
+	give()
+}
+class Post {
+}
+class Importance {
+}
+class Category {
+}
 class Username {
 }
-class Penalty {
+class Demo {
 }
-class WeightCoefficient {
+class List {
 }
 class Condition {
 }
+class Picture {
+}
+class Someone {
+}
+class Penalty {
+}
+class View {
+}
 class Prioritization {
 }
-class Profileinformation {
+class Password {
 }
-User o-- Post : delete
-Owner --> SettingPage : access
-User --> Project : join
-User --> WeightCoefficient : enter
-User --> Importance : adjust
-User o-- WinCondition : export
-User --> Someone : tag
-Admin --> Post : edit
-User --> Demo : see
-User --> Category : adjust
-User --> Condition : win
-User --> ListPage : view
-Owner --> Project : add
-User --> View : filter
-User --> Prioritization : save
-Admin --> Comment : edit
-User o-- Profileinformation : edit
-Admin o-- Rights
-Admin --> List : edit
-Goal --> Slider : user
-Project o-- SettingPage
-User --> Category : create
-Owner --> SettingPage : user
-Owner --> Rights : give
-WinCondition o-- Category
-Comment --> Username : user
-People --> WinCondition : supported_by
-User o-- Password : reset
-User --> WinCondition : supported_by
-User --> Penalty : set
-Project o-- ListPage
-User --> BusinessValue : set
-User --> Coefficient : adjust
-User --> Category : mark
-Win o-- Category
-User o-- Comment : delete
-Win o-- Condition
-User o-- Comment : add
 User --> Picture : upload
-User --> People : see
+WinCondition o-- Category
+User --> BusinessValue : set
+User o-- Post : delete
+Project o-- ListPage
+Owner --> Project : delete
+User --> Someone : tag
+User --> Category : mark
+Admin --> Post : edit
+Owner --> Project : hide
+Admin o-- Rights
+Admin --> Comment : edit
+User --> Penalty : set
+Admin --> List : edit
+User --> Importance : adjust
+User --> WeightCoefficient : enter
+Owner --> Project : add
 User o-- WinCondition : create
-User o-- WinCondition : delete
+User --> Category : adjust
+User --> People : see
+User --> View : filter
+User --> Coefficient : adjust
+User --> Category : create
+Comment --> Username : use
+User o-- Comment : quote
+User o-- Comment : delete
+Admin --> Post : delete
+User --> Demo : see
+User --> WinCondition : supported_by
+Admin --> Comment : delete
 Owner --> List : edit
+User --> Prioritization : save
+User o-- WinCondition : delete
+User o-- Comment : add
+User o-- ProfileInformation : edit
+User --> ListPage : view
+User --> Project : join
+User o-- Password : reset
+User o-- Comment : reply
+Owner --> SettingPage : use
+Project o-- SettingPage
+SettingPage --> Rights : give
+People --> WinCondition : supported_by
+Goal --> Slider : use
+User o-- WinCondition : export
+Owner --> SettingPage : access
+User --> Condition : win
+Someone --> Comment : to
 
 @enduml

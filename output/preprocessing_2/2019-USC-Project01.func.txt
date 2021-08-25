@@ -7,7 +7,8 @@ System can fetch the resume from Linkedin for each User and persist it into Data
 User will be able to see Event from #csse TwitterPage on the Portal .
 System can fetch ResearchDocument from the Server and see them in a Timestamp sorted Way .
 Admin will be able to login to the System .
-Admin will be able to approve , reject a UserProfile .
+Admin will be able to approve a UserProfile .
+Admin will be able to reject a UserProfile .
 System will get updated Information from #csse social MediaAccount .
 User can authenticate myself via LinkedIn in Order to logininto the System .
 User should be able to find the current professional Position of CsseProfessor , Researcher and Alumnus .
@@ -22,8 +23,11 @@ User can disable User's Account , so None of User's Information is visible to ot
 User's ProfilePicture will automatically upload from User's latest LinkedinProfilePicture .
 User can filter the Calendar by different Category of Event .
 User can search for User and click directly into their LinkedInProfile .
-System can highlight Event , Document , User that are trending or have high ViewCount .
+System can highlight Event that are trending or have high ViewCount .
+System can highlight Document that are trending or have high ViewCount .
+System can highlight User that are trending or have high ViewCount .
 User can log in to the Portal using LinkedIn .
 User can search for available ResearchPapers .
-System can fetch Tweet , Communication from the official CSSE social - MediaAccount .
+System can fetch Tweet from the official CSSE social - media Account .
+System can fetch Communication from the official CSSE social - media Account .
 System can fetch UserInformation from LinkedIn .

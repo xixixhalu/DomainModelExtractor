@@ -13,45 +13,58 @@ class Staff {
 	see()
 }
 class Administrator {
-	help()
-	enter()
 	allow()
-	add()
+	help()
 	create()
+	enter()
 	delete()
+	add()
+}
+class Code {
+}
+class Lock {
+	delete()
+	add()
+}
+class Manager {
+	select()
+	delete()
+	add()
+}
+class Group {
+}
+class SmartThingsClientId {
 }
 class Secret {
 	authorize()
 }
 class Access {
 }
-class Manager {
-	add()
-	select()
-}
-class Lock {
-}
-class Code {
-}
-class Group {
-}
-class SmartThingsClientId {
-}
 class HouseManager {
+}
+class EditCode {
 }
 class HouseStaff {
 }
-Administrator --> Group : delete
-Administrator --> Lock : delete
-Administrator --> Manager : delete
-Secret --> Access : authorize
-Administrator o-- SmartThingsClientId : enter
 Administrator --> Code : allow
-HouseManager <|-- Manager
-House o-- Staff
+Lock --> Code : add
+Administrator --> Manager : add
 Administrator --> Group : create
-HouseStaff <|-- Staff
+Administrator --> Manager : delete
+Lock --> Code : delete
+Administrator --> Lock : add
+Administrator --> Manager : help
+Administrator --> Group : delete
+HouseManager <|-- Manager
+Administrator --> Lock : delete
+Secret --> Access : authorize
 Manager --> Lock : select
+House o-- Staff
 House o-- Manager
+Lock --> EditCode : to
+Access --> Lock : to
+HouseStaff <|-- Staff
+Administrator --> Group : add
+Administrator o-- SmartThingsClientId : enter
 
 @enduml

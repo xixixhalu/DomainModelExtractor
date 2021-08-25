@@ -7,9 +7,12 @@ User can share the Post on other social MediaPlatform , namely Facebook and Twit
 User can search for BlogPost .
 User can view BlogPost by Category .
 User can view trending Post .
-Admin can edit , add a Post .
+Admin can add a Post .
+Admin can edit a Post .
 Admin can delete UserComment .
 Admin can save a Post as a Draft .
 User can view Post by Author .
-Admin can add , edit Category and Tag of a BlogPost .
-User can view Post similar , related to a given BlogPost .
+Admin can add Category and Tag of a BlogPost .
+Admin can edit Category and Tag of a BlogPost .
+User can view Post related to a given BlogPost .
+User can view Post similar to a given BlogPost .

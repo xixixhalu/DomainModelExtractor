@@ -8,36 +8,40 @@ class User<actor> {
 class Client<actor> {
 	server
 }
-class User {
-	detect()
-	choose()
-	want()
-	upload()
-	view()
-}
-class Tag {
-}
 class Client {
-	replace()
-	upload()
 	extract()
 	see()
+	upload()
+	replace()
+}
+class Algorithm {
+}
+class Tag {
+	detect()
 }
 class Image {
 }
-class Model {
+class User {
+	want()
+	view()
+	choose()
+	upload()
 }
-class Algorithm {
+class Model {
 }
 class Ui {
 	view()
 }
+class Pipeline {
+}
 Client --> Model : extract
-User o-- Image : upload
-User --> Tag : want
-Client --> Algorithm : replace
-User o-- Image : view
-User --> Tag : choose
 Client --> Image : upload
+Client --> Model : replace
+User o-- Image : view
+User o-- Image : upload
+Client --> Algorithm : replace
+User --> Tag : want
+User --> Tag : choose
+Image --> Pipeline : to
 
 @enduml

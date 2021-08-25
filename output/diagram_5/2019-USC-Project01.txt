@@ -1,122 +1,122 @@
 @startuml
 hide circle
 class User<actor> {
-	resume
-	profilepicture
 	profile
+	account
+	linkedinProfilePicture
 	interest
 	media
-	linkedinprofilepicture
+	profilePicture
+	resume
 	information
-	account
 }
 class SystemAdmin<actor> {
 }
 class Admin<actor> {
 }
-class Research {
+class Picture {
+	upload()
 }
-class Document {
+class Professor {
+	author()
+}
+class SystemAdmin {
+	approve()
+}
+class Request {
+}
+class Event {
+	have()
+	trend()
+}
+class ViewCount {
 }
 class User {
-	authenticate()
-	sort()
-	keep()
-	filter()
-	trend()
-	update()
-	author()
-	disable()
-	click()
-	find()
-	see()
 	log_in()
-	search()
-	look_up()
-	have()
-}
-class Papers {
+	sort()
 	author()
-}
-class Portal {
-	user()
-}
-class LinkedIn {
-}
-class Order {
+	authenticate()
+	click()
+	update()
+	filter()
+	disable()
+	see()
+	look_up()
+	find()
+	trend()
+	have()
+	search()
 }
 class Account {
 }
-class SystemAdmin {
-	fetch()
-	persist()
-	render()
+class Admin {
+	login()
 	approve()
-	see()
-	get()
-	highlight()
+	authorize()
+	remove()
+	reject()
 }
-class Userinformation {
+class Content {
+}
+class Alumnus {
+}
+class Document {
+	have()
+	trend()
+}
+class Calendar {
+}
+class Position {
+}
+class Order {
+}
+class Student {
+	author()
+}
+class Papers {
 }
 class Profile {
 }
 class Media {
+	keep()
 	have()
 }
-class Alumnus {
-}
-class Admin {
-	login()
-	authorize()
-	remove()
-}
-class Request {
-}
-class Way {
-}
-class Calendar {
+class Csse {
 }
 class Resume {
 	update()
 }
-class Content {
+class ResearchPapers {
+	see()
 }
-class Csse {
+class Portal {
+	use()
 }
-class Tweet {
+class LinkedIn {
 }
-class Position {
-}
-class Event {
-}
-class ViewCount {
-}
-class Profilepicture {
-	upload()
-}
-User --> Papers : sort
-User --> Order : authenticate
-SystemAdmin --> Userinformation : get
-SystemAdmin --> Userinformation : fetch
-Media --> Csse : have
-User o-- Profile : see
+User --> ViewCount : have
+Admin --> Content : remove
 User o-- Account : disable
-SystemAdmin --> Tweet : fetch
+User --> Alumnus : look_up
+User --> ResearchPapers : sort
+User o-- Profile : see
+Professor --> Papers : author
+User --> Calendar : filter
+Portal --> LinkedIn : use
+SystemAdmin --> Request : approve
+User --> Event : see
 User o-- Media : update
 User --> Position : find
-User --> Alumnus : look_up
 Admin --> Profile : authorize
-User --> Event : see
-User --> ViewCount : have
-SystemAdmin --> Request : approve
-SystemAdmin --> Event : highlight
-Research o-- Document
-Research o-- Papers
-SystemAdmin --> Way : see
-User --> Calendar : filter
-SystemAdmin --> Resume : fetch
-SystemAdmin --> Document : fetch
-Portal --> LinkedIn : user
-Admin --> Content : remove
+Csse o-- Professor
+Profile o-- Picture
+User --> Order : authenticate
+Event --> ViewCount : have
+User o-- Profile
+Document --> ViewCount : have
+Student --> Papers : author
+Admin --> Profile : approve
+Admin --> Profile : reject
+Media --> Csse : have
 
 @enduml

@@ -17,7 +17,7 @@
 [(['administrator'], (3, 3)), (['youth'], (9, 9)), (['case'], (11, 11)), (['case', 'manager'], (13, 14))]
 [(['case', 'manager'], (3, 4)), (['administrator'], (6, 6)), (['mass', 'e-mail'], (13, 14))]
 [(['case', 'manager'], (3, 4)), (['youth', 'account'], (11, 12))]
-[(['system', 'design'], (2, 3)), (['structure'], (5, 5)), (['maintainability'], (11, 11)), (['transfer'], (15, 15)), (['knowledge'], (17, 17))]
+[(['system', 'design'], (2, 3)), (['maintainability'], (9, 9)), (['transfer'], (13, 13)), (['knowledge'], (15, 15)), (['system', 'structure'], (2, 3)), (['maintainability'], (9, 9)), (['transfer'], (13, 13)), (['knowledge'], (15, 15))]
 [(['administrator'], (3, 3)), (['document'], (9, 9)), (['youth'], (13, 13))]
 [(['case', 'manager'], (3, 4)), (['document'], (11, 11)), (['case'], (13, 13))]
 [(['system'], (2, 2)), (['user'], (7, 7)), (['log', 'information'], (9, 10))]

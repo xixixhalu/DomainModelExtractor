@@ -9,91 +9,113 @@ class Maintainer<actor> {
 }
 class Entrepreneur<actor> {
 }
-class User {
-	sign_up()
-	user()
-	access()
-	share()
-	send()
-	post()
-	delete()
-	like()
-	change()
-	comment()
-}
 class Maintainer {
-	build()
 	update()
+	build()
 }
 class App {
 }
-class Comment {
+class Entrepreneur {
+	see()
+	match()
+	resubmit()
+	edit()
+	complete()
+	submit()
+	have()
 }
-class Version {
+class Information {
 }
-class Admin {
-	increase()
-	user()
-	disable()
-	add()
+class User {
+	comment()
+	sign_up()
+	receive()
+	share()
+	like()
+	send()
+	use()
+	access()
+	reset()
+	delete()
+	change()
+	post()
+}
+class Post {
+}
+class Access {
 }
 class Algorithm {
 	match()
 }
-class Entrepreneur {
-	have()
-	see()
-	complete()
-	submit()
+class Mentor {
+	assign()
+}
+class Message {
+}
+class NewsFeed {
+}
+class Issue {
+}
+class Admin {
+	add()
+	disable()
+	use()
+	increase()
+}
+class CourseContent {
+}
+class Application {
+}
+class Quality {
+}
+class Password {
+}
+class Comment {
 }
 class Profile {
 	provide()
 }
-class Quality {
-}
-class Post {
-}
-class Edit {
-}
-class Issue {
-}
 class Account {
 }
-class Information {
+class HomeworkAssignment {
 }
-class NewsFeed {
+class Questionnaire {
+	provide()
 }
-class CourseContent {
+class Version {
 }
-class Mentor {
-	assign()
-}
-class Access {
-}
-class Application {
-}
-Maintainer --> App : build
-Profile --> Information : provide
-User --> Comment : post
-Algorithm --> Entrepreneur : match
+Questionnaire --> Information : provide
+Entrepreneur --> HomeworkAssignment : submit
 User --> NewsFeed : share
-User --> Version : user
-Algorithm --> Mentor : match
-Entrepreneur --> Edit : submit
-Entrepreneur --> Access : have
-Admin --> Application : add
-Admin --> Algorithm : user
-Admin --> Account : disable
-Maintainer --> Application : update
 Mentor o-- Information
-Entrepreneur --> Profile : complete
-User --> Issue : post
-User o-- Account : delete
-Admin --> Quality : increase
 Entrepreneur --> Information : see
-User --> Post : comment
+Profile --> Information : provide
+Admin --> Application : add
+Algorithm --> Mentor : match
+User --> Message : send
+Algorithm --> Entrepreneur : match
+User --> Message : receive
+Admin --> Account : disable
+User --> NewsFeed : like
+User --> Password : change
+User o-- Account : delete
+User --> Issue : post
+User --> Post : like
 User --> NewsFeed : comment
+User --> Post : comment
 Admin --> CourseContent : add
+Entrepreneur --> Access : have
+User --> Comment : post
+Entrepreneur --> Profile : complete
+Entrepreneur --> HomeworkAssignment : resubmit
+Maintainer --> Application : update
+Entrepreneur --> Questionnaire : complete
+Admin --> Quality : increase
+User --> Version : use
+Entrepreneur --> HomeworkAssignment : edit
+User --> Password : reset
+Admin --> Algorithm : use
 User --> Post : share
+Maintainer --> App : build
 
 @enduml

@@ -10,13 +10,17 @@ The System shall allow User to delete the Picture he uploaded by Mistake .
 The System shall allow the HashtagHolder to delete Picture that is inappropriate .
 The System shall provide an Interface for User to search for a specific Hashtag .
 The System shall prevent User from posting Picture to private reserved Hashtag without the proper Permission . .
-The System shall allow Administrator , Maintainer , Moderator to remove any Picture .
+The System shall allow Maintainer to remove any Picture .
+The System shall allow Moderator to remove any Picture .
+The System shall allow Administrator to remove any Picture .
 The System shall provide Storage and Access to Picture for a Set or indefinite Amount of Time .
 The System shall allow the User to make Payment for a private Hashtag .
 The System shall provide an Interface for User to create a new Account or Login to an existing one .
 The System shall allow the User to post Picture to a specific LocationEg . . USCCampus .
-The System shall provide an alert Message to the HashtagHolder when his , her Hashtag is about to expire .
-The System shall provide an Interface for the HashtagHolder to invite his , her Friend to post to the Hashtag .
+The System shall provide an alert Message to the HashtagHolder when his Hashtag is about to expire .
+The System shall provide an alert Message to the HashtagHolder when her Hashtag is about to expire .
+The System shall provide an Interface for the HashtagHolder to invite her Friend to post to the Hashtag .
+The System shall provide an Interface for the HashtagHolder to invite his Friend to post to the Hashtag .
 The System shall inform the HashtagHolder if there are new Picture posted to the Hashtag .
 The System shall have Authentication for private Event to make sure only certain People have Access to the Picture of this Hashtag .
 The System shall have delete PictureFunction to let User delete their uploaded Picture .

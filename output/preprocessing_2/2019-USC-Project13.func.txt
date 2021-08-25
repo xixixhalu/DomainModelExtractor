@@ -16,21 +16,25 @@ Mentor should be able to monitor Mentor's TrainingPhaseActivity .
 Mentor should be able to accept MenteeRequest to establish a Connection .
 Mentor should be able to mark Mentor's Availability .
 Admin should be able to export the Report of List of all Mentor .
-Mentee should be able to update Mentee's personal Information , ContactDetail .
+Mentee should be able to update Mentee's personal InformationDetail .
+Mentee should be able to update Mentee's personal ContactDetail .
 Mentor should be able to update Mentor's personal Information which includes Phone no , Availability , Photo , etc. . .
 Admin should be able to send Reminder to the Mentor who missed sending their monthly Report .
 Admin should be able to view the Statistics of successful Match .
 User should be able to load the Website quickly and able to easily access the Site .
-Admin should be able to delete , deactivate User .
+Admin should be able to delete User .
+Admin should be able to deactivate User .
 Mentor must be able to register Mentor's Detail and be shown as available for MentorshipProcess .
 Mentee must be able to upload Mentee's Detail and be able to search and connect with Mentor suitable for Mentee's Profile .
 Admin must be able to track all available Mentor and Mentee , and get monthly Report on the Progress of MentorshipProgram .
 Developer must be able to integrate the WebApplication into Client 's Server while , learning Technology .
-- User , End must be able to navigate through the Application seamlessly .
+- user , End must be able to navigate through the Application seamlessly .
 Admin must be able to assign Mentor to Mentee .
 Administrator should be able to get Statistics on Number of Mentor , Mentee and on pre-program SurveyAnswer and on post-program SurveyAnswer .
 Mentor can report Mentor's Interaction with Mentor's Mentee .
-Admin can export a Report with the Mentor , MenteeInteraction .
+Admin can export a Report with the MenteeInteraction .
+Admin can export a Report with the MentorInteraction .
 Admin can update the Status of Mentor & MenteeTraining .
 Admin can match Mentor to Mentee .
-Mentor , Mentee can opt out from the Program and from further Communication .
+Mentor can opt out from the Program and from further Communication .
+Mentee can opt out from the Program and from further Communication .

@@ -1,6 +1,13 @@
 {
   "domain": "2014-USC-Project02",
   "entity_dict": {
+    "Coach": {
+      "name": "Coach",
+      "type": [
+        "actor"
+      ],
+      "attributes": []
+    },
     "GM": {
       "name": "GM",
       "type": [
@@ -45,9 +52,168 @@
         "actor"
       ],
       "attributes": []
+    },
+    "Reaction": {
+      "name": "Reaction",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Demand": {
+      "name": "Demand",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "SporTechBI": {
+      "name": "SporTechBI",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Contractor": {
+      "name": "Contractor",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "System": {
+      "name": "System",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Player": {
+      "name": "Player",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Value": {
+      "name": "Value",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
   "relation_list": [
+    {
+      "source": "SporTechBI",
+      "dest": "Contractor",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Data",
+      "dest": "System",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Player",
+      "dest": "Data",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Facebook",
+      "dest": "Reaction",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Data",
+      "dest": "Model",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Instagram",
+      "dest": "Reaction",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "SporTechBIContractor",
+      "dest": "Contractor",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Player",
+      "dest": "Value",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Twitter",
+      "dest": "Reaction",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "SporTechBI",
+      "dest": "System",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
     {
       "source": "Manger",
       "dest": "Condition",
@@ -60,10 +226,10 @@
       "para": []
     },
     {
-      "source": "Data",
-      "dest": "Sportechbisystem",
-      "type": "association",
-      "msg": "supported_by",
+      "source": "Manner",
+      "dest": "Demand",
+      "type": "aggregation",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -72,54 +238,6 @@
     }
   ],
   "behavior_list": [
-    {
-      "actor": "Manger",
-      "action": "monitor",
-      "target": "Timetwitter",
-      "para": []
-    },
-    {
-      "actor": "GM",
-      "action": "extract",
-      "target": "Data",
-      "para": []
-    },
-    {
-      "actor": "Crawler",
-      "action": "run",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GM",
-      "action": "extract",
-      "target": "PlayerValue",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "visualize",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "GM",
-      "action": "make",
-      "target": "Decision",
-      "para": []
-    },
-    {
-      "actor": "Customer",
-      "action": "update",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Field",
-      "action": "capture",
-      "target": "",
-      "para": []
-    },
     {
       "actor": "Decision",
       "action": "affect",
@@ -133,14 +251,104 @@
       "para": []
     },
     {
-      "actor": "Coach",
-      "action": "extract",
-      "target": "PlayerValue",
+      "actor": "Contractor",
+      "action": "revise",
+      "target": "Data",
       "para": []
     },
     {
-      "actor": "SporTechBIContractor",
+      "actor": "GM",
+      "action": "extract",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "SoccerCoach",
+      "action": "configure",
+      "target": "Schedule",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
       "action": "update",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "System",
+      "action": "launch",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "GM",
+      "action": "make",
+      "target": "Decision",
+      "para": []
+    },
+    {
+      "actor": "Data",
+      "action": "integrate",
+      "target": "Manner",
+      "para": []
+    },
+    {
+      "actor": "Facebook",
+      "action": "feed",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Facebook",
+      "action": "feed",
+      "target": "Demand",
+      "para": []
+    },
+    {
+      "actor": "GM",
+      "action": "visualize",
+      "target": "Value",
+      "para": []
+    },
+    {
+      "actor": "GM",
+      "action": "build",
+      "target": "Roster",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "import",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "Field",
+      "action": "capture",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Manger",
+      "action": "monitor",
+      "target": "Reaction",
+      "para": []
+    },
+    {
+      "actor": "Instagram",
+      "action": "feed",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "GM",
+      "action": "extract",
+      "target": "Value",
+      "para": []
+    },
+    {
+      "actor": "Crawler",
+      "action": "run",
       "target": "",
       "para": []
     },
@@ -151,27 +359,9 @@
       "para": []
     },
     {
-      "actor": "GM",
-      "action": "build",
-      "target": "Roster",
-      "para": []
-    },
-    {
-      "actor": "SporTechBIContractor",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Customer",
-      "action": "import",
-      "target": "Data",
-      "para": []
-    },
-    {
-      "actor": "Sportechbisystem",
-      "action": "launch",
-      "target": "",
+      "actor": "Coach",
+      "action": "extract",
+      "target": "Value",
       "para": []
     },
     {
@@ -181,21 +371,27 @@
       "para": []
     },
     {
-      "actor": "SoccerCoach",
-      "action": "specify",
+      "actor": "Twitter",
+      "action": "feed",
       "target": "",
       "para": []
     },
     {
-      "actor": "Customer",
-      "action": "drag",
-      "target": "",
+      "actor": "Instagram",
+      "action": "feed",
+      "target": "Demand",
       "para": []
     },
     {
-      "actor": "SoccerCoach",
-      "action": "configure",
-      "target": "Schedule",
+      "actor": "Twitter",
+      "action": "feed",
+      "target": "Demand",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "make",
+      "target": "Decision",
       "para": []
     },
     {
@@ -205,15 +401,45 @@
       "para": []
     },
     {
-      "actor": "Instagram",
-      "action": "feed",
+      "actor": "SoccerCoach",
+      "action": "specify",
       "target": "",
       "para": []
     },
     {
-      "actor": "Data",
-      "action": "integrate",
-      "target": "Manner",
+      "actor": "Manger",
+      "action": "monitor",
+      "target": "Demand",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "drag",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "visualize",
+      "target": "Value",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "build",
+      "target": "Roster",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "update",
+      "target": "Data",
       "para": []
     }
   ]

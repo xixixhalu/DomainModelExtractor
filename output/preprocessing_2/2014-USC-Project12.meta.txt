@@ -18,7 +18,7 @@
 [(['user'], (3, 3)), (['location'], (10, 10)), (['provider'], (14, 14)), (['area'], (18, 18))]
 [(['user'], (3, 3)), (['notification'], (8, 8)), (['location'], (11, 11)), (['price'], (13, 13)), (['code'], (15, 15)), (['specialty'], (17, 17)), (['provider'], (20, 20))]
 [(['provider'], (3, 3)), (['offering'], (8, 8)), (['user'], (10, 10)), (['network'], (16, 16)), (['volume'], (22, 22)), (['increase', 'sale'], (24, 25))]
-[(['user'], (3, 3)), (['notification'], (9, 9)), (['access'], (15, 15)), (['date', 'information'], (22, 23))]
+[(['user'], (3, 3)), (['notification'], (9, 9)), (['access'], (15, 15)), (['information'], (23, 23))]
 [(['user'], (3, 3)), (['access'], (7, 7)), (['feature'], (9, 9)), (['health', 'care', 'pricing'], (13, 15))]
 [(['user'], (3, 3)), (['health', 'profile'], (9, 10)), (['profile'], (14, 14)), (['offer'], (16, 16)), (['provider'], (18, 18))]
 [(['user'], (3, 3)), (['push', 'content'], (8, 9)), (['profile'], (14, 14)), (['provider'], (16, 16))]

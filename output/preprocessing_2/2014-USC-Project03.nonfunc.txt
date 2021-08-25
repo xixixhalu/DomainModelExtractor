@@ -1,9 +1,10 @@
 The Application shall be secure .
-- Channel is encrypted .
-- CreditCardNumber , Password is not stored in plain Text on App .
+- channel is encrypted .
+- credit CardPassword is not stored in plain Text on App .
+- credit CardNumber is not stored in plain Text on App .
 The Budget for the Project shall not exceed $ 10,000 .
 The System shall be capable of eventually running an IOSClient .
 The System should be designed to work on multiple Server in the Future and should be capable of handling around 100 Request at the same Time .
 The System must be available almost all the Time , especially during heavy UsageHour .
 Code will be modular so that Defect can be isolated and Addition can be made easily so that in Future it can be maintained by a SnapvaletEmployee .
-System back - End will have scalable , secure Database .
+System back - end will have scalable , secure Database .

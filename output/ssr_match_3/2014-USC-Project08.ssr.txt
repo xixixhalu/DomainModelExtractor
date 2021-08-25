@@ -12,7 +12,7 @@
         "1": "CaseManager",
         "2": "can",
         "3": "run",
-        "4": "frequency",
+        "4": "Frequency",
         "5": "on",
         "6": "CaseFile",
         "7": ",",
@@ -365,310 +365,14 @@
   "SVCcO": [],
   "SVpO": [],
   "Poss": [],
-  "OPassVS": [],
+  "SPassPartVByS": [],
   "VOToInf": [],
   "SVThatClause": [],
   "SVByVO": [],
   "AO": [],
   "SVCVO": [],
-  "SVVO": [],
-  "SVVOcomma1": [
-    {
-      "FileName": "2014-USC-Project08",
-      "Sentence": "CaseManager can create ManagementService , those Activity will have Category , so that CaseManager can monitor YouthService .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 9,
-        "D": 10
-      },
-      "Index": {
-        "1": "CaseManager",
-        "2": "can",
-        "3": "create",
-        "4": "ManagementService",
-        "5": ",",
-        "6": "those",
-        "7": "activity",
-        "8": "will",
-        "9": "have",
-        "10": "category",
-        "11": ",",
-        "12": "so",
-        "13": "that",
-        "14": "CaseManager",
-        "15": "can",
-        "16": "monitor",
-        "17": "YouthService",
-        "18": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ],
-          [
-            16,
-            14
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ],
-          [
-            9,
-            8
-          ],
-          [
-            16,
-            15
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            4
-          ],
-          [
-            9,
-            10
-          ],
-          [
-            16,
-            17
-          ]
-        ],
-        "punct": [
-          [
-            4,
-            5
-          ],
-          [
-            3,
-            11
-          ],
-          [
-            3,
-            18
-          ]
-        ],
-        "det": [
-          [
-            7,
-            6
-          ]
-        ],
-        "appos": [
-          [
-            4,
-            7
-          ]
-        ],
-        "dep": [
-          [
-            3,
-            9
-          ]
-        ],
-        "mark": [
-          [
-            16,
-            12
-          ]
-        ],
-        "fixed": [
-          [
-            12,
-            13
-          ]
-        ],
-        "advcl:so_that": [
-          [
-            3,
-            16
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NNP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            4
-          ],
-          [
-            14,
-            14
-          ],
-          [
-            17,
-            17
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            4
-          ],
-          [
-            6,
-            7
-          ],
-          [
-            10,
-            10
-          ],
-          [
-            14,
-            14
-          ],
-          [
-            17,
-            17
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ],
-          [
-            8,
-            8
-          ],
-          [
-            15,
-            15
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ],
-          [
-            9,
-            9
-          ],
-          [
-            16,
-            16
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            4
-          ],
-          [
-            3,
-            4
-          ],
-          [
-            8,
-            17
-          ],
-          [
-            9,
-            17
-          ],
-          [
-            15,
-            17
-          ],
-          [
-            16,
-            17
-          ]
-        ],
-        "S": [
-          [
-            1,
-            4
-          ],
-          [
-            1,
-            18
-          ],
-          [
-            14,
-            17
-          ]
-        ],
-        ",": [
-          [
-            5,
-            5
-          ],
-          [
-            11,
-            11
-          ]
-        ],
-        "DT": [
-          [
-            6,
-            6
-          ]
-        ],
-        "NN": [
-          [
-            7,
-            7
-          ],
-          [
-            10,
-            10
-          ]
-        ],
-        "IN": [
-          [
-            12,
-            12
-          ],
-          [
-            13,
-            13
-          ]
-        ],
-        "SBAR": [
-          [
-            12,
-            17
-          ]
-        ],
-        ".": [
-          [
-            18,
-            18
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            18
-          ]
-        ]
-      },
-      "Keywords": []
-    }
-  ],
+  "SVVOMultiComma": [],
+  "SVVO1Comma": [],
   "SVOCO": [
     {
       "FileName": "2014-USC-Project08",
@@ -929,8 +633,7 @@
       "Keywords": []
     }
   ],
-  "SVOO": [],
-  "SVOOcomma1": [
+  "SVOOComma": [
     {
       "FileName": "2014-USC-Project08",
       "Sentence": "CaseManager can create ManagementService , those Activity will have Category , so that CaseManager can monitor YouthService .",
@@ -947,10 +650,10 @@
         "4": "ManagementService",
         "5": ",",
         "6": "those",
-        "7": "activity",
+        "7": "Activity",
         "8": "will",
         "9": "have",
-        "10": "category",
+        "10": "Category",
         "11": ",",
         "12": "so",
         "13": "that",
@@ -1227,6 +930,11 @@
       "Keywords": []
     }
   ],
+  "SVIOO": [],
+  "SVOTo": [],
+  "OPassPartVByS": [],
+  "SVOPassPart": [],
+  "SPredicativeV": [],
   "SVOblWith": [],
   "SVCc": [],
   "SVByV": [],
@@ -1243,7 +951,7 @@
         "1": "CaseManager",
         "2": "can",
         "3": "run",
-        "4": "frequency",
+        "4": "Frequency",
         "5": "on",
         "6": "CaseFile",
         "7": ",",
@@ -1603,7 +1311,7 @@
         "1": "CaseManager",
         "2": "can",
         "3": "run",
-        "4": "frequency",
+        "4": "Frequency",
         "5": "on",
         "6": "CaseFile",
         "7": ",",
@@ -1966,7 +1674,7 @@
         "4": "Document",
         "5": "for",
         "6": "each",
-        "7": "case",
+        "7": "Case",
         "8": ",",
         "9": "so",
         "10": "that",
@@ -2266,7 +1974,7 @@
         "4": "Document",
         "5": "for",
         "6": "each",
-        "7": "case",
+        "7": "Case",
         "8": ",",
         "9": "so",
         "10": "that",
@@ -2566,10 +2274,10 @@
         "4": "ManagementService",
         "5": ",",
         "6": "those",
-        "7": "activity",
+        "7": "Activity",
         "8": "will",
         "9": "have",
-        "10": "category",
+        "10": "Category",
         "11": ",",
         "12": "so",
         "13": "that",
@@ -2860,10 +2568,10 @@
         "4": "ManagementService",
         "5": ",",
         "6": "those",
-        "7": "activity",
+        "7": "Activity",
         "8": "will",
         "9": "have",
-        "10": "category",
+        "10": "Category",
         "11": ",",
         "12": "so",
         "13": "that",
@@ -3337,13 +3045,13 @@
         "1": "CaseManager",
         "2": "can",
         "3": "massive",
-        "4": "email",
+        "4": "Email",
         "5": "through",
         "6": "the",
         "7": "System",
         "8": "and",
         "9": "automatic",
-        "10": "recordactivity",
+        "10": "RecordActivity",
         "11": ",",
         "12": "so",
         "13": "that",
@@ -3351,7 +3059,7 @@
         "15": "save",
         "16": "Time",
         "17": "lose",
-        "18": "activity",
+        "18": "Activity",
         "19": "."
       },
       "TD": {

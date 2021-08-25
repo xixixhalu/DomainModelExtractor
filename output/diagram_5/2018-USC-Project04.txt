@@ -7,9 +7,9 @@ class Office<actor> {
 	doctor
 }
 class Doctor<actor> {
-	schedulingApplication
 	behalf
 	patient
+	schedulingApplication
 	data
 }
 class Admin<actor> {
@@ -19,146 +19,161 @@ class Administrator<actor> {
 }
 class Developer<actor> {
 }
-class Record {
-}
 class Info {
 }
+class Record {
+}
+class Document {
+}
 class User {
-	attach()
-	manage()
-	export()
-	download()
-	track()
-	create()
-	generate()
 	delete()
-	trust()
+	attach()
 	view()
-	have()
-	add()
-	import()
+	track()
 	access()
+	manage()
+	generate()
+	trust()
+	import()
+	export()
+	add()
+	have()
+	edit()
 	assign()
+	create()
+	download()
+}
+class Medication {
 }
 class Behalf {
 }
-class Administrator {
-	save()
-	retrieve()
-}
 class CSVFile {
-	say()
 	have()
+	say()
 }
 class Product {
+	purchase()
+}
+class Doctor {
+	view()
+	want()
+	fill_out()
+	choose()
+	edit()
+	recommend()
+	match()
+}
+class Report {
+	generate()
 }
 class Invoice {
 }
-class Developer {
-	protect()
-}
-class App {
-}
-class Doctor {
-	fill_out()
-	choose()
-	integrate()
-	match()
-	view()
-	edit()
-	want()
-	recommend()
-}
-class Office {
-	manage()
-}
-class Patient {
-	recommend()
-}
-class Information {
-	user()
-}
-class File {
-}
-class Patientdocument {
-}
-class Task {
-}
-class Inventory {
-}
-class Form {
-}
-class VendorProductInformation {
-}
-class OrderForm {
-	purchase()
-}
-class Customer {
-}
-class Trial {
-	end()
-}
-class Progress {
-}
-class Subscription {
-	end()
-}
 class Data {
-}
-class Allergy {
+	preserve()
 }
 class Admin {
 	customize()
 }
+class App {
+	integrate()
+}
+class Patient {
+	recommend()
+	preserve()
+}
+class Information {
+	train()
+}
+class Allergy {
+}
+class Administrator {
+	retrieve()
+	save()
+}
+class Developer {
+	protect()
+}
+class Task {
+}
+class Office {
+	manage()
+}
+class VisitDetail {
+}
+class OrderForm {
+	purchase()
+}
+class File {
+}
+class Progress {
+}
+class Form {
+}
+class Inventory {
+}
+class Trial {
+	end()
+}
+class Subscription {
+	end()
+}
+class Customer {
+}
 class Application {
 }
-class Report {
-}
-class Medication {
-}
-class CsvFile {
+class VendorProductInformation {
 }
 class Level {
 }
-CSVFile --> Product : say
-User --> Data : manage
-User --> Product : add
-User --> Invoice : create
-User --> Allergy : add
-User --> Form : download
-User --> Task : assign
-Developer --> App : protect
-CSVFile --> Information : have
-User --> VendorProductInformation : import
-Doctor o-- Patient : choose
-User --> Record : create
-User --> Application : trust
-Office --> Inventory : manage
-Office --> Behalf : manage
-Office --> Data : manage
-Doctor --> App : want
-User --> Inventory : manage
-Doctor --> Report : view
-User --> Form : delete
-User --> Customer : track
-Doctor o-- Patient : match
-User --> Form : add
-Doctor --> Product : recommend
-User --> Data : attach
+class CsvFile {
+}
 Product o-- Info
-User --> Information : access
-Doctor --> Product : choose
-Doctor --> OrderForm : fill_out
-Doctor --> File : recommend
-User --> Medication : add
-User --> CsvFile : supported_by
-User --> Behalf : manage
-Doctor --> Progress : edit
-Administrator --> Patientdocument : save
-User --> Task : generate
+User --> Inventory : manage
+User --> Product : add
+Task --> Doctor : to
+CSVFile --> Product : say
+Patient o-- Document
+User --> VisitDetail : view
 Patient o-- Record
-User --> Info : export
-User --> Level : supported_by
+Administrator --> Document : save
+Doctor o-- Patient : choose
+Patient --> Product : to
+Doctor --> Report : view
+User --> Form : add
+Doctor --> Product : choose
+Data --> Record : to
+Doctor --> Product : recommend
+User --> CsvFile : supported_by
+User --> Invoice : create
+User --> Data : manage
+Doctor --> File : recommend
+Info --> CSVFile : to
+User --> Customer : track
 User --> Task : have
+User --> Info : export
+User --> Application : trust
+Doctor o-- Patient : match
+User --> Information : access
+Doctor --> Progress : edit
+User --> VisitDetail : edit
+User --> VendorProductInformation : import
+User --> Record : create
+User --> Allergy : add
+User --> Data : attach
+User --> Task : assign
+CSVFile --> Information : have
+Doctor --> OrderForm : fill_out
+Office --> Data : manage
+User --> Form : download
+User --> VisitDetail : add
+User --> Medication : add
+User --> Form : delete
+Developer --> App : protect
+Office --> Inventory : manage
+Doctor --> App : want
+User --> Level : supported_by
+User --> Task : generate
+User --> Behalf : manage
+Office --> Behalf : manage
 
 @enduml

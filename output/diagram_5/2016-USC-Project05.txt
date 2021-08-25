@@ -1,129 +1,134 @@
 @startuml
 hide circle
 class User<actor> {
-	storage
+	felling
 	event
 	computer
-	felling
-	password
 	privacy
-	phone
-	record
+	password
+	storage
 	eventExit
+	record
+	phone
 }
 class User {
-	see()
-	look()
-	want()
-	like()
-	free()
-	need()
-	visit()
-	search()
-	change()
-	review()
-	express()
-	extend()
-	enter()
-	choose()
-	let()
-	save()
-	create()
-	user()
-	delete()
-	forget()
-	picture()
-	keep()
-	log_in()
-	comment()
+	allow()
 	make()
-	download()
-	login()
 	upload()
+	create()
+	review()
+	download()
+	look()
+	login()
+	need()
+	see()
+	choose()
+	express()
+	save()
+	delete()
 	reset()
+	search()
+	let()
+	forget()
+	change()
+	extend()
+	like()
+	comment()
+	picture()
+	enter()
+	free()
+	log_in()
 	maintain()
-	find()
 	report()
-}
-class Record {
-}
-class Time {
-}
-class Event {
-}
-class Lot {
-}
-class Picture {
+	use()
+	keep()
+	find()
+	want()
 }
 class Password {
 }
-class Upload {
+class Time {
 }
-class Resolutionpicture {
+class Picture {
 }
-class Qualitypicture {
-}
-class Computer {
-}
-class Felling {
-}
-class SharewebWebsite {
-}
-class Privacy {
-}
-class Storage {
-}
-class Browser {
-}
-class Comment {
-}
-class Type {
+class Event {
 }
 class Register {
 }
+class Record {
+}
+class Computer {
+}
+class Browser {
+	visit()
+}
+class SharewebWebsite {
+}
+class Comment {
+}
 class Size {
+}
+class Felling {
+}
+class ResolutionPicture {
+}
+class Upload {
+}
+class System {
+}
+class Storage {
+}
+class Privacy {
+}
+class QualityPicture {
+}
+class Type {
+}
+class Lot {
 }
 class Charge {
 }
 class FacebookAccount {
 }
-User --> Time : supported_by
-User --> Picture : comment
-User --> FacebookAccount : supported_by
-User --> Upload : delete
-User --> Picture : upload
-User --> User : delete
-User --> Picture : maintain
-User o-- Storage : save
-User --> Resolutionpicture : upload
-User o-- Password : reset
-User --> Picture : report
-User --> Browser : user
-User o-- Event : create
-User --> Qualitypicture : review
-User o-- Event : delete
-User --> Comment : make
-User o-- Event : see
-User o-- Password : forget
+User o-- Record : keep
+User --> Lot : free
+Picture --> Event : to
+User --> Charge : supported_by
+User o-- Event : maintain
 User o-- Computer : download
+User --> Register : need
+User --> ResolutionPicture : upload
+User --> FacebookAccount : supported_by
+User --> Browser : use
+User --> Upload : delete
+User --> Picture : download
+User --> Time : supported_by
+Browser --> SharewebWebsite : visit
+User --> Picture : upload
+User --> Comment : make
+User --> System : use
+User o-- Password : reset
+User o-- Event : create
+User --> User : delete
+User o-- Storage : save
+User o-- Event : extend
+User o-- Password : enter
+User --> Picture : report
 User o-- Event : picture
 User --> Picture : review
-User --> Type : change
-User --> Lot : free
-User o-- Felling : express
-User --> Register : need
-User --> Resolutionpicture : download
-User --> Picture : like
-User --> Picture : download
-User o-- Password : enter
-User --> Size : choose
-User o-- Record : keep
-User --> Charge : supported_by
-User o-- Event : extend
-User --> SharewebWebsite : visit
-User --> Picture : see
 User o-- Privacy : keep
+User --> Size : choose
+User --> QualityPicture : review
+User o-- Event : see
+User o-- Felling : express
+User --> Picture : maintain
+User --> Picture : see
+User o-- Password : forget
+User --> ResolutionPicture : download
+User --> Picture : like
+User --> Picture : comment
+User o-- Event : delete
+User --> Type : change
 User --> Time : save
-User o-- Event : maintain
 
 @enduml

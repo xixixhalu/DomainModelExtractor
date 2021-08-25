@@ -1,14 +1,15 @@
 @startuml
 hide circle
 class Youth<actor> {
-	caseManager
-	survey
 	profile
+	caseManager
 	feedback
+	case
+	survey
 }
 class CaseManager<actor> {
-	caseManager
 	youth
+	case
 }
 class Administrator<actor> {
 }
@@ -20,101 +21,116 @@ class Staff<actor> {
 }
 class Account {
 }
-class Administrator {
-	make()
-	modify()
-	delete()
-	create()
-	transfer()
-	export()
-	view()
-	send_out()
-	see()
-	add()
-}
-class Youth {
-	contact()
-	take()
-	view()
-	provide()
-}
-class CaseManager {
-	add()
-	deactivate()
-	manage()
-	send_out()
-	view()
-	export()
-	create()
+class Manager {
 	activate()
-	see()
-	delete()
+	manage()
 	review()
-}
-class LogRecord {
-}
-class Information {
-}
-class Profile {
-}
-class Document {
-}
-class Feedback {
-}
-class Mail {
-}
-class User {
-	answer()
-	recover()
+	send_out()
+	see()
 	create()
-}
-class LoginInformation {
-}
-class Staff {
+	export()
+	delete()
 	view()
-}
-class Survey {
+	deactivate()
+	add()
 }
 class Activity {
 }
-class Result {
+class Administrator {
+	transfer()
+	manage()
+	send_out()
+	see()
+	create()
+	export()
+	delete()
+	view()
+	modify()
+	add()
+	make()
+}
+class Youth {
+	take()
+	contact()
+	provide()
+	view()
+}
+class Profile {
+}
+class Case {
 }
 class File {
 	belong()
 }
+class LogRecord {
+}
+class Feedback {
+}
 class Record {
+}
+class Document {
+}
+class Survey {
+}
+class Result {
+}
+class Information {
+}
+class User {
+	create()
+	recover()
+	answer()
+}
+class LoginInformation {
 }
 class SecurityQuestion {
 }
-CaseManager o-- CaseManager : export
-CaseManager --> Document : delete
-Administrator --> CaseManager : export
-Youth o-- Profile : view
-CaseManager o-- CaseManager : delete
-Administrator --> Profile : delete
-Administrator --> Record : delete
-CaseManager --> Feedback : review
-Administrator --> Activity : create
-CaseManager --> File : add
-CaseManager --> Mail : send_out
+class Mail {
+}
+class Staff {
+	view()
+}
+class CaseManager {
+}
+Manager --> Activity : manage
+Manager --> Mail : send_out
+Manager --> Activity : create
+Manager --> Case : view
 Administrator --> Mail : send_out
-Youth o-- Feedback : provide
-Youth o-- CaseManager : contact
-Youth --> File : view
-User o-- LoginInformation : recover
-CaseManager o-- CaseManager : view
+Manager --> Case : export
+Youth --> Manager : contact
+Administrator --> Case : export
+Manager --> File : add
 Staff --> Information : view
-Administrator --> LogRecord : view
-CaseManager --> Account : activate
-Administrator --> Profile : modify
-Administrator --> Result : see
+Administrator --> Activity : create
+Manager --> Account : activate
 Youth o-- Account
-Administrator --> CaseManager : transfer
-Administrator --> CaseManager : delete
-CaseManager --> Result : see
-User --> SecurityQuestion : create
+CaseManager <|-- Manager
+Administrator --> LogRecord : view
+Administrator --> Record : add
+Administrator --> Case : transfer
+Case o-- Manager
+User o-- LoginInformation : recover
+Youth o-- Feedback : provide
+Manager --> Account : deactivate
+Youth --> File : view
+Administrator --> Record : view
+User --> SecurityQuestion : answer
+Manager --> Document : delete
+Administrator --> Record : delete
+Administrator --> Profile : delete
+Manager --> Feedback : review
+Manager --> Case : delete
+Administrator --> Profile : view
+Administrator --> Case : delete
 Youth o-- Survey : take
-CaseManager --> Activity : create
-CaseManager --> Information : view
+Administrator --> Profile : modify
+Administrator --> Profile : add
+Manager --> Result : see
+Administrator --> Result : see
+User --> SecurityQuestion : create
+Administrator --> Activity : manage
+Youth o-- Profile : view
+Manager --> Information : view
 
 @enduml

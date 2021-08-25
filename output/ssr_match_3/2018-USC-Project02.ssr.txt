@@ -9,11 +9,11 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "vote",
         "4": "on",
-        "5": "review",
+        "5": "Review",
         "6": "."
       },
       "TD": {
@@ -139,7 +139,7 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "comment",
         "4": "on",
@@ -284,14 +284,14 @@
         "C": 8
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "share",
         "4": "BlogPost",
         "5": "on",
         "6": "popular",
         "7": "social",
-        "8": "mediaapplication",
+        "8": "MediaApplication",
         "9": "through",
         "10": "Link",
         "11": "inside",
@@ -543,18 +543,18 @@
         "D": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "want",
         "3": "to",
         "4": "see",
         "5": "the",
-        "6": "performance",
+        "6": "Performance",
         "7": "of",
-        "8": "user",
+        "8": "User",
         "9": "'s",
-        "10": "investment",
+        "10": "Investment",
         "11": "over",
-        "12": "time",
+        "12": "Time",
         "13": "use",
         "14": "the",
         "15": "VisualizationTool",
@@ -832,7 +832,7 @@
         "D": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "would",
         "3": "like",
         "4": "to",
@@ -1026,7 +1026,7 @@
         "D": 7
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "choose",
         "4": "to",
@@ -1234,18 +1234,18 @@
         "B": 8
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "want",
         "3": "to",
         "4": "see",
         "5": "the",
-        "6": "performance",
+        "6": "Performance",
         "7": "of",
-        "8": "user",
+        "8": "User",
         "9": "'s",
-        "10": "investment",
+        "10": "Investment",
         "11": "over",
-        "12": "time",
+        "12": "Time",
         "13": "use",
         "14": "the",
         "15": "VisualizationTool",
@@ -1530,7 +1530,7 @@
         "7": "on",
         "8": "ServiceProvider",
         "9": "'s",
-        "10": "page",
+        "10": "Page",
         "11": "."
       },
       "TD": {
@@ -1737,12 +1737,12 @@
         "B": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "manage",
-        "4": "investment",
+        "4": "Investment",
         "5": "to",
-        "6": "user",
+        "6": "User",
         "7": "'s",
         "8": "InvestmentProfile",
         "9": "."
@@ -1909,12 +1909,12 @@
         "B": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "reset",
-        "4": "user",
+        "4": "User",
         "5": "'s",
-        "6": "password",
+        "6": "Password",
         "7": "through",
         "8": "a",
         "9": "EmailAuthenticationSystem",
@@ -2094,10 +2094,10 @@
         "B": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "adjust",
-        "4": "user",
+        "4": "User",
         "5": "'s",
         "6": "EmailNotificationSetting",
         "7": "."
@@ -2234,10 +2234,10 @@
         "B": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "export",
-        "4": "user",
+        "4": "User",
         "5": "'s",
         "6": "TrackingToolData",
         "7": "to",
@@ -2245,7 +2245,7 @@
         "9": "\"",
         "10": "Csv",
         "11": "\"",
-        "12": "file",
+        "12": "File",
         "13": "."
       },
       "TD": {
@@ -2445,7 +2445,7 @@
       "Keywords": []
     }
   ],
-  "OPassVS": [],
+  "SPassPartVByS": [],
   "VOToInf": [],
   "SVThatClause": [],
   "SVByVO": [],
@@ -2459,18 +2459,18 @@
         "C": 15
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "want",
         "3": "to",
         "4": "see",
         "5": "the",
-        "6": "performance",
+        "6": "Performance",
         "7": "of",
-        "8": "user",
+        "8": "User",
         "9": "'s",
-        "10": "investment",
+        "10": "Investment",
         "11": "over",
-        "12": "time",
+        "12": "Time",
         "13": "use",
         "14": "the",
         "15": "VisualizationTool",
@@ -2747,11 +2747,11 @@
         "C": 7
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "search",
         "4": "the",
-        "5": "discussionboard",
+        "5": "DiscussionBoard",
         "6": "use",
         "7": "TextInput",
         "8": "."
@@ -2900,8 +2900,8 @@
     }
   ],
   "SVCVO": [],
-  "SVVO": [],
-  "SVVOcomma1": [
+  "SVVOMultiComma": [],
+  "SVVO1Comma": [
     {
       "FileName": "2018-USC-Project02",
       "Sentence": "User can login using Social MediaSite .",
@@ -2912,7 +2912,7 @@
         "D": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "login",
         "4": "use",
@@ -3058,13 +3058,13 @@
         "D": 7
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "can",
         "3": "moderate",
         "4": "the",
-        "5": "user",
+        "5": "User",
         "6": "create",
-        "7": "content",
+        "7": "Content",
         "8": "."
       },
       "TD": {
@@ -3208,9 +3208,1202 @@
       "Keywords": []
     }
   ],
-  "SVOCO": [],
-  "SVOO": [],
-  "SVOOcomma1": [],
+  "SVOCO": [
+    {
+      "FileName": "2018-USC-Project02",
+      "Sentence": "User can make Page or Profile for ServiceProvider .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 4,
+        "D": 6
+      },
+      "Index": {
+        "1": "User",
+        "2": "can",
+        "3": "make",
+        "4": "Page",
+        "5": "or",
+        "6": "Profile",
+        "7": "for",
+        "8": "ServiceProvider",
+        "9": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "cc": [
+          [
+            6,
+            5
+          ]
+        ],
+        "conj:or": [
+          [
+            4,
+            6
+          ]
+        ],
+        "case": [
+          [
+            8,
+            7
+          ]
+        ],
+        "obl:for": [
+          [
+            3,
+            8
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "NNP": [
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "CC": [
+          [
+            5,
+            5
+          ]
+        ],
+        "IN": [
+          [
+            7,
+            7
+          ]
+        ],
+        "PP": [
+          [
+            7,
+            8
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        ".": [
+          [
+            9,
+            9
+          ]
+        ],
+        "S": [
+          [
+            1,
+            9
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            9
+          ]
+        ]
+      },
+      "Keywords": []
+    }
+  ],
+  "SVOOComma": [],
+  "SVIOO": [],
+  "SVOTo": [
+    {
+      "FileName": "2018-USC-Project02",
+      "Sentence": "User can manage Investment to User's InvestmentProfile .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 4,
+        "D": 8
+      },
+      "Index": {
+        "1": "User",
+        "2": "can",
+        "3": "manage",
+        "4": "Investment",
+        "5": "to",
+        "6": "User",
+        "7": "'s",
+        "8": "InvestmentProfile",
+        "9": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            4
+          ]
+        ],
+        "case": [
+          [
+            8,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "nmod:poss": [
+          [
+            8,
+            6
+          ]
+        ],
+        "obl:to": [
+          [
+            3,
+            8
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "IN": [
+          [
+            5,
+            5
+          ]
+        ],
+        "POS": [
+          [
+            7,
+            7
+          ]
+        ],
+        "NNP": [
+          [
+            8,
+            8
+          ]
+        ],
+        "PP": [
+          [
+            5,
+            8
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        ".": [
+          [
+            9,
+            9
+          ]
+        ],
+        "S": [
+          [
+            1,
+            9
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            9
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2018-USC-Project02",
+      "Sentence": "User have Access to ServiceProviderContactInformation .",
+      "Result": {
+        "A": 2,
+        "B": 1,
+        "C": 3,
+        "D": 5
+      },
+      "Index": {
+        "1": "User",
+        "2": "have",
+        "3": "Access",
+        "4": "to",
+        "5": "ServiceProviderContactInformation",
+        "6": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            2
+          ]
+        ],
+        "nsubj": [
+          [
+            2,
+            1
+          ]
+        ],
+        "obj": [
+          [
+            2,
+            3
+          ]
+        ],
+        "case": [
+          [
+            5,
+            4
+          ]
+        ],
+        "obl:to": [
+          [
+            2,
+            5
+          ]
+        ],
+        "punct": [
+          [
+            2,
+            6
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "VBP": [
+          [
+            2,
+            2
+          ]
+        ],
+        "NNP": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "TO": [
+          [
+            4,
+            4
+          ]
+        ],
+        "PP": [
+          [
+            4,
+            5
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            5
+          ]
+        ],
+        ".": [
+          [
+            6,
+            6
+          ]
+        ],
+        "S": [
+          [
+            1,
+            6
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            6
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2018-USC-Project02",
+      "Sentence": "User can add PropertyInformation to the TrackingTool .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 4,
+        "D": 7
+      },
+      "Index": {
+        "1": "User",
+        "2": "can",
+        "3": "add",
+        "4": "PropertyInformation",
+        "5": "to",
+        "6": "the",
+        "7": "TrackingTool",
+        "8": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            4
+          ]
+        ],
+        "case": [
+          [
+            7,
+            5
+          ]
+        ],
+        "det": [
+          [
+            7,
+            6
+          ]
+        ],
+        "obl:to": [
+          [
+            3,
+            7
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            8
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "NNP": [
+          [
+            4,
+            4
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "IN": [
+          [
+            5,
+            5
+          ]
+        ],
+        "DT": [
+          [
+            6,
+            6
+          ]
+        ],
+        "PP": [
+          [
+            5,
+            7
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        ".": [
+          [
+            8,
+            8
+          ]
+        ],
+        "S": [
+          [
+            1,
+            8
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2018-USC-Project02",
+      "Sentence": "Administrator can post Article to the Blog .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 4,
+        "D": 7
+      },
+      "Index": {
+        "1": "Administrator",
+        "2": "can",
+        "3": "post",
+        "4": "Article",
+        "5": "to",
+        "6": "the",
+        "7": "Blog",
+        "8": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            4
+          ]
+        ],
+        "case": [
+          [
+            7,
+            5
+          ]
+        ],
+        "det": [
+          [
+            7,
+            6
+          ]
+        ],
+        "obl:to": [
+          [
+            3,
+            7
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            8
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "IN": [
+          [
+            5,
+            5
+          ]
+        ],
+        "DT": [
+          [
+            6,
+            6
+          ]
+        ],
+        "NNP": [
+          [
+            7,
+            7
+          ]
+        ],
+        "PP": [
+          [
+            5,
+            7
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        ".": [
+          [
+            8,
+            8
+          ]
+        ],
+        "S": [
+          [
+            1,
+            8
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      "Keywords": []
+    },
+    {
+      "FileName": "2018-USC-Project02",
+      "Sentence": "User can export User's TrackingToolData to a \" Csv \" File .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 6,
+        "D": 12
+      },
+      "Index": {
+        "1": "User",
+        "2": "can",
+        "3": "export",
+        "4": "User",
+        "5": "'s",
+        "6": "TrackingToolData",
+        "7": "to",
+        "8": "a",
+        "9": "\"",
+        "10": "Csv",
+        "11": "\"",
+        "12": "File",
+        "13": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "nmod:poss": [
+          [
+            6,
+            4
+          ]
+        ],
+        "case": [
+          [
+            4,
+            5
+          ],
+          [
+            12,
+            7
+          ]
+        ],
+        "obj": [
+          [
+            3,
+            6
+          ]
+        ],
+        "det": [
+          [
+            12,
+            8
+          ]
+        ],
+        "punct": [
+          [
+            12,
+            9
+          ],
+          [
+            12,
+            11
+          ],
+          [
+            3,
+            13
+          ]
+        ],
+        "compound": [
+          [
+            12,
+            10
+          ]
+        ],
+        "obl:to": [
+          [
+            3,
+            12
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            8,
+            12
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "POS": [
+          [
+            5,
+            5
+          ]
+        ],
+        "NNP": [
+          [
+            6,
+            6
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "IN": [
+          [
+            7,
+            7
+          ]
+        ],
+        "DT": [
+          [
+            8,
+            8
+          ]
+        ],
+        "``": [
+          [
+            9,
+            9
+          ]
+        ],
+        "''": [
+          [
+            11,
+            11
+          ]
+        ],
+        "PP": [
+          [
+            7,
+            12
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ]
+        ],
+        ".": [
+          [
+            13,
+            13
+          ]
+        ],
+        "S": [
+          [
+            1,
+            13
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            13
+          ]
+        ]
+      },
+      "Keywords": []
+    }
+  ],
+  "OPassPartVByS": [],
+  "SVOPassPart": [
+    {
+      "FileName": "2018-USC-Project02",
+      "Sentence": "Administrator can moderate the User created Content .",
+      "Result": {
+        "A": 3,
+        "B": 1,
+        "C": 6,
+        "D": 5
+      },
+      "Index": {
+        "1": "Administrator",
+        "2": "can",
+        "3": "moderate",
+        "4": "the",
+        "5": "User",
+        "6": "create",
+        "7": "Content",
+        "8": "."
+      },
+      "TD": {
+        "ROOT": [
+          [
+            0,
+            3
+          ]
+        ],
+        "nsubj": [
+          [
+            3,
+            1
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "aux": [
+          [
+            3,
+            2
+          ]
+        ],
+        "det": [
+          [
+            5,
+            4
+          ]
+        ],
+        "dep": [
+          [
+            3,
+            6
+          ]
+        ],
+        "obj": [
+          [
+            6,
+            7
+          ]
+        ],
+        "punct": [
+          [
+            3,
+            8
+          ]
+        ]
+      },
+      "Pos-tag": {
+        "NN": [
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "NP": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "MD": [
+          [
+            2,
+            2
+          ]
+        ],
+        "VB": [
+          [
+            3,
+            3
+          ]
+        ],
+        "DT": [
+          [
+            4,
+            4
+          ]
+        ],
+        "VBN": [
+          [
+            6,
+            6
+          ]
+        ],
+        "VP": [
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        ".": [
+          [
+            8,
+            8
+          ]
+        ],
+        "S": [
+          [
+            1,
+            8
+          ]
+        ],
+        "ROOT": [
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      "Keywords": []
+    }
+  ],
+  "SPredicativeV": [],
   "SVOblWith": [],
   "SVCc": [
     {
@@ -3222,18 +4415,18 @@
         "C": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "want",
         "3": "to",
         "4": "see",
         "5": "the",
-        "6": "performance",
+        "6": "Performance",
         "7": "of",
-        "8": "user",
+        "8": "User",
         "9": "'s",
-        "10": "investment",
+        "10": "Investment",
         "11": "over",
-        "12": "time",
+        "12": "Time",
         "13": "use",
         "14": "the",
         "15": "VisualizationTool",
@@ -3510,7 +4703,7 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "would",
         "3": "like",
         "4": "to",
@@ -3703,7 +4896,7 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "choose",
         "4": "to",
@@ -3912,11 +5105,11 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "view",
         "4": "a",
-        "5": "list",
+        "5": "List",
         "6": "of",
         "7": "ServiceProvider",
         "8": "."
@@ -4069,22 +5262,21 @@
     },
     {
       "FileName": "2018-USC-Project02",
-      "Sentence": "User can manage Investment to User's InvestmentProfile .",
+      "Sentence": "User can view a List of ServiceProvider .",
       "Result": {
         "A": 3,
         "B": 1,
-        "C": 4
+        "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
-        "3": "manage",
-        "4": "investment",
-        "5": "to",
-        "6": "user",
-        "7": "'s",
-        "8": "InvestmentProfile",
-        "9": "."
+        "3": "view",
+        "4": "a",
+        "5": "List",
+        "6": "of",
+        "7": "ServiceProvider",
+        "8": "."
       },
       "TD": {
         "ROOT": [
@@ -4105,38 +5297,34 @@
             2
           ]
         ],
+        "det": [
+          [
+            5,
+            4
+          ]
+        ],
         "obj": [
           [
             3,
-            4
+            5
           ]
         ],
         "case": [
           [
-            8,
-            5
-          ],
-          [
-            6,
-            7
-          ]
-        ],
-        "nmod:poss": [
-          [
-            8,
+            7,
             6
           ]
         ],
-        "obl:to": [
+        "nmod:of": [
           [
-            3,
-            8
+            5,
+            7
           ]
         ],
         "punct": [
           [
             3,
-            9
+            8
           ]
         ]
       },
@@ -4147,12 +5335,8 @@
             1
           ],
           [
-            4,
-            4
-          ],
-          [
-            6,
-            6
+            5,
+            5
           ]
         ],
         "NP": [
@@ -4162,15 +5346,15 @@
           ],
           [
             4,
-            4
+            5
           ],
           [
-            6,
+            4,
             7
           ],
           [
-            6,
-            8
+            7,
+            7
           ]
         ],
         "MD": [
@@ -4185,56 +5369,56 @@
             3
           ]
         ],
-        "IN": [
+        "DT": [
           [
-            5,
-            5
+            4,
+            4
           ]
         ],
-        "POS": [
+        "IN": [
+          [
+            6,
+            6
+          ]
+        ],
+        "NNP": [
           [
             7,
             7
           ]
         ],
-        "NNP": [
-          [
-            8,
-            8
-          ]
-        ],
         "PP": [
           [
-            5,
-            8
+            6,
+            7
           ]
         ],
         "VP": [
           [
             2,
-            8
+            7
           ],
           [
             3,
-            8
+            7
           ]
         ],
         ".": [
           [
-            9,
-            9
+            8,
+            8
           ]
         ],
         "S": [
           [
             1,
-            9
+            8
           ]
         ],
         "ROOT": [
           [
             1,
-            9
+            8
           ]
         ]
       },
@@ -4249,7 +5433,7 @@
         "C": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "make",
         "4": "Page",
@@ -4424,7 +5608,7 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "make",
         "4": "Page",
@@ -4599,13 +5783,13 @@
         "C": 7
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "can",
         "3": "moderate",
         "4": "the",
-        "5": "user",
+        "5": "User",
         "6": "create",
-        "7": "content",
+        "7": "Content",
         "8": "."
       },
       "TD": {
@@ -4750,140 +5934,6 @@
     },
     {
       "FileName": "2018-USC-Project02",
-      "Sentence": "User have Access to ServiceProviderContactInformation .",
-      "Result": {
-        "A": 2,
-        "B": 1,
-        "C": 3
-      },
-      "Index": {
-        "1": "user",
-        "2": "have",
-        "3": "Access",
-        "4": "to",
-        "5": "ServiceProviderContactInformation",
-        "6": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            2
-          ]
-        ],
-        "nsubj": [
-          [
-            2,
-            1
-          ]
-        ],
-        "obj": [
-          [
-            2,
-            3
-          ]
-        ],
-        "case": [
-          [
-            5,
-            4
-          ]
-        ],
-        "obl:to": [
-          [
-            2,
-            5
-          ]
-        ],
-        "punct": [
-          [
-            2,
-            6
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            3,
-            3
-          ],
-          [
-            3,
-            5
-          ],
-          [
-            5,
-            5
-          ]
-        ],
-        "VBP": [
-          [
-            2,
-            2
-          ]
-        ],
-        "NNP": [
-          [
-            3,
-            3
-          ],
-          [
-            5,
-            5
-          ]
-        ],
-        "TO": [
-          [
-            4,
-            4
-          ]
-        ],
-        "PP": [
-          [
-            4,
-            5
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            5
-          ]
-        ],
-        ".": [
-          [
-            6,
-            6
-          ]
-        ],
-        "S": [
-          [
-            1,
-            6
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            6
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2018-USC-Project02",
       "Sentence": "Admin can remove a flagged User .",
       "Result": {
         "A": 3,
@@ -4896,7 +5946,7 @@
         "3": "remove",
         "4": "a",
         "5": "flag",
-        "6": "user",
+        "6": "User",
         "7": "."
       },
       "TD": {
@@ -5030,11 +6080,11 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "report",
         "4": "other",
-        "5": "user",
+        "5": "User",
         "6": "."
       },
       "TD": {
@@ -5154,11 +6204,11 @@
         "C": 5
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "can",
         "3": "verify",
         "4": "the",
-        "5": "identity",
+        "5": "Identity",
         "6": "of",
         "7": "a",
         "8": "ServiceProvider",
@@ -5327,7 +6377,7 @@
         "C": 4
       },
       "Index": {
-        "1": "administrator",
+        "1": "Administrator",
         "2": "can",
         "3": "view",
         "4": "WebsiteUtilizationStatistics",
@@ -5433,166 +6483,6 @@
     },
     {
       "FileName": "2018-USC-Project02",
-      "Sentence": "User can add PropertyInformation to the TrackingTool .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 4
-      },
-      "Index": {
-        "1": "user",
-        "2": "can",
-        "3": "add",
-        "4": "PropertyInformation",
-        "5": "to",
-        "6": "the",
-        "7": "TrackingTool",
-        "8": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            4
-          ]
-        ],
-        "case": [
-          [
-            7,
-            5
-          ]
-        ],
-        "det": [
-          [
-            7,
-            6
-          ]
-        ],
-        "obl:to": [
-          [
-            3,
-            7
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            8
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            4
-          ],
-          [
-            6,
-            7
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ]
-        ],
-        "NNP": [
-          [
-            4,
-            4
-          ],
-          [
-            7,
-            7
-          ]
-        ],
-        "IN": [
-          [
-            5,
-            5
-          ]
-        ],
-        "DT": [
-          [
-            6,
-            6
-          ]
-        ],
-        "PP": [
-          [
-            5,
-            7
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            7
-          ],
-          [
-            3,
-            7
-          ]
-        ],
-        ".": [
-          [
-            8,
-            8
-          ]
-        ],
-        "S": [
-          [
-            1,
-            8
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            8
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2018-USC-Project02",
       "Sentence": "User can find a ServiceProvider by Email , PhoneNumber , or Name .",
       "Result": {
         "A": 3,
@@ -5600,18 +6490,18 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "find",
         "4": "a",
-        "5": "serviceprovider",
+        "5": "ServiceProvider",
         "6": "by",
-        "7": "email",
+        "7": "Email",
         "8": ",",
         "9": "PhoneNumber",
         "10": ",",
         "11": "or",
-        "12": "name",
+        "12": "Name",
         "13": "."
       },
       "TD": {
@@ -5837,7 +6727,7 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "rate",
         "4": "a",
@@ -6011,166 +6901,6 @@
     },
     {
       "FileName": "2018-USC-Project02",
-      "Sentence": "Administrator can post Article to the Blog .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 4
-      },
-      "Index": {
-        "1": "administrator",
-        "2": "can",
-        "3": "post",
-        "4": "article",
-        "5": "to",
-        "6": "the",
-        "7": "Blog",
-        "8": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            4
-          ]
-        ],
-        "case": [
-          [
-            7,
-            5
-          ]
-        ],
-        "det": [
-          [
-            7,
-            6
-          ]
-        ],
-        "obl:to": [
-          [
-            3,
-            7
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            8
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            4
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            4
-          ],
-          [
-            6,
-            7
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ]
-        ],
-        "IN": [
-          [
-            5,
-            5
-          ]
-        ],
-        "DT": [
-          [
-            6,
-            6
-          ]
-        ],
-        "NNP": [
-          [
-            7,
-            7
-          ]
-        ],
-        "PP": [
-          [
-            5,
-            7
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            7
-          ],
-          [
-            3,
-            7
-          ]
-        ],
-        ".": [
-          [
-            8,
-            8
-          ]
-        ],
-        "S": [
-          [
-            1,
-            8
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            8
-          ]
-        ]
-      },
-      "Keywords": []
-    },
-    {
-      "FileName": "2018-USC-Project02",
       "Sentence": "User can start a Discussion in the DiscussionBoard of the Site .",
       "Result": {
         "A": 3,
@@ -6178,17 +6908,17 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "start",
         "4": "a",
-        "5": "discussion",
+        "5": "Discussion",
         "6": "in",
         "7": "the",
         "8": "DiscussionBoard",
         "9": "of",
         "10": "the",
-        "11": "site",
+        "11": "Site",
         "12": "."
       },
       "TD": {
@@ -6388,17 +7118,17 @@
         "C": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "will",
         "3": "receive",
-        "4": "notification",
+        "4": "Notification",
         "5": "by",
-        "6": "email",
+        "6": "Email",
         "7": "about",
         "8": "the",
-        "9": "comment",
+        "9": "Comment",
         "10": "review",
-        "11": "other",
+        "11": "Other",
         "12": "have",
         "13": "register",
         "14": "."
@@ -6650,7 +7380,7 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "have",
         "3": "at",
         "4": "least",
@@ -6659,7 +7389,7 @@
         "7": "that",
         "8": "a",
         "9": "non-registered",
-        "10": "user",
+        "10": "User",
         "11": "have",
         "12": "."
       },
@@ -6872,7 +7602,7 @@
         "C": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "read",
         "4": "Review",
@@ -6985,14 +7715,14 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "create",
         "4": "a",
-        "5": "account",
+        "5": "Account",
         "6": "from",
         "7": "a",
-        "8": "link",
+        "8": "Link",
         "9": "on",
         "10": "the",
         "11": "HomePage",
@@ -7195,14 +7925,14 @@
         "C": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "share",
         "4": "BlogPost",
         "5": "on",
         "6": "popular",
         "7": "social",
-        "8": "mediaapplication",
+        "8": "MediaApplication",
         "9": "through",
         "10": "Link",
         "11": "inside",
@@ -7450,7 +8180,7 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "read",
         "4": "the",
@@ -7576,7 +8306,7 @@
         "C": 4
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "search",
         "4": "ServiceProvider",
@@ -7803,12 +8533,12 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "reset",
-        "4": "user",
+        "4": "User",
         "5": "'s",
-        "6": "password",
+        "6": "Password",
         "7": "through",
         "8": "a",
         "9": "EmailAuthenticationSystem",
@@ -7989,11 +8719,11 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "search",
         "4": "the",
-        "5": "discussionboard",
+        "5": "DiscussionBoard",
         "6": "use",
         "7": "TextInput",
         "8": "."
@@ -8149,7 +8879,7 @@
         "C": 5
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "read",
         "4": "the",
@@ -8275,10 +9005,10 @@
         "C": 6
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "adjust",
-        "4": "user",
+        "4": "User",
         "5": "'s",
         "6": "EmailNotificationSetting",
         "7": "."
@@ -8406,373 +9136,10 @@
         ]
       },
       "Keywords": []
-    },
-    {
-      "FileName": "2018-USC-Project02",
-      "Sentence": "User can export User's TrackingToolData to a \" Csv \" File .",
-      "Result": {
-        "A": 3,
-        "B": 1,
-        "C": 6
-      },
-      "Index": {
-        "1": "user",
-        "2": "can",
-        "3": "export",
-        "4": "user",
-        "5": "'s",
-        "6": "TrackingToolData",
-        "7": "to",
-        "8": "a",
-        "9": "\"",
-        "10": "Csv",
-        "11": "\"",
-        "12": "file",
-        "13": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "nmod:poss": [
-          [
-            6,
-            4
-          ]
-        ],
-        "case": [
-          [
-            4,
-            5
-          ],
-          [
-            12,
-            7
-          ]
-        ],
-        "obj": [
-          [
-            3,
-            6
-          ]
-        ],
-        "det": [
-          [
-            12,
-            8
-          ]
-        ],
-        "punct": [
-          [
-            12,
-            9
-          ],
-          [
-            12,
-            11
-          ],
-          [
-            3,
-            13
-          ]
-        ],
-        "compound": [
-          [
-            12,
-            10
-          ]
-        ],
-        "obl:to": [
-          [
-            3,
-            12
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            4
-          ],
-          [
-            12,
-            12
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            4,
-            5
-          ],
-          [
-            4,
-            6
-          ],
-          [
-            8,
-            12
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ]
-        ],
-        "POS": [
-          [
-            5,
-            5
-          ]
-        ],
-        "NNP": [
-          [
-            6,
-            6
-          ],
-          [
-            10,
-            10
-          ]
-        ],
-        "IN": [
-          [
-            7,
-            7
-          ]
-        ],
-        "DT": [
-          [
-            8,
-            8
-          ]
-        ],
-        "``": [
-          [
-            9,
-            9
-          ]
-        ],
-        "''": [
-          [
-            11,
-            11
-          ]
-        ],
-        "PP": [
-          [
-            7,
-            12
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            12
-          ],
-          [
-            3,
-            12
-          ]
-        ],
-        ".": [
-          [
-            13,
-            13
-          ]
-        ],
-        "S": [
-          [
-            1,
-            13
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            13
-          ]
-        ]
-      },
-      "Keywords": []
     }
   ],
   "SVp": [],
   "SV": [
-    {
-      "FileName": "2018-USC-Project02",
-      "Sentence": "User can login using Social MediaSite .",
-      "Result": {
-        "A": 3,
-        "B": 1
-      },
-      "Index": {
-        "1": "user",
-        "2": "can",
-        "3": "login",
-        "4": "use",
-        "5": "Social",
-        "6": "MediaSite",
-        "7": "."
-      },
-      "TD": {
-        "ROOT": [
-          [
-            0,
-            3
-          ]
-        ],
-        "nsubj": [
-          [
-            3,
-            1
-          ]
-        ],
-        "aux": [
-          [
-            3,
-            2
-          ]
-        ],
-        "dep": [
-          [
-            3,
-            4
-          ]
-        ],
-        "compound": [
-          [
-            6,
-            5
-          ]
-        ],
-        "obj": [
-          [
-            4,
-            6
-          ]
-        ],
-        "punct": [
-          [
-            3,
-            7
-          ]
-        ]
-      },
-      "Pos-tag": {
-        "NN": [
-          [
-            1,
-            1
-          ]
-        ],
-        "NP": [
-          [
-            1,
-            1
-          ],
-          [
-            5,
-            6
-          ]
-        ],
-        "MD": [
-          [
-            2,
-            2
-          ]
-        ],
-        "VB": [
-          [
-            3,
-            3
-          ]
-        ],
-        "VBG": [
-          [
-            4,
-            4
-          ]
-        ],
-        "NNP": [
-          [
-            5,
-            5
-          ],
-          [
-            6,
-            6
-          ]
-        ],
-        "VP": [
-          [
-            2,
-            6
-          ],
-          [
-            3,
-            6
-          ],
-          [
-            4,
-            6
-          ]
-        ],
-        "S": [
-          [
-            1,
-            7
-          ],
-          [
-            4,
-            6
-          ]
-        ],
-        ".": [
-          [
-            7,
-            7
-          ]
-        ],
-        "ROOT": [
-          [
-            1,
-            7
-          ]
-        ]
-      },
-      "Keywords": []
-    },
     {
       "FileName": "2018-USC-Project02",
       "Sentence": "ServiceProvider can reply to Review left on ServiceProvider's Page .",
@@ -8790,7 +9157,7 @@
         "7": "on",
         "8": "ServiceProvider",
         "9": "'s",
-        "10": "page",
+        "10": "Page",
         "11": "."
       },
       "TD": {
@@ -8997,7 +9364,7 @@
         "B": 1
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "can",
         "3": "search",
         "4": "for",
@@ -9122,20 +9489,18 @@
     },
     {
       "FileName": "2018-USC-Project02",
-      "Sentence": "Administrator can moderate the User created Content .",
+      "Sentence": "User can search for ServiceProvider .",
       "Result": {
         "A": 3,
         "B": 1
       },
       "Index": {
-        "1": "administrator",
+        "1": "User",
         "2": "can",
-        "3": "moderate",
-        "4": "the",
-        "5": "user",
-        "6": "create",
-        "7": "content",
-        "8": "."
+        "3": "search",
+        "4": "for",
+        "5": "ServiceProvider",
+        "6": "."
       },
       "TD": {
         "ROOT": [
@@ -9148,10 +9513,6 @@
           [
             3,
             1
-          ],
-          [
-            6,
-            5
           ]
         ],
         "aux": [
@@ -9160,28 +9521,22 @@
             2
           ]
         ],
-        "det": [
+        "case": [
           [
             5,
             4
           ]
         ],
-        "dep": [
+        "obl:for": [
           [
             3,
-            6
-          ]
-        ],
-        "obj": [
-          [
-            6,
-            7
+            5
           ]
         ],
         "punct": [
           [
             3,
-            8
+            6
           ]
         ]
       },
@@ -9190,14 +9545,6 @@
           [
             1,
             1
-          ],
-          [
-            5,
-            5
-          ],
-          [
-            7,
-            7
           ]
         ],
         "NP": [
@@ -9206,16 +9553,8 @@
             1
           ],
           [
-            4,
+            5,
             5
-          ],
-          [
-            4,
-            7
-          ],
-          [
-            7,
-            7
           ]
         ],
         "MD": [
@@ -9230,48 +9569,50 @@
             3
           ]
         ],
-        "DT": [
+        "IN": [
           [
             4,
             4
           ]
         ],
-        "VBN": [
+        "NNP": [
           [
-            6,
-            6
+            5,
+            5
+          ]
+        ],
+        "PP": [
+          [
+            4,
+            5
           ]
         ],
         "VP": [
           [
             2,
-            7
+            5
           ],
           [
             3,
-            7
-          ],
-          [
-            6,
-            7
+            5
           ]
         ],
         ".": [
           [
-            8,
-            8
+            6,
+            6
           ]
         ],
         "S": [
           [
             1,
-            8
+            6
           ]
         ],
         "ROOT": [
           [
             1,
-            8
+            6
           ]
         ]
       },
@@ -9294,7 +9635,7 @@
         "7": "about",
         "8": "I",
         "9": "by",
-        "10": "other",
+        "10": "Other",
         "11": "."
       },
       "TD": {
@@ -9508,7 +9849,7 @@
         "7": "about",
         "8": "I",
         "9": "by",
-        "10": "other",
+        "10": "Other",
         "11": "."
       },
       "TD": {
@@ -9713,7 +10054,7 @@
         "B": 10
       },
       "Index": {
-        "1": "user",
+        "1": "User",
         "2": "have",
         "3": "at",
         "4": "least",
@@ -9722,7 +10063,7 @@
         "7": "that",
         "8": "a",
         "9": "non-registered",
-        "10": "user",
+        "10": "User",
         "11": "have",
         "12": "."
       },
@@ -9942,11 +10283,11 @@
         "6": "of",
         "7": "the",
         "8": "same",
-        "9": "permission",
+        "9": "Permission",
         "10": "as",
         "11": "a",
         "12": "register",
-        "13": "user",
+        "13": "User",
         "14": "."
       },
       "TD": {

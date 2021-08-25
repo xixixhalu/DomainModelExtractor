@@ -1,14 +1,14 @@
 @startuml
 hide circle
 class User<actor> {
-	order
-	recipelist
-	orderHistory
+	recipe
+	coffee
 	coffeeApp
 	coffeeSelection
-	recipe
+	orderHistory
+	order
 	coffeeRecipe
-	coffee
+	recipeList
 	username
 }
 class Admin<actor> {
@@ -22,108 +22,128 @@ class History {
 class Supplier {
 	receive()
 }
-class Update {
-}
 class User {
-	customize()
-	change()
-	see()
-	share()
+	update()
+	view()
+	vend()
 	identify()
-	hold()
+	see()
 	earn()
 	customise()
-	vend()
-	like()
-	want()
-	produce()
-	replace()
-	delete()
-	send()
-	update()
-	exist()
-	add()
-	browse()
-	view()
-	save()
-	log_in()
+	choose()
 	check()
-}
-class Recipe {
-	contain()
-}
-class Maintainer {
-	update()
-	track()
+	log()
+	delete()
+	save()
+	give()
+	send()
+	share()
+	replace()
+	add()
+	exist()
+	want()
+	browse()
+	customize()
+	change()
+	like()
+	produce()
 }
 class Order {
 }
-class Coffee {
+class Color {
+}
+class DefaultPaymentMethod {
+}
+class Recipe {
+	hold()
+	contain()
+	store()
+}
+class Maintainer {
+	track()
+	update()
+}
+class Kiosk {
+}
+class Cup {
+}
+class Allergen {
+}
+class Update {
 }
 class Location {
 }
-class Color {
+class BaseRecipe {
 }
-class MediaAccount {
+class Picture {
 }
-class ApplePay {
-	purchase()
+class Phone {
 }
-class Kiosk {
+class App {
+}
+class NutritionDetail {
 }
 class Paypal {
 	purchase()
 }
-class Cup {
+class Coffee {
 }
-class Reward {
-}
-class Allergen {
+class WaitTime {
 }
 class Admin {
 	have()
 }
 class Portal {
 }
-class Picture {
+class ApplePay {
+	purchase()
 }
-class Phone {
+class Reward {
 }
-class DefaultPaymentMethod {
+class MediaAccount {
 }
 class Theme {
 }
-class NutritionDetail {
+class Someone {
 }
-class Baserecipe {
+class Username {
 }
-User o-- Recipe : view
-User o-- Order : replace
-User o-- Order : send
-User o-- Coffee : customise
-User --> History : view
-Order o-- History
-User o-- Recipe : produce
-Maintainer --> Location : update
-Admin --> Portal : have
-User --> Color : customize
-User --> Picture : save
-User --> MediaAccount : log_in
-ApplePay --> Coffee : purchase
-User --> Phone : save
-User --> DefaultPaymentMethod : add
-User o-- Recipe : delete
-Maintainer --> Kiosk : track
-Paypal --> Coffee : purchase
-User o-- Recipe : want
-User --> Theme : customize
-User --> Cup : send
-User --> NutritionDetail : see
-User o-- Recipe : share
-User --> Reward : earn
-User --> Baserecipe : customize
-Recipe --> Allergen : contain
+class Password {
+}
+User --> MediaAccount : exist
 Coffee o-- Recipe
+User --> DefaultPaymentMethod : add
+User o-- Order : send
+User --> Color : customize
+Maintainer --> Kiosk : track
+User --> Theme : customize
+User o-- Recipe : share
+User --> NutritionDetail : see
+Order o-- History
+User o-- Recipe : want
+Cup --> Someone : to
+User o-- Recipe : produce
+User --> Cup : send
+User o-- Recipe : delete
+User --> Username : supported_by
+Recipe --> Allergen : contain
+Paypal --> Coffee : purchase
+User --> Password : supported_by
+User --> History : view
+User --> WaitTime : give
+User o-- Order : replace
 Supplier --> Update : receive
+Maintainer --> Location : update
+User o-- Recipe : choose
+User --> App : log
+Admin --> Portal : have
+ApplePay --> Coffee : purchase
+User --> BaseRecipe : customize
+User o-- Coffee : customise
+User --> Picture : save
+User --> DefaultPaymentMethod : save
+User --> Phone : save
+User --> Reward : earn
+User o-- Recipe : view
 
 @enduml

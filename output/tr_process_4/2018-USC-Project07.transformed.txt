@@ -50,18 +50,35 @@
       "attributes": []
     }
   },
-  "relation_list": [],
-  "behavior_list": [
+  "relation_list": [
     {
-      "actor": "User",
-      "action": "erase",
-      "target": "Progress",
+      "source": "ScreenSpace",
+      "dest": "AccodomateAdvertisement",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
       "para": []
     },
     {
-      "actor": "User",
-      "action": "download",
-      "target": "",
+      "source": "Attention",
+      "dest": "App",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    }
+  ],
+  "behavior_list": [
+    {
+      "actor": "Maintainer",
+      "action": "have",
+      "target": "Documentation",
       "para": []
     },
     {
@@ -72,14 +89,44 @@
     },
     {
       "actor": "User",
-      "action": "change",
+      "action": "start",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "track",
-      "target": "Progress",
+      "action": "check",
+      "target": "Score",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "change",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "design",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "practice",
+      "target": "Math",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "check",
+      "target": "GoogleLeaderboard",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "keep",
+      "target": "",
       "para": []
     },
     {
@@ -89,15 +136,33 @@
       "para": []
     },
     {
+      "actor": "Developer",
+      "action": "design",
+      "target": "About_levelPage",
+      "para": []
+    },
+    {
       "actor": "User",
-      "action": "change",
-      "target": "ColorTheme",
+      "action": "track",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "keep",
+      "target": "Progress",
       "para": []
     },
     {
       "actor": "Client",
-      "action": "publish",
-      "target": "Iosversion",
+      "action": "have",
+      "target": "ScreenSpace",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "erase",
+      "target": "",
       "para": []
     },
     {
@@ -108,14 +173,32 @@
     },
     {
       "actor": "User",
+      "action": "erase",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "User",
       "action": "share",
-      "target": "Score",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "publish",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "purchase",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "Way",
+      "action": "draw",
+      "target": "Attention",
       "para": []
     },
     {
@@ -132,14 +215,8 @@
     },
     {
       "actor": "User",
-      "action": "practice",
-      "target": "Math",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "have",
-      "target": "ScreenSpace",
+      "action": "sign",
+      "target": "",
       "para": []
     },
     {
@@ -149,15 +226,9 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "keep",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "publish",
-      "target": "",
+      "actor": "Version",
+      "action": "remove",
+      "target": "Advertisement",
       "para": []
     },
     {
@@ -167,15 +238,57 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "check",
-      "target": "Score",
+      "actor": "App",
+      "action": "use",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "have",
       "target": "Ability",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "publish",
+      "target": "IOSVersion",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "track",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "publish",
+      "target": "App",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "download",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "track",
+      "target": "Progress",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "change",
+      "target": "ColorTheme",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "design",
+      "target": "Page",
       "para": []
     },
     {
@@ -186,80 +299,8 @@
     },
     {
       "actor": "User",
-      "action": "start",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Way",
-      "action": "draw",
-      "target": "Attention",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "share",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "design",
-      "target": "Description",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "sign",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "publish",
-      "target": "App",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "have",
-      "target": "Documentation",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "erase",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "keep",
-      "target": "Progress",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "check",
-      "target": "GoogleLeaderboard",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "design",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "track",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "track",
-      "target": "App",
+      "target": "Score",
       "para": []
     }
   ]

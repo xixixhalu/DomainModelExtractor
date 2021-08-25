@@ -1,12 +1,12 @@
 @startuml
 hide circle
 class LanguageLearner<actor> {
-	searchResult
-	teacher
 	match
-	assignment
+	searchResult
+	language
+	teacher
 	languageAssignment
-	languageLearner
+	assignment
 }
 class English<actor> {
 	goal
@@ -17,8 +17,8 @@ class LanguageTeacher<actor> {
 	student
 }
 class WebsiteOwner<actor> {
-	websiteOwner
-	userbase
+	website
+	userBase
 }
 class User<actor> {
 	chatLog
@@ -28,13 +28,15 @@ class User<actor> {
 class Practitioner<actor> {
 }
 class Student<actor> {
-	privacyPolicy
 	info
+	privacyPolicy
 	languageLevel
 }
+class WebsiteProfessor<actor> {
+}
 class WebsiteUser<actor> {
-	languageSkill
 	account
+	languageSkill
 }
 class UniversityStudent<actor> {
 }
@@ -52,281 +54,300 @@ class Website {
 }
 class Blog {
 }
-class Owner {
-	send()
-	generate()
-	assess()
-	inform()
-	suggest()
-	intercept()
-	meet()
-	monitor()
-	view()
-	increase()
-	offer()
-	maintain()
-	add()
-	post()
-	make()
-	promote()
-}
 class Activity {
 }
-class Language {
-}
-class Learner {
-	finish()
-	know()
-	talk()
-	meet()
-	prioritize()
-	search()
-	do()
-	learn()
-	find()
-	order()
-	practice()
-	get()
+class Owner {
+	maintain()
+	generate()
+	view()
+	monitor()
+	add()
+	suggest()
+	offer()
+	intercept()
+	send()
+	post()
+	inform()
 	make()
-	create()
+	assess()
+}
+class Professor {
+	offer()
+}
+class Skill {
 }
 class Level {
 	help()
 }
-class Skill {
+class Proficiency {
 }
 class Learners {
 	have()
 }
-class Proficiency {
-}
-class LanguageLearner {
-	learn()
-	know()
-	make()
-}
-class User {
+class Learner {
+	search()
+	find()
+	have()
 	get()
-	pull()
-	operate()
-	avoid()
-	receive()
-	forget()
-	retrieve()
-	offer()
-	reset()
-	report()
-	add()
-	practice()
-	interact()
-	review()
-	subscribe()
-}
-class Student {
-	modify()
-	avoid()
-	register()
-	adjust()
-}
-class Account {
-}
-class Usage {
-}
-class Degree {
-}
-class Culture {
-}
-class Idea {
-}
-class SearchResult {
-	user()
-}
-class Criterion {
-}
-class Advertisement {
-}
-class Service {
-}
-class Teacher {
-	give()
-}
-class Password {
-}
-class Behavior {
-}
-class World {
-}
-class Email {
-}
-class ChatLog {
-}
-class InteractionTask {
-}
-class MarketingPlan {
-}
-class Experience {
-}
-class Harassment {
-}
-class English {
+	meet()
+	finish()
+	prioritize()
+	create()
+	order()
 	learn()
-	talk()
-	achieve()
+	practice()
+	do()
+	know()
 }
-class Goal {
+class Statistics {
 }
-class Practitioner {
-	increase()
-	help()
-}
-class Friend {
-}
-class Assignment {
-}
-class Country {
+class Language {
 }
 class Touch {
 }
-class Friendship {
+class Topic {
+	talk()
 }
-class Action {
+class User {
+	pull()
+	report()
+	receive()
+	avoid()
+	reset()
+	get()
+	interact()
 	operate()
+	retrieve()
+	forget()
+	subscribe()
+	add()
+	offer()
+	practice()
+	lock()
+	review()
 }
-class Userstatistics {
+class Experience {
 }
-class NotificationEmail {
+class Service {
+}
+class Change {
+	occur()
+}
+class MarketingPlan {
+	increase()
+}
+class Number {
+}
+class Match {
+}
+class Degree {
+}
+class English {
+	talk()
+	learn()
+	achieve()
+}
+class Goal {
 }
 class UniversityStudent {
 	post()
 }
 class Announcement {
 }
-class Alert {
-}
-class Topic {
-}
-class Question {
-}
-class Chatting {
-}
-class Server {
-}
-class Suggestion {
+class Research {
 }
 class Money {
 }
-class Change {
-	occur()
+class Student {
+	avoid()
+	modify()
+	adjust()
+	increase()
+	register()
 }
 class PrivacyPolicy {
 }
-class Research {
+class Account {
+}
+class Harassment {
+}
+class NotificationEmail {
+}
+class SearchResult {
+	use()
+}
+class Criterion {
+}
+class Culture {
+}
+class Email {
+}
+class World {
+}
+class Speaker {
+	help()
+	know()
+}
+class Chatting {
+}
+class Practitioner {
+	help()
+}
+class Server {
+}
+class Assignment {
+}
+class Teacher {
+	give()
+	talk()
+}
+class Suggestion {
+}
+class Advertisement {
+}
+class Password {
 }
 class LearningPlan {
 }
-class Match {
+class Friendship {
+}
+class Usage {
+}
+class InteractionTask {
+}
+class Matter {
 }
 class Tutor {
 	evaluate()
 }
-class LanguageTeacher {
+class Alert {
 }
-class WebsiteUser {
+class ChatLog {
 }
-class WebsiteOwner {
+class Behavior {
+}
+class Idea {
+}
+class Action {
+	operate()
+}
+class Country {
+}
+class Question {
+}
+class WebsiteProfessor {
+}
+class Member {
 }
 class SpeakerLanguageLearner {
 }
-class Help {
+class WebsiteUser {
 }
-class Speaker {
+class LanguageTeacher {
+}
+class WebsiteOwner {
+}
+class LanguageLearner {
 }
 class Other {
 }
+class Help {
+}
+class FriendList {
+}
 Language o-- Skill
+Assignment --> Student : to
 Learner --> Assignment : finish
-Owner --> Blog : post
-Learner --> Country : find
-Owner --> Idea : add
-Owner --> User : inform
-Learner --> Touch : get
-LanguageLearner --> Learner : learn
-Student --> Owner : register
-Learner --> Friendship : create
-SearchResult --> Criterion : user
-Learner --> Assignment : do
-User --> Advertisement : avoid
-Owner --> Userstatistics : view
-User --> Service : subscribe
-Practitioner --> Proficiency : increase
-User --> Skill : offer
-User --> NotificationEmail : receive
-User o-- Password : reset
-User o-- Password : forget
-UniversityStudent --> Announcement : post
-Owner --> Behavior : intercept
-Owner --> User : increase
-Owner --> Activity : monitor
-LanguageLearner --> World : know
-Owner --> Alert : post
-Owner --> Email : send
-User --> Behavior : report
-User o-- ChatLog : retrieve
-Learner --> Topic : find
-UniversityStudent --> Question : post
-Owner --> InteractionTask : suggest
-Student --> Chatting : adjust
-Owner --> MarketingPlan : generate
-Learner --> Friend : make
-User --> Learner : practice
-Learner --> LanguageLearner : find
-User --> Experience : get
-Owner --> Server : maintain
-User --> Harassment : avoid
-User --> User : add
-Student --> Account : register
-Owner --> Suggestion : add
-English o-- Goal : achieve
-Student --> Usage : avoid
-English --> Assignment : talk
-Owner --> Money : make
-Learners --> Degree : have
-Practitioner --> Student : help
-English --> English : learn
-Student o-- PrivacyPolicy : modify
-User --> User : review
-LanguageLearner --> Friend : make
-Learner --> Culture : know
-Owner --> Owner : promote
-User --> People : pull
-Learner --> SearchResult : order
-Owner --> Research : add
-Student --> LearningPlan : adjust
-Learner --> Match : prioritize
-Learner --> Learners : find
-Learner --> Learner : practice
-Tutor --> Level : evaluate
-Learner --> LanguageLearner : supported_by
-LanguageTeacher <|-- Teacher
-English --> LanguageLearner : supported_by
-Language o-- Assignment
-Website o-- Owner
-Website o-- User
-LanguageLearner --> Learner : supported_by
-Website o-- Activity
-WebsiteUser <|-- User
-LanguageLearner <|-- Learner
-WebsiteOwner <|-- Owner
-SpeakerLanguageLearner <|-- LanguageLearner
-Language o-- Teacher
-Language o-- Learner
-Language o-- Level
-Language o-- Proficiency
 Language o-- Learners
-Learner --> Teacher : supported_by
-Learner --> Help : supported_by
-Speaker o-- Learner
-Website o-- Blog
+Teacher --> Assignment : talk
+Website o-- Professor
+MarketingPlan --> Number : increase
 Learner --> Other : supported_by
+Owner --> Idea : add
+Learner --> Match : prioritize
+English --> Assignment : talk
+Speaker o-- Learner
+Owner --> User : inform
+User o-- Number
+Learner --> Degree : have
+User o-- Password : forget
+User o-- Statistics
+User --> Language : practice
+Question --> Member : to
+Owner --> Behavior : intercept
+Website o-- User
+English o-- Goal : achieve
+Language o-- Teacher
+Learner --> Help : supported_by
+Learner --> Degree : search
+Learner --> Country : find
+User --> Service : subscribe
+Learner --> Teacher : supported_by
+User --> FriendList : to
+UniversityStudent --> Announcement : post
+User --> Skill : offer
+UniversityStudent --> Question : post
+Owner --> Research : add
+Learners --> Degree : have
+Student --> Proficiency : increase
+Language o-- Learner
+WebsiteProfessor <|-- Professor
+Owner --> Money : make
+Email --> User : to
+English --> Learner : supported_by
+Student o-- PrivacyPolicy : modify
+Announcement --> Member : to
+Student --> Account : register
+Website o-- Activity
+Learner --> Learner : supported_by
+User --> Harassment : avoid
+Language o-- Assignment
+Language o-- Proficiency
+User --> NotificationEmail : receive
+SpeakerLanguageLearner <|-- Learner
+WebsiteUser <|-- User
+SearchResult --> Criterion : use
+LanguageTeacher <|-- Teacher
+Learner --> Culture : know
+Language o-- Level
+Owner --> Email : send
+Website o-- Blog
+WebsiteOwner <|-- Owner
+Learner --> World : know
+Owner --> Statistics : view
+Student --> Chatting : adjust
+LanguageLearner <|-- Learner
+User --> User : add
+Website o-- Owner
+English --> English : learn
+Learner --> Language : practice
+Practitioner --> Student : help
+Owner --> Server : maintain
+Owner --> Blog : post
+Learner --> Assignment : do
+Teacher --> Assignment : give
+Learner --> Learners : find
+Learner --> Learners : meet
+Owner --> Suggestion : add
+User --> Advertisement : avoid
+User o-- Password : reset
+Owner --> MarketingPlan : generate
+Student --> LearningPlan : adjust
+Learner --> Friendship : create
+Student --> Usage : avoid
+Owner --> InteractionTask : suggest
+User --> User : review
+User --> People : pull
+Learner --> Topic : find
+Owner --> Activity : monitor
+Learner --> Language : learn
+Owner --> Matter : suggest
+Learner --> Touch : get
+User --> Behavior : report
+Tutor --> Level : evaluate
+Learner --> SearchResult : order
+User --> Experience : get
+Owner --> Alert : post
+User o-- ChatLog : retrieve
 
 @enduml

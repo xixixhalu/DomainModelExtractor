@@ -1,4 +1,4 @@
 The System shall detect and show LogicError in an easy - to - read Way .
 The System shall be a native Window 7 and above Application .
 The System shall generate Instruction for IRobot in C which is then later compiled for Deployment on the Microcontroller using the Api of IRobot .
-The System shall enforce a ToleranceLimit of + , - 2 to 3 % on SensorProgrammability .
+The System shall enforce a ToleranceLimit of ± 2 to 3 % on SensorProgrammability .

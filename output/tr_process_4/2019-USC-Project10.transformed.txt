@@ -22,15 +22,36 @@
       ],
       "attributes": []
     },
-    "Size": {
-      "name": "Size",
+    "Title": {
+      "name": "Title",
       "type": [
         "shared"
       ],
       "attributes": []
     },
-    "Title": {
-      "name": "Title",
+    "Tv": {
+      "name": "Tv",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Show": {
+      "name": "Show",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Buzz": {
+      "name": "Buzz",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Size": {
+      "name": "Size",
       "type": [
         "shared"
       ],
@@ -38,6 +59,39 @@
     }
   },
   "relation_list": [
+    {
+      "source": "Api",
+      "dest": "FrontendSystem",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "IMDB",
+      "dest": "Respect",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "IMDB",
+      "dest": "Title",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
     {
       "source": "Media",
       "dest": "Data",
@@ -50,8 +104,8 @@
       "para": []
     },
     {
-      "source": "Movie",
-      "dest": "Title",
+      "source": "Tv",
+      "dest": "Movie",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -72,10 +126,43 @@
       "para": []
     },
     {
-      "source": "IMDB",
-      "dest": "Respect",
+      "source": "Movie",
+      "dest": "Title",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Tv",
+      "dest": "Show",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Data",
+      "dest": "Title",
       "type": "association",
-      "msg": "supported_by",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Media",
+      "dest": "Buzz",
+      "type": "aggregation",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -85,68 +172,44 @@
   ],
   "behavior_list": [
     {
+      "actor": "TwitterData",
+      "action": "recommend",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "filter",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "VideoUser",
-      "action": "user",
+      "action": "use",
       "target": "Media",
       "para": []
     },
     {
       "actor": "Developer",
-      "action": "display",
-      "target": "Result",
+      "action": "access",
+      "target": "Data",
       "para": []
     },
     {
-      "actor": "VideoUser",
-      "action": "user",
-      "target": "TwitterData",
-      "para": []
-    },
-    {
-      "actor": "Movie",
-      "action": "trend",
-      "target": "Media",
-      "para": []
-    },
-    {
-      "actor": "Data",
-      "action": "pull",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "VideoUser",
-      "action": "see",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "BackendSystem",
-      "action": "provide",
-      "target": "Api",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "map",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "script",
-      "target": "Hashtag",
-      "para": []
-    },
-    {
-      "actor": "User",
+      "actor": "Title",
       "action": "get",
       "target": "",
       "para": []
     },
     {
-      "actor": "Tv",
-      "action": "show",
+      "actor": "Info",
+      "action": "pull",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Data",
+      "action": "pull",
       "target": "",
       "para": []
     },
@@ -158,14 +221,8 @@
     },
     {
       "actor": "Developer",
-      "action": "access",
-      "target": "Data",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "input",
-      "target": "Title",
+      "action": "link",
+      "target": "",
       "para": []
     },
     {
@@ -175,15 +232,33 @@
       "para": []
     },
     {
-      "actor": "Info",
-      "action": "pull",
+      "actor": "Buzz",
+      "action": "rank",
+      "target": "Title",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "map",
       "target": "",
       "para": []
     },
     {
       "actor": "VideoUser",
-      "action": "recommend",
-      "target": "",
+      "action": "use",
+      "target": "TwitterData",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "input",
+      "target": "Title",
+      "para": []
+    },
+    {
+      "actor": "Show",
+      "action": "trend",
+      "target": "Media",
       "para": []
     },
     {
@@ -193,8 +268,20 @@
       "para": []
     },
     {
-      "actor": "Developer",
-      "action": "filter",
+      "actor": "Media",
+      "action": "recommend",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "BackendSystem",
+      "action": "provide",
+      "target": "Api",
+      "para": []
+    },
+    {
+      "actor": "VideoUser",
+      "action": "see",
       "target": "",
       "para": []
     },
@@ -202,6 +289,24 @@
       "actor": "Timestamp",
       "action": "reduce",
       "target": "Size",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "script",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Movie",
+      "action": "trend",
+      "target": "Media",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "display",
+      "target": "Result",
       "para": []
     }
   ]

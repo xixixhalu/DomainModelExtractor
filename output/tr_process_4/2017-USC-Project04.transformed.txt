@@ -8,15 +8,11 @@
       ],
       "attributes": [
         {
+          "name": "friend",
+          "type": "default"
+        },
+        {
           "name": "challenge",
-          "type": "default"
-        },
-        {
-          "name": "rank",
-          "type": "default"
-        },
-        {
-          "name": "photo",
           "type": "default"
         },
         {
@@ -24,11 +20,15 @@
           "type": "default"
         },
         {
-          "name": "friend",
+          "name": "photo",
           "type": "default"
         },
         {
           "name": "challengeTask",
+          "type": "default"
+        },
+        {
+          "name": "rank",
           "type": "default"
         }
       ]
@@ -52,7 +52,7 @@
       ],
       "attributes": [
         {
-          "name": "opponentPost",
+          "name": "challengePost",
           "type": "default"
         },
         {
@@ -60,13 +60,13 @@
           "type": "default"
         },
         {
-          "name": "challengePost",
+          "name": "opponentPost",
           "type": "default"
         }
       ]
     },
-    "Task": {
-      "name": "Task",
+    "Request": {
+      "name": "Request",
       "type": [
         "shared"
       ],
@@ -79,8 +79,8 @@
       ],
       "attributes": []
     },
-    "Request": {
-      "name": "Request",
+    "Task": {
+      "name": "Task",
       "type": [
         "shared"
       ],
@@ -90,7 +90,40 @@
   "relation_list": [
     {
       "source": "Challenge",
+      "dest": "Request",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Challenge",
       "dest": "Notification",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Challenge",
+      "dest": "Post",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Challenge",
+      "dest": "Task",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -122,32 +155,10 @@
       "para": []
     },
     {
-      "source": "Challenge",
-      "dest": "Request",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Challenge",
-      "dest": "Post",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Challenge",
-      "dest": "Task",
-      "type": "aggregation",
-      "msg": "",
+      "source": "Request",
+      "dest": "Friend",
+      "type": "association",
+      "msg": "to",
       "multiplicity": [
         "1",
         "1"
@@ -157,99 +168,21 @@
   ],
   "behavior_list": [
     {
-      "actor": "User",
-      "action": "user",
-      "target": "Iphonemodel",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "check",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "compete",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "Photo",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Reward",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "give",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "FinishTime",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "buy",
-      "target": "Sth",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "send",
-      "target": "Request",
-      "para": []
-    },
-    {
-      "actor": "Chance",
-      "action": "click",
-      "target": "Button",
-      "para": []
-    },
-    {
       "actor": "Competitor",
-      "action": "post",
-      "target": "Post",
+      "action": "verify",
+      "target": "OpponentPost",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "see",
-      "target": "Challenge",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "send",
-      "target": "Challenge",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "buy",
+      "actor": "Application",
+      "action": "improve",
       "target": "",
       "para": []
     },
     {
-      "actor": "Student",
-      "action": "prepare",
+      "actor": "Challenge",
+      "action": "verify",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "pick",
-      "target": "Competitor",
       "para": []
     },
     {
@@ -259,45 +192,21 @@
       "para": []
     },
     {
-      "actor": "Time",
-      "action": "remain",
+      "actor": "User",
+      "action": "know",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "give",
-      "target": "Suggestion",
+      "action": "check",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "play",
-      "target": "Game",
-      "para": []
-    },
-    {
-      "actor": "Competitor",
-      "action": "view",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "verify",
-      "target": "Challenge",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Detail",
+      "action": "use",
+      "target": "IPhoneModel",
       "para": []
     },
     {
@@ -307,8 +216,32 @@
       "para": []
     },
     {
+      "actor": "Competitor",
+      "action": "verify",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "User",
-      "action": "invite",
+      "action": "do",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Game",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "pick",
+      "target": "Competitor",
+      "para": []
+    },
+    {
+      "actor": "Challenger",
+      "action": "challenge",
       "target": "",
       "para": []
     },
@@ -320,44 +253,32 @@
     },
     {
       "actor": "User",
+      "action": "get",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "Score",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "Friend",
       "action": "participate",
       "target": "Challenge",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "see",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "Game",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Application",
-      "action": "improve",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "check",
-      "target": "Challenge",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "finish",
-      "target": "Challenge",
+      "actor": "Student",
+      "action": "compete",
+      "target": "Competitor",
       "para": []
     },
     {
@@ -368,7 +289,43 @@
     },
     {
       "actor": "User",
+      "action": "verify",
+      "target": "Challenge",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "send",
+      "target": "Challenge",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "pick",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "give",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "IPhoneModel",
       "action": "play",
+      "target": "Game",
+      "para": []
+    },
+    {
+      "actor": "Chance",
+      "action": "click",
+      "target": "Button",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "invite",
       "target": "",
       "para": []
     },
@@ -380,14 +337,32 @@
     },
     {
       "actor": "User",
-      "action": "know",
-      "target": "",
+      "action": "get",
+      "target": "Detail",
       "para": []
     },
     {
-      "actor": "Competitor",
-      "action": "verify",
-      "target": "",
+      "actor": "User",
+      "action": "see",
+      "target": "FinishTime",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Challenge",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "play",
+      "target": "Game",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Reward",
       "para": []
     },
     {
@@ -397,33 +372,15 @@
       "para": []
     },
     {
-      "actor": "Competitor",
-      "action": "verify",
-      "target": "OpponentPost",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "see",
-      "target": "Day",
+      "actor": "User",
+      "action": "add",
+      "target": "Photo",
       "para": []
     },
     {
       "actor": "User",
-      "action": "receive",
-      "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "user",
-      "target": "Score",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "invite",
-      "target": "Friend",
+      "action": "give",
+      "target": "Suggestion",
       "para": []
     },
     {
@@ -434,20 +391,68 @@
     },
     {
       "actor": "User",
-      "action": "do",
+      "action": "send",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "invite",
+      "target": "Friend",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "finish",
+      "target": "Challenge",
+      "para": []
+    },
+    {
+      "actor": "Competitor",
+      "action": "view",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "prepare",
       "target": "",
       "para": []
     },
     {
-      "actor": "Challenger",
-      "action": "challenge",
+      "actor": "Competitor",
+      "action": "post",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "see",
+      "target": "Day",
+      "para": []
+    },
+    {
+      "actor": "Time",
+      "action": "remain",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "participate",
-      "target": "",
+      "action": "check",
+      "target": "Challenge",
+      "para": []
+    },
+    {
+      "actor": "Score",
+      "action": "buy",
+      "target": "Sth",
       "para": []
     }
   ]

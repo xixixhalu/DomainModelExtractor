@@ -1,143 +1,147 @@
 @startuml
 hide circle
 class User<actor> {
-	photo
-	rank
 	friend
-	challengeTask
+	rank
 	challenge
 	challengeScore
+	photo
+	challengeTask
 }
 class Student<actor> {
 	challengerList
 }
 class Competitor<actor> {
-	post
-	challengePost
 	opponentPost
-}
-class Task {
-}
-class Score {
+	challengePost
+	post
 }
 class Request {
 }
+class Score {
+	buy()
+}
+class Task {
+}
+class Competitor {
+	view()
+	verify()
+	post()
+}
+class OpponentPost {
+}
+class Application {
+	improve()
+}
+class Challenge {
+	verify()
+	have()
+}
 class User {
-	know()
-	receive()
 	do()
-	pick()
-	finish()
-	submit()
+	go()
+	verify()
 	get()
-	play()
 	check()
 	invite()
-	send()
-	user()
-	have()
-	verify()
-	give()
+	use()
+	know()
+	receive()
 	see()
+	send()
+	play()
+	finish()
+	submit()
+	give()
 	add()
-	buy()
-	participate()
-	go()
+	pick()
 }
-class Iphonemodel {
+class Rank {
+}
+class IPhoneModel {
+	play()
 }
 class Student {
-	see()
-	prepare()
 	compete()
 	select()
+	see()
+	prepare()
 }
-class Photo {
+class Game {
 }
-class Reward {
+class Challenger {
+	challenge()
 }
-class FinishTime {
+class Idea {
 }
-class Sth {
+class Notification {
+}
+class Friend {
+	participate()
 }
 class Chance {
 	click()
 }
 class Button {
 }
-class Competitor {
-	post()
-	verify()
-	view()
+class Detail {
+}
+class FinishTime {
+}
+class Reward {
+}
+class Photo {
+}
+class Suggestion {
 }
 class Post {
 }
-class Challenge {
-	have()
-}
-class Rank {
+class Day {
 }
 class Time {
 	remain()
 }
-class Suggestion {
+class Sth {
 }
-class Game {
-}
-class Notification {
-}
-class Detail {
-}
-class Idea {
-}
-class Application {
-	improve()
-}
-class OpponentPost {
-}
-class Day {
-}
-class Friend {
-}
-class Challenger {
-	challenge()
-}
-User --> FinishTime : see
-User --> Score : user
-User o-- Friend : invite
-User --> Sth : buy
-User --> Notification : get
-User o-- Challenge : verify
-User --> Task : do
-Student o-- Challenge : see
-Challenge o-- Game
-User --> Request : send
-Challenge o-- Score
-User --> Detail : get
+User --> IPhoneModel : use
+Student --> Day : see
 Challenge o-- Request
-Chance --> Button : click
+User --> Detail : get
+User o-- Challenge : check
+Student o-- Challenge : see
+User --> Game : see
+User --> FinishTime : see
+User o-- Challenge : see
+Score --> Sth : buy
+User --> Game : play
+Challenge o-- Notification
+User --> Competitor : pick
+Student --> Competitor : select
 Challenge o-- Post
 Challenge o-- Task
 User --> Idea : submit
-User o-- Challenge : participate
-Competitor o-- Post : post
-User --> Game : see
-User o-- Challenge : see
-User o-- Challenge : send
-User o-- Challenge : check
-User --> Iphonemodel : user
-User o-- Challenge : finish
-Student --> Competitor : select
-User --> Competitor : pick
-User --> Notification : receive
-User o-- Rank : see
-Competitor o-- Post : view
-Competitor o-- OpponentPost : verify
-User o-- Photo : add
-User --> Suggestion : give
-Student --> Day : see
-User --> Game : play
 User --> Reward : get
-Challenge o-- Notification
+Challenge o-- Game
+User o-- Challenge : finish
+Competitor o-- Post : post
+Challenge o-- Score
+User --> Notification : get
+Request --> Friend : to
+User --> Notification : receive
+User o-- Photo : add
+User --> Score : use
+Competitor o-- OpponentPost : verify
+Friend --> Challenge : participate
+User --> Suggestion : give
+Student --> Competitor : compete
+User --> Task : do
+User o-- Challenge : verify
+User --> Request : send
+User o-- Challenge : send
+IPhoneModel --> Game : play
+User o-- Friend : invite
+Competitor o-- Post : view
+Chance --> Button : click
+User o-- Rank : see
 
 @enduml

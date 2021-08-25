@@ -2,73 +2,73 @@
 hide circle
 class TourCreator<actor> {
 	area
-	tourCreator
+	tour
 }
 class Owner<actor> {
 }
 class TourTaker<actor> {
 }
-class Tour {
-}
 class Taker {
 	search()
-	select()
+	click()
 	view()
 	choose()
-	click()
 	have()
+	select()
 }
 class ConductorWebsite {
 }
 class Creator {
-	view()
-	create()
 	upload()
-	use()
+	create()
+	view()
 	promote()
 	delete()
 }
-class Picture {
-}
 class Area {
-}
-class Stop {
-}
-class Access {
 }
 class Information {
 }
-class Value {
+class Stop {
 }
-class Video {
+class Picture {
+}
+class Tour {
+	use()
+}
+class Access {
 }
 class Owner {
 	authorize()
 	delete()
 }
+class Value {
+}
+class Video {
+}
 class TourTaker {
 }
 class TourCreator {
 }
-Creator --> Picture : upload
-Creator --> Creator : create
-Creator --> Creator : delete
-Creator --> Value : use
 Creator --> Area : promote
-Creator --> Video : upload
-Taker --> Stop : click
 Owner --> Creator : authorize
-Taker --> Creator : select
-Creator --> ConductorWebsite : create
-Creator --> Information : upload
 Taker --> Information : view
-Owner --> Creator : delete
+Taker --> Tour : select
+Taker --> Stop : click
 Tour o-- Creator
-TourTaker <|-- Taker
-Tour o-- Taker
-TourCreator <|-- Creator
+Creator --> ConductorWebsite : create
+Creator --> Picture : upload
+Creator --> Tour : delete
+Creator --> Information : upload
+Creator --> Tour : create
+Owner --> Tour : delete
+Tour --> Value : use
 Tour o-- ConductorWebsite
+Creator --> Video : upload
+TourTaker <|-- Taker
+TourCreator <|-- Creator
+Tour o-- Taker
+Taker --> Tour : search
 Taker --> Access : have
-Taker --> Creator : search
 
 @enduml

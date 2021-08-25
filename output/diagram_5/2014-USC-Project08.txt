@@ -7,52 +7,53 @@ class Case {
 class File {
 }
 class Manager {
-	run()
-	create()
 	manage()
-	monitor()
+	create()
 	save()
 	upload()
+	run()
+	monitor()
 }
 class Service {
 }
 class Time {
 	lose()
 }
-class Document {
+class Activity {
 }
 class Frequency {
 }
 class Account {
 }
-class Activity {
-}
-class MonitorCase {
-}
 class Youth {
 	access()
 	have()
 }
-class Access {
+class MonitorCase {
 }
 class ManagementService {
 }
+class Document {
+}
+class Access {
+}
 class CaseManager {
 }
-Time --> Activity : lose
-Youth o-- Service
-Manager --> Frequency : run
-Manager --> Service : monitor
-Manager --> MonitorCase : save
-Case o-- File
-CaseManager <|-- Manager
+Manager --> File : manage
 Manager --> Time : save
-Youth --> Access : have
+Youth o-- Service
 Manager --> ManagementService : create
 Manager --> Account : manage
-Case o-- Manager
-Manager --> File : manage
+Time --> Activity : lose
+CaseManager <|-- Manager
+Manager --> Activity : create
 Manager --> Document : upload
+Manager --> Service : monitor
+Youth --> Access : have
+Case o-- File
+Case o-- Manager
+Manager --> MonitorCase : save
+Manager --> Frequency : run
 Manager --> File : run
 
 @enduml

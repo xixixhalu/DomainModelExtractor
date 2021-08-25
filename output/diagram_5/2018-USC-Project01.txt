@@ -7,128 +7,128 @@ class Maintainer<actor> {
 class Developer<actor> {
 }
 class User<actor> {
-	accountinformation
+	information
 	area
 	friend
-	information
+	accountInformation
 }
 class Venue {
 	detail
 	be()
 }
-class Administrator {
-	see()
-	close()
-	cancel()
-	edit()
-	add()
-	block()
-	open()
-}
-class Information {
-}
 class User {
-	find()
-	leave()
-	unblock()
-	have()
-	delete()
+	call()
+	see()
+	create()
 	consent()
+	search()
+	import()
+	delete()
+	lose()
+	contact()
 	get()
 	confirm()
-	reject()
-	close()
-	lose()
-	receive()
-	introduce()
-	import()
-	contact()
-	see()
-	enter()
-	create()
+	have()
 	block()
-	call()
-	search()
+	leave()
+	enter()
+	unblock()
+	close()
+	find()
+	reject()
+	receive()
 }
-class Developer {
-	guarantee()
+class Message {
 }
-class Friend {
-}
-class Route {
-}
-class Maintainer {
-	make()
-	guarantee()
-	see()
-	withdraw()
-}
-class Analytic {
-}
-class Useraccount {
-}
-class LocationInformation {
+class Info {
 }
 class Question {
 }
-class Profession {
+class Maintainer {
+	make()
+	see()
+	withdraw()
+	guarantee()
 }
-class Message {
+class Administrator {
+	see()
+	edit()
+	add()
+	block()
+	cancel()
+	close()
+	open()
+}
+class LocationInformation {
+}
+class Friend {
 }
 class Account {
 	follow()
 }
-class Accountinformation {
+class Policy {
 }
-class Info {
+class Event {
 }
 class Option {
 }
+class Information {
+}
 class TutorialEntrance {
+	introduce()
 }
-class Recommendation {
+class Detail {
 }
-class Policy {
+class Developer {
+	guarantee()
+}
+class Analytic {
 }
 class GpsRecording {
 	let()
 }
-class Event {
+class Route {
 }
-class Detail {
+class Profession {
 }
-Maintainer --> Account : withdraw
-Maintainer --> User : guarantee
-Maintainer --> Maintainer : guarantee
-Developer --> User : guarantee
-User o-- Information : see
-User --> Route : see
-Maintainer --> Analytic : see
-User --> Option : have
-Administrator --> Detail : edit
-User --> Useraccount : create
-User --> TutorialEntrance : see
-User o-- Friend : delete
+class Recommendation {
+}
 User --> Message : block
-User --> LocationInformation : get
+User --> Message : lose
+User --> Venue : see
+User --> TutorialEntrance : see
+User o-- Info : receive
+Maintainer --> User : guarantee
+User --> User : contact
 User --> Recommendation : receive
+Administrator --> Detail : edit
+Route --> Friend : to
 User --> Question : see
+Account o-- Information
+User --> LocationInformation : get
+Developer --> User : guarantee
+Maintainer --> Account : withdraw
+User o-- Friend : delete
 User --> Venue : leave
-Administrator --> Information : see
-User --> Profession : see
+Maintainer --> Analytic : see
+User --> Venue : enter
+User --> User : confirm
 Account --> Policy : follow
 User --> User : see
-User --> User : confirm
-User --> Venue : see
-User --> Message : lose
-User --> Venue : enter
-Administrator --> Account : block
+Administrator --> Information : see
+User --> Message : call
 Administrator --> Event : cancel
-User o-- Info : receive
-User o-- Information : import
 Administrator --> Venue : close
 Administrator --> Event : add
-Administrator --> Accountinformation : see
-User --> User : contact
+User o-- Account : create
+User o-- Information : import
+User o-- Account
+User --> Option : have
+Maintainer --> Maintainer : guarantee
+User --> Route : see
+User --> Message : unblock
+Administrator --> Account : block
+User o-- Information : see
+User --> Profession : see
 
 @enduml

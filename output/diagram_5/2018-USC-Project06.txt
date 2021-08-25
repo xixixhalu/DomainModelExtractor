@@ -2,17 +2,18 @@
 hide circle
 class User<actor> {
 	member
-	account
 	profile
-	profilepage
+	profilePage
+	account
 }
 class Patient<actor> {
-	supportgroup
-	supportNetwork
-	profile
+	supportGroup
 	event
-	calendar
 	wall
+	calendar
+	profile
+	supportNetwork
+	invitation
 }
 class Support<actor> {
 	patient
@@ -26,152 +27,162 @@ class Member<actor> {
 }
 class Admin<actor> {
 }
-class Money {
-	love()
-}
-class Member {
-	publish()
-	get()
-	decide()
-	notify()
-	ask()
-	help()
-	send()
-	check()
-	receive()
-}
-class Network {
-	have()
-}
-class Family {
-	send()
-	check()
-	love()
-}
-class Notification {
-}
-class Supportgroup {
+class User {
 	access()
+	delete()
+	suspend()
+	report()
+	update()
+	block()
+	manage()
 }
-class Kind {
+class Message {
 }
 class Patient {
-	attend()
-	get()
 	add()
-	pull()
-	decide()
-	ask()
+	get()
 	have()
-	sign()
-	post()
-	share()
 	send()
-	sign_up()
+	share()
+	decide()
+	provide()
+	allow()
+	pull()
+	attend()
 	contact()
+	ask()
+	sign_up()
+	post()
+}
+class Family {
+	love()
+	check()
+	send()
+}
+class Admin {
+	post()
+	view()
+}
+class Statistics {
+}
+class Link {
+	add()
+	sign()
+}
+class Calendar {
 }
 class Information {
-}
-class Event {
 }
 class Support {
 	get()
 	receive()
 }
+class Resource {
+}
+class AdMessage {
+}
+class Member {
+	get()
+	send()
+	receive()
+	decide()
+	notify()
+	publish()
+	check()
+	ask()
+	help()
+}
+class Junk {
+}
+class Network {
+	have()
+}
+class Appointment {
+}
+class Group {
+	notify()
+	access()
+}
+class Account {
+}
 class Friend {
 	notify()
 	ask()
 }
-class User {
-	update()
-	suspend()
-	delete()
-	access()
-	block()
-	report()
-	manage()
-}
-class Link {
-	sign()
-	add()
-}
-class Group {
-	notify()
-}
 class Everyone {
 }
 class Administrator {
-	view()
 	delete()
-	post()
 	suspense()
 }
 class Behalf {
 }
-class Privacysetting {
+class HealthCondition {
 }
 class Profile {
 }
-class Account {
+class Event {
 }
-class Resource {
-}
-class Statistics {
-}
-class Calendar {
-}
-class Appointment {
-}
-class Message {
-}
-class HealthCondition {
-}
-class Admessage {
+class Money {
+	love()
 }
 class Messaging {
 }
+class Notification {
+}
 class Announcement {
 }
-class Junk {
+class PrivacySetting {
 }
-Member --> Notification : get
-User --> Message : block
-User o-- Profile : access
-User --> Information : update
-User o-- Member : manage
-Supportgroup --> Kind : access
-Patient --> HealthCondition : have
-Patient --> Behalf : post
-Support --> Resource : receive
-Member --> Money : send
-Administrator --> Account : suspense
-Network --> Privacysetting : have
-Patient --> Patient : contact
-Patient --> Message : send
-Patient --> Information : get
-Patient o-- Event : add
-Patient o-- Profile : share
-User --> Admessage : report
+class Invitation {
+}
+class Kind {
+}
 Patient o-- Event : attend
-User o-- Account : delete
-Support --> Notification : get
+Message --> Group : to
+Admin --> Statistics : view
+Announcement --> Everyone : to
 Patient --> Messaging : send
-Member --> Resource : receive
-Administrator --> Announcement : post
 Support o-- Network
-Group --> Group : notify
-Administrator --> Statistics : view
-Member --> Link : send
-User --> Junk : report
-Patient --> Supportgroup : supported_by
-Member o-- Network : decide
+User o-- Account : delete
+Patient --> Group : supported_by
 Patient o-- Calendar : share
+Member --> Notification : get
+Announcement --> Group : to
+Patient --> Information : get
+Support o-- Group
+User --> Information : update
+Administrator --> Account : suspense
 Group --> Everyone : notify
-Patient --> Friend : pull
-Calendar o-- Event
-Administrator --> Behalf : post
-Patient --> Appointment : have
-Patient --> Member : pull
 Family --> Money : send
+Administrator --> Account : delete
+Patient o-- Profile : share
+User o-- Account : suspend
+Support --> Resource : receive
+Patient --> Friend : pull
+Support --> Notification : get
+Patient --> Behalf : post
+User --> AdMessage : report
+Admin --> Behalf : post
+Patient --> HealthCondition : have
+User o-- Profile : access
+Admin --> Announcement : post
+User --> Junk : report
+User o-- Member : manage
+Group --> Kind : access
+Network --> PrivacySetting : have
+Member --> Link : send
+Patient --> Patient : contact
+User --> Message : block
+Member o-- Network : decide
+Patient o-- Invitation : share
+Member --> Money : send
+Patient --> Message : send
+Patient o-- Event : add
+Patient --> Appointment : have
+Calendar o-- Event
+Patient --> Member : pull
+Group --> Group : notify
+Member --> Resource : receive
 
 @enduml

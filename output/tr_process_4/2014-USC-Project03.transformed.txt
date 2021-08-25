@@ -8,19 +8,19 @@
       ],
       "attributes": [
         {
-          "name": "vehicle",
-          "type": "default"
-        },
-        {
-          "name": "valetCompany",
-          "type": "default"
-        },
-        {
-          "name": "creditcardinformation",
-          "type": "default"
-        },
-        {
           "name": "phone",
+          "type": "default"
+        },
+        {
+          "name": "valet",
+          "type": "default"
+        },
+        {
+          "name": "creditCardInformation",
+          "type": "default"
+        },
+        {
+          "name": "vehicle",
           "type": "default"
         },
         {
@@ -36,11 +36,11 @@
       ],
       "attributes": [
         {
-          "name": "revenue",
+          "name": "profile",
           "type": "default"
         },
         {
-          "name": "profile",
+          "name": "revenue",
           "type": "default"
         }
       ]
@@ -59,11 +59,11 @@
       ],
       "attributes": [
         {
-          "name": "car",
+          "name": "ticketNumber",
           "type": "default"
         },
         {
-          "name": "ticketNumber",
+          "name": "car",
           "type": "default"
         }
       ]
@@ -75,15 +75,15 @@
       ],
       "attributes": [
         {
-          "name": "login",
-          "type": "default"
-        },
-        {
           "name": "valetCompany",
           "type": "default"
         },
         {
           "name": "company",
+          "type": "default"
+        },
+        {
+          "name": "login",
           "type": "default"
         }
       ]
@@ -102,8 +102,8 @@
       ],
       "attributes": []
     },
-    "Valet": {
-      "name": "Valet",
+    "Operator": {
+      "name": "Operator",
       "type": [
         "shared"
       ],
@@ -122,28 +122,14 @@
         "shared"
       ],
       "attributes": []
-    },
-    "Operator": {
-      "name": "Operator",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
-    },
-    "Company": {
-      "name": "Company",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
     }
   },
   "relation_list": [
     {
-      "source": "Valet",
-      "dest": "Company",
-      "type": "aggregation",
-      "msg": "",
+      "source": "Notification",
+      "dest": "Customer",
+      "type": "association",
+      "msg": "to",
       "multiplicity": [
         "1",
         "1"
@@ -152,7 +138,7 @@
     },
     {
       "source": "Valet",
-      "dest": "Operator",
+      "dest": "Head",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -173,17 +159,6 @@
       "para": []
     },
     {
-      "source": "Valet",
-      "dest": "Price",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
       "source": "ValetOperator",
       "dest": "Operator",
       "type": "generalization",
@@ -196,7 +171,7 @@
     },
     {
       "source": "Valet",
-      "dest": "Head",
+      "dest": "Operator",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -215,121 +190,69 @@
         "1"
       ],
       "para": []
+    },
+    {
+      "source": "Valet",
+      "dest": "Company",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Valet",
+      "dest": "Price",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Advertisement",
+      "dest": "SnapValetUser",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Payment",
+      "dest": "Option",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
     }
   ],
   "behavior_list": [
     {
       "actor": "Company",
-      "action": "control",
-      "target": "Revenue",
-      "para": []
-    },
-    {
-      "actor": "Head",
-      "action": "set",
-      "target": "Price",
-      "para": []
-    },
-    {
-      "actor": "Driver",
-      "action": "user",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Operator",
-      "action": "have",
-      "target": "Login",
-      "para": []
-    },
-    {
-      "actor": "Operator",
-      "action": "add",
-      "target": "Tracking",
-      "para": []
-    },
-    {
-      "actor": "Operator",
-      "action": "receive",
-      "target": "Timerequest",
-      "para": []
-    },
-    {
-      "actor": "Operator",
-      "action": "receive",
-      "target": "Queue",
-      "para": []
-    },
-    {
-      "actor": "Head",
-      "action": "adjust",
-      "target": "Pricing",
-      "para": []
-    },
-    {
-      "actor": "Operator",
-      "action": "see",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Driver",
-      "action": "check",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Driver",
-      "action": "retrieve",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Customer",
-      "action": "enter",
-      "target": "TicketNumber",
-      "para": []
-    },
-    {
-      "actor": "Operator",
-      "action": "add",
-      "target": "Employee",
-      "para": []
-    },
-    {
-      "actor": "Company",
-      "action": "offer",
-      "target": "Paymentoption",
-      "para": []
-    },
-    {
-      "actor": "Driver",
-      "action": "want",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Driver",
-      "action": "request",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Driver",
-      "action": "create",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "Location",
       "action": "service",
-      "target": "",
+      "target": "Location",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "include",
-      "target": "Information",
+      "actor": "Driver",
+      "action": "have",
+      "target": "Option",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "send",
+      "target": "Notification",
       "para": []
     },
     {
@@ -339,9 +262,21 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "register",
-      "target": "",
+      "actor": "Operator",
+      "action": "retrieve",
+      "target": "Manner",
+      "para": []
+    },
+    {
+      "actor": "Head",
+      "action": "set",
+      "target": "Price",
+      "para": []
+    },
+    {
+      "actor": "Customer",
+      "action": "enter",
+      "target": "TicketNumber",
       "para": []
     },
     {
@@ -357,21 +292,33 @@
       "para": []
     },
     {
-      "actor": "Customer",
-      "action": "have",
+      "actor": "Driver",
+      "action": "want",
       "target": "",
       "para": []
     },
     {
       "actor": "Driver",
-      "action": "retrieve",
-      "target": "Vehicle",
+      "action": "check",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Establishment",
-      "action": "attract",
-      "target": "Customer",
+      "actor": "Operator",
+      "action": "add",
+      "target": "Employee",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "register",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "have",
+      "target": "Login",
       "para": []
     },
     {
@@ -382,32 +329,14 @@
     },
     {
       "actor": "Driver",
-      "action": "pay",
+      "action": "use",
       "target": "",
       "para": []
     },
     {
       "actor": "Company",
-      "action": "receive",
-      "target": "EmailTransactionSummaryReport",
-      "para": []
-    },
-    {
-      "actor": "Operator",
-      "action": "send",
-      "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "Employee",
-      "action": "work",
-      "target": "Tracking",
-      "para": []
-    },
-    {
-      "actor": "Operator",
-      "action": "retrieve",
-      "target": "Car",
+      "action": "control",
+      "target": "Revenue",
       "para": []
     },
     {
@@ -417,15 +346,39 @@
       "para": []
     },
     {
-      "actor": "Operator",
+      "actor": "Valet",
       "action": "retrieve",
-      "target": "Manner",
+      "target": "Vehicle",
       "para": []
     },
     {
-      "actor": "Establishment",
-      "action": "send",
-      "target": "Advertisement",
+      "actor": "Driver",
+      "action": "create",
+      "target": "Profile",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "receive",
+      "target": "Queue",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "retrieve",
+      "target": "Car",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "include",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Company",
+      "action": "receive",
+      "target": "EmailTransactionSummaryReport",
       "para": []
     },
     {
@@ -435,9 +388,81 @@
       "para": []
     },
     {
+      "actor": "Establishment",
+      "action": "attract",
+      "target": "Customer",
+      "para": []
+    },
+    {
       "actor": "Driver",
+      "action": "request",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Customer",
       "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Establishment",
+      "action": "send",
+      "target": "Advertisement",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "receive",
+      "target": "Request",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "select",
+      "target": "Location",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "check",
+      "target": "Location",
+      "para": []
+    },
+    {
+      "actor": "Company",
+      "action": "offer",
       "target": "Option",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Driver",
+      "action": "pay",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Employee",
+      "action": "work",
+      "target": "Tracking",
+      "para": []
+    },
+    {
+      "actor": "Head",
+      "action": "adjust",
+      "target": "Pricing",
+      "para": []
+    },
+    {
+      "actor": "Operator",
+      "action": "add",
+      "target": "Tracking",
       "para": []
     }
   ]

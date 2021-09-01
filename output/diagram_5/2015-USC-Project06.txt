@@ -1,14 +1,14 @@
 @startuml
 hide circle
 class Manager<actor> {
-	interest
 	client
+	interest
 }
 class Contractor<actor> {
-	information
 	comment
 	work
 	resource
+	information
 }
 class Architect<actor> {
 	colleague
@@ -22,41 +22,17 @@ class Meeting {
 class Log {
 }
 class Contractor {
-	save()
-	ask()
-	send()
-	log_in()
-	report()
 	edit()
+	see()
+	send()
 	enter()
-	manage()
-	see()
-}
-class Minute {
-}
-class Manager {
+	ask()
+	report()
 	log_in()
-	reject()
-	track()
-	send_out()
-	modify()
 	save()
-	search()
-	plan()
-	access()
-	add()
-	make()
-	send()
-	take()
-	disapprove()
-	edit()
-	create()
-	approve()
-	see()
-	find()
-	talk()
+	manage()
 }
-class Project {
+class Resource {
 }
 class People {
 	get()
@@ -64,47 +40,71 @@ class People {
 class Information {
 	access()
 }
-class Progress {
+class Manager {
+	modify()
+	send()
+	add()
+	log_in()
+	create()
+	approve()
+	find()
+	track()
+	search()
+	edit()
+	see()
+	plan()
+	reject()
+	make()
+	save()
+	talk()
+	take()
+	send_out()
+	disapprove()
+	access()
 }
 class Task {
 }
-class Request {
+class Progress {
+}
+class Minute {
+}
+class QuestionIssue {
+}
+class Project {
 }
 class Comment {
 }
 class Status {
 	report()
 }
-class Resource {
+class Everyone {
+	know()
+}
+class Request {
+}
+class Summary {
+}
+class Issue {
+}
+class Change {
+}
+class Message {
 }
 class Event {
 	take()
 }
 class Place {
 }
-class Note {
-}
 class Decision {
+}
+class Report {
 }
 class Work {
 	know()
 }
-class Message {
-}
-class QuestionIssue {
-}
-class Change {
-}
-class Issue {
-}
-class Report {
+class Note {
 }
 class Topic {
-}
-class Summary {
-}
-class Everyone {
-	know()
 }
 class Data {
 }
@@ -116,59 +116,59 @@ class Date {
 }
 class Customer {
 }
+class ProjectManager {
+}
 class Architect {
 }
 class Colleague {
 }
-class ProjectManager {
-}
-Manager --> Project : modify
 Manager --> Information : edit
-Meeting o-- Log
-Manager --> Request : approve
-Task o-- Category
-People --> Information : get
-Manager --> Topic : find
-Task o-- Progress
-Manager --> Decision : make
-Architect --> Colleague : supported_by
-Manager --> Progress : save
-Manager --> Summary : see
-Manager --> Status : save
-Manager --> Minute : send_out
-Manager --> Category : edit
-Contractor --> Task : see
-ProjectManager <|-- Manager
-Manager --> Log : access
-Manager --> Comment : reject
-Manager --> Progress : track
-Manager --> Task : approve
-Project o-- Manager
-Contractor --> Data : enter
-Contractor --> Message : send
-Meeting o-- Information
-Meeting o-- Minute
-Manager --> Request : disapprove
-Contractor --> QuestionIssue : ask
-Request <|-- Comment
 Message --> Manager : to
-Manager --> Comment : approve
-Contractor --> Change : report
-Minute --> Attendee : to
-Contractor o-- Information : edit
-Contractor --> Status : save
+Manager --> Log : access
+Manager --> Decision : make
+Meeting o-- Minute
+Manager --> Task : approve
 Contractor --> Progress : save
-Change --> Company : to
-Contractor --> Minute : ask
-Contractor o-- Resource : manage
+Task o-- Category
+Contractor --> Report : enter
+Manager --> Status : save
+Minute --> Attendee : to
+Project o-- Manager
+Manager --> Progress : save
+Contractor --> Issue : ask
+Architect --> Colleague : supported_by
+Contractor --> Status : save
 Contractor --> Minute : see
 Manager --> Note : take
-Contractor --> Issue : ask
-Work o-- Status
-Date <|-- Customer
+Manager --> Minute : send_out
+Meeting o-- Log
+Contractor --> QuestionIssue : ask
+Manager --> Topic : find
+Task o-- Progress
+Manager --> Category : edit
 Manager --> Project : create
-Contractor --> Report : enter
+Contractor --> Data : enter
+Contractor --> Change : report
+Contractor --> Minute : ask
+Work o-- Status
+Contractor --> Task : see
+Contractor --> Message : send
+Change --> Company : to
+Manager --> Request : disapprove
+ProjectManager <|-- Manager
+Date <|-- Customer
+Manager --> Comment : reject
 Event --> Place : take
+Contractor o-- Resource : manage
+Manager --> Comment : approve
+Manager --> Project : modify
+Manager --> Progress : track
+Manager --> Summary : see
+Request <|-- Comment
 Manager --> Minute : send
+Meeting o-- Information
+People --> Information : get
+Contractor o-- Information : edit
+Manager --> Request : approve
 
 @enduml

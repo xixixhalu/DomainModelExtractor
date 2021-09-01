@@ -7,9 +7,9 @@ class User<actor> {
 class CourseAttendee<actor> {
 }
 class Trainer<actor> {
-	calendar
 	profile
 	price
+	calendar
 }
 class Enterprise<actor> {
 }
@@ -21,145 +21,145 @@ class Team<actor> {
 }
 class Developer<actor> {
 }
-class RegistrationInformation {
-}
 class Attendee {
-	attend()
-	review()
-	pay()
 	rate()
-	compare()
-	decide()
+	pay()
 	base()
-	receive()
-	see()
-}
-class Enterprise {
 	compare()
-	get()
-}
-class Value {
-}
-class Admin {
-	cancel()
-	attach()
-	meet()
-	move()
-	adjust()
+	attend()
+	receive()
+	decide()
+	review()
 	see()
 }
-class Minimum {
+class RegistrationInformation {
 }
 class Administrator {
 	delete()
+	adjust()
 	have()
 	create()
 	receive()
+	see()
+}
+class Admin {
+	meet()
 	adjust()
+	move()
+	attach()
 	see()
+	cancel()
 }
-class User {
-	setup()
-	request()
-	share()
-	register()
+class Minimum {
+}
+class Rating {
+	continue()
+}
+class Price {
+	maximize()
 	see()
-	filter()
-	search()
-}
-class Number {
 }
 class Trainer {
-	offer()
-	attach()
-	set()
-	compare()
 	rate()
+	attach()
+	compare()
+	offer()
+	set()
 	see()
 	put()
 }
+class User {
+	share()
+	register()
+	setup()
+	request()
+	search()
+	see()
+	filter()
+}
+class Developer {
+	understand()
+	analyze()
+}
 class Course {
-	verify()
 	start()
-	offer()
 	rate()
+	offer()
+	verify()
+}
+class Duty {
+}
+class Requirement {
+}
+class Enterprise {
+	get()
+	compare()
+}
+class Value {
 }
 class People {
 }
-class Price {
-	see()
-	maximize()
+class Number {
 }
-class Location {
+class Dashboard {
 }
-class Developer {
-	analyze()
-	understand()
+class Calendar {
+}
+class Review {
+	continue()
 }
 class Feasibility {
 }
 class Schedule {
 }
-class Duty {
-}
-class Calendar {
+class Location {
 }
 class ConfirmationEmail {
 }
-class Account {
-}
 class Request {
 }
-class Rating {
-	continue()
-}
-class Review {
-	continue()
-}
-class Dashboard {
-}
-class Requirement {
+class Account {
 }
 class Architecture {
 }
-class CourseAttendee {
-}
 class Class {
 }
-Admin --> Minimum : meet
+class CourseAttendee {
+}
+Administrator --> Rating : adjust
+Administrator --> Request : receive
 Admin --> Course : cancel
+Attendee --> Schedule : base
 Attendee --> Price : compare
-Trainer --> Review : see
-Administrator --> Dashboard : have
-Trainer --> Duty : attach
-Enterprise --> Price : compare
+Trainer --> Rating : see
+User o-- Course : request
 User --> Number : see
-Developer --> Requirement : analyze
+People --> Class : to
 Trainer --> Minimum : set
-Course o-- Attendee
-User o-- Course : share
-Trainer o-- Calendar : put
-Trainer --> Course : offer
-Developer --> Architecture : understand
 Admin --> Number : adjust
-Account o-- RegistrationInformation
+User --> Account : setup
+Administrator --> Dashboard : have
+Developer --> Architecture : understand
 Trainer o-- Price : compare
 Calendar <|-- Course
-Admin --> People : move
+Trainer --> Duty : attach
+Trainer o-- Calendar : put
+Account o-- RegistrationInformation
+Course o-- Attendee
+Developer --> Requirement : analyze
+Trainer --> Review : see
 CourseAttendee <|-- Attendee
-User o-- Course : request
-Attendee --> Schedule : base
-Attendee --> ConfirmationEmail : receive
-People --> Class : to
-Attendee --> Price : decide
-User --> Account : setup
-Trainer --> Location : offer
-Administrator --> Request : receive
-Trainer --> Rating : see
-Administrator --> RegistrationInformation : receive
-Attendee --> Schedule : see
-Enterprise --> Value : get
-Administrator --> Rating : adjust
 Developer --> Feasibility : understand
+Enterprise --> Value : get
+Attendee --> ConfirmationEmail : receive
+Enterprise --> Price : compare
+Attendee --> Schedule : see
+Attendee --> Price : decide
+Admin --> People : move
+Trainer --> Location : offer
+User o-- Course : share
+Administrator --> RegistrationInformation : receive
+Trainer --> Course : offer
+Admin --> Minimum : meet
 
 @enduml

@@ -25,6 +25,17 @@
   },
   "relation_list": [
     {
+      "source": "Access",
+      "dest": "User",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
       "source": "Gateway",
       "dest": "Id",
       "type": "aggregation",
@@ -45,32 +56,9 @@
         "1"
       ],
       "para": []
-    },
-    {
-      "source": "Access",
-      "dest": "User",
-      "type": "association",
-      "msg": "to",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
     }
   ],
   "behavior_list": [
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "Control",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "incorporate",
-      "target": "Debugging",
-      "para": []
-    },
     {
       "actor": "Admin",
       "action": "assign",
@@ -78,51 +66,27 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "delete",
-      "target": "Room",
+      "actor": "User",
+      "action": "turn",
+      "target": "Light",
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "add",
-      "target": "User",
+      "actor": "User",
+      "action": "choose",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "see",
-      "target": "Id",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "edit",
-      "target": "Name",
+      "actor": "User",
+      "action": "select",
+      "target": "Floor",
       "para": []
     },
     {
       "actor": "User",
       "action": "add",
       "target": "Image",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "see",
-      "target": "SwitchId",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "turn_on",
-      "target": "Light",
       "para": []
     },
     {
@@ -138,27 +102,39 @@
       "para": []
     },
     {
-      "actor": "Light",
-      "action": "use",
-      "target": "MobileApplication",
-      "para": []
-    },
-    {
       "actor": "Admin",
       "action": "provide",
       "target": "Access",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "choose",
-      "target": "",
+      "actor": "Admin",
+      "action": "see",
+      "target": "Id",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "incorporate",
+      "target": "Debugging",
       "para": []
     },
     {
       "actor": "User",
-      "action": "select",
+      "action": "add",
+      "target": "Screen",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
       "target": "Room",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "",
       "para": []
     },
     {
@@ -175,26 +151,20 @@
     },
     {
       "actor": "Admin",
+      "action": "see",
+      "target": "SwitchId",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "edit",
+      "target": "Name",
+      "para": []
+    },
+    {
+      "actor": "Admin",
       "action": "delete",
       "target": "Gateway",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "select",
-      "target": "Floor",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "turn",
-      "target": "Light",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "Screen",
       "para": []
     },
     {
@@ -207,6 +177,36 @@
       "actor": "Admin",
       "action": "delete",
       "target": "Floor",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "Control",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "select",
+      "target": "Room",
+      "para": []
+    },
+    {
+      "actor": "Light",
+      "action": "use",
+      "target": "MobileApplication",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "turn_on",
+      "target": "Light",
       "para": []
     }
   ]

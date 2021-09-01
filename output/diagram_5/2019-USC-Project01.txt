@@ -1,79 +1,56 @@
 @startuml
 hide circle
 class User<actor> {
-	profile
-	account
-	linkedinProfilePicture
-	interest
-	media
-	profilePicture
 	resume
 	information
+	account
+	media
+	profilePicture
+	linkedinProfilePicture
+	interest
+	profile
 }
 class SystemAdmin<actor> {
 }
 class Admin<actor> {
 }
-class Picture {
-	upload()
-}
 class Professor {
 	author()
 }
-class SystemAdmin {
-	approve()
-}
-class Request {
-}
-class Event {
-	have()
-	trend()
-}
-class ViewCount {
+class Picture {
+	upload()
 }
 class User {
-	log_in()
-	sort()
+	see()
+	search()
 	author()
+	look_up()
 	authenticate()
 	click()
-	update()
-	filter()
-	disable()
-	see()
-	look_up()
-	find()
 	trend()
+	disable()
+	log_in()
+	find()
 	have()
-	search()
-}
-class Account {
-}
-class Admin {
-	login()
-	approve()
-	authorize()
-	remove()
-	reject()
-}
-class Content {
+	update()
+	sort()
+	filter()
 }
 class Alumnus {
 }
-class Document {
-	have()
-	trend()
+class Admin {
+	remove()
+	login()
+	approve()
+	reject()
+	authorize()
 }
-class Calendar {
+class Content {
 }
-class Position {
+class ResearchPapers {
+	see()
 }
-class Order {
-}
-class Student {
-	author()
-}
-class Papers {
+class Account {
 }
 class Profile {
 }
@@ -83,40 +60,63 @@ class Media {
 }
 class Csse {
 }
-class Resume {
-	update()
+class Student {
+	author()
 }
-class ResearchPapers {
-	see()
+class Papers {
+}
+class SystemAdmin {
+	approve()
+}
+class Request {
+}
+class ViewCount {
 }
 class Portal {
 	use()
 }
 class LinkedIn {
 }
-User --> ViewCount : have
-Admin --> Content : remove
-User o-- Account : disable
-User --> Alumnus : look_up
-User --> ResearchPapers : sort
-User o-- Profile : see
-Professor --> Papers : author
-User --> Calendar : filter
-Portal --> LinkedIn : use
-SystemAdmin --> Request : approve
-User --> Event : see
-User o-- Media : update
-User --> Position : find
-Admin --> Profile : authorize
-Csse o-- Professor
-Profile o-- Picture
-User --> Order : authenticate
+class Order {
+}
+class Event {
+	have()
+	trend()
+}
+class Calendar {
+}
+class Document {
+	have()
+	trend()
+}
+class Position {
+}
+class Resume {
+	update()
+}
+Admin --> Profile : reject
+Admin --> Profile : approve
 Event --> ViewCount : have
-User o-- Profile
+User o-- Profile : see
+User o-- Media : update
+Admin --> Profile : authorize
+User o-- Account : disable
+Media --> Csse : have
+User --> Calendar : filter
+Professor --> Papers : author
 Document --> ViewCount : have
 Student --> Papers : author
-Admin --> Profile : approve
-Admin --> Profile : reject
-Media --> Csse : have
+User --> Position : find
+User o-- Profile
+User --> ResearchPapers : sort
+Profile o-- Picture
+SystemAdmin --> Request : approve
+Admin --> Content : remove
+User --> Event : see
+Csse o-- Professor
+User --> ViewCount : have
+Portal --> LinkedIn : use
+User --> Order : authenticate
+User --> Alumnus : look_up
 
 @enduml

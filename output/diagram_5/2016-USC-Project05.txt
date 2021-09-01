@@ -1,134 +1,134 @@
 @startuml
 hide circle
 class User<actor> {
-	felling
-	event
-	computer
-	privacy
 	password
-	storage
-	eventExit
+	felling
+	privacy
 	record
+	computer
+	eventExit
+	storage
 	phone
+	event
 }
 class User {
+	use()
+	express()
+	create()
+	free()
+	search()
 	allow()
 	make()
-	upload()
-	create()
-	review()
-	download()
-	look()
-	login()
+	like()
+	report()
 	need()
-	see()
 	choose()
-	express()
-	save()
 	delete()
-	reset()
-	search()
+	find()
+	look()
 	let()
+	log_in()
+	upload()
+	save()
 	forget()
 	change()
-	extend()
-	like()
-	comment()
-	picture()
 	enter()
-	free()
-	log_in()
-	maintain()
-	report()
-	use()
+	see()
+	download()
+	review()
+	reset()
+	login()
 	keep()
-	find()
 	want()
+	extend()
+	picture()
+	maintain()
+	comment()
 }
-class Password {
+class Storage {
+}
+class ResolutionPicture {
 }
 class Time {
 }
+class Password {
+}
+class System {
+}
+class QualityPicture {
+}
+class Lot {
+}
 class Picture {
 }
-class Event {
+class Comment {
 }
-class Register {
+class Felling {
 }
-class Record {
+class Size {
 }
-class Computer {
+class Type {
 }
 class Browser {
 	visit()
 }
+class Event {
+}
 class SharewebWebsite {
 }
-class Comment {
-}
-class Size {
-}
-class Felling {
-}
-class ResolutionPicture {
-}
-class Upload {
-}
-class System {
-}
-class Storage {
+class Register {
 }
 class Privacy {
 }
-class QualityPicture {
+class Upload {
 }
-class Type {
+class Computer {
 }
-class Lot {
-}
-class Charge {
+class Record {
 }
 class FacebookAccount {
 }
+class Charge {
+}
 User o-- Record : keep
-User --> Lot : free
-Picture --> Event : to
-User --> Charge : supported_by
-User o-- Event : maintain
-User o-- Computer : download
-User --> Register : need
-User --> ResolutionPicture : upload
 User --> FacebookAccount : supported_by
-User --> Browser : use
-User --> Upload : delete
-User --> Picture : download
-User --> Time : supported_by
-Browser --> SharewebWebsite : visit
-User --> Picture : upload
-User --> Comment : make
-User --> System : use
-User o-- Password : reset
-User o-- Event : create
-User --> User : delete
-User o-- Storage : save
-User o-- Event : extend
-User o-- Password : enter
-User --> Picture : report
-User o-- Event : picture
-User --> Picture : review
-User o-- Privacy : keep
-User --> Size : choose
-User --> QualityPicture : review
-User o-- Event : see
-User o-- Felling : express
-User --> Picture : maintain
-User --> Picture : see
-User o-- Password : forget
-User --> ResolutionPicture : download
+User --> Lot : free
 User --> Picture : like
+User --> Picture : review
+User --> Time : supported_by
+User --> Picture : report
+Picture --> Event : to
+User o-- Event : see
 User --> Picture : comment
-User o-- Event : delete
+User --> Charge : supported_by
+User --> Comment : make
+User --> Picture : download
+User --> System : use
+User o-- Felling : express
+User --> Register : need
+User o-- Password : forget
+User --> ResolutionPicture : upload
+User --> User : delete
+User --> Size : choose
+User o-- Password : enter
+User o-- Privacy : keep
 User --> Type : change
+User o-- Password : reset
 User --> Time : save
+User --> Upload : delete
+User o-- Event : extend
+User --> Browser : use
+User --> Picture : see
+User o-- Event : create
+User o-- Event : delete
+User o-- Event : picture
+User --> Picture : maintain
+User o-- Storage : save
+Browser --> SharewebWebsite : visit
+User o-- Computer : download
+User o-- Event : maintain
+User --> Picture : upload
+User --> QualityPicture : review
+User --> ResolutionPicture : download
 
 @enduml

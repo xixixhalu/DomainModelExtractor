@@ -76,7 +76,7 @@
     },
     {
       "source": "Product",
-      "dest": "SlideLayout",
+      "dest": "Image",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -98,7 +98,7 @@
     },
     {
       "source": "Product",
-      "dest": "Image",
+      "dest": "SlideLayout",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -111,61 +111,13 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "view",
-      "target": "SlideLayout",
+      "action": "slide",
+      "target": "Collection",
       "para": []
     },
     {
       "actor": "User",
-      "action": "see",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Page",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "LoaderAnimation",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "shop",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Detail",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "waste",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "buy",
-      "target": "Clothing",
-      "para": []
-    },
-    {
-      "actor": "ShopWidget",
-      "action": "click",
+      "action": "collapse",
       "target": "",
       "para": []
     },
@@ -177,8 +129,44 @@
     },
     {
       "actor": "User",
-      "action": "see",
-      "target": "Circle",
+      "action": "view",
+      "target": "Image",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sort",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "list",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "waste",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Experience",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Product",
       "para": []
     },
     {
@@ -190,7 +178,13 @@
     {
       "actor": "User",
       "action": "view",
-      "target": "Product",
+      "target": "Page",
+      "para": []
+    },
+    {
+      "actor": "Traffic",
+      "action": "increase",
+      "target": "",
       "para": []
     },
     {
@@ -200,39 +194,15 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "slide",
-      "target": "Collection",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "waste",
-      "target": "Time",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "sort",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "Media",
-      "action": "use",
-      "target": "Frenzy",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Experience",
+      "actor": "Product",
+      "action": "list",
+      "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "see",
-      "target": "",
+      "target": "Circle",
       "para": []
     },
     {
@@ -244,42 +214,6 @@
     {
       "actor": "User",
       "action": "view",
-      "target": "Phone",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Image",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Cluster",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "list",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "collapse",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "minimize",
       "target": "",
       "para": []
     },
@@ -291,13 +225,55 @@
     },
     {
       "actor": "User",
-      "action": "view",
-      "target": "Version",
+      "action": "waste",
+      "target": "Time",
       "para": []
     },
     {
-      "actor": "Traffic",
-      "action": "increase",
+      "actor": "User",
+      "action": "view",
+      "target": "SlideLayout",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Phone",
+      "para": []
+    },
+    {
+      "actor": "Retailer",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "minimize",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "buy",
+      "target": "Clothing",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "shop",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "ShopWidget",
+      "action": "click",
       "target": "",
       "para": []
     },
@@ -308,14 +284,38 @@
       "para": []
     },
     {
-      "actor": "Product",
-      "action": "list",
-      "target": "",
+      "actor": "User",
+      "action": "view",
+      "target": "Cluster",
       "para": []
     },
     {
-      "actor": "Retailer",
-      "action": "have",
+      "actor": "User",
+      "action": "see",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Version",
+      "para": []
+    },
+    {
+      "actor": "Media",
+      "action": "use",
+      "target": "Frenzy",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "LoaderAnimation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
       "target": "",
       "para": []
     },

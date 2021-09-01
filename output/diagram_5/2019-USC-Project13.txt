@@ -3,12 +3,12 @@ hide circle
 class Admin<actor> {
 }
 class Mentee<actor> {
-	profile
-	contactDetail
-	informationDetail
 	password
-	criterion
+	profile
 	detail
+	contactDetail
+	criterion
+	informationDetail
 }
 class User<actor> {
 }
@@ -19,14 +19,14 @@ class End<actor> {
 class Administrator<actor> {
 }
 class Mentor {
-	availability
-	trainingPhaseActivity
-	interaction
 	information
 	password
 	mentee
-	criterion
 	detail
+	criterion
+	availability
+	trainingPhaseActivity
+	interaction
 	send()
 }
 class Client {
@@ -35,98 +35,98 @@ class Client {
 class Interaction {
 }
 class Admin {
-	view()
-	get()
-	track()
-	export()
-	send()
+	update()
 	delete()
-	assign()
+	export()
 	match()
-	update()
-	deactivate()
-}
-class Mentee {
-	select()
+	track()
+	assign()
 	send()
-	upload()
-	see()
-	opt_out()
-	update()
-	reset()
-}
-class Status {
-}
-class ContactDetail {
-}
-class Developer {
-	integrate()
-}
-class Detail {
-}
-class Reminder {
-}
-class ActivityReport {
-}
-class Password {
+	get()
+	deactivate()
+	view()
 }
 class User {
 	update()
-}
-class Report {
-}
-class Request {
-	establish()
-}
-class Connection {
-}
-class WebApplication {
 }
 class Information {
 	include()
 }
 class Photo {
 }
+class Report {
+}
+class Status {
+}
+class Mentee {
+	upload()
+	opt_out()
+	update()
+	select()
+	send()
+	see()
+	reset()
+}
+class Request {
+	establish()
+}
+class Reminder {
+}
+class Statistics {
+}
 class Administrator {
 	get()
 }
-class Statistics {
+class Detail {
+}
+class List {
+}
+class ContactDetail {
+}
+class ActivityReport {
+}
+class Password {
+}
+class Connection {
+}
+class Developer {
+	integrate()
 }
 class End {
 	navigate()
 }
-class List {
+class WebApplication {
 }
-Mentee o-- ContactDetail : update
-Mentee o-- Request
-Admin --> Report : export
-Information o-- Detail
-Admin --> Mentor : track
-Admin --> Mentor : match
-Mentor --> Report : send
-Mentee o-- Detail : update
-Admin --> User : deactivate
-User --> Password : update
-Admin --> Reminder : send
 Information --> Photo : include
-Admin --> ActivityReport : view
-Admin --> User : delete
-Mentee --> Mentor : select
-Mentee o-- Password : reset
-Administrator --> Statistics : get
-Admin --> Statistics : view
-Admin --> Report : get
-Mentee --> List : see
-Mentee o-- Detail : upload
-Admin --> Mentor : assign
-Admin --> Mentee : track
-Mentee --> Request : send
-Developer --> WebApplication : integrate
 Mentor o-- Interaction
-Admin --> Interaction : supported_by
-Admin --> Status : update
+Admin --> Mentor : match
 Mentee o-- Interaction
+Admin --> Report : export
+Admin --> Report : get
+Mentee o-- ContactDetail : update
+Admin --> Status : update
+Admin --> ActivityReport : view
+Admin --> Mentee : track
+User --> Password : update
+Mentee --> Request : send
 Request --> Connection : establish
+Admin --> Reminder : send
+Mentee --> Mentor : select
+Admin --> Mentor : track
+Admin --> Statistics : view
+Administrator --> Statistics : get
+Mentor --> Report : send
+Mentee o-- Password : reset
+Mentee o-- Request
+Mentee o-- Detail : upload
+Admin --> User : delete
+Developer --> WebApplication : integrate
+Admin --> Interaction : supported_by
+Mentee --> List : see
+Admin --> User : deactivate
+Information o-- Detail
+Mentee o-- Detail : update
+Admin --> Mentor : assign
 Mentor --> Mentee : to
 
 @enduml

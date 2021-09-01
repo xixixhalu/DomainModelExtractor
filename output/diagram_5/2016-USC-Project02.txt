@@ -3,8 +3,8 @@ hide circle
 class User<actor> {
 }
 class Parent<actor> {
-	child
 	detail
+	child
 }
 class Client<actor> {
 	email
@@ -27,103 +27,103 @@ class VYMA {
 class Section {
 	trigger()
 }
-class Member {
+class User {
+	have()
+	purchase()
+	receive()
 	view()
 }
-class Information {
-}
-class Parent {
-	set_up()
-	view()
-	pay()
-	register()
-}
-class Payment {
+class Dvd {
 }
 class Student {
-	practice()
-	view()
-	register()
-	pay()
 	download()
+	view()
+	pay()
+	practice()
+	register()
 }
 class Admin {
 	check()
 	update()
 }
-class Client {
-	check()
-	add()
-}
-class Link {
-}
-class User {
-	receive()
-	have()
-	view()
-	purchase()
-}
-class Mail {
-}
-class Calendar {
-}
-class Dvd {
-}
-class OtherDetail {
-}
-class Roster {
-}
-class News {
+class Information {
 }
 class Trailer {
 }
-class Concern {
-	address()
+class Roster {
 }
-class Update {
+class Member {
+	view()
 }
-class Detail {
+class Client {
+	add()
+	check()
 }
-class Notification {
+class Link {
 }
-class MusicNote {
+class Parent {
+	pay()
+	set_up()
+	register()
+	view()
 }
 class Page {
 }
-class Email {
+class Calendar {
+}
+class Payment {
 }
 class Donor {
-	support()
 	make()
+	support()
 }
 class VymaCommunity {
 }
 class GoogleDrive {
 }
+class Detail {
+}
+class Update {
+}
+class OtherDetail {
+}
 class Website {
 }
-Client --> Website : add
-Notification --> Member : to
-Member --> Information : view
-News o-- Section
-Parent --> Payment : set_up
-Admin --> Information : update
-User --> Update : receive
-User --> Detail : view
-Client --> Link : add
-User --> Trailer : view
-Section --> Notification : trigger
+class Notification {
+}
+class News {
+}
+class Email {
+}
+class MusicNote {
+}
+class Mail {
+}
+class Concern {
+	address()
+}
 Admin o-- Mail : check
-Student --> MusicNote : download
-Member --> Calendar : view
-Parent --> Page : view
+Notification --> Member : to
 User --> Dvd : purchase
-Client o-- Email : check
+News o-- Section
+Admin --> Information : update
+User --> Detail : view
+User --> Trailer : view
 Admin --> Detail : update
-Parent --> OtherDetail : view
-Donor --> VymaCommunity : support
 Admin --> Roster : update
-Client --> GoogleDrive : check
+User --> Update : receive
+Member --> Information : view
+Parent --> OtherDetail : view
+Client --> Website : add
+Client --> Link : add
+Section --> Notification : trigger
+Parent --> Page : view
 User --> News : receive
+Member --> Calendar : view
+Client o-- Email : check
+Parent --> Payment : set_up
+Client --> GoogleDrive : check
+Student --> MusicNote : download
+Donor --> VymaCommunity : support
 
 @enduml

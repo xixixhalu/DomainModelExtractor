@@ -8,35 +8,14 @@
       ],
       "attributes": [
         {
-          "name": "network",
+          "name": "loginCredentials",
           "type": "default"
         },
         {
-          "name": "loginCredentials",
+          "name": "network",
           "type": "default"
         }
       ]
-    },
-    "Network": {
-      "name": "Network",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
-    },
-    "Contact": {
-      "name": "Contact",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
-    },
-    "Friend": {
-      "name": "Friend",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
     },
     "Seeker": {
       "name": "Seeker",
@@ -58,64 +37,30 @@
         "shared"
       ],
       "attributes": []
+    },
+    "Network": {
+      "name": "Network",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Friend": {
+      "name": "Friend",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Contact": {
+      "name": "Contact",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
     }
   },
   "relation_list": [
-    {
-      "source": "Job",
-      "dest": "Seeker",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Job",
-      "dest": "Listing",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Job",
-      "dest": "Search",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Seeker",
-      "dest": "Message",
-      "type": "association",
-      "msg": "supported_by",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Network",
-      "dest": "Contact",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
     {
       "source": "Network",
       "dest": "Friend",
@@ -137,13 +82,104 @@
         "1"
       ],
       "para": []
+    },
+    {
+      "source": "Network",
+      "dest": "Contact",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Job",
+      "dest": "Listing",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Job",
+      "dest": "Seeker",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Seeker",
+      "dest": "Message",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Job",
+      "dest": "Search",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
     }
   ],
   "behavior_list": [
     {
+      "actor": "RefersySystem",
+      "action": "fetch",
+      "target": "Job",
+      "para": []
+    },
+    {
       "actor": "Seeker",
-      "action": "see",
+      "action": "subscribe",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "Account",
+      "action": "save",
+      "target": "LoginCredentials",
+      "para": []
+    },
+    {
+      "actor": "RefersySystem",
+      "action": "connect",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Seeker",
+      "action": "select",
+      "target": "Frequency",
+      "para": []
+    },
+    {
+      "actor": "Seeker",
+      "action": "save",
+      "target": "Search",
+      "para": []
+    },
+    {
+      "actor": "Listing",
+      "action": "have",
+      "target": "Friend",
       "para": []
     },
     {
@@ -154,49 +190,13 @@
     },
     {
       "actor": "Seeker",
-      "action": "select",
-      "target": "Frequency",
-      "para": []
-    },
-    {
-      "actor": "RefersySystem",
-      "action": "connect",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Contact",
-      "action": "provide",
-      "target": "Reference",
-      "para": []
-    },
-    {
-      "actor": "Seeker",
-      "action": "save",
-      "target": "Search",
-      "para": []
-    },
-    {
-      "actor": "Seeker",
-      "action": "unsubscribe",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Seeker",
       "action": "browse",
       "target": "",
       "para": []
     },
     {
       "actor": "Seeker",
-      "action": "subscribe",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Seeker",
-      "action": "search",
+      "action": "unsubscribe",
       "target": "",
       "para": []
     },
@@ -207,9 +207,9 @@
       "para": []
     },
     {
-      "actor": "RefersySystem",
-      "action": "fetch",
-      "target": "Job",
+      "actor": "Seeker",
+      "action": "search",
+      "target": "",
       "para": []
     },
     {
@@ -219,15 +219,15 @@
       "para": []
     },
     {
-      "actor": "Listing",
-      "action": "have",
-      "target": "Friend",
+      "actor": "Contact",
+      "action": "provide",
+      "target": "Reference",
       "para": []
     },
     {
-      "actor": "Account",
-      "action": "save",
-      "target": "LoginCredentials",
+      "actor": "Seeker",
+      "action": "see",
+      "target": "",
       "para": []
     },
     {

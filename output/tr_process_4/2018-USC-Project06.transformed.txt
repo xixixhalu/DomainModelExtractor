@@ -8,7 +8,7 @@
       ],
       "attributes": [
         {
-          "name": "profilePage",
+          "name": "member",
           "type": "default"
         },
         {
@@ -16,11 +16,11 @@
           "type": "default"
         },
         {
-          "name": "profile",
+          "name": "profilePage",
           "type": "default"
         },
         {
-          "name": "member",
+          "name": "profile",
           "type": "default"
         }
       ]
@@ -32,19 +32,7 @@
       ],
       "attributes": [
         {
-          "name": "calendar",
-          "type": "default"
-        },
-        {
-          "name": "event",
-          "type": "default"
-        },
-        {
-          "name": "profile",
-          "type": "default"
-        },
-        {
-          "name": "invitation",
+          "name": "supportNetwork",
           "type": "default"
         },
         {
@@ -52,11 +40,23 @@
           "type": "default"
         },
         {
-          "name": "supportNetwork",
+          "name": "event",
+          "type": "default"
+        },
+        {
+          "name": "invitation",
           "type": "default"
         },
         {
           "name": "supportGroup",
+          "type": "default"
+        },
+        {
+          "name": "profile",
+          "type": "default"
+        },
+        {
+          "name": "calendar",
           "type": "default"
         }
       ]
@@ -109,32 +109,10 @@
   },
   "relation_list": [
     {
-      "source": "Calendar",
-      "dest": "Event",
+      "source": "Support",
+      "dest": "Network",
       "type": "aggregation",
       "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Message",
-      "dest": "Group",
-      "type": "association",
-      "msg": "to",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Announcement",
-      "dest": "Everyone",
-      "type": "association",
-      "msg": "to",
       "multiplicity": [
         "1",
         "1"
@@ -143,9 +121,20 @@
     },
     {
       "source": "Support",
-      "dest": "Network",
+      "dest": "Group",
       "type": "aggregation",
       "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Announcement",
+      "dest": "Group",
+      "type": "association",
+      "msg": "to",
       "multiplicity": [
         "1",
         "1"
@@ -164,8 +153,19 @@
       "para": []
     },
     {
+      "source": "Calendar",
+      "dest": "Event",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
       "source": "Announcement",
-      "dest": "Group",
+      "dest": "Everyone",
       "type": "association",
       "msg": "to",
       "multiplicity": [
@@ -175,10 +175,10 @@
       "para": []
     },
     {
-      "source": "Support",
+      "source": "Message",
       "dest": "Group",
-      "type": "aggregation",
-      "msg": "",
+      "type": "association",
+      "msg": "to",
       "multiplicity": [
         "1",
         "1"
@@ -189,50 +189,20 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "block",
-      "target": "Message",
+      "action": "access",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Patient",
+      "actor": "Member",
+      "action": "receive",
+      "target": "Resource",
+      "para": []
+    },
+    {
+      "actor": "Friend",
       "action": "ask",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "Family",
-      "action": "love",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "send",
-      "target": "Message",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "view",
-      "target": "Statistics",
-      "para": []
-    },
-    {
-      "actor": "Link",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "share",
-      "target": "Calendar",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "update",
-      "target": "Information",
       "para": []
     },
     {
@@ -242,117 +212,15 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "report",
-      "target": "AdMessage",
-      "para": []
-    },
-    {
-      "actor": "Member",
-      "action": "ask",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "report",
-      "target": "Junk",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "contact",
-      "target": "Patient",
-      "para": []
-    },
-    {
       "actor": "Family",
       "action": "check",
       "target": "",
       "para": []
     },
     {
-      "actor": "Member",
-      "action": "decide",
-      "target": "Network",
-      "para": []
-    },
-    {
       "actor": "Patient",
-      "action": "have",
-      "target": "Appointment",
-      "para": []
-    },
-    {
-      "actor": "Group",
-      "action": "notify",
-      "target": "Group",
-      "para": []
-    },
-    {
-      "actor": "Member",
-      "action": "receive",
-      "target": "Resource",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "provide",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "delete",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "sign_up",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Friend",
-      "action": "notify",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Group",
-      "action": "notify",
-      "target": "Everyone",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "delete",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "post",
-      "target": "Behalf",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "decide",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "have",
-      "target": "HealthCondition",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "add",
-      "target": "",
+      "action": "share",
+      "target": "Profile",
       "para": []
     },
     {
@@ -362,9 +230,27 @@
       "para": []
     },
     {
-      "actor": "Member",
-      "action": "send",
-      "target": "Link",
+      "actor": "User",
+      "action": "suspend",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Money",
+      "action": "love",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "allow",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Link",
+      "action": "sign",
+      "target": "",
       "para": []
     },
     {
@@ -374,38 +260,44 @@
       "para": []
     },
     {
+      "actor": "Admin",
+      "action": "post",
+      "target": "Announcement",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "contact",
+      "target": "Patient",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "view",
+      "target": "Statistics",
+      "para": []
+    },
+    {
+      "actor": "Group",
+      "action": "notify",
+      "target": "Everyone",
+      "para": []
+    },
+    {
       "actor": "Patient",
       "action": "add",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "access",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "suspend",
-      "target": "Account",
       "para": []
     },
     {
       "actor": "Member",
-      "action": "check",
-      "target": "",
+      "action": "get",
+      "target": "Notification",
       "para": []
     },
     {
       "actor": "Patient",
-      "action": "pull",
-      "target": "Member",
-      "para": []
-    },
-    {
-      "actor": "Money",
-      "action": "love",
+      "action": "contact",
       "target": "",
       "para": []
     },
@@ -417,32 +309,86 @@
     },
     {
       "actor": "Member",
-      "action": "get",
-      "target": "Notification",
+      "action": "send",
+      "target": "Link",
       "para": []
     },
     {
       "actor": "Patient",
-      "action": "attend",
-      "target": "Event",
+      "action": "ask",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Group",
+      "action": "access",
+      "target": "Kind",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "share",
+      "target": "Calendar",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "report",
+      "target": "Junk",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "block",
+      "target": "Message",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "get",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Link",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "get",
+      "target": "Information",
       "para": []
     },
     {
       "actor": "Member",
+      "action": "publish",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "provide",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Friend",
       "action": "notify",
       "target": "",
       "para": []
     },
     {
-      "actor": "Family",
+      "actor": "Patient",
       "action": "send",
-      "target": "Money",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "suspense",
-      "target": "Account",
+      "target": "Message",
       "para": []
     },
     {
@@ -453,44 +399,8 @@
     },
     {
       "actor": "Member",
-      "action": "help",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "share",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "get",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Support",
-      "action": "get",
-      "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "post",
-      "target": "Announcement",
-      "para": []
-    },
-    {
-      "actor": "Network",
-      "action": "have",
-      "target": "PrivacySetting",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "share",
-      "target": "Invitation",
+      "action": "decide",
+      "target": "Network",
       "para": []
     },
     {
@@ -501,32 +411,20 @@
     },
     {
       "actor": "Patient",
-      "action": "allow",
-      "target": "",
+      "action": "attend",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Network",
+      "action": "have",
+      "target": "PrivacySetting",
       "para": []
     },
     {
       "actor": "Patient",
-      "action": "contact",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Link",
-      "action": "sign",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Member",
-      "action": "publish",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Patient",
-      "action": "get",
-      "target": "",
+      "action": "have",
+      "target": "Appointment",
       "para": []
     },
     {
@@ -536,15 +434,117 @@
       "para": []
     },
     {
-      "actor": "Group",
-      "action": "access",
-      "target": "Kind",
+      "actor": "Patient",
+      "action": "post",
+      "target": "Behalf",
       "para": []
     },
     {
-      "actor": "Friend",
+      "actor": "Patient",
+      "action": "add",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Member",
+      "action": "check",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "report",
+      "target": "AdMessage",
+      "para": []
+    },
+    {
+      "actor": "Support",
+      "action": "get",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "delete",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Family",
+      "action": "send",
+      "target": "Money",
+      "para": []
+    },
+    {
+      "actor": "Member",
+      "action": "help",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "have",
+      "target": "HealthCondition",
+      "para": []
+    },
+    {
+      "actor": "Family",
+      "action": "love",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "delete",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "share",
+      "target": "Invitation",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "decide",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Member",
+      "action": "notify",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "pull",
+      "target": "Member",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "suspense",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Member",
       "action": "ask",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "Patient",
+      "action": "sign_up",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Group",
+      "action": "notify",
+      "target": "Group",
       "para": []
     }
   ]

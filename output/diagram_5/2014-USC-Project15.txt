@@ -23,13 +23,9 @@ class Girl {
 	paperWork
 	turn_in()
 }
-class Program {
-}
-class Quality {
-}
-class Week {
-}
 class Roster {
+}
+class Sheet {
 }
 class Paper {
 }
@@ -39,124 +35,128 @@ class Payment {
 class Work {
 	do()
 }
-class Sheet {
+class Program {
+}
+class Week {
+}
+class Quality {
 }
 class Volunteer {
-	view()
-	know()
 	check()
-	have()
 	access()
+	have()
+	know()
+	view()
 	login()
 }
-class GOTRLA {
-	monitor()
-	add()
-	oFFER()
-	support()
-	schedule()
-	delete()
-	have()
-	cHECK()
-	login()
+class Schedule {
 }
 class Coach {
+	have()
 	know()
 	identify()
-	take()
-	have()
 	cHECK()
+	take()
 }
-class User {
-	reset()
-	update()
-	login()
-}
-class Team {
-	have()
-}
-class SUPPORT {
-}
-class Admin {
-	have()
-	add()
-	remove()
+class CopyLiabilityWaiverForm {
 }
 class Staff {
+	analyze()
+	export()
 	have()
 	monitor()
-	export()
-	analyze()
 }
-class Class {
+class Data {
+}
+class Admin {
+	add()
+	remove()
+	have()
+}
+class Privilege {
+}
+class GOTRLA {
+	delete()
+	oFFER()
+	have()
+	schedule()
+	monitor()
+	cHECK()
+	add()
+	login()
+	support()
+}
+class Attendance {
+}
+class User {
+	update()
+	login()
+	reset()
+}
+class Information {
 }
 class GOTRLASTAFF {
 	mONITOR()
 }
-class Attendance {
+class AccountPassword {
+}
+class Class {
+}
+class Team {
+	have()
+}
+class Issue {
 }
 class Security {
 	maintain()
 }
-class Information {
-}
-class AccountPassword {
-}
-class Privilege {
-}
-class Data {
-}
-class CopyLiabilityWaiverForm {
-}
-class Issue {
-}
-class Schedule {
+class SUPPORT {
 }
 class VolunteerCoach {
 }
-Program o-- Week
-Team o-- Roster
 Team --> Issue : have
-Volunteer --> Schedule : access
-Volunteer --> Roster : access
-GOTRLA --> Attendance : monitor
+Team o-- Roster
+GOTRLA --> Information : have
+GOTRLA --> Coach : delete
+Volunteer --> Roster : view
 GOTRLA --> Class : delete
 Staff --> CopyLiabilityWaiverForm : have
+Volunteer --> Schedule : access
 GOTRLA --> Week : schedule
-Attendance o-- Data
 GOTRLA --> Sheet : cHECK
-Volunteer --> Information : have
-GOTRLA --> Coach : delete
-Girl --> Work : turn_in
-GOTRLA --> Information : have
-Volunteer --> Roster : view
-Girl --> Payment : turn_in
-Staff --> Data : analyze
-GOTRLA --> Coach : add
 Volunteer o-- Team : check
-Volunteer --> Volunteer : access
-User o-- AccountPassword : update
-Volunteer o-- Coach
-VolunteerCoach <|-- Coach
-GOTRLA --> SUPPORT : oFFER
-Admin --> Privilege : have
-Program o-- Staff
-GOTRLA --> Roster : support
-GOTRLA --> Data : add
 Attendance o-- Sheet
+GOTRLA --> Roster : support
+GOTRLA --> Data : delete
+Coach --> CopyLiabilityWaiverForm : have
+GOTRLA --> SUPPORT : oFFER
+Program o-- Week
+GOTRLA --> Coach : add
+User o-- AccountPassword : reset
 Staff --> Data : export
+Staff --> Data : analyze
+Girl --> Payment : turn_in
+GOTRLASTAFF --> Quality : mONITOR
+Class o-- Roster
+Coach --> Attendance : take
+Attendance o-- Data
+Volunteer --> Volunteer : access
 Paper o-- Work
+Girl --> Work : turn_in
+User o-- AccountPassword : update
+Program o-- Staff
+Volunteer --> Roster : access
+VolunteerCoach <|-- Coach
+GOTRLA --> Class : add
+Admin --> Privilege : have
+Paper o-- Payment
+GOTRLA --> Data : add
 Admin --> Staff : add
+Volunteer o-- Coach
 Admin --> Staff : remove
 Program o-- Quality
 Girl o-- Data
-Coach --> CopyLiabilityWaiverForm : have
-Class o-- Roster
-GOTRLA --> Class : add
-GOTRLA --> Data : delete
-GOTRLASTAFF --> Quality : mONITOR
-Coach --> Attendance : take
-User o-- AccountPassword : reset
-Paper o-- Payment
+GOTRLA --> Attendance : monitor
+Volunteer --> Information : have
 
 @enduml

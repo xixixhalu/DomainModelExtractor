@@ -25,7 +25,7 @@
   "behavior_list": [
     {
       "actor": "ESS",
-      "action": "copy",
+      "action": "paste",
       "target": "Instruction",
       "para": []
     },
@@ -37,8 +37,14 @@
     },
     {
       "actor": "ESS",
-      "action": "have",
-      "target": "",
+      "action": "save",
+      "target": "ProgramFile",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "LoopConstruct",
       "para": []
     },
     {
@@ -49,49 +55,7 @@
     },
     {
       "actor": "ESS",
-      "action": "drag",
-      "target": "WaitCondition",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "drop",
-      "target": "WaitCondition",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "create",
-      "target": "Song",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "save",
-      "target": "ProgramFile",
-      "para": []
-    },
-    {
-      "actor": "Function",
-      "action": "control",
-      "target": "Behavior",
-      "para": []
-    },
-    {
-      "actor": "DDM",
-      "action": "detect",
-      "target": "Time",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "drag",
-      "target": "Construct",
-      "para": []
-    },
-    {
-      "actor": "NavigationD",
-      "action": "make",
+      "action": "lead",
       "target": "",
       "para": []
     },
@@ -103,26 +67,26 @@
     },
     {
       "actor": "ESS",
-      "action": "drop",
-      "target": "Construct",
+      "action": "drag",
+      "target": "Function",
       "para": []
     },
     {
       "actor": "ESS",
-      "action": "create",
+      "action": "drop",
+      "target": "WaitCondition",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "load",
       "target": "ProgramFile",
       "para": []
     },
     {
-      "actor": "Function",
-      "action": "control",
-      "target": "Movement",
-      "para": []
-    },
-    {
       "actor": "ESS",
-      "action": "drag",
-      "target": "Note",
+      "action": "drop",
+      "target": "LoopConstruct",
       "para": []
     },
     {
@@ -133,26 +97,56 @@
     },
     {
       "actor": "ESS",
-      "action": "drag",
-      "target": "Function",
+      "action": "have",
+      "target": "",
       "para": []
     },
     {
       "actor": "ESS",
       "action": "drag",
-      "target": "LoopConstruct",
-      "para": []
-    },
-    {
-      "actor": "ESS",
-      "action": "drop",
       "target": "Note",
       "para": []
     },
     {
+      "actor": "Function",
+      "action": "control",
+      "target": "Behavior",
+      "para": []
+    },
+    {
+      "actor": "Function",
+      "action": "control",
+      "target": "Movement",
+      "para": []
+    },
+    {
+      "actor": "DModule",
+      "action": "make",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "ESS",
-      "action": "drop",
-      "target": "Function",
+      "action": "drag",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "DDM",
+      "action": "detect",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "create",
+      "target": "Song",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "drag",
+      "target": "Construct",
       "para": []
     },
     {
@@ -163,19 +157,31 @@
     },
     {
       "actor": "ESS",
+      "action": "drag",
+      "target": "WaitCondition",
+      "para": []
+    },
+    {
+      "actor": "ESS",
       "action": "drop",
-      "target": "LoopConstruct",
+      "target": "Note",
       "para": []
     },
     {
       "actor": "ESS",
-      "action": "lead",
-      "target": "",
+      "action": "create",
+      "target": "ProgramFile",
       "para": []
     },
     {
       "actor": "ESS",
-      "action": "paste",
+      "action": "drop",
+      "target": "Function",
+      "para": []
+    },
+    {
+      "actor": "ESS",
+      "action": "copy",
       "target": "Instruction",
       "para": []
     },
@@ -187,18 +193,12 @@
     },
     {
       "actor": "ESS",
-      "action": "load",
-      "target": "ProgramFile",
+      "action": "drop",
+      "target": "Construct",
       "para": []
     },
     {
-      "actor": "ESS",
-      "action": "drag",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "DModule",
+      "actor": "NavigationD",
       "action": "make",
       "target": "",
       "para": []

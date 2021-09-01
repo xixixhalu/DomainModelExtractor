@@ -53,9 +53,9 @@
   },
   "relation_list": [
     {
-      "source": "Admin",
-      "dest": "User",
-      "type": "aggregation",
+      "source": "Stock",
+      "dest": "Item",
+      "type": "generalization",
       "msg": "",
       "multiplicity": [
         "1",
@@ -86,9 +86,9 @@
       "para": []
     },
     {
-      "source": "Stock",
-      "dest": "Item",
-      "type": "generalization",
+      "source": "Admin",
+      "dest": "User",
+      "type": "aggregation",
       "msg": "",
       "multiplicity": [
         "1",
@@ -100,8 +100,20 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "request",
-      "target": "Account",
+      "action": "return",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Volunteer",
+      "action": "check",
+      "target": "Availability",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "Status",
       "para": []
     },
     {
@@ -111,9 +123,105 @@
       "para": []
     },
     {
+      "actor": "User",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "request",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Button",
+      "action": "email",
+      "target": "Darin",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "import",
+      "target": "Spreadsheet",
+      "para": []
+    },
+    {
+      "actor": "Volunteer",
+      "action": "manage",
+      "target": "Reservation",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "change",
+      "target": "Status",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "update",
+      "target": "Inventory",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "click",
+      "target": "Button",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "Darin",
+      "action": "reorder",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "click",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "Volunteer",
+      "action": "check",
+      "target": "Location",
+      "para": []
+    },
+    {
       "actor": "Admin",
       "action": "reserve",
       "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "read",
+      "target": "Log",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "EmailNotification",
       "para": []
     },
     {
@@ -126,114 +234,6 @@
       "actor": "User",
       "action": "search",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "Volunteer",
-      "action": "check",
-      "target": "Availability",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "read",
-      "target": "Log",
-      "para": []
-    },
-    {
-      "actor": "Volunteer",
-      "action": "manage",
-      "target": "Reservation",
-      "para": []
-    },
-    {
-      "actor": "Darin",
-      "action": "reorder",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "update",
-      "target": "Status",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "update",
-      "target": "Inventory",
-      "para": []
-    },
-    {
-      "actor": "Volunteer",
-      "action": "check",
-      "target": "Location",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "EmailNotification",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "import",
-      "target": "Spreadsheet",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Detail",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "change",
-      "target": "Status",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "click",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "add",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "click",
-      "target": "Button",
-      "para": []
-    },
-    {
-      "actor": "Button",
-      "action": "email",
-      "target": "Darin",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "return",
-      "target": "User",
       "para": []
     }
   ]

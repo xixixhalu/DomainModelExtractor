@@ -15,10 +15,6 @@
       ],
       "attributes": [
         {
-          "name": "email",
-          "type": "default"
-        },
-        {
           "name": "password",
           "type": "default"
         },
@@ -28,6 +24,10 @@
         },
         {
           "name": "registration",
+          "type": "default"
+        },
+        {
+          "name": "email",
           "type": "default"
         }
       ]
@@ -55,7 +55,7 @@
   "relation_list": [
     {
       "source": "User",
-      "dest": "Password",
+      "dest": "Permission",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -66,7 +66,7 @@
     },
     {
       "source": "User",
-      "dest": "Permission",
+      "dest": "Password",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -79,20 +79,14 @@
   "behavior_list": [
     {
       "actor": "Admin",
-      "action": "associate",
-      "target": "",
+      "action": "restrict",
+      "target": "Access",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "export",
-      "target": "SoftwareQualityMetric",
-      "para": []
-    },
-    {
-      "actor": "Contributor",
-      "action": "access",
-      "target": "",
+      "actor": "Admin",
+      "action": "terminate",
+      "target": "Account",
       "para": []
     },
     {
@@ -102,21 +96,9 @@
       "para": []
     },
     {
-      "actor": "Contributor",
-      "action": "analyze",
-      "target": "Impact",
-      "para": []
-    },
-    {
       "actor": "User",
-      "action": "request",
+      "action": "confirm",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Statistics",
       "para": []
     },
     {
@@ -127,20 +109,14 @@
     },
     {
       "actor": "User",
-      "action": "export",
+      "action": "assign",
       "target": "",
       "para": []
     },
     {
       "actor": "Admin",
       "action": "associate",
-      "target": "Project",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "give",
-      "target": "Access",
+      "target": "",
       "para": []
     },
     {
@@ -150,39 +126,9 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "associate",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "reset",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Contributor",
-      "action": "give",
-      "target": "Access",
-      "para": []
-    },
-    {
       "actor": "User",
-      "action": "perform",
-      "target": "Analysis",
-      "para": []
-    },
-    {
-      "actor": "Contributor",
-      "action": "work",
+      "action": "expose",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "restrict",
-      "target": "Access",
       "para": []
     },
     {
@@ -193,68 +139,14 @@
     },
     {
       "actor": "Contributor",
+      "action": "ask",
+      "target": "Admin",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
       "action": "contribute",
       "target": "List",
-      "para": []
-    },
-    {
-      "actor": "Contributor",
-      "action": "see",
-      "target": "List",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "block",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "confirm",
-      "target": "Registration",
-      "para": []
-    },
-    {
-      "actor": "Contributor",
-      "action": "see",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "VerificationEmail",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "Signup",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "reset",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "assign",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "reset",
-      "target": "",
       "para": []
     },
     {
@@ -266,31 +158,43 @@
     {
       "actor": "Contributor",
       "action": "ask",
-      "target": "Admin",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "terminate",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "expose",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
-      "action": "see",
-      "target": "Evolution",
+      "action": "export",
+      "target": "SoftwareQualityMetric",
       "para": []
     },
     {
       "actor": "User",
-      "action": "confirm",
+      "action": "request",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "export",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "give",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "Statistics",
       "para": []
     },
     {
@@ -300,15 +204,111 @@
       "para": []
     },
     {
+      "actor": "Contributor",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "see",
+      "target": "List",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reset",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "Evolution",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "associate",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "give",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "reset",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "confirm",
+      "target": "Registration",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "work",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contributor",
+      "action": "analyze",
+      "target": "Impact",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "Admin",
       "action": "terminate",
       "target": "",
       "para": []
     },
     {
-      "actor": "Contributor",
-      "action": "ask",
+      "actor": "Admin",
+      "action": "associate",
+      "target": "Project",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "perform",
+      "target": "Analysis",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "block",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Signup",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "reset",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "VerificationEmail",
       "para": []
     }
   ]

@@ -12,11 +12,11 @@
           "type": "default"
         },
         {
-          "name": "kid",
+          "name": "swimmer",
           "type": "default"
         },
         {
-          "name": "swimmer",
+          "name": "kid",
           "type": "default"
         }
       ]
@@ -42,11 +42,11 @@
       ],
       "attributes": [
         {
-          "name": "kid",
+          "name": "account",
           "type": "default"
         },
         {
-          "name": "account",
+          "name": "kid",
           "type": "default"
         }
       ]
@@ -108,39 +108,6 @@
   },
   "relation_list": [
     {
-      "source": "Amount",
-      "dest": "Detail",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Access",
-      "dest": "SourceCode",
-      "type": "association",
-      "msg": "to",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Parent",
-      "dest": "RegistrationKey",
-      "type": "association",
-      "msg": "supported_by",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
       "source": "Pdf",
       "dest": "Report",
       "type": "aggregation",
@@ -163,8 +130,41 @@
       "para": []
     },
     {
+      "source": "Parent",
+      "dest": "RegistrationKey",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Amount",
+      "dest": "Detail",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
       "source": "Access",
       "dest": "Database",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Access",
+      "dest": "SourceCode",
       "type": "association",
       "msg": "to",
       "multiplicity": [
@@ -187,15 +187,51 @@
   ],
   "behavior_list": [
     {
-      "actor": "Maintainer",
-      "action": "access",
+      "actor": "User",
+      "action": "expect",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
       "target": "",
       "para": []
     },
     {
-      "actor": "Amount",
-      "action": "collect",
+      "actor": "Maintainer",
+      "action": "modify",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "Swimmer",
+      "action": "sign",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "insert",
+      "target": "Database",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "sign",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "delete",
+      "target": "Database",
       "para": []
     },
     {
@@ -206,44 +242,62 @@
     },
     {
       "actor": "Maintainer",
-      "action": "modify",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Kid",
-      "action": "post",
-      "target": "Deadline",
+      "action": "have",
+      "target": "Access",
       "para": []
     },
     {
       "actor": "Maintainer",
-      "action": "access",
+      "action": "modify",
       "target": "Database",
       "para": []
     },
     {
       "actor": "Parent",
-      "action": "edit",
+      "action": "see",
+      "target": "Parent",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "review",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "login",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Kid",
+      "action": "sign",
       "target": "",
       "para": []
     },
     {
       "actor": "Coach",
-      "action": "edit",
-      "target": "",
+      "action": "extract",
+      "target": "UploadEvent",
       "para": []
     },
     {
       "actor": "Coach",
-      "action": "generate",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
       "action": "modify",
-      "target": "Database",
+      "target": "Result",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "view",
+      "target": "PayeeInformation",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "extract",
+      "target": "Information",
       "para": []
     },
     {
@@ -254,62 +308,20 @@
     },
     {
       "actor": "Coach",
-      "action": "generate",
-      "target": "CSVFile",
+      "action": "extract",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Kid",
-      "action": "sign",
+      "actor": "Parent",
+      "action": "edit",
       "target": "",
       "para": []
     },
     {
       "actor": "Maintainer",
-      "action": "have",
-      "target": "Access",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "expect",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "generate",
-      "target": "Report",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "extract",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Treasurer",
       "action": "see",
-      "target": "Amount",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "modify",
-      "target": "Something",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "review",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "",
+      "target": "Detail",
       "para": []
     },
     {
@@ -325,32 +337,14 @@
       "para": []
     },
     {
-      "actor": "Parent",
-      "action": "see",
-      "target": "",
-      "para": []
-    },
-    {
       "actor": "Treasurer",
       "action": "see",
-      "target": "",
+      "target": "Amount",
       "para": []
     },
     {
-      "actor": "Parent",
-      "action": "view",
-      "target": "PayeeInformation",
-      "para": []
-    },
-    {
-      "actor": "Parent",
-      "action": "login",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Swimmer",
-      "action": "sign",
+      "actor": "Coach",
+      "action": "generate",
       "target": "",
       "para": []
     },
@@ -361,27 +355,39 @@
       "para": []
     },
     {
-      "actor": "Maintainer",
-      "action": "delete",
-      "target": "Database",
+      "actor": "Coach",
+      "action": "expect",
+      "target": "User",
       "para": []
     },
     {
-      "actor": "Parent",
-      "action": "view",
+      "actor": "Amount",
+      "action": "collect",
       "target": "",
       "para": []
     },
     {
       "actor": "Parent",
-      "action": "see",
-      "target": "Parent",
+      "action": "view",
+      "target": "Event",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "access",
+      "target": "Database",
       "para": []
     },
     {
       "actor": "Coach",
-      "action": "overwrite",
-      "target": "Result",
+      "action": "modify",
+      "target": "Something",
       "para": []
     },
     {
@@ -392,56 +398,50 @@
     },
     {
       "actor": "Parent",
-      "action": "view",
-      "target": "Event",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "expect",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Coach",
-      "action": "extract",
+      "action": "see",
       "target": "",
       "para": []
     },
     {
-      "actor": "Parent",
-      "action": "sign",
+      "actor": "Coach",
+      "action": "generate",
+      "target": "CSVFile",
+      "para": []
+    },
+    {
+      "actor": "Kid",
+      "action": "post",
+      "target": "Deadline",
+      "para": []
+    },
+    {
+      "actor": "Treasurer",
+      "action": "see",
       "target": "",
       "para": []
     },
     {
-      "actor": "Maintainer",
-      "action": "insert",
-      "target": "Database",
-      "para": []
-    },
-    {
       "actor": "Coach",
-      "action": "modify",
+      "action": "overwrite",
       "target": "Result",
       "para": []
     },
     {
-      "actor": "Maintainer",
-      "action": "see",
-      "target": "Detail",
-      "para": []
-    },
-    {
       "actor": "Coach",
-      "action": "extract",
-      "target": "UploadEvent",
+      "action": "generate",
+      "target": "Report",
       "para": []
     },
     {
       "actor": "Coach",
       "action": "edit",
       "target": "List",
+      "para": []
+    },
+    {
+      "actor": "Coach",
+      "action": "edit",
+      "target": "",
       "para": []
     }
   ]

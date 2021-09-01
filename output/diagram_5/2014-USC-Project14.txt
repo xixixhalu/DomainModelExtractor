@@ -9,78 +9,78 @@ class Member<actor> {
 }
 class WaWITPersonnel<actor> {
 }
+class Time {
+	enter()
+}
+class Data {
+}
 class Client {
-	use()
-	show_up()
-	save()
-	enroll()
 	get()
 	register()
-	provide()
 	check_in()
+	enroll()
+	provide()
+	save()
+	use()
+	show_up()
 	enter()
 }
 class WaWITPersonnel {
-	use()
-	capture()
-	analyse()
 	generate()
+	analyse()
 	track()
+	capture()
+	use()
 }
 class Type {
 }
-class Report {
+class Board {
+	share()
+}
+class Number {
+	use()
 }
 class Center {
+}
+class Service {
+}
+class Report {
 }
 class Member {
 	keep()
 	access()
 }
-class User {
-}
-class Data {
-}
 class Portal {
-}
-class Board {
-	share()
-}
-class Time {
-	enter()
-}
-class Job {
 }
 class Event {
 }
-class Appointment {
-}
-class Number {
-	use()
-}
-class Service {
-}
 class Feedback {
 }
-WaWITPersonnel --> Type : track
-Member --> Portal : access
-Client --> Data : save
-Time o-- Client
-Time --> Data : enter
-WaWITPersonnel --> Report : generate
-Client --> Feedback : provide
-Client --> Center : use
-WaWITPersonnel --> Center : use
-WaWITPersonnel --> Client : capture
-Member --> User : keep
-Client --> Job : get
-Member --> Event : keep
-WaWITPersonnel --> Appointment : track
-Number --> Center : use
+class Job {
+}
+class Appointment {
+}
+class User {
+}
 Client --> Data : enter
 WaWITPersonnel --> Service : analyse
-Client --> Service : use
+Client --> Center : use
+WaWITPersonnel --> Type : track
+Member --> User : keep
+Time o-- Client
+WaWITPersonnel --> Report : generate
 WaWITPersonnel --> Type : analyse
+Number --> Center : use
 Client --> Center : enter
+WaWITPersonnel --> Center : use
+Client --> Service : use
+Member --> Portal : access
+Member --> Event : keep
+Client --> Data : save
+Client --> Feedback : provide
+WaWITPersonnel --> Client : capture
+Client --> Job : get
+WaWITPersonnel --> Appointment : track
+Time --> Data : enter
 
 @enduml

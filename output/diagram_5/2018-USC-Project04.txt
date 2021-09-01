@@ -8,9 +8,9 @@ class Office<actor> {
 }
 class Doctor<actor> {
 	behalf
-	patient
-	schedulingApplication
 	data
+	schedulingApplication
+	patient
 }
 class Admin<actor> {
 	profession
@@ -19,161 +19,161 @@ class Administrator<actor> {
 }
 class Developer<actor> {
 }
-class Info {
+class Document {
 }
 class Record {
 }
-class Document {
+class Info {
+}
+class App {
+	integrate()
+}
+class Office {
+	manage()
+}
+class Data {
+	preserve()
 }
 class User {
-	delete()
-	attach()
-	view()
-	track()
-	access()
-	manage()
-	generate()
-	trust()
-	import()
-	export()
-	add()
-	have()
 	edit()
-	assign()
+	have()
+	trust()
+	generate()
 	create()
+	access()
+	assign()
+	attach()
+	delete()
+	track()
+	export()
 	download()
+	manage()
+	import()
+	add()
+	view()
+}
+class Invoice {
+}
+class Allergy {
+}
+class Administrator {
+	save()
+	retrieve()
+}
+class Developer {
+	protect()
+}
+class Doctor {
+	edit()
+	choose()
+	match()
+	fill_out()
+	want()
+	recommend()
+	view()
+}
+class Task {
+}
+class Form {
+}
+class File {
+}
+class VendorProductInformation {
+}
+class Progress {
+}
+class Product {
+	purchase()
+}
+class Patient {
+	preserve()
+	recommend()
+}
+class VisitDetail {
+}
+class Admin {
+	customize()
+}
+class Information {
+	train()
+}
+class Behalf {
 }
 class Medication {
 }
-class Behalf {
+class OrderForm {
+	purchase()
+}
+class Inventory {
 }
 class CSVFile {
 	have()
 	say()
 }
-class Product {
-	purchase()
-}
-class Doctor {
-	view()
-	want()
-	fill_out()
-	choose()
-	edit()
-	recommend()
-	match()
+class Trial {
+	end()
 }
 class Report {
 	generate()
 }
-class Invoice {
+class Application {
 }
-class Data {
-	preserve()
-}
-class Admin {
-	customize()
-}
-class App {
-	integrate()
-}
-class Patient {
-	recommend()
-	preserve()
-}
-class Information {
-	train()
-}
-class Allergy {
-}
-class Administrator {
-	retrieve()
-	save()
-}
-class Developer {
-	protect()
-}
-class Task {
-}
-class Office {
-	manage()
-}
-class VisitDetail {
-}
-class OrderForm {
-	purchase()
-}
-class File {
-}
-class Progress {
-}
-class Form {
-}
-class Inventory {
-}
-class Trial {
-	end()
+class Customer {
 }
 class Subscription {
 	end()
 }
-class Customer {
-}
-class Application {
-}
-class VendorProductInformation {
+class CsvFile {
 }
 class Level {
 }
-class CsvFile {
-}
-Product o-- Info
-User --> Inventory : manage
-User --> Product : add
-Task --> Doctor : to
-CSVFile --> Product : say
+Office --> Inventory : manage
 Patient o-- Document
-User --> VisitDetail : view
-Patient o-- Record
-Administrator --> Document : save
-Doctor o-- Patient : choose
-Patient --> Product : to
-Doctor --> Report : view
-User --> Form : add
-Doctor --> Product : choose
-Data --> Record : to
-Doctor --> Product : recommend
-User --> CsvFile : supported_by
 User --> Invoice : create
-User --> Data : manage
-Doctor --> File : recommend
-Info --> CSVFile : to
-User --> Customer : track
-User --> Task : have
-User --> Info : export
-User --> Application : trust
-Doctor o-- Patient : match
-User --> Information : access
-Doctor --> Progress : edit
-User --> VisitDetail : edit
-User --> VendorProductInformation : import
-User --> Record : create
+User --> Inventory : manage
+User --> CsvFile : supported_by
+User --> Product : add
 User --> Allergy : add
-User --> Data : attach
-User --> Task : assign
+Info --> CSVFile : to
 CSVFile --> Information : have
-Doctor --> OrderForm : fill_out
-Office --> Data : manage
-User --> Form : download
+Task --> Doctor : to
+User --> VisitDetail : view
+Patient --> Product : to
+Administrator --> Document : save
+User --> Task : assign
+Data --> Record : to
+User --> Record : create
+CSVFile --> Product : say
+User --> VisitDetail : edit
+User --> Level : supported_by
+User --> Data : manage
+Doctor --> Product : recommend
+Product o-- Info
+Doctor --> Report : view
+User --> Information : access
+User --> Task : have
+User --> Form : delete
+User --> Task : generate
+Office --> Behalf : manage
+User --> Application : trust
+User --> Form : add
 User --> VisitDetail : add
 User --> Medication : add
-User --> Form : delete
-Developer --> App : protect
-Office --> Inventory : manage
-Doctor --> App : want
-User --> Level : supported_by
-User --> Task : generate
+Doctor --> File : recommend
+User --> Customer : track
+User --> Data : attach
+Doctor --> Progress : edit
 User --> Behalf : manage
-Office --> Behalf : manage
+Doctor o-- Patient : match
+User --> Form : download
+Doctor --> OrderForm : fill_out
+User --> VendorProductInformation : import
+Doctor o-- Patient : choose
+Developer --> App : protect
+User --> Info : export
+Office --> Data : manage
+Doctor --> Product : choose
+Doctor --> App : want
+Patient o-- Record
 
 @enduml

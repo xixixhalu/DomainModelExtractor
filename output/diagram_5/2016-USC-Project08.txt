@@ -9,113 +9,113 @@ class Maintainer<actor> {
 }
 class Entrepreneur<actor> {
 }
-class Maintainer {
-	update()
-	build()
+class User {
+	reset()
+	share()
+	use()
+	change()
+	like()
+	comment()
+	delete()
+	sign_up()
+	post()
+	receive()
+	send()
+	access()
 }
-class App {
+class NewsFeed {
+}
+class Message {
+}
+class Admin {
+	increase()
+	disable()
+	use()
+	add()
+}
+class Application {
 }
 class Entrepreneur {
 	see()
-	match()
 	resubmit()
-	edit()
 	complete()
 	submit()
+	edit()
+	match()
 	have()
 }
-class Information {
+class HomeworkAssignment {
 }
-class User {
-	comment()
-	sign_up()
-	receive()
-	share()
-	like()
-	send()
-	use()
-	access()
-	reset()
-	delete()
-	change()
-	post()
+class Comment {
 }
 class Post {
 }
 class Access {
 }
-class Algorithm {
-	match()
-}
-class Mentor {
-	assign()
-}
-class Message {
-}
-class NewsFeed {
-}
-class Issue {
-}
-class Admin {
-	add()
-	disable()
-	use()
-	increase()
-}
-class CourseContent {
-}
-class Application {
-}
-class Quality {
-}
 class Password {
-}
-class Comment {
 }
 class Profile {
 	provide()
 }
+class Information {
+}
+class Mentor {
+	assign()
+}
+class Quality {
+}
+class Algorithm {
+	match()
+}
+class Maintainer {
+	build()
+	update()
+}
+class CourseContent {
+}
+class Issue {
+}
+class Version {
+}
 class Account {
 }
-class HomeworkAssignment {
+class App {
 }
 class Questionnaire {
 	provide()
 }
-class Version {
-}
-Questionnaire --> Information : provide
-Entrepreneur --> HomeworkAssignment : submit
-User --> NewsFeed : share
-Mentor o-- Information
-Entrepreneur --> Information : see
-Profile --> Information : provide
-Admin --> Application : add
-Algorithm --> Mentor : match
-User --> Message : send
-Algorithm --> Entrepreneur : match
-User --> Message : receive
-Admin --> Account : disable
-User --> NewsFeed : like
-User --> Password : change
-User o-- Account : delete
-User --> Issue : post
-User --> Post : like
-User --> NewsFeed : comment
-User --> Post : comment
-Admin --> CourseContent : add
-Entrepreneur --> Access : have
-User --> Comment : post
-Entrepreneur --> Profile : complete
-Entrepreneur --> HomeworkAssignment : resubmit
-Maintainer --> Application : update
 Entrepreneur --> Questionnaire : complete
-Admin --> Quality : increase
+User o-- Account : delete
+User --> Message : send
+Entrepreneur --> Profile : complete
+Algorithm --> Mentor : match
+Admin --> CourseContent : add
+User --> Post : like
+User --> Comment : post
+User --> Issue : post
+Entrepreneur --> Access : have
 User --> Version : use
-Entrepreneur --> HomeworkAssignment : edit
 User --> Password : reset
-Admin --> Algorithm : use
+Admin --> Application : add
+Admin --> Account : disable
+User --> Message : receive
+User --> Post : comment
+Profile --> Information : provide
+Entrepreneur --> Information : see
 User --> Post : share
+User --> NewsFeed : share
+Entrepreneur --> HomeworkAssignment : edit
+User --> NewsFeed : like
+Admin --> Quality : increase
 Maintainer --> App : build
+Entrepreneur --> HomeworkAssignment : submit
+Questionnaire --> Information : provide
+User --> Password : change
+Algorithm --> Entrepreneur : match
+Entrepreneur --> HomeworkAssignment : resubmit
+Mentor o-- Information
+Admin --> Algorithm : use
+Maintainer --> Application : update
+User --> NewsFeed : comment
 
 @enduml

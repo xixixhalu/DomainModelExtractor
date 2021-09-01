@@ -1,48 +1,58 @@
 @startuml
 hide circle
 class User<actor> {
+	location
 	appointment
 	information
-	location
 }
 class Shelter<actor> {
 	information
 }
 class Pet {
-	information
 	picture
+	information
 	list()
 }
 class User {
+	apply()
+	cancel()
+	know()
+	get()
 	inform()
 	make()
-	book()
-	know()
-	have()
-	get()
-	contact()
-	want()
-	update()
 	use()
-	decide()
-	cancel()
-	apply()
-	see()
-	visit()
+	have()
 	modify()
+	decide()
+	see()
+	want()
+	contact()
+	visit()
+	book()
+	update()
 }
-class Picture {
+class SchedulingFunction {
 }
-class Information {
-	keep()
-	stay_up()
+class UI {
 }
 class Shelter {
-	control()
-	know()
-	get()
-	want()
 	input()
+	control()
+	get()
+	know()
+	want()
+}
+class Notification {
+}
+class Information {
+	stay_up()
+	keep()
+}
+class Result {
+}
+class Reminder {
+}
+class Agency {
 }
 class Ability {
 	select()
@@ -51,40 +61,30 @@ class Appointment {
 }
 class Animal {
 }
-class Agency {
-}
-class Reminder {
-}
-class UI {
-}
-class SchedulingFunction {
-}
-class Notification {
+class Picture {
 }
 class Filter {
 }
-class Result {
-}
 class GoogleCalendar {
 }
-User --> Pet : see
-User o-- Information : want
-Shelter o-- Information : input
-User o-- Information : see
-User --> Agency : inform
-User --> Reminder : get
 User --> UI : use
-Ability --> Animal : select
-User --> SchedulingFunction : want
-Shelter --> Notification : get
-User o-- Appointment : book
-SchedulingFunction --> GoogleCalendar : supported_by
-User --> User : decide
-User --> Filter : apply
-User o-- Information : modify
-User --> Shelter : visit
-User --> Picture : see
+User o-- Information : want
 User --> Result : have
+User --> Reminder : get
+Shelter --> Notification : get
+User --> Shelter : visit
+User o-- Information : modify
+User --> Agency : inform
 Shelter --> Ability : want
+User --> Pet : see
+User o-- Appointment : book
+Shelter o-- Information : input
+Ability --> Animal : select
+User --> Picture : see
+SchedulingFunction --> GoogleCalendar : supported_by
+User o-- Information : see
+User --> User : decide
+User --> SchedulingFunction : want
+User --> Filter : apply
 
 @enduml

@@ -1,8 +1,8 @@
 @startuml
 hide circle
 class User<actor> {
-	progressReport
 	performance
+	progressReport
 	point
 }
 class Developer<actor> {
@@ -11,96 +11,96 @@ class Maintainer<actor> {
 }
 class Analytic {
 }
-class Developer {
-	publish()
-	hand()
-	fix()
-	restructure()
-	hand_off()
-	provide()
-	give()
-	change()
-}
-class Option {
-	enable()
-}
-class Time {
-	fix()
-}
-class Project {
-}
 class User {
-	get()
-	track()
 	understand()
+	show()
 	play()
-	rate()
-	view()
 	have()
 	skip()
-	show()
-	proceed()
-}
-class Hint {
-}
-class Maintainer {
 	get()
-}
-class Question {
-	answer()
+	view()
+	rate()
+	track()
+	proceed()
 }
 class App {
 }
-class UI {
-	make()
+class Developer {
+	provide()
+	fix()
+	give()
+	publish()
+	restructure()
+	hand()
+	change()
+	hand_off()
 }
-class Feedback {
-}
-class SourceCode {
+class Point {
 }
 class Component {
 	have()
 }
 class Structure {
 }
-class Bug {
+class Feedback {
 }
-class Progress {
-}
-class Report {
-}
-class Graph {
-}
-class Point {
+class Question {
+	answer()
 }
 class Trouble {
 	answer()
 }
+class Maintainer {
+	get()
+}
+class SourceCode {
+}
+class Time {
+	fix()
+}
+class Bug {
+}
+class Project {
+}
+class Hint {
+}
+class UI {
+	make()
+}
+class Graph {
+}
+class Progress {
+}
+class Option {
+	enable()
+}
+class Report {
+}
 class Client {
 }
-User --> App : play
-Developer --> Time : give
 Developer --> App : publish
-Developer --> Graph : fix
-User --> Question : skip
-Maintainer --> Analytic : get
-User --> App : rate
-User o-- Point : understand
-Trouble --> Question : answer
-Developer --> UI : change
-Option --> User : enable
-User o-- Analytic
-User --> Feedback : get
-SourceCode --> Client : to
-Developer --> Project : restructure
-Developer --> SourceCode : hand_off
-Progress o-- Report
-Developer --> SourceCode : hand
-User --> Hint : get
-Component --> Structure : have
-Time --> Bug : fix
-User o-- Progress : track
-User --> Report : view
+User --> App : play
 Developer --> Option : provide
+User --> Question : skip
+User --> Feedback : get
+Trouble --> Question : answer
+User --> Report : view
+SourceCode --> Client : to
+Maintainer --> Analytic : get
+Developer --> SourceCode : hand_off
+Developer --> SourceCode : hand
+Option --> User : enable
+Developer --> Time : give
+User o-- Analytic
+Time --> Bug : fix
+Progress o-- Report
+Developer --> Project : restructure
+Component --> Structure : have
+User --> Hint : get
+Developer --> UI : change
+Developer --> Graph : fix
+User o-- Progress : track
+User o-- Point : understand
+User --> App : rate
 
 @enduml

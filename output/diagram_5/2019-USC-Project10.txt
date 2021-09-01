@@ -9,86 +9,86 @@ class VideoUser<actor> {
 class Title {
 	get()
 }
+class Size {
+}
+class Buzz {
+	rank()
+}
 class Tv {
 }
 class Show {
 	trend()
 }
-class Buzz {
-	rank()
-}
-class Size {
-}
-class TwitterData {
-	recommend()
+class Timestamp {
+	reduce()
 }
 class Developer {
-	display()
-	filter()
-	script()
-	link()
-	create()
 	design()
-	access()
 	map()
+	display()
+	link()
+	filter()
+	create()
+	access()
+	script()
+}
+class Data {
+	pull()
+}
+class Media {
+	recommend()
+}
+class BackendSystem {
+	provide()
+}
+class Api {
+}
+class Result {
+}
+class Movie {
+	trend()
 }
 class VideoUser {
 	use()
 	see()
 }
-class Media {
+class TwitterData {
 	recommend()
 }
-class Data {
-	pull()
+class User {
+	find()
+	input()
 }
 class Info {
 	pull()
-}
-class BackendSystem {
-	provide()
-}
-class User {
-	input()
-	find()
-}
-class Movie {
-	trend()
-}
-class Api {
-}
-class Timestamp {
-	reduce()
-}
-class Result {
-}
-class FrontendSystem {
 }
 class IMDB {
 }
 class Respect {
 }
-IMDB o-- Title
-Media o-- Data
-Tv o-- Movie
-User --> Title : input
-Data o-- Size
-Developer --> BackendSystem : design
+class FrontendSystem {
+}
+Timestamp --> Size : reduce
 Movie o-- Title
+Tv o-- Show
+Show --> Media : trend
+BackendSystem --> Api : provide
+IMDB o-- Title
+Developer --> Result : display
+Api --> FrontendSystem : to
+Movie --> Media : trend
+Data o-- Size
+VideoUser --> Media : use
+Developer --> BackendSystem : design
 Buzz --> Title : rank
 VideoUser --> TwitterData : use
-Tv o-- Show
-Data --> Title : to
-Show --> Media : trend
-Media o-- Buzz
-User --> Movie : find
-VideoUser --> Media : use
-BackendSystem --> Api : provide
-Api --> FrontendSystem : to
 Developer --> Data : access
-Movie --> Media : trend
-Timestamp --> Size : reduce
-Developer --> Result : display
+User --> Title : input
+User --> Movie : find
+Media o-- Buzz
+Data --> Title : to
+Tv o-- Movie
+Media o-- Data
 IMDB --> Respect : supported_by
 
 @enduml

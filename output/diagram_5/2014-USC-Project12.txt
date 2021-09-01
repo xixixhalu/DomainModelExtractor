@@ -18,80 +18,80 @@ class Profile {
 }
 class CarePricing {
 }
-class User {
-	find()
-	filter()
-	create()
-	connect()
-	follow()
-	have()
-	receive()
+class Provider {
+	share()
+	send()
+}
+class Offering {
+	drive()
 }
 class Content {
 	drive()
 }
 class Consumer {
 	rate()
-	create()
 	compare()
-	join()
 	register()
+	join()
+	create()
 }
-class HealthcarePrice {
+class Network {
 }
-class Corporation {
-	view()
-}
-class Price {
-}
-class Location {
-	access()
+class User {
+	follow()
+	filter()
+	receive()
+	connect()
+	find()
+	create()
+	have()
 }
 class Access {
 	feature()
 }
-class Provider {
-	send()
-	share()
+class Location {
+	access()
+}
+class Notification {
+}
+class Review {
 }
 class Pricing {
 	drive()
 }
-class Network {
-}
-class Offering {
-	drive()
-}
-class Review {
-}
-class Notification {
-}
-class PushContent {
-}
-class Offer {
+class Corporation {
+	view()
 }
 class Employee {
 }
+class Price {
+}
+class PushContent {
+}
+class HealthcarePrice {
+}
+class Offer {
+}
+Access --> CarePricing : feature
+Location --> Provider : access
 Provider --> Offering : share
-Offering --> User : to
-User o-- Profile : create
+User --> Notification : filter
+Health o-- Profile
+Provider --> Offering : send
 Profile --> Offer : attach
 User o-- Location : find
-Access --> CarePricing : feature
-Corporation o-- Employee : view
 Health o-- CarePricing
-Health o-- Profile
-Provider --> Pricing : share
-Consumer --> Provider : rate
-Location --> Provider : access
-Consumer --> Network : join
-Provider --> Offering : send
-Corporation --> Price : view
+Provider --> Content : share
+Offering --> User : to
 Consumer --> Review : create
 Consumer --> Network : create
-Provider --> Content : share
-User --> Notification : filter
+Provider --> Pricing : share
 User --> PushContent : receive
+Corporation o-- Employee : view
+Consumer --> Network : join
+Consumer --> Provider : rate
+Corporation --> Price : view
 Consumer --> HealthcarePrice : compare
+User o-- Profile : create
 
 @enduml

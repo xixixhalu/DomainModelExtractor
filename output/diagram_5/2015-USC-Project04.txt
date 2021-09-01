@@ -2,14 +2,14 @@
 hide circle
 class Learner<actor> {
 	score
-	conflictResolutionSkill
 	conflictManagementSkill
+	conflictResolutionSkill
 }
 class ExperientialLearningCenterStaff<actor> {
 }
 class CollegeStudent<actor> {
-	conflictManagementSkill
 	competence
+	conflictManagementSkill
 }
 class MBVStudent<actor> {
 	team
@@ -28,124 +28,121 @@ class ManagementSkill {
 }
 class Resolution {
 }
-class Exercise {
-	encourage()
+class Skill {
 }
 class Other {
 	make()
 }
 class Civilian {
 }
-class Learner {
-	resolve()
+class Employee {
 	practice()
-	judge()
-	view()
-	take()
-	progress()
-	improve()
-	have()
-	know()
 }
-class Team {
-	resolve()
+class ProductConflictResolutionSkill {
 }
-class Practice {
-	work()
+class ConflictResolutionExercise {
+	encourage()
 }
 class Veteran {
 	see()
 	compare()
 }
-class ThoughtProcess {
-}
 class Graph {
 }
-class Assessment {
-}
-class Conflict {
-}
-class ConflictResolutionSkill {
-}
 class CollegeStudent {
+	improve()
 	use()
-	improve()
-}
-class Competence {
-}
-class Teammate {
-	improve()
-}
-class Decision {
-}
-class Employee {
-	practice()
 }
 class Program {
 	integrate()
 }
-class Experience {
-}
-class Score {
-	keep()
-}
 class MBVStudent {
 	collaborate()
-	use()
 	participate()
+	use()
+}
+class Decision {
 }
 class ExperientialLearningCenterStaff {
 	take()
 	help()
 }
-class ProductConflictResolutionSkill {
+class Learner {
+	know()
+	resolve()
+	practice()
+	take()
+	have()
+	view()
+	judge()
+	improve()
+	progress()
 }
-class Confidence {
+class Team {
+	resolve()
+}
+class Assessment {
 }
 class Situation {
 }
+class Score {
+	keep()
+}
+class Experience {
+}
+class Conflict {
+}
 class Business {
+}
+class Confidence {
 }
 class Training {
 }
-class ConflictResolution {
+class Teammate {
+	improve()
 }
-class ConflictResolutionExercise {
+class Practice {
+	work()
+}
+class Competence {
+}
+class ThoughtProcess {
 }
 class Communicator {
 }
-Learner --> Team : resolve
-Practice --> Team : work
-Program --> Business : integrate
-ExperientialLearningCenterStaff --> Training : take
-Learner --> ManagementSkill : improve
-Exercise --> Employee : encourage
-ConflictResolutionExercise <|-- Exercise
-Veteran o-- ThoughtProcess : compare
+class ConflictResolution {
+}
+Employee --> ProductConflictResolutionSkill : practice
 CollegeStudent --> ManagementSkill : improve
 Conflict o-- ManagementSkill
-Veteran --> Graph : see
-Program --> Experience : integrate
-Communicator <|-- Learner
-Learner --> Assessment : take
-Learner o-- Conflict : resolve
-Learner --> Experience : supported_by
-Learner o-- Score : view
-Decision o-- Other
-Decision --> Civilian : to
-ConflictResolution o-- Exercise
-Conflict o-- Resolution
-Learner o-- ConflictResolutionSkill : practice
-Decision o-- Civilian
-Team --> Conflict : resolve
-Employee --> ProductConflictResolutionSkill : practice
-CollegeStudent o-- Competence : improve
-CollegeStudent --> Confidence : improve
 CollegeStudent o-- Conflict : improve
-MBVStudent --> Score : use
+Learner o-- Conflict : resolve
+ConflictResolutionExercise --> Employee : encourage
+Veteran o-- ThoughtProcess : compare
+Communicator <|-- Learner
+Veteran --> Graph : see
+Program --> Business : integrate
+Conflict o-- Resolution
+Decision o-- Other
+CollegeStudent --> Confidence : improve
+Decision o-- Civilian
 CollegeStudent --> Program : use
-Teammate --> ConflictResolutionSkill : improve
+Learner --> Experience : supported_by
+ConflictResolution o-- Skill
+Learner o-- Score : view
 Veteran o-- Decision : compare
+ExperientialLearningCenterStaff --> Training : take
+Decision --> Civilian : to
+Practice --> Team : work
+Teammate --> Skill : improve
+Learner --> Team : resolve
+Learner --> Skill : practice
+Learner --> Assessment : take
+MBVStudent --> Score : use
+Learner --> ManagementSkill : improve
 Other --> Situation : make
+CollegeStudent o-- Competence : improve
+Program --> Experience : integrate
+Team --> Conflict : resolve
 
 @enduml

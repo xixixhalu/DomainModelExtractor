@@ -47,9 +47,9 @@
       "para": []
     },
     {
-      "source": "Sale",
+      "source": "SaleManager",
       "dest": "Manager",
-      "type": "aggregation",
+      "type": "generalization",
       "msg": "",
       "multiplicity": [
         "1",
@@ -58,9 +58,9 @@
       "para": []
     },
     {
-      "source": "SaleManager",
+      "source": "Sale",
       "dest": "Manager",
-      "type": "generalization",
+      "type": "aggregation",
       "msg": "",
       "multiplicity": [
         "1",
@@ -78,8 +78,8 @@
     },
     {
       "actor": "Agent",
-      "action": "dial",
-      "target": "Customer",
+      "action": "request",
+      "target": "ConferenceCall",
       "para": []
     },
     {
@@ -89,9 +89,21 @@
       "para": []
     },
     {
-      "actor": "Auto",
-      "action": "dial",
-      "target": "Customer",
+      "actor": "Manager",
+      "action": "listen_in",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "close",
+      "target": "Deal",
+      "para": []
+    },
+    {
+      "actor": "Agent",
+      "action": "click",
+      "target": "",
       "para": []
     },
     {
@@ -102,13 +114,7 @@
     },
     {
       "actor": "Manager",
-      "action": "listen",
-      "target": "Call",
-      "para": []
-    },
-    {
-      "actor": "Agent",
-      "action": "click",
+      "action": "close",
       "target": "",
       "para": []
     },
@@ -120,32 +126,14 @@
     },
     {
       "actor": "Manager",
-      "action": "close",
-      "target": "Deal",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "close",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Manager",
       "action": "train",
       "target": "Agent",
       "para": []
     },
     {
       "actor": "Agent",
-      "action": "request",
-      "target": "ConferenceCall",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "listen_in",
-      "target": "",
+      "action": "dial",
+      "target": "Customer",
       "para": []
     },
     {
@@ -156,14 +144,26 @@
     },
     {
       "actor": "Manager",
-      "action": "speak",
+      "action": "listen",
       "target": "",
       "para": []
     },
     {
       "actor": "Manager",
-      "action": "listen",
+      "action": "speak",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "Auto",
+      "action": "dial",
+      "target": "Customer",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "listen",
+      "target": "Call",
       "para": []
     }
   ]

@@ -7,8 +7,8 @@ class Admin<actor> {
 	session
 }
 class Contributor<actor> {
-	successRate
 	profile
+	successRate
 	session
 }
 class Draft {
@@ -23,64 +23,68 @@ class Week {
 class Board {
 }
 class Admin {
-	log_out()
-	receive()
-	make()
-	check()
 	pull()
-	filter()
-	approve()
-	view()
 	modify()
-	change()
+	send()
 	end()
-	export()
 	edit()
 	delete()
-	set()
-	send()
 	reject()
-	create()
-}
-class Pitch {
-	review()
-}
-class ProjectProgress {
-}
-class Contributor {
-	remove()
-	receive()
+	change()
 	make()
-	filter()
-	track()
-	view()
-	add()
-	modify()
-	sign()
-	end()
-	send()
-	pitch()
+	export()
 	create()
-}
-class Change {
-}
-class Detail {
-}
-class ParkingBoard {
+	receive()
+	view()
+	approve()
+	check()
+	set()
+	log_out()
+	filter()
 }
 class PublishingCalendar {
 }
 class Number {
 }
+class Profile {
+}
+class Contributor {
+	modify()
+	send()
+	end()
+	make()
+	remove()
+	track()
+	create()
+	receive()
+	view()
+	pitch()
+	add()
+	sign()
+	filter()
+}
+class Notification {
+}
 class Goal {
+}
+class Session {
 }
 class Message {
 }
-class Progress {
-}
 class Account {
 }
-class Notification {
+class ProjectProgress {
+}
+class Pitch {
+	review()
+}
+class Detail {
+}
+class ParkingBoard {
+}
+class Idea {
+}
+class Progress {
 }
 class Type {
 }
@@ -89,15 +93,13 @@ class Developer {
 }
 class KnowledgeTransfer {
 }
-class Idea {
+class SuccessRate {
+}
+class Change {
 }
 class Vertical {
 }
-class Profile {
-}
-class Session {
-}
-class SuccessRate {
+class User {
 }
 class Staff {
 }
@@ -105,68 +107,66 @@ class Username {
 }
 class Password {
 }
-class User {
-}
-Contributor --> Change : make
-Admin o-- Profile : modify
-Admin --> Detail : view
-KnowledgeTransfer --> Staff : to
-Admin --> Detail : edit
-Contributor --> Board : view
-Contributor --> Message : send
-Admin --> ParkingBoard : edit
-Admin --> PublishingCalendar : export
-Contributor --> Detail : view
-Draft o-- Idea
-Admin --> Board : view
-Admin o-- Profile : edit
-Contributor --> Detail : add
-Pitch o-- Board
-Admin --> ParkingBoard : view
-Contributor --> Message : receive
-Contributor --> Username : supported_by
-Admin --> PublishingCalendar : view
-Contributor o-- Session : end
-Admin --> Notification : receive
-Admin --> Password : supported_by
-Admin --> PublishingCalendar : edit
-Admin --> Message : send
-Admin --> Board : edit
-Admin --> Goal : check
-Admin --> Type : change
-Admin --> Username : supported_by
-Admin --> Pitch : view
 Admin --> Goal : make
-Week o-- Goal
-Contributor o-- SuccessRate : track
+Admin --> Message : send
+Admin --> Detail : view
 Message --> User : to
-Admin --> Number : view
-Contributor --> Goal : view
-Developer --> KnowledgeTransfer : do
-Contributor --> ProjectProgress : view
-Admin --> Pitch : reject
-Admin --> PublishingCalendar : approve
-Contributor o-- Account
-Admin --> Pitch : filter
-Contributor --> Idea : pitch
-Contributor --> Password : supported_by
-Admin --> Goal : view
-Admin --> Pitch : pull
-Admin --> Account : delete
 Contributor --> Notification : receive
-Admin --> Pitch : edit
-Admin --> Admin : create
+Admin --> Board : view
 Admin --> Pitch : approve
-Contributor --> Draft : remove
-Contributor --> Vertical : view
+Admin --> PublishingCalendar : view
+Contributor --> ProjectProgress : view
+KnowledgeTransfer --> Staff : to
+Admin --> Goal : view
+Developer --> KnowledgeTransfer : do
+Admin --> Admin : create
+Contributor --> Goal : view
+Contributor o-- Account
+Contributor o-- Session : end
+Contributor o-- SuccessRate : track
+Admin --> PublishingCalendar : approve
+Admin --> Username : supported_by
+Admin --> Pitch : pull
 Admin --> Message : receive
-Admin o-- Session : end
-Admin --> ProjectProgress : view
-Admin --> Goal : set
+Contributor --> Idea : pitch
+Week o-- Goal
+Admin --> Pitch : reject
+Contributor --> Change : make
+Contributor --> Message : send
+Draft o-- Idea
 Contributor --> Draft : modify
+Admin --> Detail : edit
+Admin o-- Profile : edit
+Contributor --> Password : supported_by
+Admin --> Account : delete
 Contributor --> Idea : create
-Admin --> Progress : view
 Contributor --> Pitch : filter
+Contributor --> Message : receive
+Contributor --> Draft : remove
+Admin --> Password : supported_by
+Admin --> ProjectProgress : view
+Admin o-- Session : end
+Pitch o-- Board
+Admin --> Goal : check
+Admin --> Board : edit
+Contributor --> Username : supported_by
+Admin --> Pitch : view
+Admin --> Goal : set
+Contributor --> Board : view
+Admin --> Pitch : filter
+Admin --> PublishingCalendar : edit
+Admin --> Progress : view
+Contributor --> Vertical : view
+Contributor --> Detail : view
+Admin --> Pitch : edit
+Admin --> Number : view
+Admin --> Type : change
+Contributor --> Detail : add
+Admin --> PublishingCalendar : export
+Admin --> Notification : receive
+Admin --> ParkingBoard : view
+Admin --> ParkingBoard : edit
+Admin o-- Profile : modify
 Admin --> Account : create
 
 @enduml

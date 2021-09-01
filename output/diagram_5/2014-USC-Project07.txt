@@ -3,73 +3,73 @@ hide circle
 class ESS<actor> {
 }
 class ESS {
-	load()
-	paste()
-	create()
-	drop()
-	have()
-	copy()
-	save()
 	lead()
-	drag()
+	copy()
+	drop()
+	paste()
 	use()
+	have()
+	save()
+	drag()
+	create()
+	load()
 }
 class Instruction {
 }
-class WaitCondition {
-}
-class Song {
-}
 class ProgramFile {
 }
-class Function {
-	control()
-}
-class Behavior {
-}
-class DDM {
-	detect()
-}
-class Time {
-}
-class Construct {
-}
-class NavigationD {
-	make()
+class LoopConstruct {
 }
 class DModule {
 	make()
 }
-class Movement {
+class Function {
+	control()
+}
+class WaitCondition {
+}
+class DDM {
+	detect()
 }
 class Note {
 }
-class LoopConstruct {
+class Behavior {
+}
+class Movement {
+}
+class Time {
+}
+class Song {
+}
+class Construct {
 }
 class IRobot {
 	go()
 }
-ESS --> ProgramFile : create
-ESS --> Song : create
-ESS --> ProgramFile : load
-Instruction o-- Construct
-ESS --> ProgramFile : save
-Function --> Movement : control
-ESS --> Note : drag
-Function --> Behavior : control
-DDM --> Time : detect
-ESS --> Construct : drag
-ESS --> Construct : drop
-ESS --> Note : drop
-ESS --> Function : drag
-ESS --> WaitCondition : drop
+class NavigationD {
+	make()
+}
 ESS --> LoopConstruct : drag
+ESS --> Construct : drop
+Instruction o-- Construct
+ESS --> DModule : use
+ESS --> Function : drag
+ESS --> Song : create
+ESS --> WaitCondition : drop
+ESS --> LoopConstruct : drop
+Function --> Behavior : control
+ESS --> Note : drag
+Function --> Movement : control
+ESS --> Construct : drag
+ESS --> WaitCondition : drag
+ESS --> ProgramFile : load
+ESS --> Note : drop
+ESS --> ProgramFile : create
+ESS --> Instruction : paste
 ESS --> Function : drop
 ESS --> Instruction : copy
-ESS --> DModule : use
-ESS --> LoopConstruct : drop
-ESS --> WaitCondition : drag
-ESS --> Instruction : paste
 ESS --> NavigationD : use
+ESS --> ProgramFile : save
+DDM --> Time : detect
 
 @enduml

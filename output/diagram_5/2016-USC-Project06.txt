@@ -1,116 +1,116 @@
 @startuml
 hide circle
 class User<actor> {
+	password
 	liking
+	profile
+	profileInformation
 	detail
 	gameProfile
-	profile
 	username
-	password
-	profileInformation
 }
 class Developer<actor> {
 }
 class Information {
 }
 class User {
-	log_out()
-	hear()
-	prompt()
-	have()
-	see()
-	detonate()
-	win()
-	remove()
-	choose()
-	recover()
-	beat()
-	edit()
-	want()
-	gain()
-	change()
-	click()
-	leave()
-	mute()
-	lose()
 	register()
+	edit()
+	prompt()
+	click()
+	win()
+	log_out()
+	mute()
+	gain()
+	hear()
 	unmute()
-	login()
+	lose()
+	leave()
 	play()
+	login()
+	see()
+	remove()
+	change()
+	recover()
+	want()
 	get()
+	beat()
+	have()
+	choose()
+	detonate()
 	place()
 }
-class Sound {
+class Password {
+}
+class ChangeSoundVolume {
+}
+class GamingExperience {
+}
+class Bomb {
+	place()
 }
 class Game {
 	attract()
 	use()
 }
-class ChangeSoundVolume {
-}
-class Detail {
-}
-class Point {
-}
 class Score {
 }
-class Animation {
+class DetonateBomb {
+}
+class Point {
 }
 class Developer {
 	make()
 }
-class GamingExperience {
+class Reward {
 }
 class Profile {
 	customize()
 }
-class Password {
-}
-class Bomb {
-	place()
-}
-class DetonateBomb {
+class Sound {
 }
 class History {
 }
-class Avatar {
+class Detail {
 }
-class Reward {
+class Animation {
 }
 class Username {
 }
 class Effect {
 	receive()
 }
-User --> Information : edit
-User o-- Game : unmute
-User --> Point : have
-Game --> Password : use
-User --> Sound : mute
-User o-- Game : play
-User --> Score : beat
-User --> Avatar : choose
-User --> Animation : see
-User --> Score : see
-User --> Reward : get
-User --> ChangeSoundVolume : mute
-Game --> Username : use
-User --> GamingExperience : have
+class Avatar {
+}
 User --> Bomb : remove
-Game --> User : attract
-User --> Bomb : detonate
-User --> Point : lose
-User o-- Game : mute
-User --> Profile : supported_by
-User --> Point : gain
+User o-- Game : unmute
+User --> Score : beat
 User o-- Detail : register
+User --> Animation : see
+User --> DetonateBomb : click
+Game --> Username : use
+User --> Point : gain
+User --> Point : have
+User --> Score : see
+Game --> Password : use
+User --> ChangeSoundVolume : mute
+User --> Information : edit
+User --> Avatar : choose
+User --> Reward : get
+User o-- Game : play
+User --> ChangeSoundVolume : unmute
 Game o-- Profile
+User --> Bomb : place
+User --> GamingExperience : have
 Profile o-- Information
+User --> Profile : supported_by
+User --> Point : lose
+Game --> User : attract
+User --> Sound : mute
+User o-- Game : mute
+User --> Sound : unmute
 User o-- Password : recover
 User --> History : see
-User --> Bomb : place
-User --> ChangeSoundVolume : unmute
-User --> Sound : unmute
-User --> DetonateBomb : click
+User --> Bomb : detonate
 
 @enduml

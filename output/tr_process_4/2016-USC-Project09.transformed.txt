@@ -12,7 +12,7 @@
           "type": "default"
         },
         {
-          "name": "account",
+          "name": "schedule",
           "type": "default"
         },
         {
@@ -20,7 +20,7 @@
           "type": "default"
         },
         {
-          "name": "schedule",
+          "name": "account",
           "type": "default"
         }
       ]
@@ -58,6 +58,27 @@
         }
       ]
     },
+    "Farm": {
+      "name": "Farm",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Manager": {
+      "name": "Manager",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Contractor": {
+      "name": "Contractor",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
     "Tone": {
       "name": "Tone",
       "type": [
@@ -71,52 +92,9 @@
         "shared"
       ],
       "attributes": []
-    },
-    "Farm": {
-      "name": "Farm",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
-    },
-    "Contractor": {
-      "name": "Contractor",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
-    },
-    "Manager": {
-      "name": "Manager",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
     }
   },
   "relation_list": [
-    {
-      "source": "Farm",
-      "dest": "Contractor",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "FarmManager",
-      "dest": "Manager",
-      "type": "generalization",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
     {
       "source": "Notification",
       "dest": "Tone",
@@ -132,6 +110,28 @@
       "source": "Temperature",
       "dest": "Data",
       "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Farm",
+      "dest": "Contractor",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "FarmManager",
+      "dest": "Manager",
+      "type": "generalization",
       "msg": "",
       "multiplicity": [
         "1",
@@ -164,56 +164,14 @@
   ],
   "behavior_list": [
     {
-      "actor": "User",
-      "action": "do",
-      "target": "Quiz",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "know",
+      "actor": "Admin",
+      "action": "define",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "view",
-      "target": "Data",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "toggle",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "Checklist",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "create",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "create",
-      "target": "EmergencyContactList",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "identify",
       "target": "",
       "para": []
     },
@@ -224,21 +182,9 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "upload",
-      "target": "Video",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "add",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "define",
-      "target": "",
+      "actor": "App",
+      "action": "get",
+      "target": "Information",
       "para": []
     },
     {
@@ -248,51 +194,9 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "feel",
-      "target": "Order",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "disable",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "",
-      "para": []
-    },
-    {
       "actor": "Admin",
-      "action": "create",
-      "target": "Quiz",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "change",
+      "action": "access",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "disable",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "create",
-      "target": "Content",
       "para": []
     },
     {
@@ -303,127 +207,13 @@
     },
     {
       "actor": "User",
-      "action": "use",
-      "target": "Feature",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "opt",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "delete",
-      "target": "Contents",
-      "para": []
-    },
-    {
-      "actor": "Contractor",
-      "action": "search",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "watch",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "access",
       "target": "Material",
       "para": []
     },
     {
-      "actor": "App",
-      "action": "get",
-      "target": "Information",
-      "para": []
-    },
-    {
       "actor": "User",
-      "action": "toggle",
-      "target": "Display",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "access",
-      "target": "HealthData",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "delete",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "access",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "watch",
-      "target": "Video",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "see",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "define",
-      "target": "Role",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "search",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "change",
-      "target": "VibrationLevel",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "access",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "do",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "wear",
+      "action": "know",
       "target": "",
       "para": []
     },
@@ -434,14 +224,152 @@
       "para": []
     },
     {
+      "actor": "Admin",
+      "action": "upload",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "opt",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "disable",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "feel",
+      "target": "Order",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Checklist",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "disable",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "EmergencyContactList",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "search",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "create",
+      "target": "Quiz",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "upload",
+      "target": "Video",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "Contents",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "do",
+      "target": "Quiz",
+      "para": []
+    },
+    {
       "actor": "User",
       "action": "create",
       "target": "Metric",
       "para": []
     },
     {
+      "actor": "Admin",
+      "action": "create",
+      "target": "Content",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Contractor",
+      "action": "search",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "define",
+      "target": "Role",
+      "para": []
+    },
+    {
       "actor": "User",
-      "action": "use",
+      "action": "view",
+      "target": "Data",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "change",
+      "target": "VibrationLevel",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "change",
       "target": "",
       "para": []
     },
@@ -458,9 +386,81 @@
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "upload",
+      "actor": "User",
+      "action": "share",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "watch",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "identify",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "access",
+      "target": "HealthData",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "Feature",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "toggle",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "create",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "wear",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "toggle",
+      "target": "Display",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "do",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "watch",
+      "target": "Video",
       "para": []
     }
   ]

@@ -6,71 +6,71 @@ class User<actor> {
 }
 class Id {
 }
-class User {
-	have()
-	choose()
-	select()
+class Admin {
 	add()
+	incorporate()
+	revoke()
+	assign()
+	delete()
+	edit()
+	see()
+	provide()
+}
+class User {
+	add()
+	select()
+	have()
 	turn()
 	turn_on()
+	choose()
+}
+class Light {
+	use()
+	control()
+}
+class Floor {
+}
+class Image {
 }
 class Control {
 	limit()
 }
-class Admin {
-	assign()
-	revoke()
-	delete()
-	provide()
-	incorporate()
-	see()
-	add()
-	edit()
+class Access {
 }
 class Debugging {
 }
+class Screen {
+}
 class Room {
-}
-class Name {
-}
-class Image {
 }
 class SwitchId {
 }
-class Light {
-	control()
-	use()
-}
-class MobileApplication {
-}
-class Access {
+class Name {
 }
 class Gateway {
 }
-class Floor {
+class MobileApplication {
 }
-class Screen {
-}
-Access --> User : to
 Access o-- Control
-Admin --> Debugging : incorporate
-Admin --> Room : delete
-Admin --> User : add
-Admin --> Access : provide
-Admin --> Id : see
-Admin --> Name : edit
-User --> Image : add
-Light --> MobileApplication : use
-User --> Room : select
-User --> Light : turn
-User --> Light : turn_on
-Admin --> Gateway : delete
 User --> Floor : select
-Admin --> Floor : delete
-User --> Screen : add
-Gateway o-- Id
-User --> Control : have
-Admin --> Access : revoke
+User --> Image : add
 Admin --> SwitchId : see
+Admin --> Name : edit
+Admin --> Access : provide
+Gateway o-- Id
+Admin --> Id : see
+Admin --> Debugging : incorporate
+Admin --> Access : revoke
+Admin --> Floor : delete
+Admin --> Gateway : delete
+Admin --> Room : delete
+User --> Room : select
+User --> Light : turn_on
+Admin --> User : add
+User --> Control : have
+Light --> MobileApplication : use
+Access --> User : to
+User --> Screen : add
+User --> Light : turn
 
 @enduml

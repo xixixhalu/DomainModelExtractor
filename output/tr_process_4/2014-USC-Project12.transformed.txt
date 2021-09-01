@@ -34,11 +34,11 @@
       ],
       "attributes": [
         {
-          "name": "location",
+          "name": "profile",
           "type": "default"
         },
         {
-          "name": "profile",
+          "name": "location",
           "type": "default"
         }
       ]
@@ -67,17 +67,6 @@
   },
   "relation_list": [
     {
-      "source": "Offering",
-      "dest": "User",
-      "type": "association",
-      "msg": "to",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
       "source": "Health",
       "dest": "CarePricing",
       "type": "aggregation",
@@ -98,79 +87,30 @@
         "1"
       ],
       "para": []
+    },
+    {
+      "source": "Offering",
+      "dest": "User",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
     }
   ],
   "behavior_list": [
     {
-      "actor": "User",
-      "action": "create",
-      "target": "Profile",
+      "actor": "Provider",
+      "action": "share",
+      "target": "Offering",
       "para": []
     },
     {
       "actor": "Content",
       "action": "drive",
       "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "compare",
-      "target": "HealthcarePrice",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "register",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Corporation",
-      "action": "view",
-      "target": "Price",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "find",
-      "target": "Location",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Access",
-      "action": "feature",
-      "target": "CarePricing",
-      "para": []
-    },
-    {
-      "actor": "Provider",
-      "action": "share",
-      "target": "Pricing",
-      "para": []
-    },
-    {
-      "actor": "Location",
-      "action": "access",
-      "target": "Provider",
-      "para": []
-    },
-    {
-      "actor": "Pricing",
-      "action": "drive",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "join",
-      "target": "Network",
       "para": []
     },
     {
@@ -182,13 +122,37 @@
     {
       "actor": "Consumer",
       "action": "create",
-      "target": "Review",
+      "target": "Network",
       "para": []
     },
     {
-      "actor": "Provider",
-      "action": "share",
-      "target": "Content",
+      "actor": "User",
+      "action": "follow",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Offering",
+      "action": "drive",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Access",
+      "action": "feature",
+      "target": "CarePricing",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "find",
+      "target": "Location",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "filter",
+      "target": "Notification",
       "para": []
     },
     {
@@ -200,13 +164,61 @@
     {
       "actor": "Consumer",
       "action": "create",
+      "target": "Review",
+      "para": []
+    },
+    {
+      "actor": "Provider",
+      "action": "share",
+      "target": "Pricing",
+      "para": []
+    },
+    {
+      "actor": "Corporation",
+      "action": "view",
+      "target": "Employee",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "rate",
+      "target": "Provider",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "join",
       "target": "Network",
       "para": []
     },
     {
+      "actor": "Corporation",
+      "action": "view",
+      "target": "Price",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "register",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Pricing",
+      "action": "drive",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "User",
-      "action": "filter",
-      "target": "Notification",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Profile",
       "para": []
     },
     {
@@ -217,26 +229,14 @@
     },
     {
       "actor": "Consumer",
-      "action": "rate",
+      "action": "compare",
+      "target": "HealthcarePrice",
+      "para": []
+    },
+    {
+      "actor": "Location",
+      "action": "access",
       "target": "Provider",
-      "para": []
-    },
-    {
-      "actor": "Provider",
-      "action": "share",
-      "target": "Offering",
-      "para": []
-    },
-    {
-      "actor": "Offering",
-      "action": "drive",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "follow",
-      "target": "",
       "para": []
     },
     {
@@ -246,9 +246,9 @@
       "para": []
     },
     {
-      "actor": "Corporation",
-      "action": "view",
-      "target": "Employee",
+      "actor": "Provider",
+      "action": "share",
+      "target": "Content",
       "para": []
     }
   ]

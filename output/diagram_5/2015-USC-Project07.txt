@@ -1,18 +1,18 @@
 @startuml
 hide circle
 class Vendor<actor> {
-	item
 	profile
 	itemPrice
-	pricing
-	service
 	product
+	pricing
+	item
+	service
 }
 class Consumer<actor> {
-	account
 	cart
-	searchResult
 	securityQuestion
+	account
+	searchResult
 	password
 }
 class WebsiteOwner<actor> {
@@ -23,255 +23,255 @@ class WebsiteModerator<actor> {
 }
 class WebsiteEndUser<actor> {
 }
-class Quality {
+class Catalog {
 }
 class Discussion {
 }
-class Reset {
-}
-class Catalog {
-}
 class Website {
 }
-class Moderator {
-	help()
-	determine()
+class Owner {
 	approve()
+	determine()
+	post()
+	help()
 	encourage()
 	suspend()
+}
+class Moderator {
+	approve()
+	determine()
 	post()
+	help()
+	encourage()
+	suspend()
 }
 class EndUser {
 }
-class Owner {
-	help()
-	determine()
-	approve()
-	suspend()
-	encourage()
-	post()
-}
 class Post {
 }
-class Vendor {
-	compare()
-	make()
-	add()
-	inform()
-	offer()
-	upload()
-	improve()
-	list()
-	provide()
-	gather()
-	look_up()
-	publish()
-	ship()
-	manage()
-	communicate()
-	convince()
-	view()
+class Quality {
+}
+class Reset {
+}
+class Sale {
 }
 class Consumer {
+	participate()
+	find()
+	reset()
+	refer()
+	review()
 	do()
+	subscribe()
+	rate()
 	look()
-	have()
+	add()
+	ensure()
+	sort()
+	search()
 	leave()
+	narrow_down()
 	manage()
-	see()
+	have()
+	verify()
 	keep()
+	gain()
+	see()
 	get()
 	notify()
-	review()
-	ensure()
-	search()
-	participate()
-	subscribe()
-	reset()
+}
+class Vendor {
+	inform()
+	look_up()
+	upload()
+	compare()
+	offer()
+	make()
+	ship()
+	publish()
+	gather()
+	provide()
+	convince()
+	manage()
+	communicate()
 	add()
-	find()
-	verify()
-	sort()
-	rate()
-	narrow_down()
-	gain()
-	refer()
-}
-class Comment {
-}
-class Cart {
-}
-class Event {
-	happen()
-}
-class Account {
-}
-class Profile {
+	list()
+	view()
+	improve()
 }
 class Product {
 	be()
 	suit()
 }
-class Access {
+class Account {
 }
-class Pricing {
+class Communication {
+	see()
+}
+class Profile {
+}
+class EmailAddress {
+	change()
+	forget()
 }
 class Price {
 	improve()
 }
-class Income {
-}
-class Date {
-}
-class SearchResult {
-}
-class Sale {
-}
-class Forum {
+class Fulfillment {
+	complete()
 }
 class Blog {
-	highlight()
 	provide()
+	highlight()
 }
-class Issue {
+class Knowledge {
+	become()
 }
 class Item {
 	reach()
 }
 class IncreaseSale {
 }
-class Recommendation {
+class Income {
 }
-class Time {
-}
-class Feedback {
+class Event {
+	happen()
 }
 class Id {
 }
-class Knowledge {
-	become()
-}
-class Resource {
-}
-class Fulfillment {
-	complete()
-}
-class Promotion {
-	attract()
-}
-class Service {
-}
-class EmailAddress {
-	forget()
-	change()
-}
-class Communication {
-	see()
-}
-class Order {
+class Feedback {
 }
 class VolumeTotal {
 	determine()
 }
+class Promotion {
+	attract()
+}
+class Date {
+}
+class Comment {
+}
 class Market {
 }
-class Password {
+class SearchResult {
 }
-class Discount {
+class Forum {
 }
 class Purchase {
 }
-class Video {
+class Order {
+}
+class Cart {
+}
+class Service {
+}
+class Resource {
+}
+class Issue {
+}
+class Access {
 }
 class Transaction {
 	complete()
 }
 class Future {
 }
-class WebsiteOwner {
+class Password {
+}
+class Time {
+}
+class Pricing {
+}
+class Discount {
+}
+class Recommendation {
+}
+class Video {
 }
 class WebsiteModerator {
 }
 class WebsiteEndUser {
 }
-Consumer --> Product : sort
-Consumer --> Item : add
-Owner --> Vendor : determine
-Owner --> Account : suspend
-Owner --> Blog : post
-Vendor --> Promotion : offer
-Vendor --> Post : publish
-Vendor --> Order : offer
-Vendor --> Price : manage
-Vendor o-- Product : ship
-VolumeTotal --> Vendor : determine
-Vendor o-- Product : add
-Item --> Market : reach
-Vendor o-- Product : improve
-Owner --> Communication : post
-Consumer o-- Password : manage
-Vendor --> Discount : provide
-Consumer --> Vendor : rate
-Consumer --> Discussion : participate
-Consumer --> Purchase : do
-Consumer --> Comment : leave
-Moderator --> Communication : post
-Consumer o-- Cart : manage
-Vendor --> Catalog : add
-Vendor --> Video : upload
+class WebsiteOwner {
+}
 Consumer o-- Account : manage
-Moderator --> Vendor : determine
-Consumer --> EmailAddress : reset
-Vendor o-- Item : list
-Vendor o-- Profile : upload
-Owner --> Sale : encourage
-Owner --> Vendor : supported_by
-Consumer --> Access : get
-Vendor --> Future : improve
-Moderator --> Vendor : supported_by
-Vendor o-- Pricing : make
-Consumer --> Product : find
-Blog o-- Post
-Consumer --> Product : search
-Item --> Cart : to
-Password o-- Reset
-Price --> Income : improve
-WebsiteOwner <|-- Owner
-Website o-- EndUser
-Website o-- Owner
-Vendor --> Date : view
-Discount --> Consumer : to
-Item o-- Price
-Consumer o-- SearchResult : narrow_down
-WebsiteModerator <|-- Moderator
-Moderator --> Sale : encourage
-Website o-- Moderator
-Consumer --> Vendor : review
-Product o-- Catalog
-Consumer --> Reset : get
-Vendor o-- Account
-Forum o-- Discussion
-Consumer --> Forum : search
-WebsiteEndUser <|-- EndUser
-Owner --> Account : approve
-Service o-- Quality
-Blog --> Issue : highlight
-Access --> Service : to
-Moderator --> Account : approve
-Item --> IncreaseSale : reach
-Consumer --> Recommendation : get
-Vendor --> Time : view
-Moderator --> Blog : post
-Vendor --> Feedback : gather
-Consumer --> Id : verify
-Consumer --> Knowledge : participate
 Blog --> Resource : provide
-Moderator --> Account : suspend
-Consumer --> Knowledge : gain
-Vendor --> Price : compare
+Blog --> Issue : highlight
+Consumer --> Access : get
+Owner --> Communication : post
+Consumer --> Vendor : rate
+Consumer --> Product : sort
+Vendor --> Catalog : add
+Consumer --> Product : find
+Vendor --> Future : improve
 Consumer --> Item : see
+Consumer --> Discussion : participate
+Moderator --> Account : approve
+Vendor --> Post : publish
+Owner --> Sale : encourage
+Consumer o-- Password : manage
+Consumer --> Item : add
+Vendor --> Time : view
+Vendor o-- Product : ship
+Vendor o-- Product : add
+Owner --> Account : approve
+Vendor o-- Pricing : make
+Moderator --> Communication : post
+Vendor --> Discount : provide
+Vendor o-- Profile : upload
+Consumer --> Recommendation : get
+Consumer --> EmailAddress : reset
+Vendor --> Video : upload
+Moderator --> Account : suspend
+Vendor --> Price : manage
+Owner --> Account : suspend
+Moderator --> Vendor : supported_by
+Product o-- Catalog
+Item o-- Price
+Owner --> Blog : post
+Forum o-- Discussion
+Vendor o-- Product : improve
+Item --> Cart : to
+Consumer --> Product : search
+Access --> Service : to
+Moderator --> Sale : encourage
+Website o-- Owner
+Owner --> Vendor : supported_by
+Vendor --> Price : compare
+WebsiteModerator <|-- Moderator
+Item --> IncreaseSale : reach
+Website o-- Moderator
+Website o-- EndUser
+Vendor o-- Account
+Consumer --> Knowledge : gain
+Blog o-- Post
+Price --> Income : improve
+Vendor o-- Item : list
+Password o-- Reset
+WebsiteEndUser <|-- EndUser
+Discount --> Consumer : to
+Consumer --> Id : verify
+Service o-- Quality
+WebsiteOwner <|-- Owner
+Vendor --> Feedback : gather
+Moderator --> Vendor : determine
+Moderator --> Blog : post
+VolumeTotal --> Vendor : determine
+Consumer --> Knowledge : participate
+Owner --> Vendor : determine
+Vendor --> Promotion : offer
+Vendor --> Date : view
+Consumer --> Comment : leave
+Item --> Market : reach
 Consumer --> Blog : search
-Consumer --> Quality : ensure
+Consumer o-- SearchResult : narrow_down
+Consumer --> Forum : search
+Consumer --> Vendor : review
+Consumer --> Reset : get
+Consumer --> Purchase : do
 Vendor o-- Service : improve
+Consumer --> Quality : ensure
+Vendor --> Order : offer
+Consumer o-- Cart : manage
 
 @enduml

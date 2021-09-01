@@ -48,12 +48,6 @@
   ],
   "behavior_list": [
     {
-      "actor": "Client",
-      "action": "replace",
-      "target": "Algorithm",
-      "para": []
-    },
-    {
       "actor": "Tag",
       "action": "detect",
       "target": "",
@@ -61,20 +55,8 @@
     },
     {
       "actor": "Client",
-      "action": "upload",
-      "target": "Image",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "choose",
-      "target": "Tag",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "upload",
-      "target": "Image",
+      "action": "see",
+      "target": "",
       "para": []
     },
     {
@@ -85,20 +67,14 @@
     },
     {
       "actor": "Client",
-      "action": "replace",
-      "target": "Model",
-      "para": []
-    },
-    {
-      "actor": "Client",
       "action": "extract",
       "target": "Model",
       "para": []
     },
     {
       "actor": "Client",
-      "action": "see",
-      "target": "",
+      "action": "upload",
+      "target": "Image",
       "para": []
     },
     {
@@ -111,6 +87,30 @@
       "actor": "User",
       "action": "want",
       "target": "Tag",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "replace",
+      "target": "Algorithm",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "upload",
+      "target": "Image",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "choose",
+      "target": "Tag",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "replace",
+      "target": "Model",
       "para": []
     }
   ]

@@ -1,13 +1,13 @@
 @startuml
 hide circle
 class User<actor> {
-	comment
-	profileInformation
-	winCondition
-	password
 	post
-	desktop
+	comment
+	winCondition
+	profileInformation
 	profilePicture
+	desktop
+	password
 }
 class Owner<actor> {
 }
@@ -24,141 +24,141 @@ class ListPage {
 class Rights {
 }
 class User {
-	edit()
-	sort()
-	export()
-	see()
 	forget()
-	create()
-	adjust()
-	mark()
 	tag()
-	join()
-	reply()
-	win()
-	add()
-	quote()
-	enter()
-	disagree()
-	view()
 	save()
 	set()
+	enter()
 	upload()
-	reset()
-	filter()
-	delete()
-	log_out()
-}
-class Comment {
-	use()
-}
-class WinCondition {
-	excel()
-}
-class BusinessValue {
-}
-class Owner {
-	use()
-	edit()
+	see()
+	export()
+	join()
 	add()
-	make()
-	access()
+	view()
+	disagree()
+	create()
+	sort()
+	quote()
+	win()
+	log_out()
+	reset()
+	adjust()
+	mark()
+	edit()
+	filter()
+	reply()
 	delete()
-	hide()
 }
-class Project {
+class Picture {
 }
-class WeightCoefficient {
-}
-class Coefficient {
+class Someone {
 }
 class Admin {
 	edit()
 	delete()
 }
-class ProfileInformation {
+class Post {
+}
+class Coefficient {
+}
+class Comment {
+	use()
+}
+class Owner {
+	add()
+	hide()
+	access()
+	use()
+	edit()
+	make()
+	delete()
+}
+class Project {
+}
+class WeightCoefficient {
+}
+class List {
+}
+class WinCondition {
+	excel()
+}
+class Category {
 }
 class Goal {
 	use()
 }
 class Slider {
 }
-class SettingPage {
-	give()
-}
-class Post {
-}
-class Importance {
-}
-class Category {
-}
-class Username {
+class Penalty {
 }
 class Demo {
 }
-class List {
+class View {
+}
+class SettingPage {
+	give()
 }
 class Condition {
 }
-class Picture {
-}
-class Someone {
-}
-class Penalty {
-}
-class View {
-}
 class Prioritization {
+}
+class Username {
+}
+class ProfileInformation {
+}
+class BusinessValue {
 }
 class Password {
 }
-User --> Picture : upload
-WinCondition o-- Category
-User --> BusinessValue : set
-User o-- Post : delete
-Project o-- ListPage
-Owner --> Project : delete
-User --> Someone : tag
-User --> Category : mark
+class Importance {
+}
 Admin --> Post : edit
+WinCondition o-- Category
+Comment --> Username : use
+Project o-- ListPage
+User --> Coefficient : adjust
+User o-- Comment : quote
+User --> Category : create
 Owner --> Project : hide
-Admin o-- Rights
-Admin --> Comment : edit
+Admin --> Comment : delete
+User o-- ProfileInformation : edit
+User o-- Comment : reply
+Admin --> Post : delete
 User --> Penalty : set
+Admin o-- Rights
+Owner --> Project : add
+User --> BusinessValue : set
+User --> Demo : see
+User --> Project : join
+User o-- Comment : delete
+Owner --> Project : delete
+User --> ListPage : view
+User --> WeightCoefficient : enter
+User o-- Password : reset
+Admin --> Comment : edit
+User --> View : filter
 Admin --> List : edit
 User --> Importance : adjust
-User --> WeightCoefficient : enter
-Owner --> Project : add
-User o-- WinCondition : create
-User --> Category : adjust
-User --> People : see
-User --> View : filter
-User --> Coefficient : adjust
-User --> Category : create
-Comment --> Username : use
-User o-- Comment : quote
-User o-- Comment : delete
-Admin --> Post : delete
-User --> Demo : see
-User --> WinCondition : supported_by
-Admin --> Comment : delete
+Owner --> SettingPage : access
+Owner --> SettingPage : use
 Owner --> List : edit
-User --> Prioritization : save
 User o-- WinCondition : delete
 User o-- Comment : add
-User o-- ProfileInformation : edit
-User --> ListPage : view
-User --> Project : join
-User o-- Password : reset
-User o-- Comment : reply
-Owner --> SettingPage : use
-Project o-- SettingPage
-SettingPage --> Rights : give
-People --> WinCondition : supported_by
-Goal --> Slider : use
+User o-- WinCondition : create
+User --> Category : mark
+User --> WinCondition : supported_by
 User o-- WinCondition : export
-Owner --> SettingPage : access
+User --> Picture : upload
+User o-- Post : delete
+Project o-- SettingPage
+Goal --> Slider : use
+SettingPage --> Rights : give
+User --> Someone : tag
 User --> Condition : win
+People --> WinCondition : supported_by
+User --> Category : adjust
+User --> People : see
+User --> Prioritization : save
 Someone --> Comment : to
 
 @enduml

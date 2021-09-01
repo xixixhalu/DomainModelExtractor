@@ -13,45 +13,39 @@ class Maintainer<actor> {
 }
 class Analytic<actor> {
 }
+class Developer {
+	design()
+	understand()
+}
+class Code {
+}
 class Maintainer {
 	have()
 	publish()
 }
 class Documentation {
 }
+class Way {
+	draw()
+}
+class Attention {
+}
 class User {
-	purchase()
-	have()
+	practice()
 	install()
+	switch()
+	track()
 	start()
 	share()
-	switch()
-	change()
-	keep()
-	download()
-	erase()
-	sign()
 	check()
-	track()
 	cheat()
-	practice()
-}
-class Score {
-}
-class Developer {
-	design()
-	understand()
-}
-class Math {
-}
-class GoogleLeaderboard {
-}
-class App {
-	use()
-}
-class About_levelPage {
-}
-class Progress {
+	download()
+	have()
+	keep()
+	erase()
+	purchase()
+	sign()
+	change()
 }
 class Client {
 	have()
@@ -59,50 +53,56 @@ class Client {
 }
 class ScreenSpace {
 }
-class Way {
-	draw()
-}
-class Attention {
+class Progress {
 }
 class Version {
 	remove()
 }
 class Advertisement {
 }
-class Code {
+class App {
+	use()
+}
+class ColorTheme {
+}
+class About_levelPage {
 }
 class Ability {
 }
+class GoogleLeaderboard {
+}
+class Math {
+}
 class IOSVersion {
 }
-class ColorTheme {
+class Score {
 }
 class Page {
 }
 class AccodomateAdvertisement {
 }
-Maintainer --> Documentation : have
-User --> App : track
-Maintainer --> App : publish
-User --> GoogleLeaderboard : check
-Client --> IOSVersion : publish
-Developer --> About_levelPage : design
-User o-- Progress : track
-User o-- Score : share
-User o-- Progress : keep
-User --> ColorTheme : change
-User o-- Progress : erase
-Developer --> Page : design
-User o-- Score : check
-Client --> ScreenSpace : have
-ScreenSpace --> AccodomateAdvertisement : to
-User --> App : download
-Attention --> App : to
-User --> Ability : have
-User --> Math : practice
-Way --> Attention : draw
-User --> Version : purchase
-Version --> Advertisement : remove
 Developer --> Code : understand
+User --> App : download
+Client --> ScreenSpace : have
+User o-- Score : check
+Client --> IOSVersion : publish
+User o-- Progress : erase
+User --> App : track
+User o-- Score : share
+User o-- Progress : track
+Version --> Advertisement : remove
+Developer --> Page : design
+Maintainer --> App : publish
+Maintainer --> Documentation : have
+ScreenSpace --> AccodomateAdvertisement : to
+User --> ColorTheme : change
+User --> Version : purchase
+Attention --> App : to
+Way --> Attention : draw
+Developer --> About_levelPage : design
+User --> Ability : have
+User o-- Progress : keep
+User --> Math : practice
+User --> GoogleLeaderboard : check
 
 @enduml

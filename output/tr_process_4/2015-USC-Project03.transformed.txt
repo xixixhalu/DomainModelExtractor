@@ -8,7 +8,7 @@
       ],
       "attributes": [
         {
-          "name": "language",
+          "name": "teacher",
           "type": "default"
         },
         {
@@ -16,11 +16,11 @@
           "type": "default"
         },
         {
-          "name": "searchResult",
+          "name": "language",
           "type": "default"
         },
         {
-          "name": "teacher",
+          "name": "languageAssignment",
           "type": "default"
         },
         {
@@ -28,7 +28,7 @@
           "type": "default"
         },
         {
-          "name": "languageAssignment",
+          "name": "searchResult",
           "type": "default"
         }
       ]
@@ -91,11 +91,11 @@
           "type": "default"
         },
         {
-          "name": "password",
+          "name": "friendList",
           "type": "default"
         },
         {
-          "name": "friendList",
+          "name": "password",
           "type": "default"
         }
       ]
@@ -118,11 +118,11 @@
           "type": "default"
         },
         {
-          "name": "privacyPolicy",
+          "name": "info",
           "type": "default"
         },
         {
-          "name": "info",
+          "name": "privacyPolicy",
           "type": "default"
         }
       ]
@@ -195,36 +195,29 @@
         }
       ]
     },
-    "Website": {
-      "name": "Website",
+    "Statistics": {
+      "name": "Statistics",
       "type": [
         "shared"
       ],
       "attributes": []
     },
-    "Blog": {
-      "name": "Blog",
+    "Proficiency": {
+      "name": "Proficiency",
       "type": [
         "shared"
       ],
       "attributes": []
     },
-    "Activity": {
-      "name": "Activity",
+    "Learner": {
+      "name": "Learner",
       "type": [
         "shared"
       ],
       "attributes": []
     },
-    "Owner": {
-      "name": "Owner",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
-    },
-    "Professor": {
-      "name": "Professor",
+    "Learners": {
+      "name": "Learners",
       "type": [
         "shared"
       ],
@@ -244,29 +237,36 @@
       ],
       "attributes": []
     },
-    "Proficiency": {
-      "name": "Proficiency",
+    "Website": {
+      "name": "Website",
       "type": [
         "shared"
       ],
       "attributes": []
     },
-    "Learners": {
-      "name": "Learners",
+    "Professor": {
+      "name": "Professor",
       "type": [
         "shared"
       ],
       "attributes": []
     },
-    "Learner": {
-      "name": "Learner",
+    "Blog": {
+      "name": "Blog",
       "type": [
         "shared"
       ],
       "attributes": []
     },
-    "Statistics": {
-      "name": "Statistics",
+    "Owner": {
+      "name": "Owner",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Activity": {
+      "name": "Activity",
       "type": [
         "shared"
       ],
@@ -274,6 +274,61 @@
     }
   },
   "relation_list": [
+    {
+      "source": "Website",
+      "dest": "Professor",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Learner",
+      "dest": "Help",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "WebsiteProfessor",
+      "dest": "Professor",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Announcement",
+      "dest": "Member",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Language",
+      "dest": "Learners",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
     {
       "source": "Learner",
       "dest": "Teacher",
@@ -297,9 +352,9 @@
       "para": []
     },
     {
-      "source": "WebsiteProfessor",
-      "dest": "Professor",
-      "type": "generalization",
+      "source": "Language",
+      "dest": "Level",
+      "type": "aggregation",
       "msg": "",
       "multiplicity": [
         "1",
@@ -308,21 +363,10 @@
       "para": []
     },
     {
-      "source": "Email",
-      "dest": "User",
-      "type": "association",
-      "msg": "to",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "English",
+      "source": "Speaker",
       "dest": "Learner",
-      "type": "association",
-      "msg": "supported_by",
+      "type": "aggregation",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -330,7 +374,7 @@
       "para": []
     },
     {
-      "source": "Announcement",
+      "source": "Question",
       "dest": "Member",
       "type": "association",
       "msg": "to",
@@ -341,8 +385,74 @@
       "para": []
     },
     {
-      "source": "Website",
-      "dest": "Activity",
+      "source": "LanguageTeacher",
+      "dest": "Teacher",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "WebsiteUser",
+      "dest": "User",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "English",
+      "dest": "LanguageLearner",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "User",
+      "dest": "FriendList",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Learner",
+      "dest": "LanguageLearner",
+      "type": "association",
+      "msg": "supported_by",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "WebsiteOwner",
+      "dest": "Owner",
+      "type": "generalization",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Language",
+      "dest": "Skill",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -352,10 +462,54 @@
       "para": []
     },
     {
-      "source": "Learner",
+      "source": "Website",
+      "dest": "User",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Language",
+      "dest": "Teacher",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "User",
+      "dest": "Statistics",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "User",
+      "dest": "Number",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "LanguageLearner",
       "dest": "Learner",
-      "type": "association",
-      "msg": "supported_by",
+      "type": "generalization",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -385,96 +539,8 @@
       "para": []
     },
     {
-      "source": "SpeakerLanguageLearner",
-      "dest": "Learner",
-      "type": "generalization",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "WebsiteUser",
-      "dest": "User",
-      "type": "generalization",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "LanguageTeacher",
-      "dest": "Teacher",
-      "type": "generalization",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Language",
-      "dest": "Level",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
       "source": "Website",
-      "dest": "Blog",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "WebsiteOwner",
-      "dest": "Owner",
-      "type": "generalization",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "LanguageLearner",
-      "dest": "Learner",
-      "type": "generalization",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Website",
-      "dest": "Owner",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Language",
-      "dest": "Skill",
+      "dest": "Activity",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -495,19 +561,8 @@
       "para": []
     },
     {
-      "source": "Language",
-      "dest": "Learners",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
       "source": "Website",
-      "dest": "Professor",
+      "dest": "Owner",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -528,41 +583,8 @@
       "para": []
     },
     {
-      "source": "Speaker",
-      "dest": "Learner",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "User",
-      "dest": "Number",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "User",
-      "dest": "Statistics",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Question",
-      "dest": "Member",
+      "source": "Email",
+      "dest": "User",
       "type": "association",
       "msg": "to",
       "multiplicity": [
@@ -572,9 +594,9 @@
       "para": []
     },
     {
-      "source": "Website",
-      "dest": "User",
-      "type": "aggregation",
+      "source": "SpeakerLanguageLearner",
+      "dest": "LanguageLearner",
+      "type": "generalization",
       "msg": "",
       "multiplicity": [
         "1",
@@ -583,19 +605,8 @@
       "para": []
     },
     {
-      "source": "Language",
-      "dest": "Teacher",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Learner",
-      "dest": "Help",
+      "source": "LanguageLearner",
+      "dest": "Learner",
       "type": "association",
       "msg": "supported_by",
       "multiplicity": [
@@ -605,10 +616,10 @@
       "para": []
     },
     {
-      "source": "User",
-      "dest": "FriendList",
-      "type": "association",
-      "msg": "to",
+      "source": "Website",
+      "dest": "Blog",
+      "type": "aggregation",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -618,159 +629,21 @@
   ],
   "behavior_list": [
     {
-      "actor": "Learner",
-      "action": "learn",
-      "target": "Language",
-      "para": []
-    },
-    {
-      "actor": "Learner",
-      "action": "get",
-      "target": "Touch",
-      "para": []
-    },
-    {
-      "actor": "Topic",
-      "action": "talk",
-      "target": "",
-      "para": []
-    },
-    {
       "actor": "User",
-      "action": "get",
-      "target": "Experience",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "subscribe",
-      "target": "Service",
-      "para": []
-    },
-    {
-      "actor": "Change",
-      "action": "occur",
-      "target": "",
+      "action": "review",
+      "target": "User",
       "para": []
     },
     {
       "actor": "User",
       "action": "practice",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "operate",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "MarketingPlan",
-      "action": "increase",
-      "target": "Number",
-      "para": []
-    },
-    {
-      "actor": "Learner",
-      "action": "learn",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "assess",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Learner",
-      "action": "prioritize",
-      "target": "Match",
-      "para": []
-    },
-    {
-      "actor": "Learner",
-      "action": "have",
-      "target": "Degree",
+      "target": "Language",
       "para": []
     },
     {
       "actor": "English",
-      "action": "achieve",
-      "target": "Goal",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "practice",
-      "target": "Language",
-      "para": []
-    },
-    {
-      "actor": "Level",
-      "action": "help",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "UniversityStudent",
-      "action": "post",
-      "target": "Announcement",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "add",
-      "target": "Research",
-      "para": []
-    },
-    {
-      "actor": "Learner",
-      "action": "search",
-      "target": "Degree",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "make",
-      "target": "Money",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "modify",
-      "target": "PrivacyPolicy",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "register",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "avoid",
-      "target": "Harassment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "NotificationEmail",
-      "para": []
-    },
-    {
-      "actor": "SearchResult",
-      "action": "use",
-      "target": "Criterion",
-      "para": []
-    },
-    {
-      "actor": "Learner",
-      "action": "know",
-      "target": "Culture",
+      "action": "learn",
+      "target": "English",
       "para": []
     },
     {
@@ -780,14 +653,26 @@
       "para": []
     },
     {
-      "actor": "Learner",
-      "action": "know",
-      "target": "World",
+      "actor": "User",
+      "action": "offer",
+      "target": "Skill",
       "para": []
     },
     {
-      "actor": "Speaker",
-      "action": "help",
+      "actor": "Owner",
+      "action": "maintain",
+      "target": "Server",
+      "para": []
+    },
+    {
+      "actor": "MarketingPlan",
+      "action": "increase",
+      "target": "Number",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "operate",
       "target": "",
       "para": []
     },
@@ -799,20 +684,68 @@
     },
     {
       "actor": "Owner",
+      "action": "intercept",
+      "target": "Behavior",
+      "para": []
+    },
+    {
+      "actor": "Owner",
       "action": "view",
       "target": "Statistics",
       "para": []
     },
     {
-      "actor": "Student",
-      "action": "adjust",
-      "target": "Chatting",
+      "actor": "Learner",
+      "action": "order",
+      "target": "SearchResult",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "avoid",
+      "target": "Advertisement",
       "para": []
     },
     {
       "actor": "English",
-      "action": "learn",
-      "target": "English",
+      "action": "achieve",
+      "target": "Goal",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "get",
+      "target": "Touch",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "modify",
+      "target": "PrivacyPolicy",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "find",
+      "target": "Learners",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "suggest",
+      "target": "Matter",
+      "para": []
+    },
+    {
+      "actor": "LanguageLearner",
+      "action": "know",
+      "target": "World",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "know",
+      "target": "Culture",
       "para": []
     },
     {
@@ -822,45 +755,45 @@
       "para": []
     },
     {
-      "actor": "Practitioner",
-      "action": "help",
-      "target": "Student",
-      "para": []
-    },
-    {
-      "actor": "Learner",
-      "action": "practice",
-      "target": "Language",
-      "para": []
-    },
-    {
       "actor": "Owner",
-      "action": "maintain",
-      "target": "Server",
+      "action": "offer",
+      "target": "",
       "para": []
     },
     {
-      "actor": "Owner",
-      "action": "post",
-      "target": "Blog",
-      "para": []
-    },
-    {
-      "actor": "Learner",
-      "action": "do",
-      "target": "Assignment",
-      "para": []
-    },
-    {
-      "actor": "Teacher",
-      "action": "give",
-      "target": "Assignment",
+      "actor": "User",
+      "action": "avoid",
+      "target": "Harassment",
       "para": []
     },
     {
       "actor": "Learner",
       "action": "meet",
       "target": "Learners",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "learn",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "post",
+      "target": "Alert",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "adjust",
+      "target": "Chatting",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "subscribe",
+      "target": "Service",
       "para": []
     },
     {
@@ -871,14 +804,38 @@
     },
     {
       "actor": "Learner",
-      "action": "find",
-      "target": "Learners",
+      "action": "finish",
+      "target": "Assignment",
       "para": []
     },
     {
       "actor": "User",
-      "action": "avoid",
-      "target": "Advertisement",
+      "action": "report",
+      "target": "Behavior",
+      "para": []
+    },
+    {
+      "actor": "Practitioner",
+      "action": "help",
+      "target": "Student",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "forget",
+      "target": "Password",
+      "para": []
+    },
+    {
+      "actor": "Speaker",
+      "action": "help",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "interact",
+      "target": "",
       "para": []
     },
     {
@@ -888,21 +845,9 @@
       "para": []
     },
     {
-      "actor": "Owner",
-      "action": "generate",
-      "target": "MarketingPlan",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "adjust",
-      "target": "LearningPlan",
-      "para": []
-    },
-    {
-      "actor": "Learner",
-      "action": "create",
-      "target": "Friendship",
+      "actor": "Teacher",
+      "action": "give",
+      "target": "Assignment",
       "para": []
     },
     {
@@ -912,15 +857,75 @@
       "para": []
     },
     {
+      "actor": "Owner",
+      "action": "make",
+      "target": "Money",
+      "para": []
+    },
+    {
       "actor": "Learner",
-      "action": "know",
-      "target": "",
+      "action": "do",
+      "target": "Assignment",
       "para": []
     },
     {
       "actor": "Owner",
-      "action": "suggest",
-      "target": "InteractionTask",
+      "action": "post",
+      "target": "Blog",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "find",
+      "target": "Country",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "prioritize",
+      "target": "Match",
+      "para": []
+    },
+    {
+      "actor": "Action",
+      "action": "operate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "retrieve",
+      "target": "ChatLog",
+      "para": []
+    },
+    {
+      "actor": "Teacher",
+      "action": "talk",
+      "target": "Assignment",
+      "para": []
+    },
+    {
+      "actor": "UniversityStudent",
+      "action": "post",
+      "target": "Announcement",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Experience",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "create",
+      "target": "Friendship",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "assess",
+      "target": "",
       "para": []
     },
     {
@@ -936,75 +941,39 @@
       "para": []
     },
     {
-      "actor": "Owner",
-      "action": "monitor",
-      "target": "Activity",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "review",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "suggest",
-      "target": "Matter",
-      "para": []
-    },
-    {
-      "actor": "Tutor",
-      "action": "evaluate",
-      "target": "Level",
-      "para": []
-    },
-    {
       "actor": "Learner",
-      "action": "order",
-      "target": "SearchResult",
+      "action": "search",
+      "target": "Degree",
       "para": []
     },
     {
-      "actor": "Owner",
-      "action": "post",
-      "target": "Alert",
+      "actor": "SearchResult",
+      "action": "use",
+      "target": "Criterion",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "retrieve",
-      "target": "ChatLog",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "report",
-      "target": "Behavior",
-      "para": []
-    },
-    {
-      "actor": "Learner",
-      "action": "finish",
-      "target": "Assignment",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "add",
-      "target": "Idea",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "lock",
+      "actor": "Speaker",
+      "action": "know",
       "target": "",
       "para": []
     },
     {
-      "actor": "Teacher",
-      "action": "talk",
-      "target": "Assignment",
+      "actor": "Level",
+      "action": "help",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "have",
+      "target": "Degree",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "monitor",
+      "target": "Activity",
       "para": []
     },
     {
@@ -1015,50 +984,32 @@
     },
     {
       "actor": "Owner",
-      "action": "inform",
-      "target": "User",
+      "action": "suggest",
+      "target": "InteractionTask",
       "para": []
     },
     {
       "actor": "User",
-      "action": "forget",
-      "target": "Password",
-      "para": []
-    },
-    {
-      "actor": "Action",
-      "action": "operate",
+      "action": "practice",
       "target": "",
       "para": []
     },
     {
-      "actor": "Owner",
-      "action": "intercept",
-      "target": "Behavior",
+      "actor": "Tutor",
+      "action": "evaluate",
+      "target": "Level",
       "para": []
     },
     {
       "actor": "Learner",
-      "action": "find",
-      "target": "Country",
+      "action": "practice",
+      "target": "Language",
       "para": []
     },
     {
-      "actor": "Speaker",
-      "action": "know",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "offer",
-      "target": "Skill",
-      "para": []
-    },
-    {
-      "actor": "UniversityStudent",
-      "action": "post",
-      "target": "Question",
+      "actor": "Owner",
+      "action": "add",
+      "target": "Research",
       "para": []
     },
     {
@@ -1068,15 +1019,27 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "interact",
+      "actor": "UniversityStudent",
+      "action": "post",
+      "target": "Question",
+      "para": []
+    },
+    {
+      "actor": "Topic",
+      "action": "talk",
       "target": "",
       "para": []
     },
     {
-      "actor": "Owner",
-      "action": "offer",
+      "actor": "User",
+      "action": "lock",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "Speaker",
+      "action": "use",
+      "target": "System",
       "para": []
     },
     {
@@ -1086,9 +1049,63 @@
       "para": []
     },
     {
+      "actor": "LanguageLearner",
+      "action": "learn",
+      "target": "Language",
+      "para": []
+    },
+    {
+      "actor": "Change",
+      "action": "occur",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "adjust",
+      "target": "LearningPlan",
+      "para": []
+    },
+    {
       "actor": "Professor",
       "action": "offer",
       "target": "",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "add",
+      "target": "Idea",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "NotificationEmail",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "inform",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "register",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Learner",
+      "action": "know",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "generate",
+      "target": "MarketingPlan",
       "para": []
     }
   ]

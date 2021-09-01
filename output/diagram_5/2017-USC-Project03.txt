@@ -1,9 +1,9 @@
 @startuml
 hide circle
 class User<actor> {
-	swimmer
 	information
 	kid
+	swimmer
 }
 class Coach<actor> {
 }
@@ -30,112 +30,112 @@ class Report {
 }
 class Detail {
 }
-class Maintainer {
-	see()
-	have()
-	modify()
-	insert()
-	delete()
-	access()
-}
-class Amount {
-	collect()
-}
-class Parent {
-	edit()
-	sign()
-	see()
-	view()
-	login()
-}
-class Event {
-}
-class Deadline {
-}
-class Database {
-}
-class Coach {
-	overwrite()
-	edit()
-	extract()
-	review()
-	generate()
-	modify()
-	expect()
-}
-class Developer {
-	have()
-}
-class Access {
-}
-class CSVFile {
-}
 class User {
-	see()
 	expect()
+	see()
 }
 class Information {
 }
-class Treasurer {
+class Maintainer {
 	see()
-}
-class Something {
-}
-class Signup {
-	close()
-}
-class PayeeInformation {
+	access()
+	insert()
+	delete()
+	modify()
+	have()
 }
 class Swimmer {
 	sign()
 }
-class Result {
+class Database {
 }
-class Option {
+class Parent {
+	sign()
+	login()
+	see()
+	edit()
+	view()
+}
+class Event {
+}
+class Access {
+}
+class Coach {
+	overwrite()
+	generate()
+	expect()
+	review()
+	extract()
+	modify()
+	edit()
 }
 class UploadEvent {
 }
+class Result {
+}
+class PayeeInformation {
+}
+class Developer {
+	have()
+}
+class Signup {
+	close()
+}
+class Treasurer {
+	see()
+}
+class Amount {
+	collect()
+}
+class Something {
+}
+class Option {
+}
+class CSVFile {
+}
+class Deadline {
+}
 class List {
-}
-class SourceCode {
-}
-class RegistrationKey {
 }
 class Documentation {
 }
-Coach --> UploadEvent : extract
-Parent --> Event : edit
-Coach --> Information : review
-Coach --> List : edit
-Access --> SourceCode : to
-Kid --> Deadline : post
-Parent --> RegistrationKey : supported_by
-Maintainer --> Database : access
-Coach --> Signup : expect
-Maintainer --> Database : modify
-Parent --> PayeeInformation : view
-Pdf o-- Report
-User --> Event : see
-Access --> Documentation : to
-Maintainer --> Access : have
-Maintainer --> Database : delete
-Access --> Database : to
-Developer --> Access : have
-Parent --> Event : view
-Pdf o-- Information
-Parent --> Parent : see
-Coach --> CSVFile : generate
-Coach --> Result : overwrite
-User --> Option : see
-Coach --> User : expect
-User o-- Information : expect
-Maintainer --> Database : insert
+class RegistrationKey {
+}
+class SourceCode {
+}
 Coach --> Report : generate
-Coach --> Result : modify
-Coach --> Information : extract
-Amount o-- Detail
-Treasurer --> Amount : see
-Coach --> Something : modify
+User --> Event : see
+Coach --> List : edit
+Access --> Documentation : to
+Maintainer --> Database : insert
 Maintainer --> Detail : see
+Maintainer --> Database : delete
+Parent --> RegistrationKey : supported_by
+Maintainer --> Database : modify
+Coach --> Signup : expect
+Amount o-- Detail
+Parent --> Event : edit
+Treasurer --> Amount : see
+Access --> Database : to
+Maintainer --> Database : access
+Access --> SourceCode : to
+Maintainer --> Access : have
+Parent --> Event : view
+Coach --> Information : review
+Coach --> User : expect
+Pdf o-- Information
+Coach --> Result : overwrite
+Parent --> Parent : see
+Coach --> Information : extract
+Coach --> Something : modify
+Coach --> UploadEvent : extract
+User --> Option : see
+Coach --> Result : modify
+Coach --> CSVFile : generate
+Parent --> PayeeInformation : view
+Kid --> Deadline : post
+User o-- Information : expect
+Developer --> Access : have
+Pdf o-- Report
 
 @enduml

@@ -7,72 +7,72 @@ class Developer<actor> {
 }
 class Admin<actor> {
 }
-class Product {
-	purchase()
+class Developer {
+	enable()
+	allow()
+	provide()
 }
 class User {
 	make()
 	search()
-	go()
-	pay()
-	keep()
 	view()
-	return()
 	place()
+	pay()
+	return()
 	participate()
+	keep()
+	go()
 	visit()
 }
-class Developer {
-	allow()
-	enable()
-	provide()
+class Auction {
 }
-class LoginSystem {
+class Raffle {
 }
 class Admin {
 	maintain()
 }
-class Item {
-	win()
-	use()
-}
-class Source {
-}
-class Track {
-}
 class Account {
-}
-class Raffle {
-}
-class Auction {
-}
-class Database {
 }
 class Bid {
 }
 class PushNotification {
 	notify()
 }
+class Item {
+	win()
+	use()
+}
+class Database {
+}
+class Source {
+}
+class LoginSystem {
+}
+class Track {
+}
+class Product {
+	purchase()
+}
 class DescriptionStory {
 }
 class Story {
 }
 Admin --> Account : maintain
-PushNotification --> User : notify
-Item --> Source : use
 User --> Item : visit
-Developer --> LoginSystem : provide
-User --> DescriptionStory : supported_by
-User --> Item : view
-User o-- Bid : participate
-Developer --> User : enable
-Developer --> User : allow
-User --> Track : keep
-Item --> Auction : win
-User --> Story : supported_by
 User --> Auction : participate
+User --> DescriptionStory : supported_by
 Admin --> Item : maintain
-Admin --> Database : maintain
+Item --> Source : use
+Developer --> User : allow
+Item --> Auction : win
+User o-- Bid : participate
+Developer --> LoginSystem : provide
 User --> Raffle : participate
+User --> Story : supported_by
+User --> Item : view
+PushNotification --> User : notify
+Developer --> User : enable
+User --> Track : keep
+Admin --> Database : maintain
 
 @enduml

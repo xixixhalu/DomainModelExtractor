@@ -1,74 +1,74 @@
 @startuml
 hide circle
 class TourCreator<actor> {
-	area
 	tour
+	area
 }
 class Owner<actor> {
 }
 class TourTaker<actor> {
 }
 class Taker {
-	search()
-	click()
+	have()
 	view()
 	choose()
-	have()
+	search()
+	click()
 	select()
+}
+class Creator {
+	view()
+	delete()
+	promote()
+	upload()
+	create()
 }
 class ConductorWebsite {
 }
-class Creator {
-	upload()
-	create()
-	view()
-	promote()
-	delete()
-}
-class Area {
+class Picture {
 }
 class Information {
 }
-class Stop {
-}
-class Picture {
+class Owner {
+	authorize()
+	delete()
 }
 class Tour {
 	use()
 }
 class Access {
 }
-class Owner {
-	authorize()
-	delete()
+class Area {
 }
 class Value {
 }
 class Video {
 }
+class Stop {
+}
 class TourTaker {
 }
 class TourCreator {
 }
-Creator --> Area : promote
-Owner --> Creator : authorize
+Creator --> Picture : upload
+Creator --> Information : upload
 Taker --> Information : view
+Tour --> Value : use
+Owner --> Tour : delete
+Creator --> ConductorWebsite : create
 Taker --> Tour : select
+Taker --> Tour : search
+Creator --> Tour : create
+Owner --> Creator : authorize
+Taker --> Access : have
+TourTaker <|-- Taker
+Creator --> Video : upload
+Tour o-- ConductorWebsite
+Creator --> Area : promote
 Taker --> Stop : click
 Tour o-- Creator
-Creator --> ConductorWebsite : create
-Creator --> Picture : upload
-Creator --> Tour : delete
-Creator --> Information : upload
-Creator --> Tour : create
-Owner --> Tour : delete
-Tour --> Value : use
-Tour o-- ConductorWebsite
-Creator --> Video : upload
-TourTaker <|-- Taker
 TourCreator <|-- Creator
 Tour o-- Taker
-Taker --> Tour : search
-Taker --> Access : have
+Creator --> Tour : delete
 
 @enduml

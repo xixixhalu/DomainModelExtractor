@@ -1,10 +1,10 @@
 @startuml
 hide circle
 class User<actor> {
+	investment
+	emailNotificationSetting
 	investmentProfile
 	trackingToolData
-	emailNotificationSetting
-	investment
 	password
 }
 class ServiceProvider<actor> {
@@ -16,172 +16,174 @@ class Admin<actor> {
 }
 class SiteAdmin<actor> {
 }
-class Site {
-}
-class Permission {
+class ContactInformation {
 }
 class Media {
 }
 class Application {
 }
+class Site {
+}
 class Board {
 	use()
 }
-class ContactInformation {
-}
-class Post {
+class Permission {
 }
 class Data {
 }
+class Post {
+}
 class User {
-	vote()
-	add()
-	make()
-	activate()
-	rate()
-	start()
-	create()
-	adjust()
-	have()
-	find()
 	manage()
+	comment()
+	login()
+	adjust()
+	activate()
 	search()
+	report()
+	add()
+	use()
+	export()
+	share()
+	view()
+	have()
+	create()
 	reset()
 	read()
-	comment()
-	export()
-	view()
-	login()
-	share()
-	leave()
-	receive()
-	use()
 	see()
-	report()
+	find()
+	rate()
+	make()
+	vote()
+	receive()
+	start()
+	leave()
 }
 class ServiceProvider {
-	see()
 	reply()
+	see()
 }
-class FactorAuthentication {
+class Performance {
+}
+class Password {
 }
 class Administrator {
 	post()
 	create()
-	view()
 	verify()
 	moderate()
+	view()
 }
 class WebsiteUtilizationStatistics {
 }
-class Blog {
+class Content {
+}
+class Identity {
+}
+class FactorAuthentication {
+}
+class Admin {
+	remove()
+	have()
+}
+class Investment {
+}
+class Article {
 }
 class Review {
 	post()
 }
-class Content {
+class Notification {
 }
 class PropertyInformation {
 }
-class Performance {
+class Profile {
 }
-class EmailNotificationSetting {
-}
-class Investment {
-}
-class Identity {
-}
-class TextInput {
-}
-class Notification {
-}
-class Account {
+class Page {
 }
 class Time {
 	use()
 }
 class VisualizationTool {
 }
-class Admin {
-	remove()
-	have()
+class Blog {
 }
-class Password {
+class DiscussionBoard {
 }
-class Profile {
+class Account {
 }
 class Discussion {
 }
-class Access {
+class TextInput {
 }
-class Page {
+class Access {
 }
 class List {
 }
-class Article {
+class EmailNotificationSetting {
 }
 class TrackingTool {
 }
-class File {
-}
 class SiteAdmin {
 }
-User --> Data : export
-TrackingTool o-- Data
+class File {
+}
+User --> Blog : read
 User --> ServiceProvider : search
-User --> Board : read
-User --> Review : leave
-User --> List : view
 Administrator --> Content : create
+User --> Review : leave
+Site o-- Board
+User --> ServiceProvider : find
 Media o-- Site
-User --> FactorAuthentication : activate
-User --> Site : use
-User --> Site : login
-Discussion o-- Board
-User --> Content : create
-User --> ServiceProvider : rate
+User --> Performance : see
+User --> DiscussionBoard : read
+Site o-- Permission
+User --> Review : read
+Investment o-- Profile
+User o-- Password : reset
+User --> Account : create
+TrackingTool o-- Data
+User --> User : report
+User --> Notification : receive
 User --> Board : search
 Investment --> Profile : to
-User --> Review : vote
-Site o-- Blog
 Administrator --> WebsiteUtilizationStatistics : view
-User o-- Password : reset
-Administrator --> User : moderate
-Article --> Blog : to
-Administrator --> Identity : verify
-Blog o-- Post
 User --> Blog : comment
+User --> PropertyInformation : add
+Media o-- Application
+User --> ServiceProvider : rate
+ServiceProvider o-- ContactInformation
+User --> Content : create
+User --> Discussion : start
+User --> Application : share
+SiteAdmin <|-- Admin
+Administrator --> User : moderate
+User --> Post : share
 User --> Profile : make
-User --> User : report
-Data --> File : to
-User --> Review : read
+Site o-- Blog
 User --> Permission : have
 Board --> TextInput : use
-SiteAdmin <|-- Admin
-User --> Post : share
-Administrator --> Content : moderate
-User --> Discussion : start
-User --> Notification : receive
-Access --> ContactInformation : to
-User --> Blog : read
-Admin --> User : remove
-Administrator --> Article : post
-Investment o-- Profile
-User --> PropertyInformation : add
 PropertyInformation --> TrackingTool : to
-User --> Account : create
-Site o-- Board
-User --> Performance : see
+Administrator --> Identity : verify
+Data --> File : to
 User --> Access : have
-ServiceProvider o-- ContactInformation
-User --> ServiceProvider : find
-User --> Application : share
-Site o-- Permission
-User o-- Investment : manage
+Admin --> User : remove
+User --> Site : login
 User --> Page : make
-Media o-- Application
+Discussion o-- Board
+User --> FactorAuthentication : activate
+User --> List : view
+Administrator --> Content : moderate
+User --> Data : export
+Blog o-- Post
+User --> Site : use
+User --> Review : vote
+User o-- Investment : manage
+Article --> Blog : to
 Time --> VisualizationTool : use
 Site o-- Admin
 User o-- EmailNotificationSetting : adjust
+Administrator --> Article : post
+Access --> ContactInformation : to
 
 @enduml

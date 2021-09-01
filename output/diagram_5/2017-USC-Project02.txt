@@ -15,85 +15,85 @@ class AdminUser<actor> {
 class Log {
 }
 class User {
-	view()
-	search()
 	return()
 	update()
-	request()
-	browse()
+	view()
 	get()
 	click()
-}
-class Account {
-}
-class Admin {
-	add()
-	reserve()
-	read()
-	change()
-}
-class Item {
+	search()
+	browse()
+	request()
 }
 class Volunteer {
 	view()
-	manage()
 	check()
-}
-class Reservation {
+	manage()
 }
 class Availability {
+}
+class Status {
+}
+class Account {
+}
+class Button {
+	email()
 }
 class Darin {
 	reorder()
 }
-class Status {
+class Admin {
+	reserve()
+	add()
+	change()
+	read()
 }
-class Inventory {
-}
-class Location {
-}
-class EmailNotification {
+class Item {
 }
 class Developer {
 	import()
 }
 class Spreadsheet {
 }
-class Detail {
+class Reservation {
+}
+class Inventory {
 }
 class Manager {
 	click()
 }
-class Button {
-	email()
+class Detail {
 }
-class AdminUser {
+class Location {
+}
+class EmailNotification {
 }
 class Stock {
 }
-User --> Item : click
-Darin --> Item : reorder
-User --> Account : request
-Admin --> Item : add
-Volunteer --> Reservation : manage
-Admin o-- User
-Admin --> Item : reserve
-Admin --> Status : change
-Manager --> Button : click
-User --> User : return
+class AdminUser {
+}
 Button --> Darin : email
-AdminUser <|-- User
-User --> Status : update
-Admin --> Log : read
-User --> Inventory : update
-Item o-- Log
-Stock <|-- Item
+Admin --> Item : reserve
+Admin --> Item : add
+User --> User : return
 Volunteer --> Location : check
 Volunteer --> Availability : check
+Volunteer --> Reservation : view
+Admin --> Log : read
+User --> Status : update
 User --> EmailNotification : get
+User --> Item : click
+Stock <|-- Item
+Admin --> Status : change
+AdminUser <|-- User
 User --> User : view
 Developer --> Spreadsheet : import
+Item o-- Log
+Admin o-- User
+Volunteer --> Reservation : manage
+User --> Inventory : update
+Darin --> Item : reorder
+Manager --> Button : click
 User --> Detail : view
-Volunteer --> Reservation : view
+User --> Account : request
 
 @enduml

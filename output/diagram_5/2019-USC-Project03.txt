@@ -4,8 +4,8 @@ class Student<actor> {
 	group
 }
 class Teacher<actor> {
-	student
 	time
+	student
 	class
 }
 class Parent<actor> {
@@ -18,62 +18,52 @@ class TeacherUser<actor> {
 }
 class Admin<actor> {
 }
-class User {
-	post()
-	mention()
-	bully()
-	dislike()
-	improve()
-	report()
-	invite()
-}
 class Student {
-	finish()
-	receive()
-	manage()
-	schedule()
-	add()
-	join()
-	make()
-	upvote()
-	create()
-	have()
-	check()
-	view()
 	send()
+	make()
+	check()
+	manage()
 	talk()
+	finish()
+	upvote()
+	have()
+	schedule()
+	view()
+	add()
+	create()
+	join()
+	receive()
 	bookmark()
 	find()
 }
-class Invitation {
-	get()
+class Class {
 }
-class Teacher {
-	see()
-	contact()
-	upload()
-	check()
-	send()
-	assign()
-}
-class Post {
-	make()
-}
-class Homework {
+class User {
+	post()
+	mention()
+	report()
+	bully()
+	improve()
+	dislike()
+	invite()
 }
 class Someone {
 }
+class Name {
+}
 class Question {
 }
-class CollaborationNetwork {
+class Teacher {
+	send()
+	see()
+	check()
+	assign()
+	contact()
+	upload()
 }
-class Assignment {
+class RecordVideo {
 }
-class Meeting {
-}
-class Answer {
-}
-class Class {
+class Status {
 }
 class Group {
 }
@@ -81,26 +71,36 @@ class Maintainer {
 	monitor()
 	see()
 }
-class Stability {
+class TimeStatistic {
+}
+class Invitation {
+	get()
+}
+class Post {
+	make()
 }
 class Admin {
-	improve()
 	delete()
 	notice()
+	improve()
 }
-class TimeStatistic {
+class Answer {
+}
+class Homework {
+}
+class CollaborationNetwork {
+}
+class Assignment {
 }
 class StudyGroup {
 }
-class RecordVideo {
+class Performance {
 }
 class Quality {
 }
-class Status {
+class Stability {
 }
-class Performance {
-}
-class Name {
+class Meeting {
 }
 class People {
 }
@@ -108,46 +108,46 @@ class Discussion {
 }
 class TeacherUser {
 }
-Student --> Post : view
-User --> Performance : improve
-Teacher --> Homework : assign
-Student --> Invitation : receive
-Student --> Homework : finish
 Student --> Name : have
-User --> Post : dislike
-User --> Post : mention
-Maintainer --> Stability : monitor
-Teacher --> Invitation : send
-Teacher o-- Class : assign
+Student --> Homework : finish
 Admin --> Post : delete
-Student --> Invitation : send
-Admin --> Post : notice
-Student o-- Group : manage
-User --> Someone : mention
+Student --> Answer : find
 Student --> Question : upvote
-User --> People : invite
-Assignment --> Student : to
+Student --> Class : add
 Student --> Question : find
-Maintainer --> TimeStatistic : see
+Maintainer --> Stability : monitor
+Student --> Answer : upvote
+Student --> Invitation : receive
+Student --> Post : view
+Teacher --> RecordVideo : upload
+Student o-- Group : manage
+Student --> Meeting : schedule
+Teacher --> Homework : assign
+Student --> Status : check
+User --> People : invite
+Post --> CollaborationNetwork : make
+Assignment --> Student : to
+Student --> Invitation : send
+Discussion o-- Group
+Student o-- Group : join
+Teacher o-- Class : assign
+User --> Assignment : post
+Homework --> Student : to
+Teacher o-- User
+User --> Post : report
+Student --> StudyGroup : create
 Invitation --> Student : to
 People --> Discussion : to
-Post --> CollaborationNetwork : make
-Student --> StudyGroup : create
-Discussion o-- Group
-User --> Assignment : post
-Teacher --> RecordVideo : upload
+Maintainer --> TimeStatistic : see
+User --> Performance : improve
 TeacherUser <|-- User
-Student --> Answer : upvote
-Student --> Meeting : schedule
-User --> Post : report
-Student o-- Group : join
-Teacher o-- User
-Homework --> Student : to
-Admin --> Quality : improve
-Student --> Answer : find
 Student --> Post : make
-Student --> Status : check
-Student --> Class : add
+Teacher --> Invitation : send
+Admin --> Quality : improve
+User --> Post : mention
+User --> Someone : mention
+User --> Post : dislike
 Teacher o-- Student : contact
+Admin --> Post : notice
 
 @enduml

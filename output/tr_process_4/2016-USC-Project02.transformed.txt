@@ -15,11 +15,11 @@
       ],
       "attributes": [
         {
-          "name": "child",
+          "name": "detail",
           "type": "default"
         },
         {
-          "name": "detail",
+          "name": "child",
           "type": "default"
         }
       ]
@@ -127,27 +127,9 @@
   ],
   "behavior_list": [
     {
-      "actor": "Member",
-      "action": "view",
-      "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Parent",
-      "action": "view",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Parent",
-      "action": "set_up",
-      "target": "Payment",
-      "para": []
-    },
-    {
-      "actor": "Parent",
-      "action": "pay",
-      "target": "",
+      "actor": "User",
+      "action": "purchase",
+      "target": "Dvd",
       "para": []
     },
     {
@@ -160,12 +142,6 @@
       "actor": "Admin",
       "action": "update",
       "target": "Information",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "add",
-      "target": "Link",
       "para": []
     },
     {
@@ -182,44 +158,8 @@
     },
     {
       "actor": "User",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "check",
-      "target": "Mail",
-      "para": []
-    },
-    {
-      "actor": "Member",
       "action": "view",
-      "target": "Calendar",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Parent",
-      "action": "set_up",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "purchase",
-      "target": "Dvd",
-      "para": []
-    },
-    {
-      "actor": "Parent",
-      "action": "view",
-      "target": "OtherDetail",
+      "target": "Trailer",
       "para": []
     },
     {
@@ -229,45 +169,15 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "receive",
-      "target": "News",
-      "para": []
-    },
-    {
-      "actor": "User",
+      "actor": "Member",
       "action": "view",
-      "target": "Trailer",
+      "target": "Information",
       "para": []
     },
     {
-      "actor": "Concern",
-      "action": "address",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "receive",
-      "target": "Update",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Detail",
-      "para": []
-    },
-    {
-      "actor": "Section",
-      "action": "trigger",
-      "target": "Notification",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "download",
-      "target": "MusicNote",
+      "actor": "Client",
+      "action": "add",
+      "target": "Link",
       "para": []
     },
     {
@@ -277,8 +187,110 @@
       "para": []
     },
     {
+      "actor": "Member",
+      "action": "view",
+      "target": "Calendar",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "set_up",
+      "target": "Payment",
+      "para": []
+    },
+    {
+      "actor": "Donor",
+      "action": "support",
+      "target": "VymaCommunity",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "view",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "check",
+      "target": "GoogleDrive",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "set_up",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "update",
+      "target": "Detail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "Update",
+      "para": []
+    },
+    {
+      "actor": "Donor",
+      "action": "make",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "view",
+      "target": "OtherDetail",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Client",
+      "action": "add",
+      "target": "Website",
+      "para": []
+    },
+    {
       "actor": "Parent",
       "action": "register",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Section",
+      "action": "trigger",
+      "target": "Notification",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "receive",
+      "target": "News",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "register",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Parent",
+      "action": "pay",
       "target": "",
       "para": []
     },
@@ -289,39 +301,27 @@
       "para": []
     },
     {
-      "actor": "Donor",
-      "action": "support",
-      "target": "VymaCommunity",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "check",
-      "target": "GoogleDrive",
-      "para": []
-    },
-    {
-      "actor": "Client",
-      "action": "add",
-      "target": "Website",
+      "actor": "User",
+      "action": "view",
+      "target": "Detail",
       "para": []
     },
     {
       "actor": "Student",
-      "action": "register",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Donor",
-      "action": "make",
-      "target": "",
+      "action": "download",
+      "target": "MusicNote",
       "para": []
     },
     {
       "actor": "Admin",
-      "action": "update",
-      "target": "Detail",
+      "action": "check",
+      "target": "Mail",
+      "para": []
+    },
+    {
+      "actor": "Concern",
+      "action": "address",
+      "target": "",
       "para": []
     }
   ]

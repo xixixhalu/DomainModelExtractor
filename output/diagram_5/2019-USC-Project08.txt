@@ -1,20 +1,20 @@
 @startuml
 hide circle
 class User<actor> {
-	fingerprintScanner
 	reminder
+	fingerprintScanner
 }
 class Patient<actor> {
-	questionnaire
-	constraint
-	healthStatus
 	surgery
-	surgeon
-	survey
-	timeline
 	healthCenter
-	doctor
+	questionnaire
+	healthStatus
+	survey
+	constraint
 	healthProvider
+	doctor
+	timeline
+	surgeon
 }
 class Doctor<actor> {
 	patientHealthDecline
@@ -35,199 +35,199 @@ class Response {
 }
 class Health {
 }
-class Status {
-}
 class RecommendationArticle {
 }
-class HealthcareExecutive {
-	see()
-	study()
-}
-class Trend {
-}
-class Patient {
-	complete()
-	have()
-	do()
-	guide()
-	compare()
-	receive()
-	dismiss()
-	track()
-	install()
-	cancel()
-	save()
-	add()
-	rate()
-	snooze()
-	update()
-	reschedule()
-	get()
-	see()
-	answer()
-	take()
-	provide()
-	remind()
-}
-class Survey {
-}
-class Doctor {
-	get()
-	modify()
-	enroll()
-	use()
-	provide()
-	register()
-	notify()
-}
-class Prescription {
-}
-class Application {
-	use()
-}
-class Password {
-}
-class Reminder {
-}
-class CareTeam {
-	add()
-	remove()
-	input()
-}
-class Information {
+class Status {
 }
 class User {
-	check()
-	login()
-	complete()
 	receive()
-	answer()
+	check()
 	view()
 	indicate()
+	answer()
+	login()
+	complete()
 }
-class Constraint {
-	take()
-}
-class App {
+class Patient {
+	receive()
+	see()
+	provide()
+	reschedule()
+	answer()
+	cancel()
+	compare()
+	complete()
+	snooze()
+	dismiss()
+	remind()
+	add()
+	update()
+	guide()
 	do()
-}
-class Appointment {
-}
-class Recommendation {
-}
-class Medication {
+	install()
 	take()
-}
-class WebsiteInformation {
-}
-class Data {
-}
-class Notification {
-}
-class ContactInformation {
+	rate()
+	have()
+	track()
+	get()
 	save()
 }
 class Reward {
 }
-class Server {
+class Doctor {
+	enroll()
+	use()
+	notify()
+	provide()
+	register()
+	get()
+	modify()
 }
-class Admin {
-	access()
-	remove()
-	add()
-}
-class Entry {
-}
-class Questionnaire {
-}
-class Task {
-}
-class Database {
-}
-class Access {
-}
-class Confirmation {
+class App {
+	do()
 }
 class Picture {
 	see()
 }
 class Difference {
 }
-class History {
-	take()
+class HealthcareExecutive {
+	see()
+	study()
 }
-class Addition {
+class WebsiteInformation {
+}
+class Application {
+	use()
 }
 class Username {
 }
-class Amount {
+class Notification {
+}
+class Prescription {
+}
+class Task {
+}
+class Reminder {
+}
+class CareTeam {
+	add()
+	input()
+	remove()
+}
+class Admin {
+	access()
+	add()
+	remove()
+}
+class Database {
+}
+class Questionnaire {
 }
 class TimeNotification {
 }
+class Addition {
+}
+class Survey {
+}
+class Entry {
+}
+class Data {
+}
+class ContactInformation {
+	save()
+}
+class Access {
+}
+class Amount {
+}
+class Confirmation {
+}
+class Trend {
+}
+class Medication {
+	take()
+}
+class Appointment {
+}
+class Information {
+}
+class Recommendation {
+}
 class SmartphoneApp {
 }
-class DoctorUser {
+class History {
+	take()
+}
+class Constraint {
+	take()
+}
+class Server {
+}
+class Password {
 }
 class EducationContent {
 }
-class Recovery {
-}
 class Preparation {
 }
-HealthcareExecutive --> Trend : see
-Patient --> Reward : get
-EducationContent --> Recovery : supported_by
-Patient --> Task : complete
-ContactInformation --> Server : save
-CareTeam --> Patient : add
-Admin --> Entry : add
+class DoctorUser {
+}
+class Recovery {
+}
 Patient o-- Survey : do
-Patient --> Appointment : cancel
-Survey o-- Response
-Doctor o-- User
-Admin --> Entry : remove
-Patient --> Recommendation : receive
-Patient --> Addition : add
-Health o-- Status
-Doctor o-- Patient : register
-Patient --> RecommendationArticle : save
-Questionnaire o-- Response
-Doctor --> Prescription : modify
-Doctor --> Notification : get
-Patient --> Appointment : reschedule
-Patient --> Picture : take
-EducationContent --> Preparation : supported_by
-Patient --> Reminder : snooze
-User --> User : indicate
-Doctor --> RecommendationArticle : provide
-Application --> Username : use
-Patient o-- Questionnaire : do
-CareTeam --> Recommendation : input
-Patient --> Amount : answer
-Application --> Password : use
-User --> Response : view
-User --> Task : complete
-User --> Amount : answer
-Patient --> Reminder : add
-Patient --> WebsiteInformation : see
-Patient --> Reminder : remind
-Admin --> Database : access
-User --> TimeNotification : receive
-HealthcareExecutive --> Data : see
-Patient --> SmartphoneApp : install
-Patient --> Access : have
-Patient --> Notification : get
+Patient --> Reward : get
 Doctor o-- Patient : enroll
-CareTeam --> Information : input
-Doctor --> App : use
-Patient --> Confirmation : get
-Patient --> ContactInformation : see
-Patient --> Picture : compare
-Health o-- RecommendationArticle
+Patient --> Appointment : cancel
+Health o-- Status
+User --> Response : view
+Patient --> Reminder : snooze
 CareTeam --> Patient : remove
-Picture --> Difference : see
+Survey o-- Response
+Patient --> RecommendationArticle : save
+CareTeam --> Information : input
+Questionnaire o-- Response
+Doctor --> App : use
+Admin --> Entry : remove
+Patient --> Reminder : add
 DoctorUser <|-- User
 Patient --> Status : track
+CareTeam --> Recommendation : input
+HealthcareExecutive --> Data : see
+Patient --> Notification : get
+Patient --> Appointment : reschedule
+EducationContent --> Recovery : supported_by
+Picture --> Difference : see
+Patient --> Picture : take
+Patient --> ContactInformation : see
+Admin --> Database : access
+Patient --> SmartphoneApp : install
+Patient --> WebsiteInformation : see
+Patient --> Access : have
+Patient o-- Questionnaire : do
+Admin --> Entry : add
+Patient --> Task : complete
+Patient --> Recommendation : receive
+Patient --> Picture : compare
+Application --> Username : use
+User --> Amount : answer
+User --> User : indicate
+Doctor o-- User
+Patient --> Reminder : remind
+Doctor o-- Patient : register
+Patient --> Confirmation : get
+User --> TimeNotification : receive
+Doctor --> Notification : get
+CareTeam --> Patient : add
+ContactInformation --> Server : save
+HealthcareExecutive --> Trend : see
+Doctor --> Prescription : modify
+Doctor --> RecommendationArticle : provide
+Patient --> Addition : add
+User --> Task : complete
+Application --> Password : use
+Health o-- RecommendationArticle
+Patient --> Amount : answer
 App --> Appointment : do
+EducationContent --> Preparation : supported_by
 
 @enduml

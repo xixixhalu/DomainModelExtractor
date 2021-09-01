@@ -12,11 +12,7 @@
           "type": "default"
         },
         {
-          "name": "information",
-          "type": "default"
-        },
-        {
-          "name": "account",
+          "name": "bloodSugar",
           "type": "default"
         },
         {
@@ -24,11 +20,15 @@
           "type": "default"
         },
         {
-          "name": "insulinUsage",
+          "name": "account",
           "type": "default"
         },
         {
-          "name": "bloodSugar",
+          "name": "information",
+          "type": "default"
+        },
+        {
+          "name": "insulinUsage",
           "type": "default"
         }
       ]
@@ -50,10 +50,10 @@
   },
   "relation_list": [
     {
-      "source": "Cgm",
-      "dest": "Application",
-      "type": "association",
-      "msg": "to",
+      "source": "Insulin",
+      "dest": "Level",
+      "type": "aggregation",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -72,10 +72,10 @@
       "para": []
     },
     {
-      "source": "Insulin",
-      "dest": "Level",
-      "type": "aggregation",
-      "msg": "",
+      "source": "Cgm",
+      "dest": "Application",
+      "type": "association",
+      "msg": "to",
       "multiplicity": [
         "1",
         "1"
@@ -86,37 +86,13 @@
   "behavior_list": [
     {
       "actor": "User",
-      "action": "use",
-      "target": "App",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "input",
-      "target": "Meal",
-      "para": []
-    },
-    {
-      "actor": "User",
       "action": "see",
-      "target": "Trend",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "sign_up",
       "target": "",
       "para": []
     },
     {
-      "actor": "Information",
-      "action": "store",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "BloodSugar",
-      "action": "get",
+      "actor": "App",
+      "action": "warn",
       "target": "",
       "para": []
     },
@@ -128,19 +104,31 @@
     },
     {
       "actor": "User",
-      "action": "create",
-      "target": "Information",
+      "action": "connect",
+      "target": "Cgm",
       "para": []
     },
     {
       "actor": "User",
       "action": "want",
-      "target": "Recommendation",
+      "target": "Information",
       "para": []
     },
     {
       "actor": "Level",
-      "action": "take",
+      "action": "warn",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "App",
+      "action": "visualize",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "BloodSugar",
+      "action": "get",
       "target": "",
       "para": []
     },
@@ -151,21 +139,15 @@
       "para": []
     },
     {
-      "actor": "Recommendation",
-      "action": "customize",
-      "target": "",
+      "actor": "User",
+      "action": "want",
+      "target": "Recommendation",
       "para": []
     },
     {
       "actor": "User",
-      "action": "connect",
-      "target": "Cgm",
-      "para": []
-    },
-    {
-      "actor": "Level",
-      "action": "warn",
-      "target": "",
+      "action": "input",
+      "target": "Meal",
       "para": []
     },
     {
@@ -175,8 +157,26 @@
       "para": []
     },
     {
-      "actor": "App",
-      "action": "warn",
+      "actor": "Information",
+      "action": "store",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "create",
+      "target": "Information",
+      "para": []
+    },
+    {
+      "actor": "Level",
+      "action": "take",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "sign_up",
       "target": "",
       "para": []
     },
@@ -188,25 +188,25 @@
     },
     {
       "actor": "User",
-      "action": "want",
-      "target": "Information",
+      "action": "use",
+      "target": "App",
       "para": []
     },
     {
-      "actor": "App",
-      "action": "visualize",
+      "actor": "User",
+      "action": "download",
       "target": "",
       "para": []
     },
     {
       "actor": "User",
       "action": "see",
-      "target": "",
+      "target": "Trend",
       "para": []
     },
     {
-      "actor": "User",
-      "action": "download",
+      "actor": "Recommendation",
+      "action": "customize",
       "target": "",
       "para": []
     }

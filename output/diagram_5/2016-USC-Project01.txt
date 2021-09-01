@@ -14,27 +14,46 @@ class Image {
 class Experience {
 }
 class User {
-	list()
-	shop()
-	buy()
-	minimize()
-	slide()
-	collapse()
-	get()
-	view()
-	follow()
 	sort()
 	see()
+	shop()
+	get()
+	list()
+	slide()
 	waste()
+	follow()
+	view()
+	buy()
+	minimize()
+	collapse()
 }
-class Item {
+class Collection {
 }
-class Page {
-}
-class LoaderAnimation {
+class Customer {
+	redirect()
 }
 class Product {
 	list()
+}
+class Trend {
+}
+class Page {
+}
+class Traffic {
+	increase()
+}
+class Circle {
+}
+class Item {
+}
+class Cost {
+}
+class Time {
+}
+class Phone {
+}
+class Retailer {
+	have()
 }
 class Detail {
 }
@@ -43,35 +62,16 @@ class Clothing {
 class ShopWidget {
 	click()
 }
-class Customer {
-	redirect()
+class Cluster {
 }
-class Circle {
-}
-class Trend {
-}
-class Collection {
-}
-class Time {
+class Version {
 }
 class Media {
 	use()
 }
 class Frenzy {
 }
-class Phone {
-}
-class Cluster {
-}
-class Cost {
-}
-class Version {
-}
-class Traffic {
-	increase()
-}
-class Retailer {
-	have()
+class LoaderAnimation {
 }
 class Display {
 }
@@ -79,35 +79,35 @@ class Popularity {
 }
 class Price {
 }
-User --> SlideLayout : view
-Product o-- Image
-User --> Detail : view
-User o-- Phone : view
-User --> Product : get
-User --> Clothing : buy
-User --> Image : view
+User --> Collection : slide
+Product o-- SlideLayout
+User --> Product : sort
 User --> Product : shop
+User --> Trend : follow
 User --> Product : view
+User --> Product : see
+User --> Experience : get
+User --> Item : see
+User --> Page : view
+User --> Product : waste
 User --> Cluster : view
 User --> Circle : see
-User --> Cost : minimize
-User --> Item : see
-User --> Trend : follow
 User --> Version : view
-User --> Product : sort
-User --> Product : see
-User --> Page : view
 Popularity <|-- Product
-User --> Collection : slide
-User --> Time : waste
-User --> Display : slide
-User --> Experience : get
-Price <|-- Product
 User --> Item : view
-Product o-- SlideLayout
+User --> Product : get
+User --> Cost : minimize
 Media --> Frenzy : use
-User --> Product : waste
+User --> Time : waste
 User --> LoaderAnimation : see
+User --> SlideLayout : view
+User --> Display : slide
+User o-- Phone : view
+User --> Clothing : buy
+Price <|-- Product
+User --> Image : view
+Product o-- Image
+User --> Detail : view
 User o-- Experience
 
 @enduml

@@ -15,15 +15,15 @@
       ],
       "attributes": []
     },
-    "File": {
-      "name": "File",
+    "Manager": {
+      "name": "Manager",
       "type": [
         "shared"
       ],
       "attributes": []
     },
-    "Manager": {
-      "name": "Manager",
+    "File": {
+      "name": "File",
       "type": [
         "shared"
       ],
@@ -38,17 +38,6 @@
     }
   },
   "relation_list": [
-    {
-      "source": "Youth",
-      "dest": "Service",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
     {
       "source": "Case",
       "dest": "File",
@@ -81,25 +70,24 @@
         "1"
       ],
       "para": []
+    },
+    {
+      "source": "Youth",
+      "dest": "Service",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
     }
   ],
   "behavior_list": [
     {
-      "actor": "Manager",
-      "action": "run",
-      "target": "File",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "save",
-      "target": "Time",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "create",
-      "target": "Activity",
+      "actor": "Youth",
+      "action": "have",
+      "target": "Access",
       "para": []
     },
     {
@@ -110,8 +98,8 @@
     },
     {
       "actor": "Manager",
-      "action": "manage",
-      "target": "Account",
+      "action": "save",
+      "target": "Time",
       "para": []
     },
     {
@@ -122,20 +110,8 @@
     },
     {
       "actor": "Manager",
-      "action": "save",
-      "target": "MonitorCase",
-      "para": []
-    },
-    {
-      "actor": "Manager",
       "action": "create",
-      "target": "ManagementService",
-      "para": []
-    },
-    {
-      "actor": "Manager",
-      "action": "monitor",
-      "target": "Service",
+      "target": "Activity",
       "para": []
     },
     {
@@ -146,20 +122,44 @@
     },
     {
       "actor": "Manager",
+      "action": "manage",
+      "target": "File",
+      "para": []
+    },
+    {
+      "actor": "Manager",
       "action": "upload",
       "target": "Document",
       "para": []
     },
     {
-      "actor": "Youth",
-      "action": "have",
-      "target": "Access",
+      "actor": "Manager",
+      "action": "manage",
+      "target": "Account",
       "para": []
     },
     {
       "actor": "Manager",
-      "action": "manage",
+      "action": "save",
+      "target": "MonitorCase",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "run",
       "target": "File",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "monitor",
+      "target": "Service",
+      "para": []
+    },
+    {
+      "actor": "Manager",
+      "action": "create",
+      "target": "ManagementService",
       "para": []
     }
   ]

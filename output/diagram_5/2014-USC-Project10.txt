@@ -1,26 +1,18 @@
 @startuml
 hide circle
 class JobSeeker<actor> {
-	loginCredentials
 	network
-}
-class Network {
-}
-class Contact {
-	provide()
-}
-class Friend {
-	refer()
+	loginCredentials
 }
 class Seeker {
-	unsubscribe()
-	mark()
-	browse()
-	create()
-	contact()
-	search()
 	save()
+	mark()
+	contact()
+	unsubscribe()
+	browse()
 	select()
+	search()
+	create()
 	see()
 	subscribe()
 }
@@ -29,42 +21,50 @@ class Search {
 class Listing {
 	have()
 }
-class Job {
+class Network {
 }
-class Frequency {
+class Friend {
+	refer()
+}
+class Contact {
+	provide()
 }
 class RefersySystem {
 	connect()
 	fetch()
 }
-class Reference {
-}
-class Someone {
+class Job {
 }
 class Account {
 	save()
 }
 class LoginCredentials {
 }
-class Message {
+class Frequency {
+}
+class Someone {
+}
+class Reference {
 }
 class JobSeeker {
 }
-Seeker --> Message : supported_by
-Listing --> Friend : have
+class Message {
+}
+Network o-- Contact
+Seeker --> Search : save
 Account --> LoginCredentials : save
+Job o-- Listing
+Seeker --> Someone : contact
+Seeker --> Account : create
+Job o-- Seeker
+Seeker --> Frequency : select
+RefersySystem --> Job : fetch
+JobSeeker <|-- Seeker
+Listing --> Friend : have
+Seeker --> Message : supported_by
+Network o-- Friend
 Contact --> Reference : provide
 Seeker --> Job : mark
-Job o-- Listing
-Network o-- Contact
-Job o-- Seeker
-Seeker --> Someone : contact
-Network o-- Friend
-RefersySystem --> Job : fetch
-Seeker --> Frequency : select
-Seeker --> Account : create
-JobSeeker <|-- Seeker
 Job o-- Search
-Seeker --> Search : save
 
 @enduml

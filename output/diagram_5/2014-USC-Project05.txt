@@ -5,55 +5,55 @@ class SaleAgent<actor> {
 class SaleManager<actor> {
 }
 class Manager {
-	guide()
-	listen_in()
-	listen()
 	jump()
-	close()
 	speak()
-	assure()
-	train()
+	guide()
 	use()
+	close()
+	train()
+	listen()
+	listen_in()
+	assure()
 }
 class Agent {
-	close()
-	dial()
 	request()
+	close()
 	click()
+	dial()
 }
 class Sale {
 }
-class Customer {
+class ConferenceCall {
 }
 class Recording {
+}
+class Deal {
+}
+class Quality {
+}
+class Customer {
 }
 class Auto {
 	dial()
 }
-class Quality {
-}
 class Call {
-}
-class Deal {
-}
-class ConferenceCall {
 }
 class SaleAgent {
 }
 class SaleManager {
 }
-Manager --> Deal : close
-SaleAgent <|-- Agent
-Agent --> Customer : dial
-Manager --> Quality : assure
-Manager --> Agent : train
-Manager --> Recording : use
-Agent --> ConferenceCall : request
-Manager --> Call : listen
-SaleManager <|-- Manager
 Auto --> Customer : dial
-Agent --> Sale : close
-Sale o-- Agent
 Sale o-- Manager
+SaleAgent <|-- Agent
+Agent --> ConferenceCall : request
+Manager --> Quality : assure
+SaleManager <|-- Manager
+Manager --> Recording : use
+Manager --> Call : listen
+Manager --> Agent : train
+Agent --> Sale : close
+Agent --> Customer : dial
+Sale o-- Agent
+Manager --> Deal : close
 
 @enduml

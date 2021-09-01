@@ -8,6 +8,10 @@
       ],
       "attributes": [
         {
+          "name": "service",
+          "type": "default"
+        },
+        {
           "name": "pricing",
           "type": "default"
         },
@@ -16,15 +20,11 @@
           "type": "default"
         },
         {
-          "name": "itemPrice",
-          "type": "default"
-        },
-        {
-          "name": "service",
-          "type": "default"
-        },
-        {
           "name": "profile",
+          "type": "default"
+        },
+        {
+          "name": "itemPrice",
           "type": "default"
         },
         {
@@ -92,8 +92,8 @@
       ],
       "attributes": []
     },
-    "Quality": {
-      "name": "Quality",
+    "Catalog": {
+      "name": "Catalog",
       "type": [
         "shared"
       ],
@@ -106,22 +106,15 @@
       ],
       "attributes": []
     },
-    "Reset": {
-      "name": "Reset",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
-    },
-    "Catalog": {
-      "name": "Catalog",
-      "type": [
-        "shared"
-      ],
-      "attributes": []
-    },
     "Website": {
       "name": "Website",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Owner": {
+      "name": "Owner",
       "type": [
         "shared"
       ],
@@ -141,15 +134,22 @@
       ],
       "attributes": []
     },
-    "Owner": {
-      "name": "Owner",
+    "Post": {
+      "name": "Post",
       "type": [
         "shared"
       ],
       "attributes": []
     },
-    "Post": {
-      "name": "Post",
+    "Quality": {
+      "name": "Quality",
+      "type": [
+        "shared"
+      ],
+      "attributes": []
+    },
+    "Reset": {
+      "name": "Reset",
       "type": [
         "shared"
       ],
@@ -157,17 +157,6 @@
     }
   },
   "relation_list": [
-    {
-      "source": "Owner",
-      "dest": "Vendor",
-      "type": "association",
-      "msg": "supported_by",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
     {
       "source": "Moderator",
       "dest": "Vendor",
@@ -180,8 +169,30 @@
       "para": []
     },
     {
-      "source": "Blog",
-      "dest": "Post",
+      "source": "Product",
+      "dest": "Catalog",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Item",
+      "dest": "Price",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Forum",
+      "dest": "Discussion",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -202,52 +213,8 @@
       "para": []
     },
     {
-      "source": "Password",
-      "dest": "Reset",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "WebsiteOwner",
-      "dest": "Owner",
-      "type": "generalization",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Website",
-      "dest": "EndUser",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Website",
-      "dest": "Owner",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Discount",
-      "dest": "Consumer",
+      "source": "Access",
+      "dest": "Service",
       "type": "association",
       "msg": "to",
       "multiplicity": [
@@ -257,10 +224,21 @@
       "para": []
     },
     {
-      "source": "Item",
-      "dest": "Price",
+      "source": "Website",
+      "dest": "Owner",
       "type": "aggregation",
       "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Owner",
+      "dest": "Vendor",
+      "type": "association",
+      "msg": "supported_by",
       "multiplicity": [
         "1",
         "1"
@@ -290,8 +268,8 @@
       "para": []
     },
     {
-      "source": "Product",
-      "dest": "Catalog",
+      "source": "Website",
+      "dest": "EndUser",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -312,8 +290,19 @@
       "para": []
     },
     {
-      "source": "Forum",
-      "dest": "Discussion",
+      "source": "Blog",
+      "dest": "Post",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Password",
+      "dest": "Reset",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -334,6 +323,17 @@
       "para": []
     },
     {
+      "source": "Discount",
+      "dest": "Consumer",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
       "source": "Service",
       "dest": "Quality",
       "type": "aggregation",
@@ -345,10 +345,10 @@
       "para": []
     },
     {
-      "source": "Access",
-      "dest": "Service",
-      "type": "association",
-      "msg": "to",
+      "source": "WebsiteOwner",
+      "dest": "Owner",
+      "type": "generalization",
+      "msg": "",
       "multiplicity": [
         "1",
         "1"
@@ -358,99 +358,9 @@
   ],
   "behavior_list": [
     {
-      "actor": "Vendor",
-      "action": "inform",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "rate",
-      "target": "Vendor",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "participate",
-      "target": "Discussion",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "notify",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "leave",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "subscribe",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "manage",
-      "target": "Cart",
-      "para": []
-    },
-    {
-      "actor": "Event",
-      "action": "happen",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "manage",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "upload",
-      "target": "Profile",
-      "para": []
-    },
-    {
-      "actor": "Product",
-      "action": "suit",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "get",
-      "target": "Access",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "make",
-      "target": "Pricing",
-      "para": []
-    },
-    {
-      "actor": "Price",
-      "action": "improve",
-      "target": "Income",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "find",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "search",
-      "target": "Product",
+      "actor": "Owner",
+      "action": "encourage",
+      "target": "Sale",
       "para": []
     },
     {
@@ -461,44 +371,8 @@
     },
     {
       "actor": "Vendor",
-      "action": "view",
-      "target": "Date",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "narrow_down",
-      "target": "SearchResult",
-      "para": []
-    },
-    {
-      "actor": "Moderator",
-      "action": "encourage",
-      "target": "Sale",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "get",
-      "target": "Reset",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "review",
-      "target": "Vendor",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "search",
-      "target": "Forum",
-      "para": []
-    },
-    {
-      "actor": "Blog",
-      "action": "highlight",
-      "target": "Issue",
+      "action": "ship",
+      "target": "Product",
       "para": []
     },
     {
@@ -508,69 +382,33 @@
       "para": []
     },
     {
-      "actor": "Item",
-      "action": "reach",
-      "target": "IncreaseSale",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "get",
-      "target": "Recommendation",
-      "para": []
-    },
-    {
-      "actor": "Moderator",
-      "action": "approve",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "view",
-      "target": "Time",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
       "actor": "Moderator",
       "action": "post",
-      "target": "Blog",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "get",
-      "target": "",
+      "target": "Communication",
       "para": []
     },
     {
       "actor": "Vendor",
-      "action": "gather",
-      "target": "Feedback",
+      "action": "upload",
+      "target": "Profile",
       "para": []
     },
     {
       "actor": "Consumer",
-      "action": "verify",
-      "target": "Id",
+      "action": "subscribe",
+      "target": "",
       "para": []
     },
     {
       "actor": "Consumer",
-      "action": "participate",
-      "target": "Knowledge",
+      "action": "reset",
+      "target": "EmailAddress",
       "para": []
     },
     {
-      "actor": "Blog",
-      "action": "provide",
-      "target": "Resource",
+      "actor": "Vendor",
+      "action": "manage",
+      "target": "Price",
       "para": []
     },
     {
@@ -580,15 +418,51 @@
       "para": []
     },
     {
-      "actor": "Promotion",
-      "action": "attract",
+      "actor": "Owner",
+      "action": "post",
+      "target": "Blog",
+      "para": []
+    },
+    {
+      "actor": "Knowledge",
+      "action": "become",
       "target": "",
       "para": []
     },
     {
+      "actor": "Vendor",
+      "action": "improve",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "find",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "get",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "search",
+      "target": "Product",
+      "para": []
+    },
+    {
       "actor": "Moderator",
-      "action": "suspend",
-      "target": "Account",
+      "action": "encourage",
+      "target": "Sale",
+      "para": []
+    },
+    {
+      "actor": "Item",
+      "action": "reach",
+      "target": "IncreaseSale",
       "para": []
     },
     {
@@ -599,37 +473,127 @@
     },
     {
       "actor": "Consumer",
-      "action": "see",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
       "action": "gain",
       "target": "Knowledge",
       "para": []
     },
     {
-      "actor": "Consumer",
-      "action": "ensure",
-      "target": "Quality",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "search",
-      "target": "Blog",
+      "actor": "Price",
+      "action": "improve",
+      "target": "Income",
       "para": []
     },
     {
       "actor": "Vendor",
-      "action": "improve",
-      "target": "Service",
+      "action": "list",
+      "target": "Item",
       "para": []
     },
     {
-      "actor": "EmailAddress",
-      "action": "forget",
+      "actor": "Event",
+      "action": "happen",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "verify",
+      "target": "Id",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "gather",
+      "target": "Feedback",
+      "para": []
+    },
+    {
+      "actor": "VolumeTotal",
+      "action": "determine",
+      "target": "Vendor",
+      "para": []
+    },
+    {
+      "actor": "Moderator",
+      "action": "post",
+      "target": "Blog",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "refer",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Moderator",
+      "action": "determine",
+      "target": "Vendor",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "participate",
+      "target": "Knowledge",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "help",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "offer",
+      "target": "Promotion",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "view",
+      "target": "Date",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "look_up",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "narrow_down",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "leave",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "Item",
+      "action": "reach",
+      "target": "Market",
+      "para": []
+    },
+    {
+      "actor": "Owner",
+      "action": "determine",
+      "target": "Vendor",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "narrow_down",
+      "target": "SearchResult",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "convince",
       "target": "",
       "para": []
     },
@@ -641,8 +605,86 @@
     },
     {
       "actor": "Consumer",
-      "action": "sort",
-      "target": "Product",
+      "action": "search",
+      "target": "Blog",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "search",
+      "target": "Forum",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "get",
+      "target": "Reset",
+      "para": []
+    },
+    {
+      "actor": "EmailAddress",
+      "action": "forget",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "review",
+      "target": "Vendor",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "do",
+      "target": "Purchase",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "ensure",
+      "target": "Quality",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "notify",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "offer",
+      "target": "Order",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "manage",
+      "target": "Cart",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "improve",
+      "target": "Service",
+      "para": []
+    },
+    {
+      "actor": "Blog",
+      "action": "provide",
+      "target": "Resource",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "manage",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "EmailAddress",
+      "action": "change",
+      "target": "",
       "para": []
     },
     {
@@ -653,110 +695,26 @@
     },
     {
       "actor": "Consumer",
-      "action": "add",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "determine",
-      "target": "Vendor",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "suspend",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "offer",
-      "target": "Promotion",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "publish",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "offer",
-      "target": "Order",
-      "para": []
-    },
-    {
-      "actor": "Product",
-      "action": "be",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "refer",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "post",
-      "target": "Blog",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "look_up",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "manage",
-      "target": "Price",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "ship",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "gain",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Knowledge",
-      "action": "become",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "VolumeTotal",
-      "action": "determine",
-      "target": "Vendor",
-      "para": []
-    },
-    {
-      "actor": "Item",
-      "action": "reach",
-      "target": "Market",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
       "action": "look",
       "target": "",
       "para": []
     },
     {
-      "actor": "Vendor",
-      "action": "add",
-      "target": "Product",
+      "actor": "Blog",
+      "action": "highlight",
+      "target": "Issue",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "get",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "Transaction",
+      "action": "complete",
+      "target": "",
       "para": []
     },
     {
@@ -766,8 +724,68 @@
       "para": []
     },
     {
+      "actor": "Vendor",
+      "action": "add",
+      "target": "Catalog",
+      "para": []
+    },
+    {
       "actor": "Consumer",
-      "action": "narrow_down",
+      "action": "sort",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "rate",
+      "target": "Vendor",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "improve",
+      "target": "Future",
+      "para": []
+    },
+    {
+      "actor": "Promotion",
+      "action": "attract",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "find",
+      "target": "Product",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "participate",
+      "target": "Discussion",
+      "para": []
+    },
+    {
+      "actor": "Product",
+      "action": "suit",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "see",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "publish",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "gain",
       "target": "",
       "para": []
     },
@@ -778,6 +796,48 @@
       "para": []
     },
     {
+      "actor": "Moderator",
+      "action": "help",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Moderator",
+      "action": "approve",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "Product",
+      "action": "be",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "view",
+      "target": "Time",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "add",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "Consumer",
+      "action": "have",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Vendor",
+      "action": "make",
+      "target": "Pricing",
+      "para": []
+    },
+    {
       "actor": "Vendor",
       "action": "provide",
       "target": "Discount",
@@ -785,20 +845,8 @@
     },
     {
       "actor": "Consumer",
-      "action": "do",
-      "target": "Purchase",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "improve",
-      "target": "Product",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "add",
-      "target": "Catalog",
+      "action": "get",
+      "target": "Recommendation",
       "para": []
     },
     {
@@ -808,75 +856,27 @@
       "para": []
     },
     {
-      "actor": "EmailAddress",
-      "action": "change",
+      "actor": "Vendor",
+      "action": "inform",
       "target": "",
       "para": []
     },
     {
-      "actor": "Moderator",
-      "action": "post",
-      "target": "Communication",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "reset",
-      "target": "EmailAddress",
+      "actor": "Vendor",
+      "action": "add",
+      "target": "Product",
       "para": []
     },
     {
       "actor": "Moderator",
-      "action": "determine",
-      "target": "Vendor",
+      "action": "suspend",
+      "target": "Account",
       "para": []
     },
     {
       "actor": "Owner",
-      "action": "help",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "list",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "Transaction",
-      "action": "complete",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Moderator",
-      "action": "help",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Consumer",
-      "action": "find",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "convince",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Owner",
-      "action": "encourage",
-      "target": "Sale",
-      "para": []
-    },
-    {
-      "actor": "Vendor",
-      "action": "improve",
-      "target": "Future",
+      "action": "suspend",
+      "target": "Account",
       "para": []
     }
   ]

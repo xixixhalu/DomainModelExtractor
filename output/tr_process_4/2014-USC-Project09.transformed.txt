@@ -45,7 +45,7 @@
   "relation_list": [
     {
       "source": "Tip",
-      "dest": "Calculator",
+      "dest": "SureNumber",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -56,7 +56,7 @@
     },
     {
       "source": "Tip",
-      "dest": "SureNumber",
+      "dest": "Calculator",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -81,7 +81,13 @@
     {
       "actor": "User",
       "action": "have",
-      "target": "Access",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Question",
+      "action": "address",
+      "target": "",
       "para": []
     },
     {
@@ -91,9 +97,27 @@
       "para": []
     },
     {
+      "actor": "Administrator",
+      "action": "verify",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "Business",
+      "action": "claim",
+      "target": "Business",
+      "para": []
+    },
+    {
       "actor": "User",
-      "action": "submit",
-      "target": "Question",
+      "action": "have",
+      "target": "Access",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "download",
+      "target": "TravelGuide",
       "para": []
     },
     {
@@ -103,9 +127,69 @@
       "para": []
     },
     {
-      "actor": "Business",
-      "action": "claim",
+      "actor": "User",
+      "action": "lookup",
       "target": "Business",
+      "para": []
+    },
+    {
+      "actor": "Calculator",
+      "action": "calculate",
+      "target": "Tip",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "add",
+      "target": "Business",
+      "para": []
+    },
+    {
+      "actor": "Administrator",
+      "action": "approve",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "submit",
+      "target": "Question",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Tip",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "get",
+      "target": "Friction",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "search",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "use",
+      "target": "Calculator",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "see",
+      "target": "",
       "para": []
     },
     {
@@ -118,90 +202,6 @@
       "actor": "User",
       "action": "review",
       "target": "Guide",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "verify",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Tip",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "lookup",
-      "target": "Business",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "use",
-      "target": "Calculator",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "search",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "add",
-      "target": "Business",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "get",
-      "target": "Friction",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "download",
-      "target": "TravelGuide",
-      "para": []
-    },
-    {
-      "actor": "Administrator",
-      "action": "approve",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Calculator",
-      "action": "calculate",
-      "target": "Tip",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "have",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Question",
-      "action": "address",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "see",
-      "target": "",
       "para": []
     }
   ]

@@ -4,56 +4,56 @@ class CaseManager<actor> {
 }
 class Case {
 }
-class File {
-}
 class Manager {
-	manage()
-	create()
-	save()
 	upload()
 	run()
+	manage()
 	monitor()
+	create()
+	save()
+}
+class File {
 }
 class Service {
+}
+class Youth {
+	have()
+	access()
+}
+class Access {
+}
+class Frequency {
 }
 class Time {
 	lose()
 }
 class Activity {
 }
-class Frequency {
+class Document {
 }
 class Account {
-}
-class Youth {
-	access()
-	have()
 }
 class MonitorCase {
 }
 class ManagementService {
 }
-class Document {
-}
-class Access {
-}
 class CaseManager {
 }
-Manager --> File : manage
-Manager --> Time : save
-Youth o-- Service
-Manager --> ManagementService : create
-Manager --> Account : manage
-Time --> Activity : lose
+Manager --> Document : upload
+Youth --> Access : have
 CaseManager <|-- Manager
 Manager --> Activity : create
-Manager --> Document : upload
-Manager --> Service : monitor
-Youth --> Access : have
+Manager --> File : run
+Manager --> ManagementService : create
+Manager --> Account : manage
 Case o-- File
 Case o-- Manager
-Manager --> MonitorCase : save
 Manager --> Frequency : run
-Manager --> File : run
+Manager --> Service : monitor
+Manager --> MonitorCase : save
+Youth o-- Service
+Time --> Activity : lose
+Manager --> File : manage
+Manager --> Time : save
 
 @enduml

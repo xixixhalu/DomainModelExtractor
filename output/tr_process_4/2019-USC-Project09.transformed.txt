@@ -54,8 +54,56 @@
   ],
   "behavior_list": [
     {
-      "actor": "Product",
-      "action": "purchase",
+      "actor": "Developer",
+      "action": "enable",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "participate",
+      "target": "Auction",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "participate",
+      "target": "Raffle",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "maintain",
+      "target": "Account",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "participate",
+      "target": "Bid",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "make",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "return",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "PushNotification",
+      "action": "notify",
+      "target": "User",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "place",
       "target": "",
       "para": []
     },
@@ -66,14 +114,32 @@
       "para": []
     },
     {
-      "actor": "Developer",
-      "action": "provide",
-      "target": "LoginSystem",
+      "actor": "Admin",
+      "action": "maintain",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "go",
+      "target": "",
       "para": []
     },
     {
       "actor": "Admin",
       "action": "maintain",
+      "target": "Database",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "visit",
+      "target": "Item",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
       "target": "Item",
       "para": []
     },
@@ -84,9 +150,15 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "go",
-      "target": "",
+      "actor": "Item",
+      "action": "win",
+      "target": "Auction",
+      "para": []
+    },
+    {
+      "actor": "Developer",
+      "action": "provide",
+      "target": "LoginSystem",
       "para": []
     },
     {
@@ -102,87 +174,15 @@
       "para": []
     },
     {
-      "actor": "User",
-      "action": "view",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "place",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "return",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "maintain",
-      "target": "Account",
-      "para": []
-    },
-    {
-      "actor": "Developer",
-      "action": "enable",
-      "target": "User",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "participate",
-      "target": "Raffle",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "make",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "visit",
-      "target": "Item",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "participate",
-      "target": "Auction",
-      "para": []
-    },
-    {
       "actor": "Developer",
       "action": "allow",
       "target": "User",
       "para": []
     },
     {
-      "actor": "Admin",
-      "action": "maintain",
-      "target": "Database",
-      "para": []
-    },
-    {
-      "actor": "Item",
-      "action": "win",
-      "target": "Auction",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "participate",
-      "target": "Bid",
-      "para": []
-    },
-    {
-      "actor": "PushNotification",
-      "action": "notify",
-      "target": "User",
+      "actor": "Product",
+      "action": "purchase",
+      "target": "",
       "para": []
     }
   ]

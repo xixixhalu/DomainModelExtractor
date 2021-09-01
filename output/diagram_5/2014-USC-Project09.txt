@@ -13,63 +13,63 @@ class Calculator {
 	calculate()
 }
 class User {
-	search()
-	submit()
 	share()
-	review()
-	have()
-	download()
 	add()
-	lookup()
-	see()
+	download()
+	review()
 	use()
+	lookup()
+	submit()
+	have()
+	see()
 	get()
-}
-class Access {
-}
-class Search {
-	result()
+	search()
 }
 class Question {
 	address()
 }
+class Search {
+	result()
+}
 class Administrator {
+	assign()
 	approve()
 	verify()
-	assign()
-}
-class Business {
-	claim()
 }
 class Comment {
 	increase()
 }
-class Guide {
+class Business {
+	claim()
+}
+class Access {
+}
+class TravelGuide {
 }
 class Tip {
 }
 class Friction {
 }
-class TravelGuide {
+class Guide {
 }
 class Customer {
 }
-User --> Friction : get
-User --> Access : have
-User --> Customer : supported_by
 Administrator --> SureNumber : assign
-User --> Business : lookup
-User --> TravelGuide : download
-Administrator --> Comment : verify
-User --> Tip : get
-Business o-- Business : claim
-User --> Business : add
-User --> Question : submit
-Calculator --> Tip : calculate
-Tip o-- Calculator
-User --> Calculator : use
-User --> Guide : review
 Administrator --> Comment : approve
+User --> Customer : supported_by
+Business o-- Business : claim
+User --> Friction : get
+User --> Guide : review
 Tip o-- SureNumber
+User --> Access : have
+Calculator --> Tip : calculate
+User --> Business : lookup
+User --> Tip : get
+Administrator --> Comment : verify
+User --> Calculator : use
+User --> TravelGuide : download
+User --> Question : submit
+User --> Business : add
+Tip o-- Calculator
 
 @enduml

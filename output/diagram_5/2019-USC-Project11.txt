@@ -1,224 +1,224 @@
 @startuml
 hide circle
 class User<actor> {
-	videoRecord
-	session
-	messageHistory
 	information
-	finances
+	videoRecord
 	paymentHistory
-	paymentMethod
 	sessionAppointmentHistory
+	session
+	finances
+	paymentMethod
+	messageHistory
 }
 class Expert<actor> {
-	videoRecord
-	note
-	profile
-	session
-	status
 	profileBio
-	client
-	customer
 	calendar
+	videoRecord
+	profile
+	client
+	status
+	session
+	note
+	customer
 }
 class GuestUser<actor> {
 	moneyBelief
 }
-class Record {
-	analyze()
-}
-class ContentLibrary {
-	provide()
+class Chat {
 }
 class StreamingLibrary {
 	provide()
 }
-class Chat {
+class ContentLibrary {
+	provide()
+}
+class Record {
+	analyze()
 }
 class Method {
 }
-class Bio {
-}
 class AppointmentHistory {
 }
-class Expert {
-	authorize()
-	manage()
-	view()
-	see()
-	make()
-	keep()
-	update()
-	store()
-	give()
-	set()
-	sign_up()
-	receive()
-}
-class Notification {
-}
-class Transcript {
-	analyze()
-}
-class User {
-	select()
-	authorize()
-	charge()
-	access()
-	manage()
-	view()
-	get()
-	see()
-	schedule()
-	take()
-	ask()
-	update()
-	search()
-	commit()
-	have()
-	rate()
-	sign_up()
-	receive()
-}
-class Appointment {
-}
-class Rating {
-}
-class MessageHistory {
-}
-class Advice {
-}
-class Track {
-}
-class Change {
+class Bio {
 }
 class GuestUser {
 	access()
 	take()
 }
-class Therapy {
-}
 class Quiz {
 	find()
 }
-class Time {
-}
-class Profile {
-}
-class Topic {
-}
-class History {
-}
-class Session {
-}
-class Payment {
-}
-class Calendar {
+class Expert {
+	make()
+	authorize()
+	keep()
+	give()
+	sign_up()
+	update()
+	store()
+	see()
+	manage()
+	set()
+	view()
+	receive()
 }
 class Note {
 }
-class Access {
+class User {
+	schedule()
+	authorize()
+	search()
+	commit()
+	have()
+	view()
+	take()
+	sign_up()
+	ask()
+	see()
+	get()
+	select()
+	update()
+	manage()
+	rate()
+	receive()
+	access()
+	charge()
 }
-class Status {
+class Advice {
+}
+class History {
+}
+class Payment {
+}
+class Appointment {
+}
+class Rating {
 }
 class Feedback {
-}
-class MoneyBelief {
-}
-class Emergency {
-	be()
-}
-class Information {
 }
 class Minute {
 	talk()
 }
-class Budgeting {
-}
 class Calculator {
 }
-class Feature {
+class MoneyBelief {
+}
+class Information {
+}
+class Budgeting {
+}
+class Therapy {
+}
+class Change {
+}
+class Calendar {
+}
+class Status {
+}
+class Emergency {
+	be()
 }
 class Insight {
 }
-class ScheduleAppointmentAvailability {
+class Track {
 }
-class Facebook {
+class MessageHistory {
 }
-class Video {
+class Topic {
+}
+class Notification {
+}
+class Profile {
+}
+class Access {
+}
+class Time {
+}
+class Transcript {
+	analyze()
+}
+class Feature {
+}
+class Session {
 }
 class Blog {
 }
+class Video {
+}
 class Gmail {
 }
-class Online {
+class Facebook {
 }
 class FinancialExpert {
 }
+class Online {
+}
+class ScheduleAppointmentAvailability {
+}
 class LinkedIn {
 }
-Expert o-- Note : store
-User --> Expert : supported_by
-Payment o-- History
-User --> Appointment : have
-User --> Access : get
-Expert --> History : receive
-Calendar --> Chat : to
-Expert --> History : see
-Expert --> Record : authorize
-Session --> Expert : supported_by
-Expert --> Rating : view
-Expert --> Transcript : authorize
-Expert --> Time : set
-StreamingLibrary --> Insight : provide
-User --> FinancialExpert : supported_by
-Expert o-- Status : set
-Expert --> Advice : give
-User o-- MessageHistory : see
-User --> Profile : view
-User --> ContentLibrary : access
-Video o-- StreamingLibrary
-Calendar --> ScheduleAppointmentAvailability : to
-User --> Appointment : manage
-Expert --> User : supported_by
-User --> Expert : rate
-Expert --> Feedback : view
-ContentLibrary --> Topic : provide
-Payment o-- Method
+Expert --> Track : keep
 Session o-- AppointmentHistory
+Expert o-- Note : store
+Expert --> History : see
+User --> Appointment : have
+User --> FinancialExpert : supported_by
+User --> Expert : rate
+Expert --> Appointment : manage
+User o-- MessageHistory : see
+User o-- Information : see
+Expert --> History : give
+Video o-- StreamingLibrary
+Access --> Blog : to
+User --> Advice : take
 User --> Advice : have
 Video o-- Chat
-Appointment o-- Session
-User --> AppointmentHistory : see
-User --> History : see
-Expert --> LinkedIn : supported_by
 User o-- Session : schedule
-Quiz --> MoneyBelief : find
-User --> Facebook : supported_by
-Expert --> Track : keep
-User --> Calculator : access
-Video o-- ContentLibrary
-Access --> Video : to
-Expert --> Change : make
-User o-- Information : see
-Expert --> Payment : receive
-Video o-- Record
-Expert --> History : give
-Access --> Blog : to
-Expert --> Appointment : manage
-User --> Advice : take
-Expert o-- Calendar : manage
-User --> Method : update
-Expert --> Bio : update
-User --> Gmail : supported_by
-ContentLibrary --> Therapy : provide
 StreamingLibrary --> Budgeting : provide
-Expert o-- Calendar : set
-User --> StreamingLibrary : access
-GuestUser --> Feature : access
-Expert --> Notification : receive
-GuestUser --> Quiz : take
-Profile o-- Bio
+User --> Method : update
 Status --> Online : to
+User --> History : see
+ContentLibrary --> Topic : provide
+Expert --> History : receive
+ContentLibrary --> Therapy : provide
+Payment o-- Method
+User --> Expert : supported_by
+Expert --> Bio : update
+Expert --> Notification : receive
+Calendar --> ScheduleAppointmentAvailability : to
+Access --> Video : to
+Expert --> Payment : receive
+Expert --> Change : make
+Expert --> Record : authorize
+Expert --> Advice : give
+GuestUser --> Feature : access
+Session --> Expert : supported_by
+Video o-- ContentLibrary
+User --> StreamingLibrary : access
+Expert o-- Calendar : set
+Expert --> LinkedIn : supported_by
+Calendar --> Chat : to
+User --> Appointment : manage
+User --> Profile : view
+Profile o-- Bio
+Expert o-- Status : set
+Payment o-- History
+Expert --> Rating : view
+User --> Access : get
+User --> Gmail : supported_by
+Expert --> Time : set
+User --> AppointmentHistory : see
+Video o-- Record
+Expert --> Feedback : view
+StreamingLibrary --> Insight : provide
+Quiz --> MoneyBelief : find
+Expert --> User : supported_by
+Expert --> Transcript : authorize
+Expert o-- Calendar : manage
+Appointment o-- Session
+GuestUser --> Quiz : take
+User --> ContentLibrary : access
+User --> Facebook : supported_by
+User --> Calculator : access
 
 @enduml

@@ -20,11 +20,11 @@
       ],
       "attributes": [
         {
-          "name": "class",
+          "name": "student",
           "type": "default"
         },
         {
-          "name": "student",
+          "name": "class",
           "type": "default"
         },
         {
@@ -82,6 +82,39 @@
       "para": []
     },
     {
+      "source": "Discussion",
+      "dest": "Group",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Homework",
+      "dest": "Student",
+      "type": "association",
+      "msg": "to",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
+      "source": "Teacher",
+      "dest": "User",
+      "type": "aggregation",
+      "msg": "",
+      "multiplicity": [
+        "1",
+        "1"
+      ],
+      "para": []
+    },
+    {
       "source": "Invitation",
       "dest": "Student",
       "type": "association",
@@ -104,17 +137,6 @@
       "para": []
     },
     {
-      "source": "Discussion",
-      "dest": "Group",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
       "source": "TeacherUser",
       "dest": "User",
       "type": "generalization",
@@ -124,89 +146,13 @@
         "1"
       ],
       "para": []
-    },
-    {
-      "source": "Teacher",
-      "dest": "User",
-      "type": "aggregation",
-      "msg": "",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
-    },
-    {
-      "source": "Homework",
-      "dest": "Student",
-      "type": "association",
-      "msg": "to",
-      "multiplicity": [
-        "1",
-        "1"
-      ],
-      "para": []
     }
   ],
   "behavior_list": [
     {
-      "actor": "User",
-      "action": "bully",
-      "target": "",
-      "para": []
-    },
-    {
       "actor": "Student",
-      "action": "receive",
-      "target": "Invitation",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "check",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Teacher",
-      "action": "contact",
-      "target": "Student",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "view",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "Teacher",
-      "action": "assign",
-      "target": "Homework",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "make",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "finish",
-      "target": "Homework",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "bookmark",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "dislike",
-      "target": "Post",
+      "action": "add",
+      "target": "Class",
       "para": []
     },
     {
@@ -217,14 +163,134 @@
     },
     {
       "actor": "Student",
+      "action": "have",
+      "target": "Name",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "upvote",
+      "target": "Question",
+      "para": []
+    },
+    {
+      "actor": "Teacher",
+      "action": "upload",
+      "target": "RecordVideo",
+      "para": []
+    },
+    {
+      "actor": "Student",
       "action": "find",
       "target": "Question",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "talk",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "check",
+      "target": "Status",
+      "para": []
+    },
+    {
+      "actor": "Teacher",
+      "action": "see",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "join",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "manage",
+      "target": "Group",
+      "para": []
+    },
+    {
+      "actor": "Teacher",
+      "action": "assign",
+      "target": "Class",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "check",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Maintainer",
+      "action": "see",
+      "target": "TimeStatistic",
+      "para": []
+    },
+    {
+      "actor": "Teacher",
+      "action": "send",
+      "target": "Invitation",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "mention",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "report",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "post",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "notice",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "upvote",
+      "target": "Answer",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "find",
+      "target": "Answer",
+      "para": []
+    },
+    {
+      "actor": "Teacher",
+      "action": "assign",
+      "target": "Homework",
       "para": []
     },
     {
       "actor": "Post",
       "action": "make",
       "target": "CollaborationNetwork",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "view",
+      "target": "Post",
       "para": []
     },
     {
@@ -235,32 +301,74 @@
     },
     {
       "actor": "Student",
-      "action": "schedule",
-      "target": "Meeting",
+      "action": "create",
+      "target": "StudyGroup",
       "para": []
     },
     {
-      "actor": "Teacher",
+      "actor": "User",
+      "action": "improve",
+      "target": "Performance",
+      "para": []
+    },
+    {
+      "actor": "Student",
       "action": "send",
       "target": "Invitation",
       "para": []
     },
     {
-      "actor": "Student",
-      "action": "find",
-      "target": "Answer",
+      "actor": "Admin",
+      "action": "improve",
+      "target": "Quality",
       "para": []
     },
     {
       "actor": "Student",
-      "action": "add",
-      "target": "Class",
+      "action": "bookmark",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Teacher",
+      "action": "contact",
+      "target": "Student",
+      "para": []
+    },
+    {
+      "actor": "Teacher",
+      "action": "check",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "dislike",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Invitation",
+      "action": "get",
+      "target": "",
       "para": []
     },
     {
       "actor": "Student",
-      "action": "join",
-      "target": "Group",
+      "action": "make",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "bully",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Student",
+      "action": "finish",
+      "target": "Homework",
       "para": []
     },
     {
@@ -277,110 +385,8 @@
     },
     {
       "actor": "Student",
-      "action": "talk",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "manage",
-      "target": "Group",
-      "para": []
-    },
-    {
-      "actor": "Maintainer",
-      "action": "see",
-      "target": "TimeStatistic",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "create",
-      "target": "StudyGroup",
-      "para": []
-    },
-    {
-      "actor": "Teacher",
-      "action": "upload",
-      "target": "RecordVideo",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "upvote",
-      "target": "Question",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "upvote",
-      "target": "Answer",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "improve",
-      "target": "Quality",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "check",
-      "target": "Status",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "report",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "improve",
-      "target": "Performance",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "have",
-      "target": "Name",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "post",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Teacher",
-      "action": "assign",
-      "target": "Class",
-      "para": []
-    },
-    {
-      "actor": "Teacher",
-      "action": "check",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "mention",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "Invitation",
-      "action": "get",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Student",
-      "action": "send",
-      "target": "Invitation",
+      "action": "schedule",
+      "target": "Meeting",
       "para": []
     },
     {
@@ -390,15 +396,9 @@
       "para": []
     },
     {
-      "actor": "Teacher",
-      "action": "see",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "notice",
-      "target": "Post",
+      "actor": "Student",
+      "action": "receive",
+      "target": "Invitation",
       "para": []
     }
   ]

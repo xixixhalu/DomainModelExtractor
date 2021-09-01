@@ -13,58 +13,58 @@ class Staff {
 	see()
 }
 class Administrator {
-	allow()
-	help()
-	create()
 	enter()
+	help()
 	delete()
+	create()
+	allow()
 	add()
-}
-class Code {
 }
 class Lock {
 	delete()
 	add()
 }
 class Manager {
-	select()
 	delete()
 	add()
-}
-class Group {
-}
-class SmartThingsClientId {
+	select()
 }
 class Secret {
 	authorize()
 }
 class Access {
 }
-class HouseManager {
+class Group {
+}
+class Code {
+}
+class SmartThingsClientId {
 }
 class EditCode {
 }
+class HouseManager {
+}
 class HouseStaff {
 }
-Administrator --> Code : allow
-Lock --> Code : add
-Administrator --> Manager : add
-Administrator --> Group : create
-Administrator --> Manager : delete
-Lock --> Code : delete
 Administrator --> Lock : add
+Lock --> Code : add
 Administrator --> Manager : help
-Administrator --> Group : delete
-HouseManager <|-- Manager
-Administrator --> Lock : delete
-Secret --> Access : authorize
+Lock --> Code : delete
 Manager --> Lock : select
-House o-- Staff
-House o-- Manager
-Lock --> EditCode : to
-Access --> Lock : to
-HouseStaff <|-- Staff
+Secret --> Access : authorize
+Administrator --> Group : delete
+Administrator --> Group : create
 Administrator --> Group : add
+Administrator --> Manager : add
+Administrator --> Lock : delete
+Lock --> EditCode : to
+Administrator --> Manager : delete
 Administrator o-- SmartThingsClientId : enter
+HouseManager <|-- Manager
+HouseStaff <|-- Staff
+House o-- Staff
+Access --> Lock : to
+House o-- Manager
+Administrator --> Code : allow
 
 @enduml

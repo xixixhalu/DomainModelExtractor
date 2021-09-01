@@ -22,15 +22,15 @@
       ],
       "attributes": []
     },
-    "Form": {
-      "name": "Form",
+    "Comment": {
+      "name": "Comment",
       "type": [
         "shared"
       ],
       "attributes": []
     },
-    "Comment": {
-      "name": "Comment",
+    "Form": {
+      "name": "Form",
       "type": [
         "shared"
       ],
@@ -39,8 +39,8 @@
   },
   "relation_list": [
     {
-      "source": "Feedback",
-      "dest": "Form",
+      "source": "User",
+      "dest": "Comment",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -50,8 +50,8 @@
       "para": []
     },
     {
-      "source": "User",
-      "dest": "Comment",
+      "source": "Feedback",
+      "dest": "Form",
       "type": "aggregation",
       "msg": "",
       "multiplicity": [
@@ -63,9 +63,129 @@
   ],
   "behavior_list": [
     {
+      "actor": "Admin",
+      "action": "save",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "Category",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "view",
+      "target": "BlogPost",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "like",
+      "target": "BlogPost",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "trend",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "comment",
+      "target": "BlogPost",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "MediaPlatform",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "search",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "relate",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "Tag",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "add",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Scriptwriter",
+      "action": "get",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "edit",
+      "target": "Category",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "share",
+      "target": "Post",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "delete",
+      "target": "Comment",
+      "para": []
+    },
+    {
+      "actor": "Scriptwriter",
+      "action": "get",
+      "target": "Feedback",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "log_in",
+      "target": "",
+      "para": []
+    },
+    {
       "actor": "Producer",
       "action": "use",
       "target": "Form",
+      "para": []
+    },
+    {
+      "actor": "User",
+      "action": "trend",
+      "target": "",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "edit",
+      "target": "Tag",
+      "para": []
+    },
+    {
+      "actor": "Admin",
+      "action": "edit",
+      "target": "Post",
       "para": []
     },
     {
@@ -77,127 +197,7 @@
     {
       "actor": "User",
       "action": "view",
-      "target": "BlogPost",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
       "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "Scriptwriter",
-      "action": "get",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "like",
-      "target": "BlogPost",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "add",
-      "target": "Tag",
-      "para": []
-    },
-    {
-      "actor": "Scriptwriter",
-      "action": "get",
-      "target": "Feedback",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "edit",
-      "target": "Tag",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "search",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "add",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "delete",
-      "target": "Comment",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "comment",
-      "target": "BlogPost",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "view",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "edit",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "save",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "trend",
-      "target": "Post",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "share",
-      "target": "MediaPlatform",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "add",
-      "target": "Category",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "trend",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "log_in",
-      "target": "",
-      "para": []
-    },
-    {
-      "actor": "Admin",
-      "action": "edit",
-      "target": "Category",
-      "para": []
-    },
-    {
-      "actor": "User",
-      "action": "relate",
-      "target": "",
       "para": []
     }
   ]

@@ -114,7 +114,6 @@ def spellcheck (file_freq_word_dict, noun_word_list,check_file) :
     # return correct_dict, correct_candidate_dict
 '''
 
-
 def word_line_index(file):
     del_str = string.punctuation
     replace_punctuation = ' ' * len(del_str)
@@ -278,10 +277,10 @@ if __name__ == '__main__' :
 
         #file_freq_word_dict, noun_word_list = frequentWordGen(file_preprocess_lines)
 
-        word_freq=word_freq(check_file)
-        word_candidate=word_detect(word_freq,1)
+        word_freq_count=word_freq(check_file)
+        word_candidate=word_detect(word_freq_count,1)
         line_indx_dict=word_line_index(check_file)
-        correct_dict = spell_check(word_candidate, word_freq, glossary_file, line_indx_dict)
+        correct_dict = spell_check(word_candidate, word_freq_count, glossary_file, line_indx_dict)
         correct_lines = correctFile(file_origin_lines, file_preprocess_lines, correct_dict)
 
         with open(output_path + '.corrected.txt', 'w') as outfile:

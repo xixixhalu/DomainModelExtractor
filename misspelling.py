@@ -114,7 +114,6 @@ def spellcheck (file_freq_word_dict, noun_word_list,check_file) :
     # return correct_dict, correct_candidate_dict
 '''
 
-
 def word_line_index(file):
     del_str = string.punctuation
     replace_punctuation = ' ' * len(del_str)

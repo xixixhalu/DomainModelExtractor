@@ -165,7 +165,7 @@ def read_glossary(file):
     return ret
 
 
-def spell_check(word_candidate, word_freq, glossary_file, line_indx_dict):
+def spell_check(word_candidate, word_freq, glossary_file, line_indx_dict, logger):
     spell = SpellChecker(language='en', case_sensitive=True, distance=CHECK_EDIT_DISTANCE)
     correct_dict = {}
 
@@ -199,7 +199,7 @@ def spell_check(word_candidate, word_freq, glossary_file, line_indx_dict):
     return correct_dict
 
 
-def correctFile(file_origin_lines, file_preprocess_lines, correct_dict):
+def correctFile(file_origin_lines, file_preprocess_lines, correct_dict, logger):
     correct_lines = []
     for idx in file_preprocess_lines:
         for sentence in file_preprocess_lines[idx]:
@@ -281,8 +281,8 @@ if __name__ == '__main__' :
         word_freq_count=word_freq(check_file)
         word_candidate=word_detect(word_freq_count,1)
         line_indx_dict=word_line_index(check_file)
-        correct_dict = spell_check(word_candidate, word_freq_count, glossary_file, line_indx_dict)
-        correct_lines = correctFile(file_origin_lines, file_preprocess_lines, correct_dict)
+        correct_dict = spell_check(word_candidate, word_freq, glossary_file, line_indx_dict, logger)
+        correct_lines = correctFile(file_origin_lines, file_preprocess_lines, correct_dict, logger)
 
         with open(output_path + '.corrected.txt', 'w') as outfile:
             outfile.writelines(correct_lines)

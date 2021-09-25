@@ -280,6 +280,92 @@ def topological_sort_ssr(ssrIndependence):
 
     return match_order, in_nodes
 
+#########
+#   Api part
+#########
+
+def api_ssr_matching(func_output):
+        rule_obj = pd.read_excel("./SSR/SSR.xlsx")
+
+        ssr_name_num = dict()
+        ssrNum = list(rule_obj['Rule'])
+        ssrName = list(rule_obj['Sentence Structure'])
+        ssrIndependence = list(rule_obj['Independence'])
+
+        rule_obj.set_index(["Rule"], inplace=True)
+
+        for i in range(len(ssrNum)):
+            ssr_name_num[ssrNum[i]] = ssrName[i]
+
+        output_result = dict()
+        match_order, in_nodes = topological_sort_ssr(ssrIndependence)
+
+        for i in match_order:
+            output_result[ssrName[i - 1]] = []
+
+        output_result_file = output_result
+        matched_dict = {}
+        for s in tqdm(func_output):  # travel each sentence
+            if len(s) > 0:  # tell whether s is a blank line
+                sentence_info = dict()
+
+                ssr = Matcher(s)
+                nlp_output = analyze(s)
+                if nlp_output is not None:
+                    # collect word and punctuation indices in the sentence to a dictionary
+                    s_dic = ssr.build_tokens(nlp_output)
+                    td_key = pure_enhancedTD(nlp_output)
+                    for i in match_order:
+                        try:
+                            rule_result = ssr.parse_rule(rule_obj, i)
+                        except:
+                            continue
+                        if i not in matched_dict:
+                            matched_dict[i] = {}
+                        matched_dict[i][s] = []
+
+                        # split rule result
+                        rule_name = rule_result[0]
+                        rule_tds = rule_result[1]
+                        rule_pos_tags = rule_result[2]
+                        rule_keywords = rule_result[3]
+
+                        td_res = ssr.match_tds(rule_tds, td_key)
+                        if td_res[0]:
+                            for var_map in td_res[1]:
+                                matched = False
+                                indices = []
+                                for key in var_map:
+                                    indices.append(var_map[key])
+                                if in_nodes[i]:
+                                    for rule in in_nodes[i]:
+                                        if rule in matched_dict and s in matched_dict[rule]:
+                                            for lst in matched_dict[rule][s]:
+                                                if set(indices) <= set(lst):
+                                                    # change the flag matched to True if all the indices
+                                                    # of the sentence matched by this SSR are matched by
+                                                    # the SSR of its independence
+                                                    matched = True
+                                                    break
+                                        if matched:
+                                            break
+
+                                if ssr.match_pos(var_map, rule_pos_tags, nlp_output) and ssr.match_keywords(
+                                            ssr.sentence, rule_keywords) and not matched:
+                                    # tell whether both td and postag can match
+                                    # skip the following if indices already matched by SSR from independence
+                                    s_info = copy.deepcopy(sentence_info)
+                                    s_info['Sentence'] = s
+                                    s_info['Result'] = var_map
+                                    s_info['Index'] = s_dic
+                                    s_info['TD'] = td_key
+                                    s_info['Pos-tag'] = parsePosTag(nlp_output)
+                                    s_info['Keywords'] = list(rule_keywords)
+                                    output_result_file[rule_name].append(s_info)
+
+                                    matched_dict[i][s].append(indices)
+
+        return output_result
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='SSR Matching')

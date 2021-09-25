@@ -31,7 +31,66 @@ class PreProcessor:
     def __init__(self):
         self.count_func = 0
         self.count_nonfunc = 0
+    
+    def api_pre_process(self, input_path, output_path):
+        # Connector used for RemoveSlash
+        file = open(input_path, 'r')
 
+        func_output = open(output_path + ".func.txt", "w")
+        nonfunc_output = open(output_path + ".nonfunc.txt", "w")
+        metadata = open(output_path + ".meta.txt", "w")
+        actors = open(output_path + ".actor.txt", "w")
+
+        line = file.readline().strip()
+        while line:
+            # print("Original sentence: ", line)
+            meta = []
+            # maps combined noun to the original nouns
+            noun_map = {}
+            acts = []
+
+            is_func = True
+            if re.search(FUNC_RE, line):
+                self.count_func += 1
+            else:
+                is_func = False
+                self.count_nonfunc += 1
+                
+
+            try:
+                line_no_bracket = self.removeBracket(line)
+            except:
+                logger.error("removeBracket: Cannot process sentence > " + line)
+                line_no_bracket = line
+            try:
+                lines_no_slash = self.removeSlash(line_no_bracket,CONNECTOR=CONNECTOR)
+            except:
+                logger.error("removeSlash: Cannot process sentence > " + line)
+
+            # After processing using "RemoveSlash", lines_no_slash will become a list.
+            # Loop in the list so that every function will be wriiten into the file.
+            for i in lines_no_slash:
+                combine_nouns_line = self.combine_nouns(i, meta, noun_map)
+                replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)
+                if is_func:
+                    func_output.write(replace_role_line + "\n")
+                else:
+                    nonfunc_output.write(replace_role_line + "\n")
+                    
+            metadata.write(meta.__str__() + "\n")
+            actors.write(acts.__str__() + "\n")
+
+            line = file.readline().strip()
+
+        logger.info("Functional count: " + str(self.count_func) +
+                    "\nNon-functional count: " + str(self.count_nonfunc))
+
+        func_output.close()
+        nonfunc_output.close()
+        metadata.close()
+        actors.close()
+        file.close()
+    
     def pre_process(self, input_path, output_path):
         # Connector used for RemoveSlash
         file = open(input_path, 'r')
@@ -590,6 +649,51 @@ class PreProcessor:
         #    else :
         #        sentence += doc[sentence_start:remove_index[i]].text + ' '
         #sentence += doc[remove_index[-1]+1:len(doc)].text
+        
+    #########
+    #   Api part
+    #########
+    def api_pre_process(self, input_list):
+        func_output = []
+        nonfunc_output = []
+        metadata = []
+        actors = []
+        for line in input_list:
+            meta = []
+            # maps combined noun to the original nouns
+            noun_map = {}
+            acts = []
+
+            is_func = True
+            if re.search(FUNC_RE, line):
+                self.count_func += 1
+            else:
+                is_func = False
+                self.count_nonfunc += 1
+                
+            try:
+                line_no_bracket = self.removeBracket(line)
+            except:
+                line_no_bracket = line
+            try:
+                lines_no_slash = self.removeSlash(line_no_bracket,CONNECTOR=CONNECTOR)
+            except:
+                lines_no_slash = []
+
+            # After processing using "RemoveSlash", lines_no_slash will become a list.
+            # Loop in the list so that every function will be wriiten into the file.
+            for i in lines_no_slash:
+                combine_nouns_line = self.combine_nouns(i, meta, noun_map)
+                replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)
+                if is_func:
+                    func_output.append(replace_role_line)
+                else:
+                    nonfunc_output.append(replace_role_line)
+                    
+            metadata.append(meta.__str__())
+            actors.append(acts.__str__())
+
+        return func_output, nonfunc_output, metadata, actors
 
 if __name__ == '__main__':
 

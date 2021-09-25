@@ -28,7 +28,7 @@ class Transformation:
 
     def transform(self, action, variables, transformation_rule):
         method_to_call = getattr(self.domain, action)
-
+        print(1)
         # prepare keyword arguments
         arguments = {}
         arg_list = transformation_rule.split(',')
@@ -121,6 +121,116 @@ class Transformation:
         S_TR1(self.domain)
         S_TR2(self.domain)
 
+
+
+
+#############
+#   Api part
+#############
+class Api_Transformation:
+    def __init__(self, ssr_input, pre_input_actor, pre_input_meta):
+        self.ssr_file = ssr_input
+        self.actor_file = pre_input_actor
+        self.meta_file = pre_input_meta
+        self.domain = ISDomain("")
+
+    def transform(self, action, variables, transformation_rule):
+        method_to_call = getattr(self.domain, action)
+        print(method_to_call)
+        # prepare keyword arguments
+        arguments = {}
+        arg_list = transformation_rule.split(',')
+        for arg in arg_list:
+            arg_pair = arg.strip().split('=')
+            arg_pair[0] = arg_pair[0].strip()
+            arg = ''
+            # print(method_to_call.__name__)
+            if re.search("\"", arg_pair[1]):
+                arg = re.sub(r"\"", '', arg_pair[1]).strip()
+            else:
+                arg = '_'.join([re.sub(r'\W+', '', variables[i]).strip() for i in str(arg_pair[1])])
+            # arg_pair[1] = re.sub(r'\W+', '', variables[arg_pair[1]]).strip()
+
+            # arguments[arg_pair[0]] = arg_pair[1]
+            arguments[arg_pair[0]] = arg
+
+        method_to_call(**arguments)
+
+
+    def identify_actor(self):
+        for line in self.actor_file:
+            actor_list = eval(line)
+            for actor_word in actor_list:
+                actor = ""
+                for word in actor_word:
+                    word = re.sub(r'\W+', '', word)
+                    word = word[0].upper() + word[1:]
+                    actor += word
+                self.domain.add_entity(actor, "actor")
+                
+    def identify_entity(self):
+        for line in self.meta_file:
+            entity_list = eval(line)
+            for entity_word in entity_list:
+                entity = ""
+                for word in entity_word[0]:
+                    word = re.sub(r'\W+', '', word)
+                    word = word[0].upper() + word[1:]
+                    entity += word
+                self.domain.add_entity(entity, "entity")
+                
+    def apply_rules(self, rule_obj):
+        tr_name = list(rule_obj['Rule'])
+        rule_obj.set_index(["Rule"], inplace=True)
+
+        # Iterate transformation rules
+        for tr in tr_name:
+            if str(tr) == 'nan':
+                continue
+            try:
+                line = rule_obj.loc[tr]
+                ssr_name = line.loc['Sentence Structure'].strip()
+                action = line.loc['Action'].strip()
+                transformation_rule = line.loc['Transformation'].strip()
+
+                # Iterate sentences matched to SSR
+                for s in self.ssr_file[ssr_name]:
+                    s_index = s['Index']
+                    s_result = s['Result']
+                    # Iterate matched variables
+                    variables = {}
+                    for var, idx in s_result.items():
+                        word = s_index[idx]
+                        r = re.compile("^" + re.sub(r'\W+', '', word) + "$", re.IGNORECASE)
+                        rst_list = list(filter(r.match, list(self.domain.entity_asdict().keys())))
+                        if rst_list:
+                            variables[var] = rst_list[0]
+                        else:
+                            variables[var] = s_index[idx]
+                    
+                    self.transform(action, variables, transformation_rule)
+                    
+            except:
+                continue
+            
+
+    def extra_operation(self):
+        S_TR1(self.domain)
+        S_TR2(self.domain)
+
+
+def api_rule_transforming(ssr_input, pre_input_actor, pre_input_meta):
+    obj = {}
+    rule_obj = pd.read_excel("./TR/TR.xlsx")
+    p = Api_Transformation(ssr_input, pre_input_actor, pre_input_meta)
+    p.identify_actor()
+    p.apply_rules(rule_obj)
+    p.extra_operation()
+    obj = { "entity_dict" : p.domain.entity_asdict(),
+                "relation_list" : p.domain.relation_asdict(),
+                "behavior_list" : p.domain.behavior_asdict(),}
+    return obj
+    
 
 if __name__ == '__main__':
 

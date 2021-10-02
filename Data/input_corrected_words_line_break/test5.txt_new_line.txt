@@ -1,8 +1,0 @@
-As a GM, my data can seamlessly integrate with the SporTech B.I. system in a standard compliant manner. 
- (READ: The system shall communicate in PostgreSQL.).
-All webcrawler functionality from the relational data base ingest should be mirrored for unstructured data ingest. 
- (Everything the crawler can do for structured data it should do for unstructured data).
-The system shall be a web-based management GUI. 
- As a customer, I could manage the tool from anywhere without the need to worry about the SporTech B.I. system having to launch from a program on a desktop or server.
-The system shall serve as the "nerve center" for the STBI ecosystem. 
- It can ingest all kinds of structured data, both automatically and on demand.

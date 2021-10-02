@@ -1,4 +1,0 @@
-User can change the multiplier for each new Game and get corresponding Reward after completing the Game .
-The System should have CodeDocument , DesignDocument and ArchitectureGuideline so that it is maintainable .
-The System should include LogRotation with various Level so that the SystemException and UserAction can be logged and debugged if required without overhead Space & SizeComplexity .
-The System shall be scalable for the growing Amount of User in the Future . .

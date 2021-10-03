@@ -1,4 +1,4 @@
-import misspelling
+import dme_ui_api.misspelling
 import re
 from spellchecker import SpellChecker
 import spacy

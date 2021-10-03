@@ -1,4 +1,4 @@
-mkdir -pv input output
+#mkdir -pv input output
 
 pip3 install nltk
 pip3 install requests

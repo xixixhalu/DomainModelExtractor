@@ -6,7 +6,6 @@ global nlp
 import string
 import nltk
 import os
-import uuid
 
 import dme_ui_api.misspelling as misspelling
 import dme_ui_api.preprocessing as preprocessing
@@ -136,10 +135,7 @@ def api_diagram_generator(input_str_list):
     
     ## rule_transforming.py
     transformed_output_result = rule_transforming.api_rule_transforming(ssr_output_result, actors, metadata)
-    print(transformed_output_result)
     ## visualizing.py
-    # img_name = tr(uuid.uuid4())
-    # output_path = f"./output/{img_name}.png"
     output = visualizing.UML_graphic(transformed_output_result)
 
     

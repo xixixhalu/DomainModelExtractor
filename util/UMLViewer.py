@@ -177,7 +177,7 @@ class UMLViewer:
     def generate_diagram(self, img_format='svg'):
         output = render(
             self.output(),
-            engine=None,
+            engine='plantuml',
             format=img_format,
             cacheopts={
                 'use_cache': False

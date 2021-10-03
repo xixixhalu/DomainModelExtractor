@@ -135,7 +135,7 @@ def api_diagram_generator(input_str_list):
     transformed_output_result = rule_transforming.api_rule_transforming(ssr_output_result, actors, metadata)
     
     ## visualizing.py
-    output_path = "./output/diagram_5/test_diagram_api"
+    output_path = "./output"
     visualizing.UML_graphic(transformed_input, output_path)
     
 #    return transformed_output_result

@@ -169,7 +169,7 @@ class UMLViewer:
             file_path,
             renderopts={
                 'engine': 'graphviz',
-                'format': format
+                'format': 'png'
                 },
             cacheopts={
                 'use_cache': False

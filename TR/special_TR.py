@@ -4,7 +4,7 @@ import re
 import json
 from json import JSONEncoder
 
-from util.IS import *
+from dme_ui_api.util.IS import *
 
 # filter stop words
 STOP_WORDS = {'system', 'tool', 'website'}

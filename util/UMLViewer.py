@@ -162,28 +162,28 @@ class UMLViewer:
             o.write(self.output())
             #print('c')
 
-    def generate_diagram(self, path, format='svg'):
+    def generate_diagram_from_file(self, path, img_format='svg'):
         file_path = path + '.txt'
         
         outfile = render_file(
             file_path,
             renderopts={
-                'engine': 'graphviz',
-                'format': 'png'
+                'format': img_format
                 },
             cacheopts={
                 'use_cache': False
                 })
     
-    def generate_diagram_based_on_input(self, input_dict, format='svg'):
+    def generate_diagram(self, img_format='svg'):
         output = render(
-            input_dict,
-            engine='plantuml',
-            format=format,
+            self.output(),
+            engine=None,
+            format=img_format,
             cacheopts={
                 'use_cache': False
             }
         )
+        return output
 
 
 if __name__ == '__main__':

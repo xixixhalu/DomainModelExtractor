@@ -7,7 +7,7 @@ from dme_ui_api.util.UMLViewer import *
 from dme_ui_api.util.logger import Logger
 global logger
 
-def UML_graphic(domain_data, output_path):
+def UML_graphic(domain_data, output_path='./output'):
     viewer = UMLViewer(domain_data['domain'])
     # print(json.dumps(domain_data['entity_dict'], indent=2))
 
@@ -62,7 +62,8 @@ def UML_graphic(domain_data, output_path):
         
     # viewer.save_to_file(path=output_path)
                
-    viewer.generate_diagram(path=output_path)
+    # viewer.generate_diagram(path=output_path)
+    return viewer.generate_diagram(img_format='png')
     
 
 

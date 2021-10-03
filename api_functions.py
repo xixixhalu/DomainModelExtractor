@@ -136,7 +136,7 @@ def api_diagram_generator(input_str_list):
     
     ## rule_transforming.py
     transformed_output_result = rule_transforming.api_rule_transforming(ssr_output_result, actors, metadata)
-    
+    print(transformed_output_result)
     ## visualizing.py
     # img_name = tr(uuid.uuid4())
     # output_path = f"./output/{img_name}.png"

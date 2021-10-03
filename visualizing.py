@@ -8,7 +8,8 @@ from dme_ui_api.util.logger import Logger
 global logger
 
 def UML_graphic(domain_data, output_path='./output'):
-    viewer = UMLViewer(domain_data['domain'])
+    # viewer = UMLViewer(domain_data['domain'])
+    viewer = UMLViewer()
     # print(json.dumps(domain_data['entity_dict'], indent=2))
 
     for k, v in domain_data['entity_dict'].items():

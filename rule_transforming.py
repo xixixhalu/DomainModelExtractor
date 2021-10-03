@@ -5,18 +5,18 @@ import pygtrie as trie
 import json
 import argparse
 import pandas as pd
-from Parser.PosTagParser import *
-from Parser.TDParser import *
+from dme_ui_api.Parser.PosTagParser import *
+from dme_ui_api.Parser.TDParser import *
 
 # from UMLViewer import *
 import re
 
-from util.logger import Logger
+from dme_ui_api.util.logger import Logger
 global logger
 
-from util.IS import *
+from dme_ui_api.util.IS import *
 
-from TR.special_TR import *
+from dme_ui_api.TR.special_TR import *
 
 
 class Transformation:

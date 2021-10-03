@@ -7,10 +7,10 @@ global nlp
 import string
 import nltk
 
-import preprocessing
-import ssr_matching
-import rule_transforming
-import visualizing
+import dme_ui_api.preprocessing
+import dme_ui_api.ssr_matching
+import dme_ui_api.rule_transforming
+import dme_ui_api.visualizing
 
 ##########################################################
 ###         Start of misspelling.py                     ##

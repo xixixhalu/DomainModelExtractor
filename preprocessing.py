@@ -1,14 +1,14 @@
 import os
 import re
 
-from adapter import *
-from Parser.PosTagParser import *
-from Parser.TDParser import *
+from dme_ui_api.adapter import *
+from dme_ui_api.Parser.PosTagParser import *
+from dme_ui_api.Parser.TDParser import *
 
-from util.logger import Logger
+from dme_ui_api.util.logger import Logger
 global logger
 
-from util.Map import Map
+from dme_ui_api.util.Map import Map
 
 import itertools
 import collections

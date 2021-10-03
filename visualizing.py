@@ -3,8 +3,8 @@ import argparse
 import re
 import json
 import traceback
-from util.UMLViewer import *
-from util.logger import Logger
+from dme_ui_api.util.UMLViewer import *
+from dme_ui_api.util.logger import Logger
 global logger
 
 def UML_graphic(domain_data, output_path):

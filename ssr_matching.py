@@ -1,7 +1,7 @@
 import os
-from adapter import *
-from Parser.PosTagParser import *
-from Parser.TDParser import *
+from dme_ui_api.adapter import *
+from dme_ui_api.Parser.PosTagParser import *
+from dme_ui_api.Parser.TDParser import *
 import pandas as pd
 from tqdm import tqdm
 
@@ -9,7 +9,7 @@ import re
 import argparse
 import copy
 
-from util.logger import Logger
+from dme_ui_api.util.logger import Logger
 global logger
 
 LEMMA_STOP_WORDS = {'data'}

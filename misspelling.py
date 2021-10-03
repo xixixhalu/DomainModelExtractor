@@ -8,7 +8,7 @@ import itertools
 import spacy
 import en_core_web_sm
 global nlp
-from util.logger import Logger
+from dme_ui_api.util.logger import Logger
 global logger
 import string
 import nltk

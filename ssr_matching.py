@@ -285,7 +285,9 @@ def topological_sort_ssr(ssrIndependence):
 #########
 
 def api_ssr_matching(func_output):
-        rule_obj = pd.read_excel("./SSR/SSR.xlsx")
+        my_path = os.path.abspath(os.path.dirname(__file__))
+        ssr_file=os.path.join(my_path, "./SSR/SSR.xlsx")
+        rule_obj = pd.read_excel(ssr_file)
 
         ssr_name_num = dict()
         ssrNum = list(rule_obj['Rule'])

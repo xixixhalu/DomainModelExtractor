@@ -221,7 +221,9 @@ class Api_Transformation:
 
 def api_rule_transforming(ssr_input, pre_input_actor, pre_input_meta):
     obj = {}
-    rule_obj = pd.read_excel("./TR/TR.xlsx")
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    tr_file=os.path.join(my_path, "./TR/TR.xlsx")
+    rule_obj = pd.read_excel(tr_file)
     p = Api_Transformation(ssr_input, pre_input_actor, pre_input_meta)
     p.identify_actor()
     p.apply_rules(rule_obj)

@@ -1,4 +1,3 @@
-import dme_ui_api.misspelling
 import re
 from spellchecker import SpellChecker
 import spacy
@@ -6,11 +5,13 @@ import en_core_web_sm
 global nlp
 import string
 import nltk
+import os
 
-import dme_ui_api.preprocessing
-import dme_ui_api.ssr_matching
-import dme_ui_api.rule_transforming
-import dme_ui_api.visualizing
+import dme_ui_api.misspelling as misspelling
+import dme_ui_api.preprocessing as preprocessing
+import dme_ui_api.ssr_matching as ssr_matching
+import dme_ui_api.rule_transforming as rule_transforming
+import dme_ui_api.visualizing as visualizing
 
 ##########################################################
 ###         Start of misspelling.py                     ##
@@ -81,7 +82,8 @@ def spell_check(word_candidate, word_freq, glossary_file, line_indx_dict):
     
 def api_misspelling(input_str_list):
     nlp = spacy.load('en_core_web_sm')
-    glossary_file="./Glossary/glossary.txt"
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    glossary_file=os.path.join(my_path, "./Glossary/glossary.txt")
     
     file_origin_lines = {}
     file_preprocess_lines = {}

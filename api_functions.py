@@ -13,6 +13,8 @@ import dme_ui_api.ssr_matching as ssr_matching
 import dme_ui_api.rule_transforming as rule_transforming
 import dme_ui_api.visualizing as visualizing
 
+import base64
+
 ##########################################################
 ###         Start of misspelling.py                     ##
 ##########################################################
@@ -77,8 +79,18 @@ def spell_check(word_candidate, word_freq, glossary_file, line_indx_dict):
                 msg = (word, str(line_indx_dict[word]),suggested_words)
                 report_list.append(msg)
     
-    return report_list
+    return report_list, incorrect_words
 
+def api_functional_check(input_str_list):
+    FUNC_RE = '(A|a)s (the|a|an) .+(I|i|My|my) '
+    count_func = 0
+    count_nonfunc = 0
+    for line in input_str_list:
+        if re.search(FUNC_RE, line):
+            count_func += 1
+        else:
+            count_nonfunc += 1
+    return count_func
     
 def api_misspelling(input_str_list):
     nlp = spacy.load('en_core_web_sm')
@@ -97,12 +109,23 @@ def api_misspelling(input_str_list):
         word_candidate=misspelling.word_detect(word_freq_count,1)
         line_indx_dict=word_line_index(input_str_list)
         # Passed logger as a new params.
-        report_list = spell_check(word_candidate, word_freq_count, glossary_file, line_indx_dict)
+        report_list, incorrect_words = spell_check(word_candidate, word_freq_count, glossary_file, line_indx_dict)
     #    correct_lines = correctFile(file_origin_lines, file_preprocess_lines, correct_dict, logger)
 
     #    with open(output_path + '.corrected.txt', 'w') as outfile:
     #        outfile.writelines(correct_lines)
-    return report_list
+        count_func = api_functional_check(input_str_list)
+
+    count_msg = f"{count_func} functional requirement(s) found. \n\n"
+    misspelling_msg = ""
+    for item in report_list:
+        misspelling_msg += f"Unknown word at Line {item[1]}\nSuggestion: {item[0]} -> {item[2]}\n\n"
+    if incorrect_words:
+        misspelling_msg += f'Some words which might be unknown: {incorrect_words}'
+    if misspelling_msg == "":
+        misspelling_msg = "No concerns found.\n"
+
+    return count_msg + misspelling_msg
 
 ##########################################################
 ###         End of misspelling.py                       ##
@@ -127,19 +150,27 @@ def api_preprocessing(input_str_list):
 ##########################################################
   
 def api_diagram_generator(input_str_list):
-    ## Preprocessing.py
-    func_output, nonfunc_output, metadata, actors = api_preprocessing(input_str_list)
-    
-    ## ssr_matching.py
-    ssr_output_result = ssr_matching.api_ssr_matching(func_output)
-    
-    ## rule_transforming.py
-    transformed_output_result = rule_transforming.api_rule_transforming(ssr_output_result, actors, metadata)
-    ## visualizing.py
-    output = visualizing.UML_graphic(transformed_output_result)
+    error_output = 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII='
+    func_count = api_functional_check(input_str_list)
+    if func_count == 0:
+        return (error_output, 'png', "\nNo functional requirements for model generation.\n")
+    try:
+        ## Preprocessing.py
+        func_output, nonfunc_output, metadata, actors = api_preprocessing(input_str_list)
+        
+        ## ssr_matching.py
+        ssr_output_result = ssr_matching.api_ssr_matching(func_output)
+        
+        ## rule_transforming.py
+        transformed_output_result = rule_transforming.api_rule_transforming(ssr_output_result, actors, metadata)
+        ## visualizing.py
+        output = visualizing.UML_graphic(transformed_output_result)
 
+        img_base64 = base64.b64encode(output[0]).decode('utf-8')
+    except:
+        return (error_output, 'png', "\nSome lines cannot be successfully processed.\nPossbile reasons: incomplete sentences, special characters, etc.\nPlease try to generate partial model with one or more win condition(s).\n")
     
-    return output
+    return (img_base64, output[1], "\nModel generated! Click to zoom in.\n")
 
 
 if __name__ == '__main__' :

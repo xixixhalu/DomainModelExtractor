@@ -136,7 +136,7 @@ class Api_Transformation:
 
     def transform(self, action, variables, transformation_rule):
         method_to_call = getattr(self.domain, action)
-        print(method_to_call)
+        # print(method_to_call)
         # prepare keyword arguments
         arguments = {}
         arg_list = transformation_rule.split(',')

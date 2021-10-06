@@ -170,20 +170,23 @@ class UMLViewer:
             renderopts={
                 'engine': 'graphviz',
                 'format': format
-                },
+            },
             cacheopts={
                 'use_cache': False
-                })
+            }
+        )
+        print(outfile)
     
-    def generate_diagram_based_on_input(self, input_dict, format='svg'):
+    def generate_diagram_based_on_input(self, format='svg'):
         output = render(
-            input_dict,
+            self.output(),
             engine='plantuml',
             format=format,
             cacheopts={
                 'use_cache': False
             }
         )
+        print(output)
 
 
 if __name__ == '__main__':

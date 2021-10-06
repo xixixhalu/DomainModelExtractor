@@ -8,7 +8,10 @@ from util.logger import Logger
 global logger
 
 def UML_graphic(domain_data, output_path):
-    viewer = UMLViewer(domain_data['domain'])
+    try:
+        viewer = UMLViewer(domain_data['domain'])
+    except:
+        viewer = UMLViewer()
     # print(json.dumps(domain_data['entity_dict'], indent=2))
 
     for k, v in domain_data['entity_dict'].items():
@@ -61,8 +64,8 @@ def UML_graphic(domain_data, output_path):
         viewer.add_association(uml_asso)         
         
     # viewer.save_to_file(path=output_path)
-               
     viewer.generate_diagram(path=output_path)
+#    viewer.generate_diagram_based_on_input(format='png')
     
 
 

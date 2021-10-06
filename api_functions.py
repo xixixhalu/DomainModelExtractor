@@ -133,33 +133,33 @@ def api_diagram_generator(input_str_list):
     
     ## rule_transforming.py
     transformed_output_result = rule_transforming.api_rule_transforming(ssr_output_result, actors, metadata)
-    
+
     ## visualizing.py
-    output_path = "./output/diagram_5/test_diagram_api"
-    visualizing.UML_graphic(transformed_input, output_path)
-    
-#    return transformed_output_result
+    output_path = "./output/diagram_5/2019-USC-Project13"
+    visualizing.UML_graphic(transformed_output_result, output_path)
+
+#    return func_output, nonfunc_output, metadata, actors
 
 
 if __name__ == '__main__' :
-    print("="*20)
-    print("API for Domain Model Extractor")
-    print("-"*20)
-    
-    print("Misspelling Test:")
-    input_str_list = []
-    with open('./Data/input_origin/2014-USC-Project08.txt') as testFile :
-        input_str_list = testFile.readlines()
-
-    report_list = api_misspelling(input_str_list)
-    print(report_list)
-    print("-"*20)
-    print("Misspelling Correction Completed.")
-    print("="*20)
+#    print("="*20)
+#    print("API for Domain Model Extractor")
+#    print("-"*20)
+#
+#    print("Misspelling Test:")
+#    input_str_list = []
+#    with open('./Data/input_origin/2014-USC-Project08.txt') as testFile :
+#        input_str_list = testFile.readlines()
+#
+#    report_list = api_misspelling(input_str_list)
+#    print(report_list)
+#    print("-"*20)
+#    print("Misspelling Correction Completed.")
+#    print("="*20)
 
 #    print("Preprocessing Test:")
 #    input_str_list = []
-#    with open('./Data/input_origin/2014-USC-Project08.txt') as testFile :
+#    with open('./output/misspelling_detect_1/2014-USC-Project08.corrected.txt') as testFile :
 #        input_str_list = testFile.readlines()
 #
 #    func_output, nonfunc_output, metadata, actors = api_diagram_generator(input_str_list)
@@ -169,7 +169,7 @@ if __name__ == '__main__' :
 #    print("="*20)
     
 #    print("Ssr_matching Test:")
-#    with open('./Data/input_origin/2014-USC-Project08.txt') as testFile :
+#    with open('./output/misspelling_detect_1/2014-USC-Project08.corrected.txt') as testFile :
 #        input_str_list = testFile.readlines()
 #
 #    ssr_output_result = api_diagram_generator(input_str_list)
@@ -179,7 +179,7 @@ if __name__ == '__main__' :
 #    print("="*20)
     
 #    print("Rule_transforming Test:")
-#    with open('./Data/input_origin/2014-USC-Project08.txt') as testFile :
+#    with open('./output/misspelling_detect_1/2014-USC-Project08.corrected.txt') as testFile :
 #        input_str_list = testFile.readlines()
 #
 #    transformed_output_result = api_diagram_generator(input_str_list)
@@ -189,10 +189,8 @@ if __name__ == '__main__' :
 #    print("="*20)
     
     print("Visualizing Test:")
-    with open('./Data/input_origin/2014-USC-Project08.txt') as testFile :
+    with open('./output/misspelling_detect_1/2019-USC-Project13.corrected.txt') as testFile :
         input_str_list = testFile.readlines()
-
-#    transformed_output_result = api_diagram_generator(input_str_list)
     api_diagram_generator(input_str_list)
     print("-"*20)
     print("Visualizing Completed.")

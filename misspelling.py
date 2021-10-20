@@ -36,12 +36,21 @@ class Misspelling:
     def _check_format(self):
         if self.api_mode:
             if len(self.input_str_list) == 0:
-                print("Error: API mode expect a input_str_list.")
+                try:
+                    raise Exception()
+                except Exception:
+                    print("Error: API mode expect a input_str_list.")
         else:
             if self.file_name == "":
-                print("Error: FILE mode expect a file_name.")
+                try:
+                    raise Exception()
+                except Exception:
+                    print("Error: FILE mode expect a file_name.")
             if self.output_path == "":
-                print("Error: FILE mode expect a output_path.")
+                try:
+                    raise Exception()
+                except Exception:
+                    print("Error: FILE mode expect a output_path.")
 
 
     def _word_freq(self):
@@ -192,33 +201,33 @@ if __name__ == '__main__' :
     parser.add_argument('-i', '--input', type=str, metavar='', default="./Data/input_origin/",
                         help='input path. Default: %(default)s')
     parser.add_argument('-f', '--file', type=str, metavar='',
-                        help='input file. Example: python3 misspelling.py -f 2014-USC-Projecct02')
+                        help='input file. Example: python3 misspelling.py -f 2014-USC-Project02')
     parser.add_argument('-o', '--output', type=str, metavar='', default="./output/misspelling_detect_1/",
                         help='output path. Default: %(default)s')
     parser.add_argument('-l', '--list', action='store_true',
                         help='list all input files. Example: python3 misspelling.py -l')
+    parser.add_argument('-a', '--api_mode', type=bool, default=False, help='api mode. Default: %(default)s')
     args = parser.parse_args()
 
     if args.file:
-        api_mode = False
+        api_mode = True
+        filename = args.file
+        input_path = args.input + filename
+        output_path = args.output + filename
+        api_mode = args.api_mode
+
+        nlp = spacy.load('en_core_web_sm')
+        logger = Logger(output_path + '_log.txt')
+        check_file=input_path+'.txt'
         if api_mode:
             input_str_list = []
-            with open('./Data/input_origin/2014-USC-Project08.txt') as testFile :
+            with open(input_path + '.txt') as testFile :
                 input_str_list = testFile.readlines()
             
             misspelling_api_mode = Misspelling(input_str_list=input_str_list, api_mode=True)
             report_list, _ = misspelling_api_mode.run()
             print(report_list)
         else:
-            filename = args.file
-            input_path = args.input + filename
-            output_path = args.output + filename
-
-            nlp = spacy.load('en_core_web_sm')
-            logger = Logger(output_path + '_log.txt')
-            check_file=input_path+'.txt'
-            glossary_file="./Glossary/glossary.txt"
-
             file_origin_lines = {}
             file_preprocess_lines = {}
             with open(input_path + '.txt') as testFile :

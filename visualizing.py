@@ -83,7 +83,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.file:
-        print("is fileeeee")
         filename = args.file
         input_path = args.input + filename + '.transformed.txt'
         output_path = args.output + filename
@@ -111,7 +110,6 @@ if __name__ == '__main__':
             print(f)  
 
     else:
-        print("helpeeerrr")
         parser.print_help()
    
     

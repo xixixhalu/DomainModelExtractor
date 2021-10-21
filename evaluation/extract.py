@@ -119,8 +119,9 @@ if __name__ == '__main__':
         models = collection.getElementsByTagName("Models")[0]
         entity_dict, id_entity_dict = get_entity_dict(models)
         relation_list, behavior_list = get_relation_behavior_list(models, id_entity_dict)
-        output_file = open("{}/{}.txt".format(test_output_path, input_file_path.split("/")[-1].split(".")[0]), "w+")
+        output_file = open("{}/{}.transformed.txt".format(test_output_path, input_file_path.split("/")[-1].split(".")[0]), "w+")
         output = dict()
+        output["domain"] = input_file_path.split("/")[-1].split(".")[0]
         output["entity_dict"] = entity_dict
         output["relation_list"] = relation_list
         output["behavior_list"] = behavior_list

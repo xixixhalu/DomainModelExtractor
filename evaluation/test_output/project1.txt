@@ -1,0 +1,125 @@
+{
+  "entity_dict": {
+    "School": {
+      "name": "School"
+    },
+    "Student": {
+      "name": "Student",
+      "attribute": [
+        {
+          "name": "age",
+          "type": "int"
+        },
+        {
+          "name": "sex",
+          "type": "int"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "major",
+          "type": "string"
+        }
+      ]
+    },
+    "Department": {
+      "name": "Department"
+    },
+    "Subject": {
+      "name": "Subject"
+    },
+    "Instructor": {
+      "name": "Instructor"
+    }
+  },
+  "relation_list": [
+    {
+      "source": "Student",
+      "dest": "School",
+      "type": "association",
+      "multiplicity": [
+        "*",
+        "1..*"
+      ]
+    },
+    {
+      "source": "School",
+      "dest": "Department",
+      "type": "association",
+      "multiplicity": [
+        "1",
+        "1..*"
+      ]
+    },
+    {
+      "source": "Student",
+      "dest": "Subject",
+      "type": "association",
+      "multiplicity": [
+        "*",
+        "1..5"
+      ]
+    },
+    {
+      "source": "Department",
+      "dest": "Subject",
+      "type": "association",
+      "multiplicity": [
+        "1",
+        "1..*"
+      ]
+    },
+    {
+      "source": "Instructor",
+      "dest": "Subject",
+      "type": "association",
+      "multiplicity": [
+        "1..*",
+        "1..3"
+      ]
+    },
+    {
+      "source": "Instructor",
+      "dest": "Department",
+      "type": "association",
+      "multiplicity": [
+        "1..*",
+        "1..*"
+      ]
+    }
+  ],
+  "behavior_list": [
+    {
+      "actor": "Student",
+      "target": "School",
+      "action": "member"
+    },
+    {
+      "actor": "School",
+      "target": "Department",
+      "action": "has"
+    },
+    {
+      "actor": "Student",
+      "target": "Subject",
+      "action": "attends"
+    },
+    {
+      "actor": "Department",
+      "target": "Subject",
+      "action": "offers"
+    },
+    {
+      "actor": "Instructor",
+      "target": "Subject",
+      "action": "teaches"
+    },
+    {
+      "actor": "Instructor",
+      "target": "Department",
+      "action": "assigned to"
+    }
+  ]
+}

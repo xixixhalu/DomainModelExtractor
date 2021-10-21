@@ -1,3 +1,5 @@
+import json
+import os
 from xml.dom.minidom import parse
 import xml.dom.minidom
 
@@ -104,13 +106,27 @@ def get_relation_behavior_list(models, id_entity_dict):
 
 
 if __name__ == '__main__':
-    # input_file_path = ""
-    input_file_path = "../project3/project.xml"
-    DOMTree = xml.dom.minidom.parse(input_file_path)
-    collection = DOMTree.documentElement
-    models = collection.getElementsByTagName("Models")[0]
-    entity_dict, id_entity_dict = get_entity_dict(models)
-    relation_list, behavior_list = get_relation_behavior_list(models, id_entity_dict)
-    print(entity_dict.items())
-    print(relation_list)
-    print(behavior_list)
+    input_file_paths = []
+    test_data_path = "./test_data"
+    test_output_path = "./test_output"
+    test_data_content = os.walk(test_data_path)
+    for cur_path, dirs, files in test_data_content:
+        for file in files:
+            input_file_paths.append("{}/{}".format(cur_path, file))
+    for input_file_path in input_file_paths:
+        DOMTree = xml.dom.minidom.parse(input_file_path)
+        collection = DOMTree.documentElement
+        models = collection.getElementsByTagName("Models")[0]
+        entity_dict, id_entity_dict = get_entity_dict(models)
+        relation_list, behavior_list = get_relation_behavior_list(models, id_entity_dict)
+        output_file = open("{}/{}.txt".format(test_output_path, input_file_path.split("/")[-1].split(".")[0]), "w+")
+        output = dict()
+        output["entity_dict"] = entity_dict
+        output["relation_list"] = relation_list
+        output["behavior_list"] = behavior_list
+        output_file.write(json.dumps(output, indent=2))
+        output_file.close()
+        # print(entity_dict.items())
+        # print(relation_list)
+        # print(behavior_list)
+        print("------------------------------------------")

@@ -1,0 +1,184 @@
+{
+  "entity_dict": {
+    "Lan": {
+      "name": "Lan",
+      "attribute": [
+        {
+          "name": "name",
+          "type": "default"
+        }
+      ]
+    },
+    "Workstation": {
+      "name": "Workstation",
+      "attribute": [
+        {
+          "name": "originate",
+          "type": "operation"
+        }
+      ]
+    },
+    "Server": {
+      "name": "Server",
+      "attribute": [
+        {
+          "name": "isForMe",
+          "type": "operation"
+        }
+      ]
+    },
+    "Printer": {
+      "name": "Printer",
+      "attribute": [
+        {
+          "name": "print",
+          "type": "operation"
+        }
+      ]
+    },
+    "FileServer": {
+      "name": "FileServer",
+      "attribute": [
+        {
+          "name": "save",
+          "type": "operation"
+        }
+      ]
+    },
+    "Packet": {
+      "name": "Packet",
+      "attribute": [
+        {
+          "name": "originator",
+          "type": "default"
+        },
+        {
+          "name": "destination",
+          "type": "default"
+        },
+        {
+          "name": "content",
+          "type": "default"
+        },
+        {
+          "name": "isOriginator",
+          "type": "operation"
+        },
+        {
+          "name": "isDestination",
+          "type": "operation"
+        },
+        {
+          "name": "getContent",
+          "type": "operation"
+        }
+      ]
+    },
+    "Node": {
+      "name": "Node",
+      "attribute": [
+        {
+          "name": "name",
+          "type": "default"
+        },
+        {
+          "name": "accept",
+          "type": "operation"
+        },
+        {
+          "name": "getNextNode",
+          "type": "operation"
+        },
+        {
+          "name": "setNextNode",
+          "type": "operation"
+        },
+        {
+          "name": "nextNode",
+          "type": "Node"
+        }
+      ]
+    },
+    "Hub": {
+      "name": "Hub",
+      "attribute": [
+        {
+          "name": "accept",
+          "type": "operation"
+        },
+        {
+          "name": "inserNode",
+          "type": "operation"
+        }
+      ]
+    }
+  },
+  "relation_list": [
+    {
+      "source": "Lan",
+      "dest": "Hub",
+      "type": "association",
+      "multiplicity": [
+        "Unspecified",
+        "Unspecified"
+      ]
+    },
+    {
+      "source": "Hub",
+      "dest": "Node",
+      "type": "association",
+      "multiplicity": [
+        "1",
+        "0..*"
+      ]
+    },
+    {
+      "source": "Server",
+      "dest": "Printer",
+      "type": "generalization",
+      "multiplicity": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "source": "Server",
+      "dest": "FileServer",
+      "type": "generalization",
+      "multiplicity": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "source": "Node",
+      "dest": "Workstation",
+      "type": "generalization",
+      "multiplicity": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "source": "Node",
+      "dest": "Server",
+      "type": "generalization",
+      "multiplicity": [
+        "1",
+        "1"
+      ]
+    }
+  ],
+  "behavior_list": [
+    {
+      "actor": "Lan",
+      "target": "Hub",
+      "action": ""
+    },
+    {
+      "actor": "Hub",
+      "target": "Node",
+      "action": ""
+    }
+  ]
+}

@@ -12,60 +12,31 @@ global logger
 import string
 import nltk
 import argparse
+from util.file_writer import File_Writer
 
 CHECK_EDIT_DISTANCE = 1
 CORRECT_WORD_FREQUENCY = 2
 
 class Misspelling:
-    def __init__(self, file_name="", output_path="", input_str_list=[], api_mode=False):
+    def __init__(self, input_str_list, writer):
         # Received params
-        self.api_mode = api_mode
-        self.file_name = file_name
-        self.output_path = output_path
         self.input_str_list = input_str_list
+        self.writer = writer
         
         # Build-in params
         self._glossary_file = "./Glossary/glossary.txt"
         self._word_freq_count = {}
         self._word_candidate = []
         self._line_indx_dict = {}
-        
-        self._check_format()
-    
-    # check_format() is used to check if params and corresponding mode are matched.
-    def _check_format(self):
-        if self.api_mode:
-            if len(self.input_str_list) == 0:
-                try:
-                    raise Exception()
-                except Exception:
-                    print("Error: API mode expect a input_str_list.")
-        else:
-            if self.file_name == "":
-                try:
-                    raise Exception()
-                except Exception:
-                    print("Error: FILE mode expect a file_name.")
-            if self.output_path == "":
-                try:
-                    raise Exception()
-                except Exception:
-                    print("Error: FILE mode expect a output_path.")
-
 
     def _word_freq(self):
         regex = "((?!-)[A-Za-z0-9-]" + "{1,63}(?<!-)\\.)" + "+[A-Za-z]{2,6}"
         # reference:“https://www.geeksforgeeks.org/how-to-validate-a-domain-name-using-regular-expression/”
         pattern = re.compile(regex)
-        if self.api_mode:
-            fixed_input_str = '\n'.join(input_str_list)
-            s = fixed_input_str.replace('\n', ' ').lower()
-            s = re.sub(pattern, '', s)  # filter out domain name and URL in sentences
-        else:
-            with open(self.file_name, "r") as myfile:
-                # return the word frequency in the entire file
-                s = myfile.read().replace('\n', ' ').lower()
-                s = re.sub(pattern, '', s)  # filter out domain name and URL in sentences
+        fixed_input_str = '\n'.join(self.input_str_list)
+        s = fixed_input_str.replace('\n', ' ').lower()
+        s = re.sub(pattern, '', s)  # filter out domain name and URL in sentences
+
         del_str = string.punctuation
         replace_punctuation = ' ' * len(del_str)
         data = s.translate(str.maketrans(del_str, replace_punctuation))
@@ -89,13 +60,7 @@ class Misspelling:
         del_str = string.punctuation
         replace_punctuation = ' ' * len(del_str)
         line_indx_dict = {}
-        if self.api_mode:
-            sentence_list = self.input_str_list
-        else:
-            with open(self.file_name, "r") as myfile:
-                sentence_list = myfile.readlines()
-        # store the line index
-        for indx, line in enumerate(sentence_list):
+        for indx, line in enumerate(self.input_str_list):
             line = line.strip().lower()
             line = line.translate(str.maketrans(del_str, replace_punctuation))
             fdist1 = nltk.FreqDist(line.split())
@@ -139,23 +104,19 @@ class Misspelling:
                     correction = spell.correction(word)
                     if word.lower() != correction.lower():
                         suggested_words = []
-                        if self.api_mode:
-                            suggested_words = correction
-                            msg = (word, str(self._line_indx_dict[word]),suggested_words)
-                            report_list.append(msg)
-                        else:
-                            correct_dict[word] = correction
-                            msg = word + ", line " + str(self._line_indx_dict[word]) + '\n'
-                            logger.info("Unknown words: \n" + msg)
+                        suggested_words = correction
+                        msg = (word, str(self._line_indx_dict[word]),suggested_words)
+                        report_list.append(msg)
+                        correct_dict[word] = correction
+                        msg = word + ", line " + str(self._line_indx_dict[word]) + '\n'
+                        self.writer.misspelling_write_log("Unknown words: \n" + msg, 'info')
         # if not exist incorrect word
         else:
             print("No Unknown words")
-            logger.info("No Unknown words")
+            self.writer.misspelling_write_log("No Unknown words", 'info')
         
-        if self.api_mode:
-            return report_list, incorrect_words
-        else:
-            return correct_dict, incorrect_words
+        #TODO: for future improvement, report_list(api) and correct_dict(file) are same thing, try only use one of them in both filemode and apimode
+        return report_list, correct_dict
         
         
     def _correctFile(self, file_origin_lines, file_preprocess_lines, correct_dict):
@@ -168,23 +129,23 @@ class Misspelling:
                     pattern = '(\W|^)' + re.escape(word) + '\\({0,1}e{0,1}s{0,1}\\){0,1}(\W)' #pattern = '(\W|^)' + word + 's{0,1}(\W)'
                     if re.search(pattern, correct_line): # case sensitive to avoid change of Proper noun
                         correct_line = re.sub(pattern, rf'\1{correct_dict[word]}\2', correct_line)
-                        logger.warning("Change Line " + str(idx + 1) + ": " + "\n" + file_origin_lines[idx] + "Word: " + word + "\nChange to: " + correct_dict[word])
+                        warning_msg = "Change Line " + str(idx + 1) + ": " + "\n" + file_origin_lines[idx] + "Word: " + word + "\nChange to: " + correct_dict[word]
+                        self.writer.misspelling_write_log(warning_msg, 'warning')
                 correct_lines.append(correct_line)
 
         return correct_lines
         
         
-    def run(self):
+    def run(self, file_origin_lines, file_preprocess_lines):
         self._word_freq()
         self._word_detect(1)
         self._word_line_index()
-        if self.api_mode:
-            return self._spell_check()
-        else:
-            correct_dict, _ = self._spell_check()
-            correct_lines = self._correctFile(file_origin_lines, file_preprocess_lines, correct_dict)
-            with open(self.output_path + '.corrected.txt', 'w') as outfile:
-                outfile.writelines(correct_lines)
+        
+        report_list, correct_dict = self._spell_check()
+        correct_lines = self._correctFile(file_origin_lines, file_preprocess_lines, correct_dict)
+        self.writer.misspelling_writer(correct_lines)
+        
+        return report_list
 
 
 if __name__ == '__main__' :
@@ -206,38 +167,34 @@ if __name__ == '__main__' :
                         help='output path. Default: %(default)s')
     parser.add_argument('-l', '--list', action='store_true',
                         help='list all input files. Example: python3 misspelling.py -l')
-    parser.add_argument('-a', '--api_mode', type=bool, default=False, help='api mode. Default: %(default)s')
+    parser.add_argument('-api', '--api_mode', type=bool, default=False, help='api mode. Default: %(default)s')
     args = parser.parse_args()
 
     if args.file:
-        api_mode = True
         filename = args.file
         input_path = args.input + filename
         output_path = args.output + filename
         api_mode = args.api_mode
-
         nlp = spacy.load('en_core_web_sm')
-        logger = Logger(output_path + '_log.txt')
         check_file=input_path+'.txt'
+        
+        input_str_list = []
+        file_origin_lines = {}
+        file_preprocess_lines = {}
+        with open(input_path + '.txt') as testFile :
+            input_str_list = testFile.readlines()
+            for idx, line in enumerate(input_str_list):
+                file_origin_lines[idx] = line
+                file_preprocess_lines[idx] = [line]
+        
         if api_mode:
-            input_str_list = []
-            with open(input_path + '.txt') as testFile :
-                input_str_list = testFile.readlines()
-            
-            misspelling_api_mode = Misspelling(input_str_list=input_str_list, api_mode=True)
-            report_list, _ = misspelling_api_mode.run()
-            print(report_list)
+            misspelling_writer = File_Writer(filename,fake_mode=True)
         else:
-            file_origin_lines = {}
-            file_preprocess_lines = {}
-            with open(input_path + '.txt') as testFile :
-                lines = testFile.readlines()
-                for idx, line in enumerate(lines):
-                    file_origin_lines[idx] = line
-                    file_preprocess_lines[idx] = [line]
-
-            misspelling_file_mode = Misspelling(file_name=check_file, output_path=output_path)
-            misspelling_file_mode.run()
+            misspelling_writer = File_Writer(filename)
+        
+        misspelling_api_mode = Misspelling(input_str_list=input_str_list, writer=misspelling_writer)
+        report_list = misspelling_api_mode.run(file_origin_lines,file_preprocess_lines)
+        print(report_list)
 
     elif args.list:
         input_path = args.input

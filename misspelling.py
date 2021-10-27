@@ -109,11 +109,11 @@ class Misspelling:
                         report_list.append(msg)
                         correct_dict[word] = correction
                         msg = word + ", line " + str(self._line_indx_dict[word]) + '\n'
-                        self.writer.misspelling_write_log("Unknown words: \n" + msg, 'info')
+                        self.writer.write_log("Unknown words: \n" + msg, 'misspelling','info')
         # if not exist incorrect word
         else:
             print("No Unknown words")
-            self.writer.misspelling_write_log("No Unknown words", 'info')
+            self.writer.write_log("No Unknown words", 'misspelling', 'info')
         
         #TODO: for future improvement, report_list(api) and correct_dict(file) are same thing, try only use one of them in both filemode and apimode
         return report_list, correct_dict
@@ -130,7 +130,7 @@ class Misspelling:
                     if re.search(pattern, correct_line): # case sensitive to avoid change of Proper noun
                         correct_line = re.sub(pattern, rf'\1{correct_dict[word]}\2', correct_line)
                         warning_msg = "Change Line " + str(idx + 1) + ": " + "\n" + file_origin_lines[idx] + "Word: " + word + "\nChange to: " + correct_dict[word]
-                        self.writer.misspelling_write_log(warning_msg, 'warning')
+                        self.writer.write_log(warning_msg,'misspelling', 'warning')
                 correct_lines.append(correct_line)
 
         return correct_lines
@@ -143,7 +143,7 @@ class Misspelling:
         
         report_list, correct_dict = self._spell_check()
         correct_lines = self._correctFile(file_origin_lines, file_preprocess_lines, correct_dict)
-        self.writer.misspelling_writer(correct_lines)
+        self.writer.write(correct_lines, 'misspelling')
         
         return report_list
 

@@ -168,7 +168,7 @@ if __name__ == '__main__' :
                         help='output path. Default: %(default)s')
     parser.add_argument('-l', '--list', action='store_true',
                         help='list all input files. Example: python3 misspelling.py -l')
-    parser.add_argument('-api', '--api_mode', type=bool, default=False, help='api mode. Default: %(default)s')
+    parser.add_argument('-api', '--api_mode', action='store_true', help='api mode - no ouput to files')
     args = parser.parse_args()
 
     if args.file:
@@ -195,8 +195,8 @@ if __name__ == '__main__' :
             misspelling_writer = FileWriter(output_path+'.corrected.txt')
             misspelling_logger = FileWriter(output_path+'_log.txt')
         
-        misspelling_api_mode = Misspelling(input_str_list=input_str_list, writer=misspelling_writer, logger=misspelling_logger)
-        report_list = misspelling_api_mode.run(file_origin_lines,file_preprocess_lines)
+        misspelling = Misspelling(input_str_list=input_str_list, writer=misspelling_writer, logger=misspelling_logger)
+        report_list = misspelling.run(file_origin_lines,file_preprocess_lines)
         print(report_list)
 
     elif args.list:

@@ -12,16 +12,17 @@ global logger
 import string
 import nltk
 import argparse
-from util.file_writer import File_Writer
+from util.file_writer import FileWriter, FakeWriter
 
 CHECK_EDIT_DISTANCE = 1
 CORRECT_WORD_FREQUENCY = 2
 
 class Misspelling:
-    def __init__(self, input_str_list, writer):
+    def __init__(self, input_str_list, writer, logger):
         # Received params
         self.input_str_list = input_str_list
         self.writer = writer
+        self.logger = logger
         
         # Build-in params
         self._glossary_file = "./Glossary/glossary.txt"
@@ -109,11 +110,11 @@ class Misspelling:
                         report_list.append(msg)
                         correct_dict[word] = correction
                         msg = word + ", line " + str(self._line_indx_dict[word]) + '\n'
-                        self.writer.write_log("Unknown words: \n" + msg, 'misspelling','info')
+                        self.logger.write_log("Unknown words: \n" + msg, 'info')
         # if not exist incorrect word
         else:
             print("No Unknown words")
-            self.writer.write_log("No Unknown words", 'misspelling', 'info')
+            self.logger.write_log("No Unknown words", 'info')
         
         #TODO: for future improvement, report_list(api) and correct_dict(file) are same thing, try only use one of them in both filemode and apimode
         return report_list, correct_dict
@@ -130,8 +131,8 @@ class Misspelling:
                     if re.search(pattern, correct_line): # case sensitive to avoid change of Proper noun
                         correct_line = re.sub(pattern, rf'\1{correct_dict[word]}\2', correct_line)
                         warning_msg = "Change Line " + str(idx + 1) + ": " + "\n" + file_origin_lines[idx] + "Word: " + word + "\nChange to: " + correct_dict[word]
-                        self.writer.write_log(warning_msg,'misspelling', 'warning')
-                correct_lines.append(correct_line)
+                        self.logger.write_log(warning_msg, 'warning')
+                correct_lines.append(correct_line.strip())
 
         return correct_lines
         
@@ -143,7 +144,7 @@ class Misspelling:
         
         report_list, correct_dict = self._spell_check()
         correct_lines = self._correctFile(file_origin_lines, file_preprocess_lines, correct_dict)
-        self.writer.write(correct_lines, 'misspelling')
+        self.writer.write(correct_lines)
         
         return report_list
 
@@ -176,7 +177,7 @@ if __name__ == '__main__' :
         output_path = args.output + filename
         api_mode = args.api_mode
         nlp = spacy.load('en_core_web_sm')
-        check_file=input_path+'.txt'
+#        check_file=input_path+'.txt'
         
         input_str_list = []
         file_origin_lines = {}
@@ -188,11 +189,13 @@ if __name__ == '__main__' :
                 file_preprocess_lines[idx] = [line]
         
         if api_mode:
-            misspelling_writer = File_Writer(filename,fake_mode=True)
+            misspelling_writer = FakeWriter()
+            misspelling_logger = FakeWriter()
         else:
-            misspelling_writer = File_Writer(filename)
+            misspelling_writer = FileWriter(output_path+'.corrected.txt')
+            misspelling_logger = FileWriter(output_path+'_log.txt')
         
-        misspelling_api_mode = Misspelling(input_str_list=input_str_list, writer=misspelling_writer)
+        misspelling_api_mode = Misspelling(input_str_list=input_str_list, writer=misspelling_writer, logger=misspelling_logger)
         report_list = misspelling_api_mode.run(file_origin_lines,file_preprocess_lines)
         print(report_list)
 

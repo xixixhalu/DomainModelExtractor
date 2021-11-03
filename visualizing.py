@@ -5,10 +5,13 @@ import json
 import traceback
 from util.UMLViewer import *
 from util.logger import Logger
-global logger
+from util.file_writer import FileWriter, FakeWriter
+import base64
+#global logger
 
-def UML_graphic(domain_data, output_path):
-    viewer = UMLViewer(domain_data['domain'])
+def UML_graphic(domain_data):
+    # viewer = UMLViewer(domain_data['domain'])
+    viewer = UMLViewer()
     # print(json.dumps(domain_data['entity_dict'], indent=2))
 
     for k, v in domain_data['entity_dict'].items():
@@ -62,12 +65,9 @@ def UML_graphic(domain_data, output_path):
         
     # viewer.save_to_file(path=output_path)
                
-    viewer.generate_diagram(path=output_path)
-    
-
-
-
-
+    # viewer.generate_diagram(path=output_path)
+    output_img, output = viewer.generate_diagram(img_format='png')
+    return output_img, output
 
 
 if __name__ == '__main__':
@@ -75,28 +75,41 @@ if __name__ == '__main__':
     parser.add_argument('-i', '--input', type=str, metavar='', default="./output/tr_process_4/",
                         help='Transformation result path. Default: %(default)s')
     parser.add_argument('-f', '--file', type=str, metavar='',
-                        help='input file. Example: python3 visualizing.py -f 2014-USC-Projecct02')
+                        help='input file. Example: python3 visualizing.py -f 2014-USC-Project02')
     parser.add_argument('-o', '--output', type=str, metavar='', default="./output/diagram_5/",
                         help='output path. Default: %(default)s')
     parser.add_argument('-l', '--list', action='store_true',
                         help='list all input files. Example: python3 visualizing.py -l')
+    parser.add_argument('-api', '--api_mode', action='store_true', help='api mode - no ouput to files')
     args = parser.parse_args()
 
     if args.file:
         filename = args.file
         input_path = args.input + filename + '.transformed.txt'
         output_path = args.output + filename
-
-        logger = Logger(output_path + '_log.txt')
-
+        api_mode = args.api_mode
+        
+        if api_mode:
+            visual_writer = FakeWriter()
+            logger = FakeWriter()
+        else:
+            visual_writer = FileWriter(output_path+'.txt')
+            logger = FileWriter(output_path + '_log.txt')
+        
         try:
             with open(input_path, 'r') as f:
                 domain_data = json.loads((f.read()))
-                UML_graphic(domain_data, output_path)
         except:
             print("Error! Check the log")
-            logger.error(traceback.format_exc())
-
+            logger.write_log(traceback.format_exc(),'error')
+            domain_data = {}
+        output_img, output = UML_graphic(domain_data)
+        visual_writer.write(output)
+        img_base64 = base64.b64encode(output_img[0]).decode('utf-8')
+        imgdata = base64.b64decode(img_base64)
+        with open(output_path+'.png', 'wb') as f:
+            f.write(imgdata)
+#        print(img_base64)
       
     elif args.list:
         input_path = args.input

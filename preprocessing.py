@@ -14,7 +14,7 @@ import itertools
 import collections
 
 import argparse
-from util.file_writer import File_Writer
+from util.file_writer import FileWriter, FakeWriter
 
 
 # create a class to pre-process
@@ -29,11 +29,15 @@ CONNECTOR = '!#%'
 
 class PreProcessor:
 
-    def __init__(self, input_str_list, writer):
+    def __init__(self, input_str_list, func_writer, nonfunc_writer, meta_writer, actor_writer,logger):
         self.count_func = 0
         self.count_nonfunc = 0
         self.input_str_list = input_str_list
-        self.writer = writer
+        self.func_writer = func_writer
+        self.nonfunc_writer = nonfunc_writer
+        self.meta_writer = meta_writer
+        self.actor_writer = actor_writer
+        self.logger = logger
 
     def pre_process(self):
         # Connector used for RemoveSlash
@@ -57,12 +61,12 @@ class PreProcessor:
             try:
                 line_no_bracket = self.removeBracket(line)
             except:
-                self.writer.write_log("removeBracket: Cannot process sentence > " + line,'preprocessing', 'error')
+                self.logger.write_log("removeBracket: Cannot process sentence > " + line, 'error')
                 line_no_bracket = line
             try:
                 lines_no_slash = self.removeSlash(line_no_bracket,CONNECTOR=CONNECTOR)
             except:
-                self.writer.write_log("removeSlash: Cannot process sentence > " + line,'preprocessing','error')
+                self.logger.write_log("removeSlash: Cannot process sentence > " + line,'error')
                 # Check with Bo if he wants a raise
                 lines_no_slash = []
 
@@ -76,16 +80,16 @@ class PreProcessor:
                 else:
                     nonfunc_output.append(replace_role_line)
             
-            metadata.append(meta.__str__())
-            actors.append(acts.__str__())
+            metadata.append(meta)
+            actors.append(acts)
             
-            self.writer.write(func_output, 'func')
-            self.writer.write(nonfunc_output, 'nonfunc')
-            self.writer.write(metadata, 'meta')
-            self.writer.write(actors, 'acts')
+        self.func_writer.write(func_output)
+        self.nonfunc_writer.write(nonfunc_output)
+        self.meta_writer.write(metadata)
+        self.actor_writer.write(actors)
 
-        self.writer.write_log("Functional count: " + str(self.count_func) +
-                    "\nNon-functional count: " + str(self.count_nonfunc), 'preprocessing', 'info')
+        self.logger.write_log("Functional count: " + str(self.count_func) +
+                    "\nNon-functional count: " + str(self.count_nonfunc), 'info')
         
         return func_output, nonfunc_output, metadata, actors
 
@@ -601,8 +605,7 @@ if __name__ == '__main__':
                         help='output path. Default: %(default)s')
     parser.add_argument('-l', '--list', action='store_true',
                         help='list all input files. Example: python3 preprocessing.py -l')
-                        
-    parser.add_argument('-api', '--api_mode', type=bool, default=False, help='api mode. Default: %(default)s')
+    parser.add_argument('-api', '--api_mode', action='store_true', help='api mode - no ouput to files')
     args = parser.parse_args()
     
     
@@ -617,15 +620,19 @@ if __name__ == '__main__':
             input_str_list = testFile.readlines()
         
         if api_mode:
-            preprocessing_writer = File_Writer(filename,fake_mode=True)
+            func_writer = nonfunc_writer = meta_writer = actor_writer = logger = FakeWriter()
         else:
-            preprocessing_writer = File_Writer(filename)
+            func_writer = FileWriter(output_path+'.func.txt')
+            nonfunc_writer = FileWriter(output_path+'.nonfunc.txt')
+            meta_writer = FileWriter(output_path+'.meta.txt')
+            actor_writer = FileWriter(output_path+'.actor.txt')
+            logger = FileWriter(output_path+'_log.txt')
 
-        p = PreProcessor(input_str_list=input_str_list, writer=preprocessing_writer)
+        p = PreProcessor(input_str_list=input_str_list, func_writer=func_writer, nonfunc_writer=nonfunc_writer, meta_writer=meta_writer, actor_writer=actor_writer,logger=logger)
         # in api, just grab above 4 lists; in file mode, it already write in file
         # if you want to edit output file path, please go to check util.file_writer
         func_output, nonfunc_output, metadata, actors = p.pre_process()
-        
+#        print(func_output)
       
     elif args.list:
         input_path = args.input

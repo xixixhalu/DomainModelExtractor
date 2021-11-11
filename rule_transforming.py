@@ -125,12 +125,12 @@ class Transformation:
             
 
     def run(self, transforming_rule="./TR/TR.xlsx"):
-            rule_obj = pd.read_excel(transforming_rule)
-            obj = { "domain" : '',
+        rule_obj = pd.read_excel(transforming_rule)
+        obj = { "domain" : '',
                     "entity_dict" : {},
                     "relation_list" : [],
                     "behavior_list" : []
-            }
+        }
         try:
             self.identify_actor()
             # p.identify_entity()
@@ -144,7 +144,7 @@ class Transformation:
         except:
             self.logger.write_log(traceback.format_exc(), 'error')
         
-            return obj
+        return obj
             
             
     def extra_operation(self):
@@ -196,7 +196,7 @@ if __name__ == '__main__':
             transformer = Transformation(actors=actors, meta=meta, ssr=ssr, writer=transform_writer, logger=logger, domain_name=filename)
     
         transformed_obj = transformer.run(transforming_rule=transforming_rule)
-#        print(transformed_obj)
+        print(transformed_obj)
         
     elif args.list:
         input_path = args.inputssr

@@ -25,13 +25,13 @@ def check_misspelling(input_str_list):
     misspelling_writer = FakeWriter()
     misspelling_logger = FakeWriter()
     spell_checker = misspelling.Misspelling(input_str_list=input_str_list, writer=misspelling_writer, logger=misspelling_logger)
-    report_list = spell_checker.run()
+    report_list, incorrect_words = spell_checker.run()
     count_msg = f"{count_func} functional requirement(s) found. \n\n"
     misspelling_msg = ""
     for item in report_list:
         misspelling_msg += f"Unknown word at Line {item[1]}\nSuggestion: {item[0]} -> {item[2]}\n\n"
-#    if incorrect_words:
-#        misspelling_msg += f'Some words which might be unknown: {incorrect_words}'
+    if incorrect_words:
+        misspelling_msg += f'Some words which might be unknown: {incorrect_words}'
     if misspelling_msg == "":
         misspelling_msg = "No concerns found.\n"
         
@@ -70,6 +70,7 @@ def diagram_generator(input_str_list):
         ## ssr_matching
         ## Default param: rule_path="./SSR/SSR.xlsx"
         ssr_output_result = _api_ssr_matching(func_output)
+        print(ssr_output_result)
         ## rule_transforming
         ## Default param: transforming_rule="./TR/TR.xlsx"
         transformed_output_result = _api_rule_transforming(ssr_output_result, actors, metadata)

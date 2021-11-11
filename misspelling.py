@@ -117,7 +117,7 @@ class Misspelling:
             self.logger.write_log("No Unknown words", 'info')
         
         #TODO: for future improvement, report_list(api) and correct_dict(file) are same thing, try only use one of them in both filemode and apimode
-        return report_list, correct_dict
+        return report_list, correct_dict, incorrect_words
         
         
     def _correctFile(self, correct_dict):
@@ -148,11 +148,11 @@ class Misspelling:
         self._word_detect(1)
         self._word_line_index()
         
-        report_list, correct_dict = self._spell_check()
+        report_list, correct_dict, incorrect_words = self._spell_check()
         correct_lines = self._correctFile(correct_dict)
         self.writer.write(correct_lines)
         
-        return report_list
+        return report_list, incorrect_words
 
 
 if __name__ == '__main__' :
@@ -198,7 +198,7 @@ if __name__ == '__main__' :
             misspelling_logger = FileWriter(output_path+'_log.txt')
         
         misspelling = Misspelling(input_str_list=input_str_list, writer=misspelling_writer, logger=misspelling_logger)
-        report_list = misspelling.run()
+        report_list, incorrect_words = misspelling.run()
         print(report_list)
 
     elif args.list:

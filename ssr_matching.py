@@ -274,7 +274,7 @@ def ssr_matching_run(input_str_list, writer, logger, rule_path='./SSR/SSR.xlsx')
         if len(s) > 0:  # tell whether s is a blank line
 
             sentence_info = dict()
-            sentence_info['FileName'] = filename
+            sentence_info['FileName'] = 'filename'
             ssr = Matcher(s)
             nlp_output = analyze(s)
 

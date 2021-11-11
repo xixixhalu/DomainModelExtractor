@@ -59,7 +59,7 @@ class Transformation:
 #            line = f.readline().strip()
 #            while line:
         for line in self.actors:
-                actor_list = eval(line)
+                actor_list = eval(str(line))
                 for actor_word in actor_list:
                     actor = ""
                     for word in actor_word:
@@ -75,7 +75,7 @@ class Transformation:
 #            line = f.readline().strip()
 #            while line:
         for line in self.meta:
-                entity_list = eval(line)
+                entity_list = eval(str(line))
                 for entity_word in entity_list:
                     entity = ""
                     for word in entity_word[0]:
@@ -125,12 +125,12 @@ class Transformation:
             
 
     def run(self, transforming_rule="./TR/TR.xlsx"):
-        rule_obj = pd.read_excel(transforming_rule)
-        obj = { "domain" : '',
-                "entity_dict" : {},
-                "relation_list" : [],
-                "behavior_list" : []
-        }
+            rule_obj = pd.read_excel(transforming_rule)
+            obj = { "domain" : '',
+                    "entity_dict" : {},
+                    "relation_list" : [],
+                    "behavior_list" : []
+            }
         try:
             self.identify_actor()
             # p.identify_entity()
@@ -144,7 +144,7 @@ class Transformation:
         except:
             self.logger.write_log(traceback.format_exc(), 'error')
         
-        return obj
+            return obj
             
             
     def extra_operation(self):

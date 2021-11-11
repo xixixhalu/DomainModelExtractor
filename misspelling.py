@@ -120,7 +120,13 @@ class Misspelling:
         return report_list, correct_dict
         
         
-    def _correctFile(self, file_origin_lines, file_preprocess_lines, correct_dict):
+    def _correctFile(self, correct_dict):
+        file_origin_lines = {}
+        file_preprocess_lines = {}
+        for idx, line in enumerate(self.input_str_list):
+            file_origin_lines[idx] = line
+            file_preprocess_lines[idx] = [line]
+            
         correct_lines = []
         for idx in file_preprocess_lines:
             for sentence in file_preprocess_lines[idx]:
@@ -137,13 +143,13 @@ class Misspelling:
         return correct_lines
         
         
-    def run(self, file_origin_lines, file_preprocess_lines):
+    def run(self):
         self._word_freq()
         self._word_detect(1)
         self._word_line_index()
         
         report_list, correct_dict = self._spell_check()
-        correct_lines = self._correctFile(file_origin_lines, file_preprocess_lines, correct_dict)
+        correct_lines = self._correctFile(correct_dict)
         self.writer.write(correct_lines)
         
         return report_list
@@ -180,14 +186,10 @@ if __name__ == '__main__' :
 #        check_file=input_path+'.txt'
         
         input_str_list = []
-        file_origin_lines = {}
-        file_preprocess_lines = {}
+
         with open(input_path + '.txt') as testFile :
             input_str_list = testFile.readlines()
-            for idx, line in enumerate(input_str_list):
-                file_origin_lines[idx] = line
-                file_preprocess_lines[idx] = [line]
-        
+            
         if api_mode:
             misspelling_writer = FakeWriter()
             misspelling_logger = FakeWriter()
@@ -196,7 +198,7 @@ if __name__ == '__main__' :
             misspelling_logger = FileWriter(output_path+'_log.txt')
         
         misspelling = Misspelling(input_str_list=input_str_list, writer=misspelling_writer, logger=misspelling_logger)
-        report_list = misspelling.run(file_origin_lines,file_preprocess_lines)
+        report_list = misspelling.run()
         print(report_list)
 
     elif args.list:

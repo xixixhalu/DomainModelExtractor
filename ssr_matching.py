@@ -116,7 +116,7 @@ class Matcher:
     def build_tokens(self, nlp_output):
         tokens = {}
         for t in nlp_output['sentences'][0]['tokens']:
-            tokens[t['index']] = self.shape_word(t['index']-1, nlp_output)
+            tokens[str(t['index'])] = self.shape_word(t['index']-1, nlp_output)
         return tokens
 
 

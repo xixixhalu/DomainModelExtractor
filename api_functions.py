@@ -100,7 +100,7 @@ if __name__ == '__main__' :
 
     #msg => (img_base64, output[1], "\nModel generated!\n")
     msg = diagram_generator(diagram_input_str_list)
-#    imgdata = base64.b64decode(msg[0])
-#    with open('2014-USC-Project02'+'.png', 'wb') as f:
-#        f.write(imgdata)
+    imgdata = base64.b64decode(msg[0])
+    with open('2014-USC-Project02'+'.png', 'wb') as f:
+        f.write(imgdata)
     print("Diagram Generation Completed.")

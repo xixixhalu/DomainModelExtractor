@@ -102,7 +102,6 @@ class Transformation:
                 ssr_name = line.loc['Sentence Structure'].strip()
                 action = line.loc['Action'].strip()
                 transformation_rule = line.loc['Transformation'].strip()
-
                 # Iterate sentences matched to SSR
                 for s in self.ssr[ssr_name]:
                     s_index = s['Index']
@@ -117,9 +116,10 @@ class Transformation:
                             variables[var] = rst_list[0]
                         else:
                             variables[var] = s_index[str(idx)]
+                    # print(action, variables, transformation_rule)
                     self.transform(action, variables, transformation_rule)
             except:
-                # print("Error! Check the log")
+                # print(sys.exc_info()[0])
                 self.logger.write_log(sys.exc_info()[0],'error')
                 continue
             
@@ -133,13 +133,14 @@ class Transformation:
         }
         try:
             self.identify_actor()
-            # p.identify_entity()
+            # self.identify_entity()
             self.apply_rules(rule_obj)
             self.extra_operation()
             obj['domain'] = self.domain.get_name()
             obj['entity_dict'] = self.domain.entity_asdict()
             obj['relation_list'] = self.domain.relation_asdict()
             obj['behavior_list'] = self.domain.behavior_asdict()
+            # print(obj)
             self.writer.write(obj)
         except:
             self.logger.write_log(traceback.format_exc(), 'error')
@@ -196,7 +197,7 @@ if __name__ == '__main__':
             transformer = Transformation(actors=actors, meta=meta, ssr=ssr, writer=transform_writer, logger=logger, domain_name=filename)
     
         transformed_obj = transformer.run(transforming_rule=transforming_rule)
-        print(transformed_obj)
+        # print(transformed_obj)
         
     elif args.list:
         input_path = args.inputssr

@@ -70,11 +70,9 @@ def diagram_generator(input_str_list):
         ## ssr_matching
         ## Default param: rule_path="./SSR/SSR.xlsx"
         ssr_output_result = _api_ssr_matching(func_output)
-        print(ssr_output_result)
         ## rule_transforming
         ## Default param: transforming_rule="./TR/TR.xlsx"
         transformed_output_result = _api_rule_transforming(ssr_output_result, actors, metadata)
-        print(transformed_output_result)
         ## visualizing.py
         output_img, output = visualizing.UML_graphic(transformed_output_result)
         img_base64 = base64.b64encode(output_img[0]).decode('utf-8')
@@ -102,7 +100,7 @@ if __name__ == '__main__' :
 
     #msg => (img_base64, output[1], "\nModel generated!\n")
     msg = diagram_generator(diagram_input_str_list)
-    imgdata = base64.b64decode(msg[0])
-    with open('2014-USC-Project02'+'.png', 'wb') as f:
-        f.write(imgdata)
+#    imgdata = base64.b64decode(msg[0])
+#    with open('2014-USC-Project02'+'.png', 'wb') as f:
+#        f.write(imgdata)
     print("Diagram Generation Completed.")

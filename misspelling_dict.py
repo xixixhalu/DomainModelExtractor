@@ -65,6 +65,7 @@ def main():
     # load glossary
     glossary = read_glossary("./Glossary/glossary.txt")
     spell.word_frequency.load_words(glossary)
+    spell.word_frequency.load_dictionary('./dictionary/dict.json')
 
     i=0
     j=0

@@ -10,9 +10,7 @@ file1 = open(r"dictionary.txt", 'a')
 file1.writelines(text)
 file1.close()
 '''
-with open('1.pdf', 'rb') as f:
+with open('original_dictionary.pdf', 'rb') as f:
     pdf = PyPDF2.PdfFileReader(f)
     page = pdf.getPage(10)
-    print(page)
     text = page.extractText()
-    print(text)

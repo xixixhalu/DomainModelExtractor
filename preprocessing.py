@@ -15,6 +15,7 @@ import collections
 
 import argparse
 from util.file_writer import FileWriter, FakeWriter
+import copy
 
 
 # create a class to pre-process
@@ -63,6 +64,7 @@ class PreProcessor:
             except:
                 self.logger.write_log("removeBracket: Cannot process sentence > " + line, 'error')
                 line_no_bracket = line
+
             try:
                 lines_no_slash = self.removeSlash(line_no_bracket,CONNECTOR=CONNECTOR)
             except:
@@ -73,7 +75,8 @@ class PreProcessor:
             # After processing using "RemoveSlash", lines_no_slash will become a list.
             # Loop in the list so that every function will be wriiten into the file.
             for i in lines_no_slash:
-                combine_nouns_line = self.combine_nouns(i, meta, noun_map)
+                fixed_coreference_line = self.subsititue_coreference(i)
+                combine_nouns_line = self.combine_nouns(fixed_coreference_line, meta, noun_map)
                 replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)                        
                 if is_func:
                     func_output.append(replace_role_line)
@@ -92,6 +95,24 @@ class PreProcessor:
                     "\nNon-functional count: " + str(self.count_nonfunc), 'info')
         
         return func_output, nonfunc_output, metadata, actors
+
+
+    def subsititue_coreference(self, sentence):
+        nlp_output = analyze(sentence)
+        corefs = nlp_output['corefs']
+        token = [x['word'] for x in nlp_output['sentences'][0]['tokens']]
+        new_token = token.copy()
+        drop_idx_list = []
+        for key, value in corefs.items():
+            base_word = value[0]['text']
+            for i in range(1,len(value)):
+                if value[i]['text'] != base_word:
+                    new_token[int(value[i]['headIndex'])-1] = base_word
+                    for j in range(int(value[i]['headIndex']),int(value[i]['endIndex'])-1):
+                        drop_idx_list.append(j)
+        output_list = [j for i, j in enumerate(new_token) if i not in drop_idx_list]
+        output_sentence = ' '.join(output_list)
+        return output_sentence
 
 
     # Note: this function check if a word is in stop words dict, if no, return lemma form, otherwise, return original word.

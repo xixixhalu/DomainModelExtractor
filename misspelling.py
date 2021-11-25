@@ -23,7 +23,7 @@ class Misspelling:
         self.input_str_list = input_str_list
         self.writer = writer
         self.logger = logger
-
+        
         # Build-in params
         self._glossary_file = "./Glossary/glossary.txt"
         self._word_freq_count = {}
@@ -43,20 +43,20 @@ class Misspelling:
         data = s.translate(str.maketrans(del_str, replace_punctuation))
         data = data.split(' ')
         fdist1 = nltk.FreqDist(data)
-
+        
         self._word_freq_count = fdist1.most_common()
-
-
+    
+    
     def _word_detect(self, n):
         # output words with frequency n
         ret = []
         for word, freq in self._word_freq_count:
             if freq == n:
                 ret.append(word)
-
+        
         self._word_candidate = ret
-
-
+    
+    
     def _word_line_index(self):
         del_str = string.punctuation
         replace_punctuation = ' ' * len(del_str)
@@ -68,10 +68,10 @@ class Misspelling:
             for word, freq in fdist1.most_common():
                 if freq == 1:
                     line_indx_dict[word] = indx+1
-
+        
         self._line_indx_dict = line_indx_dict
-
-
+        
+    
     def _read_glossary(self):
         # output a list of strings in glossary file
         try:
@@ -94,7 +94,7 @@ class Misspelling:
         for word, freq in self._word_freq_count:
             if freq >= CORRECT_WORD_FREQUENCY:
                 spell.word_frequency.add(word)
-
+                
         incorrect_candidate = spell.unknown([w for w in self._word_candidate if len(w)>1])
         incorrect_words = list(incorrect_candidate)
         report_list = []
@@ -115,18 +115,18 @@ class Misspelling:
         else:
             print("No Unknown words")
             self.logger.write_log("No Unknown words", 'info')
-
+        
         #TODO: for future improvement, report_list(api) and correct_dict(file) are same thing, try only use one of them in both filemode and apimode
         return report_list, correct_dict, incorrect_words
-
-
+        
+        
     def _correctFile(self, correct_dict):
         file_origin_lines = {}
         file_preprocess_lines = {}
         for idx, line in enumerate(self.input_str_list):
             file_origin_lines[idx] = line
             file_preprocess_lines[idx] = [line]
-
+            
         correct_lines = []
         for idx in file_preprocess_lines:
             for sentence in file_preprocess_lines[idx]:
@@ -141,17 +141,17 @@ class Misspelling:
                 correct_lines.append(correct_line.strip())
 
         return correct_lines
-
-
+        
+        
     def run(self):
         self._word_freq()
         self._word_detect(1)
         self._word_line_index()
-
+        
         report_list, correct_dict, incorrect_words = self._spell_check()
         correct_lines = self._correctFile(correct_dict)
         self.writer.write(correct_lines)
-
+        
         return report_list, incorrect_words
 
 
@@ -184,19 +184,19 @@ if __name__ == '__main__' :
         api_mode = args.api_mode
         nlp = spacy.load('en_core_web_sm')
 #        check_file=input_path+'.txt'
-
+        
         input_str_list = []
 
         with open(input_path + '.txt') as testFile :
             input_str_list = testFile.readlines()
-
+            
         if api_mode:
             misspelling_writer = FakeWriter()
             misspelling_logger = FakeWriter()
         else:
             misspelling_writer = FileWriter(output_path+'.corrected.txt')
             misspelling_logger = FileWriter(output_path+'_log.txt')
-
+        
         misspelling = Misspelling(input_str_list=input_str_list, writer=misspelling_writer, logger=misspelling_logger)
         report_list, incorrect_words = misspelling.run()
         print(report_list)

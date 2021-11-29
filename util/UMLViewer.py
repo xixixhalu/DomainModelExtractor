@@ -1,7 +1,8 @@
 import sys
 sys.path.append('../')
 from util.file_op import fileOps
-import subprocess
+#import subprocess
+from plantweb.render import render_file, render
 import os
 
 class UMLEntity:
@@ -161,18 +162,29 @@ class UMLViewer:
             o.write(self.output())
             #print('c')
 
-    def generate_diagram(self, path, format='svg'):
+    def generate_diagram_from_file(self, path, img_format='svg'):
         file_path = path + '.txt'
         
-        with fileOps.safe_open_w(file_path) as o:
-            
-            o.write(self.output())
-            
-        # Bo: TODO: add more format support
-        subprocess.call(['plantweb',file_path])
-        #print(file_path)
-        subprocess.call(['mv', self.__title + '.' + format, path + '.' + format])
-        # fileOps.safe_delete_file(file_path)
+        outfile = render_file(
+            file_path,
+            renderopts={
+                'format': img_format
+                },
+            cacheopts={
+                'use_cache': False
+                })
+    
+    def generate_diagram(self, img_format='svg'):
+        output = render(
+            self.output(),
+            engine='plantuml',
+            format=img_format,
+            cacheopts={
+                'use_cache': False
+            }
+        )
+        return output, self.output()
+
 
 if __name__ == '__main__':
     viewer = UMLViewer()

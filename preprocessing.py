@@ -14,6 +14,7 @@ import itertools
 import collections
 
 import argparse
+from util.file_writer import FileWriter, FakeWriter
 
 
 # create a class to pre-process
@@ -28,22 +29,23 @@ CONNECTOR = '!#%'
 
 class PreProcessor:
 
-    def __init__(self):
+    def __init__(self, input_str_list, func_writer, nonfunc_writer, meta_writer, actor_writer,logger):
         self.count_func = 0
         self.count_nonfunc = 0
+        self.input_str_list = input_str_list
+        self.func_writer = func_writer
+        self.nonfunc_writer = nonfunc_writer
+        self.meta_writer = meta_writer
+        self.actor_writer = actor_writer
+        self.logger = logger
 
-    def pre_process(self, input_path, output_path):
+    def pre_process(self):
         # Connector used for RemoveSlash
-        file = open(input_path, 'r')
-
-        func_output = open(output_path + ".func.txt", "w")
-        nonfunc_output = open(output_path + ".nonfunc.txt", "w")
-        metadata = open(output_path + ".meta.txt", "w")
-        actors = open(output_path + ".actor.txt", "w")
-
-        line = file.readline().strip()
-        while line:
-            # print("Original sentence: ", line)
+        func_output = []
+        nonfunc_output = []
+        metadata = []
+        actors = []
+        for line in self.input_str_list:
             meta = []
             # maps combined noun to the original nouns
             noun_map = {}
@@ -55,17 +57,18 @@ class PreProcessor:
             else:
                 is_func = False
                 self.count_nonfunc += 1
-                
 
             try:
                 line_no_bracket = self.removeBracket(line)
             except:
-                logger.error("removeBracket: Cannot process sentence > " + line)
+                self.logger.write_log("removeBracket: Cannot process sentence > " + line, 'error')
                 line_no_bracket = line
             try:
                 lines_no_slash = self.removeSlash(line_no_bracket,CONNECTOR=CONNECTOR)
             except:
-                logger.error("removeSlash: Cannot process sentence > " + line) 
+                self.logger.write_log("removeSlash: Cannot process sentence > " + line,'error')
+                # Check with Bo if he wants a raise
+                lines_no_slash = []
 
             # After processing using "RemoveSlash", lines_no_slash will become a list.
             # Loop in the list so that every function will be wriiten into the file.
@@ -73,23 +76,23 @@ class PreProcessor:
                 combine_nouns_line = self.combine_nouns(i, meta, noun_map)
                 replace_role_line = self.replace_role(combine_nouns_line, noun_map, acts)                        
                 if is_func:
-                    func_output.write(replace_role_line + "\n")
+                    func_output.append(replace_role_line)
                 else:
-                    nonfunc_output.write(replace_role_line + "\n")
-                    
-            metadata.write(meta.__str__() + "\n")
-            actors.write(acts.__str__() + "\n")
+                    nonfunc_output.append(replace_role_line)
+            
+            metadata.append(meta)
+            actors.append(acts)
+            
+        self.func_writer.write(func_output)
+        self.nonfunc_writer.write(nonfunc_output)
+        self.meta_writer.write(metadata)
+        self.actor_writer.write(actors)
 
-            line = file.readline().strip()
+        self.logger.write_log("Functional count: " + str(self.count_func) +
+                    "\nNon-functional count: " + str(self.count_nonfunc), 'info')
+        
+        return func_output, nonfunc_output, metadata, actors
 
-        logger.info("Functional count: " + str(self.count_func) + 
-                    "\nNon-functional count: " + str(self.count_nonfunc))
-
-        func_output.close()
-        nonfunc_output.close()
-        metadata.close()
-        actors.close()
-        file.close()
 
     # Note: this function check if a word is in stop words dict, if no, return lemma form, otherwise, return original word.
     def filter_stop_word(self, idx, nlp_output):
@@ -597,22 +600,39 @@ if __name__ == '__main__':
     parser.add_argument('-i', '--input', type=str, metavar='', default="./output/misspelling_detect_1/",
                         help='input path. Default: %(default)s')
     parser.add_argument('-f', '--file', type=str, metavar='',
-                        help='input file. Example: python3 preprocessor.py -f 2014-USC-Projecct02')
+                        help='input file. Example: python3 preprocessing.py -f 2014-USC-Project02')
     parser.add_argument('-o', '--output', type=str, metavar='', default="./output/preprocessing_2/",
                         help='output path. Default: %(default)s')
     parser.add_argument('-l', '--list', action='store_true',
                         help='list all input files. Example: python3 preprocessing.py -l')
+    parser.add_argument('-api', '--api_mode', action='store_true', help='api mode - no ouput to files')
     args = parser.parse_args()
-
+    
+    
     if args.file:
         filename = args.file
+        api_mode = args.api_mode
         input_path = args.input + filename + ".corrected.txt"
         output_path = args.output + filename
+        
+        input_str_list = []
+        with open(input_path, 'r') as testFile :
+            input_str_list = testFile.readlines()
+        
+        if api_mode:
+            func_writer = nonfunc_writer = meta_writer = actor_writer = logger = FakeWriter()
+        else:
+            func_writer = FileWriter(output_path+'.func.txt')
+            nonfunc_writer = FileWriter(output_path+'.nonfunc.txt')
+            meta_writer = FileWriter(output_path+'.meta.txt')
+            actor_writer = FileWriter(output_path+'.actor.txt')
+            logger = FileWriter(output_path+'_log.txt')
 
-        logger = Logger(output_path + '_log.txt')
-
-        p = PreProcessor()
-        p.pre_process(input_path, output_path)
+        p = PreProcessor(input_str_list=input_str_list, func_writer=func_writer, nonfunc_writer=nonfunc_writer, meta_writer=meta_writer, actor_writer=actor_writer,logger=logger)
+        # in api, just grab above 4 lists; in file mode, it already write in file
+        # if you want to edit output file path, please go to check util.file_writer
+        func_output, nonfunc_output, metadata, actors = p.pre_process()
+#        print(func_output)
       
     elif args.list:
         input_path = args.input

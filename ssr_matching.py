@@ -10,7 +10,8 @@ import argparse
 import copy
 
 from util.logger import Logger
-global logger
+from util.file_writer import FileWriter, FakeWriter
+#global logger
 
 LEMMA_STOP_WORDS = {'data'}
 
@@ -115,7 +116,7 @@ class Matcher:
     def build_tokens(self, nlp_output):
         tokens = {}
         for t in nlp_output['sentences'][0]['tokens']:
-            tokens[t['index']] = self.shape_word(t['index']-1, nlp_output)
+            tokens[str(t['index'])] = self.shape_word(t['index']-1, nlp_output)
         return tokens
 
 
@@ -245,6 +246,107 @@ class Matcher:
             return False, var_to_index_list
         else:
             return True, var_to_index_list
+            
+
+def ssr_matching_run(input_str_list, writer, logger, rule_path='./SSR/SSR.xlsx'):
+    rule_obj = pd.read_excel(rule_path)
+    logger_count_ssr = {}
+
+    ssr_name_num = dict()
+    ssrNum = list(rule_obj['Rule'])
+    ssrName = list(rule_obj['Sentence Structure'])
+    ssrIndependence = list(rule_obj['Independence'])
+
+    rule_obj.set_index(["Rule"], inplace=True)
+
+    for i in range(len(ssrNum)):
+        ssr_name_num[ssrNum[i]] = ssrName[i]
+    # initialize the output
+    output_result = dict()
+    match_order, in_nodes = topological_sort_ssr(ssrIndependence)
+    
+    for i in match_order:
+        output_result[ssrName[i - 1]] = []
+
+    output_result_file = output_result
+    matched_dict = {}
+    for s in tqdm(input_str_list):  # travel each sentence
+        if len(s) > 0:  # tell whether s is a blank line
+
+            sentence_info = dict()
+            sentence_info['FileName'] = 'filename'
+            ssr = Matcher(s)
+            nlp_output = analyze(s)
+
+            if nlp_output is None:
+                logger.write_log(s, ": NLP API returns None!", 'error')
+            else:
+                # collect word and punctuation indices in the sentence to a dictionary
+                s_dic = ssr.build_tokens(nlp_output)
+
+                td_key = pure_enhancedTD(nlp_output)
+                for i in match_order:
+                    try:
+                        rule_result = ssr.parse_rule(rule_obj, i)
+                    except:
+                        # print("Failed to parse Rule line", i, ". Skip!")
+                        continue
+                    if i not in matched_dict:
+                        matched_dict[i] = {}
+                    matched_dict[i][s] = []
+
+                    # rule_result = ssr.parse_rule(rule_obj, i)
+                    # split rule result
+                    rule_name = rule_result[0]
+                    rule_tds = rule_result[1]
+                    rule_pos_tags = rule_result[2]
+                    rule_keywords = rule_result[3]
+
+                    td_res = ssr.match_tds(rule_tds, td_key)
+                    if td_res[0]:
+                        for var_map in td_res[1]:
+                            matched = False
+                            indices = []
+                            for key in var_map:
+                                indices.append(var_map[key])
+                            if in_nodes[i]:
+                                for rule in in_nodes[i]:
+                                    if rule in matched_dict and s in matched_dict[rule]:
+                                        for lst in matched_dict[rule][s]:
+                                            if set(indices) <= set(lst):
+                                                # change the flag matched to True if all the indices
+                                                # of the sentence matched by this SSR are matched by
+                                                # the SSR of its independence
+                                                matched = True
+                                                break
+                                    if matched:
+                                        break
+
+                            if ssr.match_pos(var_map, rule_pos_tags, nlp_output) and ssr.match_keywords(
+                                    ssr.sentence, rule_keywords) and not matched:
+                                # tell whether both td and postag can match
+                                # skip the following if indices already matched by SSR from independence
+                                s_info = copy.deepcopy(sentence_info)
+                                s_info['Sentence'] = s
+                                s_info['Result'] = var_map
+                                s_info['Index'] = s_dic
+                                s_info['TD'] = td_key
+                                s_info['Pos-tag'] = parsePosTag(nlp_output)
+                                s_info['Keywords'] = list(rule_keywords)
+                                output_result_file[rule_name].append(s_info)
+
+                                matched_dict[i][s].append(indices)
+
+                    logger_count_ssr[rule_name] = len(output_result_file[rule_name])
+
+    rst_report = ""
+    for k, v in logger_count_ssr.items():
+        rst_report += k + ', ' + str(v) + "\n"
+    logger.write_log("SSR, # of sentences\n" + rst_report,'info')
+    # write the result into json file
+    writer.write(output_result)
+    return output_result
+            
 
 def topological_sort_ssr(ssrIndependence):
 
@@ -286,7 +388,7 @@ if __name__ == '__main__':
     parser.add_argument('-i', '--input', type=str, metavar='', default="./output/preprocessing_2/",
                         help='input path. Default: %(default)s')
     parser.add_argument('-f', '--file', type=str, metavar='',
-                        help='input file. Example: python3 ssr_matching.py -f 2014-USC-Projecct02')
+                        help='input file. Example: python3 ssr_matching.py -f 2014-USC-Project02')
     parser.add_argument('-o', '--output', type=str, metavar='', default="./output/ssr_match_3/",
                         help='output path. Default: %(default)s')
     # parser.add_argument('-s', '--ssr', type=str, metavar='', default="./SSR/SSR.xlsx",
@@ -294,119 +396,31 @@ if __name__ == '__main__':
                         help='sentence structure path. Default: %(default)s')
     parser.add_argument('-l', '--list', action='store_true',
                         help='list all input files. Example: python3 ssr_matching.py -l')
+    parser.add_argument('-api', '--api_mode', action='store_true', help='api mode - no ouput to files')
     args = parser.parse_args()
 
     if args.file:
         filename = args.file
         input_path = args.input + filename + ".func.txt"
         output_path = args.output + filename
-        rule_obj = pd.read_excel(args.ssr)
-
-        logger = Logger(output_path + '_log.txt')
-        logger_count_ssr = {}
-
-        ssr_name_num = dict()
-        ssrNum = list(rule_obj['Rule'])
-        ssrName = list(rule_obj['Sentence Structure'])
-        ssrIndependence = list(rule_obj['Independence'])
-
-        rule_obj.set_index(["Rule"], inplace=True)
-
-        for i in range(len(ssrNum)):
-            ssr_name_num[ssrNum[i]] = ssrName[i]
-        # initialize the output
-        output_result = dict()
-        match_order, in_nodes = topological_sort_ssr(ssrIndependence)
-
-        for i in match_order:
-            output_result[ssrName[i - 1]] = []
-
-        output_result_file = output_result
-        # file_name = 'test'
+        rule_path = args.ssr
+        api_mode = args.api_mode
+        
+        if api_mode:
+            ssr_writer = logger = FakeWriter()
+        else:
+            ssr_writer = FileWriter(output_path+'.ssr.txt')
+            logger = FileWriter(output_path+'_log.txt')
+            
         if not os.path.exists(input_path):
-            logger.error(input_path + ' not exists.')
+            logger.write_log(input_path + ' not exists.', 'error')
+            input_str_list = []
         else:
             f = open(input_path, 'r')
-            sentences = f.read().split('\n')
-            matched_dict = {}
-            for s in tqdm(sentences):  # travel each sentence
-                if len(s) > 0:  # tell whether s is a blank line
-
-                    sentence_info = dict()
-                    sentence_info['FileName'] = filename
-                    ssr = Matcher(s)
-                    nlp_output = analyze(s)
-
-                    if nlp_output is None:
-                        logger.error(s, ": NLP API returns None!")
-
-                    else:
-                        # collect word and punctuation indices in the sentence to a dictionary
-                        s_dic = ssr.build_tokens(nlp_output)
-
-                        td_key = pure_enhancedTD(nlp_output)
-                        for i in match_order:
-                            try:
-                                rule_result = ssr.parse_rule(rule_obj, i)
-                            except:
-                                # print("Failed to parse Rule line", i, ". Skip!")
-                                continue
-                            if i not in matched_dict:
-                                matched_dict[i] = {}
-                            matched_dict[i][s] = []
-
-                            # rule_result = ssr.parse_rule(rule_obj, i)
-                            # split rule result
-                            rule_name = rule_result[0]
-                            rule_tds = rule_result[1]
-                            rule_pos_tags = rule_result[2]
-                            rule_keywords = rule_result[3]
-
-                            td_res = ssr.match_tds(rule_tds, td_key)
-                            if td_res[0]:
-                                for var_map in td_res[1]:
-                                    matched = False
-                                    indices = []
-                                    for key in var_map:
-                                        indices.append(var_map[key])
-                                    if in_nodes[i]:
-                                        for rule in in_nodes[i]:
-                                            if rule in matched_dict and s in matched_dict[rule]:
-                                                for lst in matched_dict[rule][s]:
-                                                    if set(indices) <= set(lst):
-                                                        # change the flag matched to True if all the indices
-                                                        # of the sentence matched by this SSR are matched by
-                                                        # the SSR of its independence
-                                                        matched = True
-                                                        break
-                                            if matched:
-                                                break
-
-                                    if ssr.match_pos(var_map, rule_pos_tags, nlp_output) and ssr.match_keywords(
-                                            ssr.sentence, rule_keywords) and not matched:
-                                        # tell whether both td and postag can match
-                                        # skip the following if indices already matched by SSR from independence
-                                        s_info = copy.deepcopy(sentence_info)
-                                        s_info['Sentence'] = s
-                                        s_info['Result'] = var_map
-                                        s_info['Index'] = s_dic
-                                        s_info['TD'] = td_key
-                                        s_info['Pos-tag'] = parsePosTag(nlp_output)
-                                        s_info['Keywords'] = list(rule_keywords)
-                                        output_result_file[rule_name].append(s_info)
-
-                                        matched_dict[i][s].append(indices)
-
-                            logger_count_ssr[rule_name] = len(output_result_file[rule_name])
-
-            rst_report = ""
-            for k, v in logger_count_ssr.items():
-                rst_report += k + ', ' + str(v) + "\n"
-            logger.info("SSR, # of sentences\n" + rst_report)
-            # wrute the result into json file
-            with open(output_path + '.ssr.txt', 'w') as jsonwriter:
-                json.dump(output_result, jsonwriter, indent=2)
-            f.close()
+            input_str_list = f.read().split('\n')
+        
+        ssr_result = ssr_matching_run(input_str_list=input_str_list, writer=ssr_writer, logger=logger,rule_path=rule_path)
+#        print(ssr_result)
 
     elif args.list:
         input_path = args.input
@@ -418,7 +432,7 @@ if __name__ == '__main__':
                 f_list.add(re.sub(pattern, rf"", f))
         for f in sorted(f_list):
             print(f)
-
+        
     else:
         parser.print_help()
 

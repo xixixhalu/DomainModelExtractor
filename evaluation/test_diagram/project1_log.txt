@@ -1,8 +1,0 @@
-21-Oct-21 01:18:22 - ERROR
-Traceback (most recent call last):
-  File "visualizing.py", line 95, in <module>
-    UML_graphic(domain_data, output_path)
-  File "visualizing.py", line 18, in UML_graphic
-    if 'actor' in v['type']:
-KeyError: 'type'
-

@@ -163,13 +163,13 @@ class UMLViewer:
 
     def generate_diagram(self, path, format='svg'):
         file_path = path + '.txt'
-        
+        # print(file_path)
         with fileOps.safe_open_w(file_path) as o:
             
             o.write(self.output())
             
         # Bo: TODO: add more format support
-        subprocess.call(['plantweb',file_path])
+        subprocess.call(['plantweb',file_path], shell=True)
         #print(file_path)
         subprocess.call(['mv', self.__title + '.' + format, path + '.' + format])
         # fileOps.safe_delete_file(file_path)
